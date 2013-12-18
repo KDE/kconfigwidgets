@@ -64,33 +64,33 @@ class ComboSettings : public KConfigSkeleton
 public:
     ComboSettings()
     {
-        colorItem = new ItemColor( currentGroup(), QLatin1String( "Color" ), color, Qt::white );
-        addItem( colorItem, QLatin1String( "Color" ) );
+        colorItem = new ItemColor(currentGroup(), QLatin1String("Color"), color, Qt::white);
+        addItem(colorItem, QLatin1String("Color"));
 
         QList<ItemEnum::Choice2> textValues;
         {
             ItemEnum::Choice2 choice;
             choice.name = QLatin1String("A");
-            textValues.append( choice );
+            textValues.append(choice);
         }
         {
             ItemEnum::Choice2 choice;
             choice.name = QLatin1String("B");
-            textValues.append( choice );
+            textValues.append(choice);
         }
         {
             ItemEnum::Choice2 choice;
             choice.name = QLatin1String("C");
-            textValues.append( choice );
+            textValues.append(choice);
         }
-        enumItem = new ItemEnum( currentGroup(), QLatin1String( "Enum" ), enumIndex, textValues, 1 );
-        addItem( enumItem, QLatin1String( "Enum" ) );
+        enumItem = new ItemEnum(currentGroup(), QLatin1String("Enum"), enumIndex, textValues, 1);
+        addItem(enumItem, QLatin1String("Enum"));
 
-        stringItem = new ItemString( currentGroup(), QLatin1String( "Text" ), string, QLatin1String( "hh:mm" ) );
-        addItem( stringItem, QLatin1String( "Text" ) );
+        stringItem = new ItemString(currentGroup(), QLatin1String("Text"), string, QLatin1String("hh:mm"));
+        addItem(stringItem, QLatin1String("Text"));
 
-        intValueItem = new ItemInt( currentGroup(), QLatin1String( "IntNumInput" ), intValue, 42 );
-        addItem( intValueItem, QLatin1String( "IntNumInput" ) );
+        intValueItem = new ItemInt(currentGroup(), QLatin1String("IntNumInput"), intValue, 42);
+        addItem(intValueItem, QLatin1String("IntNumInput"));
     }
 
     ItemColor *colorItem;
@@ -116,8 +116,9 @@ private Q_SLOTS:
         QStandardPaths::enableTestMode(true);
         // Leftover configuration breaks combosTest
         const QString configFile = QStandardPaths::locate(QStandardPaths::GenericConfigLocation, "kconfigdialog_unittestrc");
-        if (!configFile.isEmpty())
+        if (!configFile.isEmpty()) {
             QFile::remove(configFile);
+        }
     }
 
     void test()
@@ -135,7 +136,7 @@ private Q_SLOTS:
 
         QCOMPARE(page->colorCombo->color(), QColor(Qt::white));
         QCOMPARE(page->enumCombo->currentIndex(), 1);
-        QCOMPARE(page->textCombo->currentText(), QLatin1String( "hh:mm" ));
+        QCOMPARE(page->textCombo->currentText(), QLatin1String("hh:mm"));
         QCOMPARE(page->numInput->value(), 42);
 
         page->colorCombo->setColor(Qt::blue);
@@ -143,8 +144,8 @@ private Q_SLOTS:
         page->textCombo->setCurrentIndex(2);
         page->numInput->setValue(2);
 
-        QDialogButtonBox *buttonBox = dialog->findChild<QDialogButtonBox*>();
-        QVERIFY(buttonBox!=0);
+        QDialogButtonBox *buttonBox = dialog->findChild<QDialogButtonBox *>();
+        QVERIFY(buttonBox != 0);
         buttonBox->button(QDialogButtonBox::Apply)->click();
         QCOMPARE(skeleton->colorItem->property().value<QColor>(), QColor(Qt::blue));
         QCOMPARE(skeleton->enumItem->property().toInt(), 2);

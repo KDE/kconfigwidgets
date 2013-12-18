@@ -22,8 +22,7 @@
 #include <QAbstractListModel>
 #include <QIcon>
 
-struct KColorSchemeModelData
-{
+struct KColorSchemeModelData {
     QString name;
     QString path;
     QIcon preview;
@@ -33,7 +32,7 @@ class KColorSchemeModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    explicit KColorSchemeModel(QObject* parent = 0);
+    explicit KColorSchemeModel(QObject *parent = 0);
     virtual ~KColorSchemeModel();
     virtual QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
     virtual int rowCount(const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;

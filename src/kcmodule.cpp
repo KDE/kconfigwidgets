@@ -40,21 +40,21 @@ class KCModulePrivate
 {
 public:
     KCModulePrivate():
-        _buttons( KCModule::Help | KCModule::Default | KCModule::Apply ),
-        _about( 0 ),
-        _useRootOnlyMessage( false ),
+        _buttons(KCModule::Help | KCModule::Default | KCModule::Apply),
+        _about(0),
+        _useRootOnlyMessage(false),
         _firstshow(true),
         _needsAuthorization(false),
         _authAction(0),
-        _unmanagedWidgetChangeState( false )
-        { }
+        _unmanagedWidgetChangeState(false)
+    { }
 
     void authStatusChanged(int status);
 
     KCModule::Buttons _buttons;
     const KAboutData *_about;
     QString _rootOnlyMessage;
-    QList<KConfigDialogManager*> managers;
+    QList<KConfigDialogManager *> managers;
     QString _quickHelp;
     QString m_ExportText;
     bool _useRootOnlyMessage : 1;
@@ -71,13 +71,13 @@ public:
 };
 
 KCModule::KCModule(const KAboutData *aboutData, QWidget *parent, const QVariantList &)
-    : QWidget( parent ), d(new KCModulePrivate)
+    : QWidget(parent), d(new KCModulePrivate)
 {
     setAboutData(aboutData);
 }
 
 KCModule::KCModule(QWidget *parent, const QVariantList &)
-    : QWidget( parent ), d(new KCModulePrivate)
+    : QWidget(parent), d(new KCModulePrivate)
 {
 }
 
@@ -97,26 +97,26 @@ KCModule::Buttons KCModule::buttons() const
     return d->_buttons;
 }
 
-void KCModule::setButtons( Buttons buttons )
+void KCModule::setButtons(Buttons buttons)
 {
     d->_buttons = buttons;
 }
 
-KConfigDialogManager* KCModule::addConfig( KCoreConfigSkeleton *config, QWidget* widget )
+KConfigDialogManager *KCModule::addConfig(KCoreConfigSkeleton *config, QWidget *widget)
 {
-    KConfigDialogManager* manager = new KConfigDialogManager( widget, config );
-    manager->setObjectName( objectName() );
-    connect( manager, SIGNAL(widgetModified()), SLOT(widgetChanged()));
-    d->managers.append( manager );
+    KConfigDialogManager *manager = new KConfigDialogManager(widget, config);
+    manager->setObjectName(objectName());
+    connect(manager, SIGNAL(widgetModified()), SLOT(widgetChanged()));
+    d->managers.append(manager);
     return manager;
 }
 
-KConfigDialogManager* KCModule::addConfig( KConfigSkeleton *config, QWidget* widget )
+KConfigDialogManager *KCModule::addConfig(KConfigSkeleton *config, QWidget *widget)
 {
-    KConfigDialogManager* manager = new KConfigDialogManager( widget, config );
-    manager->setObjectName( objectName() );
-    connect( manager, SIGNAL(widgetModified()), SLOT(widgetChanged()));
-    d->managers.append( manager );
+    KConfigDialogManager *manager = new KConfigDialogManager(widget, config);
+    manager->setObjectName(objectName());
+    connect(manager, SIGNAL(widgetModified()), SLOT(widgetChanged()));
+    d->managers.append(manager);
     return manager;
 }
 
@@ -146,18 +146,18 @@ KAuth::Action KCModule::authAction() const
 
 void KCModule::authStatusChanged(KAuth::Action::AuthStatus status)
 {
-    switch(status) {
-        case KAuth::Action::AuthorizedStatus:
-            setUseRootOnlyMessage(false);
-            break;
-        case KAuth::Action::AuthRequiredStatus:
-            setUseRootOnlyMessage(true);
-            setRootOnlyMessage(i18n("You will be asked to authenticate before saving"));
-            break;
-        default:
-            setUseRootOnlyMessage(true);
-            setRootOnlyMessage(i18n("You are not allowed to save the configuration"));
-            break;
+    switch (status) {
+    case KAuth::Action::AuthorizedStatus:
+        setUseRootOnlyMessage(false);
+        break;
+    case KAuth::Action::AuthRequiredStatus:
+        setUseRootOnlyMessage(true);
+        setRootOnlyMessage(i18n("You will be asked to authenticate before saving"));
+        break;
+    default:
+        setUseRootOnlyMessage(true);
+        setRootOnlyMessage(i18n("You are not allowed to save the configuration"));
+        break;
     }
 
     qDebug() << useRootOnlyMessage();
@@ -173,25 +173,28 @@ KCModule::~KCModule()
 
 void KCModule::load()
 {
-    KConfigDialogManager* manager;
-    Q_FOREACH( manager , d->managers )
+    KConfigDialogManager *manager;
+    Q_FOREACH (manager, d->managers) {
         manager->updateWidgets();
-    emit( changed( false ));
+    }
+    emit(changed(false));
 }
 
 void KCModule::save()
 {
-    KConfigDialogManager* manager;
-    Q_FOREACH( manager , d->managers )
+    KConfigDialogManager *manager;
+    Q_FOREACH (manager, d->managers) {
         manager->updateSettings();
-    emit( changed( false ));
+    }
+    emit(changed(false));
 }
 
 void KCModule::defaults()
 {
-    KConfigDialogManager* manager;
-    Q_FOREACH( manager , d->managers )
+    KConfigDialogManager *manager;
+    Q_FOREACH (manager, d->managers) {
         manager->updateWidgetsDefault();
+    }
 }
 
 void KCModule::widgetChanged()
@@ -201,11 +204,11 @@ void KCModule::widgetChanged()
 
 bool KCModule::managedWidgetChangeState() const
 {
-    KConfigDialogManager* manager;
-    Q_FOREACH( manager , d->managers )
-    {
-        if ( manager->hasChanged() )
+    KConfigDialogManager *manager;
+    Q_FOREACH (manager, d->managers) {
+        if (manager->hasChanged()) {
             return true;
+        }
     }
 
     return false;
@@ -230,7 +233,7 @@ void KCModule::setAboutData(const KAboutData *about)
     }
 }
 
-void KCModule::setRootOnlyMessage(const QString& message)
+void KCModule::setRootOnlyMessage(const QString &message)
 {
     d->_rootOnlyMessage = message;
     emit rootOnlyMessageChanged(d->_useRootOnlyMessage, d->_rootOnlyMessage);
@@ -264,18 +267,18 @@ KAboutData KCModule::componentData() const
 
 QString KCModule::exportText() const
 {
-  return d->m_ExportText;
+    return d->m_ExportText;
 }
 
-void KCModule::setExportText(const QString& text)
+void KCModule::setExportText(const QString &text)
 {
-  d->m_ExportText = text;
+    d->m_ExportText = text;
 }
 
-void KCModule::setQuickHelp( const QString& help )
+void KCModule::setQuickHelp(const QString &help)
 {
     d->_quickHelp = help;
-    emit( quickHelpChanged() );
+    emit(quickHelpChanged());
 }
 
 QString KCModule::quickHelp() const
@@ -283,9 +286,8 @@ QString KCModule::quickHelp() const
     return d->_quickHelp;
 }
 
-QList<KConfigDialogManager*> KCModule::configs() const
+QList<KConfigDialogManager *> KCModule::configs() const
 {
     return d->managers;
 }
 
-// vim: sw=4 et sts=4

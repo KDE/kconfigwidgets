@@ -38,52 +38,51 @@
 #include <kconfiggroup.h>
 #include <klocalizedstring.h>
 
-
 KRecentFilesAction::KRecentFilesAction(QObject *parent)
-  : KSelectAction(parent),
-    d_ptr(new KRecentFilesActionPrivate(this))
+    : KSelectAction(parent),
+      d_ptr(new KRecentFilesActionPrivate(this))
 {
-  Q_D(KRecentFilesAction);
-  d->init();
+    Q_D(KRecentFilesAction);
+    d->init();
 }
 
 KRecentFilesAction::KRecentFilesAction(const QString &text, QObject *parent)
-  : KSelectAction(parent),
-    d_ptr(new KRecentFilesActionPrivate(this))
+    : KSelectAction(parent),
+      d_ptr(new KRecentFilesActionPrivate(this))
 {
-  Q_D(KRecentFilesAction);
-  d->init();
+    Q_D(KRecentFilesAction);
+    d->init();
 
-  // Want to keep the ampersands
-  setText(text);
+    // Want to keep the ampersands
+    setText(text);
 }
 
 KRecentFilesAction::KRecentFilesAction(const QIcon &icon, const QString &text, QObject *parent)
-  : KSelectAction(parent),
-    d_ptr(new KRecentFilesActionPrivate(this))
+    : KSelectAction(parent),
+      d_ptr(new KRecentFilesActionPrivate(this))
 {
-  Q_D(KRecentFilesAction);
-  d->init();
+    Q_D(KRecentFilesAction);
+    d->init();
 
-  setIcon(icon);
-  // Want to keep the ampersands
-  setText(text);
+    setIcon(icon);
+    // Want to keep the ampersands
+    setText(text);
 }
 
 void KRecentFilesActionPrivate::init()
 {
-  Q_Q(KRecentFilesAction);
-  delete q->menu();
-  q->setMenu(new QMenu());
-  q->setToolBarMode(KSelectAction::MenuMode);
-  m_noEntriesAction = q->menu()->addAction(i18n("No Entries"));
-  m_noEntriesAction->setEnabled(false);
-  clearSeparator = q->menu()->addSeparator();
-  clearSeparator->setVisible(false);
-  clearAction = q->menu()->addAction(i18n("Clear List"), q, SLOT(clear()));
-  clearAction->setVisible(false);
-  q->setEnabled(false);
-  q->connect(q, SIGNAL(triggered(QAction*)), SLOT(_k_urlSelected(QAction*)));
+    Q_Q(KRecentFilesAction);
+    delete q->menu();
+    q->setMenu(new QMenu());
+    q->setToolBarMode(KSelectAction::MenuMode);
+    m_noEntriesAction = q->menu()->addAction(i18n("No Entries"));
+    m_noEntriesAction->setEnabled(false);
+    clearSeparator = q->menu()->addSeparator();
+    clearSeparator->setVisible(false);
+    clearAction = q->menu()->addAction(i18n("Clear List"), q, SLOT(clear()));
+    clearAction->setVisible(false);
+    q->setEnabled(false);
+    q->connect(q, SIGNAL(triggered(QAction*)), SLOT(_k_urlSelected(QAction*)));
 }
 
 KRecentFilesAction::~KRecentFilesAction()
@@ -91,7 +90,7 @@ KRecentFilesAction::~KRecentFilesAction()
     delete d_ptr;
 }
 
-void KRecentFilesActionPrivate::_k_urlSelected( QAction* action )
+void KRecentFilesActionPrivate::_k_urlSelected(QAction *action)
 {
     Q_Q(KRecentFilesAction);
     emit q->urlSelected(m_urls[action]);
@@ -103,18 +102,19 @@ int KRecentFilesAction::maxItems() const
     return d->m_maxItems;
 }
 
-void KRecentFilesAction::setMaxItems( int maxItems )
+void KRecentFilesAction::setMaxItems(int maxItems)
 {
     Q_D(KRecentFilesAction);
     // set new maxItems
     d->m_maxItems = maxItems;
 
     // remove all excess items
-    while( selectableActionGroup()->actions().count() > maxItems )
+    while (selectableActionGroup()->actions().count() > maxItems) {
         delete removeAction(selectableActionGroup()->actions().last());
+    }
 }
 
-static QString titleWithSensibleWidth(const QString& nameValue, const QString& value)
+static QString titleWithSensibleWidth(const QString &nameValue, const QString &value)
 {
     // Calculate 3/4 of screen geometry, we do not want
     // action titles to be bigger than that
@@ -128,7 +128,7 @@ static QString titleWithSensibleWidth(const QString& nameValue, const QString& v
     const QFontMetrics fontMetrics = QFontMetrics(QFont());
 
     QString title = nameValue + " [" + value + ']';
-    if (fontMetrics.width(title) > maxWidthForTitles){
+    if (fontMetrics.width(title) > maxWidthForTitles) {
         // If it does not fit, try to cut only the whole path, though if the
         // name is too long (more than 3/4 of the whole text) we cut it a bit too
         const int nameValueMaxWidth = maxWidthForTitles * 3 / 4;
@@ -146,7 +146,7 @@ static QString titleWithSensibleWidth(const QString& nameValue, const QString& v
     return title;
 }
 
-void KRecentFilesAction::addUrl(const QUrl& _url, const QString& name)
+void KRecentFilesAction::addUrl(const QUrl &_url, const QString &name)
 {
     Q_D(KRecentFilesAction);
     /**
@@ -156,8 +156,9 @@ void KRecentFilesAction::addUrl(const QUrl& _url, const QString& name)
      */
     const QUrl url(_url);
 
-    if (url.isLocalFile() && url.toLocalFile().startsWith(QDir::tempPath()))
-       return;
+    if (url.isLocalFile() && url.toLocalFile().startsWith(QDir::tempPath())) {
+        return;
+    }
     const QString tmpName = name.isEmpty() ? url.fileName() : name;
     const QString pathOrUrl(url.toDisplayString(QUrl::PreferLocalFile));
 
@@ -168,23 +169,21 @@ void KRecentFilesAction::addUrl(const QUrl& _url, const QString& name)
 #endif
 
     // remove file if already in list
-    foreach (QAction* action, selectableActionGroup()->actions())
-    {
-      const QString urlStr = d->m_urls[action].toDisplayString(QUrl::PreferLocalFile);
+    foreach (QAction *action, selectableActionGroup()->actions()) {
+        const QString urlStr = d->m_urls[action].toDisplayString(QUrl::PreferLocalFile);
 #ifdef Q_OS_WIN
-      const QString tmpFileName = url.isLocalFile() ? QDir::toNativeSeparators(urlStr) : urlStr;
-      if (tmpFileName.endsWith(file, Qt::CaseInsensitive))
+        const QString tmpFileName = url.isLocalFile() ? QDir::toNativeSeparators(urlStr) : urlStr;
+        if (tmpFileName.endsWith(file, Qt::CaseInsensitive))
 #else
-      if (urlStr.endsWith(file))
+        if (urlStr.endsWith(file))
 #endif
-      {
-        removeAction(action)->deleteLater();
-        break;
-      }
+        {
+            removeAction(action)->deleteLater();
+            break;
+        }
     }
     // remove oldest item if already maxitems in list
-    if( d->m_maxItems && selectableActionGroup()->actions().count() == d->m_maxItems )
-    {
+    if (d->m_maxItems && selectableActionGroup()->actions().count() == d->m_maxItems) {
         // remove oldest added item
         delete removeAction(selectableActionGroup()->actions().first());
     }
@@ -195,11 +194,11 @@ void KRecentFilesAction::addUrl(const QUrl& _url, const QString& name)
     setEnabled(true);
     // add file to list
     const QString title = titleWithSensibleWidth(tmpName, file);
-    QAction* action = new QAction(title, selectableActionGroup());
+    QAction *action = new QAction(title, selectableActionGroup());
     addAction(action, url, tmpName);
 }
 
-void KRecentFilesAction::addAction(QAction* action, const QUrl& url, const QString& name)
+void KRecentFilesAction::addAction(QAction *action, const QUrl &url, const QString &name)
 {
     Q_D(KRecentFilesAction);
 
@@ -208,35 +207,35 @@ void KRecentFilesAction::addAction(QAction* action, const QUrl& url, const QStri
     } else {
         insertAction(actions().first(), action);
     }
-    d->m_shortNames.insert( action, name );
-    d->m_urls.insert( action, url );
+    d->m_shortNames.insert(action, name);
+    d->m_urls.insert(action, url);
 }
 
-QAction* KRecentFilesAction::removeAction(QAction* action)
+QAction *KRecentFilesAction::removeAction(QAction *action)
 {
-  Q_D(KRecentFilesAction);
-  KSelectAction::removeAction( action );
+    Q_D(KRecentFilesAction);
+    KSelectAction::removeAction(action);
 
-  d->m_shortNames.remove( action );
-  d->m_urls.remove( action );
+    d->m_shortNames.remove(action);
+    d->m_urls.remove(action);
 
-  return action;
+    return action;
 }
 
-void KRecentFilesAction::removeUrl(const QUrl& url)
+void KRecentFilesAction::removeUrl(const QUrl &url)
 {
-  Q_D(KRecentFilesAction);
-  for (QMap<QAction*, QUrl>::ConstIterator it = d->m_urls.constBegin(); it != d->m_urls.constEnd(); ++it)
-    if (it.value() == url) {
-      delete removeAction(it.key());
-      return;
-    }
+    Q_D(KRecentFilesAction);
+    for (QMap<QAction *, QUrl>::ConstIterator it = d->m_urls.constBegin(); it != d->m_urls.constEnd(); ++it)
+        if (it.value() == url) {
+            delete removeAction(it.key());
+            return;
+        }
 }
 
 QList<QUrl> KRecentFilesAction::urls() const
 {
-  Q_D(const KRecentFilesAction);
-  return d->m_urls.values();
+    Q_D(const KRecentFilesAction);
+    return d->m_urls.values();
 }
 
 void KRecentFilesAction::clear()
@@ -257,7 +256,7 @@ void KRecentFilesAction::clearEntries()
     setEnabled(false);
 }
 
-void KRecentFilesAction::loadEntries( const KConfigGroup& _config)
+void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
 {
     Q_D(KRecentFilesAction);
     clearEntries();
@@ -270,43 +269,46 @@ void KRecentFilesAction::loadEntries( const KConfigGroup& _config)
     QUrl        url;
 
     KConfigGroup cg = _config;
-    if ( cg.name().isEmpty())
-        cg = KConfigGroup(cg.config(),"RecentFiles");
+    if (cg.name().isEmpty()) {
+        cg = KConfigGroup(cg.config(), "RecentFiles");
+    }
 
-    bool thereAreEntries=false;
+    bool thereAreEntries = false;
     // read file list
-    for( int i = 1 ; i <= d->m_maxItems ; i++ )
-    {
-        key = QString( "File%1" ).arg( i );
-        value = cg.readPathEntry( key, QString() );
-        if (value.isEmpty()) continue;
+    for (int i = 1; i <= d->m_maxItems; i++) {
+        key = QString("File%1").arg(i);
+        value = cg.readPathEntry(key, QString());
+        if (value.isEmpty()) {
+            continue;
+        }
         url = QUrl::fromUserInput(value);
 
         // Don't restore if file doesn't exist anymore
-        if (url.isLocalFile() && !QFile::exists(url.toLocalFile()))
-          continue;
+        if (url.isLocalFile() && !QFile::exists(url.toLocalFile())) {
+            continue;
+        }
 
         // Don't restore where the url is already known (eg. broken config)
-        if (d->m_urls.values().contains(url))
-          continue;
+        if (d->m_urls.values().contains(url)) {
+            continue;
+        }
 
 #ifdef Q_OS_WIN
         // convert to backslashes
-        if ( url.isLocalFile() )
-            value = QDir::toNativeSeparators( value );
+        if (url.isLocalFile()) {
+            value = QDir::toNativeSeparators(value);
+        }
 #endif
 
-        nameKey = QString( "Name%1" ).arg( i );
+        nameKey = QString("Name%1").arg(i);
         nameValue = cg.readPathEntry(nameKey, url.fileName());
         title = titleWithSensibleWidth(nameValue, value);
-        if (!value.isNull())
-        {
-          thereAreEntries=true;
-          addAction(new QAction(title, selectableActionGroup()), url, nameValue);
+        if (!value.isNull()) {
+            thereAreEntries = true;
+            addAction(new QAction(title, selectableActionGroup()), url, nameValue);
         }
     }
-    if (thereAreEntries)
-    {
+    if (thereAreEntries) {
         d->m_noEntriesAction->setVisible(false);
         d->clearSeparator->setVisible(true);
         d->clearAction->setVisible(true);
@@ -314,7 +316,7 @@ void KRecentFilesAction::loadEntries( const KConfigGroup& _config)
     }
 }
 
-void KRecentFilesAction::saveEntries( const KConfigGroup &_cg )
+void KRecentFilesAction::saveEntries(const KConfigGroup &_cg)
 {
     Q_D(KRecentFilesAction);
     QString     key;
@@ -322,26 +324,23 @@ void KRecentFilesAction::saveEntries( const KConfigGroup &_cg )
     QStringList lst = items();
 
     KConfigGroup cg = _cg;
-    if (cg.name().isEmpty())
-        cg = KConfigGroup(cg.config(),"RecentFiles");
+    if (cg.name().isEmpty()) {
+        cg = KConfigGroup(cg.config(), "RecentFiles");
+    }
 
     cg.deleteGroup();
 
     // write file list
-    for ( int i = 1 ; i <= selectableActionGroup()->actions().count() ; i++ )
-    {
-        key = QString( "File%1" ).arg( i );
+    for (int i = 1; i <= selectableActionGroup()->actions().count(); i++) {
+        key = QString("File%1").arg(i);
         // i - 1 because we started from 1
         value = d->m_urls[ selectableActionGroup()->actions()[ i - 1 ] ].toDisplayString(QUrl::PreferLocalFile);
-        cg.writePathEntry( key, value );
-        key = QString( "Name%1" ).arg( i );
+        cg.writePathEntry(key, value);
+        key = QString("Name%1").arg(i);
         value = d->m_shortNames[ selectableActionGroup()->actions()[ i - 1 ] ];
-        cg.writePathEntry( key, value );
+        cg.writePathEntry(key, value);
     }
 
 }
-
-/* vim: et sw=2 ts=2
- */
 
 #include "moc_krecentfilesaction.cpp"

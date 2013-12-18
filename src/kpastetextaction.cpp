@@ -36,61 +36,61 @@
 class KPasteTextActionPrivate
 {
 public:
-  KPasteTextActionPrivate(KPasteTextAction *parent)
-    : q(parent)
-  {
-  }
+    KPasteTextActionPrivate(KPasteTextAction *parent)
+        : q(parent)
+    {
+    }
 
-  ~KPasteTextActionPrivate()
-  {
-    delete m_popup;
-  }
+    ~KPasteTextActionPrivate()
+    {
+        delete m_popup;
+    }
 
-  void _k_menuAboutToShow();
-  void _k_slotTriggered(QAction*);
+    void _k_menuAboutToShow();
+    void _k_slotTriggered(QAction *);
 
-  void init();
+    void init();
 
-  KPasteTextAction *q;
-  QMenu *m_popup;
-  bool m_mixedMode;
+    KPasteTextAction *q;
+    QMenu *m_popup;
+    bool m_mixedMode;
 };
 
 KPasteTextAction::KPasteTextAction(QObject *parent)
-  : QAction(parent), d(new KPasteTextActionPrivate(this))
+    : QAction(parent), d(new KPasteTextActionPrivate(this))
 {
-  d->init();
+    d->init();
 }
 
 KPasteTextAction::KPasteTextAction(const QString &text, QObject *parent)
-  : QAction(parent), d(new KPasteTextActionPrivate(this))
+    : QAction(parent), d(new KPasteTextActionPrivate(this))
 {
-  d->init();
-  setText(text);
+    d->init();
+    setText(text);
 }
 
 KPasteTextAction::KPasteTextAction(const QIcon &icon, const QString &text, QObject *parent)
-  : QAction(icon, text, parent), d(new KPasteTextActionPrivate(this))
+    : QAction(icon, text, parent), d(new KPasteTextActionPrivate(this))
 {
-  d->init();
+    d->init();
 }
 
 void KPasteTextActionPrivate::init()
 {
-  m_popup = new QMenu;
-  q->connect(m_popup, SIGNAL(aboutToShow()), q, SLOT(_k_menuAboutToShow()));
-  q->connect(m_popup, SIGNAL(triggered(QAction*)), q, SLOT(_k_slotTriggered(QAction*)));
-  m_mixedMode = true;
+    m_popup = new QMenu;
+    q->connect(m_popup, SIGNAL(aboutToShow()), q, SLOT(_k_menuAboutToShow()));
+    q->connect(m_popup, SIGNAL(triggered(QAction*)), q, SLOT(_k_slotTriggered(QAction*)));
+    m_mixedMode = true;
 }
 
 KPasteTextAction::~KPasteTextAction()
 {
-  delete d;
+    delete d;
 }
 
 void KPasteTextAction::setMixedMode(bool mode)
 {
-  d->m_mixedMode = mode;
+    d->m_mixedMode = mode;
 }
 
 void KPasteTextActionPrivate::_k_menuAboutToShow()
@@ -99,44 +99,42 @@ void KPasteTextActionPrivate::_k_menuAboutToShow()
     QStringList list;
     QDBusInterface klipper("org.kde.klipper", "/klipper", "org.kde.klipper.klipper");
     if (klipper.isValid()) {
-      QDBusReply<QStringList> reply = klipper.call("getClipboardHistoryMenu");
-      if (reply.isValid())
-        list = reply;
+        QDBusReply<QStringList> reply = klipper.call("getClipboardHistoryMenu");
+        if (reply.isValid()) {
+            list = reply;
+        }
     }
     QString clipboardText = qApp->clipboard()->text(QClipboard::Clipboard);
-    if (list.isEmpty())
+    if (list.isEmpty()) {
         list << clipboardText;
+    }
     bool found = false;
     const QFontMetrics fm = m_popup->fontMetrics();
-    foreach (const QString& string, list)
-    {
-      QString text = fm.elidedText(string.simplified(), Qt::ElideMiddle, fm.maxWidth() * 20);
-      text.replace('&', "&&");
-      QAction* action = m_popup->addAction(text);
-      if (!found && string == clipboardText)
-      {
-        action->setChecked(true);
-        found = true;
-      }
+    foreach (const QString &string, list) {
+        QString text = fm.elidedText(string.simplified(), Qt::ElideMiddle, fm.maxWidth() * 20);
+        text.replace('&', "&&");
+        QAction *action = m_popup->addAction(text);
+        if (!found && string == clipboardText) {
+            action->setChecked(true);
+            found = true;
+        }
     }
 }
 
-void KPasteTextActionPrivate::_k_slotTriggered(QAction* action)
+void KPasteTextActionPrivate::_k_slotTriggered(QAction *action)
 {
     QDBusInterface klipper("org.kde.klipper", "/klipper", "org.kde.klipper.klipper");
     if (klipper.isValid()) {
-      QDBusReply<QString> reply = klipper.call("getClipboardHistoryItem",
-                                                m_popup->actions().indexOf(action));
-      if (!reply.isValid())
-        return;
-      QString clipboardText = reply;
-      reply = klipper.call("setClipboardContents", clipboardText);
-      //if (reply.isValid())
-      //  qDebug() << "Clipboard: " << qApp->clipboard()->text(QClipboard::Clipboard);
+        QDBusReply<QString> reply = klipper.call("getClipboardHistoryItem",
+                                    m_popup->actions().indexOf(action));
+        if (!reply.isValid()) {
+            return;
+        }
+        QString clipboardText = reply;
+        reply = klipper.call("setClipboardContents", clipboardText);
+        //if (reply.isValid())
+        //  qDebug() << "Clipboard: " << qApp->clipboard()->text(QClipboard::Clipboard);
     }
 }
-
-/* vim: et sw=2 ts=2
- */
 
 #include "moc_kpastetextaction.cpp"

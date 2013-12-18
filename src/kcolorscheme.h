@@ -68,7 +68,8 @@ class KColorSchemePrivate;
  * KColorScheme::BackgroundRole, KColorScheme::DecorationRole,
  * KColorScheme::ShadeRole
  */
-class KCONFIGWIDGETS_EXPORT KColorScheme {
+class KCONFIGWIDGETS_EXPORT KColorScheme
+{
 public:
 
     /**
@@ -298,13 +299,13 @@ public:
     };
 
     /** Construct a copy of another KColorScheme. */
-    KColorScheme(const KColorScheme&);
+    KColorScheme(const KColorScheme &);
 
     /** Destructor */
     virtual ~KColorScheme();
 
     /** Standard assignment operator */
-    KColorScheme& operator=(const KColorScheme&);
+    KColorScheme &operator=(const KColorScheme &);
 
     /**
      * Construct a palette from given color set and state, using the colors
@@ -374,7 +375,7 @@ public:
      * Conversely, if the base color is very light, the 'light' shades will be
      * darker than the base color, with light() == mid().
      */
-    static QColor shade(const QColor&, ShadeRole);
+    static QColor shade(const QColor &, ShadeRole);
 
     /**
      * Retrieve the requested shade color, using the specified color as the
@@ -394,7 +395,7 @@ public:
      *
      * @see KColorUtils::shade
      */
-    static QColor shade(const QColor&, ShadeRole,
+    static QColor shade(const QColor &, ShadeRole,
                         qreal contrast, qreal chromaAdjust = 0.0);
 
     /**
@@ -434,7 +435,7 @@ public:
      * @param config KConfig from which to load the colors
      *
      * @returns the QPalette
-     * 
+     *
      * @since 5.0
      */
     static QPalette createApplicationPalette(const KSharedConfigPtr &config);
@@ -511,7 +512,7 @@ public:
      * the system color scheme. The state effects from the given KConfig are
      * used (if null, the system state effects are used).
      */
-    explicit KStatefulBrush(const QBrush&, KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(const QBrush &, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
      * Construct a stateful foreground/decoration brush from a specified
@@ -525,17 +526,17 @@ public:
      * KColorScheme::NormalBackground role and QPalette::Active state for this
      * foreground/decoration color.
      */
-    explicit KStatefulBrush(const QBrush&, const QBrush &background,
+    explicit KStatefulBrush(const QBrush &, const QBrush &background,
                             KSharedConfigPtr = KSharedConfigPtr());
 
     /** Construct a copy of another KStatefulBrush. */
-    KStatefulBrush(const KStatefulBrush&);
+    KStatefulBrush(const KStatefulBrush &);
 
     /** Destructor */
     ~KStatefulBrush();
 
     /** Standard assignment operator */
-    KStatefulBrush& operator=(const KStatefulBrush&);
+    KStatefulBrush &operator=(const KStatefulBrush &);
 
     /**
      * Retrieve the brush for the specified widget state. This is used when you
@@ -550,7 +551,7 @@ public:
      * it is supposed to be using. The state used in this instance is the
      * currentColorGroup of the palette.
      */
-    QBrush brush(const QPalette&) const;
+    QBrush brush(const QPalette &) const;
 
     /**
      * Retrieve the brush, using a QWidget pointer to determine the correct
@@ -560,7 +561,7 @@ public:
      * @note If you pass an invalid widget, you will get a default brush (i.e.
      * <tt>QBrush()</tt>).
      */
-    QBrush brush(const QWidget*) const;
+    QBrush brush(const QWidget *) const;
 
 private:
     class KStatefulBrushPrivate *d;
@@ -569,4 +570,3 @@ private:
 Q_DECLARE_METATYPE(KStatefulBrush) /* so we can pass it in QVariant's */
 
 #endif // KCOLORSCHEME_H
-// kate: space-indent on; indent-width 4; replace-tabs on; auto-insert-doxygen on;

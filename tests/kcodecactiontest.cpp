@@ -9,12 +9,12 @@
 
 #include <kcodecaction.h>
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
     QApplication::setApplicationName("kcodecactiontest");
     QApplication app(argc, argv);
 
-    CodecActionTest* test = new CodecActionTest;
+    CodecActionTest *test = new CodecActionTest;
     test->show();
 
     return app.exec();
@@ -40,34 +40,33 @@ CodecActionTest::CodecActionTest(QWidget *parent)
     menuBar()->addAction(m_comboCodec);
     menuBar()->addAction(m_buttonCodec);
 
-    QToolBar* toolBar = addToolBar("Test");
+    QToolBar *toolBar = addToolBar("Test");
     toolBar->addAction(m_comboCodec);
     toolBar->addAction(m_buttonCodec);
 }
 
-void CodecActionTest::triggered(QAction* action)
+void CodecActionTest::triggered(QAction *action)
 {
-  qDebug() << action;
+    qDebug() << action;
 }
 
 void CodecActionTest::triggered(int index)
 {
-  qDebug() << index;
+    qDebug() << index;
 }
 
-void CodecActionTest::triggered(const QString& text)
+void CodecActionTest::triggered(const QString &text)
 {
-  qDebug() << '"' << text << '"';
+    qDebug() << '"' << text << '"';
 }
 
 void CodecActionTest::triggered(QTextCodec *codec)
 {
-  qDebug() << codec->name() << ':' << codec->mibEnum();
+    qDebug() << codec->name() << ':' << codec->mibEnum();
 }
 
 void CodecActionTest::slotActionTriggered(bool state)
 {
-  qDebug() << sender() << " state " << state;
+    qDebug() << sender() << " state " << state;
 }
-
 

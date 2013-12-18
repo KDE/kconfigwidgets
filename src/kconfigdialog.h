@@ -71,190 +71,189 @@ class KConfigDialogManager;
  * @see KConfigSkeleton
  * @author Waldo Bastian <bastian@kde.org>
  */
-class KCONFIGWIDGETS_EXPORT KConfigDialog : public KPageDialog {
-Q_OBJECT
+class KCONFIGWIDGETS_EXPORT KConfigDialog : public KPageDialog
+{
+    Q_OBJECT
 
 Q_SIGNALS:
-  /**
-   * A widget in the dialog was modified.
-   */
-  void widgetModified();
+    /**
+     * A widget in the dialog was modified.
+     */
+    void widgetModified();
 
-  /**
-   * One or more of the settings have been permanently changed such as if
-   * the user clicked on the Apply or Ok button.
-   * @param dialogName the name of the dialog.
-   */
-  void settingsChanged(const QString& dialogName);
+    /**
+     * One or more of the settings have been permanently changed such as if
+     * the user clicked on the Apply or Ok button.
+     * @param dialogName the name of the dialog.
+     */
+    void settingsChanged(const QString &dialogName);
 
 public:
-  /**
-   * @param parent - The parent of this object.  Even though the class
-   * deletes itself the parent should be set so the dialog can be centered
-   * with the application on the screen.
-   *
-   * @param name - The name of this object.  The name is used in determining if
-   * there can be more than one dialog at a time.  Use names such as:
-   * "Font Settings" or "Color Settings" and not just "Settings" in
-   * applications where there is more than one dialog.
-   *
-   * @param config - Config object containing settings.
-   */
-  KConfigDialog( QWidget *parent, const QString& name,
-                 KCoreConfigSkeleton *config );
+    /**
+     * @param parent - The parent of this object.  Even though the class
+     * deletes itself the parent should be set so the dialog can be centered
+     * with the application on the screen.
+     *
+     * @param name - The name of this object.  The name is used in determining if
+     * there can be more than one dialog at a time.  Use names such as:
+     * "Font Settings" or "Color Settings" and not just "Settings" in
+     * applications where there is more than one dialog.
+     *
+     * @param config - Config object containing settings.
+     */
+    KConfigDialog(QWidget *parent, const QString &name,
+                  KCoreConfigSkeleton *config);
 
-  /**
-   * Deconstructor, removes name from the list of open dialogs.
-   * Deletes private class.
-   * @see exists()
-   */
-  ~KConfigDialog();
+    /**
+     * Deconstructor, removes name from the list of open dialogs.
+     * Deletes private class.
+     * @see exists()
+     */
+    ~KConfigDialog();
 
-  /**
-   * Adds page to the dialog and to KConfigDialogManager.  When an
-   * application is done adding pages show() should be called to
-   * display the dialog.
-   * @param page - Pointer to the page that is to be added to the dialog.
-   * This object is reparented.
-   * @param itemName - Name of the page.
-   * @param pixmapName - Name of the icon that should be used, if needed, when
-   *        displaying the page. The string may either be the name of a themed
-   *        icon (e.g. "document-save"), which the internal icon loader will be
-   *        used to retrieve, or an absolute path to the pixmap on disk.
-   * @param header - Header text use in the list modes. Ignored in Tabbed
-   *        mode. If empty, the itemName text is used when needed.
-   * @param manage - Whether KConfigDialogManager should manage the page or not.
-   * @returns The KPageWidgetItem associated with the page.
-   */
-  KPageWidgetItem* addPage( QWidget *page, const QString &itemName,
-                const QString &pixmapName=QString(),
-                const QString &header=QString(),
-                bool manage=true );
+    /**
+     * Adds page to the dialog and to KConfigDialogManager.  When an
+     * application is done adding pages show() should be called to
+     * display the dialog.
+     * @param page - Pointer to the page that is to be added to the dialog.
+     * This object is reparented.
+     * @param itemName - Name of the page.
+     * @param pixmapName - Name of the icon that should be used, if needed, when
+     *        displaying the page. The string may either be the name of a themed
+     *        icon (e.g. "document-save"), which the internal icon loader will be
+     *        used to retrieve, or an absolute path to the pixmap on disk.
+     * @param header - Header text use in the list modes. Ignored in Tabbed
+     *        mode. If empty, the itemName text is used when needed.
+     * @param manage - Whether KConfigDialogManager should manage the page or not.
+     * @returns The KPageWidgetItem associated with the page.
+     */
+    KPageWidgetItem *addPage(QWidget *page, const QString &itemName,
+                             const QString &pixmapName = QString(),
+                             const QString &header = QString(),
+                             bool manage = true);
 
-  /**
-   * Adds page to the dialog that is managed by a custom KConfigDialogManager.
-   * This is useful for dialogs that contain settings spread over more than
-   * one configuration file and thus have/need more than one KConfigSkeleton.
-   * When an application is done adding pages show() should be called to
-   * display the dialog.
-   * @param page - Pointer to the page that is to be added to the dialog.
-   * This object is reparented.
-   * @param config - Config object containing corresponding settings.
-   * @param itemName - Name of the page.
-   * @param pixmapName - Name of the icon that should be used, if needed, when
-   *        displaying the page. The string may either be the name of a themed
-   *        icon (e.g. "document-save"), which the internal icon loader will be
-   *        used to retrieve, or an absolute path to the pixmap on disk.
-   * @param header - Header text use in the list modes. Ignored in Tabbed
-   *        mode. If empty, the itemName text is used when needed.
-   * @returns The KPageWidgetItem associated with the page.
-   */
-  KPageWidgetItem* addPage( QWidget *page, KCoreConfigSkeleton *config,
-                const QString &itemName,
-                const QString &pixmapName=QString(),
-                const QString &header=QString() );
+    /**
+     * Adds page to the dialog that is managed by a custom KConfigDialogManager.
+     * This is useful for dialogs that contain settings spread over more than
+     * one configuration file and thus have/need more than one KConfigSkeleton.
+     * When an application is done adding pages show() should be called to
+     * display the dialog.
+     * @param page - Pointer to the page that is to be added to the dialog.
+     * This object is reparented.
+     * @param config - Config object containing corresponding settings.
+     * @param itemName - Name of the page.
+     * @param pixmapName - Name of the icon that should be used, if needed, when
+     *        displaying the page. The string may either be the name of a themed
+     *        icon (e.g. "document-save"), which the internal icon loader will be
+     *        used to retrieve, or an absolute path to the pixmap on disk.
+     * @param header - Header text use in the list modes. Ignored in Tabbed
+     *        mode. If empty, the itemName text is used when needed.
+     * @returns The KPageWidgetItem associated with the page.
+     */
+    KPageWidgetItem *addPage(QWidget *page, KCoreConfigSkeleton *config,
+                             const QString &itemName,
+                             const QString &pixmapName = QString(),
+                             const QString &header = QString());
 
-  /**
-   * See if a dialog with the name 'name' already exists.
-   * @see showDialog()
-   * @param name - Dialog name to look for.
-   * @return Pointer to widget or NULL if it does not exist.
-   */
-  static KConfigDialog* exists( const QString& name );
+    /**
+     * See if a dialog with the name 'name' already exists.
+     * @see showDialog()
+     * @param name - Dialog name to look for.
+     * @return Pointer to widget or NULL if it does not exist.
+     */
+    static KConfigDialog *exists(const QString &name);
 
-  /**
-   * Attempts to show the dialog with the name 'name'.
-   * @see exists()
-   * @param name - The name of the dialog to show.
-   * @return True if the dialog 'name' exists and was shown.
-   */
-  static bool showDialog( const QString& name );
-
+    /**
+     * Attempts to show the dialog with the name 'name'.
+     * @see exists()
+     * @param name - The name of the dialog to show.
+     * @return True if the dialog 'name' exists and was shown.
+     */
+    static bool showDialog(const QString &name);
 
 protected Q_SLOTS:
-  /**
-   * Update the settings from the dialog.
-   * Virtual function for custom additions.
-   *
-   * Example use: User clicks Ok or Apply button in a configure dialog.
-   */
-  virtual void updateSettings();
+    /**
+     * Update the settings from the dialog.
+     * Virtual function for custom additions.
+     *
+     * Example use: User clicks Ok or Apply button in a configure dialog.
+     */
+    virtual void updateSettings();
 
-  /**
-   * Update the dialog based on the settings.
-   * Virtual function for custom additions.
-   *
-   * Example use: Initialisation of dialog.
-   * Example use: User clicks Reset button in a configure dialog.
-   */
-  virtual void updateWidgets();
+    /**
+     * Update the dialog based on the settings.
+     * Virtual function for custom additions.
+     *
+     * Example use: Initialisation of dialog.
+     * Example use: User clicks Reset button in a configure dialog.
+     */
+    virtual void updateWidgets();
 
-  /**
-   * Update the dialog based on the default settings.
-   * Virtual function for custom additions.
-   *
-   * Example use: User clicks Defaults button in a configure dialog.
-   */
-  virtual void updateWidgetsDefault();
+    /**
+     * Update the dialog based on the default settings.
+     * Virtual function for custom additions.
+     *
+     * Example use: User clicks Defaults button in a configure dialog.
+     */
+    virtual void updateWidgetsDefault();
 
+    /**
+     * Updates the Apply and Default buttons.
+     * Connect to this slot if you implement you own hasChanged()
+     * or isDefault() methods for widgets not managed by KConfig.
+     * @since 4.3
+     */
+    void updateButtons();
 
-  /**
-   * Updates the Apply and Default buttons.
-   * Connect to this slot if you implement you own hasChanged()
-   * or isDefault() methods for widgets not managed by KConfig.
-   * @since 4.3
-   */
-  void updateButtons();
+    /**
+     * Some setting was changed. Emit the signal with the dialogs name.
+     * Connect to this slot if there are widgets not managed by KConfig.
+     * @since 4.3
+     */
+    void settingsChangedSlot();
 
-  /**
-   * Some setting was changed. Emit the signal with the dialogs name.
-   * Connect to this slot if there are widgets not managed by KConfig.
-   * @since 4.3
-   */
-  void settingsChangedSlot();
-
-  /**
-   * Displays help for this config dialog.
-   * @since 5.0
-   */
-  virtual void showHelp();
+    /**
+     * Displays help for this config dialog.
+     * @since 5.0
+     */
+    virtual void showHelp();
 
 protected:
 
-  /**
-   * Returns whether the current state of the dialog is
-   * different from the current configuration.
-   * Virtual function for custom additions.
-   */
-  virtual bool hasChanged();
+    /**
+     * Returns whether the current state of the dialog is
+     * different from the current configuration.
+     * Virtual function for custom additions.
+     */
+    virtual bool hasChanged();
 
-  /**
-   * Returns whether the current state of the dialog is
-   * the same as the default configuration.
-   */
-  virtual bool isDefault();
+    /**
+     * Returns whether the current state of the dialog is
+     * the same as the default configuration.
+     */
+    virtual bool isDefault();
 
-  /**
-   * @internal
-   */
-  virtual void showEvent(QShowEvent *e);
+    /**
+     * @internal
+     */
+    virtual void showEvent(QShowEvent *e);
 
 private Q_SLOTS:
-  /**
-   * Slot which cleans up the KConfigDialogManager of the page.
-   * */
-  void onPageRemoved(KPageWidgetItem* item);
+    /**
+     * Slot which cleans up the KConfigDialogManager of the page.
+     * */
+    void onPageRemoved(KPageWidgetItem *item);
 
 private:
-  class KConfigDialogPrivate;
-  friend class KConfigDialogPrivate;
+    class KConfigDialogPrivate;
+    friend class KConfigDialogPrivate;
 
-  KConfigDialogPrivate *const d;
+    KConfigDialogPrivate *const d;
 
-  Q_PRIVATE_SLOT( d, void _k_updateButtons() )
-  Q_PRIVATE_SLOT( d, void _k_settingsChangedSlot() )
+    Q_PRIVATE_SLOT(d, void _k_updateButtons())
+    Q_PRIVATE_SLOT(d, void _k_settingsChangedSlot())
 
-  Q_DISABLE_COPY(KConfigDialog)
+    Q_DISABLE_COPY(KConfigDialog)
 };
 
 #endif //KCONFIGDIALOG_H

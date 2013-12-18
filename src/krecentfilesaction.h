@@ -46,9 +46,9 @@ class KRecentFilesActionPrivate;
  */
 class KCONFIGWIDGETS_EXPORT KRecentFilesAction : public KSelectAction
 {
-  Q_OBJECT
-  Q_PROPERTY( int maxItems READ maxItems WRITE setMaxItems )
-  Q_DECLARE_PRIVATE(KRecentFilesAction)
+    Q_OBJECT
+    Q_PROPERTY(int maxItems READ maxItems WRITE setMaxItems)
+    Q_DECLARE_PRIVATE(KRecentFilesAction)
 
 public:
     /**
@@ -85,97 +85,97 @@ public:
      */
     KRecentFilesAction(const QIcon &icon, const QString &text, QObject *parent);
 
-  /**
-   *  Destructor.
-   */
-  virtual ~KRecentFilesAction();
+    /**
+     *  Destructor.
+     */
+    virtual ~KRecentFilesAction();
 
-  /**
-   * Adds \a action to the list of URLs, with \a url and title \a name.
-   *
-   * Do not use addAction(QAction*), as no url will be associated, and
-   * consequently urlSelected() will not be emitted when \a action is selected.
-   */
-  void addAction(QAction* action, const QUrl& url, const QString& name);
+    /**
+     * Adds \a action to the list of URLs, with \a url and title \a name.
+     *
+     * Do not use addAction(QAction*), as no url will be associated, and
+     * consequently urlSelected() will not be emitted when \a action is selected.
+     */
+    void addAction(QAction *action, const QUrl &url, const QString &name);
 
-  /**
-   * Reimplemented for internal reasons.
-   */
-  virtual QAction* removeAction(QAction* action);
+    /**
+     * Reimplemented for internal reasons.
+     */
+    virtual QAction *removeAction(QAction *action);
 
 public Q_SLOTS:
-  /**
-   * Clears the recent files list.
-   * Note that there is also an action shown to the user for clearing the list.
-   */
-  virtual void clear();
+    /**
+     * Clears the recent files list.
+     * Note that there is also an action shown to the user for clearing the list.
+     */
+    virtual void clear();
 
 public:
-  /**
-   *  Returns the maximum of items in the recent files list.
-   */
-  int maxItems() const;
+    /**
+     *  Returns the maximum of items in the recent files list.
+     */
+    int maxItems() const;
 
-  /**
-   *  Sets the maximum of items in the recent files list.
-   *  The default for this value is 10 set in the constructor.
-   *
-   *  If this value is lesser than the number of items currently
-   *  in the recent files list the last items are deleted until
-   *  the number of items are equal to the new maximum.
-   */
-  void setMaxItems( int maxItems );
+    /**
+     *  Sets the maximum of items in the recent files list.
+     *  The default for this value is 10 set in the constructor.
+     *
+     *  If this value is lesser than the number of items currently
+     *  in the recent files list the last items are deleted until
+     *  the number of items are equal to the new maximum.
+     */
+    void setMaxItems(int maxItems);
 
-  /**
-   *  Loads the recent files entries from a given KConfigGroup object.
-   *  You can provide the name of the group used to load the entries.
-   *  If the groupname is empty, entries are load from a group called 'RecentFiles'
-   *
-   */
-  void loadEntries( const KConfigGroup &config );
+    /**
+     *  Loads the recent files entries from a given KConfigGroup object.
+     *  You can provide the name of the group used to load the entries.
+     *  If the groupname is empty, entries are load from a group called 'RecentFiles'
+     *
+     */
+    void loadEntries(const KConfigGroup &config);
 
-  /**
-   *  Saves the current recent files entries to a given KConfigGroup object.
-   *  You can provide the name of the group used to load the entries.
-   *  If the groupname is empty, entries are saved to a group called 'RecentFiles'
-   *
-   */
-  void saveEntries( const KConfigGroup &config );
+    /**
+     *  Saves the current recent files entries to a given KConfigGroup object.
+     *  You can provide the name of the group used to load the entries.
+     *  If the groupname is empty, entries are saved to a group called 'RecentFiles'
+     *
+     */
+    void saveEntries(const KConfigGroup &config);
 
-  /**
-   *  Add URL to recent files list.
-   *
-   *  @param url The URL of the file
-   *  @param name The user visible pretty name that appears before the URL
-   */
-  void addUrl(const QUrl& url, const QString& name = QString());
+    /**
+     *  Add URL to recent files list.
+     *
+     *  @param url The URL of the file
+     *  @param name The user visible pretty name that appears before the URL
+     */
+    void addUrl(const QUrl &url, const QString &name = QString());
 
-  /**
-   *  Remove an URL from the recent files list.
-   *
-   *  @param url The URL of the file
-   */
-  void removeUrl(const QUrl& url);
+    /**
+     *  Remove an URL from the recent files list.
+     *
+     *  @param url The URL of the file
+     */
+    void removeUrl(const QUrl &url);
 
-  /**
-   *  Retrieve a list of all URLs in the recent files list.
-   */
-  QList<QUrl> urls() const;
+    /**
+     *  Retrieve a list of all URLs in the recent files list.
+     */
+    QList<QUrl> urls() const;
 
 Q_SIGNALS:
-  /**
-   *  This signal gets emitted when the user selects an URL.
-   *
-   *  @param url The URL thats the user selected.
-   */
-  void urlSelected(const QUrl& url);
+    /**
+     *  This signal gets emitted when the user selects an URL.
+     *
+     *  @param url The URL thats the user selected.
+     */
+    void urlSelected(const QUrl &url);
 
-  /**
-   *  This signal gets emitted when the user clear list.
-   *  So when user store url in specific config file it can saveEntry.
-   *  @since 4.3
-   */
-  void recentListCleared();
+    /**
+     *  This signal gets emitted when the user clear list.
+     *  So when user store url in specific config file it can saveEntry.
+     *  @since 4.3
+     */
+    void recentListCleared();
 
 private:
     //Internal
@@ -186,7 +186,7 @@ private:
 
     KRecentFilesActionPrivate *d_ptr;
 
-    Q_PRIVATE_SLOT( d_func(), void _k_urlSelected(QAction*) )
+    Q_PRIVATE_SLOT(d_func(), void _k_urlSelected(QAction *))
 };
 
 #endif

@@ -10,19 +10,19 @@ class KConfigGroup;
 
 class KCONFIGWIDGETS_EXPORT KConfigViewStateSaver : public KViewStateSerializer
 {
-  Q_OBJECT
+    Q_OBJECT
 public:
-  explicit KConfigViewStateSaver(QObject *parent = 0);
+    explicit KConfigViewStateSaver(QObject *parent = 0);
 
-  /**
-    Saves the state to the @p configGroup
-  */
-  void saveState(KConfigGroup &configGroup);
+    /**
+      Saves the state to the @p configGroup
+    */
+    void saveState(KConfigGroup &configGroup);
 
-  /**
-    Restores the state from the @p configGroup
-  */
-  void restoreState(const KConfigGroup &configGroup);
+    /**
+      Restores the state from the @p configGroup
+    */
+    void restoreState(const KConfigGroup &configGroup);
 };
 
 #endif

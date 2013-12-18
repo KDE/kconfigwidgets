@@ -61,7 +61,7 @@ class KCONFIGWIDGETS_EXPORT KColorSchemeManager : public QObject
 {
     Q_OBJECT
 public:
-    explicit KColorSchemeManager(QObject* parent = 0);
+    explicit KColorSchemeManager(QObject *parent = 0);
     virtual ~KColorSchemeManager();
 
     /**
@@ -98,7 +98,7 @@ public:
      * @return KActionMenu populated with all available color schemes.
      * @see activateScheme
      */
-    KActionMenu *createSchemeSelectionMenu(const QIcon& icon, const QString &text, const QString &selectedSchemeName, QObject *parent);
+    KActionMenu *createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent);
     KActionMenu *createSchemeSelectionMenu(const QString &text, const QString &selectedSchemeName, QObject *parent);
     KActionMenu *createSchemeSelectionMenu(const QString &selectedSchemeName, QObject *parent);
 

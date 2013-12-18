@@ -35,34 +35,31 @@ class KRecentFilesActionPrivate
     Q_DECLARE_PUBLIC(KRecentFilesAction)
 
 public:
-  KRecentFilesActionPrivate(KRecentFilesAction *parent)
-  : q_ptr(parent)
-  {
-    m_maxItems = 10;
-    m_noEntriesAction = 0;
-    clearSeparator = 0;
-    clearAction = 0;
-  }
+    KRecentFilesActionPrivate(KRecentFilesAction *parent)
+        : q_ptr(parent)
+    {
+        m_maxItems = 10;
+        m_noEntriesAction = 0;
+        clearSeparator = 0;
+        clearAction = 0;
+    }
 
-  virtual ~KRecentFilesActionPrivate()
-  {
-  }
+    virtual ~KRecentFilesActionPrivate()
+    {
+    }
 
-  void init();
+    void init();
 
-  void _k_urlSelected(QAction*);
+    void _k_urlSelected(QAction *);
 
-  int m_maxItems;
-  QMap<QAction*, QString> m_shortNames;
-  QMap<QAction*, QUrl> m_urls;
-  QAction *m_noEntriesAction;
-  QAction *clearSeparator;
-  QAction *clearAction;
+    int m_maxItems;
+    QMap<QAction *, QString> m_shortNames;
+    QMap<QAction *, QUrl> m_urls;
+    QAction *m_noEntriesAction;
+    QAction *clearSeparator;
+    QAction *clearAction;
 
-  KRecentFilesAction *q_ptr;
+    KRecentFilesAction *q_ptr;
 };
-
-/* vim: et sw=2 ts=2
- */
 
 #endif // KRECENTFILESACTION_P_H

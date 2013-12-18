@@ -31,7 +31,7 @@
 #include <QStandardPaths>
 
 KColorSchemeManagerPrivate::KColorSchemeManagerPrivate()
-        : model(new KColorSchemeModel())
+    : model(new KColorSchemeModel())
 {
 }
 
@@ -77,8 +77,8 @@ void KColorSchemeModel::init()
     m_data.clear();
 
     const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation,
-                                                       QStringLiteral("color-schemes"),
-                                                       QStandardPaths::LocateDirectory);
+                             QStringLiteral("color-schemes"),
+                             QStandardPaths::LocateDirectory);
     QStringList schemeFiles;
     Q_FOREACH (const QString &dir, dirs) {
         const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.colors"));
@@ -93,7 +93,7 @@ void KColorSchemeModel::init()
         const KColorSchemeModelData data = {name, schemeFile, createPreview(schemeFile)};
         m_data.append(data);
     }
-    std::sort(m_data.begin(), m_data.end(), [](const KColorSchemeModelData &first, const KColorSchemeModelData &second) {
+    std::sort(m_data.begin(), m_data.end(), [](const KColorSchemeModelData & first, const KColorSchemeModelData & second) {
         return first.name < second.name;
     });
     endResetModel();
@@ -113,11 +113,11 @@ QIcon KColorSchemeModel::createPreview(const QString &path)
         pix.fill(Qt::black);
         QPainter p;
         p.begin(&pix);
-        const int itemSize = size/2 - 1;
+        const int itemSize = size / 2 - 1;
         p.fillRect(1, 1, itemSize, itemSize, activeWindow.background());
-        p.fillRect(1+itemSize, 1, itemSize, itemSize, activeButton.background());
-        p.fillRect(1, 1+itemSize, itemSize, itemSize, activeView.background());
-        p.fillRect(1+itemSize, 1+itemSize, itemSize, itemSize, activeSelection.background());
+        p.fillRect(1 + itemSize, 1, itemSize, itemSize, activeButton.background());
+        p.fillRect(1, 1 + itemSize, itemSize, itemSize, activeView.background());
+        p.fillRect(1 + itemSize, 1 + itemSize, itemSize, itemSize, activeSelection.background());
         p.end();
         result.addPixmap(pix);
     };
@@ -159,7 +159,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
 {
     KActionMenu *menu = new KActionMenu(icon, name, parent);
     QActionGroup *group = new QActionGroup(menu);
-    connect(group, &QActionGroup::triggered, [](QAction *action) {
+    connect(group, &QActionGroup::triggered, [](QAction * action) {
         // hint for the style to synchronize the color scheme with the window manager/compositor
         qApp->setProperty("KDE_COLOR_SCHEME_PATH", action->data());
         qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(action->data().toString())));

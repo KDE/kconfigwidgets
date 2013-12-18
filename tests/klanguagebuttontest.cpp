@@ -23,14 +23,14 @@
 #include <QApplication>
 #include <QLineEdit>
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
-  QApplication::setApplicationName(QString::fromLatin1("KLanguageButtonTest"));
-  QApplication app(argc, argv);
+    QApplication::setApplicationName(QString::fromLatin1("KLanguageButtonTest"));
+    QApplication app(argc, argv);
 
-  KLanguageButton button;
-  button.loadAllLanguages();
-  button.show();
-  return app.exec();
+    KLanguageButton button;
+    button.loadAllLanguages();
+    button.show();
+    return app.exec();
 }
 

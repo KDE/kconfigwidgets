@@ -31,7 +31,6 @@
 
 #include <kconfigwidgets_export.h>
 
-
 class KPasteTextActionPrivate;
 /**
  * An action for pasting text from the clipboard.
@@ -94,10 +93,10 @@ public:
     void setMixedMode(bool mode);
 
 private:
-    KPasteTextActionPrivate * const d;
+    KPasteTextActionPrivate *const d;
 
-    Q_PRIVATE_SLOT( d, void _k_menuAboutToShow() )
-    Q_PRIVATE_SLOT( d, void _k_slotTriggered(QAction*) )
+    Q_PRIVATE_SLOT(d, void _k_menuAboutToShow())
+    Q_PRIVATE_SLOT(d, void _k_slotTriggered(QAction *))
 };
 
 #endif

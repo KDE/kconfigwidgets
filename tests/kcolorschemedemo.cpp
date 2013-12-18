@@ -30,7 +30,8 @@ class KColorSchemeDemo : public QDialog
 {
     Q_OBJECT
 public:
-    KColorSchemeDemo() : QDialog(0) {
+    KColorSchemeDemo() : QDialog(0)
+    {
         KColorSchemeManager *manager = new KColorSchemeManager(this);
 
         QListView *view = new QListView(this);
@@ -53,7 +54,8 @@ public:
     ~KColorSchemeDemo() {}
 };
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[])
+{
     QApplication app(argc, argv);
 
     KColorSchemeDemo *d = new KColorSchemeDemo;

@@ -24,7 +24,7 @@ class KColorUtilsDemo: public QWidget, Ui::form
 {
     Q_OBJECT
 public:
-    KColorUtilsDemo(QWidget* parent = 0);
+    KColorUtilsDemo(QWidget *parent = 0);
     virtual ~KColorUtilsDemo() {}
 
 public Q_SLOTS:
@@ -34,10 +34,10 @@ public Q_SLOTS:
     void shadeChanged();
 
     void inputSpinChanged();
-    void inputSwatchChanged(const QColor&);
+    void inputSwatchChanged(const QColor &);
 
     void targetSpinChanged();
-    void targetSwatchChanged(const QColor&);
+    void targetSwatchChanged(const QColor &);
 
 protected:
     QImage _leOutImg, _mtMixOutImg, _mtTintOutImg;
@@ -45,4 +45,3 @@ protected:
 };
 
 #endif
-// kate: hl C++; indent-width 4; replace-tabs on;

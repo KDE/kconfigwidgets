@@ -45,11 +45,11 @@ class KCONFIGWIDGETS_EXPORT KCodecAction
     Q_PROPERTY(int codecMib READ currentCodecMib)
 
 public:
-    explicit KCodecAction(QObject *parent,bool showAutoOptions=false);
+    explicit KCodecAction(QObject *parent, bool showAutoOptions = false);
 
-    KCodecAction(const QString &text, QObject *parent,bool showAutoOptions=false);
+    KCodecAction(const QString &text, QObject *parent, bool showAutoOptions = false);
 
-    KCodecAction(const QIcon &icon, const QString &text, QObject *parent,bool showAutoOptions=false);
+    KCodecAction(const QIcon &icon, const QString &text, QObject *parent, bool showAutoOptions = false);
 
     virtual ~KCodecAction();
 
@@ -79,7 +79,6 @@ public:
      */
     bool setCurrentProberType(KEncodingProber::ProberType);
 
-
 Q_SIGNALS:
     /**
      * Specific (proper) codec was selected
@@ -101,18 +100,17 @@ Q_SIGNALS:
      */
     void defaultItemTriggered();
 
-
 protected Q_SLOTS:
-    virtual void actionTriggered(QAction*);
+    virtual void actionTriggered(QAction *);
 
 protected:
     using KSelectAction::triggered;
 
 private:
     class Private;
-    Private* const d;
+    Private *const d;
 
-    Q_PRIVATE_SLOT( d, void _k_subActionTriggered(QAction*) )
+    Q_PRIVATE_SLOT(d, void _k_subActionTriggered(QAction *))
 };
 
 #endif

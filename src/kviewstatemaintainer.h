@@ -45,32 +45,32 @@
 template<typename StateSaver>
 class KViewStateMaintainer : public KViewStateMaintainerBase
 {
-  typedef StateSaver StateRestorer;
+    typedef StateSaver StateRestorer;
 public:
-  KViewStateMaintainer(const KConfigGroup &configGroup, QObject* parent = 0)
-    : KViewStateMaintainerBase(parent), m_configGroup(configGroup)
-  {
+    KViewStateMaintainer(const KConfigGroup &configGroup, QObject *parent = 0)
+        : KViewStateMaintainerBase(parent), m_configGroup(configGroup)
+    {
 
-  }
+    }
 
-  /* reimp */ void saveState()
-  {
-    StateSaver saver;
-    saver.setView(view());
-    saver.setSelectionModel(selectionModel());
-    saver.saveState(m_configGroup);
-    m_configGroup.sync();
-  }
+    /* reimp */ void saveState()
+    {
+        StateSaver saver;
+        saver.setView(view());
+        saver.setSelectionModel(selectionModel());
+        saver.saveState(m_configGroup);
+        m_configGroup.sync();
+    }
 
-  /* reimp */ void restoreState()
-  {
-    StateRestorer *restorer = new StateRestorer;
-    restorer->setView(view());
-    restorer->setSelectionModel(selectionModel());
-    restorer->restoreState(m_configGroup);
-  }
+    /* reimp */ void restoreState()
+    {
+        StateRestorer *restorer = new StateRestorer;
+        restorer->setView(view());
+        restorer->setSelectionModel(selectionModel());
+        restorer->restoreState(m_configGroup);
+    }
 private:
-  KConfigGroup m_configGroup;
+    KConfigGroup m_configGroup;
 };
 
 #endif
