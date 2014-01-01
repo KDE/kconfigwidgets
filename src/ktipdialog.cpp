@@ -24,7 +24,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ******************************************************************/
 
-#include "ktip.h"
+#include "ktipdialog.h"
 
 #include <QApplication>
 #include <QFile>
@@ -425,4 +425,4 @@ bool KTipDialog::eventFilter(QObject *object, QEvent *event)
     return QWidget::eventFilter(object, event);
 }
 
-#include "moc_ktip.cpp"
+#include "moc_ktipdialog.cpp"
