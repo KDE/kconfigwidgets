@@ -62,6 +62,7 @@ install(TARGETS KF5ConfigWidgets EXPORT KF5ConfigWidgetsTargets ${INSTALL_TARGET
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_export.h
   ${KConfigWidgets_HEADERS}
+  ktip.h
   DESTINATION ${INCLUDE_INSTALL_DIR}/kconfigwidgets COMPONENT Devel
 )
 
