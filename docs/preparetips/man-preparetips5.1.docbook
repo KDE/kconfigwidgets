@@ -24,39 +24,39 @@
 
 <refmeta>
 <refentrytitle>
-<command>preparetips</command>
+<command>preparetips5</command>
 </refentrytitle>
 <manvolnum>1</manvolnum>
 </refmeta>
 
 <refnamediv>
 <refname>
-<command>preparetips</command>
+<command>preparetips5</command>
 </refname>
 <refpurpose>extract text from tips file</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
 <cmdsynopsis>
-<command>preparetips</command>
+<command>preparetips5</command>
 </cmdsynopsis>
 </refsynopsisdiv>
 
 <refsect1>
 <title>Description</title>
 <para>
-<command>preparetips</command> is a script to extract the text from a tips file. It outputs the text so <command>xgettext</command> can add the tips to a PO file. PO files provide a human-readable string format used for translations.
+<command>preparetips5</command> is a script to extract the text from a tips file. It outputs the text so <command>xgettext</command> can add the tips to a PO file. PO files provide a human-readable string format used for translations.
 </para>
 
 <para>
-<command>preparetips</command> looks for <emphasis role="underline">data/tips-en</emphasis> as tips file.
+<command>preparetips5</command> looks for <emphasis role="underline">data/tips-en</emphasis> as tips file.
 </para>
 </refsect1>
 
 <refsect1>
 <title>See Also</title>
 <para>
-<command>kdeoptions</command>(7)
+<command>kf5options</command>(7)
 </para>
 </refsect1>
 

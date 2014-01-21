@@ -71,5 +71,5 @@ install(FILES
  DESTINATION  ${DATA_INSTALL_DIR}/kconfigwidgets/pics
 )
 
-install(PROGRAMS preparetips DESTINATION ${BIN_INSTALL_DIR} )
+install(PROGRAMS preparetips5 DESTINATION ${BIN_INSTALL_DIR} )
 

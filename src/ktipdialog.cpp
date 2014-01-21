@@ -63,7 +63,7 @@ void KTipDatabase::Private::loadTips(const QString &tipFile)
 
 /**
  * If you change something here, please update the script
- * preparetips, which depends on extracting exactly the same
+ * preparetips5, which depends on extracting exactly the same
  * text as done here.
  */
 void KTipDatabase::Private::addTips(const QString &tipFile)
@@ -89,7 +89,7 @@ void KTipDatabase::Private::addTips(const QString &tipFile)
     while ((pos = content.indexOf("<html>", pos + 1, Qt::CaseInsensitive)) != -1) {
         /**
          * To make translations work, tip extraction here must exactly
-         * match what is done by the preparetips script.
+         * match what is done by the preparetips5 script.
          */
         QString tip = content
                       .mid(pos + 6, content.indexOf("</html>", pos, Qt::CaseInsensitive) - pos - 6)
