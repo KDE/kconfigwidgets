@@ -74,5 +74,5 @@ install(FILES
 install(PROGRAMS preparetips5 DESTINATION ${BIN_INSTALL_DIR} )
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF5ConfigWidgets DEPS "KCodecs KWidgetAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME)
+ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF5ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
