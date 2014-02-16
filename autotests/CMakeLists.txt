@@ -1,18 +1,11 @@
 
 find_package(Qt5 5.2.0 CONFIG REQUIRED Test)
 
-include(ECMMarkAsTest)
+include(ECMAddTests)
 
-macro(KCONFIGWIDGETS_TESTS)
-    foreach(_testname ${ARGN})
-        add_executable(${_testname} ${_testname}.cpp)
-        add_test(kconfigwidgets-${_testname} ${_testname})
-        ecm_mark_as_test(${_testname})
-        target_link_libraries(${_testname} Qt5::Test KF5::ConfigWidgets)
-    endforeach(_testname)
-endmacro()
+ecm_add_test(kstandardactiontest.cpp NAME_PREFIX "kconfigwidgets-" LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
 
-kconfigwidgets_tests(
-  kconfigdialog_unittest
-  kstandardactiontest
-)
+set(kconfigdialog_unittest_SRCS kconfigdialog_unittest.cpp)
+kconfig_add_kcfg_files(kconfigdialog_unittest_SRCS GENERATE_MOC signaltest.kcfgc)
+ecm_add_test(${kconfigdialog_unittest_SRCS} TEST_NAME "kconfigwidgets-kconfigdialog_unittest" LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
+

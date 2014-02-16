@@ -25,10 +25,16 @@
 #include <QPushButton>
 #include <QComboBox>
 #include <QSpinBox>
+#include <QLineEdit>
+#include <QSignalSpy>
 
 #include <kconfigdialog.h>
 #include <kconfigskeleton.h>
 #include <kcolorcombo.h>
+
+#include "signaltest.h"
+
+static const auto CONFIG_FILE = QStringLiteral("kconfigdialog_unittestrc");
 
 class ComboBoxPage : public QWidget
 {
@@ -62,7 +68,7 @@ public:
 class ComboSettings : public KConfigSkeleton
 {
 public:
-    ComboSettings()
+    ComboSettings() : KConfigSkeleton(CONFIG_FILE)
     {
         colorItem = new ItemColor(currentGroup(), QLatin1String("Color"), color, Qt::white);
         addItem(colorItem, QLatin1String("Color"));
@@ -115,9 +121,11 @@ private Q_SLOTS:
     {
         QStandardPaths::enableTestMode(true);
         // Leftover configuration breaks combosTest
-        const QString configFile = QStandardPaths::locate(QStandardPaths::GenericConfigLocation, "kconfigdialog_unittestrc");
+        const QString configFile = QStandardPaths::locate(QStandardPaths::GenericConfigLocation, CONFIG_FILE);
         if (!configFile.isEmpty()) {
-            QFile::remove(configFile);
+            if (!QFile::remove(configFile)) {
+                qWarning() << "Could not remove old config file:" << configFile;
+            }
         }
     }
 
@@ -154,6 +162,57 @@ private Q_SLOTS:
 
         delete dialog;
         delete skeleton;
+    }
+
+    void testKConfigCompilerSignals()
+    {
+        const QString defaultValue = QStringLiteral("default value");
+        const QString changedValue = QStringLiteral("changed value");
+        const QString someOtherValue = QStringLiteral("some other value");
+        KConfigDialog *dialog = new KConfigDialog(0, "settings2", SignalTest::self());
+        QWidget* page = new QWidget;
+        QLineEdit *edit = new QLineEdit(page);
+        edit->setObjectName(QStringLiteral("kcfg_foo"));
+        edit->setText(QStringLiteral("some text"));
+
+        QSignalSpy spy(SignalTest::self(), SIGNAL(fooChanged(QString)));
+        QVERIFY(spy.isValid());
+        // now all the magic happens
+        dialog->addPage(page, "General");
+
+        //check that default value gets loaded
+        QCOMPARE(spy.size(), 0);
+        QCOMPARE(edit->text(), defaultValue);
+        QCOMPARE(SignalTest::foo(), defaultValue);
+
+        edit->setText(changedValue);
+        // change signal should not be emitted immediately (only on save)
+        QCOMPARE(spy.size(), 0);
+        QCOMPARE(SignalTest::foo(), defaultValue); // should be no change to skeleton
+
+
+        QDialogButtonBox *buttonBox = dialog->findChild<QDialogButtonBox *>();
+        QVERIFY(buttonBox != 0);
+        buttonBox->button(QDialogButtonBox::Apply)->click(); // now signal should be emitted
+
+        QCOMPARE(spy.size(), 1);
+        QVariantList args = spy.last();
+        QCOMPARE(args.size(), 1);
+        QCOMPARE((QMetaType::Type)args[0].type(), QMetaType::QString);
+        QCOMPARE(args[0].toString(), changedValue);
+        QCOMPARE(SignalTest::foo(), changedValue);
+
+        // change it to a different value
+        edit->setText(someOtherValue);
+        QCOMPARE(spy.size(), 1);
+        buttonBox->button(QDialogButtonBox::Apply)->click(); // now signal should be emitted
+
+        QCOMPARE(spy.size(), 2);
+        args = spy.last();
+        QCOMPARE(args.size(), 1);
+        QCOMPARE((QMetaType::Type)args[0].type(), QMetaType::QString);
+        QCOMPARE(args[0].toString(), someOtherValue);
+        QCOMPARE(SignalTest::foo(), someOtherValue);
     }
 
 };
