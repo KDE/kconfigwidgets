@@ -37,7 +37,8 @@ set_target_properties(KF5ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VER
                                                   EXPORT_NAME ConfigWidgets
 )
 
-ecm_generate_headers(
+ecm_generate_headers(KConfigWidgets_HEADERS
+  HEADER_NAMES
   KCodecAction
   KColorScheme
   KColorSchemeManager
@@ -52,10 +53,8 @@ ecm_generate_headers(
   KStandardAction
   KTipDialog
 
-  MODULE_NAME KConfigWidgets
   REQUIRED_HEADERS KConfigWidgets_HEADERS
 )
-install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/KConfigWidgets DESTINATION ${INCLUDE_INSTALL_DIR} COMPONENT Devel)
 
 install(TARGETS KF5ConfigWidgets EXPORT KF5ConfigWidgetsTargets ${INSTALL_TARGETS_DEFAULT_ARGS})
 
