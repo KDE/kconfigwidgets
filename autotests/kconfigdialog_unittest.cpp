@@ -135,14 +135,14 @@ private Q_SLOTS:
         KConfigDialog *dialog = new KConfigDialog(0, "settings", skeleton);
         ComboBoxPage *page = new ComboBoxPage();
 
-        QCOMPARE(page->colorCombo->color(), QColor(Qt::red));
+        QCOMPARE(page->colorCombo->color().name(), QColor(Qt::red).name());
         QCOMPARE(page->enumCombo->currentIndex(), 0);
         QCOMPARE(page->textCombo->currentText(), QString("A"));
         QCOMPARE(page->numInput->value(), 1);
 
         dialog->addPage(page, "General");
 
-        QCOMPARE(page->colorCombo->color(), QColor(Qt::white));
+        QCOMPARE(page->colorCombo->color().name(), QColor(Qt::white).name());
         QCOMPARE(page->enumCombo->currentIndex(), 1);
         QCOMPARE(page->textCombo->currentText(), QLatin1String("hh:mm"));
         QCOMPARE(page->numInput->value(), 42);
@@ -155,7 +155,7 @@ private Q_SLOTS:
         QDialogButtonBox *buttonBox = dialog->findChild<QDialogButtonBox *>();
         QVERIFY(buttonBox != 0);
         buttonBox->button(QDialogButtonBox::Apply)->click();
-        QCOMPARE(skeleton->colorItem->property().value<QColor>(), QColor(Qt::blue));
+        QCOMPARE(skeleton->colorItem->property().value<QColor>().name(), QColor(Qt::blue).name());
         QCOMPARE(skeleton->enumItem->property().toInt(), 2);
         QCOMPARE(skeleton->stringItem->property().toString(), QLatin1String("C"));
         QCOMPARE(skeleton->intValueItem->property().toInt(), 2);
