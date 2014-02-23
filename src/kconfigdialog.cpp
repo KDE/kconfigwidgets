@@ -24,6 +24,7 @@
 #include <kconfigdialogmanager.h>
 #include <kcoreconfigskeleton.h>
 #include <kpagewidgetmodel.h>
+#include <khelpclient.h>
 
 #include <QDialogButtonBox>
 #include <QIcon>
@@ -85,6 +86,8 @@ public:
     void _k_settingsChangedSlot();
 
     KConfigDialog *q;
+    QString mAnchor;
+    QString mHelpApp;
     bool shown;
     KConfigDialogManager *manager;
     QMap<QWidget *, KConfigDialogManager *> managerForPage;
@@ -350,9 +353,15 @@ void KConfigDialog::settingsChangedSlot()
     d->_k_settingsChangedSlot();
 }
 
+void KConfigDialog::setHelp(const QString &anchor, const QString &appname)
+{
+    d->mAnchor  = anchor;
+    d->mHelpApp = appname;
+}
+
 void KConfigDialog::showHelp()
 {
-    QDesktopServices::openUrl(QUrl("help:/"));
+    KHelpClient::invokeHelp(d->mAnchor, d->mHelpApp);
 }
 
 #include "moc_kconfigdialog.cpp"

@@ -213,6 +213,21 @@ protected Q_SLOTS:
     void settingsChangedSlot();
 
     /**
+     * Sets the help path and topic.
+     *
+     * The HTML file will be found using the X-DocPath entry in the application's desktop file.
+     * It can be either a relative path, or a website URL.
+     *
+     * @param anchor      This has to be a defined anchor in your
+     *                    docbook sources or website. If empty the main index
+     *                    is loaded.
+     * @param appname     This allows you to specify the .desktop file to get the help path from.
+     *                    If empty the QCoreApplication::applicationName() is used.
+     */
+    void setHelp(const QString &anchor, const QString &appname = QString());
+
+
+    /**
      * Displays help for this config dialog.
      * @since 5.0
      */
