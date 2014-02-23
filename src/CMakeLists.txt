@@ -6,6 +6,7 @@ set(kconfigwidgets_SRCS
   kconfigviewstatesaver.cpp
   kconfigdialogmanager.cpp
   kcmodule.cpp
+  khelpclient.cpp
   klanguagebutton.cpp
   kpastetextaction.cpp
   krecentfilesaction.cpp
@@ -46,6 +47,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KConfigViewStateSaver
   KConfigDialogManager
   KCModule
+  KHelpClient
   KLanguageButton
   KPasteTextAction
   KRecentFilesAction
