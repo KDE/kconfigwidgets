@@ -19,7 +19,8 @@ set(KF5_VERSION "4.96.0")
 
 ecm_setup_version(${KF5_VERSION} VARIABLE_PREFIX KCONFIGWIDGETS
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_version.h"
-                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfigVersion.cmake")
+                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfigVersion.cmake"
+                        SOVERSION 5)
 
 if(NOT kdelibs_SOURCE_DIR)
   find_package(KF5Auth ${KF5_VERSION} REQUIRED)
