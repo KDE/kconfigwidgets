@@ -24,3 +24,11 @@ qt5_wrap_ui(kcolorUtilsDemoSources kcolorutilsdemo.ui)
 add_executable(kcolorutilsdemo ${kcolorUtilsDemoSources})
 ecm_mark_as_test(kcolorutilsdemo)
 target_link_libraries(kcolorutilsdemo KF5::ConfigWidgets KF5::GuiAddons)
+
+## krecentfilesactiontest (manual)
+
+set(krecentfilesactionTestSources krecentfilesactiontest.cpp)
+qt5_wrap_ui(krecentfilesactionTestSources krecentfilesactiontest.ui)
+add_executable(krecentfilesactiontest ${krecentfilesactionTestSources})
+ecm_mark_as_test(krecentfilesactiontest)
+target_link_libraries(krecentfilesactiontest KF5::ConfigWidgets)
