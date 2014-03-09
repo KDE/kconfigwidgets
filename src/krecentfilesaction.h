@@ -129,7 +129,8 @@ public:
     /**
      *  Loads the recent files entries from a given KConfigGroup object.
      *  You can provide the name of the group used to load the entries.
-     *  If the groupname is empty, entries are load from a group called 'RecentFiles'
+     *  If the groupname is empty, entries are loaded from a group called 'RecentFiles'.
+     *  Local file entries that do not exist anymore are not restored.
      *
      */
     void loadEntries(const KConfigGroup &config);
