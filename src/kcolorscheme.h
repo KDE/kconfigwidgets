@@ -36,12 +36,9 @@ class KColorSchemePrivate;
  * A set of methods used to work with colors.
  *
  * KColorScheme currently provides access to the system color palette that the
- * user has selected (in the future, it is expected to do more). As of KDE4,
- * this class is the correct way to look up colors from the system palette,
- * as opposed to KGlobalSettings (such usage is deprecated). It greatly expands
- * on KGlobalSettings and QPalette by providing five distinct "sets" with
- * several color choices each, covering background, foreground, and decoration
- * colors.
+ * user has selected (in the future, it is expected to do more).  It greatly
+ * expands on QPalette by providing five distinct "sets" with several color
+ * choices each, covering background, foreground, and decoration colors.
  *
  * A KColorScheme instance represents colors corresponding to a "set", where a
  * set consists of those colors used to draw a particular type of element, such
@@ -52,13 +49,10 @@ class KColorSchemePrivate;
  * creating an anonymous instance and invoking a lookup member.
  *
  * @note
- * Historically, it was not needed for applications to give much concern to the
- * state of a widget (active, inactive, disabled) since only the disabled state
- * was different, and only slightly. As a result, the old KGlobalSettings color
- * getters did not care about the widget state. However, starting with KDE4,
- * the color palettes for the various states may be wildly different.
- * Therefore, it is important to take the state into account. This is why the
- * KColorScheme constructor requires a QPalette::ColorGroup as an argument.
+ * The color palettes for the various states of a widget (active, inactive,
+ * disabled) may be wildly different.  Therefore, it is important to take the
+ * state into account. This is why the KColorScheme constructor requires a
+ * QPalette::ColorGroup as an argument.
  *
  * To facilitate working with potentially-varying states, two convenience API's
  * are provided. These are KColorScheme::adjustBackground and its sister
