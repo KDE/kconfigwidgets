@@ -447,9 +447,9 @@ private:
  * in QPalette::ColorGroup.
  *
  * Basically, a stateful brush is used to cache a particular "color" from the
- * KDE system palette (usually, one which does not live in QPalette) in the way
- * you would have used a QColor in KDE3. When you are ready to draw using the
- * brush, you use the current state to retrieve the appropriate brush.
+ * KDE system palette (usually, one which does not live in QPalette). When you
+ * are ready to draw using the brush, you use the current state to retrieve the
+ * appropriate brush.
  *
  * Stateful brushes can also be used to apply state effects to arbitrary
  * brushes, for example when working with a application specific user-defined
