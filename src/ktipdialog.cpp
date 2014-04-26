@@ -283,7 +283,7 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
     browserLayout->addWidget(d->tipText);
 
     QLabel *label = new QLabel(this);
-    label->setPixmap(QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kconfigwidgets/pics/ktip-bulb.png"));
+    label->setPixmap(QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kf5/kconfigwidgets/pics/ktip-bulb.png"));
     label->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     browserLayout->addWidget(label);
 

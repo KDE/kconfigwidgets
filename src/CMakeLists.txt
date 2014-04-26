@@ -69,7 +69,7 @@ install(FILES
 
 install(FILES
  ktip-bulb.png
- DESTINATION  ${DATA_INSTALL_DIR}/kconfigwidgets/pics
+ DESTINATION  ${KF5_DATA_INSTALL_DIR}/kconfigwidgets/pics
 )
 
 install(PROGRAMS preparetips5 DESTINATION ${BIN_INSTALL_DIR} )
