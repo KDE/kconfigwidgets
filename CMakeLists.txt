@@ -15,7 +15,8 @@ include(GenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 
-set(KF5_VERSION "4.98.0")
+set(KF5_VERSION "4.98.0") # handled by release scripts # handled by release scripts
+set(KF5_DEP_VERSION "4.98.0") # handled by release scripts
 
 ecm_setup_version(${KF5_VERSION} VARIABLE_PREFIX KCONFIGWIDGETS
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_version.h"
@@ -23,14 +24,14 @@ ecm_setup_version(${KF5_VERSION} VARIABLE_PREFIX KCONFIGWIDGETS
                         SOVERSION 5)
 
 if(NOT kdelibs_SOURCE_DIR)
-  find_package(KF5Auth ${KF5_VERSION} REQUIRED)
-  find_package(KF5CoreAddons ${KF5_VERSION} REQUIRED)
-  find_package(KF5Codecs ${KF5_VERSION} REQUIRED)
-  find_package(KF5Config ${KF5_VERSION} REQUIRED)
-  find_package(KF5DocTools ${KF5_VERSION} REQUIRED)
-  find_package(KF5GuiAddons ${KF5_VERSION} REQUIRED)
-  find_package(KF5I18n ${KF5_VERSION} REQUIRED)
-  find_package(KF5WidgetsAddons ${KF5_VERSION} REQUIRED)
+  find_package(KF5Auth ${KF5_DEP_VERSION} REQUIRED)
+  find_package(KF5CoreAddons ${KF5_DEP_VERSION} REQUIRED)
+  find_package(KF5Codecs ${KF5_DEP_VERSION} REQUIRED)
+  find_package(KF5Config ${KF5_DEP_VERSION} REQUIRED)
+  find_package(KF5DocTools ${KF5_DEP_VERSION} REQUIRED)
+  find_package(KF5GuiAddons ${KF5_DEP_VERSION} REQUIRED)
+  find_package(KF5I18n ${KF5_DEP_VERSION} REQUIRED)
+  find_package(KF5WidgetsAddons ${KF5_DEP_VERSION} REQUIRED)
 else()
     set(_kdeBootStrapping TRUE)
     include(${CMAKE_SOURCE_DIR}/tier2/kdoctools/KF5DocToolsMacros.cmake)
