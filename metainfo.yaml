@@ -1,1 +1,10 @@
+maintainer:
+description: Extra widgets for easier configuration support
 tier: 3
+type: integration
+platforms:
+    - name: Linux
+    - name: MacOSX
+portingAid: false
+deprecated: false
+release: true
