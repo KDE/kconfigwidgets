@@ -18,7 +18,7 @@ add_library(KF5ConfigWidgets ${kconfigwidgets_SRCS})
 generate_export_header(KF5ConfigWidgets BASE_NAME KConfigWidgets)
 add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
 
-target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KConfigWidgets>")
+target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KF5_INCLUDE_INSTALL_DIR}/KConfigWidgets>")
 
 target_link_libraries(KF5ConfigWidgets
   PUBLIC
@@ -58,13 +58,13 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   REQUIRED_HEADERS KConfigWidgets_HEADERS
 )
 
-install(TARGETS KF5ConfigWidgets EXPORT KF5ConfigWidgetsTargets ${INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KF5ConfigWidgets EXPORT KF5ConfigWidgetsTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_export.h
   ${KConfigWidgets_HEADERS}
   ktip.h
-  DESTINATION ${INCLUDE_INSTALL_DIR}/KConfigWidgets COMPONENT Devel
+  DESTINATION ${KF5_INCLUDE_INSTALL_DIR}/KConfigWidgets COMPONENT Devel
 )
 
 install(FILES
