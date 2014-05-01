@@ -179,7 +179,7 @@ void KLanguageButton::loadAllLanguages()
     Q_FOREACH (const QString &localeDir, localeDirs) {
         const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
         Q_FOREACH (const QString &d, entries) {
-            const QString entryFile = localeDir + '/' + d + "/entry.desktop";
+            const QString entryFile = localeDir + '/' + d + "/kf5_entry.desktop";
             if (QFile::exists(entryFile)) {
                 langlist.append(entryFile);
             }
