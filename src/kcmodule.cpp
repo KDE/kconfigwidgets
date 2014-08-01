@@ -43,7 +43,7 @@ public:
         _useRootOnlyMessage(false),
         _firstshow(true),
         _needsAuthorization(false),
-        _authAction(0),
+        _authAction(),
         _unmanagedWidgetChangeState(false)
     { }
 
