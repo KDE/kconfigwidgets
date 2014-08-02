@@ -59,22 +59,16 @@ class KCModulePrivate;
  * K_PLUGIN_FACTORY(MyKCModuleFactory, registerPlugin<MyKCModule>() )
  * \endcode
  *
- * The optional parameter "name_of_the_po_file" has to correspond with the messages target
- * that containst the strings to be translated. Instead of using the library name for
- * \p yourLibName you can also use another name which you specify in the desktop
- * file with \p X-KDE-FactoryName. This is useful to have more than one factory
- * in one lib.
- *
  * The constructor of the KCModule then looks like this:
  * \code
  * YourKCModule::YourKCModule( QWidget* parent )
  *   : KCModule( parent )
  * {
  *   KAboutData *about = new KAboutData(
- *     <kcm name>, 0, ki18n( "..." ),
- *     KDE_VERSION_STRING, KLocalizedString(), KAboutData::License_GPL,
- *     ki18n( "Copyright 2006 ..." ) );
- *   about->addAuthor( ki18n(...) );
+ *     <kcm name>, i18n( "..." ),
+ *     KDE_VERSION_STRING, QString(), KAboutLicense::GPL,
+ *     i18n( "Copyright 2006 ..." ) );
+ *   about->addAuthor( i18n(...) );
  *   setAboutData( about );
  *   .
  *   .
