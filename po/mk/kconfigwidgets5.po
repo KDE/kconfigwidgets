@@ -1,0 +1,536 @@
+# translation of kdelibs4.po to Macedonian
+#
+# Copyright (C) 2000,2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+# Dimitar Indovski <dime@gord.com.mk>
+# Damjan Janevski <miopa@freemail.org.mk>
+# Dragan Sekulovski <d_sekulovski@yahoo.com>
+#
+# Maratonec , 2002.
+# Dragan Bocevski <d_bocevski@hotmail.com>, 2002.
+# Danko Ilik <danko@mindless.com>, 2002,2003.
+# Bozidar Proevski <bobibobi@freemail.com.mk>, 2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Danko Ilik <danko@on.net.mk>, 2003.
+# Darko Nikolovski <darkon@macedonia.homelinux.org>, 2003.
+# Ivan Dimitrov <ivan34mk@yahoo.com>, 2003.
+# Magdica Shambevska <magdica@yahoo.com>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 20:57+0000\n"
+"PO-Revision-Date: 2010-01-27 10:39+0100\n"
+"Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
+"Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
+"2;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Божидар Проевски"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "bobibobi@freemail.com.mk"
+
+#: kcmodule.cpp:153
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:157
+msgid "You are not allowed to save the configuration"
+msgstr "Не ви е дозволено да ја зачувате конфигурацијата"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Стандардно"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Автом. откривање"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "нема име"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Нема елементи"
+
+#: krecentfilesaction.cpp:82
+msgid "Clear List"
+msgstr "Исчисти листа"
+
+#: kstandardaction.cpp:88
+msgctxt "go back"
+msgid "&Back"
+msgstr "На&зад"
+
+#: kstandardaction.cpp:95
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Напред"
+
+#: kstandardaction.cpp:102
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Дома"
+
+#: kstandardaction.cpp:105
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Помош"
+
+#: kstandardaction.cpp:514 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "Покажи &мени"
+
+#: kstandardaction.cpp:520
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Прикажи мени<p>Повторно го прикажува менито откако било скриено</p>"
+
+#: kstandardaction.cpp:538 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "Покажи ја с&татусната линија"
+
+#: kstandardaction.cpp:541
+#, fuzzy
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Прикажи ја статусната линија<br /><br />Ја прикажува статусната линија која "
+"се наоѓа на дното од прозорецот и служи за покажување статусни информации."
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Нова"
+
+#: kstandardaction_p.h:41
+#, fuzzy
+#| msgid "Create New Tag..."
+msgid "Create new document"
+msgstr "Креирај нова ознака..."
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Отвори..."
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "Наза&д во документот"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "Отвори &неодамнешни"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Зачувај"
+
+#: kstandardaction_p.h:44
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Затвори документ"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Зачувај &како..."
+
+#: kstandardaction_p.h:45
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Затвори документ"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "В&рати се"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Затвори"
+
+#: kstandardaction_p.h:47
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Затвори документ"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&Печати..."
+
+#: kstandardaction_p.h:48
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "Преглед на п&ечатење"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&Пошта..."
+
+#: kstandardaction_p.h:50
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Затвори документ"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "Н&апушти"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Излези од апликацијата"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "В&рати"
+
+#: kstandardaction_p.h:53
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "HTML-документација"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "П&овтори"
+
+#: kstandardaction_p.h:54
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "HTML-документација"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "Исе&чи"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Копирај"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&Вметни"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, fuzzy
+#| msgid "Uploading content..."
+msgid "Paste clipboard content"
+msgstr "Качувам содржина..."
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "&Исчисти"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "Избери &ги сите"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "&Одизбери"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Најди..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "Најди &следен"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "Најди &претходен"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&Замени..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&Вистинска големина"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&Собери на страницата"
+
+#: kstandardaction_p.h:68
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Оди на ред"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Собери во &широчина"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Собери во &височина"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "&Зголеми"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "&Намали"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Размер..."
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Изберете недела"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "&Преприкажи"
+
+#: kstandardaction_p.h:74
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Redisplay document"
+msgstr "&Преприкажи"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&Нагоре"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "П&ретходна страница"
+
+#: kstandardaction_p.h:81
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "П&ретходна страница"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Следна страница"
+
+#: kstandardaction_p.h:82
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Оди на ред"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Оди на..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "Оди на &страница..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "Оди на &линија..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&Прва страница"
+
+#: kstandardaction_p.h:86
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Оди на ред"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "П&оследна страница"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "Оди на &страница..."
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Назад"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "Наза&д во документот"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&Напред"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "Напр&ед во документот"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&Додај обележувач"
+
+#: kstandardaction_p.h:92
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks..."
+msgstr "&Уреди обележувачи"
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&Правопис..."
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Провери правопис"
+
+#: kstandardaction_p.h:96
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Покажи &мени"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "Покажи &алатки"
+
+#: kstandardaction_p.h:97
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Прикажи алатник"
+
+#: kstandardaction_p.h:98
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Прикажи статусна линија"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "Преку целиот &екран"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&Зачувај поставувања"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "Конфигурирај &кратенки..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Конфигурирај %1..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Конфигурирај &алатки..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "Конфигурирај &известувања..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Прирачник за %1"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Што е &ова?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "Совет на &денот"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "&Извести за бубачка..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Смени &јазик на апликацијата..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&За %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "За &KDE..."
