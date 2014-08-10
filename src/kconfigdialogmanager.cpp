@@ -238,7 +238,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
 
                 setupWidget(childWidget, item);
 
-                if (d->trackChanges) {
+                if (trackChanges) {
                     QHash<QString, QByteArray>::const_iterator changedIt = s_changedMap()->constFind(childWidget->metaObject()->className());
 
                     if (changedIt == s_changedMap()->constEnd()) {
@@ -288,7 +288,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
         }
 //kf5: commented out to reduce debug output
 // #ifndef NDEBUG
-//     else if (!widgetName.isEmpty() && d->trackChanges)
+//     else if (!widgetName.isEmpty() && trackChanges)
 //     {
 //       QHash<QString, QByteArray>::const_iterator changedIt = s_changedMap()->constFind(childWidget->metaObject()->className());
 //       if (changedIt != s_changedMap()->constEnd())
