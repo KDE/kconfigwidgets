@@ -378,7 +378,7 @@ void KConfigDialogManager::updateSettings()
         }
     }
     if (changed) {
-        d->m_conf->writeConfig();
+        d->m_conf->save();
         emit settingsChanged();
     }
 }
