@@ -24,6 +24,7 @@
 #include <QToolButton>
 
 #include <QApplication>
+#include <kaboutdata.h>
 #include <klocalizedstring.h>
 #include <kstandardshortcut.h>
 #include <kacceleratormanager.h>
@@ -152,9 +153,16 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
             break;
         // Same as default, but with the app icon
         case AboutApp:
+        {
             pAction = new QAction(parent);
-            icon = qApp->windowIcon();
+            const KAboutData data = KAboutData::applicationData();
+            if (!data.programIconName().isEmpty()) {
+                icon = QIcon::fromTheme(data.programIconName());
+            } else {
+                icon = qApp->windowIcon();
+            }
             break;
+        }
 
         default:
             pAction = new QAction(parent);
