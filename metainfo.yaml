@@ -1,5 +1,5 @@
 maintainer:
-description: Extra widgets for easier configuration support
+description: Widgets for configuration dialogs
 tier: 3
 type: integration
 platforms:
