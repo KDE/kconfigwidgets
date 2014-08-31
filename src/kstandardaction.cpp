@@ -24,6 +24,7 @@
 #include <QToolButton>
 
 #include <QApplication>
+#include <QDir>
 #include <kaboutdata.h>
 #include <klocalizedstring.h>
 #include <kstandardshortcut.h>
@@ -33,6 +34,32 @@
 #include "krecentfilesaction.h"
 #include "ktogglefullscreenaction.h"
 #include "kpastetextaction.h"
+
+// Most of the icons used in KStandardAction are not
+// available in hicolor, so if we are in hicolor try
+// to go to breeze/oxygen if they are available
+static void iconThemeFunc()
+{
+    // Don't use hicolor if we have breeze/oxygen around
+    if (QIcon::themeName() == QLatin1String("hicolor") || QIcon::themeName().isEmpty()) {
+        foreach(const QString &path, QIcon::themeSearchPaths()) {
+            QDir d(path);
+            if (d.exists(QLatin1String("breeze"))) {
+                QIcon::setThemeName(QLatin1String("breeze"));
+                break;
+            }
+        }
+        foreach(const QString &path, QIcon::themeSearchPaths()) {
+            QDir d(path);
+            if (d.exists(QLatin1String("oxygen"))) {
+                QIcon::setThemeName(QLatin1String("oxygen"));
+                break;
+            }
+        }
+    }
+}
+
+Q_COREAPP_STARTUP_FUNCTION(iconThemeFunc)
 
 namespace KStandardAction
 {
