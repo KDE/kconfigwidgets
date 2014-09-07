@@ -196,7 +196,9 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
 
         QList<QKeySequence> cut = KStandardShortcut::shortcut(pInfo->idAccel);
         if (!cut.isEmpty()) {
+            // emulate KActionCollection::setDefaultShortcuts to allow the use of "configure shortcuts"
             pAction->setShortcuts(cut);
+            pAction->setProperty("defaultShortcuts", QVariant::fromValue(cut));
         }
 
         pAction->setObjectName(pInfo->psName);
@@ -524,7 +526,9 @@ KToggleAction *showMenubar(const QObject *recvr, const char *slot, QObject *pare
     ret->setObjectName(name(ShowMenubar));
     ret->setIcon(QIcon::fromTheme("show-menu"));
 
+    // emulate KActionCollection::setDefaultShortcuts to allow the use of "configure shortcuts"
     ret->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::ShowMenubar));
+    ret->setProperty("defaultShortcuts", QVariant::fromValue(KStandardShortcut::shortcut(KStandardShortcut::ShowMenubar)));
 
     ret->setWhatsThis(i18n("Show Menubar<p>"
                            "Shows the menubar again after it has been hidden</p>"));
