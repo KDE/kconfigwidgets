@@ -155,11 +155,12 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
         case AboutApp:
         {
             pAction = new QAction(parent);
-            const KAboutData data = KAboutData::applicationData();
-            if (!data.programIconName().isEmpty()) {
-                icon = QIcon::fromTheme(data.programIconName());
-            } else {
-                icon = qApp->windowIcon();
+            icon = qApp->windowIcon();
+            if (icon.isNull()) {
+                const KAboutData data = KAboutData::applicationData();
+                if (!data.programIconName().isEmpty()) {
+                    icon = QIcon::fromTheme(data.programIconName());
+                }
             }
             break;
         }
