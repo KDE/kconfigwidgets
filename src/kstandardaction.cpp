@@ -43,6 +43,7 @@ AutomaticAction::AutomaticAction(const QIcon &icon, const QString &text, const Q
     setText(text);
     setIcon(icon);
     setShortcuts(shortcut);
+    setProperty("defaultShortcuts", QVariant::fromValue(shortcut));
     connect(this, SIGNAL(triggered()), this, slot);
 }
 

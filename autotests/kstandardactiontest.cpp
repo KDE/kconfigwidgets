@@ -30,6 +30,7 @@ void tst_KStandardAction::shortcutForActionId()
 
     QAction *cut = KStandardAction::cut(NULL);
     QList<QKeySequence> actShortcut = cut->shortcuts();
+    QCOMPARE(cut->property("defaultShortcuts").value<QList<QKeySequence> >(), actShortcut);
     QVERIFY(stdShortcut == actShortcut);
     delete cut;
 
