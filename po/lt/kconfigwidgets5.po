@@ -1,0 +1,488 @@
+# translation of kdelibs4.po to Lithuanian
+# Ričardas Čepas <rch@richard.eu.org>, 2002-2004.
+# Donatas Glodenis <dgvirtual@akl.lt>, 2004-2009.
+# Gintautas Miselis <gintautas@miselis.lt>, 2008.
+# Andrius Štikonas <andrius@stikonas.eu>, 2009.
+# Tomas Straupis <tomasstraupis@gmail.com>, 2011.
+# Remigijus Jarmalavičius <remigijus@jarmalavicius.lt>, 2011.
+# Liudas Ališauskas <liudas.alisauskas@gmail.com>, 2011, 2012, 2013, 2014.
+# Liudas Alisauskas <liudas@akmc.lt>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-09-08 07:56+0000\n"
+"PO-Revision-Date: 2014-03-16 20:46+0200\n"
+"Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Ričardas Čepas, Donatas Glodenis, Gintautas Miselis, Andrius Štikonas, "
+"Liudas Ališauskas"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"rch@richard.eu.org, dgvirtual@akl.lt, gintautas@miselis.lt, stikonas@gmail."
+"com, liudas@akmc.lt"
+
+#: kcmodule.cpp:153
+msgid "You will be asked to authenticate before saving"
+msgstr "Busite prašomi nustatyti tapatybę prieš išsaugojimą"
+
+#: kcmodule.cpp:157
+msgid "You are not allowed to save the configuration"
+msgstr "Jums neleidžiama išsaugoti konfigūracijos"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Numatytoji"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Nustatyti automatiškai"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "be pavadinimo"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Nėra įrašų"
+
+#: krecentfilesaction.cpp:82
+msgid "Clear List"
+msgstr "Išvalyti sąrašą"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Atgal"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Pirmyn"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Namų puslapis"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Pagalba"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "Rodyti &meniu juostą"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Rodyti meniu juostą<p>Vėl parodo meniu juostą po to, kai ji buvo paslėpta.</"
+"p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "Rodyti &būsenos juostą"
+
+#: kstandardaction.cpp:555
+#, fuzzy
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Rodyti būsenos juostą<br /><br />Parodo būsenos juostą, t.y., juostą, "
+"esančią lango apačioje, ir naudojamą būsenos informacijai pateikti."
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Naujas"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "Sukurti naują dokumentą"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "At&verti..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "Atverti egzistuojantį dokumentą"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "Atverti &paskutinį naudotą"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "Atverti neseniai atvertą dokumentą"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "Į&rašyti"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "Įrašyti dokumentą"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Įrašyti &kaip..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "Įrašyti dokumentą nauju pavadinimu"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "G&rąžinti"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Užverti"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "Užverti dokumentą"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "S&pausdinti..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "Spausdinti dokumentą"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "&Spausdinimo peržiūra"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "Rodyti dokumento spausdinimo peržiūrą"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&Siųsti paštu..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "Siųsti dokumentą paštu"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "&Išjungti"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Išjungti programą"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "Atš&aukti"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "Atšaukti paskutinį veiksmą"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "Paka&rtoti"
+
+#: kstandardaction_p.h:54
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Redo last undone action"
+msgstr "Paaukoti"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "Iškirp&ti"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "Iškirpti pažymėjimą, perkeliant į mainų sritį"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Kopijuoti"
+
+#: kstandardaction_p.h:56
+#, fuzzy
+#| msgid "Cut selection to clipboard"
+msgid "Copy selection to clipboard"
+msgstr "Iškirpti pažymėjimą, perkeliant į mainų sritį"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&Padėti"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "Įklijuoti iškarpinės turinį"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "Iš&valyti"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "Pažymėti &viską"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "&Panaikinti žymėjimą"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Ieškoti..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "Ieškoti &kito"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "Ieškoti &ankstesnio"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "Pa&keisti..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&Tikrasis dydis"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&Talpinti į puslapį"
+
+#: kstandardaction_p.h:68
+#, fuzzy
+#| msgid "Go to first page"
+msgid "Zoom to fit page in window"
+msgstr "Peršokti į pirmą puslapį"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Talpinti į puslapio &plotį"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Talpinti į puslapio &aukštį"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "Pa&didinti"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "Su&mažinti"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Mastelis..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "Pasirinkite didinimo lygį"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "&Rodyti iš naujo"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "Rodyti dokumentą iš naujo"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&Aukštyn"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "Ankstesnis &puslapis"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "Peršokti į ankstesnį puslapį"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Kitas puslapis"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "Peršokti į kitą puslapį"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Eiti į..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "&Eiti į puslapį..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "&Eiti į eilutę..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&Pirmas puslapis"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "Peršokti į pirmą puslapį"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "P&askutinis puslapis"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "Peršokti į paskutinį puslapį"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Atgal"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "Eiti dokumente &atgal"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "&Pirmyn"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "Eiti dokumente &pirmyn"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&Pridėti žymelę"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "&Keisti žymeles..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&Rašybos tikrinimas..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "Patikrinti rašybą dokumente"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "Rodyti arba slėpti meniu juostą"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "Rodyti į&rankių juostą"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "Rodyti arba slėpti įrankinę"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "Rodyti arba slėpti būsenos juostą"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "Rodyti &visame ekrane"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "Į&rašyti nustatymus"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "Konfigūruoti &sparčiuosius klavišus..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Konfigūruoti %1..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Konfigūruoti į&rankines"
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "Konfigūruoti &pranešimus..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &vadovas"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Kas &tai yra?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "&Dienos patarimas"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "&Pranešti apie programos klaidą..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Pakeisti programos &kalbą..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&Apie %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "Apie &KDE"
