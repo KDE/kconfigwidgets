@@ -165,7 +165,7 @@ struct DecoDefaultColors {
     int Focus[3];
 };
 
-SetDefaultColors defaultViewColors = {
+static const SetDefaultColors defaultViewColors = {
     { 255, 255, 255 }, // Background
     { 248, 247, 246 }, // Alternate
     {  31,  28,  27 }, // Normal
@@ -178,7 +178,7 @@ SetDefaultColors defaultViewColors = {
     {   0, 110,  40 }  // Positive
 };
 
-SetDefaultColors defaultWindowColors = {
+static const SetDefaultColors defaultWindowColors = {
     { 214, 210, 208 }, // Background
     { 218, 217, 216 }, // Alternate
     {  34,  31,  30 }, // Normal
@@ -191,7 +191,7 @@ SetDefaultColors defaultWindowColors = {
     { 0,   110,  40 }  // Positive
 };
 
-SetDefaultColors defaultButtonColors = {
+static const SetDefaultColors defaultButtonColors = {
     { 223, 220, 217 }, // Background
     { 224, 223, 222 }, // Alternate
     {  34,  31,  30 }, // Normal
@@ -204,7 +204,7 @@ SetDefaultColors defaultButtonColors = {
     {   0, 110,  40 }  // Positive
 };
 
-SetDefaultColors defaultSelectionColors = {
+static const SetDefaultColors defaultSelectionColors = {
     {  67, 172, 232 }, // Background
     {  62, 138, 204 }, // Alternate
     { 255, 255, 255 }, // Normal
@@ -217,7 +217,7 @@ SetDefaultColors defaultSelectionColors = {
     { 128, 255, 128 }  // Positive
 };
 
-SetDefaultColors defaultTooltipColors = {
+static const SetDefaultColors defaultTooltipColors = {
     {  24,  21,  19 }, // Background
     { 196, 224, 255 }, // Alternate
     { 231, 253, 255 }, // Normal
@@ -230,7 +230,7 @@ SetDefaultColors defaultTooltipColors = {
     {   0, 110,  40 }  // Positive
 };
 
-DecoDefaultColors defaultDecorationColors = {
+static const DecoDefaultColors defaultDecorationColors = {
     { 110, 214, 255 }, // Hover
     {  58, 167, 221 }, // Focus
 };
@@ -563,7 +563,7 @@ QPalette KColorScheme::createApplicationPalette(const KSharedConfigPtr &config)
 {
     QPalette palette;
 
-    static QPalette::ColorGroup states[3] = { QPalette::Active, QPalette::Inactive, QPalette::Disabled };
+    static const QPalette::ColorGroup states[3] = { QPalette::Active, QPalette::Inactive, QPalette::Disabled };
 
     // TT thinks tooltips shouldn't use active, so we use our active colors for all states
     KColorScheme schemeTooltip(QPalette::Active, KColorScheme::Tooltip, config);
