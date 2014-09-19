@@ -73,6 +73,7 @@ install(FILES
 )
 
 install(PROGRAMS preparetips5 DESTINATION ${BIN_INSTALL_DIR} )
+install( FILES entry.desktop  DESTINATION  ${LOCALE_INSTALL_DIR}/en_US RENAME kf5_entry.desktop )
 
 include(ECMGeneratePriFile)
 ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF5ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KF5_INCLUDE_INSTALL_DIR}/KConfigWidgets)
