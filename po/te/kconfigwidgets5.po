@@ -1,0 +1,473 @@
+# translation of kdelibs4.po to Telugu
+#
+#
+# Purushottam Boyanapalli <boyanapalli@gmail.com>, 2005.
+# విజయ్ కిరణ్ కముజు <infyquest@gmail.com>, 2007.
+# pavithran <pavithran.s@gmail.com>, 2007.
+# Krishna Babu K <kkrothap@redhat.com>, 2008, 2009.
+# sreekalyanbapatla <sreekalyan3@gmail.com>, 2013.
+# GVS.Giri <gvs.giri@swecha.net>, 2013.
+# Bhuvan Krishna <bhuvan@swecha.org>,2013.
+# Naveen Kandimalla <naveen@swecha.net>,2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-09-08 07:56+0000\n"
+"PO-Revision-Date: 2013-11-04 23:55+0630\n"
+"Last-Translator: Bhuvan Krishna <bhuvan@swecha.org>\n"
+"Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
+"4;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "విజయ్ కిరణ్ కముజు,కృష్ణబాబు కె, భువన్ కృష్ణ, జి వి యస్ గిరి, శ్రీ కళ్యన్న్, ననిన్"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"infyquest@gmail.com,kkrothap@redhat.com,bhuvan@swecha.org,gvs.giri@swecha."
+"net,sreekalyan3@gmail.com,naveen@swecha.net"
+
+#: kcmodule.cpp:153
+msgid "You will be asked to authenticate before saving"
+msgstr "మీరు దీనిని నిక్షిప్తం చేయు ముందు నిజపరుచుటకు అడుగుము"
+
+#: kcmodule.cpp:157
+msgid "You are not allowed to save the configuration"
+msgstr "ఈ  రూపకరణ దాచుటకు మీకు అనుమతి లే"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "అప్రమేయం"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "దానంతటదే కనిపెట్టు"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "పేరు లేదు"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "దాఖలాలు లేవు"
+
+#: krecentfilesaction.cpp:82
+msgid "Clear List"
+msgstr "వరుశ  చెరిపివేయుము"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "(&B) వెనుకకు"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "(&F) ముందుకు"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "(&H) గృహము"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "(&H) సహాయము"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "(&M) సూచన పట్టి చూపుము"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "మెనూబార్‌ను చూపుము <p>మెనూబార్‌ను మరలా చూపుము అది దాయబడి తర్వాతన</p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "(&a) స్థితి పట్టీ చూపుము"
+
+#: kstandardaction.cpp:555
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"స్థితి పట్టీ చూపించు <p>  స్థితి పట్టీను చూపిస్తుంది, ఇది స్థితి సమాచారము కొరకు గవాక్షమునందు "
+"క్రిందనవుండు పట్టీ.</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "(&N) కొత్త"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "కొత్త  పత్రం  సృష్టించుము..."
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "(&O) తెరువండి..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "ఇప్పుడు ఉత్తేజంగా ఉన్న పత్రాన్ని తెరు"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "(&R) ఇటీవలివి తెరువండి"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "ఇప్పుడే మూసేసిని పత్రాన్ని తెరువుట"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "(&S) దాచు"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "పత్రాన్ని దా"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "(&A) ఇలా దాచు..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "పత్రాన్ని కొత్త పేరుతో దాచడం "
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "(&v) మళ్ళించు"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "చేసిన మార్పులను తిరిగి యదాస్తానానికి తీసుక రావటానికి "
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "(&C) మూసివెయుము"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "పత్రం    మూసివేయి"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "(&P) ప్రచురించు..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "పత్రాన్ని   ప్రచురించు"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "(&w) ప్రచురణ ముందస్తు వీక్షణం"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "ప్రచురించిన  ఉపదస్త్రాన్ని  చూపిం"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "(&M) తపాలా..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "పత్రానన్ని ఉత్తరం ద్వారా పంపుట"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "(&Q) విరమించు"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "కార్యక్రమం మూసివేయి"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "(&U) సరిచేయు"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "చివరగా చేసిన పనిని రద్దు చేయట"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "(&d) మరల ప్రయత్నించుము"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "చివరగా చేసిన రద్దును మళ్లీ చేయుట"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "(&t) కత్తిరించండి"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "ఎంపిక చేసిన క్లిప్ బోర్డ్  కోయిట "
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "(&C) నకలు"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "ఎంపిక చేసిన దానిని క్లిప్ బోర్డ్  కు నకలు చేయు"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "(&P) అతికించండి"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "క్లిప్ బోర్డ్ యొక్క సారాన్ని అతికించు"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "(&l) ఖాళిచేయుము"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "(&A) అన్ని ఎంచుకొనుము"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "(&l) ఎంచుకొవద్దు"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "(&F) కనుగొను..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "(&N) తర్వాతది కనుగొను"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "(&v) క్రిందటి ది వెతకండి"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "(&R) ప్రతిస్థాపించుము..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "(&A) అసలైన పరిమాణము"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "పత్రాన్ని దాని యొక్క  నిజమైన పరిమాణం తో చూడటాని"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "(&F) పేజీకు పట్టించు"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr " పుటను గవాక్షమునకు పట్టించుటకు జూమ్ చేయుట"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "(&W) పేజి వెడల్పునకు పట్టించు"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "పుట యొక్క వెడ గవాక్షమునకు పట్టించుటకు జూమ్ చేయుట"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "(&H) పేజీ ఎత్తునకు పట్టించు"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "పుట యొక్క ఎత్తు గవాక్షమునకు పట్టించుటకు జూమ్ చేయుట"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "(&I) సమీప వీక్షణం"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "(&O) దూర వీక్షణం"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "(&Z) పెద్ద పరిమాణము..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "జూమ్  స్తాయి ఎంచుకొనుము"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "(&R) పునఃప్రదర్శన"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "(&R) దస్త్రం  పునఃప్రదర్శన "
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "(&U) పైకి"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "పైకి పోవుట"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "(&P) ముందరి పుట"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "(&P) ముందరి  పుట కు పోవుట"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "(&N) తరువాత పుట"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "మరుసటి పుటకు వెళ్ళుట"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "(&G) వెళ్ళు..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "(&G) పుటకు వెళ్ళు..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "(&G) వరుసకు వెళ్ళు..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "(&F) మొదటి పుట"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "మొదటి పుటకు  వెళ్ళుట"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "(&L) చివరి పుట"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "(&G) చివరి పుటకు వెళ్ళుట..."
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "(&B) వెనుకకు"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "(&B) పత్రం లొ వెనుకకు పోవుట"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "(&F) ముందుకు"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "పత్రం లొ ముందుకు పోవుట"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "(&A) పేజిగుర్తు చేర్చుము"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "(&E) గుర్తులు   సరిచేయి"
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "(&S) వర్ణక్రమము..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "పత్రం లొ అచ్చుతప్పులు సరిచూడు"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "సూచన పట్టి చూపుము లేదా దాచిపెట్టు"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "(&T) పనిముట్ల పట్టీ చూపుము"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "పనిముట్ల పట్టీ చూపుము లేదా దాచిపెట్టుము "
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "స్థితి పట్టీ చూపుము లేదా దాచిపెట్టు"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "(&u) పూర్తి తెర స్థితి"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "(&S) అమరికలు దాచు"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "(&h) శీఘ్రమార్గాలను అమర్చు..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "(&C) %1 ను అమర్చు..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "(&b) పనిముట్ల పట్టిలను అమర్చు..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "(&N) ప్రకటనలను అమర్చు..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "(&H) %1 చేతిపుస్తకం"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "(&T) ఇది ఏమిటి?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "(&D) ఈ రోజు సూచన"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "(&R) తప్పును తెలియచేయండి..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "(&L) అనువర్తనము భాషను మార్చు..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "(&A) %1 గురించి"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "(&K) కెడిఈ గురించి"

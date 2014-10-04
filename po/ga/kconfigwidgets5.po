@@ -1,0 +1,469 @@
+# translation of kdelibs4.po to Irish
+# Translation of kdelibs4.po to Irish
+# Copyright (C) 1999,2003,2004 Free Software Foundation, Inc.
+# Sean V. Kelley <s_oceallaigh@yahoo.com>, 1999
+# Séamus Ó Ciardhuáin <seoc at iolfree.ie>, 2003,2004
+# Kevin Scannell <kscanne@gmail.com>, 2004-2009
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-09-08 07:56+0000\n"
+"PO-Revision-Date: 2004-12-14 09:11-0600\n"
+"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Séamus Ó Ciardhuáin,Kevin Scannell,Sean V. Kelley"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "seoc@iolfree.ie,kscanne@gmail.com,s_oceallaigh@yahoo.com"
+
+#: kcmodule.cpp:153
+msgid "You will be asked to authenticate before saving"
+msgstr "Caithfidh tú fíordheimhniú a dhéanamh roimh shábháil"
+
+#: kcmodule.cpp:157
+msgid "You are not allowed to save the configuration"
+msgstr "Níl cead agat an chumraíocht a shábháil"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Réamhshocrú"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Braith go hUathoibríoch"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "gan ainm"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Gan Iontrálacha"
+
+#: krecentfilesaction.cpp:82
+msgid "Clear List"
+msgstr "Glan an Liosta"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Siar"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Ar Aghaidh"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Baile"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Cabhair"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "Taispeáin an Barra &Roghchláir"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Taispeáin an Barra Roghchláir<p>Taispeáin an barra roghchláir arís tar éis "
+"dó a bheith i bhfolach</p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "Taispeáin an Barra Stád&ais"
+
+#: kstandardaction.cpp:555
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Taispeáin an Barra Stádais<p>Taispeáin an barra stádais, an barra ag bun na "
+"fuinneoige ina dtaispeántar an stádas reatha.</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Nua"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "Cruthaigh cáipéis nua"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Oscail..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "Oscail cáipéis atá ann"
+
+# recent what?
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "Oscail &Rudaí Deireanacha"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "Oscail cáipéis a bhí oscailte le déanaí"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Sábháil"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "Sábháil an cháipéis"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Sábháil M&ar..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "Sábháil an cháipéis le hainm nua"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "Fi&ll"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "Cealaigh na hathruithe nach bhfuil sábháilte"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Dún"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "Dún an cháipéis"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&Priontáil..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "Priontáil an cháipéis"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "Réamhamhar&c Priontála"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "Taispeáin réamhamharc priontála"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&Ríomhphost..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "Seol an cháipéis trí ríomhphost"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "&Scoir"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Scoir den fheidhmchlár"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Cealaigh"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "Cealaigh an gníomh is déanaí"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "Ath&dhéan"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "Athdhéan an gníomh cealaithe"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "&Gearr"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "Gearr an téacs roghnaithe agus sábháil sa ghearrthaisce é"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Cóipeáil"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "Sábháil an téacs roghnaithe sa ghearrthaisce"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&Greamaigh"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "Greamaigh inneachar na gearrthaisce"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "G&lan"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "Roghnaigh &Uile"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "Díro&ghnaigh"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Aimsigh..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "An Chéad Chea&nn Eile"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "&Roimhe Seo"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&Ionadaigh..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&Fíormhéid"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "Taispeáin fíormhéid na cáipéise"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&Laghdaigh go dtí an Leathanach"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "Cuir in oiriúint do mhéid na fuinneoige"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "&Laghdaigh go leithead leathanaigh"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "Cuir in oiriúint do leithead an leathanaigh"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Laghdaigh go &hairde leathanaigh"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "Cuir in oiriúint d'airde an leathanaigh"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "Súmáil &Isteach"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "Súmáil &Amach"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Súmáil..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "Roghnaigh leibhéal súmála"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "A&taispeáin"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "Ataispeáin an cháipéis"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "S&uas"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "Téigh suas"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "Leathanach &Roimhe"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "Go dtí an leathanach roimhe seo"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "A&n Chéad Leathanach Eile"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "Go dtí an chéad leathanach eile"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Téigh go..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "Téigh go &Leathanach..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "Téigh go Lí&ne..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "An &Chéad Leathanach"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "Téigh go dtí an chéad leathanach"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "An Leathanach &Deireanach"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "Téigh go dtí an leathanach deiridh"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Siar"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "Siar sa cháipéis"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "&Ar Aghaidh"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "Ar aghaidh sa cháipéis"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "Cruthaigh Leabharmh&arc"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "Cuir Leabharmharcanna in &Eagar..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&Litriú..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "Ceartaigh litriú sa cháipéis"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "Taispeáin nó folaigh an barra roghchláir"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "Taispeáin an Barra &Uirlisí"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "Taispeáin nó folaigh an barra uirlisí"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "Taispeáin nó folaigh an barra stádais"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "Mód Lán&scáileáin"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&Sábháil na Socruithe"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "C&umraigh Aicearraí..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Cumraigh %1..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Cumraigh &Barraí Uirlisí..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "C&umraigh Fógairt..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Lámhleabhar %1"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Cad É &Seo?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "Leid an &Lae"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "&Seol tuairisc ar fhabht..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Athraigh &Teanga an Fheidhmchláir..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&Maidir le %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "Maidir le &KDE"
