@@ -248,7 +248,6 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
     setWindowIcon(QIcon::fromTheme("ktip"));
 
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    mainLayout->setMargin(0);
 
     if (isTipDialog) {
         QLabel *titleLabel = new QLabel(this);
