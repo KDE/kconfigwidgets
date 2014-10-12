@@ -104,7 +104,7 @@ KConfigDialogManager *KCModule::addConfig(KCoreConfigSkeleton *config, QWidget *
 {
     KConfigDialogManager *manager = new KConfigDialogManager(widget, config);
     manager->setObjectName(objectName());
-    connect(manager, SIGNAL(widgetModified()), SLOT(widgetChanged()));
+    connect(manager, &KConfigDialogManager::widgetModified, this, &KCModule::widgetChanged);
     d->managers.append(manager);
     return manager;
 }
@@ -113,7 +113,7 @@ KConfigDialogManager *KCModule::addConfig(KConfigSkeleton *config, QWidget *widg
 {
     KConfigDialogManager *manager = new KConfigDialogManager(widget, config);
     manager->setObjectName(objectName());
-    connect(manager, SIGNAL(widgetModified()), SLOT(widgetChanged()));
+    connect(manager, &KConfigDialogManager::widgetModified, this, &KCModule::widgetChanged);
     d->managers.append(manager);
     return manager;
 }
