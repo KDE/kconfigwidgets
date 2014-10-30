@@ -199,7 +199,7 @@ protected Q_SLOTS:
 
     /**
      * Updates the Apply and Default buttons.
-     * Connect to this slot if you implement you own hasChanged()
+     * Connect to this slot if you implement your own hasChanged()
      * or isDefault() methods for widgets not managed by KConfig.
      * @since 4.3
      */
