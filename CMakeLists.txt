@@ -44,7 +44,7 @@ if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
     foreach(lang_dir ${lang_dirs})
        get_filename_component(lang ${lang_dir} NAME)
        if (EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/po/${lang}/kf5_entry.desktop")
-          install( FILES po/${lang}/kf5_entry.desktop DESTINATION ${LOCALE_INSTALL_DIR}/${lang} )
+          install( FILES po/${lang}/kf5_entry.desktop DESTINATION ${KDE_INSTALL_LOCALEDIR}/${lang} )
        endif()
     endforeach()
 endif()
@@ -54,7 +54,7 @@ add_subdirectory(tests)
 add_subdirectory(autotests)
 
 # create a Config.cmake and a ConfigVersion.cmake file and install them
-set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KF5ConfigWidgets")
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5ConfigWidgets")
 
 include(ECMPackageConfigHelpers)
 
@@ -75,7 +75,7 @@ install(EXPORT KF5ConfigWidgetsTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" 
 
 install(FILES
    ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_version.h
-  DESTINATION ${KF5_INCLUDE_INSTALL_DIR} COMPONENT Devel
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
 )
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

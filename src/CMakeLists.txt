@@ -18,7 +18,7 @@ add_library(KF5ConfigWidgets ${kconfigwidgets_SRCS})
 generate_export_header(KF5ConfigWidgets BASE_NAME KConfigWidgets)
 add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
 
-target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KF5_INCLUDE_INSTALL_DIR}/KConfigWidgets>")
+target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KConfigWidgets>")
 
 target_link_libraries(KF5ConfigWidgets
   PUBLIC
@@ -64,17 +64,17 @@ install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_export.h
   ${KConfigWidgets_HEADERS}
   ktip.h
-  DESTINATION ${KF5_INCLUDE_INSTALL_DIR}/KConfigWidgets COMPONENT Devel
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/KConfigWidgets COMPONENT Devel
 )
 
 install(FILES
  ktip-bulb.png
- DESTINATION  ${KF5_DATA_INSTALL_DIR}/kconfigwidgets/pics
+ DESTINATION  ${KDE_INSTALL_DATADIR_KF5}/kconfigwidgets/pics
 )
 
-install(PROGRAMS preparetips5 DESTINATION ${BIN_INSTALL_DIR} )
-install( FILES entry.desktop  DESTINATION  ${LOCALE_INSTALL_DIR}/en_US RENAME kf5_entry.desktop )
+install(PROGRAMS preparetips5 DESTINATION ${KDE_INSTALL_BINDIR} )
+install( FILES entry.desktop  DESTINATION  ${KDE_INSTALL_LOCALEDIR}/en_US RENAME kf5_entry.desktop )
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF5ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KF5_INCLUDE_INSTALL_DIR}/KConfigWidgets)
+ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF5ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KConfigWidgets)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
