@@ -211,7 +211,7 @@ void KConfigDialogManager::setupWidget(QWidget *widget, KConfigSkeletonItem *ite
     // and has no custom property and the config item type
     // is an integer, assume we want to save the index like we did with
     // KButtonGroup instead of if it is checked or not
-    QGroupBox *gb = dynamic_cast<QGroupBox *>(widget);
+    QGroupBox *gb = qobject_cast<QGroupBox *>(widget);
     if (gb && getCustomProperty(gb).isEmpty()) {
         const KConfigSkeletonItem *item = d->m_conf->findItem(widget->objectName().mid(5));
         if (item->property().type() == QVariant::Int) {
