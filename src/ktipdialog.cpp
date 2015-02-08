@@ -40,6 +40,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include <kconfig.h>
 #include <kconfiggroup.h>
+#include <klocalizedstring.h>
 #include <ksharedconfig.h>
 #include <krandom.h>
 #include <kseparator.h>
@@ -235,7 +236,7 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
     : QDialog(parent),
       d(new Private(this))
 {
-    setWindowTitle(tr("Tip of the Day"));
+    setWindowTitle(i18nc("@title:window", "Tip of the Day"));
 
     /**
      * Parent is 0L when TipDialog is used as a mainWidget. This should
@@ -251,7 +252,7 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
 
     if (isTipDialog) {
         QLabel *titleLabel = new QLabel(this);
-        titleLabel->setText(tr("Did you know...?\n"));
+        titleLabel->setText(i18nc("@title", "Did you know...?\n"));
         titleLabel->setFont(QFont(qApp->font().family(), 20, QFont::Bold));
         titleLabel->setAlignment(Qt::AlignCenter);
         mainLayout->addWidget(titleLabel);
@@ -303,17 +304,17 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
 
     mainLayout->addLayout(buttonLayout);
 
-    d->tipOnStart = new QCheckBox(tr("&Show tips on startup"));
+    d->tipOnStart = new QCheckBox(i18nc("@option:check", "&Show tips on startup"));
     buttonLayout->addWidget(d->tipOnStart, 1);
 
     QPushButton *prev = new QPushButton;
     KGuiItem::assign(prev, KStandardGuiItem::back(KStandardGuiItem::UseRTL));
-    prev->setText(tr("&Previous"));
+    prev->setText(i18nc("@action:button Goes to previous tip", "&Previous"));
     buttonLayout->addWidget(prev);
 
     QPushButton *next = new QPushButton;
     KGuiItem::assign(next, KStandardGuiItem::forward(KStandardGuiItem::UseRTL));
-    next->setText(tr("&Next", "Opposite to Previous"));
+    next->setText(i18nc("@action:button Goes to next tip, opposite to previous", "&Next"));
     buttonLayout->addWidget(next);
 
     QPushButton *ok = new QPushButton;

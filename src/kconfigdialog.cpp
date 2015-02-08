@@ -23,6 +23,7 @@
 
 #include <kconfigdialogmanager.h>
 #include <kcoreconfigskeleton.h>
+#include <klocalizedstring.h>
 #include <kpagewidgetmodel.h>
 #include <khelpclient.h>
 
@@ -41,7 +42,7 @@ public:
         : q(q), shown(false), manager(0)
     {
         q->setObjectName(name);
-        q->setWindowTitle(tr("Configure"));
+        q->setWindowTitle(i18nc("@title:window", "Configure"));
         q->setFaceType(List);
 
         if (!name.isEmpty()) {
