@@ -1,0 +1,478 @@
+# Bengali (Bangla) translation of kdelibs4.
+# Copyright (C) 2009, Free Software Foundation, Inc.
+# translation of kdelibs4.po to Bengali
+# Copyright (C) 2003, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
+# Deepayan Sarkar,,, <deepayan.sarkar@gmail.com>, 2003.
+# Deepayan Sarkar <deepayan.sarkar@gmail.com>, 2003, 2004, 2005.
+# Deepayan Sarkar <deepayan.sarkar@gmail.com>, 2006, 2008, 2009..
+# Deepayan Sarkar <deepayan.sarkar@gmail.com>, 2009, 2010, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-31 08:03+0000\n"
+"PO-Revision-Date: 2012-07-16 14:27+0530\n"
+"Last-Translator: Deepayan Sarkar <deepayan.sarkar@gmail.com>\n"
+"Language-Team: American English <kde-translation@bengalinux.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "দীপায়ন সরকার"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "deepayan.sarkar@gmail.com"
+
+#: kcmodule.cpp:153
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:157
+#, fuzzy
+msgid "You are not allowed to save the configuration"
+msgstr "আপনি কি কনফিগারেশন ফাইল নতুন করে পড়তে চান?"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "ডিফল্ট"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "স্বয়ংক্রিয়"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "নামহীন"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "কোনও এন্ট্রি নেই"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "তালিকা ফাঁকা করো"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "পিছিয়ে যা&ও"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&এগিয়ে যাও"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "হো&ম"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "&সহায়িকা"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "মেনুবা&র দেখাও"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "মেনুবার দেখাও<p>লুকনোর পর মেনুবার আবার প্রদর্শন করে</p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "স্ট্যাটা&স বার দেখাও"
+
+#: kstandardaction.cpp:555
+#, fuzzy
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"স্ট্যাটাস বার দেখাও<br /><br />স্ট্যাটাস বার (উইণ্ডোর তলায় অবস্থিত বার যা স্ট্যাটাস "
+"তথ্য দেখানোর জন্য ব্যবহৃত হয়) প্রদর্শন করে।"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&নতুন"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "নতুন নথী তৈরি করো"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "খোলো (&খ)..."
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgid "Go back in document"
+msgid "Open an existing document"
+msgstr "নথীতে পিছিয়ে যাও"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "&সম্প্রতি ব্যবহৃত"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "সম্প্রতি ব্যাবহার হয়েছে এমন একটি নথী খোলো"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "সংরক্ষণ &করো"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "নথী সংরক্ষণ করো"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "&নতুন নামে সংরক্ষণ..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "নথী নতুন নামে সংরক্ষণ করো"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "আগের অ&বস্থায় ফিরে যাও"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "নথীতে করা অসংরক্ষিত পরিবর্তন বাতিল করো"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&বন্ধ করো"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "নথী বন্ধ করো"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "ছাপা&ও..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "নথী ছাপাও"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "মুদ্রণ প্রাক্‌দর্শ&ন"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "নথীর মুদ্রণ প্রাকদর্শন দেখাও"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "মে&ইল করো..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "নথী ই-মেইল করে পাঠাও"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "প্রস্থা&ন করো"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "অ্যাপলিকেশন বন্ধ করো"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "বাতিল &করো"
+
+#: kstandardaction_p.h:53
+#, fuzzy
+msgid "Undo last action"
+msgstr "এইচ-টি-এম-এল ডকুমেনটেশন"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "&আবার করো"
+
+#: kstandardaction_p.h:54
+#, fuzzy
+msgid "Redo last undone action"
+msgstr "এইচ-টি-এম-এল ডকুমেনটেশন"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "কাটো (&ট)"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "নির্বাচন কেটে ক্লীপবোর্ডে রাখো"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "কপি করো (&ক)"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "নির্বাচন ক্লীপবোর্ডে কপি করো"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "সাঁটো (&স)"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "ক্লিপবোর্ড-এর বিষয়বস্তু পেস্ট করো"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "ফাঁকা &করো"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "&সব নির্বাচন করো"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "নির্বা&চন বাতিল করো"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&সন্ধান করো..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "&পরেরটি সন্ধান করো"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "আগে&রটি খোঁজো"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&বদলে বসাও..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&আসল মাপ"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "নথীর সঠিক মাপে দেখাও"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "পাতার &মধ্যে আঁটাও"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "পাতা পুরোপুরি উইণ্ডোর মধ্যে আঁটাতে প্রয়োজনমত ছোট বা বড় করো"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "পাতার প্রস্থের মধ্যে আঁটা&ও"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "পাতা প্রস্থে উইণ্ডোর মধ্যে আঁটাতে প্রয়োজনমত ছোট বা বড় করো"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "পাতার &উচ্চতার মধ্যে আঁটাও"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "পাতা উচ্চতায় উইণ্ডোর মধ্যে আঁটাতে প্রয়োজনমত ছোট বা বড় করো"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "&বড় করো "
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "ছো&ট করো"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "ছোট/ব&ড় করো..."
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "একটি সপ্তাহ নির্বাচন করুন"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "আবা&র দেখাও"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "নথী আবার দেখাও"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&উপর"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "উপরে যাও"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "&আগের পাতা"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "আগের পাতায় যাও"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&পরের পাতা"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "পরের পাতায় যাও"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "...যা&ও"
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "...পাতায় যা&ও"
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "...লাইনে যা&ও"
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "প্রথ&ম পাতা"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "প্রথম পাতায় যাও"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "শে&ষ পাতা"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "শেষ পাতায় যাও"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "ফিরে যা&ও"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "নথীতে পিছিয়ে যাও"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "এগিয়ে যাও"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "নথীতে এগিয়ে যাও"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "বুকমার্ক &করো"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "বুকমার্ক &সম্পাদনা করো..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "বানা&ন..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "নথীতে বানান পরীক্ষা করো"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "মেনুবার দেখাও বা লুকাও"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "টু&লবার দেখাও"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "টুলবার দেখাও বা লুকাও"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "স্ট্যাটাস বার দেখাও বা লুকাও"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "ফু&ল স্ক্রীণ মোড"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&পছন্দ সংরক্ষণ করো"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "&শর্টকাট কনফিগার করো..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 &কনফিগার করো..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "টুলবার ক&নফিগার করো..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "বার্তা&বলী কনফিগার করো..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 হ্যাণ্ডবু&ক"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "&এটা কী?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "&আজকের টিপ"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "বা&গ টিপোর্ট করো..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "অ্যাপলিকেশন-এর ভাষা পাল্টাও..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "%1 &সম্বন্ধে"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "কে-ডি-&ই পরিচিতি"

@@ -1,0 +1,532 @@
+# translation of kdelibs4.po to Persian
+# Nazanin Kazemi <kazemi@itland.ir>, 2006, 2007.
+# Mahdi Foladgar <foladgar@itland.ir>, 2006.
+# Nasim Daniarzadeh <daniarzadeh@itland.ir>, 2006, 2007.
+# Tahereh Dadkhahfar <dadkhahfar@itland.ir>, 2006.
+# MaryamSadat Razavi <razavi@itland.ir>, 2007.
+# Nooshin Asiaie <asiaie@itland.ir>, 2007.
+# Mohamad Reza Mirdamadi <mohi@linuxshop.ir>, 2009, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-31 08:03+0000\n"
+"PO-Revision-Date: 2012-06-28 16:40+0430\n"
+"Last-Translator: Mohammad Reza Mirdamadi <mohi@linuxshop.ir>\n"
+"Language-Team: Farsi (Persian) <kde-i18n-fa@kde.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "محمدرضا میردامادی , نازنین کاظمی , محمد ابراهیم محمدی پناه , سعید تقوی"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"mohi@linuxshop.ir , kazemi@itland.ir , mebrahim@gmail.com , s.taghavi@gmail."
+"com"
+
+#: kcmodule.cpp:153
+msgid "You will be asked to authenticate before saving"
+msgstr "قبل از ذخیره برای اعتبارسنجی از شما سوال خواهد شد"
+
+#: kcmodule.cpp:157
+msgid "You are not allowed to save the configuration"
+msgstr "شما اجاره ذخیره تنظیمات را ندارید"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "پیش‌فرض"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "آشکارسازی خودکار"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "بدون نام"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "بدون مدخل"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "پاک کردن سیاهه"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "&پس‌سو‌"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&پیش‌سو‌"
+
+# &Home
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "&آغازه‌"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "&کمک‌"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "نمایش &میله گزینگان‌"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"نمایش میله گزینگان<p> میله گزینگان را دوباره بعد از اینکه مخفی شدند نمایش "
+"می‌دهد</p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "نمایش &میله وضعیت‌"
+
+#: kstandardaction.cpp:555
+#, fuzzy
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"نمایش میله وضعیت<br /><br />میله وضعیت، میله‌ای است در پایین پنجره که برای "
+"اطلاعات وضعیت استفاده می‌شود، را نمایش می‌دهد."
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&جدید‌"
+
+#: kstandardaction_p.h:41
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Create new tag:"
+msgid "Create new document"
+msgstr "ایجاد برچسب جدید:"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&باز کردن...‌"
+
+# &Back in the Document
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "&عقب در سند"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "باز کردن &اخیر‌"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&ذخیره‌"
+
+#: kstandardaction_p.h:44
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "بستن سند"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "ذخیره &به عنوان...‌"
+
+#: kstandardaction_p.h:45
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "بستن سند"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "&وارونه‌"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&بستن‌"
+
+#: kstandardaction_p.h:47
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "بستن سند"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&چاپ...‌"
+
+# PrintScreen
+#: kstandardaction_p.h:48
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "چاپ صفحه"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "چاپ &پیش‌نمایش"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&نامه...‌"
+
+#: kstandardaction_p.h:50
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "بستن سند"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "&خروج‌"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "خروج کاربرد"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&واگرد‌"
+
+#: kstandardaction_p.h:53
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "سند زنگام"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "&از نو‌"
+
+#: kstandardaction_p.h:54
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "سند زنگام"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "&برش‌"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&رونوشت‌"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&چسباندن‌"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, fuzzy
+#| msgid "Upload content"
+msgid "Paste clipboard content"
+msgstr "به‌روزرسانی محتویات"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "&پاک کردن‌"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "برگزیدن &همه‌"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "&عدم گزینش‌"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&یافتن...‌"
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "یافتن &بعدی‌"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "یافتن &قبلی‌"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&جایگزینی...‌"
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "اندازه &واقعی‌"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&متناسب با صفحه‌"
+
+#: kstandardaction_p.h:68
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "برو به خط"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "متناسب با &عرض صفحه‌"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "متناسب با &ارتفاع صفحه‌"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "&بزرگ‌نمایی‌"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "&کوچک‌نمایی‌"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&بزرگ‌نمایی...‌"
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "برگزیدن یک هفته"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "&نمایش مجدد‌"
+
+#: kstandardaction_p.h:74
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Redisplay document"
+msgstr "&نمایش مجدد‌"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&بالا‌"
+
+#: kstandardaction_p.h:76
+#, fuzzy
+msgid "Go up"
+msgstr "برو بالا"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "صفحه &قبلی‌"
+
+#: kstandardaction_p.h:81
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "صفحه &قبلی‌"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&صفحه بعدی"
+
+#: kstandardaction_p.h:82
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "برو به خط"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&برو به...‌"
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "&برو به صفحه...‌"
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "&برو به خط...‌"
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&اولین صفحه‌"
+
+#: kstandardaction_p.h:86
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "برو به خط"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "&آخرین صفحه‌"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&برو به صفحه...‌"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&پس‌سو‌"
+
+# &Back in the Document
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "&عقب در سند"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "&پیش‌سو‌"
+
+# &Forward in the Document
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "&جلو در سند"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&افزودن چوب الف‌"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "&ویرایش چوب الفها‌"
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&هجی کردن...‌"
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "غلط‌یابی"
+
+#: kstandardaction_p.h:96
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "نمایش &میله گزینگان‌"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "نمایش &میله ابزار‌"
+
+#: kstandardaction_p.h:97
+#, fuzzy
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "نمایش میله ابزار‌"
+
+#: kstandardaction_p.h:98
+#, fuzzy
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "نمایش نوار وضعیت‌"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "حالت &تمام صفحه‌"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&ذخیره تنظیمات‌"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "پیکربندی &میان‌برها...‌"
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&پیکربندی %1...‌"
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "پیکربندی &میله‌ ابزارها...‌"
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "پیکربندی  &اخطارها...‌"
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &کتاب مرجع‌"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "&این چیست؟‌"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "&نکته روز"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "&گزارش اشکال...‌"
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "سودهی &زبان کاربرد..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&درباره %1‌"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "درباره &KDE‌"

@@ -1,0 +1,466 @@
+# translation of kdelibs4.po to Estonian
+# Copyright (C) 1999-2004, 2005, 2006, 2009 Free Software Foundation, Inc.
+#
+# Hasso Tepper <hasso@kde.org>, 1999-2004, 2005, 2006.
+# Marek Laane <bald@smail.ee>, 2003-2009.
+# Peeter Russak <pezz@tkwcy.ee>, 2005.
+# Marek Laane <bald@smail.ee>, 2009, 2010, 2011, 2012, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-31 08:03+0000\n"
+"PO-Revision-Date: 2014-03-02 04:37+0200\n"
+"Last-Translator: Marek Laane <bald@smail.ee>\n"
+"Language-Team: Estonian <kde-et@linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Marek Laane"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "bald@smail.ee"
+
+#: kcmodule.cpp:153
+msgid "You will be asked to authenticate before saving"
+msgstr "Sul palutakse enne salvestamist autentida"
+
+#: kcmodule.cpp:157
+msgid "You are not allowed to save the configuration"
+msgstr "Sul ei ole õigust seadistust salvestada"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Vaikimisi"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Automaatne tuvastamine"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "nimetu"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Kirjed puuduvad"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "Puhasta nimekiri"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Tagasi"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Edasi"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Kodu"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Abi"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "&Menüüriba näitamine"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Menüüriba näitamine<p>Menüüriba näitamine, kui on peidetud</p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "&Olekuriba näitamine"
+
+#: kstandardaction.cpp:555
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Olekuriba näitamine<p>Näitab olekuriba ehk riba akna allservas, kus näeb "
+"mitmesugust infot oleku kohta.</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Uus"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "Uue dokumendi loomine"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Ava..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "Olemasoleva dokumendi avamine"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "Ava &viimati kasutatud"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "Viimati avatud dokumendi avamine"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Salvesta"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "Dokumendi salvestamine"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Salvesta &kui ..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "Dokumendi salvestamine uue nimega"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "&Lähtesta"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "Dokumenti tehtud salvestamata muudatuste tühistamine"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "S&ulge"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "Dokumendi sulgemine"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&Trüki..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "Dokumendi trükkimine"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "Trükkimise eel&vaatlus"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "Dokumendi trükitava eelvaatluse näitamine"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&Saada kirjaga ..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "Dokumendi saatmine e-postiga"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "&Välju"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Rakendusest väljumine"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Võta tagasi"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "Viimase toimingu tühistamine"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "&Tee uuesti"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "Viimase tagasivõetud toimingu uuesti sooritamine"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "L&õika"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "Valiku lõikamine lõikepuhvrisse"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Kopeeri"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "Valiku kopeerimine lõikepuhvrisse"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&Aseta"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "Lõikepuhvri sisu asetamine"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "Pu&hasta"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "Va&li kõik"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "Tühista va&lik"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Otsi..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "Otsi &järgmine"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "Otsi &eelmine"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&Asenda..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&Tegelik suurus"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "Dokumendi näitamine tegelikus suuruses"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&Mahuta leheküljele"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "Lehekülje sobitamine akna suurusega"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Mahuta lehekülje &laiusele"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "Lehekülje sobitamine akna laiusega"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Mahuta lehekülje &kõrgusele"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "Lehekülje sobitamine akna kõrgusega"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "&Suurenda"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "&Vähenda"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Suurendus ..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "Suurendustaseme valimine"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "&Näita uuesti"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "Dokumendi taasnäitamine"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "Ü&les"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "Liikumine üles"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "&Eelmine lehekülg"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "Liikumine eelmisele leheküljele"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Järgmine lehekülg"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "Liikumine järgmisele leheküljele"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Mine..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "&Mine leheküljele..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "&Mine reale..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&Esimene lehekülg"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "Liikumine esimesele leheküljele"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "&Viimane lehekülg"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "Liikumine viimasele leheküljele"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "Ta&gasi"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "Liikumine dokumendis tagasi"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "&Edasi"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "Liikumine dokumendis edasi"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&Lisa järjehoidja"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "&Redigeeri järjehoidjaid..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "Õi&gekirja kontroll..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "Dokumendi õigekirja kontroll"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "Menüüriba näitamine või peitmine"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "&Tööriistariba näitamine"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "Tööriistariba näitamine või peitmine"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "Olekuriba näitamine või peitmine"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "Täisekraanirežii&m"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&Salvesta seadistused"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "Kiirkla&hvide seadistamine..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 &seadistamine..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Tööriistari&bade seadistamine..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "Märgua&nnete seadistamine..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &käsiraamat"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Mis &see on?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "P&äeva nõuanne"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "Saada vea&raport..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Vaheta rakenduse kee&lt..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "%1 &info"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "&KDE info"
