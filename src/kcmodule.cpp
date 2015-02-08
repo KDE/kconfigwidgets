@@ -137,6 +137,19 @@ bool KCModule::needsAuthorization() const
     return d->_needsAuthorization;
 }
 
+void KCModule::setAuthAction(const KAuth::Action &action)
+{
+    if (!d->_authAction.isValid()) {
+        qWarning() << "Auth action" << action.name() << "is invalid";
+        d->_needsAuthorization = false;
+        return;
+    }
+    d->_authAction = action;
+    d->_needsAuthorization = true;
+    d->_authAction.setParentWidget(this);
+    authStatusChanged(d->_authAction.status());
+}
+
 KAuth::Action KCModule::authAction() const
 {
     return d->_authAction;

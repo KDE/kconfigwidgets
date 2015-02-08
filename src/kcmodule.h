@@ -217,11 +217,23 @@ public:
     void setNeedsAuthorization(bool needsAuth);
 
     /**
-     * Returns the value previously set with setNeedsAuthorization(). By default it's @c false.
+     * Returns the value previously set with setNeedsAuthorization() or setAuthAction(). By default it's @c false.
      *
      * @return @c true if the module's save() method requires authorization, @c false otherwise
      */
     bool needsAuthorization() const;
+
+    /**
+     * @brief Set if the module's save() method requires authorization to be executed
+     *
+     * It will still have to execute the action itself using the KAuth library, so
+     * this method is not technically needed to perform the action, but
+     * using this method will ensure that hosting
+     * applications like System Settings or kcmshell behave correctly.
+     *
+     * @param action the action that will be used by this KCModule
+     */
+    void setAuthAction(const KAuth::Action &action);
 
     /**
      * Returns the action previously set with setAuthAction(). By default its an invalid action.
