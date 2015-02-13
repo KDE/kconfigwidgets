@@ -101,7 +101,7 @@ public:
     /**
      * Reimplemented for internal reasons.
      */
-    virtual QAction *removeAction(QAction *action);
+    QAction *removeAction(QAction *action) Q_DECL_OVERRIDE;
 
 public Q_SLOTS:
     /**

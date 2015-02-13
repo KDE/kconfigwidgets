@@ -251,7 +251,7 @@ protected:
     /**
      * @internal
      */
-    virtual void showEvent(QShowEvent *e);
+    void showEvent(QShowEvent *e) Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
     /**
