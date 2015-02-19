@@ -24,26 +24,26 @@
 #include <QtQml>
 #include <QQmlEngine>
 #include <QQmlContext>
-#include <QQuickWidget>
+#include <QQuickView>
 #include <QQuickItem>
 
 #include <kdeclarative/kdeclarative.h>
 #include <kdeclarative/qmlobject.h>
 #include <KAboutData>
 #include <KLocalizedString>
-#include <Plasma/Package>
-#include <Plasma/PluginLoader>
+#include <KPackage/Package>
+#include <KPackage/PackageLoader>
 
 class KCModuleQmlPrivate
 {
 public:
     KCModuleQmlPrivate()
-        : quickWidget(0),
+        : quickView(0),
           qmlObject(0)
     {
     }
 
-    QQuickWidget *quickWidget;
+    QQuickView *quickView;
     KDeclarative::QmlObject *qmlObject;
 };
 
@@ -59,7 +59,7 @@ KCModuleQml::~KCModuleQml()
 
 void KCModuleQml::showEvent(QShowEvent *event)
 {
-    if (d->quickWidget) {
+    if (d->quickView) {
         return;
     } else if (d->qmlObject) {
         return;
@@ -67,35 +67,38 @@ void KCModuleQml::showEvent(QShowEvent *event)
 
     QVBoxLayout* layout = new QVBoxLayout(this);
 
-    d->quickWidget = new QQuickWidget(this);
-    d->quickWidget->setResizeMode(QQuickWidget::SizeRootObjectToView);
-    Plasma::Package package = Plasma::PluginLoader::self()->loadPackage("Plasma/Generic");
+    d->quickView = new QQuickView(0);
+    QWidget *widget = QWidget::createWindowContainer(d->quickView, this);
+
+    d->quickView = new QQuickView();
+    d->quickView->setResizeMode(QQuickView::SizeRootObjectToView);
+    KPackage::Package package = KPackage::PackageLoader::self()->loadPackage("KPackage/GenericQML");
     package.setDefaultPackageRoot("plasma/kcms");
     package.setPath(aboutData()->componentName());
     KDeclarative::KDeclarative dec;
-    dec.setDeclarativeEngine(d->quickWidget->engine());
+    dec.setDeclarativeEngine(d->quickView->engine());
     dec.setTranslationDomain(aboutData()->componentName());
     dec.setupBindings();
-    d->quickWidget->rootContext()->setContextProperty("kcm", this);
-    d->quickWidget->setSource(QUrl::fromLocalFile(package.filePath("mainscript")));
-    setMinimumHeight(d->quickWidget->initialSize().height());
+    d->quickView->rootContext()->setContextProperty("kcm", this);
+    d->quickView->setSource(QUrl::fromLocalFile(package.filePath("mainscript")));
+    setMinimumHeight(d->quickView->initialSize().height());
 
-    layout->addWidget(d->quickWidget);
+    layout->addWidget(widget);
 }
 
 QQuickItem *KCModuleQml::mainUi()
 {
     if (d->qmlObject) {
         return qobject_cast<QQuickItem *>(d->qmlObject->rootObject());
-    } else if (d->quickWidget) {
-        return d->quickWidget->rootObject();
+    } else if (d->quickView) {
+        return d->quickView->rootObject();
     }
 
     d->qmlObject = new KDeclarative::QmlObject(this);
     d->qmlObject->setTranslationDomain(aboutData()->componentName());
     d->qmlObject->setInitializationDelayed(true);
     
-    Plasma::Package package = Plasma::PluginLoader::self()->loadPackage("Plasma/Generic");
+    KPackage::Package package = KPackage::PackageLoader::self()->loadPackage("KPackage/GenericQML");
     package.setDefaultPackageRoot("plasma/kcms");
     package.setPath(aboutData()->componentName());
 

@@ -29,15 +29,13 @@ target_link_libraries(KF5ConfigWidgets
     KF5::Auth # KCModule uses KAuth::Action
   PRIVATE
     Qt5::DBus # KPasteTextAction talks to Klipper via DBus
-    Qt5::QuickWidgets
-    Qt5::Quick
-    Qt5::Qml
     KF5::CoreAddons # KCModule uses KAboutData, KTipDialog uses KRandom
     KF5::GuiAddons # KColorScheme uses KColorUtils
     KF5::I18n # For action and widget texts
-    KF5::Plasma
-    KF5::Service
+    KF5::Package
     KF5::Declarative
+    Qt5::Qml
+    Qt5::Quick
 )
 
 set_target_properties(KF5ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION_STRING}

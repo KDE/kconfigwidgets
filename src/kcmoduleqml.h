@@ -24,7 +24,7 @@
 class QQuickItem;
 class KCModuleQmlPrivate;
 
-class KCModuleQml : public KCModule
+class KCONFIGWIDGETS_EXPORT KCModuleQml : public KCModule
 {
     Q_OBJECT
     Q_PROPERTY(QQuickItem *mainUi READ mainUi CONSTANT)
