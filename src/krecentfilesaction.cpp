@@ -76,10 +76,13 @@ void KRecentFilesActionPrivate::init()
     q->setMenu(new QMenu());
     q->setToolBarMode(KSelectAction::MenuMode);
     m_noEntriesAction = q->menu()->addAction(i18n("No Entries"));
+    m_noEntriesAction->setObjectName(QLatin1String("no_entries"));
     m_noEntriesAction->setEnabled(false);
     clearSeparator = q->menu()->addSeparator();
     clearSeparator->setVisible(false);
+    clearSeparator->setObjectName(QLatin1String("separator"));
     clearAction = q->menu()->addAction(i18n("Clear List"), q, SLOT(clear()));
+    clearAction->setObjectName(QLatin1String("clear_action"));
     clearAction->setVisible(false);
     q->setEnabled(false);
     q->connect(q, SIGNAL(triggered(QAction*)), SLOT(_k_urlSelected(QAction*)));
@@ -202,11 +205,7 @@ void KRecentFilesAction::addAction(QAction *action, const QUrl &url, const QStri
 {
     Q_D(KRecentFilesAction);
 
-    if (actions().isEmpty()) {
-        addAction(action);
-    } else {
-        insertAction(actions().first(), action);
-    }
+    menu()->insertAction(menu()->actions().value(0), action);
     d->m_shortNames.insert(action, name);
     d->m_urls.insert(action, url);
 }

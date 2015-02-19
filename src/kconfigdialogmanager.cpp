@@ -29,6 +29,7 @@
 #include <QTimer>
 #include <QRadioButton>
 #include <QDebug>
+#include <QLayout>
 
 #include <kconfigskeleton.h>
 
@@ -57,6 +58,7 @@ public:
 
     QHash<QString, QWidget *> knownWidget;
     QHash<QString, QWidget *> buddyWidget;
+    QSet<QWidget *> allExclusiveGroupBoxes;
     bool insideGroupBox : 1;
     bool trackChanges : 1;
 };
@@ -205,6 +207,29 @@ void KConfigDialogManager::setupWidget(QWidget *widget, KConfigSkeletonItem *ite
         }
     }
 
+    // If it is a QGroupBox with only autoExclusive buttons
+    // and has no custom property and the config item type
+    // is an integer, assume we want to save the index like we did with
+    // KButtonGroup instead of if it is checked or not
+    QGroupBox *gb = qobject_cast<QGroupBox *>(widget);
+    if (gb && getCustomProperty(gb).isEmpty()) {
+        const KConfigSkeletonItem *item = d->m_conf->findItem(widget->objectName().mid(5));
+        if (item->property().type() == QVariant::Int) {
+            QObjectList children = gb->children();
+            children.removeAll(gb->layout());
+            const QList<QAbstractButton *> buttons = gb->findChildren<QAbstractButton *>();
+            if (children.count() == buttons.count()) {
+                bool allAutoExclusive = true;
+                foreach(QAbstractButton *button, buttons) {
+                    allAutoExclusive = allAutoExclusive && button->autoExclusive();
+                }
+                if (allAutoExclusive) {
+                    d->allExclusiveGroupBoxes << widget;
+                }
+            }
+        }
+    }
+
     if (!item->isEqual(property(widget))) {
         setProperty(widget, item->property());
     }
@@ -238,7 +263,15 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
 
                 setupWidget(childWidget, item);
 
-                if (d->trackChanges) {
+                if (trackChanges) {
+
+                    if (d->allExclusiveGroupBoxes.contains(childWidget)) {
+                        const QList<QAbstractButton *> buttons = childWidget->findChildren<QAbstractButton *>();
+                        foreach(QAbstractButton *button, buttons) {
+                            connect(button, SIGNAL(toggled(bool)), this, SIGNAL(widgetModified()));
+                        }
+                    }
+
                     QHash<QString, QByteArray>::const_iterator changedIt = s_changedMap()->constFind(childWidget->metaObject()->className());
 
                     if (changedIt == s_changedMap()->constEnd()) {
@@ -288,7 +321,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
         }
 //kf5: commented out to reduce debug output
 // #ifndef NDEBUG
-//     else if (!widgetName.isEmpty() && d->trackChanges)
+//     else if (!widgetName.isEmpty() && trackChanges)
 //     {
 //       QHash<QString, QByteArray>::const_iterator changedIt = s_changedMap()->constFind(childWidget->metaObject()->className());
 //       if (changedIt != s_changedMap()->constEnd())
@@ -378,7 +411,7 @@ void KConfigDialogManager::updateSettings()
         }
     }
     if (changed) {
-        d->m_conf->writeConfig();
+        d->m_conf->save();
         emit settingsChanged();
     }
 }
@@ -427,14 +460,13 @@ QByteArray KConfigDialogManager::getCustomProperty(const QWidget *widget) const
 
 void KConfigDialogManager::setProperty(QWidget *w, const QVariant &v)
 {
-    /*  QButtonGroup *bg = qobject_cast<QButtonGroup *>(w);
-      if (bg)
-      {
-        QAbstractButton *b = bg->button(v.toInt());
-        if (b)
-            b->setDown(true);
+    if (d->allExclusiveGroupBoxes.contains(w)) {
+        const QList<QAbstractButton *> buttons = w->findChildren<QAbstractButton *>();
+        if (v.toInt() < buttons.count()) {
+            buttons[v.toInt()]->setChecked(true);
+        }
         return;
-      }*/
+    }
 
     QByteArray userproperty = getCustomProperty(w);
     if (userproperty.isEmpty()) {
@@ -466,9 +498,14 @@ void KConfigDialogManager::setProperty(QWidget *w, const QVariant &v)
 
 QVariant KConfigDialogManager::property(QWidget *w) const
 {
-    /*  QButtonGroup *bg = qobject_cast<QButtonGroup *>(w);
-      if (bg && bg->checkedButton())
-        return QVariant(bg->id(bg->checkedButton()));*/
+    if (d->allExclusiveGroupBoxes.contains(w)) {
+        const QList<QAbstractButton *> buttons = w->findChildren<QAbstractButton *>();
+        for (int i = 0; i < buttons.count(); ++i) {
+            if (buttons[i]->isChecked())
+                return i;
+        }
+        return -1;
+    }
 
     QByteArray userproperty = getCustomProperty(w);
     if (userproperty.isEmpty()) {

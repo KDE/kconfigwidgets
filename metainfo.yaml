@@ -1,5 +1,5 @@
 maintainer:
-description: Extra widgets for easier configuration support
+description: Widgets for configuration dialogs
 tier: 3
 type: integration
 platforms:
@@ -8,3 +8,7 @@ platforms:
 portingAid: false
 deprecated: false
 release: true
+libraries:
+ - qmake: KConfigWidgets
+   cmake: "KF5::ConfigWidgets"
+cmakename: KF5ConfigWidgets

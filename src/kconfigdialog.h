@@ -199,7 +199,7 @@ protected Q_SLOTS:
 
     /**
      * Updates the Apply and Default buttons.
-     * Connect to this slot if you implement you own hasChanged()
+     * Connect to this slot if you implement your own hasChanged()
      * or isDefault() methods for widgets not managed by KConfig.
      * @since 4.3
      */
@@ -251,7 +251,7 @@ protected:
     /**
      * @internal
      */
-    virtual void showEvent(QShowEvent *e);
+    void showEvent(QShowEvent *e) Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
     /**

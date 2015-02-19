@@ -31,7 +31,7 @@ public Q_SLOTS:
     void setImage(const QImage &);
 
 protected Q_SLOTS:
-    void paintEvent(QPaintEvent *);
+    void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
 
 protected:
     QImage _img;

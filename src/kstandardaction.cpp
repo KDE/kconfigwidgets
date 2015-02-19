@@ -24,6 +24,7 @@
 #include <QToolButton>
 
 #include <QApplication>
+#include <kaboutdata.h>
 #include <klocalizedstring.h>
 #include <kstandardshortcut.h>
 #include <kacceleratormanager.h>
@@ -42,6 +43,7 @@ AutomaticAction::AutomaticAction(const QIcon &icon, const QString &text, const Q
     setText(text);
     setIcon(icon);
     setShortcuts(shortcut);
+    setProperty("defaultShortcuts", QVariant::fromValue(shortcut));
     connect(this, SIGNAL(triggered()), this, slot);
 }
 
@@ -152,9 +154,17 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
             break;
         // Same as default, but with the app icon
         case AboutApp:
+        {
             pAction = new QAction(parent);
             icon = qApp->windowIcon();
+            if (icon.isNull()) {
+                const KAboutData data = KAboutData::applicationData();
+                if (!data.programIconName().isEmpty()) {
+                    icon = QIcon::fromTheme(data.programIconName());
+                }
+            }
             break;
+        }
 
         default:
             pAction = new QAction(parent);
@@ -187,7 +197,9 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
 
         QList<QKeySequence> cut = KStandardShortcut::shortcut(pInfo->idAccel);
         if (!cut.isEmpty()) {
+            // emulate KActionCollection::setDefaultShortcuts to allow the use of "configure shortcuts"
             pAction->setShortcuts(cut);
+            pAction->setProperty("defaultShortcuts", QVariant::fromValue(cut));
         }
 
         pAction->setObjectName(pInfo->psName);
@@ -515,7 +527,9 @@ KToggleAction *showMenubar(const QObject *recvr, const char *slot, QObject *pare
     ret->setObjectName(name(ShowMenubar));
     ret->setIcon(QIcon::fromTheme("show-menu"));
 
+    // emulate KActionCollection::setDefaultShortcuts to allow the use of "configure shortcuts"
     ret->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::ShowMenubar));
+    ret->setProperty("defaultShortcuts", QVariant::fromValue(KStandardShortcut::shortcut(KStandardShortcut::ShowMenubar)));
 
     ret->setWhatsThis(i18n("Show Menubar<p>"
                            "Shows the menubar again after it has been hidden</p>"));

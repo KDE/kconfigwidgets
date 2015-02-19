@@ -1,5 +1,6 @@
-/*
-    Copyright 2007 Simon Hausmann <hausmann@kde.org>
+/* This file is part of the KDE libraries
+
+    Copyright (c) 2015 Laurent Montel <montel@kde.org>
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Library General Public
@@ -17,27 +18,26 @@
     Boston, MA 02110-1301, USA.
 */
 
-#include "kstandardactiontest.h"
+#ifndef KRECENTFILESACTIONTEST_H
+#define KRECENTFILESACTIONTEST_H
 
-#include <QAction>
-#include <QtTestWidgets>
-
-#include "kstandardaction.h"
-
-void tst_KStandardAction::shortcutForActionId()
+#include <QObject>
+class QMenu;
+class KRecentFilesActionTest : public QObject
 {
-    QList<QKeySequence> stdShortcut = KStandardShortcut::shortcut(KStandardShortcut::Cut);
+    Q_OBJECT
+public:
+    explicit KRecentFilesActionTest(QObject *parent = 0);
+    ~KRecentFilesActionTest();
 
-    QAction *cut = KStandardAction::cut(NULL);
-    QList<QKeySequence> actShortcut = cut->shortcuts();
-    QCOMPARE(cut->property("defaultShortcuts").value<QList<QKeySequence> >(), actShortcut);
-    QVERIFY(stdShortcut == actShortcut);
-    delete cut;
+private:
+    static QStringList extractActionNames(QMenu *menu);
+    static QList<bool> extractActionEnableVisibleState(QMenu *menu);
 
-    cut = KStandardAction::create(KStandardAction::Cut, NULL, NULL, NULL);
-    actShortcut = cut->shortcuts();
-    QVERIFY(stdShortcut == actShortcut);
-    delete cut;
-}
+private Q_SLOTS:
+    void shouldHaveDefaultValue();
+    void shouldAddActionInTop();
+    void shouldClearMenu();
+};
 
-QTEST_MAIN(tst_KStandardAction)
+#endif // KRECENTFILESACTIONTEST_H

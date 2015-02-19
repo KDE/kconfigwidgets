@@ -101,7 +101,7 @@ Q_SIGNALS:
     void defaultItemTriggered();
 
 protected Q_SLOTS:
-    virtual void actionTriggered(QAction *);
+    void actionTriggered(QAction *) Q_DECL_OVERRIDE;
 
 protected:
     using KSelectAction::triggered;
