@@ -60,8 +60,10 @@ KCModuleQml::~KCModuleQml()
 void KCModuleQml::showEvent(QShowEvent *event)
 {
     if (d->quickView) {
+        KCModule::showEvent(event);
         return;
     } else if (d->qmlObject) {
+        KCModule::showEvent(event);
         return;
     }
 
@@ -70,7 +72,6 @@ void KCModuleQml::showEvent(QShowEvent *event)
     d->quickView = new QQuickView(0);
     QWidget *widget = QWidget::createWindowContainer(d->quickView, this);
 
-    d->quickView = new QQuickView();
     d->quickView->setResizeMode(QQuickView::SizeRootObjectToView);
     KPackage::Package package = KPackage::PackageLoader::self()->loadPackage("KPackage/GenericQML");
     package.setDefaultPackageRoot("plasma/kcms");
@@ -84,6 +85,7 @@ void KCModuleQml::showEvent(QShowEvent *event)
     setMinimumHeight(d->quickView->initialSize().height());
 
     layout->addWidget(widget);
+    KCModule::showEvent(event);
 }
 
 QQuickItem *KCModuleQml::mainUi()

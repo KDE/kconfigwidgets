@@ -52,6 +52,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KConfigViewStateSaver
   KConfigDialogManager
   KCModule
+  KCModuleQml
   KHelpClient
   KLanguageButton
   KPasteTextAction
