@@ -74,7 +74,7 @@ void KCModuleQml::showEvent(QShowEvent *event)
 
     d->quickView->setResizeMode(QQuickView::SizeRootObjectToView);
     KPackage::Package package = KPackage::PackageLoader::self()->loadPackage("KPackage/GenericQML");
-    package.setDefaultPackageRoot("plasma/kcms");
+    package.setDefaultPackageRoot("kpackage/kcms");
     package.setPath(aboutData()->componentName());
     KDeclarative::KDeclarative dec;
     dec.setDeclarativeEngine(d->quickView->engine());
