@@ -55,6 +55,7 @@ KCModuleQml::KCModuleQml(QWidget* parent, const QVariantList& args)
 
 KCModuleQml::~KCModuleQml()
 {
+    delete d;
 }
 
 void KCModuleQml::showEvent(QShowEvent *event)
