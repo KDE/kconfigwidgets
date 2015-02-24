@@ -31,7 +31,6 @@ find_package(KF5DocTools ${KF5_DEP_VERSION} REQUIRED)
 find_package(KF5GuiAddons ${KF5_DEP_VERSION} REQUIRED)
 find_package(KF5I18n ${KF5_DEP_VERSION} REQUIRED)
 find_package(KF5WidgetsAddons ${KF5_DEP_VERSION} REQUIRED)
-find_package(KF5Service ${KF5_DEP_VERSION} REQUIRED)
 find_package(KF5Declarative ${KF5_DEP_VERSION} REQUIRED)
 find_package(KF5Package ${KF5_DEP_VERSION} REQUIRED)
 
