@@ -38,8 +38,8 @@ class KCModuleQmlPrivate
 {
 public:
     KCModuleQmlPrivate()
-        : quickView(0),
-          qmlObject(0)
+        : quickView(Q_NULLPTR),
+          qmlObject(Q_NULLPTR)
     {
     }
 
@@ -99,9 +99,9 @@ QQuickItem *KCModuleQml::mainUi()
     d->qmlObject = new KDeclarative::QmlObject(this);
     d->qmlObject->setTranslationDomain(aboutData()->componentName());
     d->qmlObject->setInitializationDelayed(true);
-    
+
     KPackage::Package package = KPackage::PackageLoader::self()->loadPackage("KPackage/GenericQML");
-    package.setDefaultPackageRoot("plasma/kcms");
+    package.setDefaultPackageRoot("kpackage/kcms");
     package.setPath(aboutData()->componentName());
 
     d->qmlObject->setSource(QUrl::fromLocalFile(package.filePath("mainscript")));
