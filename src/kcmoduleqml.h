@@ -24,6 +24,52 @@
 class QQuickItem;
 class KCModuleQmlPrivate;
 
+/**
+ * The base class for configuration modules written in QML
+ *
+ * Configuration modules are realized as plugins that are loaded only when
+ * needed.
+ *
+ * The KCModuleQml subclass should implement only the logic of the config module,
+ * and will be accessible as the "kcm" property from the QML code
+ *
+ * The QML code should be provided as a KPackage installed under
+ * share/kpackage/kcms with the same name as the KAboutdata component name
+ * of the KCModuleQml implementation.
+ *
+ * To write a config module, you have to create a library
+ * that contains a factory function like the following:
+ *
+ * \code
+ * #include <KPluginFactory>
+ *
+ * K_PLUGIN_FACTORY(MyKCModuleFactory, registerPlugin<MyKCModule>() )
+ * \endcode
+ *
+ * The constructor of the KCModule then looks like this:
+ * \code
+ * YourKCModule::YourKCModule( QWidget* parent )
+ *   : KCModule( parent )
+ * {
+ *   KAboutData *about = new KAboutData(
+ *     <kcm name>, i18n( "..." ),
+ *     KDE_VERSION_STRING, QString(), KAboutLicense::GPL,
+ *     i18n( "Copyright 2006 ..." ) );
+ *   about->addAuthor( i18n(...) );
+ *   setAboutData( about );
+ *   .
+ *   .
+ *   .
+ * }
+ * \endcode
+ *
+ * The actual load of the QML will be performed automatically at the first showEvent()
+ * of this widget.
+ * The KCModuleQml subclass will have to provide properties, signal and slots to
+ * provide an interface for the QML part to read and write the configuration.
+ * The actual read and write of the configuration will still be performed in the
+ * load() and save() method as normal KCModule instances.
+ */
 class KCONFIGWIDGETS_EXPORT KCModuleQml : public KCModule
 {
     Q_OBJECT
