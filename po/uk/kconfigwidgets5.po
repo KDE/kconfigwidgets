@@ -1,0 +1,501 @@
+# Translation of kconfigwidgets5.po to Ukrainian
+# Copyright (C) 2014-2015 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Eugene Onischenko <oneugene@ukr.net>, 2002, 2003, 2004, 2005, 2006.
+# Andriy Rysin <arysin@bcsii.com>, 2002, 2003, 2006, 2007.
+# Ivan Petrouchtchak <fr.ivan@ukrainian-orthodox.org>, 2005, 2006, 2007, 2008.
+# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2012, 2013, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: kconfigwidgets5\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-02-28 09:34+0000\n"
+"PO-Revision-Date: 2015-02-10 19:05+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "о. Іван Петрущак,Юрій Чорноіван"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "fr.ivan@ukrainian-orthodox.org,yurchor@ukr.net"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr "Програма попросить вас пройти розпізнавання перед збереженням"
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr "Вам заборонено зберігати налаштування"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Типове"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Автовиявлення"
+
+#: kconfigdialog.cpp:45
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Налаштовування"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "без назви"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Немає записів"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "Спорожнити список"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Назад"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Вперед"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Домівка"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Довідка"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "Показати смужку &меню"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Показати смужку меню<p>Вмикає відображення смужки меню після того як її було "
+"сховано</p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "Пок&азувати смужку стану"
+
+#: kstandardaction.cpp:555
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Показати смужку стану<p>Вмикає показ смужки стану, панелі у нижній частині "
+"вікна, яку використовують для показу даних щодо стану.</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Створити"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "Створити новий документ"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Відкрити..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "Відкрити вже створений документ"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "Відкрити &недавні"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "Відкрити документ, який вже було нещодавно відкрито"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Зберегти"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "Зберегти документ"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Зберегти &як..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "Зберегти документ під іншою назвою"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "&Відновити"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "Скасувати незбережені зміни у документі"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Закрити"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "Закрити документ"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&Друкувати..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "Надрукувати документ"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "Перегляд др&уку"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "Показати попередній перегляд результатів друку документа"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&Надіслати листа..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "Надіслати документ електронною поштою"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "Ви&йти"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Вийти з програми"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Вернути"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "Скасувати останню дію"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "П&овторити"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "Повернути результат останньої скасованої дії"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "Виріза&ти"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "Вирізати позначені об’єкти до буфера обміну даними"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Копіювати"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "Копіювати позначений фрагмент до буфера обміну даними"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&Вставити"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "Вставити вміст буфера обміну даними"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "О&чистити"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "Вибрати &все"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "Скасувати ви&бір"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Пошук..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "Знайти &далі"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "Знайти &позаду"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&Замінити..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&Фактичний розмір"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "Переглянути документ з використанням його справжніх розмірів"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&Влаштувати в сторінку"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "Змінити масштаб, щоб розмістити сторінку цілком"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Влаштувати в &ширину сторінки"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "Змінити масштаб, щоб розмістити всю ширину сторінки документа"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Влаштувати в &висоту сторінки"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "Змінити масштаб, щоб розмістити всю висоту сторінки документа"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "З&більшити"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "З&меншити"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Масштаб..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "Вибрати масштаб"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "&Перемалювати"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "Перемалювати документ"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&Нагору"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "Перейти вгору"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "&Попередня"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "Перейти до попередньої сторінки"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Наступна"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "Перейти до наступної сторінки"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "П&ерейти..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "Перейти до &сторінки..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "Перейти до ря&дка..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "Пе&рша"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "Перейти до першої сторінки"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "&Остання"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "Перейти до останньої сторінки"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Назад"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "Перейти назад документом"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "&Вперед"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "Перейти вперед документом"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&Додати закладку"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "&Редагувати закладки..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&Перевірка правопису..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "Перевірити правопис у документі"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "Показати або приховати смужку меню"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "Показати &пенал"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "Показати або приховати панель інструментів"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "Показати або приховати смужку стану"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "Повноекранний &режим"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&Зберегти параметри"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "Налаштувати с&корочення..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Налаштувати %1..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Налаштувати пенал&и..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "Налаштувати &сповіщення..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "П&ідручник з %1"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "&Що це?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "П&орада дня"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "Надіслати &звіт про помилку..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Перемкнути &мову програми..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&Про %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "П&ро KDE"
+
+#: ktipdialog.cpp:239
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Підказка дня"
+
+#: ktipdialog.cpp:255
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Чи знали ви, що…\n"
+
+#: ktipdialog.cpp:307
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "П&оказувати підказки під час запуску"
+
+#: ktipdialog.cpp:312
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Попередня"
+
+#: ktipdialog.cpp:317
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Наступна"

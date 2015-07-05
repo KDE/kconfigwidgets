@@ -1,0 +1,579 @@
+# translation of kdelibs4.po to
+# Malayalam translation of kdelibs4.
+# Copyright (C) 2007-2010 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kdelibs package.
+# Anoop | അനൂപ് Panavalappil | പനവളപ്പില്‍ <gnuanu@gmail.com>, 2008.
+# ANI PETER|അനി പീറ്റര്‍ <peter.ani@gmail.com>, 2008.
+# Maxin B. John <maxinbjohn@gmail.com>, 2007.
+# Manu S Madhav | മനു എസ് മാധവ് <manusmad@gmail.com>, 2008.
+# Praveen Arimbrathodiyil <pravi.a@gmail.com>, 2007, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-02-28 09:34+0000\n"
+"PO-Revision-Date: 2010-12-29 15:32+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Country: INDIA\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "പ്രവീണ്‍ അരിമ്പ്രത്തൊടിയില്‍, അനി പീറ്റര്‍, മാക്സിന്‍ ജോണ്‍, അനൂപ് പനവളപ്പില്‍, മനു എസ് മാധവ്"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"pravi.a@gmail.com, peter.ani@gmail.com, maxinbjohn@gmail.com, gnuanu@gmail."
+"com, manusmad@gmail.com"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr "സൂക്ഷിയ്ക്കുന്നതിനു് മുമ്പു് നിങ്ങളെ തിരിച്ചറിയേണ്ടി വരും"
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr "ക്രമീകരണം സൂക്ഷിയ്ക്കാന്‍ നിങ്ങള്‍ക്കനുവാദമില്ല"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "സഹജമായ"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "തനിയെ കണ്ടുപിടിക്കുക"
+
+#: kconfigdialog.cpp:45
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "ക്രമീകരിയ്ക്കുക"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "പേരില്ലാതെ"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "എന്‍ട്രികള്‍ ലഭ്യമല്ല"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "പട്ടിക വെടിപ്പാക്കുക"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "&പുറകോട്ടു്"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&മുമ്പോട്ടു്"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "&പൂമുഖം"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "സഹായം"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "&വിഭവത്തട്ട് കാണിക്കുക"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "വിഭവത്തട്ട് കാണിക്കുക<p>വിഭവത്തട്ട് ഒളിച്ചതിനുശേഷം വീണ്ടും കാണിക്കുന്നു</p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "&സ്ഥിതിത്തട്ട് കാണിക്കുക"
+
+#: kstandardaction.cpp:555
+#, fuzzy
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"സ്ഥിതിത്തട്ട് കാണിക്കുക<br /><br />ജാലകത്തിന്റെ താഴെ സ്ഥിതിവിവരങ്ങള്‍ക്കായുപയോഗിക്കുന്ന തട്ടായ "
+"സ്ഥിതിത്തട്ട് കാണിക്കുന്നു."
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "പുതിയത് &n"
+
+#: kstandardaction_p.h:41
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Create new tag:"
+msgid "Create new document"
+msgstr "പുതിയ ടാഗുണ്ടാക്കുക:"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&തുറക്കുക..."
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "രേഖയില്‍ &പുറകോട്ടു്"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "അടുത്തുപയോഗിച്ചത് തുറക്കുക &r"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&സൂക്ഷിയ്ക്കുക"
+
+#: kstandardaction_p.h:44
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "രേഖ അടയ്ക്കുക"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "പേരു് &മാറ്റി സൂക്ഷിയ്ക്കുക..."
+
+#: kstandardaction_p.h:45
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "രേഖ അടയ്ക്കുക"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "തിരിയ്ക്കുക &v"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "അടയ്ക്കുക &c"
+
+#: kstandardaction_p.h:47
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "രേഖ അടയ്ക്കുക"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&അച്ചടിയ്ക്കുക..."
+
+#: kstandardaction_p.h:48
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "പ്രിന്റ് ചെയ്യുന്നതിനു് മുമ്പ് കണ്ടുനോ&wക്കുക"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "മെയിലയയ്ക്കുക &m..."
+
+#: kstandardaction_p.h:50
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "രേഖ അടയ്ക്കുക"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "പുറത്ത് &കടക്കുക"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "പ്രയോഗത്തില്‍ നിന്നും പുറത്ത് കടക്കുക"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "വേണ്ട &u"
+
+#: kstandardaction_p.h:53
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Undo last action"
+msgstr "ഒരു സഹായം നല്‍കുക"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "വീണ്ടും &d"
+
+#: kstandardaction_p.h:54
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Redo last undone action"
+msgstr "ഒരു സഹായം നല്‍കുക"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "മുറിയ്ക്കുക &t"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "പകര്‍ത്തുക &c"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&ഒട്ടിയ്ക്കുക"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, fuzzy
+#| msgid "Upload content"
+msgid "Paste clipboard content"
+msgstr "കലാസൃഷ്ടി കയറ്റുക"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "വൃത്തിയാക്കുക &l"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "&എല്ലാം തെരഞ്ഞെടുക്കുക"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "തെരഞ്ഞെടുത്തതൊഴിവാക്കുക"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&കണ്ടുപിടിക്കുക..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "&അടുത്തത് കണ്ടുപിടിയ്ക്കുക"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "&മുമ്പത്തേത് കണ്ടുപിടിയ്ക്കുക"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "മാറ്റം &വരുത്തുക..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&യഥാര്‍ത്ഥ വലിപ്പം"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "താളില്‍ &കൊള്ളിയ്ക്കുക"
+
+#: kstandardaction_p.h:68
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "വരിയിലേയ്ക്കു് പോകുക"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "താളിന്റെ &വീതിയ്ക്കനുസരിച്ച് കൊള്ളിയ്ക്കുക"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "താളിന്റെ &ഉയരത്തിനനുസരിച്ച് കൊള്ളിയ്ക്കുക"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "വലുപ്പം &കൂട്ടുക"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "വലുപ്പം കു&റയ്ക്കുക"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&വലുതാക്കുക..."
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "ഒരു ആഴ്ച തെരഞ്ഞെടുക്കുക"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "പുനഃപ്രദര്‍ശിപ്പിയ്ക്കുക &r"
+
+#: kstandardaction_p.h:74
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Redisplay document"
+msgstr "പുനഃപ്രദര്‍ശിപ്പിയ്ക്കുക &r"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "മുകളിലേയ്ക്ക് &u"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "മുമ്പത്തെ താള്‍ &p"
+
+#: kstandardaction_p.h:81
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "മുമ്പത്തെ താള്‍ &p"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "അടുത്ത താള്‍ &n"
+
+#: kstandardaction_p.h:82
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "വരിയിലേയ്ക്കു് പോകുക"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "പോകുക &g..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "താളിലേയ്ക്ക് പോകുക &g..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "വരിയിലേയ്ക്ക് പോകുക &g..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&ആദ്യത്തെ താള്‍"
+
+#: kstandardaction_p.h:86
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "വരിയിലേയ്ക്കു് പോകുക"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "അ&വസാന താള്‍"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "താളിലേയ്ക്ക് പോകുക &g..."
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "പുറകിലേയ്ക്ക് &b"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "രേഖയില്‍ &പുറകോട്ടു്"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&മുമ്പോട്ടു്"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "രേഖയില്‍ &മുമ്പോട്ടു്"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "ഓര്‍മ്മക്കുറിപ്പ് കൂട്ടിച്ചേര്‍ക്കുക &a"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "ഓര്‍മ്മക്കുറിപ്പുകള്‍ &ചിട്ടപ്പെടുത്തുക..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "അക്ഷരത്തെറ്റു്..."
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "അക്ഷരത്തെറ്റു്ം പരിശോധിക്കുന്നു"
+
+#: kstandardaction_p.h:96
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "&വിഭവത്തട്ട് കാണിക്കുക"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "&പണിയായുധനിര കാണിയ്ക്കുക"
+
+#: kstandardaction_p.h:97
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "പണിയായുധനിര കാണിയ്ക്കുക"
+
+#: kstandardaction_p.h:98
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "സ്ഥിതിത്തട്ട് കാണിക്കുക"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "സ്ക്രീന്‍ &പരമാവധി വലിപ്പത്തില്‍ കാണുക"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "സജ്ജീകരണങ്ങള്‍ സൂക്ഷിയ്ക്കുക &s"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "കുറുക്കുവഴികള്‍ ക്രമീകരിയ്ക്കുക &h..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 ക്രമീകരിയ്ക്കുക &c..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "&പണിയായുധനിരകള്‍ ക്രമീകരിയ്ക്കുക"
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "&അറിയിപ്പുകള്‍ ക്രമീകരിയ്ക്കുക..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &ഹാന്‍ഡ് ബുക്ക്"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "&ഇതെന്താണു്?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "&ഇന്നത്തെ നുറുങ്ങു്"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "പിഴവാണെന്നു് &പറയുക..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "പ്രയോഗ &ഭാഷ മാറ്റുക"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "%1 &സംബന്ധിച്ചു്"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "&കെഡിഇയെക്കുറിച്ചു്"
+
+#: ktipdialog.cpp:239
+#, fuzzy
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "ഇന്നത്തെ നുറുങ്ങു്"
+
+#: ktipdialog.cpp:255
+#, fuzzy
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "നിങ്ങള്‍ക്കറിയാമോ...?\n"
+
+#: ktipdialog.cpp:307
+#, fuzzy
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "നുറുങ്ങുകള്‍ ആരംഭത്തില്‍ &കാണിക്കുക"
+
+#: ktipdialog.cpp:312
+#, fuzzy
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&മുമ്പുള്ള"
+
+#: ktipdialog.cpp:317
+#, fuzzy
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&അടുത്തതു്"
