@@ -18,8 +18,9 @@
 </affiliation>
 </author>
 
-<date>2006-06-01</date>
-<productname>K Desktop Environment</productname>
+<date>2014-03-04</date>
+<releaseinfo>Frameworks 5.0</releaseinfo>
+<productname>KDE Frameworks</productname>
 </refentryinfo>
 
 <refmeta>
@@ -49,7 +50,7 @@
 </para>
 
 <para>
-<command>preparetips5</command> looks for <emphasis role="underline">data/tips-en</emphasis> as tips file.
+<command>preparetips5</command> looks for <emphasis role="underline">data/tips</emphasis> as tips file.
 </para>
 </refsect1>
 
