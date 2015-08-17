@@ -37,11 +37,11 @@ typedef QHash<QString, QByteArray> MyHash;
 Q_GLOBAL_STATIC(MyHash, s_propertyMap)
 Q_GLOBAL_STATIC(MyHash, s_changedMap)
 
-class KConfigDialogManager::Private
+class KConfigDialogManagerPrivate
 {
 
 public:
-    Private(KConfigDialogManager *q) : q(q), insideGroupBox(false) { }
+    KConfigDialogManagerPrivate(KConfigDialogManager *q) : q(q), insideGroupBox(false) { }
 
 public:
     KConfigDialogManager *q;
@@ -64,7 +64,7 @@ public:
 };
 
 KConfigDialogManager::KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf)
-    : QObject(parent), d(new Private(this))
+    : QObject(parent), d(new KConfigDialogManagerPrivate(this))
 {
     d->m_conf = conf;
     d->m_dialog = parent;
@@ -72,7 +72,7 @@ KConfigDialogManager::KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton 
 }
 
 KConfigDialogManager::KConfigDialogManager(QWidget *parent, KConfigSkeleton *conf)
-    : QObject(parent), d(new Private(this))
+    : QObject(parent), d(new KConfigDialogManagerPrivate(this))
 {
     d->m_conf = conf;
     d->m_dialog = parent;

@@ -25,6 +25,7 @@
 
 #include <QtCore/QObject>
 #include <QtCore/QHash>
+class KConfigDialogManagerPrivate;
 
 class KCoreConfigSkeleton;
 class KConfigSkeleton;
@@ -245,13 +246,11 @@ protected:
     static void initMaps();
 
 private:
-    class Private;
-    friend class Private;
 
     /**
-     * KConfigDialogManager Private class.
+     * KConfigDialogManager KConfigDialogManagerPrivate class.
      */
-    Private *const d;
+    KConfigDialogManagerPrivate *const d;
 
     Q_DISABLE_COPY(KConfigDialogManager)
 };

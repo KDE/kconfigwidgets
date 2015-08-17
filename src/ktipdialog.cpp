@@ -46,7 +46,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <kseparator.h>
 #include <kstandardguiitem.h>
 
-class KTipDatabase::Private
+class Q_DECL_HIDDEN KTipDatabase::Private
 {
 public:
     void loadTips(const QString &tipFile);
@@ -187,7 +187,7 @@ QString KTipDatabase::tip() const
     return d->tips[ d->currentTip ];
 }
 
-class KTipDialog::Private
+class Q_DECL_HIDDEN KTipDialog::Private
 {
 public:
     Private(KTipDialog *_parent)

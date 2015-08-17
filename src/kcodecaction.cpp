@@ -39,7 +39,7 @@
 // the default/unknown mib value is 2.
 #define MIB_DEFAULT 2
 
-class KCodecAction::Private
+class Q_DECL_HIDDEN KCodecAction::Private
 {
 public:
     Private(KCodecAction *parent)
