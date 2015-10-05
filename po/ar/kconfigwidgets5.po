@@ -1,0 +1,524 @@
+# translation of kdelibs4.po to Arabic
+# translation of kdelibs4.po to
+# Copyright (C) 2001-2003, 2004, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+# Isam Bayazidi <bayazidi@arabeyes.org>, 2001,2003.
+# Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
+# Hicham Amaoui <amaoui@wanadoo.fr>, 2002.
+# Youcef Rabah Rahal <rahal@arabeyes.org>, 2003.
+# Ahmad M. Zawawi <azawawi@emirates.net.ae>, 2004.
+# Mohammed Gamal <f2c2001@yahoo.com>, 2004.
+# Usamah Ali Al-Maqdad <msareehi@kacst.edu.sa>, 2004.
+# Munzir Taha <munzir@kacst.edu.sa>, 2004.
+# Mohamed SAAD <metehyi@free.fr>, 2006.
+# Khaled Hosny <khaledhosny@eglug.org>, 2007.
+# Youssef Chahibi <chahibi@gmail.com>, 2007.
+# zayed <zayed.alsaidi@gmail.com>, 2008, 2009.
+# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2009.
+# hanny <hannysabbagh@hotmail.com>, 2012.
+# Abderrahim Kitouni <a.kitouni@gmail.com>, 2012.
+# Safa Alfulaij <safaalfulaij@hotmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-02-28 09:34+0000\n"
+"PO-Revision-Date: 2013-08-08 13:54+0300\n"
+"Last-Translator: Safa Alfulaij <safaalfulaij@hotmail.com>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "زايد السعيدي,محمد هاني صباغ,صفا الفليج"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"zayed.alsaidi@gmail.com,hannysabbagh@hotmail.com,safaalfulaij@hotmail.com"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr "ستسأل للاستيثاق قبل أن تحفظ"
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr "غير مسموح لك بحفظ الإعدادات"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "الافتراضي"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "كشف آلي"
+
+#: kconfigdialog.cpp:45
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "اضبط"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "بدون اسم"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "بدون مدخلات"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "امح القائمة"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "إلى ال&خلف"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "إلى الأ&مام"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "ال&منزل"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "م&ساعدة"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "أظهر شريط ال&قوائم"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "أظهر شريط الخيارات<p>يظهر شريط الخيارات مرة أخرى بعد أن يكون مخفيا</p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "أظهر شريط ال&حال"
+
+#: kstandardaction.cpp:555
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"أظهر شريط الحالة<p>يعرض شريط الحالة، وهو شريط في أسفل النافذة يستخدم لعرض "
+"معلومات الحالة.</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&جديد"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "أنشئ مستند جديد"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "ا&فتح ..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "افتح مستند موجود"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "افتح ال&حديث"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "افتح مستند مفتوح مؤخّرًا"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "احف&ظ"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "احفظ المستند"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "احفظ &كــ ..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "احفظ المستند باسم جديد"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "ا&سترجع"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "أعد التغييرات غير المحفوظة للمستند"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "أ&غلق"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "أغلق المستند"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "ا&طبع..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "اطبع المستند"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "&معاينة الطّباعة"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "أظهر معانية طباعة للصفحة"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "أرسل بال&بريد..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "أرسل المستند بالبريد الإلكتروني"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "أ&نهِ"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "أنه التطبيق"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "ت&راجع"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "تراجع عن آخر إجراء"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "&كرر"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "كرّر آخر إجراء لم يتمّ"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "ق&ص"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "قصّ التحديد إلى الحافظة"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "ان&سخ"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "انسخ التحديد إلى الحافظة"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "أل&صق"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "الصق محتويات الحافظة"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "ا&مسح"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "اختر ال&كل"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "أ&زل التحديد"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "ا&عثر..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "اعثر على ال&تالي"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "اعثر على ال&سابق"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "ا&ستبدل..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "ال&حجم الفعلي"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "اعرض المستند بالحجم الأصلي"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&ملائمة للصفحة"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "حجّم لملائمة الصفحة في النافذة"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "ملائمة مع &عرض الصفحة"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "حجّم لملائمة عرض الصفحة في النافذة"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "ملائمة مع ا&رتفاع الصفحة"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "حجّم لملائمة ارتفاع الصفحة في النافذة"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "&كبّر"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "&صغّر"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "ت&حجيم..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "حدّد مستوى التحجيم"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "أعد ال&عرض"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "أعد عرض المستند"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "أ&على"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "اذهب لأعلى"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "الصفحة السا&بقة"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "اذهب للصفحة السابقة"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "الصفحة ال&تالية"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "اذهب للصفحة التالية"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "اذ&هب إلى..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "اذهب إلى ال&صفحة..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "اذهب إلى ال&سطر..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "أ&ول صفحة"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "اذهب للصفحة الأولى"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "آ&خر صفحة"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "اذهب للصفحة الأخيرة"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&خلف"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+msgid "Go back in document"
+msgstr "لل&خلف في المستند"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "إلى الأ&مام"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+msgid "Go forward in document"
+msgstr "للأ&مام في المستند"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "أ&ضف علامة موقع"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "&حرّر العلامات..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "إ&ملاء..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "تحقّق من الإملاء في المستند"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "أظهر شريط القوائم أو أخفِه"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "أظهر شريط الأ&دوات"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "أظهر شريط الأدوات أو أخفِه"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "أظهر شريط الحالة أو أخفِه"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "&نمط ملء الشاشة"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&احفظ الإعدادات"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "اضبط الا&ختصارات..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "ا&ضبط %1..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "اضبط أ&شرطة الأدوات..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "اضبط ال&تبليغات..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&كتيب %1"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "ما &هذا ؟"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "تلميحة ال&يوم"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "أبلغ عن &علة..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "بدّل &لغة التطبيق..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&حول %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "حول &كدي"
+
+#: ktipdialog.cpp:239
+#, fuzzy
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "تلميحة اليوم"
+
+#: ktipdialog.cpp:255
+#, fuzzy
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "هل تعلم أن....؟\n"
+
+#: ktipdialog.cpp:307
+#, fuzzy
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "ا&عرض النصائح عند بدء التشغيل"
+
+#: ktipdialog.cpp:312
+#, fuzzy
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "ال&سابق"
+
+#: ktipdialog.cpp:317
+#, fuzzy
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "ال&تالي"

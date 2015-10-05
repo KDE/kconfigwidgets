@@ -1,0 +1,508 @@
+# Translation of kdelibs4.po to Low Saxon
+# Heiko Evermann <heiko@evermann.de>, 2004.
+# Heiko Evermann <heiko.evermann@gmx.de>, 2004, 2005.
+# Volker Jockheck <volkae@gmx.net>, 2004.
+# Sönke Dibbern <s_dibbern@web.de>, 2004, 2005, 2006, 2007, 2008, 2009, 2014.
+# Manfred Wiese <m.j.wiese@web.de>, 2008, 2009, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-02-28 09:34+0000\n"
+"PO-Revision-Date: 2014-03-11 23:48+0100\n"
+"Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
+"Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sönke Dibbern, Manfred Wiese"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "s_dibbern@web.de, m.j.wiese@web.de"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr "Dien Verlöven warrt vör't Sekern pröövt"
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr "Du muttst de Instellen nich sekern"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Standard"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Automaatsch"
+
+#: kconfigdialog.cpp:45
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Instellen"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "ahn Naam"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Keen Indrääg"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "List leddig maken"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Torüch"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Vörut"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "To&huus"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Hülp"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "&Menübalken wiesen"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Menübalken wiesen<p>Wiest den Menübalken wedder, wenn he versteken is</p>"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "&Statusbalken wiesen"
+
+#: kstandardaction.cpp:555
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Statusbalken wiesen<p>Wiest den Statusbalken. Dat is de Balken nerrn in't "
+"Finster, op den Statusinformatschonen wiest warrt.</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Nieg"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "Nieg Dokment opstellen"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Opmaken..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "En vörhannen Dokment opmaken"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "&Verleden opmaken"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "En annerlest opmaakt Dokment opmaken"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Sekern"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "Dokment sekern"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Sekern &as..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "Dokment mit en nieg Naam sekern"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "&Torüchdreihen"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "Nich sekerte Ännern an't Dokment torüchnehmen"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Tomaken"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "Dokment tomaken"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&Drucken..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "Dokment drucken"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "Druck&vöransicht"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "En Druckvöransicht vun't Dokment wiesen"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&Nettpost..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "Dokment mit Nettbreef sennen"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "&Verlaten"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Programm verlaten"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Torüchnehmen"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "De verleden Akschoon torüchnehmen"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "&Wedderhalen"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "Torüchnahmen Akschoon wedderherstellen"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "Kn&ippen"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "Köör na Twischenaflaag utknippen"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "K&operen"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "Köör na Twischenaflaag koperen"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&Infögen"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "Twischenaflaag-Inholt infögen"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "&Leddig maken"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "&Allens utsöken"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "&Köör torüchnehmen"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Söken na..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "Nakamen &söken"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "&Verleden söken"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&Utwesseln..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&Orginaalgrött"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "Dokment mit de Orginaalgrött ankieken"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&Grött de Siet topassen"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "Ansichtgrött topassen, so dat de Siet in't Finster passt"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "De Siet&breed topassen"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "Ansichtgrött topassen, so dat de Sietbreed in't Finster passt"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "De Siet&hööchde topassen"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "Ansichtgrött topassen, so dat de Siethööchde in't Finster passt"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "&Grötter maken"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "&Lütter maken"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Grött ännern..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "Ansichtgrött-Stoop utsöken"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "O&pfrischen"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "Dokment nieg wiesen"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "Na &baven"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "Na baven gahn"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "&Verleden Siet"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "Na de verleden Siet gahn"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Nakamen Siet"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "Na de nakamen Siet gahn"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Gah na..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "&Gah na de Siet..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "&Gah na de Reeg..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&Eerste Siet"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "Na de eerste Siet gahn"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "&Leste Siet"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "Na de leste Siet gahn"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Torüch"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "Binnen dat Dokment torüchgahn"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "&Vörut"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "Binnen dat Dokment vörut gahn"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&Leesteken tofögen"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "&Leestekens bewerken..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&Klookschriever..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "Schriefwies binnen dat Dokment pröven"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "Menübalken wiesen oder versteken"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "&Warktüüchbalken wiesen"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "Warktüüchbalken wiesen oder versteken"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "Statusbalken wiesen oder versteken"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "&Heelschirm-Bedrief"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "Instellen &sekern"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "&Tastkombinatschonen instellen..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 &instellen..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Warktüüch&balkens instellen..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "&Bescheden instellen..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1-&Handbook"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "&Wat is dat?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "Tipp för Vun&daag"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "&Fehler künnig maken..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Programm&spraak wesseln..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&Vertell wat över %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "Vertell wat över &KDE"
+
+#: ktipdialog.cpp:239
+#, fuzzy
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Tipp för Vundaag"
+
+#: ktipdialog.cpp:255
+#, fuzzy
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Weetst du al...?\n"
+
+#: ktipdialog.cpp:307
+#, fuzzy
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Tipps bi't Starten wiesen"
+
+#: ktipdialog.cpp:312
+#, fuzzy
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Verleden"
+
+#: ktipdialog.cpp:317
+#, fuzzy
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Nakamen"
