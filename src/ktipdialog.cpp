@@ -34,7 +34,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <QLayout>
 #include <QDesktopWidget>
 #include <QPushButton>
-#include <QStandardPaths>
 #include <QTextBrowser>
 #include <QDebug>
 
@@ -283,7 +282,7 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
     browserLayout->addWidget(d->tipText);
 
     QLabel *label = new QLabel(this);
-    label->setPixmap(QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kf5/kconfigwidgets/pics/ktip-bulb.png"));
+    label->setPixmap(QStringLiteral(":/kconfigwidgets/pics/ktip-bulb.png"));
     label->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     browserLayout->addWidget(label);
 

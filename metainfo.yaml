@@ -3,8 +3,7 @@ description: Widgets for configuration dialogs
 tier: 3
 type: integration
 platforms:
-    - name: Linux
-    - name: MacOSX
+    - name: All
 portingAid: false
 deprecated: false
 release: true

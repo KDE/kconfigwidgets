@@ -14,6 +14,8 @@ set(kconfigwidgets_SRCS
   ktipdialog.cpp
 )
 
+qt5_add_resources(kconfigwidgets_SRCS kconfigwidgets.qrc)
+
 add_library(KF5ConfigWidgets ${kconfigwidgets_SRCS})
 generate_export_header(KF5ConfigWidgets BASE_NAME KConfigWidgets)
 add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
@@ -65,11 +67,6 @@ install(FILES
   ${KConfigWidgets_HEADERS}
   ktip.h
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/KConfigWidgets COMPONENT Devel
-)
-
-install(FILES
- ktip-bulb.png
- DESTINATION  ${KDE_INSTALL_DATADIR_KF5}/kconfigwidgets/pics
 )
 
 install(PROGRAMS preparetips5 DESTINATION ${KDE_INSTALL_BINDIR} )
