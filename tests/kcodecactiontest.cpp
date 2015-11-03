@@ -11,7 +11,7 @@
 
 int main(int argc, char **argv)
 {
-    QApplication::setApplicationName("kcodecactiontest");
+    QApplication::setApplicationName(QStringLiteral("kcodecactiontest"));
     QApplication app(argc, argv);
 
     CodecActionTest *test = new CodecActionTest;
@@ -22,8 +22,8 @@ int main(int argc, char **argv)
 
 CodecActionTest::CodecActionTest(QWidget *parent)
     : QMainWindow(parent)
-    , m_comboCodec(new KCodecAction("Combo Codec Action", this))
-    , m_buttonCodec(new KCodecAction("Button Codec Action", this))
+    , m_comboCodec(new KCodecAction(QStringLiteral("Combo Codec Action"), this))
+    , m_buttonCodec(new KCodecAction(QStringLiteral("Button Codec Action"), this))
 {
     m_comboCodec->setToolBarMode(KCodecAction::ComboBoxMode);
     connect(m_comboCodec, SIGNAL(triggered(QAction*)), SLOT(triggered(QAction*)));
@@ -40,7 +40,7 @@ CodecActionTest::CodecActionTest(QWidget *parent)
     menuBar()->addAction(m_comboCodec);
     menuBar()->addAction(m_buttonCodec);
 
-    QToolBar *toolBar = addToolBar("Test");
+    QToolBar *toolBar = addToolBar(QStringLiteral("Test"));
     toolBar->addAction(m_comboCodec);
     toolBar->addAction(m_buttonCodec);
 }

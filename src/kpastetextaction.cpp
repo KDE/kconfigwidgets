@@ -97,9 +97,9 @@ void KPasteTextActionPrivate::_k_menuAboutToShow()
 {
     m_popup->clear();
     QStringList list;
-    QDBusInterface klipper("org.kde.klipper", "/klipper", "org.kde.klipper.klipper");
+    QDBusInterface klipper(QStringLiteral("org.kde.klipper"), QStringLiteral("/klipper"), QStringLiteral("org.kde.klipper.klipper"));
     if (klipper.isValid()) {
-        QDBusReply<QStringList> reply = klipper.call("getClipboardHistoryMenu");
+        QDBusReply<QStringList> reply = klipper.call(QStringLiteral("getClipboardHistoryMenu"));
         if (reply.isValid()) {
             list = reply;
         }
@@ -112,7 +112,7 @@ void KPasteTextActionPrivate::_k_menuAboutToShow()
     const QFontMetrics fm = m_popup->fontMetrics();
     foreach (const QString &string, list) {
         QString text = fm.elidedText(string.simplified(), Qt::ElideMiddle, fm.maxWidth() * 20);
-        text.replace('&', "&&");
+        text.replace('&', QLatin1String("&&"));
         QAction *action = m_popup->addAction(text);
         if (!found && string == clipboardText) {
             action->setChecked(true);
@@ -123,15 +123,15 @@ void KPasteTextActionPrivate::_k_menuAboutToShow()
 
 void KPasteTextActionPrivate::_k_slotTriggered(QAction *action)
 {
-    QDBusInterface klipper("org.kde.klipper", "/klipper", "org.kde.klipper.klipper");
+    QDBusInterface klipper(QStringLiteral("org.kde.klipper"), QStringLiteral("/klipper"), QStringLiteral("org.kde.klipper.klipper"));
     if (klipper.isValid()) {
-        QDBusReply<QString> reply = klipper.call("getClipboardHistoryItem",
+        QDBusReply<QString> reply = klipper.call(QStringLiteral("getClipboardHistoryItem"),
                                     m_popup->actions().indexOf(action));
         if (!reply.isValid()) {
             return;
         }
         QString clipboardText = reply;
-        reply = klipper.call("setClipboardContents", clipboardText);
+        reply = klipper.call(QStringLiteral("setClipboardContents"), clipboardText);
         //if (reply.isValid())
         //  qDebug() << "Clipboard: " << qApp->clipboard()->text(QClipboard::Clipboard);
     }

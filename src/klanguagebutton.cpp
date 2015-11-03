@@ -175,7 +175,7 @@ void KLanguageButton::insertSeparator(int index)
 void KLanguageButton::loadAllLanguages()
 {
     QStringList langlist;
-    const QStringList localeDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QString("locale"), QStandardPaths::LocateDirectory);
+    const QStringList localeDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("locale"), QStandardPaths::LocateDirectory);
     Q_FOREACH (const QString &localeDir, localeDirs) {
         const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
         Q_FOREACH (const QString &d, entries) {
@@ -245,7 +245,7 @@ bool KLanguageButton::contains(const QString &languageCode) const
 
 QString KLanguageButton::current() const
 {
-    return d->current.isEmpty() ? QLatin1String("en") : d->current;
+    return d->current.isEmpty() ? QStringLiteral("en") : d->current;
 }
 
 QAction *KLanguageButtonPrivate::findAction(const QString &data) const

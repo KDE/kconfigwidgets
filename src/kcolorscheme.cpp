@@ -70,9 +70,9 @@ StateEffects::StateEffects(QPalette::ColorGroup state, const KSharedConfigPtr &c
 {
     QString group;
     if (state == QPalette::Disabled) {
-        group = QLatin1String("ColorEffects:Disabled");
+        group = QStringLiteral("ColorEffects:Disabled");
     } else if (state == QPalette::Inactive) {
-        group = QLatin1String("ColorEffects:Inactive");
+        group = QStringLiteral("ColorEffects:Inactive");
     }
 
     _effects[0] = 0;

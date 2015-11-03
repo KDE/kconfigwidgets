@@ -25,7 +25,7 @@
 
 int main(int argc, char **argv)
 {
-    QApplication::setApplicationName(QString::fromLatin1("KLanguageButtonTest"));
+    QApplication::setApplicationName(QStringLiteral("KLanguageButtonTest"));
     QApplication app(argc, argv);
 
     KLanguageButton button;

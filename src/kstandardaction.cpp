@@ -89,14 +89,14 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
         case Back:
             sLabel = i18nc("go back", "&Back");
             if (QApplication::isRightToLeft()) {
-                iconName = "go-next";
+                iconName = QStringLiteral("go-next");
             }
             break;
 
         case Forward:
             sLabel = i18nc("go forward", "&Forward");
             if (QApplication::isRightToLeft()) {
-                iconName = "go-previous";
+                iconName = QStringLiteral("go-previous");
             }
             break;
 
@@ -122,12 +122,12 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
 
         if (QApplication::isRightToLeft()) {
             switch (id) {
-            case Prior:           iconName = "go-next-view-page"; break;
-            case Next:            iconName = "go-previous-view-page"; break;
-            case FirstPage:       iconName = "go-last-view-page"; break;
-            case LastPage:        iconName = "go-first-view-page"; break;
-            case DocumentBack:    iconName = "go-next"; break;
-            case DocumentForward: iconName = "go-previous"; break;
+            case Prior:           iconName = QStringLiteral("go-next-view-page"); break;
+            case Next:            iconName = QStringLiteral("go-previous-view-page"); break;
+            case FirstPage:       iconName = QStringLiteral("go-last-view-page"); break;
+            case LastPage:        iconName = QStringLiteral("go-first-view-page"); break;
+            case DocumentBack:    iconName = QStringLiteral("go-next"); break;
+            case DocumentForward: iconName = QStringLiteral("go-previous"); break;
             default: break;
             }
         }
@@ -525,7 +525,7 @@ KToggleAction *showMenubar(const QObject *recvr, const char *slot, QObject *pare
 {
     KToggleAction *ret = new KToggleAction(i18n("Show &Menubar"), parent);
     ret->setObjectName(name(ShowMenubar));
-    ret->setIcon(QIcon::fromTheme("show-menu"));
+    ret->setIcon(QIcon::fromTheme(QStringLiteral("show-menu")));
 
     // emulate KActionCollection::setDefaultShortcuts to allow the use of "configure shortcuts"
     ret->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::ShowMenubar));

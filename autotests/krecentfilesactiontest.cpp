@@ -74,7 +74,7 @@ void KRecentFilesActionTest::shouldHaveDefaultValue()
 void KRecentFilesActionTest::shouldAddActionInTop()
 {
     KRecentFilesAction recentAction(0);
-    recentAction.addUrl(QUrl(QLatin1String("http://www.kde.org")));
+    recentAction.addUrl(QUrl(QStringLiteral("http://www.kde.org")));
     QList<QAction*> lstAction = recentAction.menu()->actions();
     QCOMPARE(lstAction.count(), 4);
 
@@ -91,7 +91,7 @@ void KRecentFilesActionTest::shouldAddActionInTop()
 void KRecentFilesActionTest::shouldClearMenu()
 {
     KRecentFilesAction recentAction(0);
-    recentAction.addUrl(QUrl(QLatin1String("http://www.kde.org")));
+    recentAction.addUrl(QUrl(QStringLiteral("http://www.kde.org")));
     QList<QAction*> lstAction = recentAction.menu()->actions();
     QCOMPARE(lstAction.count(), 4);
     recentAction.clear();

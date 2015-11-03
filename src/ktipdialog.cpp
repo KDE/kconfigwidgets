@@ -83,17 +83,17 @@ void KTipDatabase::Private::addTips(const QString &tipFile)
 
     QByteArray data = file.readAll();
     QString content = QString::fromUtf8(data.constData(), data.size());
-    const QRegExp rx("\\n+");
+    const QRegExp rx(QStringLiteral("\\n+"));
 
     int pos = -1;
-    while ((pos = content.indexOf("<html>", pos + 1, Qt::CaseInsensitive)) != -1) {
+    while ((pos = content.indexOf(QStringLiteral("<html>"), pos + 1, Qt::CaseInsensitive)) != -1) {
         /**
          * To make translations work, tip extraction here must exactly
          * match what is done by the preparetips5 script.
          */
         QString tip = content
-                      .mid(pos + 6, content.indexOf("</html>", pos, Qt::CaseInsensitive) - pos - 6)
-                      .replace(rx, "\n");
+                      .mid(pos + 6, content.indexOf(QStringLiteral("</html>"), pos, Qt::CaseInsensitive) - pos - 6)
+                      .replace(rx, QStringLiteral("\n"));
 
         if (!tip.endsWith('\n')) {
             tip += '\n';
@@ -215,14 +215,14 @@ KTipDialog *KTipDialog::Private::mInstance = 0;
 void KTipDialog::Private::_k_prevTip()
 {
     database->prevTip();
-    tipText->setHtml(QString::fromLatin1("<html><body>%1</body></html>")
+    tipText->setHtml(QStringLiteral("<html><body>%1</body></html>")
                      .arg(KTipDialog::tr(database->tip().toUtf8())));
 }
 
 void KTipDialog::Private::_k_nextTip()
 {
     database->nextTip();
-    tipText->setHtml(QString::fromLatin1("<html><body>%1</body></html>")
+    tipText->setHtml(QStringLiteral("<html><body>%1</body></html>")
                      .arg(KTipDialog::tr(database->tip().toUtf8())));
 }
 
@@ -245,7 +245,7 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
 
     d->database = database;
 
-    setWindowIcon(QIcon::fromTheme("ktip"));
+    setWindowIcon(QIcon::fromTheme(QStringLiteral("ktip")));
 
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
@@ -267,8 +267,8 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
     d->tipText->setWordWrapMode(QTextOption::WrapAtWordBoundaryOrAnywhere);
 
     QStringList paths;
-    paths << QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "icons", QStandardPaths::LocateDirectory)
-          << QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "kdewizard/pics", QStandardPaths::LocateDirectory);
+    paths << QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("icons"), QStandardPaths::LocateDirectory)
+          << QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("kdewizard/pics"), QStandardPaths::LocateDirectory);
 
     d->tipText->setSearchPaths(paths);
 

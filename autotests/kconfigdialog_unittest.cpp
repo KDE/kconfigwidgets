@@ -42,21 +42,21 @@ public:
     ComboBoxPage()
     {
         colorCombo = new KColorCombo(this);
-        colorCombo->setObjectName("kcfg_Color");
+        colorCombo->setObjectName(QStringLiteral("kcfg_Color"));
         colorCombo->setColor(Qt::red);
 
         enumCombo = new QComboBox(this);
-        enumCombo->setObjectName("kcfg_Enum");
-        enumCombo->addItems(QStringList() << "A" << "B" << "C");
+        enumCombo->setObjectName(QStringLiteral("kcfg_Enum"));
+        enumCombo->addItems(QStringList() << QStringLiteral("A") << QStringLiteral("B") << QStringLiteral("C"));
 
         textCombo = new QComboBox(this);
-        textCombo->setObjectName("kcfg_Text");
+        textCombo->setObjectName(QStringLiteral("kcfg_Text"));
         textCombo->setEditable(true);
-        textCombo->addItems(QStringList() << "A" << "B" << "C");
+        textCombo->addItems(QStringList() << QStringLiteral("A") << QStringLiteral("B") << QStringLiteral("C"));
 
         numInput = new QSpinBox(this);
         numInput->setValue(1);
-        numInput->setObjectName("kcfg_IntNumInput");
+        numInput->setObjectName(QStringLiteral("kcfg_IntNumInput"));
     }
 
     KColorCombo *colorCombo;
@@ -70,33 +70,33 @@ class ComboSettings : public KConfigSkeleton
 public:
     ComboSettings() : KConfigSkeleton(CONFIG_FILE)
     {
-        colorItem = new ItemColor(currentGroup(), QLatin1String("Color"), color, Qt::white);
-        addItem(colorItem, QLatin1String("Color"));
+        colorItem = new ItemColor(currentGroup(), QStringLiteral("Color"), color, Qt::white);
+        addItem(colorItem, QStringLiteral("Color"));
 
         QList<ItemEnum::Choice2> textValues;
         {
             ItemEnum::Choice2 choice;
-            choice.name = QLatin1String("A");
+            choice.name = QStringLiteral("A");
             textValues.append(choice);
         }
         {
             ItemEnum::Choice2 choice;
-            choice.name = QLatin1String("B");
+            choice.name = QStringLiteral("B");
             textValues.append(choice);
         }
         {
             ItemEnum::Choice2 choice;
-            choice.name = QLatin1String("C");
+            choice.name = QStringLiteral("C");
             textValues.append(choice);
         }
-        enumItem = new ItemEnum(currentGroup(), QLatin1String("Enum"), enumIndex, textValues, 1);
-        addItem(enumItem, QLatin1String("Enum"));
+        enumItem = new ItemEnum(currentGroup(), QStringLiteral("Enum"), enumIndex, textValues, 1);
+        addItem(enumItem, QStringLiteral("Enum"));
 
-        stringItem = new ItemString(currentGroup(), QLatin1String("Text"), string, QLatin1String("hh:mm"));
-        addItem(stringItem, QLatin1String("Text"));
+        stringItem = new ItemString(currentGroup(), QStringLiteral("Text"), string, QStringLiteral("hh:mm"));
+        addItem(stringItem, QStringLiteral("Text"));
 
-        intValueItem = new ItemInt(currentGroup(), QLatin1String("IntNumInput"), intValue, 42);
-        addItem(intValueItem, QLatin1String("IntNumInput"));
+        intValueItem = new ItemInt(currentGroup(), QStringLiteral("IntNumInput"), intValue, 42);
+        addItem(intValueItem, QStringLiteral("IntNumInput"));
     }
 
     ItemColor *colorItem;
@@ -132,7 +132,7 @@ private Q_SLOTS:
     void test()
     {
         ComboSettings *skeleton = new ComboSettings();
-        KConfigDialog *dialog = new KConfigDialog(0, "settings", skeleton);
+        KConfigDialog *dialog = new KConfigDialog(0, QStringLiteral("settings"), skeleton);
         ComboBoxPage *page = new ComboBoxPage();
 
         QCOMPARE(page->colorCombo->color().name(), QColor(Qt::red).name());
@@ -140,7 +140,7 @@ private Q_SLOTS:
         QCOMPARE(page->textCombo->currentText(), QString("A"));
         QCOMPARE(page->numInput->value(), 1);
 
-        dialog->addPage(page, "General");
+        dialog->addPage(page, QStringLiteral("General"));
 
         QCOMPARE(page->colorCombo->color().name(), QColor(Qt::white).name());
         QCOMPARE(page->enumCombo->currentIndex(), 1);
@@ -169,7 +169,7 @@ private Q_SLOTS:
         const QString defaultValue = QStringLiteral("default value");
         const QString changedValue = QStringLiteral("changed value");
         const QString someOtherValue = QStringLiteral("some other value");
-        KConfigDialog *dialog = new KConfigDialog(0, "settings2", SignalTest::self());
+        KConfigDialog *dialog = new KConfigDialog(0, QStringLiteral("settings2"), SignalTest::self());
         QWidget* page = new QWidget;
         QLineEdit *edit = new QLineEdit(page);
         edit->setObjectName(QStringLiteral("kcfg_foo"));
@@ -178,7 +178,7 @@ private Q_SLOTS:
         QSignalSpy spy(SignalTest::self(), SIGNAL(fooChanged(QString)));
         QVERIFY(spy.isValid());
         // now all the magic happens
-        dialog->addPage(page, "General");
+        dialog->addPage(page, QStringLiteral("General"));
 
         //check that default value gets loaded
         QCOMPARE(spy.size(), 0);

@@ -42,7 +42,7 @@ public:
         connect(box, &QDialogButtonBox::rejected, qApp, &QApplication::quit);
 
         QToolButton *button = new QToolButton(box);
-        button->setIcon(QIcon::fromTheme("fill-color"));
+        button->setIcon(QIcon::fromTheme(QStringLiteral("fill-color")));
         button->setMenu(manager->createSchemeSelectionMenu(QStringLiteral("Oxygen"), button)->menu());
         box->addButton(button, QDialogButtonBox::InvalidRole);
 

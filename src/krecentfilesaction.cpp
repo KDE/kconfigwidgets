@@ -76,13 +76,13 @@ void KRecentFilesActionPrivate::init()
     q->setMenu(new QMenu());
     q->setToolBarMode(KSelectAction::MenuMode);
     m_noEntriesAction = q->menu()->addAction(i18n("No Entries"));
-    m_noEntriesAction->setObjectName(QLatin1String("no_entries"));
+    m_noEntriesAction->setObjectName(QStringLiteral("no_entries"));
     m_noEntriesAction->setEnabled(false);
     clearSeparator = q->menu()->addSeparator();
     clearSeparator->setVisible(false);
-    clearSeparator->setObjectName(QLatin1String("separator"));
+    clearSeparator->setObjectName(QStringLiteral("separator"));
     clearAction = q->menu()->addAction(i18n("Clear List"), q, SLOT(clear()));
-    clearAction->setObjectName(QLatin1String("clear_action"));
+    clearAction->setObjectName(QStringLiteral("clear_action"));
     clearAction->setVisible(false);
     q->setEnabled(false);
     q->connect(q, SIGNAL(triggered(QAction*)), SLOT(_k_urlSelected(QAction*)));
@@ -275,7 +275,7 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
     bool thereAreEntries = false;
     // read file list
     for (int i = 1; i <= d->m_maxItems; i++) {
-        key = QString("File%1").arg(i);
+        key = QStringLiteral("File%1").arg(i);
         value = cg.readPathEntry(key, QString());
         if (value.isEmpty()) {
             continue;
@@ -299,7 +299,7 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
         }
 #endif
 
-        nameKey = QString("Name%1").arg(i);
+        nameKey = QStringLiteral("Name%1").arg(i);
         nameValue = cg.readPathEntry(nameKey, url.fileName());
         title = titleWithSensibleWidth(nameValue, value);
         if (!value.isNull()) {
@@ -331,11 +331,11 @@ void KRecentFilesAction::saveEntries(const KConfigGroup &_cg)
 
     // write file list
     for (int i = 1; i <= selectableActionGroup()->actions().count(); i++) {
-        key = QString("File%1").arg(i);
+        key = QStringLiteral("File%1").arg(i);
         // i - 1 because we started from 1
         value = d->m_urls[ selectableActionGroup()->actions()[ i - 1 ] ].toDisplayString(QUrl::PreferLocalFile);
         cg.writePathEntry(key, value);
-        key = QString("Name%1").arg(i);
+        key = QStringLiteral("Name%1").arg(i);
         value = d->m_shortNames[ selectableActionGroup()->actions()[ i - 1 ] ];
         cg.writePathEntry(key, value);
     }
