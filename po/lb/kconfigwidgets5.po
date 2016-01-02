@@ -1,0 +1,577 @@
+# translation of kdelibs4.po to Luxembourgish
+# kevin claude everard <kevin@math.uni-sb.de>, 2005.
+# Michel Ludwig <michel.ludwig@kdemail.net>, 2005, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-10-26 07:54+0000\n"
+"PO-Revision-Date: 2006-06-22 16:29+0200\n"
+"Last-Translator: Michel Ludwig <michel.ludwig@kdemail.net>\n"
+"Language-Team: Luxembourgish <kde-i18n-lb@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kevin Claude Everard,Michel Ludwig"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kevin@math.uni-sb.de,miclud@studcs.uni-sb.de"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:170
+#, fuzzy
+#| msgid "Could not create the new configuration file."
+msgid "You are not allowed to save the configuration"
+msgstr "Konnt déi nei Configuratiounsdatei net erstellen."
+
+#: kcodecaction.cpp:90
+#, fuzzy
+#| msgid "Default"
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Standard"
+
+#: kcodecaction.cpp:98
+#, fuzzy
+#| msgid "Autocorrect"
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Automatësch Verbesserung"
+
+#: kconfigdialog.cpp:45
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Configuréieren"
+
+#: klanguagebutton.cpp:194
+#, fuzzy
+#| msgid "New hostname"
+msgid "without name"
+msgstr "Neien Numm fir den Host"
+
+#: krecentfilesaction.cpp:78
+#, fuzzy
+msgid "No Entries"
+msgstr "Eegeschaften"
+
+#: krecentfilesaction.cpp:84
+#, fuzzy
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "Input-Feld eidelmaachen"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Zeréck"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&No Vir"
+
+#: kstandardaction.cpp:104
+#, fuzzy
+#| msgctxt "beginning (of line)"
+#| msgid "&Home"
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Ufank"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Hëllef"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "&Menübar weisen"
+
+#: kstandardaction.cpp:534
+#, fuzzy
+#| msgid "Show Menubar<p>Shows the menubar again after it has been hidden"
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Menübar weisen<p>Weist d'Menübar nees un, nodeems se verstoppt gi war"
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "St&atusbar weisen"
+
+#: kstandardaction.cpp:555
+#, fuzzy
+#| msgid ""
+#| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "
+#| "the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Statusbar weisen<p>Weist d'Statusbar. Dat ass déi Leescht ënnen an der "
+"Fënster fir d'Statusinformatiounen."
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Nei"
+
+#: kstandardaction_p.h:41
+#, fuzzy
+#| msgid "Clear shortcut"
+msgid "Create new document"
+msgstr "Kierzel läschen"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Opmaachen..."
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgid "Go back one step"
+msgid "Open an existing document"
+msgstr "Ee Schrack zeréckgoen"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "&Viru kuerzem opgemaachen Dateien"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Späicheren"
+
+#: kstandardaction_p.h:44
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Dokument zoumaachen"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Späicheren &Als..."
+
+#: kstandardaction_p.h:45
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Dokument zoumaachen"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "&Zerécksetzen"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Zoumaachen"
+
+#: kstandardaction_p.h:47
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Dokument zoumaachen"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&Drécken..."
+
+#: kstandardaction_p.h:48
+#, fuzzy
+#| msgctxt "QAccel"
+#| msgid "Print Screen"
+msgid "Print document"
+msgstr "Print Screen"
+
+#: kstandardaction_p.h:49
+#, fuzzy
+#| msgid "Print Previe&w..."
+msgid "Print Previe&w"
+msgstr "Drocker&virschau..."
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "Ver&schécken..."
+
+#: kstandardaction_p.h:50
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Dokument zoumaachen"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "O&phalen"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Programm zoumaachen"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Réckgängeg"
+
+#: kstandardaction_p.h:53
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "HTML-Dokumentatioun"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "Nees &zeréck"
+
+#: kstandardaction_p.h:54
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "HTML-Dokumentatioun"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "Schnei&den"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Kopéieren"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&Peschen"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, fuzzy
+#| msgid "Upload Info"
+msgid "Paste clipboard content"
+msgstr "Informatiounen iwwert d'Eroplueden"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "Eidelmaa&chen"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "&Alles auswielen"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "Of&wielen"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Sichen..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "&Weidersichen"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "Vir&dru sichen"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "E&rsetzen..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&Richteg Gréisst"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&Un d'Säit upassen"
+
+#: kstandardaction_p.h:68
+#, fuzzy
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Sprang op d'Zeil"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Un d'&Breet vun der Säit upassen"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Un d'&Héicht vun der Säit upassen"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "Er&azoomen"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "Era&uszoomen"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Zoom..."
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Woch auswielen"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "&Frësch uweisen"
+
+#: kstandardaction_p.h:74
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Redisplay document"
+msgstr "&Frësch uweisen"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&Erop"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "Säit &virdrunn"
+
+#: kstandardaction_p.h:81
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "Säit &virdrunn"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Nächst Säit"
+
+#: kstandardaction_p.h:82
+#, fuzzy
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Sprang op d'Zeil"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Goen..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "Op d'Säit &goen..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "Op d'Zeil &goen..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&Éischt Säit"
+
+#: kstandardaction_p.h:86
+#, fuzzy
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Sprang op d'Zeil"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "&Lescht Säit"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "Op d'Säit &goen..."
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Zeréck"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgid "Go back one step"
+msgid "Go back in document"
+msgstr "Ee Schrack zeréckgoen"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&No Vir"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgid "Go forward one step"
+msgid "Go forward in document"
+msgstr "Ee Schrack no vir goen"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "Lieszeechen &dobäimaachen"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "Lieszeechen ä&nneren..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&Rechtschreiwung..."
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Rechtschreifkontroll"
+
+#: kstandardaction_p.h:96
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "&Menübar weisen"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "&Toolbar weisen"
+
+#: kstandardaction_p.h:97
+#, fuzzy
+#| msgid "Show &Toolbar"
+msgid "Show or hide toolbar"
+msgstr "&Toolbar weisen"
+
+#: kstandardaction_p.h:98
+#, fuzzy
+#| msgid "Show St&atusbar"
+msgid "Show or hide statusbar"
+msgstr "St&atusbar weisen"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "&Vollbildmodus"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "Astellunge &späicheren"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "&Kierzel configuréieren..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 &configuréieren..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Tool&bare configuréieren..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "&Norichte configuréieren..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1-&Handbuch"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Wat ass &dat?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "&Rotschlag vum Dag"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "E Käfer &mellen..."
+
+#: kstandardaction_p.h:113
+#, fuzzy
+msgid "Switch Application &Language..."
+msgstr "Programm zoumaachen"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&Iwwer %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "Iwwer &KDE"
+
+#: ktipdialog.cpp:238
+#, fuzzy
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Rotschlag vum Dag"
+
+#: ktipdialog.cpp:254
+#, fuzzy
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Wousst dir schonn...?\n"
+
+#: ktipdialog.cpp:306
+#, fuzzy
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Rotschléi beim Start &weisen"
+
+#: ktipdialog.cpp:311
+#, fuzzy
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Zeréck"
+
+#: ktipdialog.cpp:316
+#, fuzzy
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Weider"
