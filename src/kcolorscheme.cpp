@@ -231,6 +231,19 @@ static const SetDefaultColors defaultTooltipColors = {
     {  39, 174,  96 }  // Positive
 };
 
+static const SetDefaultColors defaultComplementaryColors = {
+    {  49,  54,  59 }, // Background
+    {  77,  77,  77 }, // Alternate
+    { 239, 240, 241 }, // Normal
+    { 189, 195, 199 }, // Inactive
+    {  61, 174, 233 }, // Active
+    {  41, 128, 185 }, // Link
+    { 127, 140, 141 }, // Visited
+    { 218,  68,  83 }, // Negative
+    { 246, 116,   0 }, // Neutral
+    {  39, 174,  96 }  // Positive
+};
+
 static const DecoDefaultColors defaultDecorationColors = {
     { 147, 206, 233 }, // Hover
     {  61, 174, 233 }, // Focus
@@ -445,6 +458,9 @@ KColorScheme::KColorScheme(QPalette::ColorGroup state, ColorSet set, KSharedConf
     } break;
     case Tooltip:
         d = new KColorSchemePrivate(config, state, "Colors:Tooltip", defaultTooltipColors);
+        break;
+    case Complementary:
+        d = new KColorSchemePrivate(config, state, "Colors:Complementary", defaultComplementaryColors);
         break;
     default:
         d = new KColorSchemePrivate(config, state, "Colors:View", defaultViewColors);
