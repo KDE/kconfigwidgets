@@ -1,0 +1,567 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2008.
+# Amitakhya Phukan <অমিতাক্ষ ফুকন>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4_as\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-10-26 07:54+0000\n"
+"PO-Revision-Date: 2008-12-26 15:19+0530\n"
+"Last-Translator: Amitakhya Phukan <অমিতাক্ষ ফুকন>\n"
+"Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
+"Language: as\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 0.2\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "অমিতাক্ষ ফুকন"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "aphukan@fedoraproject.org"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:170
+#, fuzzy
+#| msgid "Do you want to reload KDE configuration?"
+msgid "You are not allowed to save the configuration"
+msgstr "KDE বিন্যাস পুনঃ তুলি লোৱা হ'ব নেকি ?"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "অবিকল্পিত মান"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "স্বয়ংক্ৰিয় চিনাক্তকৰণ"
+
+#: kconfigdialog.cpp:45
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "বিন্যাস কৰক"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "নাম নোহোৱা"
+
+#: krecentfilesaction.cpp:78
+#, fuzzy
+#| msgid "No entries"
+msgid "No Entries"
+msgstr "কোনো নিবেশ উপস্থিত নাই"
+
+#: krecentfilesaction.cpp:84
+#, fuzzy
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "নিবেশ কৰা তথ্য আঁতৰুৱা হ'ব"
+
+#: kstandardaction.cpp:90
+msgctxt "go back"
+msgid "&Back"
+msgstr "পূৰ্ববৰ্তী (&B)"
+
+#: kstandardaction.cpp:97
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "পৰবৰ্তী পদক্ষেপ (&F)"
+
+#: kstandardaction.cpp:104
+msgctxt "home page"
+msgid "&Home"
+msgstr "প্ৰথম পৃষ্ঠা (&H)"
+
+#: kstandardaction.cpp:107
+msgctxt "show help"
+msgid "&Help"
+msgstr "সহায় (&H)"
+
+#: kstandardaction.cpp:526 kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "তালিকাৰ বাৰ প্ৰদৰ্শন (&M)"
+
+#: kstandardaction.cpp:534
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+
+#: kstandardaction.cpp:552 kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "অৱস্থাৰ বাৰ প্ৰদৰ্শন (&a)"
+
+#: kstandardaction.cpp:555
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "নতুন (&N)"
+
+#: kstandardaction_p.h:41
+#, fuzzy
+#| msgid "Create New Tag..."
+msgid "Create new document"
+msgstr "নতুন টেগ নিৰ্মাণ কৰক"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "খোলক...(&O)"
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "আলেখ্যনৰ পূৰ্ববৰ্তী অংশ (&B)"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "সংৰক্ষণ কৰক (&S)"
+
+#: kstandardaction_p.h:44
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "আলেখ্যন বন্ধ কৰক"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "নতুন ৰূপে সংৰক্ষণ...(&A)"
+
+#: kstandardaction_p.h:45
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "আলেখ্যন বন্ধ কৰক"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "পূৰ্বাবস্থা (&v)"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "বন্ধ কৰক (&C)"
+
+#: kstandardaction_p.h:47
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "আলেখ্যন বন্ধ কৰক"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "মূদ্ৰণ কৰক...(&P)"
+
+#: kstandardaction_p.h:48
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "মূদ্ৰণৰ পূৰ্বৰূপ (&w)"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "ডাক...(&M)"
+
+#: kstandardaction_p.h:50
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "আলেখ্যন বন্ধ কৰক"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "প্ৰস্থান (&Q)"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "অনুপ্ৰয়োগৰ পৰা প্ৰস্থান কৰক"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "পূৰ্বাবস্থা (&U)"
+
+#: kstandardaction_p.h:53
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "HTML নথিপত্ৰ"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "পুনৰাবৃত্তি (&d)"
+
+#: kstandardaction_p.h:54
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "HTML নথিপত্ৰ"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "কাটক (&t)"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "নকল কৰক (&C)"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "আঠা লগাওক (&P)"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, fuzzy
+#| msgid "Loading Preview"
+msgid "Paste clipboard content"
+msgstr "পূৰ্বপ্ৰদৰ্শন তুলি লোৱা হৈছে"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "পৰিশ্ৰুত কৰক (&l)"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "সমগ্ৰ নিৰ্ব্বাচন কৰক (&A)"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "নিৰ্ব্বাচন বাতিল (&l)"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "অনুসন্ধান...(&F)"
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "পৰবৰ্তী উপস্থিতি অনুসন্ধান (&N)"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "পূৰ্ববৰ্তী উপস্থিতি অনুসন্ধান (&v)"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "প্ৰতিস্থাপন...(&R)"
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "প্ৰকৃত মাপ (&A)"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "পৃষ্ঠা অনুযায়ী মাপ নিৰ্ধাৰণ (&F)"
+
+#: kstandardaction_p.h:68
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "উল্লেখিত পংক্তি সংখ্যা চাওক"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "পৃষ্ঠাৰ প্ৰস্থ অনুযায়ী মাপ নিৰ্ধাৰণ (&W)"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "পৃষ্ঠাৰ দৈৰ্ঘ্য অনুযায়ী মাপ নিৰ্ধাৰণ (&H)"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "ডাঙৰকৈ প্ৰদৰ্শন (&I)"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "সৰুকৈ প্ৰদৰ্শন (&O)"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "প্ৰদৰ্শনৰ মাপ...(&Z)"
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "এটা সপ্তাহ নিৰ্ব্বাচন কৰক"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "পুনঃ প্ৰদৰ্শন (&R)"
+
+#: kstandardaction_p.h:74
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Redisplay document"
+msgstr "পুনঃ প্ৰদৰ্শন (&R)"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "ওপৰত (&U)"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "পূৰ্ববৰ্তী পৃষ্ঠা (&P)"
+
+#: kstandardaction_p.h:81
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "পূৰ্ববৰ্তী পৃষ্ঠা (&P)"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "পৰবৰ্তী পৃষ্ঠা (&N)"
+
+#: kstandardaction_p.h:82
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "উল্লেখিত পংক্তি সংখ্যা চাওক"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "-লৈ যাওক...(&G)"
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "- পৃষ্ঠালৈ যাওক...(&G)"
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "-পংক্তিলৈ যাওক...(&G)"
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "প্ৰথম পৃষ্ঠা (&F)"
+
+#: kstandardaction_p.h:86
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "উল্লেখিত পংক্তি সংখ্যা চাওক"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "অন্তিম পৃষ্ঠা (&L)"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "- পৃষ্ঠালৈ যাওক...(&G)"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "পূৰ্ববৰ্তী (&B)"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "আলেখ্যনৰ পূৰ্ববৰ্তী অংশ (&B)"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "পৰবৰ্তী পদক্ষেপ (&F)"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "আলেখ্যনৰ পৰবৰ্তী অংশে (&F)"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "পত্ৰচিহ্ন যোগ কৰক (&A)"
+
+#: kstandardaction_p.h:92
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks..."
+msgstr "পত্ৰচিহ্ন সম্পাদনা (&E)"
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "বানান...(&S)"
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "বানান পৰীক্ষা কৰা হ'ব"
+
+#: kstandardaction_p.h:96
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "তালিকাৰ বাৰ প্ৰদৰ্শন (&M)"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "টুলবাৰ প্ৰদৰ্শন (&T)"
+
+#: kstandardaction_p.h:97
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "টুলবাৰ প্ৰদৰ্শন"
+
+#: kstandardaction_p.h:98
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "অৱস্থাৰ বাৰ প্ৰদৰ্শন"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "সম্পূৰ্ণ পৰ্দ্দাত প্ৰদৰ্শন (&u)"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "বৈশিষ্ট্য সংৰক্ষণ কৰক (&S)"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "চমুপথ বিন্যাস কৰক...(&h)"
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 বিন্যাস কৰক...(&C)"
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "টুলবাৰ বিন্যাস কৰক... (&b)"
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "সূচনাবাৰ্তা বিন্যাস কৰক... (&N)"
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 হাতপুথি (&H)"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "এইটো কি ? (&T)"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "দিনৰ উপদেশ (&D)"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "বাগ প্ৰতিবেদন কৰক...(&R)"
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "অনুপ্ৰয়োগৰ ভাষা পৰিবৰ্তন কৰক...(&L)"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "%1 বিষয়ে (&A)"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "KDE বিষয়ে (&K)"
+
+#: ktipdialog.cpp:238
+#, fuzzy
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "আজিৰ উপদেশ"
+
+#: ktipdialog.cpp:254
+#, fuzzy
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "আপুনি জানে নে...?\n"
+
+#: ktipdialog.cpp:306
+#, fuzzy
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "আৰম্ভণিত উপেদশ প্ৰদৰ্শন কৰা হ'ব (&S)"
+
+#: ktipdialog.cpp:311
+#, fuzzy
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "আগৰ (&P)"
+
+#: ktipdialog.cpp:316
+#, fuzzy
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "পিছৰ (&N)"
