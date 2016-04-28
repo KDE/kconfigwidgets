@@ -216,14 +216,14 @@ void KTipDialog::Private::_k_prevTip()
 {
     database->prevTip();
     tipText->setHtml(QStringLiteral("<html><body>%1</body></html>")
-                     .arg(KTipDialog::tr(database->tip().toUtf8())));
+                     .arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
 }
 
 void KTipDialog::Private::_k_nextTip()
 {
     database->nextTip();
     tipText->setHtml(QStringLiteral("<html><body>%1</body></html>")
-                     .arg(KTipDialog::tr(database->tip().toUtf8())));
+                     .arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
 }
 
 void KTipDialog::Private::_k_showOnStart(bool on)
