@@ -99,6 +99,9 @@ private:
  *
  * This dialog class presents a tip-of-the-day.
  *
+ * The tips will be looked up for translation using gettext
+ * with KLocalizedString::applicationDomain() as domain.
+ *
  * @author Matthias Hoelzer-Kluepfel <mhk@caldera.de>
  */
 class KCONFIGWIDGETS_EXPORT KTipDialog : public QDialog
