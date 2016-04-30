@@ -60,6 +60,39 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   REQUIRED_HEADERS KConfigWidgets_HEADERS
 )
 
+find_package(PythonModuleGeneration)
+
+if (PythonModuleGeneration_FOUND)
+  ecm_generate_python_binding(
+    TARGET KF5::ConfigWidgets
+    PYTHONNAMESPACE PyKF5
+    MODULENAME KConfigWidgets
+    SIP_INCLUDES
+    RULES_FILE "${CMAKE_SOURCE_DIR}/cmake/rules_PyKF5.py"
+    SIP_DEPENDS
+      QtCore/QtCoremod.sip
+      PyKF5/KCodecs/KCodecsmod.sip
+      PyKF5/KWidgetsAddons/KWidgetsAddonsmod.sip
+      PyKF5/KConfigGui/KConfigGuimod.sip
+      PyKF5/KAuth/KAuthmod.sip
+    HEADERS
+      kcodecaction.h
+      kcolorscheme.h
+      kcolorschememanager.h
+      kconfigdialog.h
+      kconfigviewstatesaver.h
+      kconfigdialogmanager.h
+      kcmodule.h
+      khelpclient.h
+      klanguagebutton.h
+      kpastetextaction.h
+      krecentfilesaction.h
+      kviewstatemaintainer.h
+      kstandardaction.h
+      ktipdialog.h
+  )
+endif()
+
 install(TARGETS KF5ConfigWidgets EXPORT KF5ConfigWidgetsTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
