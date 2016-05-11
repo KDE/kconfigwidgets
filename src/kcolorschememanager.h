@@ -24,6 +24,8 @@
 #include <QObject>
 
 class QAbstractItemModel;
+class QModelIndex;
+class QIcon;
 
 class KActionMenu;
 class KColorSchemeManagerPrivate;
