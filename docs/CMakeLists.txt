@@ -1,1 +1,1 @@
-add_subdirectory(preparetips)
+add_subdirectory(preparetips5)
