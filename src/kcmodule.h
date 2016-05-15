@@ -244,13 +244,15 @@ public:
 
     /**
      * Returns the value set by setExportText();
+     * @deprecated since 5.0, obsolete feature
      */
-    QString exportText() const;
+    KCONFIGWIDGETS_DEPRECATED QString exportText() const;
 
     /**
      * Sets the export QString value, used for exporting data.
+     * @deprecated since 5.0, obsolete feature
      */
-    void setExportText(const QString &);
+    KCONFIGWIDGETS_DEPRECATED void setExportText(const QString &);
 
 public Q_SLOTS:
     /**
