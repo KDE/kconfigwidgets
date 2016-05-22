@@ -11,3 +11,7 @@ libraries:
  - qmake: KConfigWidgets
    cmake: "KF5::ConfigWidgets"
 cmakename: KF5ConfigWidgets
+
+public_lib: true
+group: Frameworks
+subgroup: Tier 3
