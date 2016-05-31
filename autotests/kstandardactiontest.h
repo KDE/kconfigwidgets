@@ -29,6 +29,8 @@ class tst_KStandardAction : public QObject
 
 private Q_SLOTS:
     void shortcutForActionId();
+    void testCreateOldStyle();
+    void testCreateNewStyle();
 };
 
 #endif // KSTANDARDACTIONTEST_H

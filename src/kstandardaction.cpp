@@ -30,8 +30,6 @@
 #include <kacceleratormanager.h>
 
 #include "kdualaction.h"
-#include "krecentfilesaction.h"
-#include "ktogglefullscreenaction.h"
 #include "kpastetextaction.h"
 
 namespace KStandardAction
@@ -69,7 +67,7 @@ KCONFIGWIDGETS_EXPORT KStandardShortcut::StandardShortcut shortcutForActionId(St
     return (pInfo) ? pInfo->idAccel : KStandardShortcut::AccelNone;
 }
 
-QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObject *parent)
+QAction* _k_createInternal(StandardAction id, QObject *parent)
 {
     static bool stdNamesInitialized = false;
 
@@ -139,10 +137,19 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
             pAction = new KRecentFilesAction(parent);
             break;
         case ShowMenubar:
+            pAction = new KToggleAction(parent);
+            pAction->setWhatsThis(i18n("Show Menubar<p>"
+                                  "Shows the menubar again after it has been hidden</p>"));
+            pAction->setChecked(true);
+            break;
         case ShowToolbar:
+            pAction = new KToggleAction(parent);
+            pAction->setChecked(true);
+            break;
         case ShowStatusbar:
-            pAction = new QAction(parent);
-            pAction->setCheckable(true);
+            pAction = new KToggleAction(parent);
+            pAction->setWhatsThis(i18n("Show Statusbar<p>"
+                                  "Shows the statusbar, which is the bar at the bottom of the window used for status information.</p>"));
             pAction->setChecked(true);
             break;
         case FullScreen:
@@ -205,6 +212,16 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
         pAction->setObjectName(pInfo->psName);
     }
 
+    if (pAction && parent && parent->inherits("KActionCollection")) {
+        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, pAction->objectName()), Q_ARG(QAction *, pAction));
+    }
+
+    return pAction;
+}
+
+QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObject *parent)
+{
+    QAction* pAction = _k_createInternal(id, parent);
     if (recvr && slot) {
         if (id == OpenRecent) {
             // FIXME QAction port: probably a good idea to find a cleaner way to do this
@@ -216,11 +233,6 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
             QObject::connect(pAction, SIGNAL(triggered(bool)), recvr, slot);
         }
     }
-
-    if (pAction && parent && parent->inherits("KActionCollection")) {
-        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, pAction->objectName()), Q_ARG(QAction *, pAction));
-    }
-
     return pAction;
 }
 
@@ -523,49 +535,16 @@ QAction *selectAll(QObject *parent)
 
 KToggleAction *showMenubar(const QObject *recvr, const char *slot, QObject *parent)
 {
-    KToggleAction *ret = new KToggleAction(i18n("Show &Menubar"), parent);
-    ret->setObjectName(name(ShowMenubar));
-    ret->setIcon(QIcon::fromTheme(QStringLiteral("show-menu")));
-
-    // emulate KActionCollection::setDefaultShortcuts to allow the use of "configure shortcuts"
-    ret->setShortcuts(KStandardShortcut::shortcut(KStandardShortcut::ShowMenubar));
-    ret->setProperty("defaultShortcuts", QVariant::fromValue(KStandardShortcut::shortcut(KStandardShortcut::ShowMenubar)));
-
-    ret->setWhatsThis(i18n("Show Menubar<p>"
-                           "Shows the menubar again after it has been hidden</p>"));
-
-    ret->setChecked(true);
-
-    if (recvr && slot) {
-        QObject::connect(ret, SIGNAL(triggered(bool)), recvr, slot);
-    }
-
-    if (parent && parent->inherits("KActionCollection")) {
-        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, ret->objectName()), Q_ARG(QAction *, ret));
-    }
-
-    return ret;
+    QAction* ret = KStandardAction::create(ShowMenubar, recvr, slot, parent);
+    Q_ASSERT(qobject_cast<KToggleAction *>(ret));
+    return static_cast<KToggleAction *>(ret);
 }
 
 KToggleAction *showStatusbar(const QObject *recvr, const char *slot, QObject *parent)
 {
-    KToggleAction *ret = new KToggleAction(i18n("Show St&atusbar"), parent);
-    ret->setObjectName(name(ShowStatusbar));
-
-    ret->setWhatsThis(i18n("Show Statusbar<p>"
-                           "Shows the statusbar, which is the bar at the bottom of the window used for status information.</p>"));
-
-    ret->setChecked(true);
-
-    if (recvr && slot) {
-        QObject::connect(ret, SIGNAL(triggered(bool)), recvr, slot);
-    }
-
-    if (parent && parent->inherits("KActionCollection")) {
-        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, ret->objectName()), Q_ARG(QAction *, ret));
-    }
-
-    return ret;
+    QAction* ret = KStandardAction::create(ShowMenubar, recvr, slot, parent);
+    Q_ASSERT(qobject_cast<KToggleAction *>(ret));
+    return static_cast<KToggleAction *>(ret);
 }
 
 KToggleFullScreenAction *fullScreen(const QObject *recvr, const char *slot, QWidget *window, QObject *parent)
