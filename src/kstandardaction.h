@@ -28,6 +28,8 @@
 #include <ktoggleaction.h>
 #include <ktogglefullscreenaction.h>
 
+#include <type_traits>
+
 class QObject;
 class QStringList;
 class QWidget;
