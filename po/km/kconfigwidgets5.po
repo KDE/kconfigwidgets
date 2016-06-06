@@ -1,0 +1,510 @@
+# translation of kdelibs4.po to Khmer
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2008, 2009, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-06-01 07:19+0000\n"
+"PO-Revision-Date: 2012-06-27 10:04+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"Language-Team: Khmer\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Language: km-KH\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr " ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា​​, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
+"ratanak@khmeros.info,sophea@khmeros.info"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr "អ្នកនឹង​ត្រូវ​បាន​ស្នើ​ឲ្យ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​មុន​នឹង​រក្សាទុក"
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr "អ្នក​មិន​ត្រូវ​បា​ន​អនុញ្ញាត​ឲ្យ​រក្សាទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ​បានទេ"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "លំនាំដើម"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "កែ​ស្វ័យប្រវត្តិ"
+
+#: kconfigdialog.cpp:45
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "ដោយគ្មាន​ឈ្មោះ"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "គ្មាន​ធាតុ"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "ជម្រះបញ្ជី"
+
+#: kstandardaction.cpp:88
+msgctxt "go back"
+msgid "&Back"
+msgstr "ថយ​ក្រោយ"
+
+#: kstandardaction.cpp:95
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "ទៅ​មុខ"
+
+#: kstandardaction.cpp:102
+msgctxt "home page"
+msgid "&Home"
+msgstr "ដើម"
+
+#: kstandardaction.cpp:105
+msgctxt "show help"
+msgid "&Help"
+msgstr "ជំនួយ"
+
+#: kstandardaction.cpp:141
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "បង្ហាញ​របារ​ម៉ឺនុយ<p>បង្ហាញ​របារ​ម៉ឺនុយ​ម្ដងទៀត​បន្ទាប់ពី​វា​ត្រូវបាន​លាក់</p>"
+
+#: kstandardaction.cpp:151
+#, fuzzy
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"បង្ហាញ​របារ​ស្ថានភាព<br /><br />បង្ហាញ​របារ​ស្ថានភាព ដែល​ជា​របារ​នៅ​​ខាងក្រោម​នៃ​បង្អួច ដែល​បាន​"
+"ប្រើ​សម្រាប់​ព័ត៌មាន​ស្ថានភាព ។"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "ថ្មី"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "បង្កើតឯកសារ​ថ្មី"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "បើក..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "បើក​ឯកសារ​ដែល​មាន​ស្រាប់"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "បើក​ថ្មី​ៗ​នេះ"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "បើក​ឯកសារ​ដែល​ត្រូវ​បាន​បើក​ថ្មីៗ"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "រក្សាទុក"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "រក្សាទុក​ឯកសារ"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "រក្សាទុក​ជា..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "រក្សាទុក​ឯកសារ​​ដោយ​ដាក់​ឈ្មោះ​ថ្មី"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "ត្រឡប់​ទៅ​ដើម"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "ដាក់​បញ្ច្រាស​ការ​ផ្លាស់ប្ដូរ​ដែល​មិន​បាន​រក្សាទុក​ក្នុង​ឯកសារ"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "បិទ"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "បិទ​ឯកសារ"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "បោះពុម្ព..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "បោះពុម្ព​ឯកសារ"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "មើល​មុន​បោះពុម្ព"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "បង្ហាញ​ការ​មើល​ឯកសារ​មុនបោះពុម្ព"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "សំបុត្រ..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "ផ្ញើ​ឯកសារ​តាម​អ៊ីមែល"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "ចេញ"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "បិទ​​​កម្មវិធី"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "មិន​ធ្វើ​វិញ"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "មិន​ធ្វើ​សកម្មភាព​ចុង​ក្រោយ​វិញ"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "ធ្វើ​វិញ"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "ធ្វើ​សកម្មភាព​ដែល​មិន​ធ្វើវិញ​"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "​កាត់"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "កាត់​ជម្រើស​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "​ចម្លង"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "ចម្លង​​ជម្រើស​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "បិទភ្ជាប់"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "បិទភ្ជាប់​មាតិកា​ក្ដារតម្បៀតខ្ទាស់"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "ជម្រះ"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "ជ្រើស​ទាំងអស់"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "ដោះ​ជ្រើស"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "រក..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "រក​បន្ទាប់"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "រក​មុន"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "ជំនួស..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "ទំហំ​ពិត​ប្រាកដ"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "មើល​ឯកសារ​នៅ​ទំហំ​ពិតប្រាកដ​របស់​វា"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "សម​នឹង​ទំព័រ"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "ពង្រីក​ឲ្យ​សម​នឹង​ទំព័រ​ក្នុង​បង្អួច"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "សម​នឹង​ទទឹង​ទំព័រ"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "ពង្រីក​ឲ្យ​​សម​នឹង​ទទឹង​ទំព័រ​ក្នុង​បង្អួច"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "សម​នឹង​កម្ពស់​ទំព័រ"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "ពង្រីក​ឲ្យ​សម​​នឹង​​កម្ពស់ទំព័រ​ក្នុង​បង្អួច"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "​ពង្រីក"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "​បង្រួម"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "កែវពង្រីក..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "ជ្រើស​កម្រិត​ពង្រីក"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "បង្ហាញ​ម្តង​ទៀត"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "បង្ហាញ​ឯកសារ​ឡើងវិញ"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "ឡើង​លើ​"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "ទៅលើ"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "ទំព័រ​មុន"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "ទៅ​ទំព័រ​មុន"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "ទំព័រ​បន្ទាប់"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "ទៅ​ទំព័រ​បន្ទាប់"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "ទៅកាន់..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "ទៅ​កាន់​ទំព័រ..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "ទៅ​កាន់​បន្ទាត់..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "ទំព័រ​ទី​មួយ"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "ទៅ​ទំព័រ​ទីមួយ"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "ទំព័រ​ចុង​ក្រោយ"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "ទៅ​ទំព័រ​ចុងក្រោយ"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "ថយ​ក្រោយ"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "ថយក្រោយ​ក្នុង​ឯកសារ"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "ទៅ​មុខ"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "ទៅមុខ​ក្នុង​ឯកសារ"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "បន្ថែមចំណាំ"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "កែសម្រួល​ចំណាំ..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "ការប្រកប..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "ពិនិត្យ​អក្ខរាវិរុទ្ធ​ក្នុង​ឯកសារ"
+
+#: kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "បង្ហាញ​របារ​ម៉ឺនុយ"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "បង្ហាញ ឬលាក់​របារ​ម៉ឺនុយ"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "បង្ហាញ​របារ​ឧបករណ៍"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "បង្ហាញ ឬ​លាក់​របារ​ឧបករណ៍"
+
+#: kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "បង្ហាញ​របារ​ស្ថានភាព"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "បង្ហាញ ឬ​លាក់​របារ​ស្ថានភាព"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "​របៀប​ពេញ​អេក្រង់"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "រក្សាទុក​ការ​កំណត់"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្លូវ​កាត់..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ %1..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​របារ​ឧបករណ៍..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​ការជូន​ដំណឹង..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "សៀវភៅ​ដៃ %1"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "នេះ​ជា​អ្វី ?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "ព័ត៌មាន​ជំនួយ​សម្រាប់​ថ្ងៃនេះ"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "រាយការណ៍​កំហុស..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "ប្ដូរ​ភាសា​កម្មវិធី..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "អំពី %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "អំពី KDE"
+
+#: ktipdialog.cpp:238
+#, fuzzy
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "ព័ត៌មាន​ជំនួយ​ប្រចាំថ្ងៃ"
+
+#: ktipdialog.cpp:254
+#, fuzzy
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "តើ​អ្នក​ដឹង​ទេ... ?\n"
+
+#: ktipdialog.cpp:306
+#, fuzzy
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "បង្ហាញ​ព័ត៌មាន​ជំនួយ នៅ​​ពេល​ចាប់ផ្តើម"
+
+#: ktipdialog.cpp:311
+#, fuzzy
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "មុន"
+
+#: ktipdialog.cpp:316
+#, fuzzy
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "​បន្ទាប់"
