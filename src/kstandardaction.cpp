@@ -542,7 +542,7 @@ KToggleAction *showMenubar(const QObject *recvr, const char *slot, QObject *pare
 
 KToggleAction *showStatusbar(const QObject *recvr, const char *slot, QObject *parent)
 {
-    QAction* ret = KStandardAction::create(ShowMenubar, recvr, slot, parent);
+    QAction* ret = KStandardAction::create(ShowStatusbar, recvr, slot, parent);
     Q_ASSERT(qobject_cast<KToggleAction *>(ret));
     return static_cast<KToggleAction *>(ret);
 }
