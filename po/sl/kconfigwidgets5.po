@@ -1,0 +1,508 @@
+# translation of kdelibs4.po to Slovenian
+# Translation of kdelibs4.po to Slovenian
+# KDELIBS translation to Slovenian language
+# $Id: kdelibs4.po 685926 2007-07-10 04:25:11Z scripty $
+# $Source$
+#
+# Copyright (C) 2002,2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+# Roman Maurer <roman.maurer@amis.net>, 2002.
+# Gregor Rakar <gregor.rakar@kiss.uni-lj.si>, 2002,2003.
+# Gregor Rakar <gregor.rakar@kiss.si>, 2003, 2004, 2005.
+# Andrej Vernekar <andrej.vernekar@moj.net>, 2005, 2007, 2008, 2009, 2010.
+# Jure Repinc <jlp@holodeck1.com>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
+# Andrej Vernekar <andrej.vernerkar@moj.net>, 2008, 2011, 2012.
+# Andrej Mernik <andrejm@ubuntu.si>, 2012, 2013, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-06-01 07:19+0000\n"
+"PO-Revision-Date: 2015-09-20 14:33+0200\n"
+"Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Roman Maurer,Gregor Rakar,Andrej Vernekar,Jure Repinc,Andrej Mernik"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"roman.maurer@amis.net,gregor.rakar@kiss.si,andrej.vernekar@gmail.com,"
+"jlp@holodeck1.com,andrejm@ubuntu.si"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr "Preden shranite, se boste morali overiti"
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr "Nimate dovoljenja za shranjevanje nastavitev"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Privzet"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Samodejna zaznava"
+
+#: kconfigdialog.cpp:45
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Nastavi"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "brez imena"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Brez vnosov"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "Počisti seznam"
+
+#: kstandardaction.cpp:88
+msgctxt "go back"
+msgid "&Back"
+msgstr "Na&zaj"
+
+#: kstandardaction.cpp:95
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Naprej"
+
+#: kstandardaction.cpp:102
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Domov"
+
+#: kstandardaction.cpp:105
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Pomoč"
+
+#: kstandardaction.cpp:141
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Pokaži menijsko vrstico<p>Pokaže menijsko vrstico po tem, ko je bila skrita</"
+"p>"
+
+#: kstandardaction.cpp:151
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Pokaži vrstico stanja<p>Pokaže vrstico stanja; t.j. vrstica na dnu okna, ki "
+"se uporablja za podatke o stanju,</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Nov"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "Ustvari nov dokument"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Odpri ..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "Odpri obstoječ dokument"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "Odpri ne&davno"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "Odpri nedavno odprt dokument"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Shrani"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "Shrani dokument"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Shrani &kot ..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "Shrani dokument z novim imenom"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "Po&vrni"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "Povrni neshranjene spremembe dokumenta"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Zapri"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "Zapri dokument"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "Na&tisni ..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "Natisni dokument"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "Predogled &tiskanja"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "Pokaži predogled tiskanja dokumenta"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "E-&pošta ..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "Pošlji dokument po e-pošti"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "Konča&j"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Končaj program"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Razveljavi"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "Razveljavi zadnje dejanje"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "&Uveljavi"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "Uveljavi zadnje razveljavljeno dejanje"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "&Izreži"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "Izreži izbor v odložišče"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Kopiraj"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "Kopiraj izbor v odložišče"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "Pri&lepi"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "Prilepi vsebino odložišča"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "&Počisti"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "Izberi &vse"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "O&dstrani izbiro"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Najdi ..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "Najdi na&slednje"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "&Najdi predhodno"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&Zamenjaj ..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "De&janska velikost"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "Pokaži dokument v njegovi dejanski velikosti"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&Prilagodi strani"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "Prilagodi približanje, da se bo stran prilegala oknu"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Prilagodi š&irini strani"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "Prilagodi približanje, da se bo širina strani prilegala oknu"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Prilagodi &višini strani"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "Prilagodi približanje, da se bo višina strani prilegala oknu"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "Pribl&ižaj"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "&Oddalji"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Približanje..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "Izberite stopnjo približanja"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "Z&nova prikaži"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "Znova prikaži dokument"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&Gor"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "Pojdi gor"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "&Predhodna stran"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "Pojdi na predhodno stran"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Naslednja stran"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "Pojdi na naslednjo stran"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "Pojd&i na ..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "Pojdi na &stran ..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "Pojdi v &vrstico ..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&Prva stran"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "Pojdi na prvo stran"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "&Zadnja stran"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "Pojdi na zadnjo stran"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "Na&zaj"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "Pojdi nazaj po dokumentu"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "&Naprej"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "Pojdi naprej po dokumentu "
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&Dodaj zaznamek"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "&Uredi zaznamke ..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&Črkovanje ..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "Preveri črkovanje v dokumentu"
+
+#: kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "Pokaži &menijsko vrstico"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "Pokaži ali skrij menijsko vrstico"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "Pokaži &orodno vrstico"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "Pokaži ali skrij orodno vrstico"
+
+#: kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "Pokaži vrstico &stanja"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "Pokaži ali skrij vrstico stanja"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "&Celozaslonski način"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&Shrani nastavitve"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "Nastavi &bližnjice ..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Nastavi %1 ..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Nastavi &orodne vrstice ..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "Nastavi obv&estila ..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "P&riročnik za %1"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Kaj je &to?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "Nasvet &dneva"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "Poročaj o h&rošču ..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Preklopi &jezik programa"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&O programu %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "O &KDE"
+
+#: ktipdialog.cpp:238
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Namig dneva"
+
+#: ktipdialog.cpp:254
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Ali ste vedeli ...?\n"
+
+#: ktipdialog.cpp:306
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Pokaži namige ob zagonu"
+
+#: ktipdialog.cpp:311
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Predhodni"
+
+#: ktipdialog.cpp:316
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Naslednji"

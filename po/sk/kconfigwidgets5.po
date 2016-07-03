@@ -1,0 +1,501 @@
+# translation of kdelibs4.po to Slovak
+# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2002.
+# Stanislav Visnovsky <visnovsky@kde.org>, 2003, 2004, 2005.
+# Richard Fric <Richard.Fric@kdemail.net>, 2006, 2007, 2010.
+# Michal Gaspar <miguel@portugal.sk>, 2006.
+# Jakub <vatrtj@gmail.com>, 2009.
+# Michal Sulek <misurel@gmail.com>, 2009, 2010, 2011.
+# Richard Frič <Richard.Fric@kdemail.net>, 2011.
+# Roman Paholík <wizzardsk@gmail.com>, 2012, 2013, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-06-01 07:19+0000\n"
+"PO-Revision-Date: 2015-02-10 18:38+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Stanislav Višňovský,Richard Frič,Michal Gašpar,Jakub Vatrt,Michal Šulek"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"visnovsky@kde.org,Richard.Fric@kdemail.net,miguel@portugal.sk,vatrtj@gmail."
+"com,misurel@gmail.com"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr "Pred uložením budete požiadaný o overenie"
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr "Na uloženie konfigurácie nemáte oprávnenie"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Štandardné"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Automatická detekcia"
+
+#: kconfigdialog.cpp:45
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Nastaviť"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "bez mena"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Žiadne položky"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "Vyčistiť zoznam"
+
+#: kstandardaction.cpp:88
+msgctxt "go back"
+msgid "&Back"
+msgstr "Do&zadu"
+
+#: kstandardaction.cpp:95
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "Do&predu"
+
+#: kstandardaction.cpp:102
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Domov"
+
+#: kstandardaction.cpp:105
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Pomocník"
+
+#: kstandardaction.cpp:141
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Zobraziť menu<p>Znovu zobrazí menu potom, čo bolo skryté</p>"
+
+#: kstandardaction.cpp:151
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Zobraziť stavový riadok<p>Zobrazí stavový riadok, čo je panel v dolnej časti "
+"okna použitý na stavové informácie.</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Nový"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "Vytvoriť nový dokument"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Otvoriť..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "Otvoriť existujúci dokument"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "Otvoriť n&edávne"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "Otvoriť dokument, ktorý bol nedávno otvorený"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Uložiť"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "Uložiť dokument"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Uložiť &ako..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "Uložiť dokument pod novým názvom"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "V&rátiť"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "Vrátiť neuložené zmeny urobené v dokumente"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Zavrieť"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "Zavrieť dokument"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&Tlačiť..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "Vytlačiť dokument"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "Ná&hľad tlače"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "Zobraziť náhľad tlače dokumentu"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&Pošta..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "Poslať dokument mailom"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "&Koniec"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Ukončiť aplikáciu"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Späť"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "Zrušiť poslednú akciu"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "Zn&ovu"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "Obnoviť poslednú zrušenú operáciu"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "Vys&trihnúť"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "Vystrihnúť výber do schránky"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Kopírovať"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "Skopírovať výber do schránky"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "V&ložiť"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "Vložiť obsah schránky"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "Vyčis&tiť"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "Vybrať &všetko"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "Zr&ušiť výber"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Nájsť..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "Nájsť nasledu&júci"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "Nájsť pre&dchádzajúci"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "Nahr&adiť..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&Aktuálna veľkosť"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "Zobraziť dokument v pôvodnej veľkosti"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "P&rispôsobiť stránke"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "Priblížiť na prispôsobenie strany"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Prispôsobiť šírke &stránky"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "Priblížiť na prispôsobenie šírky strany"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Prispôsobiť &výške stránky"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "Priblížiť na prispôsobenie výšky strany"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "Z&väčšiť"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "Z&menšiť"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Lupa..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "Vybrať úroveň priblíženia"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "Zob&raziť znovu"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "Znovu zobraziť dokument"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "Na&hor"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "Prejsť vyššie"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "&Predchádzajúca stránka"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "Prejsť na predošlú stranu"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Nasledujúca stránka"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "Prejsť na nasledujúcu stránku"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Prejsť na..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "Prejsť na &stránku..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "Prejsť na &riadok..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&Prvá stránka"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "Prejsť na prvú stranu"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "Po&sledná stránka"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "Prejsť na poslednú stránku"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Späť"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "Prejsť späť v dokumente"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "Do&predu"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "Prejsť dopredu v dokumente"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&Pridať záložku"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "&Upraviť záložky..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "Kontrola &pravopisu..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "Skontrolovať pravopis v dokumente"
+
+#: kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "Zobraziť &menu"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "Zobraziť alebo skryť ponuku"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "Zobraziť panel &nástrojov"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "Zobraziť alebo skryť panel nástrojov"
+
+#: kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "Zobraziť s&tavový riadok"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "Zobraziť alebo skryť stavový riadok"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "Režim &celej obrazovky"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&Uložiť nastavenie"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "Nastaviť &klávesové skratky..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "Nas&taviť %1..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Nastaviť panely &nástrojov..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "Nastaviť &upozornenia..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Príručka %1"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Čo je &to?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "Tip &dňa"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "&Nahlásiť chybu..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Prepnúť jazyk ap&likácie..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&O aplikácii %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "Informácie o &KDE"
+
+#: ktipdialog.cpp:238
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Tip dňa"
+
+#: ktipdialog.cpp:254
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Viete, že...?\n"
+
+#: ktipdialog.cpp:306
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Zobraziť tipy pri š&tarte"
+
+#: ktipdialog.cpp:311
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Predošlé"
+
+#: ktipdialog.cpp:316
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Ďalšie"
