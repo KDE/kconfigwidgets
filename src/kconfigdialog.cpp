@@ -27,6 +27,8 @@
 #include <kpagewidgetmodel.h>
 #include <khelpclient.h>
 
+#include <QApplication>
+#include <QDesktopWidget>
 #include <QDialogButtonBox>
 #include <QIcon>
 #include <QLayout>
@@ -34,6 +36,7 @@
 #include <QtCore/QMap>
 #include <QCoreApplication>
 #include <QDesktopServices>
+#include <QScrollArea>
 
 class KConfigDialog::KConfigDialogPrivate
 {
@@ -44,6 +47,9 @@ public:
         q->setObjectName(name);
         q->setWindowTitle(i18nc("@title:window", "Configure"));
         q->setFaceType(List);
+
+        const QSize availableSize = QApplication::desktop()->availableGeometry().size();
+        q->setMaximumSize(availableSize);
 
         if (!name.isEmpty()) {
             openDialogs.insert(name, q);
@@ -175,8 +181,17 @@ KPageWidgetItem *KConfigDialog::KConfigDialogPrivate::addPageInternal(QWidget *p
     QWidget *frame = new QWidget(q);
     QVBoxLayout *boxLayout = new QVBoxLayout(frame);
     boxLayout->setMargin(0);
+    boxLayout->setMargin(0);
 
-    boxLayout->addWidget(page);
+    QScrollArea *scroll = new QScrollArea(q);
+    scroll->setFrameShape(QFrame::NoFrame);
+    scroll->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    scroll->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    scroll->setWidget(page);
+    scroll->setWidgetResizable(true);
+    scroll->setSizePolicy( QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding );
+
+    boxLayout->addWidget(scroll);
     KPageWidgetItem *item = new KPageWidgetItem(frame, itemName);
     item->setHeader(header);
     if (!pixmapName.isEmpty()) {
