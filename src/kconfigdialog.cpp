@@ -48,9 +48,6 @@ public:
         q->setWindowTitle(i18nc("@title:window", "Configure"));
         q->setFaceType(List);
 
-        const QSize availableSize = QApplication::desktop()->availableGeometry().size();
-        q->setMaximumSize(availableSize);
-
         if (!name.isEmpty()) {
             openDialogs.insert(name, q);
         } else {
