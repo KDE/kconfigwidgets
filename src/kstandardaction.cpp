@@ -621,5 +621,20 @@ QAction *aboutKDE(const QObject *recvr, const char *slot, QObject *parent)
     return KStandardAction::create(AboutKDE, recvr, slot, parent);
 }
 
+QAction *deleteFile(const QObject *recvr, const char *slot, QObject *parent)
+{
+    return KStandardAction::create(DeleteFile, recvr, slot, parent);
+}
+
+QAction *renameFile(const QObject *recvr, const char *slot, QObject *parent)
+{
+    return KStandardAction::create(RenameFile, recvr, slot, parent);
+}
+
+QAction *moveToTrash(const QObject *recvr, const char *slot, QObject *parent)
+{
+    return KStandardAction::create(MoveToTrash, recvr, slot, parent);
+}
+
 }
 

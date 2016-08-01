@@ -166,7 +166,10 @@ enum StandardAction {
     FullScreen,
     Clear,
     PasteText,
-    SwitchApplicationLanguage
+    SwitchApplicationLanguage,
+    DeleteFile, //< @since 5.25
+    RenameFile, //< @since 5.25
+    MoveToTrash //< @since 5.25
 };
 
 /**
@@ -1060,6 +1063,42 @@ KCONFIGWIDGETS_EXPORT QAction *aboutKDE(const QObject *recvr, const char *slot, 
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(aboutKDE, AboutKDE)
+
+/**
+ * Delete file.
+ * @since 5.25
+ */
+KCONFIGWIDGETS_EXPORT QAction *deleteFile(const QObject *recvr, const char *slot, QObject *parent);
+
+/**
+ * Delete file.
+ * @since 5.25
+ */
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(deleteFile, DeleteFile)
+
+/**
+ * Rename file.
+ * @since 5.25
+ */
+KCONFIGWIDGETS_EXPORT QAction *renameFile(const QObject *recvr, const char *slot, QObject *parent);
+
+/**
+ * Rename file.
+ * @since 5.25
+ */
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(renameFile, RenameFile)
+
+/**
+ * Move to Trash.
+ * @since 5.25
+ */
+KCONFIGWIDGETS_EXPORT QAction *moveToTrash(const QObject *recvr, const char *slot, QObject *parent);
+
+/**
+ * Move to Trash.
+ * @since 5.25
+ */
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(moveToTrash, MoveToTrash)
 
 }
 
