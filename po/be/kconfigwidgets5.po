@@ -1,0 +1,600 @@
+# translation of kdelibs4.po to Belarusian
+# translation of kdelibs4.po to
+#
+# Eugene Zelenko <greendeath@mail.ru>, 2002-2004.
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2006.
+# Darafei Praliaskouski <komzpa@licei2.com>, 2007.
+# Komяpa <symbol@me.by>, 2007.
+# Komяpa <komzpa@gmail.com>, 2007.
+# Darafei Praliaskoski <komzpa@gmail.com>, 2007.
+# Darafei Praliaskouski <komzpa@gmail.com>, 2008, 2009.
+# Siarhei Liantsevich <serzh.by@gmail.com>, 2008.
+# kom <me@komzpa.net>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-08-01 07:32+0000\n"
+"PO-Revision-Date: 2009-09-06 15:21+0300\n"
+"Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
+"Language-Team: Belarusian <i18n@mova.org>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Дарафей Праляскоўскі"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "komzpa@gmail.com"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:170
+#, fuzzy
+#| msgid "Do you want to reload KDE configuration?"
+msgid "You are not allowed to save the configuration"
+msgstr "Вы хочаце перачытаць настаўленні KDE?"
+
+#: kcodecaction.cpp:90
+#, fuzzy
+#| msgid "Default"
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Прадвызначаны"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Аўтаматычнае вызначэнне"
+
+#: kconfigdialog.cpp:48
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Настаўленне"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "без назвы"
+
+#: krecentfilesaction.cpp:78
+#, fuzzy
+#| msgid "No entries"
+msgid "No Entries"
+msgstr "Няма элементаў"
+
+#: krecentfilesaction.cpp:84
+#, fuzzy
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "Ачысціць поле"
+
+#: kstandardaction.cpp:88
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Назад"
+
+#: kstandardaction.cpp:95
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Далей"
+
+#: kstandardaction.cpp:102
+msgctxt "home page"
+msgid "&Home"
+msgstr "Хатняя старонка"
+
+#: kstandardaction.cpp:105
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Дапамога"
+
+#: kstandardaction.cpp:141
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Паказаць меню<p>Паказвае меню пасля таго, як яно была схаванае</p>"
+
+#: kstandardaction.cpp:151
+#, fuzzy
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Паказаць радок статусу<br><br>Паказвае радок статусу (радок унізе акна, у "
+"якім паказваецца інфармацыя пра выкананне дзеянняў)."
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Новы"
+
+#: kstandardaction_p.h:41
+#, fuzzy
+#| msgid "Create New Tag..."
+msgid "Create new document"
+msgstr "Стварыць новы цэтлік..."
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Адкрыць..."
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgid "Go back one step"
+msgid "Open an existing document"
+msgstr "Ісці назад на адзін крок"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "Адкрыць &ранейшы файл"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Запісаць"
+
+#: kstandardaction_p.h:44
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Закрыць дакумент"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Запісаць &як..."
+
+#: kstandardaction_p.h:45
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Закрыць дакумент"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "&Вярнуць"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "За&крыць"
+
+#: kstandardaction_p.h:47
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Закрыць дакумент"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "&Друкаваць..."
+
+#: kstandardaction_p.h:48
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "Прагляд друку"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&Ліставаць..."
+
+#: kstandardaction_p.h:50
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Закрыць дакумент"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "&Выхад"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Выйсці з праграмы"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Вярнуць"
+
+#: kstandardaction_p.h:53
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "Дакументацыя HTML"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "Па&ўтарыць"
+
+#: kstandardaction_p.h:54
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "Дакументацыя HTML"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "&Выразаць"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "С&капіраваць"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&Уставіць"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, fuzzy
+#| msgid "Print Preview"
+msgid "Paste clipboard content"
+msgstr "Прагляд друку"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "А&чысціць"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "Вылучыць &усё"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "&Зняць вылучэнне"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "З&найсці..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "Знайсці &далей"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "Знайсці &раней"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&Замяніць..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "&Сапраўдны памер"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "Размясціць у &старонку"
+
+#: kstandardaction_p.h:68
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Ісці да радка"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Размясціць у &шырыню старонкі"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Размясціць у &вышыню старонкі"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "&Павялічыць"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "&Зменшыць"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Маштаб..."
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Выберыце тыдзень"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "&Абнавіць"
+
+#: kstandardaction_p.h:74
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Redisplay document"
+msgstr "&Абнавіць"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&Угору"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "&Папярэдняя старонка"
+
+#: kstandardaction_p.h:81
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "&Папярэдняя старонка"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Наступная старонка"
+
+#: kstandardaction_p.h:82
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Ісці да радка"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Ісці да..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "&Ісці на старонку..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "&Ісці да радку..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "&Першая старонка"
+
+#: kstandardaction_p.h:86
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Ісці да радка"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "&Апошняя старонка"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Ісці на старонку..."
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Назад"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgid "Go back one step"
+msgid "Go back in document"
+msgstr "Ісці назад на адзін крок"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&Далей"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgid "Go forward one step"
+msgid "Go forward in document"
+msgstr "Ісці наперад на адзін крок"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&Дадаць закладку"
+
+#: kstandardaction_p.h:92
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks..."
+msgstr "&Рэдагаваць закладкі"
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "С&праўдзіць правапіс..."
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Праверыць правапіс"
+
+#: kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "Паказаць &меню"
+
+#: kstandardaction_p.h:96
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Паказаць &меню"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "Паказаць &панэль начыння"
+
+#: kstandardaction_p.h:97
+#, fuzzy
+#| msgid "Show &Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Паказаць &панэль начыння"
+
+#: kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "Паказаць радок ст&атусу"
+
+#: kstandardaction_p.h:98
+#, fuzzy
+#| msgid "Show St&atusbar"
+msgid "Show or hide statusbar"
+msgstr "Паказаць радок ст&атусу"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "&Поўнаэкранны рэжым"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&Запісаць настаўленні"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "Наставіць &скароты..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Наставіць %1..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Настаўленні &панэлі начыння..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "Наставіць &нагадванні..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "Па&дручнік %1"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Што &гэта?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "Карысная &парада"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "&Паведаміць пра памылку..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Змяніць мову праграмы..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&Пра %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "Пра &KDE"
+
+#: kstandardaction_p.h:116
+#, fuzzy
+#| msgid "Delete File"
+msgid "&Delete File"
+msgstr "Выдаліць файл"
+
+#: kstandardaction_p.h:117
+#, fuzzy
+#| msgid "&Send Files"
+msgid "&Rename File"
+msgstr "&Даслаць файлы"
+
+#: kstandardaction_p.h:118
+#, fuzzy
+#| msgid "Move to Trash"
+msgid "&Move to Trash"
+msgstr "Перамясціць у сметніцу"
+
+#: ktipdialog.cpp:238
+#, fuzzy
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Карысная парада"
+
+#: ktipdialog.cpp:254
+#, fuzzy
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Ці ведаеце вы, што...?\n"
+
+#: ktipdialog.cpp:306
+#, fuzzy
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Паказваць парады пасля запуску"
+
+#: ktipdialog.cpp:311
+#, fuzzy
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Папярэдні"
+
+#: ktipdialog.cpp:316
+#, fuzzy
+#| msgctxt "Opposite to Previous"
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Наступны"
