@@ -1,0 +1,530 @@
+# translation of kdelibs4.po to Turkish
+# translation of kdelibs4.po to
+# Kdelibs Turkish translation file
+# Copyright (C) 2000,2003, 2004, 2005, 2007, 2008 Free Software Foundation, Inc.
+#
+# Ömer Fadıl USTA <omer_fad@hotmail.com>,1999-2002.
+# Görkem Çetin <gorkem@kde.org>, 2002,2003, 2004.
+# Tuncay YENİAY <tuncayyeniay@mynet.com>,2002.
+# Ayşe Genç <ayse@uludag.org.tr>, 2005.
+# Görkem Çetin <gorkem@kde.org.tr>, 2005.
+# Görkem Çetin <gorkem@gorkemcetin.com>, 2005.
+# Bekir SONAT <cortexbs@yahoo.com>, 2005.
+# Serdar Soytetir <tulliana@gmail.com>, 2007.
+# Serdar Soytetir <tulliana@gmail.com>, 2007, 2008, 2009, 2011.
+# H. İbrahim Güngör <ibrahim@pardus.org.tr>, 2010, 2011.
+# Ozan Çağlayan <ozan@pardus.org.tr>, 2010, 2011.
+# Serdar SOYTETİR <tulliana@gmail.com>, 2010, 2012.
+# Volkan Gezer <volkangezer@gmail.com>, 2013, 2014.
+# Kaan Ozdincer <kaanozdincer@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-08-01 07:32+0000\n"
+"PO-Revision-Date: 2015-02-15 12:56+0000\n"
+"Last-Translator: Necdet <necdetyucel@gmail.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 1.4\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Serdar Soytetir, Görkem Çetin, H. İbrahim Güngör, Volkan Gezer"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"tulliana@gmail.com, gorkem@kde.org, ibrahim@pardus.org.tr, volkangezer@gmail."
+"com"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr "Kaydetmeden önce kimlik doğrulaması yapmanız istenecek"
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr "Yapılandırmayı kaydetme izniniz yok"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Öntanımlı"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Otomatik Bul"
+
+#: kconfigdialog.cpp:48
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Yapılandır"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "isimsiz"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Girdi Yok"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "Listeyi Temizle"
+
+#: kstandardaction.cpp:88
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Geri"
+
+#: kstandardaction.cpp:95
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "İ&leri"
+
+#: kstandardaction.cpp:102
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Başlangıç"
+
+#: kstandardaction.cpp:105
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Yardım"
+
+#: kstandardaction.cpp:141
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Menü Çubuğunu Göster <p> Gizli duran menü çubuğunu yeniden gösterir</p>"
+
+#: kstandardaction.cpp:151
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Durum Çubuğunu Göster<p>Pencerelerin en alt bölümünde bulunan ve bilgi "
+"vermek amacıyla kullanılan durum çubuğunu gösterir.</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Yeni"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "Yeni belge oluştur"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Aç..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "Var olan bir belgeyi aç"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "&Son kullanılanı Aç"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "Zaten açık olan bir belgeyi aç"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Kaydet"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "Belgeyi kaydet"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "&Farklı Kaydet..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "Belgeyi yeni bir isimle kaydet"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "Es&ki haline döndür"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "Belgede yapılan ve kaydedilmemiş olan değişiklikleri geri al"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Kapat"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "Belgeyi kapat"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "Ya&zdır..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "Belgeyi yazdır"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "Yazdırma &Önizlemesi"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "Belgenin yazdırma önizlemesini göster"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "&E-posta..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "Belgeyi e-posta ile gönder"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "Çı&k"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Uygulamadan Çık"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Geri Al"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "Son eylemi geri al"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "&Yinele"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "Son geri alma işlemine kadar yinele"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "&Kes"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "Seçimi keserek panoya al"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Kopyala"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "Seçimi kopyalayarak panoya al"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "Ya&pıştır"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "Pano içeriğini yapıştır"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "&Temizle"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "&Tümünü Seç"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "&Seçme"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Bul..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "&Sonrakini Bul"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "Önce&kini Bul"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "Değ&iştir..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "Ö&zgün Boyut"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "Belgeyi kendi özgün boyutunda göster"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "Sayfaya &Uydur"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "Sayfayı pencereye sığdır"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Sayfa &Genişliğine Uydur"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "Sayfayı pencerenin genişliğine göre sığdır"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Sayfa &Yüksekliğine Uydur"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "Sayfayı pencerenin yüksekliğine göre sığdır"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "Bü&yüt"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "&Küçült"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "Ya&kınlaştır..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "Büyütme düzeyini seçin"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "&Tekrar Göster"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "Belgeyi tekrar göster"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&Yukarı"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "Yukarı git"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "Ö&nceki Sayfa"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "Önceki sayfaya git"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "&Sonraki Sayfa"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "Sonraki sayfaya git"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Git..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "Sa&yfaya Git..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "Sa&tıra Git..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "İ&lk Sayfa"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "İlk sayfaya git"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "S&on Sayfa"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "Son sayfaya git"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Geri"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "Belge içerisinde geri git"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "&İleri"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "Belge içerisinde ileri git"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "Yer İmi &ekle"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "Yer İmlerini &Düzenle..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&Yazım Denetimi..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "Belge içerisinde yazım denetimi yap"
+
+#: kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "&Menü Çubuğunu Göster"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "Menü çubuğunu göster veya gizle"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "&Araç Çubuğunu Göster"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "Araç çubuğunu göster veya gizle"
+
+#: kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "&Durum Çubuğunu Göster"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "Durum çubuğunu göster veya gizle"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "Ta&m Ekran Kipi"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "&Ayarları Kaydet"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "&Kısayolları Yapılandır..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 Uygulamasını &Yapılandır..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "&Araç Çubuğunu Yapılandır..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "&Bildirimleri Yapılandır..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &El Kitabı"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Bu &Nedir?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "&Günün İpucu"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "&Hata Bildir..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Uygu&lama Dilini Seç..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "%1 &Hakkında"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "&KDE Hakkında"
+
+#: kstandardaction_p.h:116
+#, fuzzy
+#| msgid "Delete File"
+msgid "&Delete File"
+msgstr "Dosyayı Sil"
+
+#: kstandardaction_p.h:117
+#, fuzzy
+#| msgid "&Send File"
+#| msgid_plural "&Send Files"
+msgid "&Rename File"
+msgstr "&Dosya Gönder"
+
+#: kstandardaction_p.h:118
+#, fuzzy
+#| msgid "Move to Trash"
+msgid "&Move to Trash"
+msgstr "Çöpe Gönder"
+
+#: ktipdialog.cpp:238
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Günün İpucu"
+
+#: ktipdialog.cpp:254
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Biliyor muydunuz..?\n"
+
+#: ktipdialog.cpp:306
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Başlangıçta ipuçlarını göster"
+
+#: ktipdialog.cpp:311
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Önceki"
+
+#: ktipdialog.cpp:316
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Sonraki"
