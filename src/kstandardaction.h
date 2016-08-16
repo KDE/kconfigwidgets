@@ -169,7 +169,8 @@ enum StandardAction {
     SwitchApplicationLanguage,
     DeleteFile, //< @since 5.25
     RenameFile, //< @since 5.25
-    MoveToTrash //< @since 5.25
+    MoveToTrash, //< @since 5.25
+    Donate //< @since 5.26
 };
 
 /**
@@ -1099,6 +1100,18 @@ KCONFIGWIDGETS_EXPORT QAction *moveToTrash(const QObject *recvr, const char *slo
  * @since 5.25
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(moveToTrash, MoveToTrash)
+
+/**
+ * Open donation page on kde.org.
+ * @since 5.26
+ */
+KCONFIGWIDGETS_EXPORT QAction *donate(const QObject *recvr, const char *slot, QObject *parent);
+
+/**
+ * Open donation page on kde.org.
+ * @since 5.26
+ */
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(donate, Donate)
 
 }
 

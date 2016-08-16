@@ -636,5 +636,10 @@ QAction *moveToTrash(const QObject *recvr, const char *slot, QObject *parent)
     return KStandardAction::create(MoveToTrash, recvr, slot, parent);
 }
 
+QAction *donate(const QObject *recvr, const char *slot, QObject *parent)
+{
+    return KStandardAction::create(Donate, recvr, slot, parent);
+}
+
 }
 
