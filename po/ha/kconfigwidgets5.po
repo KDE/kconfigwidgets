@@ -1,0 +1,545 @@
+# Hausa translation for kdelibs strings.
+# Copyright 2009 Adriaan de Groot, Mustapha Abubakar, Ibrahim Dasuna
+# This file is distributed under the same license as the kdelibs package.
+#
+# Adriaan de Groot <groot@kde.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-08-17 06:33+0000\n"
+"PO-Revision-Date: 2009-03-17 11:22+0100\n"
+"Last-Translator: Adriaan de Groot <groot@kde.org>\n"
+"Language-Team: Hausa <kde-i18n-doc@lists.kde.org>\n"
+"Language: ha\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 0.2\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Mustapha Abubakar,Adriaan de Groot,Ibrahim Dasuna"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ",groot@kde.org,"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr ""
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr ""
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr ""
+
+#: kconfigdialog.cpp:48
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Haɗawa"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr ""
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr ""
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr ""
+
+#: kstandardaction.cpp:88
+msgctxt "go back"
+msgid "&Back"
+msgstr ""
+
+#: kstandardaction.cpp:95
+msgctxt "go forward"
+msgid "&Forward"
+msgstr ""
+
+#: kstandardaction.cpp:102
+msgctxt "home page"
+msgid "&Home"
+msgstr ""
+
+#: kstandardaction.cpp:105
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Agaji"
+
+#: kstandardaction.cpp:141
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+
+#: kstandardaction.cpp:151
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr ""
+
+#: kstandardaction_p.h:41
+#, fuzzy
+#| msgid "Close the current document."
+msgid "Create new document"
+msgstr "Rufe wannan -dokumen-"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr ""
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr ""
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr ""
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr ""
+
+#: kstandardaction_p.h:44
+#, fuzzy
+#| msgid "&Close Document"
+msgid "Save document"
+msgstr "&Rufe -dokumen-"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr ""
+
+#: kstandardaction_p.h:45
+#, fuzzy
+#| msgid "&Close Document"
+msgid "Save document under a new name"
+msgstr "&Rufe -dokumen-"
+
+#: kstandardaction_p.h:46
+#, fuzzy
+#| msgid "Se&verity"
+msgid "Re&vert"
+msgstr "Mahimmanchi"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "&Rufe"
+
+#: kstandardaction_p.h:47
+#, fuzzy
+#| msgid "&Close Document"
+msgid "Close document"
+msgstr "&Rufe -dokumen-"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr ""
+
+#: kstandardaction_p.h:48
+#, fuzzy
+#| msgid "&Close Document"
+msgid "Print document"
+msgstr "&Rufe -dokumen-"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr ""
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr ""
+
+#: kstandardaction_p.h:50
+#, fuzzy
+#| msgid "&Close Document"
+msgid "Send document by mail"
+msgstr "&Rufe -dokumen-"
+
+#: kstandardaction_p.h:51
+#, fuzzy
+#| msgid "Quit"
+msgid "&Quit"
+msgstr "Kashi"
+
+#: kstandardaction_p.h:51
+#, fuzzy
+#| msgid "Quit application..."
+msgid "Quit application"
+msgstr "Rufewa -afelikashon-"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr ""
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr ""
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr ""
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr ""
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr ""
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr ""
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr ""
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr ""
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr ""
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr ""
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr ""
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr ""
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr ""
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr ""
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr ""
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr ""
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr ""
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr ""
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr ""
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr ""
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr ""
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr ""
+
+#: kstandardaction_p.h:74
+#, fuzzy
+#| msgid "&Close Document"
+msgid "Redisplay document"
+msgstr "&Rufe -dokumen-"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr ""
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr ""
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr ""
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr ""
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr ""
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr ""
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr ""
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr ""
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr ""
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr ""
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr ""
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr ""
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr ""
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgid "&Close Document"
+msgid "Go back in document"
+msgstr "&Rufe -dokumen-"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr ""
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgid "&Close Document"
+msgid "Go forward in document"
+msgstr "&Rufe -dokumen-"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr ""
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr ""
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr ""
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Close the current document."
+msgid "Check spelling in document"
+msgstr "Rufe wannan -dokumen-"
+
+#: kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr ""
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr ""
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr ""
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr ""
+
+#: kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr ""
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr ""
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr ""
+
+#: kstandardaction_p.h:100
+#, fuzzy
+#| msgid "&Settings"
+msgid "&Save Settings"
+msgstr "&Tsarawa"
+
+#: kstandardaction_p.h:101
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure S&hortcuts..."
+msgstr "Haɗawa &Sanerwa"
+
+#: kstandardaction_p.h:102
+#, fuzzy, kde-format
+#| msgid "Configure Email..."
+msgid "&Configure %1..."
+msgstr "Haɗawa wasikan lantarki"
+
+#: kstandardaction_p.h:103
+#, fuzzy
+#| msgid "Configure Email..."
+msgid "Configure Tool&bars..."
+msgstr "Haɗawa wasikan lantarki"
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "Haɗawa &Sanerwa"
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr ""
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr ""
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr ""
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr ""
+
+#: kstandardaction_p.h:113
+#, fuzzy
+#| msgid "Quit application..."
+msgid "Switch Application &Language..."
+msgstr "Rufewa -afelikashon-"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&Bayani akan %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "Bayani akan &KDE"
+
+#: kstandardaction_p.h:116
+msgid "&Delete File"
+msgstr ""
+
+#: kstandardaction_p.h:117
+msgid "&Rename File"
+msgstr ""
+
+#: kstandardaction_p.h:118
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:119
+msgid "&Donate"
+msgstr ""
+
+#: ktipdialog.cpp:238
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr ""
+
+#: ktipdialog.cpp:254
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr ""
+
+#: ktipdialog.cpp:306
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr ""
+
+#: ktipdialog.cpp:311
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr ""
+
+#: ktipdialog.cpp:316
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr ""
