@@ -1,0 +1,519 @@
+# Translation of kconfigwidgets5.po to Catalan
+# Copyright (C) 2014-2016 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Sebastià Pla i Sanz <sps@sastia.com>, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2003, 2006, 2011, 2012, 2013, 2014, 2015, 2016.
+# Albert Astals Cid <aacid@kde.org>, 2004, 2005, 2007.
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016.
+# Robert Millan <rmh@aybabtu.com>, 2009.
+# Orestes Mas <orestes@tsc.upc.edu>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kconfigwidgets5\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-08-17 06:33+0000\n"
+"PO-Revision-Date: 2016-08-18 23:33+0100\n"
+"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sebastià Pla,Antoni Bella,Albert Astals,Josep Ma. Ferrer"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sps@sastia.com,antonibella5@yahoo.com,aacid@kde.org,txemaq@gmail.com"
+
+#: kcmodule.cpp:166
+msgid "You will be asked to authenticate before saving"
+msgstr "Se us demanarà l'autenticació abans de desar"
+
+#: kcmodule.cpp:170
+msgid "You are not allowed to save the configuration"
+msgstr "No se us permet desar la configuració"
+
+#: kcodecaction.cpp:90
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Omissió"
+
+#: kcodecaction.cpp:98
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Autodetecta"
+
+#: kconfigdialog.cpp:48
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Configuració"
+
+#: klanguagebutton.cpp:194
+msgid "without name"
+msgstr "sense nom"
+
+#: krecentfilesaction.cpp:78
+msgid "No Entries"
+msgstr "Sense entrades"
+
+#: krecentfilesaction.cpp:84
+msgid "Clear List"
+msgstr "Neteja la llista"
+
+#: kstandardaction.cpp:88
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Enrere"
+
+#: kstandardaction.cpp:95
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "En&davant"
+
+#: kstandardaction.cpp:102
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Inici"
+
+#: kstandardaction.cpp:105
+msgctxt "show help"
+msgid "&Help"
+msgstr "A&juda"
+
+#: kstandardaction.cpp:141
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Mostra la barra de menú<p>Torna a mostrar la barra de menú després d'haver-"
+"se ocultat</p>"
+
+#: kstandardaction.cpp:151
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Mostra la barra d'estat<p>Mostra la barra d'estat, que és la barra a sota de "
+"la finestra usada per a la informació d'estat.</p>"
+
+#: kstandardaction_p.h:41
+msgid "&New"
+msgstr "&Nou"
+
+#: kstandardaction_p.h:41
+msgid "Create new document"
+msgstr "Crea un document nou"
+
+#: kstandardaction_p.h:42
+msgid "&Open..."
+msgstr "&Obre..."
+
+#: kstandardaction_p.h:42
+msgid "Open an existing document"
+msgstr "Obre un document existent"
+
+#: kstandardaction_p.h:43
+msgid "Open &Recent"
+msgstr "Obre &recent"
+
+#: kstandardaction_p.h:43
+msgid "Open a document which was recently opened"
+msgstr "Obre un document que s'ha obert recentment"
+
+#: kstandardaction_p.h:44
+msgid "&Save"
+msgstr "&Desa"
+
+#: kstandardaction_p.h:44
+msgid "Save document"
+msgstr "Desa el document"
+
+#: kstandardaction_p.h:45
+msgid "Save &As..."
+msgstr "Desa &com a..."
+
+#: kstandardaction_p.h:45
+msgid "Save document under a new name"
+msgstr "Desa el document amb un nom nou"
+
+#: kstandardaction_p.h:46
+msgid "Re&vert"
+msgstr "Re&verteix"
+
+#: kstandardaction_p.h:46
+msgid "Revert unsaved changes made to document"
+msgstr "Reverteix els canvis sense desar efectuats en el document"
+
+#: kstandardaction_p.h:47
+msgid "&Close"
+msgstr "Tan&ca"
+
+#: kstandardaction_p.h:47
+msgid "Close document"
+msgstr "Tanca el document"
+
+#: kstandardaction_p.h:48
+msgid "&Print..."
+msgstr "Im&primeix..."
+
+#: kstandardaction_p.h:48
+msgid "Print document"
+msgstr "Imprimeix el document"
+
+#: kstandardaction_p.h:49
+msgid "Print Previe&w"
+msgstr "&Vista prèvia d'impressió"
+
+#: kstandardaction_p.h:49
+msgid "Show a print preview of document"
+msgstr "Mostra una vista prèvia d'impressió del document"
+
+#: kstandardaction_p.h:50
+msgid "&Mail..."
+msgstr "Corr&eu..."
+
+#: kstandardaction_p.h:50
+msgid "Send document by mail"
+msgstr "Envia un document per correu"
+
+#: kstandardaction_p.h:51
+msgid "&Quit"
+msgstr "&Surt"
+
+#: kstandardaction_p.h:51
+msgid "Quit application"
+msgstr "Surt de l'aplicació"
+
+#: kstandardaction_p.h:53
+msgid "&Undo"
+msgstr "&Desfés"
+
+#: kstandardaction_p.h:53
+msgid "Undo last action"
+msgstr "Desfà l'última acció"
+
+#: kstandardaction_p.h:54
+msgid "Re&do"
+msgstr "Re&fés"
+
+#: kstandardaction_p.h:54
+msgid "Redo last undone action"
+msgstr "Refà l'última acció desfeta"
+
+#: kstandardaction_p.h:55
+msgid "Cu&t"
+msgstr "Re&talla"
+
+#: kstandardaction_p.h:55
+msgid "Cut selection to clipboard"
+msgstr "Retalla la selecció al porta-retalls"
+
+#: kstandardaction_p.h:56
+msgid "&Copy"
+msgstr "&Copia"
+
+#: kstandardaction_p.h:56
+msgid "Copy selection to clipboard"
+msgstr "Copia la selecció al porta-retalls"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "&Paste"
+msgstr "&Enganxa"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+msgid "Paste clipboard content"
+msgstr "Enganxa el contingut del porta-retalls"
+
+#: kstandardaction_p.h:59
+msgid "C&lear"
+msgstr "&Neteja"
+
+#: kstandardaction_p.h:60
+msgid "Select &All"
+msgstr "Selecciona-ho &tot"
+
+#: kstandardaction_p.h:61
+msgid "Dese&lect"
+msgstr "Desse&lecciona"
+
+#: kstandardaction_p.h:62
+msgid "&Find..."
+msgstr "&Cerca..."
+
+#: kstandardaction_p.h:63
+msgid "Find &Next"
+msgstr "Cerca &següent"
+
+#: kstandardaction_p.h:64
+msgid "Find Pre&vious"
+msgstr "Cerca &anterior"
+
+#: kstandardaction_p.h:65
+msgid "&Replace..."
+msgstr "&Substitueix..."
+
+#: kstandardaction_p.h:67
+msgid "&Actual Size"
+msgstr "Mida re&al"
+
+#: kstandardaction_p.h:67
+msgid "View document at its actual size"
+msgstr "Visualitza el document en la seva mida real"
+
+#: kstandardaction_p.h:68
+msgid "&Fit to Page"
+msgstr "&Ajusta a la pàgina"
+
+#: kstandardaction_p.h:68
+msgid "Zoom to fit page in window"
+msgstr "Zoom per ajustar la pàgina en la finestra"
+
+#: kstandardaction_p.h:69
+msgid "Fit to Page &Width"
+msgstr "Ajusta a l'a&mplada de la pàgina"
+
+#: kstandardaction_p.h:69
+msgid "Zoom to fit page width in window"
+msgstr "Zoom per ajustar l'amplada de la pàgina en la finestra"
+
+#: kstandardaction_p.h:70
+msgid "Fit to Page &Height"
+msgstr "Ajusta a l'a&lçada de la pàgina"
+
+#: kstandardaction_p.h:70
+msgid "Zoom to fit page height in window"
+msgstr "Zoom per ajustar l'alçada de la pàgina en la finestra"
+
+#: kstandardaction_p.h:71
+msgid "Zoom &In"
+msgstr "&Amplia"
+
+#: kstandardaction_p.h:72
+msgid "Zoom &Out"
+msgstr "Red&ueix"
+
+#: kstandardaction_p.h:73
+msgid "&Zoom..."
+msgstr "&Zoom..."
+
+#: kstandardaction_p.h:73
+msgid "Select zoom level"
+msgstr "Selecció del nivell de zoom"
+
+#: kstandardaction_p.h:74
+msgid "&Redisplay"
+msgstr "&Redibuixa"
+
+#: kstandardaction_p.h:74
+msgid "Redisplay document"
+msgstr "Redibuixa el document"
+
+#: kstandardaction_p.h:76
+msgid "&Up"
+msgstr "&Amunt"
+
+#: kstandardaction_p.h:76
+msgid "Go up"
+msgstr "Puja"
+
+#: kstandardaction_p.h:81
+msgid "&Previous Page"
+msgstr "&Pàgina anterior"
+
+#: kstandardaction_p.h:81
+msgid "Go to previous page"
+msgstr "Va a la pàgina anterior"
+
+#: kstandardaction_p.h:82
+msgid "&Next Page"
+msgstr "Pàgina següe&nt"
+
+#: kstandardaction_p.h:82
+msgid "Go to next page"
+msgstr "Va a la pàgina següent"
+
+#: kstandardaction_p.h:83
+msgid "&Go To..."
+msgstr "&Vés a..."
+
+#: kstandardaction_p.h:84
+msgid "&Go to Page..."
+msgstr "&Vés a la pàgina..."
+
+#: kstandardaction_p.h:85
+msgid "&Go to Line..."
+msgstr "&Vés a la línia..."
+
+#: kstandardaction_p.h:86
+msgid "&First Page"
+msgstr "P&rimera pàgina"
+
+#: kstandardaction_p.h:86
+msgid "Go to first page"
+msgstr "Va a la primera pàgina"
+
+#: kstandardaction_p.h:87
+msgid "&Last Page"
+msgstr "D&arrera pàgina"
+
+#: kstandardaction_p.h:87
+msgid "Go to last page"
+msgstr "Va a l'última pàgina"
+
+#: kstandardaction_p.h:88
+msgid "&Back"
+msgstr "&Enrere"
+
+#: kstandardaction_p.h:88
+msgid "Go back in document"
+msgstr "Va enrere en el document"
+
+#: kstandardaction_p.h:89
+msgid "&Forward"
+msgstr "En&davant"
+
+#: kstandardaction_p.h:89
+msgid "Go forward in document"
+msgstr "Va endavant en el document"
+
+#: kstandardaction_p.h:91
+msgid "&Add Bookmark"
+msgstr "&Afegeix una adreça d'interès"
+
+#: kstandardaction_p.h:92
+msgid "&Edit Bookmarks..."
+msgstr "&Edita les adreces d'interès..."
+
+#: kstandardaction_p.h:94
+msgid "&Spelling..."
+msgstr "&Ortografia..."
+
+#: kstandardaction_p.h:94
+msgid "Check spelling in document"
+msgstr "Verificació de l'ortografia en el document"
+
+#: kstandardaction_p.h:96
+msgid "Show &Menubar"
+msgstr "Mostra la barra de &menú"
+
+#: kstandardaction_p.h:96
+msgid "Show or hide menubar"
+msgstr "Mostra o oculta la barra de menú"
+
+#: kstandardaction_p.h:97
+msgid "Show &Toolbar"
+msgstr "Mostra la barra d'&eines"
+
+#: kstandardaction_p.h:97
+msgid "Show or hide toolbar"
+msgstr "Mostra o oculta la barra d'eines"
+
+#: kstandardaction_p.h:98
+msgid "Show St&atusbar"
+msgstr "&Mostra la barra d'estat"
+
+#: kstandardaction_p.h:98
+msgid "Show or hide statusbar"
+msgstr "Mostra o oculta la barra d'estat"
+
+#: kstandardaction_p.h:99
+msgid "F&ull Screen Mode"
+msgstr "&Mode de pantalla completa"
+
+#: kstandardaction_p.h:100
+msgid "&Save Settings"
+msgstr "De&sa l'arranjament"
+
+#: kstandardaction_p.h:101
+msgid "Configure S&hortcuts..."
+msgstr "Configura les &dreceres..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Configura el %1..."
+
+#: kstandardaction_p.h:103
+msgid "Configure Tool&bars..."
+msgstr "Configura les &barres d'eines..."
+
+#: kstandardaction_p.h:104
+msgid "Configure &Notifications..."
+msgstr "Configura les &notificacions..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Manual del %1"
+
+#: kstandardaction_p.h:110
+msgid "What's &This?"
+msgstr "Què és &això?"
+
+#: kstandardaction_p.h:111
+msgid "Tip of the &Day"
+msgstr "Consell del &dia"
+
+#: kstandardaction_p.h:112
+msgid "&Report Bug..."
+msgstr "&Informa d'un error..."
+
+#: kstandardaction_p.h:113
+msgid "Switch Application &Language..."
+msgstr "Canvia l'i&dioma de l'aplicació..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "Qu&ant al %1"
+
+#: kstandardaction_p.h:115
+msgid "About &KDE"
+msgstr "Quant al &KDE"
+
+#: kstandardaction_p.h:116
+msgid "&Delete File"
+msgstr "&Suprimeix fitxer"
+
+#: kstandardaction_p.h:117
+msgid "&Rename File"
+msgstr "&Reanomena fitxer"
+
+#: kstandardaction_p.h:118
+msgid "&Move to Trash"
+msgstr "&Mou a la paperera"
+
+#: kstandardaction_p.h:119
+msgid "&Donate"
+msgstr "&Donació"
+
+#: ktipdialog.cpp:238
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Consell del dia"
+
+#: ktipdialog.cpp:254
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Sabíeu que...?\n"
+
+#: ktipdialog.cpp:306
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Mo&stra consells en engegar"
+
+#: ktipdialog.cpp:311
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Anterior"
+
+#: ktipdialog.cpp:316
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Següent"
