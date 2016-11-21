@@ -178,6 +178,10 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             break;
         }
 
+        // Set the text before setting the MenuRole, as on OS X setText will do some heuristic role guessing.
+        // This ensures user menu items get the intended role out of the list below.
+        pAction->setText(sLabel);
+
         switch (id) {
         case Quit:
             pAction->setMenuRole(QAction::QuitRole);
@@ -196,7 +200,6 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             break;
         }
 
-        pAction->setText(sLabel);
         if (pInfo->psToolTip) {
             pAction->setToolTip(i18n(pInfo->psToolTip));
         }
