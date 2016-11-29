@@ -144,7 +144,7 @@ public:
     void saveEntries(const KConfigGroup &config);
 
     /**
-     *  Add URL to recent files list.
+     *  Add URL to recent files list. This will enable this action.
      *
      *  @param url The URL of the file
      *  @param name The user visible pretty name that appears before the URL
