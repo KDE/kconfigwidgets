@@ -49,8 +49,8 @@ class QWidget;
  *
  * New widgets can be added to the map using the static functions propertyMap() and
  * changedMap().  Note that you can't just add any class.  The class must have a
- * matching Q_PROPERTY(...) macro defined, and a signal which emitted when the
- * property changed. Note: by default, the property which defined as "USER true"
+ * matching Q_PROPERTY(...) macro defined, and a signal which is emitted when the
+ * property changed. Note: by default, the property which is defined as "USER true"
  * is used.
  *
  * For example (note that KColorButton is already added and it doesn't need to
