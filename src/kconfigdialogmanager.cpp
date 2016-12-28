@@ -90,8 +90,6 @@ void KConfigDialogManager::initMaps()
         s_propertyMap()->insert(QStringLiteral("KButtonGroup"), "current");
         s_propertyMap()->insert(QStringLiteral("KColorButton"), "color");
         s_propertyMap()->insert(QStringLiteral("KColorCombo"), "color");
-        //s_propertyMap()->insert( "KUrlRequester", "url" );
-        //s_propertyMap()->insert( "KUrlComboRequester", "url" );
     }
 
     if (s_changedMap()->isEmpty()) {
@@ -99,13 +97,8 @@ void KConfigDialogManager::initMaps()
         s_changedMap()->insert(QStringLiteral("QCheckBox"), SIGNAL(stateChanged(int)));
         s_changedMap()->insert(QStringLiteral("QPushButton"), SIGNAL(clicked(bool)));
         s_changedMap()->insert(QStringLiteral("QRadioButton"), SIGNAL(toggled(bool)));
-        // We can only store one thing, so you can't have
-        // a ButtonGroup that is checkable.
-//    s_changedMap()->insert("QButtonGroup", SIGNAL(buttonClicked(int)));
         s_changedMap()->insert(QStringLiteral("QGroupBox"), SIGNAL(toggled(bool)));
         s_changedMap()->insert(QStringLiteral("QComboBox"), SIGNAL(activated(int)));
-        //qsqlproperty map doesn't store the text, but the value!
-        //s_changedMap()->insert("QComboBox", SIGNAL(textChanged(QString)));
         s_changedMap()->insert(QStringLiteral("QDateEdit"), SIGNAL(dateChanged(QDate)));
         s_changedMap()->insert(QStringLiteral("QTimeEdit"), SIGNAL(timeChanged(QTime)));
         s_changedMap()->insert(QStringLiteral("QDateTimeEdit"), SIGNAL(dateTimeChanged(QDateTime)));
@@ -124,9 +117,7 @@ void KConfigDialogManager::initMaps()
         s_changedMap()->insert(QStringLiteral("KFontComboBox"), SIGNAL(activated(int)));
         s_changedMap()->insert(QStringLiteral("KFontRequester"), SIGNAL(fontSelected(QFont)));
         s_changedMap()->insert(QStringLiteral("KFontChooser"),  SIGNAL(fontSelected(QFont)));
-        s_changedMap()->insert(QStringLiteral("KHistoryCombo"), SIGNAL(activated(int)));
         s_changedMap()->insert(QStringLiteral("KColorCombo"), SIGNAL(activated(QColor)));
-
         s_changedMap()->insert(QStringLiteral("KColorButton"), SIGNAL(changed(QColor)));
         s_changedMap()->insert(QStringLiteral("KDatePicker"), SIGNAL(dateSelected(QDate)));
         s_changedMap()->insert(QStringLiteral("KDateWidget"), SIGNAL(changed(QDate)));
@@ -134,7 +125,6 @@ void KConfigDialogManager::initMaps()
         s_changedMap()->insert(QStringLiteral("KEditListWidget"), SIGNAL(changed()));
         s_changedMap()->insert(QStringLiteral("KListWidget"), SIGNAL(itemSelectionChanged()));
         s_changedMap()->insert(QStringLiteral("KLineEdit"), SIGNAL(textChanged(QString)));
-        s_changedMap()->insert(QStringLiteral("KPasswordEdit"), SIGNAL(textChanged(QString)));
         s_changedMap()->insert(QStringLiteral("KRestrictedLine"), SIGNAL(textChanged(QString)));
         s_changedMap()->insert(QStringLiteral("KTextEdit"), SIGNAL(textChanged()));
         s_changedMap()->insert(QStringLiteral("KUrlRequester"),  SIGNAL(textChanged(QString)));
