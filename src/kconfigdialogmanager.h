@@ -77,7 +77,7 @@ class QWidget;
  * KUrlRequester *myWidget = new KUrlRequester;
  * myWidget->setProperty("kcfg_property", QByteArray("text"));
  * \endcode
- *
+ * In this case you won't need to add the widget's class name to propertyMap().
  * Alternatively you can set the kcfg_property using designer.
  *
  * @author Benjamin C Meyer <ben+kdelibs at meyerhome dot net>
@@ -154,12 +154,14 @@ public:
     bool isDefault() const;
 
     /**
-     * Retrieve the property map
+     * Retrieve the map between widgets class names and the
+     * USER properties used for the configuration values.
      */
     static QHash<QString, QByteArray> *propertyMap();
 
     /**
-     * Retrieve the widget change map
+     * Retrieve the map between widgets class names and signals that are listened
+     * to detect changes in the configuration values.
      */
     static QHash<QString, QByteArray> *changedMap();
 
