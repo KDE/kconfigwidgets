@@ -24,6 +24,9 @@
 #include <QToolButton>
 
 #include <QApplication>
+#include <QLayout>
+#include <QMainWindow>
+#include <QMenuBar>
 #include <kaboutdata.h>
 #include <klocalizedstring.h>
 #include <kstandardshortcut.h>
@@ -66,6 +69,61 @@ KCONFIGWIDGETS_EXPORT KStandardShortcut::StandardShortcut shortcutForActionId(St
     const KStandardActionInfo *pInfo = infoPtr(id);
     return (pInfo) ? pInfo->idAccel : KStandardShortcut::AccelNone;
 }
+
+class ShowMenubarActionFilter : public QObject
+{
+public:
+    ShowMenubarActionFilter(QAction *parent)
+        : QObject(parent)
+        , wasNative(false)
+        , wasChecked(false)
+        , wasVisible(false)
+    {
+    }
+
+    bool eventFilter(QObject * /*watched*/, QEvent *e) override
+    {
+        if (e->type() == QEvent::Show) {
+            updateAction();
+        }
+        return false;
+    }
+
+    void updateAction()
+    {
+        bool allMenuBarsNative = true;
+        foreach(QWidget *w, qApp->topLevelWidgets()) {
+            QMainWindow *mw = qobject_cast<QMainWindow*>(w);
+            if (mw) {
+                mw->installEventFilter(this); // this is just in case a new main window appeared
+                                                // if we were filtering it already it is almost a noop
+                if (mw->layout() && mw->layout()->menuBar()) {
+                    QMenuBar *mb = qobject_cast<QMenuBar*>(mw->layout()->menuBar());
+                    if (mb && !mb->isNativeMenuBar()) {
+                        allMenuBarsNative = false;
+                    }
+                }
+            }
+        }
+
+        QAction *showMenubarAction = static_cast<QAction *>(parent());
+        if (allMenuBarsNative && !wasNative) {
+            wasNative = true;
+            wasChecked = showMenubarAction->isChecked();
+            wasVisible = showMenubarAction->isVisible();
+
+            showMenubarAction->setChecked(true);
+            showMenubarAction->setVisible(false);
+        } else if (!allMenuBarsNative && wasNative) {
+            showMenubarAction->setChecked(wasChecked);
+            showMenubarAction->setVisible(wasVisible);
+        }
+    }
+
+    bool wasNative;
+    bool wasChecked;
+    bool wasVisible;
+};
 
 QAction* _k_createInternal(StandardAction id, QObject *parent)
 {
@@ -137,11 +195,21 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             pAction = new KRecentFilesAction(parent);
             break;
         case ShowMenubar:
+        {
             pAction = new KToggleAction(parent);
             pAction->setWhatsThis(i18n("Show Menubar<p>"
                                   "Shows the menubar again after it has been hidden</p>"));
             pAction->setChecked(true);
+
+            ShowMenubarActionFilter *mf = new ShowMenubarActionFilter(pAction);
+            foreach(QWidget *w, qApp->topLevelWidgets()) {
+                if (qobject_cast<QMainWindow*>(w)) {
+                    w->installEventFilter(mf);
+                }
+            }
+            mf->updateAction();
             break;
+        }
         case ShowToolbar:
             pAction = new KToggleAction(parent);
             pAction->setChecked(true);
