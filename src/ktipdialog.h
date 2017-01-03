@@ -171,7 +171,7 @@ public:
     static void setShowOnStart(bool show);
 
 protected:
-    bool eventFilter(QObject *, QEvent *);
+    bool eventFilter(QObject *, QEvent *) Q_DECL_OVERRIDE;
 
 private:
     class Private;
