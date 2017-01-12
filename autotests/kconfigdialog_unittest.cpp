@@ -29,12 +29,47 @@
 #include <QSignalSpy>
 
 #include <kconfigdialog.h>
+#include <kconfigdialogmanager.h>
 #include <kconfigskeleton.h>
 #include <kcolorcombo.h>
 
 #include "signaltest.h"
 
 static const auto CONFIG_FILE = QStringLiteral("kconfigdialog_unittestrc");
+
+class TextEditUserPropertyWidget : public QWidget
+{
+    Q_OBJECT
+    // with USER parameter
+    Q_PROPERTY(QString text READ text WRITE setText NOTIFY textChanged USER true)
+public:
+    TextEditUserPropertyWidget(QWidget *parent = nullptr) : QWidget(parent) {}
+    void setText(const QString &text) { m_text = text; emit textChanged(m_text); }
+    QString text() const { return m_text; }
+Q_SIGNALS:
+    void textChanged(const QString &text);
+private:
+    QString m_text;
+};
+
+class TextEditNoUserPropertyWidget : public QWidget
+{
+    Q_OBJECT
+    Q_PROPERTY(QString text READ text WRITE setText NOTIFY textChanged)
+    Q_PROPERTY(QString other READ other WRITE setOther NOTIFY otherChanged USER true)
+public:
+    TextEditNoUserPropertyWidget(QWidget *parent = nullptr) : QWidget(parent) {}
+    void setText(const QString &text) { m_text = text; emit textChanged(m_text); }
+    QString text() const { return m_text; }
+    void setOther(const QString &other) { m_other = other; emit textChanged(m_other); }
+    QString other() const { return m_other; }
+Q_SIGNALS:
+    void textChanged(const QString &text);
+    void otherChanged(const QString &other);
+private:
+    QString m_text;
+    QString m_other;
+};
 
 class ComboBoxPage : public QWidget
 {
@@ -164,14 +199,54 @@ private Q_SLOTS:
         delete skeleton;
     }
 
-    void testKConfigCompilerSignals()
+    void testKConfigCompilerSignalsKnownWidget()
+    {
+        QLineEdit *edit = new QLineEdit;
+
+        testKConfigCompilerSignals<QLineEdit>(edit, QStringLiteral("settings2"));
+    }
+
+    void testKConfigCompilerSignalsWithUserProperty()
+    {
+        KConfigDialogManager::changedMap()->insert("TextEditUserPropertyWidget", SIGNAL(textChanged(QString)));
+
+        TextEditUserPropertyWidget *edit = new TextEditUserPropertyWidget;
+
+        testKConfigCompilerSignals<TextEditUserPropertyWidget>(edit, QStringLiteral("settings3"));
+    }
+
+    void testKConfigCompilerSignalsWithoutUserPropertyByMap()
+    {
+        KConfigDialogManager::changedMap()->insert("TextEditNoUserPropertyWidget", SIGNAL(textChanged(QString)));
+        KConfigDialogManager::propertyMap()->insert("TextEditNoUserPropertyWidget", QByteArray("text"));
+
+        TextEditNoUserPropertyWidget *edit = new TextEditNoUserPropertyWidget;
+
+        testKConfigCompilerSignals<TextEditNoUserPropertyWidget>(edit, QStringLiteral("settings4"));
+    }
+
+    void testKConfigCompilerSignalsWithoutUserPropertyByProperty()
+    {
+        KConfigDialogManager::changedMap()->insert("TextEditNoUserPropertyWidget", SIGNAL(textChanged(QString)));
+
+        TextEditNoUserPropertyWidget *edit = new TextEditNoUserPropertyWidget;
+        edit->setProperty("kcfg_property", QByteArray("text"));
+
+        testKConfigCompilerSignals<TextEditNoUserPropertyWidget>(edit, QStringLiteral("settings5"));
+    }
+
+private:
+    template<class T>
+    void testKConfigCompilerSignals(T* edit, const QString& configDialogTitle)
     {
         const QString defaultValue = QStringLiteral("default value");
         const QString changedValue = QStringLiteral("changed value");
         const QString someOtherValue = QStringLiteral("some other value");
-        KConfigDialog *dialog = new KConfigDialog(0, QStringLiteral("settings2"), SignalTest::self());
+        // set to default to ensure no old stored values make things fail
+        SignalTest::self()->setDefaults();
+        KConfigDialog *dialog = new KConfigDialog(0, configDialogTitle, SignalTest::self());
         QWidget* page = new QWidget;
-        QLineEdit *edit = new QLineEdit(page);
+        edit->setParent(page);
         edit->setObjectName(QStringLiteral("kcfg_foo"));
         edit->setText(QStringLiteral("some text"));
 
