@@ -42,43 +42,148 @@ class QWidget;
  * (settings were saved) or modified (the user changes a checkbox
  * from on to off).
  *
- * The names of the widgets to be managed have to correspond to the names of the
+ * The object names of the widgets to be managed have to correspond to the names of the
  * configuration entries in the KConfigSkeleton object plus an additional
- * "kcfg_" prefix. For example a widget named "kcfg_MyOption" would be
- * associated to the configuration entry "MyOption".
+ * "kcfg_" prefix. For example a widget with the object name "kcfg_MyOption"
+ * would be associated to the configuration entry "MyOption".
  *
- * New widgets can be added to the map using the static functions propertyMap() and
- * changedMap().  Note that you can't just add any class.  The class must have a
- * matching Q_PROPERTY(...) macro defined, and a signal which is emitted when the
- * property changed. Note: by default, the property which is defined as "USER true"
- * is used.
+ * The widget classes of Qt and KDE Frameworks are supported out of the box.
  *
- * For example (note that KColorButton is already added and it doesn't need to
- * manually added):
+ * Custom widget classes are supported if they have a Q_PROPERTY defined for the
+ * property representing the value edited by the widget. By default the property
+ * is used for which "USER true" is set. For using another property, see below.
  *
- * kcolorbutton.h defines the following property:
+ * Example:
+ *
+ * A class ColorEditWidget is used in the settings UI to select a color. The
+ * color value is set and read as type QColor. For that it has a definition of
+ * the value property similar to this:
  * \code
- * Q_PROPERTY( QColor color READ color WRITE setColor USER true )
+ * Q_PROPERTY(QColor color READ color WRITE setColor NOTIFY colorChanged USER true)
  * \endcode
- * and signal:
+ * And of course it has the definition and implementation of the respective
+ * read & write methods and the notify signal.
+ * This class then can be used directly with KConfigDialogManager and does not need
+ * further setup. For supporting also KDE Frameworks versions older than 5.32 see
+ * below for how to register the property change signal.
+ *
+ * To use a widget's property that is not the USER property, the property to use
+ * can be selected by setting onto the widget instance a property with the key
+ * "kcfg_property" and as the value the name of the property:
  * \code
- * void changed( const QColor &newColor );
+ * ColorEditWidget *myWidget = new ColorEditWidget;
+ * myWidget->setProperty("kcfg_property", QByteArray("redColorPart"));
+ * \endcode
+ * This selection of the property to use is just valid for this widget instance.
+ * When using a UI file, the "kcfg_property" property can also be set using Qt Designer.
+ *
+ * Alternatively a non-USER property can be defined for a widget class globally
+ * by registering it for the class in the KConfigDialogManager::propertyMap().
+ * This global registration has lower priority than any "kcfg_property" property
+ * set on a class instance though, so the latter overrules this global setting.
+ * Note: setting the property in the propertyMap affects any instances of that
+ * widget class in the current application, so use only when needed and prefer
+ * instead the "kcfg_property" property. Especially with software with many
+ * libraries and 3rd-party plugins in one process there is a chance of
+ * conflicting settings.
+ *
+ * Example:
+ *
+ * If the ColorEditWidget has another property redColor defined by
+ * \code
+ * Q_PROPERTY(int redColorPart READ redColorPart WRITE setRedColorPart NOTIFY redColorPartChanged)
+ * \endcode
+ * and this one should be used in the settings, call somewhere in the code before
+ * using the settings:
+ * \code
+ * KConfigDialogManager::propertyMap()->insert("ColorEditWidget", QByteArray("redColorPart"));
  * \endcode
  *
- * To add KColorButton the following code would be inserted in the main:
+ * If some non-default signal should be used, e.g. because the property to use does not
+ * have a NOTIFY setting, for a given widget instance the signal to use can be set
+ * by a property with the key "kcfg_propertyNotify" and as the value the signal signature.
+ * This will take priority over the signal noted by NOTIFY for the chosen property
+ * as well as the content of KConfigDialogManager::changedMap(). Since 5.32.
+ * 
+ * Example:
  *
+ * If for a class OtherColorEditWidget there was no NOTIFY set on the USER property,
+ * but some signal colorSelected(QColor) defined which would be good enough to reflect
+ * the settings change, defined by
  * \code
- * KConfigDialogManager::changedMap()->insert("KColorButton", SIGNAL(changed(const QColor &)));
+ * Q_PROPERTY(QColor color READ color WRITE setColor USER true)
+ * Q_SIGNALS:
+ *     void colorSelected(const QColor &color);
+ * \endcode
+ * the signal to use would be defined by this:
+ * \code
+ * OtherColorEditWidget *myWidget = new OtherColorEditWidget;
+ * myWidget->setProperty("kcfg_propertyNotify", SIGNAL(colorSelected(QColor)));
  * \endcode
  *
- * If you want to use a widget's property that is not the USER property,
- * you can define which property to use in the widget's kcfg_property:
+ * Before version 5.32 of KDE Frameworks, the signal notifying about a change
+ * of the property value in the widget had to be manually registered for any
+ * custom widget, using KConfigDialogManager::changedMap(). The same also had
+ * to be done for custom signals with widgets from Qt and KDE Frameworks.
+ * So for code which needs to also work with older versions of the KDE Frameworks,
+ * this still needs to be done.
+ * Starting with version 5.32, where the new signal handling is effective, the
+ * signal registered via KConfigDialogManager::changedMap() will take precedence over
+ * the one read from the Q_PROPERTY declaration, but is overridden for a given
+ * widget instance by the "kcfg_propertyNotify" property.
+ *
+ * Examples:
+ *
+ * For the class ColorEditWidget from the previous example this will register
+ * the change signal as needed:
  * \code
- * KUrlRequester *myWidget = new KUrlRequester;
- * myWidget->setProperty("kcfg_property", QByteArray("text"));
+ * KConfigDialogManager::changedMap()->insert("ColorEditWidget", SIGNAL(colorChanged(QColor)));
  * \endcode
- * In this case you won't need to add the widget's class name to propertyMap().
- * Alternatively you can set the kcfg_property using designer.
+ * For KDE Framework versions starting with 5.32 this will override then the signal
+ * as read from the USER property, but as it is the same signal, nothing will break.
+ *
+ * If wants wants to reduce conflicts and also only add code to the build as needed,
+ * one would add both a buildtime switch and a runtime switch like
+ * \code
+ * #include <kconfigwidgets_version.h>
+ * #include <kcoreaddons.h>
+ * // [...]
+ * #if KCONFIGWIDGETS_VERSION < QT_VERSION_CHECK(5,32,0)
+ * if (KCoreAddons::version() < QT_VERSION_CHECK(5,32,0)) {
+ *     KConfigDialogManager::changedMap()->insert("ColorEditWidget", SIGNAL(colorChanged(QColor)));
+ * }
+ * #endif
+ * \endcode
+ * so support for the old variant would be only used when running against an older
+ * KDE Frameworks, and this again only built in if also compiled against an older version.
+ * Note: KCoreAddons::version() needs at least KDE Frameworks 5.20 though.
+ *
+ * For the class OtherColorEditWidget from the previous example for the support of
+ * also older KDE Frameworks versions the change signal would be registered by this:
+ * \code
+ * KConfigDialogManager::changedMap()->insert("OtherColorEditWidget", SIGNAL(colorSelected(QColor)));
+ * OtherColorEditWidget *myWidget = new OtherColorEditWidget;
+ * myWidget->setProperty("kcfg_propertyNotify", SIGNAL(colorSelected(QColor)));
+ * \endcode
+ * Here for KDE Framework versions before 5.32 the "kcfg_propertyNotify" property would
+ * be ignored and the signal taken from KConfigDialogManager::changedMap(), while
+ * for newer versions it is taken from that property, which then overrides the latter.
+ * But as it is the same signal, nothing will break.
+ * 
+ * Again, using KConfigDialogManager::changedMap could be made to depend on the version,
+ * so for newer versions any global conflicts are avoided:
+ * \code
+ * #include <kconfigwidgets_version.h>
+ * #include <kcoreaddons.h>
+ * // [...]
+ * #if KCONFIGWIDGETS_VERSION < QT_VERSION_CHECK(5,32,0)
+ * if (KCoreAddons::version() < QT_VERSION_CHECK(5,32,0)) {
+ *     KConfigDialogManager::changedMap()->insert("OtherColorEditWidget", SIGNAL(colorSelected(QColor)));
+ * }
+ * #endif
+ * OtherColorEditWidget *myWidget = new OtherColorEditWidget;
+ * myWidget->setProperty("kcfg_propertyNotify", SIGNAL(colorSelected(QColor)));
+ * \endcode
  *
  * @author Benjamin C Meyer <ben+kdelibs at meyerhome dot net>
  * @author Waldo Bastian <bastian@kde.org>
@@ -162,6 +267,10 @@ public:
     /**
      * Retrieve the map between widgets class names and signals that are listened
      * to detect changes in the configuration values.
+     * @deprecated For code having KDE Frameworks 5.32 as minimal required version,
+     * rely on the change signal noted with NOTIFY in the definition of the
+     * used property instead of setting it in this map. Or set the
+     * "kcfg_propertyNotify" property on the widget instance.
      */
     static QHash<QString, QByteArray> *changedMap();
 
@@ -220,12 +329,26 @@ protected:
     QByteArray getUserProperty(const QWidget *widget) const;
 
     /**
-     * Find the property to use for a widget by querying the kcfg_property
+     * Find the property to use for a widget by querying the "kcfg_property"
      * property of the widget. Like a widget can use a property other than the
      * USER property.
      * @since 4.3
      */
     QByteArray getCustomProperty(const QWidget *widget) const;
+
+    /**
+     * Finds the changed signal of the USER property using Qt's MetaProperty system.
+     * @since 5.32
+     */
+    QByteArray getUserPropertyChangedSignal(const QWidget *widget) const;
+
+    /**
+     * Find the changed signal of the property to use for a widget by querying
+     * the "kcfg_propertyNotify" property of the widget. Like a widget can use a
+     * property change signal other than the one for USER property, if there even is one.
+     * @since 5.32
+     */
+    QByteArray getCustomPropertyChangedSignal(const QWidget *widget) const;
 
     /**
      * Set a property

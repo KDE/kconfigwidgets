@@ -71,6 +71,25 @@ private:
     QString m_other;
 };
 
+class TextEditNoUserPropertyNoNotifyWidget : public QWidget
+{
+    Q_OBJECT
+    Q_PROPERTY(QString text READ text WRITE setText)
+    Q_PROPERTY(QString other READ other WRITE setOther NOTIFY otherChanged USER true)
+public:
+    TextEditNoUserPropertyNoNotifyWidget(QWidget *parent = nullptr) : QWidget(parent) {}
+    void setText(const QString &text) { m_text = text; emit textChanged(m_text); }
+    QString text() const { return m_text; }
+    void setOther(const QString &other) { m_other = other; emit textChanged(m_other); }
+    QString other() const { return m_other; }
+Q_SIGNALS:
+    void textChanged(const QString &text);
+    void otherChanged(const QString &other);
+private:
+    QString m_text;
+    QString m_other;
+};
+
 class ComboBoxPage : public QWidget
 {
 public:
@@ -208,6 +227,9 @@ private Q_SLOTS:
 
     void testKConfigCompilerSignalsWithUserProperty()
     {
+        // make sure there is nothing registered for the property
+        KConfigDialogManager::propertyMap()->remove("TextEditUserPropertyWidget");
+
         KConfigDialogManager::changedMap()->insert("TextEditUserPropertyWidget", SIGNAL(textChanged(QString)));
 
         TextEditUserPropertyWidget *edit = new TextEditUserPropertyWidget;
@@ -227,12 +249,64 @@ private Q_SLOTS:
 
     void testKConfigCompilerSignalsWithoutUserPropertyByProperty()
     {
+        // make sure there is nothing registered for the property
+        KConfigDialogManager::propertyMap()->remove("TextEditNoUserPropertyWidget");
+
         KConfigDialogManager::changedMap()->insert("TextEditNoUserPropertyWidget", SIGNAL(textChanged(QString)));
 
         TextEditNoUserPropertyWidget *edit = new TextEditNoUserPropertyWidget;
         edit->setProperty("kcfg_property", QByteArray("text"));
 
         testKConfigCompilerSignals<TextEditNoUserPropertyWidget>(edit, QStringLiteral("settings5"));
+    }
+
+    void testKConfigCompilerSignalsWithUserPropertyAutoSignal()
+    {
+        // make sure there is nothing registered
+        KConfigDialogManager::changedMap()->remove("TextEditUserPropertyWidget");
+        KConfigDialogManager::propertyMap()->remove("TextEditUserPropertyWidget");
+
+        TextEditUserPropertyWidget *edit = new TextEditUserPropertyWidget;
+
+        testKConfigCompilerSignals<TextEditUserPropertyWidget>(edit, QStringLiteral("settings6"));
+    }
+
+    void testKConfigCompilerSignalsWithoutUserPropertyByMapAutoSignal()
+    {
+        // make sure there is nothing registered for the signal
+        KConfigDialogManager::changedMap()->remove("TextEditNoUserPropertyWidget");
+
+        KConfigDialogManager::propertyMap()->insert("TextEditNoUserPropertyWidget", QByteArray("text"));
+
+        TextEditNoUserPropertyWidget *edit = new TextEditNoUserPropertyWidget;
+
+        testKConfigCompilerSignals<TextEditNoUserPropertyWidget>(edit, QStringLiteral("settings7"));
+    }
+
+    void testKConfigCompilerSignalsWithoutUserPropertyByPropertyAutoSignal()
+    {
+        // make sure there is no signal registered
+        KConfigDialogManager::changedMap()->remove("TextEditNoUserPropertyWidget");
+        // next to USER on "other" property, this one should also be ignored
+        KConfigDialogManager::propertyMap()->insert("TextEditNoUserPropertyWidget", QByteArray("other"));
+
+        TextEditNoUserPropertyWidget *edit = new TextEditNoUserPropertyWidget;
+        edit->setProperty("kcfg_property", QByteArray("text"));
+
+        testKConfigCompilerSignals<TextEditNoUserPropertyWidget>(edit, QStringLiteral("settings8"));
+    }
+
+    void testKConfigCompilerSignalsWithoutUserPropertyByPropertyBySignal()
+    {
+        // next to USER being on "other" property, this one should also be ignored
+        KConfigDialogManager::changedMap()->insert("TextEditNoUserPropertyNoNotifyWidget", SIGNAL(otherChanged(QString)));
+        KConfigDialogManager::propertyMap()->insert("TextEditNoUserPropertyNoNotifyWidget", QByteArray("other"));
+
+        TextEditNoUserPropertyNoNotifyWidget *edit = new TextEditNoUserPropertyNoNotifyWidget;
+        edit->setProperty("kcfg_property", QByteArray("text"));
+        edit->setProperty("kcfg_propertyNotify", SIGNAL(textChanged(QString)));
+
+        testKConfigCompilerSignals<TextEditNoUserPropertyNoNotifyWidget>(edit, QStringLiteral("settings9"));
     }
 
 private:

@@ -2,6 +2,7 @@
  *  This file is part of the KDE libraries
  *  Copyright (C) 2003 Benjamin C Meyer (ben+kdelibs at meyerhome dot net)
  *  Copyright (C) 2003 Waldo Bastian <bastian@kde.org>
+ *  Copyright (C) 2017 Friedrich W. H. Kossebau <kossebau@kde.org>
  *
  *  This library is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU Library General Public
@@ -84,6 +85,7 @@ KConfigDialogManager::~KConfigDialogManager()
     delete d;
 }
 
+// KF6: Drop this and get signals only from metaObject and/or widget's dynamic properties kcfg_property/kcfg_propertyNotify
 void KConfigDialogManager::initMaps()
 {
     if (s_propertyMap()->isEmpty()) {
@@ -233,6 +235,9 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
         return valueChanged;
     }
 
+    const QMetaMethod widgetModifiedSignal = metaObject()->method(metaObject()->indexOfSignal("widgetModified()"));
+    Q_ASSERT(widgetModifiedSignal.isValid() && metaObject()->indexOfSignal("widgetModified()")>=0);
+
     foreach (QObject *object, listOfChildren) {
         if (!object->isWidgetType()) {
             continue;    // Skip non-widgets
@@ -254,6 +259,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                 setupWidget(childWidget, item);
 
                 if (trackChanges) {
+                    bool changeSignalFound = false;
 
                     if (d->allExclusiveGroupBoxes.contains(childWidget)) {
                         const QList<QAbstractButton *> buttons = childWidget->findChildren<QAbstractButton *>();
@@ -262,26 +268,38 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                         }
                     }
 
-                    QHash<QString, QByteArray>::const_iterator changedIt = s_changedMap()->constFind(childWidget->metaObject()->className());
-
-                    if (changedIt == s_changedMap()->constEnd()) {
-                        // If the class name of the widget wasn't in the monitored widgets map, then look for
-                        // it again using the super class name. This fixes a problem with using QtRuby/Korundum
-                        // widgets with KConfigXT where 'Qt::Widget' wasn't being seen a the real deal, even
-                        // though it was a 'QWidget'.
-                        if (childWidget->metaObject()->superClass()) {
-                            changedIt = s_changedMap()->constFind(childWidget->metaObject()->superClass()->className());
-                        } else {
-                            changedIt = s_changedMap()->constFind(nullptr);
-                        }
+                    QByteArray propertyChangeSignal = getCustomPropertyChangedSignal(childWidget);
+                    if (propertyChangeSignal.isEmpty()) {
+                        propertyChangeSignal = getUserPropertyChangedSignal(childWidget);
                     }
 
-                    if (changedIt == s_changedMap()->constEnd()) {
-                        qWarning() << "Don't know how to monitor widget '" << childWidget->metaObject()->className() << "' for changes!";
+                    if (propertyChangeSignal.isEmpty()) {
+                        // get the change signal from the meta object
+                        const QMetaObject *metaObject = childWidget->metaObject();
+                        QByteArray userproperty = getCustomProperty(childWidget);
+                        if (userproperty.isEmpty()) {
+                            userproperty = getUserProperty(childWidget);
+                        }
+                        if (!userproperty.isEmpty()) {
+                            const int indexOfProperty = metaObject->indexOfProperty(userproperty);
+                            if (indexOfProperty != -1) {
+                                const QMetaProperty property = metaObject->property(indexOfProperty);
+                                const QMetaMethod notifySignal = property.notifySignal();
+                                if (notifySignal.isValid()) {
+                                    connect(childWidget, notifySignal, this, widgetModifiedSignal);
+                                    changeSignalFound = true;
+                                }
+                            }
+                        } else {
+                            qWarning() << "Don't know how to monitor widget '" << childWidget->metaObject()->className() << "' for changes!";
+                        }
                     } else {
-                        connect(childWidget, *changedIt,
+                        connect(childWidget, propertyChangeSignal,
                                 this, SIGNAL(widgetModified()));
+                        changeSignalFound = true;
+                    }
 
+                    if (changeSignalFound) {
                         QComboBox *cb = qobject_cast<QComboBox *>(childWidget);
                         if (cb && cb->isEditable())
                             connect(cb, SIGNAL(editTextChanged(QString)),
@@ -426,6 +444,7 @@ QByteArray KConfigDialogManager::getUserProperty(const QWidget *widget) const
         const char *widgetUserPropertyName = widget->metaObject()->userProperty().name();
         const int widgetUserPropertyIndex = widgetUserPropertyName ? cb->metaObject()->indexOfProperty(widgetUserPropertyName) : -1;
 
+        // no custom user property set on subclass of QComboBox?
         if (qcomboUserPropertyIndex == widgetUserPropertyIndex) {
             return QByteArray(); // use the q/kcombobox special code
         }
@@ -440,6 +459,37 @@ QByteArray KConfigDialogManager::getCustomProperty(const QWidget *widget) const
     if (prop.isValid()) {
         if (!prop.canConvert(QVariant::ByteArray)) {
             qWarning() << "kcfg_property on" << widget->metaObject()->className()
+                       << "is not of type ByteArray";
+        } else {
+            return prop.toByteArray();
+        }
+    }
+    return QByteArray();
+}
+
+QByteArray KConfigDialogManager::getUserPropertyChangedSignal(const QWidget *widget) const
+{
+    QHash<QString, QByteArray>::const_iterator changedIt = s_changedMap()->constFind(widget->metaObject()->className());
+
+    if (changedIt == s_changedMap()->constEnd()) {
+        // If the class name of the widget wasn't in the monitored widgets map, then look for
+        // it again using the super class name. This fixes a problem with using QtRuby/Korundum
+        // widgets with KConfigXT where 'Qt::Widget' wasn't being seen a the real deal, even
+        // though it was a 'QWidget'.
+        if (widget->metaObject()->superClass()) {
+            changedIt = s_changedMap()->constFind(widget->metaObject()->superClass()->className());
+        }
+    }
+
+    return (changedIt == s_changedMap()->constEnd()) ? QByteArray() : *changedIt;
+}
+
+QByteArray KConfigDialogManager::getCustomPropertyChangedSignal(const QWidget *widget) const
+{
+    QVariant prop(widget->property("kcfg_propertyNotify"));
+    if (prop.isValid()) {
+        if (!prop.canConvert(QVariant::ByteArray)) {
+            qWarning() << "kcfg_propertyNotify on" << widget->metaObject()->className()
                        << "is not of type ByteArray";
         } else {
             return prop.toByteArray();
