@@ -63,7 +63,7 @@ class KCONFIGWIDGETS_EXPORT KColorSchemeManager : public QObject
 {
     Q_OBJECT
 public:
-    explicit KColorSchemeManager(QObject *parent = 0);
+    explicit KColorSchemeManager(QObject *parent = nullptr);
     virtual ~KColorSchemeManager();
 
     /**

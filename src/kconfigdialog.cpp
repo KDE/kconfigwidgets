@@ -42,7 +42,7 @@ class KConfigDialog::KConfigDialogPrivate
 {
 public:
     KConfigDialogPrivate(KConfigDialog *q, const QString &name, KCoreConfigSkeleton *config)
-        : q(q), shown(false), manager(0)
+        : q(q), shown(false), manager(nullptr)
     {
         q->setObjectName(name);
         q->setWindowTitle(i18nc("@title:window", "Configure"));
@@ -125,7 +125,7 @@ KPageWidgetItem *KConfigDialog::addPage(QWidget *page,
 {
     Q_ASSERT(page);
     if (!page) {
-        return 0;
+        return nullptr;
     }
 
     KPageWidgetItem *item = d->addPageInternal(page, itemName, pixmapName, header);
@@ -152,7 +152,7 @@ KPageWidgetItem *KConfigDialog::addPage(QWidget *page,
 {
     Q_ASSERT(page);
     if (!page) {
-        return 0;
+        return nullptr;
     }
 
     KPageWidgetItem *item = d->addPageInternal(page, itemName, pixmapName, header);
@@ -249,7 +249,7 @@ KConfigDialog *KConfigDialog::exists(const QString &name)
     if (it != KConfigDialogPrivate::openDialogs.constEnd()) {
         return *it;
     }
-    return 0;
+    return nullptr;
 }
 
 bool KConfigDialog::showDialog(const QString &name)
@@ -258,7 +258,7 @@ bool KConfigDialog::showDialog(const QString &name)
     if (dialog) {
         dialog->show();
     }
-    return (dialog != NULL);
+    return (dialog != nullptr);
 }
 
 void KConfigDialog::KConfigDialogPrivate::_k_updateButtons()

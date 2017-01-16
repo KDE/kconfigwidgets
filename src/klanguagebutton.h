@@ -53,7 +53,7 @@ public:
      *
      * @param parent the parent of the button
      */
-    explicit KLanguageButton(QWidget *parent = 0);
+    explicit KLanguageButton(QWidget *parent = nullptr);
 
     /**
      * Constructs a button with static text.
@@ -61,7 +61,7 @@ public:
      * @param text the text of the button
      * @param parent the parent of the button
      */
-    explicit KLanguageButton(const QString &text, QWidget *parent = 0);
+    explicit KLanguageButton(const QString &text, QWidget *parent = nullptr);
 
     /**
      * Deconstructor

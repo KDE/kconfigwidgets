@@ -113,7 +113,7 @@ public:
      *       to any slot.
      * @param aboutData becomes owned by the KCModule
      */
-    explicit KCModule(const KAboutData *aboutData, QWidget *parent = 0, const QVariantList &args = QVariantList());
+    explicit KCModule(const KAboutData *aboutData, QWidget *parent = nullptr, const QVariantList &args = QVariantList());
 
     /**
      * Base class for all KControlModules.
@@ -121,7 +121,7 @@ public:
      * @note do not emit changed signals here, since they are not yet connected
      *       to any slot.
      */
-    explicit KCModule(QWidget *parent = 0, const QVariantList &args = QVariantList());
+    explicit KCModule(QWidget *parent = nullptr, const QVariantList &args = QVariantList());
 
     /**
      * Destroys the module.

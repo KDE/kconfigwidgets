@@ -28,13 +28,13 @@ void tst_KStandardAction::shortcutForActionId()
 {
     QList<QKeySequence> stdShortcut = KStandardShortcut::shortcut(KStandardShortcut::Cut);
 
-    QAction *cut = KStandardAction::cut(NULL);
+    QAction *cut = KStandardAction::cut(nullptr);
     QList<QKeySequence> actShortcut = cut->shortcuts();
     QCOMPARE(cut->property("defaultShortcuts").value<QList<QKeySequence> >(), actShortcut);
     QVERIFY(stdShortcut == actShortcut);
     delete cut;
 
-    cut = KStandardAction::create(KStandardAction::Cut, NULL, NULL, NULL);
+    cut = KStandardAction::create(KStandardAction::Cut, nullptr, nullptr, nullptr);
     actShortcut = cut->shortcuts();
     QVERIFY(stdShortcut == actShortcut);
     delete cut;

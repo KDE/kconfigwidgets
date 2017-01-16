@@ -30,7 +30,7 @@ class KColorSchemeDemo : public QDialog
 {
     Q_OBJECT
 public:
-    KColorSchemeDemo() : QDialog(0)
+    KColorSchemeDemo() : QDialog(nullptr)
     {
         KColorSchemeManager *manager = new KColorSchemeManager(this);
 

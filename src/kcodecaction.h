@@ -54,7 +54,7 @@ public:
     virtual ~KCodecAction();
 
 public:
-    int mibForName(const QString &codecName, bool *ok = 0) const;
+    int mibForName(const QString &codecName, bool *ok = nullptr) const;
     QTextCodec *codecForMib(int mib) const;
 
     QTextCodec *currentCodec() const;

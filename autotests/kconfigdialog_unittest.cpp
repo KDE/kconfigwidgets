@@ -167,7 +167,7 @@ private Q_SLOTS:
     void test()
     {
         ComboSettings *skeleton = new ComboSettings();
-        KConfigDialog *dialog = new KConfigDialog(0, QStringLiteral("settings"), skeleton);
+        KConfigDialog *dialog = new KConfigDialog(nullptr, QStringLiteral("settings"), skeleton);
         ComboBoxPage *page = new ComboBoxPage();
 
         QCOMPARE(page->colorCombo->color().name(), QColor(Qt::red).name());
@@ -188,7 +188,7 @@ private Q_SLOTS:
         page->numInput->setValue(2);
 
         QDialogButtonBox *buttonBox = dialog->findChild<QDialogButtonBox *>();
-        QVERIFY(buttonBox != 0);
+        QVERIFY(buttonBox != nullptr);
         buttonBox->button(QDialogButtonBox::Apply)->click();
         QCOMPARE(skeleton->colorItem->property().value<QColor>().name(), QColor(Qt::blue).name());
         QCOMPARE(skeleton->enumItem->property().toInt(), 2);
@@ -244,7 +244,7 @@ private:
         const QString someOtherValue = QStringLiteral("some other value");
         // set to default to ensure no old stored values make things fail
         SignalTest::self()->setDefaults();
-        KConfigDialog *dialog = new KConfigDialog(0, configDialogTitle, SignalTest::self());
+        KConfigDialog *dialog = new KConfigDialog(nullptr, configDialogTitle, SignalTest::self());
         QWidget* page = new QWidget;
         edit->setParent(page);
         edit->setObjectName(QStringLiteral("kcfg_foo"));
@@ -267,7 +267,7 @@ private:
 
 
         QDialogButtonBox *buttonBox = dialog->findChild<QDialogButtonBox *>();
-        QVERIFY(buttonBox != 0);
+        QVERIFY(buttonBox != nullptr);
         buttonBox->button(QDialogButtonBox::Apply)->click(); // now signal should be emitted
 
         QCOMPARE(spy.size(), 1);

@@ -44,8 +44,8 @@ class Q_DECL_HIDDEN KCodecAction::Private
 public:
     Private(KCodecAction *parent)
         : q(parent),
-          defaultAction(0),
-          currentSubAction(0)
+          defaultAction(nullptr),
+          currentSubAction(nullptr)
     {
     }
 

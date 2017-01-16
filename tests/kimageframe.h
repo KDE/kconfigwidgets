@@ -24,7 +24,7 @@ class KImageFrame : public QFrame
 {
     Q_OBJECT
 public:
-    KImageFrame(QWidget *parent = 0);
+    KImageFrame(QWidget *parent = nullptr);
     virtual ~KImageFrame() {}
 
 public Q_SLOTS:

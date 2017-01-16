@@ -116,7 +116,7 @@ public:
      *                 will take ownership of the database, including deleting it.
      * @param parent Parent widget of TipDialog.
      */
-    explicit KTipDialog(KTipDatabase *database, QWidget *parent = 0);
+    explicit KTipDialog(KTipDatabase *database, QWidget *parent = nullptr);
 
     /**
      * Destroys the tip dialog.

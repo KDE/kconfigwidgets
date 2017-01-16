@@ -134,7 +134,7 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
         stdNamesInitialized = true;
     }
 
-    QAction *pAction = 0;
+    QAction *pAction = nullptr;
     const KStandardActionInfo *pInfo = infoPtr(id);
 
     // qDebug() << "KStandardAction::create( " << id << "=" << (pInfo ? pInfo->psName : (const char*)0) << ", " << parent << " )"; // ellis
@@ -310,7 +310,7 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
 const char *name(StandardAction id)
 {
     const KStandardActionInfo *pInfo = infoPtr(id);
-    return (pInfo) ? pInfo->psName : 0;
+    return (pInfo) ? pInfo->psName : nullptr;
 }
 
 QAction *openNew(const QObject *recvr, const char *slot, QObject *parent)
@@ -557,7 +557,7 @@ static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const c
 {
     const KStandardActionInfo *p = infoPtr(id);
     if (!p) {
-        return 0;
+        return nullptr;
     }
 
     AutomaticAction *action = new AutomaticAction(

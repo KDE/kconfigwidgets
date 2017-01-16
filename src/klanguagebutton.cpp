@@ -255,7 +255,7 @@ QAction *KLanguageButtonPrivate::findAction(const QString &data) const
             return a;
         }
     }
-    return 0;
+    return nullptr;
 }
 
 void KLanguageButton::setCurrentItem(const QString &languageCode)

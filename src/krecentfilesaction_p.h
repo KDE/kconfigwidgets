@@ -39,9 +39,9 @@ public:
         : q_ptr(parent)
     {
         m_maxItems = 10;
-        m_noEntriesAction = 0;
-        clearSeparator = 0;
-        clearAction = 0;
+        m_noEntriesAction = nullptr;
+        clearSeparator = nullptr;
+        clearAction = nullptr;
     }
 
     virtual ~KRecentFilesActionPrivate()

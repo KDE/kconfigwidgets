@@ -58,7 +58,7 @@ QList<bool> KRecentFilesActionTest::extractActionEnableVisibleState(QMenu *menu)
 
 void KRecentFilesActionTest::shouldHaveDefaultValue()
 {
-    KRecentFilesAction recentAction(0);
+    KRecentFilesAction recentAction(nullptr);
     QVERIFY(recentAction.urls().isEmpty());
     QVERIFY(recentAction.menu());
     QVERIFY(!recentAction.menu()->actions().isEmpty());
@@ -73,7 +73,7 @@ void KRecentFilesActionTest::shouldHaveDefaultValue()
 
 void KRecentFilesActionTest::shouldAddActionInTop()
 {
-    KRecentFilesAction recentAction(0);
+    KRecentFilesAction recentAction(nullptr);
     recentAction.addUrl(QUrl(QStringLiteral("http://www.kde.org")));
     QList<QAction*> lstAction = recentAction.menu()->actions();
     QCOMPARE(lstAction.count(), 4);
@@ -90,7 +90,7 @@ void KRecentFilesActionTest::shouldAddActionInTop()
 
 void KRecentFilesActionTest::shouldClearMenu()
 {
-    KRecentFilesAction recentAction(0);
+    KRecentFilesAction recentAction(nullptr);
     recentAction.addUrl(QUrl(QStringLiteral("http://www.kde.org")));
     QList<QAction*> lstAction = recentAction.menu()->actions();
     QCOMPARE(lstAction.count(), 4);

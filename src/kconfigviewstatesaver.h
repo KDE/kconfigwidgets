@@ -12,7 +12,7 @@ class KCONFIGWIDGETS_EXPORT KConfigViewStateSaver : public KViewStateSerializer
 {
     Q_OBJECT
 public:
-    explicit KConfigViewStateSaver(QObject *parent = 0);
+    explicit KConfigViewStateSaver(QObject *parent = nullptr);
 
     /**
       Saves the state to the @p configGroup

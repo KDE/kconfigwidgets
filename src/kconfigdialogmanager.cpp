@@ -272,7 +272,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                         if (childWidget->metaObject()->superClass()) {
                             changedIt = s_changedMap()->constFind(childWidget->metaObject()->superClass()->className());
                         } else {
-                            changedIt = s_changedMap()->constFind(0);
+                            changedIt = s_changedMap()->constFind(nullptr);
                         }
                     }
 
@@ -358,7 +358,7 @@ void KConfigDialogManager::updateWidgets()
         }
         if (item->isImmutable()) {
             widget->setEnabled(false);
-            QWidget *buddy = d->buddyWidget.value(it.key(), 0);
+            QWidget *buddy = d->buddyWidget.value(it.key(), nullptr);
             if (buddy) {
                 buddy->setEnabled(false);
             }

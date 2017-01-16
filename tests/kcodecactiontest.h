@@ -10,7 +10,7 @@ class CodecActionTest : public QMainWindow
     Q_OBJECT
 
 public:
-    CodecActionTest(QWidget *parent = 0);
+    CodecActionTest(QWidget *parent = nullptr);
 
 public Q_SLOTS:
     void triggered(QAction *action);

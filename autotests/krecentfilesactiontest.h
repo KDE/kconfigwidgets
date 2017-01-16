@@ -27,7 +27,7 @@ class KRecentFilesActionTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit KRecentFilesActionTest(QObject *parent = 0);
+    explicit KRecentFilesActionTest(QObject *parent = nullptr);
     ~KRecentFilesActionTest();
 
 private:

@@ -210,7 +210,7 @@ public:
     static KTipDialog *mInstance;
 };
 
-KTipDialog *KTipDialog::Private::mInstance = 0;
+KTipDialog *KTipDialog::Private::mInstance = nullptr;
 
 void KTipDialog::Private::_k_prevTip()
 {
@@ -241,7 +241,7 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
      * Parent is 0L when TipDialog is used as a mainWidget. This should
      * be the case only in ktip, so let's use the ktip layout.
      */
-    bool isTipDialog = (parent != 0);
+    bool isTipDialog = (parent != nullptr);
 
     d->database = database;
 
@@ -337,7 +337,7 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
 KTipDialog::~KTipDialog()
 {
     if (Private::mInstance == this) {
-        Private::mInstance = 0L;
+        Private::mInstance = nullptr;
     }
     delete d;
 }
@@ -348,7 +348,7 @@ KTipDialog::~KTipDialog()
  */
 void KTipDialog::showTip(const QString &tipFile, bool force)
 {
-    showTip(0, tipFile, force);
+    showTip(nullptr, tipFile, force);
 }
 
 void KTipDialog::showTip(QWidget *parent, const QString &tipFile, bool force)

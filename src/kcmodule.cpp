@@ -39,7 +39,7 @@ class KCModulePrivate
 public:
     KCModulePrivate():
         _buttons(KCModule::Help | KCModule::Default | KCModule::Apply),
-        _about(0),
+        _about(nullptr),
         _useRootOnlyMessage(false),
         _firstshow(true),
         _needsAuthorization(false),

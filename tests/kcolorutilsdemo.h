@@ -24,7 +24,7 @@ class KColorUtilsDemo: public QWidget, Ui::form
 {
     Q_OBJECT
 public:
-    KColorUtilsDemo(QWidget *parent = 0);
+    KColorUtilsDemo(QWidget *parent = nullptr);
     virtual ~KColorUtilsDemo() {}
 
 public Q_SLOTS:
