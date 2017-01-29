@@ -92,6 +92,7 @@ public:
     void updateAction()
     {
         bool allMenuBarsNative = true;
+        bool hasAnyMenuBar = false;
         foreach(QWidget *w, qApp->topLevelWidgets()) {
             QMainWindow *mw = qobject_cast<QMainWindow*>(w);
             if (mw) {
@@ -99,12 +100,18 @@ public:
                                                 // if we were filtering it already it is almost a noop
                 if (mw->layout() && mw->layout()->menuBar()) {
                     QMenuBar *mb = qobject_cast<QMenuBar*>(mw->layout()->menuBar());
-                    if (mb && !mb->isNativeMenuBar()) {
-                        allMenuBarsNative = false;
+                    if (mb) {
+                        hasAnyMenuBar = true;
+                        if (!mb->isNativeMenuBar()) {
+                            allMenuBarsNative = false;
+                        }
                     }
                 }
             }
         }
+
+        if (!hasAnyMenuBar)
+            return;
 
         QAction *showMenubarAction = static_cast<QAction *>(parent());
         if (allMenuBarsNative && !wasNative) {
