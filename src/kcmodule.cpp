@@ -139,7 +139,7 @@ bool KCModule::needsAuthorization() const
 
 void KCModule::setAuthAction(const KAuth::Action &action)
 {
-    if (!d->_authAction.isValid()) {
+    if (!action.isValid()) {
         qWarning() << "Auth action" << action.name() << "is invalid";
         d->_needsAuthorization = false;
         return;
