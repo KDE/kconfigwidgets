@@ -26,6 +26,7 @@
 #include <QColor>
 #include <QBrush>
 #include <QWidget>
+#include <QCoreApplication>
 
 //BEGIN StateEffects
 class StateEffects
@@ -250,6 +251,12 @@ static const DecoDefaultColors defaultDecorationColors = {
 };
 //END default colors
 
+KSharedConfigPtr defaultConfig() {
+    // Read from the application's color scheme file (as set by KColorSchemeManager).
+    // If unset, this is equivalent to openConfig() and the system scheme is used.
+    return KSharedConfig::openConfig(qApp->property("KDE_COLOR_SCHEME_PATH").toString());
+}
+
 //BEGIN KColorSchemePrivate
 class KColorSchemePrivate : public QSharedData
 {
@@ -431,7 +438,7 @@ KColorScheme::~KColorScheme()
 KColorScheme::KColorScheme(QPalette::ColorGroup state, ColorSet set, KSharedConfigPtr config)
 {
     if (!config) {
-        config = KSharedConfig::openConfig();
+        config = defaultConfig();
     }
 
     switch (set) {
@@ -662,7 +669,7 @@ KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::Decorat
 KStatefulBrush::KStatefulBrush(const QBrush &brush, KSharedConfigPtr config)
 {
     if (!config) {
-        config = KSharedConfig::openConfig();
+        config = defaultConfig();
     }
     d = new KStatefulBrushPrivate[3];
     d[0] = brush;
@@ -674,7 +681,7 @@ KStatefulBrush::KStatefulBrush(const QBrush &brush, const QBrush &background,
                                KSharedConfigPtr config)
 {
     if (!config) {
-        config = KSharedConfig::openConfig();
+        config = defaultConfig();
     }
     d = new KStatefulBrushPrivate[3];
     d[0] = brush;

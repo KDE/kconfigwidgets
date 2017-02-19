@@ -312,8 +312,9 @@ public:
     KColorScheme &operator=(const KColorScheme &);
 
     /**
-     * Construct a palette from given color set and state, using the colors
-     * from the given KConfig (if null, the system colors are used).
+     * Construct a palette from given color set and state. Colors are taken
+     * from the given KConfig. If null, the application's color scheme is used
+     *  (either the system default or one set by KColorSchemeManager).
      *
      * @note KColorScheme provides direct access to the color scheme for users
      * that deal directly with widget states. Unless you are a low-level user
@@ -342,8 +343,7 @@ public:
      * Retrieve the requested shade color, using
      * KColorScheme::background(KColorScheme::NormalBackground)
      * as the base color and the contrast setting from the KConfig used to
-     * create this KColorScheme instance (the system contrast setting, if no
-     * KConfig was specified).
+     * create this KColorScheme instance.
      *
      * @note Shades are chosen such that all shades would contrast with the
      * base color. This means that if base is very dark, the 'dark' shades will
@@ -363,7 +363,8 @@ public:
     /**
      * Returns the contrast for borders as a floating point value.
      * @param config pointer to the config from which to read the contrast
-     * setting (the default is to use KSharedConfig::openConfig())
+     * setting. If null, the application's color scheme will be used
+     *   (either the system default or one set by KColorSchemeManager).
      * @return the contrast (between 0.0 for minimum and 1.0 for maximum
      *         contrast)
      */
@@ -371,7 +372,7 @@ public:
 
     /**
      * Retrieve the requested shade color, using the specified color as the
-     * base color and the system contrast setting.
+     * base color and the application's contrast setting.
      *
      * @note Shades are chosen such that all shades would contrast with the
      * base color. This means that if base is very dark, the 'dark' shades will
@@ -483,8 +484,9 @@ public:
 
     /**
      * Construct a stateful brush from given color set and foreground role,
-     * using the colors from the given KConfig (if null, the system colors are
-     * used).
+     * using the colors from the given KConfig.
+     * If null, the application's color scheme is used (either the system
+     * default, or one set by KColorSchemeManager).
      */
     explicit KStatefulBrush(KColorScheme::ColorSet,
                             KColorScheme::ForegroundRole,
@@ -492,8 +494,8 @@ public:
 
     /**
      * Construct a stateful brush from given color set and background role,
-     * using the colors from the given KConfig (if null, the system colors are
-     * used).
+     * using the colors from the given KConfig (if null, the application's
+     * colors are used).
      */
     explicit KStatefulBrush(KColorScheme::ColorSet,
                             KColorScheme::BackgroundRole,
@@ -501,8 +503,8 @@ public:
 
     /**
      * Construct a stateful brush from given color set and decoration role,
-     * using the colors from the given KConfig (if null, the system colors are
-     * used).
+     * using the colors from the given KConfig (if null, the application's
+     * colors are used).
      */
     explicit KStatefulBrush(KColorScheme::ColorSet,
                             KColorScheme::DecorationRole,
@@ -514,7 +516,7 @@ public:
      * determined from the base QBrush (which fills in the Active state)
      * according to the same rules used to build stateful color schemes from
      * the system color scheme. The state effects from the given KConfig are
-     * used (if null, the system state effects are used).
+     * used (if null, the application's state effects are used).
      */
     explicit KStatefulBrush(const QBrush &, KSharedConfigPtr = KSharedConfigPtr());
 
@@ -524,7 +526,7 @@ public:
      * states are determined from the base QBrush (which fills in the Active
      * state) according to the same rules used to build stateful color schemes
      * from the system color scheme. The state effects from the given KConfig
-     * are used (if null, the system state effects are used).
+     * are used (if null, the application's state effects are used).
      *
      * @param background The background brush (or color) corresponding to the
      * KColorScheme::NormalBackground role and QPalette::Active state for this
