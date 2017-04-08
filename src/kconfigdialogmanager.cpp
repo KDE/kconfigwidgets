@@ -210,14 +210,12 @@ void KConfigDialogManager::setupWidget(QWidget *widget, KConfigSkeletonItem *ite
             QObjectList children = gb->children();
             children.removeAll(gb->layout());
             const QList<QAbstractButton *> buttons = gb->findChildren<QAbstractButton *>();
-            if (children.count() == buttons.count()) {
-                bool allAutoExclusive = true;
-                foreach(QAbstractButton *button, buttons) {
-                    allAutoExclusive = allAutoExclusive && button->autoExclusive();
-                }
-                if (allAutoExclusive) {
-                    d->allExclusiveGroupBoxes << widget;
-                }
+            bool allAutoExclusiveDirectChildren = true;
+            foreach(QAbstractButton *button, buttons) {
+                allAutoExclusiveDirectChildren = allAutoExclusiveDirectChildren && button->autoExclusive() && button->parent() == gb;
+            }
+            if (allAutoExclusiveDirectChildren) {
+                d->allExclusiveGroupBoxes << widget;
             }
         }
     }
