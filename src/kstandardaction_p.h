@@ -116,7 +116,7 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { DeleteFile,    KStandardShortcut::DeleteFile, "deletefile", I18N_NOOP("&Delete File"), nullptr, "edit-delete" },
     { RenameFile,    KStandardShortcut::RenameFile, "renamefile", I18N_NOOP("&Rename File"), nullptr, "edit-rename" },
     { MoveToTrash,   KStandardShortcut::MoveToTrash, "movetotrash", I18N_NOOP("&Move to Trash"), nullptr, "edit-delete" },
-    { Donate,        KStandardShortcut::Donate, "help_donate", I18N_NOOP("&Donate"), nullptr, nullptr},
+    { Donate,        KStandardShortcut::Donate, "help_donate", I18N_NOOP("&Donate"), nullptr, "help-donate"},
     { ActionNone,    KStandardShortcut::AccelNone, nullptr, nullptr, nullptr, nullptr }
 };
 
