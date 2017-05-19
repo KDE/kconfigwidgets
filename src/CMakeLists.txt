@@ -106,6 +106,32 @@ install(FILES
 install(PROGRAMS preparetips5 DESTINATION ${KDE_INSTALL_BINDIR} )
 install( FILES entry.desktop  DESTINATION  ${KDE_INSTALL_LOCALEDIR}/en_US RENAME kf5_entry.desktop )
 
+if(BUILD_QCH)
+    ecm_add_qch(
+        KF5ConfigWidgets_QCH
+        NAME KConfigWidgets
+        BASE_NAME KF5ConfigWidgets
+        VERSION ${KF5_VERSION}
+        ORG_DOMAIN org.kde
+        SOURCES # using only public headers, to cover only public API
+            ${KConfigWidgets_HEADERS}
+        MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
+        IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
+        LINK_QCHS
+            KF5Codecs_QCH
+            KF5WidgetsAddons_QCH
+            KF5Config_QCH
+            KF5Auth_QCH
+        BLANK_MACROS
+            KCONFIGWIDGETS_EXPORT
+            KCONFIGWIDGETS_DEPRECATED
+            KCONFIGWIDGETS_DEPRECATED_EXPORT
+        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        COMPONENT Devel
+    )
+endif()
+
 include(ECMGeneratePriFile)
 ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF5ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KConfigWidgets)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
