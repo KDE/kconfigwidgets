@@ -25,6 +25,10 @@
 #include <QtCore/QString>
 #include <QtCore/QByteArray>
 
+/**
+ * @namespace KHelpClient
+ * Provides utility functions for access to help manuals.
+ */
 namespace KHelpClient
 {
 /**
