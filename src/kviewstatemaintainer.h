@@ -30,6 +30,8 @@
 #include "kconfiggroup.h"
 
 /**
+ * @class KViewStateMaintainer kviewstatemaintainer.h KViewStateMaintainer
+ *
  * @brief Encapsulates the maintenance of state between resets of QAbstractItemModel
  *
  * @code

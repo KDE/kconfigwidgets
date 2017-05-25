@@ -33,6 +33,8 @@
 
 class KPasteTextActionPrivate;
 /**
+ * @class KPasteTextAction kpastetextaction.h KPasteTextAction
+ *
  * An action for pasting text from the clipboard.
  * It's useful for text handling applications as
  * when plugged into a toolbar it provides a menu

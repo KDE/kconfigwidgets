@@ -30,6 +30,8 @@ class KCoreConfigSkeleton;
 class KConfigDialogManager;
 
 /**
+ * @class KConfigDialog kconfigdialog.h KConfigDialog
+ *
  * \short Standard %KDE configuration dialog class
  *
  * The KConfigDialog class provides an easy and uniform means of displaying

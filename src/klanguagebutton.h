@@ -32,6 +32,8 @@ class QAction;
 class KLanguageButtonPrivate;
 
 /**
+ * @class KLanguageButton klanguagebutton.h KLanguageButton
+ *
  * KLanguageButton is a pushbutton which allows a language to be selected from
  * a popup list.
  *

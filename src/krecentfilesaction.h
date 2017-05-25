@@ -35,6 +35,8 @@ class KConfigGroup;
 class KRecentFilesActionPrivate;
 
 /**
+ *  @class KRecentFilesAction krecentfilesaction.h KRecentFilesAction
+ *
  *  @short Recent files action
  *
  *  This class is an action to handle a recent files submenu.

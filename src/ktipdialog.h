@@ -95,6 +95,8 @@ private:
 };
 
 /**
+ * @class KTipDialog ktipdialog.h KTipDialog
+ *
  * A Tip-of-the-Day dialog.
  *
  * This dialog class presents a tip-of-the-day.

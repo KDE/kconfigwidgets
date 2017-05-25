@@ -31,6 +31,8 @@ class KActionMenu;
 class KColorSchemeManagerPrivate;
 
 /**
+ * @class KColorSchemeManager kcolorschememanager.h KColorSchemeManager
+ *
  * A small helper to get access to all available color schemes and activating a scheme in the
  * QApplication. This is useful for applications which want to provide a selection of custom color
  * schemes to their user. For example it is very common for photo and painting applications to use

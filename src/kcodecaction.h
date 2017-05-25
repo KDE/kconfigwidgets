@@ -32,6 +32,8 @@
 #include <kconfigwidgets_export.h>
 
 /**
+ *  @class KCodecAction kcodecaction.h KCodecAction
+ *
  *  @short Action for selecting one of several QTextCodec.
  *
  *  This action shows up a submenu with a list of the available codecs on the system.

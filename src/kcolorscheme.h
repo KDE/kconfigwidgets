@@ -33,6 +33,8 @@ class QBrush;
 class KColorSchemePrivate;
 
 /**
+ * @class KColorScheme kcolorscheme.h KColorScheme
+ *
  * A set of methods used to work with colors.
  *
  * KColorScheme currently provides access to the system color palette that the

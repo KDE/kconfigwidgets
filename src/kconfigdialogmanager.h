@@ -33,6 +33,8 @@ class KConfigSkeletonItem;
 class QWidget;
 
 /**
+ * @class KConfigDialogManager kconfigdialogmanager.h KConfigDialogManager
+ *
  * @short Provides a means of automatically retrieving,
  * saving and resetting KConfigSkeleton based settings in a dialog.
  *

@@ -38,6 +38,8 @@ class KConfigSkeleton;
 class KCModulePrivate;
 
 /**
+ * @class KCModule kcmodule.h KCModule
+ *
  * The base class for configuration modules.
  *
  * Configuration modules are realized as plugins that are loaded only when
