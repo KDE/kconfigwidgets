@@ -916,7 +916,7 @@ KCONFIGWIDGETS_EXPORT KToggleFullScreenAction *fullScreen(const QObject *recvr, 
  * @since 5.23
  */
 #ifdef DOXYGEN_SHOULD_SKIP_THIS
-inline KToggleFullScreenAction *fullScreen(const QObject *recvr, Func slot, QWidget *window, QObject *parent);
+inline KToggleFullScreenAction *fullScreen(const QObject *recvr, Func slot, QWidget *window, QObject *parent)
 #else
 template<class Receiver, class Func>
 inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, KToggleFullScreenAction>::type *fullScreen(const Receiver *recvr, Func slot, QWidget *window, QObject *parent)
