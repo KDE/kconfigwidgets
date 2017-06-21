@@ -205,7 +205,7 @@ KCONFIGWIDGETS_EXPORT QAction *_k_createInternal(StandardAction id, QObject *par
  * @since 5.23
  */
 #ifdef DOXYGEN_SHOULD_SKIP_THIS
-inline QAction *create(StandardAction id, const QObject *recvr, Func slot, QObject* parent);
+inline QAction *create(StandardAction id, const QObject *recvr, Func slot, QObject* parent)
 #else
 template<class Receiver, class Func>
 inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent)
