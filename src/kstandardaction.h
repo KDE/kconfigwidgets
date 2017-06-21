@@ -879,8 +879,18 @@ KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(spelling, Spelling)
  */
 KCONFIGWIDGETS_EXPORT KToggleAction *showMenubar(const QObject *recvr, const char *slot, QObject *parent);
 
+/**
+ * The same as showMenubar(const QObject *, const char *, QObject *), but using new-style connect syntax
+ * @see showMenubar(const QObject *, const char *, QObject *)
+ * @since 5.23
+ */
+#ifdef DOXYGEN_SHOULD_SKIP_THIS
+inline KToggleAction *showMenubar(const QObject *recvr, Func slot, QObject *parent)
+#else
 template<class Receiver, class Func>
-inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, KToggleAction>::type *showMenubar(const Receiver *recvr, Func slot, QObject *parent) {
+inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, KToggleAction>::type *showMenubar(const Receiver *recvr, Func slot, QObject *parent)
+#endif
+{
     QAction* ret = create(ShowMenubar, recvr, slot, parent);
     Q_ASSERT(qobject_cast<KToggleAction *>(ret));
     return static_cast<KToggleAction *>(ret);
