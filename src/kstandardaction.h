@@ -903,6 +903,7 @@ KCONFIGWIDGETS_EXPORT KToggleAction *showStatusbar(const QObject *recvr, const c
 
 /**
  * Show/Hide the statusbar.
+ * @since 5.23
  */
 #ifdef DOXYGEN_SHOULD_SKIP_THIS
 inline KToggleAction *showStatusbar(const QObject *recvr, Func slot, QObject *parent)
