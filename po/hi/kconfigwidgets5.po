@@ -1,0 +1,640 @@
+# translation of kdelibs4.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2007.
+# Ravishankar Shrivastava <raviratlami@aol.in>, 2008.
+# G Karunakar <karunakar@indlinux.org>, 2009, 2010, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2017-01-30 03:49+0100\n"
+"PO-Revision-Date: 2012-06-25 15:27+0530\n"
+"Last-Translator: G Karunakar <karunakar@indlinux.org>\n"
+"Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 1.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "करुणाकर गुंटुपल्ली"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "karunakar@indlinux.org"
+
+#: kcmodule.cpp:166
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:170
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "आपको कॉन्फ़िगरेशन सहेजने की अनुमति नहीं है"
+
+#: kcodecaction.cpp:90
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "डिफ़ॉल्ट"
+
+#: kcodecaction.cpp:98
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "अपने आप पता लगाएँ"
+
+#: kconfigdialog.cpp:48
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "कॉन्फ़िगर"
+
+#: klanguagebutton.cpp:194
+#, kde-format
+msgid "without name"
+msgstr "नाम के बगैर"
+
+#: krecentfilesaction.cpp:78
+#, kde-format
+msgid "No Entries"
+msgstr "कोई प्रविष्टि नहीं"
+
+#: krecentfilesaction.cpp:84
+#, kde-format
+msgid "Clear List"
+msgstr "सूची साफ करें"
+
+#: kstandardaction.cpp:153
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "पीछे (&B)"
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "आगे (&F)"
+
+#: kstandardaction.cpp:167
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "घर (&H)"
+
+#: kstandardaction.cpp:170
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "मदद (&H)"
+
+#: kstandardaction.cpp:207
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "मेन्यू पट्टी दिखाएँ<p>मेन्यू पट्टी को छुपाए जाने के बाद फिर से दिखाता है</p>"
+
+#: kstandardaction.cpp:226
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "
+#| "the window used for status information.</p>"
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"स्थिति पट्टी दिखाएँ<p>स्थिति पट्टी प्रदर्शित करता है जो कि विंडो के तल पर एक पट्टी होती "
+"है और जो स्थिति जानकारी दिखाती है.</p>"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&New"
+msgstr "नया (&N)"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "Create new document"
+msgstr "नया दस्तावेज़ बनाएँ"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Open..."
+msgstr "खोलें... (&O)"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Open an existing document"
+msgstr "मौज़ूदा दस्तावेज़ खोलें"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open &Recent"
+msgstr "हाल ही का खोलें  (&R)"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr "हाल ही में उपयोग में आया दस्तावेज़ खोलें"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Save"
+msgstr "सहेजें (&S)"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Save document"
+msgstr "दस्तावेज़ सहेजें"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save &As..."
+msgstr "ऐसे सहेजें (&A)"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save document under a new name"
+msgstr "दस्तावेज़ को नए नाम से सहेजें"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Re&vert"
+msgstr "लौटें (&v)"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "&Close"
+msgstr "बंद करें (&C)"
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "Close document"
+msgstr "दस्तावेज़ बन्द करें"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "&Print..."
+msgstr "छापें...(&P)"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "Print document"
+msgstr "दस्तावेज़ छापें"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Print Previe&w"
+msgstr "छपाई नमूना (&w)"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Show a print preview of document"
+msgstr "दस्तावेज़ का छपाई नमूना दिखायें"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "&Mail..."
+msgstr "डाक (&M)"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "Send document by mail"
+msgstr "दस्तावेज़ डाक से भेजें"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "&Quit"
+msgstr "बाहर जाएँ (&Q)"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Quit application"
+msgstr "अनुप्रयोग से बाहर आएं"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Undo"
+msgstr "पहले जैसा (&U)"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "Undo last action"
+msgstr "आखरी परिवर्तन रद्द करें"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Re&do"
+msgstr "दोहराएँ (&d)"
+
+#: kstandardaction_p.h:54
+#, fuzzy, kde-format
+#| msgid "Undo last action"
+msgid "Redo last undone action"
+msgstr "आखरी परिवर्तन रद्द करें"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cu&t"
+msgstr "काटें (&t)"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr "चयन को काटें तथा क्लिपबोर्ड में रखें"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Copy"
+msgstr "नक़ल (&C)"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr "चयन को क्लिपबोर्ड में नक़ल करें"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "&Paste"
+msgstr "चिपकाएँ (&P)"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "Paste clipboard content"
+msgstr "क्लिपबोर्ड विषयवस्तु चिपकाएँ"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "C&lear"
+msgstr "साफ करें (&l)"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Select &All"
+msgstr "सभी चुनें (&A)"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Dese&lect"
+msgstr "अचयनित (&l)"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "&Find..."
+msgstr "ढूंढें...(&F)"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Find &Next"
+msgstr "अगला ढूंढें (&N)"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "पिछला ढूंढें (&v)"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Replace..."
+msgstr "बदलें...(&R)"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Actual Size"
+msgstr "वास्तविक आकार   (&A)"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "View document at its actual size"
+msgstr "दस्तावेज़ को मूल आकार में देखें"
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "&Fit to Page"
+msgstr "पृष्ठ के अनुरूप (&F)"
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "Zoom to fit page in window"
+msgstr "पृष्ठ विंडो में फिट करें"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "पृष्ठ चौड़ाई के अनुरूप (&W)"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr "पृष्ठ चौड़ाई में फिट करें"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "पृष्ठ ऊँचाई के अनुरूप (&H)"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr "पृष्ठ ऊँचाई के अनुरूप"
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Zoom &In"
+msgstr "बड़े आकार में दिखाएँ (&I)"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Zoom &Out"
+msgstr "छोटे आकार में दिखाएँ (&O)"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Zoom..."
+msgstr "ज़ूम... (&Z)"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "Select zoom level"
+msgstr "जूम स्तर चुनें"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Redisplay"
+msgstr "फिर से  दिखाएँ (&R)"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "Redisplay document"
+msgstr "दस्तावेज़ फिर से दिखाएँ"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Up"
+msgstr "ऊपर (&U)"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "Go up"
+msgstr "ऊपर जाएं"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "&Previous Page"
+msgstr "पिछला पृष्ठ (&P)"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "Go to previous page"
+msgstr "पिछले पृष्ठ पर जाएँ"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Next Page"
+msgstr "अगला  पृष्ठ (&N)"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "Go to next page"
+msgstr "अगले पृष्ठ पर जाएँ"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Go To..."
+msgstr "यहाँ जाएं... (&G)"
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Go to Page..."
+msgstr "पृष्ठ पर जाएं... (&G)"
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Go to Line..."
+msgstr "पंक्ति पर जाएँ... (&G)"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "&First Page"
+msgstr "प्रथम पृष्ठ (&F)"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "Go to first page"
+msgstr "प्रथम पृष्ठ पर जाएँ"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "&Last Page"
+msgstr "अंतिम पृष्ठ (&L)"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Go to last page"
+msgstr "अन्तिम पृष्ठ पर जाएं"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "&Back"
+msgstr "पीछे (&B)"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Go back in document"
+msgstr "दस्तावेज़ में पीछे जाएँ"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "&Forward"
+msgstr "आगे (&F)"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Go forward in document"
+msgstr "दस्तावेज़ में आगे जाएं"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Add Bookmark"
+msgstr " पसंदीदा  जोड़ें (&C)"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr " पसंदीदा संपादित करें ...(&E)"
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Spelling..."
+msgstr "वर्तनी...(&S)"
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "Check spelling in document"
+msgstr "दस्तावेज़ में वर्तनी जांचें"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show &Menubar"
+msgstr "मेन्यू पट्टी दिखाएँ (&M)"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show or hide menubar"
+msgstr "मेन्यू पट्टी दिखाएँ या छुपाएँ"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "औज़ार पट्टी दिखाएँ (&T)"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show or hide toolbar"
+msgstr "औज़ार पट्टी दिखाएँ या छुपाएँ"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "स्थिति पट्टी दिखाएँ (&a)"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show or hide statusbar"
+msgstr "स्थिति पट्टी दिखाएँ या छुपाएँ"
+
+#: kstandardaction_p.h:99
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "पूर्ण स्क्रीन मोड (&u)"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "&Save Settings"
+msgstr "विन्यास सहेजें (&S)"
+
+#: kstandardaction_p.h:101
+#, kde-format
+msgid "Configure S&hortcuts..."
+msgstr "शॉर्ट कट कॉन्फ़िगर करें...(&h)"
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 कॉन्फ़िगर करें...(&C)"
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "औज़ार पट्टी कॉन्फ़िगर करें... (&b)"
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "सूचनाएँ कॉन्फ़िगर करें.... (&N)"
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 हैंडबुक (&H)"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "What's &This?"
+msgstr "यह क्या है? (&T)"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "आज का नुस्ख़ा (&D)"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Report Bug..."
+msgstr "बग रिपोर्ट करें... (&R)"
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "Switch Application &Language..."
+msgstr "अनुप्रयोग भाषा स्विच करें... (&L)"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "%1 के बारे में (&A)"
+
+#: kstandardaction_p.h:115
+#, kde-format
+msgid "About &KDE"
+msgstr "केडीई के बारे में (&K)"
+
+#: kstandardaction_p.h:116
+#, fuzzy, kde-format
+#| msgid "&Delete"
+msgid "&Delete File"
+msgstr "मिटाएँ (&D)"
+
+#: kstandardaction_p.h:117
+#, fuzzy, kde-format
+#| msgid "&Send File"
+#| msgid_plural "&Send Files"
+msgid "&Rename File"
+msgstr "फ़ाइल भेजें (&S)"
+
+#: kstandardaction_p.h:118
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:119
+#, kde-format
+msgid "&Donate"
+msgstr ""
+
+#: ktipdialog.cpp:238
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "आज का नुस्ख़ा"
+
+#: ktipdialog.cpp:254
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "क्या आप जानते हैं...?\n"
+
+#: ktipdialog.cpp:306
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "प्रारंभ में नुस्ख़ा दिखाएँ (&S)"
+
+#: ktipdialog.cpp:311
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "पिछला (&P)"
+
+#: ktipdialog.cpp:316
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "अगला (&N)"
