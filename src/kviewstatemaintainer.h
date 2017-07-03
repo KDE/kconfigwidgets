@@ -49,7 +49,7 @@ class KViewStateMaintainer : public KViewStateMaintainerBase
 {
     typedef StateSaver StateRestorer;
 public:
-    KViewStateMaintainer(const KConfigGroup &configGroup, QObject *parent = 0)
+    KViewStateMaintainer(const KConfigGroup &configGroup, QObject *parent = nullptr)
         : KViewStateMaintainerBase(parent), m_configGroup(configGroup)
     {
 
