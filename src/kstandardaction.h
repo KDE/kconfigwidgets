@@ -201,7 +201,7 @@ enum StandardAction {
     ConfigureNotifications, ///< Display the notifications configuration dialog.
     FullScreen, ///< Switch to/from full screen mode.
     Clear, ///< Clear the content of the focus widget.
-    PasteText, ///< Paste the contents of clipboard and adds a Klipper button on the toolbar.
+    PasteText, ///< @deprecated since 5.39. Use Paste instead.
     SwitchApplicationLanguage, ///< Display the Switch Application Language dialog.
     DeleteFile, ///< Permanently deletes files or folders. @since 5.25
     RenameFile, ///< Renames files or folders. @since 5.25
@@ -555,19 +555,25 @@ KCONFIGWIDGETS_EXPORT QAction *paste(const QObject *recvr, const char *slot, QOb
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(paste, Paste)
 
 /**
- * Paste the contents of clipboard at the current mouse or cursor
- * position. Provide a button on the toolbar with the clipboard history
- * menu if Klipper is running.
+ * @deprecated since 5.39. Use paste() instead.
  */
-KCONFIGWIDGETS_EXPORT QAction *pasteText(const QObject *recvr, const char *slot, QObject *parent);
+#ifndef KDE_NO_DEPRECATED
+KCONFIGWIDGETS_DEPRECATED_EXPORT QAction *pasteText(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
- * Paste the contents of clipboard at the current mouse or cursor
- * position. Provide a button on the toolbar with the clipboard history
- * menu if Klipper is running.
  * @since 5.23
+ * @deprecated since 5.39. Use paste() instead.
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(pasteText, PasteText)
+#ifndef KDE_NO_DEPRECATED
+#ifdef DOXYGEN_SHOULD_SKIP_THIS
+    inline QAction *pasteText(const QObject *recvr, Func slot, QObject *parent);
+#else
+template<class Receiver, class Func>
+KCONFIGWIDGETS_DEPRECATED_EXPORT inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *pasteText(const Receiver *recvr, Func slot, QObject *parent)
+{ return create(PasteText, recvr, slot, parent); }
+#endif // DOXYGEN_SHOULD_SKIP_THIS
+#endif // KDE_NO_DEPRECATED
 
 /**
  * Clear the content of the focus widget

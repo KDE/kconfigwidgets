@@ -231,9 +231,11 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             pAction = new KToggleFullScreenAction(parent);
             pAction->setCheckable(true);
             break;
+#ifndef KDE_NO_DEPRECATED
         case PasteText:
             pAction = new KPasteTextAction(parent);
             break;
+#endif
         // Same as default, but with the app icon
         case AboutApp:
         {
@@ -400,10 +402,12 @@ QAction *paste(const QObject *recvr, const char *slot, QObject *parent)
     return KStandardAction::create(Paste, recvr, slot, parent);
 }
 
+#ifndef KDE_NO_DEPRECATED
 QAction *pasteText(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(PasteText, recvr, slot, parent);
 }
+#endif
 
 QAction *clear(const QObject *recvr, const char *slot, QObject *parent)
 {

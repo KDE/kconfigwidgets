@@ -41,8 +41,10 @@ class KPasteTextActionPrivate;
  * with the clipboard history if klipper is running.
  * If klipper is not running, the menu has only one
  * item: the current clipboard content.
+ * @deprecated since 5.39
  */
-class KCONFIGWIDGETS_EXPORT KPasteTextAction: public QAction
+#ifndef KDE_NO_DEPRECATED
+class KCONFIGWIDGETS_DEPRECATED_EXPORT KPasteTextAction: public QAction
 {
     Q_OBJECT
 public:
@@ -100,5 +102,6 @@ private:
     Q_PRIVATE_SLOT(d, void _k_menuAboutToShow())
     Q_PRIVATE_SLOT(d, void _k_slotTriggered(QAction *))
 };
+#endif // KDE_NO_DEPRECATED
 
 #endif

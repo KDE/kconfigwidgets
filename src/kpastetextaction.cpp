@@ -33,6 +33,7 @@
 #include <QDBusInterface>
 #include <QDBusReply>
 
+#ifndef KDE_NO_DEPRECATED
 class KPasteTextActionPrivate
 {
 public:
@@ -136,5 +137,6 @@ void KPasteTextActionPrivate::_k_slotTriggered(QAction *action)
         //  qDebug() << "Clipboard: " << qApp->clipboard()->text(QClipboard::Clipboard);
     }
 }
+#endif // KDE_NO_DEPRECATED
 
 #include "moc_kpastetextaction.cpp"
