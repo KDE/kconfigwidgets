@@ -129,48 +129,84 @@ namespace KStandardAction
  */
 enum StandardAction {
     ActionNone,
-
     // File Menu
-    New, Open, OpenRecent, Save, SaveAs, Revert, Close,
-    Print, PrintPreview, Mail, Quit,
-
+    New, ///< Create a new document or window.
+    Open, ///< Open an existing file.
+    OpenRecent, ///< Open a recently used document.
+    Save, ///< Save the current document.
+    SaveAs, ///< Save the current document under a different name.
+    Revert, ///< Revert the current document to the last saved version.
+    Close, ///< Close the current document.
+    Print, ///< Print the current document.
+    PrintPreview, ///< Show a print preview of the current document.
+    Mail, ///< Send the current document by mail.
+    Quit, ///< Quit the program.
     // Edit Menu
-    Undo, Redo, Cut, Copy, Paste, SelectAll, Deselect, Find, FindNext, FindPrev,
-    Replace,
-
+    Undo, ///< Undo the last operation.
+    Redo, ///< Redo the last operation.
+    Cut, ///< Cut selected area and store it in the clipboard.
+    Copy, ///< Copy selected area and store it in the clipboard.
+    Paste, ///< Paste the contents of clipboard at the current mouse or cursor.
+    SelectAll, ///< Select all elements in the current document.
+    Deselect, ///< Deselect any selected elements in the current document.
+    Find, ///< Initiate a 'find' request in the current document.
+    FindNext, ///< Find the next instance of a stored 'find'
+    FindPrev, ///< Find a previous instance of a stored 'find'.
+    Replace, ///< Find and replace matches.
     // View Menu
-    ActualSize, FitToPage, FitToWidth, FitToHeight, ZoomIn, ZoomOut,
-    Zoom, Redisplay,
-
+    ActualSize, ///< View the document at its actual size.
+    FitToPage, ///< Fit the document view to the size of the current window.
+    FitToWidth, ///< Fit the document view to the width of the current window.
+    FitToHeight, ///< Fit the document view to the height of the current window.
+    ZoomIn, ///< Zoom in the current document.
+    ZoomOut, ///< Zoom out the current document.
+    Zoom, ///< Select the current zoom level.
+    Redisplay, ///< Redisplay or redraw the document.
     // Go Menu
-    Up, Back, Forward, Home /*Home page*/, Prior, Next, Goto, GotoPage, GotoLine,
-    FirstPage, LastPage, DocumentBack, DocumentForward,
-
+    Up, ///< Move up (web style menu).
+    Back, ///< Move back (web style menu).
+    Forward, ///< Move forward (web style menu).
+    Home, ///< Go to the "Home" position or document.
+    Prior, ///< Scroll up one page.
+    Next, ///< Scroll down one page.
+    Goto, ///< Jump to some specific location in the document.
+    GotoPage, ///< Go to a specific page.
+    GotoLine, ///< Go to a specific line.
+    FirstPage, ///< Jump to the first page.
+    LastPage, ///< Jump to the last page.
+    DocumentBack, ///< Move back (document style menu).
+    DocumentForward, ///< Move forward (document style menu).
     // Bookmarks Menu
-    AddBookmark, EditBookmarks,
-
+    AddBookmark, ///< Add the current page to the bookmarks tree.
+    EditBookmarks, ///< Edit the application bookmarks.
     // Tools Menu
-    Spelling,
-
+    Spelling, ///< Pop up the spell checker.
     // Settings Menu
-    ShowMenubar, ShowToolbar, ShowStatusbar,
-    SaveOptions, KeyBindings,
-    Preferences, ConfigureToolbars,
-
+    ShowMenubar, ///< Show/Hide the menubar.
+    ShowToolbar, ///< Show/Hide the toolbar.
+    ShowStatusbar, ///< Show/Hide the statusbar.
+    SaveOptions,
+    KeyBindings, ///< Display the configure key bindings dialog.
+    Preferences, ///< Display the preferences/options dialog.
+    ConfigureToolbars, ///< Display the toolbar configuration dialog.
     // Help Menu
-    Help, HelpContents, WhatsThis, ReportBug, AboutApp, AboutKDE,
-    TipofDay,
-
+    Help,
+    HelpContents, ///< Display the handbook of the application.
+    WhatsThis, ///< Trigger the What's This cursor.
+    ReportBug, ///< Open up the Report Bug dialog.
+    AboutApp, ///< Display the application's About box.
+    AboutKDE, ///< Display the About KDE dialog.
+    TipofDay, ///< Display the "Tip of the Day".
     // Other standard actions
-    ConfigureNotifications,
-    FullScreen,
-    Clear,
-    PasteText,
-    SwitchApplicationLanguage,
+    ConfigureNotifications, ///< Display the notifications configuration dialog.
+    FullScreen, ///< Switch to/from full screen mode.
+    Clear, ///< Clear the content of the focus widget.
+    PasteText, ///< Paste the contents of clipboard and adds a Klipper button on the toolbar.
+    SwitchApplicationLanguage, ///< Display the Switch Application Language dialog.
     DeleteFile, ///< Permanently deletes files or folders. @since 5.25
     RenameFile, ///< Renames files or folders. @since 5.25
-    MoveToTrash, ///< @since 5.25
-    Donate ///< @since 5.26
+    MoveToTrash, ///< Moves files or folders to the trash. @since 5.25
+    Donate ///< Open donation page on kde.org. @since 5.26
 };
 
 /**
@@ -389,7 +425,7 @@ KCONFIGWIDGETS_EXPORT QAction *printPreview(const QObject *recvr, const char *sl
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(printPreview, PrintPreview)
 
 /**
- * Mail this document.
+ * Send the current document by mail.
  */
 KCONFIGWIDGETS_EXPORT QAction *mail(const QObject *recvr, const char *slot, QObject *parent);
 
@@ -655,34 +691,34 @@ KCONFIGWIDGETS_EXPORT QAction *fitToHeight(const QObject *recvr, const char *slo
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(fitToHeight, FitToHeight)
 
 /**
- * Zoom in.
+ * Zoom in the current document view.
  */
 KCONFIGWIDGETS_EXPORT QAction *zoomIn(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Zoom in.
+ * Zoom in the current document view.
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(zoomIn, ZoomIn)
 
 /**
- * Zoom out.
+ * Zoom out the current document view.
  */
 KCONFIGWIDGETS_EXPORT QAction *zoomOut(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Zoom out.
+ * Zoom out the current document view.
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(zoomOut, ZoomOut)
 
 /**
- * Popup a zoom dialog.
+ * Select the current zoom level.
  */
 KCONFIGWIDGETS_EXPORT QAction *zoom(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Popup a zoom dialog.
+ * Select the current zoom level.
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(zoom, Zoom)
@@ -765,34 +801,34 @@ KCONFIGWIDGETS_EXPORT QAction *next(const QObject *recvr, const char *slot, QObj
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(next, Next)
 
 /**
- * Go to somewhere in general.
+ * Jump to some specific location in the document.
  */
 KCONFIGWIDGETS_EXPORT QAction *goTo(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Go to somewhere in general.
+ * Jump to some specific location in the document.
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(goTo, Goto)
 
 /**
- * Go to a specific page (dialog).
+ * Go to a specific page.
  */
 KCONFIGWIDGETS_EXPORT QAction *gotoPage(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Go to a specific page (dialog).
+ * Go to a specific page.
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(gotoPage, GotoPage)
 
 /**
- * Go to a specific line (dialog).
+ * Go to a specific line.
  */
 KCONFIGWIDGETS_EXPORT QAction *gotoLine(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Go to a specific line (dialog).
+ * Go to a specific line.
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(gotoLine, GotoLine)
@@ -978,23 +1014,23 @@ KCONFIGWIDGETS_EXPORT QAction *preferences(const QObject *recvr, const char *slo
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(preferences, Preferences)
 
 /**
- * The Customize Toolbar dialog.
+ * Display the toolbar configuration dialog.
  */
 KCONFIGWIDGETS_EXPORT QAction *configureToolbars(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * The Customize Toolbar dialog.
+ * Display the toolbar configuration dialog.
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(configureToolbars, ConfigureToolbars)
 
 /**
- * The Configure Notifications dialog.
+ * Display the notifications configuration dialog.
  */
 KCONFIGWIDGETS_EXPORT QAction *configureNotifications(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * The Configure Notifications dialog.
+ * Display the notifications configuration dialog.
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(configureNotifications, ConfigureNotifications)
@@ -1011,12 +1047,12 @@ KCONFIGWIDGETS_EXPORT QAction *help(const QObject *recvr, const char *slot, QObj
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(help, Help)
 
 /**
- * Display the help contents.
+ * Display the handbook of the application.
  */
 KCONFIGWIDGETS_EXPORT QAction *helpContents(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Display the help contents.
+ * Display the handbook of the application.
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(helpContents, HelpContents)
@@ -1077,37 +1113,37 @@ KCONFIGWIDGETS_EXPORT QAction *aboutKDE(const QObject *recvr, const char *slot, 
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(aboutKDE, AboutKDE)
 
 /**
- * Delete file.
+ * Permanently deletes files or folders.
  * @since 5.25
  */
 KCONFIGWIDGETS_EXPORT QAction *deleteFile(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Delete file.
+ * Permanently deletes files or folders.
  * @since 5.25
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(deleteFile, DeleteFile)
 
 /**
- * Rename file.
+ * Renames files or folders.
  * @since 5.25
  */
 KCONFIGWIDGETS_EXPORT QAction *renameFile(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Rename file.
+ * Renames files or folders.
  * @since 5.25
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(renameFile, RenameFile)
 
 /**
- * Move to Trash.
+ * Moves files or folders to the trash.
  * @since 5.25
  */
 KCONFIGWIDGETS_EXPORT QAction *moveToTrash(const QObject *recvr, const char *slot, QObject *parent);
 
 /**
- * Move to Trash.
+ * Moves files or folders to the trash.
  * @since 5.25
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(moveToTrash, MoveToTrash)
