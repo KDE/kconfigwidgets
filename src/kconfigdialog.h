@@ -68,7 +68,7 @@ class KConfigDialogManager;
  * necessary changes.
  *
  * For dialog appearance options (like buttons, default button, ...) please see
- * @see KPageDialog
+ * @ref KPageDialog.
  *
  * @see KConfigSkeleton
  * @author Waldo Bastian <bastian@kde.org>
