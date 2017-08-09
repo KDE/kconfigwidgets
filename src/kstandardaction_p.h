@@ -113,8 +113,8 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { SwitchApplicationLanguage, KStandardShortcut::SwitchApplicationLanguage, "switch_application_language", I18N_NOOP("Switch Application &Language..."), nullptr, "preferences-desktop-locale" },
     { AboutApp,      KStandardShortcut::AccelNone, "help_about_app", I18N_NOOP("&About %1"), nullptr, nullptr },
     { AboutKDE,      KStandardShortcut::AccelNone, "help_about_kde", I18N_NOOP("About &KDE"), nullptr, "kde" },
-    { DeleteFile,    KStandardShortcut::DeleteFile, "deletefile", I18N_NOOP("&Delete File"), nullptr, "edit-delete" },
-    { RenameFile,    KStandardShortcut::RenameFile, "renamefile", I18N_NOOP("&Rename File"), nullptr, "edit-rename" },
+    { DeleteFile,    KStandardShortcut::DeleteFile, "deletefile", I18N_NOOP("&Delete"), nullptr, "edit-delete" },
+    { RenameFile,    KStandardShortcut::RenameFile, "renamefile", I18N_NOOP("&Rename..."), nullptr, "edit-rename" },
     { MoveToTrash,   KStandardShortcut::MoveToTrash, "movetotrash", I18N_NOOP("&Move to Trash"), nullptr, "edit-delete" },
     { Donate,        KStandardShortcut::Donate, "help_donate", I18N_NOOP("&Donate"), nullptr, "help-donate"},
     { ActionNone,    KStandardShortcut::AccelNone, nullptr, nullptr, nullptr, nullptr }

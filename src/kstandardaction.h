@@ -167,8 +167,8 @@ enum StandardAction {
     Clear,
     PasteText,
     SwitchApplicationLanguage,
-    DeleteFile, ///< @since 5.25
-    RenameFile, ///< @since 5.25
+    DeleteFile, ///< Permanently deletes files or folders. @since 5.25
+    RenameFile, ///< Renames files or folders. @since 5.25
     MoveToTrash, ///< @since 5.25
     Donate ///< @since 5.26
 };
