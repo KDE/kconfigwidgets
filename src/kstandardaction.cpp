@@ -634,10 +634,12 @@ KToggleFullScreenAction *fullScreen(const QObject *recvr, const char *slot, QWid
     return ret;
 }
 
+#ifndef KDE_NO_DEPRECATED
 QAction *saveOptions(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(SaveOptions, recvr, slot, parent);
 }
+#endif
 
 QAction *keyBindings(const QObject *recvr, const char *slot, QObject *parent)
 {

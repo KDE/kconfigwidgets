@@ -185,7 +185,7 @@ enum StandardAction {
     ShowMenubar, ///< Show/Hide the menubar.
     ShowToolbar, ///< Show/Hide the toolbar.
     ShowStatusbar, ///< Show/Hide the statusbar.
-    SaveOptions,
+    SaveOptions, ///< @deprecated since 5.38
     KeyBindings, ///< Display the configure key bindings dialog.
     Preferences, ///< Display the preferences/options dialog.
     ConfigureToolbars, ///< Display the toolbar configuration dialog.
@@ -978,14 +978,26 @@ inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, K
 
 /**
  * Display the save options dialog.
+ * @deprecated since 5.38
  */
-KCONFIGWIDGETS_EXPORT QAction *saveOptions(const QObject *recvr, const char *slot, QObject *parent);
+#ifndef KDE_NO_DEPRECATED
+KCONFIGWIDGETS_DEPRECATED_EXPORT QAction *saveOptions(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Display the save options dialog.
  * @since 5.23
+ * @deprecated since 5.38
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(saveOptions, SaveOptions)
+#ifndef KDE_NO_DEPRECATED
+#ifdef DOXYGEN_SHOULD_SKIP_THIS
+    inline QAction *saveOptions(const QObject *recvr, Func slot, QObject *parent);
+#else
+template<class Receiver, class Func>
+KCONFIGWIDGETS_DEPRECATED_EXPORT inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *saveOptions(const Receiver *recvr, Func slot, QObject *parent)
+{ return create(SaveOptions, recvr, slot, parent); }
+#endif // DOXYGEN_SHOULD_SKIP_THIS
+#endif // KDE_NO_DEPRECATED
 
 /**
  * Display the configure key bindings dialog.
