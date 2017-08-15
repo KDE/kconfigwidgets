@@ -38,7 +38,7 @@
 #include <QDesktopServices>
 #include <QScrollArea>
 
-class KConfigDialog::KConfigDialogPrivate
+class Q_DECL_HIDDEN KConfigDialog::KConfigDialogPrivate
 {
 public:
     KConfigDialogPrivate(KConfigDialog *q, const QString &name, KCoreConfigSkeleton *config)
