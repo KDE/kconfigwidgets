@@ -190,7 +190,7 @@ enum StandardAction {
     Preferences, ///< Display the preferences/options dialog.
     ConfigureToolbars, ///< Display the toolbar configuration dialog.
     // Help Menu
-    Help,
+    Help, ///< @deprecated since 5.38. Use HelpContents instead.
     HelpContents, ///< Display the handbook of the application.
     WhatsThis, ///< Trigger the What's This cursor.
     ReportBug, ///< Open up the Report Bug dialog.
@@ -1048,15 +1048,25 @@ KCONFIGWIDGETS_EXPORT QAction *configureNotifications(const QObject *recvr, cons
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(configureNotifications, ConfigureNotifications)
 
 /**
- * Display the help.
+ * @deprecated since 5.38 Use helpContents() instead.
  */
-KCONFIGWIDGETS_EXPORT QAction *help(const QObject *recvr, const char *slot, QObject *parent);
+#ifndef KDE_NO_DEPRECATED
+KCONFIGWIDGETS_DEPRECATED_EXPORT QAction *help(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
- * Display the help.
  * @since 5.23
+ * @deprecated since 5.38 Use helpContents() instead.
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(help, Help)
+#ifndef KDE_NO_DEPRECATED
+#ifdef DOXYGEN_SHOULD_SKIP_THIS
+    inline QAction *help(const QObject *recvr, Func slot, QObject *parent);
+#else
+template<class Receiver, class Func>
+KCONFIGWIDGETS_DEPRECATED_EXPORT inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *help(const Receiver *recvr, Func slot, QObject *parent)
+{ return create(Help, recvr, slot, parent); }
+#endif // DOXYGEN_SHOULD_SKIP_THIS
+#endif // KDE_NO_DEPRECATED
 
 /**
  * Display the handbook of the application.

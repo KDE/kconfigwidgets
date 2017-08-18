@@ -661,10 +661,12 @@ QAction *configureNotifications(const QObject *recvr, const char *slot, QObject 
     return KStandardAction::create(ConfigureNotifications, recvr, slot, parent);
 }
 
+#ifndef KDE_NO_DEPRECATED
 QAction *help(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(Help, recvr, slot, parent);
 }
+#endif
 
 QAction *helpContents(const QObject *recvr, const char *slot, QObject *parent)
 {
