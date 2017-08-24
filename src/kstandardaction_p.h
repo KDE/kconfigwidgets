@@ -115,7 +115,7 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { AboutKDE,      KStandardShortcut::AccelNone, "help_about_kde", I18N_NOOP("About &KDE"), nullptr, "kde" },
     { DeleteFile,    KStandardShortcut::DeleteFile, "deletefile", I18N_NOOP("&Delete"), nullptr, "edit-delete" },
     { RenameFile,    KStandardShortcut::RenameFile, "renamefile", I18N_NOOP("&Rename..."), nullptr, "edit-rename" },
-    { MoveToTrash,   KStandardShortcut::MoveToTrash, "movetotrash", I18N_NOOP("&Move to Trash"), nullptr, "edit-delete" },
+    { MoveToTrash,   KStandardShortcut::MoveToTrash, "movetotrash", I18N_NOOP("&Move to Trash"), nullptr, "trash-empty" },
     { Donate,        KStandardShortcut::Donate, "help_donate", I18N_NOOP("&Donate"), nullptr, "help-donate"},
     { ActionNone,    KStandardShortcut::AccelNone, nullptr, nullptr, nullptr, nullptr }
 };
