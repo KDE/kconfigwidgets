@@ -1,0 +1,662 @@
+# Agron Selimaj <as9902613@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kde4libs\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2017-08-10 03:23+0200\n"
+"PO-Revision-Date: 2012-01-19 00:20-0500\n"
+"Last-Translator: Agron Selimaj <as9902613@gmail.com>\n"
+"Language-Team: Albanian <sq@li.org>\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2010-11-24 03:19+0000\n"
+"X-Generator: Lokalize 1.2\n"
+
+#, fuzzy, kde-format
+#| msgid "without name"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "pa emër"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: kcmodule.cpp:166
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:170
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr ""
+
+#: kcodecaction.cpp:90
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "I Parazgjedhur"
+
+#: kcodecaction.cpp:98
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Zbulim automatik"
+
+#: kconfigdialog.cpp:48
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Konfiguro"
+
+#: klanguagebutton.cpp:194
+#, kde-format
+msgid "without name"
+msgstr "pa emër"
+
+#: krecentfilesaction.cpp:78
+#, fuzzy, kde-format
+#| msgid "Notes:"
+msgid "No Entries"
+msgstr "Shënime:"
+
+#: krecentfilesaction.cpp:84
+#, fuzzy, kde-format
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "Pastroni hyrjen"
+
+#: kstandardaction.cpp:153
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Mbrapsht"
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Përpara"
+
+#: kstandardaction.cpp:167
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Shtëpi"
+
+#: kstandardaction.cpp:170
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Ndihmë"
+
+#: kstandardaction.cpp:207
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+
+#: kstandardaction.cpp:226
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&New"
+msgstr "&I Ri"
+
+#: kstandardaction_p.h:41
+#, fuzzy, kde-format
+#| msgid "Create Web Shortcut"
+msgid "Create new document"
+msgstr "Krijo Shkurtore Web-i"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Open..."
+msgstr "&Hape..."
+
+#: kstandardaction_p.h:42
+#, fuzzy, kde-format
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "M&brapa në dokument"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open &Recent"
+msgstr "Hap të &deritanishëm"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Save"
+msgstr "&Ruaje"
+
+#: kstandardaction_p.h:44
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Mbylle Dokumentin"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save &As..."
+msgstr "Ruaji &Si..."
+
+#: kstandardaction_p.h:45
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Mbylle Dokumentin"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Re&vert"
+msgstr "Ri&kthe"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "&Close"
+msgstr "&Mbylle"
+
+#: kstandardaction_p.h:47
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Mbylle Dokumentin"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "&Print..."
+msgstr "&Printo..."
+
+#: kstandardaction_p.h:48
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Print Previe&w"
+msgstr "Parapa&mja e shtypit"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "&Mail..."
+msgstr "&Posta..."
+
+#: kstandardaction_p.h:50
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Mbylle Dokumentin"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "&Quit"
+msgstr "&Dil"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Quit application"
+msgstr "Dil nga programi"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Undo"
+msgstr "&Zhbëj"
+
+#: kstandardaction_p.h:53
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "Dokumentimi HTML"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Re&do"
+msgstr "Ri&bëje"
+
+#: kstandardaction_p.h:54
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "Dokumentimi HTML"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cu&t"
+msgstr "P&rije"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Copy"
+msgstr "&Kopjo"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "&Paste"
+msgstr "&Ngjit"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, fuzzy, kde-format
+#| msgid "Upload content"
+msgid "Paste clipboard content"
+msgstr "Ngarko përmbajtjen"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "C&lear"
+msgstr "P&astro"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Select &All"
+msgstr "Zgjidhi të &Gjitha"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Dese&lect"
+msgstr "Hiqe &Përzgjedhjen"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "&Find..."
+msgstr "&Gjej..."
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Find &Next"
+msgstr "Gjej &tjetër"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "Gjej të Më&parshmet"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Replace..."
+msgstr "&Zëvendëso"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Actual Size"
+msgstr "&Përmasa Aktuale"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "&Fit to Page"
+msgstr "&Përshtate me Faqen"
+
+#: kstandardaction_p.h:68
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Shko tek Rreshti"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "Përshtate Faqen në gj&erësi"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "Përshtate faqen në gj&atësi"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Zoom &In"
+msgstr "Zoom &In"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Zoom &Out"
+msgstr "Zoom &Out"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Zoom..."
+msgstr "&Zoom..."
+
+#: kstandardaction_p.h:73
+#, fuzzy, kde-format
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Zgjidh një javë"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Redisplay"
+msgstr "&Rishfaqe"
+
+#: kstandardaction_p.h:74
+#, fuzzy, kde-format
+#| msgid "&Redisplay"
+msgid "Redisplay document"
+msgstr "&Rishfaqe"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Up"
+msgstr "&Lart"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "&Previous Page"
+msgstr "&Faqja e Mëparshme"
+
+#: kstandardaction_p.h:81
+#, fuzzy, kde-format
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "&Faqja e Mëparshme"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Next Page"
+msgstr "&Faqja në Vijim"
+
+#: kstandardaction_p.h:82
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Shko tek Rreshti"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Go To..."
+msgstr "&Shko Tek..."
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Go to Page..."
+msgstr "&Shko Tek Faqja..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Go to Line..."
+msgstr "&Shko Tek Rreshti..."
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "&First Page"
+msgstr "&Faqja e Parë"
+
+#: kstandardaction_p.h:86
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Shko tek Rreshti"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "&Last Page"
+msgstr "&Faqja e Fundit"
+
+#: kstandardaction_p.h:87
+#, fuzzy, kde-format
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Shko Tek Faqja..."
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "&Back"
+msgstr "&Mbrapsht"
+
+#: kstandardaction_p.h:88
+#, fuzzy, kde-format
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "M&brapa në dokument"
+
+#: kstandardaction_p.h:89
+#, fuzzy, kde-format
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&Përpara"
+
+#: kstandardaction_p.h:89
+#, fuzzy, kde-format
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "&Përpara në dokument"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "&Shto Faqerojtës"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "Ndrysho Faqerojtëset..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Spelling..."
+msgstr "&Drejtshkrimi..."
+
+#: kstandardaction_p.h:94
+#, fuzzy, kde-format
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Kontrollo Drejtshkrimin"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show &Menubar"
+msgstr "Trego &Menunë"
+
+#: kstandardaction_p.h:96
+#, fuzzy, kde-format
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Trego &Menunë"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "Trego &Mjetet"
+
+#: kstandardaction_p.h:97
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Shfaq Shiritin e Mjeteve"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "Shfaq Sh&iritin e Statusit"
+
+#: kstandardaction_p.h:98
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Shfaq Shiritin e Statusit"
+
+#: kstandardaction_p.h:99
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "M&ënyra Me Ekran të Plotë"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "&Save Settings"
+msgstr "&Ruaj Parametrat"
+
+#: kstandardaction_p.h:101
+#, kde-format
+msgid "Configure S&hortcuts..."
+msgstr "Konfiguro Sh&kurtoret..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Konfiguro %1..."
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "Konfiguro Shiri&tat..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "Konfiguro &Shënimet..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &Broshura"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "What's &This?"
+msgstr "Çfarë Është &Kjo?"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "Këshilla e &Ditës"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Raporto Gabim..."
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "Switch Application &Language..."
+msgstr "Ndërro Gjuhën e &Programit..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&Rreth %1"
+
+#: kstandardaction_p.h:115
+#, kde-format
+msgid "About &KDE"
+msgstr "Rreth &KDE"
+
+#: kstandardaction_p.h:116
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "Fshije"
+
+#: kstandardaction_p.h:117
+#, fuzzy, kde-format
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "&Zëvendëso"
+
+#: kstandardaction_p.h:118
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:119
+#, kde-format
+msgid "&Donate"
+msgstr ""
+
+#: ktipdialog.cpp:238
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Këshilla e Ditës"
+
+#: ktipdialog.cpp:254
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "A e di...?\n"
+
+#: ktipdialog.cpp:306
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Shfaq këshilla në nisje"
+
+#: ktipdialog.cpp:311
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&E Mëparshme"
+
+#: ktipdialog.cpp:316
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Tjetër"
