@@ -169,8 +169,8 @@ struct DecoDefaultColors {
 // these numbers come from the Breeze color scheme ([breeze]/colors/Breeze.colors)
 static const SetDefaultColors defaultViewColors = {
     { 252, 252, 252 }, // Background
-    { 239, 240, 241 }, // Alternate
-    {  49,  54,  59 }, // Normal
+    { 252, 252, 252 }, // Alternate
+    {  35,  38, 39  }, // Normal
     { 127, 140, 141 }, // Inactive
     {  61, 174, 233 }, // Active
     {  41, 128, 185 }, // Link
@@ -181,9 +181,9 @@ static const SetDefaultColors defaultViewColors = {
 };
 
 static const SetDefaultColors defaultWindowColors = {
-    { 239, 240, 241 }, // Background
+    { 252, 252, 252 }, // Background
     { 189, 195, 199 }, // Alternate
-    {  49,  54,  59 }, // Normal
+    {  35,  38, 39  }, // Normal
     { 127, 140, 141 }, // Inactive
     {  61, 174, 233 }, // Active
     {  41, 128, 185 }, // Link
@@ -194,9 +194,9 @@ static const SetDefaultColors defaultWindowColors = {
 };
 
 static const SetDefaultColors defaultButtonColors = {
-    { 239, 240, 241 }, // Background
+    { 252, 252, 252 }, // Background
     { 189, 195, 199 }, // Alternate
-    {  49,  54,  59 }, // Normal
+    {  35,  38, 39  }, // Normal
     { 127, 140, 141 }, // Inactive
     {  61, 174, 233 }, // Active
     {  41, 128, 185 }, // Link
@@ -209,8 +209,8 @@ static const SetDefaultColors defaultButtonColors = {
 static const SetDefaultColors defaultSelectionColors = {
     {  61, 174, 233 }, // Background
     {  29, 153, 243 }, // Alternate
-    { 239, 240, 241 }, // Normal
-    { 239, 240, 241 }, // Inactive
+    { 252, 252, 252 }, // Normal
+    { 252, 252, 252 }, // Inactive
     { 252, 252, 252 }, // Active
     { 253, 188,  75 }, // Link
     { 189, 195, 199 }, // Visited
@@ -220,9 +220,9 @@ static const SetDefaultColors defaultSelectionColors = {
 };
 
 static const SetDefaultColors defaultTooltipColors = {
-    {  49,  54,  59 }, // Background
+    {  35,  38, 39  }, // Background
     {  77,  77,  77 }, // Alternate
-    { 239, 240, 241 }, // Normal
+    { 252, 252, 252 }, // Normal
     { 189, 195, 199 }, // Inactive
     {  61, 174, 233 }, // Active
     {  41, 128, 185 }, // Link
