@@ -21,6 +21,7 @@
  */
 
 #include "kconfigdialogmanager.h"
+#include "kconfigwidgets_debug.h"
 
 #include <QComboBox>
 #include <QGroupBox>
@@ -334,7 +335,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
 //       {
 //         if ((!d->insideGroupBox || !qobject_cast<QRadioButton*>(childWidget)) &&
 //             !qobject_cast<QGroupBox*>(childWidget) &&!qobject_cast<QTabWidget*>(childWidget) )
-//           qDebug() << "Widget '" << widgetName << "' (" << childWidget->metaObject()->className() << ") remains unmanaged.";
+//           qCDebug(KCONFIG_WIDGETS_LOG) << "Widget '" << widgetName << "' (" << childWidget->metaObject()->className() << ") remains unmanaged.";
 //       }
 //     }
 // #endif
@@ -369,7 +370,7 @@ void KConfigDialogManager::updateWidgets()
 
         if (!item->isEqual(property(widget))) {
             setProperty(widget, item->property());
-//        qDebug() << "The setting '" << it.key() << "' [" << widget->className() << "] has changed";
+//        qCDebug(KCONFIG_WIDGETS_LOG) << "The setting '" << it.key() << "' [" << widget->className() << "] has changed";
             changed = true;
         }
         if (item->isImmutable()) {
@@ -429,7 +430,7 @@ QByteArray KConfigDialogManager::getUserProperty(const QWidget *widget) const
         const QMetaProperty user = metaObject->userProperty();
         if (user.isValid()) {
             s_propertyMap()->insert(widget->metaObject()->className(), user.name());
-            //qDebug() << "class name: '" << widget->metaObject()->className()
+            //qCDebug(KCONFIG_WIDGETS_LOG) << "class name: '" << widget->metaObject()->className()
             //<< " 's USER property: " << metaProperty.name() << endl;
         } else {
             return QByteArray(); //no USER property
@@ -582,7 +583,7 @@ bool KConfigDialogManager::hasChanged() const
         }
 
         if (!item->isEqual(property(widget))) {
-            // qDebug() << "Widget for '" << it.key() << "' has changed.";
+            // qCDebug(KCONFIG_WIDGETS_LOG) << "Widget for '" << it.key() << "' has changed.";
             return true;
         }
     }

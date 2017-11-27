@@ -26,6 +26,7 @@
 */
 
 #include "kpastetextaction.h"
+#include "kconfigwidgets_debug.h"
 
 #include <QApplication>
 #include <QClipboard>
@@ -134,7 +135,7 @@ void KPasteTextActionPrivate::_k_slotTriggered(QAction *action)
         QString clipboardText = reply;
         reply = klipper.call(QStringLiteral("setClipboardContents"), clipboardText);
         //if (reply.isValid())
-        //  qDebug() << "Clipboard: " << qApp->clipboard()->text(QClipboard::Clipboard);
+        //  qCDebug(KCONFIG_WIDGETS_LOG) << "Clipboard: " << qApp->clipboard()->text(QClipboard::Clipboard);
     }
 }
 #endif // KDE_NO_DEPRECATED

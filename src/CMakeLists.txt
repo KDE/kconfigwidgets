@@ -13,6 +13,7 @@ set(kconfigwidgets_SRCS
   kstandardaction.cpp
   ktipdialog.cpp
 )
+ecm_qt_declare_logging_category(kconfigwidgets_SRCS HEADER kconfigwidgets_debug.h IDENTIFIER KCONFIG_WIDGETS_LOG CATEGORY_NAME kf5.kconfigwidgets)
 
 qt5_add_resources(kconfigwidgets_SRCS kconfigwidgets.qrc)
 

@@ -23,6 +23,7 @@
 */
 
 #include "kcmodule.h"
+#include "kconfigwidgets_debug.h"
 
 #include <QLayout>
 #include <QTimer>
@@ -171,7 +172,7 @@ void KCModule::authStatusChanged(KAuth::Action::AuthStatus status)
         break;
     }
 
-    qDebug() << useRootOnlyMessage();
+    qCDebug(KCONFIG_WIDGETS_LOG) << useRootOnlyMessage();
 }
 
 KCModule::~KCModule()

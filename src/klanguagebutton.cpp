@@ -19,6 +19,7 @@
  */
 
 #include "klanguagebutton.h"
+#include "kconfigwidgets_debug.h"
 
 #include <QMenu>
 #include <QLayout>
@@ -200,7 +201,7 @@ void KLanguageButton::loadAllLanguages()
 
 void KLanguageButton::slotTriggered(QAction *a)
 {
-    //qDebug() << "slotTriggered" << index;
+    //qCDebug(KCONFIG_WIDGETS_LOG) << "slotTriggered" << index;
     if (!a) {
         return;
     }
@@ -213,7 +214,7 @@ void KLanguageButton::slotTriggered(QAction *a)
 
 void KLanguageButton::slotHovered(QAction *a)
 {
-    //qDebug() << "slotHovered" << index;
+    //qCDebug(KCONFIG_WIDGETS_LOG) << "slotHovered" << index;
 
     emit highlighted(a->data().toString());
 }

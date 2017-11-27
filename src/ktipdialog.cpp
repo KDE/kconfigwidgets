@@ -25,6 +25,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ******************************************************************/
 
 #include "ktipdialog.h"
+#include "kconfigwidgets_debug.h"
 
 #include <QApplication>
 #include <QFile>
@@ -35,7 +36,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <QDesktopWidget>
 #include <QPushButton>
 #include <QTextBrowser>
-#include <QDebug>
 
 #include <kconfig.h>
 #include <kconfiggroup.h>
@@ -71,13 +71,13 @@ void KTipDatabase::Private::addTips(const QString &tipFile)
     const QString fileName = QStandardPaths::locate(QStandardPaths::GenericDataLocation, tipFile);
 
     if (fileName.isEmpty()) {
-        qDebug() << "KTipDatabase::addTips: can't find '" << tipFile << "' in standard dirs";
+        qCDebug(KCONFIG_WIDGETS_LOG) << "KTipDatabase::addTips: can't find '" << tipFile << "' in standard dirs";
         return;
     }
 
     QFile file(fileName);
     if (!file.open(QIODevice::ReadOnly)) {
-        qDebug() << "KTipDatabase::addTips: can't open '" << fileName << "' for reading";
+        qCDebug(KCONFIG_WIDGETS_LOG) << "KTipDatabase::addTips: can't open '" << fileName << "' for reading";
         return;
     }
 
@@ -104,7 +104,7 @@ void KTipDatabase::Private::addTips(const QString &tipFile)
         }
 
         if (tip.isEmpty()) {
-            qDebug() << "Empty tip found! Skipping! " << pos;
+            qCDebug(KCONFIG_WIDGETS_LOG) << "Empty tip found! Skipping! " << pos;
             continue;
         }
 

@@ -19,6 +19,7 @@
 #include "kstandardaction.h"
 #include "kstandardaction_p.h"
 #include "moc_kstandardaction_p.cpp"
+#include "kconfigwidgets_debug.h"
 
 #include <QtCore/QMutableStringListIterator>
 #include <QToolButton>
@@ -144,7 +145,7 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
     QAction *pAction = nullptr;
     const KStandardActionInfo *pInfo = infoPtr(id);
 
-    // qDebug() << "KStandardAction::create( " << id << "=" << (pInfo ? pInfo->psName : (const char*)0) << ", " << parent << " )"; // ellis
+    // qCDebug(KCONFIG_WIDGETS_LOG) << "KStandardAction::create( " << id << "=" << (pInfo ? pInfo->psName : (const char*)0) << ", " << parent << " )"; // ellis
 
     if (pInfo) {
         QString sLabel, iconName = pInfo->psIconName;
