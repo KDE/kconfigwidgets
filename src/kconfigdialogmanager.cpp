@@ -290,7 +290,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                                 }
                             }
                         } else {
-                            qWarning() << "Don't know how to monitor widget '" << childWidget->metaObject()->className() << "' for changes!";
+                            qCWarning(KCONFIG_WIDGETS_LOG) << "Don't know how to monitor widget '" << childWidget->metaObject()->className() << "' for changes!";
                         }
                     } else {
                         connect(childWidget, propertyChangeSignal,
@@ -312,7 +312,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                     d->insideGroupBox = true;
                 }
             } else {
-                qWarning() << "A widget named '" << widgetName << "' was found but there is no setting named '" << configId << "'";
+                qCWarning(KCONFIG_WIDGETS_LOG) << "A widget named '" << widgetName << "' was found but there is no setting named '" << configId << "'";
             }
         } else if (QLabel *label = qobject_cast<QLabel *>(childWidget)) {
             QWidget *buddy = label->buddy();
@@ -364,7 +364,7 @@ void KConfigDialogManager::updateWidgets()
 
         KConfigSkeletonItem *item = d->m_conf->findItem(it.key());
         if (!item) {
-            qWarning() << "The setting '" << it.key() << "' has disappeared!";
+            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting '" << it.key() << "' has disappeared!";
             continue;
         }
 
@@ -407,7 +407,7 @@ void KConfigDialogManager::updateSettings()
 
         KConfigSkeletonItem *item = d->m_conf->findItem(it.key());
         if (!item) {
-            qWarning() << "The setting '" << it.key() << "' has disappeared!";
+            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting '" << it.key() << "' has disappeared!";
             continue;
         }
 
@@ -457,7 +457,7 @@ QByteArray KConfigDialogManager::getCustomProperty(const QWidget *widget) const
     QVariant prop(widget->property("kcfg_property"));
     if (prop.isValid()) {
         if (!prop.canConvert(QVariant::ByteArray)) {
-            qWarning() << "kcfg_property on" << widget->metaObject()->className()
+            qCWarning(KCONFIG_WIDGETS_LOG) << "kcfg_property on" << widget->metaObject()->className()
                        << "is not of type ByteArray";
         } else {
             return prop.toByteArray();
@@ -488,7 +488,7 @@ QByteArray KConfigDialogManager::getCustomPropertyChangedSignal(const QWidget *w
     QVariant prop(widget->property("kcfg_propertyNotify"));
     if (prop.isValid()) {
         if (!prop.canConvert(QVariant::ByteArray)) {
-            qWarning() << "kcfg_propertyNotify on" << widget->metaObject()->className()
+            qCWarning(KCONFIG_WIDGETS_LOG) << "kcfg_propertyNotify on" << widget->metaObject()->className()
                        << "is not of type ByteArray";
         } else {
             return prop.toByteArray();
@@ -528,7 +528,7 @@ void KConfigDialogManager::setProperty(QWidget *w, const QVariant &v)
         }
     }
     if (userproperty.isEmpty()) {
-        qWarning() << w->metaObject()->className() << " widget not handled!";
+        qCWarning(KCONFIG_WIDGETS_LOG) << w->metaObject()->className() << " widget not handled!";
         return;
     }
 
@@ -561,7 +561,7 @@ QVariant KConfigDialogManager::property(QWidget *w) const
         }
     }
     if (userproperty.isEmpty()) {
-        qWarning() << w->metaObject()->className() << " widget not handled!";
+        qCWarning(KCONFIG_WIDGETS_LOG) << w->metaObject()->className() << " widget not handled!";
         return QVariant();
     }
 
@@ -578,7 +578,7 @@ bool KConfigDialogManager::hasChanged() const
 
         KConfigSkeletonItem *item = d->m_conf->findItem(it.key());
         if (!item) {
-            qWarning() << "The setting '" << it.key() << "' has disappeared!";
+            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting '" << it.key() << "' has disappeared!";
             continue;
         }
 

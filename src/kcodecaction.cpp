@@ -26,6 +26,7 @@
 */
 
 #include "kcodecaction.h"
+#include "kconfigwidgets_debug.h"
 
 #include <kcharsets.h>
 #include <klocalizedstring.h>
@@ -139,7 +140,7 @@ int KCodecAction::mibForName(const QString &codecName, bool *ok) const
         return mib;
     }
 
-    qWarning() << "Invalid codec name: "  << codecName;
+    qCWarning(KCONFIG_WIDGETS_LOG) << "Invalid codec name: "  << codecName;
     return MIB_DEFAULT;
 }
 
