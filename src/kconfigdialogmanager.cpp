@@ -51,12 +51,12 @@ public:
     /**
     * KConfigSkeleton object used to store settings
      */
-    KCoreConfigSkeleton *m_conf;
+    KCoreConfigSkeleton *m_conf = nullptr;
 
     /**
     * Dialog being managed
      */
-    QWidget *m_dialog;
+    QWidget *m_dialog = nullptr;
 
     QHash<QString, QWidget *> knownWidget;
     QHash<QString, QWidget *> buddyWidget;

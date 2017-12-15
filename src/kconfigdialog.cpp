@@ -33,7 +33,7 @@
 #include <QIcon>
 #include <QLayout>
 #include <QPushButton>
-#include <QtCore/QMap>
+#include <QMap>
 #include <QCoreApplication>
 #include <QDesktopServices>
 #include <QScrollArea>

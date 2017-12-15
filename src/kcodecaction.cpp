@@ -90,7 +90,6 @@ void KCodecAction::Private::init(bool showAutoOptions)
     q->setToolBarMode(MenuMode);
     defaultAction = q->addAction(i18nc("Encodings menu", "Default"));
 
-    int i;
     foreach (const QStringList &encodingsForScript, KCharsets::charsets()->encodingsByScript()) {
         KSelectAction *tmp = new KSelectAction(encodingsForScript.at(0), q);
         if (showAutoOptions) {
@@ -100,7 +99,7 @@ void KCodecAction::Private::init(bool showAutoOptions)
                 tmp->menu()->addSeparator();
             }
         }
-        for (i = 1; i < encodingsForScript.size(); ++i) {
+        for (int i = 1; i < encodingsForScript.size(); ++i) {
             tmp->addAction(encodingsForScript.at(i));
         }
         q->connect(tmp, SIGNAL(triggered(QAction*)), q, SLOT(_k_subActionTriggered(QAction*)));
@@ -193,10 +192,9 @@ bool KCodecAction::setCurrentCodec(QTextCodec *codec)
         return false;
     }
 
-    int i, j;
-    for (i = 0; i < actions().size(); ++i) {
+    for (int i = 0; i < actions().size(); ++i) {
         if (actions().at(i)->menu()) {
-            for (j = 0; j < actions().at(i)->menu()->actions().size(); ++j) {
+            for (int j = 0; j < actions().at(i)->menu()->actions().size(); ++j) {
                 if (!j && !actions().at(i)->menu()->actions().at(j)->data().isNull()) {
                     continue;
                 }
@@ -251,8 +249,7 @@ bool KCodecAction::setCurrentProberType(KEncodingProber::ProberType scri)
         return true;
     }
 
-    int i;
-    for (i = 0; i < actions().size(); ++i) {
+    for (int i = 0; i < actions().size(); ++i) {
         if (actions().at(i)->menu()) {
             if (!actions().at(i)->menu()->actions().isEmpty()
                     && !actions().at(i)->menu()->actions().at(0)->data().isNull()

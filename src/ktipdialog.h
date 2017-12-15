@@ -178,10 +178,6 @@ protected:
 private:
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void _k_nextTip())
-    Q_PRIVATE_SLOT(d, void _k_prevTip())
-    Q_PRIVATE_SLOT(d, void _k_showOnStart(bool))
     Q_DISABLE_COPY(KTipDialog)
 };
 

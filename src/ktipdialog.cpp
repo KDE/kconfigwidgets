@@ -120,7 +120,7 @@ KTipDatabase::KTipDatabase(const QString &_tipFile)
     QString tipFile = _tipFile;
 
     if (tipFile.isEmpty()) {
-        tipFile = QCoreApplication::applicationName() + "/tips";
+        tipFile = QCoreApplication::applicationName() + QStringLiteral("/tips");
     }
 
     d->loadTips(tipFile);
@@ -134,7 +134,7 @@ KTipDatabase::KTipDatabase(const QStringList &tipsFiles)
     : d(new Private)
 {
     if (tipsFiles.isEmpty() || ((tipsFiles.count() == 1) && tipsFiles.first().isEmpty())) {
-        d->addTips(QCoreApplication::applicationName() + "/tips");
+        d->addTips(QCoreApplication::applicationName() + QStringLiteral("/tips"));
     } else {
         for (QStringList::ConstIterator it = tipsFiles.begin(); it != tipsFiles.end(); ++it) {
             d->addTips(*it);
@@ -324,10 +324,10 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
     KConfigGroup config(KSharedConfig::openConfig(), "TipOfDay");
     d->tipOnStart->setChecked(config.readEntry("RunOnStart", true));
 
-    connect(next, SIGNAL(clicked()), this, SLOT(_k_nextTip()));
-    connect(prev, SIGNAL(clicked()), this, SLOT(_k_prevTip()));
-    connect(ok, SIGNAL(clicked()), this, SLOT(accept()));
-    connect(d->tipOnStart, SIGNAL(toggled(bool)), this, SLOT(_k_showOnStart(bool)));
+    connect(next, &QPushButton::clicked, this, [this]() { d->_k_nextTip(); });
+    connect(prev, &QPushButton::clicked, this, [this]() { d->_k_prevTip(); });
+    connect(ok, &QAbstractButton::clicked, this, &QDialog::accept);
+    connect(d->tipOnStart, &QCheckBox::toggled, this, [this](bool state) { d->_k_showOnStart(state); });
 
     ok->setFocus();
 

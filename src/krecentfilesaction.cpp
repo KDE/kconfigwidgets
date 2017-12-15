@@ -130,7 +130,7 @@ static QString titleWithSensibleWidth(const QString &nameValue, const QString &v
     }
     const QFontMetrics fontMetrics = QFontMetrics(QFont());
 
-    QString title = nameValue + " [" + value + ']';
+    QString title = nameValue + QStringLiteral(" [") + value + QLatin1Char(']');
     if (fontMetrics.width(title) > maxWidthForTitles) {
         // If it does not fit, try to cut only the whole path, though if the
         // name is too long (more than 3/4 of the whole text) we cut it a bit too
@@ -144,7 +144,7 @@ static QString titleWithSensibleWidth(const QString &nameValue, const QString &v
             cutNameValue = nameValue;
             cutValue = fontMetrics.elidedText(value, Qt::ElideMiddle, maxWidthForTitles - nameWidth);
         }
-        title = cutNameValue + " [" + cutValue + ']';
+        title = cutNameValue + QStringLiteral(" [") + cutValue + QLatin1Char(']');
     }
     return title;
 }

@@ -21,7 +21,7 @@
 #include "moc_kstandardaction_p.cpp"
 #include "kconfigwidgets_debug.h"
 
-#include <QtCore/QMutableStringListIterator>
+#include <QMutableStringListIterator>
 #include <QToolButton>
 
 #include <QApplication>

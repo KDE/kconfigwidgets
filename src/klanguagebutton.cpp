@@ -71,9 +71,9 @@ public:
     void clear();
     QAction *findAction(const QString &data) const;
 
-    QPushButton *button;
+    QPushButton *button = nullptr;
     QStringList ids;
-    QMenu *popup;
+    QMenu *popup = nullptr;
     QString current;
     QString locale;
     bool staticText : 1;
@@ -177,10 +177,10 @@ void KLanguageButton::loadAllLanguages()
 {
     QStringList langlist;
     const QStringList localeDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("locale"), QStandardPaths::LocateDirectory);
-    Q_FOREACH (const QString &localeDir, localeDirs) {
+    for (const QString &localeDir : localeDirs) {
         const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
-        Q_FOREACH (const QString &d, entries) {
-            const QString entryFile = localeDir + '/' + d + "/kf5_entry.desktop";
+        for (const QString &d : entries) {
+            const QString entryFile = localeDir + QLatin1Char('/') + d + QStringLiteral("/kf5_entry.desktop");
             if (QFile::exists(entryFile)) {
                 langlist.append(entryFile);
             }
@@ -189,7 +189,7 @@ void KLanguageButton::loadAllLanguages()
     langlist.sort();
     for (int i = 0, count = langlist.count(); i < count; ++i) {
         QString fpath = langlist[i].left(langlist[i].length() - 14);
-        QString code = fpath.mid(fpath.lastIndexOf('/') + 1);
+        QString code = fpath.mid(fpath.lastIndexOf(QLatin1Char('/')) + 1);
         KConfig entry(langlist[i], KConfig::SimpleConfig);
         KConfigGroup group(&entry, "KCM Locale");
         QString name = group.readEntry("Name", i18n("without name"));

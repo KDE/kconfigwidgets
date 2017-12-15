@@ -80,9 +80,9 @@ void KColorSchemeModel::init()
                              QStringLiteral("color-schemes"),
                              QStandardPaths::LocateDirectory);
     QStringList schemeFiles;
-    Q_FOREACH (const QString &dir, dirs) {
+    for (const QString &dir : dirs) {
         const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.colors"));
-        Q_FOREACH (const QString &file, fileNames) {
+        for (const QString &file : fileNames) {
             schemeFiles << dir + QDir::separator() + file;
         }
     }

@@ -47,7 +47,7 @@ void KHelpClient::invokeHelp(const QString &anchor, const QString &_appname)
 
     QString docPath;
     const QStringList desktopDirs = QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation);
-    Q_FOREACH (const QString &dir, desktopDirs) {
+    for (const QString &dir : desktopDirs) {
         QDirIterator it(dir, QStringList() << appname + QLatin1String(".desktop"), QDir::NoFilter, QDirIterator::Subdirectories);
         while (it.hasNext()) {
             const QString desktopPath(it.next());

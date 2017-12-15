@@ -54,7 +54,7 @@ public:
     void init();
 
     KPasteTextAction *q;
-    QMenu *m_popup;
+    QMenu *m_popup = nullptr;
     bool m_mixedMode;
 };
 
@@ -114,7 +114,7 @@ void KPasteTextActionPrivate::_k_menuAboutToShow()
     const QFontMetrics fm = m_popup->fontMetrics();
     foreach (const QString &string, list) {
         QString text = fm.elidedText(string.simplified(), Qt::ElideMiddle, fm.maxWidth() * 20);
-        text.replace('&', QLatin1String("&&"));
+        text.replace(QLatin1Char('&'), QLatin1String("&&"));
         QAction *action = m_popup->addAction(text);
         if (!found && string == clipboardText) {
             action->setChecked(true);
