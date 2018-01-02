@@ -63,13 +63,13 @@ public:
                                       | QDialogButtonBox::Apply
                                       | QDialogButtonBox::Cancel
                                       | QDialogButtonBox::Help);
-        connect(buttonBox->button(QDialogButtonBox::Ok), SIGNAL(clicked()), q, SLOT(updateSettings()));
-        connect(buttonBox->button(QDialogButtonBox::Apply), SIGNAL(clicked()), q, SLOT(updateSettings()));
-        connect(buttonBox->button(QDialogButtonBox::Apply), SIGNAL(clicked()), q, SLOT(_k_updateButtons()));
-        connect(buttonBox->button(QDialogButtonBox::Cancel), SIGNAL(clicked()), q, SLOT(updateWidgets()));
-        connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), SIGNAL(clicked()), q, SLOT(updateWidgetsDefault()));
-        connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), SIGNAL(clicked()), q, SLOT(_k_updateButtons()));
-        connect(buttonBox->button(QDialogButtonBox::Help), SIGNAL(clicked()), q, SLOT(showHelp()));
+        connect(buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked, q, &KConfigDialog::updateSettings);
+        connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked, q, &KConfigDialog::updateSettings);
+        connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked, q, [this]() { _k_updateButtons(); });
+        connect(buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked, q, &KConfigDialog::updateWidgets);
+        connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked, q, &KConfigDialog::updateWidgetsDefault);
+        connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked, q, [this]() { _k_updateButtons(); });
+        connect(buttonBox->button(QDialogButtonBox::Help), &QAbstractButton::clicked, q, &KConfigDialog::showHelp);
 
         connect(q, SIGNAL(pageRemoved(KPageWidgetItem*)), q, SLOT(onPageRemoved(KPageWidgetItem*)));
 
