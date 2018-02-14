@@ -58,11 +58,11 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { PasteText,     KStandardShortcut::Paste, "edit_paste", I18N_NOOP("&Paste"), I18N_NOOP("Paste clipboard content"), "edit-paste" },
     { Clear,         KStandardShortcut::Clear, "edit_clear", I18N_NOOP("C&lear"), nullptr, "edit-clear" },
     { SelectAll,     KStandardShortcut::SelectAll, "edit_select_all", I18N_NOOP("Select &All"), nullptr, "edit-select-all" },
-    { Deselect,      KStandardShortcut::Deselect, "edit_deselect", I18N_NOOP("Dese&lect"), nullptr, nullptr },
+    { Deselect,      KStandardShortcut::Deselect, "edit_deselect", I18N_NOOP("Dese&lect"), nullptr, "edit-select-none" },
     { Find,          KStandardShortcut::Find, "edit_find", I18N_NOOP("&Find..."), nullptr, "edit-find" },
     { FindNext,      KStandardShortcut::FindNext, "edit_find_next", I18N_NOOP("Find &Next"), nullptr, "go-down-search" },
     { FindPrev,      KStandardShortcut::FindPrev, "edit_find_prev", I18N_NOOP("Find Pre&vious"), nullptr, "go-up-search" },
-    { Replace,       KStandardShortcut::Replace, "edit_replace", I18N_NOOP("&Replace..."), nullptr, nullptr },
+    { Replace,       KStandardShortcut::Replace, "edit_replace", I18N_NOOP("&Replace..."), nullptr, "edit-find-replace" },
 
     { ActualSize,    KStandardShortcut::ActualSize, "view_actual_size", I18N_NOOP("&Actual Size"), I18N_NOOP("View document at its actual size"), "zoom-original" },
     { FitToPage,     KStandardShortcut::FitToPage, "view_fit_to_page", I18N_NOOP("&Fit to Page"), I18N_NOOP("Zoom to fit page in window"), nullptr },
