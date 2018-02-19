@@ -28,7 +28,6 @@
 #include <QFile>
 #include <QLocale>
 
-#include <klocalizedstring.h>
 #include <kconfig.h>
 #include <kconfiggroup.h>
 
@@ -134,17 +133,35 @@ void KLanguageButton::showLanguageCodes(bool show)
     d->showCodes = show;
 }
 
+static QString nameFromEntryFile(const QString &entryFile)
+{
+    const KConfig entry(entryFile, KConfig::SimpleConfig);
+    const KConfigGroup group(&entry, "KCM Locale");
+    return group.readEntry("Name", QString());
+}
+
 void KLanguageButton::insertLanguage(const QString &languageCode, const QString &name, int index)
 {
     QString text;
     bool showCodes = d->showCodes;
     if (name.isEmpty()) {
-        text = languageCode;
-        QLocale locale(languageCode);
-        if (locale != QLocale::c()) {
-            text = locale.nativeLanguageName();
-        } else {
-            showCodes = false;
+        const QString entryFile = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("locale/") + languageCode + QStringLiteral("/kf5_entry.desktop"));
+        if (QFile::exists(entryFile)) {
+            text = nameFromEntryFile(entryFile);
+        }
+
+        if (text.isEmpty()) {
+            text = languageCode;
+            QLocale locale(languageCode);
+            if (locale != QLocale::c()) {
+                text = locale.nativeLanguageName();
+                // For some languages the native name might be empty.
+                // In this case use the non native language name as fallback.
+                // See: QTBUG-51323
+                text = text.isEmpty() ? QLocale::languageToString(locale.language()) : text;
+            } else {
+                showCodes = false;
+            }
         }
     } else {
         text = name;
@@ -190,10 +207,7 @@ void KLanguageButton::loadAllLanguages()
     for (int i = 0, count = langlist.count(); i < count; ++i) {
         QString fpath = langlist[i].left(langlist[i].length() - 14);
         QString code = fpath.mid(fpath.lastIndexOf(QLatin1Char('/')) + 1);
-        KConfig entry(langlist[i], KConfig::SimpleConfig);
-        KConfigGroup group(&entry, "KCM Locale");
-        QString name = group.readEntry("Name", i18n("without name"));
-        insertLanguage(code, name);
+        insertLanguage(code);
     }
 
     setCurrentItem(d->locale);
