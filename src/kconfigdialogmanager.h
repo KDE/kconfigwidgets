@@ -23,8 +23,8 @@
 
 #include <kconfigwidgets_export.h>
 
-#include <QtCore/QObject>
-#include <QtCore/QHash>
+#include <QObject>
+#include <QHash>
 class KConfigDialogManagerPrivate;
 
 class KCoreConfigSkeleton;

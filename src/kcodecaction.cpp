@@ -34,7 +34,7 @@
 #include <QDebug>
 #include <QMenu>
 #include <QVariant>
-#include <QtCore/QTextCodec>
+#include <QTextCodec>
 
 // Acording to http://www.iana.org/assignments/ianacharset-mib
 // the default/unknown mib value is 2.

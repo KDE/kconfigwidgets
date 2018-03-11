@@ -27,7 +27,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define KTIP_H
 
 #include <QDialog>
-#include <QtCore/QStringList>
+#include <QStringList>
 
 #include <kconfigwidgets_export.h>
 
