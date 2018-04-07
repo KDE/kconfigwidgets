@@ -1,0 +1,660 @@
+# translation of kdelibs4.po to Bengali INDIA
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Runa Bhattacharjee <runabh@gmail.com>, 2007.
+# Runa Bhattacharjee <runab@redhat.com>, 2008, 2009.
+# Runa Bhattacharjee <runab@fedoraproject.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2018-02-20 03:16+0100\n"
+"PO-Revision-Date: 2009-12-28 14:35+0530\n"
+"Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
+"Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
+"Language: bn_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "রুণা ভট্টাচার্য্য"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "runabh@gmail.com"
+
+#: kcmodule.cpp:167
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "সংরক্ষণের পূর্বে পরিচয় প্রমাণ করার অনুরোধ জানানো হবে"
+
+#: kcmodule.cpp:171
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "কনফিগারেশন সংরক্ষণের জন্য আপনি অধিকারপ্রাপ্ত নন"
+
+#: kcodecaction.cpp:91
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "ডিফল্ট"
+
+#: kcodecaction.cpp:98
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "স্বয়ংক্রিয় সনাক্তকরণ"
+
+#: kconfigdialog.cpp:48
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "কনফিগার করুন"
+
+#: krecentfilesaction.cpp:78
+#, kde-format
+msgid "No Entries"
+msgstr "কোনো এনট্রি উপস্থিত নেই"
+
+#: krecentfilesaction.cpp:84
+#, kde-format
+msgid "Clear List"
+msgstr "তালিকার তথ্য মুছে ফেলা হবে"
+
+#: kstandardaction.cpp:154
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "পূর্ববর্তী ধাপ (&B)"
+
+#: kstandardaction.cpp:161
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "পরবর্তী ধাপ (&F)"
+
+#: kstandardaction.cpp:168
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "প্রথম পৃষ্ঠা (&H)"
+
+#: kstandardaction.cpp:171
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "সাহায্য (&H)"
+
+#: kstandardaction.cpp:208
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+
+#: kstandardaction.cpp:227
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&New"
+msgstr "নতুন (&N)"
+
+#: kstandardaction_p.h:41
+#, fuzzy, kde-format
+#| msgid "Create New Tag..."
+msgid "Create new document"
+msgstr "নতুন ট্যাগ নির্মাণ করুন"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Open..."
+msgstr "খুলুন...(&O)"
+
+#: kstandardaction_p.h:42
+#, fuzzy, kde-format
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "ডকুমেন্টের পূর্ববর্তী অংশ (&B)"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open &Recent"
+msgstr "সম্প্রতি ব্যবহৃত খুলুন (&R)"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Save"
+msgstr "সংরক্ষণ করুন (&S)"
+
+#: kstandardaction_p.h:44
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "ডকুমেন্ট বন্ধ করুন"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save &As..."
+msgstr "নতুন রূপে সংরক্ষণ...(&A)"
+
+#: kstandardaction_p.h:45
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "ডকুমেন্ট বন্ধ করুন"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Re&vert"
+msgstr "পূর্বাবস্থা (&v)"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "&Close"
+msgstr "বন্ধ করুন (&C)"
+
+#: kstandardaction_p.h:47
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "ডকুমেন্ট বন্ধ করুন"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "&Print..."
+msgstr "প্রিন্ট করুন...(&P)"
+
+#: kstandardaction_p.h:48
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Print Previe&w"
+msgstr "প্রিন্টের পূর্বরূপ (&w)"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "&Mail..."
+msgstr "মেইল...(&M)"
+
+#: kstandardaction_p.h:50
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "ডকুমেন্ট বন্ধ করুন"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "&Quit"
+msgstr "প্রস্থান (&Q)"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Quit application"
+msgstr "অ্যাপ্লিকেশন থেকে প্রস্থান করুন"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Undo"
+msgstr "পূর্বাবস্থা (&U)"
+
+#: kstandardaction_p.h:53
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "HTML নথিপত্র"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Re&do"
+msgstr "পুনরাবৃত্তি (&d)"
+
+#: kstandardaction_p.h:54
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "HTML নথিপত্র"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cu&t"
+msgstr "কাট করুন (&t)"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Copy"
+msgstr "কপি করুন (&C)"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "&Paste"
+msgstr "পেস্ট করুন (&P)"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, fuzzy, kde-format
+#| msgid "Uploading content..."
+msgid "Paste clipboard content"
+msgstr "বিষয়বস্তু আপলোড করা হচ্ছে..."
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "C&lear"
+msgstr "পরিশ্রুত করুন (&l)"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Select &All"
+msgstr "সমগ্র নির্বাচন করুন (&A)"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Dese&lect"
+msgstr "নির্বাচন বাতিল (&l)"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "&Find..."
+msgstr "অনুসন্ধান...(&F)"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Find &Next"
+msgstr "পরবর্তী উপস্থিতি অনুসন্ধান (&N)"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "পূর্ববর্তী উপস্থিতি অনুসন্ধান (&v)"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Replace..."
+msgstr "প্রতিস্থাপন...(&R)"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Actual Size"
+msgstr "প্রকৃত মাপ (&A)"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "&Fit to Page"
+msgstr "পৃষ্ঠা অনুযায়ী মাপ নির্ধারণ (&F)"
+
+#: kstandardaction_p.h:68
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "উল্লিখিত পংক্তি সংখ্যা দেখুন"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "পৃষ্ঠার প্রস্থ অনুযায়ী মাপ নির্ধারণ (&W)"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "পৃষ্ঠার দৈর্ঘ্য অনুযায়ী মাপ নির্ধারণ (&H)"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Zoom &In"
+msgstr "বড় করে প্রদর্শন (&I)"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Zoom &Out"
+msgstr "ছোট করে প্রদর্শন (&O)"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Zoom..."
+msgstr "প্রদর্শনের মাপ...(&Z)"
+
+#: kstandardaction_p.h:73
+#, fuzzy, kde-format
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "একটি সপ্তাহ নির্বাচন করুন"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Redisplay"
+msgstr "পুনরায় প্রদর্শন (&R)"
+
+#: kstandardaction_p.h:74
+#, fuzzy, kde-format
+#| msgid "&Redisplay"
+msgid "Redisplay document"
+msgstr "পুনরায় প্রদর্শন (&R)"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Up"
+msgstr "উপরে (&U)"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "&Previous Page"
+msgstr "পূর্ববর্তী পৃষ্ঠা (&P)"
+
+#: kstandardaction_p.h:81
+#, fuzzy, kde-format
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "পূর্ববর্তী পৃষ্ঠা (&P)"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Next Page"
+msgstr "পরবর্তী পৃষ্ঠা (&N)"
+
+#: kstandardaction_p.h:82
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "উল্লিখিত পংক্তি সংখ্যা দেখুন"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Go To..."
+msgstr "চিহ্নিত অবস্থানে চলুন...(&G)"
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Go to Page..."
+msgstr "উল্লিখিত পৃষ্ঠা প্রদর্শন...(&G)"
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Go to Line..."
+msgstr "উল্লিখিত পংক্তি প্রদর্শন...(&G)"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "&First Page"
+msgstr "প্রথম পৃষ্ঠা (&F)"
+
+#: kstandardaction_p.h:86
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "উল্লিখিত পংক্তি সংখ্যা দেখুন"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "&Last Page"
+msgstr "অন্তিম পৃষ্ঠা (&L)"
+
+#: kstandardaction_p.h:87
+#, fuzzy, kde-format
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "উল্লিখিত পৃষ্ঠা প্রদর্শন...(&G)"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "&Back"
+msgstr "পূর্ববর্তী (&B)"
+
+#: kstandardaction_p.h:88
+#, fuzzy, kde-format
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "ডকুমেন্টের পূর্ববর্তী অংশ (&B)"
+
+#: kstandardaction_p.h:89
+#, fuzzy, kde-format
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "পরবর্তী ধাপ (&F)"
+
+#: kstandardaction_p.h:89
+#, fuzzy, kde-format
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "ডকুমেন্টের পরবর্তী অংশে (&F)"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "বুকমার্ক যোগ করুন (&A)"
+
+#: kstandardaction_p.h:92
+#, fuzzy, kde-format
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks..."
+msgstr "বুকমার্ক সম্পাদনা (&E)"
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Spelling..."
+msgstr "বানান...(&S)"
+
+#: kstandardaction_p.h:94
+#, fuzzy, kde-format
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "বানান পরীক্ষা করা হবে"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show &Menubar"
+msgstr "মেনুবার প্রদর্শন (&M)"
+
+#: kstandardaction_p.h:96
+#, fuzzy, kde-format
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "মেনুবার প্রদর্শন (&M)"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "টুলবার প্রদর্শন (&T)"
+
+#: kstandardaction_p.h:97
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "টুলবার প্রদর্শন"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "স্ট্যাটাস-বার প্রদর্শন (&a)"
+
+#: kstandardaction_p.h:98
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "স্ট্যাটাস-বার প্রদর্শন"
+
+#: kstandardaction_p.h:99
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "সম্পূর্ণ পর্দাজুড়ে প্রদর্শন (&u)"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "&Save Settings"
+msgstr "বৈশিষ্ট্য সংরক্ষণ করুন (&S)"
+
+#: kstandardaction_p.h:101
+#, kde-format
+msgid "Configure S&hortcuts..."
+msgstr "শর্টকাট কনফিগার করুন...(&h)"
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 কনফিগার করুন...(&C)"
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "টুলবার কনফিগার করুন... (&b)"
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "সূচনাবার্তা কনফিগার করুন... (&N)"
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 হ্যান্ড-বুক (&H)"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "What's &This?"
+msgstr "এটি কী? (&T)"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "দিনের উপদেশ (&D)"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Report Bug..."
+msgstr "বাগ রিপোর্ট দায়ের করুন...(&R)"
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "Switch Application &Language..."
+msgstr "অ্যাপ্লিকেশনের ভাষা পরিবর্তন করুন...(&L)"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "%1 পরিচিতি (&A)"
+
+#: kstandardaction_p.h:115
+#, kde-format
+msgid "About &KDE"
+msgstr "KDE পরিচিতি (&K)"
+
+#: kstandardaction_p.h:116
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "মুছে ফেলুন"
+
+#: kstandardaction_p.h:117
+#, fuzzy, kde-format
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "প্রতিস্থাপন...(&R)"
+
+#: kstandardaction_p.h:118
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:119
+#, kde-format
+msgid "&Donate"
+msgstr ""
+
+#: ktipdialog.cpp:238
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "আজকের উপদেশ"
+
+#: ktipdialog.cpp:254
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "আপনি কি জানেন...?\n"
+
+#: ktipdialog.cpp:306
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "প্রারম্ভকালে উপেদশ প্রদর্শন করা হবে (&S)"
+
+#: ktipdialog.cpp:311
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "পূর্ববর্তী (&P)"
+
+#: ktipdialog.cpp:316
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "পরবর্তী (&N)"
