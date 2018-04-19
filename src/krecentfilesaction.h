@@ -90,7 +90,7 @@ public:
     /**
      *  Destructor.
      */
-    ~KRecentFilesAction() Q_DECL_OVERRIDE;
+    ~KRecentFilesAction() override;
 
     /**
      * Adds \a action to the list of URLs, with \a url and title \a name.
@@ -103,7 +103,7 @@ public:
     /**
      * Reimplemented for internal reasons.
      */
-    QAction *removeAction(QAction *action) Q_DECL_OVERRIDE;
+    QAction *removeAction(QAction *action) override;
 
 public Q_SLOTS:
     /**

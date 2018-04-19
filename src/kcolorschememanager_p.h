@@ -33,9 +33,9 @@ class KColorSchemeModel : public QAbstractListModel
     Q_OBJECT
 public:
     explicit KColorSchemeModel(QObject *parent = nullptr);
-    ~KColorSchemeModel() Q_DECL_OVERRIDE;
-    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
-    int rowCount(const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;
+    ~KColorSchemeModel() override;
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
 private:
     void init();

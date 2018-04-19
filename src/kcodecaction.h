@@ -53,7 +53,7 @@ public:
 
     KCodecAction(const QIcon &icon, const QString &text, QObject *parent, bool showAutoOptions = false);
 
-    ~KCodecAction() Q_DECL_OVERRIDE;
+    ~KCodecAction() override;
 
 public:
     int mibForName(const QString &codecName, bool *ok = nullptr) const;
@@ -103,7 +103,7 @@ Q_SIGNALS:
     void defaultItemTriggered();
 
 protected Q_SLOTS:
-    void actionTriggered(QAction *) Q_DECL_OVERRIDE;
+    void actionTriggered(QAction *) override;
 
 protected:
     using KSelectAction::triggered;

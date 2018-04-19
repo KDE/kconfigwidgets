@@ -123,7 +123,7 @@ public:
     /**
      * Destroys the tip dialog.
      */
-    ~KTipDialog() Q_DECL_OVERRIDE;
+    ~KTipDialog() override;
 
     /**
      * Shows a tip.
@@ -173,7 +173,7 @@ public:
     static void setShowOnStart(bool show);
 
 protected:
-    bool eventFilter(QObject *, QEvent *) Q_DECL_OVERRIDE;
+    bool eventFilter(QObject *, QEvent *) override;
 
 private:
     class Private;

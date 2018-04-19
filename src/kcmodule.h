@@ -128,7 +128,7 @@ public:
     /**
      * Destroys the module.
      */
-    ~KCModule() Q_DECL_OVERRIDE;
+    ~KCModule() override;
 
     /**
      * Return a quick-help text.
@@ -334,7 +334,7 @@ protected:
      */
     void setQuickHelp(const QString &help);
 
-    void showEvent(QShowEvent *ev) Q_DECL_OVERRIDE;
+    void showEvent(QShowEvent *ev) override;
 
     friend class KCModuleProxy;
 
