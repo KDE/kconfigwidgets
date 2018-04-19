@@ -123,7 +123,7 @@ public:
     /**
      * Destroys the tip dialog.
      */
-    ~KTipDialog();
+    ~KTipDialog() Q_DECL_OVERRIDE;
 
     /**
      * Shows a tip.

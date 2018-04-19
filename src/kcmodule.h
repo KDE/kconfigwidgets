@@ -128,7 +128,7 @@ public:
     /**
      * Destroys the module.
      */
-    ~KCModule();
+    ~KCModule() Q_DECL_OVERRIDE;
 
     /**
      * Return a quick-help text.

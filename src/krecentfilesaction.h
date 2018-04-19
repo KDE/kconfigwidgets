@@ -90,7 +90,7 @@ public:
     /**
      *  Destructor.
      */
-    virtual ~KRecentFilesAction();
+    ~KRecentFilesAction() Q_DECL_OVERRIDE;
 
     /**
      * Adds \a action to the list of URLs, with \a url and title \a name.

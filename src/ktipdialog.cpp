@@ -159,7 +159,7 @@ void KTipDatabase::nextTip()
 
     d->currentTip += 1;
 
-    if (d->currentTip >= (int) d->tips.count()) {
+    if (d->currentTip >= d->tips.count()) {
         d->currentTip = 0;
     }
 }

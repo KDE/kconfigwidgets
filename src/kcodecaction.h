@@ -53,7 +53,7 @@ public:
 
     KCodecAction(const QIcon &icon, const QString &text, QObject *parent, bool showAutoOptions = false);
 
-    virtual ~KCodecAction();
+    ~KCodecAction() Q_DECL_OVERRIDE;
 
 public:
     int mibForName(const QString &codecName, bool *ok = nullptr) const;

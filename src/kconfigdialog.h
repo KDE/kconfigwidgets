@@ -111,7 +111,7 @@ public:
      * Deletes private class.
      * @see exists()
      */
-    ~KConfigDialog();
+    ~KConfigDialog() Q_DECL_OVERRIDE;
 
     /**
      * Adds page to the dialog and to KConfigDialogManager.  When an

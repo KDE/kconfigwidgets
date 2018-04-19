@@ -60,7 +60,7 @@ static void checkInsertPos(QMenu *popup, const QString &str, int &index)
 class KLanguageButtonPrivate
 {
 public:
-    KLanguageButtonPrivate(KLanguageButton *parent);
+    explicit KLanguageButtonPrivate(KLanguageButton *parent);
     ~KLanguageButtonPrivate()
     {
         delete button;
