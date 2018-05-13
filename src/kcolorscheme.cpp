@@ -169,7 +169,7 @@ struct DecoDefaultColors {
 // these numbers come from the Breeze color scheme ([breeze]/colors/Breeze.colors)
 static const SetDefaultColors defaultViewColors = {
     { 252, 252, 252 }, // Background
-    { 252, 252, 252 }, // Alternate
+    { 239, 240, 241 }, // Alternate
     {  35,  38, 39  }, // Normal
     { 127, 140, 141 }, // Inactive
     {  61, 174, 233 }, // Active
@@ -181,7 +181,7 @@ static const SetDefaultColors defaultViewColors = {
 };
 
 static const SetDefaultColors defaultWindowColors = {
-    { 252, 252, 252 }, // Background
+    { 239, 240, 241 }, // Background
     { 189, 195, 199 }, // Alternate
     {  35,  38, 39  }, // Normal
     { 127, 140, 141 }, // Inactive
@@ -194,7 +194,7 @@ static const SetDefaultColors defaultWindowColors = {
 };
 
 static const SetDefaultColors defaultButtonColors = {
-    { 252, 252, 252 }, // Background
+    { 239, 240, 241 }, // Background
     { 189, 195, 199 }, // Alternate
     {  35,  38, 39  }, // Normal
     { 127, 140, 141 }, // Inactive
@@ -210,7 +210,7 @@ static const SetDefaultColors defaultSelectionColors = {
     {  61, 174, 233 }, // Background
     {  29, 153, 243 }, // Alternate
     { 252, 252, 252 }, // Normal
-    { 252, 252, 252 }, // Inactive
+    { 239, 240, 241 }, // Inactive
     { 252, 252, 252 }, // Active
     { 253, 188,  75 }, // Link
     { 189, 195, 199 }, // Visited
@@ -234,15 +234,15 @@ static const SetDefaultColors defaultTooltipColors = {
 
 static const SetDefaultColors defaultComplementaryColors = {
     {  49,  54,  59 }, // Background
-    {  77,  77,  77 }, // Alternate
+    {  59,  64,  69 }, // Alternate
     { 239, 240, 241 }, // Normal
-    { 189, 195, 199 }, // Inactive
-    {  61, 174, 233 }, // Active
-    {  41, 128, 185 }, // Link
-    { 127, 140, 141 }, // Visited
-    { 218,  68,  83 }, // Negative
-    { 246, 116,   0 }, // Neutral
-    {  39, 174,  96 }  // Positive
+    { 175, 176, 179 }, // Inactive
+    { 147, 206, 233 }, // Active
+    {  61, 174, 230 }, // Link
+    {  61, 174, 230 }, // Visited
+    { 231,  76,  60 }, // Negative
+    { 253, 188,  75 }, // Neutral
+    {  46, 174, 230 }  // Positive
 };
 
 static const DecoDefaultColors defaultDecorationColors = {
