@@ -64,8 +64,10 @@ if (KF5DocTools_FOUND)
 endif()
 
 add_subdirectory(src)
-add_subdirectory(tests)
-add_subdirectory(autotests)
+if (BUILD_TESTING)
+    add_subdirectory(tests)
+    add_subdirectory(autotests)
+endif()
 
 # create a Config.cmake and a ConfigVersion.cmake file and install them
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5ConfigWidgets")
