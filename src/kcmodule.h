@@ -256,6 +256,35 @@ public:
      */
     KCONFIGWIDGETS_DEPRECATED void setExportText(const QString &);
 
+    /**
+     * If a KCM has an internal page stack such as a QStackedWidget, it
+     * can export its stack levels to the outside, so the settings application can draw
+     * controls for them, such as a breadcrumb on top.
+     * (all the QML-based KCMs support this feature by default)
+     * @returns the titles of all the current levels.
+     * @since 5.49
+     */
+    QStringList levelTitles() const;
+
+    /**
+     * @returns how many levels this KCM has.
+     * @since 5.49
+     */
+    uint depth() const;
+
+    /**
+     * Sets the level which should be currently visible.
+     * It's responsibility of the KCM to show the proper level when this property is changed
+     * @since 5.49
+     */
+    void setCurrentLevel(uint level);
+
+    /**
+     * @returns the currently visible level
+     * @since 5.49
+     */
+    int currentLevel() const;
+
 public Q_SLOTS:
     /**
      * Load the configuration data into the module.
@@ -334,6 +363,19 @@ protected:
      */
     void setQuickHelp(const QString &help);
 
+    /**
+     * Push a new level. Only the kcm implementation can do this
+     * @param title the new level title
+     * @since 5.49
+     */
+    void pushLevel(const QString &title);
+
+    /**
+     * Remove the top-most level. Only the kcm implementation can do this
+     * @since 5.49
+     */
+    void popLevel();
+
     void showEvent(QShowEvent *ev) override;
 
     friend class KCModuleProxy;
@@ -369,6 +411,11 @@ Q_SIGNALS:
      */
     void rootOnlyMessageChanged(bool use, QString message);
 
+    void levelTitlesChanged(const QStringList &titles);
+    void depthChanged(uint depth);
+    void currentLevelChanged(uint currentLevel);
+    void levelPushed(const QString &title);
+    void levelPopped();
 protected Q_SLOTS:
 
     /**

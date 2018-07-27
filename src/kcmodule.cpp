@@ -56,6 +56,8 @@ public:
     QList<KConfigDialogManager *> managers;
     QString _quickHelp;
     QString m_ExportText;
+    QList<QString> _levelTitles;
+    uint _currentLevel = 0;
     bool _useRootOnlyMessage : 1;
     bool _firstshow : 1;
 
@@ -242,6 +244,8 @@ void KCModule::setAboutData(const KAboutData *about)
     if (about != d->_about) {
         delete d->_about;
         d->_about = about;
+        d->_levelTitles.clear();
+        d->_levelTitles << about->productName();
     }
 }
 
@@ -301,5 +305,50 @@ QString KCModule::quickHelp() const
 QList<KConfigDialogManager *> KCModule::configs() const
 {
     return d->managers;
+}
+
+QStringList KCModule::levelTitles() const
+{
+    return d->_levelTitles;
+}
+
+
+uint KCModule::depth() const
+{
+    return d->_levelTitles.length();
+}
+
+
+void KCModule::setCurrentLevel(uint level)
+{
+    if (d->_currentLevel == level) {
+        return;
+    }
+
+    d->_currentLevel = level;
+    emit currentLevelChanged(level);
+}
+
+
+int KCModule::currentLevel() const
+{
+    return d->_currentLevel;
+}
+
+void KCModule::pushLevel(const QString &title)
+{
+    d->_levelTitles << title;
+    emit levelPushed(title);
+    emit depthChanged(d->_levelTitles.length());
+    emit levelTitlesChanged(d->_levelTitles);
+}
+
+void KCModule::popLevel()
+{
+    d->_levelTitles.pop_back();
+    setCurrentLevel(qMin(d->_currentLevel, static_cast<uint>(qMax(0, d->_levelTitles.length() - 1))));
+    emit levelPopped();
+    emit depthChanged(d->_levelTitles.length());
+    emit levelTitlesChanged(d->_levelTitles);
 }
 
