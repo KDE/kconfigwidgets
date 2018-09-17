@@ -219,10 +219,10 @@ enum StandardAction {
  * KRecentFilesAction.
  *
  * @param id The StandardAction identifier to create a QAction for.
- * @param recvr The QObject to receive the signal, or 0 if no notification
+ * @param recvr The QObject to receive the signal, or @c nullptr if no notification
  *              is needed.
  * @param slot  The slot to connect the signal to (remember to use the SLOT() macro).
- * @param parent The QObject that should own the created QAction, or 0 if no parent will
+ * @param parent The QObject that should own the created QAction, or @c nullptr if no parent will
  *               own the QAction returned (ensure you delete it manually in this case).
  */
 KCONFIGWIDGETS_EXPORT QAction *create(StandardAction id, const QObject *recvr, const char *slot,
