@@ -70,7 +70,6 @@ if (PythonModuleGeneration_FOUND)
     MODULENAME KConfigWidgets
     SIP_INCLUDES
     RULES_FILE "${CMAKE_SOURCE_DIR}/cmake/rules_PyKF5.py"
-    INSTALL_DIR_SUFFIX ${KDE_INSTALL_PYTHONBINDINGSDIR}
     SIP_DEPENDS
       QtCore/QtCoremod.sip
       PyKF5/KCodecs/KCodecsmod.sip
