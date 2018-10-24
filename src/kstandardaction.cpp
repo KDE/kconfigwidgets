@@ -294,7 +294,7 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
     }
 
     if (pAction && parent && parent->inherits("KActionCollection")) {
-        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, pAction->objectName()), Q_ARG(QAction *, pAction));
+        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, pAction->objectName()), Q_ARG(QAction*, pAction));
     }
 
     return pAction;
@@ -585,7 +585,7 @@ static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const c
     }
 
     if (parent && parent->inherits("KActionCollection")) {
-        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, action->objectName()), Q_ARG(QAction *, action));
+        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, action->objectName()), Q_ARG(QAction*, action));
     }
 
     return action;
