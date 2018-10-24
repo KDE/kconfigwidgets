@@ -189,7 +189,7 @@ void KCModule::load()
     Q_FOREACH (manager, d->managers) {
         manager->updateWidgets();
     }
-    emit(changed(false));
+    emit changed(false);
 }
 
 void KCModule::save()
@@ -198,7 +198,7 @@ void KCModule::save()
     Q_FOREACH (manager, d->managers) {
         manager->updateSettings();
     }
-    emit(changed(false));
+    emit changed(false);
 }
 
 void KCModule::defaults()
@@ -290,7 +290,7 @@ void KCModule::setExportText(const QString &text)
 void KCModule::setQuickHelp(const QString &help)
 {
     d->_quickHelp = help;
-    emit(quickHelpChanged());
+    emit quickHelpChanged();
 }
 
 QString KCModule::quickHelp() const
