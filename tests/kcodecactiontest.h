@@ -1,5 +1,5 @@
-#ifndef KSELECTACTION_TEST_H
-#define KSELECTACTION_TEST_H
+#ifndef KCODECACTION_TEST_H
+#define KCODECACTION_TEST_H
 
 #include <QMainWindow>
 
