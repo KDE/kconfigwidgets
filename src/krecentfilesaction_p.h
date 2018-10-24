@@ -35,7 +35,7 @@ class KRecentFilesActionPrivate
     Q_DECLARE_PUBLIC(KRecentFilesAction)
 
 public:
-    KRecentFilesActionPrivate(KRecentFilesAction *parent)
+    explicit KRecentFilesActionPrivate(KRecentFilesAction *parent)
         : q_ptr(parent)
     {
         m_maxItems = 10;
