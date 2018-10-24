@@ -261,8 +261,8 @@ KSharedConfigPtr defaultConfig() {
 class KColorSchemePrivate : public QSharedData
 {
 public:
-    explicit KColorSchemePrivate(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, SetDefaultColors);
-    explicit KColorSchemePrivate(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, SetDefaultColors, const QBrush &);
+    explicit KColorSchemePrivate(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, const SetDefaultColors &);
+    explicit KColorSchemePrivate(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, const SetDefaultColors &, const QBrush &);
     ~KColorSchemePrivate() {}
 
     QBrush background(KColorScheme::BackgroundRole) const;
@@ -275,7 +275,7 @@ private:
     } _brushes;
     qreal _contrast;
 
-    void init(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, SetDefaultColors);
+    void init(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, const SetDefaultColors &);
 };
 
 #define DEFAULT(c) QColor( c[0], c[1], c[2] )
@@ -285,7 +285,7 @@ private:
 KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
         QPalette::ColorGroup state,
         const char *group,
-        SetDefaultColors defaults)
+        const SetDefaultColors &defaults)
 {
     KConfigGroup cfg(config, group);
     _contrast = KColorScheme::contrastF(config);
@@ -301,7 +301,7 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
 KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
         QPalette::ColorGroup state,
         const char *group,
-        SetDefaultColors defaults,
+        const SetDefaultColors &defaults,
         const QBrush &tint)
 {
     KConfigGroup cfg(config, group);
@@ -322,7 +322,7 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
 void KColorSchemePrivate::init(const KSharedConfigPtr &config,
                                QPalette::ColorGroup state,
                                const char *group,
-                               SetDefaultColors defaults)
+                               const SetDefaultColors &defaults)
 {
     KConfigGroup cfg(config, group);
 
