@@ -63,13 +63,15 @@ void KHelpClient::invokeHelp(const QString &anchor, const QString &_appname)
     if (!docPath.isEmpty()) {
         url = QUrl(QStringLiteral("help:/")).resolved(QUrl(docPath));
     } else {
-        url = QUrl(QStringLiteral("help:/%1/index.html").arg(appname));
-    }
-
-    if (!anchor.isEmpty()) {
-        QUrlQuery query(url);
-        query.addQueryItem(QStringLiteral("anchor"), anchor);
-        url.setQuery(query);
+        if (!anchor.isEmpty()) {
+            if (anchor.contains(QChar('#'))) {
+                url = QUrl(QStringLiteral("help:/%1/%2").arg(appname, anchor));
+            } else {
+                url = QUrl(QStringLiteral("help:/%1/%2.html").arg(appname, anchor));
+            }
+        } else {
+            url = QUrl(QStringLiteral("help:/%1/index.html").arg(appname));
+        }
     }
 
     // launch khelpcenter, or a browser for URIs not handled by khelpcenter
