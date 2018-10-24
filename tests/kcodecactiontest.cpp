@@ -1,11 +1,11 @@
+#include "kcodecactiontest.h"
+
 #include <QApplication>
 #include <QMenuBar>
 #include <QToolBar>
 #include <QTextCodec>
 
 #include <QDebug>
-
-#include "kcodecactiontest.h"
 
 #include <kcodecaction.h>
 
