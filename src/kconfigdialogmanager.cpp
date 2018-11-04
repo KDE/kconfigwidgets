@@ -46,7 +46,7 @@ public:
     KConfigDialogManagerPrivate(KConfigDialogManager *q) : q(q), insideGroupBox(false) { }
 
 public:
-    KConfigDialogManager *q;
+    KConfigDialogManager * const q;
 
     /**
     * KConfigSkeleton object used to store settings

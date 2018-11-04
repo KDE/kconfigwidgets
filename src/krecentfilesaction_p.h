@@ -59,7 +59,7 @@ public:
     QAction *clearSeparator;
     QAction *clearAction;
 
-    KRecentFilesAction *q_ptr;
+    KRecentFilesAction * const q_ptr;
 };
 
 #endif // KRECENTFILESACTION_P_H

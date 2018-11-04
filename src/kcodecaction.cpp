@@ -54,7 +54,7 @@ public:
 
     void _k_subActionTriggered(QAction *);
 
-    KCodecAction *q;
+    KCodecAction * const q;
     QAction *defaultAction;
     QAction *currentSubAction;
 };

@@ -90,7 +90,7 @@ public:
     void _k_updateButtons();
     void _k_settingsChangedSlot();
 
-    KConfigDialog *q;
+    KConfigDialog * const q;
     QString mAnchor;
     QString mHelpApp;
     bool shown;

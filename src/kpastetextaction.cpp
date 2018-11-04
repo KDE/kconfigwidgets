@@ -53,7 +53,7 @@ public:
 
     void init();
 
-    KPasteTextAction *q;
+    KPasteTextAction * const q;
     QMenu *m_popup = nullptr;
     bool m_mixedMode;
 };
