@@ -129,7 +129,7 @@ void tst_KStandardAction::testCreateOldStyle()
 
 
     QUrl expectedUrl = QUrl(QStringLiteral("file:///foo/bar"));
-    KRecentFilesAction *recent = KStandardAction::openRecent(&receiver, SLOT(onUrlSelected(const QUrl &)), &receiver);
+    KRecentFilesAction *recent = KStandardAction::openRecent(&receiver, SLOT(onUrlSelected(QUrl)), &receiver);
     QCOMPARE(receiver.lastUrl, QUrl());
     recent->urlSelected(expectedUrl);
     QCOMPARE(receiver.lastUrl, expectedUrl);
