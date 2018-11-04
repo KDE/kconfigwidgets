@@ -171,6 +171,7 @@ private Q_SLOTS:
     void slotHovered(QAction *);
 
 private:
+    friend class KLanguageButtonPrivate;
     KLanguageButtonPrivate *const d;
 };
 

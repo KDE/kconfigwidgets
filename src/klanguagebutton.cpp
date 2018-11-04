@@ -108,8 +108,8 @@ KLanguageButtonPrivate::KLanguageButtonPrivate(KLanguageButton *parent)
 
     button->setMenu(popup);
 
-    QObject::connect(popup, SIGNAL(triggered(QAction*)), parent, SLOT(slotTriggered(QAction*)));
-    QObject::connect(popup, SIGNAL(hovered(QAction*)), parent, SLOT(slotHovered(QAction*)));
+    QObject::connect(popup, &QMenu::triggered, parent, &KLanguageButton::slotTriggered);
+    QObject::connect(popup, &QMenu::hovered, parent, &KLanguageButton::slotHovered);
 }
 
 KLanguageButton::~KLanguageButton()

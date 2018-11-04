@@ -71,7 +71,8 @@ public:
         connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked, q, [this]() { _k_updateButtons(); });
         connect(buttonBox->button(QDialogButtonBox::Help), &QAbstractButton::clicked, q, &KConfigDialog::showHelp);
 
-        connect(q, SIGNAL(pageRemoved(KPageWidgetItem*)), q, SLOT(onPageRemoved(KPageWidgetItem*)));
+        connect(q, &KPageDialog::pageRemoved,
+                q, &KConfigDialog::onPageRemoved);
 
         manager = new KConfigDialogManager(q, config);
         setupManagerConnections(manager);
@@ -205,10 +206,14 @@ void KConfigDialog::KConfigDialogPrivate::setupManagerConnections(KConfigDialogM
     q->connect(manager, SIGNAL(widgetModified()), q, SLOT(_k_updateButtons()));
 
     QDialogButtonBox *buttonBox = q->buttonBox();
-    q->connect(buttonBox->button(QDialogButtonBox::Ok), SIGNAL(clicked()), manager, SLOT(updateSettings()));
-    q->connect(buttonBox->button(QDialogButtonBox::Apply), SIGNAL(clicked()), manager, SLOT(updateSettings()));
-    q->connect(buttonBox->button(QDialogButtonBox::Cancel), SIGNAL(clicked()), manager, SLOT(updateWidgets()));
-    q->connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), SIGNAL(clicked()), manager, SLOT(updateWidgetsDefault()));
+    q->connect(buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked,
+               manager, &KConfigDialogManager::updateSettings);
+    q->connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked,
+               manager, &KConfigDialogManager::updateSettings);
+    q->connect(buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked,
+               manager, &KConfigDialogManager::updateWidgets);
+    q->connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked,
+               manager, &KConfigDialogManager::updateWidgetsDefault);
 }
 
 void KConfigDialog::KConfigDialogPrivate::setApplyButtonEnabled(bool enabled)

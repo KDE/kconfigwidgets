@@ -263,7 +263,8 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                     if (d->allExclusiveGroupBoxes.contains(childWidget)) {
                         const QList<QAbstractButton *> buttons = childWidget->findChildren<QAbstractButton *>();
                         foreach(QAbstractButton *button, buttons) {
-                            connect(button, SIGNAL(toggled(bool)), this, SIGNAL(widgetModified()));
+                            connect(button, &QAbstractButton::toggled,
+                                    this, &KConfigDialogManager::widgetModified);
                         }
                     }
 
@@ -301,8 +302,8 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                     if (changeSignalFound) {
                         QComboBox *cb = qobject_cast<QComboBox *>(childWidget);
                         if (cb && cb->isEditable())
-                            connect(cb, SIGNAL(editTextChanged(QString)),
-                                    this, SIGNAL(widgetModified()));
+                            connect(cb, &QComboBox::editTextChanged,
+                                    this, &KConfigDialogManager::widgetModified);
                     }
                 }
                 QGroupBox *gb = qobject_cast<QGroupBox *>(childWidget);
@@ -384,7 +385,7 @@ void KConfigDialogManager::updateWidgets()
     blockSignals(bSignalsBlocked);
 
     if (changed) {
-        QTimer::singleShot(0, this, SIGNAL(widgetModified()));
+        QTimer::singleShot(0, this, &KConfigDialogManager::widgetModified);
     }
 }
 

@@ -81,7 +81,7 @@ void KRecentFilesActionPrivate::init()
     clearSeparator = q->menu()->addSeparator();
     clearSeparator->setVisible(false);
     clearSeparator->setObjectName(QStringLiteral("separator"));
-    clearAction = q->menu()->addAction(i18n("Clear List"), q, SLOT(clear()));
+    clearAction = q->menu()->addAction(i18n("Clear List"), q, &KRecentFilesAction::clear);
     clearAction->setObjectName(QStringLiteral("clear_action"));
     clearAction->setVisible(false);
     q->setEnabled(false);
