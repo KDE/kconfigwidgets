@@ -275,7 +275,7 @@ QAction *KLanguageButtonPrivate::findAction(const QString &data) const
 
 void KLanguageButton::setCurrentItem(const QString &languageCode)
 {
-    if (!d->ids.count()) {
+    if (d->ids.isEmpty()) {
         return;
     }
     QAction *a;
