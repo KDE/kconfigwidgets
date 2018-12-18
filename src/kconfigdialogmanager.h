@@ -144,7 +144,7 @@ class QWidget;
  * For KDE Framework versions starting with 5.32 this will override then the signal
  * as read from the USER property, but as it is the same signal, nothing will break.
  *
- * If wants wants to reduce conflicts and also only add code to the build as needed,
+ * If wants to reduce conflicts and also only add code to the build as needed,
  * one would add both a buildtime switch and a runtime switch like
  * \code
  * #include <kconfigwidgets_version.h>
@@ -244,7 +244,7 @@ public:
 
     /**
      * Add additional widgets to manage
-     * @param widget Additional widget to manage, inlcuding all its children
+     * @param widget Additional widget to manage, including all its children
      */
     void addWidget(QWidget *widget);
 

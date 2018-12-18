@@ -169,7 +169,7 @@ Q_SIGNALS:
     /**
      *  This signal gets emitted when the user selects an URL.
      *
-     *  @param url The URL thats the user selected.
+     *  @param url The URL that the user selected.
      */
     void urlSelected(const QUrl &url);
 

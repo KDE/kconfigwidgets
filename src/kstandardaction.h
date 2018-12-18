@@ -48,7 +48,7 @@ class KToggleFullScreenAction;
  *
  * All of the documentation for QAction holds for KStandardAction
  * also.  When in doubt on how things work, check the QAction
- * documention first.
+ * documentation first.
  * Please note that calling any of these methods automatically adds the action
  * to the actionCollection() of the QObject given by the 'parent' parameter.
  *
@@ -272,7 +272,7 @@ inline KCONFIGWIDGETS_DEPRECATED const char *stdName(StandardAction act_enum)
 
 /**
  * Returns a list of all standard names. Used by KAccelManager
- * to give those heigher weight.
+ * to give those higher weight.
  */
 KCONFIGWIDGETS_EXPORT QStringList stdNames();
 
@@ -286,7 +286,7 @@ KCONFIGWIDGETS_EXPORT QList<StandardAction> actionIds();
 /**
  * Returns the standardshortcut associated with @a actionId.
  *
- * @param actionId    The actionId whose associated shortcut is wanted.
+ * @param id    The identifier whose associated shortcut is wanted.
  *
  * @since 4.2
  */
@@ -496,7 +496,7 @@ KCONFIGWIDGETS_EXPORT QAction *paste(QObject *parent);
  * Clear selected area.  Calls clear() on the widget with the current focus.
  * Note that for some widgets, this may not provide the intended behavior.  For
  * example if you make use of the code above and a K3ListView has the focus, clear()
- * will clear all of the items in the list.  If this is not the intened behavior
+ * will clear all of the items in the list.  If this is not the intended behavior
  * and you want to make use of this slot, you can subclass K3ListView and reimplement
  * this slot.  For example the following code would implement a K3ListView without this
  * behavior:

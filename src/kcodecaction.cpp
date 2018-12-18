@@ -2,7 +2,7 @@
     kcodecaction.cpp
 
     Copyright (c) 2003 Jason Keirstead   <jason@keirstead.org>
-    Copyrigth (c) 2006 Michel Hermier    <michel.hermier@gmail.com>
+    Copyright (c) 2006 Michel Hermier    <michel.hermier@gmail.com>
     Copyright (c) 2007 Nick Shaforostoff <shafff@ukr.net>
 
     ********************************************************************
@@ -36,7 +36,7 @@
 #include <QVariant>
 #include <QTextCodec>
 
-// Acording to http://www.iana.org/assignments/ianacharset-mib
+// According to http://www.iana.org/assignments/ianacharset-mib
 // the default/unknown mib value is 2.
 #define MIB_DEFAULT 2
 

@@ -41,7 +41,7 @@ class KConfigDialogManager;
  * KConfigDialog handles the enabling and disabling of buttons, creation
  * of the dialog, and deletion of the widgets.  Because of
  * KConfigDialogManager, this class also manages: restoring
- * the settings, reseting them to the default values, and saving them. This
+ * the settings, resetting them to the default values, and saving them. This
  * requires that the names of the widgets corresponding to configuration entries
  * have to have the same name plus an additional "kcfg_" prefix. For example the
  * widget named "kcfg_MyOption" would be associated with the configuration entry
