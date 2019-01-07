@@ -8,6 +8,7 @@ set(kconfigwidgets_SRCS
   kcmodule.cpp
   khelpclient.cpp
   klanguagebutton.cpp
+  klanguagename.cpp
   kpastetextaction.cpp
   krecentfilesaction.cpp
   kstandardaction.cpp
@@ -52,6 +53,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KCModule
   KHelpClient
   KLanguageButton
+  KLanguageName
   KPasteTextAction
   KRecentFilesAction
   KViewStateMaintainer
