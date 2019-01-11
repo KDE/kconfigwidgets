@@ -25,9 +25,13 @@
 
 static void setEnvironment()
 {
-    qputenv("LOCALE", "C.UTF-8");
-    qputenv("LANG", "en");
+    qputenv("LANG", "C.UTF-8");
+    qputenv("LANGUAGE", "en");
     qputenv("XDG_DATA_DIRS", qUtf8Printable(QFINDTESTDATA("kf5_entry_data")));
+    // There is a distinct chance of the envionrment setup being to late and
+    // causing flakey results based on the execution env.
+    // Make sure we definitely default to english.
+    QLocale::setDefault(QLocale::English);
 
     // NOTE
     // - fr has no translations
