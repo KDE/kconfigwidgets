@@ -25,7 +25,9 @@
 
 #include <kconfigwidgets_export.h>
 
+#ifndef KCONFIGWIDGETS_NO_KAUTH
 #include <kauthaction.h>
+#endif
 
 #include <QVariant>
 #include <QWidget>
@@ -225,6 +227,7 @@ public:
      */
     bool needsAuthorization() const;
 
+#ifndef KCONFIGWIDGETS_NO_KAUTH
     /**
      * @brief Set if the module's save() method requires authorization to be executed
      *
@@ -243,6 +246,7 @@ public:
      * @return The action that has to be authorized to execute the save() method.
      */
     KAuth::Action authAction() const;
+#endif
 
     /**
      * Returns the value set by setExportText();
@@ -382,10 +386,12 @@ protected Q_SLOTS:
      */
     void widgetChanged();
 
+#ifndef KCONFIGWIDGETS_NO_KAUTH
     /**
      * The status of the auth action, if one, has changed
      */
     void authStatusChanged(KAuth::Action::AuthStatus status);
+#endif
 
 protected:
 

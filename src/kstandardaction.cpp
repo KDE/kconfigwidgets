@@ -232,7 +232,7 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             pAction = new KToggleFullScreenAction(parent);
             pAction->setCheckable(true);
             break;
-#ifndef KDE_NO_DEPRECATED
+#if !defined(KDE_NO_DEPRECATED) && defined(QT_DBUS_LIB)
         case PasteText:
             pAction = new KPasteTextAction(parent);
             break;

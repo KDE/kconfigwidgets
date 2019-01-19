@@ -33,7 +33,9 @@
 #include <kconfigskeleton.h>
 #include <kconfigdialogmanager.h>
 #include <klocalizedstring.h>
+#ifndef KCONFIGWIDGETS_NO_KAUTH
 #include <kauthexecutejob.h>
+#endif
 
 class KCModulePrivate
 {
@@ -44,7 +46,6 @@ public:
         _useRootOnlyMessage(false),
         _firstshow(true),
         _needsAuthorization(false),
-        _authAction(),
         _unmanagedWidgetChangeState(false)
     { }
 
@@ -60,7 +61,9 @@ public:
     bool _firstshow : 1;
 
     bool  _needsAuthorization : 1;
+#ifndef KCONFIGWIDGETS_NO_KAUTH
     KAuth::Action _authAction;
+#endif
 
     // this member is used to record the state on non-automatically
     // managed widgets, allowing for mixed KConfigXT-drive and manual
@@ -122,6 +125,7 @@ KConfigDialogManager *KCModule::addConfig(KConfigSkeleton *config, QWidget *widg
 void KCModule::setNeedsAuthorization(bool needsAuth)
 {
     d->_needsAuthorization = needsAuth;
+#ifndef KCONFIGWIDGETS_NO_KAUTH
     if (needsAuth && d->_about) {
         d->_authAction = KAuth::Action(QStringLiteral("org.kde.kcontrol.") + d->_about->componentName() + QStringLiteral(".save"));
         d->_needsAuthorization = d->_authAction.isValid();
@@ -131,6 +135,7 @@ void KCModule::setNeedsAuthorization(bool needsAuth)
     } else {
         d->_authAction = KAuth::Action();
     }
+#endif
 }
 
 bool KCModule::needsAuthorization() const
@@ -138,6 +143,7 @@ bool KCModule::needsAuthorization() const
     return d->_needsAuthorization;
 }
 
+#ifndef KCONFIGWIDGETS_NO_KAUTH
 void KCModule::setAuthAction(const KAuth::Action &action)
 {
     if (!action.isValid()) {
@@ -174,6 +180,7 @@ void KCModule::authStatusChanged(KAuth::Action::AuthStatus status)
 
     qCDebug(KCONFIG_WIDGETS_LOG) << useRootOnlyMessage();
 }
+#endif
 
 KCModule::~KCModule()
 {

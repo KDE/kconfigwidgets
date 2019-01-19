@@ -12,7 +12,10 @@ feature_summary(WHAT REQUIRED_PACKAGES_NOT_FOUND FATAL_ON_MISSING_REQUIRED_PACKA
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
 set(REQUIRED_QT_VERSION 5.10.0)
-find_package(Qt5 "${REQUIRED_QT_VERSION}" CONFIG REQUIRED Widgets DBus)
+find_package(Qt5 "${REQUIRED_QT_VERSION}" CONFIG REQUIRED Widgets)
+if (NOT ANDROID)
+  find_package(Qt5 "${REQUIRED_QT_VERSION}" CONFIG REQUIRED DBus)
+endif()
 include(KDEInstallDirs)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
@@ -31,7 +34,9 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KCONFIGWIDGETS
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfigVersion.cmake"
                         SOVERSION 5)
 
-find_package(KF5Auth ${KF5_DEP_VERSION} REQUIRED)
+if (NOT ANDROID)
+  find_package(KF5Auth ${KF5_DEP_VERSION} REQUIRED)
+endif()
 find_package(KF5CoreAddons ${KF5_DEP_VERSION} REQUIRED)
 find_package(KF5Codecs ${KF5_DEP_VERSION} REQUIRED)
 find_package(KF5Config ${KF5_DEP_VERSION} REQUIRED)
@@ -84,6 +89,10 @@ endif()
 
 include(CMakePackageConfigHelpers)
 
+set(HAVE_KAUTH FALSE)
+if (TARGET KF5::Auth)
+  set(HAVE_KAUTH TRUE)
+endif()
 configure_package_config_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/KF5ConfigWidgetsConfig.cmake.in"
   "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfig.cmake"

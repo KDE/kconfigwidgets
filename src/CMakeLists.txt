@@ -9,12 +9,14 @@ set(kconfigwidgets_SRCS
   khelpclient.cpp
   klanguagebutton.cpp
   klanguagename.cpp
-  kpastetextaction.cpp
   krecentfilesaction.cpp
   kstandardaction.cpp
   ktipdialog.cpp
 )
 ecm_qt_declare_logging_category(kconfigwidgets_SRCS HEADER kconfigwidgets_debug.h IDENTIFIER KCONFIG_WIDGETS_LOG CATEGORY_NAME kf5.kconfigwidgets)
+if (TARGET Qt5::DBus)
+  list(APPEND kconfigwidgets_SRCS kpastetextaction.cpp)
+endif()
 
 qt5_add_resources(kconfigwidgets_SRCS kconfigwidgets.qrc)
 
@@ -29,13 +31,19 @@ target_link_libraries(KF5ConfigWidgets
     KF5::Codecs # KCodecActions uses KCharsets, KEncodingProber
     KF5::WidgetsAddons # For K*Action, KPage*, KViewStateSerializer, KAcceleratorManager, K*GuiItem
     KF5::ConfigGui # KStandardAction uses KStandardShortcut
-    KF5::Auth # KCModule uses KAuth::Action
   PRIVATE
-    Qt5::DBus # KPasteTextAction talks to Klipper via DBus
     KF5::CoreAddons # KCModule uses KAboutData, KTipDialog uses KRandom
     KF5::GuiAddons # KColorScheme uses KColorUtils
     KF5::I18n # For action and widget texts
 )
+if (TARGET KF5::Auth)
+  target_link_libraries(KF5ConfigWidgets PUBLIC KF5::Auth) # KCModule uses KAuth::Action
+else()
+  target_compile_definitions(KF5ConfigWidgets PUBLIC -DKCONFIGWIDGETS_NO_KAUTH)
+endif()
+if (TARGET Qt5::DBus)
+  target_link_libraries(KF5ConfigWidgets PRIVATE Qt5::DBus) # KPasteTextAction talks to Klipper via DBus
+endif()
 
 set_target_properties(KF5ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION_STRING}
                                                   SOVERSION ${KCONFIGWIDGETS_SOVERSION}
