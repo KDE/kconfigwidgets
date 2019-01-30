@@ -36,5 +36,6 @@ foreach(lang ${lang_entries})
 endforeach()
 
 ecm_add_test(klanguagenametest.cpp LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
+ecm_add_test(kcolorschemetest.cpp LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
 
 ecm_add_test(krecentfilesactiontest.cpp TEST_NAME "krecentfilesaction_test" LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
