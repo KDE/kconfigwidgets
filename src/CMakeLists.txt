@@ -37,7 +37,7 @@ target_link_libraries(KF5ConfigWidgets
     KF5::I18n # For action and widget texts
 )
 if (TARGET KF5::Auth)
-  target_link_libraries(KF5ConfigWidgets PUBLIC KF5::Auth) # KCModule uses KAuth::Action
+  target_link_libraries(KF5ConfigWidgets PUBLIC KF5::Auth) # KCModule uses KAuth::Action TODO KF6 Change to KF5::AuthCore
 else()
   target_compile_definitions(KF5ConfigWidgets PUBLIC -DKCONFIGWIDGETS_NO_KAUTH)
 endif()
