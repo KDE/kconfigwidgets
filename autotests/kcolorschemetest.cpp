@@ -32,7 +32,10 @@ private Q_SLOTS:
     void benchConstruction_data()
     {
         KColorSchemeManager manager;
-        QVERIFY(manager.model()->rowCount() > 0);
+        if (!manager.model()->rowCount()) {
+            QSKIP("no scheme files found, cannot run benchmark");
+        }
+
         const auto anyScheme = manager.model()->index(0, 0).data(Qt::UserRole).toString();
         QVERIFY(QFile::exists(anyScheme));
 
