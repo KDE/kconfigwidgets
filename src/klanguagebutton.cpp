@@ -100,7 +100,7 @@ KLanguageButtonPrivate::KLanguageButtonPrivate(KLanguageButton *parent)
       showCodes(false)
 {
     QHBoxLayout *layout = new QHBoxLayout(parent);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
     layout->addWidget(button);
 
     parent->setFocusProxy(button);

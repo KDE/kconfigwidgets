@@ -178,8 +178,8 @@ KPageWidgetItem *KConfigDialog::KConfigDialogPrivate::addPageInternal(QWidget *p
 {
     QWidget *frame = new QWidget(q);
     QVBoxLayout *boxLayout = new QVBoxLayout(frame);
-    boxLayout->setMargin(0);
-    boxLayout->setMargin(0);
+    boxLayout->setContentsMargins(0, 0, 0, 0);
+    boxLayout->setContentsMargins(0, 0, 0, 0);
 
     QScrollArea *scroll = new QScrollArea(q);
     scroll->setFrameShape(QFrame::NoFrame);
