@@ -86,7 +86,7 @@ void KColorSchemeModel::init()
             schemeFiles << dir + QDir::separator() + file;
         }
     }
-    Q_FOREACH (const QString &schemeFile, schemeFiles) {
+    for (const QString &schemeFile : qAsConst(schemeFiles)) {
         KSharedConfigPtr config = KSharedConfig::openConfig(schemeFile);
         KConfigGroup group(config, QStringLiteral("General"));
         const QString name = group.readEntry("Name", QFileInfo(schemeFile).baseName());

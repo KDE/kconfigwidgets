@@ -94,7 +94,8 @@ public:
     {
         bool allMenuBarsNative = true;
         bool hasAnyMenuBar = false;
-        foreach(QWidget *w, qApp->topLevelWidgets()) {
+        const auto lstWidget = qApp->topLevelWidgets();
+        for (QWidget *w : lstWidget) {
             QMainWindow *mw = qobject_cast<QMainWindow*>(w);
             if (mw) {
                 mw->installEventFilter(this); // this is just in case a new main window appeared
@@ -210,7 +211,8 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             pAction->setChecked(true);
 
             ShowMenubarActionFilter *mf = new ShowMenubarActionFilter(pAction);
-            foreach(QWidget *w, qApp->topLevelWidgets()) {
+            const auto lstWidget = qApp->topLevelWidgets();
+            for (QWidget *w : lstWidget) {
                 if (qobject_cast<QMainWindow*>(w)) {
                     w->installEventFilter(mf);
                 }

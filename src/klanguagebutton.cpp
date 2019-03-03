@@ -265,7 +265,8 @@ QString KLanguageButton::current() const
 
 QAction *KLanguageButtonPrivate::findAction(const QString &data) const
 {
-    Q_FOREACH (QAction *a, popup->actions()) {
+    const auto listActions = popup->actions();
+    for (QAction *a : listActions) {
         if (!a->data().toString().compare(data)) {
             return a;
         }

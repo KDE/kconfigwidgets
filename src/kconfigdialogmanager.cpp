@@ -212,7 +212,7 @@ void KConfigDialogManager::setupWidget(QWidget *widget, KConfigSkeletonItem *ite
             children.removeAll(gb->layout());
             const QList<QAbstractButton *> buttons = gb->findChildren<QAbstractButton *>();
             bool allAutoExclusiveDirectChildren = true;
-            foreach(QAbstractButton *button, buttons) {
+            for (QAbstractButton *button : buttons) {
                 allAutoExclusiveDirectChildren = allAutoExclusiveDirectChildren && button->autoExclusive() && button->parent() == gb;
             }
             if (allAutoExclusiveDirectChildren) {
@@ -237,7 +237,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
     const QMetaMethod widgetModifiedSignal = metaObject()->method(metaObject()->indexOfSignal("widgetModified()"));
     Q_ASSERT(widgetModifiedSignal.isValid() && metaObject()->indexOfSignal("widgetModified()")>=0);
 
-    foreach (QObject *object, listOfChildren) {
+    for (QObject *object : listOfChildren) {
         if (!object->isWidgetType()) {
             continue;    // Skip non-widgets
         }
@@ -262,7 +262,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
 
                     if (d->allExclusiveGroupBoxes.contains(childWidget)) {
                         const QList<QAbstractButton *> buttons = childWidget->findChildren<QAbstractButton *>();
-                        foreach(QAbstractButton *button, buttons) {
+                        for (QAbstractButton *button : buttons) {
                             connect(button, &QAbstractButton::toggled,
                                     this, &KConfigDialogManager::widgetModified);
                         }

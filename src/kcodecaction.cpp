@@ -90,7 +90,8 @@ void KCodecAction::Private::init(bool showAutoOptions)
     q->setToolBarMode(MenuMode);
     defaultAction = q->addAction(i18nc("Encodings menu", "Default"));
 
-    foreach (const QStringList &encodingsForScript, KCharsets::charsets()->encodingsByScript()) {
+    const auto lstEncodings = KCharsets::charsets()->encodingsByScript();
+    for (const QStringList &encodingsForScript : lstEncodings) {
         KSelectAction *tmp = new KSelectAction(encodingsForScript.at(0), q);
         if (showAutoOptions) {
             KEncodingProber::ProberType scri = KEncodingProber::proberTypeForName(encodingsForScript.at(0));

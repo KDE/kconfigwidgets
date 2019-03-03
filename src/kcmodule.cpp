@@ -192,8 +192,7 @@ KCModule::~KCModule()
 
 void KCModule::load()
 {
-    KConfigDialogManager *manager;
-    Q_FOREACH (manager, d->managers) {
+    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
         manager->updateWidgets();
     }
     emit changed(false);
@@ -201,8 +200,7 @@ void KCModule::load()
 
 void KCModule::save()
 {
-    KConfigDialogManager *manager;
-    Q_FOREACH (manager, d->managers) {
+    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
         manager->updateSettings();
     }
     emit changed(false);
@@ -210,8 +208,7 @@ void KCModule::save()
 
 void KCModule::defaults()
 {
-    KConfigDialogManager *manager;
-    Q_FOREACH (manager, d->managers) {
+    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
         manager->updateWidgetsDefault();
     }
 }
@@ -223,8 +220,7 @@ void KCModule::widgetChanged()
 
 bool KCModule::managedWidgetChangeState() const
 {
-    KConfigDialogManager *manager;
-    Q_FOREACH (manager, d->managers) {
+    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
         if (manager->hasChanged()) {
             return true;
         }

@@ -112,7 +112,7 @@ void KPasteTextActionPrivate::_k_menuAboutToShow()
     }
     bool found = false;
     const QFontMetrics fm = m_popup->fontMetrics();
-    foreach (const QString &string, list) {
+    for (const QString &string : qAsConst(list)) {
         QString text = fm.elidedText(string.simplified(), Qt::ElideMiddle, fm.maxWidth() * 20);
         text.replace(QLatin1Char('&'), QLatin1String("&&"));
         QAction *action = m_popup->addAction(text);

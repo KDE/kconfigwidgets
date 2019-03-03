@@ -39,7 +39,8 @@ KRecentFilesActionTest::~KRecentFilesActionTest()
 QStringList KRecentFilesActionTest::extractActionNames(QMenu *menu)
 {
     QStringList ret;
-    foreach (const QAction *action, menu->actions()) {
+    const auto lstActions = menu->actions();
+    for (const QAction *action : lstActions) {
         ret.append(action->objectName());
     }
     return ret;
@@ -48,7 +49,8 @@ QStringList KRecentFilesActionTest::extractActionNames(QMenu *menu)
 QList<bool> KRecentFilesActionTest::extractActionEnableVisibleState(QMenu *menu)
 {
     QList<bool> ret;
-    foreach (const QAction *action, menu->actions()) {
+    const auto lstActions = menu->actions();
+    for (const QAction *action : lstActions) {
         ret.append(action->isEnabled());
         ret.append(action->isVisible());
     }
