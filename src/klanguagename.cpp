@@ -26,7 +26,7 @@
 
 QString KLanguageName::nameForCode(const QString &code)
 {
-    const QStringList parts = QLocale().name().split(QChar('_'));
+    const QStringList parts = QLocale().name().split(QLatin1Char('_'));
     return nameForCodeInLocale(code, parts.at(0));
 }
 

@@ -64,7 +64,7 @@ void KHelpClient::invokeHelp(const QString &anchor, const QString &_appname)
         url = QUrl(QStringLiteral("help:/")).resolved(QUrl(docPath));
     } else {
         if (!anchor.isEmpty()) {
-            if (anchor.contains(QChar('#'))) {
+            if (anchor.contains(QLatin1Char('#'))) {
                 url = QUrl(QStringLiteral("help:/%1/%2").arg(appname, anchor));
             } else {
                 url = QUrl(QStringLiteral("help:/%1/%2.html").arg(appname, anchor));
