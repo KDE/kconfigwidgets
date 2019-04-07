@@ -1,0 +1,630 @@
+# translation of kdelibs4.po to Swedish
+# Översättning kdelibs4.po till Svenska
+#
+# Copyright (C) 1997,2002,2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+# Magnus Reftel <d96reftl@dtek.chalmers.se>, 1997.
+# Anders Widell <awl@hem.passagen.se>, 1998-2000.
+# Per Lindström <pelinstr@algonet.se>, 2000.
+# Mattias Newzella <newzella@linux.nu>, 2000, 2001, 2002,2003, 2004, 2005.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2002.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Stefan Asserhall <stefan.asserhall@bredband.net>, 2010, 2011, 2012, 2013, 2015, 2016, 2017.
+# Arve Eriksson <031299870@telia.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-04 03:12+0100\n"
+"PO-Revision-Date: 2017-08-10 08:33+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Magnus Reftel,Anders Widell,Per Lindström,Mattias Newzella,Stefan Asserhäll"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"d96reftl@dtek.chalmers.se,awl@hem.passagen.se,pelinstr@algonet.se,"
+"newzella@linux.nu,stefan.asserhall@telia.com"
+
+#: kcmodule.cpp:173
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Du blir tillfrågat om behörighetskontroll innan något sparas"
+
+#: kcmodule.cpp:177
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Du har inte rättighet att spara inställningar"
+
+#: kcodecaction.cpp:91
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Förval"
+
+#: kcodecaction.cpp:99
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Detektera automatiskt"
+
+#: kconfigdialog.cpp:48
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Anpassa"
+
+#: krecentfilesaction.cpp:78
+#, kde-format
+msgid "No Entries"
+msgstr "Inga värden"
+
+#: krecentfilesaction.cpp:84
+#, kde-format
+msgid "Clear List"
+msgstr "Rensa lista"
+
+#: kstandardaction.cpp:155
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Bakåt"
+
+#: kstandardaction.cpp:162
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Framåt"
+
+#: kstandardaction.cpp:169
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Hem"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Hjälp"
+
+#: kstandardaction.cpp:209
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Visa menyrad<p>Visar menyraden igen efter den har dolts.</p>"
+
+#: kstandardaction.cpp:229
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Visa statusrad<p>Visar statusraden, som är raden längst ner i fönstret som "
+"används för statusinformation.</p>"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&New"
+msgstr "&Ny"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "Create new document"
+msgstr "Skapa nytt dokument"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Open..."
+msgstr "Ö&ppna..."
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Open an existing document"
+msgstr "Öppna ett befintligt dokument"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open &Recent"
+msgstr "Öppna s&enaste"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr "Öppna ett dokument som nyligen öppnats"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Save"
+msgstr "&Spara"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Save document"
+msgstr "Spara dokument"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save &As..."
+msgstr "Spara s&om..."
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save document under a new name"
+msgstr "Spara dokument med ett nytt namn"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Re&vert"
+msgstr "Å&terställ"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr "Ångra osparade ändringar gjorda i dokumentet"
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "&Close"
+msgstr "Stän&g"
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "Close document"
+msgstr "Stäng dokument"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "&Print..."
+msgstr "Skriv &ut..."
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "Print document"
+msgstr "Skriv ut dokument"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Print Previe&w"
+msgstr "&Förhandsgranskning av utskrift"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Show a print preview of document"
+msgstr "Visa en förhandsgranskning för utskrift av dokumentet"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "&Mail..."
+msgstr "S&kicka e-post..."
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "Send document by mail"
+msgstr "Skicka dokument med e-post"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "&Quit"
+msgstr "&Avsluta"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Quit application"
+msgstr "Avsluta program"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Undo"
+msgstr "Å&ngra"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "Undo last action"
+msgstr "Ångra senaste åtgärden"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Re&do"
+msgstr "&Gör om"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Redo last undone action"
+msgstr "Gör om senast ångrade åtgärd"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cu&t"
+msgstr "Klipp u&t"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr "Klipp ut markeringen till klippbordet"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Copy"
+msgstr "K&opiera"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr "Kopiera markeringen till klippbordet"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "&Paste"
+msgstr "K&listra in"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "Paste clipboard content"
+msgstr "Klistra in klippbordets innehåll"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "C&lear"
+msgstr "&Rensa"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Select &All"
+msgstr "Markera &alla"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Dese&lect"
+msgstr "A&vmarkera"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "&Find..."
+msgstr "&Sök..."
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Find &Next"
+msgstr "Sök &igen"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "Sök &föregående"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Replace..."
+msgstr "&Ersätt..."
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Actual Size"
+msgstr "F&aktisk storlek"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "View document at its actual size"
+msgstr "Visa dokumentet med verklig storlek"
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "&Fit to Page"
+msgstr "F&yll sidan"
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "Zoom to fit page in window"
+msgstr "Zooma för att visa sidan i fönstret"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "Fyll sidans &bredd"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr "Zooma för att visa sidans bredd i fönstret"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "Fyll sidans &höjd"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr "Zooma för att visa sidans höjd i fönstret"
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Zoom &In"
+msgstr "Zooma &in"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Zoom &Out"
+msgstr "Zooma &ut"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Zoom..."
+msgstr "&Zooma..."
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "Select zoom level"
+msgstr "Välj zoomnivå"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Redisplay"
+msgstr "&Visa igen"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "Redisplay document"
+msgstr "Visa dokumentet igen"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Up"
+msgstr "&Upp"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "Go up"
+msgstr "Gå uppåt"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "&Previous Page"
+msgstr "F&öregående sida"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "Go to previous page"
+msgstr "Gå till föregående sida"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Next Page"
+msgstr "&Nästa sida"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "Go to next page"
+msgstr "Gå till nästa sida"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Go To..."
+msgstr "&Gå till..."
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Go to Page..."
+msgstr "&Gå till sida..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Go to Line..."
+msgstr "Gå till &rad..."
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "&First Page"
+msgstr "Fö&rsta sidan"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "Go to first page"
+msgstr "Gå till första sidan"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "&Last Page"
+msgstr "&Sista sidan"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Go to last page"
+msgstr "Gå till sista sidan"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "&Back"
+msgstr "Till&baka"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Go back in document"
+msgstr "Gå bakåt i dokumentet"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "&Forward"
+msgstr "&Framåt"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Go forward in document"
+msgstr "Gå framåt i dokumentet"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "&Lägg till bokmärke"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "R&edigera bokmärken..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Spelling..."
+msgstr "Sta&vning..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "Check spelling in document"
+msgstr "Kontrollera dokumentets stavning"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show &Menubar"
+msgstr "Visa &menyrad"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show or hide menubar"
+msgstr "Visa eller dölj menyrad"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "Visa &verktygsrad"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show or hide toolbar"
+msgstr "Visa eller dölj verktygsrad"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "Visa st&atusrad"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show or hide statusbar"
+msgstr "Visa eller dölj statusrad"
+
+#: kstandardaction_p.h:99
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "F&ullskärmsläge"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "&Save Settings"
+msgstr "&Spara inställningar"
+
+#: kstandardaction_p.h:101
+#, kde-format
+msgid "Configure S&hortcuts..."
+msgstr "Anpassa genv&ägar..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "A&npassa %1..."
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "Anpassa verktygs&rader..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "Anpassa &meddelanden..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Handbok %1"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "What's &This?"
+msgstr "Vad är de&t här?"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "&Dagens tips"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Rapportera fel..."
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "Switch Application &Language..."
+msgstr "Ändra programmets &språk..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&Om %1"
+
+#: kstandardaction_p.h:115
+#, kde-format
+msgid "About &KDE"
+msgstr "Om &KDE"
+
+#: kstandardaction_p.h:116
+#, kde-format
+msgid "&Delete"
+msgstr "&Ta bort"
+
+#: kstandardaction_p.h:117
+#, kde-format
+msgid "&Rename..."
+msgstr "&Byt namn..."
+
+#: kstandardaction_p.h:118
+#, kde-format
+msgid "&Move to Trash"
+msgstr "&Flytta till papperskorgen"
+
+#: kstandardaction_p.h:119
+#, kde-format
+msgid "&Donate"
+msgstr "&Ge bidrag"
+
+#: ktipdialog.cpp:238
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Dagens tips"
+
+#: ktipdialog.cpp:254
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Visste du...?\n"
+
+#: ktipdialog.cpp:306
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Visa tips vid &start"
+
+#: ktipdialog.cpp:311
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Föregående"
+
+#: ktipdialog.cpp:316
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Nästa"

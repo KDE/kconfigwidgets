@@ -1,0 +1,631 @@
+# translation of kdelibs4.po to Khmer
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2008, 2009, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-04 03:12+0100\n"
+"PO-Revision-Date: 2012-06-27 10:04+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"Language-Team: Khmer\n"
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Language: km-KH\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr " ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា​​, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
+"ratanak@khmeros.info,sophea@khmeros.info"
+
+#: kcmodule.cpp:173
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "អ្នកនឹង​ត្រូវ​បាន​ស្នើ​ឲ្យ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​មុន​នឹង​រក្សាទុក"
+
+#: kcmodule.cpp:177
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "អ្នក​មិន​ត្រូវ​បា​ន​អនុញ្ញាត​ឲ្យ​រក្សាទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ​បានទេ"
+
+#: kcodecaction.cpp:91
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "លំនាំដើម"
+
+#: kcodecaction.cpp:99
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "កែ​ស្វ័យប្រវត្តិ"
+
+#: kconfigdialog.cpp:48
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ"
+
+#: krecentfilesaction.cpp:78
+#, kde-format
+msgid "No Entries"
+msgstr "គ្មាន​ធាតុ"
+
+#: krecentfilesaction.cpp:84
+#, kde-format
+msgid "Clear List"
+msgstr "ជម្រះបញ្ជី"
+
+#: kstandardaction.cpp:155
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "ថយ​ក្រោយ"
+
+#: kstandardaction.cpp:162
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "ទៅ​មុខ"
+
+#: kstandardaction.cpp:169
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "ដើម"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "ជំនួយ"
+
+#: kstandardaction.cpp:209
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "បង្ហាញ​របារ​ម៉ឺនុយ<p>បង្ហាញ​របារ​ម៉ឺនុយ​ម្ដងទៀត​បន្ទាប់ពី​វា​ត្រូវបាន​លាក់</p>"
+
+#: kstandardaction.cpp:229
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"បង្ហាញ​របារ​ស្ថានភាព<br /><br />បង្ហាញ​របារ​ស្ថានភាព ដែល​ជា​របារ​នៅ​​ខាងក្រោម​នៃ​បង្អួច ដែល​បាន​"
+"ប្រើ​សម្រាប់​ព័ត៌មាន​ស្ថានភាព ។"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&New"
+msgstr "ថ្មី"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "Create new document"
+msgstr "បង្កើតឯកសារ​ថ្មី"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Open..."
+msgstr "បើក..."
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Open an existing document"
+msgstr "បើក​ឯកសារ​ដែល​មាន​ស្រាប់"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open &Recent"
+msgstr "បើក​ថ្មី​ៗ​នេះ"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr "បើក​ឯកសារ​ដែល​ត្រូវ​បាន​បើក​ថ្មីៗ"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Save"
+msgstr "រក្សាទុក"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Save document"
+msgstr "រក្សាទុក​ឯកសារ"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save &As..."
+msgstr "រក្សាទុក​ជា..."
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save document under a new name"
+msgstr "រក្សាទុក​ឯកសារ​​ដោយ​ដាក់​ឈ្មោះ​ថ្មី"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Re&vert"
+msgstr "ត្រឡប់​ទៅ​ដើម"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr "ដាក់​បញ្ច្រាស​ការ​ផ្លាស់ប្ដូរ​ដែល​មិន​បាន​រក្សាទុក​ក្នុង​ឯកសារ"
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "&Close"
+msgstr "បិទ"
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "Close document"
+msgstr "បិទ​ឯកសារ"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "&Print..."
+msgstr "បោះពុម្ព..."
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "Print document"
+msgstr "បោះពុម្ព​ឯកសារ"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Print Previe&w"
+msgstr "មើល​មុន​បោះពុម្ព"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Show a print preview of document"
+msgstr "បង្ហាញ​ការ​មើល​ឯកសារ​មុនបោះពុម្ព"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "&Mail..."
+msgstr "សំបុត្រ..."
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "Send document by mail"
+msgstr "ផ្ញើ​ឯកសារ​តាម​អ៊ីមែល"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "&Quit"
+msgstr "ចេញ"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Quit application"
+msgstr "បិទ​​​កម្មវិធី"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Undo"
+msgstr "មិន​ធ្វើ​វិញ"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "Undo last action"
+msgstr "មិន​ធ្វើ​សកម្មភាព​ចុង​ក្រោយ​វិញ"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Re&do"
+msgstr "ធ្វើ​វិញ"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Redo last undone action"
+msgstr "ធ្វើ​សកម្មភាព​ដែល​មិន​ធ្វើវិញ​"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cu&t"
+msgstr "​កាត់"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr "កាត់​ជម្រើស​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Copy"
+msgstr "​ចម្លង"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr "ចម្លង​​ជម្រើស​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "&Paste"
+msgstr "បិទភ្ជាប់"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "Paste clipboard content"
+msgstr "បិទភ្ជាប់​មាតិកា​ក្ដារតម្បៀតខ្ទាស់"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "C&lear"
+msgstr "ជម្រះ"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Select &All"
+msgstr "ជ្រើស​ទាំងអស់"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Dese&lect"
+msgstr "ដោះ​ជ្រើស"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "&Find..."
+msgstr "រក..."
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Find &Next"
+msgstr "រក​បន្ទាប់"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "រក​មុន"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Replace..."
+msgstr "ជំនួស..."
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Actual Size"
+msgstr "ទំហំ​ពិត​ប្រាកដ"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "View document at its actual size"
+msgstr "មើល​ឯកសារ​នៅ​ទំហំ​ពិតប្រាកដ​របស់​វា"
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "&Fit to Page"
+msgstr "សម​នឹង​ទំព័រ"
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "Zoom to fit page in window"
+msgstr "ពង្រីក​ឲ្យ​សម​នឹង​ទំព័រ​ក្នុង​បង្អួច"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "សម​នឹង​ទទឹង​ទំព័រ"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr "ពង្រីក​ឲ្យ​​សម​នឹង​ទទឹង​ទំព័រ​ក្នុង​បង្អួច"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "សម​នឹង​កម្ពស់​ទំព័រ"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr "ពង្រីក​ឲ្យ​សម​​នឹង​​កម្ពស់ទំព័រ​ក្នុង​បង្អួច"
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Zoom &In"
+msgstr "​ពង្រីក"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Zoom &Out"
+msgstr "​បង្រួម"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Zoom..."
+msgstr "កែវពង្រីក..."
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "Select zoom level"
+msgstr "ជ្រើស​កម្រិត​ពង្រីក"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Redisplay"
+msgstr "បង្ហាញ​ម្តង​ទៀត"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "Redisplay document"
+msgstr "បង្ហាញ​ឯកសារ​ឡើងវិញ"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Up"
+msgstr "ឡើង​លើ​"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "Go up"
+msgstr "ទៅលើ"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "&Previous Page"
+msgstr "ទំព័រ​មុន"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "Go to previous page"
+msgstr "ទៅ​ទំព័រ​មុន"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Next Page"
+msgstr "ទំព័រ​បន្ទាប់"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "Go to next page"
+msgstr "ទៅ​ទំព័រ​បន្ទាប់"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Go To..."
+msgstr "ទៅកាន់..."
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Go to Page..."
+msgstr "ទៅ​កាន់​ទំព័រ..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Go to Line..."
+msgstr "ទៅ​កាន់​បន្ទាត់..."
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "&First Page"
+msgstr "ទំព័រ​ទី​មួយ"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "Go to first page"
+msgstr "ទៅ​ទំព័រ​ទីមួយ"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "&Last Page"
+msgstr "ទំព័រ​ចុង​ក្រោយ"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Go to last page"
+msgstr "ទៅ​ទំព័រ​ចុងក្រោយ"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "&Back"
+msgstr "ថយ​ក្រោយ"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Go back in document"
+msgstr "ថយក្រោយ​ក្នុង​ឯកសារ"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "&Forward"
+msgstr "ទៅ​មុខ"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Go forward in document"
+msgstr "ទៅមុខ​ក្នុង​ឯកសារ"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "បន្ថែមចំណាំ"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "កែសម្រួល​ចំណាំ..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Spelling..."
+msgstr "ការប្រកប..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "Check spelling in document"
+msgstr "ពិនិត្យ​អក្ខរាវិរុទ្ធ​ក្នុង​ឯកសារ"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show &Menubar"
+msgstr "បង្ហាញ​របារ​ម៉ឺនុយ"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show or hide menubar"
+msgstr "បង្ហាញ ឬលាក់​របារ​ម៉ឺនុយ"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "បង្ហាញ​របារ​ឧបករណ៍"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show or hide toolbar"
+msgstr "បង្ហាញ ឬ​លាក់​របារ​ឧបករណ៍"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "បង្ហាញ​របារ​ស្ថានភាព"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show or hide statusbar"
+msgstr "បង្ហាញ ឬ​លាក់​របារ​ស្ថានភាព"
+
+#: kstandardaction_p.h:99
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "​របៀប​ពេញ​អេក្រង់"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "&Save Settings"
+msgstr "រក្សាទុក​ការ​កំណត់"
+
+#: kstandardaction_p.h:101
+#, kde-format
+msgid "Configure S&hortcuts..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្លូវ​កាត់..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ %1..."
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​របារ​ឧបករណ៍..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​ការជូន​ដំណឹង..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "សៀវភៅ​ដៃ %1"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "What's &This?"
+msgstr "នេះ​ជា​អ្វី ?"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "ព័ត៌មាន​ជំនួយ​សម្រាប់​ថ្ងៃនេះ"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Report Bug..."
+msgstr "រាយការណ៍​កំហុស..."
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "Switch Application &Language..."
+msgstr "ប្ដូរ​ភាសា​កម្មវិធី..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "អំពី %1"
+
+#: kstandardaction_p.h:115
+#, kde-format
+msgid "About &KDE"
+msgstr "អំពី KDE"
+
+#: kstandardaction_p.h:116
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "លុប"
+
+#: kstandardaction_p.h:117
+#, fuzzy, kde-format
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "ជំនួស..."
+
+#: kstandardaction_p.h:118
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:119
+#, kde-format
+msgid "&Donate"
+msgstr ""
+
+#: ktipdialog.cpp:238
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "ព័ត៌មាន​ជំនួយ​ប្រចាំថ្ងៃ"
+
+#: ktipdialog.cpp:254
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "តើ​អ្នក​ដឹង​ទេ... ?\n"
+
+#: ktipdialog.cpp:306
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "បង្ហាញ​ព័ត៌មាន​ជំនួយ នៅ​​ពេល​ចាប់ផ្តើម"
+
+#: ktipdialog.cpp:311
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "មុន"
+
+#: ktipdialog.cpp:316
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "​បន្ទាប់"
