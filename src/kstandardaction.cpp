@@ -197,6 +197,13 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             }
         }
 
+        if (id == Donate) {
+            const QString currencyCode = QLocale().currencySymbol(QLocale::CurrencyIsoCode).toLower();
+            if (!currencyCode.isEmpty()) {
+                iconName = QStringLiteral("help-donate-%1").arg(currencyCode);
+            }
+        }
+
         QIcon icon = iconName.isEmpty() ? QIcon() : QIcon::fromTheme(iconName);
 
         switch (id) {
