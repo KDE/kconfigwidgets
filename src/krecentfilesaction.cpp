@@ -32,7 +32,6 @@
 #include <QDesktopWidget>
 #include <QDir>
 #include <QMenu>
-#include <QComboBox>
 
 #include <kconfig.h>
 #include <kconfiggroup.h>

@@ -25,7 +25,6 @@
 #include <QCoreApplication>
 #include <QUrl>
 #include <QDirIterator>
-#include <QUrlQuery>
 #include <QDesktopServices>
 
 void KHelpClient::invokeHelp(const QString &anchor, const QString &_appname)

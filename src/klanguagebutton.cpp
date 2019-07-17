@@ -22,11 +22,11 @@
 #include "kconfigwidgets_debug.h"
 
 #include <QMenu>
-#include <QLayout>
 #include <QPushButton>
 #include <QDir>
 #include <QFile>
 #include <QLocale>
+#include <QHBoxLayout>
 
 #include <kconfig.h>
 #include <kconfiggroup.h>

@@ -21,8 +21,6 @@
 #include "krecentfilesactiontest.h"
 
 #include <QApplication>
-#include <QMainWindow>
-#include <QWidget>
 #include <QDebug>
 
 #include <KSharedConfig>

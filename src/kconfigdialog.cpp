@@ -27,16 +27,12 @@
 #include <kpagewidgetmodel.h>
 #include <khelpclient.h>
 
-#include <QApplication>
-#include <QDesktopWidget>
 #include <QDialogButtonBox>
 #include <QIcon>
-#include <QLayout>
 #include <QPushButton>
 #include <QMap>
-#include <QCoreApplication>
-#include <QDesktopServices>
 #include <QScrollArea>
+#include <QVBoxLayout>
 
 class Q_DECL_HIDDEN KConfigDialog::KConfigDialogPrivate
 {

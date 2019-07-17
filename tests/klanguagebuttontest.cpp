@@ -21,7 +21,6 @@
 #include "klanguagebutton.h"
 
 #include <QApplication>
-#include <QLineEdit>
 
 int main(int argc, char **argv)
 {

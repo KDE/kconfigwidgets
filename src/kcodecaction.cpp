@@ -31,7 +31,6 @@
 #include <kcharsets.h>
 #include <klocalizedstring.h>
 
-#include <QDebug>
 #include <QMenu>
 #include <QVariant>
 #include <QTextCodec>

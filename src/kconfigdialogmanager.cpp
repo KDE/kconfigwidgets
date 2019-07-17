@@ -30,7 +30,6 @@
 #include <QMetaProperty>
 #include <QTimer>
 #include <QRadioButton>
-#include <QDebug>
 #include <QLayout>
 
 #include <kconfigskeleton.h>

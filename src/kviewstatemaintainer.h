@@ -24,7 +24,6 @@
 
 #include "kviewstatemaintainerbase.h"
 
-#include <QItemSelectionModel>
 #include <QAbstractItemView>
 
 #include "kconfiggroup.h"

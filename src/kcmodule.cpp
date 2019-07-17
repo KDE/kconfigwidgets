@@ -25,9 +25,6 @@
 #include "kcmodule.h"
 #include "kconfigwidgets_debug.h"
 
-#include <QLayout>
-#include <QTimer>
-#include <QDebug>
 
 #include <kaboutdata.h>
 #include <kconfigskeleton.h>
