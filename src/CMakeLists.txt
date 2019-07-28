@@ -116,6 +116,10 @@ install(FILES
 install(PROGRAMS preparetips5 DESTINATION ${KDE_INSTALL_BINDIR} )
 install( FILES entry.desktop  DESTINATION  ${KDE_INSTALL_LOCALEDIR}/en_US RENAME kf5_entry.desktop )
 
+if(BUILD_DESIGNERPLUGIN)
+    add_subdirectory(designer)
+endif()
+
 if(BUILD_QCH)
     ecm_add_qch(
         KF5ConfigWidgets_QCH
