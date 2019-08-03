@@ -1,0 +1,628 @@
+# translation of kdelibs4.po to Slovak
+# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2002.
+# Stanislav Visnovsky <visnovsky@kde.org>, 2003, 2004, 2005.
+# Richard Fric <Richard.Fric@kdemail.net>, 2006, 2007, 2010.
+# Michal Gaspar <miguel@portugal.sk>, 2006.
+# Jakub <vatrtj@gmail.com>, 2009.
+# Michal Sulek <misurel@gmail.com>, 2009, 2010, 2011.
+# Richard Frič <Richard.Fric@kdemail.net>, 2011.
+# Roman Paholík <wizzardsk@gmail.com>, 2012, 2013, 2015, 2016.
+# Mthw <jari_45@hotmail.com>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-07-18 02:49+0200\n"
+"PO-Revision-Date: 2019-01-28 12:49+0100\n"
+"Last-Translator: Mthw <jari_45@hotmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 18.12.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Stanislav Višňovský,Richard Frič,Michal Gašpar,Jakub Vatrt,Michal Šulek"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"visnovsky@kde.org,Richard.Fric@kdemail.net,miguel@portugal.sk,vatrtj@gmail."
+"com,misurel@gmail.com"
+
+#: kcmodule.cpp:170
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Pred uložením budete požiadaný o overenie"
+
+#: kcmodule.cpp:174
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Na uloženie konfigurácie nemáte oprávnenie"
+
+#: kcodecaction.cpp:90
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Štandardné"
+
+#: kcodecaction.cpp:98
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Automatická detekcia"
+
+#: kconfigdialog.cpp:44
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Nastaviť"
+
+#: krecentfilesaction.cpp:77
+#, kde-format
+msgid "No Entries"
+msgstr "Žiadne položky"
+
+#: krecentfilesaction.cpp:83
+#, kde-format
+msgid "Clear List"
+msgstr "Vyčistiť zoznam"
+
+#: kstandardaction.cpp:153
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "Do&zadu"
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "Do&predu"
+
+#: kstandardaction.cpp:167
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Domov"
+
+#: kstandardaction.cpp:170
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Pomocník"
+
+#: kstandardaction.cpp:214
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Zobraziť menu<p>Znovu zobrazí menu potom, čo bolo skryté</p>"
+
+#: kstandardaction.cpp:234
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Zobraziť stavový riadok<p>Zobrazí stavový riadok, čo je panel v dolnej časti "
+"okna použitý na stavové informácie.</p>"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&New"
+msgstr "&Nový"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "Create new document"
+msgstr "Vytvoriť nový dokument"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Open..."
+msgstr "&Otvoriť..."
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Open an existing document"
+msgstr "Otvoriť existujúci dokument"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open &Recent"
+msgstr "Otvoriť n&edávne"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr "Otvoriť dokument, ktorý bol nedávno otvorený"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Save"
+msgstr "&Uložiť"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Save document"
+msgstr "Uložiť dokument"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save &As..."
+msgstr "Uložiť &ako..."
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save document under a new name"
+msgstr "Uložiť dokument pod novým názvom"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Re&vert"
+msgstr "V&rátiť"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr "Vrátiť neuložené zmeny urobené v dokumente"
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "&Close"
+msgstr "&Zavrieť"
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "Close document"
+msgstr "Zavrieť dokument"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "&Print..."
+msgstr "&Tlačiť..."
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "Print document"
+msgstr "Vytlačiť dokument"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Print Previe&w"
+msgstr "Ná&hľad tlače"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Show a print preview of document"
+msgstr "Zobraziť náhľad tlače dokumentu"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "&Mail..."
+msgstr "&Pošta..."
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "Send document by mail"
+msgstr "Poslať dokument mailom"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "&Quit"
+msgstr "&Koniec"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Quit application"
+msgstr "Ukončiť aplikáciu"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Undo"
+msgstr "&Späť"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "Undo last action"
+msgstr "Zrušiť poslednú akciu"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Re&do"
+msgstr "Zn&ovu"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Redo last undone action"
+msgstr "Obnoviť poslednú zrušenú operáciu"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cu&t"
+msgstr "Vys&trihnúť"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr "Vystrihnúť výber do schránky"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Copy"
+msgstr "&Kopírovať"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr "Skopírovať výber do schránky"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "&Paste"
+msgstr "V&ložiť"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "Paste clipboard content"
+msgstr "Vložiť obsah schránky"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "C&lear"
+msgstr "Vyčis&tiť"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Select &All"
+msgstr "Vybrať &všetko"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Dese&lect"
+msgstr "Zr&ušiť výber"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "&Find..."
+msgstr "&Nájsť..."
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Find &Next"
+msgstr "Nájsť nasledu&júci"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "Nájsť pre&dchádzajúci"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Replace..."
+msgstr "Nahr&adiť..."
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Actual Size"
+msgstr "&Aktuálna veľkosť"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "View document at its actual size"
+msgstr "Zobraziť dokument v pôvodnej veľkosti"
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "&Fit to Page"
+msgstr "P&rispôsobiť stránke"
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "Zoom to fit page in window"
+msgstr "Priblížiť na prispôsobenie strany"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "Prispôsobiť šírke &stránky"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr "Priblížiť na prispôsobenie šírky strany"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "Prispôsobiť &výške stránky"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr "Priblížiť na prispôsobenie výšky strany"
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Zoom &In"
+msgstr "Z&väčšiť"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Zoom &Out"
+msgstr "Z&menšiť"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Zoom..."
+msgstr "&Lupa..."
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "Select zoom level"
+msgstr "Vybrať úroveň priblíženia"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Redisplay"
+msgstr "Zob&raziť znovu"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "Redisplay document"
+msgstr "Znovu zobraziť dokument"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Up"
+msgstr "Na&hor"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "Go up"
+msgstr "Prejsť vyššie"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "&Previous Page"
+msgstr "&Predchádzajúca stránka"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "Go to previous page"
+msgstr "Prejsť na predošlú stranu"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Next Page"
+msgstr "&Nasledujúca stránka"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "Go to next page"
+msgstr "Prejsť na nasledujúcu stránku"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Go To..."
+msgstr "&Prejsť na..."
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Go to Page..."
+msgstr "Prejsť na &stránku..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Go to Line..."
+msgstr "Prejsť na &riadok..."
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "&First Page"
+msgstr "&Prvá stránka"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "Go to first page"
+msgstr "Prejsť na prvú stranu"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "&Last Page"
+msgstr "Po&sledná stránka"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Go to last page"
+msgstr "Prejsť na poslednú stránku"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "&Back"
+msgstr "&Späť"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Go back in document"
+msgstr "Prejsť späť v dokumente"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "&Forward"
+msgstr "Do&predu"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Go forward in document"
+msgstr "Prejsť dopredu v dokumente"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "&Pridať záložku"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "&Upraviť záložky..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Spelling..."
+msgstr "Kontrola &pravopisu..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "Check spelling in document"
+msgstr "Skontrolovať pravopis v dokumente"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show &Menubar"
+msgstr "Zobraziť &menu"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show or hide menubar"
+msgstr "Zobraziť alebo skryť ponuku"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "Zobraziť panel &nástrojov"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show or hide toolbar"
+msgstr "Zobraziť alebo skryť panel nástrojov"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "Zobraziť s&tavový riadok"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show or hide statusbar"
+msgstr "Zobraziť alebo skryť stavový riadok"
+
+#: kstandardaction_p.h:99
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "Režim &celej obrazovky"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "&Save Settings"
+msgstr "&Uložiť nastavenie"
+
+#: kstandardaction_p.h:101
+#, kde-format
+msgid "Configure S&hortcuts..."
+msgstr "Nastaviť &klávesové skratky..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "Nas&taviť %1..."
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "Nastaviť panely &nástrojov..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "Nastaviť &upozornenia..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Príručka %1"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "What's &This?"
+msgstr "Čo je &to?"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "Tip &dňa"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Nahlásiť chybu..."
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "Switch Application &Language..."
+msgstr "Prepnúť jazyk ap&likácie..."
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "&O aplikácii %1"
+
+#: kstandardaction_p.h:115
+#, kde-format
+msgid "About &KDE"
+msgstr "Informácie o &KDE"
+
+#: kstandardaction_p.h:116
+#, kde-format
+msgid "&Delete"
+msgstr "Odstrániť"
+
+#: kstandardaction_p.h:117
+#, kde-format
+msgid "&Rename..."
+msgstr "Premenovať..."
+
+#: kstandardaction_p.h:118
+#, kde-format
+msgid "&Move to Trash"
+msgstr "Presunúť do &koša"
+
+#: kstandardaction_p.h:119
+#, kde-format
+msgid "&Donate"
+msgstr "Venovať peniaze"
+
+#: ktipdialog.cpp:238
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Tip dňa"
+
+#: ktipdialog.cpp:254
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Viete, že...?\n"
+
+#: ktipdialog.cpp:306
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Zobraziť tipy pri š&tarte"
+
+#: ktipdialog.cpp:311
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Predošlé"
+
+#: ktipdialog.cpp:316
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Ďalšie"

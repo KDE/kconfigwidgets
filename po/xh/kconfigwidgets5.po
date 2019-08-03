@@ -1,0 +1,653 @@
+# translation of kdelibs4.po to
+# translation of kdelibs4.po to
+# translation of kdelibs4.po to
+# translation of kdelibs4.po to Xhosa
+# K Desktop Environment - kdelibs
+# Copyright (C) 2001 translate.org.za
+# Antoinette Dekeni <antoinette@transalate.org.za>, 2001.
+# Lwandle Mgidlana <lwandle@translate.org.za>, 2002
+# Thelma Lungcuzo <thelma@translate.org.za>, 2002
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-07-18 02:49+0200\n"
+"PO-Revision-Date: 2002-12-13 17:20SAST\n"
+"Last-Translator: Lwandle Mgidlana <lwandle@translate.org.za>\n"
+"Language-Team: Xhosa <xhosa@translate.org.za>\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0beta2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, fuzzy, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Igama elitsha lenginginya."
+
+#, fuzzy, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "Igama elitsha lenginginya."
+
+#: kcmodule.cpp:170
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:174
+#, fuzzy, kde-format
+#| msgid "Could not create the new configuration file."
+msgid "You are not allowed to save the configuration"
+msgstr "Ayinakuyenza ifayile yoqwalaselo entsha."
+
+#: kcodecaction.cpp:90
+#, fuzzy, kde-format
+#| msgid "Default"
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Ezokwendalo"
+
+#: kcodecaction.cpp:98
+#, fuzzy, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Uvalo-oluzenzekelayo"
+
+#: kconfigdialog.cpp:44
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Qwalasela"
+
+#: krecentfilesaction.cpp:77
+#, fuzzy, kde-format
+msgid "No Entries"
+msgstr "Iimpahla"
+
+#: krecentfilesaction.cpp:83
+#, fuzzy, kde-format
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "Cima igalelo"
+
+#: kstandardaction.cpp:153
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Ngasemva"
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Ngaphambili"
+
+#: kstandardaction.cpp:167
+#, fuzzy, kde-format
+#| msgctxt "beginning (of line)"
+#| msgid "&Home"
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Ikhaya"
+
+#: kstandardaction.cpp:170
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Uncedo"
+
+#: kstandardaction.cpp:214
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+
+#: kstandardaction.cpp:234
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&New"
+msgstr "&Entsha"
+
+#: kstandardaction_p.h:41
+#, fuzzy, kde-format
+#| msgid "Clear shortcut"
+msgid "Create new document"
+msgstr "Cima indlela emfutshane"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Open..."
+msgstr "&Vula..."
+
+#: kstandardaction_p.h:42
+#, fuzzy, kde-format
+#| msgid "Go back one step"
+msgid "Open an existing document"
+msgstr "Buya umva inyathelo elinye"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open &Recent"
+msgstr "Vula &Okusandukubakhona"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Save"
+msgstr "&Gcina"
+
+#: kstandardaction_p.h:44
+#, fuzzy, kde-format
+msgid "Save document"
+msgstr "Gcina Uxwebhu?"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save &As..."
+msgstr "Gcina &Njenge..."
+
+#: kstandardaction_p.h:45
+#, fuzzy, kde-format
+msgid "Save document under a new name"
+msgstr "Gcina Uxwebhu?"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Re&vert"
+msgstr "&Buyela emva"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "&Close"
+msgstr "&Vala"
+
+#: kstandardaction_p.h:47
+#, fuzzy, kde-format
+msgid "Close document"
+msgstr "Gcina Uxwebhu?"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "&Print..."
+msgstr "&Shicilela..."
+
+#: kstandardaction_p.h:48
+#, fuzzy, kde-format
+msgid "Print document"
+msgstr "Shicilela"
+
+#: kstandardaction_p.h:49
+#, fuzzy, kde-format
+#| msgid "Print Previe&w..."
+msgid "Print Previe&w"
+msgstr "Shicilela Imbonisel&o..."
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "&Mail..."
+msgstr "&Iposi..."
+
+#: kstandardaction_p.h:50
+#, fuzzy, kde-format
+msgid "Send document by mail"
+msgstr "Gcina Uxwebhu?"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "&Quit"
+msgstr "&Shiya"
+
+#: kstandardaction_p.h:51
+#, fuzzy, kde-format
+msgid "Quit application"
+msgstr "Izicelo"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Undo"
+msgstr "&Sukwenza"
+
+#: kstandardaction_p.h:53
+#, fuzzy, kde-format
+msgid "Undo last action"
+msgstr "Ulwenziwo lwamaxwebhu"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Re&do"
+msgstr "&Yenza kwakhona"
+
+#: kstandardaction_p.h:54
+#, fuzzy, kde-format
+msgid "Redo last undone action"
+msgstr "Ulwenziwo lwamaxwebhu"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cu&t"
+msgstr "Sik&a"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Copy"
+msgstr "&Khuphela"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, kde-format
+msgid "&Paste"
+msgstr "&Cola"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:58
+#, fuzzy, kde-format
+msgid "Paste clipboard content"
+msgstr "Ulayisho %1"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "C&lear"
+msgstr "C&ima"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Select &All"
+msgstr "Kheth&a Konke"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Dese&lect"
+msgstr "Sukukhet&ha"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "&Find..."
+msgstr "&Fumana..."
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Find &Next"
+msgstr "Fumana &Elandelayo"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "Fumana Okudl&ulileyo"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Replace..."
+msgstr "&Buyisela..."
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Actual Size"
+msgstr "&Obona Bungakanani"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:68
+#, kde-format
+msgid "&Fit to Page"
+msgstr "&Yonelisa Kwiphepha"
+
+#: kstandardaction_p.h:68
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Yiya Elayinini"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "&Yonelisa Kububanzi Bephepha"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "&Yonelisa Kubude Bephepha"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Zoom &In"
+msgstr "Sondeza &Ngaphakathi"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Zoom &Out"
+msgstr "Sondeza &Ngaphandle"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Zoom..."
+msgstr "&Sondeza..."
+
+#: kstandardaction_p.h:73
+#, fuzzy, kde-format
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Khetha iveki"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Redisplay"
+msgstr "&Bonisa kwakhona"
+
+#: kstandardaction_p.h:74
+#, fuzzy, kde-format
+#| msgid "&Redisplay"
+msgid "Redisplay document"
+msgstr "&Bonisa kwakhona"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Up"
+msgstr "&Ngentla"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "&Previous Page"
+msgstr "&Iphepha Elidlulileyo"
+
+#: kstandardaction_p.h:81
+#, fuzzy, kde-format
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "&Iphepha Elidlulileyo"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Next Page"
+msgstr "&Iphepha Elidlulileyo"
+
+#: kstandardaction_p.h:82
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Yiya Elayinini"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Go To..."
+msgstr "&Yiya Ku..."
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Go to Page..."
+msgstr "&Yiya Kwiphepha..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Go to Line..."
+msgstr "&Yiya Kumgca..."
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "&First Page"
+msgstr "&Iphepha Lokuqala"
+
+#: kstandardaction_p.h:86
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Yiya Elayinini"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "&Last Page"
+msgstr "&Iphepha Lokugqibela"
+
+#: kstandardaction_p.h:87
+#, fuzzy, kde-format
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Yiya Kwiphepha..."
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "&Back"
+msgstr "&Umva"
+
+#: kstandardaction_p.h:88
+#, fuzzy, kde-format
+#| msgid "Go back one step"
+msgid "Go back in document"
+msgstr "Buya umva inyathelo elinye"
+
+#: kstandardaction_p.h:89
+#, fuzzy, kde-format
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&Ngaphambili"
+
+#: kstandardaction_p.h:89
+#, fuzzy, kde-format
+#| msgid "Go forward one step"
+msgid "Go forward in document"
+msgstr "Yiya phambili inyathelo elinye"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "&Yongeza Inqaku lencwadi"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "&Hlela Amanqaku eencwadi..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Spelling..."
+msgstr "&Upelo..."
+
+#: kstandardaction_p.h:94
+#, fuzzy, kde-format
+msgid "Check spelling in document"
+msgstr "Khangela upelo"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Show &Menubar"
+msgstr "Bonisa &Ibar ye menu"
+
+#: kstandardaction_p.h:96
+#, fuzzy, kde-format
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Bonisa &Ibar ye menu"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "Bonisa &Isixhobo sebar"
+
+#: kstandardaction_p.h:97
+#, fuzzy, kde-format
+#| msgid "Show &Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Bonisa &Isixhobo sebar"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "Bonisa &Isimo se bar"
+
+#: kstandardaction_p.h:98
+#, fuzzy, kde-format
+#| msgid "Show St&atusbar"
+msgid "Show or hide statusbar"
+msgstr "Bonisa &Isimo se bar"
+
+#: kstandardaction_p.h:99
+#, fuzzy, kde-format
+msgid "F&ull Screen Mode"
+msgstr "Indlela &Yekhusi elipheleleyo"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "&Save Settings"
+msgstr "&Gcina Izicwangciso"
+
+#: kstandardaction_p.h:101
+#, kde-format
+msgid "Configure S&hortcuts..."
+msgstr "Qwalasela Ii&ndlela ezimfutshane..."
+
+#: kstandardaction_p.h:102
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Qwalasela %1..."
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "Qwalasela Izixh&obo ze bar..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "Qwalasela &Ulwaziso..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &Incwadi yesandla"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "What's &This?"
+msgstr "&Yintoni Le?"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "Uthsuphe We &Mini"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Chaza i Bug..."
+
+#: kstandardaction_p.h:113
+#, fuzzy, kde-format
+msgid "Switch Application &Language..."
+msgstr "Izicelo"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&About %1"
+msgstr "M&alunga ne %1"
+
+#: kstandardaction_p.h:115
+#, kde-format
+msgid "About &KDE"
+msgstr "Malunga ne &KDE"
+
+#: kstandardaction_p.h:116
+#, kde-format
+msgid "&Delete"
+msgstr "&Cima"
+
+#: kstandardaction_p.h:117
+#, fuzzy, kde-format
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "&Buyisela..."
+
+#: kstandardaction_p.h:118
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:119
+#, fuzzy, kde-format
+#| msgid "&Done"
+msgid "&Donate"
+msgstr "&Yenzekile"
+
+#: ktipdialog.cpp:238
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Utsuphe Losuku"
+
+#: ktipdialog.cpp:254
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Ubusazi na...?\n"
+
+#: ktipdialog.cpp:306
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Bonisa utshuphe kwisiqalo"
+
+#: ktipdialog.cpp:311
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Edlulileyo"
+
+#: ktipdialog.cpp:316
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Elandelayo"
