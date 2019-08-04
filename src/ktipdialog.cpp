@@ -32,10 +32,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <QCheckBox>
 #include <QKeyEvent>
 #include <QLabel>
-#include <QLayout>
 #include <QDesktopWidget>
 #include <QPushButton>
 #include <QTextBrowser>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
 
 #include <kconfig.h>
 #include <kconfiggroup.h>
