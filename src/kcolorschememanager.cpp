@@ -27,6 +27,7 @@
 #include <QApplication>
 #include <QDir>
 #include <QFileInfo>
+#include <QMenu>
 #include <QPainter>
 #include <QStandardPaths>
 
@@ -62,8 +63,13 @@ QVariant KColorSchemeModel::data(const QModelIndex &index, int role) const
     switch (role) {
     case Qt::DisplayRole:
         return m_data.at(index.row()).name;
-    case Qt::DecorationRole:
-        return m_data.at(index.row()).preview;
+    case Qt::DecorationRole: {
+        auto &item = m_data[index.row()];
+        if (item.preview.isNull()) {
+            item.preview = createPreview(item.path);
+        }
+        return item.preview;
+    }
     case Qt::UserRole:
         return m_data.at(index.row()).path;
     default:
@@ -87,10 +93,10 @@ void KColorSchemeModel::init()
         }
     }
     for (const QString &schemeFile : qAsConst(schemeFiles)) {
-        KSharedConfigPtr config = KSharedConfig::openConfig(schemeFile);
+        KSharedConfigPtr config = KSharedConfig::openConfig(schemeFile, KConfig::SimpleConfig);
         KConfigGroup group(config, QStringLiteral("General"));
         const QString name = group.readEntry("Name", QFileInfo(schemeFile).baseName());
-        const KColorSchemeModelData data = {name, schemeFile, createPreview(schemeFile)};
+        const KColorSchemeModelData data = {name, schemeFile, QIcon()};
         m_data.append(data);
     }
     std::sort(m_data.begin(), m_data.end(), [](const KColorSchemeModelData & first, const KColorSchemeModelData & second) {
@@ -99,10 +105,11 @@ void KColorSchemeModel::init()
     endResetModel();
 }
 
-QIcon KColorSchemeModel::createPreview(const QString &path)
+QIcon KColorSchemeModel::createPreview(const QString &path) const
 {
-    KSharedConfigPtr schemeConfig = KSharedConfig::openConfig(path);
+    KSharedConfigPtr schemeConfig = KSharedConfig::openConfig(path, KConfig::SimpleConfig);
     QIcon result;
+
     KColorScheme activeWindow(QPalette::Active, KColorScheme::Window, schemeConfig);
     KColorScheme activeButton(QPalette::Active, KColorScheme::Button, schemeConfig);
     KColorScheme activeView(QPalette::Active, KColorScheme::View, schemeConfig);
@@ -166,7 +173,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
     });
     for (int i = 0; i < d->model->rowCount(); ++i) {
         QModelIndex index = d->model->index(i);
-        QAction *action = new QAction(index.data(Qt::DecorationRole).value<QIcon>(), index.data().toString(), menu);
+        QAction *action = new QAction(index.data(Qt::DisplayRole).toString(), menu);
         action->setData(index.data(Qt::UserRole));
         action->setActionGroup(group);
         action->setCheckable(true);
@@ -175,6 +182,16 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
         }
         menu->addAction(action);
     }
+
+    connect(menu->menu(), &QMenu::aboutToShow, group, [this, group] {
+        const auto actions = group->actions();
+        for (QAction *action : actions) {
+            if (action->icon().isNull()) {
+                action->setIcon(d->model->createPreview(action->data().toString()));
+            }
+        }
+    });
+
     return menu;
 }
 
