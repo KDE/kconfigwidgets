@@ -229,7 +229,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
 {
     bool valueChanged = false;
     const QList<QObject *> listOfChildren = widget->children();
-    if (listOfChildren.count() == 0) { //?? XXX
+    if (listOfChildren.isEmpty()) { //?? XXX
         return valueChanged;
     }
 
