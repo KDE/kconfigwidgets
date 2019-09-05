@@ -145,7 +145,7 @@ void KLanguageButton::insertLanguage(const QString &languageCode, const QString 
     QString text;
     bool showCodes = d->showCodes;
     if (name.isEmpty()) {
-        const QString entryFile = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("locale/") + languageCode + QStringLiteral("/kf5_entry.desktop"));
+        const QString entryFile = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QLatin1String("locale/") + languageCode + QLatin1String("/kf5_entry.desktop"));
         if (QFile::exists(entryFile)) {
             text = nameFromEntryFile(entryFile);
         }

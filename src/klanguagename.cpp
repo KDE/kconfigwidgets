@@ -32,8 +32,8 @@ QString KLanguageName::nameForCode(const QString &code)
 
 QString KLanguageName::nameForCodeInLocale(const QString &code, const QString &outputCode)
 {
-    const QString realCode = code == QStringLiteral("en") ? QStringLiteral("en_US") : code;
-    const QString realOutputCode = outputCode == QStringLiteral("en") ? QStringLiteral("en_US") : outputCode;
+    const QString realCode = code == QLatin1String("en") ? QStringLiteral("en_US") : code;
+    const QString realOutputCode = outputCode == QLatin1String("en") ? QStringLiteral("en_US") : outputCode;
 
     const QString entryFile =
             QStandardPaths::locate(QStandardPaths::GenericDataLocation,
@@ -50,7 +50,7 @@ QString KLanguageName::nameForCodeInLocale(const QString &code, const QString &o
         // otherwise we defer to QLocale.
         entry.setLocale("en_US");
         const QString englishName = group.readEntry("Name");
-        if (name != englishName || realOutputCode == QStringLiteral("en_US")) {
+        if (name != englishName || realOutputCode == QLatin1String("en_US")) {
             return name;
         }
     }

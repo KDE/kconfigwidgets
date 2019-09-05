@@ -124,7 +124,7 @@ void KCModule::setNeedsAuthorization(bool needsAuth)
     d->_needsAuthorization = needsAuth;
 #ifndef KCONFIGWIDGETS_NO_KAUTH
     if (needsAuth && d->_about) {
-        d->_authAction = KAuth::Action(QStringLiteral("org.kde.kcontrol.") + d->_about->componentName() + QStringLiteral(".save"));
+        d->_authAction = KAuth::Action(QLatin1String("org.kde.kcontrol.") + d->_about->componentName() + QLatin1String(".save"));
         d->_needsAuthorization = d->_authAction.isValid();
         d->_authAction.setHelperId(QStringLiteral("org.kde.kcontrol.") + d->_about->componentName());
         d->_authAction.setParentWidget(this);

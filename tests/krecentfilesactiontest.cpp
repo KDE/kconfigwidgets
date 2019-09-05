@@ -47,7 +47,7 @@ public:
 public:
     void notifyOutputAvailable()
     {
-        uiMainWindow->labelOutputAvailable->setText(uiMainWindow->labelOutputAvailable->text() + "A");
+        uiMainWindow->labelOutputAvailable->setText(uiMainWindow->labelOutputAvailable->text() + QLatin1Char('A'));
         qDebug() << recentFiles->items();
     }
 
@@ -96,7 +96,7 @@ void KRecentFilesActionTest::addUrl()
     d->recentFiles->addUrl(QUrl(url));
 
     d->notifyOutputAvailable();
-    d->uiMainWindow->lineEditUrl->setText(url + "a");
+    d->uiMainWindow->lineEditUrl->setText(url + QLatin1Char('a'));
 }
 
 void KRecentFilesActionTest::loadEntries()

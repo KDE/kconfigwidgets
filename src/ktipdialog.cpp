@@ -87,13 +87,13 @@ void KTipDatabase::Private::addTips(const QString &tipFile)
     const QRegExp rx(QStringLiteral("\\n+"));
 
     int pos = -1;
-    while ((pos = content.indexOf(QStringLiteral("<html>"), pos + 1, Qt::CaseInsensitive)) != -1) {
+    while ((pos = content.indexOf(QLatin1String("<html>"), pos + 1, Qt::CaseInsensitive)) != -1) {
         /**
          * To make translations work, tip extraction here must exactly
          * match what is done by the preparetips5 script.
          */
         QString tip = content
-                      .mid(pos + 6, content.indexOf(QStringLiteral("</html>"), pos, Qt::CaseInsensitive) - pos - 6)
+                      .mid(pos + 6, content.indexOf(QLatin1String("</html>"), pos, Qt::CaseInsensitive) - pos - 6)
                       .replace(rx, QStringLiteral("\n"));
 
         if (!tip.endsWith('\n')) {
@@ -101,7 +101,7 @@ void KTipDatabase::Private::addTips(const QString &tipFile)
         }
 
         if (tip.startsWith('\n')) {
-            tip = tip.mid(1);
+            tip.remove(0, 1);
         }
 
         if (tip.isEmpty()) {

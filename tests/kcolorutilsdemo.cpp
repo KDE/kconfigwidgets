@@ -106,7 +106,7 @@ void setBackground(QWidget *widget, const QColor &color)
     QString name = color.name();
     name += " (" + QString::number(color.red()) + ", "
             + QString::number(color.green()) + ", "
-            + QString::number(color.blue()) + ")";
+            + QString::number(color.blue()) + QLatin1Char(')');
     widget->setToolTip(name);
 }
 
