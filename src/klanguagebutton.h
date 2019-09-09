@@ -4,7 +4,7 @@
  *
  * Copyright (c) 1999-2003 Hans Petter Bieker <bieker@kde.org>
  *           (c) 2001      Martijn Klingens <klingens@kde.org>
- *           (c) 2007      David Jarvie <software@astrojar.org.uk>
+ *           (c) 2007      David Jarvie <djarvie@kde.org>
  *
  *  This library is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU Library General Public
@@ -42,7 +42,7 @@ class KLanguageButtonPrivate;
  * \image html klanguagebutton.png "KDE Language Selection Widget"
  *
  * @author Hans Petter Bieker <bieker@kde.org>, Martijn Klingens <klingens@kde.org>,
- *         David Jarvie <software@astrojar.org.uk>
+ *         David Jarvie <djarvie@kde.org>
  */
 class KCONFIGWIDGETS_EXPORT KLanguageButton : public QWidget
 {
