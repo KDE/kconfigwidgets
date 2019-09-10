@@ -31,7 +31,9 @@
 #include <QFile>
 #include <QDesktopWidget>
 #include <QDir>
+#include <QGuiApplication>
 #include <QMenu>
+#include <QScreen>
 
 #include <kconfig.h>
 #include <kconfiggroup.h>
@@ -122,19 +124,19 @@ static QString titleWithSensibleWidth(const QString &nameValue, const QString &v
     // action titles to be bigger than that
     // Since we do not know in which screen we are going to show
     // we choose the min of all the screens
-    const QDesktopWidget desktopWidget;
     int maxWidthForTitles = INT_MAX;
-    for (int i = 0; i < desktopWidget.screenCount(); ++i) {
-        maxWidthForTitles = qMin(maxWidthForTitles, desktopWidget.availableGeometry(i).width() * 3 / 4);
+    const auto screens = QGuiApplication::screens();
+    for (QScreen *screen : screens) {
+        maxWidthForTitles = qMin(maxWidthForTitles, screen->availableGeometry().width() * 3 / 4);
     }
     const QFontMetrics fontMetrics = QFontMetrics(QFont());
 
     QString title = nameValue + QLatin1String(" [") + value + QLatin1Char(']');
-    if (fontMetrics.width(title) > maxWidthForTitles) {
+    const int nameWidth = fontMetrics.boundingRect(title).width();
+    if (nameWidth > maxWidthForTitles) {
         // If it does not fit, try to cut only the whole path, though if the
         // name is too long (more than 3/4 of the whole text) we cut it a bit too
         const int nameValueMaxWidth = maxWidthForTitles * 3 / 4;
-        const int nameWidth = fontMetrics.width(nameValue);
         QString cutNameValue, cutValue;
         if (nameWidth > nameValueMaxWidth) {
             cutNameValue = fontMetrics.elidedText(nameValue, Qt::ElideMiddle, nameValueMaxWidth);

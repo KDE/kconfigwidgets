@@ -34,6 +34,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <QLabel>
 #include <QDesktopWidget>
 #include <QPushButton>
+#include <QScreen>
 #include <QTextBrowser>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
@@ -291,10 +292,12 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
         resize(520, 280);
         QSize sh = size();
 
-        QRect rect = QApplication::desktop()->screenGeometry(QCursor::pos());
-
-        move(rect.x() + (rect.width() - sh.width()) / 2,
-             rect.y() + (rect.height() - sh.height()) / 2);
+        QScreen *screen = QGuiApplication::screenAt(QCursor::pos());
+        if (screen) {
+            const QRect rect = screen->geometry();
+            move(rect.x() + (rect.width() - sh.width()) / 2,
+                    rect.y() + (rect.height() - sh.height()) / 2);
+        }
     }
 
     KSeparator *sep = new KSeparator(Qt::Horizontal);
