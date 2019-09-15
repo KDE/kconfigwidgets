@@ -41,7 +41,7 @@
  *   m_collectionCheckStateMaintainer->setSelectionModel(m_checkableProxy->selectionModel());
  * @endcode
  *
- * @see KViewStateSaver
+ * @see KConfigViewStateSaver
  */
 template<typename StateSaver>
 class KViewStateMaintainer : public KViewStateMaintainerBase
