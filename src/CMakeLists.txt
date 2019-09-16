@@ -136,6 +136,8 @@ if(BUILD_QCH)
             KF5WidgetsAddons_QCH
             KF5Config_QCH
             KF5Auth_QCH
+        INCLUDE_DIRS
+            ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
             KCONFIGWIDGETS_EXPORT
             KCONFIGWIDGETS_DEPRECATED
