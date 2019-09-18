@@ -308,7 +308,7 @@ public:
     KColorScheme(const KColorScheme &);
 
     /** Destructor */
-    virtual ~KColorScheme();
+    virtual ~KColorScheme(); // TODO KF6: remove virtual
 
     /** Standard assignment operator */
     KColorScheme &operator=(const KColorScheme &);
@@ -324,7 +324,7 @@ public:
      * of states (e.g. windows that cannot be inactive), consider using a
      * ::KStatefulBrush instead.
      */
-    explicit KColorScheme(QPalette::ColorGroup, ColorSet = View, KSharedConfigPtr = KSharedConfigPtr());
+    explicit KColorScheme(QPalette::ColorGroup = QPalette::Normal, ColorSet = View, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
      * Retrieve the requested background brush.
@@ -450,6 +450,8 @@ public:
 private:
     QExplicitlySharedDataPointer<KColorSchemePrivate> d;
 };
+
+Q_DECLARE_METATYPE(KColorScheme)
 
 /**
  * A container for a "state-aware" brush.
