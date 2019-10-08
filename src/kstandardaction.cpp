@@ -166,9 +166,11 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
         case Home:
             sLabel = i18nc("home page", "&Home");
             break;
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 23)
         case Help:
             sLabel = i18nc("show help", "&Help");
             break;
+#endif
         case Preferences:
         case AboutApp:
         case HelpContents: {
@@ -239,7 +241,7 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             pAction = new KToggleFullScreenAction(parent);
             pAction->setCheckable(true);
             break;
-#if !defined(KDE_NO_DEPRECATED) && defined(QT_DBUS_LIB)
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39) && defined(QT_DBUS_LIB)
         case PasteText:
             pAction = new KPasteTextAction(parent);
             break;
@@ -410,7 +412,7 @@ QAction *paste(const QObject *recvr, const char *slot, QObject *parent)
     return KStandardAction::create(Paste, recvr, slot, parent);
 }
 
-#ifndef KDE_NO_DEPRECATED
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39)
 QAction *pasteText(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(PasteText, recvr, slot, parent);
@@ -646,7 +648,7 @@ KToggleFullScreenAction *fullScreen(const QObject *recvr, const char *slot, QWid
     return ret;
 }
 
-#ifndef KDE_NO_DEPRECATED
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
 QAction *saveOptions(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(SaveOptions, recvr, slot, parent);
@@ -673,7 +675,7 @@ QAction *configureNotifications(const QObject *recvr, const char *slot, QObject 
     return KStandardAction::create(ConfigureNotifications, recvr, slot, parent);
 }
 
-#ifndef KDE_NO_DEPRECATED
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
 QAction *help(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(Help, recvr, slot, parent);

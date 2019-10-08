@@ -20,11 +20,13 @@ include(KDEInstallDirs)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
 
-include(GenerateExportHeader)
+include(ECMGenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMAddQch)
 include(ECMQtDeclareLoggingCategory)
+
+set(EXCLUDE_DEPRECATED_BEFORE_AND_AT 0 CACHE STRING "Control the range of deprecated API excluded from the build [default=0].")
 
 option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")

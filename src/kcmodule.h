@@ -248,17 +248,23 @@ public:
     KAuth::Action authAction() const;
 #endif
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 0)
     /**
      * Returns the value set by setExportText();
      * @deprecated since 5.0, obsolete feature
      */
-    KCONFIGWIDGETS_DEPRECATED QString exportText() const;
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 0, "Obsolete feature")
+    QString exportText() const;
+#endif
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 0)
     /**
      * Sets the export QString value, used for exporting data.
      * @deprecated since 5.0, obsolete feature
      */
-    KCONFIGWIDGETS_DEPRECATED void setExportText(const QString &);
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 0, "Obsolete feature")
+    void setExportText(const QString &);
+#endif
 
 public Q_SLOTS:
     /**
@@ -375,14 +381,18 @@ Q_SIGNALS:
 
 protected Q_SLOTS:
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 64)
     /**
      * Calling this slot is equivalent to emitting changed(true).
-     * @deprecated see markAsChanged
+     * @deprecated Since 5.64, use markAsChanged
      */
-    KCONFIGWIDGETS_DEPRECATED void changed();
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 64, "Use KCModule::markAsChanged()")
+    void changed();
+#endif
 
     /**
      * Calling this slot is equivalent to emitting changed(true).
+     * @since 5.64
      */
     void markAsChanged();
 

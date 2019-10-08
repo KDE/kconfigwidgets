@@ -21,8 +21,15 @@ endif()
 qt5_add_resources(kconfigwidgets_SRCS kconfigwidgets.qrc)
 
 add_library(KF5ConfigWidgets ${kconfigwidgets_SRCS})
-generate_export_header(KF5ConfigWidgets BASE_NAME KConfigWidgets)
 add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
+ecm_generate_export_header(KF5ConfigWidgets
+    BASE_NAME KConfigWidgets
+    # GROUP_BASE_NAME KF <- enable once all of KF modules use ecm_generate_export_header
+    VERSION ${KF5_VERSION}
+    DEPRECATED_BASE_VERSION 0
+    DEPRECATION_VERSIONS 4.0 5.0 5.23 5.32 5.38 5.39 5.64
+    EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
+)
 
 target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KConfigWidgets>")
 

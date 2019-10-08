@@ -34,7 +34,8 @@
 #include <QDBusInterface>
 #include <QDBusReply>
 
-#ifndef KDE_NO_DEPRECATED
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39)
+
 class KPasteTextActionPrivate
 {
 public:
@@ -138,6 +139,7 @@ void KPasteTextActionPrivate::_k_slotTriggered(QAction *action)
         //  qCDebug(KCONFIG_WIDGETS_LOG) << "Clipboard: " << qApp->clipboard()->text(QClipboard::Clipboard);
     }
 }
-#endif // KDE_NO_DEPRECATED
 
 #include "moc_kpastetextaction.cpp"
+
+#endif // KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE

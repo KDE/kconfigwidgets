@@ -53,7 +53,9 @@ public:
     QString _rootOnlyMessage;
     QList<KConfigDialogManager *> managers;
     QString _quickHelp;
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 0)
     QString m_ExportText;
+#endif
     bool _useRootOnlyMessage : 1;
     bool _firstshow : 1;
 
@@ -267,10 +269,12 @@ bool KCModule::useRootOnlyMessage() const
     return d->_useRootOnlyMessage;
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 64)
 void KCModule::changed()
 {
     markAsChanged();
 }
+#endif
 
 void KCModule::markAsChanged()
 {
@@ -282,15 +286,19 @@ KAboutData KCModule::componentData() const
     return *d->_about;
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 0)
 QString KCModule::exportText() const
 {
     return d->m_ExportText;
 }
+#endif
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 0)
 void KCModule::setExportText(const QString &text)
 {
     d->m_ExportText = text;
 }
+#endif
 
 void KCModule::setQuickHelp(const QString &help)
 {

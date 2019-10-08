@@ -266,15 +266,18 @@ public:
      */
     static QHash<QString, QByteArray> *propertyMap();
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
     /**
      * Retrieve the map between widgets class names and signals that are listened
      * to detect changes in the configuration values.
-     * @deprecated For code having KDE Frameworks 5.32 as minimal required version,
-     * rely on the change signal noted with NOTIFY in the definition of the
-     * used property instead of setting it in this map. Or set the
+     * @deprecated Since 5.32, rely on the property change signal noted
+     * by @c NOTIFY of the used property in the class definition
+     * instead of setting it in this map. Or set the
      * "kcfg_propertyNotify" property on the widget instance.
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 32, "See API docs")
     static QHash<QString, QByteArray> *changedMap();
+#endif
 
 public Q_SLOTS:
     /**

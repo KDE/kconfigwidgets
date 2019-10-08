@@ -55,7 +55,9 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { Cut,           KStandardShortcut::Cut, "edit_cut", I18N_NOOP("Cu&t"), I18N_NOOP("Cut selection to clipboard"), "edit-cut" },
     { Copy,          KStandardShortcut::Copy, "edit_copy", I18N_NOOP("&Copy"), I18N_NOOP("Copy selection to clipboard"), "edit-copy" },
     { Paste,         KStandardShortcut::Paste, "edit_paste", I18N_NOOP("&Paste"), I18N_NOOP("Paste clipboard content"), "edit-paste" },
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39)
     { PasteText,     KStandardShortcut::Paste, "edit_paste", I18N_NOOP("&Paste"), I18N_NOOP("Paste clipboard content"), "edit-paste" },
+#endif
     { Clear,         KStandardShortcut::Clear, "edit_clear", I18N_NOOP("C&lear"), nullptr, "edit-clear" },
     { SelectAll,     KStandardShortcut::SelectAll, "edit_select_all", I18N_NOOP("Select &All"), nullptr, "edit-select-all" },
     { Deselect,      KStandardShortcut::Deselect, "edit_deselect", I18N_NOOP("Dese&lect"), nullptr, "edit-select-none" },
@@ -97,7 +99,9 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { ShowToolbar,   KStandardShortcut::ShowToolbar, "options_show_toolbar", I18N_NOOP("Show &Toolbar"), I18N_NOOP("Show or hide toolbar"), nullptr },
     { ShowStatusbar, KStandardShortcut::ShowStatusbar, "options_show_statusbar", I18N_NOOP("Show St&atusbar"), I18N_NOOP("Show or hide statusbar"), nullptr },
     { FullScreen,    KStandardShortcut::FullScreen, "fullscreen", I18N_NOOP("F&ull Screen Mode"), nullptr, "view-fullscreen" },
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
     { SaveOptions,   KStandardShortcut::SaveOptions, "options_save_options", I18N_NOOP("&Save Settings"), nullptr, nullptr },
+#endif
     { KeyBindings,   KStandardShortcut::KeyBindings, "options_configure_keybinding", I18N_NOOP("Configure S&hortcuts..."), nullptr, "configure-shortcuts" },
     { Preferences,   KStandardShortcut::Preferences, "options_configure", I18N_NOOP("&Configure %1..."), nullptr, "configure" },
     { ConfigureToolbars, KStandardShortcut::ConfigureToolbars, "options_configure_toolbars", I18N_NOOP("Configure Tool&bars..."), nullptr, "configure-toolbars" },
@@ -105,7 +109,9 @@ static const KStandardActionInfo g_rgActionInfo[] = {
 
     // the idea here is that Contents is used in menus, and Help in dialogs, so both share the same
     // shortcut
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
     { Help,          KStandardShortcut::Help, "help", nullptr, nullptr, "help-contents" },
+#endif
     { HelpContents,  KStandardShortcut::Help, "help_contents", I18N_NOOP("%1 &Handbook"), nullptr, "help-contents" },
     { WhatsThis,     KStandardShortcut::WhatsThis, "help_whats_this", I18N_NOOP("What's &This?"), nullptr, "help-contextual" },
     { TipofDay,      KStandardShortcut::TipofDay, "help_show_tip", I18N_NOOP("Tip of the &Day"), nullptr, "help-hint" },

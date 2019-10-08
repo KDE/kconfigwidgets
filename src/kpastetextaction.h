@@ -32,6 +32,8 @@
 #include <kconfigwidgets_export.h>
 
 class KPasteTextActionPrivate;
+
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 39)
 /**
  * @class KPasteTextAction kpastetextaction.h KPasteTextAction
  *
@@ -43,8 +45,7 @@ class KPasteTextActionPrivate;
  * item: the current clipboard content.
  * @deprecated since 5.39
  */
-#ifndef KDE_NO_DEPRECATED
-class KCONFIGWIDGETS_DEPRECATED_EXPORT KPasteTextAction: public QAction
+class KCONFIGWIDGETS_EXPORT KPasteTextAction: public QAction
 {
     Q_OBJECT
 public:
@@ -53,6 +54,7 @@ public:
      *
      * @param parent The parent of this action.
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 39, "No longer use this class")
     explicit KPasteTextAction(QObject *parent);
 
     /**
@@ -67,6 +69,7 @@ public:
      * @param text The text that will be displayed.
      * @param parent The parent of this action.
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 39, "No longer use this class")
     KPasteTextAction(const QString &text, QObject *parent);
 
     /**
@@ -80,6 +83,7 @@ public:
      * @param text The text that will be displayed.
      * @param parent The parent of this action.
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 39, "No longer use this class")
     KPasteTextAction(const QIcon &icon, const QString &text, QObject *parent);
 
     virtual ~KPasteTextAction();
