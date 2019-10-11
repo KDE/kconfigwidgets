@@ -269,6 +269,11 @@ bool KCModule::useRootOnlyMessage() const
 
 void KCModule::changed()
 {
+    markAsChanged();
+}
+
+void KCModule::markAsChanged()
+{
     emit changed(true);
 }
 

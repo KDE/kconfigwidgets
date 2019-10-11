@@ -377,8 +377,15 @@ protected Q_SLOTS:
 
     /**
      * Calling this slot is equivalent to emitting changed(true).
+     * @deprecated see markAsChanged
      */
-    void changed();
+    KCONFIGWIDGETS_DEPRECATED void changed();
+
+    /**
+     * Calling this slot is equivalent to emitting changed(true).
+     */
+    void markAsChanged();
+
 
     /**
      * A managed widget was changed, the widget settings and the current
