@@ -24,7 +24,7 @@ add_library(KF5ConfigWidgets ${kconfigwidgets_SRCS})
 add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
 ecm_generate_export_header(KF5ConfigWidgets
     BASE_NAME KConfigWidgets
-    # GROUP_BASE_NAME KF <- enable once all of KF modules use ecm_generate_export_header
+    GROUP_BASE_NAME KF
     VERSION ${KF5_VERSION}
     DEPRECATED_BASE_VERSION 0
     DEPRECATION_VERSIONS 4.0 5.0 5.23 5.32 5.38 5.39 5.64
