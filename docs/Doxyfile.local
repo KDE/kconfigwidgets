@@ -1,1 +1,8 @@
+### KApiDox Project-specific Overrides File
+
 EXPAND_AS_DEFINED = KSTANDARDACTION_WITH_NEW_STYLE_CONNECT
+# define so that deprecated API is not skipped
+PREDEFINED += \
+    "KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(x, y)=1" \
+    "KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(x, y)=1" \
+    "KCONFIGWIDGETS_DEPRECATED_VERSION(x, y, t)="
