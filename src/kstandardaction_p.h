@@ -100,7 +100,7 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { ShowStatusbar, KStandardShortcut::ShowStatusbar, "options_show_statusbar", I18N_NOOP("Show St&atusbar"), I18N_NOOP("Show or hide statusbar"), nullptr },
     { FullScreen,    KStandardShortcut::FullScreen, "fullscreen", I18N_NOOP("F&ull Screen Mode"), nullptr, "view-fullscreen" },
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
-    { SaveOptions,   KStandardShortcut::SaveOptions, "options_save_options", I18N_NOOP("&Save Settings"), nullptr, nullptr },
+    { SaveOptions,   KStandardShortcut::SaveOptions_DEPRECATED_DO_NOT_USE, "options_save_options", I18N_NOOP("&Save Settings"), nullptr, nullptr },
 #endif
     { KeyBindings,   KStandardShortcut::KeyBindings, "options_configure_keybinding", I18N_NOOP("Configure S&hortcuts..."), nullptr, "configure-shortcuts" },
     { Preferences,   KStandardShortcut::Preferences, "options_configure", I18N_NOOP("&Configure %1..."), nullptr, "configure" },

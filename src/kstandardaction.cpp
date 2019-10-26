@@ -251,10 +251,15 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
         {
             pAction = new QAction(parent);
             icon = qApp->windowIcon();
+            // Using deprecated API for compatibility reasons, remove with KF6
             if (icon.isNull()) {
                 const KAboutData data = KAboutData::applicationData();
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
+QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
                 if (!data.programIconName().isEmpty()) {
                     icon = QIcon::fromTheme(data.programIconName());
+QT_WARNING_POP
                 }
             }
             break;
