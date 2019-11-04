@@ -360,6 +360,18 @@ Q_SIGNALS:
     void changed(bool state);
 
     /**
+     * Indicate that the state of the modules contents matches the default
+     * settings.
+     *
+     * This signal is emitted whenever the state of the configuration
+     * shown in the module changes. It allows the module container to
+     * keep track of defaults.
+     *
+     * @since 5.65
+     */
+    void defaulted(bool state);
+
+    /**
      * Indicate that the module's quickhelp has changed.
      *
      * Emit this signal whenever the module's quickhelp changes.
@@ -454,10 +466,25 @@ protected:
     bool managedWidgetChangeState() const;
 
     /**
+     * Returns the defaulted state of automatically managed widgets in this dialog
+     *
+     * @since 5.65
+     */
+    bool managedWidgetDefaultState() const;
+
+    /**
      * Call this method when your manually managed widgets change state between
      * changed and not changed
      */
     void unmanagedWidgetChangeState(bool);
+
+    /**
+     * Call this method when your manually managed widgets change state between
+     * defaulted and not defaulted
+     *
+     * @since 5.65
+     */
+    void unmanagedWidgetDefaultState(bool);
 
 private:
     KCModulePrivate *const d;

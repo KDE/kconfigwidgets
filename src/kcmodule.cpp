@@ -43,7 +43,9 @@ public:
         _useRootOnlyMessage(false),
         _firstshow(true),
         _needsAuthorization(false),
-        _unmanagedWidgetChangeState(false)
+        _unmanagedWidgetChangeState(false),
+        _unmanagedWidgetDefaultState(false),
+        _unmanagedWidgetDefaultStateCalled(false)
     { }
 
     void authStatusChanged(int status);
@@ -69,6 +71,8 @@ public:
     // widgets to coexist peacefully and do the correct thing with
     // the changed(bool) signal
     bool _unmanagedWidgetChangeState : 1;
+    bool _unmanagedWidgetDefaultState : 1;
+    bool _unmanagedWidgetDefaultStateCalled : 1;
 };
 
 KCModule::KCModule(const KAboutData *aboutData, QWidget *parent, const QVariantList &)
@@ -194,7 +198,7 @@ void KCModule::load()
     for (KConfigDialogManager *manager : qAsConst(d->managers)) {
         manager->updateWidgets();
     }
-    emit changed(false);
+    widgetChanged();
 }
 
 void KCModule::save()
@@ -215,6 +219,11 @@ void KCModule::defaults()
 void KCModule::widgetChanged()
 {
     emit changed(d->_unmanagedWidgetChangeState || managedWidgetChangeState());
+    if (d->_unmanagedWidgetDefaultStateCalled) {
+        emit defaulted(d->_unmanagedWidgetDefaultState && managedWidgetDefaultState());
+    } else {
+        emit defaulted(!d->managers.isEmpty() && managedWidgetDefaultState());
+    }
 }
 
 bool KCModule::managedWidgetChangeState() const
@@ -228,9 +237,27 @@ bool KCModule::managedWidgetChangeState() const
     return false;
 }
 
+bool KCModule::managedWidgetDefaultState() const
+{
+    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
+        if (!manager->isDefault()) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 void KCModule::unmanagedWidgetChangeState(bool changed)
 {
     d->_unmanagedWidgetChangeState = changed;
+    widgetChanged();
+}
+
+void KCModule::unmanagedWidgetDefaultState(bool defaulted)
+{
+    d->_unmanagedWidgetDefaultStateCalled = true;
+    d->_unmanagedWidgetDefaultState = defaulted;
     widgetChanged();
 }
 
