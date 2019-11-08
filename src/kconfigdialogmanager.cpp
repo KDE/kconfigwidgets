@@ -92,6 +92,7 @@ void KConfigDialogManager::initMaps()
         s_propertyMap()->insert(QStringLiteral("KButtonGroup"), "current");
         s_propertyMap()->insert(QStringLiteral("KColorButton"), "color");
         s_propertyMap()->insert(QStringLiteral("KColorCombo"), "color");
+        s_propertyMap()->insert(QStringLiteral("KKeySequenceWidget"), "keySequence");
     }
 
     if (s_changedMap()->isEmpty()) {
