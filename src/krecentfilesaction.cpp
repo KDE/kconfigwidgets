@@ -29,7 +29,6 @@
 #include "krecentfilesaction_p.h"
 
 #include <QFile>
-#include <QDesktopWidget>
 #include <QDir>
 #include <QGuiApplication>
 #include <QMenu>
