@@ -69,8 +69,8 @@ private:
         NContrastEffects        
     };
 
-    int _effects[3];
-    double _amount[3];
+    int _effects[NEffectTypes];
+    double _amount[NEffectTypes];
     QColor _color;
 //     StateEffects *_chain; not needed yet
 };
@@ -85,9 +85,9 @@ StateEffects::StateEffects(QPalette::ColorGroup state, const KSharedConfigPtr &c
         group = QStringLiteral("ColorEffects:Inactive");
     }
 
-    _effects[0] = 0;
-    _effects[1] = 0;
-    _effects[2] = 0;
+    for (auto &effect : _effects) {
+        effect = 0;
+    }
 
     // NOTE: keep this in sync with kdebase/workspace/kcontrol/colors/colorscm.cpp
     if (! group.isEmpty()) {
@@ -286,7 +286,9 @@ public:
     qreal contrast() const;
 private:
     struct {
-        QBrush fg[8], bg[8], deco[2];
+        QBrush fg[KColorScheme::NForegroundRoles];
+        QBrush bg[KColorScheme::NBackgroundRoles];
+        QBrush deco[KColorScheme::NDecorationRoles];
     } _brushes;
     qreal _contrast;
 
@@ -306,8 +308,8 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
     _contrast = KColorScheme::contrastF(config);
 
     // loaded-from-config colors (no adjustment)
-    _brushes.bg[0] = cfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground));
-    _brushes.bg[1] = cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground));
+    _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground));
+    _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground));
 
     // the rest
     init(config, state, group, defaults);
@@ -323,12 +325,14 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
     _contrast = KColorScheme::contrastF(config);
 
     // loaded-from-config colors
-    _brushes.bg[0] = cfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground));
-    _brushes.bg[1] = cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground));
+    _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground));
+    _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground));
 
     // adjustment
-    _brushes.bg[0] = KColorUtils::tint(_brushes.bg[0].color(), tint.color(), 0.4);
-    _brushes.bg[1] = KColorUtils::tint(_brushes.bg[1].color(), tint.color(), 0.4);
+    _brushes.bg[KColorScheme::NormalBackground] = 
+        KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(), tint.color(), 0.4);
+    _brushes.bg[KColorScheme::AlternateBackground] = 
+        KColorUtils::tint(_brushes.bg[KColorScheme::AlternateBackground].color(), tint.color(), 0.4);
 
     // the rest
     init(config, state, group, defaults);
@@ -342,90 +346,76 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
     KConfigGroup cfg(config, group);
 
     // loaded-from-config colors
-    _brushes.fg[0] = cfg.readEntry("ForegroundNormal", SET_DEFAULT(NormalText));
-    _brushes.fg[1] = cfg.readEntry("ForegroundInactive", SET_DEFAULT(InactiveText));
-    _brushes.fg[2] = cfg.readEntry("ForegroundActive", SET_DEFAULT(ActiveText));
-    _brushes.fg[3] = cfg.readEntry("ForegroundLink", SET_DEFAULT(LinkText));
-    _brushes.fg[4] = cfg.readEntry("ForegroundVisited", SET_DEFAULT(VisitedText));
-    _brushes.fg[5] = cfg.readEntry("ForegroundNegative", SET_DEFAULT(NegativeText));
-    _brushes.fg[6] = cfg.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText));
-    _brushes.fg[7] = cfg.readEntry("ForegroundPositive", SET_DEFAULT(PositiveText));
+    _brushes.fg[KColorScheme::NormalText] = cfg.readEntry("ForegroundNormal", SET_DEFAULT(NormalText));
+    _brushes.fg[KColorScheme::InactiveText] = cfg.readEntry("ForegroundInactive", SET_DEFAULT(InactiveText));
+    _brushes.fg[KColorScheme::ActiveText] = cfg.readEntry("ForegroundActive", SET_DEFAULT(ActiveText));
+    _brushes.fg[KColorScheme::LinkText] = cfg.readEntry("ForegroundLink", SET_DEFAULT(LinkText));
+    _brushes.fg[KColorScheme::VisitedText] = cfg.readEntry("ForegroundVisited", SET_DEFAULT(VisitedText));
+    _brushes.fg[KColorScheme::NegativeText] = cfg.readEntry("ForegroundNegative", SET_DEFAULT(NegativeText));
+    _brushes.fg[KColorScheme::NeutralText] = cfg.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText));
+    _brushes.fg[KColorScheme::PositiveText] = cfg.readEntry("ForegroundPositive", SET_DEFAULT(PositiveText));
 
-    _brushes.deco[0] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));
-    _brushes.deco[1] = cfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus));
+    _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));
+    _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus));
 
     // apply state adjustments
     if (state != QPalette::Active) {
         StateEffects effects(state, config);
-        for (int i = 0; i < 8; i++) {
-            _brushes.fg[i] = effects.brush(_brushes.fg[i], _brushes.bg[0]);
+        for (auto &fg : _brushes.fg) {
+            fg = effects.brush(fg, _brushes.bg[KColorScheme::NormalBackground]);
         }
-        _brushes.deco[0] = effects.brush(_brushes.deco[0], _brushes.bg[0]);
-        _brushes.deco[1] = effects.brush(_brushes.deco[1], _brushes.bg[0]);
-        _brushes.bg[0] = effects.brush(_brushes.bg[0]);
-        _brushes.bg[1] = effects.brush(_brushes.bg[1]);
+        for (auto &deco : _brushes.deco) {
+            deco = effects.brush(deco, _brushes.bg[KColorScheme::NormalBackground]);
+        }
+        _brushes.bg[KColorScheme::NormalBackground] = effects.brush(_brushes.bg[KColorScheme::NormalBackground]);
+        _brushes.bg[KColorScheme::AlternateBackground] = effects.brush(_brushes.bg[KColorScheme::AlternateBackground]);
     }
 
     // calculated backgrounds
-    _brushes.bg[2] = KColorUtils::tint(_brushes.bg[0].color(), _brushes.fg[2].color());
-    _brushes.bg[3] = KColorUtils::tint(_brushes.bg[0].color(), _brushes.fg[3].color());
-    _brushes.bg[4] = KColorUtils::tint(_brushes.bg[0].color(), _brushes.fg[4].color());
-    _brushes.bg[5] = KColorUtils::tint(_brushes.bg[0].color(), _brushes.fg[5].color());
-    _brushes.bg[6] = KColorUtils::tint(_brushes.bg[0].color(), _brushes.fg[6].color());
-    _brushes.bg[7] = KColorUtils::tint(_brushes.bg[0].color(), _brushes.fg[7].color());
+    _brushes.bg[KColorScheme::ActiveBackground] =
+        KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(),
+                          _brushes.fg[KColorScheme::ActiveText].color());
+    _brushes.bg[KColorScheme::LinkBackground] =
+        KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(),
+                          _brushes.fg[KColorScheme::LinkText].color());
+    _brushes.bg[KColorScheme::VisitedBackground] =
+        KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(),
+                          _brushes.fg[KColorScheme::VisitedText].color());
+    _brushes.bg[KColorScheme::NegativeBackground] =
+        KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(),
+                          _brushes.fg[KColorScheme::NegativeText].color());
+    _brushes.bg[KColorScheme::NeutralBackground] =
+        KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(),
+                          _brushes.fg[KColorScheme::NeutralText].color());
+    _brushes.bg[KColorScheme::PositiveBackground] =
+        KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(),
+                          _brushes.fg[KColorScheme::PositiveText].color());
 }
 
 QBrush KColorSchemePrivate::background(KColorScheme::BackgroundRole role) const
 {
-    switch (role) {
-    case KColorScheme::AlternateBackground:
-        return _brushes.bg[1];
-    case KColorScheme::ActiveBackground:
-        return _brushes.bg[2];
-    case KColorScheme::LinkBackground:
-        return _brushes.bg[3];
-    case KColorScheme::VisitedBackground:
-        return _brushes.bg[4];
-    case KColorScheme::NegativeBackground:
-        return _brushes.bg[5];
-    case KColorScheme::NeutralBackground:
-        return _brushes.bg[6];
-    case KColorScheme::PositiveBackground:
-        return _brushes.bg[7];
-    default:
-        return _brushes.bg[0];
+    if (role >= KColorScheme::NormalBackground && role < KColorScheme::NBackgroundRoles) {
+        return _brushes.bg[role];
+    } else {
+        return _brushes.bg[KColorScheme::NormalBackground];
     }
 }
 
 QBrush KColorSchemePrivate::foreground(KColorScheme::ForegroundRole role) const
 {
-    switch (role) {
-    case KColorScheme::InactiveText:
-        return _brushes.fg[1];
-    case KColorScheme::ActiveText:
-        return _brushes.fg[2];
-    case KColorScheme::LinkText:
-        return _brushes.fg[3];
-    case KColorScheme::VisitedText:
-        return _brushes.fg[4];
-    case KColorScheme::NegativeText:
-        return _brushes.fg[5];
-    case KColorScheme::NeutralText:
-        return _brushes.fg[6];
-    case KColorScheme::PositiveText:
-        return _brushes.fg[7];
-    default:
-        return _brushes.fg[0];
+    if (role >= KColorScheme::NormalText && role < KColorScheme::NForegroundRoles) {
+        return _brushes.fg[role];
+    } else {
+        return _brushes.fg[KColorScheme::NormalText];
     }
 }
 
 QBrush KColorSchemePrivate::decoration(KColorScheme::DecorationRole role) const
 {
-    switch (role) {
-    case KColorScheme::FocusColor:
-        return _brushes.deco[1];
-    default:
-        return _brushes.deco[0];
+    if (role >= KColorScheme::FocusColor && role < KColorScheme::NDecorationRoles) {
+        return _brushes.deco[role];
+    } else {
+        return _brushes.deco[KColorScheme::FocusColor];
     }
 }
 
@@ -602,13 +592,14 @@ QPalette KColorScheme::createApplicationPalette(const KSharedConfigPtr &config)
 {
     QPalette palette;
 
-    static const QPalette::ColorGroup states[3] = { QPalette::Active, QPalette::Inactive, QPalette::Disabled };
+    static const QPalette::ColorGroup states[QPalette::NColorGroups] = {
+        QPalette::Active, QPalette::Inactive, QPalette::Disabled
+    };
 
     // TT thinks tooltips shouldn't use active, so we use our active colors for all states
     KColorScheme schemeTooltip(QPalette::Active, KColorScheme::Tooltip, config);
 
-    for (int i = 0; i < 3; i++) {
-        QPalette::ColorGroup state = states[i];
+    for (auto state : states) {
         KColorScheme schemeView(state, KColorScheme::View, config);
         KColorScheme schemeWindow(state, KColorScheme::Window, config);
         KColorScheme schemeButton(state, KColorScheme::Button, config);
@@ -651,34 +642,34 @@ public:
 
 KStatefulBrush::KStatefulBrush()
 {
-    d = new KStatefulBrushPrivate[3];
+    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
 }
 
 KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::ForegroundRole role,
                                KSharedConfigPtr config)
 {
-    d = new KStatefulBrushPrivate[3];
-    d[0] = KColorScheme(QPalette::Active,   set, config).foreground(role);
-    d[1] = KColorScheme(QPalette::Disabled, set, config).foreground(role);
-    d[2] = KColorScheme(QPalette::Inactive, set, config).foreground(role);
+    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
+    d[QPalette::Active] = KColorScheme(QPalette::Active,   set, config).foreground(role);
+    d[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, config).foreground(role);
+    d[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, config).foreground(role);
 }
 
 KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::BackgroundRole role,
                                KSharedConfigPtr config)
 {
-    d = new KStatefulBrushPrivate[3];
-    d[0] = KColorScheme(QPalette::Active,   set, config).background(role);
-    d[1] = KColorScheme(QPalette::Disabled, set, config).background(role);
-    d[2] = KColorScheme(QPalette::Inactive, set, config).background(role);
+    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
+    d[QPalette::Active] = KColorScheme(QPalette::Active,   set, config).background(role);
+    d[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, config).background(role);
+    d[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, config).background(role);
 }
 
 KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::DecorationRole role,
                                KSharedConfigPtr config)
 {
-    d = new KStatefulBrushPrivate[3];
-    d[0] = KColorScheme(QPalette::Active,   set, config).decoration(role);
-    d[1] = KColorScheme(QPalette::Disabled, set, config).decoration(role);
-    d[2] = KColorScheme(QPalette::Inactive, set, config).decoration(role);
+    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
+    d[QPalette::Active] = KColorScheme(QPalette::Active,   set, config).decoration(role);
+    d[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, config).decoration(role);
+    d[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, config).decoration(role);
 }
 
 KStatefulBrush::KStatefulBrush(const QBrush &brush, KSharedConfigPtr config)
@@ -686,10 +677,10 @@ KStatefulBrush::KStatefulBrush(const QBrush &brush, KSharedConfigPtr config)
     if (!config) {
         config = defaultConfig();
     }
-    d = new KStatefulBrushPrivate[3];
-    d[0] = brush;
-    d[1] = StateEffects(QPalette::Disabled, config).brush(brush);
-    d[2] = StateEffects(QPalette::Inactive, config).brush(brush);
+    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
+    d[QPalette::Active] = brush;
+    d[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush);
+    d[QPalette::Inactive] = StateEffects(QPalette::Inactive, config).brush(brush);
 }
 
 KStatefulBrush::KStatefulBrush(const QBrush &brush, const QBrush &background,
@@ -698,18 +689,18 @@ KStatefulBrush::KStatefulBrush(const QBrush &brush, const QBrush &background,
     if (!config) {
         config = defaultConfig();
     }
-    d = new KStatefulBrushPrivate[3];
-    d[0] = brush;
-    d[1] = StateEffects(QPalette::Disabled, config).brush(brush, background);
-    d[2] = StateEffects(QPalette::Inactive, config).brush(brush, background);
+    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
+    d[QPalette::Active] = brush;
+    d[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush, background);
+    d[QPalette::Inactive] = StateEffects(QPalette::Inactive, config).brush(brush, background);
 }
 
 KStatefulBrush::KStatefulBrush(const KStatefulBrush &other)
 {
-    d = new KStatefulBrushPrivate[3];
-    d[0] = other.d[0];
-    d[1] = other.d[1];
-    d[2] = other.d[2];
+    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
+    d[QPalette::Active] = other.d[QPalette::Active];
+    d[QPalette::Disabled] = other.d[QPalette::Disabled];
+    d[QPalette::Inactive] = other.d[QPalette::Inactive];
 }
 
 KStatefulBrush::~KStatefulBrush()
@@ -719,21 +710,18 @@ KStatefulBrush::~KStatefulBrush()
 
 KStatefulBrush &KStatefulBrush::operator=(const KStatefulBrush &other)
 {
-    d[0] = other.d[0];
-    d[1] = other.d[1];
-    d[2] = other.d[2];
+    d[QPalette::Active] = other.d[QPalette::Active];
+    d[QPalette::Disabled] = other.d[QPalette::Disabled];
+    d[QPalette::Inactive] = other.d[QPalette::Inactive];
     return *this;
 }
 
 QBrush KStatefulBrush::brush(QPalette::ColorGroup state) const
 {
-    switch (state) {
-    case QPalette::Inactive:
-        return d[2];
-    case QPalette::Disabled:
-        return d[1];
-    default:
-        return d[0];
+    if (state >= QPalette::Active && state < QPalette::NColorGroups) {
+        return d[state];
+    } else {
+        return d[QPalette::Active];
     }
 }
 
@@ -751,4 +739,3 @@ QBrush KStatefulBrush::brush(const QWidget *widget) const
     }
 }
 //END KStatefulBrush
-
