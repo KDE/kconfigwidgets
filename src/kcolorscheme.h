@@ -122,7 +122,12 @@ public:
          * ask for a dark color scheme even on light themes.
          * @since 5.19
          */
-        Complementary
+        Complementary,
+        /**
+         * Number of color sets.
+         * @since 5.65
+         */
+        NColorSets
     };
 
     /**
@@ -138,14 +143,14 @@ public:
         /**
          * Normal background.
          */
-        NormalBackground = 0,
+        NormalBackground,
         /**
          * Alternate background; for example, for use in lists.
          *
          * This color may be the same as BackgroundNormal, especially in sets
          * other than View and Window.
          */
-        AlternateBackground = 1,
+        AlternateBackground,
         /**
          * Third color; for example, items which are new, active, requesting
          * attention, etc.
@@ -155,7 +160,7 @@ public:
          * effect, depending on what you are trying to achieve). Unlike
          * ActiveText, this should not be used for mouseover effects.
          */
-        ActiveBackground = 2,
+        ActiveBackground,
         /**
          * Fourth color; corresponds to (unvisited) links.
          *
@@ -164,7 +169,7 @@ public:
          * or to highlight recent content (i.e. in a most-recently-accessed
          * list).
          */
-        LinkBackground = 3,
+        LinkBackground,
         /**
          * Fifth color; corresponds to visited links.
          *
@@ -172,19 +177,24 @@ public:
          * when a color is needed to denote content which is "old" or
          * "archival".
          */
-        VisitedBackground = 4,
+        VisitedBackground,
         /**
          * Sixth color; for example, errors, untrusted content, etc.
          */
-        NegativeBackground = 5,
+        NegativeBackground,
         /**
          * Seventh color; for example, warnings, secure/encrypted content.
          */
-        NeutralBackground = 6,
+        NeutralBackground,
         /**
          * Eigth color; for example, success messages, trusted content.
          */
-        PositiveBackground = 7
+        PositiveBackground,
+        /**
+         * Number of background roles.
+         * @since 5.65
+         */
+        NBackgroundRoles
     };
 
     /**
@@ -207,25 +217,25 @@ public:
         /**
          * Normal foreground.
          */
-        NormalText = 0,
+        NormalText,
         /**
          * Second color; for example, comments, items which are old, inactive
          * or disabled. Generally used for things that are meant to be "less
          * important". InactiveText is not the same role as NormalText in the
          * inactive state.
          */
-        InactiveText = 1,
+        InactiveText,
         /**
          * Third color; for example items which are new, active, requesting
          * attention, etc. May be used as a hover color for clickable items.
          */
-        ActiveText = 2,
+        ActiveText,
         /**
          * Fourth color; use for (unvisited) links. May also be used for other
          * clickable items or content that indicates relationships, items that
          * indicate somewhere the user can visit, etc.
          */
-        LinkText = 3,
+        LinkText,
         /**
          * Fifth color; used for (visited) links. As with LinkText, may be used
          * for items that have already been "visited" or accessed. May also be
@@ -233,21 +243,26 @@ public:
          * especially if InactiveText is being used in the same context to
          * express something different.
          */
-        VisitedText = 4,
+        VisitedText,
         /**
          * Sixth color; for example, errors, untrusted content, deletions,
          * etc.
          */
-        NegativeText = 5,
+        NegativeText,
         /**
          * Seventh color; for example, warnings, secure/encrypted content.
          */
-        NeutralText = 6,
+        NeutralText,
         /**
          * Eigth color; for example, additions, success messages, trusted
          * content.
          */
-        PositiveText = 7
+        PositiveText,
+        /**
+         * Number of foreground roles.
+         * @since 5.65
+         */
+        NForegroundRoles
     };
 
     /**
@@ -268,7 +283,12 @@ public:
          * Color used to draw decorations for items which will be activated by
          * clicking.
          */
-        HoverColor
+        HoverColor,
+        /**
+         * Number of decoration roles.
+         * @since 5.65
+         */
+        NDecorationRoles
     };
 
     /**
@@ -301,7 +321,12 @@ public:
          * The shadow color is darker than light() or midlight() and contrasts
          * the base color.
          */
-        ShadowShade
+        ShadowShade,
+        /**
+         * Number of foreground roles.
+         * @since 5.65
+         */
+        NShadeRoles
     };
 
     /** Construct a copy of another KColorScheme. */

@@ -39,25 +39,34 @@ public:
     QBrush brush(const QBrush &foreground, const QBrush &background) const;
 
 private:
-    enum Effects {
-        // Effects
-        Intensity = 0,
-        Color = 1,
-        Contrast = 2,
-        // Intensity
-        IntensityNoEffect = 0,
-        IntensityShade = 1,
-        IntensityDarken = 2,
-        IntensityLighten = 3,
-        // Color
-        ColorNoEffect = 0,
-        ColorDesaturate = 1,
-        ColorFade = 2,
-        ColorTint = 3,
-        // Contrast
-        ContrastNoEffect = 0,
-        ContrastFade = 1,
-        ContrastTint = 2
+    enum EffectTypes {
+        Intensity,
+        Color,
+        Contrast,
+        NEffectTypes
+    };
+    
+    enum IntensityEffects {
+        IntensityNoEffect,
+        IntensityShade,
+        IntensityDarken,
+        IntensityLighten,
+        NIntensityEffects
+    };
+    
+    enum ColorEffects {
+        ColorNoEffect,
+        ColorDesaturate,
+        ColorFade,
+        ColorTint,
+        NColorEffects
+    };
+    
+    enum ContrastEffects {
+        ContrastNoEffect,
+        ContrastFade,
+        ContrastTint,
+        NContrastEffects        
     };
 
     int _effects[3];
