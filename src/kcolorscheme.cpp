@@ -171,8 +171,8 @@ struct SetDefaultColors {
 };
 
 struct DecoDefaultColors {
-    int Hover[3];
     int Focus[3];
+    int Hover[3];
 };
 
 // these numbers come from the Breeze color scheme ([breeze]/colors/Breeze.colors)
@@ -255,8 +255,8 @@ static const SetDefaultColors defaultComplementaryColors = {
 };
 
 static const DecoDefaultColors defaultDecorationColors = {
-    { 147, 206, 233 }, // Hover
     {  61, 174, 233 }, // Focus
+    { 147, 206, 233 }, // Hover
 };
 //END default colors
 
@@ -355,8 +355,8 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
     _brushes.fg[KColorScheme::NeutralText] = cfg.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText));
     _brushes.fg[KColorScheme::PositiveText] = cfg.readEntry("ForegroundPositive", SET_DEFAULT(PositiveText));
 
-    _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));
-    _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus));
+    _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus));
+    _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));
 
     // apply state adjustments
     if (state != QPalette::Active) {
