@@ -323,7 +323,7 @@ public:
          */
         ShadowShade,
         /**
-         * Number of foreground roles.
+         * Number of shade roles.
          * @since 5.65
          */
         NShadeRoles
