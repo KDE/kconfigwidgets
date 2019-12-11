@@ -22,6 +22,7 @@
 #include <kactionmenu.h>
 #include <kconfiggroup.h>
 #include <kcolorscheme.h>
+#include <klocalizedstring.h>
 #include <ksharedconfig.h>
 
 #include <QApplication>
@@ -30,6 +31,9 @@
 #include <QMenu>
 #include <QPainter>
 #include <QStandardPaths>
+#include <QStyle>
+
+constexpr int defaultSchemeRow = 0;
 
 KColorSchemeManagerPrivate::KColorSchemeManagerPrivate()
     : model(new KColorSchemeModel())
@@ -102,6 +106,7 @@ void KColorSchemeModel::init()
     std::sort(m_data.begin(), m_data.end(), [](const KColorSchemeModelData & first, const KColorSchemeModelData & second) {
         return first.name < second.name;
     });
+    m_data.insert(defaultSchemeRow, {i18n("Default"), QString(), QIcon::fromTheme("edit-undo")});
     endResetModel();
 }
 
@@ -153,7 +158,11 @@ QAbstractItemModel *KColorSchemeManager::model() const
 
 QModelIndex KColorSchemeManager::indexForScheme(const QString &name) const
 {
-    for (int i = 0; i < d->model->rowCount(); ++i) {
+    // Empty string is mapped to "reset to the system scheme"
+    if (name.isEmpty()) {
+        return d->model->index(defaultSchemeRow);
+    }
+    for (int i = 1; i < d->model->rowCount(); ++i) {
         QModelIndex index = d->model->index(i);
         if (index.data().toString() == name) {
             return index;
@@ -166,15 +175,13 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
 {
     KActionMenu *menu = new KActionMenu(icon, name, parent);
     QActionGroup *group = new QActionGroup(menu);
-    connect(group, &QActionGroup::triggered, [](QAction * action) {
-        // hint for the style to synchronize the color scheme with the window manager/compositor
-        qApp->setProperty("KDE_COLOR_SCHEME_PATH", action->data());
-        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(action->data().toString())));
+    connect(group, &QActionGroup::triggered, this,  [this](QAction * action) {
+        activateScheme(d->model->index(action->data().toInt()));
     });
     for (int i = 0; i < d->model->rowCount(); ++i) {
         QModelIndex index = d->model->index(i);
         QAction *action = new QAction(index.data(Qt::DisplayRole).toString(), menu);
-        action->setData(index.data(Qt::UserRole));
+        action->setData(index.row());
         action->setActionGroup(group);
         action->setCheckable(true);
         if (index.data().toString() == selectedSchemeName) {
@@ -182,12 +189,15 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
         }
         menu->addAction(action);
     }
-
+    if (!group->checkedAction()) {
+        // If no (valid) color scheme has been selected we select the default one
+        group->actions()[defaultSchemeRow]->setChecked(true);
+    }
     connect(menu->menu(), &QMenu::aboutToShow, group, [this, group] {
         const auto actions = group->actions();
         for (QAction *action : actions) {
             if (action->icon().isNull()) {
-                action->setIcon(d->model->createPreview(action->data().toString()));
+                action->setIcon(d->model->index(action->data().toInt()).data(Qt::DecorationRole).value<QIcon>());
             }
         }
     });
@@ -197,23 +207,28 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
 
 KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QString &text, const QString &selectedSchemeName, QObject *parent)
 {
-    return createSchemeSelectionMenu(QIcon(), text, selectedSchemeName, parent);
+    return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), text, selectedSchemeName, parent);
 }
 
 KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QString &selectedSchemeName, QObject *parent)
 {
-    return createSchemeSelectionMenu(QIcon(), QString(), selectedSchemeName, parent);
+    return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), i18n("Color Scheme"), selectedSchemeName, parent);
+}
+
+KActionMenu *KColorSchemeManager::createSchemeSelectionMenu (QObject *parent)
+{
+    return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), i18n("Color Scheme"), QString(), parent);
 }
 
 void KColorSchemeManager::activateScheme(const QModelIndex &index)
 {
-    if (!index.isValid()) {
-        return;
-    }
-    if (index.model() != d->model.data()) {
-        return;
-    }
-    // hint for the style to synchronize the color scheme with the window manager/compositor
+    // hint for plasma-integration to synchronize the color scheme with the window manager/compositor
+    // The property needs to be set before the palette change because is is checked upon the
+    // ApplicationPaletteChange event.
     qApp->setProperty("KDE_COLOR_SCHEME_PATH", index.data(Qt::UserRole));
-    qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(index.data(Qt::UserRole).toString())));
+    if (index.isValid() && index.model() == d->model.data() && index.row() != defaultSchemeRow) {
+        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(index.data(Qt::UserRole).toString())));
+    } else {
+        qApp->setPalette(qApp->style()->standardPalette());
+    }
 }

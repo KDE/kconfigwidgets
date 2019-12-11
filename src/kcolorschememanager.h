@@ -36,7 +36,8 @@ class KColorSchemeManagerPrivate;
  * A small helper to get access to all available color schemes and activating a scheme in the
  * QApplication. This is useful for applications which want to provide a selection of custom color
  * schemes to their user. For example it is very common for photo and painting applications to use
- * a dark color scheme even if the default is a light scheme.
+ * a dark color scheme even if the default is a light scheme. Since version 5.67 it also allows
+ * going back to following the system color scheme.
  *
  * The KColorSchemeManager provides access to a QAbstractItemModel which holds all the available
  * schemes. A possible usage looks like the following:
@@ -72,14 +73,17 @@ public:
      * A QAbstractItemModel of all available color schemes.
      *
      * The model provides the name of the scheme in Qt::DisplayRole, a preview
-     * in Qt::DelegateRole and the full path to the scheme file in Qt::UserRole.
+     * in Qt::DelegateRole and the full path to the scheme file in Qt::UserRole. The system theme
+     * has an empty Qt::UserRole.
      *
      * @return Model of all available color schemes.
      */
     QAbstractItemModel *model() const;
     /**
      * Returns the model index for the scheme with the given @p name. If no such
-     * scheme exists an invalid index is returned.
+     * scheme exists an invalid index is returned. If you pass an empty
+     * string the index that is equivalent to going back to following the system scheme is returned
+     * for versions 5.67 and newer.
      * @see model
      */
     QModelIndex indexForScheme(const QString &name) const;
@@ -90,7 +94,7 @@ public:
      * referenced by this action is activated.
      *
      * The color scheme with the same name as @p selectedSchemeName will be checked. If none
-     * of the available color schemes has the same name, no action will be checked.
+     * of the available color schemes has the same name, the system theme entry will be checked.
      *
      * The KActionMenu will not be updated in case the installed color schemes change. It's the
      * task of the user of the KActionMenu to monitor for changes if required.
@@ -105,6 +109,10 @@ public:
     KActionMenu *createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent);
     KActionMenu *createSchemeSelectionMenu(const QString &text, const QString &selectedSchemeName, QObject *parent);
     KActionMenu *createSchemeSelectionMenu(const QString &selectedSchemeName, QObject *parent);
+    /**
+     * @since 5.67
+     */
+    KActionMenu *createSchemeSelectionMenu(QObject *parent);
 
 public Q_SLOTS:
     /**
@@ -113,7 +121,8 @@ public Q_SLOTS:
      * Installs the KColorScheme as the QApplication's QPalette.
      *
      * @param index The index for the KColorScheme to activate.
-     * The index must reference the QAbstractItemModel provided by @link model @endlink
+     * The index must reference the QAbstractItemModel provided by @link model @endlink. Since
+     * version 5.67 passing an invalid index activates the system scheme.
      * @see model()
      */
     void activateScheme(const QModelIndex &index);
