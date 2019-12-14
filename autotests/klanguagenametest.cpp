@@ -19,7 +19,7 @@
 */
 
 #include <QObject>
-#include <QTest>
+#include <QtTest>
 
 #include "klanguagename.h"
 
