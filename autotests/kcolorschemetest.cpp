@@ -19,7 +19,7 @@
 */
 
 #include <QObject>
-#include <QtTest>
+#include <QTest>
 
 #include "kcolorscheme.h"
 #include "kcolorschememanager.h"
