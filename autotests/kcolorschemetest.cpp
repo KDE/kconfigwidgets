@@ -19,7 +19,8 @@
 */
 
 #include <QObject>
-#include <QtTest>
+#include <QTest>
+#include <QAbstractItemModel>
 
 #include "kcolorscheme.h"
 #include "kcolorschememanager.h"
