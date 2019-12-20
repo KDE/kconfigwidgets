@@ -37,6 +37,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <QScreen>
 #include <QTextBrowser>
 #include <QHBoxLayout>
+#include <QRegularExpression>
 #include <QVBoxLayout>
 
 #include <kconfig.h>
@@ -85,7 +86,7 @@ void KTipDatabase::Private::addTips(const QString &tipFile)
 
     QByteArray data = file.readAll();
     QString content = QString::fromUtf8(data.constData(), data.size());
-    const QRegExp rx(QStringLiteral("\\n+"));
+    const QRegularExpression rx(QStringLiteral("\\n{2,}"));
 
     int pos = -1;
     while ((pos = content.indexOf(QLatin1String("<html>"), pos + 1, Qt::CaseInsensitive)) != -1) {
