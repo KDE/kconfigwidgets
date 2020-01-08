@@ -432,7 +432,7 @@ protected:
      * Default: shows a "Use Defaults" button.
      *
      * Apply: in kcontrol this will show an "Apply" and "Reset" button,
-     *        in kcmshell this will show an "Ok", "Apply" and "Cancel" button.
+     *        in kcmshell this will show an "Ok", "Apply", "Reset" and "Cancel" button.
      *
      * If Apply is not specified, kcmshell will show a "Close" button.
      *
