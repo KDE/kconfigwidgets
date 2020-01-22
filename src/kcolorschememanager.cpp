@@ -35,6 +35,49 @@
 
 constexpr int defaultSchemeRow = 0;
 
+static void activateScheme(const QString &colorSchemePath) {
+    // hint for plasma-integration to synchronize the color scheme with the window manager/compositor
+    // The property needs to be set before the palette change because is is checked upon the
+    // ApplicationPaletteChange event.
+    qApp->setProperty("KDE_COLOR_SCHEME_PATH", colorSchemePath);
+    if (colorSchemePath.isEmpty()) {
+        qApp->setPalette(qApp->style()->standardPalette());
+    } else {
+        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(colorSchemePath)));
+    }
+}
+
+static QIcon createPreview(const QString &path)
+{
+    KSharedConfigPtr schemeConfig = KSharedConfig::openConfig(path, KConfig::SimpleConfig);
+    QIcon result;
+
+    KColorScheme activeWindow(QPalette::Active, KColorScheme::Window, schemeConfig);
+    KColorScheme activeButton(QPalette::Active, KColorScheme::Button, schemeConfig);
+    KColorScheme activeView(QPalette::Active, KColorScheme::View, schemeConfig);
+    KColorScheme activeSelection(QPalette::Active, KColorScheme::Selection, schemeConfig);
+
+    auto pixmap = [&](int size) {
+        QPixmap pix(size, size);
+        pix.fill(Qt::black);
+        QPainter p;
+        p.begin(&pix);
+        const int itemSize = size / 2 - 1;
+        p.fillRect(1, 1, itemSize, itemSize, activeWindow.background());
+        p.fillRect(1 + itemSize, 1, itemSize, itemSize, activeButton.background());
+        p.fillRect(1, 1 + itemSize, itemSize, itemSize, activeView.background());
+        p.fillRect(1 + itemSize, 1 + itemSize, itemSize, itemSize, activeSelection.background());
+        p.end();
+        result.addPixmap(pix);
+    };
+    // 16x16
+    pixmap(16);
+    // 24x24
+    pixmap(24);
+
+    return result;
+}
+
 KColorSchemeManagerPrivate::KColorSchemeManagerPrivate()
     : model(new KColorSchemeModel())
 {
@@ -116,37 +159,6 @@ void KColorSchemeModel::init()
     endResetModel();
 }
 
-QIcon KColorSchemeModel::createPreview(const QString &path) const
-{
-    KSharedConfigPtr schemeConfig = KSharedConfig::openConfig(path, KConfig::SimpleConfig);
-    QIcon result;
-
-    KColorScheme activeWindow(QPalette::Active, KColorScheme::Window, schemeConfig);
-    KColorScheme activeButton(QPalette::Active, KColorScheme::Button, schemeConfig);
-    KColorScheme activeView(QPalette::Active, KColorScheme::View, schemeConfig);
-    KColorScheme activeSelection(QPalette::Active, KColorScheme::Selection, schemeConfig);
-
-    auto pixmap = [&](int size) {
-        QPixmap pix(size, size);
-        pix.fill(Qt::black);
-        QPainter p;
-        p.begin(&pix);
-        const int itemSize = size / 2 - 1;
-        p.fillRect(1, 1, itemSize, itemSize, activeWindow.background());
-        p.fillRect(1 + itemSize, 1, itemSize, itemSize, activeButton.background());
-        p.fillRect(1, 1 + itemSize, itemSize, itemSize, activeView.background());
-        p.fillRect(1 + itemSize, 1 + itemSize, itemSize, itemSize, activeSelection.background());
-        p.end();
-        result.addPixmap(pix);
-    };
-    // 16x16
-    pixmap(16);
-    // 24x24
-    pixmap(24);
-
-    return result;
-}
-
 KColorSchemeManager::KColorSchemeManager(QObject *parent)
     : QObject(parent)
     , d(new KColorSchemeManagerPrivate)
@@ -179,15 +191,16 @@ QModelIndex KColorSchemeManager::indexForScheme(const QString &name) const
 
 KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, const QString &name, const QString &selectedSchemeName, QObject *parent)
 {
+    // Be careful here when connecting to signals. The menu can outlive the manager
     KActionMenu *menu = new KActionMenu(icon, name, parent);
     QActionGroup *group = new QActionGroup(menu);
-    connect(group, &QActionGroup::triggered, this,  [this](QAction * action) {
-        activateScheme(d->model->index(action->data().toInt()));
+    connect(group, &QActionGroup::triggered, qApp, [] (QAction * action) {
+        ::activateScheme(action->data().toString());
     });
     for (int i = 0; i < d->model->rowCount(); ++i) {
         QModelIndex index = d->model->index(i);
         QAction *action = new QAction(index.data(Qt::DisplayRole).toString(), menu);
-        action->setData(index.row());
+        action->setData(index.data(Qt::UserRole));
         action->setActionGroup(group);
         action->setCheckable(true);
         if (index.data().toString() == selectedSchemeName) {
@@ -199,11 +212,12 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
         // If no (valid) color scheme has been selected we select the default one
         group->actions()[defaultSchemeRow]->setChecked(true);
     }
-    connect(menu->menu(), &QMenu::aboutToShow, group, [this, group] {
+    group->actions()[defaultSchemeRow]->setIcon(QIcon::fromTheme("edit-undo"));
+    connect(menu->menu(), &QMenu::aboutToShow, group, [group] {
         const auto actions = group->actions();
         for (QAction *action : actions) {
             if (action->icon().isNull()) {
-                action->setIcon(d->model->index(action->data().toInt()).data(Qt::DecorationRole).value<QIcon>());
+                action->setIcon(createPreview(action->data().toString()));
             }
         }
     });
@@ -228,13 +242,9 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu (QObject *parent)
 
 void KColorSchemeManager::activateScheme(const QModelIndex &index)
 {
-    // hint for plasma-integration to synchronize the color scheme with the window manager/compositor
-    // The property needs to be set before the palette change because is is checked upon the
-    // ApplicationPaletteChange event.
-    qApp->setProperty("KDE_COLOR_SCHEME_PATH", index.data(Qt::UserRole));
-    if (index.isValid() && index.model() == d->model.data() && index.row() != defaultSchemeRow) {
-        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(index.data(Qt::UserRole).toString())));
+    if (index.isValid() && index.model() == d->model.data()) {
+        ::activateScheme(index.data(Qt::UserRole).toString());
     } else {
-        qApp->setPalette(qApp->style()->standardPalette());
+        ::activateScheme(QString());
     }
 }
