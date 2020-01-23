@@ -252,7 +252,7 @@ KCONFIGWIDGETS_EXPORT QAction *_k_createInternal(StandardAction id, QObject *par
  * @see create(StandardAction, const QObject *, const char *, QObject *)
  * @since 5.23
  */
-#ifdef DOXYGEN_SHOULD_SKIP_THIS
+#ifdef K_DOXYGEN
 inline QAction *create(StandardAction id, const QObject *recvr, Func slot, QObject* parent)
 #else
 template<class Receiver, class Func>
@@ -308,7 +308,7 @@ KCONFIGWIDGETS_EXPORT KStandardShortcut::StandardShortcut shortcutForActionId(St
 
 // we have to disable the templated function for const char* as Func, since it is ambiguous otherwise
 // TODO: KF6: unify const char* version and new style by removing std::enable_if
-#ifdef DOXYGEN_SHOULD_SKIP_THIS
+#ifdef K_DOXYGEN
 #define KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(name, enumValue) \
     inline QAction *name(const QObject *recvr, Func slot, QObject *parent);
 #else
@@ -355,7 +355,7 @@ KCONFIGWIDGETS_EXPORT KRecentFilesAction *openRecent(const QObject *recvr, const
  * @see openRecent(const QObject *, const char *, QObject *)
  * @since 5.23
  */
-#ifdef DOXYGEN_SHOULD_SKIP_THIS
+#ifdef K_DOXYGEN
 inline KRecentFilesAction *openRecent(const QObject *recvr, Func slot, QObject *parent)
 #else
 template<class Receiver, class Func>
@@ -580,14 +580,14 @@ KCONFIGWIDGETS_EXPORT QAction *pasteText(const QObject *recvr, const char *slot,
  * @since 5.23
  * @deprecated since 5.39. Use paste() instead.
  */
-#ifdef DOXYGEN_SHOULD_SKIP_THIS
+#ifdef K_DOXYGEN
     inline QAction *pasteText(const QObject *recvr, Func slot, QObject *parent);
 #else
 template<class Receiver, class Func>
 KCONFIGWIDGETS_DEPRECATED_VERSION(5, 39, "Use KStandardAction::paste(const QObject *, Func, QObject *)")
 inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *pasteText(const Receiver *recvr, Func slot, QObject *parent)
 { return create(PasteText, recvr, slot, parent); }
-#endif // DOXYGEN_SHOULD_SKIP_THIS
+#endif // K_DOXYGEN
 #endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
 
 /**
@@ -941,7 +941,7 @@ KCONFIGWIDGETS_EXPORT KToggleAction *showMenubar(const QObject *recvr, const cha
  * @see showMenubar(const QObject *, const char *, QObject *)
  * @since 5.23
  */
-#ifdef DOXYGEN_SHOULD_SKIP_THIS
+#ifdef K_DOXYGEN
 inline KToggleAction *showMenubar(const QObject *recvr, Func slot, QObject *parent)
 #else
 template<class Receiver, class Func>
@@ -962,7 +962,7 @@ KCONFIGWIDGETS_EXPORT KToggleAction *showStatusbar(const QObject *recvr, const c
  * Show/Hide the statusbar.
  * @since 5.23
  */
-#ifdef DOXYGEN_SHOULD_SKIP_THIS
+#ifdef K_DOXYGEN
 inline KToggleAction *showStatusbar(const QObject *recvr, Func slot, QObject *parent)
 #else
 template<class Receiver, class Func>
@@ -983,7 +983,7 @@ KCONFIGWIDGETS_EXPORT KToggleFullScreenAction *fullScreen(const QObject *recvr, 
  * Switch to/from full screen mode
  * @since 5.23
  */
-#ifdef DOXYGEN_SHOULD_SKIP_THIS
+#ifdef K_DOXYGEN
 inline KToggleFullScreenAction *fullScreen(const QObject *recvr, Func slot, QWidget *window, QObject *parent)
 #else
 template<class Receiver, class Func>
@@ -1012,14 +1012,14 @@ KCONFIGWIDGETS_EXPORT QAction *saveOptions(const QObject *recvr, const char *slo
  * @since 5.23
  * @deprecated since 5.38
  */
-#ifdef DOXYGEN_SHOULD_SKIP_THIS
+#ifdef K_DOXYGEN
     inline QAction *saveOptions(const QObject *recvr, Func slot, QObject *parent);
 #else
 template<class Receiver, class Func>
 KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "No usage known, candidate for removal on next ABI break")
 KCONFIGWIDGETS_EXPORT inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *saveOptions(const Receiver *recvr, Func slot, QObject *parent)
 { return create(SaveOptions, recvr, slot, parent); }
-#endif // DOXYGEN_SHOULD_SKIP_THIS
+#endif // K_DOXYGEN
 #endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
 
 /**
@@ -1083,14 +1083,14 @@ KCONFIGWIDGETS_EXPORT QAction *help(const QObject *recvr, const char *slot, QObj
  * @since 5.23
  * @deprecated since 5.38 Use helpContents() instead.
  */
-#ifdef DOXYGEN_SHOULD_SKIP_THIS
+#ifdef K_DOXYGEN
     inline QAction *help(const QObject *recvr, Func slot, QObject *parent);
 #else
 template<class Receiver, class Func>
 KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "Use KStandardAction::helpContents(const QObject *, Func, QObject *)")
 KCONFIGWIDGETS_EXPORT inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *help(const Receiver *recvr, Func slot, QObject *parent)
 { return create(Help, recvr, slot, parent); }
-#endif // DOXYGEN_SHOULD_SKIP_THIS
+#endif // K_DOXYGEN
 #endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
 
 /**
