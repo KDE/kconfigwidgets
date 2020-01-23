@@ -1070,6 +1070,18 @@ KCONFIGWIDGETS_EXPORT QAction *configureNotifications(const QObject *recvr, cons
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(configureNotifications, ConfigureNotifications)
 
+/**
+ * Display the Switch Application Language dialog.
+ * @since 5.67
+ */
+KCONFIGWIDGETS_EXPORT QAction *switchApplicationLanguage(const QObject *recvr, const char *slot, QObject *parent);
+
+/**
+ * Display the Switch Application Language dialog.
+ * @since 5.67
+ */
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(switchApplicationLanguage, SwitchApplicationLanguage)
+
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 23)
 /**
  * @deprecated since 5.38 Use helpContents() instead.
