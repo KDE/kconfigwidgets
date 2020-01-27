@@ -93,9 +93,15 @@ void KColorSchemeModel::init()
     for (const QString &dir : dirs) {
         const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.colors"));
         for (const QString &file : fileNames) {
-            schemeFiles << dir + QDir::separator() + file;
+            const QString suffixedFileName = QLatin1String("color-schemes/") + file;
+            if (!schemeFiles.contains(suffixedFileName)) {
+                schemeFiles.append(suffixedFileName);
+            }
         }
     }
+    std::transform(schemeFiles.begin(), schemeFiles.end(), schemeFiles.begin(), [](const QString &item) {
+        return QStandardPaths::locate(QStandardPaths::GenericDataLocation, item);
+    });
     for (const QString &schemeFile : qAsConst(schemeFiles)) {
         KSharedConfigPtr config = KSharedConfig::openConfig(schemeFile, KConfig::SimpleConfig);
         KConfigGroup group(config, QStringLiteral("General"));
