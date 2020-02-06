@@ -73,7 +73,7 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { ZoomIn,        KStandardShortcut::ZoomIn, "view_zoom_in", I18N_NOOP("Zoom &In"), nullptr, "zoom-in" },
     { ZoomOut,       KStandardShortcut::ZoomOut, "view_zoom_out", I18N_NOOP("Zoom &Out"), nullptr, "zoom-out" },
     { Zoom,          KStandardShortcut::Zoom, "view_zoom", I18N_NOOP("&Zoom..."), I18N_NOOP("Select zoom level"), nullptr },
-    { Redisplay,     KStandardShortcut::Reload, "view_redisplay", I18N_NOOP("&Redisplay"), I18N_NOOP("Redisplay document"), "view-refresh" },
+    { Redisplay,     KStandardShortcut::Reload, "view_redisplay", I18N_NOOP("&Refresh"), I18N_NOOP("Refresh document"), "view-refresh" },
 
     { Up,            KStandardShortcut::Up, "go_up", I18N_NOOP("&Up"), I18N_NOOP("Go up"), "go-up" },
     // The following three have special i18n() needs for sLabel
