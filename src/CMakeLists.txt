@@ -13,7 +13,13 @@ set(kconfigwidgets_SRCS
   kstandardaction.cpp
   ktipdialog.cpp
 )
-ecm_qt_declare_logging_category(kconfigwidgets_SRCS HEADER kconfigwidgets_debug.h IDENTIFIER KCONFIG_WIDGETS_LOG CATEGORY_NAME kf5.kconfigwidgets)
+ecm_qt_declare_logging_category(kconfigwidgets_SRCS
+    HEADER kconfigwidgets_debug.h
+    IDENTIFIER KCONFIG_WIDGETS_LOG
+    CATEGORY_NAME kf5.kconfigwidgets
+    DESCRIPTION "KConfigWidgets"
+    EXPORT KCONFIGWIDGETS
+)
 if (TARGET Qt5::DBus)
   list(APPEND kconfigwidgets_SRCS kpastetextaction.cpp)
 endif()
@@ -122,6 +128,12 @@ install(FILES
 
 install(PROGRAMS preparetips5 DESTINATION ${KDE_INSTALL_BINDIR} )
 install( FILES entry.desktop  DESTINATION  ${KDE_INSTALL_LOCALEDIR}/en_US RENAME kf5_entry.desktop )
+
+ecm_qt_install_logging_categories(
+    EXPORT KCONFIGWIDGETS
+    FILE kconfigwidgets.categories
+    DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
+)
 
 if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)

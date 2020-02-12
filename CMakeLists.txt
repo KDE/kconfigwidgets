@@ -121,7 +121,4 @@ install(FILES
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
 )
 
-# contains list of debug categories, for kdebugsettings
-install(FILES kconfigwidgets.categories  DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
-
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
