@@ -1,0 +1,655 @@
+# Finnish messages for kdelibs4.
+# Copyright © 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kdelibs package.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 2002,2003, 2005, 2006, 2007.
+# Tapio Kautto <eleknader@phnet.fi>, 2003, 2004.
+# Mikko Ikola <kola@netikka.fi>, 2003.
+# Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2003, 2008.
+# Mikko Ikola <ikola@iki.fi>, 2003.
+# Teemu Rytilahti <teemu.rytilahti@kde-fi.org>, 2003, 2004, 2008.
+# Niklas Laxström <niklas.laxstrom+kdetrans@gmail.com>, 2006, 2007.
+# Joonas Niilola <juippis@roskakori.org>, 2006.
+# Mikko Piippo <piippo@cc.helsinki.fi>, 2007.
+# Teemu Rytilahti <tpr@d5k.net>, 2008.
+# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2019, 2020.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2006, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
+#
+# KDE Finnish translation sprint participants:
+# Author: Artnay
+# Author: Jl
+# Author: Lliehu
+# Author: Niklas Laxström
+# Author: Suhviksi
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-02-07 03:03+0100\n"
+"PO-Revision-Date: 2020-03-10 23:18+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.12.2\n"
+"X-POT-Import-Date: 2013-01-13 20:43:21+0000\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Kim Enkovaara, Tapio Kautto, Mikko Ikola, Teemu Rytilahti, Lasse Liehu, "
+"Niklas Laxström, Joonas Niilola, Mikko Piippo, Tommi Nieminen, Jorma Karvonen"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"kim.enkovaara@iki.fi, eleknader@phnet.fi, ikola@iki.fi, tpr@d5k.net, lasse."
+"liehu@gmail.com, niklas.laxstrom+kdetrans@gmail.com, juippis@roskakori.org, "
+"piippo@cc.helsinki.fi, translator@legisign.org, karvonen.jorma@gmail.com"
+
+#: kcmodule.cpp:176
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Sinua pyydetään tunnistautumaan ennen tallennusta"
+
+#: kcmodule.cpp:180
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Asetusten tallentamiseen ei ole lupaa"
+
+#: kcodecaction.cpp:90
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Oletus"
+
+#: kcodecaction.cpp:98
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Tunnista automaattisesti"
+
+#: kcolorschememanager.cpp:158
+#, kde-format
+msgid "Default"
+msgstr "Oletus"
+
+#: kcolorschememanager.cpp:235 kcolorschememanager.cpp:240
+#, kde-format
+msgid "Color Scheme"
+msgstr "Väriteema"
+
+#: kconfigdialog.cpp:44
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Asetukset"
+
+#: krecentfilesaction.cpp:78
+#, kde-format
+msgid "No Entries"
+msgstr "Ei toimintoja"
+
+#: krecentfilesaction.cpp:84
+#, kde-format
+msgid "Clear List"
+msgstr "Tyhjennä luettelo"
+
+#: kstandardaction.cpp:153
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Takaisin"
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Seuraava"
+
+#: kstandardaction.cpp:167
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Koti"
+
+#: kstandardaction.cpp:171
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "O&hje"
+
+#: kstandardaction.cpp:216
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Näytä valikkorivi<p>Näyttää valikkorivin jos se on piilotettu</p>"
+
+#: kstandardaction.cpp:236
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Näytä tilarivi<p>Näyttää tilarivin, joka on ikkunan alareunassa oleva "
+"palkki, jossa näytetään sovelluksen tilatietoja.</p>"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&New"
+msgstr "&Uusi"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "Create new document"
+msgstr "Luo uusi tiedosto"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Open..."
+msgstr "&Avaa…"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Open an existing document"
+msgstr "Avaa olemassa oleva tiedosto"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open &Recent"
+msgstr "Avaa &viimeaikainen"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr "Avaa viimeksi avattu tiedosto"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Save"
+msgstr "&Tallenna"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Save document"
+msgstr "Tallenna tiedosto"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save &As..."
+msgstr "Tallenna &nimellä…"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save document under a new name"
+msgstr "Tallenna tiedosto uudella nimellä"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Re&vert"
+msgstr "P&alauta"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr "Peru tiedoston tallentamattomat muutokset"
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "&Close"
+msgstr "&Sulje"
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "Close document"
+msgstr "Sulje tiedosto"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "&Print..."
+msgstr "T&ulosta…"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "Print document"
+msgstr "Tulosta tiedosto"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Print Previe&w"
+msgstr "Tulostuksen &esikatselu"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Show a print preview of document"
+msgstr "Näytä tiedoston tulostuksen esikatselu"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "&Mail..."
+msgstr "&Lähetä…"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "Send document by mail"
+msgstr "Lähetä tiedosto sähköpostitse"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "&Quit"
+msgstr "&Lopeta"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Quit application"
+msgstr "Lopeta ohjelma"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Undo"
+msgstr "&Kumoa"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "Undo last action"
+msgstr "Kumoa viimeisin toiminto"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Re&do"
+msgstr "Tee &uudelleen"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Redo last undone action"
+msgstr "Tee viimeisin kumottu toiminto uudelleen"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cu&t"
+msgstr "&Leikkaa"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr "Leikkaa valinta leikepöydälle"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Copy"
+msgstr "K&opioi"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr "Kopioi valinta leikepöydälle"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:59
+#, kde-format
+msgid "&Paste"
+msgstr "L&iitä"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:59
+#, kde-format
+msgid "Paste clipboard content"
+msgstr "Liitä leikepöydän sisältö"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "C&lear"
+msgstr "&Tyhjennä"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "Select &All"
+msgstr "V&alitse kaikki"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Dese&lect"
+msgstr "&Poista valinta"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "&Find..."
+msgstr "&Etsi…"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "Find &Next"
+msgstr "Etsi &seuraava"
+
+#: kstandardaction_p.h:66
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "Etsi e&dellinen"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Replace..."
+msgstr "&Korvaa…"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "&Actual Size"
+msgstr "&Todellinen koko"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "View document at its actual size"
+msgstr "Näytä tiedosto sen todellisessa koossa"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "&Fit to Page"
+msgstr "&Sovita sivulle"
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "Zoom to fit page in window"
+msgstr "Sovita sivu ikkunan kokoon"
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "Sovita sivun &leveyteen"
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr "Sovita sivun leveys ikkunan kokoon"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "Sovita sivun &korkeuteen"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr "Sovita sivun korkeus ikkunan kokoon"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "Zoom &In"
+msgstr "&Lähennä"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "Zoom &Out"
+msgstr "&Loitonna"
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "&Zoom..."
+msgstr "&Lähennä tai loitonna…"
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "Select zoom level"
+msgstr "Valitse zoomaustaso"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Refresh"
+msgstr "&Virkistä"
+
+# ”Virkistä tiedosto” ei oikein esim. Dolphinissa käy, koska paremmin virkistetään kansiokin kuin tiedosto; toivottavasti ”näkymä” on riittävän yleinen toimiakseen kaikissa konteksteissa
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "Refresh document"
+msgstr "Virkistä tiedosto"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "&Up"
+msgstr "&Ylös"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "Go up"
+msgstr "Siirry ylös"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Previous Page"
+msgstr "E&dellinen sivu"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "Go to previous page"
+msgstr "Siirry edelliselle sivulle"
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Next Page"
+msgstr "&Seuraava sivu"
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "Go to next page"
+msgstr "Siirry seuraavalle sivulle"
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Go To..."
+msgstr "&Siirry…"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "&Go to Page..."
+msgstr "&Siirry sivulle…"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "&Go to Line..."
+msgstr "Siirry &riville…"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "&First Page"
+msgstr "&Ensimmäinen sivu"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Go to first page"
+msgstr "Siirry ensimmäiselle sivulle"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "&Last Page"
+msgstr "&Viimeinen sivu"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Go to last page"
+msgstr "Siirry viimeiselle sivulle"
+
+#: kstandardaction_p.h:90
+#, kde-format
+msgid "&Back"
+msgstr "&Takaisin"
+
+#: kstandardaction_p.h:90
+#, kde-format
+msgid "Go back in document"
+msgstr "Siirry taaksepäin tiedostossa"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Forward"
+msgstr "&Seuraava"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "Go forward in document"
+msgstr "Siirry eteenpäin tiedostossa"
+
+#: kstandardaction_p.h:93
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "&Lisää kirjanmerkki"
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "&Muokkaa kirjanmerkkejä…"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "&Spelling..."
+msgstr "&Oikoluku…"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Check spelling in document"
+msgstr "Tarkista tiedoston oikeinkirjoitus"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show &Menubar"
+msgstr "Näytä &valikkorivi"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show or hide menubar"
+msgstr "Näytä tai piilota valikkorivi"
+
+#: kstandardaction_p.h:99
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "Näytä &työkalurivi"
+
+#: kstandardaction_p.h:99
+#, kde-format
+msgid "Show or hide toolbar"
+msgstr "Näytä tai piilota työkalurivi"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "Näytä &tilarivi"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "Show or hide statusbar"
+msgstr "Näytä tai piilota tilarivi"
+
+#: kstandardaction_p.h:101
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "&Koko näytön tila"
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "&Save Settings"
+msgstr "&Tallenna asetukset"
+
+#: kstandardaction_p.h:105
+#, kde-format
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Aseta &pikanäppäimet…"
+
+#: kstandardaction_p.h:106
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Asetukset: %1…|/|$[gen %1] &asetukset…"
+
+#: kstandardaction_p.h:107
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "&Muokkaa työkalurivejä…"
+
+#: kstandardaction_p.h:108
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "Muokkaa &ilmoituksia…"
+
+#: kstandardaction_p.h:115
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1-käyttö&ohje|/|$[gen %1] käyttö&ohje"
+
+#: kstandardaction_p.h:116
+#, kde-format
+msgid "What's &This?"
+msgstr "&Mikä tämä on?"
+
+#: kstandardaction_p.h:117
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "Päivän &vinkki"
+
+#: kstandardaction_p.h:118
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Ilmoita viasta…"
+
+#: kstandardaction_p.h:119
+#, kde-format
+msgid "Switch Application &Language..."
+msgstr "&Vaihda kieltä…"
+
+#: kstandardaction_p.h:120
+#, kde-format
+msgid "&About %1"
+msgstr "&Tietoa: %1|/|&Tietoa $[yleisnimi_pienellä $[elat %1] ]"
+
+#: kstandardaction_p.h:121
+#, kde-format
+msgid "About &KDE"
+msgstr "Tietoa &KDE:stä"
+
+#: kstandardaction_p.h:122
+#, kde-format
+msgid "&Delete"
+msgstr "&Poista"
+
+#: kstandardaction_p.h:123
+#, kde-format
+msgid "&Rename..."
+msgstr "&Muuta nimeä…"
+
+#: kstandardaction_p.h:124
+#, kde-format
+msgid "&Move to Trash"
+msgstr "Siirrä &roskakoriin"
+
+#: kstandardaction_p.h:125
+#, kde-format
+msgid "&Donate"
+msgstr "&Lahjoita"
+
+#: ktipdialog.cpp:241
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Päivän vinkki"
+
+#: ktipdialog.cpp:257
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Tiesitkö…?\n"
+
+#: ktipdialog.cpp:311
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Näytä vinkit käynnistettäessä"
+
+#: ktipdialog.cpp:316
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Edellinen"
+
+#: ktipdialog.cpp:321
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Seuraava"
