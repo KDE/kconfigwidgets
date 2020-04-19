@@ -105,9 +105,14 @@ public:
      * You should only use Help, Default and Apply. The rest is obsolete.
      * NoAdditionalButton can be used when we do not want have other button that Ok Cancel
      *
-     * @see KCModule::buttons @see KCModule::setButtons
+     * @see KCModule::buttons
+     * @see KCModule::setButtons
+     * @see Buttons
      */
     enum Button { NoAdditionalButton = 0, Help = 1, Default = 2, Apply = 4, Export = 8 };
+    /**
+     * Stores a combination of #Button values.
+     */
     Q_DECLARE_FLAGS(Buttons, Button)
 
     /**
