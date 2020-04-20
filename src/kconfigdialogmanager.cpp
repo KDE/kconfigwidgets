@@ -592,27 +592,7 @@ KConfigDialogManagerPrivate::KConfigDialogManagerPrivate(KConfigDialogManager *q
 
 void KConfigDialogManagerPrivate::onWidgetModified()
 {
-    const auto senderWidget = qobject_cast<QWidget *>(q->sender());
-    Q_ASSERT(senderWidget);
-    const auto widget = [=]() -> QWidget * {
-        const auto senderButton = qobject_cast<QAbstractButton *>(senderWidget);
-        if (!senderButton) {
-            return senderWidget;
-        }
-
-        if (senderButton->objectName().startsWith("kcfg_")) {
-            return senderButton;
-        }
-
-        for (auto groupBox : qAsConst(allExclusiveGroupBoxes)) {
-            const auto buttons = groupBox->findChildren<QAbstractButton *>();
-            if (buttons.contains(senderButton)) {
-                return groupBox;
-            }
-        }
-
-        return senderButton;
-    }();
+    const auto widget = qobject_cast<QWidget*>(q->sender());
     Q_ASSERT(widget && widget->objectName().startsWith("kcfg_"));
     const auto configId = widget->objectName().mid(5);
     updateWidgetIndicator(configId, widget);
