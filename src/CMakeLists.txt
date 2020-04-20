@@ -12,7 +12,6 @@ set(kconfigwidgets_SRCS
   krecentfilesaction.cpp
   kstandardaction.cpp
   ktipdialog.cpp
-  settingsstatusindicator.cpp
 )
 ecm_qt_declare_logging_category(kconfigwidgets_SRCS
     HEADER kconfigwidgets_debug.h

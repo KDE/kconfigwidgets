@@ -381,10 +381,8 @@ private:
      * KConfigDialogManager KConfigDialogManagerPrivate class.
      */
     KConfigDialogManagerPrivate *const d;
-    friend class KConfigDialogManagerPrivate;
 
     Q_DISABLE_COPY(KConfigDialogManager)
-    Q_PRIVATE_SLOT(d, void onWidgetModified())
 };
 
 #endif // KCONFIGDIALOGMANAGER_H

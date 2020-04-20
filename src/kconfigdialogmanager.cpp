@@ -3,7 +3,6 @@
  *  Copyright (C) 2003 Benjamin C Meyer (ben+kdelibs at meyerhome dot net)
  *  Copyright (C) 2003 Waldo Bastian <bastian@kde.org>
  *  Copyright (C) 2017 Friedrich W. H. Kossebau <kossebau@kde.org>
- *  Copyright (C) 2020 Kevin Ottens <kevin.ottens@enioka.com>
  *
  *  This library is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU Library General Public
@@ -22,10 +21,7 @@
  */
 
 #include "kconfigdialogmanager.h"
-#include "kconfigdialogmanager_p.h"
 #include "kconfigwidgets_debug.h"
-
-#include "settingsstatusindicator_p.h"
 
 #include <QComboBox>
 #include <QGroupBox>
@@ -41,6 +37,32 @@
 typedef QHash<QString, QByteArray> MyHash;
 Q_GLOBAL_STATIC(MyHash, s_propertyMap)
 Q_GLOBAL_STATIC(MyHash, s_changedMap)
+
+class KConfigDialogManagerPrivate
+{
+
+public:
+    KConfigDialogManagerPrivate(KConfigDialogManager *q) : q(q), insideGroupBox(false) { }
+
+public:
+    KConfigDialogManager * const q;
+
+    /**
+    * KConfigSkeleton object used to store settings
+     */
+    KCoreConfigSkeleton *m_conf = nullptr;
+
+    /**
+    * Dialog being managed
+     */
+    QWidget *m_dialog = nullptr;
+
+    QHash<QString, QWidget *> knownWidget;
+    QHash<QString, QWidget *> buddyWidget;
+    QSet<QWidget *> allExclusiveGroupBoxes;
+    bool insideGroupBox : 1;
+    bool trackChanges : 1;
+};
 
 KConfigDialogManager::KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf)
     : QObject(parent), d(new KConfigDialogManagerPrivate(this))
@@ -204,8 +226,6 @@ void KConfigDialogManager::setupWidget(QWidget *widget, KConfigSkeletonItem *ite
     if (!item->isEqual(property(widget))) {
         setProperty(widget, item->property());
     }
-
-    d->updateWidgetIndicator(item->name(), widget);
 }
 
 bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChanges)
@@ -216,8 +236,8 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
         return valueChanged;
     }
 
-    const QMetaMethod onWidgetModifiedSlot = metaObject()->method(metaObject()->indexOfSlot("onWidgetModified()"));
-    Q_ASSERT(onWidgetModifiedSlot.isValid() && metaObject()->indexOfSlot("onWidgetModified()")>=0);
+    const QMetaMethod widgetModifiedSignal = metaObject()->method(metaObject()->indexOfSignal("widgetModified()"));
+    Q_ASSERT(widgetModifiedSignal.isValid() && metaObject()->indexOfSignal("widgetModified()")>=0);
 
     for (QObject *object : listOfChildren) {
         if (!object->isWidgetType()) {
@@ -246,7 +266,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                         const QList<QAbstractButton *> buttons = childWidget->findChildren<QAbstractButton *>();
                         for (QAbstractButton *button : buttons) {
                             connect(button, &QAbstractButton::toggled,
-                                    this, [this] { d->onWidgetModified(); });
+                                    this, &KConfigDialogManager::widgetModified);
                         }
                     }
 
@@ -268,7 +288,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                                 const QMetaProperty property = metaObject->property(indexOfProperty);
                                 const QMetaMethod notifySignal = property.notifySignal();
                                 if (notifySignal.isValid()) {
-                                    connect(childWidget, notifySignal, this, onWidgetModifiedSlot);
+                                    connect(childWidget, notifySignal, this, widgetModifiedSignal);
                                     changeSignalFound = true;
                                 }
                             }
@@ -277,7 +297,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                         }
                     } else {
                         connect(childWidget, propertyChangeSignal,
-                                this, SLOT(onWidgetModified()));
+                                this, SIGNAL(widgetModified()));
                         changeSignalFound = true;
                     }
 
@@ -368,7 +388,6 @@ void KConfigDialogManager::updateWidgets()
 
     if (changed) {
         QTimer::singleShot(0, this, &KConfigDialogManager::widgetModified);
-        d->updateAllWidgetIndicators();
     }
 }
 
@@ -377,7 +396,6 @@ void KConfigDialogManager::updateWidgetsDefault()
     bool bUseDefaults = d->m_conf->useDefaults(true);
     updateWidgets();
     d->m_conf->useDefaults(bUseDefaults);
-    d->updateAllWidgetIndicators();
 }
 
 void KConfigDialogManager::updateSettings()
@@ -405,7 +423,6 @@ void KConfigDialogManager::updateSettings()
     if (changed) {
         d->m_conf->save();
         emit settingsChanged();
-        d->updateAllWidgetIndicators();
     }
 }
 
@@ -584,57 +601,3 @@ bool KConfigDialogManager::isDefault() const
     return result;
 }
 
-KConfigDialogManagerPrivate::KConfigDialogManagerPrivate(KConfigDialogManager *q)
-    : q(q)
-    , insideGroupBox(false)
-{
-}
-
-void KConfigDialogManagerPrivate::onWidgetModified()
-{
-    const auto widget = qobject_cast<QWidget*>(q->sender());
-    Q_ASSERT(widget && widget->objectName().startsWith("kcfg_"));
-    const auto configId = widget->objectName().mid(5);
-    updateWidgetIndicator(configId, widget);
-    emit q->widgetModified();
-}
-
-void KConfigDialogManagerPrivate::updateWidgetIndicator(const QString &configId, QWidget *widget)
-{
-    const auto item = m_conf->findItem(configId);
-    Q_ASSERT(item);
-
-    const auto widgetValue = q->property(widget);
-    const auto defaultValue = [item] {
-        item->swapDefault();
-        const auto value = item->property();
-        item->swapDefault();
-        return value;
-    }();
-
-    auto indicator = indicatorWidgets.value(configId);
-    const auto defaulted = widgetValue == defaultValue;
-    if (defaulted) {
-        delete indicator;
-        indicatorWidgets.remove(configId);
-    } else if (!indicator){
-        indicator = new SettingStatusIndicator(widget->parentWidget());
-        indicator->setTrackedWidget(widget);
-        QObject::connect(indicator, &SettingStatusIndicator::clicked, widget, [=] {
-            q->setProperty(widget, defaultValue);
-            emit q->widgetModified();
-        });
-        indicatorWidgets.insert(configId, indicator);
-    }
-}
-
-void KConfigDialogManagerPrivate::updateAllWidgetIndicators()
-{
-    QHashIterator<QString, QWidget *> it(knownWidget);
-    while (it.hasNext()) {
-        it.next();
-        updateWidgetIndicator(it.key(), it.value());
-    }
-}
-
-#include "moc_kconfigdialogmanager.cpp"
