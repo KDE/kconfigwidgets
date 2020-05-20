@@ -254,6 +254,19 @@ static const SetDefaultColors defaultComplementaryColors = {
     {  46, 174, 230 }  // Positive
 };
 
+static const SetDefaultColors defaultHeaderColors = {
+    { 227, 229, 231 }, // Background
+    { 239, 240, 241 }, // Alternate
+    {  35,  38,  41 }, // Normal
+    { 112, 125, 138 }, // Inactive
+    {  61, 174, 233 }, // Active
+    {  41, 128, 185 }, // Link
+    { 155,  89, 182 }, // Visited
+    { 218,  68,  83 }, // Negative
+    { 246, 116,   0 }, // Neutral
+    {  39, 174,  96 }  // Positive
+};
+
 static const DecoDefaultColors defaultDecorationColors = {
     {  61, 174, 233 }, // Focus
     { 147, 206, 233 }, // Hover
@@ -344,6 +357,14 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
                                const SetDefaultColors &defaults)
 {
     KConfigGroup cfg(config, group);
+    bool hasInactivePalette = false;
+    if (state == QPalette::Inactive) {
+        KConfigGroup inactiveGroup = KConfigGroup(&cfg, "Inactive");
+        if (inactiveGroup.exists()) {
+            cfg = inactiveGroup;
+            hasInactivePalette = true;
+        }
+    }
 
     // loaded-from-config colors
     _brushes.fg[KColorScheme::NormalText] = cfg.readEntry("ForegroundNormal", SET_DEFAULT(NormalText));
@@ -359,7 +380,7 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
     _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));
 
     // apply state adjustments
-    if (state != QPalette::Active) {
+    if (state != QPalette::Active || (state == QPalette::Inactive && !hasInactivePalette)) {
         StateEffects effects(state, config);
         for (auto &fg : _brushes.fg) {
             fg = effects.brush(fg, _brushes.bg[KColorScheme::NormalBackground]);
@@ -473,6 +494,9 @@ KColorScheme::KColorScheme(QPalette::ColorGroup state, ColorSet set, KSharedConf
         break;
     case Complementary:
         d = new KColorSchemePrivate(config, state, "Colors:Complementary", defaultComplementaryColors);
+        break;
+    case Header:
+        d = new KColorSchemePrivate(config, state, "Colors:Header", defaultHeaderColors);
         break;
     default:
         d = new KColorSchemePrivate(config, state, "Colors:View", defaultViewColors);

@@ -124,7 +124,13 @@ public:
          */
         Complementary,
         /**
+         * Colors for header areas that thould be used both by the top toolbar and the titlebar titlebar.
+         * @since 5.69
+         */
+        Header,
+        /**
          * Number of color sets.
+         * Note: don't use this
          * @since 5.65
          */
         NColorSets
