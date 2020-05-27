@@ -322,12 +322,12 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
 
     // loaded-from-config colors (no adjustment)
     if (strcmp(group, "Colors:Header") == 0) { // For compatibility with color schemes made before ColorSet::Header was added
-        // Default to Window colors before using Header default colors
-        KConfigGroup windowCfg(config, "Colors:Window");
-        _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal", 
-            windowCfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground)));
-        _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", 
-            windowCfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground)));
+        // Default to old titlebar colors before using Header default colors
+        KConfigGroup wmConfig(config, "WM");
+        _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal",
+            wmConfig.readEntry("activeBackground", SET_DEFAULT(NormalBackground)));
+        _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate",
+            wmConfig.readEntry("inactiveBackground", SET_DEFAULT(AlternateBackground)));
     } else {
         _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground));
         _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground));
@@ -348,12 +348,12 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
 
     // loaded-from-config colors
     if (strcmp(group, "Colors:Header") == 0) { // For compatibility with color schemes made before ColorSet::Header was added
-        // Default to Window colors before using Header default colors
-        KConfigGroup windowCfg(config, "Colors:Window");
-        _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal", 
-            windowCfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground)));
-        _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", 
-            windowCfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground)));
+        // Default to old titlebar colors before using Header default colors
+        KConfigGroup wmConfig(config, "WM");
+        _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal",
+            wmConfig.readEntry("activeBackground", SET_DEFAULT(NormalBackground)));
+        _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate",
+            wmConfig.readEntry("inactiveBackground", SET_DEFAULT(AlternateBackground)));
     } else {
         _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground));
         _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground));
@@ -376,40 +376,36 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
                                const SetDefaultColors &defaults)
 {
     KConfigGroup cfg(config, group);
-    bool hasInactivePalette = false;
-    if (state == QPalette::Inactive) {
-        KConfigGroup inactiveGroup = KConfigGroup(&cfg, "Inactive");
-        if (inactiveGroup.exists()) {
-            cfg = inactiveGroup;
-            hasInactivePalette = true;
-        }
-    }
 
     // loaded-from-config colors
     if (strcmp(group, "Colors:Header") == 0) { // For compatibility with color schemes made before ColorSet::Header was added
+        // Default to old titlebar colors before using Header default colors
+        // TODO KF6: switch fallback to Window colors when WM is phased out.
+        KConfigGroup wmConfig(config, "WM");
+        _brushes.fg[KColorScheme::NormalText] = cfg.readEntry("ForegroundNormal",
+            wmConfig.readEntry("activeForeground", SET_DEFAULT(NormalText)));
+        _brushes.fg[KColorScheme::InactiveText] = cfg.readEntry("ForegroundInactive",
+            wmConfig.readEntry("inactiveForeground", SET_DEFAULT(InactiveText)));
+        
         // Default to Window colors before using Header default colors
-        KConfigGroup windowCfg(config, "Colors:Window");
-        _brushes.fg[KColorScheme::NormalText] = cfg.readEntry("ForegroundNormal", 
-            windowCfg.readEntry("ForegroundNormal", SET_DEFAULT(NormalText)));
-        _brushes.fg[KColorScheme::InactiveText] = cfg.readEntry("ForegroundInactive", 
-            windowCfg.readEntry("ForegroundInactive", SET_DEFAULT(InactiveText)));
-        _brushes.fg[KColorScheme::ActiveText] = cfg.readEntry("ForegroundActive", 
-            windowCfg.readEntry("ForegroundActive", SET_DEFAULT(ActiveText)));
-        _brushes.fg[KColorScheme::LinkText] = cfg.readEntry("ForegroundLink", 
-            windowCfg.readEntry("ForegroundLink", SET_DEFAULT(LinkText)));
-        _brushes.fg[KColorScheme::VisitedText] = cfg.readEntry("ForegroundVisited", 
-            windowCfg.readEntry("ForegroundVisited", SET_DEFAULT(VisitedText)));
-        _brushes.fg[KColorScheme::NegativeText] = cfg.readEntry("ForegroundNegative", 
-            windowCfg.readEntry("ForegroundNegative", SET_DEFAULT(NegativeText)));
-        _brushes.fg[KColorScheme::NeutralText] = cfg.readEntry("ForegroundNeutral", 
-            windowCfg.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText)));
-        _brushes.fg[KColorScheme::PositiveText] = cfg.readEntry("ForegroundPositive", 
-            windowCfg.readEntry("ForegroundPositive", SET_DEFAULT(PositiveText)));
+        KConfigGroup windowConfig(config, "Colors:Window");
+        _brushes.fg[KColorScheme::ActiveText] = cfg.readEntry("ForegroundActive",
+            windowConfig.readEntry("ForegroundActive", SET_DEFAULT(ActiveText)));
+        _brushes.fg[KColorScheme::LinkText] = cfg.readEntry("ForegroundLink",
+            windowConfig.readEntry("ForegroundLink", SET_DEFAULT(LinkText)));
+        _brushes.fg[KColorScheme::VisitedText] = cfg.readEntry("ForegroundVisited",
+            windowConfig.readEntry("ForegroundVisited", SET_DEFAULT(VisitedText)));
+        _brushes.fg[KColorScheme::NegativeText] = cfg.readEntry("ForegroundNegative",
+            windowConfig.readEntry("ForegroundNegative", SET_DEFAULT(NegativeText)));
+        _brushes.fg[KColorScheme::NeutralText] = cfg.readEntry("ForegroundNeutral",
+            windowConfig.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText)));
+        _brushes.fg[KColorScheme::PositiveText] = cfg.readEntry("ForegroundPositive",
+            windowConfig.readEntry("ForegroundPositive", SET_DEFAULT(PositiveText)));
 
-        _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus", 
-            windowCfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus)));
-        _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover", 
-            windowCfg.readEntry("DecorationHover", DECO_DEFAULT(Hover)));
+        _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus",
+                windowConfig.readEntry("DecorationFocus", DECO_DEFAULT(Focus)));
+        _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover",
+                windowConfig.readEntry("DecorationHover", DECO_DEFAULT(Hover)));
     } else {
         _brushes.fg[KColorScheme::NormalText] = cfg.readEntry("ForegroundNormal", SET_DEFAULT(NormalText));
         _brushes.fg[KColorScheme::InactiveText] = cfg.readEntry("ForegroundInactive", SET_DEFAULT(InactiveText));
@@ -434,7 +430,7 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
     _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));
 
     // apply state adjustments
-    if (state != QPalette::Active || (state == QPalette::Inactive && !hasInactivePalette)) {
+    if (state != QPalette::Active) {
         StateEffects effects(state, config);
         for (auto &fg : _brushes.fg) {
             fg = effects.brush(fg, _brushes.bg[KColorScheme::NormalBackground]);
