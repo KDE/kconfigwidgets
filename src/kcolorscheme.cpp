@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
  * Copyright (C) 2007 Matthew Woehlke <mw_triad@users.sourceforge.net>
+ * Copyright (C) 2020 Carson Black <uhhadd@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -382,30 +383,48 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
         // Default to old titlebar colors before using Header default colors
         // TODO KF6: switch fallback to Window colors when WM is phased out.
         KConfigGroup wmConfig(config, "WM");
+        KConfigGroup windowConfig(config, "Colors:Window");
         _brushes.fg[KColorScheme::NormalText] = cfg.readEntry("ForegroundNormal",
             wmConfig.readEntry("activeForeground", SET_DEFAULT(NormalText)));
         _brushes.fg[KColorScheme::InactiveText] = cfg.readEntry("ForegroundInactive",
             wmConfig.readEntry("inactiveForeground", SET_DEFAULT(InactiveText)));
-        
-        // Default to Window colors before using Header default colors
-        KConfigGroup windowConfig(config, "Colors:Window");
-        _brushes.fg[KColorScheme::ActiveText] = cfg.readEntry("ForegroundActive",
-            windowConfig.readEntry("ForegroundActive", SET_DEFAULT(ActiveText)));
-        _brushes.fg[KColorScheme::LinkText] = cfg.readEntry("ForegroundLink",
-            windowConfig.readEntry("ForegroundLink", SET_DEFAULT(LinkText)));
-        _brushes.fg[KColorScheme::VisitedText] = cfg.readEntry("ForegroundVisited",
-            windowConfig.readEntry("ForegroundVisited", SET_DEFAULT(VisitedText)));
-        _brushes.fg[KColorScheme::NegativeText] = cfg.readEntry("ForegroundNegative",
-            windowConfig.readEntry("ForegroundNegative", SET_DEFAULT(NegativeText)));
-        _brushes.fg[KColorScheme::NeutralText] = cfg.readEntry("ForegroundNeutral",
-            windowConfig.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText)));
-        _brushes.fg[KColorScheme::PositiveText] = cfg.readEntry("ForegroundPositive",
-            windowConfig.readEntry("ForegroundPositive", SET_DEFAULT(PositiveText)));
 
-        _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus",
-                windowConfig.readEntry("DecorationFocus", DECO_DEFAULT(Focus)));
-        _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover",
-                windowConfig.readEntry("DecorationHover", DECO_DEFAULT(Hover)));
+        // This function adjusts the hue of the colour to ensure contrast is
+        // achieved when falling back to Window colour palette. This is important
+        // due to accent colour titlebars being a fairly popular choice. Simply
+        // using the Window group will result in blue on blue or red on red for
+        // common color schemes.
+        auto adjustHue = [=](QColor color) -> QColor {
+            auto normal = _brushes.fg[KColorScheme::NormalText].color();
+            int h = color.hslHue(), s = normal.hslSaturation(), l = normal.lightness(), a = 255;
+            QColor ret;
+            ret.setHsl(h, s, l, a);
+            return ret;
+        };
+        struct ColorRole {
+            // The role that we want to set here.
+            KColorScheme::ForegroundRole role;
+            // The config name of the colour we want to read from.
+            const char* colorConfigName;
+            // The fallback to use when no configs are available.
+            QColor fallback;
+        };
+        auto list = std::list<ColorRole> {
+            {KColorScheme::ActiveText,   "ForegroundActive",   SET_DEFAULT(ActiveText)  },
+            {KColorScheme::LinkText,     "ForegroundLink",     SET_DEFAULT(LinkText)    },
+            {KColorScheme::VisitedText,  "ForegroundVisited",  SET_DEFAULT(VisitedText) },
+            {KColorScheme::NegativeText, "ForegroundNegative", SET_DEFAULT(NegativeText)},
+            {KColorScheme::NeutralText,  "ForegroundNeutral",  SET_DEFAULT(NeutralText) },
+            {KColorScheme::PositiveText, "ForegroundPositive", SET_DEFAULT(PositiveText)}
+        };
+        for (const auto &x: list) {
+            _brushes.fg[x.role] = cfg.readEntry(
+                x.colorConfigName,
+                adjustHue(windowConfig.readEntry(x.colorConfigName, x.fallback))
+            );
+        }
+        _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus", adjustHue(windowConfig.readEntry("DecorationFocus", DECO_DEFAULT(Focus))));
+        _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("HoverColor", adjustHue(windowConfig.readEntry("HoverColor", DECO_DEFAULT(Hover))));
     } else {
         _brushes.fg[KColorScheme::NormalText] = cfg.readEntry("ForegroundNormal", SET_DEFAULT(NormalText));
         _brushes.fg[KColorScheme::InactiveText] = cfg.readEntry("ForegroundInactive", SET_DEFAULT(InactiveText));
