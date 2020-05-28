@@ -396,7 +396,10 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
         // common color schemes.
         auto adjustHue = [=](QColor color) -> QColor {
             auto normal = _brushes.fg[KColorScheme::NormalText].color();
-            int h = color.hslHue(), s = normal.hslSaturation(), l = normal.lightness(), a = 255;
+            int h = color.hslHue();
+            int s = (normal.hslSaturation()*0.4)+(color.hslSaturation()*0.6);
+            int l = (normal.lightness()*0.5)+(color.lightness()*0.5);
+            int a = 255;
             QColor ret;
             ret.setHsl(h, s, l, a);
             return ret;
