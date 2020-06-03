@@ -423,15 +423,6 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
         _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus));
         _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));
     }
-    _brushes.fg[KColorScheme::ActiveText] = cfg.readEntry("ForegroundActive", SET_DEFAULT(ActiveText));
-    _brushes.fg[KColorScheme::LinkText] = cfg.readEntry("ForegroundLink", SET_DEFAULT(LinkText));
-    _brushes.fg[KColorScheme::VisitedText] = cfg.readEntry("ForegroundVisited", SET_DEFAULT(VisitedText));
-    _brushes.fg[KColorScheme::NegativeText] = cfg.readEntry("ForegroundNegative", SET_DEFAULT(NegativeText));
-    _brushes.fg[KColorScheme::NeutralText] = cfg.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText));
-    _brushes.fg[KColorScheme::PositiveText] = cfg.readEntry("ForegroundPositive", SET_DEFAULT(PositiveText));
-
-    _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus));
-    _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));
 
     // apply state adjustments
     if (state != QPalette::Active || (state == QPalette::Inactive && !hasInactivePalette)) {
