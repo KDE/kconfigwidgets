@@ -34,6 +34,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <QLabel>
 #include <QDesktopWidget>
 #include <QPushButton>
+#include <QRandomGenerator>
 #include <QScreen>
 #include <QTextBrowser>
 #include <QHBoxLayout>
@@ -129,7 +130,7 @@ KTipDatabase::KTipDatabase(const QString &_tipFile)
     d->loadTips(tipFile);
 
     if (!d->tips.isEmpty()) {
-        d->currentTip = KRandom::random() % d->tips.count();
+        d->currentTip = QRandomGenerator::global()->bounded(d->tips.count());
     }
 }
 
@@ -145,7 +146,7 @@ KTipDatabase::KTipDatabase(const QStringList &tipsFiles)
     }
 
     if (!d->tips.isEmpty()) {
-        d->currentTip = KRandom::random() % d->tips.count();
+        d->currentTip = QRandomGenerator::global()->bounded(d->tips.count());
     }
 }
 
@@ -381,7 +382,7 @@ void KTipDialog::showMultiTip(QWidget *parent, const QStringList &tipFiles, bool
           QDateTime lastShown = configGroup.readEntry( "TipLastShown", QDateTime() );
 
           // Show tip roughly once a week
-          if ( lastShown.secsTo( QDateTime::currentDateTime() ) < (oneDay + (KRandom::random() % (10 * oneDay))) )
+          if ( lastShown.secsTo( QDateTime::currentDateTime() ) < (oneDay + (QRandomGenerator::global()->bounded(10 * oneDay))) )
             return;
         }
 
