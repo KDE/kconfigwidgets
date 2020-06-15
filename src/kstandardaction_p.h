@@ -116,7 +116,7 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { WhatsThis,     KStandardShortcut::WhatsThis, "help_whats_this", I18N_NOOP("What's &This?"), nullptr, "help-contextual" },
     { TipofDay,      KStandardShortcut::TipofDay, "help_show_tip", I18N_NOOP("Tip of the &Day"), nullptr, "help-hint" },
     { ReportBug,     KStandardShortcut::ReportBug, "help_report_bug", I18N_NOOP("&Report Bug..."), nullptr, "tools-report-bug" },
-    { SwitchApplicationLanguage, KStandardShortcut::SwitchApplicationLanguage, "switch_application_language", I18N_NOOP("Switch Application &Language..."), nullptr, "preferences-desktop-locale" },
+    { SwitchApplicationLanguage, KStandardShortcut::SwitchApplicationLanguage, "switch_application_language", I18N_NOOP("Configure &Language..."), nullptr, "preferences-desktop-locale" },
     { AboutApp,      KStandardShortcut::AccelNone, "help_about_app", I18N_NOOP("&About %1"), nullptr, nullptr },
     { AboutKDE,      KStandardShortcut::AccelNone, "help_about_kde", I18N_NOOP("About &KDE"), nullptr, "kde" },
     { DeleteFile,    KStandardShortcut::DeleteFile, "deletefile", I18N_NOOP("&Delete"), nullptr, "edit-delete" },
