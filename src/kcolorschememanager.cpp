@@ -41,7 +41,7 @@ static void activateScheme(const QString &colorSchemePath) {
     // ApplicationPaletteChange event.
     qApp->setProperty("KDE_COLOR_SCHEME_PATH", colorSchemePath);
     if (colorSchemePath.isEmpty()) {
-        qApp->setPalette(qApp->style()->standardPalette());
+        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::Ptr(nullptr)));
     } else {
         qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(colorSchemePath)));
     }
