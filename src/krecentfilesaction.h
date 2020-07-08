@@ -27,8 +27,8 @@
 #ifndef KRECENTFILESACTION_H
 #define KRECENTFILESACTION_H
 
-#include <kselectaction.h>
-#include <qurl.h>
+#include <KSelectAction>
+#include <QUrl>
 #include <kconfigwidgets_export.h>
 
 class KConfigGroup;

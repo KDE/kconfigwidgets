@@ -41,13 +41,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <QRegularExpression>
 #include <QVBoxLayout>
 
-#include <kconfig.h>
-#include <kconfiggroup.h>
-#include <klocalizedstring.h>
-#include <ksharedconfig.h>
-#include <krandom.h>
-#include <kseparator.h>
-#include <kstandardguiitem.h>
+#include <KConfig>
+#include <KConfigGroup>
+#include <KLocalizedString>
+#include <KSharedConfig>
+#include <KRandom>
+#include <KSeparator>
+#include <KStandardGuiItem>
 
 class Q_DECL_HIDDEN KTipDatabase::Private
 {

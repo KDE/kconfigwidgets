@@ -21,7 +21,7 @@
 #ifndef KCONFIGDIALOG_H
 #define KCONFIGDIALOG_H
 
-#include <kpagedialog.h>
+#include <KPageDialog>
 
 #include "kconfigwidgets_export.h"
 

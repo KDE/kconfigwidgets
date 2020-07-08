@@ -26,12 +26,12 @@
 #include "kconfigwidgets_debug.h"
 
 
-#include <kaboutdata.h>
-#include <kconfigskeleton.h>
+#include <KAboutData>
+#include <KConfigSkeleton>
 #include <kconfigdialogmanager.h>
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 #ifndef KCONFIGWIDGETS_NO_KAUTH
-#include <kauthexecutejob.h>
+#include <KAuthExecuteJob>
 #endif
 
 class KCModulePrivate

@@ -22,11 +22,11 @@
 #ifndef KVIEWSTATEMAINTAINER_H
 #define KVIEWSTATEMAINTAINER_H
 
-#include "kviewstatemaintainerbase.h"
+#include <KViewStateMaintainerBase>
 
 #include <QAbstractItemView>
 
-#include "kconfiggroup.h"
+#include <KConfigGroup>
 
 /**
  * @class KViewStateMaintainer kviewstatemaintainer.h KViewStateMaintainer

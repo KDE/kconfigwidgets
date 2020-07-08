@@ -21,7 +21,7 @@
 #define KCOLORSCHEME_H
 
 #include <kconfigwidgets_export.h>
-#include <ksharedconfig.h>
+#include <KSharedConfig>
 
 #include <QExplicitlySharedDataPointer>
 

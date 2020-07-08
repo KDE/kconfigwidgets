@@ -19,11 +19,11 @@
 #include "kcolorschememanager.h"
 #include "kcolorschememanager_p.h"
 
-#include <kactionmenu.h>
-#include <kconfiggroup.h>
+#include <KActionMenu>
+#include <KConfigGroup>
 #include <kcolorscheme.h>
-#include <klocalizedstring.h>
-#include <ksharedconfig.h>
+#include <KLocalizedString>
+#include <KSharedConfig>
 
 #include <QApplication>
 #include <QDir>

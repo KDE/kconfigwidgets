@@ -20,7 +20,7 @@
 
 #include "khelpclient.h"
 
-#include "kdesktopfile.h"
+#include <KDesktopFile>
 
 #include <QCoreApplication>
 #include <QUrl>

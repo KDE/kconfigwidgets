@@ -2,7 +2,7 @@
 #ifndef KCONFIGVIEWSTATESAVER_H
 #define KCONFIGVIEWSTATESAVER_H
 
-#include "kviewstateserializer.h"
+#include <KViewStateSerializer>
 
 #include "kconfigwidgets_export.h"
 

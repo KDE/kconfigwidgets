@@ -28,8 +28,8 @@
 #include "kcodecaction.h"
 #include "kconfigwidgets_debug.h"
 
-#include <kcharsets.h>
-#include <klocalizedstring.h>
+#include <KCharsets>
+#include <KLocalizedString>
 
 #include <QMenu>
 #include <QVariant>

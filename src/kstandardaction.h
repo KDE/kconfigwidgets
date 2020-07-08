@@ -23,9 +23,9 @@
 #include <QList>
 
 #include <kconfigwidgets_export.h>
-#include <kstandardshortcut.h>
+#include <KStandardShortcut>
 #include <krecentfilesaction.h>
-#include <ktoggleaction.h>
+#include <KToggleAction>
 #include <ktogglefullscreenaction.h>
 
 #include <type_traits>

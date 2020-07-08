@@ -18,10 +18,10 @@
  */
 #include "kcolorscheme.h"
 
-#include <kconfig.h>
-#include <kconfiggroup.h>
-#include <ksharedconfig.h>
-#include <kcolorutils.h>
+#include <KConfig>
+#include <KConfigGroup>
+#include <KSharedConfig>
+#include <KColorUtils>
 
 #include <QColor>
 #include <QBrush>

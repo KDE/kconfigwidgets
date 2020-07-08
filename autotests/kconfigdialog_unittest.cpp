@@ -19,7 +19,7 @@
 */
 
 #include <QTest>
-#include <qtestevent.h>
+#include <QTestEvent>
 
 #include <QDialogButtonBox>
 #include <QPushButton>
@@ -30,8 +30,8 @@
 
 #include <kconfigdialog.h>
 #include <kconfigdialogmanager.h>
-#include <kconfigskeleton.h>
-#include <kcolorcombo.h>
+#include <KConfigSkeleton>
+#include <KColorCombo>
 
 #include "signaltest.h"
 

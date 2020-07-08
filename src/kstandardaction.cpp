@@ -26,12 +26,12 @@
 #include <QLayout>
 #include <QMainWindow>
 #include <QMenuBar>
-#include <kaboutdata.h>
-#include <klocalizedstring.h>
-#include <kstandardshortcut.h>
-#include <kacceleratormanager.h>
+#include <KAboutData>
+#include <KLocalizedString>
+#include <KStandardShortcut>
+#include <KAcceleratorManager>
 
-#include "kdualaction.h"
+#include <KDualAction>
 #include "kpastetextaction.h"
 
 namespace KStandardAction

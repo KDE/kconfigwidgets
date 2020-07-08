@@ -28,8 +28,8 @@
 #include <QLocale>
 #include <QHBoxLayout>
 
-#include <kconfig.h>
-#include <kconfiggroup.h>
+#include <KConfig>
+#include <KConfigGroup>
 
 static void checkInsertPos(QMenu *popup, const QString &str, int &index)
 {

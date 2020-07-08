@@ -34,9 +34,9 @@
 #include <QMenu>
 #include <QScreen>
 
-#include <kconfig.h>
-#include <kconfiggroup.h>
-#include <klocalizedstring.h>
+#include <KConfig>
+#include <KConfigGroup>
+#include <KLocalizedString>
 
 KRecentFilesAction::KRecentFilesAction(QObject *parent)
     : KSelectAction(parent),

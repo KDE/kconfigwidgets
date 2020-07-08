@@ -21,8 +21,8 @@
 #include "klanguagename.h"
 #include "kconfigwidgets_debug.h"
 
-#include <kconfig.h>
-#include <kconfiggroup.h>
+#include <KConfig>
+#include <KConfigGroup>
 
 QString KLanguageName::nameForCode(const QString &code)
 {

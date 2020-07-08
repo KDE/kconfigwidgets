@@ -27,8 +27,8 @@
 #ifndef KCODECACTION_H
 #define KCODECACTION_H
 
-#include <kencodingprober.h>
-#include <kselectaction.h>
+#include <KEncodingProber>
+#include <KSelectAction>
 #include <kconfigwidgets_export.h>
 
 /**

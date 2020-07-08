@@ -22,8 +22,8 @@
 #include <QAction>
 #include <QApplication>
 
-#include <klocalizedstring.h>
-#include <kstandardshortcut.h>
+#include <KLocalizedString>
+#include <KStandardShortcut>
 
 namespace KStandardAction
 {

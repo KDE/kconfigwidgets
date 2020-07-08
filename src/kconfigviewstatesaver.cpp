@@ -1,7 +1,7 @@
 
 #include "kconfigviewstatesaver.h"
 
-#include "kconfiggroup.h"
+#include <KConfigGroup>
 
 static const char selectionKey[] = "Selection";
 static const char expansionKey[] = "Expansion";

@@ -32,7 +32,7 @@
 #include <QRadioButton>
 #include <QLayout>
 
-#include <kconfigskeleton.h>
+#include <KConfigSkeleton>
 
 typedef QHash<QString, QByteArray> MyHash;
 Q_GLOBAL_STATIC(MyHash, s_propertyMap)

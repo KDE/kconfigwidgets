@@ -21,7 +21,7 @@
 #include "krecentfilesactiontest.h"
 #include <krecentfilesaction.h>
 #include <QMenu>
-#include <qtest.h>
+#include <QTest>
 
 
 

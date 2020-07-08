@@ -22,9 +22,9 @@
 #include "kconfigdialog.h"
 
 #include <kconfigdialogmanager.h>
-#include <kcoreconfigskeleton.h>
-#include <klocalizedstring.h>
-#include <kpagewidgetmodel.h>
+#include <KCoreConfigSkeleton>
+#include <KLocalizedString>
+#include <KPageWidgetModel>
 #include <khelpclient.h>
 
 #include <QDialogButtonBox>

@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 #include <kcolorschememanager.h>
-#include <kactionmenu.h>
+#include <KActionMenu>
 
 #include <QApplication>
 #include <QDialog>

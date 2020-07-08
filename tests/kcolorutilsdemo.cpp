@@ -16,7 +16,7 @@
  */
 
 #include "kcolorutilsdemo.h"
-#include <kcolorutils.h>
+#include <KColorUtils>
 #include <kcolorscheme.h>
 
 #include <QApplication>

@@ -26,7 +26,7 @@
 #include <kconfigwidgets_export.h>
 
 #ifndef KCONFIGWIDGETS_NO_KAUTH
-#include <kauthaction.h>
+#include <KAuthAction>
 #endif
 
 #include <QVariant>
