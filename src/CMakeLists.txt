@@ -16,7 +16,8 @@ set(kconfigwidgets_SRCS
 ecm_qt_declare_logging_category(kconfigwidgets_SRCS
     HEADER kconfigwidgets_debug.h
     IDENTIFIER KCONFIG_WIDGETS_LOG
-    CATEGORY_NAME kf5.kconfigwidgets
+    CATEGORY_NAME kf.configwidgets
+    OLD_CATEGORY_NAMES kf5.kconfigwidgets
     DESCRIPTION "KConfigWidgets"
     EXPORT KCONFIGWIDGETS
 )
