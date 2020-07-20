@@ -232,6 +232,13 @@ public:
      */
     bool needsAuthorization() const;
 
+    /**
+     * Returns whether an indicator is shown when a setting differs from default.
+     *
+     * @since 5.73
+     */
+    bool defaultsIndicatorsVisible() const;
+
 #ifndef KCONFIGWIDGETS_NO_KAUTH
     /**
      * @brief Set if the module's save() method requires authorization to be executed
@@ -321,6 +328,13 @@ public Q_SLOTS:
      */
     virtual void defaults();
 
+    /**
+     * Show an indicator when settings value differ from default
+     *
+     * @since 5.73
+     */
+    void setDefaultsIndicatorsVisible(bool show);
+
 protected:
     /**
      * Adds a KCoreConfigskeleton @p config to watch the widget @p widget
@@ -395,6 +409,12 @@ Q_SIGNALS:
      *
      */
     void rootOnlyMessageChanged(bool use, QString message);
+
+    /**
+     * Emitted when show defaults indicators changed
+     * @since 5.73
+     */
+    void defaultsIndicatorsVisibleChanged(bool show);
 
 protected Q_SLOTS:
 

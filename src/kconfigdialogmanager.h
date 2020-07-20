@@ -305,6 +305,14 @@ public Q_SLOTS:
      */
     void updateWidgetsDefault();
 
+    /**
+     * Show or hide an indicator when settings have changed from their default value.
+     * Update all widgets to show or hide the indicator accordingly.
+     *
+     * @since 5.73
+     */
+    void setDefaultsIndicatorsVisible(bool enabled);
+
 protected:
 
     /**
@@ -381,8 +389,10 @@ private:
      * KConfigDialogManager KConfigDialogManagerPrivate class.
      */
     KConfigDialogManagerPrivate *const d;
+    friend class KConfigDialogManagerPrivate;
 
     Q_DISABLE_COPY(KConfigDialogManager)
+    Q_PRIVATE_SLOT(d, void onWidgetModified())
 };
 
 #endif // KCONFIGDIALOGMANAGER_H

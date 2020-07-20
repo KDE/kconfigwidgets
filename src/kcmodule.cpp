@@ -25,7 +25,6 @@
 #include "kcmodule.h"
 #include "kconfigwidgets_debug.h"
 
-
 #include <KAboutData>
 #include <KConfigSkeleton>
 #include <kconfigdialogmanager.h>
@@ -45,7 +44,8 @@ public:
         _needsAuthorization(false),
         _unmanagedWidgetChangeState(false),
         _unmanagedWidgetDefaultState(false),
-        _unmanagedWidgetDefaultStateCalled(false)
+        _unmanagedWidgetDefaultStateCalled(false),
+        _defaultsIndicatorsVisible(false)
     { }
 
     void authStatusChanged(int status);
@@ -73,6 +73,8 @@ public:
     bool _unmanagedWidgetChangeState : 1;
     bool _unmanagedWidgetDefaultState : 1;
     bool _unmanagedWidgetDefaultStateCalled : 1;
+
+    bool _defaultsIndicatorsVisible : 1;
 };
 
 KCModule::KCModule(const KAboutData *aboutData, QWidget *parent, const QVariantList &)
@@ -144,6 +146,24 @@ void KCModule::setNeedsAuthorization(bool needsAuth)
 bool KCModule::needsAuthorization() const
 {
     return d->_needsAuthorization;
+}
+
+void KCModule::setDefaultsIndicatorsVisible(bool show)
+{
+    if (d->_defaultsIndicatorsVisible == show) {
+        return;
+    }
+
+    d->_defaultsIndicatorsVisible = show;
+    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
+        manager->setDefaultsIndicatorsVisible(show);
+    }
+    emit defaultsIndicatorsVisibleChanged(show);
+}
+
+bool KCModule::defaultsIndicatorsVisible() const
+{
+    return d->_defaultsIndicatorsVisible;
 }
 
 #ifndef KCONFIGWIDGETS_NO_KAUTH
