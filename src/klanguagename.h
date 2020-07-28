@@ -25,6 +25,7 @@
 #include "kconfigwidgets_export.h"
 
 class QString;
+class QStringList;
 
 /**
  * @class KLanguageName klanguagename.h KLanguageName
@@ -58,6 +59,14 @@ namespace KLanguageName
      * @param outputLocale code (ISO 639-1) of the language in which we want the name in.
      */
     KCONFIGWIDGETS_EXPORT QString nameForCodeInLocale(const QString &code, const QString &outputLocale);
+
+    /**
+     * Returns the list of language codes found on the system
+     * as having kf5_entry.desktop files.
+     * 
+     * @since 5.73
+     */
+    KCONFIGWIDGETS_EXPORT QStringList allLanguageCodes();
 }
 
 #endif

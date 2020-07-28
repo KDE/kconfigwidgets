@@ -44,6 +44,11 @@ class KLanguageNameTest : public QObject
     Q_OBJECT
 
 private Q_SLOTS:
+    void testListFound()
+    {
+        QVERIFY(KLanguageName::allLanguageCodes().count() > 0);
+    }
+
     void testNameForCode()
     {
         // This is somewhat wrong, it should not say US.

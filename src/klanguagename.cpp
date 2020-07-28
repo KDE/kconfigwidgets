@@ -24,6 +24,8 @@
 #include <KConfig>
 #include <KConfigGroup>
 
+#include <QDir>
+
 QString KLanguageName::nameForCode(const QString &code)
 {
     const QStringList parts = QLocale().name().split(QLatin1Char('_'));
@@ -64,4 +66,19 @@ QString KLanguageName::nameForCodeInLocale(const QString &code, const QString &o
     }
 
     return QString();
+}
+
+QStringList KLanguageName::allLanguageCodes()
+{
+    QStringList systemLangList;
+    const QString localeDir = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
+                                            QStringLiteral("locale"), QStandardPaths::LocateDirectory);
+    const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
+    for (QStringList::const_iterator language = entries.constBegin(); language != entries.constEnd(); ++language) {
+        const QString entryFile = localeDir + '/' + *language + "/kf5_entry.desktop";
+        if (QFile::exists(entryFile)) {
+            systemLangList.append(*language);
+        }
+    }
+    return systemLangList;
 }
