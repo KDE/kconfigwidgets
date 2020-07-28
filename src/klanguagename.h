@@ -61,8 +61,7 @@ namespace KLanguageName
     KCONFIGWIDGETS_EXPORT QString nameForCodeInLocale(const QString &code, const QString &outputLocale);
 
     /**
-     * Returns the list of language codes found on the system
-     * as having kf5_entry.desktop files.
+     * Returns the list of language codes found on the system.
      * 
      * @since 5.73
      */
