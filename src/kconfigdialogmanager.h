@@ -37,8 +37,11 @@ class QWidget;
  * "kcfg_" prefix. For example a widget with the object name "kcfg_MyOption"
  * would be associated to the configuration entry "MyOption".
  *
- * The widget classes of Qt and KDE Frameworks are supported out of the box.
+ * The widget classes of Qt and KDE Frameworks are supported out of the box,
+ * for other widgets see below:
  *
+ * @par Using Custom Widgets
+ * @parblock
  * Custom widget classes are supported if they have a Q_PROPERTY defined for the
  * property representing the value edited by the widget. By default the property
  * is used for which "USER true" is set. For using another property, see below.
@@ -56,7 +59,10 @@ class QWidget;
  * This class then can be used directly with KConfigDialogManager and does not need
  * further setup. For supporting also KDE Frameworks versions older than 5.32 see
  * below for how to register the property change signal.
+ * @endparblock
  *
+ * @par Using Other Properties than The USER Property
+ * @parblock
  * To use a widget's property that is not the USER property, the property to use
  * can be selected by setting onto the widget instance a property with the key
  * "kcfg_property" and as the value the name of the property:
@@ -66,7 +72,10 @@ class QWidget;
  * \endcode
  * This selection of the property to use is just valid for this widget instance.
  * When using a UI file, the "kcfg_property" property can also be set using Qt Designer.
+ * @endparblock
  *
+ * @par Configuring Classes to use Other Properties Globally
+ * @parblock
  * Alternatively a non-USER property can be defined for a widget class globally
  * by registering it for the class in the KConfigDialogManager::propertyMap().
  * This global registration has lower priority than any "kcfg_property" property
@@ -88,7 +97,10 @@ class QWidget;
  * \code
  * KConfigDialogManager::propertyMap()->insert("ColorEditWidget", QByteArray("redColorPart"));
  * \endcode
+ * @endparblock
  *
+ * @par Using Different Signals than The NOTIFY Signal
+ * @parblock
  * If some non-default signal should be used, e.g. because the property to use does not
  * have a NOTIFY setting, for a given widget instance the signal to use can be set
  * by a property with the key "kcfg_propertyNotify" and as the value the signal signature.
@@ -110,7 +122,10 @@ class QWidget;
  * OtherColorEditWidget *myWidget = new OtherColorEditWidget;
  * myWidget->setProperty("kcfg_propertyNotify", SIGNAL(colorSelected(QColor)));
  * \endcode
+ * @endparblock
  *
+ * @par Supporting Older Versions of KDE Frameworks
+ * @parblock
  * Before version 5.32 of KDE Frameworks, the signal notifying about a change
  * of the property value in the widget had to be manually registered for any
  * custom widget, using KConfigDialogManager::changedMap(). The same also had
@@ -174,6 +189,7 @@ class QWidget;
  * OtherColorEditWidget *myWidget = new OtherColorEditWidget;
  * myWidget->setProperty("kcfg_propertyNotify", SIGNAL(colorSelected(QColor)));
  * \endcode
+ * @endparblock
  *
  * @author Benjamin C Meyer <ben+kdelibs at meyerhome dot net>
  * @author Waldo Bastian <bastian@kde.org>
