@@ -1,0 +1,681 @@
+# translation of kdelibs4.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2007.
+# Ravishankar Shrivastava <raviratlami@aol.in>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-07-21 02:03+0200\n"
+"PO-Revision-Date: 2009-02-10 20:44+0530\n"
+"Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
+"Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
+"Language: hne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 0.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "raviratlami@aol.in,"
+
+#: kcmodule.cpp:196
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:200
+#, fuzzy, kde-format
+#| msgid "Do you want to reload KDE configuration?"
+msgid "You are not allowed to save the configuration"
+msgstr "का आप मन केडीई कान्फिगरेसन ल फिर से लोड करना चाहथो ?"
+
+#: kcodecaction.cpp:90
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "डिफाल्ट"
+
+#: kcodecaction.cpp:98
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "अपन आप पता लगाव"
+
+#: kcolorschememanager.cpp:158
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "डिफाल्ट"
+
+#: kcolorschememanager.cpp:235 kcolorschememanager.cpp:240
+#, fuzzy, kde-format
+#| msgid "Shortcut Schemes"
+msgid "Color Scheme"
+msgstr "सार्टकट योजना"
+
+#: kconfigdialog.cpp:44
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "कान्फिगर"
+
+#: krecentfilesaction.cpp:78
+#, fuzzy, kde-format
+#| msgid "No entries"
+msgid "No Entries"
+msgstr "कोई प्रविस्टि नइ"
+
+#: krecentfilesaction.cpp:84
+#, fuzzy, kde-format
+msgid "Clear List"
+msgstr "इनपुट साफ करव"
+
+#: kstandardaction.cpp:153
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "पीछू (&B)"
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "आगू (&F)"
+
+#: kstandardaction.cpp:167
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "घर (&H)"
+
+#: kstandardaction.cpp:171
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "मदद (&H)"
+
+#: kstandardaction.cpp:216
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "मेन्यू पट्टी देखाव<p>मेन्यू पट्टी ल छुपाए जाय के बाद फिर से देखाथे </p>"
+
+#: kstandardaction.cpp:236
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"स्थिति पट्टी देखाव<br /><br />स्थिति पट्टी प्रदर्सित करथे  जऊन कि विंडो के तल मं एक "
+"पट्टी होथे  अउ जऊन स्थिति जानकारी देखाथे."
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&New"
+msgstr "नवा (&N)"
+
+#: kstandardaction_p.h:41
+#, fuzzy, kde-format
+#| msgid "Create New Tag..."
+msgid "Create new document"
+msgstr "नवा टैग बनाव..."
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Open..."
+msgstr "खोलव... (&O)"
+
+#: kstandardaction_p.h:42
+#, fuzzy, kde-format
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "कागद मं पीछू जाव (&B)"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open &Recent"
+msgstr "अभी हाल के खोलव  (&R)"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Save"
+msgstr "सहेजव (&S)"
+
+#: kstandardaction_p.h:44
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "कागद बन्द करव"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Save &As..."
+msgstr "अइसन सहेजव (&A)"
+
+#: kstandardaction_p.h:45
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "कागद बन्द करव"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Re&vert"
+msgstr "लहूटव (&v)"
+
+#: kstandardaction_p.h:46
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:47
+#, kde-format
+msgid "&Close"
+msgstr "बंद करव (&C)"
+
+#: kstandardaction_p.h:47
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "कागद बन्द करव"
+
+#: kstandardaction_p.h:48
+#, kde-format
+msgid "&Print..."
+msgstr "छापव...(&P)"
+
+#: kstandardaction_p.h:48
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "प्रिंट-स्क्रीन"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Print Previe&w"
+msgstr "छपाई नमूना (&w)"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "&Mail..."
+msgstr "डाक (&M)"
+
+#: kstandardaction_p.h:50
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "कागद बन्द करव"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "&Quit"
+msgstr "बाहिर जाव (&Q)"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Quit application"
+msgstr "अनुपरयोग से बाहिर आव"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Undo"
+msgstr "पहिली जइसन (&U)"
+
+#: kstandardaction_p.h:53
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "एचटीएमएल कागद"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Re&do"
+msgstr "दुहराव (&d)"
+
+#: kstandardaction_p.h:54
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "एचटीएमएल कागद"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cu&t"
+msgstr "काटव (&t)"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Copy"
+msgstr "नकल (&C)"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:59
+#, kde-format
+msgid "&Paste"
+msgstr "चिपकाव (&P)"
+
+#: kstandardaction_p.h:57 kstandardaction_p.h:59
+#, fuzzy, kde-format
+#| msgid "Loading Preview"
+msgid "Paste clipboard content"
+msgstr "प्रिव्यू लोड करत हे"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "C&lear"
+msgstr "साफ करव (&l)"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "Select &All"
+msgstr "सब्बो चुनव (&A)"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Dese&lect"
+msgstr "मत चुनव (&l)"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "&Find..."
+msgstr "खोजव...(&F)"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "Find &Next"
+msgstr "अगला खोजव (&N)"
+
+#: kstandardaction_p.h:66
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "पिछला खोजव (&v)"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Replace..."
+msgstr "बदलव...(&R)"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "&Actual Size"
+msgstr "सही आकार   (&A)"
+
+#: kstandardaction_p.h:69
+#, kde-format
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:70
+#, kde-format
+msgid "&Fit to Page"
+msgstr "पेज मं फिट करव (&F)"
+
+#: kstandardaction_p.h:70
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "लकीर मं जाव"
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "पेज चौड़ाई मं फिट करव (&W)"
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "पेज ऊँचाई मं फिट करव (&H)"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "Zoom &In"
+msgstr "बड़े आकार मं देखाव (&I)"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "Zoom &Out"
+msgstr "छोटे आकार मं देखाव (&O)"
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "&Zoom..."
+msgstr "जूम... (&Z)"
+
+#: kstandardaction_p.h:75
+#, fuzzy, kde-format
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "हफ्ता चुनव"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:76
+#, fuzzy, kde-format
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "फिर से  देखाव (&R)"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "&Up"
+msgstr "ऊपर (&U)"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Previous Page"
+msgstr "पिछला पेज (&P)"
+
+#: kstandardaction_p.h:83
+#, fuzzy, kde-format
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "पिछला पेज (&P)"
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Next Page"
+msgstr "अगला  पेज (&N)"
+
+#: kstandardaction_p.h:84
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "लकीर मं जाव"
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Go To..."
+msgstr "इहां जाव... (&G)"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "&Go to Page..."
+msgstr "पेज मं जाव... (&G)"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "&Go to Line..."
+msgstr "लकीर मं जाव... (&G)"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "&First Page"
+msgstr "पहिली पेज (&F)"
+
+#: kstandardaction_p.h:88
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "लकीर मं जाव"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "&Last Page"
+msgstr "आखरी पेज (&L)"
+
+#: kstandardaction_p.h:89
+#, fuzzy, kde-format
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "पेज मं जाव... (&G)"
+
+#: kstandardaction_p.h:90
+#, kde-format
+msgid "&Back"
+msgstr "पीछू (&B)"
+
+#: kstandardaction_p.h:90
+#, fuzzy, kde-format
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "कागद मं पीछू जाव (&B)"
+
+#: kstandardaction_p.h:91
+#, fuzzy, kde-format
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "आगू (&F)"
+
+#: kstandardaction_p.h:91
+#, fuzzy, kde-format
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "कागद मं आगू जाव (&F)"
+
+#: kstandardaction_p.h:93
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "निसानी  जोड़व (&C)"
+
+#: kstandardaction_p.h:94
+#, fuzzy, kde-format
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks..."
+msgstr "निसानी संपादन करव (&E)"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "&Spelling..."
+msgstr "हिज्जा...(&S)"
+
+#: kstandardaction_p.h:96
+#, fuzzy, kde-format
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "हिज्जा जांचव"
+
+#: kstandardaction_p.h:98
+#, kde-format
+msgid "Show &Menubar"
+msgstr "मेन्यू पट्टी देखाव (&M)"
+
+#: kstandardaction_p.h:98
+#, fuzzy, kde-format
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "मेन्यू पट्टी देखाव (&M)"
+
+#: kstandardaction_p.h:99
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "औजार पट्टी देखाव (&T)"
+
+#: kstandardaction_p.h:99
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "औजार पट्टी देखाव"
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "स्थिति पट्टी देखाव (&a)"
+
+#: kstandardaction_p.h:100
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "स्थिति पट्टी देखाव"
+
+#: kstandardaction_p.h:101
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "पूरा स्क्रीन मोड (&u)"
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "&Save Settings"
+msgstr "सेटिंग सहेजव (&S)"
+
+#: kstandardaction_p.h:105
+#, fuzzy, kde-format
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "सार्टकट कान्फ़िगर करव...(&h)"
+
+#: kstandardaction_p.h:106
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 कान्फिगर करव...(&C)"
+
+#: kstandardaction_p.h:107
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "औजार पट्टी कान्फिगर करव... (&b)"
+
+#: kstandardaction_p.h:108
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "सूचना मन ल कान्फिगर करव.... (&N)"
+
+#: kstandardaction_p.h:115
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 हेंडबुक (&H)"
+
+#: kstandardaction_p.h:116
+#, kde-format
+msgid "What's &This?"
+msgstr "ये का हे? (&T)"
+
+#: kstandardaction_p.h:117
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "आज के नुस्खा (&D)"
+
+#: kstandardaction_p.h:118
+#, kde-format
+msgid "&Report Bug..."
+msgstr "बग रिपोट करव... (&R)"
+
+#: kstandardaction_p.h:119
+#, fuzzy, kde-format
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "ईमेल कान्फिगर करव..."
+
+#: kstandardaction_p.h:120
+#, kde-format
+msgid "&About %1"
+msgstr "%1 परिचय (&A)"
+
+#: kstandardaction_p.h:121
+#, kde-format
+msgid "About &KDE"
+msgstr "केडीई परिचय (&K)"
+
+#: kstandardaction_p.h:122
+#, kde-format
+msgid "&Delete"
+msgstr "मेटाव (&D)"
+
+#: kstandardaction_p.h:123
+#, fuzzy, kde-format
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "बदलव...(&R)"
+
+#: kstandardaction_p.h:124
+#, fuzzy, kde-format
+#| msgid "Move to Trash"
+msgid "&Move to Trash"
+msgstr "घुरुवा मं ले जाव"
+
+#: kstandardaction_p.h:125
+#, kde-format
+msgid "&Donate"
+msgstr ""
+
+#: ktipdialog.cpp:242
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "आज के नुस्खा"
+
+#: ktipdialog.cpp:258
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "का आप मन जानथो ...?\n"
+
+#: ktipdialog.cpp:312
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "सुरू मं नुस्खा देखाव (&S)"
+
+#: ktipdialog.cpp:317
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "पिछला (&P)"
+
+#: ktipdialog.cpp:322
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "अगला (&N)"
