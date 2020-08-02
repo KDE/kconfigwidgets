@@ -20,6 +20,7 @@
 #include <QPushButton>
 #include <QMap>
 #include <QScrollArea>
+#include <QScrollBar>
 #include <QVBoxLayout>
 
 class Q_DECL_HIDDEN KConfigDialog::KConfigDialogPrivate
@@ -171,6 +172,16 @@ KPageWidgetItem *KConfigDialog::KConfigDialogPrivate::addPageInternal(QWidget *p
     scroll->setWidget(page);
     scroll->setWidgetResizable(true);
     scroll->setSizePolicy( QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding );
+
+    if (page->minimumSizeHint().height() > scroll->sizeHint().height() - 2) {
+        if (page->sizeHint().width() < scroll->sizeHint().width() + 2) {
+            // QScrollArea is planning only a vertical scroll bar,
+            // try to avoid the horizontal one by reserving space for the vertical one.
+            // Currently KPageViewPrivate::_k_modelChanged() queries the minimumSizeHint().
+            // We can only set the minimumSize(), so this approach relies on QStackedWidget size calculation.
+            scroll->setMinimumWidth(scroll->sizeHint().width() + qBound(0, scroll->verticalScrollBar()->sizeHint().width(), 200) + 4);
+        }
+    }
 
     boxLayout->addWidget(scroll);
     KPageWidgetItem *item = new KPageWidgetItem(frame, itemName);
