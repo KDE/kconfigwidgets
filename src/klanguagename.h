@@ -63,7 +63,7 @@ namespace KLanguageName
     /**
      * Returns the list of language codes found on the system.
      * 
-     * @since 5.73
+     * @since 5.74
      */
     KCONFIGWIDGETS_EXPORT QStringList allLanguageCodes();
 }
