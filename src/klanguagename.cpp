@@ -74,10 +74,11 @@ QStringList KLanguageName::allLanguageCodes()
     const QString localeDir = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
                                             QStringLiteral("locale"), QStandardPaths::LocateDirectory);
     const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
+    auto languageExists = [&localeDir](const QString &language) {
+        return QFile::exists(localeDir + '/' + language + "/kf5_entry.desktop");
+    };
     std::copy_if(entries.begin(), entries.end(),
                 std::back_inserter(systemLangList),
-                [&localeDir](const QString &language) {
-                    return QFile::exists(localeDir + '/' + language + "/kf5_entry.desktop");
-                });
+                languageExists);                
     return systemLangList;
 }
