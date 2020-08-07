@@ -2,7 +2,7 @@
 # little script to extract the text from the tips file
 # and output it, so xgettext can add the tips to the po file
 #
-# 2000 by Matthias Kiefer <matthias.kiefer@gmx.de>
+# SPDX-FileCopyrightText: 2000 Matthias Kiefer <matthias.kiefer@gmx.de>
 
 # IMPORTANT NOTE: Do not change the output without checking if
 # translations still work!
