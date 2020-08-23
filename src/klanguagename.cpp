@@ -19,26 +19,39 @@ QString KLanguageName::nameForCode(const QString &code)
     return nameForCodeInLocale(code, parts.at(0));
 }
 
-QString KLanguageName::nameForCodeInLocale(const QString &code, const QString &outputCode)
+static std::tuple<QString, QString> namesFromEntryFile(const QString &realCode, const QString &realOutputCode)
 {
-    const QString realCode = code == QLatin1String("en") ? QStringLiteral("en_US") : code;
-    const QString realOutputCode = outputCode == QLatin1String("en") ? QStringLiteral("en_US") : outputCode;
-
     const QString entryFile =
             QStandardPaths::locate(QStandardPaths::GenericDataLocation,
                                    QStringLiteral("locale") + QLatin1Char('/') + realCode + QStringLiteral("/kf5_entry.desktop"));
+
     if (!entryFile.isEmpty()) {
         KConfig entry(entryFile, KConfig::SimpleConfig);
         entry.setLocale(realOutputCode);
         const KConfigGroup group(&entry, "KCM Locale");
         const QString name = group.readEntry("Name");
 
-        // KConfig doesn't have a way to say it didn't find the entry in
-        // realOutputCode and returned the english version so we check for the
-        // english version, if it's equal to the "non-english" version we'll use
-        // otherwise we defer to QLocale.
         entry.setLocale("en_US");
         const QString englishName = group.readEntry("Name");
+        return std::make_tuple(name, englishName);
+    }
+    return {};
+}
+
+QString KLanguageName::nameForCodeInLocale(const QString &code, const QString &outputCode)
+{
+    const QString realCode = code == QLatin1String("en") ? QStringLiteral("en_US") : code;
+    const QString realOutputCode = outputCode == QLatin1String("en") ? QStringLiteral("en_US") : outputCode;
+
+    const std::tuple<QString, QString> nameAndEnglishName = namesFromEntryFile(realCode, realOutputCode);
+    const QString name = std::get<0>(nameAndEnglishName);
+    const QString englishName = std::get<1>(nameAndEnglishName);
+
+    if (!name.isEmpty()) {
+        // KConfig doesn't have a way to say it didn't find the entry in
+        // realOutputCode. When it doesn't find it in the locale you ask for, it just returns the english version
+        // so we compare the returned name against the english version, if they are different we return it, if they
+        // are equal we defer to QLocale (with a final fallback to name/englishName if QLocale doesn't know about it)
         if (name != englishName || realOutputCode == QLatin1String("en_US")) {
             return name;
         }
@@ -52,7 +65,9 @@ QString KLanguageName::nameForCodeInLocale(const QString &code, const QString &o
         return QLocale::languageToString(locale.language());
     }
 
-    return QString();
+    // We get here if QLocale doesn't know about realCode (at the time of writing this happens for crh, csb, hne, mai) and name and englishName are the same.
+    // So what we do here is return name, which can be either empty if the KDE side doesn't know about the code, or otherwise will be the name/englishName
+    return name;
 }
 
 QStringList KLanguageName::allLanguageCodes()
