@@ -569,10 +569,7 @@ bool KConfigDialogManager::hasChanged() const
 
 bool KConfigDialogManager::isDefault() const
 {
-    bool bUseDefaults = d->m_conf->useDefaults(true);
-    bool result = !hasChanged();
-    d->m_conf->useDefaults(bUseDefaults);
-    return result;
+    return bUseDefaults = d->m_conf->isDefaults();
 }
 
 KConfigDialogManagerPrivate::KConfigDialogManagerPrivate(KConfigDialogManager *q)
@@ -614,12 +611,7 @@ void KConfigDialogManagerPrivate::updateWidgetIndicator(const QString &configId,
     Q_ASSERT(item);
 
     const auto widgetValue = q->property(widget);
-    const auto defaultValue = [item] {
-        item->swapDefault();
-        const auto value = item->property();
-        item->swapDefault();
-        return value;
-    }();
+    const auto defaultValue = item->getDefault();
 
     const auto defaulted = widgetValue == defaultValue;
 
