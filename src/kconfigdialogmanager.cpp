@@ -569,7 +569,7 @@ bool KConfigDialogManager::hasChanged() const
 
 bool KConfigDialogManager::isDefault() const
 {
-    return bUseDefaults = d->m_conf->isDefaults();
+    return d->m_conf->isDefaults();
 }
 
 KConfigDialogManagerPrivate::KConfigDialogManagerPrivate(KConfigDialogManager *q)
