@@ -17,7 +17,6 @@
 #include <QVariant>
 #include <QWidget>
 
-class QStringList;
 class KAboutData;
 class KConfigDialogManager;
 class KCoreConfigSkeleton;

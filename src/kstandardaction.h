@@ -23,7 +23,6 @@ class QObject;
 class QStringList;
 class QWidget;
 class QAction;
-class KDualAction;
 class KToggleAction;
 class KToggleFullScreenAction;
 
