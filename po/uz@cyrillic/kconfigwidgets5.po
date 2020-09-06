@@ -1,0 +1,678 @@
+# translation of kdelibs4.po to Uzbek
+# translation of kdelibs4.po to
+# Copyright (C) 2003, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
+# Mashrab Kuvatov <kmashrab@uni-bremen.de>, 2003, 2004, 2005, 2006, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-22 02:07+0200\n"
+"PO-Revision-Date: 2009-10-17 00:34+0200\n"
+"Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
+"Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
+"Language: uz@cyrillic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Машраб Қуватов"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kmashrab@uni-bremen.de"
+
+#: kcmodule.cpp:182
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:186
+#, fuzzy, kde-format
+#| msgid "Could not create the new configuration file."
+msgid "You are not allowed to save the configuration"
+msgstr "Янги мослама файлини яратиб бўлмади."
+
+#: kcodecaction.cpp:71
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Андоза"
+
+#: kcodecaction.cpp:79
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Авто-аниқлаш"
+
+#: kcolorschememanager.cpp:147
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Андоза"
+
+#: kcolorschememanager.cpp:224 kcolorschememanager.cpp:229
+#, fuzzy, kde-format
+#| msgid "Shortcuts"
+msgid "Color Scheme"
+msgstr "Тугмалар бирикмаси"
+
+#: kconfigdialog.cpp:33
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Мослаш"
+
+#: krecentfilesaction.cpp:67
+#, fuzzy, kde-format
+msgid "No Entries"
+msgstr "Хоссалари"
+
+#: krecentfilesaction.cpp:73
+#, fuzzy, kde-format
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "Киритишни тозалаш"
+
+#: kstandardaction.cpp:142
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "О&рқага"
+
+#: kstandardaction.cpp:149
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "Ол&динга"
+
+#: kstandardaction.cpp:156
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr ""
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Ёрдам"
+
+#: kstandardaction.cpp:205
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Менюлар панелини кўрсатиш<p>Бекитилган менюлар панелини кўрсатиш</p>"
+
+#: kstandardaction.cpp:225
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Ҳолат панелини кўрсатиш<br /><br />Ойнанинг пастида жойлашган ҳолат "
+"маълумотини кўрсатувчи панелни кўрсатиш."
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "&New"
+msgstr "&Янги"
+
+#: kstandardaction_p.h:30
+#, fuzzy, kde-format
+#| msgid "Clear shortcut"
+msgid "Create new document"
+msgstr "Тугмалар бирикмасини ўчириш"
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "&Open..."
+msgstr "&Очиш..."
+
+#: kstandardaction_p.h:31
+#, fuzzy, kde-format
+#| msgid "Go back one step"
+msgid "Open an existing document"
+msgstr "Бир қадам орқага"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open &Recent"
+msgstr "&Яқинда фойдаланилганни очиш"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "&Save"
+msgstr "&Сақлаш"
+
+#: kstandardaction_p.h:33
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Ҳужжатни ёпиш"
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Save &As..."
+msgstr "...сифатида с&ақлаш"
+
+#: kstandardaction_p.h:34
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Ҳужжатни ёпиш"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Re&vert"
+msgstr "&Тескариси"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "&Close"
+msgstr "Ё&пиш"
+
+#: kstandardaction_p.h:36
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Ҳужжатни ёпиш"
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "&Print..."
+msgstr "&Босиб чиқариш"
+
+#: kstandardaction_p.h:37
+#, fuzzy, kde-format
+msgid "Print document"
+msgstr "&Кўриб чиқиш"
+
+#: kstandardaction_p.h:38
+#, fuzzy, kde-format
+msgid "Print Previe&w"
+msgstr "&Кўриб чиқиш"
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "&Mail..."
+msgstr "Хатга илова қилиб &жўнатиш"
+
+#: kstandardaction_p.h:39
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Ҳужжатни ёпиш"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "&Quit"
+msgstr "Чи&қиш"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "Quit application"
+msgstr "Дастурдан чиқиш"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Undo"
+msgstr "&Бекор қилиш"
+
+#: kstandardaction_p.h:42
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "HTML шаклида кўлланмалар"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Re&do"
+msgstr "Қай&тариш"
+
+#: kstandardaction_p.h:43
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "HTML шаклида кўлланмалар"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cu&t"
+msgstr "&Кесиш"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "&Copy"
+msgstr "&Нусха олиш"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, kde-format
+msgid "&Paste"
+msgstr "&Қўйиш"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, fuzzy, kde-format
+#| msgid "Upload Info"
+msgid "Paste clipboard content"
+msgstr "Маълумотни ёзиб қўйиш"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "C&lear"
+msgstr "Т&озалаш"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Select &All"
+msgstr "&Ҳаммасини танлаш"
+
+#: kstandardaction_p.h:52
+#, kde-format
+msgid "Dese&lect"
+msgstr "Тан&лашни бекор қилиш"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Find..."
+msgstr "&Қидириш"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Find &Next"
+msgstr "&Кейингини қидириш"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "&Олдингини қидириш"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Replace..."
+msgstr "&Алмаштириш..."
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "&Actual Size"
+msgstr "&Табиий ўлчам"
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "&Fit to Page"
+msgstr "&Бетга мослаш"
+
+#: kstandardaction_p.h:59
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Сатрга ўтиш"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "Бетнинг &энига мослаш"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "Бетнинг &узунлигига мослаш"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "Zoom &In"
+msgstr "К&атталаштириш"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Zoom &Out"
+msgstr "К&ичиклаштириш"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "&Zoom..."
+msgstr "&Катталаштириш"
+
+#: kstandardaction_p.h:64
+#, fuzzy, kde-format
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Ҳафтани танлаш"
+
+#: kstandardaction_p.h:65
+#, fuzzy, kde-format
+#| msgctxt "QAccel"
+#| msgid "Refresh"
+msgid "&Refresh"
+msgstr "Янгилаш"
+
+#: kstandardaction_p.h:65
+#, fuzzy, kde-format
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "&Қайтадан кўрсатиш"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Up"
+msgstr "&Юқорига"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "&Previous Page"
+msgstr "&Олдинги бет"
+
+#: kstandardaction_p.h:72
+#, fuzzy, kde-format
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "&Олдинги бет"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Next Page"
+msgstr "&Кейинги бет"
+
+#: kstandardaction_p.h:73
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Сатрга ўтиш"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Go To..."
+msgstr "Ў&тиш..."
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "&Go to Page..."
+msgstr "&Бетга ўтиш..."
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Go to Line..."
+msgstr "&Сатрга ўтиш..."
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "&First Page"
+msgstr "&Биринчи бет"
+
+#: kstandardaction_p.h:77
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Сатрга ўтиш"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "&Last Page"
+msgstr "&Охирги бет"
+
+#: kstandardaction_p.h:78
+#, fuzzy, kde-format
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Бетга ўтиш..."
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "&Back"
+msgstr "О&рқага"
+
+#: kstandardaction_p.h:79
+#, fuzzy, kde-format
+#| msgid "Go back one step"
+msgid "Go back in document"
+msgstr "Бир қадам орқага"
+
+#: kstandardaction_p.h:80
+#, fuzzy, kde-format
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "Ол&динга"
+
+#: kstandardaction_p.h:80
+#, fuzzy, kde-format
+#| msgid "Go forward one step"
+msgid "Go forward in document"
+msgstr "Бир қадам олдинга"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "Хатчўпларга &қўшиш"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "Хатчўпларни &таҳрирлаш"
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Spelling..."
+msgstr "&Имло..."
+
+#: kstandardaction_p.h:85
+#, fuzzy, kde-format
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Имлони текшириш"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show &Menubar"
+msgstr "&Менюлар панелини кўрсатиш"
+
+#: kstandardaction_p.h:87
+#, fuzzy, kde-format
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "&Менюлар панелини кўрсатиш"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "&Асбоблар панелини кўрсатиш"
+
+#: kstandardaction_p.h:88
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Асбоблар панелини кўрсатиш"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "&Ҳолат панелини кўрсатиш"
+
+#: kstandardaction_p.h:89
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Ҳолат панелини кўрсатиш"
+
+#: kstandardaction_p.h:90
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "Бутун &экранга"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Save Settings"
+msgstr "Мосламаларни &сақлаш"
+
+#: kstandardaction_p.h:94
+#, fuzzy, kde-format
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Ту&гмалар бирикмасини мослаш"
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 &мосламаси"
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "Асбоблар &панелини мослаш"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "&Хабар беришни мослаш"
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 учун қўллан&ма"
+
+#: kstandardaction_p.h:105
+#, kde-format
+msgid "What's &This?"
+msgstr "&Бу нима?"
+
+#: kstandardaction_p.h:106
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "&Кун маслаҳати"
+
+#: kstandardaction_p.h:107
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Хато ҳақида хабар қилиш"
+
+#: kstandardaction_p.h:108
+#, fuzzy, kde-format
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "Электрон почтани мослаш"
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "%1 ҳ&ақида"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "About &KDE"
+msgstr "&KDE ҳақида"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "&Delete"
+msgstr "Ў&чириш"
+
+#: kstandardaction_p.h:112
+#, fuzzy, kde-format
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "&Алмаштириш..."
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:114
+#, fuzzy, kde-format
+#| msgid "&Done"
+msgid "&Donate"
+msgstr "&Тайёр"
+
+#: ktipdialog.cpp:225
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Кун маслаҳати"
+
+#: ktipdialog.cpp:241
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Билганмисиз...?\n"
+
+#: ktipdialog.cpp:295
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Ишга тушганда маслахатларни &кўрсатиш"
+
+#: ktipdialog.cpp:300
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "О&лдинги"
+
+#: ktipdialog.cpp:305
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Кейинги"

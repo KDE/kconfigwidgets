@@ -1,0 +1,690 @@
+# Cyfieithiad o kdelibs4.po i Cymraeg
+# translation of kdelibs4.po to Cymraeg
+# Translation of kdelibs4.po to Cymraeg
+# Translation of clearfuzzytest.po to Cymraeg
+# translation of clearfuzzytest.po to Cymraeg
+# translation of clearfuzzy.po to Cymraeg
+# KDE yn Gymraeg.
+# Copyright (C) 2003, 2004, 2005 Free Software Foundation, Inc.
+# www.kyfieithu.co.uk <kyfieithu@dotmon.com>, 2003.
+# Kgyfieithu <kyfieithu@dotmon.com>, 2003.
+# KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003, 2004.
+# Kyfieithu <kyfieithu@dotmon.com>, 2004.
+# Kevin Donnelly <kevin@dotmon.com>, 2005.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-22 02:07+0200\n"
+"PO-Revision-Date: 2005-01-28 17:54+0000\n"
+"Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
+"Language-Team: Cymraeg\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9\n"
+"\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KD wrth KGyfieithu"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kyfieithu@dotmon.com"
+
+#: kcmodule.cpp:182
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:186
+#, fuzzy, kde-format
+#| msgid "Could not create the new configuration file."
+msgid "You are not allowed to save the configuration"
+msgstr "Methu creu'r ffeil ffurfweddiad newydd."
+
+#: kcodecaction.cpp:71
+#, fuzzy, kde-format
+#| msgid "Default"
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Rhagosodol"
+
+#: kcodecaction.cpp:79
+#, fuzzy, kde-format
+#| msgid "Autocorrect"
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Hunan-gywiro"
+
+#: kcolorschememanager.cpp:147
+#, fuzzy, kde-format
+#| msgid "Default"
+msgid "Default"
+msgstr "Rhagosodol"
+
+#: kcolorschememanager.cpp:224 kcolorschememanager.cpp:229
+#, fuzzy, kde-format
+#| msgid "Shortcuts"
+msgid "Color Scheme"
+msgstr "Byrlwybrau"
+
+#: kconfigdialog.cpp:33
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Ffurfweddu"
+
+#: krecentfilesaction.cpp:67
+#, fuzzy, kde-format
+msgid "No Entries"
+msgstr "Priodweddau"
+
+#: krecentfilesaction.cpp:73
+#, fuzzy, kde-format
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "Clirio'r mewnbwn"
+
+#: kstandardaction.cpp:142
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "Y&n ôl"
+
+#: kstandardaction.cpp:149
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Ymlaen"
+
+#: kstandardaction.cpp:156
+#, fuzzy, kde-format
+#| msgctxt "beginning (of line)"
+#| msgid "&Home"
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Cartref"
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Cymorth"
+
+#: kstandardaction.cpp:205
+#, fuzzy, kde-format
+#| msgid "Show Menubar<p>Shows the menubar again after it has been hidden"
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Dangos Bar Dewislen<p>Dangos y bar dewislen eto ar ôl iddo gael ei guddio"
+
+#: kstandardaction.cpp:225
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "
+#| "the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Dangos Bar Cyflwr<p>Dangos y bar cyflwr, sef y bar wrth waelod y ffenestr, a "
+"ddefnyddir ar gyfer gwybodaeth cyflwr."
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "&New"
+msgstr "&Newydd"
+
+#: kstandardaction_p.h:30
+#, fuzzy, kde-format
+#| msgid "Clear shortcut"
+msgid "Create new document"
+msgstr "Diddymu byrlwybr"
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "&Open..."
+msgstr "&Agor..."
+
+#: kstandardaction_p.h:31
+#, fuzzy, kde-format
+#| msgid "Go back one step"
+msgid "Open an existing document"
+msgstr "Ewch cam yn ôl"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open &Recent"
+msgstr "Agor &Diweddar"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "&Save"
+msgstr "&Cadw"
+
+#: kstandardaction_p.h:33
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Cau Dogfen"
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Save &As..."
+msgstr "Cadw &Fel..."
+
+#: kstandardaction_p.h:34
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Cau Dogfen"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Re&vert"
+msgstr "&Dychwelyd"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "&Close"
+msgstr "&Cau"
+
+#: kstandardaction_p.h:36
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Cau Dogfen"
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "&Print..."
+msgstr "&Argraffu"
+
+#: kstandardaction_p.h:37
+#, fuzzy, kde-format
+msgid "Print document"
+msgstr " Argraffu"
+
+#: kstandardaction_p.h:38
+#, fuzzy, kde-format
+#| msgid "Print Previe&w..."
+msgid "Print Previe&w"
+msgstr "&Rhagweld Argraffiad"
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "&Mail..."
+msgstr "&Ebost..."
+
+#: kstandardaction_p.h:39
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Cau Dogfen"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "&Quit"
+msgstr "&Gorffen"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "Quit application"
+msgstr "Gadael y cymhwysiant"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Undo"
+msgstr "&Dad-wneud"
+
+#: kstandardaction_p.h:42
+#, fuzzy, kde-format
+msgid "Undo last action"
+msgstr "Gosodiadau HTML"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Re&do"
+msgstr "Ail-&wneud"
+
+#: kstandardaction_p.h:43
+#, fuzzy, kde-format
+msgid "Redo last undone action"
+msgstr "Gosodiadau HTML"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cu&t"
+msgstr "T&orri"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "&Copy"
+msgstr "&Copio"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, kde-format
+msgid "&Paste"
+msgstr "&Gludo"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, fuzzy, kde-format
+#| msgid "Upload Info"
+msgid "Paste clipboard content"
+msgstr "Gwybodaeth Lanlwytho"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "C&lear"
+msgstr "C&lirio"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Select &All"
+msgstr "Dewis Pope&th"
+
+#: kstandardaction_p.h:52
+#, kde-format
+msgid "Dese&lect"
+msgstr "Dad-&ddewis"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Find..."
+msgstr "&Canfod"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Find &Next"
+msgstr "Canfod &Nesaf"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "Canfod &Diwethaf"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Replace..."
+msgstr "&Amnewid"
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "&Actual Size"
+msgstr "Maint &Gwir"
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "&Fit to Page"
+msgstr "&Ffitio i Dudalen"
+
+#: kstandardaction_p.h:59
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Mynd i Linell"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "Ffitio i &Led Tudalen"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "Ffitio i &Hyd Tudalen"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "Zoom &In"
+msgstr "Ne&sàu"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Zoom &Out"
+msgstr "Pell&hàu"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "&Zoom..."
+msgstr "&Chwyddo.."
+
+#: kstandardaction_p.h:64
+#, fuzzy, kde-format
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Dewiswch wythnos"
+
+#: kstandardaction_p.h:65
+#, fuzzy, kde-format
+#| msgctxt "QAccel"
+#| msgid "Refresh"
+msgid "&Refresh"
+msgstr "Adfywio"
+
+#: kstandardaction_p.h:65
+#, fuzzy, kde-format
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "&Ail-arddangos"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Up"
+msgstr "&Fyny"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "&Previous Page"
+msgstr "Tudalen &Diwethaf"
+
+#: kstandardaction_p.h:72
+#, fuzzy, kde-format
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "Tudalen &Diwethaf"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Next Page"
+msgstr "&Tudalen Nesaf"
+
+#: kstandardaction_p.h:73
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Mynd i Linell"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Go To..."
+msgstr "&Mynd i.."
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "&Go to Page..."
+msgstr "&Mynd i Dudalen"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Go to Line..."
+msgstr "&Mynd i Linell..."
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "&First Page"
+msgstr "Tudalen &Gyntaf"
+
+#: kstandardaction_p.h:77
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Mynd i Linell"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "&Last Page"
+msgstr "Tudalen &Olaf"
+
+#: kstandardaction_p.h:78
+#, fuzzy, kde-format
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Mynd i Dudalen"
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "&Back"
+msgstr "&Yn ôl"
+
+#: kstandardaction_p.h:79
+#, fuzzy, kde-format
+#| msgid "Go back one step"
+msgid "Go back in document"
+msgstr "Ewch cam yn ôl"
+
+#: kstandardaction_p.h:80
+#, fuzzy, kde-format
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&Ymlaen"
+
+#: kstandardaction_p.h:80
+#, fuzzy, kde-format
+#| msgid "Go forward one step"
+msgid "Go forward in document"
+msgstr "Ewch cam ymlaen"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "&Ychwanegu Tudnod"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "&Golygu Tudnodau..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Spelling..."
+msgstr "&Sillafu..."
+
+#: kstandardaction_p.h:85
+#, fuzzy, kde-format
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Gwirio Sillafu"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show &Menubar"
+msgstr "Dangos &Dewislen"
+
+#: kstandardaction_p.h:87
+#, fuzzy, kde-format
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Dangos &Dewislen"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "Dangos Bar &Offer"
+
+#: kstandardaction_p.h:88
+#, fuzzy, kde-format
+#| msgid "Show &Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Dangos Bar &Offer"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "Dangos Bar Cyfl&wr"
+
+#: kstandardaction_p.h:89
+#, fuzzy, kde-format
+#| msgid "Show St&atusbar"
+msgid "Show or hide statusbar"
+msgstr "Dangos Bar Cyfl&wr"
+
+#: kstandardaction_p.h:90
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "&Modd Sgrîn Llawn"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Save Settings"
+msgstr "&Cadw Gosodiadau"
+
+#: kstandardaction_p.h:94
+#, fuzzy, kde-format
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Ffurfweddu &Byrlwybrau"
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Ffurweddu %1..."
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "Ffurfweddu Barrau &Offer"
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "Ffurfweddu &Negesau ..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &Llawlyfr"
+
+#: kstandardaction_p.h:105
+#, kde-format
+msgid "What's &This?"
+msgstr "Beth yw &Hwn?"
+
+#: kstandardaction_p.h:106
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "Awgrymiad y &Dydd"
+
+#: kstandardaction_p.h:107
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Adroddi nam"
+
+#: kstandardaction_p.h:108
+#, fuzzy, kde-format
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "Ffurfweddu Ebost ..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "&Ynglyn a %1"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "About &KDE"
+msgstr "Ynglyn a &Kde"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "&Delete"
+msgstr "&Dileu"
+
+#: kstandardaction_p.h:112
+#, fuzzy, kde-format
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "&Amnewid"
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:114
+#, fuzzy, kde-format
+#| msgid "&Done"
+msgid "&Donate"
+msgstr "&Wedi'i orffen"
+
+#: ktipdialog.cpp:225
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Awgrymiad y Dydd"
+
+#: ktipdialog.cpp:241
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr " Oeddech chi'n gwybod ...?\n"
+
+#: ktipdialog.cpp:295
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Dangos awgrymiadau wrth gychwyn"
+
+#: ktipdialog.cpp:300
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Blaenorol"
+
+#: ktipdialog.cpp:305
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Nesaf"
