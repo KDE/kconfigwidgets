@@ -307,6 +307,13 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
         const SetDefaultColors &defaults)
 {
     KConfigGroup cfg(config, group);
+    if (state == QPalette::Inactive) {
+        KConfigGroup inactiveGroup = KConfigGroup(&cfg, "Inactive");
+        if (inactiveGroup.exists()) {
+            cfg = inactiveGroup;
+        }
+    }
+
     _contrast = KColorScheme::contrastF(config);
 
     // loaded-from-config colors (no adjustment)
@@ -333,6 +340,13 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
         const QBrush &tint)
 {
     KConfigGroup cfg(config, group);
+    if (state == QPalette::Inactive) {
+        KConfigGroup inactiveGroup = KConfigGroup(&cfg, "Inactive");
+        if (inactiveGroup.exists()) {
+            cfg = inactiveGroup;
+        }
+    }
+
     _contrast = KColorScheme::contrastF(config);
 
     // loaded-from-config colors
