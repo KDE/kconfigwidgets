@@ -660,6 +660,28 @@ void KColorScheme::adjustForeground(QPalette &palette, ForegroundRole newRole, Q
     palette.setBrush(QPalette::Disabled, color, KColorScheme(QPalette::Disabled, set, config).foreground(newRole));
 }
 
+bool KColorScheme::isColorSetSupported(const KSharedConfigPtr &config, KColorScheme::ColorSet set)
+{
+    switch (set) {
+        case View:
+            return config->hasGroup("Colors:View");
+        case Window:
+            return config->hasGroup("Colors:Window");
+        case Button:
+            return config->hasGroup("Colors:Button");
+        case Selection:
+            return config->hasGroup("Colors:Selection");
+        case Tooltip:
+            return config->hasGroup("Colors:Tooltip");
+        case Complementary:
+            return config->hasGroup("Colors:Complementary");
+        case Header:
+            return config->hasGroup("Colors:Header");
+    }
+
+    return false;
+}
+
 QPalette KColorScheme::createApplicationPalette(const KSharedConfigPtr &config)
 {
     QPalette palette;

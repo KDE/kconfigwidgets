@@ -466,6 +466,19 @@ public:
      */
     static QPalette createApplicationPalette(const KSharedConfigPtr &config);
 
+    /**
+     * Used to check if the color scheme has a given set.
+     *
+     * @param config KConfig from which to load the colors
+     * 
+     * @param set The color set to check for.
+     *
+     * @returns whether the color scheme has a given color set
+     *
+     * @since 5.75
+     */
+    static bool isColorSetSupported(const KSharedConfigPtr &config, KColorScheme::ColorSet set);
+
 private:
     QExplicitlySharedDataPointer<KColorSchemePrivate> d;
 };
