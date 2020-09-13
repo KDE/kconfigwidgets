@@ -27,7 +27,7 @@ class Q_DECL_HIDDEN KConfigDialog::KConfigDialogPrivate
 {
 public:
     KConfigDialogPrivate(KConfigDialog *q, const QString &name, KCoreConfigSkeleton *config)
-        : q(q), shown(false), manager(nullptr)
+        : q(q)
     {
         q->setObjectName(name);
         q->setWindowTitle(i18nc("@title:window", "Configure"));
@@ -77,8 +77,8 @@ public:
     KConfigDialog * const q;
     QString mAnchor;
     QString mHelpApp;
-    bool shown;
-    KConfigDialogManager *manager;
+    bool shown = false;
+    KConfigDialogManager *manager = nullptr;
     QMap<QWidget *, KConfigDialogManager *> managerForPage;
 
     /**

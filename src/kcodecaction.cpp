@@ -24,9 +24,7 @@ class Q_DECL_HIDDEN KCodecAction::Private
 {
 public:
     Private(KCodecAction *parent)
-        : q(parent),
-          defaultAction(nullptr),
-          currentSubAction(nullptr)
+        : q(parent)
     {
     }
 
@@ -35,8 +33,8 @@ public:
     void _k_subActionTriggered(QAction *);
 
     KCodecAction * const q;
-    QAction *defaultAction;
-    QAction *currentSubAction;
+    QAction *defaultAction = nullptr;
+    QAction *currentSubAction = nullptr;
 };
 
 KCodecAction::KCodecAction(QObject *parent, bool showAutoOptions)
