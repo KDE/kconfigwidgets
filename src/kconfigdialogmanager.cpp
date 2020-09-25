@@ -569,7 +569,23 @@ bool KConfigDialogManager::hasChanged() const
 
 bool KConfigDialogManager::isDefault() const
 {
-    return d->m_conf->isDefaults();
+    QWidget *widget;
+    QHashIterator<QString, QWidget *> it(d->knownWidget);
+    while (it.hasNext()) {
+        it.next();
+        widget = it.value();
+
+        KConfigSkeletonItem *item = d->m_conf->findItem(it.key());
+        if (!item) {
+            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting '" << it.key() << "' has disappeared!";
+            continue;
+        }
+
+        if (property(widget) != item->getDefault()) {
+            return false;
+        }
+    }
+    return true;
 }
 
 KConfigDialogManagerPrivate::KConfigDialogManagerPrivate(KConfigDialogManager *q)
