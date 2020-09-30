@@ -346,6 +346,15 @@ public:
     explicit KColorScheme(QPalette::ColorGroup = QPalette::Normal, ColorSet = View, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
+     * Drop the accent colors overriding the colorscheme's colors, revealing the
+     * true colorscheme.
+     * 
+     * @note You should pass the same parameters as you did to the constructor of the KColorScheme
+     * to this function.
+     */
+    void dropAccentColors(QPalette::ColorGroup = QPalette::Normal, ColorSet = View, KSharedConfigPtr = KSharedConfigPtr());
+
+    /**
      * Retrieve the requested background brush.
      */
     QBrush background(BackgroundRole = NormalBackground) const;

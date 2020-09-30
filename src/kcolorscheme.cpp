@@ -282,6 +282,9 @@ public:
     explicit KColorSchemePrivate(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, const SetDefaultColors &, const QBrush &);
     ~KColorSchemePrivate() {}
 
+    void loadAccentIntoBackground(const KSharedConfigPtr &, const char *, const SetDefaultColors &);
+    void dropAccentColors(const KSharedConfigPtr &, const char *, const SetDefaultColors &);
+
     QBrush background(KColorScheme::BackgroundRole) const;
     QBrush foreground(KColorScheme::ForegroundRole) const;
     QBrush decoration(KColorScheme::DecorationRole) const;
@@ -373,12 +376,40 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
     init(config, state, group, defaults);
 }
 
+void KColorSchemePrivate::loadAccentIntoBackground(const KSharedConfigPtr &config,
+                                                   const char *group, 
+                                                   const SetDefaultColors &defaults)
+{
+    KConfigGroup cfg(config, group);
+    KConfigGroup accent(KSharedConfig::openConfig(), "Accent");
+
+    _brushes.bg[KColorScheme::NormalBackground] = accent.readEntry("Background", cfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground)));
+    _brushes.bg[KColorScheme::AlternateBackground] = accent.readEntry("Background", cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground)));
+}
+
+void KColorSchemePrivate::dropAccentColors(const KSharedConfigPtr &config,
+                                           const char *group,
+                                           const SetDefaultColors &defaults)
+{
+    KConfigGroup cfg(config, group);
+
+    _brushes.fg[KColorScheme::ActiveText] = cfg.readEntry("ForegroundActive", SET_DEFAULT(ActiveText));
+    _brushes.fg[KColorScheme::LinkText] = cfg.readEntry("ForegroundLink", SET_DEFAULT(LinkText));
+
+    _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus));
+    _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));
+
+    _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground));
+    _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground));
+}
+
 void KColorSchemePrivate::init(const KSharedConfigPtr &config,
                                QPalette::ColorGroup state,
                                const char *group,
                                const SetDefaultColors &defaults)
 {
     KConfigGroup cfg(config, group);
+    KConfigGroup accent(KSharedConfig::openConfig(), "Accent");
     bool hasInactivePalette = false;
     if (state == QPalette::Inactive) {
         KConfigGroup inactiveGroup = KConfigGroup(&cfg, "Inactive");
@@ -396,10 +427,10 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
             windowCfg.readEntry("ForegroundNormal", SET_DEFAULT(NormalText)));
         _brushes.fg[KColorScheme::InactiveText] = cfg.readEntry("ForegroundInactive", 
             windowCfg.readEntry("ForegroundInactive", SET_DEFAULT(InactiveText)));
-        _brushes.fg[KColorScheme::ActiveText] = cfg.readEntry("ForegroundActive", 
-            windowCfg.readEntry("ForegroundActive", SET_DEFAULT(ActiveText)));
-        _brushes.fg[KColorScheme::LinkText] = cfg.readEntry("ForegroundLink", 
-            windowCfg.readEntry("ForegroundLink", SET_DEFAULT(LinkText)));
+        _brushes.fg[KColorScheme::ActiveText] = accent.readEntry("Foreground", cfg.readEntry("ForegroundActive", 
+            windowCfg.readEntry("ForegroundActive", SET_DEFAULT(ActiveText))));
+        _brushes.fg[KColorScheme::LinkText] = accent.readEntry("Foreground", cfg.readEntry("ForegroundLink", 
+            windowCfg.readEntry("ForegroundLink", SET_DEFAULT(LinkText))));
         _brushes.fg[KColorScheme::VisitedText] = cfg.readEntry("ForegroundVisited", 
             windowCfg.readEntry("ForegroundVisited", SET_DEFAULT(VisitedText)));
         _brushes.fg[KColorScheme::NegativeText] = cfg.readEntry("ForegroundNegative", 
@@ -416,8 +447,8 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
     } else {
         _brushes.fg[KColorScheme::NormalText] = cfg.readEntry("ForegroundNormal", SET_DEFAULT(NormalText));
         _brushes.fg[KColorScheme::InactiveText] = cfg.readEntry("ForegroundInactive", SET_DEFAULT(InactiveText));
-        _brushes.fg[KColorScheme::ActiveText] = cfg.readEntry("ForegroundActive", SET_DEFAULT(ActiveText));
-        _brushes.fg[KColorScheme::LinkText] = cfg.readEntry("ForegroundLink", SET_DEFAULT(LinkText));
+        _brushes.fg[KColorScheme::ActiveText] = accent.readEntry("Foreground", cfg.readEntry("ForegroundActive", SET_DEFAULT(ActiveText)));
+        _brushes.fg[KColorScheme::LinkText] = accent.readEntry("Foreground", cfg.readEntry("ForegroundLink", SET_DEFAULT(LinkText)));
         _brushes.fg[KColorScheme::VisitedText] = cfg.readEntry("ForegroundVisited", SET_DEFAULT(VisitedText));
         _brushes.fg[KColorScheme::NegativeText] = cfg.readEntry("ForegroundNegative", SET_DEFAULT(NegativeText));
         _brushes.fg[KColorScheme::NeutralText] = cfg.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText));
@@ -530,11 +561,14 @@ KColorScheme::KColorScheme(QPalette::ColorGroup state, ColorSet set, KSharedConf
         // ...except tinted with the Selection:NormalBackground color so it looks more like selection
         if (state == QPalette::Active || (state == QPalette::Inactive && !inactiveSelectionEffect)) {
             d = new KColorSchemePrivate(config, state, "Colors:Selection", defaultSelectionColors);
-        } else if (state == QPalette::Inactive)
+            d.data()->loadAccentIntoBackground(config, "Colors:Selection", defaultSelectionColors);
+        } else if (state == QPalette::Inactive) {
             d = new KColorSchemePrivate(config, state, "Colors:Window", defaultWindowColors,
                                         KColorScheme(QPalette::Active, Selection, config).background());
-        else { // disabled (...and still want this branch when inactive+disabled exists)
+            d.data()->loadAccentIntoBackground(config, "Colors:Window", defaultWindowColors);
+        } else { // disabled (...and still want this branch when inactive+disabled exists)
             d = new KColorSchemePrivate(config, state, "Colors:Window", defaultWindowColors);
+            d.data()->loadAccentIntoBackground(config, "Colors:Window", defaultWindowColors);
         }
     } break;
     case Tooltip:
@@ -548,6 +582,42 @@ KColorScheme::KColorScheme(QPalette::ColorGroup state, ColorSet set, KSharedConf
         break;
     default:
         d = new KColorSchemePrivate(config, state, "Colors:View", defaultViewColors);
+    }
+}
+
+void KColorScheme::dropAccentColors(QPalette::ColorGroup state, ColorSet set, KSharedConfigPtr config)
+{
+    if (!config) {
+        config = defaultConfig();
+    }
+
+    switch (set) {
+    case Window:
+        d.data()->dropAccentColors(config, "Colors:Window", defaultWindowColors);
+        break;
+    case Button:
+        d.data()->dropAccentColors(config, "Colors:Button", defaultWindowColors);
+        break;
+    case Selection: {
+        KConfigGroup group(config, "ColorEffects:Inactive");
+        bool inactiveSelectionEffect = group.readEntry("ChangeSelectionColor", group.readEntry("Enable", true));
+
+        if (state == QPalette::Active || (state == QPalette::Inactive && !inactiveSelectionEffect)) {
+            d.data()->dropAccentColors(config, "Colors:Window", defaultWindowColors);
+        } else if (state == QPalette::Inactive) {
+            d.data()->dropAccentColors(config, "Colors:Window", defaultWindowColors);
+        } else {
+            d.data()->dropAccentColors(config, "Colors:Window", defaultWindowColors);
+        }
+    } break;
+    case Tooltip:
+        d.data()->dropAccentColors(config, "Colors:Tooltip", defaultTooltipColors);
+        break;
+    case Complementary:
+        d.data()->dropAccentColors(config, "Colors:Complementary", defaultComplementaryColors);
+        break;
+    default:
+        d.data()->dropAccentColors(config, "Colors:View", defaultViewColors);
     }
 }
 
