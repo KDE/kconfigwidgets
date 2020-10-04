@@ -1,0 +1,653 @@
+# translation of kdelibs4.po to Turkish
+# translation of kdelibs4.po to
+# Kdelibs Turkish translation file
+# Copyright (C) 2000,2003, 2004, 2005, 2007, 2008 Free Software Foundation, Inc.
+#
+# Ömer Fadıl USTA <omer_fad@hotmail.com>,1999-2002.
+# Görkem Çetin <gorkem@kde.org>, 2002,2003, 2004.
+# Tuncay YENİAY <tuncayyeniay@mynet.com>,2002.
+# Ayşe Genç <ayse@uludag.org.tr>, 2005.
+# Görkem Çetin <gorkem@kde.org.tr>, 2005.
+# Görkem Çetin <gorkem@gorkemcetin.com>, 2005.
+# Bekir SONAT <cortexbs@yahoo.com>, 2005.
+# Serdar Soytetir <tulliana@gmail.com>, 2007.
+# Serdar Soytetir <tulliana@gmail.com>, 2007, 2008, 2009, 2011.
+# H. İbrahim Güngör <ibrahim@pardus.org.tr>, 2010, 2011.
+# Ozan Çağlayan <ozan@pardus.org.tr>, 2010, 2011.
+# Serdar SOYTETİR <tulliana@gmail.com>, 2010, 2012.
+# Volkan Gezer <volkangezer@gmail.com>, 2013, 2014, 2017.
+# Kaan Ozdincer <kaanozdincer@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-09-14 02:09+0200\n"
+"PO-Revision-Date: 2017-10-04 11:20+0000\n"
+"Last-Translator: Kaan <kaanozdincer@gmail.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Serdar Soytetir, Görkem Çetin, H. İbrahim Güngör, Volkan Gezer"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"tulliana@gmail.com, gorkem@kde.org, ibrahim@pardus.org.tr, volkangezer@gmail."
+"com"
+
+#: kcmodule.cpp:182
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Kaydetmeden önce kimlik doğrulaması yapmanız istenecek"
+
+#: kcmodule.cpp:186
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Yapılandırmayı kaydetme izniniz yok"
+
+#: kcodecaction.cpp:69
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Öntanımlı"
+
+#: kcodecaction.cpp:77
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Otomatik Bul"
+
+#: kcolorschememanager.cpp:147
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Öntanımlı"
+
+#: kcolorschememanager.cpp:224 kcolorschememanager.cpp:229
+#, fuzzy, kde-format
+#| msgid "Shortcut Schemes"
+msgid "Color Scheme"
+msgstr "Kısayol Şemaları"
+
+#: kconfigdialog.cpp:33
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Yapılandır"
+
+#: krecentfilesaction.cpp:67
+#, kde-format
+msgid "No Entries"
+msgstr "Girdi Yok"
+
+#: krecentfilesaction.cpp:73
+#, kde-format
+msgid "Clear List"
+msgstr "Listeyi Temizle"
+
+#: kstandardaction.cpp:142
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Geri"
+
+#: kstandardaction.cpp:149
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "İ&leri"
+
+#: kstandardaction.cpp:156
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Başlangıç"
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Yardım"
+
+#: kstandardaction.cpp:205
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Menü Çubuğunu Göster <p> Gizli duran menü çubuğunu yeniden gösterir</p>"
+
+#: kstandardaction.cpp:225
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Durum Çubuğunu Göster<p>Pencerelerin en alt bölümünde bulunan ve bilgi "
+"vermek amacıyla kullanılan durum çubuğunu gösterir.</p>"
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "&New"
+msgstr "&Yeni"
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "Create new document"
+msgstr "Yeni belge oluştur"
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "&Open..."
+msgstr "&Aç..."
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "Open an existing document"
+msgstr "Var olan bir belgeyi aç"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open &Recent"
+msgstr "&Son kullanılanı Aç"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr "Zaten açık olan bir belgeyi aç"
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "&Save"
+msgstr "&Kaydet"
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "Save document"
+msgstr "Belgeyi kaydet"
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Save &As..."
+msgstr "&Farklı Kaydet..."
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Save document under a new name"
+msgstr "Belgeyi yeni bir isimle kaydet"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Re&vert"
+msgstr "Es&ki haline döndür"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr "Belgede yapılan ve kaydedilmemiş olan değişiklikleri geri al"
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "&Close"
+msgstr "&Kapat"
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "Close document"
+msgstr "Belgeyi kapat"
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "&Print..."
+msgstr "Ya&zdır..."
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "Print document"
+msgstr "Belgeyi yazdır"
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "Print Previe&w"
+msgstr "Yazdırma &Önizlemesi"
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "Show a print preview of document"
+msgstr "Belgenin yazdırma önizlemesini göster"
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "&Mail..."
+msgstr "&E-posta..."
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "Send document by mail"
+msgstr "Belgeyi e-posta ile gönder"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "&Quit"
+msgstr "Çı&k"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "Quit application"
+msgstr "Uygulamadan Çık"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Undo"
+msgstr "&Geri Al"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Undo last action"
+msgstr "Son eylemi geri al"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Re&do"
+msgstr "&Yinele"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Redo last undone action"
+msgstr "Son geri alma işlemine kadar yinele"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cu&t"
+msgstr "&Kes"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr "Seçimi keserek panoya al"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "&Copy"
+msgstr "&Kopyala"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr "Seçimi kopyalayarak panoya al"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, kde-format
+msgid "&Paste"
+msgstr "Ya&pıştır"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, kde-format
+msgid "Paste clipboard content"
+msgstr "Pano içeriğini yapıştır"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "C&lear"
+msgstr "&Temizle"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Select &All"
+msgstr "&Tümünü Seç"
+
+#: kstandardaction_p.h:52
+#, kde-format
+msgid "Dese&lect"
+msgstr "&Seçme"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Find..."
+msgstr "&Bul..."
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Find &Next"
+msgstr "&Sonrakini Bul"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "Önce&kini Bul"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Replace..."
+msgstr "Değ&iştir..."
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "&Actual Size"
+msgstr "Ö&zgün Boyut"
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "View document at its actual size"
+msgstr "Belgeyi kendi özgün boyutunda göster"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "&Fit to Page"
+msgstr "Sayfaya &Uydur"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "Zoom to fit page in window"
+msgstr "Sayfayı pencereye sığdır"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "Sayfa &Genişliğine Uydur"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr "Sayfayı pencerenin genişliğine göre sığdır"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "Sayfa &Yüksekliğine Uydur"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr "Sayfayı pencerenin yüksekliğine göre sığdır"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "Zoom &In"
+msgstr "Bü&yüt"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Zoom &Out"
+msgstr "&Küçült"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "&Zoom..."
+msgstr "Ya&kınlaştır..."
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Select zoom level"
+msgstr "Büyütme düzeyini seçin"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:65
+#, fuzzy, kde-format
+#| msgid "Redisplay document"
+msgid "Refresh document"
+msgstr "Belgeyi tekrar göster"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Up"
+msgstr "&Yukarı"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "Go up"
+msgstr "Yukarı git"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "&Previous Page"
+msgstr "Ö&nceki Sayfa"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Go to previous page"
+msgstr "Önceki sayfaya git"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Next Page"
+msgstr "&Sonraki Sayfa"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "Go to next page"
+msgstr "Sonraki sayfaya git"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Go To..."
+msgstr "&Git..."
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "&Go to Page..."
+msgstr "Sa&yfaya Git..."
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Go to Line..."
+msgstr "Sa&tıra Git..."
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "&First Page"
+msgstr "İ&lk Sayfa"
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "Go to first page"
+msgstr "İlk sayfaya git"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "&Last Page"
+msgstr "S&on Sayfa"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "Go to last page"
+msgstr "Son sayfaya git"
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "&Back"
+msgstr "&Geri"
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "Go back in document"
+msgstr "Belge içerisinde geri git"
+
+#: kstandardaction_p.h:80
+#, kde-format
+msgid "&Forward"
+msgstr "&İleri"
+
+#: kstandardaction_p.h:80
+#, kde-format
+msgid "Go forward in document"
+msgstr "Belge içerisinde ileri git"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "Yer İmi &ekle"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "Yer İmlerini &Düzenle..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Spelling..."
+msgstr "&Yazım Denetimi..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "Check spelling in document"
+msgstr "Belge içerisinde yazım denetimi yap"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show &Menubar"
+msgstr "&Menü Çubuğunu Göster"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show or hide menubar"
+msgstr "Menü çubuğunu göster veya gizle"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "&Araç Çubuğunu Göster"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show or hide toolbar"
+msgstr "Araç çubuğunu göster veya gizle"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "&Durum Çubuğunu Göster"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Show or hide statusbar"
+msgstr "Durum çubuğunu göster veya gizle"
+
+#: kstandardaction_p.h:90
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "Ta&m Ekran Kipi"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Save Settings"
+msgstr "&Ayarları Kaydet"
+
+#: kstandardaction_p.h:94
+#, fuzzy, kde-format
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "&Kısayolları Yapılandır..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 Uygulamasını &Yapılandır..."
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "&Araç Çubuğunu Yapılandır..."
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "&Bildirimleri Yapılandır..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &El Kitabı"
+
+#: kstandardaction_p.h:105
+#, kde-format
+msgid "What's &This?"
+msgstr "Bu &Nedir?"
+
+#: kstandardaction_p.h:106
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "&Günün İpucu"
+
+#: kstandardaction_p.h:107
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Hata Bildir..."
+
+#: kstandardaction_p.h:108
+#, fuzzy, kde-format
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "E-postayı Yapılandır..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "%1 &Hakkında"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "About &KDE"
+msgstr "&KDE Hakkında"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "&Delete"
+msgstr "&Sil"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Rename..."
+msgstr "&Yeniden Adlandır..."
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "&Move to Trash"
+msgstr "&Çöpe Taşı"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&Donate"
+msgstr "&Bağış Yap"
+
+#: ktipdialog.cpp:225
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Günün İpucu"
+
+#: ktipdialog.cpp:241
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Biliyor muydunuz..?\n"
+
+#: ktipdialog.cpp:295
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Başlangıçta ipuçlarını göster"
+
+#: ktipdialog.cpp:300
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Önceki"
+
+#: ktipdialog.cpp:305
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Sonraki"

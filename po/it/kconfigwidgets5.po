@@ -1,0 +1,641 @@
+# translation of kdelibs4.po to Italian
+# Andrea Rizzi <rizzi@kde.org>, 2003, 2004, 2005.
+# Federico Cozzi <federicocozzi@federicocozzi.it>, 2004.
+# Federico Zenith <federico.zenith@member.fsf.org>, 2004, 2008, 2009, 2010, 2011.
+# Andrea Rizzi <Andrea.Rizzi@sns.it>, 2004.
+# Nicola Ruggero <nixprog.adsl@tiscali.it>, 2005, 2006.
+# Nicola Ruggero <nicola@nxnt.org>, 2006, 2007, 2010.
+# Luciano Montanaro <mikelima@cirulla.net>, 2007.
+# Dario Panico <Dareus_Persarumrex@fastwebnet.it>, 2008.
+# Pino Toscano <toscano.pino@tiscali.it>, 2008.
+# Federico Zenith <federico.zenith@member.fsf.org>, 2008, 2012, 2013, 2014, 2015.
+# Innocenzo Ventre <innocenzo.ventre@gmail.com>, 2012.
+# Vincenzo Reale <smart2128@baslug.org>, 2014, 2015, 2019, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-09-14 02:09+0200\n"
+"PO-Revision-Date: 2020-06-20 18:38+0200\n"
+"Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Vincenzo Reale,Federico Zenith,Dario Panico,Nicola Ruggero,Federico Cozzi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "smart2128@baslug.org,,,,"
+
+#: kcmodule.cpp:182
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Ti sarà richiesto di autenticarti prima di salvare"
+
+#: kcmodule.cpp:186
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Non hai il permesso di salvare la configurazione"
+
+#: kcodecaction.cpp:69
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Predefinita"
+
+#: kcodecaction.cpp:77
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Riconoscimento automatico"
+
+#: kcolorschememanager.cpp:147
+#, kde-format
+msgid "Default"
+msgstr "Predefinito"
+
+#: kcolorschememanager.cpp:224 kcolorschememanager.cpp:229
+#, kde-format
+msgid "Color Scheme"
+msgstr "Schema di colori"
+
+#: kconfigdialog.cpp:33
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Configura"
+
+#: krecentfilesaction.cpp:67
+#, kde-format
+msgid "No Entries"
+msgstr "Nessuna voce"
+
+#: krecentfilesaction.cpp:73
+#, kde-format
+msgid "Clear List"
+msgstr "Pulisci elenco"
+
+#: kstandardaction.cpp:142
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Indietro"
+
+#: kstandardaction.cpp:149
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Avanti"
+
+#: kstandardaction.cpp:156
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Home"
+
+#: kstandardaction.cpp:160
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Aiuto"
+
+#: kstandardaction.cpp:205
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Mostra la barra dei menu<p>Mostra di nuovo la barra dei menu dopo che è "
+"stata nascosta</p>"
+
+#: kstandardaction.cpp:225
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Mostra la barra di stato<p>Mostra la barra di stato, cioè quella in fondo "
+"alla finestra che indica lo stato dell'applicazione.</p>"
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "&New"
+msgstr "&Nuovo"
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "Create new document"
+msgstr "Crea nuovo documento"
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "&Open..."
+msgstr "&Apri..."
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "Open an existing document"
+msgstr "Apri un documento esistente"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open &Recent"
+msgstr "Apri &recente"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr "Apri un documento recentemente aperto"
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "&Save"
+msgstr "&Salva"
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "Save document"
+msgstr "Salva documento"
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Save &As..."
+msgstr "Salva co&me..."
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Save document under a new name"
+msgstr "Salva documento con un nuovo nome"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Re&vert"
+msgstr "Ann&ulla"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr "Annulla le modifiche non salvate fatte al documento"
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "&Close"
+msgstr "&Chiudi"
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "Close document"
+msgstr "Chiudi documento"
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "&Print..."
+msgstr "Stam&pa..."
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "Print document"
+msgstr "Stampa documento"
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "Print Previe&w"
+msgstr "Ante&prima di stampa"
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "Show a print preview of document"
+msgstr "Mostra un'anteprima di stampa del documento"
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "&Mail..."
+msgstr "S&pedisci..."
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "Send document by mail"
+msgstr "Invia documento per posta"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "&Quit"
+msgstr "&Esci"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "Quit application"
+msgstr "Esci dall'applicazione"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Undo"
+msgstr "&Annulla"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Undo last action"
+msgstr "Annulla l'ultima azione"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Re&do"
+msgstr "Ri&fai"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Redo last undone action"
+msgstr "Rifai l'ultima azione annullata"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cu&t"
+msgstr "&Taglia"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr "Taglia la selezione negli appunti"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "&Copy"
+msgstr "&Copia"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr "Copia la selezione negli appunti"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, kde-format
+msgid "&Paste"
+msgstr "&Incolla"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, kde-format
+msgid "Paste clipboard content"
+msgstr "Incolla il contenuto degli appunti"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "C&lear"
+msgstr "Pu&lisci"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Select &All"
+msgstr "Seleziona t&utto"
+
+#: kstandardaction_p.h:52
+#, kde-format
+msgid "Dese&lect"
+msgstr "Dese&leziona"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Find..."
+msgstr "Tro&va..."
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Find &Next"
+msgstr "Trova &successivo"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "Trova &precedente"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Replace..."
+msgstr "S&ostituisci..."
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "&Actual Size"
+msgstr "Dimensione re&ale"
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "View document at its actual size"
+msgstr "Mostra il documento nelle sue dimensioni effettive"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "&Fit to Page"
+msgstr "&Adatta alla pagina"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "Zoom to fit page in window"
+msgstr "Adatta le dimensioni della pagina alla finestra"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "Adatta alla &larghezza della pagina"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr "Adatta la larghezza della pagina alla finestra"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "Adatta all'&altezza della pagina"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr "Adatta l'altezza della pagina alla finestra"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "Zoom &In"
+msgstr "&Ingrandisci"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Zoom &Out"
+msgstr "&Rimpicciolisci"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "&Zoom..."
+msgstr "In&grandimento..."
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Select zoom level"
+msgstr "Seleziona il livello di ingrandimento"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Refresh"
+msgstr "Aggio&rna"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "Refresh document"
+msgstr "Aggiorna il documento"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Up"
+msgstr "&Su"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "Go up"
+msgstr "Vai in su"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "&Previous Page"
+msgstr "Pagina &precedente"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Go to previous page"
+msgstr "Vai alla pagina precedente"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Next Page"
+msgstr "Pagina &successiva"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "Go to next page"
+msgstr "Vai alla pagina successiva"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Go To..."
+msgstr "&Vai a..."
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "&Go to Page..."
+msgstr "Vai alla &pagina..."
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Go to Line..."
+msgstr "Vai alla &riga..."
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "&First Page"
+msgstr "&Prima pagina"
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "Go to first page"
+msgstr "Vai alla prima pagina"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "&Last Page"
+msgstr "&Ultima pagina"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "Go to last page"
+msgstr "Vai all'ultima pagina"
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "&Back"
+msgstr "&Indietro"
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "Go back in document"
+msgstr "Indietro nel documento"
+
+#: kstandardaction_p.h:80
+#, kde-format
+msgid "&Forward"
+msgstr "&Avanti"
+
+#: kstandardaction_p.h:80
+#, kde-format
+msgid "Go forward in document"
+msgstr "Avanti nel documento"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "&Aggiungi un segnalibro"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "&Modifica segnalibri..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Spelling..."
+msgstr "&Ortografia..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "Check spelling in document"
+msgstr "Controlla l'ortografia nel documento"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show &Menubar"
+msgstr "Mostra la barra dei &menu"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show or hide menubar"
+msgstr "Mostra o nascondi la barra dei menu"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "Mostra la barra degli &strumenti"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show or hide toolbar"
+msgstr "Mostra o nascondi la barra degli strumenti"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "Mostra la barra di st&ato"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Show or hide statusbar"
+msgstr "Mostra o nascondi la barra di stato"
+
+#: kstandardaction_p.h:90
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "Modalità a t&utto schermo"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Save Settings"
+msgstr "Salva imp&ostazioni"
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Configura scorcia&toie da tastiera..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Configura %1..."
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "Configura le &barre degli strumenti..."
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "Configura le &notifiche..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Manuale di %1"
+
+#: kstandardaction_p.h:105
+#, kde-format
+msgid "What's &This?"
+msgstr "Che &cos'è?"
+
+#: kstandardaction_p.h:106
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "&Suggerimento del giorno"
+
+#: kstandardaction_p.h:107
+#, kde-format
+msgid "&Report Bug..."
+msgstr "Segnala un e&rrore..."
+
+#: kstandardaction_p.h:108
+#, kde-format
+msgid "Configure &Language..."
+msgstr "Configura la &lingua..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "Informazioni &su %1"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "About &KDE"
+msgstr "Informazioni su &KDE"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "&Delete"
+msgstr "Eli&mina"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Rename..."
+msgstr "&Rinomina..."
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "&Move to Trash"
+msgstr "&Cestina"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&Donate"
+msgstr "&Donazione"
+
+#: ktipdialog.cpp:225
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Suggerimento del giorno"
+
+#: ktipdialog.cpp:241
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Sapevi che...?\n"
+
+#: ktipdialog.cpp:295
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Mo&stra i suggerimenti all'avvio"
+
+#: ktipdialog.cpp:300
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Precedente"
+
+#: ktipdialog.cpp:305
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Successivo"
