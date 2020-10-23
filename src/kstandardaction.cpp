@@ -17,7 +17,6 @@
 #include <QMenuBar>
 #include <KAboutData>
 #include <KLocalizedString>
-#include <KStandardShortcut>
 #include <KAcceleratorManager>
 
 #include <KDualAction>

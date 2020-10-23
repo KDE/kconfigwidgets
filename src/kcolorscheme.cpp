@@ -9,7 +9,6 @@
 
 #include <KConfig>
 #include <KConfigGroup>
-#include <KSharedConfig>
 #include <KColorUtils>
 
 #include <QColor>
