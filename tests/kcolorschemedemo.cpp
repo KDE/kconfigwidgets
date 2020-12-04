@@ -38,7 +38,6 @@ public:
         QVBoxLayout *layout = new QVBoxLayout(this);
         layout->addWidget(view);
         layout->addWidget(box);
-        setLayout(layout);
     }
     ~KColorSchemeDemo() {}
 };
