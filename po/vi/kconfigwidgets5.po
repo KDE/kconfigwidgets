@@ -1,0 +1,634 @@
+# Vietnamese translation for kdelibs.
+# Copyright © 2007 KDE i18n Project for Vietnamese.
+#
+# Clytie Siddall <clytie@riverland.net.au>, 2006-2007.
+# Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>, 2008, 2011.
+# Lê Hoàng Phương <herophuong93@gmail.com>, 2011, 2012.
+# Phu Hung Nguyen <phuhnguyen@disroot.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-10-24 02:11+0200\n"
+"PO-Revision-Date: 2020-11-28 16:52+0100\n"
+"Last-Translator: Phu Hung Nguyen <phuhnguyen@disroot.org>\n"
+"Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 20.08.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Clytie Siddall,Hoàng Đức Hiếu,Lê Hoàng Phương,Nguyễn Hùng Phú"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"clytie@riverland.net.au,hieu.d.hoang@gmail.com,herophuong93@gmail.com,"
+"phuhnguyen@disroot.org"
+
+#: kcmodule.cpp:182
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Bạn sẽ được yêu cầu xác thực trước khi lưu"
+
+#: kcmodule.cpp:186
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Bạn không được phép lưu cấu hình"
+
+#: kcodecaction.cpp:69
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Mặc định"
+
+#: kcodecaction.cpp:77
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Tự động phát hiện"
+
+#: kcolorschememanager.cpp:147
+#, kde-format
+msgid "Default"
+msgstr "Mặc định"
+
+#: kcolorschememanager.cpp:224 kcolorschememanager.cpp:229
+#, kde-format
+msgid "Color Scheme"
+msgstr "Quy hoạch màu"
+
+#: kconfigdialog.cpp:33
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Cấu hình"
+
+#: krecentfilesaction.cpp:67
+#, kde-format
+msgid "No Entries"
+msgstr "Không có mục nào"
+
+#: krecentfilesaction.cpp:73
+#, kde-format
+msgid "Clear List"
+msgstr "Làm trống danh sách"
+
+#: kstandardaction.cpp:141
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "Lù&i"
+
+#: kstandardaction.cpp:148
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Tiến"
+
+#: kstandardaction.cpp:155
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "N&hà"
+
+#: kstandardaction.cpp:159
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "Trợ &giúp"
+
+#: kstandardaction.cpp:204
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Hiện thanh trình đơn<p>Hiện lại thanh trình đơn sau khi nó bị ẩn</p>"
+
+#: kstandardaction.cpp:224
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Hiện thanh trạng thái<p>Hiện thanh trạng thái, là thanh ở dưới cùng của cửa "
+"sổ, dùng cho thông tin trạng thái.</p>"
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "&New"
+msgstr "Tạ&o"
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "Create new document"
+msgstr "Tạo tài liệu mới"
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "&Open..."
+msgstr "&Mở..."
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "Open an existing document"
+msgstr "Mở một tài liệu đã có"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open &Recent"
+msgstr "Mở &gần đây"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr "Mở một tài liệu từng mở gần đây"
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "&Save"
+msgstr "&Lưu"
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "Save document"
+msgstr "Lưu tài liệu"
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Save &As..."
+msgstr "Lưu thà&nh..."
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Save document under a new name"
+msgstr "Lưu tài liệu dưới một tên mới"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Re&vert"
+msgstr "Hoàn ngu&yên"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr "Hoàn nguyên các thay đổi chưa lưu trong tài liệu"
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "&Close"
+msgstr "Đón&g"
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "Close document"
+msgstr "Đóng tài liệu"
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "&Print..."
+msgstr "&In..."
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "Print document"
+msgstr "In tài liệu"
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "Print Previe&w"
+msgstr "&Xem thử bản in"
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "Show a print preview of document"
+msgstr "Hiện một phần xem thử bản in của tài liệu"
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "&Mail..."
+msgstr "&Thư..."
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "Send document by mail"
+msgstr "Gửi tài liệu qua thư"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "&Quit"
+msgstr "&Thoát"
+
+#: kstandardaction_p.h:40
+#, kde-format
+msgid "Quit application"
+msgstr "Thoát khỏi ứng dụng"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "&Undo"
+msgstr "Đảo n&gược"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Undo last action"
+msgstr "Đảo ngược hành động cuối cùng"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Re&do"
+msgstr "&Làm lại"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Redo last undone action"
+msgstr "Làm lại hành động bị đảo ngược cuối cùng"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cu&t"
+msgstr "Cắ&t"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr "Cắt phần chọn đưa vào bảng nháp"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "&Copy"
+msgstr "&Chép"
+
+#: kstandardaction_p.h:45
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr "Chép phần chọn vào bảng nháp"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, kde-format
+msgid "&Paste"
+msgstr "&Dán"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, kde-format
+msgid "Paste clipboard content"
+msgstr "Dán nội dung bảng nháp"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "C&lear"
+msgstr "&Làm trống"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Select &All"
+msgstr "C&họn tất cả"
+
+#: kstandardaction_p.h:52
+#, kde-format
+msgid "Dese&lect"
+msgstr "&Bỏ chọn"
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "&Find..."
+msgstr "&Tìm..."
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Find &Next"
+msgstr "Tìm về sa&u"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "Tìm &về trước"
+
+#: kstandardaction_p.h:56
+#, kde-format
+msgid "&Replace..."
+msgstr "Tha&y thế..."
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "&Actual Size"
+msgstr "Kíc&h cỡ thật"
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "View document at its actual size"
+msgstr "Xem tài liệu ở kích cỡ thật của nó"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "&Fit to Page"
+msgstr "&Vừa cho trang"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "Zoom to fit page in window"
+msgstr "Thu phóng để trang vừa trong cửa sổ"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "Vừa cho chiều &rộng trang"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr "Thu phóng để chiều rộng trang vừa trong cửa sổ"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "Vừa cho chiều &cao trang"
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr "Thu phóng để chiều cao trang vừa trong cửa sổ"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "Zoom &In"
+msgstr "&Phóng to"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Zoom &Out"
+msgstr "Thu &nhỏ"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "&Zoom..."
+msgstr "Th&u phóng..."
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "Select zoom level"
+msgstr "Chọn cấp độ thu phóng"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "&Refresh"
+msgstr "Tải &lại"
+
+#: kstandardaction_p.h:65
+#, kde-format
+msgid "Refresh document"
+msgstr "Tải lại tài liệu"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "&Up"
+msgstr "&Lên"
+
+#: kstandardaction_p.h:67
+#, kde-format
+msgid "Go up"
+msgstr "Đi lên"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "&Previous Page"
+msgstr "Trang t&rước"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Go to previous page"
+msgstr "Đi đến trang trước"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Next Page"
+msgstr "Trang &sau"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "Go to next page"
+msgstr "Đi đến trang sau"
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Go To..."
+msgstr "Đi đế&n..."
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "&Go to Page..."
+msgstr "Đi đến t&rang..."
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&Go to Line..."
+msgstr "Đi đến &dòng..."
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "&First Page"
+msgstr "Trang đầ&u"
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "Go to first page"
+msgstr "Đi đến trang đầu"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "&Last Page"
+msgstr "Trang &cuối"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "Go to last page"
+msgstr "Đi đến trang cuối"
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "&Back"
+msgstr "Lù&i"
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "Go back in document"
+msgstr "Đi lùi trong tài liệu"
+
+#: kstandardaction_p.h:80
+#, kde-format
+msgid "&Forward"
+msgstr "&Tiến"
+
+#: kstandardaction_p.h:80
+#, kde-format
+msgid "Go forward in document"
+msgstr "Đi tiến trong tài liệu"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "T&hêm dấu nhớ"
+
+#: kstandardaction_p.h:83
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "&Sửa dấu nhớ..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "&Spelling..."
+msgstr "Đánh &vần..."
+
+#: kstandardaction_p.h:85
+#, kde-format
+msgid "Check spelling in document"
+msgstr "Kiểm tra đánh vần trong tài liệu"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show &Menubar"
+msgstr "Hiện th&anh trình đơn"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show or hide menubar"
+msgstr "Hiện hay ẩn thanh trình đơn"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "Hiện thanh &công cụ"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show or hide toolbar"
+msgstr "Hiện hay ẩn thanh công cụ"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "Hiện thanh t&rạng thái"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "Show or hide statusbar"
+msgstr "Hiện hay ẩn thanh trạng thái"
+
+#: kstandardaction_p.h:90
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "Chế độ t&oàn màn hình"
+
+#: kstandardaction_p.h:92
+#, kde-format
+msgid "&Save Settings"
+msgstr "Lưu thiết lậ&p"
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Cấu hình phí&m tắt..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Cấu hình %1..."
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "Cấu hình th&anh công cụ..."
+
+#: kstandardaction_p.h:97
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "Cấu hình thông &báo..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Sổ tay %1"
+
+#: kstandardaction_p.h:105
+#, kde-format
+msgid "What's &This?"
+msgstr "Đây là &cái gì?"
+
+#: kstandardaction_p.h:106
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "&Mẹo của ngày"
+
+#: kstandardaction_p.h:107
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Báo lỗi..."
+
+#: kstandardaction_p.h:108
+#, kde-format
+msgid "Configure &Language..."
+msgstr "Cấu hình &ngôn ngữ..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "&Về %1"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "About &KDE"
+msgstr "Về &KDE"
+
+#: kstandardaction_p.h:111
+#, kde-format
+msgid "&Delete"
+msgstr "&Xoá"
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Rename..."
+msgstr "Đổ&i tên..."
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "&Move to Trash"
+msgstr "Chuyển vào thùng &rác"
+
+#: kstandardaction_p.h:114
+#, kde-format
+msgid "&Donate"
+msgstr "&Quyên góp"
+
+#: ktipdialog.cpp:225
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Mẹo của ngày"
+
+#: ktipdialog.cpp:241
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Bạn có biết...?\n"
+
+#: ktipdialog.cpp:295
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Hiện mẹo khi &khởi động"
+
+#: ktipdialog.cpp:300
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Trước"
+
+#: ktipdialog.cpp:305
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Sau"
