@@ -7,7 +7,7 @@
 #include "kstandardactiontest.h"
 
 #include <QAction>
-#include <QtTestWidgets>
+#include <QTest>
 
 #include "kstandardaction.h"
 
