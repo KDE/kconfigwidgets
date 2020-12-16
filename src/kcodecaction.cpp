@@ -137,7 +137,10 @@ void KCodecAction::actionTriggered(QAction *action)
 //we don't want to emit any signals from top-level items
 //except for the default one
     if (action == d->defaultAction) {
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
         emit triggered(KEncodingProber::Universal);
+#endif
+        emit encodingProberTriggered(KEncodingProber::Universal);
         emit defaultItemTriggered();
     }
 }
@@ -151,11 +154,28 @@ void KCodecAction::Private::_k_subActionTriggered(QAction *action)
     bool ok = false;
     int mib = q->mibForName(action->text(), &ok);
     if (ok) {
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
+#if KWIDGETSADDONS_BUILD_DEPRECATED_SINCE(5, 78)
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
+QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
         emit q->triggered(action->text());
-        emit q->triggered(q->codecForMib(mib));
+QT_WARNING_POP
+#endif
+#endif
+        emit q->textTriggered(action->text());
+        QTextCodec *codec = q->codecForMib(mib);
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
+        emit q->triggered(codec);
+#endif
+        emit q->codecTriggered(codec);
     } else {
         if (!action->data().isNull()) {
-            emit q->triggered((KEncodingProber::ProberType) action->data().toUInt());
+            const auto encodingProberType = static_cast<KEncodingProber::ProberType>(action->data().toUInt());
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
+            emit q->triggered(encodingProberType);
+#endif
+            emit q->encodingProberTriggered(encodingProberType);
         }
     }
 }

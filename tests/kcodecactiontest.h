@@ -13,10 +13,10 @@ public:
     CodecActionTest(QWidget *parent = nullptr);
 
 public Q_SLOTS:
-    void triggered(QAction *action);
-    void triggered(int index);
-    void triggered(const QString &text);
-    void triggered(QTextCodec *codec);
+    void actionTriggered(QAction *action);
+    void indexTriggered(int index);
+    void textTriggered(const QString &text);
+    void codecTriggered(QTextCodec *codec);
 
     void slotActionTriggered(bool state);
 

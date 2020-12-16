@@ -63,23 +63,49 @@ public:
     bool setCurrentProberType(KEncodingProber::ProberType);
 
 Q_SIGNALS:
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 78)
     /**
      * Specific (proper) codec was selected
      *
-     * Note that triggered(const QString&) is emitted too (as defined in KSelectAction)
+     * Note that triggered(const QString &) is emitted too (as defined in KSelectAction).
+     * @deprecated Since 5.78, use codecTriggered(QTextCodec *)
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 78, "Use KCodecAction::codecTriggered(QTextCodec *)")
     void triggered(QTextCodec *codec);
+#endif
+    /**
+     * Specific (proper) codec was selected
+     *
+     * Note that textTriggered(const QString &) is emitted too (as defined in KSelectAction).
+     * @since 5.78
+     */
+    void codecTriggered(QTextCodec *codec);
+
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 78)
+    /**
+     * Autodetection has been selected.
+     * emits KEncodingProber::Universal if Default was selected.
+     *
+     * Applicable only if showAutoOptions in c'tor was true
+     * @deprecated Since 5.78, use encodingProberTriggered(KEncodingProber::ProberType)
+     */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 78, "Use KCodecAction::encodingProberTriggered(KEncodingProber::ProberType)")
+    void triggered(KEncodingProber::ProberType);
+#endif
 
     /**
      * Autodetection has been selected.
      * emits KEncodingProber::Universal if Default was selected.
      *
      * Applicable only if showAutoOptions in c'tor was true
+     * @since 5.78
      */
-    void triggered(KEncodingProber::ProberType);
+    void encodingProberTriggered(KEncodingProber::ProberType);
 
     /**
-     * If showAutoOptions==true, then better handle triggered(KEncodingProber::ProberType) signal
+     * If @p showAutoOptions is @c true, then better handle the signal
+     * encodingProberTriggered(KEncodingProber::ProberType)
+     * (or triggered(KEncodingProber::ProberType), to support also KF < 5.78).
      */
     void defaultItemTriggered();
 
