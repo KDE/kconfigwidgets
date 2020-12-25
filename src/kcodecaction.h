@@ -77,6 +77,23 @@ Q_SIGNALS:
      * Specific (proper) codec was selected
      *
      * Note that textTriggered(const QString &) is emitted too (as defined in KSelectAction).
+     *
+     * In your KCodecAction subclass to be backward-compatible to KF < 5.78, emit instead
+     * just the deprecated signal triggered(QTextCodec *). That will also automatically
+     * emit codecTriggered(QTextCodec *) because this signal is connected to the deprevcated
+     * one in the KCodecAction constructor.
+     * Only if you compile against a variant of KConfigWidgets built without all API
+     * deprecated up to version 5.78, then emit this signal directly.
+     * Your code would be like this:
+     * @code
+     * #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
+     *     // will also indirectly emit codecTriggered since 5.78
+     *     emit triggered(codec);
+     * #else
+     *     emit codecTriggered(codec);
+     * #endif
+     * @endcode
+     *
      * @since 5.78
      */
     void codecTriggered(QTextCodec *codec);
@@ -98,6 +115,23 @@ Q_SIGNALS:
      * emits KEncodingProber::Universal if Default was selected.
      *
      * Applicable only if showAutoOptions in c'tor was true
+     *
+     * In your KCodecAction subclass to be backward-compatible to KF < 5.78, emit instead
+     * just the deprecated signal triggered(KEncodingProber::ProberType). That will also
+     * automatically emit encodingProberTriggered(KEncodingProber::ProberType) because this
+     * signal is connected to the deprecated one in the KCodecAction constructor.
+     * Only if you compile against a variant of KConfigWidgets built without all API
+     * deprecated up to version 5.78, then emit this signal directly.
+     * Your code would be like this:
+     * @code
+     * #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
+     *     // will also indirectly emit encodingProberTriggered since 5.78
+     *     emit triggered(encodingProber);
+     * #else
+     *     emit encodingProberTriggered(encodingProber;
+     * #endif
+     * @endcode
+     *
      * @since 5.78
      */
     void encodingProberTriggered(KEncodingProber::ProberType);
