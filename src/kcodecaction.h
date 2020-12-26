@@ -128,7 +128,7 @@ Q_SIGNALS:
      *     // will also indirectly emit encodingProberTriggered since 5.78
      *     emit triggered(encodingProber);
      * #else
-     *     emit encodingProberTriggered(encodingProber;
+     *     emit encodingProberTriggered(encodingProber);
      * #endif
      * @endcode
      *
