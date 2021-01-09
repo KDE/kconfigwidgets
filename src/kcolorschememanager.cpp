@@ -160,7 +160,7 @@ KColorSchemeManager::~KColorSchemeManager()
 
 QAbstractItemModel *KColorSchemeManager::model() const
 {
-    return d->model.data();
+    return d->model.get();
 }
 
 QModelIndex KColorSchemeManager::indexForScheme(const QString &name) const
@@ -231,7 +231,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu (QObject *parent)
 
 void KColorSchemeManager::activateScheme(const QModelIndex &index)
 {
-    if (index.isValid() && index.model() == d->model.data()) {
+    if (index.isValid() && index.model() == d->model.get()) {
         ::activateScheme(index.data(Qt::UserRole).toString());
     } else {
         ::activateScheme(QString());

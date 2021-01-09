@@ -10,6 +10,7 @@
 
 #include <QAbstractListModel>
 #include <QIcon>
+#include <memory>
 
 struct KColorSchemeModelData {
     QString name;
@@ -36,7 +37,7 @@ class KColorSchemeManagerPrivate
 public:
     KColorSchemeManagerPrivate();
 
-    QScopedPointer<KColorSchemeModel> model;
+    std::unique_ptr<KColorSchemeModel> model;
 };
 
 #endif

@@ -11,6 +11,7 @@
 #include <kconfigwidgets_export.h>
 
 #include <QObject>
+#include <memory>
 
 class QAbstractItemModel;
 class QModelIndex;
@@ -117,7 +118,7 @@ public Q_SLOTS:
     void activateScheme(const QModelIndex &index);
 
 private:
-    QScopedPointer<KColorSchemeManagerPrivate> d;
+    std::unique_ptr<KColorSchemeManagerPrivate> const d;
 };
 
 #endif
