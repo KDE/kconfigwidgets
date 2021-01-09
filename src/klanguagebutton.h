@@ -14,6 +14,7 @@
 
 #include "kconfigwidgets_export.h"
 #include <QWidget>
+#include <memory>
 
 class QAction;
 class KLanguageButtonPrivate;
@@ -159,7 +160,7 @@ private Q_SLOTS:
 
 private:
     friend class KLanguageButtonPrivate;
-    KLanguageButtonPrivate *const d;
+    std::unique_ptr<KLanguageButtonPrivate> const d;
 };
 
 #endif

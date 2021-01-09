@@ -77,10 +77,7 @@ void KRecentFilesActionPrivate::init()
     q->connect(q, SIGNAL(triggered(QAction*)), SLOT(_k_urlSelected(QAction*)));
 }
 
-KRecentFilesAction::~KRecentFilesAction()
-{
-    delete d_ptr;
-}
+KRecentFilesAction::~KRecentFilesAction() = default;
 
 void KRecentFilesActionPrivate::_k_urlSelected(QAction *action)
 {

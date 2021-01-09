@@ -75,10 +75,7 @@ void KPasteTextActionPrivate::init()
     m_mixedMode = true;
 }
 
-KPasteTextAction::~KPasteTextAction()
-{
-    delete d;
-}
+KPasteTextAction::~KPasteTextAction() = default;
 
 void KPasteTextAction::setMixedMode(bool mode)
 {

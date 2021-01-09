@@ -13,6 +13,8 @@
 
 #include <QObject>
 #include <QHash>
+#include <memory>
+
 class KConfigDialogManagerPrivate;
 
 class KCoreConfigSkeleton;
@@ -392,7 +394,7 @@ private:
     /**
      * KConfigDialogManager KConfigDialogManagerPrivate class.
      */
-    KConfigDialogManagerPrivate *const d;
+    std::unique_ptr<KConfigDialogManagerPrivate> const d;
     friend class KConfigDialogManagerPrivate;
 
     Q_DISABLE_COPY(KConfigDialogManager)

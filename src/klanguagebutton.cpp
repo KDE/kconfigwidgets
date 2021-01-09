@@ -99,10 +99,7 @@ KLanguageButtonPrivate::KLanguageButtonPrivate(KLanguageButton *parent)
     QObject::connect(popup, &QMenu::hovered, parent, &KLanguageButton::slotHovered);
 }
 
-KLanguageButton::~KLanguageButton()
-{
-    delete d;
-}
+KLanguageButton::~KLanguageButton() = default;
 
 void KLanguageButton::setText(const QString &text)
 {

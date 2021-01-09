@@ -16,6 +16,7 @@
 
 #include <QVariant>
 #include <QWidget>
+#include <memory>
 
 class KAboutData;
 class KConfigDialogManager;
@@ -496,7 +497,7 @@ protected:
     void unmanagedWidgetDefaultState(bool);
 
 private:
-    KCModulePrivate *const d;
+    std::unique_ptr<KCModulePrivate> const d;
 };
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(KCModule::Buttons)

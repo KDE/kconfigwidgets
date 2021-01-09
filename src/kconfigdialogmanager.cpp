@@ -44,10 +44,7 @@ KConfigDialogManager::KConfigDialogManager(QWidget *parent, KConfigSkeleton *con
     init(true);
 }
 
-KConfigDialogManager::~KConfigDialogManager()
-{
-    delete d;
-}
+KConfigDialogManager::~KConfigDialogManager() = default;
 
 // KF6: Drop this and get signals only from metaObject and/or widget's dynamic properties kcfg_property/kcfg_propertyNotify
 void KConfigDialogManager::initMaps()

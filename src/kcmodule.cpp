@@ -196,7 +196,6 @@ KCModule::~KCModule()
     qDeleteAll(d->managers);
     d->managers.clear();
     delete d->_about;
-    delete d;
 }
 
 void KCModule::load()

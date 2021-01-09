@@ -17,6 +17,7 @@
 #define KPASTETEXTACTION_H
 
 #include <QAction>
+#include <memory>
 
 #include <kconfigwidgets_export.h>
 
@@ -90,7 +91,7 @@ public:
     void setMixedMode(bool mode);
 
 private:
-    KPasteTextActionPrivate *const d;
+    std::unique_ptr<KPasteTextActionPrivate> const d;
 
     Q_PRIVATE_SLOT(d, void _k_menuAboutToShow())
     Q_PRIVATE_SLOT(d, void _k_slotTriggered(QAction *))
