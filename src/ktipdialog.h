@@ -11,6 +11,7 @@
 
 #include <QDialog>
 #include <QStringList>
+#include <memory>
 
 #include <kconfigwidgets_export.h>
 
@@ -71,8 +72,7 @@ public:
     void prevTip();
 
 private:
-    class Private;
-    Private *const d;
+    std::unique_ptr<class KTipDatabasePrivate> const d;
 
     Q_DISABLE_COPY(KTipDatabase)
 };
@@ -159,8 +159,8 @@ protected:
     bool eventFilter(QObject *, QEvent *) override;
 
 private:
-    class Private;
-    Private *const d;
+    std::unique_ptr<class KTipDialogPrivate> const d;
+
     Q_DISABLE_COPY(KTipDialog)
 };
 

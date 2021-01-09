@@ -10,6 +10,7 @@
 
 #include <KEncodingProber>
 #include <KSelectAction>
+#include <memory>
 #include <kconfigwidgets_export.h>
 
 /**
@@ -150,8 +151,8 @@ protected:
     using KSelectAction::triggered;
 
 private:
-    class Private;
-    Private *const d;
+    friend class KCodecActionPrivate;
+    std::unique_ptr<class KCodecActionPrivate> const d;
 
     Q_PRIVATE_SLOT(d, void _k_subActionTriggered(QAction *))
 };

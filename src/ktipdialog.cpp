@@ -32,7 +32,7 @@
 #include <KSeparator>
 #include <KStandardGuiItem>
 
-class Q_DECL_HIDDEN KTipDatabase::Private
+class KTipDatabasePrivate
 {
 public:
     void loadTips(const QString &tipFile);
@@ -42,7 +42,7 @@ public:
     int currentTip;
 };
 
-void KTipDatabase::Private::loadTips(const QString &tipFile)
+void KTipDatabasePrivate::loadTips(const QString &tipFile)
 {
     tips.clear();
     addTips(tipFile);
@@ -53,7 +53,7 @@ void KTipDatabase::Private::loadTips(const QString &tipFile)
  * preparetips5, which depends on extracting exactly the same
  * text as done here.
  */
-void KTipDatabase::Private::addTips(const QString &tipFile)
+void KTipDatabasePrivate::addTips(const QString &tipFile)
 {
     const QString fileName = QStandardPaths::locate(QStandardPaths::GenericDataLocation, tipFile);
 
@@ -102,7 +102,7 @@ void KTipDatabase::Private::addTips(const QString &tipFile)
 }
 
 KTipDatabase::KTipDatabase(const QString &_tipFile)
-    : d(new Private)
+    : d(new KTipDatabasePrivate)
 {
     QString tipFile = _tipFile;
 
@@ -118,7 +118,7 @@ KTipDatabase::KTipDatabase(const QString &_tipFile)
 }
 
 KTipDatabase::KTipDatabase(const QStringList &tipsFiles)
-    : d(new Private)
+    : d(new KTipDatabasePrivate)
 {
     if (tipsFiles.isEmpty() || ((tipsFiles.count() == 1) && tipsFiles.first().isEmpty())) {
         d->addTips(QCoreApplication::applicationName() + QStringLiteral("/tips"));
@@ -133,10 +133,7 @@ KTipDatabase::KTipDatabase(const QStringList &tipsFiles)
     }
 }
 
-KTipDatabase::~KTipDatabase()
-{
-    delete d;
-}
+KTipDatabase::~KTipDatabase() = default;
 
 void KTipDatabase::nextTip()
 {
@@ -173,14 +170,14 @@ QString KTipDatabase::tip() const
     return d->tips[ d->currentTip ];
 }
 
-class Q_DECL_HIDDEN KTipDialog::Private
+class KTipDialogPrivate
 {
 public:
-    Private(KTipDialog *_parent)
-        : parent(_parent)
+    KTipDialogPrivate(KTipDialog *q)
+        : q(q)
     {
     }
-    ~Private()
+    ~KTipDialogPrivate()
     {
         delete database;
     }
@@ -189,7 +186,7 @@ public:
     void _k_prevTip();
     void _k_showOnStart(bool);
 
-    KTipDialog *parent;
+    KTipDialog *const q;
     KTipDatabase *database;
     QCheckBox *tipOnStart;
     QTextBrowser *tipText;
@@ -197,30 +194,30 @@ public:
     static KTipDialog *mInstance;
 };
 
-KTipDialog *KTipDialog::Private::mInstance = nullptr;
+KTipDialog *KTipDialogPrivate::mInstance = nullptr;
 
-void KTipDialog::Private::_k_prevTip()
+void KTipDialogPrivate::_k_prevTip()
 {
     database->prevTip();
     tipText->setHtml(QStringLiteral("<html><body>%1</body></html>")
                      .arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
 }
 
-void KTipDialog::Private::_k_nextTip()
+void KTipDialogPrivate::_k_nextTip()
 {
     database->nextTip();
     tipText->setHtml(QStringLiteral("<html><body>%1</body></html>")
                      .arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
 }
 
-void KTipDialog::Private::_k_showOnStart(bool on)
+void KTipDialogPrivate::_k_showOnStart(bool on)
 {
-    parent->setShowOnStart(on);
+    q->setShowOnStart(on);
 }
 
 KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
     : QDialog(parent),
-      d(new Private(this))
+      d(new KTipDialogPrivate(this))
 {
     setWindowTitle(i18nc("@title:window", "Tip of the Day"));
 
@@ -325,10 +322,9 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
 
 KTipDialog::~KTipDialog()
 {
-    if (Private::mInstance == this) {
-        Private::mInstance = nullptr;
+    if (KTipDialogPrivate::mInstance == this) {
+        KTipDialogPrivate::mInstance = nullptr;
     }
-    delete d;
 }
 
 /**
@@ -375,17 +371,17 @@ void KTipDialog::showMultiTip(QWidget *parent, const QStringList &tipFiles, bool
           return; // Don't show tip on first start*/
     }
 
-    if (!Private::mInstance) {
-        Private::mInstance = new KTipDialog(new KTipDatabase(tipFiles), parent);
+    if (!KTipDialogPrivate::mInstance) {
+        KTipDialogPrivate::mInstance = new KTipDialog(new KTipDatabase(tipFiles), parent);
     } else
         // The application might have changed the RunOnStart option in its own
         // configuration dialog, so we should update the checkbox.
     {
-        Private::mInstance->d->tipOnStart->setChecked(runOnStart);
+        KTipDialogPrivate::mInstance->d->tipOnStart->setChecked(runOnStart);
     }
 
-    Private::mInstance->show();
-    Private::mInstance->raise();
+    KTipDialogPrivate::mInstance->show();
+    KTipDialogPrivate::mInstance->raise();
 }
 
 void KTipDialog::setShowOnStart(bool on)

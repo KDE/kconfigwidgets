@@ -20,10 +20,10 @@
 // the default/unknown mib value is 2.
 #define MIB_DEFAULT 2
 
-class Q_DECL_HIDDEN KCodecAction::Private
+class KCodecActionPrivate
 {
 public:
-    Private(KCodecAction *parent)
+    KCodecActionPrivate(KCodecAction *parent)
         : q(parent)
     {
     }
@@ -39,33 +39,30 @@ public:
 
 KCodecAction::KCodecAction(QObject *parent, bool showAutoOptions)
     : KSelectAction(parent)
-    , d(new Private(this))
+    , d(new KCodecActionPrivate(this))
 {
     d->init(showAutoOptions);
 }
 
 KCodecAction::KCodecAction(const QString &text, QObject *parent, bool showAutoOptions)
     : KSelectAction(text, parent)
-    , d(new Private(this))
+    , d(new KCodecActionPrivate(this))
 {
     d->init(showAutoOptions);
 }
 
 KCodecAction::KCodecAction(const QIcon &icon, const QString &text, QObject *parent, bool showAutoOptions)
     : KSelectAction(icon, text, parent)
-    , d(new Private(this))
+    , d(new KCodecActionPrivate(this))
 {
     d->init(showAutoOptions);
 }
 
-KCodecAction::~KCodecAction()
-{
-    delete d;
-}
+KCodecAction::~KCodecAction() = default;
 
-void KCodecAction::Private::init(bool showAutoOptions)
+void KCodecActionPrivate::init(bool showAutoOptions)
 {
-    q->setToolBarMode(MenuMode);
+    q->setToolBarMode(KSelectAction::MenuMode);
     defaultAction = q->addAction(i18nc("Encodings menu", "Default"));
 
     const auto lstEncodings = KCharsets::charsets()->encodingsByScript();
@@ -154,7 +151,7 @@ void KCodecAction::actionTriggered(QAction *action)
     }
 }
 
-void KCodecAction::Private::_k_subActionTriggered(QAction *action)
+void KCodecActionPrivate::_k_subActionTriggered(QAction *action)
 {
     if (currentSubAction == action) {
         return;

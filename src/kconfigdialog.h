@@ -10,6 +10,7 @@
 #define KCONFIGDIALOG_H
 
 #include <KPageDialog>
+#include <memory>
 
 #include "kconfigwidgets_export.h"
 
@@ -250,10 +251,8 @@ private Q_SLOTS:
     void onPageRemoved(KPageWidgetItem *item);
 
 private:
-    class KConfigDialogPrivate;
     friend class KConfigDialogPrivate;
-
-    KConfigDialogPrivate *const d;
+    std::unique_ptr<class KConfigDialogPrivate> const d;
 
     Q_PRIVATE_SLOT(d, void _k_updateButtons())
     Q_PRIVATE_SLOT(d, void _k_settingsChangedSlot())
