@@ -146,11 +146,11 @@ void KCodecAction::actionTriggered(QAction *action)
 //except for the default one
     if (action == d->defaultAction) {
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
-        emit triggered(KEncodingProber::Universal);
+        Q_EMIT triggered(KEncodingProber::Universal);
 #else
-        emit encodingProberTriggered(KEncodingProber::Universal);
+        Q_EMIT encodingProberTriggered(KEncodingProber::Universal);
 #endif
-        emit defaultItemTriggered();
+        Q_EMIT defaultItemTriggered();
     }
 }
 
@@ -168,26 +168,26 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
 QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
         // will also indirectly emit textTriggered, due to signal connection in KSelectAction
-        emit q->triggered(action->text());
+        Q_EMIT q->triggered(action->text());
 QT_WARNING_POP
 #else
-        emit q->textTriggered(action->text());
+        Q_EMIT q->textTriggered(action->text());
 #endif
         QTextCodec *codec = q->codecForMib(mib);
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
         // will also indirectly emit codecTriggered, due to signal connection in init()
-        emit q->triggered(codec);
+        Q_EMIT q->triggered(codec);
 #else
-        emit q->codecTriggered(codec);
+        Q_EMIT q->codecTriggered(codec);
 #endif
     } else {
         if (!action->data().isNull()) {
             const auto encodingProberType = static_cast<KEncodingProber::ProberType>(action->data().toUInt());
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
             // will also indirectly emit encodingProberTriggered, due to signal connection in init()
-            emit q->triggered(encodingProberType);
+            Q_EMIT q->triggered(encodingProberType);
 #else
-            emit q->encodingProberTriggered(encodingProberType);
+            Q_EMIT q->encodingProberTriggered(encodingProberType);
 #endif
         }
     }

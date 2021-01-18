@@ -31,7 +31,7 @@ class TextEditUserPropertyWidget : public QWidget
     Q_PROPERTY(QString text READ text WRITE setText NOTIFY textChanged USER true)
 public:
     TextEditUserPropertyWidget(QWidget *parent = nullptr) : QWidget(parent) {}
-    void setText(const QString &text) { m_text = text; emit textChanged(m_text); }
+    void setText(const QString &text) { m_text = text; Q_EMIT textChanged(m_text); }
     QString text() const { return m_text; }
 Q_SIGNALS:
     void textChanged(const QString &text);
@@ -46,9 +46,9 @@ class TextEditNoUserPropertyWidget : public QWidget
     Q_PROPERTY(QString other READ other WRITE setOther NOTIFY otherChanged USER true)
 public:
     TextEditNoUserPropertyWidget(QWidget *parent = nullptr) : QWidget(parent) {}
-    void setText(const QString &text) { m_text = text; emit textChanged(m_text); }
+    void setText(const QString &text) { m_text = text; Q_EMIT textChanged(m_text); }
     QString text() const { return m_text; }
-    void setOther(const QString &other) { m_other = other; emit textChanged(m_other); }
+    void setOther(const QString &other) { m_other = other; Q_EMIT textChanged(m_other); }
     QString other() const { return m_other; }
 Q_SIGNALS:
     void textChanged(const QString &text);
@@ -65,9 +65,9 @@ class TextEditNoUserPropertyNoNotifyWidget : public QWidget
     Q_PROPERTY(QString other READ other WRITE setOther NOTIFY otherChanged USER true)
 public:
     TextEditNoUserPropertyNoNotifyWidget(QWidget *parent = nullptr) : QWidget(parent) {}
-    void setText(const QString &text) { m_text = text; emit textChanged(m_text); }
+    void setText(const QString &text) { m_text = text; Q_EMIT textChanged(m_text); }
     QString text() const { return m_text; }
-    void setOther(const QString &other) { m_other = other; emit textChanged(m_other); }
+    void setOther(const QString &other) { m_other = other; Q_EMIT textChanged(m_other); }
     QString other() const { return m_other; }
 Q_SIGNALS:
     void textChanged(const QString &text);

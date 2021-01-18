@@ -88,9 +88,9 @@ Q_SIGNALS:
      * @code
      * #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
      *     // will also indirectly emit codecTriggered since 5.78
-     *     emit triggered(codec);
+     *     Q_EMIT triggered(codec);
      * #else
-     *     emit codecTriggered(codec);
+     *     Q_EMIT codecTriggered(codec);
      * #endif
      * @endcode
      *
@@ -126,9 +126,9 @@ Q_SIGNALS:
      * @code
      * #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
      *     // will also indirectly emit encodingProberTriggered since 5.78
-     *     emit triggered(encodingProber);
+     *     Q_EMIT triggered(encodingProber);
      * #else
-     *     emit encodingProberTriggered(encodingProber);
+     *     Q_EMIT encodingProberTriggered(encodingProber);
      * #endif
      * @endcode
      *

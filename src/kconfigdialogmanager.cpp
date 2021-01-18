@@ -392,7 +392,7 @@ void KConfigDialogManager::updateSettings()
     }
     if (changed) {
         d->m_conf->save();
-        emit settingsChanged();
+        Q_EMIT settingsChanged();
         d->updateAllWidgetIndicators();
     }
 }
@@ -615,7 +615,7 @@ void KConfigDialogManagerPrivate::onWidgetModified()
         const auto configId = widget->objectName().mid(5);
         updateWidgetIndicator(configId, widget);
     }
-    emit q->widgetModified();
+    Q_EMIT q->widgetModified();
 }
 
 void KConfigDialogManagerPrivate::updateWidgetIndicator(const QString &configId, QWidget *widget)

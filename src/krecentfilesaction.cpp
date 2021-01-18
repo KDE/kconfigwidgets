@@ -82,7 +82,7 @@ KRecentFilesAction::~KRecentFilesAction() = default;
 void KRecentFilesActionPrivate::_k_urlSelected(QAction *action)
 {
     Q_Q(KRecentFilesAction);
-    emit q->urlSelected(m_urls[action]);
+    Q_EMIT q->urlSelected(m_urls[action]);
 }
 
 int KRecentFilesAction::maxItems() const
@@ -227,7 +227,7 @@ QList<QUrl> KRecentFilesAction::urls() const
 void KRecentFilesAction::clear()
 {
     clearEntries();
-    emit recentListCleared();
+    Q_EMIT recentListCleared();
 }
 
 void KRecentFilesAction::clearEntries()
