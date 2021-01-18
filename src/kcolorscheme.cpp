@@ -718,6 +718,7 @@ QPalette KColorScheme::createApplicationPalette(const KSharedConfigPtr &config)
         palette.setBrush(state, QPalette::AlternateBase, schemeView.background(KColorScheme::AlternateBackground));
         palette.setBrush(state, QPalette::Link, schemeView.foreground(KColorScheme::LinkText));
         palette.setBrush(state, QPalette::LinkVisited, schemeView.foreground(KColorScheme::VisitedText));
+        palette.setBrush(state, QPalette::PlaceholderText, schemeView.foreground(KColorScheme::InactiveText));
     }
 
     return palette;
