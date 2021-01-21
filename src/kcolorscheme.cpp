@@ -661,6 +661,18 @@ void KColorScheme::adjustForeground(QPalette &palette, ForegroundRole newRole, Q
 
 bool KColorScheme::isColorSetSupported(const KSharedConfigPtr &config, KColorScheme::ColorSet set)
 {
+    auto isKDEGlobalsAndHasAnyColors = config->hasGroup("KDE") && config->group("KDE").hasKey("ColorScheme");
+    auto isColorSchemeFileAndHasAnyColors = config->hasGroup("General") && config->group("General").hasKey("ColorScheme");
+
+    // if we have neither kdeglobals information or .colors file information,
+    // assume that we're working on blank config.
+    //
+    // since we have a default for every colour set, we always have a colour set
+    // in this case, so always return true
+    if (!(isKDEGlobalsAndHasAnyColors || isColorSchemeFileAndHasAnyColors)) {
+        return true;
+    }
+
     switch (set) {
         case View:
             return config->hasGroup("Colors:View");
