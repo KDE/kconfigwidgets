@@ -32,7 +32,7 @@ add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
 ecm_generate_export_header(KF5ConfigWidgets
     BASE_NAME KConfigWidgets
     GROUP_BASE_NAME KF
-    VERSION ${KF5_VERSION}
+    VERSION ${KF_VERSION}
     DEPRECATED_BASE_VERSION 0
     DEPRECATION_VERSIONS 4.0 5.0 5.23 5.32 5.38 5.39 5.64 5.78
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
@@ -145,7 +145,7 @@ if(BUILD_QCH)
         KF5ConfigWidgets_QCH
         NAME KConfigWidgets
         BASE_NAME KF5ConfigWidgets
-        VERSION ${KF5_VERSION}
+        VERSION ${KF_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
             ${KConfigWidgets_HEADERS}

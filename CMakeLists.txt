@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 
-set(KF5_VERSION "5.79.0") # handled by release scripts
-set(KF5_DEP_VERSION "5.79.0") # handled by release scripts
-project(KConfigWidgets VERSION ${KF5_VERSION})
+set(KF_VERSION "5.79.0") # handled by release scripts
+set(KF_DEP_VERSION "5.79.0") # handled by release scripts
+project(KConfigWidgets VERSION ${KF_VERSION})
 
 include(FeatureSummary)
 find_package(ECM 5.79.0  NO_MODULE)
@@ -40,15 +40,15 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KCONFIGWIDGETS
                         SOVERSION 5)
 
 if (NOT ANDROID)
-  find_package(KF5Auth ${KF5_DEP_VERSION} REQUIRED)
+  find_package(KF5Auth ${KF_DEP_VERSION} REQUIRED)
 endif()
-find_package(KF5CoreAddons ${KF5_DEP_VERSION} REQUIRED)
-find_package(KF5Codecs ${KF5_DEP_VERSION} REQUIRED)
-find_package(KF5Config ${KF5_DEP_VERSION} REQUIRED)
-find_package(KF5DocTools ${KF5_DEP_VERSION})
-find_package(KF5GuiAddons ${KF5_DEP_VERSION} REQUIRED)
-find_package(KF5I18n ${KF5_DEP_VERSION} REQUIRED)
-find_package(KF5WidgetsAddons ${KF5_DEP_VERSION} REQUIRED)
+find_package(KF5CoreAddons ${KF_DEP_VERSION} REQUIRED)
+find_package(KF5Codecs ${KF_DEP_VERSION} REQUIRED)
+find_package(KF5Config ${KF_DEP_VERSION} REQUIRED)
+find_package(KF5DocTools ${KF_DEP_VERSION})
+find_package(KF5GuiAddons ${KF_DEP_VERSION} REQUIRED)
+find_package(KF5I18n ${KF_DEP_VERSION} REQUIRED)
+find_package(KF5WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 remove_definitions(-DQT_NO_CAST_FROM_BYTEARRAY)
