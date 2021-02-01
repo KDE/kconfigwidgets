@@ -15,7 +15,6 @@
 #include <QCheckBox>
 #include <QKeyEvent>
 #include <QLabel>
-#include <QDesktopWidget>
 #include <QPushButton>
 #include <QRandomGenerator>
 #include <QScreen>

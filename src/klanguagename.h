@@ -11,8 +11,9 @@
 
 #include "kconfigwidgets_export.h"
 
+#include <QtContainerFwd>
+
 class QString;
-class QStringList;
 
 /**
  * @class KLanguageName klanguagename.h KLanguageName

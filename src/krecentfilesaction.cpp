@@ -17,6 +17,7 @@
 #include "krecentfilesaction.h"
 #include "krecentfilesaction_p.h"
 
+#include <QActionGroup>
 #include <QFile>
 #include <QDir>
 #include <QGuiApplication>

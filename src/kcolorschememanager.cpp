@@ -14,6 +14,7 @@
 #include <KLocalizedString>
 #include <KSharedConfig>
 
+#include <QActionGroup>
 #include <QApplication>
 #include <QDir>
 #include <QFileInfo>

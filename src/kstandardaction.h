@@ -10,6 +10,7 @@
 
 #include <QAction>
 #include <QList>
+#include <QtContainerFwd>
 
 #include <kconfigwidgets_export.h>
 #include <KStandardShortcut>
@@ -20,7 +21,6 @@
 #include <type_traits>
 
 class QObject;
-class QStringList;
 class QWidget;
 class QAction;
 class KToggleAction;
