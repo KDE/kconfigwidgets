@@ -97,9 +97,23 @@ public:
      * @see activateScheme
      */
     KActionMenu *createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent);
+    /**
+     * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
+     *
+     * Since 5.67 sets the icon to theme id "preferences-desktop-color", before set a null icon.
+     */
     KActionMenu *createSchemeSelectionMenu(const QString &text, const QString &selectedSchemeName, QObject *parent);
+    /**
+     * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
+     *
+     * Since 5.67 sets the icon to theme id "preferences-desktop-color" and the text to "Color Scheme", before set a null icon and an emoty string.
+     */
     KActionMenu *createSchemeSelectionMenu(const QString &selectedSchemeName, QObject *parent);
     /**
+     * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
+     *
+     * Sets the icon to theme id "preferences-desktop-color", the text to "Color Scheme" and the
+     * selectedSchemeName to an empty string.
      * @since 5.67
      */
     KActionMenu *createSchemeSelectionMenu(QObject *parent);
