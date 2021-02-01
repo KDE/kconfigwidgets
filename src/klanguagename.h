@@ -11,7 +11,7 @@
 
 #include "kconfigwidgets_export.h"
 
-#include <QtContainerFwd>
+#include <QStringList>
 
 class QString;
 

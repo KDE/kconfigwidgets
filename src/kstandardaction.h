@@ -10,7 +10,7 @@
 
 #include <QAction>
 #include <QList>
-#include <QtContainerFwd>
+#include <QStringList>
 
 #include <kconfigwidgets_export.h>
 #include <KStandardShortcut>
