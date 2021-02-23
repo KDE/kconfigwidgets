@@ -96,10 +96,10 @@ void KRecentFilesAction::setMaxItems(int maxItems)
 {
     Q_D(KRecentFilesAction);
     // set new maxItems
-    d->m_maxItems = maxItems;
+    d->m_maxItems = std::max(maxItems, 0);
 
     // remove all excess items
-    while (selectableActionGroup()->actions().count() > maxItems) {
+    while (selectableActionGroup()->actions().count() > d->m_maxItems) {
         delete removeAction(selectableActionGroup()->actions().last());
     }
 }
@@ -139,6 +139,12 @@ static QString titleWithSensibleWidth(const QString &nameValue, const QString &v
 void KRecentFilesAction::addUrl(const QUrl &_url, const QString &name)
 {
     Q_D(KRecentFilesAction);
+
+    // ensure we never add items if we want none
+    if (d->m_maxItems == 0) {
+        return;
+    }
+
     /**
      * Create a deep copy here, because if _url is the parameter from
      * urlSelected() signal, we will delete it in the removeAction() call below.
@@ -174,7 +180,8 @@ void KRecentFilesAction::addUrl(const QUrl &_url, const QString &name)
         }
     }
     // remove oldest item if already maxitems in list
-    if (d->m_maxItems && selectableActionGroup()->actions().count() == d->m_maxItems) {
+    Q_ASSERT(d->m_maxItems > 0);
+    if (selectableActionGroup()->actions().count() == d->m_maxItems) {
         // remove oldest added item
         delete removeAction(selectableActionGroup()->actions().first());
     }

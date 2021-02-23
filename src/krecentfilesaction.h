@@ -114,6 +114,8 @@ public:
      *  If this value is lesser than the number of items currently
      *  in the recent files list the last items are deleted until
      *  the number of items are equal to the new maximum.
+     *
+     *  Negative values will be normalized to 0.
      */
     void setMaxItems(int maxItems);
 
