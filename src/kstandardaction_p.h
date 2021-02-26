@@ -25,7 +25,7 @@ struct KStandardActionInfo {
     const char *psToolTip;
     const char *psIconName;
 };
-
+// clang-format off
 static const KStandardActionInfo g_rgActionInfo[] = {
     { New,           KStandardShortcut::New, "file_new", I18N_NOOP("&New"), I18N_NOOP("Create new document"), "document-new" },
     { Open,          KStandardShortcut::Open, "file_open", I18N_NOOP("&Open..."), I18N_NOOP("Open an existing document"), "document-open" },
@@ -114,6 +114,7 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { Donate,        KStandardShortcut::Donate, "help_donate", I18N_NOOP("&Donate"), nullptr, "help-donate"},
     { ActionNone,    KStandardShortcut::AccelNone, nullptr, nullptr, nullptr, nullptr }
 };
+// clang-format on
 
 inline const KStandardActionInfo *infoPtr(StandardAction id)
 {

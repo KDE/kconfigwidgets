@@ -163,6 +163,7 @@ struct DecoDefaultColors {
     int Hover[3];
 };
 
+// clang-format off
 // these numbers come from the Breeze color scheme ([breeze]/colors/Breeze.colors)
 static const SetDefaultColors defaultViewColors = {
     { 252, 252, 252 }, // Background
@@ -260,6 +261,7 @@ static const DecoDefaultColors defaultDecorationColors = {
     { 147, 206, 233 }, // Hover
 };
 //END default colors
+// clang-format off
 
 KSharedConfigPtr defaultConfig() {
     // cache the value we'll return, since usually it's going to be the same value

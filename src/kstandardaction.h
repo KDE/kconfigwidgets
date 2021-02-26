@@ -293,7 +293,7 @@ KCONFIGWIDGETS_EXPORT QList<StandardAction> actionIds();
  */
 KCONFIGWIDGETS_EXPORT KStandardShortcut::StandardShortcut shortcutForActionId(StandardAction id);
 
-
+// clang-format off
 // we have to disable the templated function for const char* as Func, since it is ambiguous otherwise
 // TODO: KF6: unify const char* version and new style by removing std::enable_if
 #ifdef K_DOXYGEN
@@ -305,6 +305,7 @@ KCONFIGWIDGETS_EXPORT KStandardShortcut::StandardShortcut shortcutForActionId(St
     inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *name(const Receiver *recvr, Func slot, QObject *parent) \
     { return create(enumValue, recvr, slot, parent); }
 #endif
+// clang-format on
 
 /**
  * Create a new document or window.

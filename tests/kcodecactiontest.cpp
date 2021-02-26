@@ -25,6 +25,7 @@ CodecActionTest::CodecActionTest(QWidget *parent)
     , m_comboCodec(new KCodecAction(QStringLiteral("Combo Codec Action"), this))
     , m_buttonCodec(new KCodecAction(QStringLiteral("Button Codec Action"), this))
 {
+    // clang-format off
     m_comboCodec->setToolBarMode(KCodecAction::ComboBoxMode);
     connect(m_comboCodec, SIGNAL(triggered(QAction*)), SLOT(actionTriggered(QAction*)));
     connect(m_comboCodec, SIGNAL(indexTriggered(int)), SLOT(indexTriggered(int)));
@@ -36,6 +37,7 @@ CodecActionTest::CodecActionTest(QWidget *parent)
     connect(m_buttonCodec, SIGNAL(indexTriggered(int)), SLOT(indexTriggered(int)));
     connect(m_buttonCodec, SIGNAL(textTriggered(QString)), SLOT(textTriggered(QString)));
     connect(m_buttonCodec, SIGNAL(codecTriggered(QTextCodec*)), SLOT(codecTriggered(QTextCodec*)));
+    // clang-format on
 
     menuBar()->addAction(m_comboCodec);
     menuBar()->addAction(m_buttonCodec);
