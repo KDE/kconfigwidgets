@@ -6,26 +6,24 @@
 */
 
 #include "kstandardaction.h"
+#include "kconfigwidgets_debug.h"
 #include "kstandardaction_p.h"
 #include "moc_kstandardaction_p.cpp"
-#include "kconfigwidgets_debug.h"
 
-
+#include <KAboutData>
+#include <KAcceleratorManager>
+#include <KLocalizedString>
 #include <QApplication>
 #include <QLayout>
 #include <QMainWindow>
 #include <QMenuBar>
-#include <KAboutData>
-#include <KLocalizedString>
-#include <KAcceleratorManager>
 
-#include <KDualAction>
 #include "kpastetextaction.h"
+#include <KDualAction>
 
 namespace KStandardAction
 {
-AutomaticAction::AutomaticAction(const QIcon &icon, const QString &text, const QList<QKeySequence> &shortcut, const char *slot,
-                                 QObject *parent)
+AutomaticAction::AutomaticAction(const QIcon &icon, const QString &text, const QList<QKeySequence> &shortcut, const char *slot, QObject *parent)
     : QAction(parent)
 {
     setText(text);
@@ -82,12 +80,12 @@ public:
         bool hasAnyMenuBar = false;
         const auto lstWidget = qApp->topLevelWidgets();
         for (QWidget *w : lstWidget) {
-            QMainWindow *mw = qobject_cast<QMainWindow*>(w);
+            QMainWindow *mw = qobject_cast<QMainWindow *>(w);
             if (mw) {
                 mw->installEventFilter(this); // this is just in case a new main window appeared
-                                                // if we were filtering it already it is almost a noop
+                                              // if we were filtering it already it is almost a noop
                 if (mw->layout() && mw->layout()->menuBar()) {
-                    QMenuBar *mb = qobject_cast<QMenuBar*>(mw->layout()->menuBar());
+                    QMenuBar *mb = qobject_cast<QMenuBar *>(mw->layout()->menuBar());
                     if (mb) {
                         hasAnyMenuBar = true;
                         if (!mb->isNativeMenuBar()) {
@@ -120,7 +118,7 @@ public:
     bool wasVisible;
 };
 
-QAction* _k_createInternal(StandardAction id, QObject *parent)
+QAction *_k_createInternal(StandardAction id, QObject *parent)
 {
     static bool stdNamesInitialized = false;
 
@@ -167,21 +165,33 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
                 appDisplayName = QCoreApplication::applicationName();
             }
             sLabel = i18n(pInfo->psLabel, appDisplayName);
-        }
-        break;
+        } break;
         default:
             sLabel = i18n(pInfo->psLabel);
         }
 
         if (QApplication::isRightToLeft()) {
             switch (id) {
-            case Prior:           iconName = QStringLiteral("go-next-view-page"); break;
-            case Next:            iconName = QStringLiteral("go-previous-view-page"); break;
-            case FirstPage:       iconName = QStringLiteral("go-last-view-page"); break;
-            case LastPage:        iconName = QStringLiteral("go-first-view-page"); break;
-            case DocumentBack:    iconName = QStringLiteral("go-next"); break;
-            case DocumentForward: iconName = QStringLiteral("go-previous"); break;
-            default: break;
+            case Prior:
+                iconName = QStringLiteral("go-next-view-page");
+                break;
+            case Next:
+                iconName = QStringLiteral("go-previous-view-page");
+                break;
+            case FirstPage:
+                iconName = QStringLiteral("go-last-view-page");
+                break;
+            case LastPage:
+                iconName = QStringLiteral("go-first-view-page");
+                break;
+            case DocumentBack:
+                iconName = QStringLiteral("go-next");
+                break;
+            case DocumentForward:
+                iconName = QStringLiteral("go-previous");
+                break;
+            default:
+                break;
             }
         }
 
@@ -198,17 +208,17 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
         case OpenRecent:
             pAction = new KRecentFilesAction(parent);
             break;
-        case ShowMenubar:
-        {
+        case ShowMenubar: {
             pAction = new KToggleAction(parent);
-            pAction->setWhatsThis(i18n("Show Menubar<p>"
-                                  "Shows the menubar again after it has been hidden</p>"));
+            pAction->setWhatsThis(
+                i18n("Show Menubar<p>"
+                     "Shows the menubar again after it has been hidden</p>"));
             pAction->setChecked(true);
 
             ShowMenubarActionFilter *mf = new ShowMenubarActionFilter(pAction);
             const auto lstWidget = qApp->topLevelWidgets();
             for (QWidget *w : lstWidget) {
-                if (qobject_cast<QMainWindow*>(w)) {
+                if (qobject_cast<QMainWindow *>(w)) {
                     w->installEventFilter(mf);
                 }
             }
@@ -221,8 +231,9 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             break;
         case ShowStatusbar:
             pAction = new KToggleAction(parent);
-            pAction->setWhatsThis(i18n("Show Statusbar<p>"
-                                  "Shows the statusbar, which is the bar at the bottom of the window used for status information.</p>"));
+            pAction->setWhatsThis(
+                i18n("Show Statusbar<p>"
+                     "Shows the statusbar, which is the bar at the bottom of the window used for status information.</p>"));
             pAction->setChecked(true);
             break;
         case FullScreen:
@@ -235,20 +246,19 @@ QAction* _k_createInternal(StandardAction id, QObject *parent)
             break;
 #endif
         // Same as default, but with the app icon
-        case AboutApp:
-        {
+        case AboutApp: {
             pAction = new QAction(parent);
             icon = qApp->windowIcon();
 #if KCOREADDONS_BUILD_DEPRECATED_SINCE(5, 2)
             // Using deprecated API for compatibility reasons, remove with KF6
             if (icon.isNull()) {
                 const KAboutData data = KAboutData::applicationData();
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
-QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
+                QT_WARNING_PUSH
+                QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
+                QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
                 if (!data.programIconName().isEmpty()) {
                     icon = QIcon::fromTheme(data.programIconName());
-QT_WARNING_POP
+                    QT_WARNING_POP
                 }
             }
 #endif
@@ -298,7 +308,7 @@ QT_WARNING_POP
     }
 
     if (pAction && parent && parent->inherits("KActionCollection")) {
-        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, pAction->objectName()), Q_ARG(QAction*, pAction));
+        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, pAction->objectName()), Q_ARG(QAction *, pAction));
     }
 
     return pAction;
@@ -306,7 +316,7 @@ QT_WARNING_POP
 
 QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObject *parent)
 {
-    QAction* pAction = _k_createInternal(id, parent);
+    QAction *pAction = _k_createInternal(id, parent);
     if (recvr && slot) {
         if (id == OpenRecent) {
             // FIXME QAction port: probably a good idea to find a cleaner way to do this
@@ -339,7 +349,7 @@ QAction *open(const QObject *recvr, const char *slot, QObject *parent)
 
 KRecentFilesAction *openRecent(const QObject *recvr, const char *slot, QObject *parent)
 {
-    return (KRecentFilesAction *) KStandardAction::create(OpenRecent, recvr, slot, parent);
+    return (KRecentFilesAction *)KStandardAction::create(OpenRecent, recvr, slot, parent);
 }
 
 QAction *save(const QObject *recvr, const char *slot, QObject *parent)
@@ -576,12 +586,7 @@ static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const c
         return nullptr;
     }
 
-    AutomaticAction *action = new AutomaticAction(
-        QIcon::fromTheme(p->psIconName),
-        i18n(p->psLabel),
-        KStandardShortcut::shortcut(p->idAccel),
-        slot,
-        parent);
+    AutomaticAction *action = new AutomaticAction(QIcon::fromTheme(p->psIconName), i18n(p->psLabel), KStandardShortcut::shortcut(p->idAccel), slot, parent);
 
     action->setObjectName(p->psName);
     if (p->psToolTip) {
@@ -589,7 +594,7 @@ static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const c
     }
 
     if (parent && parent->inherits("KActionCollection")) {
-        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, action->objectName()), Q_ARG(QAction*, action));
+        QMetaObject::invokeMethod(parent, "addAction", Q_ARG(QString, action->objectName()), Q_ARG(QAction *, action));
     }
 
     return action;
@@ -622,14 +627,14 @@ QAction *selectAll(QObject *parent)
 
 KToggleAction *showMenubar(const QObject *recvr, const char *slot, QObject *parent)
 {
-    QAction* ret = KStandardAction::create(ShowMenubar, recvr, slot, parent);
+    QAction *ret = KStandardAction::create(ShowMenubar, recvr, slot, parent);
     Q_ASSERT(qobject_cast<KToggleAction *>(ret));
     return static_cast<KToggleAction *>(ret);
 }
 
 KToggleAction *showStatusbar(const QObject *recvr, const char *slot, QObject *parent)
 {
-    QAction* ret = KStandardAction::create(ShowStatusbar, recvr, slot, parent);
+    QAction *ret = KStandardAction::create(ShowStatusbar, recvr, slot, parent);
     Q_ASSERT(qobject_cast<KToggleAction *>(ret));
     return static_cast<KToggleAction *>(ret);
 }
@@ -637,7 +642,7 @@ KToggleAction *showStatusbar(const QObject *recvr, const char *slot, QObject *pa
 KToggleFullScreenAction *fullScreen(const QObject *recvr, const char *slot, QWidget *window, QObject *parent)
 {
     KToggleFullScreenAction *ret;
-    ret = static_cast< KToggleFullScreenAction * >(KStandardAction::create(FullScreen, recvr, slot, parent));
+    ret = static_cast<KToggleFullScreenAction *>(KStandardAction::create(FullScreen, recvr, slot, parent));
     ret->setWindow(window);
 
     return ret;
@@ -733,4 +738,3 @@ QAction *donate(const QObject *recvr, const char *slot, QObject *parent)
 }
 
 }
-

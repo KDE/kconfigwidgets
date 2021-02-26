@@ -172,7 +172,7 @@ Q_SIGNALS:
     void recentListCleared();
 
 private:
-    //Internal
+    // Internal
     void clearEntries();
     // Don't warn about the virtual overload. As the comment of the other
     // addAction() says, addAction( QAction* ) should not be used.

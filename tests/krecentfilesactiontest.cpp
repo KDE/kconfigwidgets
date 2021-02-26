@@ -10,10 +10,10 @@
 #include <QApplication>
 #include <QDebug>
 
-#include <KSharedConfig>
-#include <KConfigGroup>
 #include "krecentfilesaction.h"
 #include "kstandardaction.h"
+#include <KConfigGroup>
+#include <KSharedConfig>
 
 #include "ui_krecentfilesactiontest.h"
 
@@ -42,10 +42,10 @@ public:
     {
         return KConfigGroup(KSharedConfig::openConfig(), "RecentFilesActionTest");
     }
-
 };
 
-KRecentFilesActionTest::KRecentFilesActionTest() : d(new KRecentFilesActionTestPrivate)
+KRecentFilesActionTest::KRecentFilesActionTest()
+    : d(new KRecentFilesActionTestPrivate)
 {
     d->uiMainWindow = new Ui::MainWindow();
     d->uiMainWindow->setupUi(this);
@@ -58,18 +58,18 @@ KRecentFilesActionTest::KRecentFilesActionTest() : d(new KRecentFilesActionTestP
 
     d->uiMainWindow->menuFile->addAction(d->recentFiles);
 
-    //loadEntries();
+    // loadEntries();
 }
 
 KRecentFilesActionTest::~KRecentFilesActionTest()
 {
-    //saveEntries();
+    // saveEntries();
 
     delete d->uiMainWindow;
     delete d;
 }
 
-void KRecentFilesActionTest::urlSelected(const QUrl& url)
+void KRecentFilesActionTest::urlSelected(const QUrl &url)
 {
     qDebug() << "urlSelected" << url;
     d->notifyOutputAvailable();

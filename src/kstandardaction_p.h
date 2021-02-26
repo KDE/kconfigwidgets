@@ -16,7 +16,6 @@
 
 namespace KStandardAction
 {
-
 struct KStandardActionInfo {
     StandardAction id;
     KStandardShortcut::StandardShortcut idAccel;
@@ -134,7 +133,7 @@ static inline QStringList internal_stdNames()
     for (uint i = 0; g_rgActionInfo[i].id != ActionNone; i++)
         if (g_rgActionInfo[i].psLabel) {
             if (QByteArray(g_rgActionInfo[i].psLabel).contains("%1"))
-                // Prevents i18n from complaining about unsubstituted placeholder.
+            // Prevents i18n from complaining about unsubstituted placeholder.
             {
                 result.append(i18n(g_rgActionInfo[i].psLabel, QString()));
             } else {
@@ -150,8 +149,7 @@ class AutomaticAction : public QAction
     Q_OBJECT
 
 public:
-    AutomaticAction(const QIcon &icon, const QString &text, const QList<QKeySequence> &shortcut, const char *slot,
-                    QObject *parent);
+    AutomaticAction(const QIcon &icon, const QString &text, const QList<QKeySequence> &shortcut, const char *slot, QObject *parent);
 public Q_SLOTS:
     inline void cut()
     {
@@ -180,7 +178,6 @@ public Q_SLOTS:
             QMetaObject::invokeMethod(qApp->focusWidget(), slot);
         }
     }
-
 };
 
 }

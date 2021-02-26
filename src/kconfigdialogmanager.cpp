@@ -16,11 +16,11 @@
 #include <QComboBox>
 #include <QGroupBox>
 #include <QLabel>
+#include <QLayout>
 #include <QMetaObject>
 #include <QMetaProperty>
-#include <QTimer>
 #include <QRadioButton>
-#include <QLayout>
+#include <QTimer>
 
 #include <KConfigSkeleton>
 
@@ -29,7 +29,8 @@ Q_GLOBAL_STATIC(MyHash, s_propertyMap)
 Q_GLOBAL_STATIC(MyHash, s_changedMap)
 
 KConfigDialogManager::KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf)
-    : QObject(parent), d(new KConfigDialogManagerPrivate(this))
+    : QObject(parent)
+    , d(new KConfigDialogManagerPrivate(this))
 {
     d->m_conf = conf;
     d->m_dialog = parent;
@@ -37,7 +38,8 @@ KConfigDialogManager::KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton 
 }
 
 KConfigDialogManager::KConfigDialogManager(QWidget *parent, KConfigSkeleton *conf)
-    : QObject(parent), d(new KConfigDialogManagerPrivate(this))
+    : QObject(parent)
+    , d(new KConfigDialogManagerPrivate(this))
 {
     d->m_conf = conf;
     d->m_dialog = parent;
@@ -80,7 +82,7 @@ void KConfigDialogManager::initMaps()
         s_changedMap()->insert(QStringLiteral("KComboBox"), SIGNAL(activated(int)));
         s_changedMap()->insert(QStringLiteral("KFontComboBox"), SIGNAL(activated(int)));
         s_changedMap()->insert(QStringLiteral("KFontRequester"), SIGNAL(fontSelected(QFont)));
-        s_changedMap()->insert(QStringLiteral("KFontChooser"),  SIGNAL(fontSelected(QFont)));
+        s_changedMap()->insert(QStringLiteral("KFontChooser"), SIGNAL(fontSelected(QFont)));
         s_changedMap()->insert(QStringLiteral("KColorCombo"), SIGNAL(activated(QColor)));
         s_changedMap()->insert(QStringLiteral("KColorButton"), SIGNAL(changed(QColor)));
         s_changedMap()->insert(QStringLiteral("KDatePicker"), SIGNAL(dateSelected(QDate)));
@@ -91,9 +93,9 @@ void KConfigDialogManager::initMaps()
         s_changedMap()->insert(QStringLiteral("KLineEdit"), SIGNAL(textChanged(QString)));
         s_changedMap()->insert(QStringLiteral("KRestrictedLine"), SIGNAL(textChanged(QString)));
         s_changedMap()->insert(QStringLiteral("KTextEdit"), SIGNAL(textChanged()));
-        s_changedMap()->insert(QStringLiteral("KUrlRequester"),  SIGNAL(textChanged(QString)));
-        s_changedMap()->insert(QStringLiteral("KUrlComboRequester"),  SIGNAL(textChanged(QString)));
-        s_changedMap()->insert(QStringLiteral("KUrlComboBox"),  SIGNAL(urlActivated(QUrl)));
+        s_changedMap()->insert(QStringLiteral("KUrlRequester"), SIGNAL(textChanged(QString)));
+        s_changedMap()->insert(QStringLiteral("KUrlComboRequester"), SIGNAL(textChanged(QString)));
+        s_changedMap()->insert(QStringLiteral("KUrlComboBox"), SIGNAL(urlActivated(QUrl)));
         s_changedMap()->insert(QStringLiteral("KButtonGroup"), SIGNAL(changed(int)));
     }
 }
@@ -118,12 +120,12 @@ void KConfigDialogManager::init(bool trackChanges)
     d->trackChanges = trackChanges;
 
     // Go through all of the children of the widgets and find all known widgets
-    (void) parseChildren(d->m_dialog, trackChanges);
+    (void)parseChildren(d->m_dialog, trackChanges);
 }
 
 void KConfigDialogManager::addWidget(QWidget *widget)
 {
-    (void) parseChildren(widget, true);
+    (void)parseChildren(widget, true);
 }
 
 void KConfigDialogManager::setupWidget(QWidget *widget, KConfigSkeletonItem *item)
@@ -200,11 +202,11 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
     }
 
     const QMetaMethod onWidgetModifiedSlot = metaObject()->method(metaObject()->indexOfSlot("onWidgetModified()"));
-    Q_ASSERT(onWidgetModifiedSlot.isValid() && metaObject()->indexOfSlot("onWidgetModified()")>=0);
+    Q_ASSERT(onWidgetModifiedSlot.isValid() && metaObject()->indexOfSlot("onWidgetModified()") >= 0);
 
     for (QObject *object : listOfChildren) {
         if (!object->isWidgetType()) {
-            continue;    // Skip non-widgets
+            continue; // Skip non-widgets
         }
 
         QWidget *childWidget = static_cast<QWidget *>(object);
@@ -228,8 +230,9 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                     if (d->allExclusiveGroupBoxes.contains(childWidget)) {
                         const QList<QAbstractButton *> buttons = childWidget->findChildren<QAbstractButton *>();
                         for (QAbstractButton *button : buttons) {
-                            connect(button, &QAbstractButton::toggled,
-                                    this, [this] { d->onWidgetModified(); });
+                            connect(button, &QAbstractButton::toggled, this, [this] {
+                                d->onWidgetModified();
+                            });
                         }
                     }
 
@@ -256,19 +259,18 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                                 }
                             }
                         } else {
-                            qCWarning(KCONFIG_WIDGETS_LOG) << "Don't know how to monitor widget '" << childWidget->metaObject()->className() << "' for changes!";
+                            qCWarning(KCONFIG_WIDGETS_LOG)
+                                << "Don't know how to monitor widget '" << childWidget->metaObject()->className() << "' for changes!";
                         }
                     } else {
-                        connect(childWidget, propertyChangeSignal,
-                                this, SLOT(onWidgetModified()));
+                        connect(childWidget, propertyChangeSignal, this, SLOT(onWidgetModified()));
                         changeSignalFound = true;
                     }
 
                     if (changeSignalFound) {
                         QComboBox *cb = qobject_cast<QComboBox *>(childWidget);
                         if (cb && cb->isEditable())
-                            connect(cb, &QComboBox::editTextChanged,
-                                    this, &KConfigDialogManager::widgetModified);
+                            connect(cb, &QComboBox::editTextChanged, this, &KConfigDialogManager::widgetModified);
                     }
                 }
                 QGroupBox *gb = qobject_cast<QGroupBox *>(childWidget);
@@ -292,19 +294,19 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                 d->buddyWidget.insert(configId, childWidget);
             }
         }
-//kf5: commented out to reduce debug output
-// #ifndef NDEBUG
-//     else if (!widgetName.isEmpty() && trackChanges)
-//     {
-//       QHash<QString, QByteArray>::const_iterator changedIt = s_changedMap()->constFind(childWidget->metaObject()->className());
-//       if (changedIt != s_changedMap()->constEnd())
-//       {
-//         if ((!d->insideGroupBox || !qobject_cast<QRadioButton*>(childWidget)) &&
-//             !qobject_cast<QGroupBox*>(childWidget) &&!qobject_cast<QTabWidget*>(childWidget) )
-//           qCDebug(KCONFIG_WIDGETS_LOG) << "Widget '" << widgetName << "' (" << childWidget->metaObject()->className() << ") remains unmanaged.";
-//       }
-//     }
-// #endif
+        // kf5: commented out to reduce debug output
+        // #ifndef NDEBUG
+        //     else if (!widgetName.isEmpty() && trackChanges)
+        //     {
+        //       QHash<QString, QByteArray>::const_iterator changedIt = s_changedMap()->constFind(childWidget->metaObject()->className());
+        //       if (changedIt != s_changedMap()->constEnd())
+        //       {
+        //         if ((!d->insideGroupBox || !qobject_cast<QRadioButton*>(childWidget)) &&
+        //             !qobject_cast<QGroupBox*>(childWidget) &&!qobject_cast<QTabWidget*>(childWidget) )
+        //           qCDebug(KCONFIG_WIDGETS_LOG) << "Widget '" << widgetName << "' (" << childWidget->metaObject()->className() << ") remains unmanaged.";
+        //       }
+        //     }
+        // #endif
 
         if (bParseChildren) {
             // this widget is not known as something we can store.
@@ -336,7 +338,7 @@ void KConfigDialogManager::updateWidgets()
 
         if (!item->isEqual(property(widget))) {
             setProperty(widget, item->property());
-//        qCDebug(KCONFIG_WIDGETS_LOG) << "The setting '" << it.key() << "' [" << widget->className() << "] has changed";
+            //        qCDebug(KCONFIG_WIDGETS_LOG) << "The setting '" << it.key() << "' [" << widget->className() << "] has changed";
             changed = true;
         }
         if (item->isImmutable()) {
@@ -404,10 +406,10 @@ QByteArray KConfigDialogManager::getUserProperty(const QWidget *widget) const
         const QMetaProperty user = metaObject->userProperty();
         if (user.isValid()) {
             s_propertyMap()->insert(widget->metaObject()->className(), user.name());
-            //qCDebug(KCONFIG_WIDGETS_LOG) << "class name: '" << widget->metaObject()->className()
+            // qCDebug(KCONFIG_WIDGETS_LOG) << "class name: '" << widget->metaObject()->className()
             //<< " 's USER property: " << metaProperty.name() << endl;
         } else {
-            return QByteArray(); //no USER property
+            return QByteArray(); // no USER property
         }
     }
     const QComboBox *cb = qobject_cast<const QComboBox *>(widget);
@@ -431,8 +433,7 @@ QByteArray KConfigDialogManager::getCustomProperty(const QWidget *widget) const
     QVariant prop(widget->property("kcfg_property"));
     if (prop.isValid()) {
         if (!prop.canConvert(QVariant::ByteArray)) {
-            qCWarning(KCONFIG_WIDGETS_LOG) << "kcfg_property on" << widget->metaObject()->className()
-                       << "is not of type ByteArray";
+            qCWarning(KCONFIG_WIDGETS_LOG) << "kcfg_property on" << widget->metaObject()->className() << "is not of type ByteArray";
         } else {
             return prop.toByteArray();
         }
@@ -462,8 +463,7 @@ QByteArray KConfigDialogManager::getCustomPropertyChangedSignal(const QWidget *w
     QVariant prop(widget->property("kcfg_propertyNotify"));
     if (prop.isValid()) {
         if (!prop.canConvert(QVariant::ByteArray)) {
-            qCWarning(KCONFIG_WIDGETS_LOG) << "kcfg_propertyNotify on" << widget->metaObject()->className()
-                       << "is not of type ByteArray";
+            qCWarning(KCONFIG_WIDGETS_LOG) << "kcfg_propertyNotify on" << widget->metaObject()->className() << "is not of type ByteArray";
         } else {
             return prop.toByteArray();
         }
@@ -602,13 +602,13 @@ void KConfigDialogManagerPrivate::setDefaultsIndicatorsVisible(bool enabled)
 
 void KConfigDialogManagerPrivate::onWidgetModified()
 {
-    const auto widget = qobject_cast<QWidget*>(q->sender());
+    const auto widget = qobject_cast<QWidget *>(q->sender());
     Q_ASSERT(widget);
 
     if (!widget->objectName().startsWith("kcfg_")) {
         Q_ASSERT(widget->parent()->objectName().startsWith("kcfg_"));
         const auto configId = widget->parent()->objectName().mid(5);
-        const auto parent = qobject_cast<QWidget*>(widget->parent());
+        const auto parent = qobject_cast<QWidget *>(widget->parent());
         Q_ASSERT(parent);
         updateWidgetIndicator(configId, parent);
     } else {

@@ -10,10 +10,11 @@
 
 #include <QApplication>
 
-KColorUtilsDemo::KColorUtilsDemo(QWidget *parent) : QWidget(parent),
-    _leOutImg(128, 128, QImage::Format_RGB32),
-    _mtMixOutImg(128, 16, QImage::Format_RGB32),
-    _mtTintOutImg(128, 16, QImage::Format_RGB32)
+KColorUtilsDemo::KColorUtilsDemo(QWidget *parent)
+    : QWidget(parent)
+    , _leOutImg(128, 128, QImage::Format_RGB32)
+    , _mtMixOutImg(128, 16, QImage::Format_RGB32)
+    , _mtTintOutImg(128, 16, QImage::Format_RGB32)
 {
     _noUpdate = true;
     setupUi(this);
@@ -93,14 +94,11 @@ void setBackground(QWidget *widget, const QColor &color)
     widget->setPalette(palette);
 
     QString name = color.name();
-    name += " (" + QString::number(color.red()) + ", "
-            + QString::number(color.green()) + ", "
-            + QString::number(color.blue()) + QLatin1Char(')');
+    name += " (" + QString::number(color.red()) + ", " + QString::number(color.green()) + ", " + QString::number(color.blue()) + QLatin1Char(')');
     widget->setToolTip(name);
 }
 
-#define SET_SHADE(_n, _c, _cn, _ch) \
-    setBackground(ss##_n, KColorScheme::shade(_c, KColorScheme::_n##Shade, _cn, _ch));
+#define SET_SHADE(_n, _c, _cn, _ch) setBackground(ss##_n, KColorScheme::shade(_c, KColorScheme::_n##Shade, _cn, _ch));
 
 void KColorUtilsDemo::shadeChanged()
 {
@@ -110,11 +108,11 @@ void KColorUtilsDemo::shadeChanged()
     QColor base = inColor->color();
     setBackground(ssOut, base);
     setBackground(ssBase, base);
-    SET_SHADE(Light,    base, cn, ch);
+    SET_SHADE(Light, base, cn, ch);
     SET_SHADE(Midlight, base, cn, ch);
-    SET_SHADE(Mid,      base, cn, ch);
-    SET_SHADE(Dark,     base, cn, ch);
-    SET_SHADE(Shadow,   base, cn, ch);
+    SET_SHADE(Mid, base, cn, ch);
+    SET_SHADE(Dark, base, cn, ch);
+    SET_SHADE(Shadow, base, cn, ch);
 }
 
 void updateSwatch(KColorButton *s, const QSpinBox *r, const QSpinBox *g, const QSpinBox *b)
@@ -189,4 +187,3 @@ int main(int argc, char *argv[])
     d->show();
     return app.exec();
 }
-

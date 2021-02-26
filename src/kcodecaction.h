@@ -10,8 +10,8 @@
 
 #include <KEncodingProber>
 #include <KSelectAction>
-#include <memory>
 #include <kconfigwidgets_export.h>
+#include <memory>
 
 /**
  *  @class KCodecAction kcodecaction.h KCodecAction
@@ -20,8 +20,7 @@
  *
  *  This action shows up a submenu with a list of the available codecs on the system.
  */
-class KCONFIGWIDGETS_EXPORT KCodecAction
-    : public KSelectAction
+class KCONFIGWIDGETS_EXPORT KCodecAction : public KSelectAction
 {
     Q_OBJECT
 

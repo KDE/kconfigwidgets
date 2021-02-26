@@ -11,8 +11,8 @@
 
 #include <kconfigwidgets_export.h>
 
-#include <QObject>
 #include <QHash>
+#include <QObject>
 #include <memory>
 
 class KConfigDialogManagerPrivate;
@@ -108,7 +108,7 @@ class QWidget;
  * by a property with the key "kcfg_propertyNotify" and as the value the signal signature.
  * This will take priority over the signal noted by NOTIFY for the chosen property
  * as well as the content of KConfigDialogManager::changedMap(). Since 5.32.
- * 
+ *
  * Example:
  *
  * If for a class OtherColorEditWidget there was no NOTIFY set on the USER property,
@@ -176,7 +176,7 @@ class QWidget;
  * be ignored and the signal taken from KConfigDialogManager::changedMap(), while
  * for newer versions it is taken from that property, which then overrides the latter.
  * But as it is the same signal, nothing will break.
- * 
+ *
  * Again, using KConfigDialogManager::changedMap could be made to depend on the version,
  * so for newer versions any global conflicts are avoided:
  * \code
@@ -198,7 +198,6 @@ class QWidget;
  */
 class KCONFIGWIDGETS_EXPORT KConfigDialogManager : public QObject
 {
-
     Q_OBJECT
 
 Q_SIGNALS:
@@ -228,7 +227,6 @@ Q_SIGNALS:
     void widgetModified();
 
 public:
-
     /**
      * Constructor.
      * @param parent  Dialog widget to manage
@@ -320,7 +318,6 @@ public Q_SLOTS:
     void setDefaultsIndicatorsVisible(bool enabled);
 
 protected:
-
     /**
      * @param trackChanges - If any changes by the widgets should be tracked
      * set true.  This causes the emitting the modified() signal when
@@ -390,7 +387,6 @@ protected:
     static void initMaps();
 
 private:
-
     /**
      * KConfigDialogManager KConfigDialogManagerPrivate class.
      */
@@ -402,4 +398,3 @@ private:
 };
 
 #endif // KCONFIGDIALOGMANAGER_H
-

@@ -12,7 +12,6 @@ static const char scrollStateVerticalKey[] = "VerticalScroll";
 KConfigViewStateSaver::KConfigViewStateSaver(QObject *parent)
     : KViewStateSerializer(parent)
 {
-
 }
 
 void KConfigViewStateSaver::restoreState(const KConfigGroup &configGroup)

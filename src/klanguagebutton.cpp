@@ -8,12 +8,12 @@
 #include "klanguagebutton.h"
 #include "kconfigwidgets_debug.h"
 
-#include <QMenu>
-#include <QPushButton>
 #include <QDir>
 #include <QFile>
-#include <QLocale>
 #include <QHBoxLayout>
+#include <QLocale>
+#include <QMenu>
+#include <QPushButton>
 
 #include <KConfig>
 #include <KConfigGroup>
@@ -30,7 +30,7 @@ static void checkInsertPos(QMenu *popup, const QString &str, int &index)
 
     while (a < b) {
         int w = (a + b) / 2;
-        QAction *ac = actions[ w ];
+        QAction *ac = actions[w];
         int j = str.localeAwareCompare(ac->text());
         if (j > 0) {
             a = w + 1;
@@ -67,24 +67,24 @@ public:
 };
 
 KLanguageButton::KLanguageButton(QWidget *parent)
-    : QWidget(parent),
-      d(new KLanguageButtonPrivate(this))
+    : QWidget(parent)
+    , d(new KLanguageButtonPrivate(this))
 {
 }
 
 KLanguageButton::KLanguageButton(const QString &text, QWidget *parent)
-    : QWidget(parent),
-      d(new KLanguageButtonPrivate(this))
+    : QWidget(parent)
+    , d(new KLanguageButtonPrivate(this))
 {
     setText(text);
 }
 
 KLanguageButtonPrivate::KLanguageButtonPrivate(KLanguageButton *parent)
-    : button(new QPushButton(parent)),
-      popup(new QMenu(parent)),
-      locale(QLocale::system().name()),
-      staticText(false),
-      showCodes(false)
+    : button(new QPushButton(parent))
+    , popup(new QMenu(parent))
+    , locale(QLocale::system().name())
+    , staticText(false)
+    , showCodes(false)
 {
     QHBoxLayout *layout = new QHBoxLayout(parent);
     layout->setContentsMargins(0, 0, 0, 0);
@@ -129,7 +129,8 @@ void KLanguageButton::insertLanguage(const QString &languageCode, const QString 
     QString text;
     bool showCodes = d->showCodes;
     if (name.isEmpty()) {
-        const QString entryFile = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QLatin1String("locale/") + languageCode + QLatin1String("/kf5_entry.desktop"));
+        const QString entryFile =
+            QStandardPaths::locate(QStandardPaths::GenericDataLocation, QLatin1String("locale/") + languageCode + QLatin1String("/kf5_entry.desktop"));
         if (QFile::exists(entryFile)) {
             text = nameFromEntryFile(entryFile);
         }
@@ -199,7 +200,7 @@ void KLanguageButton::loadAllLanguages()
 
 void KLanguageButton::slotTriggered(QAction *a)
 {
-    //qCDebug(KCONFIG_WIDGETS_LOG) << "slotTriggered" << index;
+    // qCDebug(KCONFIG_WIDGETS_LOG) << "slotTriggered" << index;
     if (!a) {
         return;
     }
@@ -212,7 +213,7 @@ void KLanguageButton::slotTriggered(QAction *a)
 
 void KLanguageButton::slotHovered(QAction *a)
 {
-    //qCDebug(KCONFIG_WIDGETS_LOG) << "slotHovered" << index;
+    // qCDebug(KCONFIG_WIDGETS_LOG) << "slotHovered" << index;
 
     Q_EMIT highlighted(a->data().toString());
 }

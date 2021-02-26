@@ -84,7 +84,6 @@ class KCONFIGWIDGETS_EXPORT KCModule : public QWidget
     Q_OBJECT
 
 public:
-
     /**
      * An enumeration type for the buttons used by this module.
      * You should only use Help, Default and Apply. The rest is obsolete.
@@ -418,7 +417,6 @@ protected Q_SLOTS:
      */
     void markAsChanged();
 
-
     /**
      * A managed widget was changed, the widget settings and the current
      * settings are compared and a corresponding changed() signal is emitted
@@ -433,7 +431,6 @@ protected Q_SLOTS:
 #endif
 
 protected:
-
     /**
      * Sets the buttons to display.
      *
@@ -502,5 +499,4 @@ private:
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(KCModule::Buttons)
 
-#endif //KCMODULE_H
-
+#endif // KCMODULE_H

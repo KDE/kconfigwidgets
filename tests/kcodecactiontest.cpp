@@ -2,8 +2,8 @@
 
 #include <QApplication>
 #include <QMenuBar>
-#include <QToolBar>
 #include <QTextCodec>
+#include <QToolBar>
 
 #include <QDebug>
 
@@ -71,4 +71,3 @@ void CodecActionTest::slotActionTriggered(bool state)
 {
     qDebug() << sender() << " state " << state;
 }
-

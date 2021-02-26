@@ -9,16 +9,16 @@
 
 #include "kconfigdialog.h"
 
-#include <kconfigdialogmanager.h>
 #include <KCoreConfigSkeleton>
 #include <KLocalizedString>
 #include <KPageWidgetModel>
+#include <kconfigdialogmanager.h>
 #include <khelpclient.h>
 
 #include <QDialogButtonBox>
 #include <QIcon>
-#include <QPushButton>
 #include <QMap>
+#include <QPushButton>
 #include <QScrollArea>
 #include <QScrollBar>
 #include <QVBoxLayout>
@@ -42,28 +42,21 @@ public:
         }
 
         QDialogButtonBox *buttonBox = q->buttonBox();
-        buttonBox->setStandardButtons(QDialogButtonBox::RestoreDefaults
-                                      | QDialogButtonBox::Ok
-                                      | QDialogButtonBox::Apply
-                                      | QDialogButtonBox::Cancel
+        buttonBox->setStandardButtons(QDialogButtonBox::RestoreDefaults | QDialogButtonBox::Ok | QDialogButtonBox::Apply | QDialogButtonBox::Cancel
                                       | QDialogButtonBox::Help);
-        QObject::connect(buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked,
-                         q, &KConfigDialog::updateSettings);
-        QObject::connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked,
-                         q, &KConfigDialog::updateSettings);
-        QObject::connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked,
-                         q, [this]() { _k_updateButtons(); });
-        QObject::connect(buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked,
-                         q, &KConfigDialog::updateWidgets);
-        QObject::connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked,
-                         q, &KConfigDialog::updateWidgetsDefault);
-        QObject::connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked,
-                         q, [this]() { _k_updateButtons(); });
-        QObject::connect(buttonBox->button(QDialogButtonBox::Help), &QAbstractButton::clicked,
-                         q, &KConfigDialog::showHelp);
+        QObject::connect(buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked, q, &KConfigDialog::updateSettings);
+        QObject::connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked, q, &KConfigDialog::updateSettings);
+        QObject::connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked, q, [this]() {
+            _k_updateButtons();
+        });
+        QObject::connect(buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked, q, &KConfigDialog::updateWidgets);
+        QObject::connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked, q, &KConfigDialog::updateWidgetsDefault);
+        QObject::connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked, q, [this]() {
+            _k_updateButtons();
+        });
+        QObject::connect(buttonBox->button(QDialogButtonBox::Help), &QAbstractButton::clicked, q, &KConfigDialog::showHelp);
 
-        QObject::connect(q, &KPageDialog::pageRemoved,
-                         q, &KConfigDialog::onPageRemoved);
+        QObject::connect(q, &KPageDialog::pageRemoved, q, &KConfigDialog::onPageRemoved);
 
         manager = new KConfigDialogManager(q, config);
         setupManagerConnections(manager);
@@ -71,8 +64,7 @@ public:
         setApplyButtonEnabled(false);
     }
 
-    KPageWidgetItem *addPageInternal(QWidget *page, const QString &itemName,
-                                     const QString &pixmapName, const QString &header);
+    KPageWidgetItem *addPageInternal(QWidget *page, const QString &itemName, const QString &pixmapName, const QString &header);
 
     void setupManagerConnections(KConfigDialogManager *manager);
     void setApplyButtonEnabled(bool enabled);
@@ -81,7 +73,7 @@ public:
     void _k_updateButtons();
     void _k_settingsChangedSlot();
 
-    KConfigDialog * const q;
+    KConfigDialog *const q;
     QString mAnchor;
     QString mHelpApp;
     bool shown = false;
@@ -89,17 +81,16 @@ public:
     QMap<QWidget *, KConfigDialogManager *> managerForPage;
 
     /**
-      * The list of existing dialogs.
+     * The list of existing dialogs.
      */
     static QHash<QString, KConfigDialog *> openDialogs;
 };
 
 QHash<QString, KConfigDialog *> KConfigDialogPrivate::openDialogs;
 
-KConfigDialog::KConfigDialog(QWidget *parent, const QString &name,
-                             KCoreConfigSkeleton *config) :
-    KPageDialog(parent),
-    d(new KConfigDialogPrivate(this, name, config))
+KConfigDialog::KConfigDialog(QWidget *parent, const QString &name, KCoreConfigSkeleton *config)
+    : KPageDialog(parent)
+    , d(new KConfigDialogPrivate(this, name, config))
 {
 }
 
@@ -108,11 +99,7 @@ KConfigDialog::~KConfigDialog()
     KConfigDialogPrivate::openDialogs.remove(objectName());
 }
 
-KPageWidgetItem *KConfigDialog::addPage(QWidget *page,
-                                        const QString &itemName,
-                                        const QString &pixmapName,
-                                        const QString &header,
-                                        bool manage)
+KPageWidgetItem *KConfigDialog::addPage(QWidget *page, const QString &itemName, const QString &pixmapName, const QString &header, bool manage)
 {
     Q_ASSERT(page);
     if (!page) {
@@ -135,11 +122,7 @@ KPageWidgetItem *KConfigDialog::addPage(QWidget *page,
     return item;
 }
 
-KPageWidgetItem *KConfigDialog::addPage(QWidget *page,
-                                        KCoreConfigSkeleton *config,
-                                        const QString &itemName,
-                                        const QString &pixmapName,
-                                        const QString &header)
+KPageWidgetItem *KConfigDialog::addPage(QWidget *page, KCoreConfigSkeleton *config, const QString &itemName, const QString &pixmapName, const QString &header)
 {
     Q_ASSERT(page);
     if (!page) {
@@ -161,10 +144,7 @@ KPageWidgetItem *KConfigDialog::addPage(QWidget *page,
     return item;
 }
 
-KPageWidgetItem *KConfigDialogPrivate::addPageInternal(QWidget *page,
-        const QString &itemName,
-        const QString &pixmapName,
-        const QString &header)
+KPageWidgetItem *KConfigDialogPrivate::addPageInternal(QWidget *page, const QString &itemName, const QString &pixmapName, const QString &header)
 {
     QWidget *frame = new QWidget(q);
     QVBoxLayout *boxLayout = new QVBoxLayout(frame);
@@ -177,7 +157,7 @@ KPageWidgetItem *KConfigDialogPrivate::addPageInternal(QWidget *page,
     scroll->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     scroll->setWidget(page);
     scroll->setWidgetResizable(true);
-    scroll->setSizePolicy( QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding );
+    scroll->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
 
     if (page->minimumSizeHint().height() > scroll->sizeHint().height() - 2) {
         if (page->sizeHint().width() < scroll->sizeHint().width() + 2) {
@@ -206,14 +186,10 @@ void KConfigDialogPrivate::setupManagerConnections(KConfigDialogManager *manager
     q->connect(manager, SIGNAL(widgetModified()), q, SLOT(_k_updateButtons()));
 
     QDialogButtonBox *buttonBox = q->buttonBox();
-    q->connect(buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked,
-               manager, &KConfigDialogManager::updateSettings);
-    q->connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked,
-               manager, &KConfigDialogManager::updateSettings);
-    q->connect(buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked,
-               manager, &KConfigDialogManager::updateWidgets);
-    q->connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked,
-               manager, &KConfigDialogManager::updateWidgetsDefault);
+    q->connect(buttonBox->button(QDialogButtonBox::Ok), &QAbstractButton::clicked, manager, &KConfigDialogManager::updateSettings);
+    q->connect(buttonBox->button(QDialogButtonBox::Apply), &QAbstractButton::clicked, manager, &KConfigDialogManager::updateSettings);
+    q->connect(buttonBox->button(QDialogButtonBox::Cancel), &QAbstractButton::clicked, manager, &KConfigDialogManager::updateWidgets);
+    q->connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QAbstractButton::clicked, manager, &KConfigDialogManager::updateWidgetsDefault);
 }
 
 void KConfigDialogPrivate::setApplyButtonEnabled(bool enabled)
@@ -277,18 +253,14 @@ void KConfigDialogPrivate::_k_updateButtons()
     QMap<QWidget *, KConfigDialogManager *>::iterator it;
 
     bool has_changed = manager->hasChanged() || q->hasChanged();
-    for (it = managerForPage.begin();
-            it != managerForPage.end() && !has_changed;
-            ++it) {
+    for (it = managerForPage.begin(); it != managerForPage.end() && !has_changed; ++it) {
         has_changed |= (*it)->hasChanged();
     }
 
     setApplyButtonEnabled(has_changed);
 
     bool is_default = manager->isDefault() && q->isDefault();
-    for (it = managerForPage.begin();
-            it != managerForPage.end() && is_default;
-            ++it) {
+    for (it = managerForPage.begin(); it != managerForPage.end() && is_default; ++it) {
         is_default &= (*it)->isDefault();
     }
 
@@ -317,18 +289,14 @@ void KConfigDialog::showEvent(QShowEvent *e)
         }
 
         bool has_changed = d->manager->hasChanged() || hasChanged();
-        for (it = d->managerForPage.begin();
-                it != d->managerForPage.end() && !has_changed;
-                ++it) {
+        for (it = d->managerForPage.begin(); it != d->managerForPage.end() && !has_changed; ++it) {
             has_changed |= (*it)->hasChanged();
         }
 
         d->setApplyButtonEnabled(has_changed);
 
         bool is_default = d->manager->isDefault() && isDefault();
-        for (it = d->managerForPage.begin();
-                it != d->managerForPage.end() && is_default;
-                ++it) {
+        for (it = d->managerForPage.begin(); it != d->managerForPage.end() && is_default; ++it) {
             is_default &= (*it)->isDefault();
         }
 
@@ -373,7 +341,7 @@ void KConfigDialog::settingsChangedSlot()
 
 void KConfigDialog::setHelp(const QString &anchor, const QString &appname)
 {
-    d->mAnchor  = anchor;
+    d->mAnchor = anchor;
     d->mHelpApp = appname;
 }
 

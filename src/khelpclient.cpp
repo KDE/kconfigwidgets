@@ -10,9 +10,9 @@
 #include <KDesktopFile>
 
 #include <QCoreApplication>
-#include <QUrl>
-#include <QDirIterator>
 #include <QDesktopServices>
+#include <QDirIterator>
+#include <QUrl>
 
 void KHelpClient::invokeHelp(const QString &anchor, const QString &_appname)
 {
@@ -26,8 +26,8 @@ void KHelpClient::invokeHelp(const QString &anchor, const QString &_appname)
     // Look for the .desktop file of the application
 
     // was:
-    //KService::Ptr service(KService::serviceByDesktopName(appname));
-    //if (service)
+    // KService::Ptr service(KService::serviceByDesktopName(appname));
+    // if (service)
     //    docPath = service->docPath();
     // but we don't want to depend on KService here.
 
@@ -63,4 +63,3 @@ void KHelpClient::invokeHelp(const QString &anchor, const QString &_appname)
     // launch khelpcenter, or a browser for URIs not handled by khelpcenter
     QDesktopServices::openUrl(url);
 }
-

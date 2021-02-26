@@ -13,8 +13,8 @@
 #include <KLocalizedString>
 
 #include <QMenu>
-#include <QVariant>
 #include <QTextCodec>
+#include <QVariant>
 
 // According to http://www.iana.org/assignments/ianacharset-mib
 // the default/unknown mib value is 2.
@@ -32,7 +32,7 @@ public:
 
     void _k_subActionTriggered(QAction *);
 
-    KCodecAction * const q;
+    KCodecAction *const q;
     QAction *defaultAction = nullptr;
     QAction *currentSubAction = nullptr;
 };
@@ -78,7 +78,7 @@ void KCodecActionPrivate::init(bool showAutoOptions)
         for (int i = 1; i < encodingsForScript.size(); ++i) {
             tmp->addAction(encodingsForScript.at(i));
         }
-        q->connect(tmp, SIGNAL(triggered(QAction*)), q, SLOT(_k_subActionTriggered(QAction*)));
+        q->connect(tmp, SIGNAL(triggered(QAction *)), q, SLOT(_k_subActionTriggered(QAction *)));
         tmp->setCheckable(true);
         q->addAction(tmp);
     }
@@ -86,10 +86,8 @@ void KCodecActionPrivate::init(bool showAutoOptions)
 
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
     // forward deprecated signals to undeprecated, to be backward-compatible to unported subclasses
-    QObject::connect(q, QOverload<QTextCodec *>::of(&KCodecAction::triggered),
-                     q, &KCodecAction::codecTriggered);
-    QObject::connect(q, QOverload<KEncodingProber::ProberType>::of(&KCodecAction::triggered),
-                     q, &KCodecAction::encodingProberTriggered);
+    QObject::connect(q, QOverload<QTextCodec *>::of(&KCodecAction::triggered), q, &KCodecAction::codecTriggered);
+    QObject::connect(q, QOverload<KEncodingProber::ProberType>::of(&KCodecAction::triggered), q, &KCodecAction::encodingProberTriggered);
 #endif
 }
 
@@ -123,7 +121,7 @@ int KCodecAction::mibForName(const QString &codecName, bool *ok) const
         return mib;
     }
 
-    qCWarning(KCONFIG_WIDGETS_LOG) << "Invalid codec name: "  << codecName;
+    qCWarning(KCONFIG_WIDGETS_LOG) << "Invalid codec name: " << codecName;
     return MIB_DEFAULT;
 }
 
@@ -139,8 +137,8 @@ QTextCodec *KCodecAction::codecForMib(int mib) const
 
 void KCodecAction::actionTriggered(QAction *action)
 {
-//we don't want to emit any signals from top-level items
-//except for the default one
+    // we don't want to emit any signals from top-level items
+    // except for the default one
     if (action == d->defaultAction) {
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
         Q_EMIT triggered(KEncodingProber::Universal);
@@ -161,12 +159,12 @@ void KCodecActionPrivate::_k_subActionTriggered(QAction *action)
     int mib = q->mibForName(action->text(), &ok);
     if (ok) {
 #if KWIDGETSADDONS_BUILD_DEPRECATED_SINCE(5, 78)
-QT_WARNING_PUSH
-QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
-QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
+        QT_WARNING_PUSH
+        QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
+        QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
         // will also indirectly emit textTriggered, due to signal connection in KSelectAction
         Q_EMIT q->triggered(action->text());
-QT_WARNING_POP
+        QT_WARNING_POP
 #else
         Q_EMIT q->textTriggered(action->text());
 #endif
@@ -216,7 +214,6 @@ bool KCodecAction::setCurrentCodec(QTextCodec *codec)
         }
     }
     return false;
-
 }
 
 QString KCodecAction::currentCodecName() const
@@ -245,9 +242,7 @@ bool KCodecAction::setCurrentCodec(int mib)
 
 KEncodingProber::ProberType KCodecAction::currentProberType() const
 {
-    return d->currentSubAction->data().isNull() ?
-           KEncodingProber::None            :
-           (KEncodingProber::ProberType)d->currentSubAction->data().toUInt();
+    return d->currentSubAction->data().isNull() ? KEncodingProber::None : (KEncodingProber::ProberType)d->currentSubAction->data().toUInt();
 }
 
 bool KCodecAction::setCurrentProberType(KEncodingProber::ProberType scri)
@@ -260,10 +255,8 @@ bool KCodecAction::setCurrentProberType(KEncodingProber::ProberType scri)
 
     for (int i = 0; i < actions().size(); ++i) {
         if (actions().at(i)->menu()) {
-            if (!actions().at(i)->menu()->actions().isEmpty()
-                    && !actions().at(i)->menu()->actions().at(0)->data().isNull()
-                    && actions().at(i)->menu()->actions().at(0)->data().toUInt() == (uint)scri
-               ) {
+            if (!actions().at(i)->menu()->actions().isEmpty() && !actions().at(i)->menu()->actions().at(0)->data().isNull()
+                && actions().at(i)->menu()->actions().at(0)->data().toUInt() == (uint)scri) {
                 d->currentSubAction = actions().at(i)->menu()->actions().at(0);
                 d->currentSubAction->trigger();
                 return true;

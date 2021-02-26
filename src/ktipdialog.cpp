@@ -11,24 +11,24 @@
 #include "kconfigwidgets_debug.h"
 
 #include <QApplication>
-#include <QFile>
 #include <QCheckBox>
+#include <QFile>
+#include <QHBoxLayout>
 #include <QKeyEvent>
 #include <QLabel>
 #include <QPushButton>
 #include <QRandomGenerator>
+#include <QRegularExpression>
 #include <QScreen>
 #include <QTextBrowser>
-#include <QHBoxLayout>
-#include <QRegularExpression>
 #include <QVBoxLayout>
 
 #include <KConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
-#include <KSharedConfig>
 #include <KRandom>
 #include <KSeparator>
+#include <KSharedConfig>
 #include <KStandardGuiItem>
 
 class KTipDatabasePrivate
@@ -77,9 +77,7 @@ void KTipDatabasePrivate::addTips(const QString &tipFile)
          * To make translations work, tip extraction here must exactly
          * match what is done by the preparetips5 script.
          */
-        QString tip = content
-                      .mid(pos + 6, content.indexOf(QLatin1String("</html>"), pos, Qt::CaseInsensitive) - pos - 6)
-                      .replace(rx, QStringLiteral("\n"));
+        QString tip = content.mid(pos + 6, content.indexOf(QLatin1String("</html>"), pos, Qt::CaseInsensitive) - pos - 6).replace(rx, QStringLiteral("\n"));
 
         if (!tip.endsWith('\n')) {
             tip += '\n';
@@ -166,7 +164,7 @@ QString KTipDatabase::tip() const
         return QString();
     }
 
-    return d->tips[ d->currentTip ];
+    return d->tips[d->currentTip];
 }
 
 class KTipDialogPrivate
@@ -198,15 +196,13 @@ KTipDialog *KTipDialogPrivate::mInstance = nullptr;
 void KTipDialogPrivate::_k_prevTip()
 {
     database->prevTip();
-    tipText->setHtml(QStringLiteral("<html><body>%1</body></html>")
-                     .arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
+    tipText->setHtml(QStringLiteral("<html><body>%1</body></html>").arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
 }
 
 void KTipDialogPrivate::_k_nextTip()
 {
     database->nextTip();
-    tipText->setHtml(QStringLiteral("<html><body>%1</body></html>")
-                     .arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
+    tipText->setHtml(QStringLiteral("<html><body>%1</body></html>").arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
 }
 
 void KTipDialogPrivate::_k_showOnStart(bool on)
@@ -215,8 +211,8 @@ void KTipDialogPrivate::_k_showOnStart(bool on)
 }
 
 KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
-    : QDialog(parent),
-      d(new KTipDialogPrivate(this))
+    : QDialog(parent)
+    , d(new KTipDialogPrivate(this))
 {
     setWindowTitle(i18nc("@title:window", "Tip of the Day"));
 
@@ -276,8 +272,7 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
         QScreen *screen = QGuiApplication::screenAt(QCursor::pos());
         if (screen) {
             const QRect rect = screen->geometry();
-            move(rect.x() + (rect.width() - sh.width()) / 2,
-                    rect.y() + (rect.height() - sh.height()) / 2);
+            move(rect.x() + (rect.width() - sh.width()) / 2, rect.y() + (rect.height() - sh.height()) / 2);
         }
     }
 
@@ -309,10 +304,16 @@ KTipDialog::KTipDialog(KTipDatabase *database, QWidget *parent)
     KConfigGroup config(KSharedConfig::openConfig(), "TipOfDay");
     d->tipOnStart->setChecked(config.readEntry("RunOnStart", true));
 
-    connect(next, &QPushButton::clicked, this, [this]() { d->_k_nextTip(); });
-    connect(prev, &QPushButton::clicked, this, [this]() { d->_k_prevTip(); });
+    connect(next, &QPushButton::clicked, this, [this]() {
+        d->_k_nextTip();
+    });
+    connect(prev, &QPushButton::clicked, this, [this]() {
+        d->_k_prevTip();
+    });
     connect(ok, &QAbstractButton::clicked, this, &QDialog::accept);
-    connect(d->tipOnStart, &QCheckBox::toggled, this, [this](bool state) { d->_k_showOnStart(state); });
+    connect(d->tipOnStart, &QCheckBox::toggled, this, [this](bool state) {
+        d->_k_showOnStart(state);
+    });
 
     ok->setFocus();
 
@@ -373,8 +374,8 @@ void KTipDialog::showMultiTip(QWidget *parent, const QStringList &tipFiles, bool
     if (!KTipDialogPrivate::mInstance) {
         KTipDialogPrivate::mInstance = new KTipDialog(new KTipDatabase(tipFiles), parent);
     } else
-        // The application might have changed the RunOnStart option in its own
-        // configuration dialog, so we should update the checkbox.
+    // The application might have changed the RunOnStart option in its own
+    // configuration dialog, so we should update the checkbox.
     {
         KTipDialogPrivate::mInstance->d->tipOnStart->setChecked(runOnStart);
     }
@@ -391,9 +392,8 @@ void KTipDialog::setShowOnStart(bool on)
 
 bool KTipDialog::eventFilter(QObject *object, QEvent *event)
 {
-    if (object == d->tipText && event->type() == QEvent::KeyPress &&
-            (((QKeyEvent *)event)->key() == Qt::Key_Return ||
-             ((QKeyEvent *)event)->key() == Qt::Key_Space)) {
+    if (object == d->tipText && event->type() == QEvent::KeyPress
+        && (((QKeyEvent *)event)->key() == Qt::Key_Return || ((QKeyEvent *)event)->key() == Qt::Key_Space)) {
         accept();
     }
 

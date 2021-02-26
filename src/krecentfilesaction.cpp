@@ -18,8 +18,8 @@
 #include "krecentfilesaction_p.h"
 
 #include <QActionGroup>
-#include <QFile>
 #include <QDir>
+#include <QFile>
 #include <QGuiApplication>
 #include <QMenu>
 #include <QScreen>
@@ -29,16 +29,16 @@
 #include <KLocalizedString>
 
 KRecentFilesAction::KRecentFilesAction(QObject *parent)
-    : KSelectAction(parent),
-      d_ptr(new KRecentFilesActionPrivate(this))
+    : KSelectAction(parent)
+    , d_ptr(new KRecentFilesActionPrivate(this))
 {
     Q_D(KRecentFilesAction);
     d->init();
 }
 
 KRecentFilesAction::KRecentFilesAction(const QString &text, QObject *parent)
-    : KSelectAction(parent),
-      d_ptr(new KRecentFilesActionPrivate(this))
+    : KSelectAction(parent)
+    , d_ptr(new KRecentFilesActionPrivate(this))
 {
     Q_D(KRecentFilesAction);
     d->init();
@@ -48,8 +48,8 @@ KRecentFilesAction::KRecentFilesAction(const QString &text, QObject *parent)
 }
 
 KRecentFilesAction::KRecentFilesAction(const QIcon &icon, const QString &text, QObject *parent)
-    : KSelectAction(parent),
-      d_ptr(new KRecentFilesActionPrivate(this))
+    : KSelectAction(parent)
+    , d_ptr(new KRecentFilesActionPrivate(this))
 {
     Q_D(KRecentFilesAction);
     d->init();
@@ -75,7 +75,7 @@ void KRecentFilesActionPrivate::init()
     clearAction->setObjectName(QStringLiteral("clear_action"));
     clearAction->setVisible(false);
     q->setEnabled(false);
-    q->connect(q, SIGNAL(triggered(QAction*)), SLOT(_k_urlSelected(QAction*)));
+    q->connect(q, SIGNAL(triggered(QAction *)), SLOT(_k_urlSelected(QAction *)));
 }
 
 KRecentFilesAction::~KRecentFilesAction() = default;
@@ -255,12 +255,12 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
     Q_D(KRecentFilesAction);
     clearEntries();
 
-    QString     key;
-    QString     value;
-    QString     nameKey;
-    QString     nameValue;
-    QString      title;
-    QUrl        url;
+    QString key;
+    QString value;
+    QString nameKey;
+    QString nameValue;
+    QString title;
+    QUrl url;
 
     KConfigGroup cg = _config;
     if (cg.name().isEmpty()) {
@@ -313,8 +313,8 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
 void KRecentFilesAction::saveEntries(const KConfigGroup &_cg)
 {
     Q_D(KRecentFilesAction);
-    QString     key;
-    QString     value;
+    QString key;
+    QString value;
     QStringList lst = items();
 
     KConfigGroup cg = _cg;
@@ -328,13 +328,12 @@ void KRecentFilesAction::saveEntries(const KConfigGroup &_cg)
     for (int i = 1; i <= selectableActionGroup()->actions().count(); i++) {
         key = QStringLiteral("File%1").arg(i);
         // i - 1 because we started from 1
-        value = d->m_urls[ selectableActionGroup()->actions()[ i - 1 ] ].toDisplayString(QUrl::PreferLocalFile);
+        value = d->m_urls[selectableActionGroup()->actions()[i - 1]].toDisplayString(QUrl::PreferLocalFile);
         cg.writePathEntry(key, value);
         key = QStringLiteral("Name%1").arg(i);
-        value = d->m_shortNames[ selectableActionGroup()->actions()[ i - 1 ] ];
+        value = d->m_shortNames[selectableActionGroup()->actions()[i - 1]];
         cg.writePathEntry(key, value);
     }
-
 }
 
 #include "moc_krecentfilesaction.cpp"

@@ -92,8 +92,7 @@ public:
      *
      * @param config - Config object containing settings.
      */
-    KConfigDialog(QWidget *parent, const QString &name,
-                  KCoreConfigSkeleton *config);
+    KConfigDialog(QWidget *parent, const QString &name, KCoreConfigSkeleton *config);
 
     /**
      * Deconstructor, removes name from the list of open dialogs.
@@ -118,10 +117,8 @@ public:
      * @param manage - Whether KConfigDialogManager should manage the page or not.
      * @returns The KPageWidgetItem associated with the page.
      */
-    KPageWidgetItem *addPage(QWidget *page, const QString &itemName,
-                             const QString &pixmapName = QString(),
-                             const QString &header = QString(),
-                             bool manage = true);
+    KPageWidgetItem *
+    addPage(QWidget *page, const QString &itemName, const QString &pixmapName = QString(), const QString &header = QString(), bool manage = true);
 
     /**
      * Adds page to the dialog that is managed by a custom KConfigDialogManager.
@@ -141,10 +138,8 @@ public:
      *        mode. If empty, the itemName text is used when needed.
      * @returns The KPageWidgetItem associated with the page.
      */
-    KPageWidgetItem *addPage(QWidget *page, KCoreConfigSkeleton *config,
-                             const QString &itemName,
-                             const QString &pixmapName = QString(),
-                             const QString &header = QString());
+    KPageWidgetItem *
+    addPage(QWidget *page, KCoreConfigSkeleton *config, const QString &itemName, const QString &pixmapName = QString(), const QString &header = QString());
 
     /**
      * See if a dialog with the name 'name' already exists.
@@ -217,7 +212,6 @@ protected Q_SLOTS:
      */
     void setHelp(const QString &anchor, const QString &appname = QString());
 
-
     /**
      * Displays help for this config dialog.
      * @since 5.0
@@ -225,7 +219,6 @@ protected Q_SLOTS:
     virtual void showHelp();
 
 protected:
-
     /**
      * Returns whether the current state of the dialog is
      * different from the current configuration.
@@ -260,5 +253,4 @@ private:
     Q_DISABLE_COPY(KConfigDialog)
 };
 
-#endif //KCONFIGDIALOG_H
-
+#endif // KCONFIGDIALOG_H

@@ -10,9 +10,9 @@
 
 #include <KActionMenu>
 #include <KConfigGroup>
-#include <kcolorscheme.h>
 #include <KLocalizedString>
 #include <KSharedConfig>
+#include <kcolorscheme.h>
 
 #include <QActionGroup>
 #include <QApplication>
@@ -25,7 +25,8 @@
 
 constexpr int defaultSchemeRow = 0;
 
-static void activateScheme(const QString &colorSchemePath) {
+static void activateScheme(const QString &colorSchemePath)
+{
     // hint for plasma-integration to synchronize the color scheme with the window manager/compositor
     // The property needs to be set before the palette change because is is checked upon the
     // ApplicationPaletteChange event.
@@ -119,9 +120,7 @@ void KColorSchemeModel::init()
     beginResetModel();
     m_data.clear();
 
-    const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation,
-                             QStringLiteral("color-schemes"),
-                             QStandardPaths::LocateDirectory);
+    const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("color-schemes"), QStandardPaths::LocateDirectory);
     QStringList schemeFiles;
     for (const QString &dir : dirs) {
         const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.colors"));
@@ -142,7 +141,7 @@ void KColorSchemeModel::init()
         const KColorSchemeModelData data = {name, schemeFile, QIcon()};
         m_data.append(data);
     }
-    std::sort(m_data.begin(), m_data.end(), [](const KColorSchemeModelData & first, const KColorSchemeModelData & second) {
+    std::sort(m_data.begin(), m_data.end(), [](const KColorSchemeModelData &first, const KColorSchemeModelData &second) {
         return first.name < second.name;
     });
     m_data.insert(defaultSchemeRow, {i18n("Default"), QString(), QIcon::fromTheme("edit-undo")});
@@ -184,7 +183,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
     // Be careful here when connecting to signals. The menu can outlive the manager
     KActionMenu *menu = new KActionMenu(icon, name, parent);
     QActionGroup *group = new QActionGroup(menu);
-    connect(group, &QActionGroup::triggered, qApp, [] (QAction * action) {
+    connect(group, &QActionGroup::triggered, qApp, [](QAction *action) {
         ::activateScheme(action->data().toString());
     });
     for (int i = 0; i < d->model->rowCount(); ++i) {
@@ -225,7 +224,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QString &selec
     return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), i18n("Color Scheme"), selectedSchemeName, parent);
 }
 
-KActionMenu *KColorSchemeManager::createSchemeSelectionMenu (QObject *parent)
+KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(QObject *parent)
 {
     return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), i18n("Color Scheme"), QString(), parent);
 }

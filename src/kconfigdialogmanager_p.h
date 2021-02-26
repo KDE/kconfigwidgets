@@ -31,15 +31,15 @@ public:
     void updateAllWidgetIndicators();
 
 public:
-    KConfigDialogManager * const q;
+    KConfigDialogManager *const q;
 
     /**
-    * KConfigSkeleton object used to store settings
+     * KConfigSkeleton object used to store settings
      */
     KCoreConfigSkeleton *m_conf = nullptr;
 
     /**
-    * Dialog being managed
+     * Dialog being managed
      */
     QWidget *m_dialog = nullptr;
 

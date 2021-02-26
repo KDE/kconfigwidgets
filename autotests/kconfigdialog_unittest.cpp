@@ -8,17 +8,17 @@
 #include <QTest>
 #include <QTestEvent>
 
-#include <QDialogButtonBox>
-#include <QPushButton>
 #include <QComboBox>
-#include <QSpinBox>
+#include <QDialogButtonBox>
 #include <QLineEdit>
+#include <QPushButton>
 #include <QSignalSpy>
+#include <QSpinBox>
 
+#include <KColorCombo>
+#include <KConfigSkeleton>
 #include <kconfigdialog.h>
 #include <kconfigdialogmanager.h>
-#include <KConfigSkeleton>
-#include <KColorCombo>
 
 #include "signaltest.h"
 
@@ -30,11 +30,22 @@ class TextEditUserPropertyWidget : public QWidget
     // with USER parameter
     Q_PROPERTY(QString text READ text WRITE setText NOTIFY textChanged USER true)
 public:
-    TextEditUserPropertyWidget(QWidget *parent = nullptr) : QWidget(parent) {}
-    void setText(const QString &text) { m_text = text; Q_EMIT textChanged(m_text); }
-    QString text() const { return m_text; }
+    TextEditUserPropertyWidget(QWidget *parent = nullptr)
+        : QWidget(parent)
+    {
+    }
+    void setText(const QString &text)
+    {
+        m_text = text;
+        Q_EMIT textChanged(m_text);
+    }
+    QString text() const
+    {
+        return m_text;
+    }
 Q_SIGNALS:
     void textChanged(const QString &text);
+
 private:
     QString m_text;
 };
@@ -45,14 +56,32 @@ class TextEditNoUserPropertyWidget : public QWidget
     Q_PROPERTY(QString text READ text WRITE setText NOTIFY textChanged)
     Q_PROPERTY(QString other READ other WRITE setOther NOTIFY otherChanged USER true)
 public:
-    TextEditNoUserPropertyWidget(QWidget *parent = nullptr) : QWidget(parent) {}
-    void setText(const QString &text) { m_text = text; Q_EMIT textChanged(m_text); }
-    QString text() const { return m_text; }
-    void setOther(const QString &other) { m_other = other; Q_EMIT textChanged(m_other); }
-    QString other() const { return m_other; }
+    TextEditNoUserPropertyWidget(QWidget *parent = nullptr)
+        : QWidget(parent)
+    {
+    }
+    void setText(const QString &text)
+    {
+        m_text = text;
+        Q_EMIT textChanged(m_text);
+    }
+    QString text() const
+    {
+        return m_text;
+    }
+    void setOther(const QString &other)
+    {
+        m_other = other;
+        Q_EMIT textChanged(m_other);
+    }
+    QString other() const
+    {
+        return m_other;
+    }
 Q_SIGNALS:
     void textChanged(const QString &text);
     void otherChanged(const QString &other);
+
 private:
     QString m_text;
     QString m_other;
@@ -64,14 +93,32 @@ class TextEditNoUserPropertyNoNotifyWidget : public QWidget
     Q_PROPERTY(QString text READ text WRITE setText)
     Q_PROPERTY(QString other READ other WRITE setOther NOTIFY otherChanged USER true)
 public:
-    TextEditNoUserPropertyNoNotifyWidget(QWidget *parent = nullptr) : QWidget(parent) {}
-    void setText(const QString &text) { m_text = text; Q_EMIT textChanged(m_text); }
-    QString text() const { return m_text; }
-    void setOther(const QString &other) { m_other = other; Q_EMIT textChanged(m_other); }
-    QString other() const { return m_other; }
+    TextEditNoUserPropertyNoNotifyWidget(QWidget *parent = nullptr)
+        : QWidget(parent)
+    {
+    }
+    void setText(const QString &text)
+    {
+        m_text = text;
+        Q_EMIT textChanged(m_text);
+    }
+    QString text() const
+    {
+        return m_text;
+    }
+    void setOther(const QString &other)
+    {
+        m_other = other;
+        Q_EMIT textChanged(m_other);
+    }
+    QString other() const
+    {
+        return m_other;
+    }
 Q_SIGNALS:
     void textChanged(const QString &text);
     void otherChanged(const QString &other);
+
 private:
     QString m_text;
     QString m_other;
@@ -109,7 +156,8 @@ public:
 class ComboSettings : public KConfigSkeleton
 {
 public:
-    ComboSettings() : KConfigSkeleton(CONFIG_FILE)
+    ComboSettings()
+        : KConfigSkeleton(CONFIG_FILE)
     {
         colorItem = new ItemColor(currentGroup(), QStringLiteral("Color"), color, Qt::white);
         addItem(colorItem, QStringLiteral("Color"));
@@ -312,7 +360,7 @@ private Q_SLOTS:
 
 private:
     template<class T>
-    void testKConfigCompilerSignals(T* edit, const QString& configDialogTitle)
+    void testKConfigCompilerSignals(T *edit, const QString &configDialogTitle)
     {
         const QString defaultValue = QStringLiteral("default value");
         const QString changedValue = QStringLiteral("changed value");
@@ -320,7 +368,7 @@ private:
         // set to default to ensure no old stored values make things fail
         SignalTest::self()->setDefaults();
         KConfigDialog *dialog = new KConfigDialog(nullptr, configDialogTitle, SignalTest::self());
-        QWidget* page = new QWidget;
+        QWidget *page = new QWidget;
         edit->setParent(page);
         edit->setObjectName(QStringLiteral("kcfg_foo"));
         edit->setText(QStringLiteral("some text"));
@@ -330,7 +378,7 @@ private:
         // now all the magic happens
         dialog->addPage(page, QStringLiteral("General"));
 
-        //check that default value gets loaded
+        // check that default value gets loaded
         QCOMPARE(spy.size(), 0);
         QCOMPARE(edit->text(), defaultValue);
         QCOMPARE(SignalTest::foo(), defaultValue);
@@ -339,7 +387,6 @@ private:
         // change signal should not be emitted immediately (only on save)
         QCOMPARE(spy.size(), 0);
         QCOMPARE(SignalTest::foo(), defaultValue); // should be no change to skeleton
-
 
         QDialogButtonBox *buttonBox = dialog->findChild<QDialogButtonBox *>();
         QVERIFY(buttonBox != nullptr);
@@ -364,7 +411,6 @@ private:
         QCOMPARE(args[0].toString(), someOtherValue);
         QCOMPARE(SignalTest::foo(), someOtherValue);
     }
-
 };
 
 QTEST_MAIN(KConfigDialog_UnitTest)

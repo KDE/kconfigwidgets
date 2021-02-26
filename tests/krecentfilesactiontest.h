@@ -25,7 +25,7 @@ public Q_SLOTS:
     void addUrl();
     void loadEntries();
     void saveEntries();
-    void urlSelected(const QUrl& url);
+    void urlSelected(const QUrl &url);
 
 private:
     KRecentFilesActionTestPrivate *const d;

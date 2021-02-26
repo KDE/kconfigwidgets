@@ -9,4 +9,3 @@
 // ktip.h only exists for kde4 compatibility reasons
 
 #include "ktipdialog.h"
-

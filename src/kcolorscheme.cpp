@@ -7,21 +7,23 @@
 
 #include "kcolorscheme.h"
 
+#include <KColorUtils>
 #include <KConfig>
 #include <KConfigGroup>
-#include <KColorUtils>
 
-#include <QColor>
 #include <QBrush>
-#include <QWidget>
+#include <QColor>
 #include <QCoreApplication>
+#include <QWidget>
 
-//BEGIN StateEffects
+// BEGIN StateEffects
 class StateEffects
 {
 public:
     explicit StateEffects(QPalette::ColorGroup state, const KSharedConfigPtr &);
-    ~StateEffects() {} //{ delete chain; } not needed yet
+    ~StateEffects()
+    {
+    } //{ delete chain; } not needed yet
 
     QBrush brush(const QBrush &background) const;
     QBrush brush(const QBrush &foreground, const QBrush &background) const;
@@ -33,7 +35,7 @@ private:
         Contrast,
         NEffectTypes,
     };
-    
+
     enum IntensityEffects {
         IntensityNoEffect,
         IntensityShade,
@@ -41,7 +43,7 @@ private:
         IntensityLighten,
         NIntensityEffects,
     };
-    
+
     enum ColorEffects {
         ColorNoEffect,
         ColorDesaturate,
@@ -49,18 +51,18 @@ private:
         ColorTint,
         NColorEffects,
     };
-    
+
     enum ContrastEffects {
         ContrastNoEffect,
         ContrastFade,
         ContrastTint,
-        NContrastEffects,        
+        NContrastEffects,
     };
 
     int _effects[NEffectTypes];
     double _amount[NEffectTypes];
     QColor _color;
-//     StateEffects *_chain; not needed yet
+    //     StateEffects *_chain; not needed yet
 };
 
 StateEffects::StateEffects(QPalette::ColorGroup state, const KSharedConfigPtr &config)
@@ -78,21 +80,18 @@ StateEffects::StateEffects(QPalette::ColorGroup state, const KSharedConfigPtr &c
     }
 
     // NOTE: keep this in sync with kdebase/workspace/kcontrol/colors/colorscm.cpp
-    if (! group.isEmpty()) {
+    if (!group.isEmpty()) {
         KConfigGroup cfg(config, group);
         const bool enabledByDefault = (state == QPalette::Disabled);
         if (cfg.readEntry("Enable", enabledByDefault)) {
-            _effects[Intensity] = cfg.readEntry("IntensityEffect",
-                                                (int)(state == QPalette::Disabled ?  IntensityDarken : IntensityNoEffect));
-            _effects[Color]     = cfg.readEntry("ColorEffect",
-                                                (int)(state == QPalette::Disabled ?  ColorNoEffect : ColorDesaturate));
-            _effects[Contrast]  = cfg.readEntry("ContrastEffect",
-                                                (int)(state == QPalette::Disabled ?  ContrastFade : ContrastTint));
-            _amount[Intensity]  = cfg.readEntry("IntensityAmount", state == QPalette::Disabled ? 0.10 :  0.0);
-            _amount[Color]      = cfg.readEntry("ColorAmount", state == QPalette::Disabled ?  0.0 : -0.9);
-            _amount[Contrast]   = cfg.readEntry("ContrastAmount", state == QPalette::Disabled ? 0.65 :  0.25);
+            _effects[Intensity] = cfg.readEntry("IntensityEffect", (int)(state == QPalette::Disabled ? IntensityDarken : IntensityNoEffect));
+            _effects[Color] = cfg.readEntry("ColorEffect", (int)(state == QPalette::Disabled ? ColorNoEffect : ColorDesaturate));
+            _effects[Contrast] = cfg.readEntry("ContrastEffect", (int)(state == QPalette::Disabled ? ContrastFade : ContrastTint));
+            _amount[Intensity] = cfg.readEntry("IntensityAmount", state == QPalette::Disabled ? 0.10 : 0.0);
+            _amount[Color] = cfg.readEntry("ColorAmount", state == QPalette::Disabled ? 0.0 : -0.9);
+            _amount[Contrast] = cfg.readEntry("ContrastAmount", state == QPalette::Disabled ? 0.65 : 0.25);
             if (_effects[Color] > ColorNoEffect) {
-                _color = cfg.readEntry("Color", state == QPalette::Disabled ?  QColor(56, 56, 56) : QColor(112, 111, 110));
+                _color = cfg.readEntry("Color", state == QPalette::Disabled ? QColor(56, 56, 56) : QColor(112, 111, 110));
             }
         }
     }
@@ -142,9 +141,9 @@ QBrush StateEffects::brush(const QBrush &foreground, const QBrush &background) c
     // Now apply global effects
     return brush(color);
 }
-//END StateEffects
+// END StateEffects
 
-//BEGIN default colors
+// BEGIN default colors
 struct SetDefaultColors {
     int NormalBackground[3];
     int AlternateBackground[3];

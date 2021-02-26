@@ -5,8 +5,8 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#include <kcolorschememanager.h>
 #include <KActionMenu>
+#include <kcolorschememanager.h>
 
 #include <QApplication>
 #include <QDialog>
@@ -19,7 +19,8 @@ class KColorSchemeDemo : public QDialog
 {
     Q_OBJECT
 public:
-    KColorSchemeDemo() : QDialog(nullptr)
+    KColorSchemeDemo()
+        : QDialog(nullptr)
     {
         KColorSchemeManager *manager = new KColorSchemeManager(this);
 
@@ -39,7 +40,9 @@ public:
         layout->addWidget(view);
         layout->addWidget(box);
     }
-    ~KColorSchemeDemo() {}
+    ~KColorSchemeDemo()
+    {
+    }
 };
 
 int main(int argc, char *argv[])

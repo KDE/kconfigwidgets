@@ -22,9 +22,8 @@ QString KLanguageName::nameForCode(const QString &code)
 
 static std::tuple<QString, QString> namesFromEntryFile(const QString &realCode, const QString &realOutputCode)
 {
-    const QString entryFile =
-            QStandardPaths::locate(QStandardPaths::GenericDataLocation,
-                                   QStringLiteral("locale") + QLatin1Char('/') + realCode + QStringLiteral("/kf5_entry.desktop"));
+    const QString entryFile = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
+                                                     QStringLiteral("locale") + QLatin1Char('/') + realCode + QStringLiteral("/kf5_entry.desktop"));
 
     if (!entryFile.isEmpty()) {
         KConfig entry(entryFile, KConfig::SimpleConfig);
@@ -74,16 +73,13 @@ QString KLanguageName::nameForCodeInLocale(const QString &code, const QString &o
 QStringList KLanguageName::allLanguageCodes()
 {
     QStringList systemLangList;
-    const QStringList localeDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation,
-                                            QStringLiteral("locale"), QStandardPaths::LocateDirectory);
+    const QStringList localeDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("locale"), QStandardPaths::LocateDirectory);
     for (const QString &localeDir : localeDirs) {
         const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
         auto languageExists = [&localeDir](const QString &language) {
             return QFile::exists(localeDir + '/' + language + "/kf5_entry.desktop");
         };
-        std::copy_if(entries.begin(), entries.end(),
-                    std::back_inserter(systemLangList),
-                    languageExists);
+        std::copy_if(entries.begin(), entries.end(), std::back_inserter(systemLangList), languageExists);
     }
     if (localeDirs.count() > 1) {
         systemLangList.removeDuplicates();

@@ -8,8 +8,8 @@
 #ifndef KCOLORSCHEME_H
 #define KCOLORSCHEME_H
 
-#include <kconfigwidgets_export.h>
 #include <KSharedConfig>
+#include <kconfigwidgets_export.h>
 
 #include <QExplicitlySharedDataPointer>
 
@@ -55,7 +55,6 @@ class KColorSchemePrivate;
 class KCONFIGWIDGETS_EXPORT KColorScheme
 {
 public:
-
     /**
      * This enumeration describes the color set for which a color is being
      * selected.
@@ -421,8 +420,7 @@ public:
      *
      * @see KColorUtils::shade
      */
-    static QColor shade(const QColor &, ShadeRole,
-                        qreal contrast, qreal chromaAdjust = 0.0);
+    static QColor shade(const QColor &, ShadeRole, qreal contrast, qreal chromaAdjust = 0.0);
 
     /**
      * Adjust a QPalette by replacing the specified QPalette::ColorRole with
@@ -470,7 +468,7 @@ public:
      * Used to check if the color scheme has a given set.
      *
      * @param config KConfig from which to load the colors
-     * 
+     *
      * @param set The color set to check for.
      *
      * @returns whether the color scheme has a given color set
@@ -524,27 +522,21 @@ public:
      * If null, the application's color scheme is used (either the system
      * default, or one set by KColorSchemeManager).
      */
-    explicit KStatefulBrush(KColorScheme::ColorSet,
-                            KColorScheme::ForegroundRole,
-                            KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::ForegroundRole, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
      * Construct a stateful brush from given color set and background role,
      * using the colors from the given KConfig (if null, the application's
      * colors are used).
      */
-    explicit KStatefulBrush(KColorScheme::ColorSet,
-                            KColorScheme::BackgroundRole,
-                            KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::BackgroundRole, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
      * Construct a stateful brush from given color set and decoration role,
      * using the colors from the given KConfig (if null, the application's
      * colors are used).
      */
-    explicit KStatefulBrush(KColorScheme::ColorSet,
-                            KColorScheme::DecorationRole,
-                            KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::DecorationRole, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
      * Construct a stateful background brush from a specified QBrush (or
@@ -568,8 +560,7 @@ public:
      * KColorScheme::NormalBackground role and QPalette::Active state for this
      * foreground/decoration color.
      */
-    explicit KStatefulBrush(const QBrush &, const QBrush &background,
-                            KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(const QBrush &, const QBrush &background, KSharedConfigPtr = KSharedConfigPtr());
 
     /** Construct a copy of another KStatefulBrush. */
     KStatefulBrush(const KStatefulBrush &);

@@ -9,12 +9,14 @@
 
 #include "ui_kcolorutilsdemo.h"
 
-class KColorUtilsDemo: public QWidget, Ui::form
+class KColorUtilsDemo : public QWidget, Ui::form
 {
     Q_OBJECT
 public:
     KColorUtilsDemo(QWidget *parent = nullptr);
-    virtual ~KColorUtilsDemo() {}
+    virtual ~KColorUtilsDemo()
+    {
+    }
 
 public Q_SLOTS:
     void inputChanged();

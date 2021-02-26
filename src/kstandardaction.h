@@ -12,10 +12,10 @@
 #include <QList>
 #include <QStringList>
 
-#include <kconfigwidgets_export.h>
 #include <KStandardShortcut>
-#include <krecentfilesaction.h>
 #include <KToggleAction>
+#include <kconfigwidgets_export.h>
+#include <krecentfilesaction.h>
 #include <ktogglefullscreenaction.h>
 
 #include <type_traits>
@@ -181,7 +181,7 @@ enum StandardAction {
     KeyBindings, ///< Display the configure key bindings dialog.
     Preferences, ///< Display the preferences/options dialog.
     ConfigureToolbars, ///< Display the toolbar configuration dialog.
-    // Help Menu
+// Help Menu
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
     Help, ///< @deprecated since 5.38. Use HelpContents instead.
 #elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
@@ -225,8 +225,7 @@ enum StandardAction {
  * @param parent The QObject that should own the created QAction, or @c nullptr if no parent will
  *               own the QAction returned (ensure you delete it manually in this case).
  */
-KCONFIGWIDGETS_EXPORT QAction *create(StandardAction id, const QObject *recvr, const char *slot,
-                                      QObject *parent);
+KCONFIGWIDGETS_EXPORT QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObject *parent);
 
 /**
  * @internal
@@ -241,10 +240,11 @@ KCONFIGWIDGETS_EXPORT QAction *_k_createInternal(StandardAction id, QObject *par
  * @since 5.23
  */
 #ifdef K_DOXYGEN
-inline QAction *create(StandardAction id, const QObject *recvr, Func slot, QObject* parent)
+inline QAction *create(StandardAction id, const QObject *recvr, Func slot, QObject *parent)
 #else
 template<class Receiver, class Func>
-inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent)
+inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *
+create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent)
 #endif
 {
     QAction *action = _k_createInternal(id, parent);
@@ -255,7 +255,6 @@ inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, Q
     QObject::connect(action, &QAction::triggered, recvr, slot, connectionType);
     return action;
 }
-
 
 /**
  * This will return the internal name of a given standard action.
@@ -348,11 +347,12 @@ KCONFIGWIDGETS_EXPORT KRecentFilesAction *openRecent(const QObject *recvr, const
 inline KRecentFilesAction *openRecent(const QObject *recvr, Func slot, QObject *parent)
 #else
 template<class Receiver, class Func>
-inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, KRecentFilesAction>::type *openRecent(const Receiver *recvr, Func slot, QObject *parent)
+inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, KRecentFilesAction>::type *
+openRecent(const Receiver *recvr, Func slot, QObject *parent)
 #endif
 {
-    QAction* action = _k_createInternal(OpenRecent, parent);
-    KRecentFilesAction* recentAction = qobject_cast<KRecentFilesAction*>(action);
+    QAction *action = _k_createInternal(OpenRecent, parent);
+    KRecentFilesAction *recentAction = qobject_cast<KRecentFilesAction *>(action);
     Q_ASSERT(recentAction);
     QObject::connect(recentAction, &KRecentFilesAction::urlSelected, recvr, slot);
     return recentAction;
@@ -570,12 +570,14 @@ KCONFIGWIDGETS_EXPORT QAction *pasteText(const QObject *recvr, const char *slot,
  * @deprecated since 5.39. Use paste() instead.
  */
 #ifdef K_DOXYGEN
-    inline QAction *pasteText(const QObject *recvr, Func slot, QObject *parent);
+inline QAction *pasteText(const QObject *recvr, Func slot, QObject *parent);
 #else
 template<class Receiver, class Func>
 KCONFIGWIDGETS_DEPRECATED_VERSION(5, 39, "Use KStandardAction::paste(const QObject *, Func, QObject *)")
-inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *pasteText(const Receiver *recvr, Func slot, QObject *parent)
-{ return create(PasteText, recvr, slot, parent); }
+inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *pasteText(const Receiver *recvr, Func slot, QObject *parent)
+{
+    return create(PasteText, recvr, slot, parent);
+}
 #endif // K_DOXYGEN
 #endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
 
@@ -934,10 +936,11 @@ KCONFIGWIDGETS_EXPORT KToggleAction *showMenubar(const QObject *recvr, const cha
 inline KToggleAction *showMenubar(const QObject *recvr, Func slot, QObject *parent)
 #else
 template<class Receiver, class Func>
-inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, KToggleAction>::type *showMenubar(const Receiver *recvr, Func slot, QObject *parent)
+inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, KToggleAction>::type *
+showMenubar(const Receiver *recvr, Func slot, QObject *parent)
 #endif
 {
-    QAction* ret = create(ShowMenubar, recvr, slot, parent);
+    QAction *ret = create(ShowMenubar, recvr, slot, parent);
     Q_ASSERT(qobject_cast<KToggleAction *>(ret));
     return static_cast<KToggleAction *>(ret);
 }
@@ -955,10 +958,11 @@ KCONFIGWIDGETS_EXPORT KToggleAction *showStatusbar(const QObject *recvr, const c
 inline KToggleAction *showStatusbar(const QObject *recvr, Func slot, QObject *parent)
 #else
 template<class Receiver, class Func>
-inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, KToggleAction>::type *showStatusbar(const Receiver *recvr, Func slot, QObject *parent)
+inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, KToggleAction>::type *
+showStatusbar(const Receiver *recvr, Func slot, QObject *parent)
 #endif
 {
-    QAction* ret = create(ShowStatusbar, recvr, slot, parent);
+    QAction *ret = create(ShowStatusbar, recvr, slot, parent);
     Q_ASSERT(qobject_cast<KToggleAction *>(ret));
     return static_cast<KToggleAction *>(ret);
 }
@@ -976,10 +980,11 @@ KCONFIGWIDGETS_EXPORT KToggleFullScreenAction *fullScreen(const QObject *recvr, 
 inline KToggleFullScreenAction *fullScreen(const QObject *recvr, Func slot, QWidget *window, QObject *parent)
 #else
 template<class Receiver, class Func>
-inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, KToggleFullScreenAction>::type *fullScreen(const Receiver *recvr, Func slot, QWidget *window, QObject *parent)
+inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, KToggleFullScreenAction>::type *
+fullScreen(const Receiver *recvr, Func slot, QWidget *window, QObject *parent)
 #endif
 {
-    QAction* a = create(FullScreen, recvr, slot, parent);
+    QAction *a = create(FullScreen, recvr, slot, parent);
     Q_ASSERT(qobject_cast<KToggleFullScreenAction *>(a));
     KToggleFullScreenAction *ret = static_cast<KToggleFullScreenAction *>(a);
     ret->setWindow(window);
@@ -1002,12 +1007,15 @@ KCONFIGWIDGETS_EXPORT QAction *saveOptions(const QObject *recvr, const char *slo
  * @deprecated since 5.38
  */
 #ifdef K_DOXYGEN
-    inline QAction *saveOptions(const QObject *recvr, Func slot, QObject *parent);
+inline QAction *saveOptions(const QObject *recvr, Func slot, QObject *parent);
 #else
 template<class Receiver, class Func>
 KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "No usage known, candidate for removal on next ABI break")
-KCONFIGWIDGETS_EXPORT inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *saveOptions(const Receiver *recvr, Func slot, QObject *parent)
-{ return create(SaveOptions, recvr, slot, parent); }
+KCONFIGWIDGETS_EXPORT inline
+    typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *saveOptions(const Receiver *recvr, Func slot, QObject *parent)
+{
+    return create(SaveOptions, recvr, slot, parent);
+}
 #endif // K_DOXYGEN
 #endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
 
@@ -1085,12 +1093,15 @@ KCONFIGWIDGETS_EXPORT QAction *help(const QObject *recvr, const char *slot, QObj
  * @deprecated since 5.38 Use helpContents() instead.
  */
 #ifdef K_DOXYGEN
-    inline QAction *help(const QObject *recvr, Func slot, QObject *parent);
+inline QAction *help(const QObject *recvr, Func slot, QObject *parent);
 #else
 template<class Receiver, class Func>
 KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "Use KStandardAction::helpContents(const QObject *, Func, QObject *)")
-KCONFIGWIDGETS_EXPORT inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *help(const Receiver *recvr, Func slot, QObject *parent)
-{ return create(Help, recvr, slot, parent); }
+KCONFIGWIDGETS_EXPORT inline
+    typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *help(const Receiver *recvr, Func slot, QObject *parent)
+{
+    return create(Help, recvr, slot, parent);
+}
 #endif // K_DOXYGEN
 #endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
 

@@ -19,9 +19,9 @@
 
 #include <QApplication>
 #include <QClipboard>
-#include <QMenu>
 #include <QDBusInterface>
 #include <QDBusReply>
+#include <QMenu>
 
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39)
 
@@ -43,26 +43,29 @@ public:
 
     void init();
 
-    KPasteTextAction * const q;
+    KPasteTextAction *const q;
     QMenu *m_popup = nullptr;
     bool m_mixedMode;
 };
 
 KPasteTextAction::KPasteTextAction(QObject *parent)
-    : QAction(parent), d(new KPasteTextActionPrivate(this))
+    : QAction(parent)
+    , d(new KPasteTextActionPrivate(this))
 {
     d->init();
 }
 
 KPasteTextAction::KPasteTextAction(const QString &text, QObject *parent)
-    : QAction(parent), d(new KPasteTextActionPrivate(this))
+    : QAction(parent)
+    , d(new KPasteTextActionPrivate(this))
 {
     d->init();
     setText(text);
 }
 
 KPasteTextAction::KPasteTextAction(const QIcon &icon, const QString &text, QObject *parent)
-    : QAction(icon, text, parent), d(new KPasteTextActionPrivate(this))
+    : QAction(icon, text, parent)
+    , d(new KPasteTextActionPrivate(this))
 {
     d->init();
 }
@@ -71,7 +74,7 @@ void KPasteTextActionPrivate::init()
 {
     m_popup = new QMenu;
     q->connect(m_popup, SIGNAL(aboutToShow()), q, SLOT(_k_menuAboutToShow()));
-    q->connect(m_popup, SIGNAL(triggered(QAction*)), q, SLOT(_k_slotTriggered(QAction*)));
+    q->connect(m_popup, SIGNAL(triggered(QAction *)), q, SLOT(_k_slotTriggered(QAction *)));
     m_mixedMode = true;
 }
 
@@ -114,14 +117,13 @@ void KPasteTextActionPrivate::_k_slotTriggered(QAction *action)
 {
     QDBusInterface klipper(QStringLiteral("org.kde.klipper"), QStringLiteral("/klipper"), QStringLiteral("org.kde.klipper.klipper"));
     if (klipper.isValid()) {
-        QDBusReply<QString> reply = klipper.call(QStringLiteral("getClipboardHistoryItem"),
-                                    m_popup->actions().indexOf(action));
+        QDBusReply<QString> reply = klipper.call(QStringLiteral("getClipboardHistoryItem"), m_popup->actions().indexOf(action));
         if (!reply.isValid()) {
             return;
         }
         QString clipboardText = reply;
         reply = klipper.call(QStringLiteral("setClipboardContents"), clipboardText);
-        //if (reply.isValid())
+        // if (reply.isValid())
         //  qCDebug(KCONFIG_WIDGETS_LOG) << "Clipboard: " << qApp->clipboard()->text(QClipboard::Clipboard);
     }
 }

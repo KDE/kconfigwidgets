@@ -5,11 +5,14 @@
 */
 
 #include "kimageframe.h"
+#include <QPainter>
 #include <QStyle>
 #include <QStyleOption>
-#include <QPainter>
 
-KImageFrame::KImageFrame(QWidget *parent) : QFrame(parent), _w(0), _h(0)
+KImageFrame::KImageFrame(QWidget *parent)
+    : QFrame(parent)
+    , _w(0)
+    , _h(0)
 {
 }
 
@@ -37,4 +40,3 @@ void KImageFrame::paintEvent(QPaintEvent *)
 
     p.end();
 }
-

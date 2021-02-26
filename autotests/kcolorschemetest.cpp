@@ -4,9 +4,9 @@
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
+#include <QAbstractItemModel>
 #include <QObject>
 #include <QTest>
-#include <QAbstractItemModel>
 
 #include "kcolorscheme.h"
 #include "kcolorschememanager.h"

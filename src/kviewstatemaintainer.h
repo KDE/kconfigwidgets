@@ -33,11 +33,12 @@ template<typename StateSaver>
 class KViewStateMaintainer : public KViewStateMaintainerBase
 {
     typedef StateSaver StateRestorer;
+
 public:
     KViewStateMaintainer(const KConfigGroup &configGroup, QObject *parent = nullptr)
-        : KViewStateMaintainerBase(parent), m_configGroup(configGroup)
+        : KViewStateMaintainerBase(parent)
+        , m_configGroup(configGroup)
     {
-
     }
 
     /* reimp */ void saveState()
@@ -56,6 +57,7 @@ public:
         restorer->setSelectionModel(selectionModel());
         restorer->restoreState(m_configGroup);
     }
+
 private:
     KConfigGroup m_configGroup;
 };

@@ -17,7 +17,7 @@ void tst_KStandardAction::shortcutForActionId()
 
     QAction *cut = KStandardAction::cut(nullptr);
     QList<QKeySequence> actShortcut = cut->shortcuts();
-    QCOMPARE(cut->property("defaultShortcuts").value<QList<QKeySequence> >(), actShortcut);
+    QCOMPARE(cut->property("defaultShortcuts").value<QList<QKeySequence>>(), actShortcut);
     QVERIFY(stdShortcut == actShortcut);
     delete cut;
 
@@ -31,7 +31,10 @@ class Receiver : public QObject
 {
     Q_OBJECT
 public:
-    Receiver() : triggered(false) {}
+    Receiver()
+        : triggered(false)
+    {
+    }
 
     bool triggered;
     QUrl lastUrl;
@@ -58,7 +61,9 @@ void tst_KStandardAction::testCreateNewStyle()
 
     // check that it works with lambdas as well
     bool triggered = false;
-    auto onTriggered = [&] { triggered = true; };
+    auto onTriggered = [&] {
+        triggered = true;
+    };
     QAction *action2 = KStandardAction::create(KStandardAction::Copy, &receiver, onTriggered, &receiver);
     QVERIFY(!triggered);
     action2->trigger();
@@ -66,13 +71,12 @@ void tst_KStandardAction::testCreateNewStyle()
 
     // check ConfigureToolbars
     triggered = false;
-    QAction* action3 = KStandardAction::create(KStandardAction::ConfigureToolbars, &receiver, onTriggered, &receiver);
+    QAction *action3 = KStandardAction::create(KStandardAction::ConfigureToolbars, &receiver, onTriggered, &receiver);
     QVERIFY(!triggered);
     action3->trigger(); // a queued connection should be used here
     QVERIFY(!triggered);
     QCoreApplication::processEvents();
     QVERIFY(triggered);
-
 
     QUrl expectedUrl = QUrl(QStringLiteral("file:///foo/bar"));
     KRecentFilesAction *recent = KStandardAction::openRecent(&receiver, &Receiver::onUrlSelected, &receiver);
@@ -82,11 +86,15 @@ void tst_KStandardAction::testCreateNewStyle()
 
     // same again with lambda
     QUrl url;
-    KRecentFilesAction *recent2 = KStandardAction::openRecent(&receiver, [&](const QUrl &u) { url = u; }, &receiver);
+    KRecentFilesAction *recent2 = KStandardAction::openRecent(
+        &receiver,
+        [&](const QUrl &u) {
+            url = u;
+        },
+        &receiver);
     QCOMPARE(url, QUrl());
     recent2->urlSelected(expectedUrl);
     QCOMPARE(url, expectedUrl);
-
 
     // make sure the asserts don't trigger (action has the correct type)
     KToggleAction *toggle1 = KStandardAction::showMenubar(&receiver, &Receiver::onTriggered, &receiver);
@@ -107,13 +115,12 @@ void tst_KStandardAction::testCreateOldStyle()
 
     // check ConfigureToolbars
     receiver.triggered = false;
-    QAction* action3 = KStandardAction::create(KStandardAction::ConfigureToolbars, &receiver, SLOT(onTriggered()), &receiver);
+    QAction *action3 = KStandardAction::create(KStandardAction::ConfigureToolbars, &receiver, SLOT(onTriggered()), &receiver);
     QVERIFY(!receiver.triggered);
     action3->trigger(); // a queued connection should be used here
     QVERIFY(!receiver.triggered);
     QCoreApplication::processEvents();
     QVERIFY(receiver.triggered);
-
 
     QUrl expectedUrl = QUrl(QStringLiteral("file:///foo/bar"));
     KRecentFilesAction *recent = KStandardAction::openRecent(&receiver, SLOT(onUrlSelected(QUrl)), &receiver);
@@ -129,8 +136,6 @@ void tst_KStandardAction::testCreateOldStyle()
     KToggleFullScreenAction *toggle3 = KStandardAction::fullScreen(&receiver, SLOT(onTriggered()), new QWidget, &receiver);
     QVERIFY(toggle3);
 }
-
-
 
 QTEST_MAIN(tst_KStandardAction)
 

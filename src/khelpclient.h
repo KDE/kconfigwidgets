@@ -34,4 +34,3 @@ KCONFIGWIDGETS_EXPORT void invokeHelp(const QString &anchor = QString(), const Q
 }
 
 #endif /* KHELPCLIENT_H */
-

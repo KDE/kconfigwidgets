@@ -13,8 +13,8 @@
 
 #include <KAboutData>
 #include <KConfigSkeleton>
-#include <kconfigdialogmanager.h>
 #include <KLocalizedString>
+#include <kconfigdialogmanager.h>
 #ifndef KCONFIGWIDGETS_NO_KAUTH
 #include <KAuthExecuteJob>
 #endif
@@ -22,17 +22,18 @@
 class KCModulePrivate
 {
 public:
-    KCModulePrivate():
-        _buttons(KCModule::Help | KCModule::Default | KCModule::Apply),
-        _about(nullptr),
-        _useRootOnlyMessage(false),
-        _firstshow(true),
-        _needsAuthorization(false),
-        _unmanagedWidgetChangeState(false),
-        _unmanagedWidgetDefaultState(false),
-        _unmanagedWidgetDefaultStateCalled(false),
-        _defaultsIndicatorsVisible(false)
-    { }
+    KCModulePrivate()
+        : _buttons(KCModule::Help | KCModule::Default | KCModule::Apply)
+        , _about(nullptr)
+        , _useRootOnlyMessage(false)
+        , _firstshow(true)
+        , _needsAuthorization(false)
+        , _unmanagedWidgetChangeState(false)
+        , _unmanagedWidgetDefaultState(false)
+        , _unmanagedWidgetDefaultStateCalled(false)
+        , _defaultsIndicatorsVisible(false)
+    {
+    }
 
     void authStatusChanged(int status);
 
@@ -47,7 +48,7 @@ public:
     bool _useRootOnlyMessage : 1;
     bool _firstshow : 1;
 
-    bool  _needsAuthorization : 1;
+    bool _needsAuthorization : 1;
 #ifndef KCONFIGWIDGETS_NO_KAUTH
     KAuth::Action _authAction;
 #endif
@@ -64,13 +65,15 @@ public:
 };
 
 KCModule::KCModule(const KAboutData *aboutData, QWidget *parent, const QVariantList &)
-    : QWidget(parent), d(new KCModulePrivate)
+    : QWidget(parent)
+    , d(new KCModulePrivate)
 {
     setAboutData(aboutData);
 }
 
 KCModule::KCModule(QWidget *parent, const QVariantList &)
-    : QWidget(parent), d(new KCModulePrivate)
+    : QWidget(parent)
+    , d(new KCModulePrivate)
 {
 }
 
@@ -347,4 +350,3 @@ QList<KConfigDialogManager *> KCModule::configs() const
 {
     return d->managers;
 }
-
