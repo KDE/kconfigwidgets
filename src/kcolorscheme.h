@@ -121,7 +121,7 @@ public:
          * Note: don't use this
          * @since 5.65
          */
-        NColorSets
+        NColorSets,
     };
 
     /**
@@ -188,7 +188,7 @@ public:
          * Number of background roles.
          * @since 5.65
          */
-        NBackgroundRoles
+        NBackgroundRoles,
     };
 
     /**
@@ -256,7 +256,7 @@ public:
          * Number of foreground roles.
          * @since 5.65
          */
-        NForegroundRoles
+        NForegroundRoles,
     };
 
     /**
@@ -282,7 +282,7 @@ public:
          * Number of decoration roles.
          * @since 5.65
          */
-        NDecorationRoles
+        NDecorationRoles,
     };
 
     /**
@@ -320,7 +320,7 @@ public:
          * Number of shade roles.
          * @since 5.65
          */
-        NShadeRoles
+        NShadeRoles,
     };
 
     /** Construct a copy of another KColorScheme. */

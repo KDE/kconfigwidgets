@@ -206,7 +206,7 @@ enum StandardAction {
     DeleteFile, ///< Permanently deletes files or folders. @since 5.25
     RenameFile, ///< Renames files or folders. @since 5.25
     MoveToTrash, ///< Moves files or folders to the trash. @since 5.25
-    Donate ///< Open donation page on kde.org. @since 5.26
+    Donate, ///< Open donation page on kde.org. @since 5.26
 };
 
 /**

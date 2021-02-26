@@ -31,7 +31,7 @@ private:
         Intensity,
         Color,
         Contrast,
-        NEffectTypes
+        NEffectTypes,
     };
     
     enum IntensityEffects {
@@ -39,7 +39,7 @@ private:
         IntensityShade,
         IntensityDarken,
         IntensityLighten,
-        NIntensityEffects
+        NIntensityEffects,
     };
     
     enum ColorEffects {
@@ -47,14 +47,14 @@ private:
         ColorDesaturate,
         ColorFade,
         ColorTint,
-        NColorEffects
+        NColorEffects,
     };
     
     enum ContrastEffects {
         ContrastNoEffect,
         ContrastFade,
         ContrastTint,
-        NContrastEffects        
+        NContrastEffects,        
     };
 
     int _effects[NEffectTypes];
