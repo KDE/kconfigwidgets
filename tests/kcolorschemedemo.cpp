@@ -12,6 +12,7 @@
 #include <QDialog>
 #include <QDialogButtonBox>
 #include <QListView>
+#include <QMenu>
 #include <QToolButton>
 #include <QVBoxLayout>
 
