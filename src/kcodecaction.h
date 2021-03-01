@@ -13,6 +13,8 @@
 #include <kconfigwidgets_export.h>
 #include <memory>
 
+class QTextCodec;
+
 /**
  *  @class KCodecAction kcodecaction.h KCodecAction
  *
