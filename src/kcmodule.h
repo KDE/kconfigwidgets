@@ -360,7 +360,7 @@ Q_SIGNALS:
      * shown in the module changes. It allows the module container to
      * keep track of unsaved changes.
      */
-    void changed(bool state);
+    void changed(bool state); // clazy:exclude=overloaded-signal
 
     /**
      * Indicate that the state of the modules contents matches the default

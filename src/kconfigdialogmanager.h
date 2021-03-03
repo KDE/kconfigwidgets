@@ -206,16 +206,21 @@ Q_SIGNALS:
      * clicks on the Apply button).  This is only emitted by updateSettings()
      * whenever one or more setting were changed and consequently saved.
      */
-    void settingsChanged();
+    void settingsChanged(); // clazy:exclude=overloaded-signal
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 82)
     /**
      * TODO: Verify
      * One or more of the settings have been changed.
      * @param widget - The widget group (pass in via addWidget()) that
      * contains the one or more modified setting.
      * @see settingsChanged()
+     *
+     * @deprecated since 5.82, use the KConfigDialogManager::settingsChanged() signal instead.
      */
-    void settingsChanged(QWidget *widget);
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 82, "Use the KConfigDialogManager::settingsChanged() signal instead.")
+    void settingsChanged(QWidget *widget); // clazy:exclude=overloaded-signal
+#endif
 
     /**
      * If retrieveSettings() was told to track changes then if

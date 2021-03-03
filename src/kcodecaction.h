@@ -73,7 +73,7 @@ Q_SIGNALS:
      * @deprecated Since 5.78, use codecTriggered(QTextCodec *)
      */
     KCONFIGWIDGETS_DEPRECATED_VERSION(5, 78, "Use KCodecAction::codecTriggered(QTextCodec *)")
-    void triggered(QTextCodec *codec);
+    void triggered(QTextCodec *codec); // clazy:exclude=overloaded-signal
 #endif
     /**
      * Specific (proper) codec was selected
@@ -109,7 +109,7 @@ Q_SIGNALS:
      * @deprecated Since 5.78, use encodingProberTriggered(KEncodingProber::ProberType)
      */
     KCONFIGWIDGETS_DEPRECATED_VERSION(5, 78, "Use KCodecAction::encodingProberTriggered(KEncodingProber::ProberType)")
-    void triggered(KEncodingProber::ProberType);
+    void triggered(KEncodingProber::ProberType); // clazy:exclude=overloaded-signal
 #endif
 
     /**
