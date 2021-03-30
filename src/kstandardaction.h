@@ -15,6 +15,7 @@
 #include <KStandardShortcut>
 #include <KToggleAction>
 #include <kconfigwidgets_export.h>
+#include <khamburgermenu.h>
 #include <krecentfilesaction.h>
 #include <ktogglefullscreenaction.h>
 
@@ -207,6 +208,7 @@ enum StandardAction {
     RenameFile, ///< Renames files or folders. @since 5.25
     MoveToTrash, ///< Moves files or folders to the trash. @since 5.25
     Donate, ///< Open donation page on kde.org. @since 5.26
+    HamburgerMenu ///< Opens a menu that substitutes the menubar. @since 5.81
 };
 
 /**
@@ -1218,6 +1220,18 @@ KCONFIGWIDGETS_EXPORT QAction *donate(const QObject *recvr, const char *slot, QO
  * @since 5.26
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(donate, Donate)
+
+/**
+ * Opens a menu that substitutes the menubar.
+ * @since 5.81
+ */
+KCONFIGWIDGETS_EXPORT KHamburgerMenu *hamburgerMenu(const QObject *recvr, const char *slot, QObject *parent);
+
+/**
+ * Opens a menu that substitutes the menubar.
+ * @since 5.81
+ */
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(hamburgerMenu, HamburgerMenu)
 
 }
 

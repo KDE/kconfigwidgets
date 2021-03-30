@@ -111,6 +111,7 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { RenameFile,    KStandardShortcut::RenameFile, "renamefile", I18N_NOOP("&Rename..."), nullptr, "edit-rename" },
     { MoveToTrash,   KStandardShortcut::MoveToTrash, "movetotrash", I18N_NOOP("&Move to Trash"), nullptr, "trash-empty" },
     { Donate,        KStandardShortcut::Donate, "help_donate", I18N_NOOP("&Donate"), nullptr, "help-donate"},
+    { HamburgerMenu, KStandardShortcut::AccelNone, "hamburger_menu", I18N_NOOP("Open &Menu"), nullptr, "application-menu" },
     { ActionNone,    KStandardShortcut::AccelNone, nullptr, nullptr, nullptr, nullptr }
 };
 // clang-format on

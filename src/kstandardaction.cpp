@@ -264,6 +264,11 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
 #endif
             break;
         }
+        case HamburgerMenu:
+        {
+            pAction = new KHamburgerMenu(parent);
+            break;
+        }
 
         default:
             pAction = new QAction(parent);
@@ -735,6 +740,11 @@ QAction *moveToTrash(const QObject *recvr, const char *slot, QObject *parent)
 QAction *donate(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(Donate, recvr, slot, parent);
+}
+
+KHamburgerMenu *hamburgerMenu(const QObject *recvr, const char *slot, QObject *parent)
+{
+    return static_cast<KHamburgerMenu *>(KStandardAction::create(HamburgerMenu, recvr, slot, parent));
 }
 
 }

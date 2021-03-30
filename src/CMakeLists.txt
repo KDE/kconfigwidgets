@@ -7,6 +7,8 @@ set(kconfigwidgets_SRCS
   kconfigdialogmanager.cpp
   kcmodule.cpp
   khelpclient.cpp
+  khamburgermenu.cpp
+  khamburgermenuhelpers.cpp
   klanguagebutton.cpp
   klanguagename.cpp
   krecentfilesaction.cpp
@@ -73,6 +75,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KConfigViewStateSaver
   KConfigDialogManager
   KCModule
+  KHamburgerMenu
   KHelpClient
   KLanguageButton
   KLanguageName
@@ -108,6 +111,7 @@ if (PythonModuleGeneration_FOUND)
       kconfigviewstatesaver.h
       kconfigdialogmanager.h
       kcmodule.h
+      khamburgermenu.h
       khelpclient.h
       klanguagebutton.h
       kpastetextaction.h
