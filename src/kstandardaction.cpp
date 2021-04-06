@@ -19,7 +19,6 @@
 #include <QMenuBar>
 
 #include "kpastetextaction.h"
-#include <KDualAction>
 
 namespace KStandardAction
 {
