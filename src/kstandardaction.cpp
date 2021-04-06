@@ -13,7 +13,7 @@
 #include <KAboutData>
 #include <KAcceleratorManager>
 #include <KLocalizedString>
-#include <QApplication>
+#include <QGuiApplication>
 #include <QLayout>
 #include <QMainWindow>
 #include <QMenuBar>
@@ -136,14 +136,14 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
         switch (id) {
         case Back:
             sLabel = i18nc("go back", "&Back");
-            if (QApplication::isRightToLeft()) {
+            if (QGuiApplication::isRightToLeft()) {
                 iconName = QStringLiteral("go-next");
             }
             break;
 
         case Forward:
             sLabel = i18nc("go forward", "&Forward");
-            if (QApplication::isRightToLeft()) {
+            if (QGuiApplication::isRightToLeft()) {
                 iconName = QStringLiteral("go-previous");
             }
             break;
@@ -169,7 +169,7 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
             sLabel = i18n(pInfo->psLabel);
         }
 
-        if (QApplication::isRightToLeft()) {
+        if (QGuiApplication::isRightToLeft()) {
             switch (id) {
             case Prior:
                 iconName = QStringLiteral("go-next-view-page");
