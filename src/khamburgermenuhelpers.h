@@ -24,6 +24,7 @@ class QWidget;
  * Functionally identical event listeners are needed throughout khamburgermenu.cpp.
  * This class makes sure only one of each is created when needed and then reused.
  * This also simplifies the removal of event listeners.
+ * \internal
  */
 class ListenerContainer : private QObject {
 public:
@@ -52,6 +53,7 @@ protected:
 
 /**
  * When an action is added or removed, calls KHamburgerMenuPrivate::notifyMenuResetNeeded().
+ * \internal
  */
 class AddOrRemoveActionListener : public QObject
 {
@@ -69,6 +71,7 @@ protected:
  * When the button is pressed, emits KHamburgerMenu::aboutToShowMenu(), then calls
  * KHamburgerMenuPrivate::resetMenu() (which will only actually reset the menu if
  * a menu reset is needed).
+ * \internal
  */
 class ButtonPressListener : public QObject
 {
@@ -87,6 +90,7 @@ protected:
  * - the visibility of the widget changes or
  * - actions are added or removed from the widget while it isVisible()
  * calls KHamburgerMenuPrivate::notifyMenuResetNeeded().
+ * \internal
  */
 class VisibleActionsChangeListener : public QObject
 {
@@ -106,6 +110,7 @@ protected:
 
 /**
  * When the visibility of the widget changes calls KHamburgerMenuPrivate::updateVisibility().
+ * \internal
  */
 class VisibilityChangesListener : public QObject
 {
