@@ -8,7 +8,7 @@
 #include "khamburgermenu.h"
 #include "khamburgermenu_p.h"
 
-#include "khamburgermenuhelpers.h"
+#include "khamburgermenuhelpers_p.h"
 
 #include <KLocalizedString>
 

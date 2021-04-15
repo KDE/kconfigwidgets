@@ -5,8 +5,8 @@
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
-#ifndef KHAMBURGERMENUHELPERS_H
-#define KHAMBURGERMENUHELPERS_H
+#ifndef KHAMBURGERMENUHELPERS_P_H
+#define KHAMBURGERMENUHELPERS_P_H
 
 #include "khamburgermenu_p.h"
 
@@ -135,4 +135,4 @@ bool isWidgetActuallyVisible(const QWidget *widget);
 bool listContainsWidget(const std::forward_list<QPointer<const QWidget>> &list,
                         const QWidget *widget);
 
-#endif // KHAMBURGERMENUHELPERS_H
+#endif // KHAMBURGERMENUHELPERS_P_H
