@@ -175,7 +175,8 @@ enum StandardAction {
     ShowToolbar, ///< Show/Hide the toolbar.
     ShowStatusbar, ///< Show/Hide the statusbar.
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
-    SaveOptions, ///< @deprecated since 5.38
+    SaveOptions ///< @deprecated Since 5.38, no known users.
+        KCONFIGWIDGETS_ENUMERATOR_DEPRECATED_VERSION_BELATED(5, 82, 5, 38, "No known users"),
 #elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
     SaveOptions_DEPRECATED_DO_NOT_USE,
 #endif
@@ -184,7 +185,8 @@ enum StandardAction {
     ConfigureToolbars, ///< Display the toolbar configuration dialog.
 // Help Menu
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
-    Help, ///< @deprecated since 5.38. Use HelpContents instead.
+    Help ///< @deprecated Since 5.38, use HelpContents instead.
+        KCONFIGWIDGETS_ENUMERATOR_DEPRECATED_VERSION_BELATED(5, 82, 5, 38, "Use HelpContents instead"),
 #elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
     Help_DEPRECATED_DO_NOT_USE,
 #endif
@@ -199,7 +201,8 @@ enum StandardAction {
     FullScreen, ///< Switch to/from full screen mode.
     Clear, ///< Clear the content of the focus widget.
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 39)
-    PasteText, ///< @deprecated since 5.39. Use Paste instead.
+    PasteText ///< @deprecated Since 5.39, use Paste instead.
+        KCONFIGWIDGETS_ENUMERATOR_DEPRECATED_VERSION_BELATED(5, 82, 5, 39, "Use Paste instead"),
 #elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39)
     PasteText_DEPRECATED_DO_NOT_USE,
 #endif
