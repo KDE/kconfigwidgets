@@ -133,8 +133,10 @@ void tst_KStandardAction::testCreateOldStyle()
     QVERIFY(toggle1);
     KToggleAction *toggle2 = KStandardAction::showStatusbar(&receiver, SLOT(onTriggered()), &receiver);
     QVERIFY(toggle2);
-    KToggleFullScreenAction *toggle3 = KStandardAction::fullScreen(&receiver, SLOT(onTriggered()), new QWidget, &receiver);
+    auto w = new QWidget;
+    KToggleFullScreenAction *toggle3 = KStandardAction::fullScreen(&receiver, SLOT(onTriggered()), w, &receiver);
     QVERIFY(toggle3);
+    delete w;
 }
 
 QTEST_MAIN(tst_KStandardAction)
