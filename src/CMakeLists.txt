@@ -61,7 +61,7 @@ if (TARGET Qt5::DBus)
   target_link_libraries(KF5ConfigWidgets PRIVATE Qt5::DBus) # KPasteTextAction talks to Klipper via DBus
 endif()
 
-set_target_properties(KF5ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION_STRING}
+set_target_properties(KF5ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION}
                                                   SOVERSION ${KCONFIGWIDGETS_SOVERSION}
                                                   EXPORT_NAME ConfigWidgets
 )
