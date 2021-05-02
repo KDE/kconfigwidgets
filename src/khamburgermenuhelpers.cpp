@@ -10,6 +10,7 @@
 #include "khamburgermenu.h"
 
 #include <QEvent>
+#include <QWidget>
 
 ListenerContainer::ListenerContainer(KHamburgerMenuPrivate *hamburgerMenuPrivate)
     : QObject{hamburgerMenuPrivate},
