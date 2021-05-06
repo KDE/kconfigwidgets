@@ -38,19 +38,20 @@ class KConfigDialogManager;
  *
  * Here is an example usage of KConfigDialog:
  *
- * \code
+ * @code
  * void KCoolApp::showSettings(){
- *   if(KConfigDialog::showDialog("settings"))
- *     return;
- *   KConfigDialog *dialog = new KConfigDialog(this, "settings", MySettings::self());
- *   dialog->setFaceType(KPageDialog::List);
- *   dialog->addPage(new General(0, "General"), i18n("General") );
- *   dialog->addPage(new Appearance(0, "Style"), i18n("Appearance") );
- *   connect(dialog, SIGNAL(settingsChanged(const QString&)), mainWidget, SLOT(loadSettings()));
- *   connect(dialog, SIGNAL(settingsChanged(const QString&)), this, SLOT(loadSettings()));
- *   dialog->show();
+ *     if (KConfigDialog::showDialog(QStringLiteral("settings"))) {
+ *       return;
+ *     }
+ *     KConfigDialog *dialog = new KConfigDialog(this, QStringLiteral("settings"), MySettings::self());
+ *     dialog->setFaceType(KPageDialog::List);
+ *     dialog->addPage(new General(0, "General"), i18n("General"));
+ *     dialog->addPage(new Appearance(0, "Style"), i18n("Appearance"));
+ *     connect(dialog, &KConfigDialog::settingsChanged, mainWidget, &Bar::loadSettings);
+ *     connect(dialog, &KConfigDialog::settingsChanged, this, &Foo::loadSettings);
+ *     dialog->show();
  * }
- * \endcode
+ * @endcode
  *
  * Other than the above code, each class that has settings in the dialog should
  * have a loadSettings() type slot to read settings and perform any
@@ -246,9 +247,6 @@ private Q_SLOTS:
 private:
     friend class KConfigDialogPrivate;
     std::unique_ptr<class KConfigDialogPrivate> const d;
-
-    Q_PRIVATE_SLOT(d, void _k_updateButtons())
-    Q_PRIVATE_SLOT(d, void _k_settingsChangedSlot())
 
     Q_DISABLE_COPY(KConfigDialog)
 };

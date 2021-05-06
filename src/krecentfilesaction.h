@@ -180,8 +180,6 @@ private:
 
 private:
     std::unique_ptr<KRecentFilesActionPrivate> const d_ptr;
-
-    Q_PRIVATE_SLOT(d_func(), void _k_urlSelected(QAction *))
 };
 
 #endif

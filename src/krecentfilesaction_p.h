@@ -39,7 +39,7 @@ public:
 
     void init();
 
-    void _k_urlSelected(QAction *);
+    void urlSelected(QAction *);
 
     int m_maxItems;
     QMap<QAction *, QString> m_shortNames;

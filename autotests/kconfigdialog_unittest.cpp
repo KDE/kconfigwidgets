@@ -373,7 +373,7 @@ private:
         edit->setObjectName(QStringLiteral("kcfg_foo"));
         edit->setText(QStringLiteral("some text"));
 
-        QSignalSpy spy(SignalTest::self(), SIGNAL(fooChanged(QString)));
+        QSignalSpy spy(SignalTest::self(), &SignalTest::fooChanged);
         QVERIFY(spy.isValid());
         // now all the magic happens
         dialog->addPage(page, QStringLiteral("General"));

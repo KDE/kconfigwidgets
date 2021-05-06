@@ -92,9 +92,6 @@ public:
 
 private:
     std::unique_ptr<KPasteTextActionPrivate> const d;
-
-    Q_PRIVATE_SLOT(d, void _k_menuAboutToShow())
-    Q_PRIVATE_SLOT(d, void _k_slotTriggered(QAction *))
 };
 #endif
 

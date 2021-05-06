@@ -26,16 +26,16 @@ CodecActionTest::CodecActionTest(QWidget *parent)
 {
     // clang-format off
     m_comboCodec->setToolBarMode(KCodecAction::ComboBoxMode);
-    connect(m_comboCodec, SIGNAL(triggered(QAction*)), SLOT(actionTriggered(QAction*)));
-    connect(m_comboCodec, SIGNAL(indexTriggered(int)), SLOT(indexTriggered(int)));
-    connect(m_comboCodec, SIGNAL(textTriggered(QString)), SLOT(textTriggered(QString)));
-    connect(m_comboCodec, SIGNAL(codecTriggered(QTextCodec*)), SLOT(codecTriggered(QTextCodec*)));
+    connect(m_comboCodec, QOverload<QAction *>::of(&KSelectAction::triggered), this, &CodecActionTest::actionTriggered);
+    connect(m_comboCodec, &KSelectAction::indexTriggered, this, &CodecActionTest::indexTriggered);
+    connect(m_comboCodec, &KSelectAction::textTriggered, this, &CodecActionTest::textTriggered);
+    connect(m_comboCodec, &KCodecAction::codecTriggered, this, &CodecActionTest::codecTriggered);
 
     m_buttonCodec->setToolBarMode(KCodecAction::MenuMode);
-    connect(m_buttonCodec, SIGNAL(triggered(QAction*)), SLOT(actionTriggered(QAction*)));
-    connect(m_buttonCodec, SIGNAL(indexTriggered(int)), SLOT(indexTriggered(int)));
-    connect(m_buttonCodec, SIGNAL(textTriggered(QString)), SLOT(textTriggered(QString)));
-    connect(m_buttonCodec, SIGNAL(codecTriggered(QTextCodec*)), SLOT(codecTriggered(QTextCodec*)));
+    connect(m_buttonCodec, QOverload<QAction *>::of(&KSelectAction::triggered), this, &CodecActionTest::actionTriggered);
+    connect(m_buttonCodec, &KSelectAction::indexTriggered, this, &CodecActionTest::indexTriggered);
+    connect(m_buttonCodec, &KSelectAction::textTriggered, this, &CodecActionTest::textTriggered);
+    connect(m_buttonCodec, &KCodecAction::codecTriggered, this, &CodecActionTest::codecTriggered);
     // clang-format on
 
     menuBar()->addAction(m_comboCodec);

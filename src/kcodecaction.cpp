@@ -30,7 +30,7 @@ public:
 
     void init(bool);
 
-    void _k_subActionTriggered(QAction *);
+    void subActionTriggered(QAction *);
 
     KCodecAction *const q;
     QAction *defaultAction = nullptr;
@@ -78,7 +78,9 @@ void KCodecActionPrivate::init(bool showAutoOptions)
         for (int i = 1; i < encodingsForScript.size(); ++i) {
             tmp->addAction(encodingsForScript.at(i));
         }
-        q->connect(tmp, SIGNAL(triggered(QAction *)), q, SLOT(_k_subActionTriggered(QAction *)));
+        q->connect(tmp, QOverload<QAction *>::of(&KSelectAction::triggered), q, [this](QAction *action) {
+            subActionTriggered(action);
+        });
         tmp->setCheckable(true);
         q->addAction(tmp);
     }
@@ -149,7 +151,7 @@ void KCodecAction::actionTriggered(QAction *action)
     }
 }
 
-void KCodecActionPrivate::_k_subActionTriggered(QAction *action)
+void KCodecActionPrivate::subActionTriggered(QAction *action)
 {
     if (currentSubAction == action) {
         return;

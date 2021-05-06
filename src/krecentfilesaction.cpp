@@ -75,12 +75,14 @@ void KRecentFilesActionPrivate::init()
     clearAction->setObjectName(QStringLiteral("clear_action"));
     clearAction->setVisible(false);
     q->setEnabled(false);
-    q->connect(q, SIGNAL(triggered(QAction *)), SLOT(_k_urlSelected(QAction *)));
+    q->connect(q, QOverload<QAction *>::of(&KSelectAction::triggered), q, [this](QAction *action) {
+        urlSelected(action);
+    });
 }
 
 KRecentFilesAction::~KRecentFilesAction() = default;
 
-void KRecentFilesActionPrivate::_k_urlSelected(QAction *action)
+void KRecentFilesActionPrivate::urlSelected(QAction *action)
 {
     Q_Q(KRecentFilesAction);
     Q_EMIT q->urlSelected(m_urls[action]);

@@ -50,11 +50,11 @@ KRecentFilesActionTest::KRecentFilesActionTest()
     d->uiMainWindow = new Ui::MainWindow();
     d->uiMainWindow->setupUi(this);
 
-    d->recentFiles = KStandardAction::openRecent(this, SLOT(urlSelected(QUrl)), this);
+    d->recentFiles = KStandardAction::openRecent(this, &KRecentFilesActionTest::urlSelected, this);
 
-    connect(d->uiMainWindow->pbAddUrl, SIGNAL(clicked()), this, SLOT(addUrl()));
-    connect(d->uiMainWindow->pbLoadEntries, SIGNAL(clicked()), this, SLOT(loadEntries()));
-    connect(d->uiMainWindow->pbSaveEntries, SIGNAL(clicked()), this, SLOT(saveEntries()));
+    connect(d->uiMainWindow->pbAddUrl, &QPushButton::clicked, this, &KRecentFilesActionTest::addUrl);
+    connect(d->uiMainWindow->pbLoadEntries, &QPushButton::clicked, this, &KRecentFilesActionTest::loadEntries);
+    connect(d->uiMainWindow->pbSaveEntries, &QPushButton::clicked, this, &KRecentFilesActionTest::saveEntries);
 
     d->uiMainWindow->menuFile->addAction(d->recentFiles);
 

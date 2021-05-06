@@ -38,8 +38,8 @@ public:
         delete m_popup;
     }
 
-    void _k_menuAboutToShow();
-    void _k_slotTriggered(QAction *);
+    void menuAboutToShow();
+    void slotTriggered(QAction *action);
 
     void init();
 
@@ -73,8 +73,12 @@ KPasteTextAction::KPasteTextAction(const QIcon &icon, const QString &text, QObje
 void KPasteTextActionPrivate::init()
 {
     m_popup = new QMenu;
-    q->connect(m_popup, SIGNAL(aboutToShow()), q, SLOT(_k_menuAboutToShow()));
-    q->connect(m_popup, SIGNAL(triggered(QAction *)), q, SLOT(_k_slotTriggered(QAction *)));
+    q->connect(m_popup, &QMenu::aboutToShow, q, [this]() {
+        menuAboutToShow();
+    });
+    q->connect(m_popup, &QMenu::triggered, q, [this](QAction *action) {
+        slotTriggered(action);
+    });
     m_mixedMode = true;
 }
 
@@ -85,7 +89,7 @@ void KPasteTextAction::setMixedMode(bool mode)
     d->m_mixedMode = mode;
 }
 
-void KPasteTextActionPrivate::_k_menuAboutToShow()
+void KPasteTextActionPrivate::menuAboutToShow()
 {
     m_popup->clear();
     QStringList list;
@@ -113,7 +117,7 @@ void KPasteTextActionPrivate::_k_menuAboutToShow()
     }
 }
 
-void KPasteTextActionPrivate::_k_slotTriggered(QAction *action)
+void KPasteTextActionPrivate::slotTriggered(QAction *action)
 {
     QDBusInterface klipper(QStringLiteral("org.kde.klipper"), QStringLiteral("/klipper"), QStringLiteral("org.kde.klipper.klipper"));
     if (klipper.isValid()) {

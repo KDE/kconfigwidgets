@@ -154,8 +154,6 @@ protected:
 private:
     friend class KCodecActionPrivate;
     std::unique_ptr<class KCodecActionPrivate> const d;
-
-    Q_PRIVATE_SLOT(d, void _k_subActionTriggered(QAction *))
 };
 
 #endif

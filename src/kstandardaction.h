@@ -44,20 +44,20 @@ class KToggleFullScreenAction;
  * <b>Simple Example:</b>\n
  *
  * In general, using standard actions should be a drop in replacement
- * for regular actions.  For example, if you previously had:
+ * for regular actions. For example, if you previously had:
+ * @code
+ * QAction *newAct = new QAction(i18n("&New"),
+ *                               QIcon::fromTheme("document-new"),
+ *                               KStandardShortcut::shortcut(KStandardShortcut::New),
+ *                               this,
+ *                               &ClassFoo::fileNew,
+ *                               actionCollection());
+ * @endcode
  *
- * \code
- * QAction *newAct = new QAction(i18n("&New"), QIcon::fromTheme("document-new"),
- *                               KStandardShortcut::shortcut(KStandardShortcut::New), this,
- *                               SLOT(fileNew()), actionCollection());
- * \endcode
- *
- * You could drop that and replace it with:
- *
- * \code
- * QAction *newAct = KStandardAction::openNew(this, SLOT(fileNew()),
- *                                       actionCollection());
- * \endcode
+ * You can replace it with:
+ * @code
+ * QAction *newAct = KStandardAction::openNew(this, &ClassFoo::fileNew, actionCollection());
+ * @endcode
  *
  * <b>Non-standard Usages</b>\n
  *
