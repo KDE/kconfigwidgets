@@ -565,8 +565,9 @@ KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(paste, Paste)
 /**
  * @deprecated since 5.39. Use paste() instead.
  */
+KCONFIGWIDGETS_EXPORT
 KCONFIGWIDGETS_DEPRECATED_VERSION(5, 39, "Use KStandardAction::paste(const QObject *, const char *, QObject *)")
-KCONFIGWIDGETS_EXPORT QAction *pasteText(const QObject *recvr, const char *slot, QObject *parent);
+QAction *pasteText(const QObject *recvr, const char *slot, QObject *parent);
 #endif
 
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 39)
@@ -1001,8 +1002,9 @@ fullScreen(const Receiver *recvr, Func slot, QWidget *window, QObject *parent)
  * Display the save options dialog.
  * @deprecated since 5.38
  */
+KCONFIGWIDGETS_EXPORT
 KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "No usage known, candidate for removal on next ABI break")
-KCONFIGWIDGETS_EXPORT QAction *saveOptions(const QObject *recvr, const char *slot, QObject *parent);
+QAction *saveOptions(const QObject *recvr, const char *slot, QObject *parent);
 #endif
 
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
@@ -1015,8 +1017,7 @@ KCONFIGWIDGETS_EXPORT QAction *saveOptions(const QObject *recvr, const char *slo
 inline QAction *saveOptions(const QObject *recvr, Func slot, QObject *parent);
 #else
 template<class Receiver, class Func>
-KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "No usage known, candidate for removal on next ABI break")
-KCONFIGWIDGETS_EXPORT inline
+KCONFIGWIDGETS_EXPORT KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "No usage known, candidate for removal on next ABI break") inline
     typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *saveOptions(const Receiver *recvr, Func slot, QObject *parent)
 {
     return create(SaveOptions, recvr, slot, parent);
@@ -1088,8 +1089,9 @@ KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(switchApplicationLanguage, SwitchApplicat
 /**
  * @deprecated since 5.38 Use helpContents() instead.
  */
+KCONFIGWIDGETS_EXPORT
 KCONFIGWIDGETS_DEPRECATED_VERSION(5, 23, "Use KStandardAction::helpContents(const QObject *, const char *, QObject *)")
-KCONFIGWIDGETS_EXPORT QAction *help(const QObject *recvr, const char *slot, QObject *parent);
+QAction *help(const QObject *recvr, const char *slot, QObject *parent);
 #endif
 
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
@@ -1101,8 +1103,7 @@ KCONFIGWIDGETS_EXPORT QAction *help(const QObject *recvr, const char *slot, QObj
 inline QAction *help(const QObject *recvr, Func slot, QObject *parent);
 #else
 template<class Receiver, class Func>
-KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "Use KStandardAction::helpContents(const QObject *, Func, QObject *)")
-KCONFIGWIDGETS_EXPORT inline
+KCONFIGWIDGETS_EXPORT KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "Use KStandardAction::helpContents(const QObject *, Func, QObject *)") inline
     typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *help(const Receiver *recvr, Func slot, QObject *parent)
 {
     return create(Help, recvr, slot, parent);
