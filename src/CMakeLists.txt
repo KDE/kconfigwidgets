@@ -2,6 +2,8 @@ set(kconfigwidgets_SRCS
   kcodecaction.cpp
   kcolorscheme.cpp
   kcolorschememanager.cpp
+  kcommandbar.cpp
+  kcommandbarmodel_p.cpp
   kconfigdialog.cpp
   kconfigviewstatesaver.cpp
   kconfigdialogmanager.cpp
@@ -71,6 +73,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KCodecAction
   KColorScheme
   KColorSchemeManager
+  KCommandBar
   KConfigDialog
   KConfigViewStateSaver
   KConfigDialogManager
@@ -112,6 +115,7 @@ if (PythonModuleGeneration_FOUND)
       kconfigdialogmanager.h
       kcmodule.h
       khamburgermenu.h
+      kcommandbar.h
       khelpclient.h
       klanguagebutton.h
       kpastetextaction.h

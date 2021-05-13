@@ -15,6 +15,7 @@ kconfigwidgets_executable_tests(
    kcodecactiontest
    kcolorschemedemo
    klanguagebuttontest
+   kcommandbartest
 )
 
 ## kcolorutilsdemo
