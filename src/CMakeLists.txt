@@ -29,7 +29,7 @@ if (TARGET Qt5::DBus)
   list(APPEND kconfigwidgets_SRCS kpastetextaction.cpp)
 endif()
 
-qt5_add_resources(kconfigwidgets_SRCS kconfigwidgets.qrc)
+qt_add_resources(kconfigwidgets_SRCS kconfigwidgets.qrc)
 
 add_library(KF5ConfigWidgets ${kconfigwidgets_SRCS})
 add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
