@@ -10,6 +10,8 @@
 #include "ktipdialog.h"
 #include "kconfigwidgets_debug.h"
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 83)
+
 #include <QApplication>
 #include <QCheckBox>
 #include <QFile>
@@ -409,3 +411,4 @@ bool KTipDialog::eventFilter(QObject *object, QEvent *event)
 }
 
 #include "moc_ktipdialog.cpp"
+#endif

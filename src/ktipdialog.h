@@ -15,6 +15,8 @@
 
 #include <kconfigwidgets_export.h>
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 83)
+
 /**
  * A database for tips-of-the-day.
  *
@@ -34,6 +36,7 @@
  *
  * @author Matthias Hoelzer-Kluepfel <mhk@kde.org>
  *
+ * @deprecated Since 5.83, write the information to the handbook instead
  */
 class KCONFIGWIDGETS_EXPORT KTipDatabase
 {
@@ -43,7 +46,9 @@ public:
      * no name is given, a file called 'application-name/tips' will be loaded.
      *
      * @param tipFile The absolute path to the tips file.
+     * @deprecated Since 5.83, write the information to the handbook instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 83, "write the information to the handbook instead")
     explicit KTipDatabase(const QString &tipFile = QString());
 
     /**
@@ -51,7 +56,9 @@ public:
      * essentially behaves like the one above. It returns when tipFiles is empty.
      *
      * @param tipFiles A list of absolute paths to the tips file
+     * @deprecated Since 5.83, write the information to the handbook instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 83, "write the information to the handbook instead")
     explicit KTipDatabase(const QStringList &tipFiles);
 
     ~KTipDatabase();
@@ -100,6 +107,7 @@ public:
      * @param database TipDatabase that should be used by the TipDialog. The KTipDialog
      *                 will take ownership of the database, including deleting it.
      * @param parent Parent widget of TipDialog.
+     * @deprecated Since 5.83, write the information to the handbook instead
      */
     explicit KTipDialog(KTipDatabase *database, QWidget *parent = nullptr);
 
@@ -124,6 +132,7 @@ public:
      * @param force If true, the dialog is show, even when the users
      *              disabled it.
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 83, "write the information to the handbook instead")
     static void showTip(QWidget *parent, const QString &tipFile = QString(), bool force = false);
 
     /**
@@ -136,7 +145,9 @@ public:
      *                resource of QStandardPaths.
      * @param force If true, the dialog is show, even when the users
      *              disabled it.
+     * @deprecated Since 5.83, write the information to the handbook instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 83, "write the information to the handbook instead")
     static void showMultiTip(QWidget *parent, const QStringList &tipFiles, bool force = false);
 
     /**
@@ -144,7 +155,9 @@ public:
      *
      * This methods calls showTip() with the applications main window as parent.
      *
+     * @deprecated Since 5.83, write the information to the handbook instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 83, "write the information to the handbook instead")
     static void showTip(const QString &tipFile = QString(), bool force = false);
 
     /**
@@ -152,7 +165,9 @@ public:
      *
      * Normally, the user can disable the display of the tip in the dialog.
      * This is just a way to change this setting from outside.
+     * @deprecated Since 5.83, write the information to the handbook instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 83, "write the information to the handbook instead")
     static void setShowOnStart(bool show);
 
 protected:
@@ -164,4 +179,5 @@ private:
     Q_DISABLE_COPY(KTipDialog)
 };
 
+#endif
 #endif
