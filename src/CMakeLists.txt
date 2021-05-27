@@ -1,4 +1,7 @@
-set(kconfigwidgets_SRCS
+add_library(KF5ConfigWidgets)
+add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
+
+target_sources(KF5ConfigWidgets PRIVATE
   kcodecaction.cpp
   kcolorscheme.cpp
   kcolorschememanager.cpp
@@ -16,8 +19,10 @@ set(kconfigwidgets_SRCS
   krecentfilesaction.cpp
   kstandardaction.cpp
   ktipdialog.cpp
+
+  kconfigwidgets.qrc
 )
-ecm_qt_declare_logging_category(kconfigwidgets_SRCS
+ecm_qt_declare_logging_category(KF5ConfigWidgets
     HEADER kconfigwidgets_debug.h
     IDENTIFIER KCONFIG_WIDGETS_LOG
     CATEGORY_NAME kf.configwidgets
@@ -26,13 +31,9 @@ ecm_qt_declare_logging_category(kconfigwidgets_SRCS
     EXPORT KCONFIGWIDGETS
 )
 if (TARGET Qt5::DBus)
-  list(APPEND kconfigwidgets_SRCS kpastetextaction.cpp)
+    target_sources(KF5ConfigWidgets PRIVATE kpastetextaction.cpp)
 endif()
 
-qt_add_resources(kconfigwidgets_SRCS kconfigwidgets.qrc)
-
-add_library(KF5ConfigWidgets ${kconfigwidgets_SRCS})
-add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
 ecm_generate_export_header(KF5ConfigWidgets
     BASE_NAME KConfigWidgets
     GROUP_BASE_NAME KF
