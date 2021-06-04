@@ -269,7 +269,7 @@ KSharedConfigPtr defaultConfig() {
     // If unset, this is equivalent to openConfig() and the system scheme is used.
     const auto colorSchemePath = qApp->property("KDE_COLOR_SCHEME_PATH").toString();
     if (!config || config->name() != colorSchemePath) {
-        config = KSharedConfig::openConfig(colorSchemePath);
+        config = KSharedConfig::openConfig(colorSchemePath, colorSchemePath.isEmpty() ? KSharedConfig::FullConfig : KSharedConfig::NoGlobals);
     }
     return config;
 }

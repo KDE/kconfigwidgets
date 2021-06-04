@@ -34,13 +34,13 @@ static void activateScheme(const QString &colorSchemePath)
     if (colorSchemePath.isEmpty()) {
         qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::Ptr(nullptr)));
     } else {
-        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(colorSchemePath)));
+        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(colorSchemePath, KSharedConfig::SimpleConfig)));
     }
 }
 
 static QIcon createPreview(const QString &path)
 {
-    KSharedConfigPtr schemeConfig = KSharedConfig::openConfig(path, KConfig::SimpleConfig);
+    KSharedConfigPtr schemeConfig = KSharedConfig::openConfig(path, KConfig::NoGlobals);
     QIcon result;
 
     KColorScheme activeWindow(QPalette::Active, KColorScheme::Window, schemeConfig);
