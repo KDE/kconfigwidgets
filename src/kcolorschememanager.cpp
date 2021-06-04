@@ -38,7 +38,7 @@ static void activateScheme(const QString &colorSchemePath)
     }
 }
 
-static QIcon createPreview(const QString &path)
+QIcon KColorSchemeManagerPrivate::createPreview(const QString &path)
 {
     KSharedConfigPtr schemeConfig = KSharedConfig::openConfig(path, KConfig::SimpleConfig);
     QIcon result;
@@ -72,80 +72,6 @@ static QIcon createPreview(const QString &path)
 KColorSchemeManagerPrivate::KColorSchemeManagerPrivate()
     : model(new KColorSchemeModel())
 {
-}
-
-KColorSchemeModel::KColorSchemeModel(QObject *parent)
-    : QAbstractListModel(parent)
-{
-    init();
-}
-
-KColorSchemeModel::~KColorSchemeModel()
-{
-}
-
-int KColorSchemeModel::rowCount(const QModelIndex &parent) const
-{
-    if (parent.isValid()) {
-        return 0;
-    }
-    return m_data.count();
-}
-
-QVariant KColorSchemeModel::data(const QModelIndex &index, int role) const
-{
-    if (!index.isValid() || (index.row() >= m_data.count())) {
-        return QVariant();
-    }
-
-    switch (role) {
-    case Qt::DisplayRole:
-        return m_data.at(index.row()).name;
-    case Qt::DecorationRole: {
-        auto &item = m_data[index.row()];
-        if (item.preview.isNull()) {
-            item.preview = createPreview(item.path);
-        }
-        return item.preview;
-    }
-    case Qt::UserRole:
-        return m_data.at(index.row()).path;
-    default:
-        return QVariant();
-    }
-}
-
-void KColorSchemeModel::init()
-{
-    beginResetModel();
-    m_data.clear();
-
-    const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("color-schemes"), QStandardPaths::LocateDirectory);
-    QStringList schemeFiles;
-    for (const QString &dir : dirs) {
-        const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.colors"));
-        for (const QString &file : fileNames) {
-            const QString suffixedFileName = QLatin1String("color-schemes/") + file;
-            if (!schemeFiles.contains(suffixedFileName)) {
-                schemeFiles.append(suffixedFileName);
-            }
-        }
-    }
-    std::transform(schemeFiles.begin(), schemeFiles.end(), schemeFiles.begin(), [](const QString &item) {
-        return QStandardPaths::locate(QStandardPaths::GenericDataLocation, item);
-    });
-    for (const QString &schemeFile : qAsConst(schemeFiles)) {
-        KSharedConfigPtr config = KSharedConfig::openConfig(schemeFile, KConfig::SimpleConfig);
-        KConfigGroup group(config, QStringLiteral("General"));
-        const QString name = group.readEntry("Name", QFileInfo(schemeFile).baseName());
-        const KColorSchemeModelData data = {name, schemeFile, QIcon()};
-        m_data.append(data);
-    }
-    std::sort(m_data.begin(), m_data.end(), [](const KColorSchemeModelData &first, const KColorSchemeModelData &second) {
-        return first.name < second.name;
-    });
-    m_data.insert(defaultSchemeRow, {i18n("Default"), QString(), QIcon::fromTheme("edit-undo")});
-    endResetModel();
 }
 
 KColorSchemeManager::KColorSchemeManager(QObject *parent)
@@ -206,7 +132,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
         const auto actions = group->actions();
         for (QAction *action : actions) {
             if (action->icon().isNull()) {
-                action->setIcon(createPreview(action->data().toString()));
+                action->setIcon(KColorSchemeManagerPrivate::createPreview(action->data().toString()));
             }
         }
     });
