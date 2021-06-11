@@ -12,7 +12,6 @@
 #include <KConfigGroup>
 
 #include <QDir>
-#include <QStringList>
 
 QString KLanguageName::nameForCode(const QString &code)
 {

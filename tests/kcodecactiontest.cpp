@@ -2,7 +2,6 @@
 
 #include <QApplication>
 #include <QMenuBar>
-#include <QTextCodec>
 #include <QToolBar>
 
 #include <QDebug>

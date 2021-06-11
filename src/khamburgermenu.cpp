@@ -19,7 +19,6 @@
 #include <QToolButton>
 
 #include <algorithm>
-#include <memory>
 #include <forward_list>
 #include <unordered_set>
 
