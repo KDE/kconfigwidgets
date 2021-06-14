@@ -23,6 +23,13 @@ target_sources(KF5ConfigWidgets PRIVATE
 
   kconfigwidgets.qrc
 )
+
+if (WIN32)
+  target_sources(KF5ConfigWidgets PRIVATE
+    windowsmessagesnotifier.cpp
+  )
+endif()
+
 ecm_qt_declare_logging_category(KF5ConfigWidgets
     HEADER kconfigwidgets_debug.h
     IDENTIFIER KCONFIG_WIDGETS_LOG
@@ -56,6 +63,11 @@ target_link_libraries(KF5ConfigWidgets
     KF5::GuiAddons # KColorScheme uses KColorUtils
     KF5::I18n # For action and widget texts
 )
+
+if (WIN32)
+  target_link_libraries(KF5ConfigWidgets PRIVATE advapi32)
+endif()
+
 if (TARGET KF5::Auth)
   target_link_libraries(KF5ConfigWidgets PUBLIC KF5::Auth) # KCModule uses KAuth::Action TODO KF6 Change to KF5::AuthCore
 else()

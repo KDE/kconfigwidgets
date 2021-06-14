@@ -24,15 +24,24 @@
 #include <QStyle>
 
 constexpr int defaultSchemeRow = 0;
+static bool s_overrideAutoSwitch = false;
+static QString autoColorSchemePath;
+#ifdef Q_OS_WIN
+WindowsMessagesNotifier KColorSchemeManagerPrivate::m_windowsMessagesNotifier = WindowsMessagesNotifier();
+#endif
 
-static void activateScheme(const QString &colorSchemePath)
+static void activateScheme(const QString &colorSchemePath, bool overrideAutoSwitch = true)
 {
+    s_overrideAutoSwitch = overrideAutoSwitch;
     // hint for plasma-integration to synchronize the color scheme with the window manager/compositor
     // The property needs to be set before the palette change because is is checked upon the
     // ApplicationPaletteChange event.
     qApp->setProperty("KDE_COLOR_SCHEME_PATH", colorSchemePath);
     if (colorSchemePath.isEmpty()) {
         qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::Ptr(nullptr)));
+        // enable auto-switch when Default color scheme is set
+        s_overrideAutoSwitch = false;
+        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(autoColorSchemePath)));
     } else {
         qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(colorSchemePath)));
     }
@@ -72,12 +81,25 @@ QIcon KColorSchemeManagerPrivate::createPreview(const QString &path)
 KColorSchemeManagerPrivate::KColorSchemeManagerPrivate()
     : model(new KColorSchemeModel())
 {
+#ifdef Q_OS_WIN
+    QAbstractEventDispatcher::instance()->installNativeEventFilter(&m_windowsMessagesNotifier);
+#endif
 }
 
 KColorSchemeManager::KColorSchemeManager(QObject *parent)
     : QObject(parent)
     , d(new KColorSchemeManagerPrivate)
 {
+#ifdef Q_OS_WIN
+    connect(&d->getWindowsMessagesNotifier(), &WindowsMessagesNotifier::wm_colorSchemeChanged, this, [this](){
+        const QString colorSchemeToApply = d->getWindowsMessagesNotifier().preferDarkMode() ? d->getDarkColorScheme() : d->getLightColorScheme();
+        autoColorSchemePath = this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString();
+        if (!s_overrideAutoSwitch) {
+            ::activateScheme(this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString(), false);
+        }
+    });
+    d->getWindowsMessagesNotifier().handleWMSettingChange();
+#endif
 }
 
 KColorSchemeManager::~KColorSchemeManager()
