@@ -33,8 +33,9 @@ public:
 
     Q_SLOT void setFilterString(const QString &string)
     {
+        beginResetModel();
         m_pattern = string;
-        invalidateFilter();
+        endResetModel();
     }
 
 protected:
@@ -69,7 +70,7 @@ private:
     QString m_pattern;
 };
 // END CommandBarFilterModel
-#include <QDebug>
+
 class CommandBarStyleDelegate final : public QStyledItemDelegate
 {
 public:
