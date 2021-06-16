@@ -33,6 +33,8 @@ public:
 
     Q_SLOT void setFilterString(const QString &string)
     {
+        // MUST reset the model here, we want to repopulate
+        // invalidateFilter() will not work here
         beginResetModel();
         m_pattern = string;
         endResetModel();
@@ -85,7 +87,7 @@ public:
     static void paintItemText(QPainter *p, const QString &textt, const QStyleOptionViewItem &options, QVector<QTextLayout::FormatRange> formats)
     {
         constexpr int iconWidth = 20;
-        QString text = options.fontMetrics.elidedText(textt, Qt::ElideLeft, options.rect.width() - iconWidth);
+        QString text = options.fontMetrics.elidedText(textt, Qt::ElideRight, options.rect.width() - iconWidth);
 
         // set formats and font
         QTextLayout textLayout(text, options.font);
