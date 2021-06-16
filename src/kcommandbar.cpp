@@ -466,6 +466,9 @@ KCommandBar::KCommandBar(QWidget *parent)
      */
     Q_ASSERT(parent);
 
+    setWindowFlag(Qt::FramelessWindowHint);
+    setAttribute(Qt::WA_TranslucentBackground);
+
     QVBoxLayout *layout = new QVBoxLayout();
     layout->setSpacing(0);
     layout->setContentsMargins(4, 4, 4, 4);
