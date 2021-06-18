@@ -137,10 +137,13 @@ public:
     void saveEntries(const KConfigGroup &config);
 
     /**
-     *  Add URL to recent files list. This will enable this action.
+     * Add URL to the recent files list. This will enable this action.
      *
      *  @param url The URL of the file
      *  @param name The user visible pretty name that appears before the URL
+     *
+     * @note URLs corresponding to local files in the temporary directory
+     * (see @ref QDir::tempPath()) are automatically ignored by this method.
      */
     void addUrl(const QUrl &url, const QString &name = QString());
 
