@@ -160,11 +160,7 @@ public:
             painter->translate(iconWidth, 0);
         }
 
-        /**
-         * must use QString here otherwise fuzzy match display
-         * won't work very well.
-         */
-        QString str = original;
+        QStringView str = original;
         int componentIdx = original.indexOf(QLatin1Char(':'));
         int actionNameStart = 0;
         if (componentIdx > 0) {
@@ -185,11 +181,14 @@ public:
         fmt.setFontWeight(QFont::Bold);
 
         /**
-         * TODO: Will be enabled when KFuzzyMatcher supports returning
-         *  match positions
+         * Highlight matches from fuzzy matcher
          */
-        //        const auto f = get_fuzzy_match_formats(m_filterString, str, componentIdx + 2, fmt);
-        //        formats.append(f);
+        const auto fmtRanges = KFuzzyMatcher::matchedRanges(m_filterString, str);
+        QTextCharFormat f;
+        f.setForeground(options.palette.link());
+        std::transform(fmtRanges.begin(), fmtRanges.end(), std::back_inserter(formats), [f, actionNameStart](const KFuzzyMatcher::Range &fr) {
+            return QTextLayout::FormatRange{fr.start + actionNameStart, fr.length, f};
+        });
 
         paintItemText(painter, original, options, std::move(formats));
 
