@@ -1026,10 +1026,17 @@ KCONFIGWIDGETS_EXPORT KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "No usage known, 
 #endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
 
 /**
- * Display the configure key bindings dialog.
+ * Display the configure keyboard shortcuts dialog.
  *
- *  Note that you might be able to use the pre-built KXMLGUIFactory's function:
- *  KStandardAction::keyBindings(guiFactory(), SLOT(configureShortcuts()), actionCollection());
+ * Note that you might be able to use the pre-built KXMLGUIFactory's function:
+ * @code
+ * // For versions older than 5.84:
+ * KStandardAction::keyBindings(guiFactory(), SLOT(configureShortcuts()), actionCollection());
+ * // Starting from 5.84 you can use this (the KXMLGUIFactory::configureShortcuts() method is
+ * // deprecated in 5.84):
+ * KStandardAction::keyBindings(guiFactory(), &KXMLGUIFactory::showConfigureShortcutsDialog, actionCollection());
+ * @endcode
+ *
  */
 KCONFIGWIDGETS_EXPORT QAction *keyBindings(const QObject *recvr, const char *slot, QObject *parent);
 
