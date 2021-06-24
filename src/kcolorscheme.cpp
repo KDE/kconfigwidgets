@@ -14,7 +14,9 @@
 #include <QBrush>
 #include <QColor>
 #include <QCoreApplication>
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 84)
 #include <QWidget>
+#endif
 
 // BEGIN StateEffects
 class StateEffects
@@ -824,6 +826,7 @@ QBrush KStatefulBrush::brush(const QPalette &pal) const
     return brush(pal.currentColorGroup());
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 84)
 QBrush KStatefulBrush::brush(const QWidget *widget) const
 {
     if (widget) {
@@ -832,4 +835,5 @@ QBrush KStatefulBrush::brush(const QWidget *widget) const
         return QBrush();
     }
 }
+#endif
 //END KStatefulBrush

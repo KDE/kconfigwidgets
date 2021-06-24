@@ -586,6 +586,7 @@ public:
      */
     QBrush brush(const QPalette &) const;
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 84)
     /**
      * Retrieve the brush, using a QWidget pointer to determine the correct
      * state. Use when you have a pointer to the widget that you are painting.
@@ -593,8 +594,13 @@ public:
      *
      * @note If you pass an invalid widget, you will get a default brush (i.e.
      * <tt>QBrush()</tt>).
+     * @deprecated Since 5.84, use @ref brush(const QPalette &) instead.
+     * A typical replacement would be <tt>brush(widget->palette())</tt>
+     * (in case @c widget cannot be @c null in this context).
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 84, "Use KStatefulBrush::brush(const QPalette&) instead")
     QBrush brush(const QWidget *) const;
+#endif
 
 private:
     class KStatefulBrushPrivate *d;
