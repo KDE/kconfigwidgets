@@ -4,7 +4,7 @@ add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
 target_sources(KF5ConfigWidgets PRIVATE
   kcodecaction.cpp
   kcolorscheme.cpp
-  kcolorschememanager.cpp
+  #kcolorschememanager.cpp
   kcommandbar.cpp
   kcommandbarmodel_p.cpp
   kconfigdialog.cpp

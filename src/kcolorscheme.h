@@ -8,7 +8,6 @@
 #ifndef KCOLORSCHEME_H
 #define KCOLORSCHEME_H
 
-#include <KSharedConfig>
 #include <kconfigwidgets_export.h>
 
 #include <QExplicitlySharedDataPointer>
@@ -333,8 +332,10 @@ public:
 
     /**
      * Construct a palette from given color set and state. Colors are taken
-     * from the given KConfig. If null, the application's color scheme is used
-     *  (either the system default or one set by KColorSchemeManager).
+     * from the given .colors file.  If fileName is a non-absolute path, it will be looked up inside
+     * the /colors subdirectory inside Qt::GenericDataLocation. If fileName is empty or the colorscheme
+     * does not exist, the colorscheme of the applications is used (either the system default or the one
+     * set by KColorSchemeManager).
      *
      * @note KColorScheme provides direct access to the color scheme for users
      * that deal directly with widget states. Unless you are a low-level user
@@ -342,7 +343,7 @@ public:
      * of states (e.g. windows that cannot be inactive), consider using a
      * ::KStatefulBrush instead.
      */
-    explicit KColorScheme(QPalette::ColorGroup = QPalette::Normal, ColorSet = View, KSharedConfigPtr = KSharedConfigPtr());
+    explicit KColorScheme(QPalette::ColorGroup = QPalette::Normal, ColorSet = View, const QString &fileName = QString());
 
     /**
      * Retrieve the requested background brush.
@@ -374,21 +375,19 @@ public:
     QColor shade(ShadeRole) const;
 
     /**
-     * Returns the contrast for borders.
+     * Returns the contrast for borders of the application color scheme (either the system default
+     * or the one set by KColorSchemeManager).
      * @return the contrast (between 0 for minimum and 10 for maximum
      *         contrast)
      */
-    static int contrast();
+    static int defaultContrast();
 
     /**
-     * Returns the contrast for borders as a floating point value.
-     * @param config pointer to the config from which to read the contrast
-     * setting. If null, the application's color scheme will be used
-     *   (either the system default or one set by KColorSchemeManager).
+     * Returns the contrast for borders of this color scheme as a floating point value.
      * @return the contrast (between 0.0 for minimum and 1.0 for maximum
      *         contrast)
      */
-    static qreal contrastF(const KSharedConfigPtr &config = KSharedConfigPtr());
+    qreal colorSchemeContrast();
 
     /**
      * Retrieve the requested shade color, using the specified color as the
@@ -435,7 +434,7 @@ public:
                                  BackgroundRole newRole = NormalBackground,
                                  QPalette::ColorRole color = QPalette::Base,
                                  ColorSet set = View,
-                                 KSharedConfigPtr = KSharedConfigPtr());
+                                 const QString &fileName = QString());
 
     /**
      * Adjust a QPalette by replacing the specified QPalette::ColorRole with
@@ -450,7 +449,7 @@ public:
                                  ForegroundRole newRole = NormalText,
                                  QPalette::ColorRole color = QPalette::Text,
                                  ColorSet set = View,
-                                 KSharedConfigPtr = KSharedConfigPtr());
+                                 const QString &fileName = QString());
 
     /**
      * Used to obtain the QPalette that will be used to set the application
@@ -462,7 +461,7 @@ public:
      *
      * @since 5.0
      */
-    static QPalette createApplicationPalette(const KSharedConfigPtr &config);
+    static QPalette createApplicationPalette(const QString &fileName);
 
     /**
      * Used to check if the color scheme has a given set.
@@ -475,7 +474,7 @@ public:
      *
      * @since 5.75
      */
-    static bool isColorSetSupported(const KSharedConfigPtr &config, KColorScheme::ColorSet set);
+    static bool isColorSetSupported(const QString &fileName, KColorScheme::ColorSet set);
 
 private:
     QExplicitlySharedDataPointer<KColorSchemePrivate> d;
@@ -522,21 +521,21 @@ public:
      * If null, the application's color scheme is used (either the system
      * default, or one set by KColorSchemeManager).
      */
-    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::ForegroundRole, KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::ForegroundRole, const QString &fileName = QString());
 
     /**
      * Construct a stateful brush from given color set and background role,
      * using the colors from the given KConfig (if null, the application's
      * colors are used).
      */
-    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::BackgroundRole, KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::BackgroundRole, const QString &fileName = QString());
 
     /**
      * Construct a stateful brush from given color set and decoration role,
      * using the colors from the given KConfig (if null, the application's
      * colors are used).
      */
-    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::DecorationRole, KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::DecorationRole, const QString &fileName = QString());
 
     /**
      * Construct a stateful background brush from a specified QBrush (or
@@ -546,7 +545,7 @@ public:
      * the system color scheme. The state effects from the given KConfig are
      * used (if null, the application's state effects are used).
      */
-    explicit KStatefulBrush(const QBrush &, KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(const QBrush &, const QString &fileName = QString());
 
     /**
      * Construct a stateful foreground/decoration brush from a specified
@@ -560,7 +559,7 @@ public:
      * KColorScheme::NormalBackground role and QPalette::Active state for this
      * foreground/decoration color.
      */
-    explicit KStatefulBrush(const QBrush &, const QBrush &background, KSharedConfigPtr = KSharedConfigPtr());
+    explicit KStatefulBrush(const QBrush &, const QBrush &background, const QString &fileName = QString());
 
     /** Construct a copy of another KStatefulBrush. */
     KStatefulBrush(const KStatefulBrush &);
