@@ -5,7 +5,7 @@ target_sources(KF5ConfigWidgets PRIVATE
   kcodecaction.cpp
   kcolorscheme.cpp
   #kcolorschememanager.cpp
- # kcolorschememodel.cpp
+  #kcolorschememodel.cpp
   kcommandbar.cpp
   kcommandbarmodel_p.cpp
   kconfigdialog.cpp
