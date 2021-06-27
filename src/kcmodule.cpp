@@ -107,6 +107,7 @@ KConfigDialogManager *KCModule::addConfig(KCoreConfigSkeleton *config, QWidget *
     return manager;
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 84)
 KConfigDialogManager *KCModule::addConfig(KConfigSkeleton *config, QWidget *widget)
 {
     KConfigDialogManager *manager = new KConfigDialogManager(widget, config);
@@ -115,6 +116,7 @@ KConfigDialogManager *KCModule::addConfig(KConfigSkeleton *config, QWidget *widg
     d->managers.append(manager);
     return manager;
 }
+#endif
 
 void KCModule::setNeedsAuthorization(bool needsAuth)
 {

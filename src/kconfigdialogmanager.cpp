@@ -37,6 +37,7 @@ KConfigDialogManager::KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton 
     init(true);
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 84)
 KConfigDialogManager::KConfigDialogManager(QWidget *parent, KConfigSkeleton *conf)
     : QObject(parent)
     , d(new KConfigDialogManagerPrivate(this))
@@ -45,6 +46,7 @@ KConfigDialogManager::KConfigDialogManager(QWidget *parent, KConfigSkeleton *con
     d->m_dialog = parent;
     init(true);
 }
+#endif
 
 KConfigDialogManager::~KConfigDialogManager() = default;
 

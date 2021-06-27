@@ -331,6 +331,7 @@ protected:
      */
     KConfigDialogManager *addConfig(KCoreConfigSkeleton *config, QWidget *widget);
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 84)
     /**
      * Adds a KConfigskeleton @p config to watch the widget @p widget
      *
@@ -339,8 +340,11 @@ protected:
      * @return a pointer to the KConfigDialogManager in use
      * @param config the KConfigSkeleton to use
      * @param widget the widget to watch
+     * @deprecated since 5.84, use addConfig(KCoreConfigSkeleton *config, QWidget *widget);
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 84, "Use KConfigDialogManager *addConfig(KCoreConfigSkeleton *config, QWidget *widget);")
     KConfigDialogManager *addConfig(KConfigSkeleton *config, QWidget *widget);
+#endif
 
     /**
      * Sets the quick help.

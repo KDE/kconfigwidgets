@@ -239,12 +239,16 @@ public:
      */
     KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf);
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 84)
     /**
      * Constructor.
      * @param parent  Dialog widget to manage
      * @param conf Object that contains settings
+     * @deprecated since 5.84, use KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf)
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 84, "Use KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf)")
     KConfigDialogManager(QWidget *parent, KConfigSkeleton *conf);
+#endif
 
     /**
      * Destructor.
