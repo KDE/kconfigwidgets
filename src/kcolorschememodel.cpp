@@ -7,6 +7,8 @@
 
 #include "kcolorschememodel.h"
 
+#include "kcolorschememanager_p.h"
+
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KSharedConfig>
@@ -18,7 +20,7 @@
 #include <QPainter>
 #include <QStandardPaths>
 
-#include "kcolorschememanager_p.h"
+#include <map>
 
 struct KColorSchemeModelData {
     QString name;
@@ -37,30 +39,28 @@ KColorSchemeModel::KColorSchemeModel(QObject *parent)
     beginResetModel();
     d->m_data.clear();
 
-    const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("color-schemes"), QStandardPaths::LocateDirectory);
-    QStringList schemeFiles;
-    for (const QString &dir : dirs) {
-        const QStringList fileNames = QDir(dir).entryList({QStringLiteral("*.colors")});
-        for (const QString &file : fileNames) {
-            const QString suffixedFileName = QLatin1String("color-schemes/") + file;
-            if (!schemeFiles.contains(suffixedFileName)) {
-                schemeFiles.append(suffixedFileName);
-            }
+    // Fill the model with all *.colors files from the XDG_DATA_DIRS, sorted by "Name".
+    // If two color schemes, in user's $HOME and e.g. /usr, respectively, have the same
+    // name, the one under $HOME overrides the other one
+    const QStringList dirPaths =
+        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("color-schemes"), QStandardPaths::LocateDirectory);
+    std::map<QString, QString> map;
+    for (const QString &dirPath : dirPaths) {
+        const QDir dir(dirPath);
+        const QStringList fileNames = dir.entryList({QStringLiteral("*.colors")});
+        for (const auto &file : fileNames) {
+            map.insert({file, dir.filePath(file)});
         }
     }
-    std::transform(schemeFiles.begin(), schemeFiles.end(), schemeFiles.begin(), [](const QString &item) {
-        return QStandardPaths::locate(QStandardPaths::GenericDataLocation, item);
-    });
-    for (const QString &schemeFile : qAsConst(schemeFiles)) {
-        KSharedConfigPtr config = KSharedConfig::openConfig(schemeFile, KConfig::SimpleConfig);
+
+    for (const auto &[key, schemeFilePath] : map) {
+        KSharedConfigPtr config = KSharedConfig::openConfig(schemeFilePath, KConfig::SimpleConfig);
         KConfigGroup group(config, QStringLiteral("General"));
-        const QString name = group.readEntry("Name", QFileInfo(schemeFile).baseName());
-        const KColorSchemeModelData data = {name, schemeFile, QIcon()};
+        const QString name = group.readEntry("Name", QFileInfo(schemeFilePath).baseName());
+        const KColorSchemeModelData data = {name, schemeFilePath, QIcon()};
         d->m_data.append(data);
     }
-    std::sort(d->m_data.begin(), d->m_data.end(), [](const KColorSchemeModelData &first, const KColorSchemeModelData &second) {
-        return first.name < second.name;
-    });
+
     d->m_data.insert(0, {i18n("Default"), QString(), QIcon::fromTheme("edit-undo")});
     endResetModel();
 }
