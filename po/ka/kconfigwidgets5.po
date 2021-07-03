@@ -1,0 +1,707 @@
+# KDE3 - Georgian translation of kdelibs4.po
+# Gia Shervashidze <giasher@telenet.ge>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-06-29 00:13+0000\n"
+"PO-Revision-Date: 2009-12-17 02:11+0400\n"
+"Last-Translator: George Machitidze <giomac@gmail.com>\n"
+"Language-Team: Georgian <http://www.gia.ge>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "გია შერვაშიძე"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "giasher@telenet.ge"
+
+#: kcmodule.cpp:187
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:191
+#, fuzzy, kde-format
+#| msgid "Will not save configuration.\n"
+msgid "You are not allowed to save the configuration"
+msgstr "კონფიგურაცია არ შეინახება.\n"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "ნაგულისხმები"
+
+#: kcodecaction.cpp:74
+#, fuzzy, kde-format
+#| msgid "Autocorrect"
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "თვითკორექტურა"
+
+#: kcolorschememanager.cpp:150 kcolorschememanager.cpp:155
+#, fuzzy, kde-format
+#| msgid "Shortcuts"
+msgid "Color Scheme"
+msgstr "მალმხმობები"
+
+#: kcolorschememodel.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "ნაგულისხმები"
+
+#: kconfigdialog.cpp:33
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "გამართვა"
+
+#: khamburgermenu.cpp:125
+#, fuzzy, kde-format
+#| msgid "Menu"
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "მენიუ"
+
+#: khamburgermenu.cpp:336
+#, fuzzy, kde-format
+#| msgid "Shortcuts"
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "For %1 more action:"
+msgid_plural "For %1 more actions:"
+msgstr[0] "მალმხმობები"
+
+#: khamburgermenu.cpp:339
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "%1 Menu Bar Exclusive Action"
+msgid_plural "%1 Menu Bar Exclusive Actions"
+msgstr[0] ""
+
+#: krecentfilesaction.cpp:68
+#, fuzzy, kde-format
+msgid "No Entries"
+msgstr "პარამეტრები"
+
+#: krecentfilesaction.cpp:74
+#, fuzzy, kde-format
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "შეტანილის გასუფთავება"
+
+#: kstandardaction.cpp:138
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&უკან"
+
+#: kstandardaction.cpp:145
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&წინ"
+
+#: kstandardaction.cpp:152
+#, fuzzy, kde-format
+#| msgctxt "beginning (of line)"
+#| msgid "&Home"
+msgctxt "home page"
+msgid "&Home"
+msgstr "&თავში"
+
+#: kstandardaction.cpp:156
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&დახმარება"
+
+#: kstandardaction.cpp:213
+#, fuzzy, kde-format
+#| msgid "Show Menubar<p>Shows the menubar again after it has been hidden"
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "მენიუს პანელის ჩვენება<p>მენიუს პანელის ჩვენება მისი დამალვის შემდეგ"
+
+#: kstandardaction.cpp:234
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "
+#| "the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"სტატუსის პანელის ჩვენება<p>აჩვენებს სტატუსის პანელს, რომელიც წარმოადგენს "
+"ფანჯრის ქვედა ნაწილში განთავსებულ სტატუსის ზოლს."
+
+#: kstandardaction_p.h:29
+#, kde-format
+msgid "&New"
+msgstr "&ახალი"
+
+#: kstandardaction_p.h:29
+#, fuzzy, kde-format
+#| msgid "Configure Shortcut"
+msgid "Create new document"
+msgstr "მალმხმობის გამართვა"
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "&Open..."
+msgstr "&გახსნა..."
+
+#: kstandardaction_p.h:30
+#, fuzzy, kde-format
+#| msgid "Go back one step"
+msgid "Open an existing document"
+msgstr "ერთი ნაბიჯით უკან"
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "Open &Recent"
+msgstr "&ბოლო გახსნილები"
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "&Save"
+msgstr "&შენახვა"
+
+#: kstandardaction_p.h:32
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "დოკუმენტის დახურვა"
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "Save &As..."
+msgstr "შენახვა &როგორც..."
+
+#: kstandardaction_p.h:33
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "დოკუმენტის დახურვა"
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Re&vert"
+msgstr "ა&ღდგენა"
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "&Close"
+msgstr "&დახურვა"
+
+#: kstandardaction_p.h:35
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "დოკუმენტის დახურვა"
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "&Print..."
+msgstr "&ბეჭდვა..."
+
+#: kstandardaction_p.h:36
+#, fuzzy, kde-format
+#| msgid "Print Previe&w..."
+msgid "Print document"
+msgstr "ბეჭდვის &ესკიზი"
+
+#: kstandardaction_p.h:37
+#, fuzzy, kde-format
+#| msgid "Print Previe&w..."
+msgid "Print Previe&w"
+msgstr "ბეჭდვის &ესკიზი"
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "&Mail..."
+msgstr "&ფოსტის გაგზავნა..."
+
+#: kstandardaction_p.h:38
+#, fuzzy, kde-format
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "დოკუმენტის დახურვა"
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "&Quit"
+msgstr "&დასრულება"
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "Quit application"
+msgstr "პროგრამის დასრულება"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&Undo"
+msgstr "და&ბრუნება"
+
+#: kstandardaction_p.h:41
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "HTML დოკუმენტაცია"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Re&do"
+msgstr "გა&მეორება"
+
+#: kstandardaction_p.h:42
+#, fuzzy, kde-format
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "HTML დოკუმენტაცია"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Cu&t"
+msgstr "ამო&ჭრა"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Copy"
+msgstr "&კოპირება"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45 kstandardaction_p.h:47
+#, kde-format
+msgid "&Paste"
+msgstr "&ჩასმა"
+
+#: kstandardaction_p.h:45 kstandardaction_p.h:47
+#, fuzzy, kde-format
+#| msgid "Print Previe&w..."
+msgid "Paste clipboard content"
+msgstr "ბეჭდვის &ესკიზი"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "C&lear"
+msgstr "გასუ&ფთავება"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "Select &All"
+msgstr "&ყველას მონიშვნა"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Dese&lect"
+msgstr "მონიშვნის მო&ხსნა"
+
+#: kstandardaction_p.h:52
+#, kde-format
+msgid "&Find..."
+msgstr "&პოვნა..."
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "Find &Next"
+msgstr "&შემდეგის პოვნა"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "&წინას პოვნა"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "&Replace..."
+msgstr "&შეცვლა..."
+
+#: kstandardaction_p.h:57
+#, kde-format
+msgid "&Actual Size"
+msgstr "&მიმდინარე ზომა"
+
+#: kstandardaction_p.h:57
+#, kde-format
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "&Fit to Page"
+msgstr "გვერდის &შევსება"
+
+#: kstandardaction_p.h:58
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "გადასვლა სტრიქონზე"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "გვერდის სი&განეზე შევსება"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "გვერდის სი&მაღლეზე შევსება"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Zoom &In"
+msgstr "&გაზრდა"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "Zoom &Out"
+msgstr "&შემცირება"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "&Zoom..."
+msgstr "&მასშტაბი..."
+
+#: kstandardaction_p.h:63
+#, fuzzy, kde-format
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "თვის არჩევა"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:64
+#, fuzzy, kde-format
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "&ეკრანის განახლება"
+
+#: kstandardaction_p.h:66
+#, kde-format
+msgid "&Up"
+msgstr "&ზემოთ"
+
+#: kstandardaction_p.h:66
+#, kde-format
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "&Previous Page"
+msgstr "&წინა გვერდი"
+
+#: kstandardaction_p.h:71
+#, fuzzy, kde-format
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "&წინა გვერდი"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "&Next Page"
+msgstr "&შემდეგი გვერდი"
+
+#: kstandardaction_p.h:72
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "გადასვლა სტრიქონზე"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Go To..."
+msgstr "&გადასვლა..."
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Go to Page..."
+msgstr "&გადასვლა გვერდზე..."
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "&Go to Line..."
+msgstr "&გადასვლა სტრიქონზე..."
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&First Page"
+msgstr "&პირველი გვერდი"
+
+#: kstandardaction_p.h:76
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "გადასვლა სტრიქონზე"
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "&Last Page"
+msgstr "&ბოლო გვერდი"
+
+#: kstandardaction_p.h:77
+#, fuzzy, kde-format
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&გადასვლა გვერდზე..."
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "&Back"
+msgstr "&უკან"
+
+#: kstandardaction_p.h:78
+#, fuzzy, kde-format
+#| msgid "Go back one step"
+msgid "Go back in document"
+msgstr "ერთი ნაბიჯით უკან"
+
+#: kstandardaction_p.h:79
+#, fuzzy, kde-format
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&წინ"
+
+#: kstandardaction_p.h:79
+#, fuzzy, kde-format
+#| msgid "Go forward one step"
+msgid "Go forward in document"
+msgstr "ერთი ნაბიჯით წინ"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "სანიშნის &დამატება"
+
+#: kstandardaction_p.h:82
+#, fuzzy, kde-format
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks..."
+msgstr "სანიშნეების &რედაქტირება"
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Spelling..."
+msgstr "&მართლწერა..."
+
+#: kstandardaction_p.h:84
+#, fuzzy, kde-format
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "მართლწერის შემოწმება"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "Show &Menubar"
+msgstr "&მენიუს ჩვენება"
+
+#: kstandardaction_p.h:86
+#, fuzzy, kde-format
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "&მენიუს ჩვენება"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "&ხელსაწყოთა პანელის ჩვენება"
+
+#: kstandardaction_p.h:87
+#, fuzzy, kde-format
+#| msgid "Show &Toolbar"
+msgid "Show or hide toolbar"
+msgstr "&ხელსაწყოთა პანელის ჩვენება"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "სტატუსის პანელის &ჩვენება"
+
+#: kstandardaction_p.h:88
+#, fuzzy, kde-format
+#| msgid "Show St&atusbar"
+msgid "Show or hide statusbar"
+msgstr "სტატუსის პანელის &ჩვენება"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "&სრულეკრანიანი რეჟიმი"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Save Settings"
+msgstr "პარამეტრების &შენახვა"
+
+#: kstandardaction_p.h:93
+#, fuzzy, kde-format
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "&მალმხმობების მორგება..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&გამართვა - %1..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "&პულტების გამართვა..."
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "&შეტყობინებების გამართვა..."
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&სახელმძღვანელო \"%1\""
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "What's &This?"
+msgstr "ეს რა არის?"
+
+#: kstandardaction_p.h:105
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "დღის &რჩევა"
+
+#: kstandardaction_p.h:106
+#, kde-format
+msgid "&Report Bug..."
+msgstr "შეცდომის &პატაკი..."
+
+#: kstandardaction_p.h:107
+#, fuzzy, kde-format
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "ელფოსტის გამართვა..."
+
+#: kstandardaction_p.h:108
+#, kde-format
+msgid "&About %1"
+msgstr "&ინფორმაცია - \"%1\""
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "About &KDE"
+msgstr "&KDE-ს შესახებ"
+
+#: kstandardaction_p.h:110
+#, kde-format
+msgid "&Delete"
+msgstr "&წაშლა"
+
+#: kstandardaction_p.h:111
+#, fuzzy, kde-format
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "&შეცვლა..."
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:113
+#, fuzzy, kde-format
+#| msgid "&Done"
+msgid "&Donate"
+msgstr "&მზადაა"
+
+#: kstandardaction_p.h:114
+#, fuzzy, kde-format
+#| msgid "Open &Recent"
+msgid "Open &Menu"
+msgstr "&ბოლო გახსნილები"
+
+#: ktipdialog.cpp:219
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "დღის რჩევა"
+
+#: ktipdialog.cpp:235
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "იცით თუ არა...?\n"
+
+#: ktipdialog.cpp:288
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&რჩევების ჩვენება დაწყებისას"
+
+#: ktipdialog.cpp:293
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&წინა"
+
+#: ktipdialog.cpp:298
+#, fuzzy, kde-format
+#| msgctxt "Opposite to Previous"
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&შემდეგი"
