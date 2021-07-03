@@ -55,12 +55,12 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { Replace,       KStandardShortcut::Replace, "edit_replace", I18N_NOOP("&Replace..."), nullptr, "edit-find-replace" },
 
     { ActualSize,    KStandardShortcut::ActualSize, "view_actual_size", I18N_NOOP("&Actual Size"), I18N_NOOP("View document at its actual size"), "zoom-original" },
-    { FitToPage,     KStandardShortcut::FitToPage, "view_fit_to_page", I18N_NOOP("&Fit to Page"), I18N_NOOP("Zoom to fit page in window"), nullptr },
-    { FitToWidth,    KStandardShortcut::FitToWidth, "view_fit_to_width", I18N_NOOP("Fit to Page &Width"), I18N_NOOP("Zoom to fit page width in window"), nullptr },
-    { FitToHeight,   KStandardShortcut::FitToHeight, "view_fit_to_height", I18N_NOOP("Fit to Page &Height"), I18N_NOOP("Zoom to fit page height in window"), nullptr },
+    { FitToPage,     KStandardShortcut::FitToPage, "view_fit_to_page", I18N_NOOP("&Fit to Page"), I18N_NOOP("Zoom to fit page in window"), "zoom-fit-page" },
+    { FitToWidth,    KStandardShortcut::FitToWidth, "view_fit_to_width", I18N_NOOP("Fit to Page &Width"), I18N_NOOP("Zoom to fit page width in window"), "zoom-fit-width" },
+    { FitToHeight,   KStandardShortcut::FitToHeight, "view_fit_to_height", I18N_NOOP("Fit to Page &Height"), I18N_NOOP("Zoom to fit page height in window"), "zoom-fit-height" },
     { ZoomIn,        KStandardShortcut::ZoomIn, "view_zoom_in", I18N_NOOP("Zoom &In"), nullptr, "zoom-in" },
     { ZoomOut,       KStandardShortcut::ZoomOut, "view_zoom_out", I18N_NOOP("Zoom &Out"), nullptr, "zoom-out" },
-    { Zoom,          KStandardShortcut::Zoom, "view_zoom", I18N_NOOP("&Zoom..."), I18N_NOOP("Select zoom level"), nullptr },
+    { Zoom,          KStandardShortcut::Zoom, "view_zoom", I18N_NOOP("&Zoom..."), I18N_NOOP("Select zoom level"), "zoom" },
     { Redisplay,     KStandardShortcut::Reload, "view_redisplay", I18N_NOOP("&Refresh"), I18N_NOOP("Refresh document"), "view-refresh" },
 
     { Up,            KStandardShortcut::Up, "go_up", I18N_NOOP("&Up"), I18N_NOOP("Go up"), "go-up" },
