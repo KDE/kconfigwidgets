@@ -11,12 +11,12 @@ macro(kconfigwidgets_executable_tests)
   endforeach(_testname)
 endmacro()
 
-kconfigwidgets_executable_tests(
-   kcodecactiontest
-   kcolorschemedemo
-   klanguagebuttontest
-   kcommandbartest
-)
+#kconfigwidgets_executable_tests(
+   #kcodecactiontest
+   #kcolorschemedemo
+   #klanguagebuttontest
+   #kcommandbartest
+#)
 
 ## kcolorutilsdemo
 
