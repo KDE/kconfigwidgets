@@ -63,7 +63,9 @@ void KHamburgerMenuPrivate::setMenuBar(QMenuBar *menuBar)
     }
     m_menuBar = menuBar;
     updateVisibility();
-    m_menuBar->installEventFilter(m_listeners->get<VisibilityChangesListener>());
+    if (m_menuBar) {
+        m_menuBar->installEventFilter(m_listeners->get<VisibilityChangesListener>());
+    }
 }
 
 QMenuBar *KHamburgerMenu::menuBar() const
