@@ -15,6 +15,33 @@ KCommandBarModel::KCommandBarModel(QObject *parent)
 {
 }
 
+void KCommandBarModel::fillRows(QVector<Item> &rows, const QString &title, const QList<QAction *> &actions)
+{
+    for (const auto &action : actions) {
+        // We don't want diabled actions
+        if (!action->isEnabled()) {
+            continue;
+        }
+
+        // Is this action actually a menu?
+        if (auto menu = action->menu()) {
+            auto menuActionList = menu->actions();
+
+            // Empty? => Maybe the menu loads action on aboutToShow()?
+            if (menuActionList.isEmpty()) {
+                Q_EMIT menu->aboutToShow();
+                menuActionList = menu->actions();
+            }
+
+            const QString menuTitle = menu->title();
+            fillRows(rows, menuTitle, menuActionList);
+            continue;
+        }
+
+        rows.append(Item{title, action, -1});
+    }
+}
+
 void KCommandBarModel::refresh(const QVector<KCommandBar::ActionGroup> &actionGroups)
 {
     int totalActions = std::accumulate(actionGroups.begin(), actionGroups.end(), 0, [](int a, const KCommandBar::ActionGroup &ag) {
@@ -26,10 +53,8 @@ void KCommandBarModel::refresh(const QVector<KCommandBar::ActionGroup> &actionGr
     int actionGroupIdx = 0;
     for (const auto &ag : actionGroups) {
         const auto &agActions = ag.actions;
-        const QString name = ag.name;
-        std::transform(agActions.begin(), agActions.end(), std::back_inserter(temp_rows), [name](QAction *action) {
-            return Item{name, action, -1};
-        });
+        fillRows(temp_rows, ag.name, agActions);
+
         actionGroupIdx++;
     }
 
@@ -74,7 +99,9 @@ QVariant KCommandBarModel::data(const QModelIndex &index, int role) const
     switch (role) {
     case Qt::DisplayRole:
         if (col == 0) {
-            return QString(entry.groupName + QStringLiteral(": ") + KLocalizedString::removeAcceleratorMarker(entry.action->text()));
+            QString groupName = KLocalizedString::removeAcceleratorMarker(entry.groupName);
+            QString actionText = KLocalizedString::removeAcceleratorMarker(entry.action->text());
+            return QString(groupName + QStringLiteral(": ") + actionText);
         } else {
             return entry.action->shortcut().toString();
         }

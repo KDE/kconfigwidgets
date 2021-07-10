@@ -84,6 +84,8 @@ public:
     void setLastUsedActions(const QStringList &actionNames);
 
 private:
+    static void fillRows(QVector<Item> &rows, const QString &title, const QList<QAction *> &actions);
+
     QVector<Item> m_rows;
 
     /**
