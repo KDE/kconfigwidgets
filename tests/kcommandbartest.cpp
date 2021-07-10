@@ -10,7 +10,6 @@
 #include <QApplication>
 #include <QDebug>
 #include <QMenu>
-#include <QMenuBar>
 #include <QPlainTextEdit>
 #include <QToolBar>
 #include <QVBoxLayout>
@@ -50,7 +49,7 @@ public:
         });
     }
 
-    QMenu *getMenu()
+    QAction *getMenu()
     {
         QMenu *file = new QMenu(this);
         file->setTitle(QStringLiteral("File"));
@@ -64,15 +63,13 @@ public:
 
         createActionAndConnect("File Menu action 1");
         createActionAndConnect("File Menu act 2");
-        return file;
+        return file->menuAction();
     }
 
     QAction *getAboutToShowMenu()
     {
-        auto toolMenuAction = new QAction(this);
-        toolMenuAction->setText(QStringLiteral("Tool"));
         QMenu *menu = new QMenu(this);
-        toolMenuAction->setMenu(menu);
+        menu->setTitle(QStringLiteral("Tool"));
 
         connect(menu, &QMenu::aboutToShow, this, [this, menu] {
             if (!menu->actions().isEmpty()) {
@@ -89,41 +86,35 @@ public:
             createActionAndConnect("About to show action 1");
             createActionAndConnect("About to show 2");
         });
-        return toolMenuAction;
+        return menu->menuAction();
     }
 
     QVector<KCommandBar::ActionGroup> getActions()
     {
-        QVector<KCommandBar::ActionGroup> acts(5);
+        QVector<KCommandBar::ActionGroup> acts(4);
+
+        /**
+         * Menus with actions
+         */
+        acts[0].actions = {getAboutToShowMenu(), getMenu()};
+
         int i = 0;
-
-        /**
-         * Add simple menu
-         */
-        auto menu = getMenu();
-        acts[0].name = menu->title();
-        acts[0].actions = menu->actions();
-
-        /**
-         * Add a menu that loads on aboutToShow
-         */
-        auto absMenu = getAboutToShowMenu();
-        acts[1].name = absMenu->text();
-        acts[1].actions = {absMenu};
-
-        acts[2].name = QStringLiteral("First Menu Group");
-        for (; i < 5; ++i) {
-            acts[0].actions.append(genAction(this, QStringLiteral("folder"), i));
+        acts[1].name = QStringLiteral("First Menu Group");
+        for (; i < 2; ++i) {
+            acts[1].actions.append(genAction(this, QStringLiteral("folder"), i));
         }
 
-        acts[3].name = QStringLiteral("Second Menu Group");
+        acts[2].name = QStringLiteral("Second Menu Group - Disabled acts");
         for (; i < 4; ++i) {
-            acts[1].actions.append(genAction(this, QStringLiteral("zoom-out"), i));
+            auto act = genAction(this, QStringLiteral("zoom-out"), i);
+            act->setText(QStringLiteral("Disabled Act %1").arg(i));
+            act->setEnabled(false);
+            acts[2].actions.append(act);
         }
 
-        acts[4].name = QStringLiteral("Third Menu Group");
-        for (; i < 3; ++i) {
-            acts[2].actions.append(genAction(this, QStringLiteral("security-low"), i, Qt::CTRL | Qt::ALT));
+        acts[3].name = QStringLiteral("Third Menu Group");
+        for (; i < 6; ++i) {
+            acts[3].actions.append(genAction(this, QStringLiteral("security-low"), i, Qt::CTRL | Qt::ALT));
         }
 
         return acts;
