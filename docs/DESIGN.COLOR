@@ -14,7 +14,7 @@ Color Management is based around the concept of color schemes.
 A color scheme defines colors for different elements in the
 UI. The most important factor for the readability of a UI is the
 contrast between foreground and background colors. Colors in a color
-scheme are therefor grouped in pairs which define the foreground and
+scheme are therefore grouped in pairs which define the foreground and
 background color for a UI element. When composing a color scheme care
 should be taken to use sufficiently contrasting colors for fore- and
 background in the same group. When using colors in applications, care
@@ -122,7 +122,7 @@ Description...: Darker than "Button"
 QColorGroup...: ColorRole::Mid, mid()
 Description...: Between "Button" and "Dark"
 
-Well Behaved Aplications
+Well Behaved Applications
 ========================
 
 Applications should never hardcode colors but always default to the
@@ -135,7 +135,7 @@ certain aspects of the application. It should be noted that an
 application specific color setting can cause unexpected results when
 the user changes its color scheme. The application specific color may
 look ugly in combination with other color schemes or the resulting UI
-may even become unreadable. Therefor applications specific colors
+may even become unreadable. Therefore applications specific colors
 should be used with care.
 
 

@@ -121,7 +121,7 @@ public:
      * of the menu bar which would otherwise not be visible or discoverable for the user.
      * This method removes or re-adds that sub-menu.
      *
-     * @param advertise sets wether the special sub-menu that advertises menu bar only
+     * @param advertise sets whether the special sub-menu that advertises menu bar only
      *                  actions should exist.
      */
     void setMenuBarAdvertised(bool advertise);
@@ -138,9 +138,9 @@ public:
 
     /**
      * Adds this KHamburgerMenu to @p menu.
-     * It will only be visibile in the menu if both the menu bar and all of this
-     * QWidgetAction's createdWidgets() are invisibile.
-     * If it is visibile in the menu, then opening the menu emits the aboutToShowMenu
+     * It will only be visible in the menu if both the menu bar and all of this
+     * QWidgetAction's createdWidgets() are invisible.
+     * If it is visible in the menu, then opening the menu emits the aboutToShowMenu
      * signal.
      *
      * @param menu The menu this KHamburgerMenu is supposed to appear in.

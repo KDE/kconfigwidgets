@@ -162,7 +162,7 @@ public:
 
         /**
          * must use QString here otherwise fuzzy match display
-         * wont work very well.
+         * won't work very well.
          */
         QString str = original;
         int componentIdx = original.indexOf(QLatin1Char(':'));
@@ -243,7 +243,7 @@ public:
              *
              * We do it in two steps
              * 1. Split on ", " so that if we have multi modifier shortcuts they are nicely
-             *    splitted into strings.
+             *    split into strings.
              * 2. Split each shortcut from step 1 into individual string.
              *
              * Example:

@@ -180,7 +180,7 @@ public:
          */
         NeutralBackground,
         /**
-         * Eigth color; for example, success messages, trusted content.
+         * Eighth color; for example, success messages, trusted content.
          */
         PositiveBackground,
         /**
@@ -247,7 +247,7 @@ public:
          */
         NeutralText,
         /**
-         * Eigth color; for example, additions, success messages, trusted
+         * Eighth color; for example, additions, success messages, trusted
          * content.
          */
         PositiveText,

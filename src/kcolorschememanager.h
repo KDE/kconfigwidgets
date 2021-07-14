@@ -106,7 +106,7 @@ public:
     /**
      * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
      *
-     * Since 5.67 sets the icon to theme id "preferences-desktop-color" and the text to "Color Scheme", before set a null icon and an emoty string.
+     * Since 5.67 sets the icon to theme id "preferences-desktop-color" and the text to "Color Scheme", before set a null icon and an empty string.
      */
     KActionMenu *createSchemeSelectionMenu(const QString &selectedSchemeName, QObject *parent);
     /**
