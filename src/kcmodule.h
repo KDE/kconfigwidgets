@@ -99,14 +99,18 @@ public:
      */
     Q_DECLARE_FLAGS(Buttons, Button)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 85)
     /**
      * Base class for all KControlModules.
      *
      * @note do not emit changed signals here, since they are not yet connected
      *       to any slot.
      * @param aboutData becomes owned by the KCModule
+     * @deprecated since 5.85, use other constructor and setAboutData()
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 85, "Use other constructor and setAboutData()")
     explicit KCModule(const KAboutData *aboutData, QWidget *parent = nullptr, const QVariantList &args = QVariantList());
+#endif
 
     /**
      * Base class for all KControlModules.

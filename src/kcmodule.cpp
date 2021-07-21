@@ -64,12 +64,14 @@ public:
     bool _defaultsIndicatorsVisible : 1;
 };
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 85)
 KCModule::KCModule(const KAboutData *aboutData, QWidget *parent, const QVariantList &)
     : QWidget(parent)
     , d(new KCModulePrivate)
 {
     setAboutData(aboutData);
 }
+#endif
 
 KCModule::KCModule(QWidget *parent, const QVariantList &)
     : QWidget(parent)
