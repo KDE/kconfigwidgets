@@ -285,7 +285,8 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
         }
 
         // Don't restore where the url is already known (eg. broken config)
-        if (d->m_urls.values().contains(url)) {
+        auto containsUrl = std::find(d->m_urls.cbegin(), d->m_urls.cend(), url) != d->m_urls.cend();
+        if (containsUrl) {
             continue;
         }
 

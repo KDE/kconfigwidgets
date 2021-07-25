@@ -25,7 +25,7 @@
 
 constexpr int defaultSchemeRow = 0;
 static bool s_overrideAutoSwitch = false;
-static QString autoColorSchemePath;
+static QString s_autoColorSchemePath;
 #ifdef Q_OS_WIN
 WindowsMessagesNotifier KColorSchemeManagerPrivate::m_windowsMessagesNotifier = WindowsMessagesNotifier();
 #endif
@@ -41,7 +41,7 @@ static void activateScheme(const QString &colorSchemePath, bool overrideAutoSwit
         qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::Ptr(nullptr)));
         // enable auto-switch when Default color scheme is set
         s_overrideAutoSwitch = false;
-        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(autoColorSchemePath)));
+        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(s_autoColorSchemePath)));
     } else {
         qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(colorSchemePath)));
     }
@@ -93,7 +93,7 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
 #ifdef Q_OS_WIN
     connect(&d->getWindowsMessagesNotifier(), &WindowsMessagesNotifier::wm_colorSchemeChanged, this, [this](){
         const QString colorSchemeToApply = d->getWindowsMessagesNotifier().preferDarkMode() ? d->getDarkColorScheme() : d->getLightColorScheme();
-        autoColorSchemePath = this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString();
+        s_autoColorSchemePath = this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString();
         if (!s_overrideAutoSwitch) {
             ::activateScheme(this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString(), false);
         }
@@ -145,11 +145,12 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
         }
         menu->addAction(action);
     }
+    const auto groupActions = group->actions();
     if (!group->checkedAction()) {
         // If no (valid) color scheme has been selected we select the default one
-        group->actions()[defaultSchemeRow]->setChecked(true);
+        groupActions[defaultSchemeRow]->setChecked(true);
     }
-    group->actions()[defaultSchemeRow]->setIcon(QIcon::fromTheme("edit-undo"));
+    groupActions[defaultSchemeRow]->setIcon(QIcon::fromTheme("edit-undo"));
     connect(menu->menu(), &QMenu::aboutToShow, group, [group] {
         const auto actions = group->actions();
         for (QAction *action : actions) {

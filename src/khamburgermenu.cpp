@@ -234,7 +234,8 @@ QAction *KHamburgerMenuPrivate::actionWithExclusivesFrom(QAction *from,
     }
     std::unique_ptr<QAction> menuActionWithExclusives(new QAction(from->icon(), from->text(), parent));
     std::unique_ptr<QMenu>   menuWithExclusives(new QMenu(parent));
-    for (QAction *action : from->menu()->actions()) {
+    const auto fromMenuActions = from->menu()->actions();
+    for (QAction *action : fromMenuActions) {
         QAction *actionWithExclusives = actionWithExclusivesFrom(action,
                                                                  menuWithExclusives.get(),
                                                                  nonExclusives);
@@ -275,7 +276,8 @@ std::unique_ptr<QMenu> KHamburgerMenuPrivate::newMenu()
 
     if (!q->menu()) {
         // We have nothing else to work with so let's just add the menuBar contents.
-        for (QAction *menuAction : m_menuBar->actions()) {
+        const auto menuBarActions = m_menuBar->actions();
+        for (QAction *menuAction : menuBarActions) {
             menu->addAction(menuAction);
         }
         return menu;
@@ -288,13 +290,15 @@ std::unique_ptr<QMenu> KHamburgerMenuPrivate::newMenu()
         if (qobject_cast<const QMenu *>(widget) || isWidgetActuallyVisible(widget)) {
             // avoid redundancy with menus even when they are not actually visible.
             visibleActions.reserve(visibleActions.size() + widget->actions().size());
-            for (QAction *action : widget->actions()) {
+            const auto widgetActions = widget->actions();
+            for (QAction *action : widgetActions) {
                 visibleActions.insert(action);
             }
         }
     }
     // Populate the menu
-    for (QAction *action : q->menu()->actions()) {
+    const auto menuActions = q->menu()->actions();
+    for (QAction *action : menuActions) {
         if (visibleActions.count(action) == 0) {
             menu->addAction(action);
             visibleActions.insert(action);
@@ -325,7 +329,8 @@ std::unique_ptr<QMenu> KHamburgerMenuPrivate::newMenuBarAdvertisementMenu(
     QAction *section = advertiseMenuBarMenu->addSeparator();
 
     m_exclusiveActionsCount = 0;
-    for (QAction *menuAction : m_menuBar->actions()) {
+    const auto menuBarActions = m_menuBar->actions();
+    for (QAction *menuAction : menuBarActions) {
         QAction *menuActionWithExclusives = actionWithExclusivesFrom(menuAction,
                                                                      advertiseMenuBarMenu.get(),
                                                                      visibleActions);
@@ -352,7 +357,8 @@ void KHamburgerMenuPrivate::resetMenu()
 
     m_actualMenu = newMenu();
 
-    for (auto widget : q->createdWidgets()) {
+    const auto createdWidgets = q->createdWidgets();
+    for (auto widget : createdWidgets) {
         static_cast<QToolButton *>(widget)->setMenu(m_actualMenu.get());
     }
     if (m_menuAction) {
@@ -373,10 +379,9 @@ void KHamburgerMenuPrivate::updateVisibility()
         return;
     }
 
-    if (menuBarVisible
-        || std::any_of(q->createdWidgets().cbegin(), q->createdWidgets().cend(),
-                       isWidgetActuallyVisible)
-    ) {
+    const auto createdWidgets = q->createdWidgets();
+
+    if (menuBarVisible || std::any_of(createdWidgets.cbegin(), createdWidgets.cend(), isWidgetActuallyVisible)) {
         m_menuAction->setVisible(false);
         return;
     }
@@ -386,7 +391,8 @@ void KHamburgerMenuPrivate::updateVisibility()
 void KHamburgerMenuPrivate::slotActionChanged()
 {
     Q_Q(KHamburgerMenu);
-    for (auto widget : q->createdWidgets()) {
+    const auto createdWidgets = q->createdWidgets();
+    for (auto widget : createdWidgets) {
         auto toolButton = static_cast<QToolButton *>(widget);
         updateButtonStyle(toolButton);
     }
