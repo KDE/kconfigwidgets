@@ -15,14 +15,14 @@ class QAction;
 
 class KCommandBarModel final : public QAbstractTableModel
 {
+    Q_OBJECT
+public:
     struct Item {
         QString groupName;
         QAction *action;
         int score;
     };
 
-    Q_OBJECT
-public:
     KCommandBarModel(QObject *parent = nullptr);
 
     enum Role { Score = Qt::UserRole + 1 };
@@ -84,8 +84,6 @@ public:
     void setLastUsedActions(const QStringList &actionNames);
 
 private:
-    static void fillRows(QVector<Item> &rows, const QString &title, const QList<QAction *> &actions);
-
     QVector<Item> m_rows;
 
     /**

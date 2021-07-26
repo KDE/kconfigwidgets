@@ -10,12 +10,14 @@
 
 #include <QAction>
 
+#include <unordered_set>
+
 KCommandBarModel::KCommandBarModel(QObject *parent)
     : QAbstractTableModel(parent)
 {
 }
 
-void KCommandBarModel::fillRows(QVector<Item> &rows, const QString &title, const QList<QAction *> &actions)
+void fillRows(QVector<KCommandBarModel::Item> &rows, const QString &title, const QList<QAction *> &actions, std::unordered_set<QAction *> &uniqueActions)
 {
     for (const auto &action : actions) {
         // We don't want diabled actions
@@ -34,11 +36,13 @@ void KCommandBarModel::fillRows(QVector<Item> &rows, const QString &title, const
             }
 
             const QString menuTitle = menu->title();
-            fillRows(rows, menuTitle, menuActionList);
+            fillRows(rows, menuTitle, menuActionList, uniqueActions);
             continue;
         }
 
-        rows.append(Item{title, action, -1});
+        if (uniqueActions.insert(action).second) {
+            rows.push_back(KCommandBarModel::Item{title, action, -1});
+        }
     }
 }
 
@@ -49,11 +53,12 @@ void KCommandBarModel::refresh(const QVector<KCommandBar::ActionGroup> &actionGr
     });
 
     QVector<Item> temp_rows;
+    std::unordered_set<QAction *> uniqueActions;
     temp_rows.reserve(totalActions);
     int actionGroupIdx = 0;
     for (const auto &ag : actionGroups) {
         const auto &agActions = ag.actions;
-        fillRows(temp_rows, ag.name, agActions);
+        fillRows(temp_rows, ag.name, agActions, uniqueActions);
 
         actionGroupIdx++;
     }
