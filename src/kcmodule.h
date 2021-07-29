@@ -138,14 +138,18 @@ public:
      */
     virtual QString quickHelp() const;
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 90)
     /**
      * This is generally only called for the KBugReport.
      * If you override you should  have it return a pointer to a constant.
      *
      *
      * @returns the KAboutData for this module
+     * @deprecated since 5.90. Use the KPluginMetaData the KCModule was instantiated from.
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 90, "Use the KPluginMetaData the KCModule was instantiated from")
     virtual const KAboutData *aboutData() const;
+#endif
 
     /**
      * This sets the KAboutData returned by aboutData()
@@ -189,7 +193,13 @@ public:
      */
     bool useRootOnlyMessage() const;
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 90)
+    /**
+     * @deprecated since 5.90. Use the KPluginMetaData the KCModule was instantiated from.
+     */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 90, "Use the KPluginMetaData the KCModule was instantiated from")
     KAboutData componentData() const;
+#endif
 
     /**
      * @return a list of @ref KConfigDialogManager's in use, if any.

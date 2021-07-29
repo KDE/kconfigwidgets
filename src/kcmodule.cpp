@@ -273,10 +273,12 @@ void KCModule::unmanagedWidgetDefaultState(bool defaulted)
     widgetChanged();
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 90)
 const KAboutData *KCModule::aboutData() const
 {
     return d->_about;
 }
+#endif
 
 void KCModule::setAboutData(const KAboutData *about)
 {
@@ -320,10 +322,12 @@ void KCModule::markAsChanged()
     Q_EMIT changed(true);
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 90)
 KAboutData KCModule::componentData() const
 {
     return *d->_about;
 }
+#endif
 
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 0)
 QString KCModule::exportText() const
