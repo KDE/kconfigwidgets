@@ -369,7 +369,7 @@ void KHamburgerMenuPrivate::resetMenu()
 void KHamburgerMenuPrivate::updateVisibility()
 {
     Q_Q(KHamburgerMenu);
-    const bool menuBarVisible = m_menuBar && (m_menuBar->isVisible() && !m_menuBar->isNativeMenuBar());
+    const bool menuBarVisible = m_menuBar && (m_menuBar->isVisible() || m_menuBar->isNativeMenuBar());
     q->setVisible(!menuBarVisible);
 
     if (!m_menuAction) {
