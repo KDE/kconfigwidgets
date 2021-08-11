@@ -128,7 +128,9 @@ public:
     /**
      * Return a quick-help text.
      *
-     * This method is called when the module is docked.
+     * This method may be called when the module is docked. The quick help would generally
+     * be used as "what's this" text if the view container supports the "what's this"
+     * system.
      * The quick-help text should contain a short description of the module and
      * links to the module's help files. You can use QML formatting tags in the text.
      *
