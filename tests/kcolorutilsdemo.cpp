@@ -26,7 +26,9 @@ KColorUtilsDemo::KColorUtilsDemo(QWidget *parent)
 
 void KColorUtilsDemo::inputChanged()
 {
-    qreal hue, chroma, luma;
+    qreal hue;
+    qreal chroma;
+    qreal luma;
     KColorUtils::getHcy(inColor->color(), &hue, &chroma, &luma);
     ifHue->setValue(hue);
     ifChroma->setValue(chroma);

@@ -95,8 +95,9 @@ public:
             }
         }
 
-        if (!hasAnyMenuBar)
+        if (!hasAnyMenuBar) {
             return;
+        }
 
         QAction *showMenubarAction = static_cast<QAction *>(parent());
         if (allMenuBarsNative && !wasNative) {
@@ -132,7 +133,8 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
     // qCDebug(KCONFIG_WIDGETS_LOG) << "KStandardAction::create( " << id << "=" << (pInfo ? pInfo->psName : (const char*)0) << ", " << parent << " )"; // ellis
 
     if (pInfo) {
-        QString sLabel, iconName = pInfo->psIconName;
+        QString sLabel;
+        QString iconName = pInfo->psIconName;
         switch (id) {
         case Back:
             sLabel = i18nc("go back", "&Back");

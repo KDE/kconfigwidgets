@@ -50,8 +50,9 @@ protected:
 
     bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override
     {
-        if (m_pattern.isEmpty())
+        if (m_pattern.isEmpty()) {
             return true;
+        }
 
         const QModelIndex idx = sourceModel()->index(sourceRow, 0, sourceParent);
         // Example row= "File: Open File"

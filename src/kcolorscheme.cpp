@@ -532,10 +532,10 @@ KColorScheme::KColorScheme(QPalette::ColorGroup state, ColorSet set, KSharedConf
         // ...except tinted with the Selection:NormalBackground color so it looks more like selection
         if (state == QPalette::Active || (state == QPalette::Inactive && !inactiveSelectionEffect)) {
             d = new KColorSchemePrivate(config, state, "Colors:Selection", defaultSelectionColors);
-        } else if (state == QPalette::Inactive)
+        } else if (state == QPalette::Inactive) {
             d = new KColorSchemePrivate(config, state, "Colors:Window", defaultWindowColors,
                                         KColorScheme(QPalette::Active, Selection, config).background());
-        else { // disabled (...and still want this branch when inactive+disabled exists)
+        } else { // disabled (...and still want this branch when inactive+disabled exists)
             d = new KColorSchemePrivate(config, state, "Colors:Window", defaultWindowColors);
         }
     } break;
@@ -599,7 +599,8 @@ QColor KColorScheme::shade(const QColor &color, ShadeRole role, qreal contrast, 
 {
     // nan -> 1.0
     contrast = (1.0 > contrast ? (-1.0 < contrast ? contrast : -1.0) : 1.0);
-    qreal y = KColorUtils::luma(color), yi = 1.0 - y;
+    qreal y = KColorUtils::luma(color);
+    qreal yi = 1.0 - y;
 
     // handle very dark colors (base, mid, dark, shadow == midlight, light)
     if (y < 0.006) {

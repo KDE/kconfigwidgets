@@ -271,8 +271,9 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
 
                     if (changeSignalFound) {
                         QComboBox *cb = qobject_cast<QComboBox *>(childWidget);
-                        if (cb && cb->isEditable())
+                        if (cb && cb->isEditable()) {
                             connect(cb, &QComboBox::editTextChanged, this, &KConfigDialogManager::widgetModified);
+                        }
                     }
                 }
                 QGroupBox *gb = qobject_cast<QGroupBox *>(childWidget);
@@ -516,8 +517,9 @@ QVariant KConfigDialogManager::property(QWidget *w) const
     if (d->allExclusiveGroupBoxes.contains(w)) {
         const QList<QAbstractButton *> buttons = w->findChildren<QAbstractButton *>();
         for (int i = 0; i < buttons.count(); ++i) {
-            if (buttons[i]->isChecked())
+            if (buttons[i]->isChecked()) {
                 return i;
+            }
         }
         return -1;
     }

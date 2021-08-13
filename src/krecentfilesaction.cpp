@@ -125,7 +125,8 @@ static QString titleWithSensibleWidth(const QString &nameValue, const QString &v
         // If it does not fit, try to cut only the whole path, though if the
         // name is too long (more than 3/4 of the whole text) we cut it a bit too
         const int nameValueMaxWidth = maxWidthForTitles * 3 / 4;
-        QString cutNameValue, cutValue;
+        QString cutNameValue;
+        QString cutValue;
         if (nameWidth > nameValueMaxWidth) {
             cutNameValue = fontMetrics.elidedText(nameValue, Qt::ElideMiddle, nameValueMaxWidth);
             cutValue = fontMetrics.elidedText(value, Qt::ElideMiddle, maxWidthForTitles - nameValueMaxWidth);
@@ -221,11 +222,12 @@ QAction *KRecentFilesAction::removeAction(QAction *action)
 void KRecentFilesAction::removeUrl(const QUrl &url)
 {
     Q_D(KRecentFilesAction);
-    for (QMap<QAction *, QUrl>::ConstIterator it = d->m_urls.constBegin(); it != d->m_urls.constEnd(); ++it)
+    for (QMap<QAction *, QUrl>::ConstIterator it = d->m_urls.constBegin(); it != d->m_urls.constEnd(); ++it) {
         if (it.value() == url) {
             delete removeAction(it.key());
             return;
         }
+    }
 }
 
 QList<QUrl> KRecentFilesAction::urls() const

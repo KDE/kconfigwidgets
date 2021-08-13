@@ -28,7 +28,8 @@ void KImageFrame::paintEvent(QPaintEvent *)
 {
     QPainter p(this);
     QStyleOptionFrame opt;
-    QRect rf(frameRect()), ri(0, 0, _w, _h);
+    QRect rf(frameRect());
+    QRect ri(0, 0, _w, _h);
 
     opt.rect = rf;
     opt.state = QStyle::State_Sunken;
