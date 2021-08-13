@@ -369,6 +369,11 @@ void KHamburgerMenuPrivate::resetMenu()
 void KHamburgerMenuPrivate::updateVisibility()
 {
     Q_Q(KHamburgerMenu);
+    /** The visibility of KHamburgerMenu should be opposite to the visibility of m_menuBar.
+     * Exception: We only consider a visible m_menuBar as actually visible if it is not a native
+     * menu bar because native menu bars can come in many shapes and sizes which don't necessarily
+     * have the same usability benefits as a traditional in-window menu bar.
+     * KDE applications normally allow the user to remove any actions from their toolbar(s) anyway. */
     const bool menuBarVisible = m_menuBar && (m_menuBar->isVisible() && !m_menuBar->isNativeMenuBar());
     q->setVisible(!menuBarVisible);
 
@@ -380,12 +385,21 @@ void KHamburgerMenuPrivate::updateVisibility()
     }
 
     const auto createdWidgets = q->createdWidgets();
-
-    if (menuBarVisible || std::any_of(createdWidgets.cbegin(), createdWidgets.cend(), isWidgetActuallyVisible)) {
+    // The m_menuAction acts as a fallback if both the m_menuBar and all createdWidgets() on the UI
+    // are currently hidden. Only then should the m_menuAction ever be visible in a QMenu.
+    if (menuBarVisible
+        || (m_menuBar && m_menuBar->isNativeMenuBar()) // See [1] below.
+        || std::any_of(createdWidgets.cbegin(), createdWidgets.cend(), isWidgetActuallyVisible)
+    ) {
         m_menuAction->setVisible(false);
         return;
     }
     m_menuAction->setVisible(true);
+
+    // [1] While the m_menuAction can be used as a normal menu by users that don't mind invoking a
+    //     QMenu to access any menu actions, its primary use really is that of a fallback.
+    //     Therefore the existence of a native menu bar (no matter what shape or size it might have)
+    //     is enough reason for us to hide m_menuAction.
 }
 
 void KHamburgerMenuPrivate::slotActionChanged()

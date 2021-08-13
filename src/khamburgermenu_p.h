@@ -150,7 +150,8 @@ protected:
     QPointer<QMenu> m_lastUsedMenu;
     /** Makes sure there are no redundant event listeners of the same class. */
     std::unique_ptr<ListenerContainer> m_listeners;
-    /** The action that is put into QMenus to represent the KHamburgerMenu. */
+    /** The action that is put into QMenus to represent the KHamburgerMenu.
+     * @see KHamburgerMenu::addToMenu() */
     QPointer<QAction> m_menuAction;
     /** @see KHamburgerMenu::setMenuBar() */
     QPointer<QMenuBar> m_menuBar;

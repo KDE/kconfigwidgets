@@ -104,6 +104,8 @@ public:
     /**
      * Associates this KHamburgerMenu with @p menuBar. The KHamburgerMenu will from now
      * on only be visible when @p menuBar is hidden.
+     * (Menu bars with QMenuBar::isNativeMenuBar() == true are considered hidden.)
+     *
      * Furthermore the KHamburgerMenu will have the help menu from the @p menuBar added
      * at the end. There will also be a special sub-menu advertising actions which are
      * only available in the menu bar unless advertiseMenuBar(false) was called.
