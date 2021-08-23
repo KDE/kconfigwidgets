@@ -148,7 +148,7 @@ void KCModule::setDefaultsIndicatorsVisible(bool show)
     }
 
     d->_defaultsIndicatorsVisible = show;
-    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
+    for (KConfigDialogManager *manager : std::as_const(d->managers)) {
         manager->setDefaultsIndicatorsVisible(show);
     }
     Q_EMIT defaultsIndicatorsVisibleChanged(show);
@@ -207,7 +207,7 @@ KCModule::~KCModule()
 
 void KCModule::load()
 {
-    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
+    for (KConfigDialogManager *manager : std::as_const(d->managers)) {
         manager->updateWidgets();
     }
     widgetChanged();
@@ -215,7 +215,7 @@ void KCModule::load()
 
 void KCModule::save()
 {
-    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
+    for (KConfigDialogManager *manager : std::as_const(d->managers)) {
         manager->updateSettings();
     }
     Q_EMIT changed(false);
@@ -223,7 +223,7 @@ void KCModule::save()
 
 void KCModule::defaults()
 {
-    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
+    for (KConfigDialogManager *manager : std::as_const(d->managers)) {
         manager->updateWidgetsDefault();
     }
 }
@@ -240,7 +240,7 @@ void KCModule::widgetChanged()
 
 bool KCModule::managedWidgetChangeState() const
 {
-    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
+    for (KConfigDialogManager *manager : std::as_const(d->managers)) {
         if (manager->hasChanged()) {
             return true;
         }
@@ -251,7 +251,7 @@ bool KCModule::managedWidgetChangeState() const
 
 bool KCModule::managedWidgetDefaultState() const
 {
-    for (KConfigDialogManager *manager : qAsConst(d->managers)) {
+    for (KConfigDialogManager *manager : std::as_const(d->managers)) {
         if (!manager->isDefault()) {
             return false;
         }

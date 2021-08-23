@@ -272,7 +272,7 @@ public:
             QVector<QPair<QRect, QString>> btns;
             btns.reserve(list.size());
             const int height = options.rect.height();
-            for (const QString &text : qAsConst(list)) {
+            for (const QString &text : std::as_const(list)) {
                 if (text.isEmpty()) {
                     continue;
                 }
@@ -304,7 +304,7 @@ public:
 
             int i = 0;
             painter->setRenderHint(QPainter::Antialiasing);
-            for (const auto &btn : qAsConst(btns)) {
+            for (const auto &btn : std::as_const(btns)) {
                 painter->setPen(Qt::NoPen);
                 const QRect &rect = btn.first;
 
