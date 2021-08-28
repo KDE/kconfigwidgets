@@ -589,8 +589,8 @@ bool KConfigDialogManager::isDefault() const
     return true;
 }
 
-KConfigDialogManagerPrivate::KConfigDialogManagerPrivate(KConfigDialogManager *q)
-    : q(q)
+KConfigDialogManagerPrivate::KConfigDialogManagerPrivate(KConfigDialogManager *qq)
+    : q(qq)
     , insideGroupBox(false)
     , defaultsIndicatorsVisible(false)
 {

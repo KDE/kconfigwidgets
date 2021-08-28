@@ -28,22 +28,21 @@ KHamburgerMenu::KHamburgerMenu(QObject *parent)
 {
 }
 
-KHamburgerMenuPrivate::KHamburgerMenuPrivate(KHamburgerMenu *q)
-    : q_ptr{q},
-    m_actualMenu{nullptr},
-    m_advertiseMenuBar{true},
-    m_menuBarAdvertisementMenu{nullptr},
-    m_exclusiveActionsCount{0},
-    m_lastUsedMenu{nullptr},
-    m_listeners{new ListenerContainer(this)},
-    m_menuAction{nullptr},
-    m_menuBar{nullptr},
-    m_menuResetNeeded{false},
-    m_showMenuBarAction{nullptr}
+KHamburgerMenuPrivate::KHamburgerMenuPrivate(KHamburgerMenu *qq)
+    : q_ptr{qq}
+    , m_actualMenu{nullptr}
+    , m_advertiseMenuBar{true}
+    , m_menuBarAdvertisementMenu{nullptr}
+    , m_exclusiveActionsCount{0}
+    , m_lastUsedMenu{nullptr}
+    , m_listeners{new ListenerContainer(this)}
+    , m_menuAction{nullptr}
+    , m_menuBar{nullptr}
+    , m_menuResetNeeded{false}
+    , m_showMenuBarAction{nullptr}
 {
-    q->setPriority(QAction::LowPriority);
-    connect(q, &QAction::changed,
-            this, &KHamburgerMenuPrivate::slotActionChanged);
+    q_ptr->setPriority(QAction::LowPriority);
+    connect(q_ptr, &QAction::changed, this, &KHamburgerMenuPrivate::slotActionChanged);
 }
 
 KHamburgerMenu::~KHamburgerMenu() = default;

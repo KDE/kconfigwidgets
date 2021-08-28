@@ -172,8 +172,8 @@ QString KTipDatabase::tip() const
 class KTipDialogPrivate
 {
 public:
-    KTipDialogPrivate(KTipDialog *q)
-        : q(q)
+    KTipDialogPrivate(KTipDialog *qq)
+        : q(qq)
     {
     }
     ~KTipDialogPrivate()

@@ -34,7 +34,7 @@ class KHamburgerMenuPrivate : public QObject
     Q_DECLARE_PUBLIC(KHamburgerMenu)
 
 public:
-    explicit KHamburgerMenuPrivate(KHamburgerMenu *q);
+    explicit KHamburgerMenuPrivate(KHamburgerMenu *qq);
 
     virtual ~KHamburgerMenuPrivate();
 

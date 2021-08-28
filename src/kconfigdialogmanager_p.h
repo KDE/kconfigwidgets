@@ -22,7 +22,7 @@ class KCoreConfigSkeleton;
 class KConfigDialogManagerPrivate
 {
 public:
-    KConfigDialogManagerPrivate(KConfigDialogManager *q);
+    KConfigDialogManagerPrivate(KConfigDialogManager *qq);
 
     void setDefaultsIndicatorsVisible(bool enabled);
 
