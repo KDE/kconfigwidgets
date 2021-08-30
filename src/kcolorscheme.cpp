@@ -19,10 +19,13 @@
 #include <QWidget>
 #endif
 
+#include <QDebug>
+
 static QColor readColor(const QSettings *colorScheme, const QString &group, const QString &key, const QColor &defaultColor)
 {
     const QString colorKey = group.isEmpty() ? key : group + QChar('/') + key;
     const auto colorList = colorScheme->value(colorKey).toStringList();
+    qDebug() << colorKey << colorScheme->group() << colorList;
     const auto size = colorList.size();
     if (size < 3 || size > 4) {
         return defaultColor;
@@ -30,14 +33,14 @@ static QColor readColor(const QSettings *colorScheme, const QString &group, cons
 
     bool ok;
     std::array<int, 4> rgbComponents;
-    rgbComponents[4] = 255;
+    rgbComponents[3] = 255;
     for (int i = 0; i < size; ++i) {
         rgbComponents[i] = colorList[i].toInt(&ok);
         if (!ok) {
             return defaultColor;
         }
     }
-    return QColor(rgbComponents[0], rgbComponents[1], rgbComponents[2], rgbComponents[3]);
+    return  QColor(rgbComponents[0], rgbComponents[1], rgbComponents[2], rgbComponents[3]);
 }
 
 // BEGIN StateEffects
@@ -353,6 +356,7 @@ KColorSchemePrivate::KColorSchemePrivate(QSettings* colorScheme,
         const QBrush &tint)
     : KColorSchemePrivate(colorScheme, state, group, defaults)
 {
+    qDebug() << "tint";
     // adjustment
      _brushes.bg[KColorScheme::NormalBackground] = 
         KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(), tint.color(), 0.4);
@@ -372,8 +376,9 @@ void KColorSchemePrivate::init(QSettings *colorScheme,
     if (state == QPalette::Inactive && colorScheme->childGroups().contains(QStringLiteral("Inactive"))) {
         actualGroup = group + QChar('/') + QStringLiteral("Inactive");
         hasInactivePalette = true;
-        colorScheme->endGroup();
     }
+    colorScheme->endGroup();
+    qDebug() << actualGroup;
 
     // loaded-from-config colors
     const std::map<KColorScheme::ForegroundRole, QString> foregroundNames = {
@@ -424,9 +429,9 @@ void KColorSchemePrivate::init(QSettings *colorScheme,
         _brushes.bg[KColorScheme::AlternateBackground] = color(actualGroup, backgroundNames.at(KColorScheme::AlternateBackground),
             color(windowGroup, backgroundNames.at(KColorScheme::AlternateBackground), SET_DEFAULT(AlternateBackground)));
 
-        _brushes.bg[KColorScheme::FocusColor] = color(actualGroup, decorationNames.at(KColorScheme::FocusColor),
+        _brushes.deco[KColorScheme::FocusColor] = color(actualGroup, decorationNames.at(KColorScheme::FocusColor),
             color(windowGroup, decorationNames.at(KColorScheme::FocusColor), DECO_DEFAULT(Focus)));
-        _brushes.bg[KColorScheme::HoverColor] = color(actualGroup, decorationNames.at(KColorScheme::HoverColor),
+        _brushes.deco[KColorScheme::HoverColor] = color(actualGroup, decorationNames.at(KColorScheme::HoverColor),
             color(windowGroup, decorationNames.at(KColorScheme::HoverColor), DECO_DEFAULT(Hover)));
     } else {
         _brushes.fg[KColorScheme::NormalText] = color(actualGroup, foregroundNames.at(KColorScheme::NormalText), SET_DEFAULT(NormalText));
@@ -441,8 +446,8 @@ void KColorSchemePrivate::init(QSettings *colorScheme,
         _brushes.bg[KColorScheme::NormalBackground] = color(actualGroup, backgroundNames.at(KColorScheme::NormalBackground), SET_DEFAULT(NormalBackground));
         _brushes.bg[KColorScheme::AlternateBackground] = color(actualGroup, backgroundNames.at(KColorScheme::AlternateBackground), SET_DEFAULT(AlternateBackground));
 
-        _brushes.bg[KColorScheme::FocusColor] = color(actualGroup, decorationNames.at(KColorScheme::FocusColor), DECO_DEFAULT(Focus));
-        _brushes.bg[KColorScheme::HoverColor] = color(actualGroup, decorationNames.at(KColorScheme::HoverColor), DECO_DEFAULT(Hover));
+        _brushes.deco[KColorScheme::FocusColor] = color(actualGroup, decorationNames.at(KColorScheme::FocusColor), DECO_DEFAULT(Focus));
+        _brushes.deco[KColorScheme::HoverColor] = color(actualGroup, decorationNames.at(KColorScheme::HoverColor), DECO_DEFAULT(Hover));
     }
 
     // apply state adjustments
@@ -477,6 +482,8 @@ void KColorSchemePrivate::init(QSettings *colorScheme,
     _brushes.bg[KColorScheme::PositiveBackground] =
         KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(),
                           _brushes.fg[KColorScheme::PositiveText].color());
+    qDebug() << _brushes.bg[KColorScheme::NormalBackground].color().name();
+
 }
 
 QBrush KColorSchemePrivate::background(KColorScheme::BackgroundRole role) const
