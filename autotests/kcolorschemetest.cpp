@@ -18,18 +18,18 @@ class KColorSchemeTest : public QObject
 private Q_SLOTS:
     void benchConstruction_data()
     {
-        KColorSchemeManager manager;
-        if (manager.model()->rowCount() <= 1) {
-            QSKIP("no scheme files found, cannot run benchmark");
-        }
-
-        const auto anyScheme = manager.model()->index(1, 0).data(Qt::UserRole).toString();
-        QVERIFY(QFile::exists(anyScheme));
+        //         KColorSchemeManager manager;
+        //         if (manager.model()->rowCount() <= 1) {
+        //             QSKIP("no scheme files found, cannot run benchmark");
+        //         }
+        //
+        //         const auto anyScheme = manager.model()->index(1, 0).data(Qt::UserRole).toString();
+        //         QVERIFY(QFile::exists(anyScheme));
 
         QTest::addColumn<QString>("file");
 
         QTest::newRow("default") << QString();
-        QTest::newRow("explicit") << anyScheme;
+        //         QTest::newRow("explicit") << anyScheme;
     }
 
     void benchConstruction()
@@ -59,8 +59,8 @@ private Q_SLOTS:
     {
         QFETCH(int, colorSet);
         auto file = QFINDTESTDATA("kcolorschemetest.colors");
-        KColorScheme activeScheme(QPalette::Active, static_cast<KColorScheme::ColorSet>(colorSet), KSharedConfig::openConfig(file, KConfig::SimpleConfig));
-        KColorScheme inactiveScheme(QPalette::Inactive, static_cast<KColorScheme::ColorSet>(colorSet), KSharedConfig::openConfig(file, KConfig::SimpleConfig));
+        KColorScheme activeScheme(QPalette::Active, static_cast<KColorScheme::ColorSet>(colorSet), file);
+        KColorScheme inactiveScheme(QPalette::Inactive, static_cast<KColorScheme::ColorSet>(colorSet), file);
 
 #define checkBackgroundRole(role)                                                                                                                              \
     QCOMPARE(activeScheme.background(role).color(), QColor(colorSet, role, QPalette::Active));                                                                 \
@@ -95,7 +95,7 @@ private Q_SLOTS:
     void readContrast()
     {
         auto file = QFINDTESTDATA("kcolorschemetest.colors");
-        QCOMPARE(KColorScheme::contrastF(KSharedConfig::openConfig(file, KConfig::SimpleConfig)), 0.5);
+        QCOMPARE(KColorScheme(QPalette::Active, KColorScheme::View, file).colorSchemeContrast(), 0.5);
     }
 };
 
