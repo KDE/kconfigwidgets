@@ -78,7 +78,7 @@ void KCodecActionPrivate::init(bool showAutoOptions)
         for (int i = 1; i < encodingsForScript.size(); ++i) {
             tmp->addAction(encodingsForScript.at(i));
         }
-        q->connect(tmp, QOverload<QAction *>::of(&KSelectAction::triggered), q, [this](QAction *action) {
+        q->connect(tmp, qOverload<QAction *>(&KSelectAction::triggered), q, [this](QAction *action) {
             subActionTriggered(action);
         });
         tmp->setCheckable(true);
@@ -88,8 +88,8 @@ void KCodecActionPrivate::init(bool showAutoOptions)
 
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
     // forward deprecated signals to undeprecated, to be backward-compatible to unported subclasses
-    QObject::connect(q, QOverload<QTextCodec *>::of(&KCodecAction::triggered), q, &KCodecAction::codecTriggered);
-    QObject::connect(q, QOverload<KEncodingProber::ProberType>::of(&KCodecAction::triggered), q, &KCodecAction::encodingProberTriggered);
+    QObject::connect(q, qOverload<QTextCodec *>(&KCodecAction::triggered), q, &KCodecAction::codecTriggered);
+    QObject::connect(q, qOverload<KEncodingProber::ProberType>(&KCodecAction::triggered), q, &KCodecAction::encodingProberTriggered);
 #endif
 }
 

@@ -182,7 +182,7 @@ KPageWidgetItem *KConfigDialogPrivate::addPageInternal(QWidget *page, const QStr
 
 void KConfigDialogPrivate::setupManagerConnections(KConfigDialogManager *manager)
 {
-    q->connect(manager, QOverload<>::of(&KConfigDialogManager::settingsChanged), q, [this]() {
+    q->connect(manager, qOverload<>(&KConfigDialogManager::settingsChanged), q, [this]() {
         settingsChangedSlot();
     });
     q->connect(manager, &KConfigDialogManager::widgetModified, q, [this]() {
