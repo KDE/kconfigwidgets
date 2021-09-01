@@ -240,13 +240,16 @@ public:
     KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf);
 
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 84)
+    // No deprecation warning by compiler here, as the replacement will be
+    // automatically picked by the compiler in the future, being the method
+    // overload using the base-class of the argument type.
+    // Avoids the need to do extra-casting right now on the caller side.
     /**
      * Constructor.
      * @param parent  Dialog widget to manage
      * @param conf Object that contains settings
      * @deprecated since 5.84, use KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf)
      */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 84, "Use KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf)")
     KConfigDialogManager(QWidget *parent, KConfigSkeleton *conf);
 #endif
 

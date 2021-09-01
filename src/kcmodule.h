@@ -338,6 +338,10 @@ protected:
     KConfigDialogManager *addConfig(KCoreConfigSkeleton *config, QWidget *widget);
 
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 84)
+    // No deprecation warning by compiler here, as the replacement will be
+    // automatically picked by the compiler in the future, being the method
+    // overload using the base-class of the argument type.
+    // Avoids the need to do extra-casting right now on the caller side.
     /**
      * Adds a KConfigskeleton @p config to watch the widget @p widget
      *
@@ -348,7 +352,6 @@ protected:
      * @param widget the widget to watch
      * @deprecated since 5.84, use addConfig(KCoreConfigSkeleton *config, QWidget *widget);
      */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 84, "Use KConfigDialogManager *addConfig(KCoreConfigSkeleton *config, QWidget *widget);")
     KConfigDialogManager *addConfig(KConfigSkeleton *config, QWidget *widget);
 #endif
 
