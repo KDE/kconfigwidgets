@@ -26,8 +26,8 @@
 class KConfigDialogPrivate
 {
 public:
-    KConfigDialogPrivate(KConfigDialog *q, const QString &name, KCoreConfigSkeleton *config)
-        : q(q)
+    KConfigDialogPrivate(const QString &name, KCoreConfigSkeleton *config, KConfigDialog *qq)
+        : q(qq)
     {
         q->setObjectName(name);
         q->setWindowTitle(i18nc("@title:window", "Configure"));
@@ -90,7 +90,7 @@ QHash<QString, KConfigDialog *> KConfigDialogPrivate::openDialogs;
 
 KConfigDialog::KConfigDialog(QWidget *parent, const QString &name, KCoreConfigSkeleton *config)
     : KPageDialog(parent)
-    , d(new KConfigDialogPrivate(this, name, config))
+    , d(new KConfigDialogPrivate(name, config, this))
 {
 }
 
