@@ -18,11 +18,12 @@
 
 #include <QDialogButtonBox>
 #include <QIcon>
-#include <QMap>
 #include <QPushButton>
 #include <QScrollArea>
 #include <QScrollBar>
 #include <QVBoxLayout>
+
+#include <vector>
 
 class KConfigDialogPrivate
 {
@@ -30,17 +31,12 @@ public:
     KConfigDialogPrivate(const QString &name, KCoreConfigSkeleton *config, KConfigDialog *qq)
         : q(qq)
     {
-        q->setObjectName(name);
+        const QString dialogName = !name.isEmpty() ? name : QString::asprintf("SettingsDialog-%p", static_cast<void *>(q));
+
+        q->setObjectName(dialogName);
         q->setWindowTitle(i18nc("@title:window", "Configure"));
         q->setFaceType(KPageDialog::List);
-
-        if (!name.isEmpty()) {
-            openDialogs.insert(name, q);
-        } else {
-            const QString genericName = QString::asprintf("SettingsDialog-%p", static_cast<void *>(q));
-            openDialogs.insert(genericName, q);
-            q->setObjectName(genericName);
-        }
+        s_openDialogs.push_back({dialogName, q});
 
         QDialogButtonBox *buttonBox = q->buttonBox();
         buttonBox->setStandardButtons(QDialogButtonBox::RestoreDefaults | QDialogButtonBox::Ok | QDialogButtonBox::Apply | QDialogButtonBox::Cancel
@@ -91,10 +87,14 @@ public:
     /**
      * The list of existing dialogs.
      */
-    static QHash<QString, KConfigDialog *> openDialogs;
+    struct OpenDialogInfo {
+        QString dialogName;
+        KConfigDialog *dialog = nullptr;
+    };
+    static std::vector<OpenDialogInfo> s_openDialogs;
 };
 
-QHash<QString, KConfigDialog *> KConfigDialogPrivate::openDialogs;
+std::vector<KConfigDialogPrivate::OpenDialogInfo> KConfigDialogPrivate::s_openDialogs;
 
 KConfigDialog::KConfigDialog(QWidget *parent, const QString &name, KCoreConfigSkeleton *config)
     : KPageDialog(parent)
@@ -104,7 +104,15 @@ KConfigDialog::KConfigDialog(QWidget *parent, const QString &name, KCoreConfigSk
 
 KConfigDialog::~KConfigDialog()
 {
-    KConfigDialogPrivate::openDialogs.remove(objectName());
+    auto &openDlgs = KConfigDialogPrivate::s_openDialogs;
+    const QString currentObjectName = objectName();
+    auto it = std::find_if(openDlgs.cbegin(), openDlgs.cend(), [=](const KConfigDialogPrivate::OpenDialogInfo &info) {
+        return currentObjectName == info.dialogName;
+    });
+
+    if (it != openDlgs.cend()) {
+        openDlgs.erase(it);
+    }
 }
 
 KPageWidgetItem *KConfigDialog::addPage(QWidget *page, const QString &itemName, const QString &pixmapName, const QString &header, bool manage)
@@ -248,11 +256,12 @@ void KConfigDialog::onPageRemoved(KPageWidgetItem *item)
 
 KConfigDialog *KConfigDialog::exists(const QString &name)
 {
-    QHash<QString, KConfigDialog *>::const_iterator it = KConfigDialogPrivate::openDialogs.constFind(name);
-    if (it != KConfigDialogPrivate::openDialogs.constEnd()) {
-        return *it;
-    }
-    return nullptr;
+    auto &openDlgs = KConfigDialogPrivate::s_openDialogs;
+    auto it = std::find_if(openDlgs.cbegin(), openDlgs.cend(), [name](const KConfigDialogPrivate::OpenDialogInfo &info) {
+        return name == info.dialogName;
+    });
+
+    return it != openDlgs.cend() ? it->dialog : nullptr;
 }
 
 bool KConfigDialog::showDialog(const QString &name)
