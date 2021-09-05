@@ -25,6 +25,9 @@ private Q_SLOTS:
     void shouldHaveDefaultValue();
     void shouldAddActionInTop();
     void shouldClearMenu();
+    void testUrlsOrder();
+    void addUrlAlreadyInList();
+    void removeExecessItems();
 };
 
 #endif // KRECENTFILESACTIONTEST_H

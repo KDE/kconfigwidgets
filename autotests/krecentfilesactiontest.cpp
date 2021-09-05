@@ -93,4 +93,92 @@ void KRecentFilesActionTest::shouldClearMenu()
     );
 }
 
+void KRecentFilesActionTest::testUrlsOrder()
+{
+    const QUrl kde = QUrl("http://www.kde.org");
+    const QUrl foo = QUrl("http://www.foo.org");
+    const QUrl bar = QUrl("http://www.bar.org");
+
+    KRecentFilesAction recentActions(nullptr);
+    recentActions.addUrl(kde);
+    recentActions.addUrl(foo);
+    recentActions.addUrl(bar);
+
+    const QList<QAction *> list = recentActions.menu()->actions();
+    // 3 + no_entries, separator, clear_action
+    QCOMPARE(list.size(), 6);
+
+    QCOMPARE(list.at(0)->text(), " [" + bar.toString() + ']');
+    QCOMPARE(list.at(1)->text(), " [" + foo.toString() + ']');
+    QCOMPARE(list.at(2)->text(), " [" + kde.toString() + ']');
+
+    const QList<QUrl> urlList = recentActions.urls();
+    QCOMPARE(urlList.size(), 3);
+    // urls() method returns the urls in the same order as they appear in the menu
+    QCOMPARE(urlList.at(0), bar);
+    QCOMPARE(urlList.at(1), foo);
+    QCOMPARE(urlList.at(2), kde);
+}
+
+void KRecentFilesActionTest::addUrlAlreadyInList()
+{
+    const QUrl kde = QUrl("http://www.kde.org");
+    const QUrl foo = QUrl("http://www.foo.org");
+    const QUrl bar = QUrl("http://www.bar.org");
+
+    KRecentFilesAction recentAction(nullptr);
+    recentAction.addUrl(kde);
+    recentAction.addUrl(foo);
+    recentAction.addUrl(bar);
+
+    QList<QAction *> list = recentAction.menu()->actions();
+    // 3 + no_entries, separator, clear_action
+    QCOMPARE(list.size(), 6);
+
+    QCOMPARE(list.at(0)->text(), " [" + bar.toString() + ']');
+
+    // Add kde url again
+    recentAction.addUrl(kde);
+    list = recentAction.menu()->actions();
+    // Number of actions is the same
+    QCOMPARE(list.size(), 6);
+    // kde url should be now at the top
+    QCOMPARE(list.at(0)->text(), " [" + kde.toString() + ']');
+    // bar url is second
+    QCOMPARE(list.at(1)->text(), " [" + bar.toString() + ']');
+
+    // Add foo url again
+    recentAction.addUrl(foo);
+    list = recentAction.menu()->actions();
+    // Number of actions is the same
+    QCOMPARE(list.size(), 6);
+    // foo url should be now at the top
+    QCOMPARE(list.at(0)->text(), " [" + foo.toString() + ']');
+
+    QCOMPARE(list.at(1)->text(), " [" + kde.toString() + ']');
+    QCOMPARE(list.at(2)->text(), " [" + bar.toString() + ']');
+}
+
+void KRecentFilesActionTest::removeExecessItems()
+{
+    const QUrl kde = QUrl("http://www.kde.org");
+    const QUrl foo = QUrl("http://www.foo.org");
+    const QUrl bar = QUrl("http://www.bar.org");
+
+    KRecentFilesAction recentAction(nullptr);
+    recentAction.addUrl(kde);
+    recentAction.addUrl(foo);
+    recentAction.addUrl(bar);
+
+    QList<QAction *> list = recentAction.selectableActionGroup()->actions();
+    QCOMPARE(list.size(), 3);
+
+    recentAction.setMaxItems(2);
+    list = recentAction.menu()->actions();
+    QCOMPARE(recentAction.selectableActionGroup()->actions().size(), 2);
+    // Oldest url was removed
+    QCOMPARE(list.at(0)->text(), " [" + bar.toString() + ']');
+    QCOMPARE(list.at(1)->text(), " [" + foo.toString() + ']');
+}
+
 QTEST_MAIN(KRecentFilesActionTest)

@@ -92,6 +92,7 @@ public:
     /**
      * Reimplemented for internal reasons.
      */
+    // TODO KF6 remove it, not needed
     QAction *removeAction(QAction *action) override;
 
 public Q_SLOTS:

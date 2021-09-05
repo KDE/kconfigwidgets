@@ -38,8 +38,28 @@ public:
     void urlSelected(QAction *);
 
     int m_maxItems = 10;
-    QMap<QAction *, QString> m_shortNames;
-    QMap<QAction *, QUrl> m_urls;
+
+    struct RecentActionInfo {
+        QAction *action = nullptr;
+        QUrl url;
+        QString shortName;
+    };
+    std::vector<RecentActionInfo> m_recentActions;
+
+    std::vector<RecentActionInfo>::iterator findByUrl(const QUrl &url)
+    {
+        return std::find_if(m_recentActions.begin(), m_recentActions.end(), [&url](const RecentActionInfo &info) {
+            return info.url == url;
+        });
+    }
+
+    std::vector<RecentActionInfo>::iterator findByAction(const QAction *action)
+    {
+        return std::find_if(m_recentActions.begin(), m_recentActions.end(), [action](const RecentActionInfo &info) {
+            return info.action == action;
+        });
+    }
+
     QAction *m_noEntriesAction = nullptr;
     QAction *clearSeparator = nullptr;
     QAction *clearAction = nullptr;
