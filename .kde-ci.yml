@@ -1,0 +1,15 @@
+Dependencies:
+- 'on': ['Linux', 'FreeBSD', 'Windows', 'macOS']
+  'require':
+    'frameworks/extra-cmake-modules': '@same'
+    'frameworks/kauth' : '@same'
+    'frameworks/kcoreaddons' : '@same'
+    'frameworks/kcodecs' : '@same'
+    'frameworks/kconfig' : '@same'
+    'frameworks/kdoctools' : '@same'
+    'frameworks/kguiaddons' : '@same'
+    'frameworks/ki18n' : '@same'
+    'frameworks/kwidgetsaddons' : '@same'
+
+Options:
+  test-before-installing: True
