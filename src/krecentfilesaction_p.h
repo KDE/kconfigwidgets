@@ -27,10 +27,6 @@ public:
     explicit KRecentFilesActionPrivate(KRecentFilesAction *parent)
         : q_ptr(parent)
     {
-        m_maxItems = 10;
-        m_noEntriesAction = nullptr;
-        clearSeparator = nullptr;
-        clearAction = nullptr;
     }
 
     virtual ~KRecentFilesActionPrivate()
@@ -41,12 +37,12 @@ public:
 
     void urlSelected(QAction *);
 
-    int m_maxItems;
+    int m_maxItems = 10;
     QMap<QAction *, QString> m_shortNames;
     QMap<QAction *, QUrl> m_urls;
-    QAction *m_noEntriesAction;
-    QAction *clearSeparator;
-    QAction *clearAction;
+    QAction *m_noEntriesAction = nullptr;
+    QAction *clearSeparator = nullptr;
+    QAction *clearAction = nullptr;
 
     KRecentFilesAction *const q_ptr;
 };
