@@ -3,6 +3,7 @@
     SPDX-FileCopyrightText: 2003 Benjamin C Meyer <ben+kdelibs at meyerhome dot net>
     SPDX-FileCopyrightText: 2003 Waldo Bastian <bastian@kde.org>
     SPDX-FileCopyrightText: 2004 Michael Brade <brade@kde.org>
+    SPDX-FileCopyrightText: 2021 Ahmad Samir <a.samirh78@gmail.com>
 
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
@@ -61,15 +62,17 @@ public:
         manager = new KConfigDialogManager(q, config);
         setupManagerConnections(manager);
 
-        setApplyButtonEnabled(false);
+        if (QPushButton *applyButton = q->buttonBox()->button(QDialogButtonBox::Apply)) {
+            applyButton->setEnabled(false);
+        };
     }
 
     KPageWidgetItem *addPageInternal(QWidget *page, const QString &itemName, const QString &pixmapName, const QString &header);
 
     void setupManagerConnections(KConfigDialogManager *manager);
-    void setApplyButtonEnabled(bool enabled);
-    void setRestoreDefaultsButtonEnabled(bool enabled);
 
+    void updateApplyButton();
+    void updateDefaultsButton();
     void updateButtons();
     void settingsChangedSlot();
 
@@ -78,7 +81,12 @@ public:
     QString mHelpApp;
     bool shown = false;
     KConfigDialogManager *manager = nullptr;
-    QMap<QWidget *, KConfigDialogManager *> managerForPage;
+
+    struct WidgetManager {
+        QWidget *widget = nullptr;
+        KConfigDialogManager *manager = nullptr;
+    };
+    std::vector<WidgetManager> m_managerForPage;
 
     /**
      * The list of existing dialogs.
@@ -130,14 +138,15 @@ KPageWidgetItem *KConfigDialog::addPage(QWidget *page, KCoreConfigSkeleton *conf
     }
 
     KPageWidgetItem *item = d->addPageInternal(page, itemName, pixmapName, header);
-    d->managerForPage[page] = new KConfigDialogManager(page, config);
-    d->setupManagerConnections(d->managerForPage[page]);
+    auto *manager = new KConfigDialogManager(page, config);
+    d->m_managerForPage.push_back({page, manager});
+    d->setupManagerConnections(manager);
 
     if (d->shown) {
         // update the default button if the dialog is shown
         QPushButton *defaultButton = buttonBox()->button(QDialogButtonBox::RestoreDefaults);
         if (defaultButton) {
-            bool is_default = defaultButton->isEnabled() && d->managerForPage[page]->isDefault();
+            const bool is_default = defaultButton->isEnabled() && manager->isDefault();
             defaultButton->setEnabled(!is_default);
         }
     }
@@ -196,35 +205,44 @@ void KConfigDialogPrivate::setupManagerConnections(KConfigDialogManager *manager
     q->connect(buttonBox->button(QDialogButtonBox::RestoreDefaults), &QPushButton::clicked, manager, &KConfigDialogManager::updateWidgetsDefault);
 }
 
-void KConfigDialogPrivate::setApplyButtonEnabled(bool enabled)
+void KConfigDialogPrivate::updateApplyButton()
 {
     QPushButton *applyButton = q->buttonBox()->button(QDialogButtonBox::Apply);
-    if (applyButton) {
-        applyButton->setEnabled(enabled);
+    if (!applyButton) {
+        return;
     }
+
+    const bool hasManagerChanged = std::any_of(m_managerForPage.cbegin(), m_managerForPage.cend(), [](const WidgetManager &widgetManager) {
+        return widgetManager.manager->hasChanged();
+    });
+
+    applyButton->setEnabled(manager->hasChanged() || q->hasChanged() || hasManagerChanged);
 }
 
-void KConfigDialogPrivate::setRestoreDefaultsButtonEnabled(bool enabled)
+void KConfigDialogPrivate::updateDefaultsButton()
 {
     QPushButton *restoreDefaultsButton = q->buttonBox()->button(QDialogButtonBox::RestoreDefaults);
-    if (restoreDefaultsButton) {
-        restoreDefaultsButton->setEnabled(enabled);
+    if (!restoreDefaultsButton) {
+        return;
     }
+
+    const bool isManagerDefaulted = std::all_of(m_managerForPage.cbegin(), m_managerForPage.cend(), [](const WidgetManager &widgetManager) {
+        return widgetManager.manager->isDefault();
+    });
+
+    restoreDefaultsButton->setDisabled(manager->isDefault() && q->isDefault() && isManagerDefaulted);
 }
 
 void KConfigDialog::onPageRemoved(KPageWidgetItem *item)
 {
-    QMap<QWidget *, KConfigDialogManager *>::iterator j = d->managerForPage.begin();
-    while (j != d->managerForPage.end()) {
-        // there is a manager for this page, so remove it
-        if (item->widget()->isAncestorOf(j.key())) {
-            KConfigDialogManager *manager = j.value();
-            d->managerForPage.erase(j);
-            delete manager;
-            d->updateButtons();
-            break;
-        }
-        ++j;
+    auto it = std::find_if(d->m_managerForPage.cbegin(), d->m_managerForPage.cend(), [item](const KConfigDialogPrivate::WidgetManager &wm) {
+        return item->widget()->isAncestorOf(wm.widget);
+    });
+
+    if (it != d->m_managerForPage.cend()) { // There is a manager for this page, so remove it
+        delete it->manager;
+        d->m_managerForPage.erase(it);
+        d->updateButtons();
     }
 }
 
@@ -254,21 +272,8 @@ void KConfigDialogPrivate::updateButtons()
     }
     only_once = true;
 
-    QMap<QWidget *, KConfigDialogManager *>::iterator it;
-
-    bool has_changed = manager->hasChanged() || q->hasChanged();
-    for (it = managerForPage.begin(); it != managerForPage.end() && !has_changed; ++it) {
-        has_changed |= (*it)->hasChanged();
-    }
-
-    setApplyButtonEnabled(has_changed);
-
-    bool is_default = manager->isDefault() && q->isDefault();
-    for (it = managerForPage.begin(); it != managerForPage.end() && is_default; ++it) {
-        is_default &= (*it)->isDefault();
-    }
-
-    setRestoreDefaultsButtonEnabled(!is_default);
+    updateApplyButton();
+    updateDefaultsButton();
 
     Q_EMIT q->widgetModified();
     only_once = false;
@@ -284,27 +289,14 @@ void KConfigDialogPrivate::settingsChangedSlot()
 void KConfigDialog::showEvent(QShowEvent *e)
 {
     if (!d->shown) {
-        QMap<QWidget *, KConfigDialogManager *>::iterator it;
-
         updateWidgets();
         d->manager->updateWidgets();
-        for (it = d->managerForPage.begin(); it != d->managerForPage.end(); ++it) {
-            (*it)->updateWidgets();
+        for (auto [widget, manager] : d->m_managerForPage) {
+            manager->updateWidgets();
         }
 
-        bool has_changed = d->manager->hasChanged() || hasChanged();
-        for (it = d->managerForPage.begin(); it != d->managerForPage.end() && !has_changed; ++it) {
-            has_changed |= (*it)->hasChanged();
-        }
-
-        d->setApplyButtonEnabled(has_changed);
-
-        bool is_default = d->manager->isDefault() && isDefault();
-        for (it = d->managerForPage.begin(); it != d->managerForPage.end() && is_default; ++it) {
-            is_default &= (*it)->isDefault();
-        }
-
-        d->setRestoreDefaultsButtonEnabled(!is_default);
+        d->updateApplyButton();
+        d->updateDefaultsButton();
 
         d->shown = true;
     }
