@@ -12,6 +12,14 @@
 
 #include <unordered_set>
 
+QString KCommandBarModel::Item::displayName() const
+{
+    const QString group = KLocalizedString::removeAcceleratorMarker(groupName);
+    const QString command = KLocalizedString::removeAcceleratorMarker(action->text());
+
+    return group + QStringLiteral(": ") + command;
+}
+
 KCommandBarModel::KCommandBarModel(QObject *parent)
     : QAbstractTableModel(parent)
 {
@@ -104,9 +112,7 @@ QVariant KCommandBarModel::data(const QModelIndex &index, int role) const
     switch (role) {
     case Qt::DisplayRole:
         if (col == 0) {
-            QString groupName = KLocalizedString::removeAcceleratorMarker(entry.groupName);
-            QString actionText = KLocalizedString::removeAcceleratorMarker(entry.action->text());
-            return QString(groupName + QStringLiteral(": ") + actionText);
+            return entry.displayName();
         } else {
             return entry.action->shortcut().toString();
         }
@@ -121,6 +127,13 @@ QVariant KCommandBarModel::data(const QModelIndex &index, int role) const
         } else {
             return Qt::AlignRight;
         }
+    case Qt::ToolTipRole: {
+        QString toolTip = entry.displayName();
+        if (!entry.action->shortcut().isEmpty()) {
+            toolTip += "\n" + entry.action->shortcut().toString();
+        }
+        return toolTip;
+    }
     case Qt::UserRole: {
         return QVariant::fromValue(entry.action);
     }

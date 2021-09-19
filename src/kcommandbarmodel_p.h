@@ -18,6 +18,8 @@ class KCommandBarModel final : public QAbstractTableModel
     Q_OBJECT
 public:
     struct Item {
+        QString displayName() const;
+
         QString groupName;
         QAction *action;
         int score;
