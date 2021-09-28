@@ -58,7 +58,7 @@ KColorSchemeModel::KColorSchemeModel(QObject *parent)
         KSharedConfigPtr config = KSharedConfig::openConfig(schemeFilePath, KConfig::SimpleConfig);
         KConfigGroup group(config, QStringLiteral("General"));
         const QString name = group.readEntry("Name", QFileInfo(schemeFilePath).baseName());
-        const QString id = key.chopped(7); // Remove .colors ending
+        const QString id = key.chopped(QLatin1String(".colors").size()); // Remove .colors ending
         const KColorSchemeModelData data = {id, name, schemeFilePath, QIcon()};
         d->m_data.append(data);
     }

@@ -95,7 +95,7 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
         const QString colorSchemeToApply = d->getWindowsMessagesNotifier().preferDarkMode() ? d->getDarkColorScheme() : d->getLightColorScheme();
         s_autoColorSchemePath = this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString();
         if (!s_overrideAutoSwitch) {
-            ::activateScheme(this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString(), false);
+            ::activateScheme(this->indexForSchemeId(colorSchemeToApply).data(KColorSchemeModel::PathRole).toString(), false);
         }
     });
     d->getWindowsMessagesNotifier().handleWMSettingChange();
@@ -109,6 +109,17 @@ KColorSchemeManager::~KColorSchemeManager()
 QAbstractItemModel *KColorSchemeManager::model() const
 {
     return d->model.get();
+}
+
+QModelIndex KColorSchemeManager::indexForSchemeId(const QString &id) const
+{
+    for (int i = 1; i < d->model->rowCount(); ++i) {
+        QModelIndex index = d->model->index(i);
+        if (index.data(KColorSchemeModel::IdRole).toString() == id) {
+            return index;
+        }
+    }
+    return QModelIndex();
 }
 
 QModelIndex KColorSchemeManager::indexForScheme(const QString &name) const
