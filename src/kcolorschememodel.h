@@ -27,6 +27,11 @@ class KColorSchemeModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
+    enum Roles {
+        PathRole = Qt::UserRole,
+        IdRole,
+    };
+
     explicit KColorSchemeModel(QObject *parent = nullptr);
     ~KColorSchemeModel() override;
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
