@@ -31,7 +31,7 @@ public:
     const QString& getDarkColorScheme() {return m_darkColorScheme;}
 
 private:
-    QString m_lightColorScheme = QStringLiteral("Breeze"), m_darkColorScheme = QStringLiteral("Breeze Dark");
+    QString m_lightColorScheme = QStringLiteral("Breeze"), m_darkColorScheme = QStringLiteral("BreezeDark");
 #endif
 };
 
