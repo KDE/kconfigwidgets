@@ -23,7 +23,8 @@
 #include <map>
 
 struct KColorSchemeModelData {
-    QString name;
+    QString id; // e.g. BreezeDark
+    QString name; // e.g. "Breeze Dark" or "Breeze-Dunkel"
     QString path;
     QIcon preview;
 };
@@ -57,11 +58,12 @@ KColorSchemeModel::KColorSchemeModel(QObject *parent)
         KSharedConfigPtr config = KSharedConfig::openConfig(schemeFilePath, KConfig::SimpleConfig);
         KConfigGroup group(config, QStringLiteral("General"));
         const QString name = group.readEntry("Name", QFileInfo(schemeFilePath).baseName());
-        const KColorSchemeModelData data = {name, schemeFilePath, QIcon()};
+        const QString id = key.chopped(7); // Remove .colors ending
+        const KColorSchemeModelData data = {id, name, schemeFilePath, QIcon()};
         d->m_data.append(data);
     }
 
-    d->m_data.insert(0, {i18n("Default"), QString(), QIcon::fromTheme("edit-undo")});
+    d->m_data.insert(0, {QStringLiteral("Default"), i18n("Default"), QString(), QIcon::fromTheme("edit-undo")});
     endResetModel();
 }
 
@@ -91,8 +93,10 @@ QVariant KColorSchemeModel::data(const QModelIndex &index, int role) const
         }
         return item.preview;
     }
-    case Qt::UserRole:
+    case PathRole:
         return d->m_data.at(index.row()).path;
+    case IdRole:
+        return d->m_data.at(index.row()).id;
     default:
         return QVariant();
     }
