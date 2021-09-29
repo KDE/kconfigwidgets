@@ -133,6 +133,7 @@ public Q_SLOTS:
 
 private:
     QModelIndex indexForSchemeId(const QString &id) const;
+    void slotAutoChangeColors();
 
     std::unique_ptr<KColorSchemeManagerPrivate> const d;
 };

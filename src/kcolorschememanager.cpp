@@ -9,6 +9,7 @@
 #include "kcolorschememanager_p.h"
 
 #include <KActionMenu>
+#include <KColorSchemeWatcher>
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KSharedConfig>
@@ -26,9 +27,6 @@
 constexpr int defaultSchemeRow = 0;
 static bool s_overrideAutoSwitch = false;
 static QString s_autoColorSchemePath;
-#ifdef Q_OS_WIN
-WindowsMessagesNotifier KColorSchemeManagerPrivate::m_windowsMessagesNotifier = WindowsMessagesNotifier();
-#endif
 
 static void activateScheme(const QString &colorSchemePath, bool overrideAutoSwitch = true)
 {
@@ -81,9 +79,6 @@ QIcon KColorSchemeManagerPrivate::createPreview(const QString &path)
 KColorSchemeManagerPrivate::KColorSchemeManagerPrivate()
     : model(new KColorSchemeModel())
 {
-#ifdef Q_OS_WIN
-    QAbstractEventDispatcher::instance()->installNativeEventFilter(&m_windowsMessagesNotifier);
-#endif
 }
 
 KColorSchemeManager::KColorSchemeManager(QObject *parent)
@@ -91,19 +86,23 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
     , d(new KColorSchemeManagerPrivate)
 {
 #ifdef Q_OS_WIN
-    connect(&d->getWindowsMessagesNotifier(), &WindowsMessagesNotifier::wm_colorSchemeChanged, this, [this](){
-        const QString colorSchemeToApply = d->getWindowsMessagesNotifier().preferDarkMode() ? d->getDarkColorScheme() : d->getLightColorScheme();
-        s_autoColorSchemePath = this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString();
-        if (!s_overrideAutoSwitch) {
-            ::activateScheme(this->indexForSchemeId(colorSchemeToApply).data(KColorSchemeModel::PathRole).toString(), false);
-        }
-    });
-    d->getWindowsMessagesNotifier().handleWMSettingChange();
+    connect(&d->m_colorSchemeWatcher, &KColorSchemeWatcher::systemPreferenceChanged, this, &KColorSchemeManager::slotAutoChangeColors);
+    slotAutoChangeColors();
 #endif
 }
 
 KColorSchemeManager::~KColorSchemeManager()
 {
+}
+
+void KColorSchemeManager::slotAutoChangeColors()
+{
+    const QString colorSchemeToApply =
+        d->m_colorSchemeWatcher.systemPreference() == KColorSchemeWatcher::PreferDark ? d->getDarkColorScheme() : d->getLightColorScheme();
+    s_autoColorSchemePath = indexForSchemeId(colorSchemeToApply).data(Qt::UserRole).toString();
+    if (!s_overrideAutoSwitch) {
+        ::activateScheme(s_autoColorSchemePath, false);
+    }
 }
 
 QAbstractItemModel *KColorSchemeManager::model() const
