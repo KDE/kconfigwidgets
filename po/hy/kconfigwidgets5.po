@@ -1,0 +1,692 @@
+# KDE - kdelibs/kdelibs4.po Armenian translation.
+# Copyright (C) 2005, KDE Armenian translation team.
+#
+# Davit Nikoghosyan <nikdavnik@mail.ru>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-08-29 00:15+0000\n"
+"PO-Revision-Date: 2013-01-31 01:08+0400\n"
+"Last-Translator: Davit <nikdavnik@mail.ru>\n"
+"Language-Team: Armenian Language: hy\n"
+"Language: hy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Դավիթ Նիկողոսյան"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "nikdavnik@mail.ru"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Նախքան կարգավորումների պահպանումը պետք է հաստատել մուտքը դեպի համակարգ"
+
+#: kcmodule.cpp:193
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Դուք չունեք իրավունք այս կարգավորումները փոխելու համար"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Լռելյայն"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Ավտոմատ որոշում"
+
+#: kcolorschememanager.cpp:173 kcolorschememanager.cpp:178
+#, fuzzy, kde-format
+#| msgid "Shortcut Schemes"
+msgid "Color Scheme"
+msgstr "Միացման սխեմաներ"
+
+#: kcolorschememodel.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Լռելյայն"
+
+#: kconfigdialog.cpp:33
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Կարգավորում"
+
+#: khamburgermenu.cpp:126
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "Menu"
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "Menu"
+
+#: khamburgermenu.cpp:342
+#, fuzzy, kde-format
+#| msgid "Shortcut '%1' for action '%2'\n"
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "For %1 more action:"
+msgid_plural "For %1 more actions:"
+msgstr[0] "Կոճակների համադրություն «%1» գործողություն «%2»\n"
+msgstr[1] "Կոճակների համադրություն «%1» գործողություն «%2»\n"
+msgstr[2] "Կոճակների համադրություն «%1» գործողություն «%2»\n"
+msgstr[3] "Կոճակների համադրություն «%1» գործողություն «%2»\n"
+
+#: khamburgermenu.cpp:345
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "%1 Menu Bar Exclusive Action"
+msgid_plural "%1 Menu Bar Exclusive Actions"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: krecentfilesaction.cpp:68
+#, kde-format
+msgid "No Entries"
+msgstr "Չկա գրանցումներ"
+
+#: krecentfilesaction.cpp:74
+#, kde-format
+msgid "Clear List"
+msgstr "Մաքրել ցանկը"
+
+#: kstandardaction.cpp:140
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Հետ"
+
+#: kstandardaction.cpp:147
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Առաջ"
+
+#: kstandardaction.cpp:154
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Տուն"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Տեղեկություն"
+
+#: kstandardaction.cpp:215
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Պատկերել մենյուն<p>Կրկին պատկերել մենյուն, այն թաքցնելուց հետո</p>"
+
+# BUGME: whatsthis on "Hide Statusbar" should be about "Hide Statusbar", not "Show Statusbar"
+#: kstandardaction.cpp:236
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Պատկեռել իրավիճակի վահանակը<p>Այստեղ ներկայացվում է ծրագրի վիճակի մասին "
+"տեղեկություն.</p>"
+
+#: kstandardaction_p.h:29
+#, kde-format
+msgid "&New"
+msgstr "&Նոր"
+
+#: kstandardaction_p.h:29
+#, kde-format
+msgid "Create new document"
+msgstr "Նոր հղում:"
+
+#: kstandardaction_p.h:30
+#, kde-format
+msgid "&Open..."
+msgstr "&Բացել..."
+
+#: kstandardaction_p.h:30
+#, fuzzy, kde-format
+#| msgid "Go back in document"
+msgid "Open an existing document"
+msgstr "&Գնալ հետ"
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "Open &Recent"
+msgstr "&Վերջի նիշքերը"
+
+#: kstandardaction_p.h:31
+#, kde-format
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "&Save"
+msgstr "&Պահպանել"
+
+#: kstandardaction_p.h:32
+#, kde-format
+msgid "Save document"
+msgstr "Պահպանել փասթաթուղթը"
+
+#: kstandardaction_p.h:33
+#, kde-format
+msgid "Save &As..."
+msgstr "&Պահպանել ինչպես..."
+
+#: kstandardaction_p.h:33
+#, fuzzy, kde-format
+#| msgid "Save document"
+msgid "Save document under a new name"
+msgstr "Պահպանել փասթաթուղթը"
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Re&vert"
+msgstr "&Վերականգնել"
+
+#: kstandardaction_p.h:34
+#, kde-format
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "&Close"
+msgstr "&Փակել"
+
+#: kstandardaction_p.h:35
+#, kde-format
+msgid "Close document"
+msgstr "Փակել"
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "&Print..."
+msgstr "&Տպել..."
+
+#: kstandardaction_p.h:36
+#, kde-format
+msgid "Print document"
+msgstr "Տպել"
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "Print Previe&w"
+msgstr "&Նախնական դիտում"
+
+#: kstandardaction_p.h:37
+#, kde-format
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:38
+#, kde-format
+msgid "&Mail..."
+msgstr "&Էլ-փոստ..."
+
+#: kstandardaction_p.h:38
+#, fuzzy, kde-format
+#| msgid "Save document"
+msgid "Send document by mail"
+msgstr "Պահպանել փասթաթուղթը"
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "&Quit"
+msgstr "&Ելք"
+
+#: kstandardaction_p.h:39
+#, kde-format
+msgid "Quit application"
+msgstr "Դուրս գալ ծրագրից"
+
+#: kstandardaction_p.h:41
+#, kde-format
+msgid "&Undo"
+msgstr "&Չեղյալ համարել "
+
+#: kstandardaction_p.h:41
+#, fuzzy, kde-format
+#| msgid "Redo last undone action"
+msgid "Undo last action"
+msgstr "Կատարել հանգանակություն"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Re&do"
+msgstr "&կրկնել"
+
+#: kstandardaction_p.h:42
+#, kde-format
+msgid "Redo last undone action"
+msgstr "Կատարել հանգանակություն"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Cu&t"
+msgstr "&Կտրել"
+
+#: kstandardaction_p.h:43
+#, kde-format
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "&Copy"
+msgstr "&Կրկնօրինակել"
+
+#: kstandardaction_p.h:44
+#, kde-format
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45 kstandardaction_p.h:47
+#, kde-format
+msgid "&Paste"
+msgstr "&Տեղադրել"
+
+#: kstandardaction_p.h:45 kstandardaction_p.h:47
+#, kde-format
+msgid "Paste clipboard content"
+msgstr "Նյութերի վերբեռնում դեպի սերվեր"
+
+#: kstandardaction_p.h:49
+#, kde-format
+msgid "C&lear"
+msgstr "&Մաքրել"
+
+#: kstandardaction_p.h:50
+#, kde-format
+msgid "Select &All"
+msgstr "&Նշել ամբողջը"
+
+#: kstandardaction_p.h:51
+#, kde-format
+msgid "Dese&lect"
+msgstr "&Հանել նշվածը"
+
+#: kstandardaction_p.h:52
+#, kde-format
+msgid "&Find..."
+msgstr "&Որոնել..."
+
+#: kstandardaction_p.h:53
+#, kde-format
+msgid "Find &Next"
+msgstr "&Գտնել հաջորդը"
+
+#: kstandardaction_p.h:54
+#, kde-format
+msgid "Find Pre&vious"
+msgstr "&Գտնել նախորդը"
+
+#: kstandardaction_p.h:55
+#, kde-format
+msgid "&Replace..."
+msgstr "&Փոխել..."
+
+#: kstandardaction_p.h:57
+#, kde-format
+msgid "&Actual Size"
+msgstr "&Նորմալ չափ"
+
+#: kstandardaction_p.h:57
+#, kde-format
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:58
+#, kde-format
+msgid "&Fit to Page"
+msgstr "&Տեղավորել ամբողջ էջը"
+
+#: kstandardaction_p.h:58
+#, fuzzy, kde-format
+#| msgid "Go to first page"
+msgid "Zoom to fit page in window"
+msgstr "Անցնել առաջի էջին"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "Fit to Page &Width"
+msgstr "&Էջի լայնությամբ"
+
+#: kstandardaction_p.h:59
+#, kde-format
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Fit to Page &Height"
+msgstr "&Էջի բարձրությամբ"
+
+#: kstandardaction_p.h:60
+#, kde-format
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+#, kde-format
+msgid "Zoom &In"
+msgstr "&Մեծացնել"
+
+#: kstandardaction_p.h:62
+#, kde-format
+msgid "Zoom &Out"
+msgstr "&Փոքրացնել"
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "&Zoom..."
+msgstr "&Մասշտաբ..."
+
+#: kstandardaction_p.h:63
+#, kde-format
+msgid "Select zoom level"
+msgstr "Ընտրել շաբաթը"
+
+#: kstandardaction_p.h:64
+#, kde-format
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:64
+#, fuzzy, kde-format
+#| msgid "Redisplay document"
+msgid "Refresh document"
+msgstr "&Թարմացնել"
+
+#: kstandardaction_p.h:66
+#, kde-format
+msgid "&Up"
+msgstr "&Վերև"
+
+#: kstandardaction_p.h:66
+#, kde-format
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "&Previous Page"
+msgstr "&Նախորդ էջ"
+
+#: kstandardaction_p.h:71
+#, kde-format
+msgid "Go to previous page"
+msgstr "&Նախորդ էջ"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "&Next Page"
+msgstr "&Հաջորդ էջ"
+
+#: kstandardaction_p.h:72
+#, kde-format
+msgid "Go to next page"
+msgstr "Անցնել մյուս էջին"
+
+#: kstandardaction_p.h:73
+#, kde-format
+msgid "&Go To..."
+msgstr "&Անցնել..."
+
+#: kstandardaction_p.h:74
+#, kde-format
+msgid "&Go to Page..."
+msgstr "&Անցնել էջով..."
+
+#: kstandardaction_p.h:75
+#, kde-format
+msgid "&Go to Line..."
+msgstr "&Անցնել տողով..."
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "&First Page"
+msgstr "&Առաջի էջ"
+
+#: kstandardaction_p.h:76
+#, kde-format
+msgid "Go to first page"
+msgstr "Անցնել առաջի էջին"
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "&Last Page"
+msgstr "&Վերջի էջ"
+
+#: kstandardaction_p.h:77
+#, kde-format
+msgid "Go to last page"
+msgstr "Անցնել վերջի էջին"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "&Back"
+msgstr "&Հետ"
+
+#: kstandardaction_p.h:78
+#, kde-format
+msgid "Go back in document"
+msgstr "&Գնալ հետ"
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "&Forward"
+msgstr "&Առաջ"
+
+#: kstandardaction_p.h:79
+#, kde-format
+msgid "Go forward in document"
+msgstr "&Գնալ առաջ"
+
+#: kstandardaction_p.h:81
+#, kde-format
+msgid "&Add Bookmark"
+msgstr "&Ավելացնել պահոցի մեջ"
+
+#: kstandardaction_p.h:82
+#, kde-format
+msgid "&Edit Bookmarks..."
+msgstr "&Փոփոխել պահոցը..."
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "&Spelling..."
+msgstr "&Ուղղագրության ստուգում..."
+
+#: kstandardaction_p.h:84
+#, kde-format
+msgid "Check spelling in document"
+msgstr "Ստուգել ուղղագրությունը"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "Show &Menubar"
+msgstr "&Պատկերել մենյուն"
+
+#: kstandardaction_p.h:86
+#, kde-format
+msgid "Show or hide menubar"
+msgstr "&Պատկերել մենյուն"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show &Toolbar"
+msgstr "&Պատկերել գործիքների վահանակը"
+
+#: kstandardaction_p.h:87
+#, kde-format
+msgid "Show or hide toolbar"
+msgstr "Պատկերել գործիքների վահանակը"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show St&atusbar"
+msgstr "&Պատկերել իրավիճակի վահանակը"
+
+#: kstandardaction_p.h:88
+#, kde-format
+msgid "Show or hide statusbar"
+msgstr "Պատկերել իրավիճակի վահանակը"
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "F&ull Screen Mode"
+msgstr "&Լրիվ էկրանի ռեժիմ"
+
+#: kstandardaction_p.h:91
+#, kde-format
+msgid "&Save Settings"
+msgstr "&Պահպանել կարգավորումները"
+
+#: kstandardaction_p.h:93
+#, fuzzy, kde-format
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "&Տառերի կոմբինացիա..."
+
+#: kstandardaction_p.h:94
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Կարգավորել %1..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "Configure Tool&bars..."
+msgstr "&Գործիքների վահանակ..."
+
+#: kstandardaction_p.h:96
+#, kde-format
+msgid "Configure &Notifications..."
+msgstr "&Կարգավորել ծանուցունմերը..."
+
+#: kstandardaction_p.h:103
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Օգտվողի ուղեցույց %1"
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "What's &This?"
+msgstr "&Ի՞նչ է սա"
+
+#: kstandardaction_p.h:105
+#, kde-format
+msgid "Tip of the &Day"
+msgstr "&Օրվա խորհուրդը"
+
+#: kstandardaction_p.h:106
+#, kde-format
+msgid "&Report Bug..."
+msgstr "&Տեղեկացնել սխալի մասին..."
+
+#: kstandardaction_p.h:107
+#, fuzzy, kde-format
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "Էլ-փոստի պարամետրեր..."
+
+#: kstandardaction_p.h:108
+#, kde-format
+msgid "&About %1"
+msgstr "%1 &ծրագրի մասին"
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "About &KDE"
+msgstr "&KDE-ի մասին"
+
+#: kstandardaction_p.h:110
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "Ջնջել"
+
+#: kstandardaction_p.h:111
+#, fuzzy, kde-format
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "&Փոխել..."
+
+#: kstandardaction_p.h:112
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:113
+#, kde-format
+msgid "&Donate"
+msgstr ""
+
+#: kstandardaction_p.h:114
+#, fuzzy, kde-format
+#| msgid "Open &Recent"
+msgid "Open &Menu"
+msgstr "&Վերջի նիշքերը"
+
+#: ktipdialog.cpp:219
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Օրվա խորհուրդը"
+
+#: ktipdialog.cpp:235
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Դուք գիտե՞ք...\n"
+
+#: ktipdialog.cpp:288
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Ցույց տալ խորհուրդները թողարկման ժամանակ"
+
+#: ktipdialog.cpp:293
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Նախորդը"
+
+#: ktipdialog.cpp:298
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Հաջորդը"
