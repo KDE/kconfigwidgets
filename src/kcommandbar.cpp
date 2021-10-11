@@ -31,12 +31,18 @@ public:
     {
     }
 
+    bool hasActionsWithIcons() const
+    {
+        return m_hasActionsWithIcons;
+    }
+
     Q_SLOT void setFilterString(const QString &string)
     {
         // MUST reset the model here, we want to repopulate
         // invalidateFilter() will not work here
         beginResetModel();
         m_pattern = string;
+        m_hasActionsWithIcons = false;
         endResetModel();
     }
 
@@ -50,27 +56,34 @@ protected:
 
     bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override
     {
+        const QModelIndex index = sourceModel()->index(sourceRow, 0, sourceParent);
+
+        bool accept = false;
         if (m_pattern.isEmpty()) {
-            return true;
+            accept = true;
+        } else {
+            // Example row= "File: Open File"
+            // actionName: OpenFile
+            const QString row = index.data(Qt::DisplayRole).toString();
+            const int pos = row.indexOf(QLatin1Char(':'));
+            if (pos >= 0) {
+                const QString actionName = row.mid(pos + 2);
+                KFuzzyMatcher::Result res = KFuzzyMatcher::match(m_pattern, actionName);
+                sourceModel()->setData(index, res.score, KCommandBarModel::Score);
+                accept = res.matched;
+            }
         }
 
-        const QModelIndex idx = sourceModel()->index(sourceRow, 0, sourceParent);
-        // Example row= "File: Open File"
-        // actionName: OpenFile
-        const QString row = idx.data(Qt::DisplayRole).toString();
-        int pos = row.indexOf(QLatin1Char(':'));
-        if (pos < 0) {
-            return false;
+        if (accept && !m_hasActionsWithIcons) {
+            m_hasActionsWithIcons |= !index.data(Qt::DecorationRole).isNull();
         }
 
-        const QString actionName = row.mid(pos + 2);
-        KFuzzyMatcher::Result res = KFuzzyMatcher::match(m_pattern, actionName);
-        sourceModel()->setData(idx, res.score, KCommandBarModel::Score);
-        return res.matched;
+        return accept;
     }
 
 private:
     QString m_pattern;
+    mutable bool m_hasActionsWithIcons = false;
 };
 // END CommandBarFilterModel
 
@@ -85,10 +98,9 @@ public:
     /**
      * Paints a single item's text
      */
-    static void paintItemText(QPainter *p, const QString &textt, const QStyleOptionViewItem &options, QVector<QTextLayout::FormatRange> formats)
+    static void paintItemText(QPainter *p, const QString &textt, const QRect &rect, const QStyleOptionViewItem &options, QVector<QTextLayout::FormatRange> formats)
     {
-        constexpr int iconWidth = 20;
-        QString text = options.fontMetrics.elidedText(textt, Qt::ElideRight, options.rect.width() - iconWidth);
+        QString text = options.fontMetrics.elidedText(textt, Qt::ElideRight, rect.width());
 
         // set formats and font
         QTextLayout textLayout(text, options.font);
@@ -110,7 +122,7 @@ public:
             return;
         }
 
-        const int lineWidth = options.rect.width();
+        const int lineWidth = rect.width();
         line.setLineWidth(lineWidth);
         line.setPosition(QPointF(0, 0));
 
@@ -119,10 +131,10 @@ public:
         /**
          * get "Y" so that we can properly V-Center align the text in row
          */
-        const int y = QStyle::alignedRect(Qt::LeftToRight, Qt::AlignVCenter, textLayout.boundingRect().size().toSize(), options.rect).y();
+        const int y = QStyle::alignedRect(Qt::LeftToRight, Qt::AlignVCenter, textLayout.boundingRect().size().toSize(), rect).y();
 
         // draw the text
-        const QPointF pos(options.rect.x(), y);
+        const QPointF pos(rect.x(), y);
         textLayout.draw(p, pos);
     }
 
@@ -147,20 +159,21 @@ public:
         QStyle *style = options.widget->style();
         style->drawControl(QStyle::CE_ItemViewItem, &options, painter, options.widget);
 
-        const int iconWidth = options.decorationSize.width() + (2 * style->pixelMetric(QStyle::PM_FocusFrameHMargin, &options, options.widget));
+        const int hMargin = style->pixelMetric(QStyle::PM_FocusFrameHMargin, &options, options.widget);
 
-        /**
-         * We don't want to draw over the icon
-         * so move by 20px
-         */
-        const QString original = index.data().toString();
-        const bool rtl = original.isRightToLeft();
-        if (rtl) {
-            painter->translate(-iconWidth, 0);
-        } else {
-            painter->translate(iconWidth, 0);
+        QRect outputRect = option.rect;
+
+        const CommandBarFilterModel *model = static_cast<const CommandBarFilterModel*>(index.model());
+        if (model->hasActionsWithIcons()) {
+            const int iconWidth = options.decorationSize.width() + hMargin;
+            if (option.direction == Qt::RightToLeft) {
+                outputRect.adjust(0, 0, -iconWidth, 0);
+            } else {
+                outputRect.adjust(iconWidth, 0, 0, 0);
+            }
         }
 
+        const QString original = index.data().toString();
         QStringView str = original;
         int componentIdx = original.indexOf(QLatin1Char(':'));
         int actionNameStart = 0;
@@ -191,7 +204,8 @@ public:
             return QTextLayout::FormatRange{fr.start + actionNameStart, fr.length, f};
         });
 
-        paintItemText(painter, original, options, std::move(formats));
+        outputRect.adjust(hMargin, 0, -hMargin, 0);
+        paintItemText(painter, original, outputRect, options, std::move(formats));
 
         painter->restore();
     }
