@@ -49,9 +49,16 @@ public:
 protected:
     bool lessThan(const QModelIndex &sourceLeft, const QModelIndex &sourceRight) const override
     {
-        const int l = sourceLeft.data(KCommandBarModel::Score).toInt();
-        const int r = sourceRight.data(KCommandBarModel::Score).toInt();
-        return l < r;
+        const int scoreLeft = sourceLeft.data(KCommandBarModel::Score).toInt();
+        const int scoreRight = sourceRight.data(KCommandBarModel::Score).toInt();
+        if (scoreLeft == scoreRight) {
+            const QString textLeft = sourceLeft.data().toString();
+            const QString textRight = sourceRight.data().toString();
+
+            return textRight.localeAwareCompare(textLeft) < 0;
+        }
+
+        return scoreLeft < scoreRight;
     }
 
     bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override
@@ -500,9 +507,6 @@ KCommandBar::KCommandBar(QWidget *parent)
     ShortcutStyleDelegate *del = new ShortcutStyleDelegate(this);
     d->m_treeView.setItemDelegateForColumn(0, delegate);
     d->m_treeView.setItemDelegateForColumn(1, del);
-
-    d->m_proxyModel.setFilterRole(Qt::DisplayRole);
-    d->m_proxyModel.setSortRole(KCommandBarModel::Score);
 
     connect(&d->m_lineEdit, &QLineEdit::returnPressed, this, [this]() {
         d->slotReturnPressed(this);
