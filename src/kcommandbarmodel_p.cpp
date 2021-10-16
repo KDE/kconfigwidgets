@@ -5,6 +5,7 @@
 */
 #include "kcommandbarmodel_p.h"
 #include "kcommandbar.h" // For ActionGroup
+#include "kconfigwidgets_debug.h"
 
 #include <KLocalizedString>
 
@@ -45,6 +46,11 @@ void fillRows(QVector<KCommandBarModel::Item> &rows, const QString &title, const
 
             const QString menuTitle = menu->title();
             fillRows(rows, menuTitle, menuActionList, uniqueActions);
+            continue;
+        }
+
+        if (action->text().isEmpty()) {
+            qCWarning(KCONFIG_WIDGETS_LOG) << "Action" << action << "in group" << title << "has no text";
             continue;
         }
 
