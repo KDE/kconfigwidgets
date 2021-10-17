@@ -680,6 +680,8 @@ bool KColorScheme::isColorSetSupported(const KSharedConfigPtr &config, KColorSch
             return config->hasGroup("Colors:Complementary");
         case Header:
             return config->hasGroup("Colors:Header");
+        case NColorSets:
+            break;
     }
 
     return false;
