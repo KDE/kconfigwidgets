@@ -111,7 +111,7 @@ public:
          */
         Complementary,
         /**
-         * Colors for header areas that thould be used both by the top toolbar and the titlebar titlebar.
+         * Colors for header areas that should be used both by the top toolbar and the titlebar.
          * @since 5.69
          */
         Header,
