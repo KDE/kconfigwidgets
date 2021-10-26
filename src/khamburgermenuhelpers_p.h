@@ -80,7 +80,7 @@ class ButtonPressListener : public QObject
 protected:
     inline ButtonPressListener(QObject *parent) : QObject{parent} {   };
 
-    bool eventFilter(QObject * /*watched*/, QEvent *event) override;
+    bool eventFilter(QObject *watched, QEvent *event) override;
 
     friend class ListenerContainer;
 };

@@ -10,7 +10,10 @@
 #include "khamburgermenu.h"
 
 #include <QEvent>
+#include <QMenu>
+#include <QToolButton>
 #include <QWidget>
+#include <QWindow>
 
 ListenerContainer::ListenerContainer(KHamburgerMenuPrivate *hamburgerMenuPrivate)
     : QObject{hamburgerMenuPrivate},
@@ -28,13 +31,32 @@ bool AddOrRemoveActionListener::eventFilter(QObject * /*watched*/, QEvent *event
     return false;
 }
 
-bool ButtonPressListener::eventFilter(QObject * /*watched*/, QEvent *event)
+bool ButtonPressListener::eventFilter(QObject *watched, QEvent *event)
 {
     if (event->type() == QEvent::KeyPress || event->type() == QEvent::MouseButtonPress) {
         auto hamburgerMenuPrivate = static_cast<KHamburgerMenuPrivate *>(parent());
         auto q = static_cast<KHamburgerMenu *>(hamburgerMenuPrivate->q_ptr);
         Q_EMIT q->aboutToShowMenu();
-        hamburgerMenuPrivate->resetMenu();
+        hamburgerMenuPrivate->resetMenu(); // This menu never has a parent which can be
+        // problematic because it can lead to situations in which the QMenu itself is
+        // treated like its own window.
+        // To avoid this we set a sane transientParent() now even if it already has one
+        // because the menu might be opened from another window this time.
+        const auto watchedButton = qobject_cast<QToolButton *>(watched);
+        if (!watchedButton) {
+            return false;
+        }
+        auto menu = watchedButton->menu();
+        if (!menu) {
+            return false;
+        }
+        menu->winId(); // trigger being a native widget already, to ensure windowHandle created
+        // generic code if not known if the available parent widget is a native widget or not
+        auto parentWindowHandle = watchedButton->windowHandle();
+        if (!parentWindowHandle) {
+            parentWindowHandle = watchedButton->nativeParentWidget()->windowHandle();
+        }
+        menu->windowHandle()->setTransientParent(parentWindowHandle);
     }
     return false;
 }
