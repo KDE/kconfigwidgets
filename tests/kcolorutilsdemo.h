@@ -14,7 +14,7 @@ class KColorUtilsDemo : public QWidget, Ui::form
     Q_OBJECT
 public:
     KColorUtilsDemo(QWidget *parent = nullptr);
-    virtual ~KColorUtilsDemo()
+    ~KColorUtilsDemo() override
     {
     }
 

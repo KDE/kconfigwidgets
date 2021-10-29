@@ -256,7 +256,7 @@ public:
     /**
      * Destructor.
      */
-    ~KConfigDialogManager();
+    ~KConfigDialogManager() override;
 
     /**
      * Add additional widgets to manage

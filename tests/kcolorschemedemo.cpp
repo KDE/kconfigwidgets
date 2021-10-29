@@ -41,7 +41,7 @@ public:
         layout->addWidget(view);
         layout->addWidget(box);
     }
-    ~KColorSchemeDemo()
+    ~KColorSchemeDemo() override
     {
     }
 };

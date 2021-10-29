@@ -29,7 +29,7 @@ class QWidget;
 class ListenerContainer : private QObject {
 public:
     explicit ListenerContainer(KHamburgerMenuPrivate *hamburgerMenuPrivate);
-    virtual ~ListenerContainer();
+    ~ListenerContainer() override;
 
     /**
      * @return an object of class @p Listener with the same parent as ListenerContainer.

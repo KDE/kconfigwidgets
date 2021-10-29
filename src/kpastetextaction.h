@@ -76,7 +76,7 @@ public:
     KCONFIGWIDGETS_DEPRECATED_VERSION(5, 39, "No longer use this class")
     KPasteTextAction(const QIcon &icon, const QString &text, QObject *parent);
 
-    virtual ~KPasteTextAction();
+    ~KPasteTextAction() override;
 
     /**
      * Controls the behavior of the clipboard history menu popup.

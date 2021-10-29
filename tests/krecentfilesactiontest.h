@@ -19,7 +19,7 @@ class KRecentFilesActionTest : public QMainWindow
 public:
     KRecentFilesActionTest();
 
-    virtual ~KRecentFilesActionTest();
+    ~KRecentFilesActionTest() override;
 
 public Q_SLOTS:
     void addUrl();

@@ -66,7 +66,7 @@ public:
      * command bar. It *must* not be @c nullptr.
      */
     explicit KCommandBar(QWidget *parent);
-    ~KCommandBar();
+    ~KCommandBar() override;
 
     /**
      * @p actions is a list of {GroupName, QAction}. Group name can be the name

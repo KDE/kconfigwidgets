@@ -14,7 +14,7 @@ class KImageFrame : public QFrame
     Q_OBJECT
 public:
     KImageFrame(QWidget *parent = nullptr);
-    virtual ~KImageFrame()
+    ~KImageFrame() override
     {
     }
 

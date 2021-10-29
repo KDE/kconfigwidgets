@@ -57,7 +57,7 @@ class KCONFIGWIDGETS_EXPORT KColorSchemeManager : public QObject
     Q_OBJECT
 public:
     explicit KColorSchemeManager(QObject *parent = nullptr);
-    virtual ~KColorSchemeManager();
+    ~KColorSchemeManager() override;
 
     /**
      * A QAbstractItemModel of all available color schemes.

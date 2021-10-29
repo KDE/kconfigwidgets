@@ -36,7 +36,7 @@ class KHamburgerMenuPrivate : public QObject
 public:
     explicit KHamburgerMenuPrivate(KHamburgerMenu *qq);
 
-    virtual ~KHamburgerMenuPrivate();
+    ~KHamburgerMenuPrivate() override;
 
     /** @see KHamburgerMenu::setMenuBar() */
     void setMenuBar(QMenuBar *menuBar);

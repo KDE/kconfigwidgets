@@ -99,7 +99,7 @@ class KCONFIGWIDGETS_EXPORT KHamburgerMenu : public QWidgetAction
 public:
     explicit KHamburgerMenu(QObject *parent);
 
-    virtual ~KHamburgerMenu();
+    ~KHamburgerMenu() override;
 
     /**
      * Associates this KHamburgerMenu with @p menuBar. The KHamburgerMenu will from now

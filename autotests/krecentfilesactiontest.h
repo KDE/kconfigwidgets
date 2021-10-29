@@ -15,7 +15,7 @@ class KRecentFilesActionTest : public QObject
     Q_OBJECT
 public:
     explicit KRecentFilesActionTest(QObject *parent = nullptr);
-    ~KRecentFilesActionTest();
+    ~KRecentFilesActionTest() override;
 
 private:
     static QStringList extractActionNames(QMenu *menu);
