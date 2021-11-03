@@ -5,7 +5,6 @@
  */
 
 #include "windowsmessagesnotifier.h"
-#include <QDebug>
 
 WindowsMessagesNotifier::WindowsMessagesNotifier() {}
 
