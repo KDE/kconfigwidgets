@@ -69,12 +69,9 @@ void KCommandBarModel::refresh(const QVector<KCommandBar::ActionGroup> &actionGr
     QVector<Item> temp_rows;
     std::unordered_set<QAction *> uniqueActions;
     temp_rows.reserve(totalActions);
-    int actionGroupIdx = 0;
     for (const auto &ag : actionGroups) {
         const auto &agActions = ag.actions;
         fillRows(temp_rows, ag.name, agActions, uniqueActions);
-
-        actionGroupIdx++;
     }
 
     /**
@@ -117,22 +114,16 @@ QVariant KCommandBarModel::data(const QModelIndex &index, int role) const
 
     switch (role) {
     case Qt::DisplayRole:
-        if (col == 0) {
+        if (col == Column_Command) {
             return entry.displayName();
-        } else {
-            return entry.action->shortcut().toString();
         }
+        Q_ASSERT(col == Column_Shortcut);
+        return entry.action->shortcut().toString();
     case Qt::DecorationRole:
-        if (col == 0) {
+        if (col == Column_Command) {
             return entry.action->icon();
         }
         break;
-    case Qt::TextAlignmentRole:
-        if (col == 0) {
-            return Qt::AlignLeft;
-        } else {
-            return Qt::AlignRight;
-        }
     case Qt::ToolTipRole: {
         QString toolTip = entry.displayName();
         if (!entry.action->shortcut().isEmpty()) {

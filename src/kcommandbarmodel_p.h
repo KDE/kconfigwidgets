@@ -29,6 +29,13 @@ public:
 
     enum Role { Score = Qt::UserRole + 1 };
 
+    enum Column
+    {
+        Column_Command,
+        Column_Shortcut,
+        Column_Count
+    };
+
     /**
      * Resets the model
      *
@@ -48,7 +55,7 @@ public:
     int columnCount(const QModelIndex &parent = QModelIndex()) const override
     {
         Q_UNUSED(parent);
-        return 2;
+        return Column_Count;
     }
 
     /**

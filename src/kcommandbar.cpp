@@ -16,6 +16,7 @@
 #include <QTextLayout>
 #include <QTreeView>
 #include <QVBoxLayout>
+#include <QHeaderView>
 
 #include <KConfigGroup>
 #include <KFuzzyMatcher>
@@ -147,32 +148,24 @@ public:
 
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
     {
-        QStyleOptionViewItem options = option;
-        initStyleOption(&options, index);
-
         painter->save();
-
-        // paint background
-        if (option.state & QStyle::State_Selected) {
-            painter->fillRect(option.rect, option.palette.highlight());
-        } else {
-            painter->fillRect(option.rect, option.palette.base());
-        }
 
         /**
          * Draw everything, (widget, icon etc) except the text
          */
-        options.text = QString(); // clear old text
-        QStyle *style = options.widget->style();
-        style->drawControl(QStyle::CE_ItemViewItem, &options, painter, options.widget);
+        QStyleOptionViewItem optionCopy = option;
+        initStyleOption(&optionCopy, index);
+        optionCopy.text.clear(); // clear old text
+        QStyle *style = option.widget->style();
+        style->drawControl(QStyle::CE_ItemViewItem, &optionCopy, painter, option.widget);
 
-        const int hMargin = style->pixelMetric(QStyle::PM_FocusFrameHMargin, &options, options.widget);
+        const int hMargin = style->pixelMetric(QStyle::PM_FocusFrameHMargin, &option, option.widget);
 
         QRect outputRect = option.rect;
 
         const CommandBarFilterModel *model = static_cast<const CommandBarFilterModel*>(index.model());
         if (model->hasActionsWithIcons()) {
-            const int iconWidth = options.decorationSize.width() + hMargin;
+            const int iconWidth = option.decorationSize.width() + hMargin;
             if (option.direction == Qt::RightToLeft) {
                 outputRect.adjust(0, 0, -iconWidth, 0);
             } else {
@@ -198,7 +191,7 @@ public:
         }
 
         QTextCharFormat fmt;
-        fmt.setForeground(options.palette.link().color());
+        fmt.setForeground(option.palette.link().color());
         fmt.setFontWeight(QFont::Bold);
 
         /**
@@ -206,13 +199,13 @@ public:
          */
         const auto fmtRanges = KFuzzyMatcher::matchedRanges(m_filterString, str);
         QTextCharFormat f;
-        f.setForeground(options.palette.link());
+        f.setForeground(option.palette.link());
         std::transform(fmtRanges.begin(), fmtRanges.end(), std::back_inserter(formats), [f, actionNameStart](const KFuzzyMatcher::Range &fr) {
             return QTextLayout::FormatRange{fr.start + actionNameStart, fr.length, f};
         });
 
         outputRect.adjust(hMargin, 0, -hMargin, 0);
-        paintItemText(painter, original, outputRect, options, std::move(formats));
+        paintItemText(painter, original, outputRect, option, std::move(formats));
 
         painter->restore();
     }
@@ -240,121 +233,158 @@ public:
         return shortcutString.split(QLatin1String(", "), Qt::SkipEmptyParts);
     }
 
-    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
+    // returns the width needed to draw the shortcut
+    static int shortcutDrawingWidth(const QStyleOptionViewItem &option, const QString &shortcut, int hMargin)
     {
-        QStyleOptionViewItem options = option;
-        initStyleOption(&options, index);
-        painter->save();
+        int width = 0;
+        if (!shortcut.isEmpty()) {
+            // adapt the shortcut as it will be drawn
+            // "Ctrl+A, Alt+B" => "Ctrl+A+Alt+B"
+            QString adaptedShortcut = shortcut;
+            adaptedShortcut.replace(QStringLiteral(", "), QStringLiteral("+"));
 
-        const QString shortcutString = index.data().toString();
+            width = option.fontMetrics.horizontalAdvance(adaptedShortcut);
 
-        // paint background
-        if (option.state & QStyle::State_Selected) {
-            painter->fillRect(option.rect, option.palette.highlight());
-        } else {
-            painter->fillRect(option.rect, option.palette.base());
+            // count the number of segments
+            // "Ctrl+A+Alt+B" => ["Ctrl", "+", "A", "+", "Alt", "+", "B"]
+            static const QRegularExpression regExp(QStringLiteral("(\\+(?!\\+)|\\+(?=\\+{2}))"));
+            const int segmentsCount = 2 * adaptedShortcut.count(regExp) + 1;
+
+            // add left and right margins for each segment
+            width += segmentsCount * 2 * hMargin;
         }
 
-        options.text = QString(); // clear old text
-        options.widget->style()->drawControl(QStyle::CE_ItemViewItem, &options, painter, options.widget);
+        return width;
+    }
 
-        if (!shortcutString.isEmpty()) {
-            /**
-             * Shortcut string splitting
-             *
-             * We do it in two steps
-             * 1. Split on ", " so that if we have multi modifier shortcuts they are nicely
-             *    split into strings.
-             * 2. Split each shortcut from step 1 into individual string.
-             *
-             * Example:
-             *
-             * "Ctrl+,, Alt+:"
-             * Step 1: [ "Ctrl+," , "Alt+:"]
-             * Step 2: [ "Ctrl", ",", "Alt", ":"]
-             */
-            const QStringList spaceSplitted = splitShortcutString(shortcutString);
-            QStringList list;
-            list.reserve(spaceSplitted.size() * 2);
-            for (const QString &shortcut : spaceSplitted) {
-                list += shortcut.split(QLatin1Char('+'), Qt::SkipEmptyParts);
-                if (shortcut.endsWith(QLatin1Char('+'))) {
-                    list.append(QStringLiteral("+"));
-                }
+    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
+    {
+        // draw background
+        option.widget->style()->drawPrimitive(QStyle::PE_PanelItemViewItem, &option, painter);
+
+        const QString shortcutString = index.data().toString();
+        if (shortcutString.isEmpty()) {
+            return;
+        }
+
+        /**
+            * Shortcut string splitting
+            *
+            * We do it in two steps
+            * 1. Split on ", " so that if we have multi modifier shortcuts they are nicely
+            *    split into strings.
+            * 2. Split each shortcut from step 1 into individual string.
+            *
+            * Example:
+            *
+            * "Ctrl+,, Alt+:"
+            * Step 1: [ "Ctrl+," , "Alt+:"]
+            * Step 2: [ "Ctrl", ",", "Alt", ":"]
+            */
+        const QStringList spaceSplitted = splitShortcutString(shortcutString);
+        QStringList list;
+        list.reserve(spaceSplitted.size() * 2);
+        for (const QString &shortcut : spaceSplitted) {
+            list += shortcut.split(QLatin1Char('+'), Qt::SkipEmptyParts);
+            if (shortcut.endsWith(QLatin1Char('+'))) {
+                list.append(QStringLiteral("+"));
             }
+        }
 
-            /**
-             * Create rects for each string from the previous step
-             *
-             * @todo boundingRect may give issues here, use horizontalAdvance
-             * @todo We probably dont need the full rect, just the width so the
-             * "btns" vector can just be vector<pair<int, string>>
-             */
-            QVector<QPair<QRect, QString>> btns;
-            btns.reserve(list.size());
-            const int height = options.rect.height();
-            for (const QString &text : std::as_const(list)) {
-                if (text.isEmpty()) {
-                    continue;
-                }
-                QRect r = option.fontMetrics.boundingRect(text);
-                // this happens on gnome so we manually decrease the
-                // height a bit
-                if (r.height() == height) {
-                    r.setHeight(r.height() - 4);
-                }
-                r.setWidth(r.width() + 8);
-                btns.append({r, text});
+        /**
+            * Create rects for each string from the previous step
+            *
+            * @todo We probably dont need the full rect, just the width so the
+            * "btns" vector can just be vector<pair<int, string>>
+            */
+        QVector<QPair<QRect, QString>> btns;
+        btns.reserve(list.size());
+        const int height = option.rect.height();
+        const int hMargin = horizontalMargin(option);
+        for (const QString &text : std::as_const(list)) {
+            if (text.isEmpty()) {
+                continue;
             }
-
-            // we have nothing, just return
-            if (btns.isEmpty()) {
-                return;
+            QRect r(0, 0, option.fontMetrics.horizontalAdvance(text), option.fontMetrics.lineSpacing());
+            // this happens on gnome so we manually decrease the
+            // height a bit
+            if (r.height() == height) {
+                r.setHeight(r.height() - 4);
             }
+            r.setWidth(r.width() + 2 * hMargin);
+            btns.append({r, text});
+        }
 
-            const QRect plusRect = option.fontMetrics.boundingRect(QLatin1Char('+'));
+        // we have nothing, just return
+        if (btns.isEmpty()) {
+            return;
+        }
 
-            // draw them
-            int x = option.rect.x();
-            const int y = option.rect.y();
-            const int plusY = option.rect.y() + plusRect.height() / 2;
-            const int total = btns.size();
+        const QRect plusRect = option.fontMetrics.boundingRect(QLatin1Char('+'));
 
-            // make sure our rects are nicely V-center aligned in the row
-            painter->translate(QPoint(0, (option.rect.height() - btns.at(0).first.height()) / 2));
+        // draw them
+        int x;
+        if (option.direction == Qt::RightToLeft) {
+            x = option.rect.x() + hMargin;
+        } else {
+            x = option.rect.right() - shortcutDrawingWidth(option, shortcutString, hMargin) - hMargin;
+        }
+        const int y = option.rect.y() + (option.rect.height() - btns.at(0).first.height()) / 2;
+        const int plusY = option.rect.y() + (option.rect.height() - plusRect.height()) / 2;
+        const int total = btns.size();
 
-            int i = 0;
-            painter->setRenderHint(QPainter::Antialiasing);
-            for (const auto &btn : std::as_const(btns)) {
-                painter->setPen(Qt::NoPen);
-                const QRect &rect = btn.first;
+        int i = 0;
+        painter->save();
+        painter->setRenderHint(QPainter::Antialiasing);
+        for (const auto &btn : std::as_const(btns)) {
+            painter->setPen(Qt::NoPen);
+            const QRect &rect = btn.first;
 
-                QRect buttonRect(x, y, rect.width(), rect.height());
+            QRect buttonRect(x, y, rect.width(), rect.height());
 
-                // draw rounded rect shadow
-                auto shadowRect = buttonRect.translated(0, 1);
-                painter->setBrush(option.palette.shadow());
-                painter->drawRoundedRect(shadowRect, 3.0, 3.0);
+            // draw rounded rect shadow
+            auto shadowRect = buttonRect.translated(0, 1);
+            painter->setBrush(option.palette.shadow());
+            painter->drawRoundedRect(shadowRect, 3.0, 3.0);
 
-                // draw rounded rect itself
-                painter->setBrush(option.palette.button());
-                painter->drawRoundedRect(buttonRect, 3.0, 3.0);
+            // draw rounded rect itself
+            painter->setBrush(option.palette.button());
+            painter->drawRoundedRect(buttonRect, 3.0, 3.0);
 
-                // draw text inside rounded rect
-                painter->setPen(option.palette.buttonText().color());
-                painter->drawText(buttonRect, Qt::AlignCenter, btn.second);
+            // draw text inside rounded rect
+            painter->setPen(option.palette.buttonText().color());
+            painter->drawText(buttonRect, Qt::AlignCenter, btn.second);
 
-                // draw '+'
-                if (i + 1 < total) {
-                    x += rect.width() + 5;
-                    painter->drawText(QPoint(x, plusY + (rect.height() / 2)), QStringLiteral("+"));
-                    x += plusRect.width() + 5;
-                }
-                i++;
+            // draw '+'
+            if (i + 1 < total) {
+                x += rect.width() + hMargin;
+                painter->drawText(QPoint(x, plusY + (rect.height() / 2)), QStringLiteral("+"));
+                x += plusRect.width() + hMargin;
             }
+            i++;
         }
 
         painter->restore();
+    }
+
+    QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override
+    {
+        if (index.isValid() && index.column() == KCommandBarModel::Column_Shortcut) {
+            QString shortcut = index.data().toString();
+            if (!shortcut.isEmpty()) {
+                const int hMargin = horizontalMargin(option);
+                const int width = shortcutDrawingWidth(option, shortcut, hMargin) + 2 * hMargin;
+
+                return QSize(width, 0);
+            }
+        }
+
+        return QStyledItemDelegate::sizeHint(option, index);
+    }
+
+    int horizontalMargin(const QStyleOptionViewItem &option) const
+    {
+        return option.widget->style()->pixelMetric(QStyle::PM_FocusFrameHMargin, &option) + 2;
     }
 };
 
@@ -409,9 +439,6 @@ void KCommandBarPrivate::updateViewGeometry(KCommandBar *q)
     const QSize centralSize = parentWidget->size();
 
     const QSize viewMaxSize(centralSize.width() / 2.4, centralSize.height() / 2);
-
-    // First column occupies 60% of the width
-    m_treeView.setColumnWidth(0, viewMaxSize.width() * 0.6);
 
     // Position should be central over window
     const int xPos = std::max(0, (centralSize.width() - viewMaxSize.width()) / 2);
@@ -505,8 +532,8 @@ KCommandBar::KCommandBar(QWidget *parent)
 
     CommandBarStyleDelegate *delegate = new CommandBarStyleDelegate(this);
     ShortcutStyleDelegate *del = new ShortcutStyleDelegate(this);
-    d->m_treeView.setItemDelegateForColumn(0, delegate);
-    d->m_treeView.setItemDelegateForColumn(1, del);
+    d->m_treeView.setItemDelegateForColumn(KCommandBarModel::Column_Command, delegate);
+    d->m_treeView.setItemDelegateForColumn(KCommandBarModel::Column_Shortcut, del);
 
     connect(&d->m_lineEdit, &QLineEdit::returnPressed, this, [this]() {
         d->slotReturnPressed(this);
@@ -524,6 +551,11 @@ KCommandBar::KCommandBar(QWidget *parent)
     d->m_proxyModel.setSourceModel(&d->m_model);
     d->m_treeView.setSortingEnabled(true);
     d->m_treeView.setModel(&d->m_proxyModel);
+
+    d->m_treeView.header()->setMinimumSectionSize(0);
+    d->m_treeView.header()->setStretchLastSection(false);
+    d->m_treeView.header()->setSectionResizeMode(KCommandBarModel::Column_Command, QHeaderView::Stretch);
+    d->m_treeView.header()->setSectionResizeMode(KCommandBarModel::Column_Shortcut, QHeaderView::ResizeToContents);
 
     d->m_treeView.installEventFilter(this);
     d->m_lineEdit.installEventFilter(this);

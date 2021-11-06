@@ -103,6 +103,9 @@ public:
         for (; i < 2; ++i) {
             acts[1].actions.append(genAction(this, QStringLiteral("folder"), i));
         }
+        acts[1].actions[0]->setShortcut(QStringLiteral("G"));
+        acts[1].actions[1]->setCheckable(true);
+        acts[1].actions[1]->setShortcut(QStringLiteral("Ctrl++"));
 
         acts[2].name = QStringLiteral("Second Menu Group - Disabled acts");
         for (; i < 4; ++i) {
@@ -116,6 +119,8 @@ public:
         for (; i < 6; ++i) {
             acts[3].actions.append(genAction(this, QStringLiteral("security-low"), i, Qt::CTRL | Qt::ALT));
         }
+        acts[3].actions[0]->setCheckable(true);
+        acts[3].actions[0]->setShortcut(QStringLiteral("Ctrl+,, Ctrl++, Ctrl+K"));
 
         return acts;
     }
@@ -128,10 +133,14 @@ public:
         acts[0].name = QStringLiteral("مینو گروپ");
         acts[0].actions = {new QAction(QIcon::fromTheme("folder"), QStringLiteral("یہ فولڈر ایکشن ہے"), this),
                            new QAction(QIcon::fromTheme("folder"), QStringLiteral("یہ ایک اور فولڈر ایکشن ہے"), this)};
+        acts[0].actions[1]->setCheckable(true);
+        acts[0].actions[1]->setShortcut(QStringLiteral("Ctrl+Shift++"));
 
         acts[1].name = QStringLiteral("گروپ");
         acts[1].actions = {new QAction(QIcon::fromTheme("zoom-out"), QStringLiteral("یہ فولڈر ایکشن ہے"), this),
                            new QAction(QIcon::fromTheme("security-low"), QStringLiteral("یہ ایک اور فولڈر ایکشن ہے"), this)};
+        acts[1].actions[1]->setCheckable(true);
+        acts[1].actions[1]->setShortcut(QStringLiteral("Ctrl+-"));
 
         return acts;
     }
