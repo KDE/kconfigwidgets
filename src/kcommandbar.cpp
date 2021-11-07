@@ -5,6 +5,7 @@
 */
 #include "kcommandbar.h"
 #include "kcommandbarmodel_p.h"
+#include "kconfigwidgets_debug.h"
 
 #include <QAction>
 #include <QCoreApplication>
@@ -228,35 +229,6 @@ public:
     {
     }
 
-    static QStringList splitShortcutString(const QString &shortcutString)
-    {
-        return shortcutString.split(QLatin1String(", "), Qt::SkipEmptyParts);
-    }
-
-    // returns the width needed to draw the shortcut
-    static int shortcutDrawingWidth(const QStyleOptionViewItem &option, const QString &shortcut, int hMargin)
-    {
-        int width = 0;
-        if (!shortcut.isEmpty()) {
-            // adapt the shortcut as it will be drawn
-            // "Ctrl+A, Alt+B" => "Ctrl+A+Alt+B"
-            QString adaptedShortcut = shortcut;
-            adaptedShortcut.replace(QStringLiteral(", "), QStringLiteral("+"));
-
-            width = option.fontMetrics.horizontalAdvance(adaptedShortcut);
-
-            // count the number of segments
-            // "Ctrl+A+Alt+B" => ["Ctrl", "+", "A", "+", "Alt", "+", "B"]
-            static const QRegularExpression regExp(QStringLiteral("(\\+(?!\\+)|\\+(?=\\+{2}))"));
-            const int segmentsCount = 2 * adaptedShortcut.count(regExp) + 1;
-
-            // add left and right margins for each segment
-            width += segmentsCount * 2 * hMargin;
-        }
-
-        return width;
-    }
-
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
     {
         // draw background
@@ -267,101 +239,69 @@ public:
             return;
         }
 
-        /**
-            * Shortcut string splitting
-            *
-            * We do it in two steps
-            * 1. Split on ", " so that if we have multi modifier shortcuts they are nicely
-            *    split into strings.
-            * 2. Split each shortcut from step 1 into individual string.
-            *
-            * Example:
-            *
-            * "Ctrl+,, Alt+:"
-            * Step 1: [ "Ctrl+," , "Alt+:"]
-            * Step 2: [ "Ctrl", ",", "Alt", ":"]
-            */
-        const QStringList spaceSplitted = splitShortcutString(shortcutString);
-        QStringList list;
-        list.reserve(spaceSplitted.size() * 2);
-        for (const QString &shortcut : spaceSplitted) {
-            list += shortcut.split(QLatin1Char('+'), Qt::SkipEmptyParts);
-            if (shortcut.endsWith(QLatin1Char('+'))) {
-                list.append(QStringLiteral("+"));
-            }
-        }
-
-        /**
-            * Create rects for each string from the previous step
-            *
-            * @todo We probably dont need the full rect, just the width so the
-            * "btns" vector can just be vector<pair<int, string>>
-            */
-        QVector<QPair<QRect, QString>> btns;
-        btns.reserve(list.size());
-        const int height = option.rect.height();
-        const int hMargin = horizontalMargin(option);
-        for (const QString &text : std::as_const(list)) {
-            if (text.isEmpty()) {
-                continue;
-            }
-            QRect r(0, 0, option.fontMetrics.horizontalAdvance(text), option.fontMetrics.lineSpacing());
-            // this happens on gnome so we manually decrease the
-            // height a bit
-            if (r.height() == height) {
-                r.setHeight(r.height() - 4);
-            }
-            r.setWidth(r.width() + 2 * hMargin);
-            btns.append({r, text});
-        }
-
-        // we have nothing, just return
-        if (btns.isEmpty()) {
+        const ShortcutSegments shortcutSegments = splitShortcut(shortcutString);
+        if (shortcutSegments.isEmpty()) {
             return;
         }
 
-        const QRect plusRect = option.fontMetrics.boundingRect(QLatin1Char('+'));
+        struct Button {
+            int textWidth;
+            QString text;
+        };
 
-        // draw them
+        // compute the width of each shortcut segment
+        QVector<Button> btns;
+        btns.reserve(shortcutSegments.count());
+        const int hMargin = horizontalMargin(option);
+        for (const QString &text : shortcutSegments) {
+            int textWidth = option.fontMetrics.horizontalAdvance(text);
+            textWidth += 2 * hMargin;
+            btns.append({ textWidth, text });
+        }
+
+        int textHeight = option.fontMetrics.lineSpacing();
+        // this happens on gnome so we manually decrease the height a bit
+        if (textHeight == option.rect.height()) {
+            textHeight -= 4;
+        }
+
+        const int y = option.rect.y() + (option.rect.height() - textHeight) / 2;
         int x;
         if (option.direction == Qt::RightToLeft) {
             x = option.rect.x() + hMargin;
         } else {
-            x = option.rect.right() - shortcutDrawingWidth(option, shortcutString, hMargin) - hMargin;
+            x = option.rect.right() - shortcutDrawingWidth(option, shortcutSegments, hMargin) - hMargin;
         }
-        const int y = option.rect.y() + (option.rect.height() - btns.at(0).first.height()) / 2;
-        const int plusY = option.rect.y() + (option.rect.height() - plusRect.height()) / 2;
-        const int total = btns.size();
 
-        int i = 0;
         painter->save();
+        painter->setPen(option.palette.buttonText().color());
         painter->setRenderHint(QPainter::Antialiasing);
-        for (const auto &btn : std::as_const(btns)) {
-            painter->setPen(Qt::NoPen);
-            const QRect &rect = btn.first;
+        for (int i = 0, n = btns.count(); i < n; ++i) {
+            const Button &button = btns.at(i);
 
-            QRect buttonRect(x, y, rect.width(), rect.height());
+            QRect outputRect(x, y, button.textWidth, textHeight);
 
-            // draw rounded rect shadow
-            auto shadowRect = buttonRect.translated(0, 1);
-            painter->setBrush(option.palette.shadow());
-            painter->drawRoundedRect(shadowRect, 3.0, 3.0);
+            // an even element indicates that it is a key
+            if (i % 2 == 0) {
+                painter->save();
+                painter->setPen(Qt::NoPen);
 
-            // draw rounded rect itself
-            painter->setBrush(option.palette.button());
-            painter->drawRoundedRect(buttonRect, 3.0, 3.0);
+                // draw rounded rect shadow
+                auto shadowRect = outputRect.translated(0, 1);
+                painter->setBrush(option.palette.shadow());
+                painter->drawRoundedRect(shadowRect, 3.0, 3.0);
 
-            // draw text inside rounded rect
-            painter->setPen(option.palette.buttonText().color());
-            painter->drawText(buttonRect, Qt::AlignCenter, btn.second);
+                // draw rounded rect itself
+                painter->setBrush(option.palette.button());
+                painter->drawRoundedRect(outputRect, 3.0, 3.0);
 
-            // draw '+'
-            if (i + 1 < total) {
-                x += rect.width() + hMargin;
-                painter->drawText(QPoint(x, plusY + (rect.height() / 2)), QStringLiteral("+"));
-                x += plusRect.width() + hMargin;
+                painter->restore();
             }
-            i++;
+
+            // draw shortcut segment
+            painter->drawText(outputRect, Qt::AlignCenter, button.text);
+
+            x += outputRect.width();
         }
 
         painter->restore();
@@ -370,16 +310,84 @@ public:
     QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override
     {
         if (index.isValid() && index.column() == KCommandBarModel::Column_Shortcut) {
-            QString shortcut = index.data().toString();
+            const QString shortcut = index.data().toString();
             if (!shortcut.isEmpty()) {
-                const int hMargin = horizontalMargin(option);
-                const int width = shortcutDrawingWidth(option, shortcut, hMargin) + 2 * hMargin;
+                const ShortcutSegments shortcutSegments = splitShortcut(shortcut);
+                if (!shortcutSegments.isEmpty()) {
+                    const int hMargin = horizontalMargin(option);
+                    int width = shortcutDrawingWidth(option, shortcutSegments, hMargin);
 
-                return QSize(width, 0);
+                    // add left and right margins
+                    width += 2 * hMargin;
+
+                    return QSize(width, 0);
+                }
             }
         }
 
         return QStyledItemDelegate::sizeHint(option, index);
+    }
+
+private:
+    using ShortcutSegments = QStringList;
+
+    // split shortcut into segments i.e. will return
+    // ["Ctrl", "+", "A", ", ", "Ctrl", "+", "K"] for "Ctrl+A, Ctrl+K"
+    // twice as fast as using regular expressions
+    static ShortcutSegments splitShortcut(const QString &shortcut)
+    {
+        ShortcutSegments segments;
+        if (!shortcut.isEmpty()) {
+            const int shortcutLength = shortcut.length();
+            int start = 0;
+            for (int i = 0; i < shortcutLength; ++i) {
+                const QChar c = shortcut.at(i);
+                if (c == QLatin1Char('+')) {
+                    if (i > start) {
+                        segments << shortcut.mid(start, i - start);
+                    }
+                    segments << shortcut.at(i);
+                    start = i + 1;
+                } else if (c == QLatin1Char(',')) {
+                    if (i > start) {
+                        segments << shortcut.mid(start, i - start);
+                        start = i;
+                    }
+                    const int j = i + 1;
+                    if (j < shortcutLength && shortcut.at(j) == QLatin1Char(' ')) {
+                        segments << shortcut.mid(start, j - start + 1);
+                        i = j;
+                    } else {
+                        segments << shortcut.at(i);
+                    }
+                    start = i + 1;
+                }
+            }
+            if (start < shortcutLength) {
+                segments << shortcut.mid(start);
+            }
+
+            // check we have successfully parsed the shortcut
+            if (segments.isEmpty()) {
+                qCWarning(KCONFIG_WIDGETS_LOG) << "Splitting shortcut failed" << shortcut;
+            }
+        }
+
+        return segments;
+    }
+
+    // returns the width needed to draw the shortcut
+    static int shortcutDrawingWidth(const QStyleOptionViewItem &option, const ShortcutSegments &shortcutSegments, int hMargin)
+    {
+        int width = 0;
+        if (!shortcutSegments.isEmpty()) {
+            width = option.fontMetrics.horizontalAdvance(shortcutSegments.join(QString()));
+
+            // add left and right margins for each segment
+            width += shortcutSegments.count() * 2 * hMargin;
+        }
+
+        return width;
     }
 
     int horizontalMargin(const QStyleOptionViewItem &option) const
