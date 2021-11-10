@@ -18,6 +18,8 @@
 #include <QTreeView>
 #include <QVBoxLayout>
 #include <QHeaderView>
+#include <QLabel>
+#include <QGraphicsOpacityEffect>
 
 #include <KConfigGroup>
 #include <KFuzzyMatcher>
@@ -572,6 +574,28 @@ KCommandBar::KCommandBar(QWidget *parent)
     d->m_treeView.setRootIsDecorated(false);
     d->m_treeView.setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     d->m_treeView.setSelectionMode(QTreeView::SingleSelection);
+
+    QLabel *placeholderLabel = new QLabel;
+    placeholderLabel->setAlignment(Qt::AlignCenter);
+    placeholderLabel->setTextInteractionFlags(Qt::NoTextInteraction);
+    placeholderLabel->setWordWrap(true);
+    placeholderLabel->setText(i18n("No commands matching the filter"));
+    // To match the size of a level 2 Heading/KTitleWidget
+    QFont placeholderLabelFont = placeholderLabel->font();
+    placeholderLabelFont.setPointSize(qRound(placeholderLabelFont.pointSize() * 1.3));
+    placeholderLabel->setFont(placeholderLabelFont);
+    // Match opacity of QML placeholder label component
+    QGraphicsOpacityEffect *opacityEffect = new QGraphicsOpacityEffect(placeholderLabel);
+    opacityEffect->setOpacity(0.5);
+    placeholderLabel->setGraphicsEffect(opacityEffect);
+
+    QHBoxLayout *placeholderLayout = new QHBoxLayout;
+    placeholderLayout->addWidget(placeholderLabel);
+    d->m_treeView.setLayout(placeholderLayout);
+
+    connect(&d->m_proxyModel, &CommandBarFilterModel::modelReset, this, [this, placeholderLabel]() {
+        placeholderLabel->setHidden(d->m_proxyModel.rowCount() > 0);
+    });
 
     setHidden(true);
 }
