@@ -12,22 +12,25 @@
 #include <QDialog>
 #include <QDialogButtonBox>
 #include <QListView>
+#include <QMainWindow>
 #include <QMenu>
+#include <QMenuBar>
 #include <QToolButton>
 #include <QVBoxLayout>
 
-class KColorSchemeDemo : public QDialog
+class KColorSchemeDemo : public QMainWindow
 {
     Q_OBJECT
 public:
     KColorSchemeDemo()
-        : QDialog(nullptr)
+        : QMainWindow(nullptr)
     {
         KColorSchemeManager *manager = new KColorSchemeManager(this);
 
         QListView *view = new QListView(this);
         view->setModel(manager->model());
         connect(view, &QListView::activated, manager, &KColorSchemeManager::activateScheme);
+        manager->setAutosaveChanges(true);
 
         QDialogButtonBox *box = new QDialogButtonBox(QDialogButtonBox::Close, this);
         connect(box, &QDialogButtonBox::rejected, qApp, &QApplication::quit);
@@ -37,9 +40,16 @@ public:
         button->setMenu(manager->createSchemeSelectionMenu(QStringLiteral("Oxygen"), button)->menu());
         box->addButton(button, QDialogButtonBox::InvalidRole);
 
-        QVBoxLayout *layout = new QVBoxLayout(this);
+        QWidget *w = new QWidget();
+        QVBoxLayout *layout = new QVBoxLayout(w);
         layout->addWidget(view);
         layout->addWidget(box);
+
+        setCentralWidget(w);
+
+        QMenu *menu = new QMenu("Menu", this);
+        menu->addAction(manager->createSchemeSelectionMenu(this));
+        menuBar()->addMenu(menu);
     }
     ~KColorSchemeDemo() override
     {

@@ -117,6 +117,22 @@ public:
      * @since 5.67
      */
     KActionMenu *createSchemeSelectionMenu(QObject *parent);
+    /**
+     * Saves the color scheme to config file. The scheme is saved by default whenever it's changed.
+     * Use this method when autosaving is turned off, see setAutosaveChanges().
+     *
+     * @since 5.89
+     */
+    void saveSchemeToConfigFile(const QString &schemeName) const;
+    /**
+     * Sets color scheme autosaving. Default value is @c true.
+     * If this is set to @c false, the scheme is not going to be remembered when the
+     * application is restarted.
+     *
+     * @param autosaveChanges Enables/Disables autosaving of the color scheme.
+     * @since 5.89
+     */
+    void setAutosaveChanges(bool autosaveChanges);
 
 public Q_SLOTS:
     /**

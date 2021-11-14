@@ -21,6 +21,7 @@ public:
     KColorSchemeManagerPrivate();
 
     std::unique_ptr<KColorSchemeModel> model;
+    bool m_autosaveChanges = true;
 
     static QIcon createPreview(const QString &path);
 

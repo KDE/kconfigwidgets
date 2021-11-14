@@ -96,10 +96,18 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
         s_autoColorSchemePath = this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString();
         if (!s_overrideAutoSwitch) {
             ::activateScheme(this->indexForSchemeId(colorSchemeToApply).data(KColorSchemeModel::PathRole).toString(), false);
+            if (d->m_autosaveChanges) {
+                saveSchemeToConfigFile(indexForScheme(colorSchemeToApply).data(Qt::DisplayRole).toString());
+            }
         }
     });
     d->getWindowsMessagesNotifier().handleWMSettingChange();
 #endif
+
+    KSharedConfigPtr config = KSharedConfig::openConfig();
+    KConfigGroup cg(config, "UiSettings");
+    auto scheme = cg.readEntry("ColorScheme", QString());
+    activateScheme(indexForScheme(scheme));
 }
 
 KColorSchemeManager::~KColorSchemeManager()
@@ -122,6 +130,11 @@ QModelIndex KColorSchemeManager::indexForSchemeId(const QString &id) const
     return QModelIndex();
 }
 
+void KColorSchemeManager::setAutosaveChanges(bool autosaveChanges)
+{
+    d->m_autosaveChanges = autosaveChanges;
+}
+
 QModelIndex KColorSchemeManager::indexForScheme(const QString &name) const
 {
     // Empty string is mapped to "reset to the system scheme"
@@ -142,8 +155,11 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
     // Be careful here when connecting to signals. The menu can outlive the manager
     KActionMenu *menu = new KActionMenu(icon, name, parent);
     QActionGroup *group = new QActionGroup(menu);
-    connect(group, &QActionGroup::triggered, qApp, [](QAction *action) {
+    connect(group, &QActionGroup::triggered, qApp, [this](QAction *action) {
         ::activateScheme(action->data().toString());
+        if (d->m_autosaveChanges) {
+            saveSchemeToConfigFile(action->text());
+        }
     });
     for (int i = 0; i < d->model->rowCount(); ++i) {
         QModelIndex index = d->model->index(i);
@@ -193,7 +209,21 @@ void KColorSchemeManager::activateScheme(const QModelIndex &index)
 {
     if (index.isValid() && index.model() == d->model.get()) {
         ::activateScheme(index.data(Qt::UserRole).toString());
+        if (d->m_autosaveChanges) {
+            saveSchemeToConfigFile(index.data(Qt::DisplayRole).toString());
+        }
     } else {
         ::activateScheme(QString());
+        if (d->m_autosaveChanges) {
+            saveSchemeToConfigFile(QString());
+        }
     }
+}
+
+void KColorSchemeManager::saveSchemeToConfigFile(const QString &schemeName) const
+{
+    KSharedConfigPtr config = KSharedConfig::openConfig();
+    KConfigGroup cg(config, "UiSettings");
+    cg.writeEntry("ColorScheme", KLocalizedString::removeAcceleratorMarker(schemeName));
+    cg.sync();
 }
