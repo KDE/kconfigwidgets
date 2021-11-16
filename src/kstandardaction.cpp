@@ -165,10 +165,10 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
             if (appDisplayName.isEmpty()) {
                 appDisplayName = QCoreApplication::applicationName();
             }
-            sLabel = i18n(pInfo->psLabel, appDisplayName);
+            sLabel = pInfo->psLabel.subs(appDisplayName).toString();
         } break;
         default:
-            sLabel = i18n(pInfo->psLabel);
+            sLabel = pInfo->psLabel.toString();
         }
 
         if (QGuiApplication::isRightToLeft()) {
@@ -298,8 +298,8 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
             break;
         }
 
-        if (pInfo->psToolTip) {
-            pAction->setToolTip(i18n(pInfo->psToolTip));
+        if (!pInfo->psToolTip.isEmpty()) {
+            pAction->setToolTip(pInfo->psToolTip.toString());
         }
         pAction->setIcon(icon);
 
@@ -592,11 +592,12 @@ static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const c
         return nullptr;
     }
 
-    AutomaticAction *action = new AutomaticAction(QIcon::fromTheme(p->psIconName), i18n(p->psLabel), KStandardShortcut::shortcut(p->idAccel), slot, parent);
+    AutomaticAction *action =
+        new AutomaticAction(QIcon::fromTheme(p->psIconName), p->psLabel.toString(), KStandardShortcut::shortcut(p->idAccel), slot, parent);
 
     action->setObjectName(p->psName);
-    if (p->psToolTip) {
-        action->setToolTip(i18n(p->psToolTip));
+    if (!p->psToolTip.isEmpty()) {
+        action->setToolTip(p->psToolTip.toString());
     }
 
     if (parent && parent->inherits("KActionCollection")) {

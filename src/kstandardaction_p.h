@@ -11,6 +11,7 @@
 #include <QAction>
 #include <QApplication>
 
+#include <KLazyLocalizedString>
 #include <KLocalizedString>
 #include <KStandardShortcut>
 
@@ -20,99 +21,99 @@ struct KStandardActionInfo {
     StandardAction id;
     KStandardShortcut::StandardShortcut idAccel;
     const char *psName;
-    const char *psLabel;
-    const char *psToolTip;
+    const KLazyLocalizedString psLabel;
+    const KLazyLocalizedString psToolTip;
     const char *psIconName;
 };
 // clang-format off
 static const KStandardActionInfo g_rgActionInfo[] = {
-    { New,           KStandardShortcut::New, "file_new", I18N_NOOP("&New"), I18N_NOOP("Create new document"), "document-new" },
-    { Open,          KStandardShortcut::Open, "file_open", I18N_NOOP("&Open..."), I18N_NOOP("Open an existing document"), "document-open" },
-    { OpenRecent,    KStandardShortcut::AccelNone, "file_open_recent", I18N_NOOP("Open &Recent"), I18N_NOOP("Open a document which was recently opened"), "document-open-recent" },
-    { Save,          KStandardShortcut::Save, "file_save", I18N_NOOP("&Save"), I18N_NOOP("Save document"), "document-save" },
-    { SaveAs,        KStandardShortcut::SaveAs, "file_save_as", I18N_NOOP("Save &As..."), I18N_NOOP("Save document under a new name"), "document-save-as" },
-    { Revert,        KStandardShortcut::Revert, "file_revert", I18N_NOOP("Re&vert"), I18N_NOOP("Revert unsaved changes made to document"), "document-revert" },
-    { Close,         KStandardShortcut::Close, "file_close", I18N_NOOP("&Close"), I18N_NOOP("Close document"), "document-close" },
-    { Print,         KStandardShortcut::Print, "file_print", I18N_NOOP("&Print..."), I18N_NOOP("Print document"), "document-print" },
-    { PrintPreview,  KStandardShortcut::PrintPreview, "file_print_preview", I18N_NOOP("Print Previe&w"), I18N_NOOP("Show a print preview of document"), "document-print-preview" },
-    { Mail,          KStandardShortcut::Mail, "file_mail", I18N_NOOP("&Mail..."), I18N_NOOP("Send document by mail"), "mail-send" },
-    { Quit,          KStandardShortcut::Quit, "file_quit", I18N_NOOP("&Quit"), I18N_NOOP("Quit application"), "application-exit" },
+    { New,           KStandardShortcut::New, "file_new", kli18n("&New"), kli18n("Create new document"), "document-new" },
+    { Open,          KStandardShortcut::Open, "file_open", kli18n("&Open..."), kli18n("Open an existing document"), "document-open" },
+    { OpenRecent,    KStandardShortcut::AccelNone, "file_open_recent", kli18n("Open &Recent"), kli18n("Open a document which was recently opened"), "document-open-recent" },
+    { Save,          KStandardShortcut::Save, "file_save", kli18n("&Save"), kli18n("Save document"), "document-save" },
+    { SaveAs,        KStandardShortcut::SaveAs, "file_save_as", kli18n("Save &As..."), kli18n("Save document under a new name"), "document-save-as" },
+    { Revert,        KStandardShortcut::Revert, "file_revert", kli18n("Re&vert"), kli18n("Revert unsaved changes made to document"), "document-revert" },
+    { Close,         KStandardShortcut::Close, "file_close", kli18n("&Close"), kli18n("Close document"), "document-close" },
+    { Print,         KStandardShortcut::Print, "file_print", kli18n("&Print..."), kli18n("Print document"), "document-print" },
+    { PrintPreview,  KStandardShortcut::PrintPreview, "file_print_preview", kli18n("Print Previe&w"), kli18n("Show a print preview of document"), "document-print-preview" },
+    { Mail,          KStandardShortcut::Mail, "file_mail", kli18n("&Mail..."), kli18n("Send document by mail"), "mail-send" },
+    { Quit,          KStandardShortcut::Quit, "file_quit", kli18n("&Quit"), kli18n("Quit application"), "application-exit" },
 
-    { Undo,          KStandardShortcut::Undo, "edit_undo", I18N_NOOP("&Undo"), I18N_NOOP("Undo last action"), "edit-undo" },
-    { Redo,          KStandardShortcut::Redo, "edit_redo", I18N_NOOP("Re&do"), I18N_NOOP("Redo last undone action"), "edit-redo" },
-    { Cut,           KStandardShortcut::Cut, "edit_cut", I18N_NOOP("Cu&t"), I18N_NOOP("Cut selection to clipboard"), "edit-cut" },
-    { Copy,          KStandardShortcut::Copy, "edit_copy", I18N_NOOP("&Copy"), I18N_NOOP("Copy selection to clipboard"), "edit-copy" },
-    { Paste,         KStandardShortcut::Paste, "edit_paste", I18N_NOOP("&Paste"), I18N_NOOP("Paste clipboard content"), "edit-paste" },
+    { Undo,          KStandardShortcut::Undo, "edit_undo", kli18n("&Undo"), kli18n("Undo last action"), "edit-undo" },
+    { Redo,          KStandardShortcut::Redo, "edit_redo", kli18n("Re&do"), kli18n("Redo last undone action"), "edit-redo" },
+    { Cut,           KStandardShortcut::Cut, "edit_cut", kli18n("Cu&t"), kli18n("Cut selection to clipboard"), "edit-cut" },
+    { Copy,          KStandardShortcut::Copy, "edit_copy", kli18n("&Copy"), kli18n("Copy selection to clipboard"), "edit-copy" },
+    { Paste,         KStandardShortcut::Paste, "edit_paste", kli18n("&Paste"), kli18n("Paste clipboard content"), "edit-paste" },
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39)
-    { PasteText,     KStandardShortcut::Paste, "edit_paste", I18N_NOOP("&Paste"), I18N_NOOP("Paste clipboard content"), "edit-paste" },
+    { PasteText,     KStandardShortcut::Paste, "edit_paste", kli18n("&Paste"), kli18n("Paste clipboard content"), "edit-paste" },
 #endif
-    { Clear,         KStandardShortcut::Clear, "edit_clear", I18N_NOOP("C&lear"), nullptr, "edit-clear" },
-    { SelectAll,     KStandardShortcut::SelectAll, "edit_select_all", I18N_NOOP("Select &All"), nullptr, "edit-select-all" },
-    { Deselect,      KStandardShortcut::Deselect, "edit_deselect", I18N_NOOP("Dese&lect"), nullptr, "edit-select-none" },
-    { Find,          KStandardShortcut::Find, "edit_find", I18N_NOOP("&Find..."), nullptr, "edit-find" },
-    { FindNext,      KStandardShortcut::FindNext, "edit_find_next", I18N_NOOP("Find &Next"), nullptr, "go-down-search" },
-    { FindPrev,      KStandardShortcut::FindPrev, "edit_find_prev", I18N_NOOP("Find Pre&vious"), nullptr, "go-up-search" },
-    { Replace,       KStandardShortcut::Replace, "edit_replace", I18N_NOOP("&Replace..."), nullptr, "edit-find-replace" },
+    { Clear,         KStandardShortcut::Clear, "edit_clear", kli18n("C&lear"), {}, "edit-clear" },
+    { SelectAll,     KStandardShortcut::SelectAll, "edit_select_all", kli18n("Select &All"), {}, "edit-select-all" },
+    { Deselect,      KStandardShortcut::Deselect, "edit_deselect", kli18n("Dese&lect"), {}, "edit-select-none" },
+    { Find,          KStandardShortcut::Find, "edit_find", kli18n("&Find..."), {}, "edit-find" },
+    { FindNext,      KStandardShortcut::FindNext, "edit_find_next", kli18n("Find &Next"), {}, "go-down-search" },
+    { FindPrev,      KStandardShortcut::FindPrev, "edit_find_prev", kli18n("Find Pre&vious"), {}, "go-up-search" },
+    { Replace,       KStandardShortcut::Replace, "edit_replace", kli18n("&Replace..."), {}, "edit-find-replace" },
 
-    { ActualSize,    KStandardShortcut::ActualSize, "view_actual_size", I18N_NOOP("&Actual Size"), I18N_NOOP("View document at its actual size"), "zoom-original" },
-    { FitToPage,     KStandardShortcut::FitToPage, "view_fit_to_page", I18N_NOOP("&Fit to Page"), I18N_NOOP("Zoom to fit page in window"), "zoom-fit-page" },
-    { FitToWidth,    KStandardShortcut::FitToWidth, "view_fit_to_width", I18N_NOOP("Fit to Page &Width"), I18N_NOOP("Zoom to fit page width in window"), "zoom-fit-width" },
-    { FitToHeight,   KStandardShortcut::FitToHeight, "view_fit_to_height", I18N_NOOP("Fit to Page &Height"), I18N_NOOP("Zoom to fit page height in window"), "zoom-fit-height" },
-    { ZoomIn,        KStandardShortcut::ZoomIn, "view_zoom_in", I18N_NOOP("Zoom &In"), nullptr, "zoom-in" },
-    { ZoomOut,       KStandardShortcut::ZoomOut, "view_zoom_out", I18N_NOOP("Zoom &Out"), nullptr, "zoom-out" },
-    { Zoom,          KStandardShortcut::Zoom, "view_zoom", I18N_NOOP("&Zoom..."), I18N_NOOP("Select zoom level"), "zoom" },
-    { Redisplay,     KStandardShortcut::Reload, "view_redisplay", I18N_NOOP("&Refresh"), I18N_NOOP("Refresh document"), "view-refresh" },
+    { ActualSize,    KStandardShortcut::ActualSize, "view_actual_size", kli18n("&Actual Size"), kli18n("View document at its actual size"), "zoom-original" },
+    { FitToPage,     KStandardShortcut::FitToPage, "view_fit_to_page", kli18n("&Fit to Page"), kli18n("Zoom to fit page in window"), "zoom-fit-page" },
+    { FitToWidth,    KStandardShortcut::FitToWidth, "view_fit_to_width", kli18n("Fit to Page &Width"), kli18n("Zoom to fit page width in window"), "zoom-fit-width" },
+    { FitToHeight,   KStandardShortcut::FitToHeight, "view_fit_to_height", kli18n("Fit to Page &Height"), kli18n("Zoom to fit page height in window"), "zoom-fit-height" },
+    { ZoomIn,        KStandardShortcut::ZoomIn, "view_zoom_in", kli18n("Zoom &In"), {}, "zoom-in" },
+    { ZoomOut,       KStandardShortcut::ZoomOut, "view_zoom_out", kli18n("Zoom &Out"), {}, "zoom-out" },
+    { Zoom,          KStandardShortcut::Zoom, "view_zoom", kli18n("&Zoom..."), kli18n("Select zoom level"), "zoom" },
+    { Redisplay,     KStandardShortcut::Reload, "view_redisplay", kli18n("&Refresh"), kli18n("Refresh document"), "view-refresh" },
 
-    { Up,            KStandardShortcut::Up, "go_up", I18N_NOOP("&Up"), I18N_NOOP("Go up"), "go-up" },
+    { Up,            KStandardShortcut::Up, "go_up", kli18n("&Up"), kli18n("Go up"), "go-up" },
     // The following three have special i18n() needs for sLabel
-    { Back,          KStandardShortcut::Back, "go_back", nullptr, nullptr, "go-previous" },
-    { Forward,       KStandardShortcut::Forward, "go_forward", nullptr, nullptr, "go-next" },
-    { Home,          KStandardShortcut::Home, "go_home", nullptr, nullptr, "go-home" },
-    { Prior,         KStandardShortcut::Prior, "go_previous", I18N_NOOP("&Previous Page"), I18N_NOOP("Go to previous page"), "go-previous-view-page" },
-    { Next,          KStandardShortcut::Next, "go_next", I18N_NOOP("&Next Page"), I18N_NOOP("Go to next page"), "go-next-view-page" },
-    { Goto,          KStandardShortcut::Goto, "go_goto", I18N_NOOP("&Go To..."), nullptr, nullptr },
-    { GotoPage,      KStandardShortcut::GotoPage, "go_goto_page", I18N_NOOP("&Go to Page..."), nullptr, "go-jump" },
-    { GotoLine,      KStandardShortcut::GotoLine, "go_goto_line", I18N_NOOP("&Go to Line..."), nullptr, nullptr },
-    { FirstPage,     KStandardShortcut::Begin, "go_first", I18N_NOOP("&First Page"), I18N_NOOP("Go to first page"), "go-first-view-page" },
-    { LastPage,      KStandardShortcut::End, "go_last", I18N_NOOP("&Last Page"), I18N_NOOP("Go to last page"), "go-last-view-page" },
-    { DocumentBack,  KStandardShortcut::DocumentBack, "go_document_back", I18N_NOOP("&Back"), I18N_NOOP("Go back in document"), "go-previous" },
-    { DocumentForward, KStandardShortcut::DocumentForward, "go_document_forward", I18N_NOOP("&Forward"), I18N_NOOP("Go forward in document"), "go-next" },
+    { Back,          KStandardShortcut::Back, "go_back", {}, {}, "go-previous" },
+    { Forward,       KStandardShortcut::Forward, "go_forward", {}, {}, "go-next" },
+    { Home,          KStandardShortcut::Home, "go_home", {}, {}, "go-home" },
+    { Prior,         KStandardShortcut::Prior, "go_previous", kli18n("&Previous Page"), kli18n("Go to previous page"), "go-previous-view-page" },
+    { Next,          KStandardShortcut::Next, "go_next", kli18n("&Next Page"), kli18n("Go to next page"), "go-next-view-page" },
+    { Goto,          KStandardShortcut::Goto, "go_goto", kli18n("&Go To..."), {}, nullptr },
+    { GotoPage,      KStandardShortcut::GotoPage, "go_goto_page", kli18n("&Go to Page..."), {}, "go-jump" },
+    { GotoLine,      KStandardShortcut::GotoLine, "go_goto_line", kli18n("&Go to Line..."), {}, nullptr },
+    { FirstPage,     KStandardShortcut::Begin, "go_first", kli18n("&First Page"), kli18n("Go to first page"), "go-first-view-page" },
+    { LastPage,      KStandardShortcut::End, "go_last", kli18n("&Last Page"), kli18n("Go to last page"), "go-last-view-page" },
+    { DocumentBack,  KStandardShortcut::DocumentBack, "go_document_back", kli18n("&Back"), kli18n("Go back in document"), "go-previous" },
+    { DocumentForward, KStandardShortcut::DocumentForward, "go_document_forward", kli18n("&Forward"), kli18n("Go forward in document"), "go-next" },
 
-    { AddBookmark,   KStandardShortcut::AddBookmark, "bookmark_add", I18N_NOOP("&Add Bookmark"), nullptr, "bookmark-new" },
-    { EditBookmarks, KStandardShortcut::EditBookmarks, "bookmark_edit", I18N_NOOP("&Edit Bookmarks..."), nullptr, "bookmarks-organize" },
+    { AddBookmark,   KStandardShortcut::AddBookmark, "bookmark_add", kli18n("&Add Bookmark"), {}, "bookmark-new" },
+    { EditBookmarks, KStandardShortcut::EditBookmarks, "bookmark_edit", kli18n("&Edit Bookmarks..."), {}, "bookmarks-organize" },
 
-    { Spelling,      KStandardShortcut::Spelling, "tools_spelling", I18N_NOOP("&Spelling..."), I18N_NOOP("Check spelling in document"), "tools-check-spelling" },
+    { Spelling,      KStandardShortcut::Spelling, "tools_spelling", kli18n("&Spelling..."), kli18n("Check spelling in document"), "tools-check-spelling" },
 
-    { ShowMenubar,   KStandardShortcut::ShowMenubar, "options_show_menubar", I18N_NOOP("Show &Menubar"), I18N_NOOP("Show or hide menubar"), "show-menu" },
-    { ShowToolbar,   KStandardShortcut::ShowToolbar, "options_show_toolbar", I18N_NOOP("Show &Toolbar"), I18N_NOOP("Show or hide toolbar"), nullptr },
-    { ShowStatusbar, KStandardShortcut::ShowStatusbar, "options_show_statusbar", I18N_NOOP("Show St&atusbar"), I18N_NOOP("Show or hide statusbar"), nullptr },
-    { FullScreen,    KStandardShortcut::FullScreen, "fullscreen", I18N_NOOP("F&ull Screen Mode"), nullptr, "view-fullscreen" },
+    { ShowMenubar,   KStandardShortcut::ShowMenubar, "options_show_menubar", kli18n("Show &Menubar"), kli18n("Show or hide menubar"), "show-menu" },
+    { ShowToolbar,   KStandardShortcut::ShowToolbar, "options_show_toolbar", kli18n("Show &Toolbar"), kli18n("Show or hide toolbar"), nullptr },
+    { ShowStatusbar, KStandardShortcut::ShowStatusbar, "options_show_statusbar", kli18n("Show St&atusbar"), kli18n("Show or hide statusbar"), nullptr },
+    { FullScreen,    KStandardShortcut::FullScreen, "fullscreen", kli18n("F&ull Screen Mode"), {}, "view-fullscreen" },
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
-    { SaveOptions,   KStandardShortcut::SaveOptions_DEPRECATED_DO_NOT_USE, "options_save_options", I18N_NOOP("&Save Settings"), nullptr, nullptr },
+    { SaveOptions,   KStandardShortcut::SaveOptions_DEPRECATED_DO_NOT_USE, "options_save_options", kli18n("&Save Settings"), {}, nullptr },
 #endif
-    { KeyBindings,   KStandardShortcut::KeyBindings, "options_configure_keybinding", I18N_NOOP("Configure Keyboard S&hortcuts..."), nullptr, "configure-shortcuts" },
-    { Preferences,   KStandardShortcut::Preferences, "options_configure", I18N_NOOP("&Configure %1..."), nullptr, "configure" },
-    { ConfigureToolbars, KStandardShortcut::ConfigureToolbars, "options_configure_toolbars", I18N_NOOP("Configure Tool&bars..."), nullptr, "configure-toolbars" },
-    { ConfigureNotifications, KStandardShortcut::ConfigureNotifications, "options_configure_notifications", I18N_NOOP("Configure &Notifications..."), nullptr, "preferences-desktop-notification" },
+    { KeyBindings,   KStandardShortcut::KeyBindings, "options_configure_keybinding", kli18n("Configure Keyboard S&hortcuts..."), {}, "configure-shortcuts" },
+    { Preferences,   KStandardShortcut::Preferences, "options_configure", kli18n("&Configure %1..."), {}, "configure" },
+    { ConfigureToolbars, KStandardShortcut::ConfigureToolbars, "options_configure_toolbars", kli18n("Configure Tool&bars..."), {}, "configure-toolbars" },
+    { ConfigureNotifications, KStandardShortcut::ConfigureNotifications, "options_configure_notifications", kli18n("Configure &Notifications..."), {}, "preferences-desktop-notification" },
 
     // the idea here is that Contents is used in menus, and Help in dialogs, so both share the same
     // shortcut
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
-    { Help,          KStandardShortcut::Help, "help", nullptr, nullptr, "help-contents" },
+    { Help,          KStandardShortcut::Help, "help", {}, {}, "help-contents" },
 #endif
-    { HelpContents,  KStandardShortcut::Help, "help_contents", I18N_NOOP("%1 &Handbook"), nullptr, "help-contents" },
-    { WhatsThis,     KStandardShortcut::WhatsThis, "help_whats_this", I18N_NOOP("What's &This?"), nullptr, "help-contextual" },
-    { TipofDay,      KStandardShortcut::TipofDay, "help_show_tip", I18N_NOOP("Tip of the &Day"), nullptr, "help-hint" },
-    { ReportBug,     KStandardShortcut::ReportBug, "help_report_bug", I18N_NOOP("&Report Bug..."), nullptr, "tools-report-bug" },
-    { SwitchApplicationLanguage, KStandardShortcut::SwitchApplicationLanguage, "switch_application_language", I18N_NOOP("Configure &Language..."), nullptr, "preferences-desktop-locale" },
-    { AboutApp,      KStandardShortcut::AccelNone, "help_about_app", I18N_NOOP("&About %1"), nullptr, nullptr },
-    { AboutKDE,      KStandardShortcut::AccelNone, "help_about_kde", I18N_NOOP("About &KDE"), nullptr, "kde" },
-    { DeleteFile,    KStandardShortcut::DeleteFile, "deletefile", I18N_NOOP("&Delete"), nullptr, "edit-delete" },
-    { RenameFile,    KStandardShortcut::RenameFile, "renamefile", I18N_NOOP("&Rename..."), nullptr, "edit-rename" },
-    { MoveToTrash,   KStandardShortcut::MoveToTrash, "movetotrash", I18N_NOOP("&Move to Trash"), nullptr, "trash-empty" },
-    { Donate,        KStandardShortcut::Donate, "help_donate", I18N_NOOP("&Donate"), nullptr, "help-donate"},
-    { HamburgerMenu, KStandardShortcut::AccelNone, "hamburger_menu", I18N_NOOP("Open &Menu"), nullptr, "application-menu" },
-    { ActionNone,    KStandardShortcut::AccelNone, nullptr, nullptr, nullptr, nullptr }
+    { HelpContents,  KStandardShortcut::Help, "help_contents", kli18n("%1 &Handbook"), {}, "help-contents" },
+    { WhatsThis,     KStandardShortcut::WhatsThis, "help_whats_this", kli18n("What's &This?"), {}, "help-contextual" },
+    { TipofDay,      KStandardShortcut::TipofDay, "help_show_tip", kli18n("Tip of the &Day"), {}, "help-hint" },
+    { ReportBug,     KStandardShortcut::ReportBug, "help_report_bug", kli18n("&Report Bug..."), {}, "tools-report-bug" },
+    { SwitchApplicationLanguage, KStandardShortcut::SwitchApplicationLanguage, "switch_application_language", kli18n("Configure &Language..."), {}, "preferences-desktop-locale" },
+    { AboutApp,      KStandardShortcut::AccelNone, "help_about_app", kli18n("&About %1"), {}, nullptr },
+    { AboutKDE,      KStandardShortcut::AccelNone, "help_about_kde", kli18n("About &KDE"), {}, "kde" },
+    { DeleteFile,    KStandardShortcut::DeleteFile, "deletefile", kli18n("&Delete"), {}, "edit-delete" },
+    { RenameFile,    KStandardShortcut::RenameFile, "renamefile", kli18n("&Rename..."), {}, "edit-rename" },
+    { MoveToTrash,   KStandardShortcut::MoveToTrash, "movetotrash", kli18n("&Move to Trash"), {}, "trash-empty" },
+    { Donate,        KStandardShortcut::Donate, "help_donate", kli18n("&Donate"), {}, "help-donate"},
+    { HamburgerMenu, KStandardShortcut::AccelNone, "hamburger_menu", kli18n("Open &Menu"), {}, "application-menu" },
+    { ActionNone,    KStandardShortcut::AccelNone, nullptr, {}, {}, nullptr }
 };
 // clang-format on
 
@@ -132,13 +133,13 @@ static inline QStringList internal_stdNames()
     QStringList result;
 
     for (uint i = 0; g_rgActionInfo[i].id != ActionNone; i++)
-        if (g_rgActionInfo[i].psLabel) {
-            if (QByteArray(g_rgActionInfo[i].psLabel).contains("%1"))
-            // Prevents i18n from complaining about unsubstituted placeholder.
+        if (!g_rgActionInfo[i].psLabel.isEmpty()) {
+            if (QByteArray(g_rgActionInfo[i].psLabel.untranslatedText()).contains("%1"))
+            // Prevents KLocalizedString::toString() from complaining about unsubstituted placeholder.
             {
-                result.append(i18n(g_rgActionInfo[i].psLabel, QString()));
+                result.append(g_rgActionInfo[i].psLabel.subs(QString()).toString());
             } else {
-                result.append(i18n(g_rgActionInfo[i].psLabel));
+                result.append(g_rgActionInfo[i].psLabel.toString());
             }
         }
 
