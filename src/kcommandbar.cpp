@@ -33,6 +33,9 @@ public:
     CommandBarFilterModel(QObject *parent = nullptr)
         : QSortFilterProxyModel(parent)
     {
+        connect(this, &CommandBarFilterModel::modelAboutToBeReset, this, [this]() {
+            m_hasActionsWithIcons = false;
+        });
     }
 
     bool hasActionsWithIcons() const
@@ -46,7 +49,6 @@ public:
         // invalidateFilter() will not work here
         beginResetModel();
         m_pattern = string;
-        m_hasActionsWithIcons = false;
         endResetModel();
     }
 
