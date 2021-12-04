@@ -1,0 +1,654 @@
+# translation of kdelibs4.po to Walloon
+# Ratournaedje e walon des messaedjes di KDE.
+#
+# Lorint Hendschel <lorint.hendschel@skynet.be>, 2002.
+# Pablo Saratxaga <pablo@walon.org>, 2002-2004, 2007.
+# Jean Cayron <jean.cayron@gmail.com>, 2007, 2008, 2009, 2010, 2011.
+# Jean Cayron <jean.cayron@tele2allin.be>, 2007.
+# Jean Cayron <jean.cayron@base.be>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-11-24 00:24+0000\n"
+"PO-Revision-Date: 2012-07-04 17:33+0200\n"
+"Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
+"Language-Team: Walloon <linux-wa@walon.org>\n"
+"Language: wa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Walloon\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Lorint Hendschel,Pablo Saratxaga,Djan Cayron"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "laurent.hendschel@skynet.be,pablo@walon.org,jean.cayron@gmail.com"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:193
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Vos n' avoz nén l' droet d' schaper l' apontiaedje"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Prémetou"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Otomatike"
+
+#: kcolorschememanager.cpp:200 kcolorschememanager.cpp:205
+#, fuzzy, kde-format
+#| msgid "Shortcut Schemes"
+msgid "Color Scheme"
+msgstr "Arindjmints d' rascourtis"
+
+#: kcolorschememodel.cpp:66
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Prémetou"
+
+#: kcommandbar.cpp:582
+#, kde-format
+msgid "No commands matching the filter"
+msgstr ""
+
+#: kconfigdialog.cpp:37
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Apontyî"
+
+#: khamburgermenu.cpp:126
+#, fuzzy, kde-format
+#| msgid "Menu"
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "Menu"
+
+#: khamburgermenu.cpp:342
+#, fuzzy, kde-format
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "For %1 more action:"
+msgid_plural "For %1 more actions:"
+msgstr[0] "Rascourtis po %1"
+msgstr[1] "Rascourtis po %1"
+
+#: khamburgermenu.cpp:345
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "%1 Menu Bar Exclusive Action"
+msgid_plural "%1 Menu Bar Exclusive Actions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: krecentfilesaction.cpp:68
+#, kde-format
+msgid "No Entries"
+msgstr "Nole intrêye"
+
+#: krecentfilesaction.cpp:74
+#, kde-format
+msgid "Clear List"
+msgstr "Netyî l' djivêye"
+
+#: kstandardaction.cpp:140
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "En &erî"
+
+#: kstandardaction.cpp:147
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "En &avant"
+
+#: kstandardaction.cpp:154
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Måjhon"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Aidance"
+
+#: kstandardaction.cpp:215
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Mostrer l' bår di menu<p>Rimostere li bår di menu après k' ele åye sitî "
+"catcheye</p>"
+
+#: kstandardaction.cpp:236
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&Novea"
+
+#: kstandardaction_p.h:30
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Create new tag:"
+msgid "Create new document"
+msgstr "Ahiver novele etikete :"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "&Drovi..."
+
+#: kstandardaction_p.h:31
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "En &erî dins l' documint"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "Drovi les &dierins"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "&Schaper"
+
+#: kstandardaction_p.h:33
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Clôre li documint?"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Sch&aper et rlomer..."
+
+#: kstandardaction_p.h:34
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Clôre li documint?"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "&Rimete come divant"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&Clôre"
+
+#: kstandardaction_p.h:36
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Clôre li documint?"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "&Imprimer..."
+
+#: kstandardaction_p.h:37
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "Voe&yaedje divant d' imprimer"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&Emiler..."
+
+#: kstandardaction_p.h:39
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Clôre li documint?"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "C&witer"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Cwiter l' programe"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "&Disfé"
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Undo last action"
+msgstr "Diner des cwårs"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "&Rifé"
+
+#: kstandardaction_p.h:43
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Redo last undone action"
+msgstr "Diner des cwårs"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "Cô&per"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Copyî"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "Ac&laper"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, fuzzy
+#| msgid "Upload content"
+msgid "Paste clipboard content"
+msgstr "Eberweter l' ådvins"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "&Netyî"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "Tchoezi &totafwait"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "&Distchoezi"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&Trover..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "Trover &shuvant"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Trover ci di d&vant"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "Dis&candjî..."
+
+#: kstandardaction_p.h:58
+msgid "&Actual Size"
+msgstr "Vraiye &grandeu"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "For&rimpli l' pådje"
+
+#: kstandardaction_p.h:59
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Potchî al roye"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Al &lårdjeur del pådje"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Al &hôteur del pådje"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "&Zoumer"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "&Diszoumer"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Zoumer..."
+
+#: kstandardaction_p.h:64
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Tchoezixhoz ene samwinne"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:65
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "&Rihåyner"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "&Monter"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "Pådje di d&vant"
+
+#: kstandardaction_p.h:72
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "Pådje di d&vant"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "Pådje &shuvante"
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Potchî al roye"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Potchî a..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "&Potchî al pådje..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Potchî al roye..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "&Prumire pådje"
+
+#: kstandardaction_p.h:77
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Potchî al roye"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "&Dierinne pådje"
+
+#: kstandardaction_p.h:78
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Potchî al pådje..."
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "En &erî"
+
+#: kstandardaction_p.h:79
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "En &erî dins l' documint"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "En &avant"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "En &avant dins l' documint"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "R&adjouter ene rimåke"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "&Candjî rimåkes..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "&Speli..."
+
+#: kstandardaction_p.h:85
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Coridjî ortografeye"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "Mostrer l' bår di &menu"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Mostrer l' bår di &menu"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "Mostrer li bår ås us&teyes"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Mostrer bår ås usteyes"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "Mostrer bår d' est&at"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Mostrer bår di racsegne"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "Môde tote li &waitroûle"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "Sch&aper les tchuzes"
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Apontyî les ras&courtis..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "A&pontyî %1..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Apontyî les &bårs ås usteyes..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "Apontyî les &notifiaedjes..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 E&splikêyes"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "&Cwè çki c' est d' ça?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "Li Boune Idêye do &Djoû"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "&Rapoirter on bug..."
+
+#: kstandardaction_p.h:108
+#, fuzzy
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "Apontyî l' emilaedje..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "Å&d fwait di %1"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "Åd fwait di &KDE"
+
+#: kstandardaction_p.h:111
+msgid "&Delete"
+msgstr "&Disfacer"
+
+#: kstandardaction_p.h:112
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "Dis&candjî..."
+
+#: kstandardaction_p.h:113
+#, fuzzy
+#| msgid "Move to Trash"
+msgid "&Move to Trash"
+msgstr "Taper å batch"
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr ""
+
+#: kstandardaction_p.h:115
+#, fuzzy
+#| msgid "Open &Recent"
+msgid "Open &Menu"
+msgstr "Drovi les &dierins"
+
+#: ktipdialog.cpp:219
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Li Boune Idêye do Djoû"
+
+#: ktipdialog.cpp:235
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "El savîz...?\n"
+
+#: ktipdialog.cpp:288
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Mostrer des racsegnmints a l' enondêye"
+
+#: ktipdialog.cpp:293
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "Di D&vant"
+
+#: ktipdialog.cpp:298
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Shuvant"
