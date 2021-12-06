@@ -38,7 +38,7 @@ ecm_qt_declare_logging_category(KF5ConfigWidgets
     DESCRIPTION "KConfigWidgets"
     EXPORT KCONFIGWIDGETS
 )
-if (TARGET Qt5::DBus)
+if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
     target_sources(KF5ConfigWidgets PRIVATE kpastetextaction.cpp)
 endif()
 
@@ -51,7 +51,7 @@ ecm_generate_export_header(KF5ConfigWidgets
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
 )
 
-target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KConfigWidgets>")
+target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets>")
 
 target_link_libraries(KF5ConfigWidgets
   PUBLIC
@@ -73,8 +73,12 @@ if (TARGET KF5::Auth)
 else()
   target_compile_definitions(KF5ConfigWidgets PUBLIC -DKCONFIGWIDGETS_NO_KAUTH)
 endif()
-if (TARGET Qt5::DBus)
-  target_link_libraries(KF5ConfigWidgets PRIVATE Qt5::DBus) # KPasteTextAction talks to Klipper via DBus
+if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
+  target_link_libraries(KF5ConfigWidgets PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # KPasteTextAction talks to Klipper via DBus
+endif()
+
+if (TARGET Qt6::Core5Compat)
+    target_link_libraries(KF5ConfigWidgets PRIVATE Qt6::Core5Compat)
 endif()
 
 set_target_properties(KF5ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION}
@@ -147,7 +151,7 @@ install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_export.h
   ${KConfigWidgets_HEADERS}
   ktip.h
-  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/KConfigWidgets COMPONENT Devel
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets COMPONENT Devel
 )
 
 install(PROGRAMS preparetips5 DESTINATION ${KDE_INSTALL_BINDIR} )
@@ -199,5 +203,5 @@ if(BUILD_QCH)
 endif()
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF5ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KConfigWidgets)
+ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF5ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})

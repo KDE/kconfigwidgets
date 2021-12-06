@@ -1,13 +1,13 @@
 
-find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
+find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
 
 include(ECMAddTests)
 
-ecm_add_test(kstandardactiontest.cpp LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
+ecm_add_test(kstandardactiontest.cpp LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::ConfigWidgets)
 
 set(kconfigdialog_unittest_SRCS kconfigdialog_unittest.cpp)
 kconfig_add_kcfg_files(kconfigdialog_unittest_SRCS GENERATE_MOC signaltest.kcfgc)
-ecm_add_test(${kconfigdialog_unittest_SRCS} TEST_NAME "kconfigdialog_unittest" LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
+ecm_add_test(${kconfigdialog_unittest_SRCS} TEST_NAME "kconfigdialog_unittest" LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::ConfigWidgets)
 
 set(lang_entries
   ca
@@ -35,7 +35,7 @@ foreach(lang ${lang_entries})
     endif()
 endforeach()
 
-ecm_add_test(klanguagenametest.cpp LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
-ecm_add_test(kcolorschemetest.cpp LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
+ecm_add_test(klanguagenametest.cpp LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::ConfigWidgets)
+ecm_add_test(kcolorschemetest.cpp LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::ConfigWidgets)
 
-ecm_add_test(krecentfilesactiontest.cpp TEST_NAME "krecentfilesaction_test" LINK_LIBRARIES Qt5::Test KF5::ConfigWidgets)
+ecm_add_test(krecentfilesactiontest.cpp TEST_NAME "krecentfilesaction_test" LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::ConfigWidgets)

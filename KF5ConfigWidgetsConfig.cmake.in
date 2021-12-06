@@ -10,10 +10,10 @@ find_dependency(KF5WidgetsAddons "@KF_DEP_VERSION@")
 
 
 if (NOT @BUILD_SHARED_LIBS@)
-    find_dependency(Qt5Widgets "@REQUIRED_QT_VERSION@")
+    find_dependency(Qt@QT_MAJOR_VERSION@Widgets @REQUIRED_QT_VERSION@)
 
     if (NOT ANDROID)
-        find_dependency(Qt5DBus "@REQUIRED_QT_VERSION@")
+        find_dependency(Qt@QT_MAJOR_VERSION@DBus @REQUIRED_QT_VERSION@)
     endif()
 
     find_dependency(KF5CoreAddons "@KF_DEP_VERSION@")
