@@ -167,13 +167,13 @@ struct DecoDefaultColors {
 // clang-format off
 // these numbers come from the Breeze color scheme ([breeze]/colors/Breeze.colors)
 static const SetDefaultColors defaultViewColors = {
-    { 252, 252, 252 }, // Background
-    { 239, 240, 241 }, // Alternate
-    {  35,  38, 39  }, // Normal
-    { 127, 140, 141 }, // Inactive
+    { 255, 255, 255 }, // Background
+    { 247, 247, 247 }, // Alternate
+    {  35,  38, 41  }, // Normal
+    { 112, 125, 138 }, // Inactive
     {  61, 174, 233 }, // Active
     {  41, 128, 185 }, // Link
-    { 127, 140, 141 }, // Visited
+    { 155,  89, 182 }, // Visited
     { 218,  68,  83 }, // Negative
     { 246, 116,   0 }, // Neutral
     {  39, 174,  96 }  // Positive
@@ -181,25 +181,25 @@ static const SetDefaultColors defaultViewColors = {
 
 static const SetDefaultColors defaultWindowColors = {
     { 239, 240, 241 }, // Background
-    { 189, 195, 199 }, // Alternate
-    {  35,  38, 39  }, // Normal
-    { 127, 140, 141 }, // Inactive
+    { 227, 229, 231 }, // Alternate
+    {  35,  38, 41  }, // Normal
+    { 112, 125, 138 }, // Inactive
     {  61, 174, 233 }, // Active
     {  41, 128, 185 }, // Link
-    { 127, 140, 141 }, // Visited
+    { 155,  89, 182 }, // Visited
     { 218,  68,  83 }, // Negative
     { 246, 116,   0 }, // Neutral
     {  39, 174,  96 }  // Positive
 };
 
 static const SetDefaultColors defaultButtonColors = {
-    { 239, 240, 241 }, // Background
-    { 189, 195, 199 }, // Alternate
-    {  35,  38, 39  }, // Normal
-    { 127, 140, 141 }, // Inactive
+    { 252, 252, 252 }, // Background
+    { 163, 212, 250 }, // Alternate
+    {  35,  38, 41  }, // Normal
+    { 112, 125, 138 }, // Inactive
     {  61, 174, 233 }, // Active
     {  41, 128, 185 }, // Link
-    { 127, 140, 141 }, // Visited
+    { 155,  89, 182 }, // Visited
     { 218,  68,  83 }, // Negative
     { 246, 116,   0 }, // Neutral
     {  39, 174,  96 }  // Positive
@@ -207,45 +207,45 @@ static const SetDefaultColors defaultButtonColors = {
 
 static const SetDefaultColors defaultSelectionColors = {
     {  61, 174, 233 }, // Background
-    {  29, 153, 243 }, // Alternate
-    { 252, 252, 252 }, // Normal
-    { 239, 240, 241 }, // Inactive
-    { 252, 252, 252 }, // Active
+    { 163, 212, 250 }, // Alternate
+    { 255, 255, 255 }, // Normal
+    { 112, 125, 138 }, // Inactive
+    { 255, 255, 255 }, // Active
     { 253, 188,  75 }, // Link
-    { 189, 195, 199 }, // Visited
-    { 218,  68,  83 }, // Negative
-    { 246, 116,   0 }, // Neutral
-    {  39, 174,  96 }  // Positive
+    { 155,  89, 182 }, // Visited
+    { 176,  55,  69 }, // Negative
+    { 198,  92,   0 }, // Neutral
+    {  23, 104,  57 }  // Positive
 };
 
 static const SetDefaultColors defaultTooltipColors = {
-    {  35,  38, 39  }, // Background
-    {  77,  77,  77 }, // Alternate
-    { 252, 252, 252 }, // Normal
-    { 189, 195, 199 }, // Inactive
+    { 247, 247, 247 }, // Background
+    { 239, 240, 241 }, // Alternate
+    {  35,  38,  41 }, // Normal
+    { 112, 125, 138 }, // Inactive
     {  61, 174, 233 }, // Active
     {  41, 128, 185 }, // Link
-    { 127, 140, 141 }, // Visited
+    { 155,  89, 182 }, // Visited
     { 218,  68,  83 }, // Negative
     { 246, 116,   0 }, // Neutral
     {  39, 174,  96 }  // Positive
 };
 
 static const SetDefaultColors defaultComplementaryColors = {
-    {  49,  54,  59 }, // Background
-    {  59,  64,  69 }, // Alternate
-    { 239, 240, 241 }, // Normal
-    { 175, 176, 179 }, // Inactive
-    { 147, 206, 233 }, // Active
-    {  61, 174, 230 }, // Link
-    {  61, 174, 230 }, // Visited
-    { 231,  76,  60 }, // Negative
-    { 253, 188,  75 }, // Neutral
-    {  46, 174, 230 }  // Positive
+    {  42,  46,  50 }, // Background
+    {  27,  30,  32 }, // Alternate
+    { 252, 252, 252 }, // Normal
+    { 161, 169, 177 }, // Inactive
+    {  61, 174, 233 }, // Active
+    {  29, 153, 243 }, // Link
+    { 155,  89, 182 }, // Visited
+    { 218,  68,  83 }, // Negative
+    { 246, 116,   0 }, // Neutral
+    {  39, 174,  96 }  // Positive
 };
 
 static const SetDefaultColors defaultHeaderColors = {
-    { 227, 229, 231 }, // Background
+    { 222, 224, 226 }, // Background
     { 239, 240, 241 }, // Alternate
     {  35,  38,  41 }, // Normal
     { 112, 125, 138 }, // Inactive
