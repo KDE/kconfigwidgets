@@ -49,7 +49,7 @@ void fillRows(QVector<KCommandBarModel::Item> &rows, const QString &title, const
             continue;
         }
 
-        if (action->text().isEmpty()) {
+        if (action->text().isEmpty() && !action->isSeparator()) {
             qCWarning(KCONFIG_WIDGETS_LOG) << "Action" << action << "in group" << title << "has no text";
             continue;
         }
