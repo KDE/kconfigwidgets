@@ -40,11 +40,16 @@ KColorSchemeModel::KColorSchemeModel(QObject *parent)
     beginResetModel();
     d->m_data.clear();
 
+#ifndef Q_OS_ANDROID
     // Fill the model with all *.colors files from the XDG_DATA_DIRS, sorted by "Name".
     // If two color schemes, in user's $HOME and e.g. /usr, respectively, have the same
     // name, the one under $HOME overrides the other one
     const QStringList dirPaths =
         QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("color-schemes"), QStandardPaths::LocateDirectory);
+#else
+    const QStringList dirPaths{QStringLiteral("assets:/share/color-schemes")};
+#endif
+
     std::map<QString, QString> map;
     for (const QString &dirPath : dirPaths) {
         const QDir dir(dirPath);
