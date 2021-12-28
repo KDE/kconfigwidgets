@@ -28,8 +28,10 @@ if (NOT ANDROID)
   find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} CONFIG REQUIRED DBus)
 endif()
 
+set(_qt6_core5_compat FALSE)
 if (QT_MAJOR_VERSION STREQUAL "6")
     find_package(Qt6Core5Compat CONFIG REQUIRED) # QTextCodec
+    set(_qt6_core5_compat ${Qt6Core5Compat_FOUND})
 endif()
 
 set(EXCLUDE_DEPRECATED_BEFORE_AND_AT 0 CACHE STRING "Control the range of deprecated API excluded from the build [default=0].")
