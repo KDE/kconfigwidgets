@@ -78,7 +78,7 @@ if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
 endif()
 
 if (TARGET Qt6::Core5Compat)
-    target_link_libraries(KF5ConfigWidgets PRIVATE Qt6::Core5Compat)
+    target_link_libraries(KF5ConfigWidgets PUBLIC Qt6::Core5Compat)
 endif()
 
 set_target_properties(KF5ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION}
