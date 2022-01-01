@@ -1,0 +1,586 @@
+# translation of kdelibs4.po to Dutch
+# Copyright (C) 2000,2001,2002,2003, 2004 KDE e.v..
+# KTranslator Generated File
+# Nederlandse vertaling van kdelibs.
+# KDE-vertaalgroep Nederlands <i18n@kde.nl>, 2000, 2001, 2002.
+# Rinse de Vries <rinsedevries@kde.nl>,2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+# Wilbert Berendsen <wbsoft@xs4all.nl>, 2003, 2004.
+# Bram Schoenmakers <bramschoenmakers@kde.nl>, 2004, 2005, 2006, 2007.
+# Tom Albers <tomalbers@kde.nl>, 2004.
+# Sander Koning <sanderkoning@kde.nl>, 2005.
+# Tijmen Baarda <tijmenbaarda@kde.nl>, 2005.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2008, 2009.
+# Kristof Bal <kristof.bal@gmail.com>, 2008, 2009.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2009, 2010.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2010, 2011, 2012.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2010, 2011, 2013, 2015, 2016, 2017, 2019, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-26 00:40+0000\n"
+"PO-Revision-Date: 2021-11-13 11:38+0100\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Files: kfarch.cpp kfdird.cpp kfind.cpp kfindtop.cpp kfoptions.cpp kfsave.cpp "
+"kftabdlg.cpp kftypes.cpp kfwin.cpp main.cpp mkfdird.cpp mkfind.cpp\n"
+"X-Generator: Lokalize 21.08.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Rinse de Vries - 2000 t/m 2008,Wilbert Berendsen - 2003; 2004,Bram "
+"Schoenmakers - 2004 t/m 2007,Tom Albers - 2004,Tijmen Baarda - 2005,Sander "
+"Koning - 2005, Freek de Kruijf - 2009 t/m 2021"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"rinsedevries@kde.nl,wbsoft@xs4all.nl,bramschoenmakers@kde.nl,tomalbers@kde."
+"nl,tijmenbaarda@kde.nl,,freekdekruijf@kde.nl"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "U zal worden gevraagd zich te authenticeren alvorens op te slaan"
+
+#: kcmodule.cpp:193
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "U mag de configuratie niet opslaan"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Standaard"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Autodetecteren"
+
+#: kcolorschememanager.cpp:200 kcolorschememanager.cpp:205
+#, kde-format
+msgid "Color Scheme"
+msgstr "Kleurenschema"
+
+#: kcolorschememodel.cpp:71
+#, kde-format
+msgid "Default"
+msgstr "Standaard"
+
+#: kcommandbar.cpp:584
+#, kde-format
+msgid "No commands matching the filter"
+msgstr "Geen overeenkomende commando's met het filter"
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Configureren"
+
+#: khamburgermenu.cpp:126
+#, kde-format
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "&Menu"
+
+#: khamburgermenu.cpp:342
+#, kde-format
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "For %1 more action:"
+msgid_plural "For %1 more actions:"
+msgstr[0] "Voor nog %1 actie:"
+msgstr[1] "Voor nog %1 acties:"
+
+#: khamburgermenu.cpp:345
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "%1 Menu Bar Exclusive Action"
+msgid_plural "%1 Menu Bar Exclusive Actions"
+msgstr[0] "%1 exclusieve actie in menubalk"
+msgstr[1] "%1 exclusieve acties in menubalk"
+
+#: krecentfilesaction.cpp:68
+#, kde-format
+msgid "No Entries"
+msgstr "Geen items"
+
+#: krecentfilesaction.cpp:74
+#, kde-format
+msgid "Clear List"
+msgstr "Lijst wissen"
+
+#: kstandardaction.cpp:140
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Terug"
+
+#: kstandardaction.cpp:147
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Vooruit"
+
+#: kstandardaction.cpp:154
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Startpagina"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Help"
+
+#: kstandardaction.cpp:215
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Menubalk tonen<p>Toont de menubalk wanneer deze verborgen is</p>"
+
+#: kstandardaction.cpp:236
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Statusbalk tonen<p>Toont de statusbalk, die de balk is aan de onderkant van "
+"het venster voor het weergeven van statusinformatie.</p>"
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&Nieuw"
+
+#: kstandardaction_p.h:30
+msgid "Create new document"
+msgstr "Nieuw document aanmaken"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "&Openen..."
+
+#: kstandardaction_p.h:31
+msgid "Open an existing document"
+msgstr "Open een bestaand document"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "&Recent geopend"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr "Een recent geopend document openen"
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "Op&slaan"
+
+#: kstandardaction_p.h:33
+msgid "Save document"
+msgstr "Document opslaan"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Opslaan &als..."
+
+#: kstandardaction_p.h:34
+msgid "Save document under a new name"
+msgstr "Document opslaan onder een nieuwe naam"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "Beginwaar&de"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr "Niet opslagen wijzigingen in document terugdraaien"
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "Sl&uiten"
+
+#: kstandardaction_p.h:36
+msgid "Close document"
+msgstr "Document sluiten"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "Af&drukken..."
+
+#: kstandardaction_p.h:37
+msgid "Print document"
+msgstr "Document afdrukken"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "Afdruk&voorbeeld"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr "Een afdrukvoorbeeld van het document tonen"
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&Verzenden..."
+
+#: kstandardaction_p.h:39
+msgid "Send document by mail"
+msgstr "Document per e-mail verzenden"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "A&fsluiten"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Toepassing afsluiten"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "&Ongedaan maken"
+
+#: kstandardaction_p.h:42
+msgid "Undo last action"
+msgstr "Laatste actie ongedaan maken"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "Opnie&uw"
+
+#: kstandardaction_p.h:43
+msgid "Redo last undone action"
+msgstr "Laatste ongedaan gemaakte actie opnieuw uitvoeren"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "Kni&ppen"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr "Selectie knippen naar het klembord "
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Kopiëren"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr "Selectie kopiëren naar het klembord"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "P&lakken"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "Paste clipboard content"
+msgstr "Inhoud klembord plakken"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "&Wissen"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "&Alles selecteren"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "Dese&lecteren"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&Zoeken..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "Vol&gende zoeken"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Vo&rige zoeken"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "&Vervangen..."
+
+#: kstandardaction_p.h:58
+msgid "&Actual Size"
+msgstr "&Werkelijke grootte"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr "Document in zijn actuele grootte bekijken"
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "&Passend in pagina"
+
+#: kstandardaction_p.h:59
+msgid "Zoom to fit page in window"
+msgstr "Zoomen naar passend maken in het venster"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Passend in pagina&breedte"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr "Zoomen naar breedte passend maken in het venster"
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Passend in pagina&hoogte"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr "Zoomen naar hoogte passend maken in het venster"
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "&Inzoomen"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "&Uitzoomen"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Zoomen..."
+
+#: kstandardaction_p.h:64
+msgid "Select zoom level"
+msgstr "Zoomniveau selecteren"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr "Ve&rnieuwen"
+
+#: kstandardaction_p.h:65
+msgid "Refresh document"
+msgstr "Document vernieuwen"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "&Omhoog"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr "Omhoog"
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "&Vorige pagina"
+
+#: kstandardaction_p.h:72
+msgid "Go to previous page"
+msgstr "Naar vorige pagina gaan"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "V&olgende pagina"
+
+#: kstandardaction_p.h:73
+msgid "Go to next page"
+msgstr "Naar volgende pagina gaan"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Ga naar..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "&Ga naar pagina..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Ga naar regel..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "&Eerste pagina"
+
+#: kstandardaction_p.h:77
+msgid "Go to first page"
+msgstr "Naar eerste pagina gaan"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "&Laatste pagina"
+
+#: kstandardaction_p.h:78
+msgid "Go to last page"
+msgstr "Naar laatste pagina gaan"
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "Vo&rige"
+
+#: kstandardaction_p.h:79
+msgid "Go back in document"
+msgstr "Terug gaan in het document"
+
+#: kstandardaction_p.h:80
+msgid "&Forward"
+msgstr "&Verder"
+
+#: kstandardaction_p.h:80
+msgid "Go forward in document"
+msgstr "Vooruit gaan in het document"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "Bladwijzer &toevoegen"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "Bladwijzers &bewerken..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "&Spelling..."
+
+#: kstandardaction_p.h:85
+msgid "Check spelling in document"
+msgstr "Spelling controleren in het document"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "&Menubalk tonen"
+
+#: kstandardaction_p.h:87
+msgid "Show or hide menubar"
+msgstr "Menubalk tonen of verbergen"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "&Werkbalk tonen"
+
+#: kstandardaction_p.h:88
+msgid "Show or hide toolbar"
+msgstr "Werkbalk tonen of verbergen"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "&Statusbalk tonen"
+
+#: kstandardaction_p.h:89
+msgid "Show or hide statusbar"
+msgstr "Statusbalk tonen of verbergen"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "Volledig scher&m"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "Instellingen ops&laan"
+
+#: kstandardaction_p.h:94
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Sne&ltoetsen configureren..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 &configureren..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Werk&balken instellen..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "&Meldingen instellen..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &handboek"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "Wat is di&t?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "Tip van de &dag"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "Bug &rapporteren..."
+
+#: kstandardaction_p.h:108
+msgid "Configure &Language..."
+msgstr "Taa&l configureren..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "Info &over %1"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "Over &KDE"
+
+#: kstandardaction_p.h:111
+msgid "&Delete"
+msgstr "Verwij&deren"
+
+#: kstandardaction_p.h:112
+msgid "&Rename..."
+msgstr "He&rnoemen..."
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr "&Naar prullenbak verplaatsen"
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr "&Doneren"
+
+#: kstandardaction_p.h:115
+msgid "Open &Menu"
+msgstr "&Menu openen"
+
+#: ktipdialog.cpp:219
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Tip van de dag"
+
+#: ktipdialog.cpp:235
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Wist u dat...?\n"
+
+#: ktipdialog.cpp:288
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Tips tonen tijdens het &starten"
+
+#: ktipdialog.cpp:293
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "Vo&rige"
+
+#: ktipdialog.cpp:298
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "Volge&nde"

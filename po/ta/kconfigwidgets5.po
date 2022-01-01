@@ -1,0 +1,570 @@
+# translation of kdelibs4.po to தமிழ்
+# Copyright (C) 2000,2002, 2004, 2007, 2008 Free Software Foundation, Inc.
+#
+# Sivakumar Shanmugasundaram <sshanmu@yahoo.com>, 2000.
+# Thuraiappah Vaseeharan <t_vasee@yahoo.com>, 2000-2001.
+# ம. ஸ்ரீ ராமதாஸ் | Sri Ramadoss M <amachu@yavarkkum.org>, 2007-2012.
+# Kishore G <kishore96@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-26 00:40+0000\n"
+"PO-Revision-Date: 2021-11-16 21:34+0530\n"
+"Last-Translator: Kishore G <kishore96@gmail.com>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.11.80\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ம. ஸ்ரீ ராமதாஸ்"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "amachu@yavarkkum.org"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "சேமிப்பதற்குமுன் சான்றளிக்க கோரப்படுவீர்கள்."
+
+#: kcmodule.cpp:193
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "அமைப்பை சேமிக்க உங்களுக்கு அனுமதியில்லை"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "இயல்பிருப்பு"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "தானாக கண்டுபிடி"
+
+#: kcolorschememanager.cpp:200 kcolorschememanager.cpp:205
+#, kde-format
+msgid "Color Scheme"
+msgstr "நிறத் திட்டம்"
+
+#: kcolorschememodel.cpp:71
+#, kde-format
+msgid "Default"
+msgstr "இயல்பிருப்பு"
+
+#: kcommandbar.cpp:584
+#, kde-format
+msgid "No commands matching the filter"
+msgstr "வடிகட்டிக்கு பொருந்தும் கட்டளைகள் இல்லை"
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "அமை"
+
+#: khamburgermenu.cpp:126
+#, kde-format
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "&பட்டி"
+
+#: khamburgermenu.cpp:342
+#, kde-format
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "For %1 more action:"
+msgid_plural "For %1 more actions:"
+msgstr[0] "%1 கூடுதல் செயலுக்கு:"
+msgstr[1] "%1 கூடுதல் செயல்களுக்கு:"
+
+#: khamburgermenu.cpp:345
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "%1 Menu Bar Exclusive Action"
+msgid_plural "%1 Menu Bar Exclusive Actions"
+msgstr[0] "%1 பட்டிப் பட்டையில் மட்டும் இருக்கும் செயல்"
+msgstr[1] "%1 பட்டிப் பட்டையில் மட்டும் இருக்கும் செயல்கள்"
+
+#: krecentfilesaction.cpp:68
+#, kde-format
+msgid "No Entries"
+msgstr "பதிவுகள் இல்லை"
+
+#: krecentfilesaction.cpp:74
+#, kde-format
+msgid "Clear List"
+msgstr "பட்டியலை காலியாக்கு"
+
+#: kstandardaction.cpp:140
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&பின்னே"
+
+#: kstandardaction.cpp:147
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&முன்னே"
+
+#: kstandardaction.cpp:154
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&முகப்பு"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&உதவி"
+
+#: kstandardaction.cpp:215
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "பட்டிப்பட்டையை காட்டு<p>மறைக்கப்பட்ட பட்டிப்பட்டையை மீண்டும் காட்ட உதவும்</p>"
+
+#: kstandardaction.cpp:236
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"நிலைப்பட்டையை காட்டு<p>சாளரத்தின் கீழ்பகுதியில் நிலைகுறித்த விவரங்களை காட்ட பயன்படும் ஓர் "
+"பட்டையை காட்டும்.</p>"
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&புதியது"
+
+#: kstandardaction_p.h:30
+msgid "Create new document"
+msgstr "புதிய ஆவணத்தை உருவாக்கு"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "&திற..."
+
+#: kstandardaction_p.h:31
+msgid "Open an existing document"
+msgstr "ஏற்கனவே உள்ள ஆவணத்தை திற"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "&சமீபமானவற்றை திற"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr "சமீபத்தில் திறக்கப்பட்ட ஆவணத்தை திற"
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "&சேமி"
+
+#: kstandardaction_p.h:33
+msgid "Save document"
+msgstr "ஆவணத்தை சேமி"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "&இப்படி சேமி..."
+
+#: kstandardaction_p.h:34
+msgid "Save document under a new name"
+msgstr "ஆவணத்தை வேறு பெயரில் சேமி"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "&மீட்டமை"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr "சேமிக்கப்படாத மாற்றங்களை செயல்நீக்கு"
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&மூடு"
+
+#: kstandardaction_p.h:36
+msgid "Close document"
+msgstr "ஆவணத்தை மூடு"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "&அச்சிடு..."
+
+#: kstandardaction_p.h:37
+msgid "Print document"
+msgstr "ஆவணத்தை அச்சிடு"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "அச்சு மு&ன்னோட்டம்"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr "ஆவணம் அச்சிடப்பட்டால் எப்படி இருக்கும் என ஒரு மூன்னோட்டத்தை காட்டும்"
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&அஞ்சலிடு..."
+
+#: kstandardaction_p.h:39
+msgid "Send document by mail"
+msgstr "ஆவணத்தை மின்னஞ்சல் மூலம் அனுப்பு"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "&வெளியேறு"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "செயலியிலிருந்து வெளியேறு"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "&செயல்நீக்கு"
+
+#: kstandardaction_p.h:42
+msgid "Undo last action"
+msgstr "கடைசியாக செய்ததை செயல்நீக்கு"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "&மீளச்செய்"
+
+#: kstandardaction_p.h:43
+msgid "Redo last undone action"
+msgstr "கடைசியாக செயல்நீக்கியதை மீளச்செய்"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "&வெட்டு"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr "தேர்ந்தெடுத்ததை பிடிப்புப்பலகைக்கு வெட்டு"
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&நகலெடு"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr "தேர்ந்தெடுத்ததை பிடிப்புப்பலகைக்கு நகலெடு"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "&ஒட்டு"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "Paste clipboard content"
+msgstr "பிடிப்புப்பலகையில் உள்ளதை ஒட்டு"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "&காலியாக்கு"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "&அனைத்தையும் தேர்வு செய்"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "தே&ர்வை நிராகரி"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&கண்டுபிடி..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "அ&டுத்ததை கண்டுபிடி"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "மு&ந்தையதை கண்டுபிடி"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "மா&ற்று…"
+
+#: kstandardaction_p.h:58
+msgid "&Actual Size"
+msgstr "&உண்மையான அளவு"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr "ஆவணத்தை அதன் உண்மையான அளவில் பாருங்கள்"
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "பக்கத்துடன் &பொருத்து"
+
+#: kstandardaction_p.h:59
+msgid "Zoom to fit page in window"
+msgstr "ஒரு பக்கத்தை முழுமையாக காட்டும்படி உருப்பெருக்கத்தை அமை"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "பக்க &அகலத்துடன் பொருத்து"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr "பக்கத்தின் முழு அகலத்தை சாளரத்தில் காட்டும்படி உருப்பெருக்கத்தை அமை"
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "பக்க உ&யரத்துடன் பொருத்து"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr "பக்கத்தின் முழு உயரத்தை சாளரத்தில் காட்டும்படி உருப்பெருக்கத்தை அமை"
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "&பெரிதாக்கு"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "&சிறிதாக்கு"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&உருப்பெருக்கம்..."
+
+#: kstandardaction_p.h:64
+msgid "Select zoom level"
+msgstr "உருப்பெருக்க அளவை தேர்வு செய்"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr "பு&துப்பி"
+
+#: kstandardaction_p.h:65
+msgid "Refresh document"
+msgstr "ஆவணத்தை புதுப்பி"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "&மேலே"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr "மேலே செல்"
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "மு&ந்தைய பக்கம்"
+
+#: kstandardaction_p.h:72
+msgid "Go to previous page"
+msgstr "முந்தைய பக்கத்திற்கு செல்"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "&அடுத்த பக்கம்"
+
+#: kstandardaction_p.h:73
+msgid "Go to next page"
+msgstr "அடுத்த பக்கத்திற்கு செல்"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&இங்கு செல்…"
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "ப&க்கத்திற்கு செல்…"
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&வரிக்கு செல்…"
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "மு&தல் பக்கம்"
+
+#: kstandardaction_p.h:77
+msgid "Go to first page"
+msgstr "முதல் பக்கத்திற்கு செல்"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "&கடைசி பக்கம்"
+
+#: kstandardaction_p.h:78
+msgid "Go to last page"
+msgstr "கடைசி பக்கத்திற்கு செல்"
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "&பின்னே"
+
+#: kstandardaction_p.h:79
+msgid "Go back in document"
+msgstr "ஆவணத்தில் பின்னே செல்"
+
+#: kstandardaction_p.h:80
+msgid "&Forward"
+msgstr "மு&ன்னே"
+
+#: kstandardaction_p.h:80
+msgid "Go forward in document"
+msgstr "ஆவணத்தில் முன்னே செல்"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "நினைவுக்குறியை &சேர்"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "நினைவுக்குறிகளை &திருத்து…"
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "&எழுத்தாக்கம்…"
+
+#: kstandardaction_p.h:85
+msgid "Check spelling in document"
+msgstr "ஆவணத்தின் எழுத்தாக்கத்தை சரிபார்"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "&பட்டிப்பட்டையை காட்டு"
+
+#: kstandardaction_p.h:87
+msgid "Show or hide menubar"
+msgstr "பட்டிப்பட்டையை காட்டு/மறை"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "&கருவிப்பட்டையை காட்டு"
+
+#: kstandardaction_p.h:88
+msgid "Show or hide toolbar"
+msgstr "கருவிப்பட்டையை காட்டு/மறை"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "&நிலைப்பட்டியை காட்டு"
+
+#: kstandardaction_p.h:89
+msgid "Show or hide statusbar"
+msgstr "நிலைப்பட்டியை காட்டு/மறை"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "&முழுத்திரை பயன்முறை"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "அமைப்புகளை &சேமி"
+
+#: kstandardaction_p.h:94
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "&விசை சுருக்குவழிகளை அமை…"
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 தனை &அமை…"
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "க&ருவிப்பட்டைகளை அமை…"
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "&அறிவிப்புகளை அமை…"
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &கையேடு"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "இது &என்ன?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "&இன்றைய தகவல்"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "&பிழையை தெரிவி…"
+
+#: kstandardaction_p.h:108
+msgid "Configure &Language..."
+msgstr "&மொழியை அமை..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "%1 ப&ற்றி"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "&கே.டீ.யீ. பற்றி"
+
+#: kstandardaction_p.h:111
+msgid "&Delete"
+msgstr "&நீக்கு"
+
+#: kstandardaction_p.h:112
+msgid "&Rename..."
+msgstr "&மறுபெயரிடு…"
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr "&அகற்றிடத்துக்கு நகர்த்து"
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr "&நன்கொடை அளியுங்கள்"
+
+#: kstandardaction_p.h:115
+msgid "Open &Menu"
+msgstr "&பட்டியை திற"
+
+#: ktipdialog.cpp:219
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "இன்றைய தகவல்"
+
+#: ktipdialog.cpp:235
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "உங்களுக்கு தெரியுமா...?\n"
+
+#: ktipdialog.cpp:288
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "துவக்கும்போது உதவியான தகவல்களை &காட்டு"
+
+#: ktipdialog.cpp:293
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&முந்தையது"
+
+#: ktipdialog.cpp:298
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&அடுத்தது"
