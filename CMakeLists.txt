@@ -47,7 +47,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KCONFIGWIDGETS
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfigVersion.cmake"
                         SOVERSION 5)
 
-if (NOT ANDROID)
+if (NOT ANDROID AND NOT WIN32)
   find_package(KF5Auth ${KF_DEP_VERSION} REQUIRED)
 endif()
 find_package(KF5CoreAddons ${KF_DEP_VERSION} REQUIRED)
