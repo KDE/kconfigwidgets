@@ -12,6 +12,9 @@ Dependencies:
 - 'on': ['Linux', 'FreeBSD', 'Windows', 'macOS']
   'require':
     'frameworks/kdoctools' : '@same'
+
+- 'on': ['Linux', 'FreeBSD']
+  'require':
     'frameworks/kauth' : '@same'
 
 Options:
