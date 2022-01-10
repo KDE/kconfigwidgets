@@ -86,8 +86,8 @@ class QMenuBar;
  *    actions which can be found in the QMenuBar. There will also be the
  *    showMenuBarAction if you set it with setShowMenuBarAction().
  * 3. Do not worry about the help menu. KHamburgerMenu will automatically contain
- *    a help menu as the last item (if you set a QMenuBar which is expected to
- *    have the help menu as the last action).
+ *    a help menu as the second to last item (if you set a QMenuBar which is
+ *    expected to have the help menu as the last action).
  *
  * @since 5.81
  */

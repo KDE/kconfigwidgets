@@ -33,13 +33,15 @@ KHamburgerMenuPrivate::KHamburgerMenuPrivate(KHamburgerMenu *qq)
     , m_actualMenu{nullptr}
     , m_advertiseMenuBar{true}
     , m_menuBarAdvertisementMenu{nullptr}
-    , m_exclusiveActionsCount{0}
     , m_lastUsedMenu{nullptr}
     , m_listeners{new ListenerContainer(this)}
     , m_menuAction{nullptr}
     , m_menuBar{nullptr}
     , m_menuResetNeeded{false}
     , m_showMenuBarAction{nullptr}
+    , m_showMenuBarText{""}
+    , m_showMenuBarWithAllActionsText{""}
+    , m_helpIconIsSet{false}
 {
     q_ptr->setPriority(QAction::LowPriority);
     connect(q_ptr, &QAction::changed, this, &KHamburgerMenuPrivate::slotActionChanged);
@@ -226,9 +228,6 @@ QAction *KHamburgerMenuPrivate::actionWithExclusivesFrom(QAction *from,
         return nullptr; // The action is non-exclusive/already visible elsewhere.
     }
     if (!from->menu() || from->menu()->isEmpty()) {
-        if (!from->isSeparator()) {
-            m_exclusiveActionsCount++;
-        }
         return from;    // The action is exclusive and doesn't have a menu.
     }
     std::unique_ptr<QAction> menuActionWithExclusives(new QAction(from->icon(), from->text(), parent));
@@ -305,29 +304,51 @@ std::unique_ptr<QMenu> KHamburgerMenuPrivate::newMenu()
     }
     // Add the last two menu actions
     if (m_menuBar) {
-        visibleActions.insert(m_menuBar->actions().last()); // Help menu will be added later.
+        connect(menu.get(), &QMenu::aboutToShow, this, [this]() {
+            if (m_menuBar->actions().last()->icon().isNull()) {
+                m_helpIconIsSet = false;
+                m_menuBar->actions().last()->setIcon(QIcon::fromTheme(QStringLiteral("help-contents"))); // set "Help" menu icon
+            } else {
+                m_helpIconIsSet = true; // if the "Help" icon was set by the application, we want to leave it untouched
+            }
+        });
+        connect(menu.get(), &QMenu::aboutToHide, this, [this]() {
+            if (m_menuBar->actions().last()->icon().name() == QStringLiteral("help-contents") && !m_helpIconIsSet) {
+                m_menuBar->actions().last()->setIcon(QIcon());
+            }
+        });
+        menu->addAction(m_menuBar->actions().last()); // add "Help" menu
+        visibleActions.insert(m_menuBar->actions().last());
         if (m_advertiseMenuBar) {
             menu->addSeparator();
             m_menuBarAdvertisementMenu = newMenuBarAdvertisementMenu(visibleActions);
             menu->addAction(m_menuBarAdvertisementMenu->menuAction());
         }
-        menu->addSeparator();
-        menu->addAction(m_menuBar->actions().last()); // add "Help" menu
     }
     return menu;
 }
 
-std::unique_ptr<QMenu> KHamburgerMenuPrivate::newMenuBarAdvertisementMenu(
-                                        std::unordered_set<const QAction *> &visibleActions) const
+std::unique_ptr<QMenu> KHamburgerMenuPrivate::newMenuBarAdvertisementMenu(std::unordered_set<const QAction *> &visibleActions)
 {
     std::unique_ptr<QMenu> advertiseMenuBarMenu(new QMenu());
+    m_showMenuBarWithAllActionsText = i18nc("@action:inmenu A menu item that advertises and enables the menubar", "Show &Menubar with All Actions");
+    connect(advertiseMenuBarMenu.get(), &QMenu::aboutToShow, this, [this]() {
+        if (m_showMenuBarAction) {
+            m_showMenuBarText = m_showMenuBarAction->text();
+            m_showMenuBarAction->setText(m_showMenuBarWithAllActionsText);
+        }
+    });
+    connect(advertiseMenuBarMenu.get(), &QMenu::aboutToHide, this, [this]() {
+        if (m_showMenuBarAction && m_showMenuBarAction->text() == m_showMenuBarWithAllActionsText) {
+            m_showMenuBarAction->setText(m_showMenuBarText);
+        }
+    });
     if (m_showMenuBarAction) {
         advertiseMenuBarMenu->addAction(m_showMenuBarAction);
         visibleActions.insert(m_showMenuBarAction);
     }
     QAction *section = advertiseMenuBarMenu->addSeparator();
 
-    m_exclusiveActionsCount = 0;
     const auto menuBarActions = m_menuBar->actions();
     for (QAction *menuAction : menuBarActions) {
         QAction *menuActionWithExclusives = actionWithExclusivesFrom(menuAction,
@@ -337,12 +358,9 @@ std::unique_ptr<QMenu> KHamburgerMenuPrivate::newMenuBarAdvertisementMenu(
             advertiseMenuBarMenu->addAction(menuActionWithExclusives);
         }
     }
-    advertiseMenuBarMenu->setTitle(i18ncp(
-        "@action:inmenu A menu text advertising its contents (more features).",
-                                          "For %1 more action:", "For %1 more actions:", m_exclusiveActionsCount));
-    section->setText(i18ncp(
-        "@action:inmenu A section heading advertising the contents of the menu bar",
-        "%1 Menu Bar Exclusive Action", "%1 Menu Bar Exclusive Actions", m_exclusiveActionsCount));
+    advertiseMenuBarMenu->setIcon(QIcon::fromTheme(QStringLiteral("view-more-symbolic")));
+    advertiseMenuBarMenu->setTitle(i18nc("@action:inmenu A menu text advertising its contents (more features).", "More"));
+    section->setText(i18nc("@action:inmenu A section heading advertising the contents of the menu bar", "More Actions"));
     return advertiseMenuBarMenu;
 }
 
