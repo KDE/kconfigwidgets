@@ -151,7 +151,7 @@ class AutomaticAction : public QAction
     Q_OBJECT
 
 public:
-    AutomaticAction(const QIcon &icon, const QString &text, const QList<QKeySequence> &shortcut, const char *slot, QObject *parent);
+    AutomaticAction(const QIcon &icon, const QString &text, KStandardShortcut::StandardShortcut standardShortcut, const char *slot, QObject *parent);
 public Q_SLOTS:
     inline void cut()
     {

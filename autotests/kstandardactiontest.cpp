@@ -1,5 +1,6 @@
 /*
     SPDX-FileCopyrightText: 2007 Simon Hausmann <hausmann@kde.org>
+    SPDX-FileCopyrightText: 2022 David Redondo <kde@david-redondo.de>
 
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
@@ -7,6 +8,7 @@
 #include "kstandardactiontest.h"
 
 #include <QAction>
+#include <QStandardPaths>
 #include <QTest>
 
 #include "kstandardaction.h"
@@ -25,6 +27,22 @@ void tst_KStandardAction::shortcutForActionId()
     actShortcut = cut->shortcuts();
     QVERIFY(stdShortcut == actShortcut);
     delete cut;
+}
+
+void tst_KStandardAction::changingShortcut()
+{
+    QStandardPaths::setTestModeEnabled(true);
+    KStandardShortcut::saveShortcut(KStandardShortcut::Cut, KStandardShortcut::hardcodedDefaultShortcut(KStandardShortcut::Cut));
+    const QList<QKeySequence> newShortcut{Qt::CTRL + Qt::Key_Adiaeresis};
+    QVERIFY(newShortcut != KStandardShortcut::cut());
+
+    std::unique_ptr<QAction> action(KStandardAction::cut(nullptr));
+    std::unique_ptr<QAction> action2(KStandardAction::create(KStandardAction::Cut, nullptr, nullptr, nullptr));
+    QCOMPARE(action->shortcuts(), KStandardShortcut::cut());
+    QCOMPARE(action2->shortcuts(), KStandardShortcut::cut());
+    KStandardShortcut::saveShortcut(KStandardShortcut::Cut, newShortcut);
+    QTRY_COMPARE(action->shortcuts(), newShortcut);
+    QTRY_COMPARE(action2->shortcuts(), newShortcut);
 }
 
 class Receiver : public QObject
