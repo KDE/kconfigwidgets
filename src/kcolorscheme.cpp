@@ -165,7 +165,8 @@ struct DecoDefaultColors {
 };
 
 // clang-format off
-// these numbers come from the Breeze color scheme ([breeze]/colors/Breeze.colors)
+// These numbers come from the default color scheme which is currently
+// Breeze Light ([breeze repo]/colors/BreezeLight.colors)
 static const SetDefaultColors defaultViewColors = {
     { 255, 255, 255 }, // Background
     { 247, 247, 247 }, // Alternate
