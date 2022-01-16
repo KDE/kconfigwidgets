@@ -150,30 +150,30 @@ public:
         textLayout.draw(p, pos);
     }
 
-    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
+    void paint(QPainter *painter, const QStyleOptionViewItem &opt, const QModelIndex &index) const override
     {
         painter->save();
 
         /**
          * Draw everything, (widget, icon etc) except the text
          */
-        QStyleOptionViewItem optionCopy = option;
-        initStyleOption(&optionCopy, index);
-        optionCopy.text.clear(); // clear old text
+        QStyleOptionViewItem option = opt;
+        initStyleOption(&option, index);
+        option.text.clear(); // clear old text
         QStyle *style = option.widget->style();
-        style->drawControl(QStyle::CE_ItemViewItem, &optionCopy, painter, option.widget);
+        style->drawControl(QStyle::CE_ItemViewItem, &option, painter, option.widget);
 
         const int hMargin = style->pixelMetric(QStyle::PM_FocusFrameHMargin, &option, option.widget);
 
-        QRect outputRect = option.rect;
+        QRect textRect = option.rect;
 
         const CommandBarFilterModel *model = static_cast<const CommandBarFilterModel*>(index.model());
         if (model->hasActionsWithIcons()) {
             const int iconWidth = option.decorationSize.width() + (hMargin * 2);
             if (option.direction == Qt::RightToLeft) {
-                outputRect.adjust(0, 0, -iconWidth, 0);
+                textRect.adjust(0, 0, -iconWidth, 0);
             } else {
-                outputRect.adjust(iconWidth, 0, 0, 0);
+                textRect.adjust(iconWidth, 0, 0, 0);
             }
         }
 
@@ -209,8 +209,8 @@ public:
             return QTextLayout::FormatRange{fr.start + actionNameStart, fr.length, f};
         });
 
-        outputRect.adjust(hMargin, 0, -hMargin, 0);
-        paintItemText(painter, original, outputRect, option, std::move(formats));
+        textRect.adjust(hMargin, 0, -hMargin, 0);
+        paintItemText(painter, original, textRect, option, std::move(formats));
 
         painter->restore();
     }
