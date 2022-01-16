@@ -170,7 +170,7 @@ public:
 
         const CommandBarFilterModel *model = static_cast<const CommandBarFilterModel*>(index.model());
         if (model->hasActionsWithIcons()) {
-            const int iconWidth = option.decorationSize.width() + hMargin;
+            const int iconWidth = option.decorationSize.width() + (hMargin * 2);
             if (option.direction == Qt::RightToLeft) {
                 outputRect.adjust(0, 0, -iconWidth, 0);
             } else {
