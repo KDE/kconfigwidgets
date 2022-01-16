@@ -117,8 +117,7 @@ public:
 
         // set formats and font
         QTextLayout textLayout(text, options.font);
-        const QVector<QTextLayout::FormatRange> fmts = textLayout.formats();
-        formats.append(fmts);
+        formats.append(textLayout.formats());
         textLayout.setFormats(formats);
 
         // set alignment, rtls etc
@@ -205,6 +204,7 @@ public:
         const auto fmtRanges = KFuzzyMatcher::matchedRanges(m_filterString, str);
         QTextCharFormat f;
         f.setForeground(option.palette.link());
+        formats.reserve(formats.size() + fmtRanges.size());
         std::transform(fmtRanges.begin(), fmtRanges.end(), std::back_inserter(formats), [f, actionNameStart](const KFuzzyMatcher::Range &fr) {
             return QTextLayout::FormatRange{fr.start + actionNameStart, fr.length, f};
         });
