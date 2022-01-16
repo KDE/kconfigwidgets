@@ -191,12 +191,12 @@ public:
         QVector<QTextLayout::FormatRange> formats;
         if (componentIdx > 0) {
             QTextCharFormat gray;
-            gray.setForeground(option.palette.color(QPalette::PlaceholderText));
+            gray.setForeground(option.palette.placeholderText());
             formats.append({0, componentIdx, gray});
         }
 
         QTextCharFormat fmt;
-        fmt.setForeground(option.palette.link().color());
+        fmt.setForeground(option.palette.link());
         fmt.setFontWeight(QFont::Bold);
 
         /**
