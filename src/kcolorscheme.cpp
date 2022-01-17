@@ -209,7 +209,7 @@ static const SetDefaultColors defaultButtonColors = {
 static const SetDefaultColors defaultSelectionColors = {
     {  61, 174, 233 }, // Background
     { 163, 212, 250 }, // Alternate
-    { 255, 255, 255 }, // Normal
+    {  35, 38,   39 }, // Normal
     { 112, 125, 138 }, // Inactive
     { 255, 255, 255 }, // Active
     { 253, 188,  75 }, // Link
