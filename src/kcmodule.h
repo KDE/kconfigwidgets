@@ -138,7 +138,7 @@ public:
      */
     virtual QString quickHelp() const;
 
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 90)
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 90)
     /**
      * This is generally only called for the KBugReport.
      * If you override you should  have it return a pointer to a constant.
