@@ -20,6 +20,8 @@
 #include <QHeaderView>
 #include <QLabel>
 #include <QGraphicsOpacityEffect>
+#include <QScreen>
+#include <QMainWindow>
 
 #include <KConfigGroup>
 #include <KFuzzyMatcher>
@@ -428,39 +430,12 @@ public:
         m_lineEdit.clear();
     }
 
-    /**
-     * Updates view size and position relative
-     * to the parent widget.
-     */
-    void updateViewGeometry(KCommandBar *q);
-
     void slotReturnPressed(KCommandBar *q);
 
     void setLastUsedActions();
 
     QStringList lastUsedActions() const;
 };
-
-void KCommandBarPrivate::updateViewGeometry(KCommandBar *q)
-{
-    if (!q->parentWidget()) {
-        return;
-    }
-    auto parentWidget = q->parentWidget();
-
-    const QSize centralSize = parentWidget->size();
-
-    const QSize viewMaxSize(centralSize.width() / 2.4, centralSize.height() / 2);
-
-    // Position should be central over window
-    const int xPos = std::max(0, (centralSize.width() - viewMaxSize.width()) / 2);
-    const int yPos = std::max(0, (centralSize.height() - viewMaxSize.height()) * 1 / 4);
-
-    const QPoint p(xPos, yPos);
-    q->move(p + parentWidget->pos());
-
-    q->setFixedSize(viewMaxSize);
-}
 
 void KCommandBarPrivate::slotReturnPressed(KCommandBar *q)
 {
@@ -628,9 +603,47 @@ void KCommandBar::setActions(const QVector<ActionGroup> &actions)
     d->m_model.refresh(actions);
     d->reselectFirst();
 
-    d->updateViewGeometry(this);
     show();
     setFocus();
+}
+
+void KCommandBar::show()
+{
+    QRect parentGeometry;
+    if (const QWidget *parent = parentWidget()) {
+        parentGeometry = parent->geometry();
+        if (const QMainWindow *window = qobject_cast<const QMainWindow*>(parent)) {
+            parentGeometry.setTop(window->mapToGlobal(window->centralWidget()->pos()).y());
+            parentGeometry.setHeight(window->centralWidget()->height());
+        }
+    } else {
+        parentGeometry = screen()->availableGeometry();
+    }
+
+    static constexpr int minWidth = 500;
+    const int maxWidth = parentGeometry.width();
+    const int preferredWidth = maxWidth / 2.4;
+
+    static constexpr int minHeight = 250;
+    const int maxHeight = parentGeometry.height();
+    const int preferredHeight = maxHeight / 2;
+
+    const QSize size {
+        std::min(maxWidth, std::max(preferredWidth, minWidth)),
+        std::min(maxHeight, std::max(preferredHeight, minHeight))
+    };
+
+    // resize() doesn't work here, so use setFixedSize() instead
+    setFixedSize(size);
+
+    // set the position to the top-center of the parent
+    // just below the menubar/toolbar (if any)
+    const QPoint position {
+        parentGeometry.center().x() - size.width() / 2,
+        parentGeometry.y()
+    };
+
+    popup(position);
 }
 
 bool KCommandBar::eventFilter(QObject *obj, QEvent *event)

@@ -75,6 +75,9 @@ public:
      */
     void setActions(const QVector<ActionGroup> &actions);
 
+public Q_SLOTS:
+    void show();
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
