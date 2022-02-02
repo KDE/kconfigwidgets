@@ -177,22 +177,15 @@ void KLanguageButton::insertSeparator(int index)
 
 void KLanguageButton::loadAllLanguages()
 {
-    QStringList langlist;
     const QStringList localeDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("locale"), QStandardPaths::LocateDirectory);
     for (const QString &localeDir : localeDirs) {
-        const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
+        const QStringList entries = QDir(localeDir).entryList(QDir::Dirs, QDir::Name);
         for (const QString &d : entries) {
             const QString entryFile = localeDir + QLatin1Char('/') + d + QStringLiteral("/kf5_entry.desktop");
             if (QFile::exists(entryFile)) {
-                langlist.append(entryFile);
+                insertLanguage(d);
             }
         }
-    }
-    langlist.sort();
-    for (int i = 0, count = langlist.count(); i < count; ++i) {
-        QString fpath = langlist[i].left(langlist[i].length() - 14);
-        QString code = fpath.mid(fpath.lastIndexOf(QLatin1Char('/')) + 1);
-        insertLanguage(code);
     }
 
     setCurrentItem(d->locale);
