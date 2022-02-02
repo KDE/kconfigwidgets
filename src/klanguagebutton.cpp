@@ -188,6 +188,7 @@ void KLanguageButton::loadAllLanguages()
         }
     }
 
+    d->ids.removeDuplicates();
     setCurrentItem(d->locale);
 }
 
