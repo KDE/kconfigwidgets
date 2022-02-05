@@ -1,0 +1,587 @@
+# translation of kdelibs4.po to Latvian
+# kdelibs.po tulkojums uz Latviešu valodu
+# Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
+#
+# Maris Nartiss <maris.nartiss@gmail.com>, 2005.
+# Maris Nartiss <maris.kde@gmail.com>, 2006, 2007, 2008, 2009, 2010, 2011, 2020.
+# Linux localization project <viesturs.zarins@mii.lu.lv>, 2007.
+# Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2007, 2008, 2010.
+# Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
+# Einars Sprugis <einars8@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-25 00:40+0000\n"
+"PO-Revision-Date: 2020-11-13 10:45+0200\n"
+"Last-Translator: Maris Nartiss <maris.kde@gmail.com>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Launchpad-Export-Date: 2007-11-22 17:44+0000\n"
+"X-Generator: Lokalize 20.08.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Viesturs Zariņš, Māris Nartišs"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "viesturs.zarins@mi.lu.lv, maris.kde@gmail.com"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Jums prasīs autentificēties pirms saglabāšanas"
+
+#: kcmodule.cpp:193
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Jums nav atļaujas saglabāt konfigurāciju"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Noklusētais"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Autonoteikt"
+
+#: kcolorschememanager.cpp:200 kcolorschememanager.cpp:205
+#, kde-format
+msgid "Color Scheme"
+msgstr "Krāsu shēma"
+
+#: kcolorschememodel.cpp:71
+#, kde-format
+msgid "Default"
+msgstr "Noklusētais"
+
+#: kcommandbar.cpp:584
+#, kde-format
+msgid "No commands matching the filter"
+msgstr ""
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Konfigurēt"
+
+#: khamburgermenu.cpp:128
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "Menu"
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "Izvēlne"
+
+#: khamburgermenu.cpp:334
+#, fuzzy, kde-format
+#| msgid "Show all options"
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Parādīt visas opcijas"
+
+#: khamburgermenu.cpp:362
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@option:check An item in a list of resources that allows to query for "
+#| "more resources to put in the list"
+#| msgid "More..."
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Vairāk..."
+
+#: khamburgermenu.cpp:363
+#, fuzzy, kde-format
+#| msgid "More Actions"
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Vairāk darbību"
+
+#: krecentfilesaction.cpp:68
+#, kde-format
+msgid "No Entries"
+msgstr "Nav ierakstu"
+
+#: krecentfilesaction.cpp:74
+#, kde-format
+msgid "Clear List"
+msgstr "Tīrīt sarakstu"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Atpakaļ"
+
+#: kstandardaction.cpp:165
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "Uz &priekšu"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Mājas"
+
+#: kstandardaction.cpp:176
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Palīdzība"
+
+#: kstandardaction.cpp:233
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Rādīt izvēlnes joslu <p>Parāda izvēlnes joslu, ja tā ir noslēpta</p>"
+
+#: kstandardaction.cpp:254
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Rādīt stāvokļjoslu<p>Parāda stāvokļjoslu - tā ir josla loga apakšā, kas "
+"parāda stāvokļa informāciju.</p>"
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&Jauns"
+
+#: kstandardaction_p.h:30
+msgid "Create new document"
+msgstr "Izveidot jaunu dokumentu"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "&Atvērt..."
+
+#: kstandardaction_p.h:31
+msgid "Open an existing document"
+msgstr "Atvērt eksistējošu dokumentu"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "Atvērt &nesenu"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr "Atvērt nesen atvērtu dokumentu"
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "&Saglabāt"
+
+#: kstandardaction_p.h:33
+msgid "Save document"
+msgstr "Saglabāt dokumentu"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Saglabāt &kā..."
+
+#: kstandardaction_p.h:34
+msgid "Save document under a new name"
+msgstr "Saglabāt dokumentu ar jaunu nosaukumu"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "At&statīt"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr "Atstatīt dokumentā izdarītās nesaglabātās izmaiņas"
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&Aizvērt"
+
+#: kstandardaction_p.h:36
+msgid "Close document"
+msgstr "Aizvērt dokumentu"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "&Drukāt..."
+
+#: kstandardaction_p.h:37
+msgid "Print document"
+msgstr "Drukāt dokumentu"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "Drukas &priekšskatījums"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr "Rādīt dokumenta drukas priekšskatījumu"
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&Pasts..."
+
+#: kstandardaction_p.h:39
+msgid "Send document by mail"
+msgstr "Nosūtīt dokumentu pa e-pastu"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "&Iziet"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Iziet no programmas"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "&Atsaukt"
+
+#: kstandardaction_p.h:42
+msgid "Undo last action"
+msgstr "Atsaukt pēdējo darbību"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "Atkā&rtot"
+
+#: kstandardaction_p.h:43
+msgid "Redo last undone action"
+msgstr "Atkārtoti darīt pēdējo atsaukto darbību"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "Izgriez&t"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr "Izgriezt izvēli un ievietot starpliktuvē"
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Kopēt"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr "Kopēt izvēli uz starpliktuvi"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "&Ielīmēt"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "Paste clipboard content"
+msgstr "Ielīmēt starpliktuves saturu"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "T&īrīt"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "Iezīmēt &visu"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "&Noņemt iezīmējumu"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&Meklēt..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "Meklēt &nākamo"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Meklēt &iepriekšējo"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "&Aizvietot..."
+
+#: kstandardaction_p.h:58
+msgid "&Actual Size"
+msgstr "F&aktiskais Izmērs"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr "Aplūkot dokumentu tā patiesajā izmērā"
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "&Ietilpināt lapu"
+
+#: kstandardaction_p.h:59
+msgid "Zoom to fit page in window"
+msgstr "Tuvināt tā, lai ietilpst logā"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Ietilpināt lapas &platumā"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr "Tuvināt tā, lai lapas platums ir loga platumā"
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Ietilpināt lapas &augstumā"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr "Tuvināt tā, lai lapas augstums ietilpst logā"
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "Pa&lielināt"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "Sa&mazināt"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Mērogs..."
+
+#: kstandardaction_p.h:64
+msgid "Select zoom level"
+msgstr "Izvēlēties mēroga līmeni"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr "&Atsvaidzināt"
+
+#: kstandardaction_p.h:65
+msgid "Refresh document"
+msgstr "Atsvaidzināt dokumentu"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "&Uz augšu"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr "Iet uz augšu"
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "&Iepriekšējā lapa"
+
+#: kstandardaction_p.h:72
+msgid "Go to previous page"
+msgstr "Iet uz iepriekšējo lapu"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "&Nākamā lapa"
+
+#: kstandardaction_p.h:73
+msgid "Go to next page"
+msgstr "Iet uz nākošo lapu"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Iet uz..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "&Iet uz lapu..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Iet uz rindu..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "&Pirmā lapa"
+
+#: kstandardaction_p.h:77
+msgid "Go to first page"
+msgstr "Iet uz pirmo lapu"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "&Pēdējā lapa"
+
+#: kstandardaction_p.h:78
+msgid "Go to last page"
+msgstr "Iet uz pēdējo lapu"
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "&Atpakaļ"
+
+#: kstandardaction_p.h:79
+msgid "Go back in document"
+msgstr "Iet atpakaļ dokumentā"
+
+#: kstandardaction_p.h:80
+msgid "&Forward"
+msgstr "Uz &priekšu"
+
+#: kstandardaction_p.h:80
+msgid "Go forward in document"
+msgstr "Iet uz priekšu dokumentā"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "&Pievienot grāmatzīmi"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "&Rediģēt grāmatzīmes..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "&Pareizrakstība..."
+
+#: kstandardaction_p.h:85
+msgid "Check spelling in document"
+msgstr "Pārbaudīt dokumenta pareizrakstību"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "Rādīt &izvēlnes joslu"
+
+#: kstandardaction_p.h:87
+msgid "Show or hide menubar"
+msgstr "Parādīt vai paslēpt izvēlnes joslu"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "Rādīt &rīkjoslu"
+
+#: kstandardaction_p.h:88
+msgid "Show or hide toolbar"
+msgstr "Parādīt vai paslēpt rīkjoslu"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "Rādīt st&āvokļjoslu"
+
+#: kstandardaction_p.h:89
+msgid "Show or hide statusbar"
+msgstr "Parādīt vai paslēpt stāvokļjoslu"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "Pilnekrāna &režīms"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "&Saglabāt iestatījumus"
+
+#: kstandardaction_p.h:94
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Konfigurēt tastatūras &īsceļus..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Konfigurēt %1..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Konfigurēt rīk&joslas..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "Konfigurēt &paziņojumus..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &rokasgrāmata"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "Kas &tas ir?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "&Dienas padoms"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "&Ziņot par kļūdu..."
+
+#: kstandardaction_p.h:108
+msgid "Configure &Language..."
+msgstr "Konfigurēt va&lodu..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "&Par %1"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "Par &KDE"
+
+#: kstandardaction_p.h:111
+msgid "&Delete"
+msgstr "&Dzēst"
+
+#: kstandardaction_p.h:112
+msgid "&Rename..."
+msgstr "Pā&rdēvēt..."
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr "Pārvietot uz &miskasti"
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr "Zie&dot"
+
+#: kstandardaction_p.h:115
+#, fuzzy
+#| msgid "Open &Recent"
+msgid "Open &Menu"
+msgstr "Atvērt &nesenu"
+
+#: ktipdialog.cpp:219
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Dienas padoms"
+
+#: ktipdialog.cpp:235
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Vai jūs zināt...?\n"
+
+#: ktipdialog.cpp:288
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Rādīt padomus pie palaišanas"
+
+#: ktipdialog.cpp:293
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "Ie&priekšējais"
+
+#: ktipdialog.cpp:298
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Nākamais"
