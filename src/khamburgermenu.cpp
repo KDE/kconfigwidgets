@@ -395,7 +395,7 @@ void KHamburgerMenuPrivate::updateVisibility()
     q->setVisible(!menuBarVisible);
 
     if (!m_menuAction) {
-        if (menuBarVisible) {
+        if (menuBarVisible && m_actualMenu) {
             m_actualMenu.release()->deleteLater(); // might as well free up some memory
         }
         return;
