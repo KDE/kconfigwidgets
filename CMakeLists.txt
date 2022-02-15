@@ -43,12 +43,18 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
 
+if (NOT ANDROID AND NOT WIN32)
+    option(WITH_KAUTH "Build with KAuth support" ON)
+else()
+    set(WITH_KAUTH OFF)
+endif()
+
 ecm_setup_version(PROJECT VARIABLE_PREFIX KCONFIGWIDGETS
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfigVersion.cmake"
                         SOVERSION 5)
 
-if (NOT ANDROID AND NOT WIN32)
+if (WITH_KAUTH)
   find_package(KF5Auth ${KF_DEP_VERSION} REQUIRED)
 endif()
 find_package(KF5CoreAddons ${KF_DEP_VERSION} REQUIRED)
