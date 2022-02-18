@@ -16,7 +16,7 @@
 #include <KLocalizedString>
 #include <kconfigdialogmanager.h>
 #ifndef KCONFIGWIDGETS_NO_KAUTH
-#include <KAuthExecuteJob>
+#include <KAuth/ExecuteJob>
 #endif
 
 class KCModulePrivate
