@@ -22,6 +22,7 @@ include(ECMGenerateHeaders)
 include(ECMAddQch)
 include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
+include(CMakeDependentOption)
 
 set(REQUIRED_QT_VERSION 5.15.2)
 find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} CONFIG REQUIRED Widgets)
@@ -40,7 +41,7 @@ set(EXCLUDE_DEPRECATED_BEFORE_AND_AT 0 CACHE STRING "Control the range of deprec
 option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
-option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON)
+cmake_dependent_option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON "NOT CMAKE_CROSSCOMPILING" OFF)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
 
 if (NOT ANDROID AND NOT WIN32)
