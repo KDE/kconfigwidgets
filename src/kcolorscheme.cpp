@@ -289,11 +289,15 @@ public:
     QBrush foreground(KColorScheme::ForegroundRole) const;
     QBrush decoration(KColorScheme::DecorationRole) const;
     qreal contrast() const;
-private:
-    struct {
-        QBrush fg[KColorScheme::NForegroundRoles];
-        QBrush bg[KColorScheme::NBackgroundRoles];
-        QBrush deco[KColorScheme::NDecorationRoles];
+
+    struct Brushes {
+        std::array<QBrush, KColorScheme::NForegroundRoles> fg;
+        std::array<QBrush, KColorScheme::NForegroundRoles> bg;
+        std::array<QBrush, KColorScheme::NForegroundRoles> deco;
+
+        bool operator==(const Brushes &b) const {
+            return this == &b || (fg == b.fg && bg == b.bg && deco == b.deco);
+        }
     } _brushes;
     qreal _contrast;
 
@@ -552,6 +556,14 @@ KColorScheme::KColorScheme(QPalette::ColorGroup state, ColorSet set, KSharedConf
     default:
         d = new KColorSchemePrivate(config, state, "Colors:View", defaultViewColors);
     }
+}
+
+bool KColorScheme::operator==(const KColorScheme &other) const
+{
+    return d == other.d
+        || (d->_contrast == other.d->_contrast
+            && d->_brushes == other.d->_brushes)
+    ;
 }
 
 // static

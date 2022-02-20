@@ -477,6 +477,8 @@ public:
      */
     static bool isColorSetSupported(const KSharedConfigPtr &config, KColorScheme::ColorSet set);
 
+    bool operator==(const KColorScheme &other) const;
+
 private:
     QExplicitlySharedDataPointer<KColorSchemePrivate> d;
 };
