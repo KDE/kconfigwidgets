@@ -116,7 +116,7 @@ endif()
 include(CMakePackageConfigHelpers)
 
 set(HAVE_KAUTH FALSE)
-if (TARGET KF5::Auth)
+if (WITH_KAUTH)
   set(HAVE_KAUTH TRUE)
 endif()
 configure_package_config_file(
