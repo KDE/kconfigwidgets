@@ -477,6 +477,9 @@ public:
      */
     static bool isColorSetSupported(const KSharedConfigPtr &config, KColorScheme::ColorSet set);
 
+    /**
+     * @since 5.92
+     */
     bool operator==(const KColorScheme &other) const;
 
 private:
