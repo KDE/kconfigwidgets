@@ -18,6 +18,8 @@
 #include <QWidget>
 #endif
 
+#include <array>
+
 // BEGIN StateEffects
 class StateEffects
 {
