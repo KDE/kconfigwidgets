@@ -159,6 +159,7 @@ struct SetDefaultColors {
     int NegativeText[3];
     int NeutralText[3];
     int PositiveText[3];
+    int Separator[3];
 };
 
 struct DecoDefaultColors {
@@ -179,7 +180,8 @@ static const SetDefaultColors defaultViewColors = {
     { 155,  89, 182 }, // Visited
     { 218,  68,  83 }, // Negative
     { 246, 116,   0 }, // Neutral
-    {  39, 174,  96 }  // Positive
+    {  39, 174,  96 }, // Positive
+    {   0,   0,   0 }
 };
 
 static const SetDefaultColors defaultWindowColors = {
@@ -417,6 +419,8 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
             windowCfg.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText)));
         _brushes.fg[KColorScheme::PositiveText] = cfg.readEntry("ForegroundPositive", 
             windowCfg.readEntry("ForegroundPositive", SET_DEFAULT(PositiveText)));
+        _brushes.fg[KColorScheme::Separator] = cfg.readEntry("Separator", 
+            windowCfg.readEntry("Separator", SET_DEFAULT(Separator)));
 
         _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus", 
             windowCfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus)));
@@ -431,6 +435,7 @@ void KColorSchemePrivate::init(const KSharedConfigPtr &config,
         _brushes.fg[KColorScheme::NegativeText] = cfg.readEntry("ForegroundNegative", SET_DEFAULT(NegativeText));
         _brushes.fg[KColorScheme::NeutralText] = cfg.readEntry("ForegroundNeutral", SET_DEFAULT(NeutralText));
         _brushes.fg[KColorScheme::PositiveText] = cfg.readEntry("ForegroundPositive", SET_DEFAULT(PositiveText));
+        _brushes.fg[KColorScheme::Separator] = cfg.readEntry("Separator", SET_DEFAULT(Separator));
 
         _brushes.deco[KColorScheme::FocusColor] = cfg.readEntry("DecorationFocus", DECO_DEFAULT(Focus));
         _brushes.deco[KColorScheme::HoverColor] = cfg.readEntry("DecorationHover", DECO_DEFAULT(Hover));

@@ -252,6 +252,10 @@ public:
          */
         PositiveText,
         /**
+         * Separator color; used for drawing separators between widgets.
+         */
+        Separator,
+        /**
          * Number of foreground roles.
          * @since 5.65
          */
