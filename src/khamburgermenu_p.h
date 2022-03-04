@@ -56,10 +56,10 @@ public:
     /** @see KHamburgerMenu::addToMenu() */
     void addToMenu(QMenu *menu);
 
-    /** @see KHamburgerMenu::avoidRedundancyWith() */
+    /** @see KHamburgerMenu::hideActionsOf() */
     void hideActionsOf(QWidget *widget);
 
-    /** @see KHamburgerMenu::stopAvoidRedundancyWith() */
+    /** @see KHamburgerMenu::showActionsOf() */
     void showActionsOf(QWidget *widget);
 
     /** @see KHamburgerMenu::createWidget() */
