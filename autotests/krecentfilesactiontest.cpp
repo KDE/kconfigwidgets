@@ -6,6 +6,8 @@
 */
 
 #include "krecentfilesactiontest.h"
+
+#include <QActionGroup>
 #include <QMenu>
 #include <QTest>
 #include <krecentfilesaction.h>
