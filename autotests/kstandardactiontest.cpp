@@ -31,6 +31,7 @@ void tst_KStandardAction::shortcutForActionId()
 
 void tst_KStandardAction::changingShortcut()
 {
+    // GIVEN
     QStandardPaths::setTestModeEnabled(true);
     KStandardShortcut::saveShortcut(KStandardShortcut::Cut, KStandardShortcut::hardcodedDefaultShortcut(KStandardShortcut::Cut));
     const QList<QKeySequence> newShortcut{Qt::CTRL + Qt::Key_Adiaeresis};
@@ -40,7 +41,12 @@ void tst_KStandardAction::changingShortcut()
     std::unique_ptr<QAction> action2(KStandardAction::create(KStandardAction::Cut, nullptr, nullptr, nullptr));
     QCOMPARE(action->shortcuts(), KStandardShortcut::cut());
     QCOMPARE(action2->shortcuts(), KStandardShortcut::cut());
+
+    // WHEN
     KStandardShortcut::saveShortcut(KStandardShortcut::Cut, newShortcut);
+
+    // THEN
+    // (wait for KStandardShortcut::shortcutWatcher to notify about the config file change, and for KStandardAction to update the actions...)
     QTRY_COMPARE(action->shortcuts(), newShortcut);
     QTRY_COMPARE(action2->shortcuts(), newShortcut);
 }
