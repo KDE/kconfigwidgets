@@ -202,7 +202,11 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QString &selec
 
 KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(QObject *parent)
 {
-    return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), i18n("Color Scheme"), QString(), parent);
+    KSharedConfigPtr config = KSharedConfig::openConfig();
+    KConfigGroup cg(config, "UiSettings");
+    auto scheme = cg.readEntry("ColorScheme", QString());
+
+    return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), i18n("Color Scheme"), scheme, parent);
 }
 
 void KColorSchemeManager::activateScheme(const QModelIndex &index)

@@ -112,8 +112,9 @@ public:
     /**
      * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
      *
-     * Sets the icon to theme id "preferences-desktop-color", the text to "Color Scheme" and the
-     * selectedSchemeName to an empty string.
+     * Sets the icon to theme id "preferences-desktop-color" and the text to "Color Scheme".
+     * Since 5.93 the selectedSchemeName is set to the value previously saved (if any).
+     * Before that it was set to an empty string.
      * @since 5.67
      */
     KActionMenu *createSchemeSelectionMenu(QObject *parent);
