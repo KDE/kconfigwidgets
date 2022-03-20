@@ -5,19 +5,34 @@
 */
 
 #include <QObject>
+#include <QStandardPaths>
 #include <QTest>
 
 #include "klanguagename.h"
+
+#ifdef Q_OS_WIN
+#include <filesystem>
+#endif
 
 static void setEnvironment()
 {
     qputenv("LANG", "C.UTF-8");
     qputenv("LANGUAGE", "en");
-    qputenv("XDG_DATA_DIRS", qUtf8Printable(QFINDTESTDATA("kf5_entry_data")));
+    QStandardPaths::setTestModeEnabled(true);
     // There is a distinct chance of the envionrment setup being to late and
     // causing flakey results based on the execution env.
     // Make sure we definitely default to english.
     QLocale::setDefault(QLocale::English);
+
+#ifdef Q_OS_WIN
+    const std::string source = QFINDTESTDATA("kf5_entry_data").toStdString();
+    const std::string dest = QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)).toStdString();
+
+    std::filesystem::remove_all(dest);
+    std::filesystem::copy(source, dest, std::filesystem::copy_options::recursive);
+#else
+    qputenv("XDG_DATA_DIRS", qUtf8Printable(QFINDTESTDATA("kf5_entry_data")));
+#endif
 
     // NOTE
     // - fr has no translations
