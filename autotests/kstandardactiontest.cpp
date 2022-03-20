@@ -13,6 +13,11 @@
 
 #include "kstandardaction.h"
 
+void tst_KStandardAction::initTestCase()
+{
+    QStandardPaths::setTestModeEnabled(true);
+}
+
 void tst_KStandardAction::shortcutForActionId()
 {
     QList<QKeySequence> stdShortcut = KStandardShortcut::shortcut(KStandardShortcut::Cut);
@@ -31,8 +36,11 @@ void tst_KStandardAction::shortcutForActionId()
 
 void tst_KStandardAction::changingShortcut()
 {
+#ifdef Q_OS_WINDOWS
+    QSKIP("DBus notifications are disabled on Windows");
+#endif
+
     // GIVEN
-    QStandardPaths::setTestModeEnabled(true);
     KStandardShortcut::saveShortcut(KStandardShortcut::Cut, KStandardShortcut::hardcodedDefaultShortcut(KStandardShortcut::Cut));
     const QList<QKeySequence> newShortcut{Qt::CTRL + Qt::Key_Adiaeresis};
     QVERIFY(newShortcut != KStandardShortcut::cut());
