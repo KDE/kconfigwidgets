@@ -101,13 +101,16 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
             }
         }
     });
-    d->getWindowsMessagesNotifier().handleWMSettingChange();
 #endif
 
     KSharedConfigPtr config = KSharedConfig::openConfig();
     KConfigGroup cg(config, "UiSettings");
     auto scheme = cg.readEntry("ColorScheme", QString());
     activateScheme(indexForScheme(scheme));
+
+#ifdef Q_OS_WIN
+    d->getWindowsMessagesNotifier().handleWMSettingChange();
+#endif
 }
 
 KColorSchemeManager::~KColorSchemeManager()
