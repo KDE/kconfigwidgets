@@ -373,12 +373,16 @@ public:
      */
     QColor shade(ShadeRole) const;
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 93)
     /**
      * Returns the contrast for borders.
      * @return the contrast (between 0 for minimum and 10 for maximum
      *         contrast)
+     * @deprecated since 5.93, use <tt>contrastF() * 10</tt>
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 93, "Use contrastF() * 10")
     static int contrast();
+#endif
 
     /**
      * Returns the contrast for borders as a floating point value.
