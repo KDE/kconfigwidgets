@@ -572,7 +572,7 @@ bool KColorScheme::operator==(const KColorScheme &other) const
 #if KCONFIGCORE_BUILD_DEPRECATED_SINCE(5, 93)
 int KColorScheme::contrast()
 {
-    KConfigGroup g(KSharedConfig::openConfig(), "KDE");
+    KConfigGroup g(defaultConfig(), "KDE");
     return g.readEntry("contrast", 7);
 }
 #endif
@@ -580,8 +580,8 @@ int KColorScheme::contrast()
 // static
 qreal KColorScheme::contrastF(const KSharedConfigPtr &config)
 {
-    KConfigGroup g(config ? config : KSharedConfig::openConfig(), "KDE");
-    return 0.1 * (qreal)contrast();
+    KConfigGroup g(config ? config : defaultConfig(), "KDE");
+    return 0.1 * g.readEntry("contrast", 7);
 }
 
 QBrush KColorScheme::background(BackgroundRole role) const
