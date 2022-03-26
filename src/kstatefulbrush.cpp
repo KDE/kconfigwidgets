@@ -27,6 +27,7 @@ KStatefulBrush::KStatefulBrush()
 
 KStatefulBrush::~KStatefulBrush() = default;
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 94)
 KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::ForegroundRole role, KSharedConfigPtr config)
     : KStatefulBrush()
 {
@@ -69,6 +70,50 @@ KStatefulBrush::KStatefulBrush(const QBrush &brush, const QBrush &background, KS
     if (!config) {
         config = defaultConfig();
     }
+    d->brushes[QPalette::Active] = brush;
+    d->brushes[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush, background);
+    d->brushes[QPalette::Inactive] = StateEffects(QPalette::Inactive, config).brush(brush, background);
+}
+#endif
+
+KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::ForegroundRole role, const QString &fileName)
+    : KStatefulBrush()
+{
+    d->brushes[QPalette::Active] = KColorScheme(QPalette::Active, set, fileName).foreground(role);
+    d->brushes[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, fileName).foreground(role);
+    d->brushes[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, fileName).foreground(role);
+}
+
+KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::BackgroundRole role, const QString &fileName)
+    : KStatefulBrush()
+
+{
+    d->brushes[QPalette::Active] = KColorScheme(QPalette::Active, set, fileName).background(role);
+    d->brushes[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, fileName).background(role);
+    d->brushes[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, fileName).background(role);
+}
+
+KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::DecorationRole role, const QString &fileName)
+    : KStatefulBrush()
+{
+    d->brushes[QPalette::Active] = KColorScheme(QPalette::Active, set, fileName).decoration(role);
+    d->brushes[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, fileName).decoration(role);
+    d->brushes[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, fileName).decoration(role);
+}
+
+KStatefulBrush::KStatefulBrush(const QBrush &brush, const QString &fileName)
+    : KStatefulBrush()
+{
+    const auto config = openColorScheme(fileName);
+    d->brushes[QPalette::Active] = brush;
+    d->brushes[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush);
+    d->brushes[QPalette::Inactive] = StateEffects(QPalette::Inactive, config).brush(brush);
+}
+
+KStatefulBrush::KStatefulBrush(const QBrush &brush, const QBrush &background, const QString &fileName)
+    : KStatefulBrush()
+{
+    const auto config = openColorScheme(fileName);
     d->brushes[QPalette::Active] = brush;
     d->brushes[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush, background);
     d->brushes[QPalette::Inactive] = StateEffects(QPalette::Inactive, config).brush(brush, background);

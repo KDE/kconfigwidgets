@@ -58,8 +58,8 @@ private Q_SLOTS:
     {
         QFETCH(int, colorSet);
         auto file = QFINDTESTDATA("kcolorschemetest.colors");
-        KColorScheme activeScheme(QPalette::Active, static_cast<KColorScheme::ColorSet>(colorSet), KSharedConfig::openConfig(file, KConfig::SimpleConfig));
-        KColorScheme inactiveScheme(QPalette::Inactive, static_cast<KColorScheme::ColorSet>(colorSet), KSharedConfig::openConfig(file, KConfig::SimpleConfig));
+        KColorScheme activeScheme(QPalette::Active, static_cast<KColorScheme::ColorSet>(colorSet), file);
+        KColorScheme inactiveScheme(QPalette::Inactive, static_cast<KColorScheme::ColorSet>(colorSet), file);
 
 #define checkBackgroundRole(role)                                                                                                                              \
     QCOMPARE(activeScheme.background(role).color(), QColor(colorSet, role, QPalette::Active));                                                                 \
@@ -94,7 +94,7 @@ private Q_SLOTS:
     void readContrast()
     {
         auto file = QFINDTESTDATA("kcolorschemetest.colors");
-        QCOMPARE(KColorScheme::contrastF(KSharedConfig::openConfig(file, KConfig::SimpleConfig)), 0.5);
+        QCOMPARE(KColorScheme::contrastF(file), 0.5);
     }
 };
 

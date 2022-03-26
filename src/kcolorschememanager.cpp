@@ -38,24 +38,23 @@ static void activateScheme(const QString &colorSchemePath, bool overrideAutoSwit
     // ApplicationPaletteChange event.
     qApp->setProperty("KDE_COLOR_SCHEME_PATH", colorSchemePath);
     if (colorSchemePath.isEmpty()) {
-        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::Ptr(nullptr)));
+        qApp->setPalette(KColorScheme::createApplicationPalette(QString()));
         // enable auto-switch when Default color scheme is set
         s_overrideAutoSwitch = false;
-        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(s_autoColorSchemePath)));
+        qApp->setPalette(KColorScheme::createApplicationPalette((s_autoColorSchemePath)));
     } else {
-        qApp->setPalette(KColorScheme::createApplicationPalette(KSharedConfig::openConfig(colorSchemePath)));
+        qApp->setPalette(KColorScheme::createApplicationPalette(colorSchemePath));
     }
 }
 
 QIcon KColorSchemeManagerPrivate::createPreview(const QString &path)
 {
-    KSharedConfigPtr schemeConfig = KSharedConfig::openConfig(path, KConfig::SimpleConfig);
     QIcon result;
 
-    KColorScheme activeWindow(QPalette::Active, KColorScheme::Window, schemeConfig);
-    KColorScheme activeButton(QPalette::Active, KColorScheme::Button, schemeConfig);
-    KColorScheme activeView(QPalette::Active, KColorScheme::View, schemeConfig);
-    KColorScheme activeSelection(QPalette::Active, KColorScheme::Selection, schemeConfig);
+    KColorScheme activeWindow(QPalette::Active, KColorScheme::Window, path);
+    KColorScheme activeButton(QPalette::Active, KColorScheme::Button, path);
+    KColorScheme activeView(QPalette::Active, KColorScheme::View, path);
+    KColorScheme activeSelection(QPalette::Active, KColorScheme::Selection, path);
 
     auto pixmap = [&](int size) {
         QPixmap pix(size, size);

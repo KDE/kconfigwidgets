@@ -11,9 +11,11 @@
 #include <KColorUtils>
 #include <KConfig>
 #include <KConfigGroup>
+#include <KFileUtils>
 
 #include <QBrush>
 #include <QColor>
+#include <QDir>
 
 // BEGIN StateEffects
 StateEffects::StateEffects(QPalette::ColorGroup state, const KSharedConfigPtr &config)
@@ -218,11 +220,10 @@ static const DecoDefaultColors defaultDecorationColors = {
 class KColorSchemePrivate : public QSharedData
 {
 public:
-    explicit KColorSchemePrivate(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, const SetDefaultColors &, const QBrush & = Qt::NoBrush);
+    explicit KColorSchemePrivate(const KSharedConfigPtr &config, QPalette::ColorGroup state, KColorScheme::ColorSet set);
     ~KColorSchemePrivate()
     {
     }
-
     QBrush background(KColorScheme::BackgroundRole) const;
     QBrush foreground(KColorScheme::ForegroundRole) const;
     QBrush decoration(KColorScheme::DecorationRole) const;
@@ -246,12 +247,56 @@ public:
 #define  SET_DEFAULT(a) DEFAULT( defaults.a )
 #define DECO_DEFAULT(a) DEFAULT( defaultDecorationColors.a )
 
-KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
-        QPalette::ColorGroup state,
-        const char *group,
-        const SetDefaultColors &defaults,
-        const QBrush &tint)
+KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config, QPalette::ColorGroup state, KColorScheme::ColorSet set)
 {
+
+    const char *group;
+    SetDefaultColors defaults;
+    QBrush tint;
+    switch (set) {
+    case KColorScheme::Window:
+        group =  "Colors:Window";
+        defaults = defaultWindowColors;
+        break;
+    case KColorScheme::Button:
+        group =  "Colors:Button";
+        defaults = defaultButtonColors;
+        break;
+    case KColorScheme::Selection: {
+        KConfigGroup inactiveEffectGroup(config, "ColorEffects:Inactive");
+        // NOTE: keep this in sync with kdebase/workspace/kcontrol/colors/colorscm.cpp
+        bool inactiveSelectionEffect = inactiveEffectGroup.readEntry("ChangeSelectionColor", inactiveEffectGroup.readEntry("Enable", true));
+        // if enabled, inactiver/disabled uses Window colors instead, ala gtk
+        // ...except tinted with the Selection:NormalBackground color so it looks more like selection
+        if (state == QPalette::Active || (state == QPalette::Inactive && !inactiveSelectionEffect)) {
+           group = "Colors:Selection";
+           defaults = defaultSelectionColors;
+        } else if (state == QPalette::Inactive) {
+            group =  "Colors:Window";
+            defaults = defaultWindowColors;
+            tint = KColorSchemePrivate(config, QPalette::Active, KColorScheme::Selection)._brushes.bg[KColorScheme::NormalBackground];
+        } else { // disabled (...and still want this branch when inactive+disabled exists)
+            group = "Colors:Window";
+            defaults = defaultWindowColors;
+        }
+    } break;
+    case KColorScheme::Tooltip:
+        group =  "Colors:Tooltip";
+        defaults = defaultTooltipColors;
+        break;
+    case KColorScheme::Complementary:
+        group = "Colors:Complementary";
+        defaults = defaultComplementaryColors;
+        break;
+    case KColorScheme::Header:
+        group =  "Colors:Header";
+        defaults = defaultHeaderColors;
+        break;
+    default:
+        group = "Colors:View";
+        defaults = defaultViewColors;
+    }
+
     KConfigGroup cfg(config, group);
     bool hasInactivePalette = false;
     if (state == QPalette::Inactive) {
@@ -262,7 +307,9 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
         }
     }
 
-    _contrast = KColorScheme::contrastF(config);
+    // cf. KColorScheme::contrastF
+    KConfigGroup contrastGroup(config, "KDE");
+    _contrast =  0.1 * contrastGroup.readEntry("contrast", 7);
 
     // loaded-from-config colors
     if (strcmp(group, "Colors:Header") == 0) { // For compatibility with color schemes made before ColorSet::Header was added
@@ -393,46 +440,16 @@ KColorScheme::KColorScheme(KColorScheme &&) = default;
 KColorScheme &KColorScheme::operator=(KColorScheme &&) = default;
 KColorScheme::~KColorScheme() = default;
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 93)
 KColorScheme::KColorScheme(QPalette::ColorGroup state, ColorSet set, KSharedConfigPtr config)
 {
-    if (!config) {
-        config = defaultConfig();
-    }
+    d = new KColorSchemePrivate(config ? config : defaultConfig(), state, set);
+}
+#endif
 
-    switch (set) {
-    case Window:
-        d = new KColorSchemePrivate(config, state, "Colors:Window", defaultWindowColors);
-        break;
-    case Button:
-        d = new KColorSchemePrivate(config, state, "Colors:Button", defaultButtonColors);
-        break;
-    case Selection: {
-        KConfigGroup group(config, "ColorEffects:Inactive");
-        // NOTE: keep this in sync with kdebase/workspace/kcontrol/colors/colorscm.cpp
-        bool inactiveSelectionEffect = group.readEntry("ChangeSelectionColor", group.readEntry("Enable", true));
-        // if enabled, inactiver/disabled uses Window colors instead, ala gtk
-        // ...except tinted with the Selection:NormalBackground color so it looks more like selection
-        if (state == QPalette::Active || (state == QPalette::Inactive && !inactiveSelectionEffect)) {
-            d = new KColorSchemePrivate(config, state, "Colors:Selection", defaultSelectionColors);
-        } else if (state == QPalette::Inactive) {
-            d = new KColorSchemePrivate(config, state, "Colors:Window", defaultWindowColors,
-                                        KColorScheme(QPalette::Active, Selection, config).background());
-        } else { // disabled (...and still want this branch when inactive+disabled exists)
-            d = new KColorSchemePrivate(config, state, "Colors:Window", defaultWindowColors);
-        }
-    } break;
-    case Tooltip:
-        d = new KColorSchemePrivate(config, state, "Colors:Tooltip", defaultTooltipColors);
-        break;
-    case Complementary:
-        d = new KColorSchemePrivate(config, state, "Colors:Complementary", defaultComplementaryColors);
-        break;
-    case Header:
-        d = new KColorSchemePrivate(config, state, "Colors:Header", defaultHeaderColors);
-        break;
-    default:
-        d = new KColorSchemePrivate(config, state, "Colors:View", defaultViewColors);
-    }
+KColorScheme::KColorScheme(QPalette::ColorGroup colorGroup, ColorSet set, const QString &fileName)
+{
+    d = new KColorSchemePrivate(openColorScheme(fileName), colorGroup, set);
 }
 
 bool KColorScheme::operator==(const KColorScheme &other) const
@@ -452,10 +469,18 @@ int KColorScheme::contrast()
 }
 #endif
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 94)
 // static
 qreal KColorScheme::contrastF(const KSharedConfigPtr &config)
 {
     KConfigGroup g(config ? config : defaultConfig(), "KDE");
+    return 0.1 * g.readEntry("contrast", 7);
+}
+#endif
+
+qreal KColorScheme::contrastF(const QString &fileName)
+{
+    KConfigGroup g(openColorScheme(fileName), "KDE");
     return 0.1 * g.readEntry("contrast", 7);
 }
 
@@ -536,6 +561,7 @@ QColor KColorScheme::shade(const QColor &color, ShadeRole role, qreal contrast, 
     }
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 94)
 void KColorScheme::adjustBackground(QPalette &palette, BackgroundRole newRole, QPalette::ColorRole color,
                                     ColorSet set, KSharedConfigPtr config)
 {
@@ -617,5 +643,86 @@ QPalette KColorScheme::createApplicationPalette(const KSharedConfigPtr &config)
 
     return palette;
 }
+#endif
 
+void KColorScheme::adjustBackground(QPalette &palette, BackgroundRole newRole, QPalette::ColorRole color, ColorSet set, const QString &fileName)
+{
+    palette.setBrush(QPalette::Active,   color, KColorScheme(QPalette::Active,   set, fileName).background(newRole));
+    palette.setBrush(QPalette::Inactive, color, KColorScheme(QPalette::Inactive, set, fileName).background(newRole));
+    palette.setBrush(QPalette::Disabled, color, KColorScheme(QPalette::Disabled, set, fileName).background(newRole));
+}
+
+void KColorScheme::adjustForeground(QPalette &palette, ForegroundRole newRole, QPalette::ColorRole color,  ColorSet set, const QString &fileName)
+{
+    palette.setBrush(QPalette::Active,   color, KColorScheme(QPalette::Active,   set, fileName).foreground(newRole));
+    palette.setBrush(QPalette::Inactive, color, KColorScheme(QPalette::Inactive, set, fileName).foreground(newRole));
+    palette.setBrush(QPalette::Disabled, color, KColorScheme(QPalette::Disabled, set, fileName).foreground(newRole));
+}
+
+bool KColorScheme::isColorSetSupported(KColorScheme::ColorSet set, const QString &fileName)
+{
+    auto config = openColorScheme(fileName);
+    switch (set) {
+        case View:
+            return config->hasGroup("Colors:View");
+        case Window:
+            return config->hasGroup("Colors:Window");
+        case Button:
+            return config->hasGroup("Colors:Button");
+        case Selection:
+            return config->hasGroup("Colors:Selection");
+        case Tooltip:
+            return config->hasGroup("Colors:Tooltip");
+        case Complementary:
+            return config->hasGroup("Colors:Complementary");
+        case Header:
+            return config->hasGroup("Colors:Header");
+        case NColorSets:
+            break;
+    }
+
+    return false;
+}
+
+QPalette KColorScheme::createApplicationPalette(const QString &fileName)
+{
+    QPalette palette;
+
+    static const QPalette::ColorGroup states[QPalette::NColorGroups] = {
+        QPalette::Active, QPalette::Inactive, QPalette::Disabled
+    };
+
+    // TT thinks tooltips shouldn't use active, so we use our active colors for all states
+    KColorScheme schemeTooltip(QPalette::Active, KColorScheme::Tooltip, fileName);
+
+    for (auto state : states) {
+        KColorScheme schemeView(state, KColorScheme::View, fileName);
+        KColorScheme schemeWindow(state, KColorScheme::Window, fileName);
+        KColorScheme schemeButton(state, KColorScheme::Button, fileName);
+        KColorScheme schemeSelection(state, KColorScheme::Selection, fileName);
+
+        palette.setBrush(state, QPalette::WindowText, schemeWindow.foreground());
+        palette.setBrush(state, QPalette::Window, schemeWindow.background());
+        palette.setBrush(state, QPalette::Base, schemeView.background());
+        palette.setBrush(state, QPalette::Text, schemeView.foreground());
+        palette.setBrush(state, QPalette::Button, schemeButton.background());
+        palette.setBrush(state, QPalette::ButtonText, schemeButton.foreground());
+        palette.setBrush(state, QPalette::Highlight, schemeSelection.background());
+        palette.setBrush(state, QPalette::HighlightedText, schemeSelection.foreground());
+        palette.setBrush(state, QPalette::ToolTipBase, schemeTooltip.background());
+        palette.setBrush(state, QPalette::ToolTipText, schemeTooltip.foreground());
+
+        palette.setColor(state, QPalette::Light, schemeWindow.shade(KColorScheme::LightShade));
+        palette.setColor(state, QPalette::Midlight, schemeWindow.shade(KColorScheme::MidlightShade));
+        palette.setColor(state, QPalette::Mid, schemeWindow.shade(KColorScheme::MidShade));
+        palette.setColor(state, QPalette::Dark, schemeWindow.shade(KColorScheme::DarkShade));
+        palette.setColor(state, QPalette::Shadow, schemeWindow.shade(KColorScheme::ShadowShade));
+
+        palette.setBrush(state, QPalette::AlternateBase, schemeView.background(KColorScheme::AlternateBackground));
+        palette.setBrush(state, QPalette::Link, schemeView.foreground(KColorScheme::LinkText));
+        palette.setBrush(state, QPalette::LinkVisited, schemeView.foreground(KColorScheme::VisitedText));
+    }
+
+    return palette;
+}
 //END KColorScheme

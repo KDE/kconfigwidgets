@@ -37,6 +37,7 @@ class KStatefulBrushPrivate;
  * new state. Using KStatefulBrush will allow your application to inherit these
  * changes "for free", without even recompiling.
  */
+
 class KCONFIGWIDGETS_EXPORT KStatefulBrush
 {
 public:
@@ -47,26 +48,33 @@ public:
      */
     explicit KStatefulBrush();
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 94)
     /**
      * Construct a stateful brush from given color set and foreground role,
      * using the colors from the given KConfig.
      * If null, the application's color scheme is used (either the system
      * default, or one set by KColorSchemeManager).
+     * @deprecated since 5.94, use KStatefulBrush(KColorScheme::ColorSet, KColorScheme::ForegroundRole, const QString &) instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use KStatefulBrush(KColorScheme::ColorSet, KColorScheme::ForegroundRole, const QString &)")
     explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::ForegroundRole, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
      * Construct a stateful brush from given color set and background role,
      * using the colors from the given KConfig (if null, the application's
      * colors are used).
+     * @deprecated since 5.94, use KStatefulBrush(KColorScheme::ColorSet, KColorScheme::BackgroundRole, const QString &) instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use KStatefulBrush(KColorScheme::ColorSet, KColorScheme::BackgroundRole, const QString &)")
     explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::BackgroundRole, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
      * Construct a stateful brush from given color set and decoration role,
      * using the colors from the given KConfig (if null, the application's
      * colors are used).
+     * @deprecated since 5.94, use KStatefulBrush(KColorScheme::ColorSet, KColorScheme::DecorationRole, const QString &) instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use KStatefulBrush(KColorScheme::ColorSet, KColorScheme::DecorationRole, const QString &")
     explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::DecorationRole, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
@@ -76,7 +84,9 @@ public:
      * according to the same rules used to build stateful color schemes from
      * the system color scheme. The state effects from the given KConfig are
      * used (if null, the application's state effects are used).
+     * @deprecated since 5.94, use KStatefulBrush(const QBrush &, const QString &) instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use  KStatefulBrush(const QBrush &, const QString &)")
     explicit KStatefulBrush(const QBrush &, KSharedConfigPtr = KSharedConfigPtr());
 
     /**
@@ -90,8 +100,63 @@ public:
      * @param background The background brush (or color) corresponding to the
      * KColorScheme::NormalBackground role and QPalette::Active state for this
      * foreground/decoration color.
+     *
+     * @deprecated since 5.94, use KStatefulBrush(const QBrush &, const QBrush &, const QString &) instead
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use KStatefulBrush(const QBrush &, const QBrush &, const QString &)")
     explicit KStatefulBrush(const QBrush &, const QBrush &background, KSharedConfigPtr = KSharedConfigPtr());
+#endif
+    /**
+     * Construct a stateful brush from given color set and foreground role,
+     * using the colors from the given color scheme.
+     * If empty, the application's color scheme is used (either the system
+     * default, or one set by KColorSchemeManager).
+     * @see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     */
+    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::ForegroundRole, const QString &fileName = QString());
+
+    /**
+     * Construct a stateful brush from given color set and background role,
+     * using the colors from the given color scheme (if empty, the application's
+     * colors are used).
+     * @see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     */
+    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::BackgroundRole, const QString &fileName = QString());
+
+    /**
+     * Construct a stateful brush from given color set and decoration role,
+     * using the colors from the given color scheme (if empty, the application's
+     * colors are used).
+     * @see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     */
+    explicit KStatefulBrush(KColorScheme::ColorSet, KColorScheme::DecorationRole, const QString &fileName = QString());
+
+    /**
+     * Construct a stateful background brush from a specified QBrush (or
+     * QColor, via QBrush's implicit constructor). The various states are
+     * determined from the base QBrush (which fills in the Active state)
+     * according to the same rules used to build stateful color schemes from
+     * the system color scheme. The state effects from the given color scheme are
+     * used (if empty, the application's state effects are used).
+     * @see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     */
+    explicit KStatefulBrush(const QBrush &, const QString &fileName = QString());
+
+    /**
+     * Construct a stateful foreground/decoration brush from a specified
+     * QBrush (or QColor, via QBrush's implicit constructor). The various
+     * states are determined from the base QBrush (which fills in the Active
+     * state) according to the same rules used to build stateful color schemes
+     * from the system color scheme. The state effects from the given color scheme
+     * are used (if null, the application's state effects are used).
+     *
+     * @param background The background brush (or color) corresponding to the
+     * KColorScheme::NormalBackground role and QPalette::Active state for this
+     * foreground/decoration color.
+     *
+     * @see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     */
+    explicit KStatefulBrush(const QBrush &, const QBrush &background, const QString &fileName = QString());
 
     /** Construct a copy of another KStatefulBrush. */
     KStatefulBrush(const KStatefulBrush &);

@@ -8,8 +8,11 @@
 #ifndef KCOLORSCHEME_H
 #define KCOLORSCHEME_H
 
-#include <KSharedConfig>
 #include <kconfigwidgets_export.h>
+
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 94)
+#include <KSharedConfig>
+#endif
 
 #include <QExplicitlySharedDataPointer>
 
@@ -331,6 +334,7 @@ public:
     KColorScheme(KColorScheme &&);
     KColorScheme &operator=(KColorScheme &&);
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 94)
     /**
      * Construct a palette from given color set and state. Colors are taken
      * from the given KConfig. If null, the application's color scheme is used
@@ -341,8 +345,31 @@ public:
      * or have a legitimate reason to only care about a fixed, limited number
      * of states (e.g. windows that cannot be inactive), consider using a
      * ::KStatefulBrush instead.
+     *
+     * @deprecated since 5.94, use KColorScheme(QPalette::ColorGroup, ColorSet, const QString &) instead
      */
-    explicit KColorScheme(QPalette::ColorGroup = QPalette::Normal, ColorSet = View, KSharedConfigPtr = KSharedConfigPtr());
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)")
+    explicit KColorScheme(QPalette::ColorGroup, ColorSet, KSharedConfigPtr);
+#endif
+    /**
+     * Construct a palette from given color set and state.
+     *
+     * @p fileName A .colors file to use.
+     * If file is a non-absolute path a file with specified name will be looked up inside the color scheme directories
+     * of the system.
+     * If empty or the specified  file could not be found the active
+     * colorscheme of the applications is used (either the system default or the one
+     * set by KColorSchemeManager).
+     *
+     * @note KColorScheme provides direct access to the color scheme for users
+     * that deal directly with widget states. Unless you are a low-level user
+     * or have a legitimate reason to only care about a fixed, limited number
+     * of states (e.g. windows that cannot be inactive), consider using a
+     * ::KStatefulBrush instead.
+     *
+     * @since 5.94
+     */
+    explicit KColorScheme(QPalette::ColorGroup colorGroup = QPalette::Active, ColorSet set = View, const QString &fileName = QString());
 
     /**
      * Retrieve the requested background brush.
@@ -384,6 +411,7 @@ public:
     static int contrast();
 #endif
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 94)
     /**
      * Returns the contrast for borders as a floating point value.
      * @param config pointer to the config from which to read the contrast
@@ -391,8 +419,20 @@ public:
      *   (either the system default or one set by KColorSchemeManager).
      * @return the contrast (between 0.0 for minimum and 1.0 for maximum
      *         contrast)
+     * @deprecated since 5.94, use KColorScheme::contrastF(const QString&)
      */
-    static qreal contrastF(const KSharedConfigPtr &config = KSharedConfigPtr());
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use contrastF(const QString &)")
+    static qreal contrastF(const KSharedConfigPtr &config);
+#endif
+
+    /**
+     * Returns the contrast for borders as a floating point value.
+     * @p fileName The color scheme to use, see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     * @return the contrast (between 0.0 for minimum and 1.0 for maximum
+     *         contrast)
+     * @since 5.94
+     */
+    static qreal contrastF(const QString &fileName = QString());
 
     /**
      * Retrieve the requested shade color, using the specified color as the
@@ -426,6 +466,7 @@ public:
      */
     static QColor shade(const QColor &, ShadeRole, qreal contrast, qreal chromaAdjust = 0.0);
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 94)
     /**
      * Adjust a QPalette by replacing the specified QPalette::ColorRole with
      * the requested background color for all states. Using this method is
@@ -434,12 +475,11 @@ public:
      *
      * @note Although it is possible to replace a foreground color using this
      * method, it's bad usability to do so. Just say "no".
+     *
+     * @deprecated since 5.94, use KColorScheme::adjustBackground(QPalette &, BackgroundRole, QPalette::ColorRole, ColorSet, const QString &)
      */
-    static void adjustBackground(QPalette &,
-                                 BackgroundRole newRole = NormalBackground,
-                                 QPalette::ColorRole color = QPalette::Base,
-                                 ColorSet set = View,
-                                 KSharedConfigPtr = KSharedConfigPtr());
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use adjustBackground(QPalette &, ForegroundRole, QPalette::ColorRole, ColorSet, const QString &)")
+    static void adjustBackground(QPalette &, BackgroundRole newRole, QPalette::ColorRole, ColorSet set, KSharedConfigPtr);
 
     /**
      * Adjust a QPalette by replacing the specified QPalette::ColorRole with
@@ -449,12 +489,11 @@ public:
      *
      * @note Although it is possible to replace a background color using this
      * method, it's bad usability to do so. Just say "no".
+     *
+     * @deprecated since 5.94, use KColorScheme::adjustForeground(QPalette &, BackgroundRole, QPalette::ColorRole, ColorSet, const QString &)
      */
-    static void adjustForeground(QPalette &,
-                                 ForegroundRole newRole = NormalText,
-                                 QPalette::ColorRole color = QPalette::Text,
-                                 ColorSet set = View,
-                                 KSharedConfigPtr = KSharedConfigPtr());
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use adjustForeground(QPalette &, BackgroundRole, QPalette::ColorRole, ColorSet, const QString &)")
+    static void adjustForeground(QPalette &, ForegroundRole newRole, QPalette::ColorRole color, ColorSet set, KSharedConfigPtr);
 
     /**
      * Used to obtain the QPalette that will be used to set the application
@@ -465,7 +504,9 @@ public:
      * @returns the QPalette
      *
      * @since 5.0
+     * @deprecated since 5.94, use createApplicationPalette(const QString &)
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use KColorScheme::createApplicationPalette(const QString &)")
     static QPalette createApplicationPalette(const KSharedConfigPtr &config);
 
     /**
@@ -476,10 +517,75 @@ public:
      * @param set The color set to check for.
      *
      * @returns whether the color scheme has a given color set
+     * @deprecated since 5.94, use isColorSetSupported(ColorSet, const QString &)
      *
      * @since 5.75
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 94, "Use KColorScheme::isColorSetSupported(ColorSet, const QString &)")
     static bool isColorSetSupported(const KSharedConfigPtr &config, KColorScheme::ColorSet set);
+#endif
+    /**
+     * Adjust a QPalette by replacing the specified QPalette::ColorRole with
+     * the requested background color for all states. Using this method is
+     * safer than replacing individual states, as it insulates you against
+     * changes in QPalette::ColorGroup.
+     *
+     * @p fileName The color scheme to use, see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     *
+     * @note Although it is possible to replace a foreground color using this
+     * method, it's bad usability to do so. Just say "no".
+     *
+     * @since 5.94
+     */
+    static void adjustBackground(QPalette &,
+                                 BackgroundRole newRole = NormalBackground,
+                                 QPalette::ColorRole color = QPalette::Base,
+                                 ColorSet set = View,
+                                 const QString &fileName = QString());
+
+    /**
+     * Adjust a QPalette by replacing the specified QPalette::ColorRole with
+     * the requested foreground color for all states. Using this method is
+     * safer than replacing individual states, as it insulates you against
+     * changes in QPalette::ColorGroup.
+     *
+     * @p fileName The color scheme to use, see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     *
+     * @note Although it is possible to replace a background color using this
+     * method, it's bad usability to do so. Just say "no".
+     *
+     * @since 5.94
+     */
+    static void adjustForeground(QPalette &,
+                                 ForegroundRole newRole = NormalText,
+                                 QPalette::ColorRole color = QPalette::Text,
+                                 ColorSet set = View,
+                                 const QString &fileName = QString());
+
+    /**
+     * Used to obtain the QPalette that will be used to set the application
+     * palette from KDE Platform theme.
+     *
+     * @p fileName The color scheme to use, see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     *
+     * @returns the QPalette
+     *
+     * @since 5.94
+     */
+    static QPalette createApplicationPalette(const QString &fileName);
+
+    /**
+     * Used to check if a color scheme has a given set.
+     *
+     * @p fileName The color scheme to use, see KColorScheme(QPalette::ColorGroup, ColorSet, const QString &)
+     *
+     * @param set The color set to check for.
+     *
+     * @returns whether the color scheme has a given color set
+     *
+     * @since 5.94
+     */
+    static bool isColorSetSupported(KColorScheme::ColorSet set, const QString &fileName);
 
     /**
      * @since 5.92
