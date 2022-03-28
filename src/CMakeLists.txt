@@ -107,6 +107,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KLanguageName
   KPasteTextAction
   KRecentFilesAction
+  KStatefulBrush
   KViewStateMaintainer
   KStandardAction
   KTipDialog
