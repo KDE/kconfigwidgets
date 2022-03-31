@@ -27,7 +27,7 @@ bool WindowsMessagesNotifier::nativeEventFilter(const QByteArray &eventType, voi
 void WindowsMessagesNotifier::handleWMSettingChange()
 {
     m_settings.sync();
-    const bool preferDarkModeNow = !(m_settings.value(QStringLiteral("AppsUseLightTheme")).value<bool>());
+    const bool preferDarkModeNow = !(m_settings.value(QStringLiteral("AppsUseLightTheme"), true).value<bool>());
     if (m_preferDarkMode != preferDarkModeNow) {
         m_preferDarkMode = preferDarkModeNow;
         Q_EMIT WindowsMessagesNotifier::wm_colorSchemeChanged();
