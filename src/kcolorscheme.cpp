@@ -326,7 +326,7 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
     _contrast = KColorScheme::contrastF(config);
 
     // loaded-from-config colors
-    if (strcmp(group, "Colors:Header") == 0) { // For compatibility with color schemes made before ColorSet::Header was added
+    if (group && strcmp(group, "Colors:Header") == 0) { // For compatibility with color schemes made before ColorSet::Header was added
         // Default to Window colors before using Header default colors
         KConfigGroup windowCfg(config, "Colors:Window");
         _brushes.fg[KColorScheme::NormalText] = cfg.readEntry("ForegroundNormal", 
