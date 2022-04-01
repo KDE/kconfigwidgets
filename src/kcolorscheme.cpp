@@ -283,8 +283,7 @@ KSharedConfigPtr defaultConfig() {
 class KColorSchemePrivate : public QSharedData
 {
 public:
-    explicit KColorSchemePrivate(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, const SetDefaultColors &);
-    explicit KColorSchemePrivate(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, const SetDefaultColors &, const QBrush &);
+    explicit KColorSchemePrivate(const KSharedConfigPtr &, QPalette::ColorGroup, const char *, const SetDefaultColors &, const QBrush & = Qt::NoBrush);
     ~KColorSchemePrivate() {}
 
     QBrush background(KColorScheme::BackgroundRole) const;
@@ -309,38 +308,6 @@ public:
 #define DEFAULT(c) QColor( c[0], c[1], c[2] )
 #define  SET_DEFAULT(a) DEFAULT( defaults.a )
 #define DECO_DEFAULT(a) DEFAULT( defaultDecorationColors.a )
-
-KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
-        QPalette::ColorGroup state,
-        const char *group,
-        const SetDefaultColors &defaults)
-{
-    KConfigGroup cfg(config, group);
-    if (state == QPalette::Inactive) {
-        KConfigGroup inactiveGroup = KConfigGroup(&cfg, "Inactive");
-        if (inactiveGroup.exists()) {
-            cfg = inactiveGroup;
-        }
-    }
-
-    _contrast = KColorScheme::contrastF(config);
-
-    // loaded-from-config colors (no adjustment)
-    if (strcmp(group, "Colors:Header") == 0) { // For compatibility with color schemes made before ColorSet::Header was added
-        // Default to Window colors before using Header default colors
-        KConfigGroup windowCfg(config, "Colors:Window");
-        _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal", 
-            windowCfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground)));
-        _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", 
-            windowCfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground)));
-    } else {
-        _brushes.bg[KColorScheme::NormalBackground] = cfg.readEntry("BackgroundNormal", SET_DEFAULT(NormalBackground));
-        _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground));
-    }
-
-    // the rest
-    init(config, state, group, defaults);
-}
 
 KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
         QPalette::ColorGroup state,
@@ -371,12 +338,13 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config,
         _brushes.bg[KColorScheme::AlternateBackground] = cfg.readEntry("BackgroundAlternate", SET_DEFAULT(AlternateBackground));
     }
 
-
-    // adjustment
-    _brushes.bg[KColorScheme::NormalBackground] = 
-        KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(), tint.color(), 0.4);
-    _brushes.bg[KColorScheme::AlternateBackground] = 
-        KColorUtils::tint(_brushes.bg[KColorScheme::AlternateBackground].color(), tint.color(), 0.4);
+    if (tint != Qt::NoBrush) {
+        // adjustment
+        _brushes.bg[KColorScheme::NormalBackground] =
+            KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(), tint.color(), 0.4);
+        _brushes.bg[KColorScheme::AlternateBackground] =
+            KColorUtils::tint(_brushes.bg[KColorScheme::AlternateBackground].color(), tint.color(), 0.4);
+    }
 
     // the rest
     init(config, state, group, defaults);
