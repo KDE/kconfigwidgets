@@ -41,6 +41,61 @@ private Q_SLOTS:
             KColorScheme scheme(QPalette::Active);
         }
     }
+    void readColors_data()
+    {
+        QTest::addColumn<int>("colorSet");
+
+        QTest::newRow("View") << static_cast<int>(KColorScheme::View);
+        QTest::newRow("Window") << static_cast<int>(KColorScheme::Window);
+        QTest::newRow("Button") << static_cast<int>(KColorScheme::Button);
+        QTest::newRow("Selection") << static_cast<int>(KColorScheme::Selection);
+        QTest::newRow("Tooltip") << static_cast<int>(KColorScheme::Tooltip);
+        QTest::newRow("Complementary") << static_cast<int>(KColorScheme::Complementary);
+        QTest::newRow("Header") << static_cast<int>(KColorScheme::Header);
+    }
+
+    void readColors()
+    {
+        QFETCH(int, colorSet);
+        auto file = QFINDTESTDATA("kcolorschemetest.colors");
+        KColorScheme activeScheme(QPalette::Active, static_cast<KColorScheme::ColorSet>(colorSet), KSharedConfig::openConfig(file, KConfig::SimpleConfig));
+        KColorScheme inactiveScheme(QPalette::Inactive, static_cast<KColorScheme::ColorSet>(colorSet), KSharedConfig::openConfig(file, KConfig::SimpleConfig));
+
+#define checkBackgroundRole(role)                                                                                                                              \
+    QCOMPARE(activeScheme.background(role).color(), QColor(colorSet, role, QPalette::Active));                                                                 \
+    QCOMPARE(inactiveScheme.background(role).color(), QColor(colorSet, role, QPalette::Inactive));
+
+        checkBackgroundRole(KColorScheme::NormalBackground);
+        checkBackgroundRole(KColorScheme::AlternateBackground);
+
+#define checkForegroundRole(role)                                                                                                                              \
+    QCOMPARE(activeScheme.foreground(role).color(), QColor(colorSet, role + KColorScheme::NBackgroundRoles, QPalette::Active));                                \
+    QCOMPARE(inactiveScheme.foreground(role).color(), QColor(colorSet, role + KColorScheme::NBackgroundRoles, QPalette::Inactive));
+
+        checkForegroundRole(KColorScheme::NormalText);
+        checkForegroundRole(KColorScheme::InactiveText);
+        checkForegroundRole(KColorScheme::ActiveText);
+        checkForegroundRole(KColorScheme::LinkText);
+        checkForegroundRole(KColorScheme::VisitedText);
+        checkForegroundRole(KColorScheme::NegativeText);
+        checkForegroundRole(KColorScheme::NeutralText);
+        checkForegroundRole(KColorScheme::PositiveText);
+
+#define checkDecorationRole(role)                                                                                                                              \
+    QCOMPARE(activeScheme.decoration(role).color(),                                                                                                            \
+             QColor(colorSet, role + KColorScheme::NBackgroundRoles + KColorScheme::NForegroundRoles, QPalette::Active));                                      \
+    QCOMPARE(inactiveScheme.decoration(role).color(),                                                                                                          \
+             QColor(colorSet, role + KColorScheme::NBackgroundRoles + KColorScheme::NForegroundRoles, QPalette::Inactive));
+
+        checkDecorationRole(KColorScheme::FocusColor);
+        checkDecorationRole(KColorScheme::HoverColor);
+    }
+
+    void readContrast()
+    {
+        auto file = QFINDTESTDATA("kcolorschemetest.colors");
+        QCOMPARE(KColorScheme::contrastF(KSharedConfig::openConfig(file, KConfig::SimpleConfig)), 0.5);
+    }
 };
 
 QTEST_MAIN(KColorSchemeTest)
