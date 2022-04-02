@@ -1,0 +1,660 @@
+# translation of kdelibs4.po to Upper Sorbian
+# translation of kdelibs4.po to
+# Copyright (C) 2003,2004, 2005, 2007 Free Software Foundation, Inc.
+# Eduard Werner <e.werner@rz.uni-leipzig.de>, 2003.
+# Prof. Dr. Eduard Werner <e.werner@rz.uni-leipzig.de>, 2003,2004.
+# Eduard Werner <edi.werner@gmx.de>, 2005.
+# Eduard Werner/Edward Wornar <edi.werner@gmx.de>, 2007, 2008.
+# Bianka Šwejdźic <hertn@gmx.de>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-26 00:41+0000\n"
+"PO-Revision-Date: 2008-12-19 22:49+0100\n"
+"Last-Translator: Eduard Werner <edi.werner@gmx.de>\n"
+"Language-Team: en_US <kde-i18n-doc@lists.kde.org>\n"
+"Language: hsb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Edward Wornar"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "edi.werner@gmx.de"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:193
+#, fuzzy, kde-format
+#| msgid "Do you want to reload KDE configuration?"
+msgid "You are not allowed to save the configuration"
+msgstr "Chceće KDE-konfiguraciju znowa začitać?"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Standard"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Awtomatiske pytanje"
+
+#: kcolorschememanager.cpp:203 kcolorschememanager.cpp:212
+#, fuzzy, kde-format
+#| msgid "Shortcut Schemes"
+msgid "Color Scheme"
+msgstr "Šemy skrótšenkow"
+
+#: kcolorschememodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Standard"
+
+#: kcommandbar.cpp:584
+#, kde-format
+msgid "No commands matching the filter"
+msgstr ""
+
+#: kconfigdialog.cpp:37
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Konfiguracija"
+
+#: khamburgermenu.cpp:128
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "Menu"
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "Meni"
+
+#: khamburgermenu.cpp:334
+#, fuzzy, kde-format
+#| msgid "Show all options"
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Pokaž wšitke opcije"
+
+#: khamburgermenu.cpp:362
+#, fuzzy, kde-format
+#| msgid "Choose..."
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Wubrać..."
+
+#: khamburgermenu.cpp:363
+#, fuzzy, kde-format
+#| msgid "More Actions"
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Dalše akcije"
+
+#: krecentfilesaction.cpp:70
+#, fuzzy, kde-format
+#| msgid "No entries"
+msgid "No Entries"
+msgstr "Žane zapisy"
+
+#: krecentfilesaction.cpp:76
+#, fuzzy, kde-format
+#| msgid "Clear input"
+msgid "Clear List"
+msgstr "Input wuprózdnić"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Wróćo"
+
+#: kstandardaction.cpp:165
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Doprědka"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Domjacy zapisk"
+
+#: kstandardaction.cpp:176
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "Po&moc"
+
+#: kstandardaction.cpp:233
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Pokaž meni <p>Pokazuje meni po tym, zo je so schował</p>"
+
+#: kstandardaction.cpp:254
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Statusowy pas pokazać <p>Pokazuje statusowy pas, to je delni dźěl wokna, kiž "
+"so za statusowu informaciju wužiwa."
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&Stworić"
+
+#: kstandardaction_p.h:30
+#, fuzzy
+#| msgid "Create New Tag..."
+msgid "Create new document"
+msgstr "Nowy tag stworić..."
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "W&očiń ..."
+
+#: kstandardaction_p.h:31
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "W&róćo w dokumenće"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "&Njedawno wočinjene wočinić"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "Zawě&sćić"
+
+#: kstandardaction_p.h:33
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Dokument začinić"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Z&awěsćić jako..."
+
+#: kstandardaction_p.h:34
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Dokument začinić"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "&Wróćo na prěnjotny staw"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&Začinić"
+
+#: kstandardaction_p.h:36
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Dokument začinić"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "Ć&išćeć ..."
+
+#: kstandardaction_p.h:37
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "Druck"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "Přeh&ladku za ćišć pokazać"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&Póštu pósłać..."
+
+#: kstandardaction_p.h:39
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Dokument začinić"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "Kón&c"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Program wopušćić"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "W&róćo"
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "HTML-dokumentacija"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "&Znowa činić"
+
+#: kstandardaction_p.h:43
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "HTML-dokumentacija"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "Wu&třihać"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Kopěrować"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "&Zasunyć"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, fuzzy
+#| msgid "Loading Preview"
+msgid "Paste clipboard content"
+msgstr "Začitam přehladku"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "&Wuprózdnić"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "&Wšitko wubrać"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "Wubraće z&běhnyć"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "Na&makać"
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "Přicho&dny namakać"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Pře&dchadny namakać"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "&Narunać"
+
+#: kstandardaction_p.h:58
+msgid "&Actual Size"
+msgstr "&Woprawdźita wulkosć"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "Na &stronu připrawić"
+
+#: kstandardaction_p.h:59
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Dźi na linku"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Na šě&rokosć strony připrawić"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Na wy&sokosć strony připrawić"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "Po&wjetšić"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "Po&mjeńšić"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Zoom..."
+
+#: kstandardaction_p.h:64
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Wubjerće tydźeń"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:65
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "&Wobraz aktualizować"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "&Horje"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "&Předchadna strona"
+
+#: kstandardaction_p.h:72
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "&Předchadna strona"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "Při&chodna strona"
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Dźi na linku"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Dźi na ..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "&Dźi na stronu ..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Dźi na linku..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "&Prěnja strona"
+
+#: kstandardaction_p.h:77
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Dźi na linku"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "&Poslednja strona"
+
+#: kstandardaction_p.h:78
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Dźi na stronu ..."
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "&Wróćo"
+
+#: kstandardaction_p.h:79
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "W&róćo w dokumenće"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&Doprědka"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "&Dale w dokumenće"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "&Dodaj k lubuškam"
+
+#: kstandardaction_p.h:83
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks..."
+msgstr "Lubuški &wobdźěłać"
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "&Pismikowanje"
+
+#: kstandardaction_p.h:85
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Přepruwuj prawopis"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "&Meni pokazać"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "&Meni pokazać"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "&Nastrojowy pas pokazać"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Nastrojowy pas pokazać"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "Pokaž &statusowy pask"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Pokaž statusowy pask"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "&Cyła wobrazowka"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "Konfiguraciju zawě&sćić"
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Konfiguracija &skrótšenkow..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "%1 &konfigurować ..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Konfiguracija &nastrojoweho paska ..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "Ko&nfiguracija zdźělenkow..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Přiručka za %1"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "Što &to je?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "Pokiw &dnja"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "&Rozprawić wo zmylku"
+
+#: kstandardaction_p.h:108
+#, fuzzy
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "Email konfigurować..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "W&o %1"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "Wo &KDE"
+
+#: kstandardaction_p.h:111
+#, fuzzy
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "Zničić"
+
+#: kstandardaction_p.h:112
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "&Narunać"
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr ""
+
+#: kstandardaction_p.h:115
+#, fuzzy
+#| msgid "Open &Recent"
+msgid "Open &Menu"
+msgstr "&Njedawno wočinjene wočinić"
+
+#: ktipdialog.cpp:219
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Pokiw dnja"
+
+#: ktipdialog.cpp:235
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Wěsće hižo ...?\n"
+
+#: ktipdialog.cpp:288
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Pokaž pokiwy při startowanju"
+
+#: ktipdialog.cpp:293
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "P&rjedawši"
+
+#: ktipdialog.cpp:298
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "Přichod&ne"

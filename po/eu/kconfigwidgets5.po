@@ -1,0 +1,577 @@
+# Translation for kconfigwidgets5.po to Euskara/Basque (eu)
+# Copyright (C) 1999-2017, Free Software Foundation, Inc.
+# Copyright (C) 2018-2022, this file is copyright:
+# This file is distributed under the same license as the kconfigwidgets package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+#
+# Translators:
+# Marcos <marcos@euskalgnu.org>, 2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Ion Gaztañaga <igaztanaga@gmail.com>, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2009.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2010, 2011, 2012, 2013, 2014, 2017, 2019, 2020, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: kconfigwidgets\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-26 00:41+0000\n"
+"PO-Revision-Date: 2022-02-26 23:09+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 21.12.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Iñigo Salvador Azurmendi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "xalba@ni.eus"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Gorde baino lehen autentikatzeko eskatuko zaizu"
+
+#: kcmodule.cpp:193
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Ez duzu konfigurazioa gordetzeko baimenik"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Lehenetsia"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Auto-detektatu"
+
+#: kcolorschememanager.cpp:203 kcolorschememanager.cpp:212
+#, kde-format
+msgid "Color Scheme"
+msgstr "Kolore-antolaera"
+
+#: kcolorschememodel.cpp:71
+#, kde-format
+msgid "Default"
+msgstr "Lehenetsia"
+
+#: kcommandbar.cpp:584
+#, kde-format
+msgid "No commands matching the filter"
+msgstr "Ez dago iragazkiarekin bat datorren komandorik"
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Konfiguratu"
+
+#: khamburgermenu.cpp:128
+#, kde-format
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "&Menua"
+
+#: khamburgermenu.cpp:334
+#, kde-format
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Erakutsi &menu-barra ekintza guztiekin"
+
+#: khamburgermenu.cpp:362
+#, kde-format
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Gehiago"
+
+#: khamburgermenu.cpp:363
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Ekintza gehiago"
+
+#: krecentfilesaction.cpp:70
+#, kde-format
+msgid "No Entries"
+msgstr "Sarrerarik ez"
+
+#: krecentfilesaction.cpp:76
+#, kde-format
+msgid "Clear List"
+msgstr "Garbitu zerrenda"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Atzera"
+
+#: kstandardaction.cpp:165
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "A&urrerantz"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Hasiera"
+
+#: kstandardaction.cpp:176
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Laguntza"
+
+#: kstandardaction.cpp:233
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Erakutsi menu-barra<p>Menu-barra berriro erakusten du ezkutatu ondoren</p>"
+
+#: kstandardaction.cpp:254
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Erakutsi Egoera-barra<p>Egoera-barra erakusten du, leihoaren behealdean "
+"egoeraren informazioarentzako erabiltzen den barra.</p>"
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&Berria"
+
+#: kstandardaction_p.h:30
+msgid "Create new document"
+msgstr "Sortu dokumentu berria"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "I&reki..."
+
+#: kstandardaction_p.h:31
+msgid "Open an existing document"
+msgstr "Ireki lehendik dagoen dokumentu bat"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "Ireki &oraintsukoa"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr "Ireki duela gutxi ireki den dokumentu bat"
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "&Gorde"
+
+#: kstandardaction_p.h:33
+msgid "Save document"
+msgstr "Gorde dokumentua"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Gorde &honela..."
+
+#: kstandardaction_p.h:34
+msgid "Save document under a new name"
+msgstr "Gorde dokumentua izen berri batekin"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "&Leheneratu"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr "Leheneratu dokumentuari egindako gorde gabeko aldaketak"
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&Itxi"
+
+#: kstandardaction_p.h:36
+msgid "Close document"
+msgstr "Itxi dokumentua"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "I&nprimatu..."
+
+#: kstandardaction_p.h:37
+msgid "Print document"
+msgstr "Inprimatu dokumentua"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "Inprimaketaren aur&rebista"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr "Erakutsi dokumentu inprimaketaren aurrebista bat"
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&Posta..."
+
+#: kstandardaction_p.h:39
+msgid "Send document by mail"
+msgstr "Bidali dokumentua posta bidez"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "&Irten"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Irten aplikaziotik"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "&Desegin"
+
+#: kstandardaction_p.h:42
+msgid "Undo last action"
+msgstr "Desegin azken ekintza"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "&Berregin"
+
+#: kstandardaction_p.h:43
+msgid "Redo last undone action"
+msgstr "Berregin desegindako azken ekintza"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "&Ebaki"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr "Ebaki hautapena arbelara"
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Kopiatu"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr "Kopiatu hautapena arbelara"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "&Itsatsi"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "Paste clipboard content"
+msgstr "Itsatsi arbelako edukia"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "&Garbitu"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "H&autatu dena"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "Desau&tatu"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&Bilatu..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "Bilatu &hurrengoa"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Bilatu a&urrekoa"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "&Ordeztu..."
+
+#: kstandardaction_p.h:58
+msgid "&Actual Size"
+msgstr "&Uneko neurria"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr "Ikusi dokumentua bere egiazko neurrian"
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "E&gokitu orrialdera"
+
+#: kstandardaction_p.h:59
+msgid "Zoom to fit page in window"
+msgstr "Zoom egin orrialdea leihora egokitzeko"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Egokitu orrialde-&zabalerara"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr "Zoom egin orrialdearen zabalera leihora egokitzeko"
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Egokitu orrialde-&luzeerara"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr "Zoom egin orrialdearen luzeera leihora egokitzeko"
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "Zooma &handiagotu"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "Zooma &txikiagotu"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Zoom..."
+
+#: kstandardaction_p.h:64
+msgid "Select zoom level"
+msgstr "Hautatu zoom maila"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr "Berbistaratu"
+
+#: kstandardaction_p.h:65
+msgid "Refresh document"
+msgstr "Berbistaratu dokumentua"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "&Gora"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr "Joan gora"
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "&Aurreko orrialdea"
+
+#: kstandardaction_p.h:72
+msgid "Go to previous page"
+msgstr "Joan aurreko orrialdera"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "&Hurrengo orrialdea"
+
+#: kstandardaction_p.h:73
+msgid "Go to next page"
+msgstr "Joan hurrengo orrialdera"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Joan..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "&Joan orrialdera..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Joan lerrora..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "&Lehen orrialdea"
+
+#: kstandardaction_p.h:77
+msgid "Go to first page"
+msgstr "Joan lehen orrialdera"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "A&zken orrialdea"
+
+#: kstandardaction_p.h:78
+msgid "Go to last page"
+msgstr "&Joan azken orrialdera"
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "&Atzera"
+
+#: kstandardaction_p.h:79
+msgid "Go back in document"
+msgstr "Joan a&tzera dokumentuan"
+
+#: kstandardaction_p.h:80
+msgid "&Forward"
+msgstr "A&urrerantz"
+
+#: kstandardaction_p.h:80
+msgid "Go forward in document"
+msgstr "Joan aurrerantz dokumentuan"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "&Gehitu laster-marka"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "Liburu-markak &editatu..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "&Ortografia..."
+
+#: kstandardaction_p.h:85
+msgid "Check spelling in document"
+msgstr "Egiaztatu ortografia dokumentuan"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "Erakutsi &menu-barra"
+
+#: kstandardaction_p.h:87
+msgid "Show or hide menubar"
+msgstr "Erakutsi edo ezkutatu menu-barra"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "Erakutsi &tresna-barra"
+
+#: kstandardaction_p.h:88
+msgid "Show or hide toolbar"
+msgstr "Erakutsi edo ezkutatu tresna-barra"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "Erakutsi &egoera-barra"
+
+#: kstandardaction_p.h:89
+msgid "Show or hide statusbar"
+msgstr "Erakutsi edo ezkutatu egoera-barra"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "Pantaila osoko m&odua"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "&Gorde ezarpenak"
+
+#: kstandardaction_p.h:94
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Konfiguratu teklatuko &lasterbideak..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "K&onfiguratu %1..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Konfiguratu tresna-&barrak..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "Konfiguratu &jakinarazpenak..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 e&skuliburua"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "&Zer da hau?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "Eguneko ira&dokizuna"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "&Eman errorearen berri..."
+
+#: kstandardaction_p.h:108
+msgid "Configure &Language..."
+msgstr "Konfiguratu &hizkuntza..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "%1-(r)i &buruz"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "&KDEri buruz"
+
+#: kstandardaction_p.h:111
+msgid "&Delete"
+msgstr "E&zabatu"
+
+#: kstandardaction_p.h:112
+msgid "&Rename..."
+msgstr "Be&rrizendatu..."
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr "&Bota zakarrontzira"
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr "Egin &dohaintza"
+
+#: kstandardaction_p.h:115
+msgid "Open &Menu"
+msgstr "Ireki &Menua"
+
+#: ktipdialog.cpp:219
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Eguneko iradokizuna"
+
+#: ktipdialog.cpp:235
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Bazenekien...?\n"
+
+#: ktipdialog.cpp:288
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Erakut&si iradokizunak abiatzean"
+
+#: ktipdialog.cpp:293
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Aurrekoa"
+
+#: ktipdialog.cpp:298
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Hurrengoa"

@@ -1,0 +1,661 @@
+# kdelibs4 Bahasa Melayu (Malay) (ms)
+# Hasbullah bin Pit <sebol@ikhlas.com>, 2003.
+# Muhammad Najmi Ahmad Zabidi <md_najmi@yahoo.com>, 2003.
+# Mohd Nasir bin Che Embee <chadtce@linuxmail.org>, 2003.
+# Muhammad Najmi bin Ahmad Zabidi <najmi.zabidi@gmail.com>, 2006.
+# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2006, 2007, 2008, 2009, 2010.
+# Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>, 2010, 2011.
+# Copyright (C) 2008, 2009 K Desktop Environment
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-26 00:41+0000\n"
+"PO-Revision-Date: 2011-07-16 00:57+0800\n"
+"Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
+"Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
+"Language: ms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sharuzzaman Ahmat Raslan"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sharuzzaman@myrealbox.com"
+
+#: kcmodule.cpp:189
+#, fuzzy, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Anda ke  pengesahan"
+
+#: kcmodule.cpp:193
+#, fuzzy, kde-format
+#| msgid "Do you want to reload KDE configuration?"
+msgid "You are not allowed to save the configuration"
+msgstr "Anda ke "
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Default"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Autokesan"
+
+#: kcolorschememanager.cpp:203 kcolorschememanager.cpp:212
+#, fuzzy, kde-format
+#| msgid "Shortcut Schemes"
+msgid "Color Scheme"
+msgstr "Skema Pintasan"
+
+#: kcolorschememodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Default"
+
+#: kcommandbar.cpp:584
+#, kde-format
+msgid "No commands matching the filter"
+msgstr ""
+
+#: kconfigdialog.cpp:37
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Selaraskan"
+
+#: khamburgermenu.cpp:128
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "Menu"
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "Menu"
+
+#: khamburgermenu.cpp:334
+#, fuzzy, kde-format
+#| msgid "Show all options"
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Papar semua pilihan"
+
+#: khamburgermenu.cpp:362
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@option:check An item in a list of resources that allows to query for "
+#| "more resources to put in the list"
+#| msgid "More..."
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Lagi..."
+
+#: khamburgermenu.cpp:363
+#, fuzzy, kde-format
+#| msgid "More Actions"
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Lebih Tindakan"
+
+#: krecentfilesaction.cpp:70
+#, kde-format
+msgid "No Entries"
+msgstr "Tiada Masukan"
+
+#: krecentfilesaction.cpp:76
+#, kde-format
+msgid "Clear List"
+msgstr "Kosongkan Senarai"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "Kem&bali"
+
+#: kstandardaction.cpp:165
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Maju"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "Ruma&h"
+
+#: kstandardaction.cpp:176
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Bantuan"
+
+#: kstandardaction.cpp:233
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Papar Bar Menu<p>Memaparkan bar menu kembali selepas ia disembunyikan</p>"
+
+#: kstandardaction.cpp:254
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "
+#| "the window used for status information.</p>"
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Papar Bar Status<p>Papar bar status, iaitu bar dibawah tetingkap digunakan "
+"untuk maklumat status.</p>"
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&Baru"
+
+#: kstandardaction_p.h:30
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Create new tag:"
+msgid "Create new document"
+msgstr "Cipta tag baru:"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "&Buka."
+
+#: kstandardaction_p.h:31
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "&Undur dalam Dokumen"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "Buka &Terkini"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "&Simpan"
+
+#: kstandardaction_p.h:33
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Tutup Dokumen"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Simp&an sebagai.."
+
+#: kstandardaction_p.h:34
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Tutup Dokumen"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "&Patah Balik"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&Tutup"
+
+#: kstandardaction_p.h:36
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Tutup Dokumen"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "Ce&tak."
+
+#: kstandardaction_p.h:37
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "&Prapapar Cetakan"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&Mel..."
+
+#: kstandardaction_p.h:39
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Tutup Dokumen"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "&Keluar"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Keluar aplikasi"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "&Nyahcara"
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Undo last action"
+msgstr "Buatan a"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "&Buat Semula"
+
+#: kstandardaction_p.h:43
+#, fuzzy
+#| msgid "HTML documentation"
+msgid "Redo last undone action"
+msgstr "Buatan a"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "&Potong"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Salin"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "&Tepek"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, fuzzy
+#| msgid "Upload content"
+msgid "Paste clipboard content"
+msgstr "Muatnaik kandungan"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "Bersi&hkan"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "Pilih &Semua"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "&Nyahpilih"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&Cari..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "Cari &Seterusnya"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Cari &Sebelumnya"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "Gan&ti..."
+
+#: kstandardaction_p.h:58
+msgid "&Actual Size"
+msgstr "&Saiz Sebenar"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "&Muat Halaman"
+
+#: kstandardaction_p.h:59
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Pergi ke Baris"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Muat &Lebar Halaman"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Muat &Ketinggian Halaman"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "Zum &Masuk"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "Zum &Keluar"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Zoom..."
+
+#: kstandardaction_p.h:64
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Pilih minggu"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:65
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "Papa&r Semula"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "A&tas"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "Halaman &Sebelumnya"
+
+#: kstandardaction_p.h:72
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "Halaman &Sebelumnya"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "Halaman &Berikutnya"
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Pergi ke Baris"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Pergi Ke..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "&Pergi ke Halaman..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Pergi ke Baris..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "Halaman &Pertama"
+
+#: kstandardaction_p.h:77
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Pergi ke Baris"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "Halaman &Terakhir"
+
+#: kstandardaction_p.h:78
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Pergi ke Halaman..."
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "Kem&bali"
+
+#: kstandardaction_p.h:79
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "&Undur dalam Dokumen"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&Maju"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "&Maju dalam Dokumen"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "T&ambah"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "&Sunting Tandalaman..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "E&jaan..."
+
+#: kstandardaction_p.h:85
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Memeriksa ejaan"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "Papar Bar &Menu"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Papar Bar &Menu"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "Papar Bar Ala&tan"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Papar Bar Alatan"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "P&apar Bar Status"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Papar Bar Status"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "Mod Skrin Pen&uh"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "&Simpan Seting"
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Konfigur &Jalan Pintas..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Konfigur %1..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Konfigur &Bar Alat..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "Konfigur &Pemberitahuan..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &Manual"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "Apakah &Ini?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "Petua &Hari Ini"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "Lapor &Pepijat..."
+
+#: kstandardaction_p.h:108
+#, fuzzy
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "Tetapkan Emel..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "Perih&al %1"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "Perihal &KDE"
+
+#: kstandardaction_p.h:111
+#, fuzzy
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "Padam"
+
+#: kstandardaction_p.h:112
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "Gan&ti..."
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr ""
+
+#: kstandardaction_p.h:115
+#, fuzzy
+#| msgid "Open &Recent"
+msgid "Open &Menu"
+msgstr "Buka &Terkini"
+
+#: ktipdialog.cpp:219
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Petua Hari Ini"
+
+#: ktipdialog.cpp:235
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Adakah anda tahu...?\n"
+
+#: ktipdialog.cpp:288
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Papar pe&tua pada permulaan"
+
+#: ktipdialog.cpp:293
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Sebelum"
+
+#: ktipdialog.cpp:298
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "Berikut&nya"

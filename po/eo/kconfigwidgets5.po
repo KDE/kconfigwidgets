@@ -1,0 +1,661 @@
+# translation of kdelibs4.po to Esperanto
+# Esperantaj mesaĝoj por "kdelibs"
+# Copyright (C) 1998,2002, 2003, 2004, 2005, 2007, 2008 Free Software Foundation, Inc.
+#
+# Minuskloj: ĉ ĝ ĵ ĥ ŝ ŭ   Majuskloj: Ĉ Ĝ Ĵ Ĥ Ŝ Ŭ
+#
+# Wolfram Diestel <wolfram@steloj.de>, 1998.
+# Heiko Evermann <heiko@evermann.de>, 2002, 2003.
+# Matthias Peick <matthias@peick.de>, 2004, 2005.
+# Oliver Kellogg <okellogg@users.sourceforge.net>,2007.
+# Cindy McKee <cfmckee@gmail.com>, 2007, 2008.
+# Axel Rousseau <axel@esperanto-jeunes.org>, 2009.
+# Michael Moroni <michael.moroni@mailoo.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-03-26 00:41+0000\n"
+"PO-Revision-Date: 2012-05-22 12:30+0200\n"
+"Last-Translator: Michael Moroni <michael.moroni@mailoo.org>\n"
+"Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Matthias Peick, Oliver Kellogg, Cindy McKee, Axel Rousseau, Michael Moroni"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"matthias@peick.de, okellogg@users.sourceforge.net, cfmckee@gmail.com, "
+"axel@esperanto-jeunes.org, michael.moroni@mailoo.org"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:193
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Vi ne estas permesita por konservi la agordojn"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Defaŭlta"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Aŭtomate trovi"
+
+#: kcolorschememanager.cpp:203 kcolorschememanager.cpp:212
+#, fuzzy, kde-format
+#| msgid "Shortcut Schemes"
+msgid "Color Scheme"
+msgstr "Skemo de Klavkombinoj"
+
+#: kcolorschememodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Defaŭlta"
+
+#: kcommandbar.cpp:584
+#, kde-format
+msgid "No commands matching the filter"
+msgstr ""
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Agordi"
+
+#: khamburgermenu.cpp:128
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "Menu"
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "Menuo"
+
+#: khamburgermenu.cpp:334
+#, fuzzy, kde-format
+#| msgid "Show all options"
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Montri ĉiujn opciojn"
+
+#: khamburgermenu.cpp:362
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@option:check An item in a list of resources that allows to query for "
+#| "more resources to put in the list"
+#| msgid "More..."
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Pli..."
+
+#: khamburgermenu.cpp:363
+#, fuzzy, kde-format
+#| msgid "More Actions"
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Pliaj Agoj"
+
+#: krecentfilesaction.cpp:70
+#, kde-format
+msgid "No Entries"
+msgstr "Neniuj eroj"
+
+#: krecentfilesaction.cpp:76
+#, kde-format
+msgid "Clear List"
+msgstr "Forviŝi liston"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Reen"
+
+#: kstandardaction.cpp:165
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Antaŭen"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Hejmo"
+
+#: kstandardaction.cpp:176
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Helpo"
+
+#: kstandardaction.cpp:233
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Montri menuobreton<p>Remontras la menuobreton post ĝia kaŝado</p>"
+
+#: kstandardaction.cpp:254
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Montri statobreton<p>Ĝi montras la statobreton, kiu estas la breto ĉe la "
+"malsupro de la fenestro, uzata por statinformoj.</p>"
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&Nova"
+
+#: kstandardaction_p.h:30
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Create new tag:"
+msgid "Create new document"
+msgstr "Krei novan markon:"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "&Malfermi..."
+
+#: kstandardaction_p.h:31
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "R&een en la dokumento"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "Malfe&rmi lastajn"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "&Konservi"
+
+#: kstandardaction_p.h:33
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Fermi dokumenton"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Konservi &kiel..."
+
+#: kstandardaction_p.h:34
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Fermi dokumenton"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "Mal&fari"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "F&ermi"
+
+#: kstandardaction_p.h:36
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Fermi dokumenton"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "&Presi..."
+
+#: kstandardaction_p.h:37
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "Ekrankopia klavo"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "&Presi antaŭrigardon"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&Retpoŝti..."
+
+#: kstandardaction_p.h:39
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Fermi dokumenton"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "&Forlasi"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Forlasi aplikaĵon"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "&Malfari"
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Undo last action"
+msgstr "Donaci"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "Re&fari"
+
+#: kstandardaction_p.h:43
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Redo last undone action"
+msgstr "Donaci"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "El&tondi"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Kopii"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "A&lglui"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, fuzzy
+#| msgid "Upload content"
+msgid "Paste clipboard content"
+msgstr "Alŝuti enhavon"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "&Vakigi"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "&Elekti ĉiujn"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "Male&lekti ù"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&Trovi..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "Trovi sekva&n"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Tro&vi antaŭan "
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "&Anstataŭigi... "
+
+#: kstandardaction_p.h:58
+msgid "&Actual Size"
+msgstr "&Aktuala grando"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "A&dapti al paĝo"
+
+#: kstandardaction_p.h:59
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Iri al linio"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Adapti al &larĝo de paĝo"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Adapti al &alto de paĝo"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "Pl&igrandigi..."
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "&Malpligrandigi"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Grandigi..."
+
+#: kstandardaction_p.h:64
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Elekti semajnon"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:65
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "&Remontri"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "S&upren"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "Antaŭa &paĝo"
+
+#: kstandardaction_p.h:72
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "Antaŭa &paĝo"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "&Sevka paĝo"
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Iri al linio"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Iri al..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "&Iri al paĝo..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Iri al linio..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "&Unua paĝo"
+
+#: kstandardaction_p.h:77
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Iri al linio"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "&Lasta paĝo"
+
+#: kstandardaction_p.h:78
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Iri al paĝo..."
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "&Reen"
+
+#: kstandardaction_p.h:79
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "R&een en la dokumento"
+
+#: kstandardaction_p.h:80
+msgid "&Forward"
+msgstr "&Antaŭen"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "Antaŭe&n en la dokumento"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "&Aldoni legosignon"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "R&edakti legosignojn..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "&Literumado..."
+
+#: kstandardaction_p.h:85
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Kontroli literumadon"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "Montri &menuobreton"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Montri &menuobreton"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "Montri ilobre&ton"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Montri ilobreton"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "Montri &statobreton"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Montri statobreton"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "T&utekrana maniero"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "Kon&servi agordojn"
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Agordi &klavokombinojn..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Agordi %1..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Agordi ilo&bretojn..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "Agordi ate&ntigojn..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Manlibro de %1"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "Kio estas &tio?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "Konsileto &de la tago"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "&Raporti cimon..."
+
+#: kstandardaction_p.h:108
+#, fuzzy
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "Agordi retpoŝton..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "&Pri %1"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "Pri &KDE"
+
+#: kstandardaction_p.h:111
+#, fuzzy
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "Forĵeti"
+
+#: kstandardaction_p.h:112
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "&Anstataŭigi... "
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr ""
+
+#: kstandardaction_p.h:115
+#, fuzzy
+#| msgid "Open &Recent"
+msgid "Open &Menu"
+msgstr "Malfe&rmi lastajn"
+
+#: ktipdialog.cpp:219
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Konsilo de la tago"
+
+#: ktipdialog.cpp:235
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Ĉu vi sciis...?\n"
+
+#: ktipdialog.cpp:288
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Montri konsilojn ĉe lanĉo"
+
+#: ktipdialog.cpp:293
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Antaŭa"
+
+#: ktipdialog.cpp:298
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Sekva"
