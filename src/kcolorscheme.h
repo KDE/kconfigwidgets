@@ -328,6 +328,8 @@ public:
 
     KColorScheme(const KColorScheme &);
     KColorScheme &operator=(const KColorScheme &);
+    KColorScheme(KColorScheme &&);
+    KColorScheme &operator=(KColorScheme &&);
 
     /**
      * Construct a palette from given color set and state. Colors are taken
