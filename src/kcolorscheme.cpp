@@ -448,19 +448,9 @@ qreal KColorSchemePrivate::contrast() const
 //END KColorSchemePrivate
 
 //BEGIN KColorScheme
-KColorScheme::KColorScheme(const KColorScheme &other) : d(other.d)
-{
-}
-
-KColorScheme &KColorScheme::operator=(const KColorScheme &other)
-{
-    d = other.d;
-    return *this;
-}
-
-KColorScheme::~KColorScheme()
-{
-}
+KColorScheme::KColorScheme(const KColorScheme &) = default;
+KColorScheme &KColorScheme::operator=(const KColorScheme &) = default;
+KColorScheme::~KColorScheme() = default;
 
 KColorScheme::KColorScheme(QPalette::ColorGroup state, ColorSet set, KSharedConfigPtr config)
 {

@@ -322,13 +322,11 @@ public:
         NShadeRoles,
     };
 
-    /** Construct a copy of another KColorScheme. */
-    KColorScheme(const KColorScheme &);
 
     /** Destructor */
     virtual ~KColorScheme(); // TODO KF6: remove virtual
 
-    /** Standard assignment operator */
+    KColorScheme(const KColorScheme &);
     KColorScheme &operator=(const KColorScheme &);
 
     /**
