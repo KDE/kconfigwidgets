@@ -264,7 +264,7 @@ create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent)
 /**
  * This will return the internal name of a given standard action.
  *
- * The char * only contains ascii characters
+ * The returned const char* only contains ASCII characters.
  */
 KCONFIGWIDGETS_EXPORT const char *name(StandardAction id);
 
