@@ -682,95 +682,90 @@ QPalette KColorScheme::createApplicationPalette(const KSharedConfigPtr &config)
 //END KColorScheme
 
 //BEGIN KStatefulBrush
-class KStatefulBrushPrivate : public QBrush // for now, just be a QBrush
+class KStatefulBrushPrivate
 {
 public:
-    KStatefulBrushPrivate() : QBrush() {}
-    KStatefulBrushPrivate(const QBrush &brush) : QBrush(brush) {} // not explicit
+    std::array<QBrush, QPalette::NColorGroups> brushes;
 };
 
 KStatefulBrush::KStatefulBrush()
+    : d(std::make_unique<KStatefulBrushPrivate>())
 {
-    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
 }
 
-KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::ForegroundRole role,
-                               KSharedConfigPtr config)
+KStatefulBrush::~KStatefulBrush() = default;
+
+
+KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::ForegroundRole role, KSharedConfigPtr config)
+    : KStatefulBrush()
 {
-    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
-    d[QPalette::Active] = KColorScheme(QPalette::Active,   set, config).foreground(role);
-    d[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, config).foreground(role);
-    d[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, config).foreground(role);
+    d->brushes[QPalette::Active] = KColorScheme(QPalette::Active,   set, config).foreground(role);
+    d->brushes[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, config).foreground(role);
+    d->brushes[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, config).foreground(role);
 }
 
-KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::BackgroundRole role,
-                               KSharedConfigPtr config)
+KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::BackgroundRole role, KSharedConfigPtr config)
+    : KStatefulBrush()
+
 {
-    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
-    d[QPalette::Active] = KColorScheme(QPalette::Active,   set, config).background(role);
-    d[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, config).background(role);
-    d[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, config).background(role);
+    d->brushes[QPalette::Active] = KColorScheme(QPalette::Active,   set, config).background(role);
+    d->brushes[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, config).background(role);
+    d->brushes[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, config).background(role);
 }
 
-KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::DecorationRole role,
-                               KSharedConfigPtr config)
+KStatefulBrush::KStatefulBrush(KColorScheme::ColorSet set, KColorScheme::DecorationRole role, KSharedConfigPtr config)
+    : KStatefulBrush()
 {
-    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
-    d[QPalette::Active] = KColorScheme(QPalette::Active,   set, config).decoration(role);
-    d[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, config).decoration(role);
-    d[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, config).decoration(role);
+    d->brushes[QPalette::Active] = KColorScheme(QPalette::Active,   set, config).decoration(role);
+    d->brushes[QPalette::Disabled] = KColorScheme(QPalette::Disabled, set, config).decoration(role);
+    d->brushes[QPalette::Inactive] = KColorScheme(QPalette::Inactive, set, config).decoration(role);
 }
 
 KStatefulBrush::KStatefulBrush(const QBrush &brush, KSharedConfigPtr config)
+    : KStatefulBrush()
 {
     if (!config) {
         config = defaultConfig();
     }
-    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
-    d[QPalette::Active] = brush;
-    d[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush);
-    d[QPalette::Inactive] = StateEffects(QPalette::Inactive, config).brush(brush);
+    d->brushes[QPalette::Active] = brush;
+    d->brushes[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush);
+    d->brushes[QPalette::Inactive] = StateEffects(QPalette::Inactive, config).brush(brush);
 }
 
 KStatefulBrush::KStatefulBrush(const QBrush &brush, const QBrush &background,
                                KSharedConfigPtr config)
+    : KStatefulBrush()
 {
     if (!config) {
         config = defaultConfig();
     }
-    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
-    d[QPalette::Active] = brush;
-    d[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush, background);
-    d[QPalette::Inactive] = StateEffects(QPalette::Inactive, config).brush(brush, background);
+    d->brushes[QPalette::Active] = brush;
+    d->brushes[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush, background);
+    d->brushes[QPalette::Inactive] = StateEffects(QPalette::Inactive, config).brush(brush, background);
 }
 
 KStatefulBrush::KStatefulBrush(const KStatefulBrush &other)
+    : KStatefulBrush()
 {
-    d = new KStatefulBrushPrivate[QPalette::NColorGroups];
-    d[QPalette::Active] = other.d[QPalette::Active];
-    d[QPalette::Disabled] = other.d[QPalette::Disabled];
-    d[QPalette::Inactive] = other.d[QPalette::Inactive];
-}
-
-KStatefulBrush::~KStatefulBrush()
-{
-    delete[] d;
+    d->brushes[QPalette::Active] = other.d->brushes[QPalette::Active];
+    d->brushes[QPalette::Disabled] = other.d->brushes[QPalette::Disabled];
+    d->brushes[QPalette::Inactive] = other.d->brushes[QPalette::Inactive];
 }
 
 KStatefulBrush &KStatefulBrush::operator=(const KStatefulBrush &other)
 {
-    d[QPalette::Active] = other.d[QPalette::Active];
-    d[QPalette::Disabled] = other.d[QPalette::Disabled];
-    d[QPalette::Inactive] = other.d[QPalette::Inactive];
+    d->brushes[QPalette::Active] = other.d->brushes[QPalette::Active];
+    d->brushes[QPalette::Disabled] = other.d->brushes[QPalette::Disabled];
+    d->brushes[QPalette::Inactive] = other.d->brushes[QPalette::Inactive];
     return *this;
 }
 
 QBrush KStatefulBrush::brush(QPalette::ColorGroup state) const
 {
     if (state >= QPalette::Active && state < QPalette::NColorGroups) {
-        return d[state];
+        return d->brushes[state];
     } else {
-        return d[QPalette::Active];
+        return d->brushes[QPalette::Active];
     }
 }
 

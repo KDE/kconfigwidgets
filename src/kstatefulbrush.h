@@ -9,6 +9,10 @@
 
 #include "kcolorscheme.h"
 
+#include <memory>
+
+class KStatefulBrushPrivate;
+
 /**
  * @class KStatefulBrush kstatefulbrush.h KStatefulBrush
  * A container for a "state-aware" brush.
@@ -130,7 +134,7 @@ public:
 #endif
 
 private:
-    class KStatefulBrushPrivate *d;
+    std::unique_ptr<KStatefulBrushPrivate> d;
 };
 
 Q_DECLARE_METATYPE(KStatefulBrush) /* so we can pass it in QVariant's */
