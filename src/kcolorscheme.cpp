@@ -293,8 +293,8 @@ public:
 
     struct Brushes {
         std::array<QBrush, KColorScheme::NForegroundRoles> fg;
-        std::array<QBrush, KColorScheme::NForegroundRoles> bg;
-        std::array<QBrush, KColorScheme::NForegroundRoles> deco;
+        std::array<QBrush, KColorScheme::NBackgroundRoles> bg;
+        std::array<QBrush, KColorScheme::NDecorationRoles> deco;
 
         bool operator==(const Brushes &b) const {
             return this == &b || (fg == b.fg && bg == b.bg && deco == b.deco);
