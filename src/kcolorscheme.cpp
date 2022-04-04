@@ -505,7 +505,7 @@ bool KColorScheme::operator==(const KColorScheme &other) const
 }
 
 // static
-#if KCONFIGCORE_BUILD_DEPRECATED_SINCE(5, 93)
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 93)
 int KColorScheme::contrast()
 {
     KConfigGroup g(defaultConfig(), "KDE");
