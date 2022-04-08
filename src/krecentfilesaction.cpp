@@ -282,8 +282,7 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
     QUrl url;
 
     KConfigGroup cg = _config;
-    // "<default>" means the group was constructed with an empty name
-    if (cg.name() == QLatin1String("<default>")) {
+    if (cg.name().isEmpty()) {
         cg = KConfigGroup(cg.config(), "RecentFiles");
     }
 
@@ -338,8 +337,7 @@ void KRecentFilesAction::saveEntries(const KConfigGroup &_cg)
     Q_D(KRecentFilesAction);
 
     KConfigGroup cg = _cg;
-    // "<default>" means the group was constructed with an empty name
-    if (cg.name() == QLatin1String("<default>")) {
+    if (cg.name().isEmpty()) {
         cg = KConfigGroup(cg.config(), "RecentFiles");
     }
 

@@ -132,7 +132,7 @@ public:
     /**
      *  Saves the current recent files entries to a given KConfigGroup object.
      *  You can provide the name of the group used to load the entries.
-     *  If the groupname is empty, entries are saved to a group called 'RecentFiles'.
+     *  If the groupname is empty, entries are saved to a group called 'RecentFiles'
      *
      */
     void saveEntries(const KConfigGroup &config);
