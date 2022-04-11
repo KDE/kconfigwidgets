@@ -19,6 +19,7 @@ target_sources(KF5ConfigWidgets PRIVATE
   klanguagename.cpp
   krecentfilesaction.cpp
   kstandardaction.cpp
+  kstatefulbrush.cpp
   ktipdialog.cpp
 
   kconfigwidgets.qrc
