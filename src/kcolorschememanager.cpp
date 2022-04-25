@@ -95,7 +95,7 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
         const QString colorSchemeToApply = d->getWindowsMessagesNotifier().preferDarkMode() ? d->getDarkColorScheme() : d->getLightColorScheme();
         s_autoColorSchemePath = this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString();
         if (!s_overrideAutoSwitch) {
-            ::activateScheme(this->indexForSchemeId(colorSchemeToApply).data(KColorSchemeModel::PathRole).toString(), false);
+            activateSchemeInternal(this->indexForSchemeId(colorSchemeToApply).data(KColorSchemeModel::PathRole).toString(), false);
             if (d->m_autosaveChanges) {
                 saveSchemeToConfigFile(indexForScheme(colorSchemeToApply).data(Qt::DisplayRole).toString());
             }
