@@ -30,7 +30,7 @@ static QString s_autoColorSchemePath;
 WindowsMessagesNotifier KColorSchemeManagerPrivate::m_windowsMessagesNotifier = WindowsMessagesNotifier();
 #endif
 
-static void activateScheme(const QString &colorSchemePath, bool overrideAutoSwitch = true)
+static void activateSchemeInternal(const QString &colorSchemePath, bool overrideAutoSwitch = true)
 {
     s_overrideAutoSwitch = overrideAutoSwitch;
     // hint for plasma-integration to synchronize the color scheme with the window manager/compositor
@@ -106,7 +106,7 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
     KSharedConfigPtr config = KSharedConfig::openConfig();
     KConfigGroup cg(config, "UiSettings");
     auto scheme = cg.readEntry("ColorScheme", QString());
-    ::activateScheme(indexForScheme(scheme).data(Qt::UserRole).toString());
+    activateSchemeInternal(indexForScheme(scheme).data(Qt::UserRole).toString());
 
 #ifdef Q_OS_WIN
     d->getWindowsMessagesNotifier().handleWMSettingChange();
@@ -159,7 +159,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
     KActionMenu *menu = new KActionMenu(icon, name, parent);
     QActionGroup *group = new QActionGroup(menu);
     connect(group, &QActionGroup::triggered, qApp, [this](QAction *action) {
-        ::activateScheme(action->data().toString());
+        activateSchemeInternal(action->data().toString());
         if (d->m_autosaveChanges) {
             saveSchemeToConfigFile(action->text());
         }
@@ -215,12 +215,12 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(QObject *parent)
 void KColorSchemeManager::activateScheme(const QModelIndex &index)
 {
     if (index.isValid() && index.model() == d->model.get()) {
-        ::activateScheme(index.data(Qt::UserRole).toString());
+        activateSchemeInternal(index.data(Qt::UserRole).toString());
         if (d->m_autosaveChanges) {
             saveSchemeToConfigFile(index.data(Qt::DisplayRole).toString());
         }
     } else {
-        ::activateScheme(QString());
+        activateSchemeInternal(QString());
         if (d->m_autosaveChanges) {
             saveSchemeToConfigFile(QString());
         }
