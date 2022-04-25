@@ -28,6 +28,8 @@ class KColorSchemeModel : public QAbstractListModel
     Q_OBJECT
 public:
     enum Roles {
+        NameRole = Qt::DisplayRole,
+        IconRole = Qt::DecorationRole,
         PathRole = Qt::UserRole,
         IdRole,
     };

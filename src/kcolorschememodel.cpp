@@ -89,9 +89,9 @@ QVariant KColorSchemeModel::data(const QModelIndex &index, int role) const
     }
 
     switch (role) {
-    case Qt::DisplayRole:
+    case NameRole:
         return d->m_data.at(index.row()).name;
-    case Qt::DecorationRole: {
+    case IconRole: {
         auto &item = d->m_data[index.row()];
         if (item.preview.isNull()) {
             item.preview = KColorSchemeManagerPrivate::createPreview(item.path);

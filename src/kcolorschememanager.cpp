@@ -93,11 +93,11 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
 #ifdef Q_OS_WIN
     connect(&d->getWindowsMessagesNotifier(), &WindowsMessagesNotifier::wm_colorSchemeChanged, this, [this](){
         const QString colorSchemeToApply = d->getWindowsMessagesNotifier().preferDarkMode() ? d->getDarkColorScheme() : d->getLightColorScheme();
-        s_autoColorSchemePath = this->indexForScheme(colorSchemeToApply).data(Qt::UserRole).toString();
+        s_autoColorSchemePath = this->indexForScheme(colorSchemeToApply).data(KColorSchemeModel::PathRole).toString();
         if (!s_overrideAutoSwitch) {
             activateSchemeInternal(this->indexForSchemeId(colorSchemeToApply).data(KColorSchemeModel::PathRole).toString(), false);
             if (d->m_autosaveChanges) {
-                saveSchemeToConfigFile(indexForScheme(colorSchemeToApply).data(Qt::DisplayRole).toString());
+                saveSchemeToConfigFile(indexForScheme(colorSchemeToApply).data(KColorSchemeModel::NameRole).toString());
             }
         }
     });
@@ -106,7 +106,7 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
     KSharedConfigPtr config = KSharedConfig::openConfig();
     KConfigGroup cg(config, "UiSettings");
     auto scheme = cg.readEntry("ColorScheme", QString());
-    activateSchemeInternal(indexForScheme(scheme).data(Qt::UserRole).toString());
+    activateSchemeInternal(indexForScheme(scheme).data(KColorSchemeModel::PathRole).toString());
 
 #ifdef Q_OS_WIN
     d->getWindowsMessagesNotifier().handleWMSettingChange();
@@ -166,8 +166,8 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
     });
     for (int i = 0; i < d->model->rowCount(); ++i) {
         QModelIndex index = d->model->index(i);
-        QAction *action = new QAction(index.data(Qt::DisplayRole).toString(), menu);
-        action->setData(index.data(Qt::UserRole));
+        QAction *action = new QAction(index.data(KColorSchemeModel::NameRole).toString(), menu);
+        action->setData(index.data(KColorSchemeModel::PathRole));
         action->setActionGroup(group);
         action->setCheckable(true);
         if (index.data().toString() == selectedSchemeName) {
@@ -215,9 +215,9 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(QObject *parent)
 void KColorSchemeManager::activateScheme(const QModelIndex &index)
 {
     if (index.isValid() && index.model() == d->model.get()) {
-        activateSchemeInternal(index.data(Qt::UserRole).toString());
+        activateSchemeInternal(index.data(KColorSchemeModel::PathRole).toString());
         if (d->m_autosaveChanges) {
-            saveSchemeToConfigFile(index.data(Qt::DisplayRole).toString());
+            saveSchemeToConfigFile(index.data(KColorSchemeModel::NameRole).toString());
         }
     } else {
         activateSchemeInternal(QString());
