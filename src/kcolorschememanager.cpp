@@ -146,7 +146,7 @@ QModelIndex KColorSchemeManager::indexForScheme(const QString &name) const
     }
     for (int i = 1; i < d->model->rowCount(); ++i) {
         QModelIndex index = d->model->index(i);
-        if (index.data().toString() == name) {
+        if (index.data(KColorSchemeModel::NameRole).toString() == name) {
             return index;
         }
     }
@@ -170,7 +170,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
         action->setData(index.data(KColorSchemeModel::PathRole));
         action->setActionGroup(group);
         action->setCheckable(true);
-        if (index.data().toString() == selectedSchemeName) {
+        if (index.data(KColorSchemeModel::NameRole).toString() == selectedSchemeName) {
             action->setChecked(true);
         }
         menu->addAction(action);
