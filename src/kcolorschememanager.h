@@ -149,8 +149,6 @@ public Q_SLOTS:
     void activateScheme(const QModelIndex &index);
 
 private:
-    QModelIndex indexForSchemeId(const QString &id) const;
-
     std::unique_ptr<KColorSchemeManagerPrivate> const d;
 };
 

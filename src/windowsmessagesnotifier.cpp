@@ -6,7 +6,10 @@
 
 #include "windowsmessagesnotifier.h"
 
-WindowsMessagesNotifier::WindowsMessagesNotifier() {}
+WindowsMessagesNotifier::WindowsMessagesNotifier()
+{
+    m_preferDarkMode = !(m_settings.value(QStringLiteral("AppsUseLightTheme"), true).value<bool>());
+}
 
 WindowsMessagesNotifier::~WindowsMessagesNotifier() {}
 

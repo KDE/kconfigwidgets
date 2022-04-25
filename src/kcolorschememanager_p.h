@@ -22,14 +22,27 @@ public:
 
     std::unique_ptr<KColorSchemeModel> model;
     bool m_autosaveChanges = true;
+    bool m_defaultSchemeSelected = true;
 
     static QIcon createPreview(const QString &path);
+    void activateSchemeInternal(const QString &colorSchemePath);
+    QString automaticColorSchemePath() const;
+    QModelIndex indexForSchemeId(const QString &id) const;
 
 #ifdef Q_OS_WIN
     static WindowsMessagesNotifier m_windowsMessagesNotifier;
-    WindowsMessagesNotifier &getWindowsMessagesNotifier() {return m_windowsMessagesNotifier;}
-    const QString& getLightColorScheme() {return m_lightColorScheme;}
-    const QString& getDarkColorScheme() {return m_darkColorScheme;}
+    WindowsMessagesNotifier &getWindowsMessagesNotifier() const
+    {
+        return m_windowsMessagesNotifier;
+    }
+    const QString &getLightColorScheme() const
+    {
+        return m_lightColorScheme;
+    }
+    const QString &getDarkColorScheme() const
+    {
+        return m_darkColorScheme;
+    }
 
 private:
     QString m_lightColorScheme = QStringLiteral("Breeze");
