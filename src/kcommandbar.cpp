@@ -611,6 +611,13 @@ KCommandBar::~KCommandBar()
     auto cfg = KSharedConfig::openConfig();
     KConfigGroup cg(cfg, "General");
     cg.writeEntry("CommandBarLastUsedActions", lastUsedActions);
+
+    // Explicitly remove installed event filters of children of d-pointer
+    // class, otherwise while KCommandBar is being torn down, an event could
+    // fire and the eventFilter() accesses d, which would cause a crash
+    // bug 452527
+    d->m_treeView.removeEventFilter(this);
+    d->m_lineEdit.removeEventFilter(this);
 }
 
 void KCommandBar::setActions(const QVector<ActionGroup> &actions)
