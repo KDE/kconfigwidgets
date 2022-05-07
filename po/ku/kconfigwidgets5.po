@@ -1,0 +1,662 @@
+# translation of kdelibs4.po to Kurdish
+# Kurdish translation for kdelibs
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the kdelibs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# Erdal Ronahi <erdal.ronahi@nospam.gmail.com>, 2006, 2008.
+# Erdal Ronahi <erdal.ronahi@nospam.gmail.com>, 2007, 2008, 2009.
+# Amed Çeko Jiyan <amedcj@gmail.com>, 2008.
+# Erdal Ronahî <erdal.ronahi@nospam.gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-03 00:40+0000\n"
+"PO-Revision-Date: 2010-08-13 15:45+0200\n"
+"Last-Translator: Erdal Ronahî <erdal.ronahi@nospam.gmail.com>\n"
+"Language-Team: Kurdish Team http://pckurd.net\n"
+"Language: ku\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+"X-Launchpad-Export-Date: 2007-11-26 09:44+0000\n"
+"X-Poedit-Language: Kurdish\n"
+"X-Poedit-Country: Kurdistan\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Erdal Ronahi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "erdal.ronahi@nospam.gmail.com"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kcmodule.cpp:193
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Tu nikarî veavakirinan tomar bikî"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Standard"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Xweber bibîne"
+
+#: kcolorschememanager.cpp:226 kcolorschememanager.cpp:235
+#, fuzzy, kde-format
+#| msgid "Shortcut Schemes"
+msgid "Color Scheme"
+msgstr "Şemayên Kurterê"
+
+#: kcolorschememodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Standard"
+
+#: kcommandbar.cpp:584
+#, kde-format
+msgid "No commands matching the filter"
+msgstr ""
+
+#: kconfigdialog.cpp:37
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Veavakirin"
+
+#: khamburgermenu.cpp:128
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "Menu"
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "Pêşek"
+
+#: khamburgermenu.cpp:334
+#, fuzzy, kde-format
+#| msgid "Show all options"
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Hemû vebijarkan nîşan bide"
+
+#: khamburgermenu.cpp:362
+#, fuzzy, kde-format
+#| msgid "Choose..."
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Hilbijêre..."
+
+#: khamburgermenu.cpp:363
+#, fuzzy, kde-format
+#| msgid "More Actions"
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Zêdetir Çalakî"
+
+#: krecentfilesaction.cpp:70
+#, kde-format
+msgid "No Entries"
+msgstr "Ketan Tune"
+
+#: krecentfilesaction.cpp:76
+#, kde-format
+msgid "Clear List"
+msgstr "Lîstê Paqij Bike"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Paşve"
+
+#: kstandardaction.cpp:165
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Pêşve"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Mal"
+
+#: kstandardaction.cpp:176
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Alîkarî"
+
+#: kstandardaction.cpp:233
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr "Darikê Pêşekê Nîşan bide<p>Darikê amûran yê naxuye nîşan bide</p>"
+
+#: kstandardaction.cpp:254
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&Nû"
+
+#: kstandardaction_p.h:30
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Create new tag:"
+msgid "Create new document"
+msgstr "Etîketekî nû biafirîne:"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "&Veke..."
+
+#: kstandardaction_p.h:31
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "Di Belgeyê de &Paşve"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "&Ya herî dawî hatiye bikaranîn veke"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "&Tomar bike"
+
+#: kstandardaction_p.h:33
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Belgeyê Bigire"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Cuda &Tomarkirin..."
+
+#: kstandardaction_p.h:34
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "Belgeyê Bigire"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "Vegere &Halê Tomarkirî"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&Bigire"
+
+#: kstandardaction_p.h:36
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Belgeyê Bigire"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "&Çap bike..."
+
+#: kstandardaction_p.h:37
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "ÇapDîmender"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "Pêşdîtina Ça&pkirinê"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&E-peyam..."
+
+#: kstandardaction_p.h:39
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "Belgeyê Bigire"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "&Derkeve"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Ji sepanê derkeve"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "&Vegerîne"
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Undo last action"
+msgstr "Şabaş bide"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "Ve&ger"
+
+#: kstandardaction_p.h:43
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Redo last undone action"
+msgstr "Şabaş bide"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "&Jê bike"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Ji ber bigire"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "&Pê ve bike"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, fuzzy
+#| msgid "Upload content"
+msgid "Paste clipboard content"
+msgstr "Naverokê bar bike"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "&Paqij Bike"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "Tevî &Hilbijêre"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "Yekê &Hilnejêre"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&Bibîne..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "&Ya Dû Re Bibîne"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "&Ya Berê Bibîne"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "&Biguherîne..."
+
+#: kstandardaction_p.h:58
+msgid "&Actual Size"
+msgstr "&Mezinahiya rastî"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "&Here rûpelekî"
+
+#: kstandardaction_p.h:59
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "Biçe Rêzikê"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Lihevkirina &firehiya rûpel"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Lihevkirina &bilindahiya rûpel"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "&Mezinkirin"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "Biçûk&kirin"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Mezin/biçûkirin..."
+
+#: kstandardaction_p.h:64
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Hefteyekê hilbijêre"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:65
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "&Cardin pêşkêşkirin"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "&Jor"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "&Rûpelê berê"
+
+#: kstandardaction_p.h:72
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "&Rûpelê berê"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "&Rûpelê Pişt re"
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Biçe Rêzikê"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Biçe..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "&Biçe Rûpel..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Biçe Rêzikê..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "&Rûpelê Pêşîn"
+
+#: kstandardaction_p.h:77
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Biçe Rêzikê"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "&Rûpelê Dawîn"
+
+#: kstandardaction_p.h:78
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Biçe Rûpel..."
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "&Paşve"
+
+#: kstandardaction_p.h:79
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "Di Belgeyê de &Paşve"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "&Pêşve"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "Di Belgeyê de &Pêşve"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "&Bijareyekê Lê Zêde Bike"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "Bijareyan &Sererast Bike..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "&Rastnivîs..."
+
+#: kstandardaction_p.h:85
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Rastnivîsê Kontrol Bike"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "Darîkê &Pêşekê Nîşan Bide"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Darîkê &Pêşekê Nîşan Bide"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "Darikê &Amûran Nîşan Bide"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Darikê Amûran Nîşan Bide"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "&Darikê Rewşê Nîşan Bide"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Darikê Rewşê Nîşan Bide"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "Moda Dîmender &Tije"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "&Mîhengan Tomar Bike"
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "K&urteriyan Veava Bike..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "Bernameya %1 S&ererast Bike..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "&Darikê Amûran Veava Bike..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "&Hişyariyan Veava Bike..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 &Pirtûka Destan"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "&Ev Çi Ye?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "Mijara &rojê"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "&Raporekê Çêbike..."
+
+#: kstandardaction_p.h:108
+#, fuzzy
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "E-peyamê Veava Bike..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "&Der barê %1 de"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "Der barê &KDE de"
+
+#: kstandardaction_p.h:111
+#, fuzzy
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "Jê bibe"
+
+#: kstandardaction_p.h:112
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "&Biguherîne..."
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr ""
+
+#: kstandardaction_p.h:115
+#, fuzzy
+#| msgid "Open &Recent"
+msgid "Open &Menu"
+msgstr "&Ya herî dawî hatiye bikaranîn veke"
+
+#: ktipdialog.cpp:219
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Mijara Rojê"
+
+#: ktipdialog.cpp:235
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Te zanîbû...?\n"
+
+#: ktipdialog.cpp:288
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "&Di destpêka xebitandinê de têbîniyan pêşkêş bike"
+
+#: ktipdialog.cpp:293
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Paşde"
+
+#: ktipdialog.cpp:298
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Pêşde"
