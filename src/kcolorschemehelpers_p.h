@@ -17,7 +17,7 @@
 static KSharedConfigPtr defaultConfig()
 {
     // cache the value we'll return, since usually it's going to be the same value
-    static thread_local KSharedConfigPtr config;
+    static KSharedConfigPtr config;
     // Read from the application's color scheme file (as set by KColorSchemeManager).
     // If unset, this is equivalent to openConfig() and the system scheme is used.
     const auto colorSchemePath = qApp->property("KDE_COLOR_SCHEME_PATH").toString();
