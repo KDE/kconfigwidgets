@@ -242,7 +242,7 @@ KCONFIGWIDGETS_EXPORT QAction *_k_createInternal(StandardAction id, QObject *par
  * @note if you use @c OpenRecent as @p id, you should manually connect to the urlSelected(const QUrl &)
  * signal of the returned KRecentFilesAction instead or use KStandardAction::openRecent(Receiver *, Func).
  *
- * If not explicitely specified, connectionType will be AutoConnection for all actions
+ * If not explicitely specified, @p connectionType will be AutoConnection for all actions
  * except for ConfigureToolbars that will be QueuedConnection
  *
  * @see create(StandardAction, const QObject *, const char *, QObject *)
