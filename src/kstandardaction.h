@@ -243,7 +243,7 @@ KCONFIGWIDGETS_EXPORT QAction *_k_createInternal(StandardAction id, QObject *par
  * signal of the returned KRecentFilesAction instead or use KStandardAction::openRecent(Receiver *, Func).
  *
  * If not explicitely specified, @p connectionType will be AutoConnection for all actions
- * except for ConfigureToolbars that will be QueuedConnection
+ * except for ConfigureToolbars that will be QueuedConnection.
  *
  * @see create(StandardAction, const QObject *, const char *, QObject *)
  * @since 5.23 (The connectionType argument was added in 5.95)
