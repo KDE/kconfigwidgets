@@ -170,20 +170,8 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
         return;
     }
 
-    using Info = KRecentFilesActionPrivate::RecentActionInfo;
-    // Reverse iterators because the most recent actions are at the end of m_recentActions
-    auto it = std::find_if(d->m_recentActions.rbegin(), d->m_recentActions.rend(), [&url](const Info &info) {
-        return info.url == url;
-    });
-    if (it != d->m_recentActions.rend()) { // url already has an action in the menu
-        // Remove the action...
-        QAction *act = removeAction(it->action);
-        // ... move the relevant object to the end of m_recentActions
-        std::rotate(d->m_recentActions.rbegin(), it, it + 1);
-        // ... prepend the action to the menu
-        menu()->insertAction(menu()->actions().value(0), act);
-        return; // All done
-    }
+    // Remove url if it already exists in the list
+    removeUrl(url);
 
     // Remove oldest item if already maxItems in list
     Q_ASSERT(d->m_maxItems > 0);
