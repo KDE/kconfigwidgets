@@ -60,6 +60,8 @@ public:
         });
     }
 
+    void removeAction(std::vector<RecentActionInfo>::iterator it);
+
     QAction *m_noEntriesAction = nullptr;
     QAction *clearSeparator = nullptr;
     QAction *clearAction = nullptr;

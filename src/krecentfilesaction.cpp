@@ -95,6 +95,13 @@ void KRecentFilesActionPrivate::urlSelected(QAction *action)
     Q_EMIT q->urlSelected(it->url);
 }
 
+void KRecentFilesActionPrivate::removeAction(std::vector<RecentActionInfo>::iterator it)
+{
+    Q_Q(KRecentFilesAction);
+    delete q->removeAction(it->action);
+    m_recentActions.erase(it);
+}
+
 int KRecentFilesAction::maxItems() const
 {
     Q_D(const KRecentFilesAction);
@@ -110,17 +117,12 @@ void KRecentFilesAction::setMaxItems(int maxItems)
     // Remove all excess items, oldest (i.e. first added) first
     const int difference = static_cast<int>(d->m_recentActions.size()) - d->m_maxItems;
     if (difference > 0) {
-        using Info = KRecentFilesActionPrivate::RecentActionInfo;
-
         auto beginIt = d->m_recentActions.begin();
         auto endIt = d->m_recentActions.begin() + difference;
-        std::for_each(beginIt, endIt, [this](const Info &info) {
+        for (auto it = beginIt; it < endIt; ++it) {
             // Remove the action from the menus, action groups ...etc
-            delete removeAction(info.action);
-        });
-
-        // Erase the respective items from m_recentActions
-        d->m_recentActions.erase(beginIt, endIt);
+            d->removeAction(it);
+        }
     }
 }
 
@@ -176,9 +178,7 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
     // Remove oldest item if already maxItems in list
     Q_ASSERT(d->m_maxItems > 0);
     if (static_cast<int>(d->m_recentActions.size()) == d->m_maxItems) {
-        auto oldest = d->m_recentActions.begin();
-        delete removeAction(oldest->action);
-        d->m_recentActions.erase(oldest);
+        d->removeAction(d->m_recentActions.begin());
     }
 
     const QString pathOrUrl(url.toDisplayString(QUrl::PreferLocalFile));
@@ -219,8 +219,7 @@ void KRecentFilesAction::removeUrl(const QUrl &url)
     auto it = d->findByUrl(url);
 
     if (it != d->m_recentActions.cend()) {
-        delete removeAction(it->action);
-        d->m_recentActions.erase(it);
+        d->removeAction(it);
     };
 }
 
