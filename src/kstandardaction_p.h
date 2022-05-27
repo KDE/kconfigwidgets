@@ -55,7 +55,7 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { FindPrev,      KStandardShortcut::FindPrev, "edit_find_prev", kli18n("Find Pre&vious"), {}, "go-up-search" },
     { Replace,       KStandardShortcut::Replace, "edit_replace", kli18n("&Replace..."), {}, "edit-find-replace" },
 
-    { ActualSize,    KStandardShortcut::ActualSize, "view_actual_size", kli18n("&Actual Size"), kli18n("View document at its actual size"), "zoom-original" },
+    { ActualSize,    KStandardShortcut::ActualSize, "view_actual_size", kli18n("Zoom to &Actual Size"), kli18n("View document at its actual size"), "zoom-original" },
     { FitToPage,     KStandardShortcut::FitToPage, "view_fit_to_page", kli18n("&Fit to Page"), kli18n("Zoom to fit page in window"), "zoom-fit-page" },
     { FitToWidth,    KStandardShortcut::FitToWidth, "view_fit_to_width", kli18n("Fit to Page &Width"), kli18n("Zoom to fit page width in window"), "zoom-fit-width" },
     { FitToHeight,   KStandardShortcut::FitToHeight, "view_fit_to_height", kli18n("Fit to Page &Height"), kli18n("Zoom to fit page height in window"), "zoom-fit-height" },
