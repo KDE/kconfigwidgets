@@ -98,7 +98,7 @@ void KRecentFilesActionPrivate::urlSelected(QAction *action)
 void KRecentFilesActionPrivate::removeAction(std::vector<RecentActionInfo>::iterator it)
 {
     Q_Q(KRecentFilesAction);
-    delete q->removeAction(it->action);
+    delete q->KSelectAction::removeAction(it->action);
     m_recentActions.erase(it);
 }
 
@@ -209,6 +209,10 @@ void KRecentFilesAction::addAction(QAction *action, const QUrl &url, const QStri
 
 QAction *KRecentFilesAction::removeAction(QAction *action)
 {
+    Q_D(KRecentFilesAction);
+    auto it = d->findByAction(action);
+    Q_ASSERT(it != d->m_recentActions.cend());
+    d->m_recentActions.erase(it);
     return KSelectAction::removeAction(action);
 }
 
