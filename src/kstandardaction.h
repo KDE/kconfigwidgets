@@ -32,8 +32,7 @@ class KToggleFullScreenAction;
  *
  * These actions should be used instead of hardcoding menubar and
  * toolbar items.  Using these actions helps your application easily
- * conform to the KDE Human Interface Guidelines.
- * @see https://hig.kde.org/
+ * conform to the <a href="https://develop.kde.org/hig/">KDE Human Interface Guidelines</a>.
  *
  * All of the documentation for QAction holds for KStandardAction
  * also.  When in doubt on how things work, check the QAction
