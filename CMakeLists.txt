@@ -70,7 +70,7 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 remove_definitions(-DQT_NO_CAST_FROM_BYTEARRAY)
 ecm_set_disabled_deprecation_versions(
     QT 5.15.2
-    KF 5.90.0
+    KF 5.95.0
     KWIDGETSADDONS 5.77.0  # We need KSelectAction::triggered(QString)
 )
 
