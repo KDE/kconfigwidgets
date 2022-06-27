@@ -73,7 +73,7 @@ void KRecentFilesActionPrivate::init()
     clearSeparator = q->menu()->addSeparator();
     clearSeparator->setVisible(false);
     clearSeparator->setObjectName(QStringLiteral("separator"));
-    clearAction = q->menu()->addAction(i18n("Clear List"), q, &KRecentFilesAction::clear);
+    clearAction = q->menu()->addAction(QIcon::fromTheme(QStringLiteral("edit-clear-history")), i18n("Clear List"), q, &KRecentFilesAction::clear);
     clearAction->setObjectName(QStringLiteral("clear_action"));
     clearAction->setVisible(false);
     q->setEnabled(false);
