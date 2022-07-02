@@ -1,0 +1,593 @@
+# KDE - kdelibs/kdelibs4.po Russian translation.
+# Copyright (C) 2005, KDE Russian translation team.
+#
+# Denis Perchine <dyp@perchine.com>, 2000.
+# Gregory Mokhin <mok@kde.ru>, 2000, 2004, 2005.
+# Albert R. Valiev <darkstar@altlinux.ru>, 2002, 2008.
+# Leonid Kanter <leon@asplinux.ru>, 2002-2004, 2005, 2008.
+# Andrey Cherepanov <skull@kde.ru>, 2005-2007, 2008, 2009, 2011.
+# Nick Shaforostoff <shaforostoff@kde.ru>, 2004, 2006, 2007, 2008, 2009.
+# Nick Shaforostoff <shafff@ukr.net>, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2009, 2010, 2011, 2014, 2015, 2016, 2017.
+# Yury G. Kudryashov <urkud.urkud@gmail.com>, 2011.
+# Yuri Efremov <yur.arh@gmail.com>, 2012.
+# Inga Barinova <ingabarinova@gmail.com>, 2012.
+# Julia Dronova <juliette.tux@gmail.com>, 2012.
+# Alexander Lakhin <exclusion@gmail.com>, 2013.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2019, 2020, 2021, 2022.
+# Olesya Gerasimenko <translation-team@basealt.ru>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-31 00:42+0000\n"
+"PO-Revision-Date: 2022-06-24 11:08+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 22.04.2\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Григорий Мохин,Николай Шафоростов,Андрей Черепанов,Леонид Кантер,Альберт "
+"Валиев,Олеся Герасименко"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"mok@kde.ru,shaforostoff@kde.ru,skull@kde.ru,leon@asplinux.ru,"
+"darkstar@altlinux.ru,translation-team@basealt.ru"
+
+#: kcmodule.cpp:189
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Сохранение параметров потребует ввода пароля"
+
+#: kcmodule.cpp:193
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "У вас нет прав на изменение этих настроек"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "По умолчанию"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Автоматическое определение"
+
+#: kcolorschememanager.cpp:226 kcolorschememanager.cpp:235
+#, kde-format
+msgid "Color Scheme"
+msgstr "Цветовые схемы"
+
+#: kcolorschememodel.cpp:71
+#, kde-format
+msgid "Default"
+msgstr "По умолчанию"
+
+#: kcommandbar.cpp:584
+#, kde-format
+msgid "No commands matching the filter"
+msgstr "Нет команд, соответствующих фильтру"
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Настройка"
+
+#: khamburgermenu.cpp:128
+#, kde-format
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "&Меню"
+
+#: khamburgermenu.cpp:334
+#, kde-format
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Показать &меню со всеми действиями"
+
+#: khamburgermenu.cpp:362
+#, kde-format
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Дополнительно…"
+
+#: khamburgermenu.cpp:363
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Дополнительно"
+
+#: krecentfilesaction.cpp:70
+#, kde-format
+msgid "No Entries"
+msgstr "Нет записей"
+
+#: krecentfilesaction.cpp:76
+#, kde-format
+msgid "Clear List"
+msgstr "Очистить список"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Назад"
+
+#: kstandardaction.cpp:165
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Вперёд"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Домой"
+
+#: kstandardaction.cpp:176
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Справка"
+
+#: kstandardaction.cpp:233
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Показать меню<p>Показать меню снова после того, как оно было скрыто</p>"
+
+# BUGME: whatsthis on "Hide Statusbar" should be about "Hide Statusbar", not "Show Statusbar"
+#: kstandardaction.cpp:254
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Показать строку состояния<p>Строка состояния — это полоса в нижней части "
+"окна, в которой выводится информация о состоянии приложения.</p>"
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "Созд&ать"
+
+#: kstandardaction_p.h:30
+msgid "Create new document"
+msgstr "Создать новый документ"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "&Открыть..."
+
+#: kstandardaction_p.h:31
+msgid "Open an existing document"
+msgstr "Открыть существующий документ"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "По&следние файлы"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr "Открыть документ, который уже был недавно открыт"
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "&Сохранить"
+
+#: kstandardaction_p.h:33
+msgid "Save document"
+msgstr "Сохранить документ"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Сохранить &как..."
+
+#: kstandardaction_p.h:34
+msgid "Save document under a new name"
+msgstr "Сохранить документ под новым именем"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "&Восстановить"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr "Восстановить несохранённые изменения, внесённые в документ"
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&Закрыть"
+
+#: kstandardaction_p.h:36
+msgid "Close document"
+msgstr "Закрыть документ"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "Пе&чать..."
+
+#: kstandardaction_p.h:37
+msgid "Print document"
+msgstr "Печать документа"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "Пред&варительный просмотр"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr "Показать предварительный просмотр документа"
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "Отправить по &почте..."
+
+#: kstandardaction_p.h:39
+msgid "Send document by mail"
+msgstr "Отправить документ по электронной почте"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "В&ыход"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Выйти из приложения"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "О&тменить действие"
+
+#: kstandardaction_p.h:42
+msgid "Undo last action"
+msgstr "Отменить последнее действие"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "&Повторить"
+
+#: kstandardaction_p.h:43
+msgid "Redo last undone action"
+msgstr "Повторить последнее отменённое действие"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "Вы&резать"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr "Вырезать выбранное в буфер обмена"
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Копировать"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr "Скопировать выбранное в буфер обмена"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "&Вставить"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "Paste clipboard content"
+msgstr "Вставить содержимое буфера обмена"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "О&чистить"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "Вы&делить все"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "С&нять выделение"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&Найти..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "П&родолжить поиск"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Найти пред&ыдущее"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "&Заменить..."
+
+#: kstandardaction_p.h:58
+msgid "Zoom to &Actual Size"
+msgstr "&Фактический размер"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr "Просмотр документа в его фактическом размере"
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "&Вместить страницу целиком"
+
+#: kstandardaction_p.h:59
+msgid "Zoom to fit page in window"
+msgstr "Изменить масштаб, чтобы вместить страницу целиком в окно"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "По &ширине страницы"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr "Изменить масштаб, чтобы вместить всю ширину страницы"
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "По &высоте страницы"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr "Изменить масштаб, чтобы вместить всю высоту страницы"
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "У&величить"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "У&меньшить"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Масштаб..."
+
+#: kstandardaction_p.h:64
+msgid "Select zoom level"
+msgstr "Выбор масштаба"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr "&Обновить"
+
+#: kstandardaction_p.h:65
+msgid "Refresh document"
+msgstr "Обновить документ"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "Ввер&х"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr "Перейти вверх"
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "&Предыдущая страница"
+
+#: kstandardaction_p.h:72
+msgid "Go to previous page"
+msgstr "Перейти на предыдущую страницу"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "&Следующая страница"
+
+#: kstandardaction_p.h:73
+msgid "Go to next page"
+msgstr "Перейти на следующую страницу"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Перейти..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "Перейти на ст&раницу..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Перейти на строку..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "Перв&ая страница"
+
+#: kstandardaction_p.h:77
+msgid "Go to first page"
+msgstr "Перейти на первую страницу"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "Последня&я страница"
+
+#: kstandardaction_p.h:78
+msgid "Go to last page"
+msgstr "Перейти на последнюю страницу"
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "&Назад"
+
+#: kstandardaction_p.h:79
+msgid "Go back in document"
+msgstr "Назад по документу"
+
+#: kstandardaction_p.h:80
+msgid "&Forward"
+msgstr "&Вперёд"
+
+#: kstandardaction_p.h:80
+msgid "Go forward in document"
+msgstr "Вперёд по документу"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "Добавить &закладку"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "&Изменить закладки..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "&Проверка орфографии..."
+
+#: kstandardaction_p.h:85
+msgid "Check spelling in document"
+msgstr "Проверить орфографию в документе"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "Показать &меню"
+
+#: kstandardaction_p.h:87
+msgid "Show or hide menubar"
+msgstr "Показать или скрыть меню"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "Показать панель &инструментов"
+
+#: kstandardaction_p.h:88
+msgid "Show or hide toolbar"
+msgstr "Показать или скрыть панель инструментов"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "Показать строку &состояния"
+
+#: kstandardaction_p.h:89
+msgid "Show or hide statusbar"
+msgstr "Показать или скрыть строку состояния"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "&Полноэкранный режим"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "&Сохранить параметры"
+
+#: kstandardaction_p.h:94
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "&Комбинации клавиш..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Настроить %1..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Панели &инструментов..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "Настроить &уведомления..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "&Руководство пользователя %1"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "Что &это?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "Совет &дня"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "Сооб&щить об ошибке..."
+
+#: kstandardaction_p.h:108
+msgid "Configure &Language..."
+msgstr "Сменить &язык интерфейса..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "&О программе %1"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "О &KDE"
+
+#: kstandardaction_p.h:111
+msgid "&Delete"
+msgstr "У&далить"
+
+#: kstandardaction_p.h:112
+msgid "&Rename..."
+msgstr "&Переименовать..."
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr "У&далить в корзину"
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr "&Сделать пожертвование"
+
+#: kstandardaction_p.h:115
+msgid "Open &Menu"
+msgstr "Открыть &меню"
+
+#: ktipdialog.cpp:219
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Совет дня"
+
+#: ktipdialog.cpp:235
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Знаете ли вы...?\n"
+
+#: ktipdialog.cpp:288
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Пок&азывать советы при запуске"
+
+#: ktipdialog.cpp:293
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Предыдущий"
+
+#: ktipdialog.cpp:298
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Следующий"
