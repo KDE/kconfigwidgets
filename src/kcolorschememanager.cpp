@@ -110,15 +110,15 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
 
     KSharedConfigPtr config = KSharedConfig::openConfig();
     KConfigGroup cg(config, "UiSettings");
-    const QString scheme = cg.readEntry("ColorScheme", QString());
+    const QString schemeId = cg.readEntry("ColorScheme", QString());
 
     QString schemePath;
 
-    if (scheme.isEmpty() || scheme == QLatin1String("Default")) {
+    if (schemeId.isEmpty() || schemeId == QLatin1String("Default")) {
         schemePath = d->automaticColorSchemePath();
         d->m_defaultSchemeSelected = true;
     } else {
-        schemePath = indexForScheme(scheme).data(KColorSchemeModel::PathRole).toString();
+        schemePath = d->indexForSchemeId(schemeId).data(KColorSchemeModel::PathRole).toString();
         d->m_defaultSchemeSelected = false;
     }
     d->activateSchemeInternal(schemePath);
@@ -230,7 +230,8 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(QObject *parent)
 {
     KSharedConfigPtr config = KSharedConfig::openConfig();
     KConfigGroup cg(config, "UiSettings");
-    auto scheme = cg.readEntry("ColorScheme", QString());
+    auto schemeId = cg.readEntry("ColorScheme", QString());
+    auto scheme = d->indexForSchemeId(schemeId).data(KColorSchemeModel::PathRole).toString();
 
     return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), i18n("Color Scheme"), scheme, parent);
 }
@@ -255,7 +256,8 @@ void KColorSchemeManager::activateScheme(const QModelIndex &index)
 void KColorSchemeManager::saveSchemeToConfigFile(const QString &schemeName) const
 {
     KSharedConfigPtr config = KSharedConfig::openConfig();
+    const QString schemeId = indexForScheme(schemeName).data(KColorSchemeModel::IdRole).toString();
     KConfigGroup cg(config, "UiSettings");
-    cg.writeEntry("ColorScheme", KLocalizedString::removeAcceleratorMarker(schemeName));
+    cg.writeEntry("ColorScheme", schemeId);
     cg.sync();
 }
