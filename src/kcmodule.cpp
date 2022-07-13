@@ -105,6 +105,9 @@ KConfigDialogManager *KCModule::addConfig(KCoreConfigSkeleton *config, QWidget *
     KConfigDialogManager *manager = new KConfigDialogManager(widget, config);
     manager->setObjectName(objectName());
     connect(manager, &KConfigDialogManager::widgetModified, this, &KCModule::widgetChanged);
+    connect(manager, &QObject::destroyed, this, [this, manager]() {
+        d->managers.removeOne(manager);
+    });
     d->managers.append(manager);
     return manager;
 }
@@ -115,6 +118,9 @@ KConfigDialogManager *KCModule::addConfig(KConfigSkeleton *config, QWidget *widg
     KConfigDialogManager *manager = new KConfigDialogManager(widget, config);
     manager->setObjectName(objectName());
     connect(manager, &KConfigDialogManager::widgetModified, this, &KCModule::widgetChanged);
+    connect(manager, &QObject::destroyed, this, [this, manager]() {
+        d->managers.removeOne(manager);
+    });
     d->managers.append(manager);
     return manager;
 }
