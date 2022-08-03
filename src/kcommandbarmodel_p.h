@@ -102,6 +102,8 @@ private:
      * action is at the end
      */
     QStringList m_lastTriggered;
+
+    QAction *m_clearHistoryAction;
 };
 
 #endif // KCOMMANDBARMODEL_H

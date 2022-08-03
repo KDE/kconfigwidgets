@@ -24,6 +24,11 @@ QString KCommandBarModel::Item::displayName() const
 KCommandBarModel::KCommandBarModel(QObject *parent)
     : QAbstractTableModel(parent)
 {
+    m_clearHistoryAction = new QAction(tr("Clear History"), this);
+    m_clearHistoryAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-clear-history")));
+    connect(m_clearHistoryAction, &QAction::triggered, this, [this]() {
+        m_lastTriggered.clear();
+    });
 }
 
 void fillRows(QVector<KCommandBarModel::Item> &rows, const QString &title, const QList<QAction *> &actions, std::unordered_set<QAction *> &uniqueActions)
@@ -65,6 +70,7 @@ void KCommandBarModel::refresh(const QVector<KCommandBar::ActionGroup> &actionGr
     int totalActions = std::accumulate(actionGroups.begin(), actionGroups.end(), 0, [](int a, const KCommandBar::ActionGroup &ag) {
         return a + ag.actions.count();
     });
+    ++totalActions; // for m_clearHistoryAction
 
     QVector<Item> temp_rows;
     std::unordered_set<QAction *> uniqueActions;
@@ -73,6 +79,8 @@ void KCommandBarModel::refresh(const QVector<KCommandBar::ActionGroup> &actionGr
         const auto &agActions = ag.actions;
         fillRows(temp_rows, ag.name, agActions, uniqueActions);
     }
+
+    temp_rows.push_back({ tr("Command Bar"), m_clearHistoryAction, -1 });
 
     /**
      * For each action in last triggered actions,
