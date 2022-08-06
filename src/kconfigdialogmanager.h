@@ -276,11 +276,16 @@ public:
      */
     bool isDefault() const;
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 98)
     /**
      * Retrieve the map between widgets class names and the
      * USER properties used for the configuration values.
+     * @deprecated since 5.98. Mark the relevant property definition
+     * of the class as USER.
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 98, "See API docs")
     static QHash<QString, QByteArray> *propertyMap();
+#endif
 
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
     /**

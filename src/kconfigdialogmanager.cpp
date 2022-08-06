@@ -102,11 +102,13 @@ void KConfigDialogManager::initMaps()
     }
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 98)
 QHash<QString, QByteArray> *KConfigDialogManager::propertyMap()
 {
     initMaps();
     return s_propertyMap();
 }
+#endif
 
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 32)
 QHash<QString, QByteArray> *KConfigDialogManager::changedMap()
