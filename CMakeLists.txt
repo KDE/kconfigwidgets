@@ -68,6 +68,8 @@ if (WITH_KAUTH)
   set(HAVE_KAUTH TRUE)
 endif()
 
+configure_file(src/kconfigwidgets_config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/src/kconfigwidgets_config.h)
+
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 remove_definitions(-DQT_NO_CAST_FROM_BYTEARRAY)
 ecm_set_disabled_deprecation_versions(

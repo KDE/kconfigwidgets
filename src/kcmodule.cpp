@@ -15,7 +15,7 @@
 #include <KConfigSkeleton>
 #include <KLocalizedString>
 #include <kconfigdialogmanager.h>
-#ifndef KCONFIGWIDGETS_NO_KAUTH
+#if HAVE_KAUTH
 #include <KAuth/ExecuteJob>
 #endif
 
@@ -49,7 +49,7 @@ public:
     bool _firstshow : 1;
 
     bool _needsAuthorization : 1;
-#ifndef KCONFIGWIDGETS_NO_KAUTH
+#if HAVE_KAUTH
     KAuth::Action _authAction;
 #endif
 
@@ -132,7 +132,7 @@ KConfigDialogManager *KCModule::addConfig(KConfigSkeleton *config, QWidget *widg
 void KCModule::setNeedsAuthorization(bool needsAuth)
 {
     d->_needsAuthorization = needsAuth;
-#ifndef KCONFIGWIDGETS_NO_KAUTH
+#if HAVE_KAUTH
     if (needsAuth && d->_about) {
         d->_authAction = KAuth::Action(QLatin1String("org.kde.kcontrol.") + d->_about->componentName() + QLatin1String(".save"));
         d->_needsAuthorization = d->_authAction.isValid();
@@ -168,7 +168,7 @@ bool KCModule::defaultsIndicatorsVisible() const
     return d->_defaultsIndicatorsVisible;
 }
 
-#ifndef KCONFIGWIDGETS_NO_KAUTH
+#if HAVE_KAUTH
 void KCModule::setAuthAction(const KAuth::Action &action)
 {
     if (!action.isValid()) {

@@ -75,9 +75,8 @@ if (WITH_KAUTH)
   else()
     target_link_libraries(KF5ConfigWidgets PUBLIC KF5::Auth)
   endif()
-else()
-  target_compile_definitions(KF5ConfigWidgets PUBLIC -DKCONFIGWIDGETS_NO_KAUTH)
 endif()
+
 if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
   target_link_libraries(KF5ConfigWidgets PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # KPasteTextAction talks to Klipper via DBus
 endif()
