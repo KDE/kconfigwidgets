@@ -615,16 +615,20 @@ void KConfigDialogManagerPrivate::onWidgetModified()
     const auto widget = qobject_cast<QWidget *>(q->sender());
     Q_ASSERT(widget);
 
-    if (!widget->objectName().startsWith("kcfg_")) {
-        Q_ASSERT(widget->parent()->objectName().startsWith("kcfg_"));
-        const auto configId = widget->parent()->objectName().mid(5);
-        const auto parent = qobject_cast<QWidget *>(widget->parent());
-        Q_ASSERT(parent);
-        updateWidgetIndicator(configId, parent);
-    } else {
-        const auto configId = widget->objectName().mid(5);
+    const QLatin1String prefix("kcfg_");
+    QString configId = widget->objectName();
+    if (configId.startsWith(prefix)) {
+        configId.remove(0, prefix.size());
         updateWidgetIndicator(configId, widget);
+    } else {
+        auto *parent = qobject_cast<QWidget *>(widget->parent());
+        Q_ASSERT(parent);
+        configId = parent->objectName();
+        Q_ASSERT(configId.startsWith(prefix));
+        configId.remove(0, prefix.size());
+        updateWidgetIndicator(configId, parent);
     }
+
     Q_EMIT q->widgetModified();
 }
 
