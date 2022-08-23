@@ -30,18 +30,7 @@ KHamburgerMenu::KHamburgerMenu(QObject *parent)
 
 KHamburgerMenuPrivate::KHamburgerMenuPrivate(KHamburgerMenu *qq)
     : q_ptr{qq}
-    , m_actualMenu{nullptr}
-    , m_advertiseMenuBar{true}
-    , m_menuBarAdvertisementMenu{nullptr}
-    , m_lastUsedMenu{nullptr}
     , m_listeners{new ListenerContainer(this)}
-    , m_menuAction{nullptr}
-    , m_menuBar{nullptr}
-    , m_menuResetNeeded{false}
-    , m_showMenuBarAction{nullptr}
-    , m_showMenuBarText{""}
-    , m_showMenuBarWithAllActionsText{""}
-    , m_helpIconIsSet{false}
 {
     q_ptr->setPriority(QAction::LowPriority);
     connect(q_ptr, &QAction::changed, this, &KHamburgerMenuPrivate::slotActionChanged);

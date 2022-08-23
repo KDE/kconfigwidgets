@@ -137,7 +137,7 @@ protected:
     /** @see newMenu(). Do not confuse this menu with QAction::menu(). */
     std::unique_ptr<QMenu> m_actualMenu;
     /** @see KHamburgerMenu::setMenuBarAdvertised() */
-    bool m_advertiseMenuBar;
+    bool m_advertiseMenuBar = true;
     /** @see newMenuBarAdvertisementMenu() */
     std::unique_ptr<QMenu> m_menuBarAdvertisementMenu;
     /** @see KHamburgerMenu::hideActionsOf() */
@@ -153,14 +153,14 @@ protected:
     /** @see KHamburgerMenu::setMenuBar() */
     QPointer<QMenuBar> m_menuBar;
     /** @see resetMenu() */
-    bool m_menuResetNeeded;
+    bool m_menuResetNeeded = false;
     /** @see KHamburgerMenu::setShowMenuBarAction */
     QPointer<QAction> m_showMenuBarAction;
     /** Keeps track of changes to the "Show Menubar" button text. */
     QString m_showMenuBarText;
     QString m_showMenuBarWithAllActionsText;
     /** Identifies if the application set an icon for "Help" menu. */
-    bool m_helpIconIsSet;
+    bool m_helpIconIsSet = false;
 };
 
 #endif // KHamburgerMenu_P_H
