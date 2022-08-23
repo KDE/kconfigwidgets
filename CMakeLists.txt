@@ -44,20 +44,10 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 cmake_dependent_option(BUILD_DESIGNERPLUGIN "Build plugin for Qt Designer" ON "NOT CMAKE_CROSSCOMPILING" OFF)
 add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Designer")
 
-if (NOT ANDROID AND NOT WIN32)
-    option(WITH_KAUTH "Build with KAuth support" ON)
-else()
-    set(WITH_KAUTH OFF)
-endif()
-
 ecm_setup_version(PROJECT VARIABLE_PREFIX KCONFIGWIDGETS
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfigVersion.cmake"
                         SOVERSION 5)
-
-if (WITH_KAUTH)
-  find_package(KF5Auth ${KF_DEP_VERSION} REQUIRED)
-endif()
 find_package(KF5CoreAddons ${KF_DEP_VERSION} REQUIRED)
 find_package(KF5Codecs ${KF_DEP_VERSION} REQUIRED)
 find_package(KF5Config ${KF_DEP_VERSION} REQUIRED)
@@ -65,6 +55,18 @@ find_package(KF5DocTools ${KF_DEP_VERSION})
 find_package(KF5GuiAddons ${KF_DEP_VERSION} REQUIRED)
 find_package(KF5I18n ${KF_DEP_VERSION} REQUIRED)
 find_package(KF5WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
+
+if (NOT ANDROID AND NOT WIN32)
+    option(WITH_KAUTH "Build with KAuth support" ON)
+else()
+    set(WITH_KAUTH OFF)
+endif()
+
+set(HAVE_KAUTH FALSE)
+if (WITH_KAUTH)
+  find_package(KF5Auth ${KF_DEP_VERSION} REQUIRED)
+  set(HAVE_KAUTH TRUE)
+endif()
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 remove_definitions(-DQT_NO_CAST_FROM_BYTEARRAY)
@@ -115,10 +117,6 @@ endif()
 
 include(CMakePackageConfigHelpers)
 
-set(HAVE_KAUTH FALSE)
-if (WITH_KAUTH)
-  set(HAVE_KAUTH TRUE)
-endif()
 configure_package_config_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/KF5ConfigWidgetsConfig.cmake.in"
   "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfig.cmake"
