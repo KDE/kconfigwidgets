@@ -404,22 +404,26 @@ void KConfigDialogManager::updateSettings()
 
 QByteArray KConfigDialogManager::getUserProperty(const QWidget *widget) const
 {
-    if (!s_propertyMap()->contains(widget->metaObject()->className())) {
-        const QMetaObject *metaObject = widget->metaObject();
-        const QMetaProperty user = metaObject->userProperty();
-        if (user.isValid()) {
-            s_propertyMap()->insert(widget->metaObject()->className(), user.name());
-            // qCDebug(KCONFIG_WIDGETS_LOG) << "class name: '" << widget->metaObject()->className()
+    MyHash *map = s_propertyMap();
+    const QMetaObject *metaObject = widget->metaObject();
+    const QString className(QLatin1String(metaObject->className()));
+    auto it = map->find(className);
+    if (it == map->end()) {
+        const QMetaProperty userProp = metaObject->userProperty();
+        if (userProp.isValid()) {
+            it = map->insert(className, userProp.name());
+            // qCDebug(KCONFIG_WIDGETS_LOG) << "class name: '" << className
             //<< " 's USER property: " << metaProperty.name() << endl;
         } else {
             return QByteArray(); // no USER property
         }
     }
+
     const QComboBox *cb = qobject_cast<const QComboBox *>(widget);
     if (cb) {
         const char *qcomboUserPropertyName = cb->QComboBox::metaObject()->userProperty().name();
         const int qcomboUserPropertyIndex = qcomboUserPropertyName ? cb->QComboBox::metaObject()->indexOfProperty(qcomboUserPropertyName) : -1;
-        const char *widgetUserPropertyName = widget->metaObject()->userProperty().name();
+        const char *widgetUserPropertyName = metaObject->userProperty().name();
         const int widgetUserPropertyIndex = widgetUserPropertyName ? cb->metaObject()->indexOfProperty(widgetUserPropertyName) : -1;
 
         // no custom user property set on subclass of QComboBox?
@@ -428,7 +432,7 @@ QByteArray KConfigDialogManager::getUserProperty(const QWidget *widget) const
         }
     }
 
-    return s_propertyMap()->value(widget->metaObject()->className());
+    return it != map->end() ? it.value() : QByteArray{};
 }
 
 QByteArray KConfigDialogManager::getCustomProperty(const QWidget *widget) const
