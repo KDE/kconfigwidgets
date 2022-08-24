@@ -30,7 +30,7 @@ static std::tuple<QString, QString> namesFromEntryFile(const QString &realCode, 
         const KConfigGroup group(&entry, "KCM Locale");
         const QString name = group.readEntry("Name");
 
-        entry.setLocale("en_US");
+        entry.setLocale(QStringLiteral("en_US"));
         const QString englishName = group.readEntry("Name");
         return std::make_tuple(name, englishName);
     }
@@ -76,7 +76,7 @@ QStringList KLanguageName::allLanguageCodes()
     for (const QString &localeDir : localeDirs) {
         const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
         auto languageExists = [&localeDir](const QString &language) {
-            return QFile::exists(localeDir + '/' + language + "/kf5_entry.desktop");
+            return QFile::exists(localeDir + QLatin1Char('/') + language + QLatin1String("/kf5_entry.desktop"));
         };
         std::copy_if(entries.begin(), entries.end(), std::back_inserter(systemLangList), languageExists);
     }

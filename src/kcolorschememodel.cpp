@@ -68,7 +68,7 @@ KColorSchemeModel::KColorSchemeModel(QObject *parent)
         d->m_data.append(data);
     }
 
-    d->m_data.insert(0, {QStringLiteral("Default"), i18n("Default"), QString(), QIcon::fromTheme("edit-undo")});
+    d->m_data.insert(0, {QStringLiteral("Default"), i18n("Default"), QString(), QIcon::fromTheme(QStringLiteral("edit-undo"))});
     endResetModel();
 }
 

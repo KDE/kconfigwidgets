@@ -152,7 +152,7 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
 
     if (pInfo) {
         QString sLabel;
-        QString iconName = pInfo->psIconName;
+        QString iconName = QLatin1String(pInfo->psIconName);
         switch (id) {
         case Back:
             sLabel = i18nc("go back", "&Back");
@@ -338,7 +338,7 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
                              pAction->setProperty("defaultShortcuts", QVariant::fromValue(newShortcut));
                          });
 
-        pAction->setObjectName(pInfo->psName);
+        pAction->setObjectName(QLatin1String(pInfo->psName));
     }
 
     if (pAction && parent && parent->inherits("KActionCollection")) {
@@ -620,9 +620,9 @@ static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const c
         return nullptr;
     }
 
-    AutomaticAction *action = new AutomaticAction(QIcon::fromTheme(p->psIconName), p->psLabel.toString(), p->idAccel, slot, parent);
+    AutomaticAction *action = new AutomaticAction(QIcon::fromTheme(QLatin1String(p->psIconName)), p->psLabel.toString(), p->idAccel, slot, parent);
 
-    action->setObjectName(p->psName);
+    action->setObjectName(QLatin1String(p->psName));
     if (!p->psToolTip.isEmpty()) {
         action->setToolTip(p->psToolTip.toString());
     }

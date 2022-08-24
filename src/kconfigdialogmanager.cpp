@@ -251,7 +251,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                             userproperty = getUserProperty(childWidget);
                         }
                         if (!userproperty.isEmpty()) {
-                            const int indexOfProperty = metaObject->indexOfProperty(userproperty);
+                            const int indexOfProperty = metaObject->indexOfProperty(userproperty.constData());
                             if (indexOfProperty != -1) {
                                 const QMetaProperty property = metaObject->property(indexOfProperty);
                                 const QMetaMethod notifySignal = property.notifySignal();
@@ -265,7 +265,7 @@ bool KConfigDialogManager::parseChildren(const QWidget *widget, bool trackChange
                                 << "Don't know how to monitor widget '" << childWidget->metaObject()->className() << "' for changes!";
                         }
                     } else {
-                        connect(childWidget, propertyChangeSignal, this, SLOT(onWidgetModified()));
+                        connect(childWidget, propertyChangeSignal.constData(), this, SLOT(onWidgetModified()));
                         changeSignalFound = true;
                     }
 
@@ -446,7 +446,8 @@ QByteArray KConfigDialogManager::getCustomProperty(const QWidget *widget) const
 
 QByteArray KConfigDialogManager::getUserPropertyChangedSignal(const QWidget *widget) const
 {
-    QHash<QString, QByteArray>::const_iterator changedIt = s_changedMap()->constFind(widget->metaObject()->className());
+    const QString className = QLatin1String(widget->metaObject()->className());
+    auto changedIt = s_changedMap()->constFind(className);
 
     if (changedIt == s_changedMap()->constEnd()) {
         // If the class name of the widget wasn't in the monitored widgets map, then look for
@@ -454,7 +455,8 @@ QByteArray KConfigDialogManager::getUserPropertyChangedSignal(const QWidget *wid
         // widgets with KConfigXT where 'Qt::Widget' wasn't being seen a the real deal, even
         // though it was a 'QWidget'.
         if (widget->metaObject()->superClass()) {
-            changedIt = s_changedMap()->constFind(widget->metaObject()->superClass()->className());
+            const QString parentClassName = QLatin1String(widget->metaObject()->superClass()->className());
+            changedIt = s_changedMap()->constFind(parentClassName);
         }
     }
 
@@ -509,7 +511,7 @@ void KConfigDialogManager::setProperty(QWidget *w, const QVariant &v)
         return;
     }
 
-    w->setProperty(userproperty, v);
+    w->setProperty(userproperty.constData(), v);
 }
 
 QVariant KConfigDialogManager::property(QWidget *w) const
@@ -543,7 +545,7 @@ QVariant KConfigDialogManager::property(QWidget *w) const
         return QVariant();
     }
 
-    return w->property(userproperty);
+    return w->property(userproperty.constData());
 }
 
 bool KConfigDialogManager::hasChanged() const

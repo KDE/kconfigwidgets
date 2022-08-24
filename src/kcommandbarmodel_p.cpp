@@ -135,7 +135,8 @@ QVariant KCommandBarModel::data(const QModelIndex &index, int role) const
     case Qt::ToolTipRole: {
         QString toolTip = entry.displayName();
         if (!entry.action->shortcut().isEmpty()) {
-            toolTip += "\n" + entry.action->shortcut().toString();
+            toolTip += QLatin1Char('\n');
+            toolTip += entry.action->shortcut().toString();
         }
         return toolTip;
     }

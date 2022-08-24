@@ -203,7 +203,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
         // If no (valid) color scheme has been selected we select the default one
         groupActions[defaultSchemeRow]->setChecked(true);
     }
-    groupActions[defaultSchemeRow]->setIcon(QIcon::fromTheme("edit-undo"));
+    groupActions[defaultSchemeRow]->setIcon(QIcon::fromTheme(QStringLiteral("edit-undo")));
     connect(menu->menu(), &QMenu::aboutToShow, group, [group] {
         const auto actions = group->actions();
         for (QAction *action : actions) {
@@ -218,12 +218,12 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QIcon &icon, c
 
 KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QString &text, const QString &selectedSchemeName, QObject *parent)
 {
-    return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), text, selectedSchemeName, parent);
+    return createSchemeSelectionMenu(QIcon::fromTheme(QStringLiteral("preferences-desktop-color")), text, selectedSchemeName, parent);
 }
 
 KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(const QString &selectedSchemeName, QObject *parent)
 {
-    return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), i18n("Color Scheme"), selectedSchemeName, parent);
+    return createSchemeSelectionMenu(QIcon::fromTheme(QStringLiteral("preferences-desktop-color")), i18n("Color Scheme"), selectedSchemeName, parent);
 }
 
 KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(QObject *parent)
@@ -232,7 +232,7 @@ KActionMenu *KColorSchemeManager::createSchemeSelectionMenu(QObject *parent)
     KConfigGroup cg(config, "UiSettings");
     auto scheme = cg.readEntry("ColorScheme", QString());
 
-    return createSchemeSelectionMenu(QIcon::fromTheme("preferences-desktop-color"), i18n("Color Scheme"), scheme, parent);
+    return createSchemeSelectionMenu(QIcon::fromTheme(QStringLiteral("preferences-desktop-color")), i18n("Color Scheme"), scheme, parent);
 }
 
 void KColorSchemeManager::activateScheme(const QModelIndex &index)
