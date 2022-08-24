@@ -74,6 +74,7 @@ void KTipDatabasePrivate::addTips(const QString &tipFile)
     const QRegularExpression rx(QStringLiteral("\\n{2,}"));
 
     int pos = -1;
+    const QLatin1Char newline('\n');
     while ((pos = content.indexOf(QLatin1String("<html>"), pos + 1, Qt::CaseInsensitive)) != -1) {
         /**
          * To make translations work, tip extraction here must exactly
@@ -81,11 +82,11 @@ void KTipDatabasePrivate::addTips(const QString &tipFile)
          */
         QString tip = content.mid(pos + 6, content.indexOf(QLatin1String("</html>"), pos, Qt::CaseInsensitive) - pos - 6).replace(rx, QStringLiteral("\n"));
 
-        if (!tip.endsWith('\n')) {
-            tip += '\n';
+        if (!tip.endsWith(newline)) {
+            tip += newline;
         }
 
-        if (tip.startsWith('\n')) {
+        if (tip.startsWith(newline)) {
             tip.remove(0, 1);
         }
 
@@ -198,13 +199,15 @@ KTipDialog *KTipDialogPrivate::mInstance = nullptr;
 void KTipDialogPrivate::_k_prevTip()
 {
     database->prevTip();
-    tipText->setHtml(QStringLiteral("<html><body>%1</body></html>").arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
+    tipText->setHtml(
+        QStringLiteral("<html><body>%1</body></html>").arg(i18nd(KLocalizedString::applicationDomain().constData(), database->tip().toUtf8().constData())));
 }
 
 void KTipDialogPrivate::_k_nextTip()
 {
     database->nextTip();
-    tipText->setHtml(QStringLiteral("<html><body>%1</body></html>").arg(i18nd(KLocalizedString::applicationDomain(), database->tip().toUtf8())));
+    tipText->setHtml(
+        QStringLiteral("<html><body>%1</body></html>").arg(i18nd(KLocalizedString::applicationDomain().constData(), database->tip().toUtf8().constData())));
 }
 
 void KTipDialogPrivate::_k_showOnStart(bool on)

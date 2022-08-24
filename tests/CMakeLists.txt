@@ -3,6 +3,8 @@ include(ECMMarkAsTest)
 
 find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
 
+remove_definitions(-DQT_NO_CAST_FROM_ASCII)
+
 macro(kconfigwidgets_executable_tests)
   foreach(_testname ${ARGN})
     add_executable(${_testname} ${_testname}.cpp)
