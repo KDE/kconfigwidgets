@@ -11,18 +11,20 @@ WindowsMessagesNotifier::WindowsMessagesNotifier()
     m_preferDarkMode = !(m_settings.value(QStringLiteral("AppsUseLightTheme"), true).value<bool>());
 }
 
-WindowsMessagesNotifier::~WindowsMessagesNotifier() {}
+WindowsMessagesNotifier::~WindowsMessagesNotifier()
+{
+}
 
 bool WindowsMessagesNotifier::nativeEventFilter(const QByteArray &eventType, void *message, long *)
 {
-    MSG *msg = static_cast< MSG * >( message );
-    switch (msg->message)
-    {
-        case WM_SETTINGCHANGE: {
-            WindowsMessagesNotifier::handleWMSettingChange();
-            break;
-        }
-        default: {}
+    MSG *msg = static_cast<MSG *>(message);
+    switch (msg->message) {
+    case WM_SETTINGCHANGE: {
+        WindowsMessagesNotifier::handleWMSettingChange();
+        break;
+    }
+    default: {
+    }
     }
     return false;
 }

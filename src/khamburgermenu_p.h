@@ -76,9 +76,7 @@ public:
      * @return either nullptr, @p from unchanged or a copy of @p from without the @p nonExclusives.
      *         In the last case, the caller gets ownership of this new copy with parent @p parent.
      */
-    QAction *actionWithExclusivesFrom(QAction *from,
-                                      QWidget *parent,
-                                      std::unordered_set<const QAction *> &nonExclusives) const;
+    QAction *actionWithExclusivesFrom(QAction *from, QWidget *parent, std::unordered_set<const QAction *> &nonExclusives) const;
 
     /**
      * @return a new menu with all actions from KHamburgerMenu::menu() which aren't
@@ -131,7 +129,7 @@ protected:
     void updateButtonStyle(QToolButton *hamburgerMenuButton) const;
 
 public:
-    KHamburgerMenu * const q_ptr;
+    KHamburgerMenu *const q_ptr;
 
 protected:
     /** @see newMenu(). Do not confuse this menu with QAction::menu(). */

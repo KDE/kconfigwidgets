@@ -29,12 +29,7 @@ public:
 
     enum Role { Score = Qt::UserRole + 1 };
 
-    enum Column
-    {
-        Column_Command,
-        Column_Shortcut,
-        Column_Count
-    };
+    enum Column { Column_Command, Column_Shortcut, Column_Count };
 
     /**
      * Resets the model

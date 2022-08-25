@@ -283,8 +283,7 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
 #endif
             break;
         }
-        case HamburgerMenu:
-        {
+        case HamburgerMenu: {
             pAction = new KHamburgerMenu(parent);
             break;
         }

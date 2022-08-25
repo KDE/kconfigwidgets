@@ -9,19 +9,19 @@
 
 #include <QAction>
 #include <QCoreApplication>
+#include <QGraphicsOpacityEffect>
+#include <QHeaderView>
 #include <QKeyEvent>
+#include <QLabel>
 #include <QLineEdit>
+#include <QMainWindow>
 #include <QPainter>
+#include <QScreen>
 #include <QSortFilterProxyModel>
 #include <QStyledItemDelegate>
 #include <QTextLayout>
 #include <QTreeView>
 #include <QVBoxLayout>
-#include <QHeaderView>
-#include <QLabel>
-#include <QGraphicsOpacityEffect>
-#include <QScreen>
-#include <QMainWindow>
 
 #include <KConfigGroup>
 #include <KFuzzyMatcher>
@@ -113,7 +113,8 @@ public:
     /**
      * Paints a single item's text
      */
-    static void paintItemText(QPainter *p, const QString &textt, const QRect &rect, const QStyleOptionViewItem &options, QVector<QTextLayout::FormatRange> formats)
+    static void
+    paintItemText(QPainter *p, const QString &textt, const QRect &rect, const QStyleOptionViewItem &options, QVector<QTextLayout::FormatRange> formats)
     {
         QString text = options.fontMetrics.elidedText(textt, Qt::ElideRight, rect.width());
 
@@ -169,7 +170,7 @@ public:
 
         QRect textRect = option.rect;
 
-        const CommandBarFilterModel *model = static_cast<const CommandBarFilterModel*>(index.model());
+        const CommandBarFilterModel *model = static_cast<const CommandBarFilterModel *>(index.model());
         if (model->hasActionsWithIcons()) {
             const int iconWidth = option.decorationSize.width() + (hMargin * 2);
             if (option.direction == Qt::RightToLeft) {
@@ -262,7 +263,7 @@ public:
         for (const QString &text : shortcutSegments) {
             int textWidth = option.fontMetrics.horizontalAdvance(text);
             textWidth += 2 * hMargin;
-            btns.append({ textWidth, text });
+            btns.append({textWidth, text});
         }
 
         int textHeight = option.fontMetrics.lineSpacing();
@@ -612,7 +613,7 @@ void KCommandBar::show()
     QRect parentGeometry;
     if (const QWidget *parent = parentWidget()) {
         parentGeometry = parent->geometry();
-        if (const QMainWindow *window = qobject_cast<const QMainWindow*>(parent)) {
+        if (const QMainWindow *window = qobject_cast<const QMainWindow *>(parent)) {
             parentGeometry.setTop(window->mapToGlobal(window->centralWidget()->pos()).y());
             parentGeometry.setHeight(window->centralWidget()->height());
         }
@@ -628,20 +629,14 @@ void KCommandBar::show()
     const int maxHeight = parentGeometry.height();
     const int preferredHeight = maxHeight / 2;
 
-    const QSize size {
-        std::min(maxWidth, std::max(preferredWidth, minWidth)),
-        std::min(maxHeight, std::max(preferredHeight, minHeight))
-    };
+    const QSize size{std::min(maxWidth, std::max(preferredWidth, minWidth)), std::min(maxHeight, std::max(preferredHeight, minHeight))};
 
     // resize() doesn't work here, so use setFixedSize() instead
     setFixedSize(size);
 
     // set the position to the top-center of the parent
     // just below the menubar/toolbar (if any)
-    const QPoint position {
-        parentGeometry.center().x() - size.width() / 2,
-        parentGeometry.y()
-    };
+    const QPoint position{parentGeometry.center().x() - size.width() / 2, parentGeometry.y()};
 
     popup(position);
 }

@@ -7,15 +7,14 @@
 #ifndef WindowsMessagesNotifier_H
 #define WindowsMessagesNotifier_H
 
-#include <QSettings>
-#include <QAbstractNativeEventFilter>
 #include <QAbstractEventDispatcher>
+#include <QAbstractNativeEventFilter>
 #include <QDebug>
+#include <QSettings>
 
 #include <windows.h>
 
-class WindowsMessagesNotifier
-    : public QObject, public QAbstractNativeEventFilter
+class WindowsMessagesNotifier : public QObject, public QAbstractNativeEventFilter
 {
     Q_OBJECT
 
@@ -30,8 +29,8 @@ Q_SIGNALS:
     void wm_colorSchemeChanged();
 
 private:
-    const QString m_subKey {QStringLiteral("Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize")};
-    QSettings m_settings {QStringLiteral("HKEY_CURRENT_USER\\") + m_subKey, QSettings::NativeFormat};
+    const QString m_subKey{QStringLiteral("Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize")};
+    QSettings m_settings{QStringLiteral("HKEY_CURRENT_USER\\") + m_subKey, QSettings::NativeFormat};
     bool m_preferDarkMode = false;
 };
 

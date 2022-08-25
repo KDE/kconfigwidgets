@@ -80,7 +80,7 @@ void KCommandBarModel::refresh(const QVector<KCommandBar::ActionGroup> &actionGr
         fillRows(temp_rows, ag.name, agActions, uniqueActions);
     }
 
-    temp_rows.push_back({ tr("Command Bar"), m_clearHistoryAction, -1 });
+    temp_rows.push_back({tr("Command Bar"), m_clearHistoryAction, -1});
 
     /**
      * For each action in last triggered actions,

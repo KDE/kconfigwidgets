@@ -26,7 +26,8 @@ class QWidget;
  * This also simplifies the removal of event listeners.
  * \internal
  */
-class ListenerContainer : private QObject {
+class ListenerContainer : private QObject
+{
 public:
     explicit ListenerContainer(KHamburgerMenuPrivate *hamburgerMenuPrivate);
     ~ListenerContainer() override;
@@ -34,7 +35,8 @@ public:
     /**
      * @return an object of class @p Listener with the same parent as ListenerContainer.
      */
-    template<class Listener> Listener *get()
+    template<class Listener>
+    Listener *get()
     {
         for (auto &i : m_listeners) {
             if (auto existingListener = qobject_cast<Listener *>(i.get())) {
@@ -60,7 +62,8 @@ class AddOrRemoveActionListener : public QObject
     Q_OBJECT
 
 protected:
-    inline AddOrRemoveActionListener(QObject *parent) : QObject{parent} {   };
+    inline AddOrRemoveActionListener(QObject *parent)
+        : QObject{parent} {};
 
     bool eventFilter(QObject * /*watched*/, QEvent *event) override;
 
@@ -78,7 +81,8 @@ class ButtonPressListener : public QObject
     Q_OBJECT
 
 protected:
-    inline ButtonPressListener(QObject *parent) : QObject{parent} {   };
+    inline ButtonPressListener(QObject *parent)
+        : QObject{parent} {};
 
     bool eventFilter(QObject *watched, QEvent *event) override;
 
@@ -97,13 +101,14 @@ class VisibleActionsChangeListener : public QObject
     Q_OBJECT
 
 protected:
-    inline VisibleActionsChangeListener(QObject *parent) : QObject{parent} {   };
+    inline VisibleActionsChangeListener(QObject *parent)
+        : QObject{parent} {};
 
     /**
      * Listen for events that potentially lead to a change in user-visible actions.
      * Examples: Adding an action or hiding a toolbar.
      */
-    bool eventFilter(QObject * watched, QEvent *event) override;
+    bool eventFilter(QObject *watched, QEvent *event) override;
 
     friend class ListenerContainer;
 };
@@ -117,7 +122,8 @@ class VisibilityChangesListener : public QObject
     Q_OBJECT
 
 protected:
-    inline VisibilityChangesListener(QObject *parent) : QObject{parent} {   };
+    inline VisibilityChangesListener(QObject *parent)
+        : QObject{parent} {};
 
     bool eventFilter(QObject * /*watched*/, QEvent *event) override;
 
@@ -132,7 +138,6 @@ bool isWidgetActuallyVisible(const QWidget *widget);
 /**
  * Does the @p list contain the @p widget?
  */
-bool listContainsWidget(const std::forward_list<QPointer<const QWidget>> &list,
-                        const QWidget *widget);
+bool listContainsWidget(const std::forward_list<QPointer<const QWidget>> &list, const QWidget *widget);
 
 #endif // KHAMBURGERMENUHELPERS_P_H

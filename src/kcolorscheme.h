@@ -322,7 +322,6 @@ public:
         NShadeRoles,
     };
 
-
     /** Destructor */
     virtual ~KColorScheme(); // TODO KF6: remove virtual
 
