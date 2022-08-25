@@ -11,6 +11,8 @@
 #include "kcmodule.h"
 #include "kconfigwidgets_debug.h"
 
+#include <kconfigwidgets_config.h>
+
 #include <KAboutData>
 #include <KConfigSkeleton>
 #include <KLocalizedString>

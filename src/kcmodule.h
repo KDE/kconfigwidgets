@@ -10,9 +10,7 @@
 
 #include <kconfigwidgets_export.h>
 
-#include <kconfigwidgets_config.h>
-
-#if HAVE_KAUTH
+#ifdef KCONFIGWIDGETS_HAVE_KAUTH
 #include <KAuth/Action>
 #endif
 
@@ -241,7 +239,7 @@ public:
      */
     bool defaultsIndicatorsVisible() const;
 
-#if HAVE_KAUTH
+#ifdef KCONFIGWIDGETS_HAVE_KAUTH
     /**
      * @brief Set if the module's save() method requires authorization to be executed
      *
@@ -448,7 +446,7 @@ protected Q_SLOTS:
      */
     void widgetChanged();
 
-#if HAVE_KAUTH
+#ifdef KCONFIGWIDGETS_HAVE_KAUTH
     /**
      * The status of the auth action, if one, has changed
      */

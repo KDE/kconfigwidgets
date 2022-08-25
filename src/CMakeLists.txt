@@ -75,6 +75,10 @@ if (WITH_KAUTH)
   else()
     target_link_libraries(KF5ConfigWidgets PUBLIC KF5::Auth)
   endif()
+
+  # Needed in kcmodule.h, where we can't include kconfigwidgets_config.h,
+  # the latter is where HAVE_KAUTH is defined
+  target_compile_definitions(KF5ConfigWidgets PUBLIC -DKCONFIGWIDGETS_HAVE_KAUTH)
 endif()
 
 if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
