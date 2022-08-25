@@ -78,7 +78,9 @@ if (WITH_KAUTH)
 
   # Needed in kcmodule.h, where we can't include kconfigwidgets_config.h,
   # the latter is where HAVE_KAUTH is defined
-  target_compile_definitions(KF5ConfigWidgets PUBLIC -DKCONFIGWIDGETS_HAVE_KAUTH)
+  target_compile_definitions(KF5ConfigWidgets PUBLIC KCONFIGWIDGETS_HAVE_KAUTH=1)
+else()
+  target_compile_definitions(KF5ConfigWidgets PUBLIC KCONFIGWIDGETS_HAVE_KAUTH=0)
 endif()
 
 if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
