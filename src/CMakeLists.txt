@@ -43,6 +43,13 @@ if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
     target_sources(KF5ConfigWidgets PRIVATE kpastetextaction.cpp)
 endif()
 
+if (WITH_KAUTH)
+    set(WITH_KAUTH_DEFINE_VALUE 1)
+else()
+    set(WITH_KAUTH_DEFINE_VALUE 0)
+endif()
+set(define_with_kauth_code "#define KCONFIGWIDGETS_WITH_KAUTH ${WITH_KAUTH_DEFINE_VALUE}\n")
+
 ecm_generate_export_header(KF5ConfigWidgets
     BASE_NAME KConfigWidgets
     GROUP_BASE_NAME KF
@@ -50,6 +57,7 @@ ecm_generate_export_header(KF5ConfigWidgets
     DEPRECATED_BASE_VERSION 0
     DEPRECATION_VERSIONS 4.0 5.0 5.23 5.32 5.38 5.39 5.64 5.78 5.80 5.82 5.83 5.84 5.85 5.90 5.93
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
+    CUSTOM_CONTENT_FROM_VARIABLE define_with_kauth_code
 )
 
 target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets>")
@@ -75,10 +83,6 @@ if (WITH_KAUTH)
   else()
     target_link_libraries(KF5ConfigWidgets PUBLIC KF5::Auth)
   endif()
-
-  target_compile_definitions(KF5ConfigWidgets PUBLIC KCONFIGWIDGETS_WITH_KAUTH=1)
-else()
-  target_compile_definitions(KF5ConfigWidgets PUBLIC KCONFIGWIDGETS_WITH_KAUTH=0)
 endif()
 
 if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
