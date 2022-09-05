@@ -1,0 +1,594 @@
+# translation of kdelibs4.po to Greek
+# translation of kdelibs4.po to
+# Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Last MAJOR revision (whole file) (29-03-2003 - Stergios Dramis).
+#
+# Dimitris Kamenopoulos <d.kamenopoulos@mail.ntua.gr>, 2000-2002.
+# Stergios Dramis <sdramis@egnatia.ee.auth.gr>, 2002-2004.
+# Κώστας Μπουκουβάλας <quantis@hellug.gr>, 2005.
+# Spiros Georgaras <sngeorgaras@otenet.gr>, 2005, 2006, 2007, 2008.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2006, 2007, 2008, 2009.
+# Spiros Georgaras <sng@hellug.gr>, 2007, 2008.
+# Σπύρος Γεωργαράς <sngeorgaras@otenet.gr>, 2008.
+# Petros <pvidalis@gmail.com>, 2009.
+# Petros Vidalis <p_vidalis@hotmail.com>, 2010, 2011.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2010, 2011, 2012, 2013, 2014.
+# nikos, 2011.
+# Stelios <sstavra@gmail.com>, 2012, 2013, 2020, 2021.
+# Dimitris Kardarakos <dimkard@gmail.com>, 2015, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-27 00:42+0000\n"
+"PO-Revision-Date: 2021-09-09 16:49+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.04.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Σπύρος Γεωργαράς, Τούσης Μανώλης, Πέτρος Βιδάλης"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sng@hellug.gr, manolis@koppermind.homelinux.org, p_vidalis@hotmail.com"
+
+#: kcmodule.cpp:198
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Θα σας ζητηθεί ταυτοποίηση πριν την αποθήκευση"
+
+#: kcmodule.cpp:202
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Δεν σας επιτρέπεται η αποθήκευση της διαμόρφωσης"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Προκαθορισμένο"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Αυτόματη ανίχνευση"
+
+#: kcolorschememanager.cpp:226 kcolorschememanager.cpp:235
+#, kde-format
+msgid "Color Scheme"
+msgstr "Σχήμα χρώματος"
+
+#: kcolorschememodel.cpp:71
+#, kde-format
+msgid "Default"
+msgstr "Προκαθορισμένο"
+
+#: kcommandbar.cpp:560
+#, kde-format
+msgid "No commands matching the filter"
+msgstr ""
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Διαμόρφωση"
+
+#: khamburgermenu.cpp:117
+#, kde-format
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "&Μενού"
+
+#: khamburgermenu.cpp:318
+#, fuzzy, kde-format
+#| msgid "Show all options"
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Εμφάνιση όλων των επιλογών"
+
+#: khamburgermenu.cpp:344
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@option:check An item in a list of resources that allows to query for "
+#| "more resources to put in the list"
+#| msgid "More..."
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Περισσότερα..."
+
+#: khamburgermenu.cpp:345
+#, fuzzy, kde-format
+#| msgid "More Actions"
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Περισσότερες ενέργειες"
+
+#: krecentfilesaction.cpp:70
+#, kde-format
+msgid "No Entries"
+msgstr "Καμία καταχώρηση"
+
+#: krecentfilesaction.cpp:76
+#, kde-format
+msgid "Clear List"
+msgstr "Καθαρισμός λίστας"
+
+#: kstandardaction.cpp:158
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Πίσω"
+
+#: kstandardaction.cpp:165
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Μπροστά"
+
+#: kstandardaction.cpp:172
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "&Προσωπικός φάκελος"
+
+#: kstandardaction.cpp:176
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Βοήθεια"
+
+#: kstandardaction.cpp:233
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Εμφάνιση γραμμής μενού<p>Εμφανίζει τη γραμμή μενού ξανά αφού έχει γίνει "
+"απόκρυψη</p>"
+
+#: kstandardaction.cpp:254
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Εμφάνιση γραμμής κατάστασης<p>Εμφανίζει τη γραμμή κατάστασης, η οποία είναι "
+"η γραμμή στο κάτω μέρος του παραθύρου και χρησιμοποιείται για την εμφάνιση "
+"πληροφοριών κατάστασης.</p>"
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "&Νέο"
+
+#: kstandardaction_p.h:30
+msgid "Create new document"
+msgstr "Δημιουργία νέου εγγράφου"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "Ά&νοιγμα..."
+
+#: kstandardaction_p.h:31
+msgid "Open an existing document"
+msgstr "Άνοιγμα υφιστάμενου εγγράφου"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "Άνοιγμα πρόσ&φατου"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr "Άνοιγμα εγγράφου που ανοίχθηκε πρόσφατα"
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "Απο&θήκευση"
+
+#: kstandardaction_p.h:33
+msgid "Save document"
+msgstr "Αποθήκευση εγγράφου"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Αποθήκευση &ως..."
+
+#: kstandardaction_p.h:34
+msgid "Save document under a new name"
+msgstr "Αποθήκευση εγγράφου με νέο όνομα"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "Επα&ναφορά"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr "Επαναφορά μη αποθηκευμένων αλλαγών που έγιναν στο έγγραφο"
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&Κλείσιμο"
+
+#: kstandardaction_p.h:36
+msgid "Close document"
+msgstr "Κλείσιμο εγγράφου"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "&Εκτύπωση..."
+
+#: kstandardaction_p.h:37
+msgid "Print document"
+msgstr "Εκτύπωση εγγράφου"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "Προεπισκόπηση &εκτύπωσης"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr "Εμφάνιση προεπισκόπησης εκτύπωσης εγγράφου"
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "&Mail..."
+
+#: kstandardaction_p.h:39
+msgid "Send document by mail"
+msgstr "Αποστολή εγγράφου με ηλ. αλληλογραφία"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "&Τερματισμός"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Τερματισμός εφαρμογής"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "Α&ναίρεση"
+
+#: kstandardaction_p.h:42
+msgid "Undo last action"
+msgstr "Αναίρεση τελευταίας ενέργειας"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "Επαναφο&ρά"
+
+#: kstandardaction_p.h:43
+msgid "Redo last undone action"
+msgstr "Επανάληψη τελευταίας αναιρεθείσας ενέργειας"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "Α&ποκοπή"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr "Αποκοπή επιλογής στο πρόχειρο"
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Αντιγραφή"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr "Αντιγραφή επιλογής στο πρόχειρο"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "Επι&κόλληση"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "Paste clipboard content"
+msgstr "Επικόλληση περιεχομένου προχείρου"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "Κα&θαρισμός"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "Επιλογή όλ&ων"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "Αποεπι&λογή"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "Ανα&ζήτηση..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "Αναζήτηση επόμε&νου"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Αναζήτηση προη&γούμενου"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "&Αντικατάσταση..."
+
+#: kstandardaction_p.h:58
+#, fuzzy
+#| msgid "&Actual Size"
+msgid "Zoom to &Actual Size"
+msgstr "&Πραγματικό μέγεθος"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr "Προβολή εγγράφου στο πραγματικό μέγεθος"
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "&Ταίριασμα στη σελίδα"
+
+#: kstandardaction_p.h:59
+msgid "Zoom to fit page in window"
+msgstr "Ζουμ για ταίριασμα σελίδας στο παράθυρο"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Ταίριασμα στο &πλάτος σελίδας"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr "Ζουμ για ταίριασμα πλάτους σελίδας στο παράθυρο"
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Ταίριασμα στο ύ&ψος σελίδας"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr "Ζουμ για ταίριασμα ύψους σελίδας στο παράθυρο"
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "&Μεγέθυνση"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "&Σμίκρυνση"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "&Εστίαση..."
+
+#: kstandardaction_p.h:64
+msgid "Select zoom level"
+msgstr "Επιλέξτε επίπεδο ζουμ"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr "Ανα&νέωση"
+
+#: kstandardaction_p.h:65
+msgid "Refresh document"
+msgstr "Ανανέωση εγγράφου"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "&Πάνω"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr "Μετάβαση επάνω"
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "&Προηγούμενη σελίδα"
+
+#: kstandardaction_p.h:72
+msgid "Go to previous page"
+msgstr "Μετάβαση στην προηγούμενη σελίδα"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "&Επόμενη σελίδα"
+
+#: kstandardaction_p.h:73
+msgid "Go to next page"
+msgstr "Μετάβαση στην επόμενη σελίδα"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Μετάβαση σε..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "Με&τάβαση στη σελίδα..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "Μετά&βαση στη γραμμή..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "&Πρώτη σελίδα"
+
+#: kstandardaction_p.h:77
+msgid "Go to first page"
+msgstr "Μετάβαση στην πρώτη σελίδα"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "&Τελευταία σελίδα"
+
+#: kstandardaction_p.h:78
+msgid "Go to last page"
+msgstr "Μετάβαση στην τελευταία σελίδα"
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "Πίσ&ω"
+
+#: kstandardaction_p.h:79
+msgid "Go back in document"
+msgstr "Μετάβαση πίσω στο έγγραφο"
+
+#: kstandardaction_p.h:80
+msgid "&Forward"
+msgstr "&Μπροστά"
+
+#: kstandardaction_p.h:80
+msgid "Go forward in document"
+msgstr "Μετάβαση εμπρός στο έγγραφο"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "Προσθήκη σελι&δοδείκτη"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "&Επεξεργασία σελιδοδεικτών..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "Ορ&θογραφία..."
+
+#: kstandardaction_p.h:85
+msgid "Check spelling in document"
+msgstr "Έλεγχος ορθογραφίας στο έγγραφο"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "Εμφάνιση γραμμής &μενού"
+
+#: kstandardaction_p.h:87
+msgid "Show or hide menubar"
+msgstr "Εμφάνιση ή απόκρυψη γραμμής μενού"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "Εμφάνιση γραμμής εργα&λείων"
+
+#: kstandardaction_p.h:88
+msgid "Show or hide toolbar"
+msgstr "Εμφάνιση ή απόκρυψη γραμμής εργαλείων"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "Εμφάνιση &γραμμής κατάστασης"
+
+#: kstandardaction_p.h:89
+msgid "Show or hide statusbar"
+msgstr "Εμφάνιση ή απόκρυψη γραμμής κατάστασης"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "Λειτουργία πλήρους &οθόνης"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "&Αποθήκευση ρυθμίσεων"
+
+#: kstandardaction_p.h:94
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Διαμόρφωση συντομεύσεων πλ&ηκτρολογίου..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Διαμόρφωση του %1..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Διαμόρφωση &γραμμών εργαλείων..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "Διαμόρφωση ειδο&ποιήσεων..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "Εγ&χειρίδιο του %1"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "Τι είναι &αυτό"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "&Συμβουλή της ημέρας"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "Αναφορά σ&φάλματος..."
+
+#: kstandardaction_p.h:108
+msgid "Configure &Language..."
+msgstr "Διαμόρφωση γ&λώσσας..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "&Σχετικά με το %1"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "Σχετικά με το &KDE"
+
+#: kstandardaction_p.h:111
+msgid "&Delete"
+msgstr "&Διαγραφή"
+
+#: kstandardaction_p.h:112
+msgid "&Rename..."
+msgstr "&Μετονομασία..."
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr "&Μετακίνηση στα απορρίμματα"
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr "&Δωρεά"
+
+#: kstandardaction_p.h:115
+msgid "Open &Menu"
+msgstr "Άνοιγμα &μενού"
+
+#: ktipdialog.cpp:219
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Συμβουλή της ημέρας"
+
+#: ktipdialog.cpp:235
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Γνωρίζατε ότι...;\n"
+
+#: ktipdialog.cpp:288
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Εμ&φάνιση συμβουλών στην εκκίνηση"
+
+#: ktipdialog.cpp:293
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Προηγούμενο"
+
+#: ktipdialog.cpp:298
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "&Επόμενο"
