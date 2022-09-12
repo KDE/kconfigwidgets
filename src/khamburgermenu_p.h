@@ -53,8 +53,8 @@ public:
     /** @see KHamburgerMenu::setShowMenuBarAction() */
     void setShowMenuBarAction(QAction *showMenuBarAction);
 
-    /** @see KHamburgerMenu::addToMenu() */
-    void addToMenu(QMenu *menu);
+    /** @see KHamburgerMenu::insertIntoMenuBefore() */
+    void insertIntoMenuBefore(QMenu *menu, QAction *before);
 
     /** @see KHamburgerMenu::hideActionsOf() */
     void hideActionsOf(QWidget *widget);

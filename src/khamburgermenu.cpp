@@ -105,10 +105,16 @@ void KHamburgerMenuPrivate::setShowMenuBarAction(QAction *showMenuBarAction)
 void KHamburgerMenu::addToMenu(QMenu *menu)
 {
     Q_D(KHamburgerMenu);
-    d->addToMenu(menu);
+    d->insertIntoMenuBefore(menu, nullptr);
 }
 
-void KHamburgerMenuPrivate::addToMenu(QMenu *menu)
+void KHamburgerMenu::insertIntoMenuBefore(QMenu *menu, QAction *before)
+{
+    Q_D(KHamburgerMenu);
+    d->insertIntoMenuBefore(menu, before);
+}
+
+void KHamburgerMenuPrivate::insertIntoMenuBefore(QMenu *menu, QAction *before)
 {
     Q_CHECK_PTR(menu);
     Q_Q(KHamburgerMenu);
@@ -120,7 +126,7 @@ void KHamburgerMenuPrivate::addToMenu(QMenu *menu)
     }
     updateVisibility(); // Sets the appropriate visibility of m_menuAction.
 
-    menu->addAction(m_menuAction);
+    menu->insertAction(before, m_menuAction);
     connect(menu, &QMenu::aboutToShow, this, [this, menu, q]() {
         if (m_menuAction->isVisible()) {
             Q_EMIT q->aboutToShowMenu();

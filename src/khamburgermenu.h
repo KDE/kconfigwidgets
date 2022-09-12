@@ -150,6 +150,22 @@ public:
     void addToMenu(QMenu *menu);
 
     /**
+     * Inserts this KHamburgerMenu to @p menu's list of actions, before the action @p before.
+     * It will only be visible in the menu if both the menu bar and all of this
+     * QWidgetAction's createdWidgets() are invisible.
+     * If it is visible in the menu, then opening the menu emits the aboutToShowMenu
+     * signal.
+     *
+     * @param before The action before which KHamburgerMenu should be inserted.
+     * @param menu The menu this KHamburgerMenu is supposed to appear in.
+     *
+     * @see QWidget::insertAction(), QMenu::insertMenu()
+     *
+     * @since 5.99
+     */
+    void insertIntoMenuBefore(QMenu *menu, QAction *before);
+
+    /**
      * Adds @p widget to a list of widgets that should be monitored for their actions().
      * If the widget is a QMenu, its actions will be treated as known to the user.
      * If the widget isn't a QMenu, its actions will only be treated as known to the user
