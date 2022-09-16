@@ -123,7 +123,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   REQUIRED_HEADERS KConfigWidgets_HEADERS
 )
 
-install(TARGETS KF5ConfigWidgets EXPORT KF5ConfigWidgetsTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KF5ConfigWidgets EXPORT KF5ConfigWidgetsTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_export.h
