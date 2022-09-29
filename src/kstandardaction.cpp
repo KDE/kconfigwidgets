@@ -6,7 +6,6 @@
 */
 
 #include "kstandardaction.h"
-#include "kconfigwidgets_debug.h"
 #include "kstandardaction_p.h"
 #include "moc_kstandardaction_p.cpp"
 

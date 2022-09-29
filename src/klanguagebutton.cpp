@@ -6,7 +6,6 @@
 */
 
 #include "klanguagebutton.h"
-#include "kconfigwidgets_debug.h"
 
 #include <QDir>
 #include <QFile>

@@ -6,12 +6,12 @@
 */
 
 #include "klanguagename.h"
-#include "kconfigwidgets_debug.h"
 
 #include <KConfig>
 #include <KConfigGroup>
 
 #include <QDir>
+#include <QLocale>
 
 QString KLanguageName::nameForCode(const QString &code)
 {

@@ -15,7 +15,6 @@
 */
 
 #include "kpastetextaction.h"
-#include "kconfigwidgets_debug.h"
 
 #include <QApplication>
 #include <QClipboard>
