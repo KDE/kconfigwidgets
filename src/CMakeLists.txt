@@ -22,6 +22,26 @@ target_sources(KF5ConfigWidgets PRIVATE
   kstatefulbrush.cpp
   ktipdialog.cpp
 
+  kcodecaction.h
+  kcolorscheme.h
+  kcolorschememanager.h
+  kcolorschememodel.h
+  kcommandbar.h
+  kcommandbarmodel_p.h
+  kconfigdialog.h
+  kconfigviewstatesaver.h
+  kconfigdialogmanager.h
+  kcmodule.h
+  khelpclient.h
+  khamburgermenu.h
+  khamburgermenuhelpers_p.h
+  klanguagebutton.h
+  klanguagename.h
+  krecentfilesaction.h
+  kstandardaction.h
+  kstatefulbrush.h
+  ktipdialog.h
+
   kconfigwidgets.qrc
 )
 
