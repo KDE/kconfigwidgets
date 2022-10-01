@@ -1,0 +1,665 @@
+# translation of kdelibs4.po to Kannada
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Umesh Rudrapatna <urudrapatna@yahoo.com>, 2007.
+# Umesh Rudrapatna <umeshrs@gmail.com>, 2007, 2008, 2009.
+# Shankar Prasad <svenkate@redhat.com>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-30 00:40+0000\n"
+"PO-Revision-Date: 2010-06-24 18:32+0530\n"
+"Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+"Language-Team: kn_IN <kde-i18n-doc@kde.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
+"X-Generator: Lokalize 1.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ಉಮೇಶ್ ರುದ್ರಪಟ್ಟಣ, ಸಿದ್ಧಾರೂಢ ಪಿ ಟಿ, ಶಂಕರ ಪ್ರಸಾದ್ ಎಂ ವಿ"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "umeshrs@gmail.com, siddharudh@gmail.com, svenkate@redhat.com"
+
+#: kcmodule.cpp:198
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "ಉಳಿಸುವ ಮೊದಲು ದೃಢೀಕರಿಸುವಂತೆ ನಿಮ್ಮನ್ನು ಕೇಳಲಾಗುತ್ತದೆ"
+
+#: kcmodule.cpp:202
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "ಸಂರಚನೆಯನ್ನು ಉಳಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ"
+
+#: kcodecaction.cpp:66
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ"
+
+#: kcodecaction.cpp:74
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "ಸ್ವಯಂಶೋಧನ"
+
+#: kcolorschememanager.cpp:226 kcolorschememanager.cpp:235
+#, fuzzy, kde-format
+#| msgid "Shortcut Schemes"
+msgid "Color Scheme"
+msgstr "ಶೀಘ್ರಮಾರ್ಗ (ಶಾರ್ಟ್ ಕಟ್) ಪದ್ಧತಿಗಳು"
+
+#: kcolorschememodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ"
+
+#: kcommandbar.cpp:560
+#, kde-format
+msgid "No commands matching the filter"
+msgstr ""
+
+#: kconfigdialog.cpp:37
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "ಸಂರಚಿಸು"
+
+#: khamburgermenu.cpp:123
+#, fuzzy, kde-format
+#| msgctxt "keyboard-key-name"
+#| msgid "Menu"
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "ಪರಿವಿಡಿ"
+
+#: khamburgermenu.cpp:324
+#, fuzzy, kde-format
+#| msgid "Show all options"
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "ಎಲ್ಲ ಆಯ್ಕೆಗಳನ್ನು ತೋರಿಸು"
+
+#: khamburgermenu.cpp:350
+#, fuzzy, kde-format
+#| msgid "Choose..."
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "ಆರಿಸಿ..."
+
+#: khamburgermenu.cpp:351
+#, fuzzy, kde-format
+#| msgid "More Actions"
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "ಇನ್ನಷ್ಟು ಕ್ರಿಯೆಗಳು"
+
+#: krecentfilesaction.cpp:70
+#, kde-format
+msgid "No Entries"
+msgstr "ನಮೂದುಗಳಿಲ್ಲ"
+
+#: krecentfilesaction.cpp:76
+#, kde-format
+msgid "Clear List"
+msgstr "ಪಟ್ಟಿಯನ್ನು ತೆರವುಗೊಳಿಸು "
+
+#: kstandardaction.cpp:157
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "ಹಿಂದಕ್ಕೆ(&B)"
+
+#: kstandardaction.cpp:164
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "ಮುಂದಕ್ಕೆ(&F)"
+
+#: kstandardaction.cpp:171
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "ನೆಲೆ(&H)"
+
+#: kstandardaction.cpp:175
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "ಸಹಾಯ(&H)"
+
+#: kstandardaction.cpp:232
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"ಪರಿವಿಡಿಪಟ್ಟಿಕೆಯನ್ನು ತೋರಿಸು<p>ಪರಿವಿಡಿಪಟ್ಟಿಯನ್ನು ಅವಿತನಂತರವೂ ಅದನ್ನು ತೋರಿಸುತ್ತದೆ</p>"
+
+#: kstandardaction.cpp:253
+#, fuzzy, kde-format
+#| msgid ""
+#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+#| "bottom of the window used for status information."
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"ಸ್ಥಿತಿಪಟ್ಟಿ ತೋರಿಸು<br /><br />ಸ್ಥಿತಿಗತಿಗಳ ಮಾಹಿತಿಯನ್ನು ನೀಡುವ, ಕಿಟಕಿಯ "
+"ಕೆಳತುದಿಯಲ್ಲಿರುವ ಸ್ಥಿತಿಪಟ್ಟಿಯನ್ನು ತೋರಿಸುತ್ತದೆ."
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "ಹೊಸ(&N)"
+
+#: kstandardaction_p.h:30
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Create new tag:"
+msgid "Create new document"
+msgstr "ಹೊಸ ಟ್ಯಾಗ್‌ ಅನ್ನು ಸೃಷ್ಟಿಸು:"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "ತೆರೆ(&O)..."
+
+#: kstandardaction_p.h:31
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Open an existing document"
+msgstr "ದಸ್ತಾವೇಜಿನಲ್ಲಿ ಹಿಂದಕ್ಕೆ(&B)"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "ಇತ್ತೀಚಿನದನ್ನು ತೆರೆ(&R)"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "ಉಳಿಸು(&S)"
+
+#: kstandardaction_p.h:33
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "ದಸ್ತವೇಜನ್ನು ಮುಚ್ಚು"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "ಈ ಹೆಸರಿನಿಂದ ಉಳಿಸು(&A)..."
+
+#: kstandardaction_p.h:34
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document under a new name"
+msgstr "ದಸ್ತವೇಜನ್ನು ಮುಚ್ಚು"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "ಹಿಮ್ಮೆಟ್ಟು(&v)"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "ಮುಚ್ಚು(&C)"
+
+#: kstandardaction_p.h:36
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "ದಸ್ತವೇಜನ್ನು ಮುಚ್ಚು"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "ಮುದ್ರಿಸು(&P)..."
+
+#: kstandardaction_p.h:37
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "ಮುದ್ರಣ ಮುನ್ನೋಟ(&w)"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "ಅಂಚೆ(&M)..."
+
+#: kstandardaction_p.h:39
+#, fuzzy
+#| msgid "Close Document"
+msgid "Send document by mail"
+msgstr "ದಸ್ತವೇಜನ್ನು ಮುಚ್ಚು"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "ಹೊರನಡೆ(&Q)"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "ಅನ್ವಯಕದಿಂದ ಹೊರನಡೆ"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "ರದ್ದು ಮಾಡು(&U)"
+
+#: kstandardaction_p.h:42
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Undo last action"
+msgstr "ದೇಣಿಗೆಯನ್ನು ನೀಡಿ"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "ಮತ್ತೆ ಮಾಡು(&d)"
+
+#: kstandardaction_p.h:43
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Redo last undone action"
+msgstr "ದೇಣಿಗೆಯನ್ನು ನೀಡಿ"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "ಕತ್ತರಿಸು(&t)"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "ನಕಲಿಸು(&C)"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "ಅಂಟಿಸು(&P)"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#, fuzzy
+#| msgid "Upload content"
+msgid "Paste clipboard content"
+msgstr "ವಿಷಯವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ..."
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "ಅಳಿಸಿಹಾಕು(&l)"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆಮಾಡು(&A)"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "ಆಯ್ಕೆಯಿಂದ ಹೊರಗುಳಿಸು(&l)"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "ಶೋಧಿಸು(&F)..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "ಮುಂದಕ್ಕೆ ಹುಡುಕು(&N)"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "ಹಿಂದಕ್ಕೆ ಹುಡುಕು(&v)"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "ಬದಲಿಸು(&R)..."
+
+#: kstandardaction_p.h:58
+#, fuzzy
+#| msgid "&Actual Size"
+msgid "Zoom to &Actual Size"
+msgstr "ನಿಜವಾದ ಗಾತ್ರ(&A)"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "ಪುಟಕ್ಕೆ ಹೊಂದಿಸು(&F)"
+
+#: kstandardaction_p.h:59
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Zoom to fit page in window"
+msgstr "ಸಾಲಿಗೆ ಹೋಗು"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "ಪುಟದ ಅಗಲಕ್ಕೆ ಹೊಂದಿಸು(&W)"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "ಪುಟದ ಎತ್ತರಕ್ಕೆ ಹೊಂದಿಸು(&H)"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "ಹಿಗ್ಗಿಸು(&I)"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "ಕುಗ್ಗಿಸು(&O)"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "ಹಿಗ್ಗಿಸು(&Z)..."
+
+#: kstandardaction_p.h:64
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "ವಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:65
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Refresh document"
+msgstr "ಮತ್ತೆ ಪ್ರದರ್ಶಿಸು(&R)"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "ಮೇಲೆ(&U)"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "ಹಿಂದಿನ ಪುಟಕ್ಕೆ(&P)"
+
+#: kstandardaction_p.h:72
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
+msgstr "ಹಿಂದಿನ ಪುಟಕ್ಕೆ(&P)"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "ಮುಂದಿನ ಪುಟಕ್ಕೆ(&N)"
+
+#: kstandardaction_p.h:73
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "ಸಾಲಿಗೆ ಹೋಗು"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "ಇಲ್ಲಿಗೆ ಹೋಗು(&G)..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "ಈ ಪುಟಕ್ಕೆ ಹೋಗು(&G)..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "ಈ ಸಾಲಿಗೆ ಹೋಗು(&G)..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "ಮೊದಲ ಪುಟ(&F)"
+
+#: kstandardaction_p.h:77
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "ಸಾಲಿಗೆ ಹೋಗು"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "ಕೊನೆಯ ಪುಟ(&L)"
+
+#: kstandardaction_p.h:78
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "ಈ ಪುಟಕ್ಕೆ ಹೋಗು(&G)..."
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "ಹಿಂದಕ್ಕೆ(&B)"
+
+#: kstandardaction_p.h:79
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
+msgstr "ದಸ್ತಾವೇಜಿನಲ್ಲಿ ಹಿಂದಕ್ಕೆ(&B)"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "ಮುಂದಕ್ಕೆ(&F)"
+
+#: kstandardaction_p.h:80
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
+msgstr "ದಸ್ತಾವೇಜಿನಲ್ಲಿ ಮುಂದಕ್ಕೆ(&F)"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "ಪುಟ ಗುರುತುಗಳನ್ನು ಸೇರಿಸು(&A)"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "ಪುಟ ಗುರುತುಗಳನ್ನು ಸಂಪಾದಿಸು(&E)..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "ಕಾಗುಣಿತ(&S)..."
+
+#: kstandardaction_p.h:85
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "ಕಾಗುಣಿತ ಪರೀಕ್ಷಣೆ"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "ಪರಿವಿಡಿಪಟ್ಟಿಕೆಯನ್ನು ತೋರಿಸು(&M)"
+
+#: kstandardaction_p.h:87
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "ಪರಿವಿಡಿಪಟ್ಟಿಕೆಯನ್ನು ತೋರಿಸು(&M)"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ತೋರಿಸು(&T)"
+
+#: kstandardaction_p.h:88
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ತೋರಿಸು"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "ಸ್ಥಿತಿಪಟ್ಟಿ ತೋರಿಸು(&a)"
+
+#: kstandardaction_p.h:89
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "ಸ್ಥಿತಿಪಟ್ಟಿ ತೋರಿಸು"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "ಸಂಪೂರ್ಣ ಪರದೆ ಸ್ಥಿತಿ(&u)"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "ಸಿದ್ಧತೆ ಉಳಿಸು(&S)"
+
+#: kstandardaction_p.h:94
+#, fuzzy
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "ಸಮೀಪಮಾರ್ಗಗಳನ್ನು ಸಂರಚಿಸು(&h)..."
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "'%1'ನ್ನು ಸಂರಚಿಸು(&C)..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ಸಂರಚಿಸು(&b)..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "ಸೂಚನೆಗಳನ್ನು ಸಂರಚಿಸು(&N)..."
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 ಕೈಪಿಡಿ(&H)"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "ಏನಿದು(&T)?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "ದಿನದ ಸಲಹೆ(&D)"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "ದೋಷ ವರದಿ ಮಾಡು(&R)..."
+
+#: kstandardaction_p.h:108
+#, fuzzy
+#| msgid "Configure Email..."
+msgid "Configure &Language..."
+msgstr "ವಿಅಂಚೆ ಸಂರಚಿಸಿ..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "%1 ಬಗ್ಗೆ(&A)"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "&KDE ಬಗ್ಗೆ"
+
+#: kstandardaction_p.h:111
+#, fuzzy
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "ಅಳಿಸಿಹಾಕು"
+
+#: kstandardaction_p.h:112
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Rename..."
+msgstr "ಬದಲಿಸು(&R)..."
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr ""
+
+#: kstandardaction_p.h:115
+#, fuzzy
+#| msgid "Open &Recent"
+msgid "Open &Menu"
+msgstr "ಇತ್ತೀಚಿನದನ್ನು ತೆರೆ(&R)"
+
+#: ktipdialog.cpp:222
+#, fuzzy, kde-format
+#| msgid "Tip of the Day"
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "ದಿನದ ಕಿವಿಮಾತು"
+
+#: ktipdialog.cpp:238
+#, fuzzy, kde-format
+#| msgid "Did you know...?\n"
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "ನಿಮಗೆ ಗೊತ್ತೆ...?\n"
+
+#: ktipdialog.cpp:291
+#, fuzzy, kde-format
+#| msgid "&Show tips on startup"
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "ಪ್ರಾರಂಭದಲ್ಲಿ ಸಲಹೆಗಳನ್ನು ತೋರಿಸು(&S)"
+
+#: ktipdialog.cpp:296
+#, fuzzy, kde-format
+#| msgid "&Previous"
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "ಹಿಂದಿನ(&P)"
+
+#: ktipdialog.cpp:301
+#, fuzzy, kde-format
+#| msgid "&Next"
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "ಮುಂದಿನ(&N)"
