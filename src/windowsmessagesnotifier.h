@@ -21,7 +21,11 @@ class WindowsMessagesNotifier : public QObject, public QAbstractNativeEventFilte
 public:
     WindowsMessagesNotifier();
     ~WindowsMessagesNotifier();
-    virtual bool nativeEventFilter(const QByteArray &eventType, void *message, long *) Q_DECL_OVERRIDE;
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    bool nativeEventFilter(const QByteArray &eventType, void *message, long *) override;
+#else
+    bool nativeEventFilter(const QByteArray &eventType, void *message, qintptr *) override;
+#endif
     void handleWMSettingChange();
     bool preferDarkMode();
 

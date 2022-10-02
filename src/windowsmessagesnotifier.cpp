@@ -15,7 +15,11 @@ WindowsMessagesNotifier::~WindowsMessagesNotifier()
 {
 }
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 bool WindowsMessagesNotifier::nativeEventFilter(const QByteArray &eventType, void *message, long *)
+#else
+bool WindowsMessagesNotifier::nativeEventFilter(const QByteArray &eventType, void *message, qintptr *)
+#endif
 {
     MSG *msg = static_cast<MSG *>(message);
     switch (msg->message) {
