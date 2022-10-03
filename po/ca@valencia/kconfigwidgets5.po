@@ -276,7 +276,7 @@ msgstr "Copia la selecció al porta-retalls"
 
 #: kstandardaction_p.h:46 kstandardaction_p.h:48
 msgid "&Paste"
-msgstr "&Apega"
+msgstr "A&pega"
 
 #: kstandardaction_p.h:46 kstandardaction_p.h:48
 msgid "Paste clipboard content"
