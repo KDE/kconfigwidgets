@@ -278,7 +278,7 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config, QPalett
     const char *groupName = nullptr;
     SerializedColors defaultColors;
     DecorationColors defaultDecoColors;
-    QBrush tint;
+    QColor tint;
     switch (set) {
     case KColorScheme::Window:
         groupName = "Colors:Window";
@@ -300,7 +300,7 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config, QPalett
         } else if (state == QPalette::Inactive) {
             groupName = "Colors:Window";
             defaultColors = defaultWindowColors;
-            tint = KColorSchemePrivate(config, QPalette::Active, KColorScheme::Selection)._brushes.bg[KColorScheme::NormalBackground];
+            tint = config->group("Colors:Selection").readEntry("BackgroundNormal", defaultSelectionColors.NormalBackground);
         } else { // disabled (...and still want this branch when inactive+disabled exists)
             groupName = "Colors:Window";
             defaultColors = defaultWindowColors;
@@ -358,12 +358,12 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config, QPalett
     _brushes.deco[KColorScheme::FocusColor] = loadedDecoColors.Focus;
     _brushes.deco[KColorScheme::HoverColor] = loadedDecoColors.Hover;
 
-    if (tint != Qt::NoBrush) {
+    if (tint.isValid()) {
         // adjustment
         _brushes.bg[KColorScheme::NormalBackground] =
-            KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(), tint.color(), 0.4);
+            KColorUtils::tint(_brushes.bg[KColorScheme::NormalBackground].color(), tint, 0.4);
         _brushes.bg[KColorScheme::AlternateBackground] =
-            KColorUtils::tint(_brushes.bg[KColorScheme::AlternateBackground].color(), tint.color(), 0.4);
+            KColorUtils::tint(_brushes.bg[KColorScheme::AlternateBackground].color(), tint, 0.4);
     }
 
     // apply state adjustments
