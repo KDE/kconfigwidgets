@@ -164,7 +164,7 @@ msgstr "Crea un document nou"
 
 #: kstandardaction_p.h:31
 msgid "&Open..."
-msgstr "&Obri..."
+msgstr "O&bri..."
 
 #: kstandardaction_p.h:31
 msgid "Open an existing document"
@@ -308,7 +308,7 @@ msgstr "Busca l'a&nterior"
 
 #: kstandardaction_p.h:56
 msgid "&Replace..."
-msgstr "&Substituïx..."
+msgstr "Su&bstituïx..."
 
 #: kstandardaction_p.h:58
 msgid "Zoom to &Actual Size"
@@ -360,7 +360,7 @@ msgstr "Seleccioneu el nivell de zoom"
 
 #: kstandardaction_p.h:65
 msgid "&Refresh"
-msgstr "&Actualitza"
+msgstr "Act&ualitza"
 
 #: kstandardaction_p.h:65
 msgid "Refresh document"
@@ -436,7 +436,7 @@ msgstr "Va avant en el document"
 
 #: kstandardaction_p.h:82
 msgid "&Add Bookmark"
-msgstr "&Afig una adreça d'interés"
+msgstr "Afi&g una adreça d'interés"
 
 #: kstandardaction_p.h:83
 msgid "&Edit Bookmarks..."
@@ -535,7 +535,7 @@ msgstr "Sup&rimix"
 
 #: kstandardaction_p.h:112
 msgid "&Rename..."
-msgstr "&Canvia el nom..."
+msgstr "Ca&nvia el nom..."
 
 #: kstandardaction_p.h:113
 msgid "&Move to Trash"
