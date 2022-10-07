@@ -11,9 +11,8 @@
 #include <memory>
 
 #include "kcolorschememodel.h"
-#ifdef Q_OS_WIN
-#include "windowsmessagesnotifier.h"
-#endif
+
+#include <KColorSchemeWatcher>
 
 class KColorSchemeManagerPrivate
 {
@@ -29,12 +28,7 @@ public:
     QString automaticColorSchemePath() const;
     QModelIndex indexForSchemeId(const QString &id) const;
 
-#ifdef Q_OS_WIN
-    static WindowsMessagesNotifier m_windowsMessagesNotifier;
-    WindowsMessagesNotifier &getWindowsMessagesNotifier() const
-    {
-        return m_windowsMessagesNotifier;
-    }
+#if defined(Q_OS_WIN) || defined(Q_OS_MACOS)
     const QString &getLightColorScheme() const
     {
         return m_lightColorScheme;
@@ -44,9 +38,9 @@ public:
         return m_darkColorScheme;
     }
 
-private:
     QString m_lightColorScheme = QStringLiteral("Breeze");
     QString m_darkColorScheme = QStringLiteral("BreezeDark");
+    KColorSchemeWatcher m_colorSchemeWatcher;
 #endif
 };
 

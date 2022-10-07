@@ -24,9 +24,6 @@
 #include <QStyle>
 
 constexpr int defaultSchemeRow = 0;
-#ifdef Q_OS_WIN
-WindowsMessagesNotifier KColorSchemeManagerPrivate::m_windowsMessagesNotifier = WindowsMessagesNotifier();
-#endif
 
 void KColorSchemeManagerPrivate::activateSchemeInternal(const QString &colorSchemePath)
 {
@@ -42,12 +39,12 @@ void KColorSchemeManagerPrivate::activateSchemeInternal(const QString &colorSche
 }
 
 // The meaning of the Default entry depends on the platform
-// On Windows we automatically apply Breeze/Breeze Dark depending on the system preference
+// On Windows and macOS we automatically apply Breeze/Breeze Dark depending on the system preference
 // On other platforms we apply a default KColorScheme
 QString KColorSchemeManagerPrivate::automaticColorSchemePath() const
 {
-#ifdef Q_OS_WIN
-    const QString colorSchemeId = getWindowsMessagesNotifier().preferDarkMode() ? getDarkColorScheme() : getLightColorScheme();
+#if defined(Q_OS_WIN) || defined(Q_OS_MACOS)
+    const QString colorSchemeId = m_colorSchemeWatcher.systemPreference() == KColorSchemeWatcher::PreferDark ? getDarkColorScheme() : getLightColorScheme();
     return indexForSchemeId(colorSchemeId).data(KColorSchemeModel::PathRole).toString();
 #else
     return QString();
@@ -88,17 +85,14 @@ QIcon KColorSchemeManagerPrivate::createPreview(const QString &path)
 KColorSchemeManagerPrivate::KColorSchemeManagerPrivate()
     : model(new KColorSchemeModel())
 {
-#ifdef Q_OS_WIN
-    QAbstractEventDispatcher::instance()->installNativeEventFilter(&m_windowsMessagesNotifier);
-#endif
 }
 
 KColorSchemeManager::KColorSchemeManager(QObject *parent)
     : QObject(parent)
     , d(new KColorSchemeManagerPrivate)
 {
-#ifdef Q_OS_WIN
-    connect(&d->getWindowsMessagesNotifier(), &WindowsMessagesNotifier::wm_colorSchemeChanged, this, [this]() {
+#if defined(Q_OS_WIN) || defined(Q_OS_MACOS)
+    connect(&d->m_colorSchemeWatcher, &KColorSchemeWatcher::systemPreferenceChanged, this, [this]() {
         if (!d->m_defaultSchemeSelected) {
             // Don't override what has been manually set
             return;
