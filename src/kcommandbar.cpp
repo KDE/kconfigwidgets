@@ -299,7 +299,7 @@ public:
                 painter->drawRoundedRect(shadowRect, 3.0, 3.0);
 
                 // draw rounded rect itself
-                painter->setBrush(option.palette.button());
+                painter->setBrush(option.palette.window());
                 painter->drawRoundedRect(outputRect, 3.0, 3.0);
 
                 painter->restore();
