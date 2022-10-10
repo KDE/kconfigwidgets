@@ -22,6 +22,8 @@
 #include <QFile>
 #include <QGuiApplication>
 #include <QMenu>
+#include <QMimeDatabase>
+#include <QMimeType>
 #include <QScreen>
 
 #include <KConfig>
@@ -195,7 +197,9 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
     setEnabled(true);
     // add file to list
     const QString title = titleWithSensibleWidth(tmpName, file);
-    QAction *action = new QAction(title, selectableActionGroup());
+
+    const QIcon icon = QIcon::fromTheme(QMimeDatabase().mimeTypeForFile(file, QMimeDatabase::MatchExtension).iconName());
+    QAction *action = new QAction(icon, title, selectableActionGroup());
     addAction(action, url, tmpName);
 }
 
