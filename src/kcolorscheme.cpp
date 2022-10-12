@@ -277,7 +277,7 @@ KColorSchemePrivate::KColorSchemePrivate(const KSharedConfigPtr &config, QPalett
 {
     const char *groupName = nullptr;
     SerializedColors defaultColors;
-    DecorationColors defaultDecoColors;
+    DecorationColors defaultDecoColors = defaultDecorationColors;
     QBrush tint;
     switch (set) {
     case KColorScheme::Window:
