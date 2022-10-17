@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-13 00:42+0000\n"
+"POT-Creation-Date: 2022-10-17 00:42+0000\n"
 "PO-Revision-Date: 2006-01-04 13:32+0800\n"
 "Last-Translator: Abel Cheung <abel@oaka.org>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
@@ -131,12 +131,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "動作"
 
-#: krecentfilesaction.cpp:70
+#: krecentfilesaction.cpp:72
 #, fuzzy, kde-format
 msgid "No Entries"
 msgstr "內容"
 
-#: krecentfilesaction.cpp:76
+#: krecentfilesaction.cpp:78
 #, fuzzy, kde-format
 #| msgid "Clear input"
 msgid "Clear List"

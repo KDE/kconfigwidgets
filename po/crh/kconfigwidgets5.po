@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-13 00:42+0000\n"
+"POT-Creation-Date: 2022-10-17 00:42+0000\n"
 "PO-Revision-Date: 2009-02-12 23:29-0600\n"
 "Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
 "Language-Team: Qırımtatarca (Qırım Türkçesi)\n"
@@ -107,13 +107,13 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Daa Çoq Amel"
 
-#: krecentfilesaction.cpp:70
+#: krecentfilesaction.cpp:72
 #, fuzzy, kde-format
 #| msgid "No entries"
 msgid "No Entries"
 msgstr "Kirdi yoq"
 
-#: krecentfilesaction.cpp:76
+#: krecentfilesaction.cpp:78
 #, fuzzy, kde-format
 #| msgid "Clear input"
 msgid "Clear List"
