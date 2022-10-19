@@ -198,8 +198,7 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
     // add file to list
     const QString title = titleWithSensibleWidth(tmpName, file);
 
-    const QIcon icon = QIcon::fromTheme(QMimeDatabase().mimeTypeForFile(file, QMimeDatabase::MatchExtension).iconName());
-    QAction *action = new QAction(icon, title, selectableActionGroup());
+    QAction *action = new QAction(title, selectableActionGroup());
     addAction(action, url, tmpName);
 }
 
@@ -207,6 +206,10 @@ void KRecentFilesAction::addAction(QAction *action, const QUrl &url, const QStri
 {
     Q_D(KRecentFilesAction);
 
+    const QMimeType mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
+    if (!mimeType.isDefault()) {
+        action->setIcon(QIcon::fromTheme(mimeType.iconName()));
+    }
     menu()->insertAction(menu()->actions().value(0), action);
     d->m_recentActions.push_back({action, url, name});
 }
