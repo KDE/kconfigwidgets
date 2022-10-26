@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-17 00:42+0000\n"
-"PO-Revision-Date: 2022-08-15 09:38+0200\n"
+"PO-Revision-Date: 2022-10-25 06:48+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -180,7 +180,7 @@ msgstr "შეინახვა &როგორც..."
 
 #: kstandardaction_p.h:34
 msgid "Save document under a new name"
-msgstr ""
+msgstr "დოკუმენტის ახალი სახელით შენახვა"
 
 #: kstandardaction_p.h:35
 msgid "Re&vert"
@@ -208,11 +208,11 @@ msgstr "დოკუმენტის დაბეჭდვა"
 
 #: kstandardaction_p.h:38
 msgid "Print Previe&w"
-msgstr ""
+msgstr "&დასაბეჭდის გადახედვა"
 
 #: kstandardaction_p.h:38
 msgid "Show a print preview of document"
-msgstr ""
+msgstr "მიმდინარე დოკუმენტების დაბეჭდვისწინა გადახედვის ჩვენება"
 
 #: kstandardaction_p.h:39
 msgid "&Mail..."
@@ -220,7 +220,7 @@ msgstr "&ფოსტა..."
 
 #: kstandardaction_p.h:39
 msgid "Send document by mail"
-msgstr ""
+msgstr "დოკუმენტის ელფოსტით გაგზავნა"
 
 #: kstandardaction_p.h:40
 msgid "&Quit"
@@ -240,11 +240,11 @@ msgstr "ბოლო ბრძანების გაუქმება"
 
 #: kstandardaction_p.h:43
 msgid "Re&do"
-msgstr ""
+msgstr "&გამეორება"
 
 #: kstandardaction_p.h:43
 msgid "Redo last undone action"
-msgstr ""
+msgstr "ბოლო დაბრუნებული ცვლილების გამეორება"
 
 #: kstandardaction_p.h:44
 msgid "Cu&t"
@@ -260,7 +260,7 @@ msgstr "&კოპირება"
 
 #: kstandardaction_p.h:45
 msgid "Copy selection to clipboard"
-msgstr ""
+msgstr "მონიშნულის ბუფერში კოპირება"
 
 #: kstandardaction_p.h:46 kstandardaction_p.h:48
 msgid "&Paste"
@@ -268,7 +268,7 @@ msgstr "&ჩასმა"
 
 #: kstandardaction_p.h:46 kstandardaction_p.h:48
 msgid "Paste clipboard content"
-msgstr ""
+msgstr "გაცვლის ბუფერიდან ჩასმა"
 
 #: kstandardaction_p.h:50
 msgid "C&lear"
@@ -300,11 +300,11 @@ msgstr "&ჩანაცვლება..."
 
 #: kstandardaction_p.h:58
 msgid "Zoom to &Actual Size"
-msgstr ""
+msgstr "&რეალური ზომამდე გადიდება"
 
 #: kstandardaction_p.h:58
 msgid "View document at its actual size"
-msgstr ""
+msgstr "დოკუმენტის რეალური ზომებით ნახვა"
 
 #: kstandardaction_p.h:59
 msgid "&Fit to Page"
@@ -312,23 +312,23 @@ msgstr "&გვერდში ჩატევა"
 
 #: kstandardaction_p.h:59
 msgid "Zoom to fit page in window"
-msgstr ""
+msgstr "გვერდში ჩატევამდე გადიდება"
 
 #: kstandardaction_p.h:60
 msgid "Fit to Page &Width"
-msgstr ""
+msgstr "გვერდის &სიგანეში ჩატევა"
 
 #: kstandardaction_p.h:60
 msgid "Zoom to fit page width in window"
-msgstr ""
+msgstr "გვერდის სიგანეში ჩატევამდე გადიდება"
 
 #: kstandardaction_p.h:61
 msgid "Fit to Page &Height"
-msgstr ""
+msgstr "გვერდის &სიმაღლეში ჩატევა"
 
 #: kstandardaction_p.h:61
 msgid "Zoom to fit page height in window"
-msgstr ""
+msgstr "გვერდის სიმაღლეში ჩატევამდე გადიდება"
 
 #: kstandardaction_p.h:62
 msgid "Zoom &In"
@@ -424,11 +424,11 @@ msgstr ""
 
 #: kstandardaction_p.h:82
 msgid "&Add Bookmark"
-msgstr ""
+msgstr "სანიშნის &დამატება"
 
 #: kstandardaction_p.h:83
 msgid "&Edit Bookmarks..."
-msgstr ""
+msgstr "სანიშნების &ჩასწორება..."
 
 #: kstandardaction_p.h:85
 msgid "&Spelling..."
@@ -444,48 +444,48 @@ msgstr "&მენიუს ზოლის ჩვენება"
 
 #: kstandardaction_p.h:87
 msgid "Show or hide menubar"
-msgstr ""
+msgstr "მენიუს ზოლის ჩვენება/დამალვა"
 
 #: kstandardaction_p.h:88
 msgid "Show &Toolbar"
-msgstr ""
+msgstr "&პანელის ჩვენება"
 
 #: kstandardaction_p.h:88
 msgid "Show or hide toolbar"
-msgstr ""
+msgstr "ხელსაწყოთა ზოლის ჩვენება/დამალვა"
 
 #: kstandardaction_p.h:89
 msgid "Show St&atusbar"
-msgstr ""
+msgstr "სტატუსის &ზოლის ჩვენება"
 
 #: kstandardaction_p.h:89
 msgid "Show or hide statusbar"
-msgstr ""
+msgstr "სტატუსის ზოლის ჩვენება/დამალვა"
 
 #: kstandardaction_p.h:90
 msgid "F&ull Screen Mode"
-msgstr ""
+msgstr "&მთელ-ეკრანზე"
 
 #: kstandardaction_p.h:92
 msgid "&Save Settings"
-msgstr ""
+msgstr "&პარამეტრების შენახვა"
 
 #: kstandardaction_p.h:94
 msgid "Configure Keyboard S&hortcuts..."
-msgstr ""
+msgstr "კლავიატურის &მალსახმობების მორგება..."
 
 #: kstandardaction_p.h:95
 #, kde-format
 msgid "&Configure %1..."
-msgstr ""
+msgstr "%1-ის &მორგება..."
 
 #: kstandardaction_p.h:96
 msgid "Configure Tool&bars..."
-msgstr ""
+msgstr "ხელსაწყოების &პანელების მორგება...."
 
 #: kstandardaction_p.h:97
 msgid "Configure &Notifications..."
-msgstr ""
+msgstr "&შეტყობინებების მორგება..."
 
 #: kstandardaction_p.h:104
 #, kde-format
@@ -494,28 +494,28 @@ msgstr ""
 
 #: kstandardaction_p.h:105
 msgid "What's &This?"
-msgstr ""
+msgstr "რა არის &ეს?"
 
 #: kstandardaction_p.h:106
 msgid "Tip of the &Day"
-msgstr ""
+msgstr "&დღის მინიშნება"
 
 #: kstandardaction_p.h:107
 msgid "&Report Bug..."
-msgstr ""
+msgstr "&შეცდომის ანგარიში..."
 
 #: kstandardaction_p.h:108
 msgid "Configure &Language..."
-msgstr ""
+msgstr "&ენის მორგება..."
 
 #: kstandardaction_p.h:109
 #, kde-format
 msgid "&About %1"
-msgstr ""
+msgstr "%1-ის &შესახებ"
 
 #: kstandardaction_p.h:110
 msgid "About &KDE"
-msgstr ""
+msgstr "&KDE-ს შესახებ"
 
 #: kstandardaction_p.h:111
 msgid "&Delete"
@@ -527,15 +527,15 @@ msgstr "&სახელის გადარქმევა..."
 
 #: kstandardaction_p.h:113
 msgid "&Move to Trash"
-msgstr ""
+msgstr "&სანაგვე ყუთში გადატანა"
 
 #: kstandardaction_p.h:114
 msgid "&Donate"
-msgstr ""
+msgstr "&შეწირვა"
 
 #: kstandardaction_p.h:115
 msgid "Open &Menu"
-msgstr ""
+msgstr "&მენიუს გახსნა"
 
 #: ktipdialog.cpp:222
 #, kde-format
@@ -547,13 +547,13 @@ msgstr "დღის მინიშნება"
 #, kde-format
 msgctxt "@title"
 msgid "Did you know...?\n"
-msgstr ""
+msgstr "იცოდით ...?\n"
 
 #: ktipdialog.cpp:291
 #, kde-format
 msgctxt "@option:check"
 msgid "&Show tips on startup"
-msgstr ""
+msgstr "&გაშვებისას მინიშნებების ჩვენება"
 
 #: ktipdialog.cpp:296
 #, kde-format
