@@ -19,7 +19,6 @@
 
 #include <QActionGroup>
 #include <QDir>
-#include <QFile>
 #include <QGuiApplication>
 #include <QMenu>
 #include <QMimeDatabase>
@@ -296,11 +295,6 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
             continue;
         }
         url = QUrl::fromUserInput(value);
-
-        // Don't restore if file doesn't exist anymore
-        if (url.isLocalFile() && !QFile::exists(url.toLocalFile())) {
-            continue;
-        }
 
         auto [it, isNewUrl] = seenUrls.insert(url);
         // Don't restore if this url has already been restored (e.g. broken config)
