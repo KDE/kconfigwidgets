@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4-1.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-17 00:42+0000\n"
+"POT-Creation-Date: 2022-11-03 00:42+0000\n"
 "PO-Revision-Date: 2007-10-15 22:19+0200\n"
 "Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
 "Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
@@ -105,13 +105,13 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Gwezhiad"
 
-#: krecentfilesaction.cpp:72
+#: krecentfilesaction.cpp:71
 #, fuzzy, kde-format
 #| msgid "No entries"
 msgid "No Entries"
 msgstr "N'eus bouetadur ebet"
 
-#: krecentfilesaction.cpp:78
+#: krecentfilesaction.cpp:77
 #, fuzzy, kde-format
 msgid "Clear List"
 msgstr "Endalc'had :"

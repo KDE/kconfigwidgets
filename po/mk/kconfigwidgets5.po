@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-17 00:42+0000\n"
+"POT-Creation-Date: 2022-11-03 00:42+0000\n"
 "PO-Revision-Date: 2010-01-27 10:39+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -116,12 +116,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Уште дејства"
 
-#: krecentfilesaction.cpp:72
+#: krecentfilesaction.cpp:71
 #, kde-format
 msgid "No Entries"
 msgstr "Нема елементи"
 
-#: krecentfilesaction.cpp:78
+#: krecentfilesaction.cpp:77
 #, kde-format
 msgid "Clear List"
 msgstr "Исчисти листа"
