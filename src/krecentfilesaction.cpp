@@ -93,7 +93,8 @@ void KRecentFilesActionPrivate::urlSelected(QAction *action)
 
     Q_ASSERT(it != m_recentActions.cend()); // Should never happen
 
-    Q_EMIT q->urlSelected(it->url);
+    const QUrl url = it->url; // BUG: 461448; see iterator invalidation rules
+    Q_EMIT q->urlSelected(url);
 }
 
 void KRecentFilesActionPrivate::removeAction(std::vector<RecentActionInfo>::iterator it)
