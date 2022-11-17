@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-03 00:42+0000\n"
-"PO-Revision-Date: 2022-10-27 06:01+0200\n"
+"PO-Revision-Date: 2022-11-16 08:35+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -134,6 +134,8 @@ msgstr "&დახმარება"
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
+"მენიუს ზოლის ჩვენება<p>მენიუს ზოლის თავიდან ჩვენება მას შემდეგ, რაც ის "
+"დამალეთ</p>"
 
 #: kstandardaction.cpp:253
 #, kde-format
@@ -141,6 +143,8 @@ msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
 "window used for status information.</p>"
 msgstr ""
+"სტატუსის ზოლის ჩვენება<p>სტატუსის ზოლის ჩვენება. ეს ფანჯრის ქვედა მხის "
+"ზოლია, სადაც სტატუსის ინფორმაციის წაკითხვა შეგიძლიათ.</p>"
 
 #: kstandardaction_p.h:30
 msgid "&New"
@@ -164,7 +168,7 @@ msgstr "ბოლოს გახსნილი ფაილების გა
 
 #: kstandardaction_p.h:32
 msgid "Open a document which was recently opened"
-msgstr ""
+msgstr "ახლახანს გახსნილი დოკუმენტის გახსნა"
 
 #: kstandardaction_p.h:33
 msgid "&Save"
@@ -184,11 +188,11 @@ msgstr "დოკუმენტის ახალი სახელით შ
 
 #: kstandardaction_p.h:35
 msgid "Re&vert"
-msgstr ""
+msgstr "&დაბრუნება"
 
 #: kstandardaction_p.h:35
 msgid "Revert unsaved changes made to document"
-msgstr ""
+msgstr "დოკუმენტზე განხორციელებული ცვლილებების გაუქმება"
 
 #: kstandardaction_p.h:36
 msgid "&Close"
@@ -490,7 +494,7 @@ msgstr "&შეტყობინებების მორგება..."
 #: kstandardaction_p.h:104
 #, kde-format
 msgid "%1 &Handbook"
-msgstr ""
+msgstr "%1-ის &სახელმძღვანელო"
 
 #: kstandardaction_p.h:105
 msgid "What's &This?"
