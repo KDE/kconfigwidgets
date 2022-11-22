@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-03 00:42+0000\n"
-"PO-Revision-Date: 2022-05-31 10:49+0300\n"
+"PO-Revision-Date: 2022-11-21 21:58+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.04.0\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -449,7 +449,7 @@ msgstr "Yer İmi &Ekle"
 
 #: kstandardaction_p.h:83
 msgid "&Edit Bookmarks..."
-msgstr "Yer İmlerini &Düzenle..."
+msgstr "Yer İmlerini Dü&zenle..."
 
 #: kstandardaction_p.h:85
 msgid "&Spelling..."
