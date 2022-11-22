@@ -50,11 +50,13 @@ void KHamburgerMenuPrivate::setMenuBar(QMenuBar *menuBar)
 {
     if (m_menuBar) {
         m_menuBar->removeEventFilter(m_listeners->get<VisibilityChangesListener>());
+        m_menuBar->removeEventFilter(m_listeners->get<AddOrRemoveActionListener>());
     }
     m_menuBar = menuBar;
     updateVisibility();
     if (m_menuBar) {
         m_menuBar->installEventFilter(m_listeners->get<VisibilityChangesListener>());
+        m_menuBar->installEventFilter(m_listeners->get<AddOrRemoveActionListener>());
     }
 }
 
