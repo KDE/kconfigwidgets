@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4_as\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-03 00:42+0000\n"
+"POT-Creation-Date: 2022-11-23 00:43+0000\n"
 "PO-Revision-Date: 2008-12-26 15:19+0530\n"
 "Last-Translator: Amitakhya Phukan <অমিতাক্ষ ফুকন>\n"
 "Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
@@ -76,7 +76,7 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "বিন্যাস কৰক"
 
-#: khamburgermenu.cpp:123
+#: khamburgermenu.cpp:125
 #, fuzzy, kde-format
 #| msgctxt "keyboard-key-name"
 #| msgid "Menu"
@@ -84,21 +84,21 @@ msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "Menu"
 
-#: khamburgermenu.cpp:324
+#: khamburgermenu.cpp:326
 #, fuzzy, kde-format
 #| msgid "Show all options"
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "সকল বিকল্প প্ৰদৰ্শন কৰা হ'ব"
 
-#: khamburgermenu.cpp:350
+#: khamburgermenu.cpp:352
 #, fuzzy, kde-format
 #| msgid "Choose..."
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "নিৰ্ব্বাচন কৰক..."
 
-#: khamburgermenu.cpp:351
+#: khamburgermenu.cpp:353
 #, fuzzy, kde-format
 #| msgid "More Actions"
 msgctxt ""

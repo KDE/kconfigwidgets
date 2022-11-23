@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-03 00:42+0000\n"
+"POT-Creation-Date: 2022-11-23 00:43+0000\n"
 "PO-Revision-Date: 2002-12-13 17:20SAST\n"
 "Last-Translator: Lwandle Mgidlana <lwandle@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -81,7 +81,7 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "Qwalasela"
 
-#: khamburgermenu.cpp:123
+#: khamburgermenu.cpp:125
 #, fuzzy, kde-format
 #| msgctxt "QAccel"
 #| msgid "Menu"
@@ -89,21 +89,21 @@ msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "Menu"
 
-#: khamburgermenu.cpp:324
+#: khamburgermenu.cpp:326
 #, fuzzy, kde-format
 #| msgid "Show all options"
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "Bonisa zonke iinketho"
 
-#: khamburgermenu.cpp:350
+#: khamburgermenu.cpp:352
 #, fuzzy, kde-format
 #| msgid "More..."
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "Nangaphezulu..."
 
-#: khamburgermenu.cpp:351
+#: khamburgermenu.cpp:353
 #, fuzzy, kde-format
 #| msgid "Action"
 msgctxt ""

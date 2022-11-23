@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4-1.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-03 00:42+0000\n"
+"POT-Creation-Date: 2022-11-23 00:43+0000\n"
 "PO-Revision-Date: 2007-10-15 22:19+0200\n"
 "Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
 "Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
@@ -76,28 +76,28 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "Kefluniañ"
 
-#: khamburgermenu.cpp:123
+#: khamburgermenu.cpp:125
 #, fuzzy, kde-format
 #| msgid "Menu"
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "Meuziad"
 
-#: khamburgermenu.cpp:324
+#: khamburgermenu.cpp:326
 #, fuzzy, kde-format
 #| msgid "Show all options"
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "Diskouez pep tra dibaboù"
 
-#: khamburgermenu.cpp:350
+#: khamburgermenu.cpp:352
 #, fuzzy, kde-format
 #| msgid "More..."
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "Mui ..."
 
-#: khamburgermenu.cpp:351
+#: khamburgermenu.cpp:353
 #, fuzzy, kde-format
 #| msgid "Action"
 msgctxt ""

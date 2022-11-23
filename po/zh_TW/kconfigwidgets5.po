@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-03 00:42+0000\n"
+"POT-Creation-Date: 2022-11-23 00:43+0000\n"
 "PO-Revision-Date: 2022-07-23 10:38+0800\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -82,25 +82,25 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "設定"
 
-#: khamburgermenu.cpp:123
+#: khamburgermenu.cpp:125
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "選單(&M)"
 
-#: khamburgermenu.cpp:324
+#: khamburgermenu.cpp:326
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "顯示有所有動作的選單列(&M)"
 
-#: khamburgermenu.cpp:350
+#: khamburgermenu.cpp:352
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "更多"
 
-#: khamburgermenu.cpp:351
+#: khamburgermenu.cpp:353
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"

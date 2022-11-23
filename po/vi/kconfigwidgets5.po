@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-03 00:42+0000\n"
+"POT-Creation-Date: 2022-11-23 00:43+0000\n"
 "PO-Revision-Date: 2022-05-31 10:57+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -75,25 +75,25 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "Cấu hình"
 
-#: khamburgermenu.cpp:123
+#: khamburgermenu.cpp:125
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "Trìn&h đơn"
 
-#: khamburgermenu.cpp:324
+#: khamburgermenu.cpp:326
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "Hiện th&anh trình đơn với tất cả các hành động"
 
-#: khamburgermenu.cpp:350
+#: khamburgermenu.cpp:352
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "Thêm"
 
-#: khamburgermenu.cpp:351
+#: khamburgermenu.cpp:353
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
