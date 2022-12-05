@@ -10,6 +10,7 @@
 #include "kconfigwidgets_debug.h"
 
 #include <KCharsets>
+#include <KEncodingProber>
 #include <KLocalizedString>
 
 #include <QMenu>
@@ -144,7 +145,7 @@ void KCodecAction::actionTriggered(QAction *action)
     if (action == d->defaultAction) {
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
         Q_EMIT triggered(KEncodingProber::Universal);
-#else
+#elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
         Q_EMIT encodingProberTriggered(KEncodingProber::Universal);
 #endif
         Q_EMIT defaultItemTriggered();
@@ -179,11 +180,14 @@ void KCodecActionPrivate::subActionTriggered(QAction *action)
 #endif
     } else {
         if (!action->data().isNull()) {
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
             const auto encodingProberType = static_cast<KEncodingProber::ProberType>(action->data().toUInt());
+#endif
+
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
             // will also indirectly emit encodingProberTriggered, due to signal connection in init()
             Q_EMIT q->triggered(encodingProberType);
-#else
+#elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
             Q_EMIT q->encodingProberTriggered(encodingProberType);
 #endif
         }
@@ -242,11 +246,14 @@ bool KCodecAction::setCurrentCodec(int mib)
     }
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
 KEncodingProber::ProberType KCodecAction::currentProberType() const
 {
     return d->currentSubAction->data().isNull() ? KEncodingProber::None : (KEncodingProber::ProberType)d->currentSubAction->data().toUInt();
 }
+#endif
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
 bool KCodecAction::setCurrentProberType(KEncodingProber::ProberType scri)
 {
     if (scri == KEncodingProber::Universal) {
@@ -267,5 +274,6 @@ bool KCodecAction::setCurrentProberType(KEncodingProber::ProberType scri)
     }
     return false;
 }
+#endif
 
 #include "moc_kcodecaction.cpp"

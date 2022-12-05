@@ -69,7 +69,7 @@ ecm_generate_export_header(KF5ConfigWidgets
     GROUP_BASE_NAME KF
     VERSION ${KF_VERSION}
     DEPRECATED_BASE_VERSION 0
-    DEPRECATION_VERSIONS 4.0 5.0 5.23 5.32 5.38 5.39 5.64 5.78 5.80 5.82 5.83 5.84 5.85 5.90 5.93
+    DEPRECATION_VERSIONS 4.0 5.0 5.23 5.32 5.38 5.39 5.64 5.78 5.80 5.82 5.83 5.84 5.85 5.90 5.93 5.102
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
     CUSTOM_CONTENT_FROM_VARIABLE define_with_kauth_code
 )
@@ -78,7 +78,6 @@ target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE
 
 target_link_libraries(KF5ConfigWidgets
   PUBLIC
-    KF5::Codecs # KCodecActions uses KCharsets, KEncodingProber
     KF5::WidgetsAddons # For K*Action, KPage*, KViewStateSerializer, KAcceleratorManager, K*GuiItem
     KF5::ConfigGui # KStandardAction uses KStandardShortcut
   PRIVATE
@@ -86,6 +85,19 @@ target_link_libraries(KF5ConfigWidgets
     KF5::GuiAddons # KColorScheme uses KColorUtils
     KF5::I18n # For action and widget texts
 )
+
+if(NOT EXCLUDE_DEPRECATED_BEFORE_AND_AT STREQUAL "CURRENT" AND
+   EXCLUDE_DEPRECATED_BEFORE_AND_AT VERSION_LESS 5.102.0)
+    target_link_libraries(KF5ConfigWidgets
+      PUBLIC
+      KF5::Codecs # KCodecActions uses KCharsets, KEncodingProber
+    )
+else()
+    target_link_libraries(KF5ConfigWidgets
+      PRIVATE
+      KF5::Codecs # KCodecActions uses KCharsets, KEncodingProber
+    )
+endif()
 
 if (WITH_KAUTH)
   if (QT_MAJOR_VERSION STREQUAL "6")
