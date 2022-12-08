@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-23 00:43+0000\n"
+"POT-Creation-Date: 2022-12-08 00:42+0000\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -43,14 +43,14 @@ msgstr ""
 msgid "You are not allowed to save the configuration"
 msgstr "तपाईँ केडीई कन्फिगरेसन फेरि लोड गर्न चाहनुहुन्छ ?"
 
-#: kcodecaction.cpp:66
+#: kcodecaction.cpp:67
 #, fuzzy, kde-format
 #| msgid "Default"
 msgctxt "Encodings menu"
 msgid "Default"
 msgstr "पूर्वनिर्धारित"
 
-#: kcodecaction.cpp:74
+#: kcodecaction.cpp:75
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
