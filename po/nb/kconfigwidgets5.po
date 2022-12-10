@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-23 00:43+0000\n"
+"POT-Creation-Date: 2022-12-08 00:42+0000\n"
 "PO-Revision-Date: 2015-02-24 20:39+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -46,13 +46,13 @@ msgstr "Du blir bedt om å autentisere deg før lagring"
 msgid "You are not allowed to save the configuration"
 msgstr "Du har ikke lov til å lagre oppsettet"
 
-#: kcodecaction.cpp:66
+#: kcodecaction.cpp:67
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Default"
 msgstr "Standard"
 
-#: kcodecaction.cpp:74
+#: kcodecaction.cpp:75
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
