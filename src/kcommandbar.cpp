@@ -478,7 +478,7 @@ void KCommandBarPrivate::slotReturnPressed(KCommandBar *q)
 
 void KCommandBarPrivate::setLastUsedActions()
 {
-    auto cfg = KSharedConfig::openConfig();
+    auto cfg = KSharedConfig::openStateConfig();
     KConfigGroup cg(cfg, "General");
 
     QStringList actionNames = cg.readEntry(QStringLiteral("CommandBarLastUsedActions"), QStringList());
@@ -576,6 +576,18 @@ KCommandBar::KCommandBar(QWidget *parent)
     });
 
     setHidden(true);
+
+    // Migrate last used action config to new location
+    auto cfg = KSharedConfig::openConfig();
+    KConfigGroup cg(cfg, "General");
+
+    QStringList actionNames = cg.readEntry(QStringLiteral("CommandBarLastUsedActions"), QStringList());
+
+    auto stateCfg = KSharedConfig::openStateConfig();
+    KConfigGroup stateCg(stateCfg, "General");
+    stateCg.writeEntry(QStringLiteral("CommandBarLastUsedActions"), actionNames);
+
+    cg.deleteEntry(QStringLiteral("CommandBarLastUsedActions"));
 }
 
 /**
@@ -584,7 +596,7 @@ KCommandBar::KCommandBar(QWidget *parent)
 KCommandBar::~KCommandBar()
 {
     auto lastUsedActions = d->lastUsedActions();
-    auto cfg = KSharedConfig::openConfig();
+    auto cfg = KSharedConfig::openStateConfig();
     KConfigGroup cg(cfg, "General");
     cg.writeEntry("CommandBarLastUsedActions", lastUsedActions);
 
