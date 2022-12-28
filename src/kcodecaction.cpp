@@ -92,6 +92,11 @@ void KCodecActionPrivate::init(bool showAutoOptions)
     QObject::connect(q, qOverload<QTextCodec *>(&KCodecAction::triggered), q, &KCodecAction::codecTriggered);
     QObject::connect(q, qOverload<KEncodingProber::ProberType>(&KCodecAction::triggered), q, &KCodecAction::encodingProberTriggered);
 #endif
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
+    QObject::connect(q, &KCodecAction::codecTriggered, q, [this](QTextCodec *codec) {
+        Q_EMIT q->codecNameTriggered(QString::fromUtf8(codec->name()));
+    });
+#endif
 }
 
 int KCodecAction::mibForName(const QString &codecName, bool *ok) const
@@ -158,8 +163,10 @@ void KCodecActionPrivate::subActionTriggered(QAction *action)
         return;
     }
     currentSubAction = action;
-    bool ok = false;
+    bool ok = true;
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
     int mib = q->mibForName(action->text(), &ok);
+#endif
     if (ok) {
 #if KWIDGETSADDONS_BUILD_DEPRECATED_SINCE(5, 78)
         QT_WARNING_PUSH
@@ -171,12 +178,16 @@ void KCodecActionPrivate::subActionTriggered(QAction *action)
 #else
         Q_EMIT q->textTriggered(action->text());
 #endif
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
         QTextCodec *codec = q->codecForMib(mib);
+#endif
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
         // will also indirectly emit codecTriggered, due to signal connection in init()
         Q_EMIT q->triggered(codec);
-#else
+#elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
         Q_EMIT q->codecTriggered(codec);
+#else
+        Q_EMIT q->codecNameTriggered(action->text());
 #endif
     } else {
         if (!action->data().isNull()) {
