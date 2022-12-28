@@ -80,6 +80,7 @@ public:
 #endif
 
 Q_SIGNALS:
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 103)
     /**
      * Specific (proper) codec was selected
      *
@@ -102,8 +103,12 @@ Q_SIGNALS:
      * @endcode
      *
      * @since 5.78
+     *
+     * @deprecated since 5.103, use codecNameTriggered()
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 103, "Use codecNameTriggered().")
     void codecTriggered(QTextCodec *codec);
+#endif
 
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 102)
     /**
@@ -135,6 +140,17 @@ Q_SIGNALS:
     KCONFIGWIDGETS_DEPRECATED_VERSION(5, 102, "No known users")
     void encodingProberTriggered(KEncodingProber::ProberType);
 #endif
+
+    /**
+     * Emitted when a codec was selected
+     *
+     * @param name the name of the selected encoding.
+     *
+     * Note that textTriggered(const QString &) is emitted too (as defined in KSelectAction).
+     *
+     * @since 5.103
+     */
+    void codecNameTriggered(const QByteArray &name);
 
     /**
      * Emitted when the 'Default' codec action is triggered.

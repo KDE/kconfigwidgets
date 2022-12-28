@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QTextCodec>
 
-class KCodecAction;
+#include "kcodecaction.h"
 
 class CodecActionTest : public QMainWindow
 {
@@ -17,7 +17,10 @@ public Q_SLOTS:
     void actionTriggered(QAction *action);
     void indexTriggered(int index);
     void textTriggered(const QString &text);
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
     void codecTriggered(QTextCodec *codec);
+#endif
+    void nameTriggered(const QByteArray &name);
 
     void slotActionTriggered(bool state);
 

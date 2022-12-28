@@ -86,6 +86,11 @@ void KCodecActionPrivate::init(bool showAutoOptions)
         q->addAction(tmp);
     }
     q->setCurrentItem(0);
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
+    QObject::connect(q, &KCodecAction::codecTriggered, q, [this](QTextCodec *codec) {
+        Q_EMIT q->codecNameTriggered(codec->name());
+    });
+#endif
 }
 
 int KCodecAction::mibForName(const QString &codecName, bool *ok) const
@@ -150,12 +155,20 @@ void KCodecActionPrivate::subActionTriggered(QAction *action)
         return;
     }
     currentSubAction = action;
-    bool ok = false;
+    bool ok = true;
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
     int mib = q->mibForName(action->text(), &ok);
+#endif
     if (ok) {
         Q_EMIT q->textTriggered(action->text());
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
         QTextCodec *codec = q->codecForMib(mib);
+#endif
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
         Q_EMIT q->codecTriggered(codec);
+#else
+        Q_EMIT q->codecNameTriggered(action->text().toUtf8());
+#endif
     } else {
         if (!action->data().isNull()) {
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
