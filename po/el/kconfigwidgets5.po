@@ -14,21 +14,21 @@
 # Petros Vidalis <p_vidalis@hotmail.com>, 2010, 2011.
 # Dimitrios Glentadakis <dglent@gmail.com>, 2010, 2011, 2012, 2013, 2014.
 # nikos, 2011.
-# Stelios <sstavra@gmail.com>, 2012, 2013, 2020, 2021.
+# Stelios <sstavra@gmail.com>, 2012, 2013, 2020, 2021, 2023.
 # Dimitris Kardarakos <dimkard@gmail.com>, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-08 00:42+0000\n"
-"PO-Revision-Date: 2021-09-09 16:49+0300\n"
+"PO-Revision-Date: 2023-01-05 11:44+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 21.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -76,7 +76,7 @@ msgstr "Προκαθορισμένο"
 #: kcommandbar.cpp:560
 #, kde-format
 msgid "No commands matching the filter"
-msgstr ""
+msgstr "Καμία εντολή δεν ταιριάζει με το φίλτρο"
 
 #: kconfigdialog.cpp:37
 #, kde-format
@@ -91,25 +91,19 @@ msgid "&Menu"
 msgstr "&Μενού"
 
 #: khamburgermenu.cpp:326
-#, fuzzy, kde-format
-#| msgid "Show all options"
+#, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
-msgstr "Εμφάνιση όλων των επιλογών"
+msgstr "Εμφάνιση της γραμμής &μενού με όλες τις επιλογές"
 
 #: khamburgermenu.cpp:352
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "@option:check An item in a list of resources that allows to query for "
-#| "more resources to put in the list"
-#| msgid "More..."
+#, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
-msgstr "Περισσότερα..."
+msgstr "Περισσότερα"
 
 #: khamburgermenu.cpp:353
-#, fuzzy, kde-format
-#| msgid "More Actions"
+#, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
 msgid "More Actions"
@@ -323,10 +317,8 @@ msgid "&Replace..."
 msgstr "&Αντικατάσταση..."
 
 #: kstandardaction_p.h:58
-#, fuzzy
-#| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
-msgstr "&Πραγματικό μέγεθος"
+msgstr "Εστίαση στο πρ&αγματικό μέγεθος"
 
 #: kstandardaction_p.h:58
 msgid "View document at its actual size"
