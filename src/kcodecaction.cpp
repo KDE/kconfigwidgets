@@ -99,6 +99,7 @@ void KCodecActionPrivate::init(bool showAutoOptions)
 #endif
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
 int KCodecAction::mibForName(const QString &codecName, bool *ok) const
 {
     // FIXME logic is good but code is ugly
@@ -132,7 +133,9 @@ int KCodecAction::mibForName(const QString &codecName, bool *ok) const
     qCWarning(KCONFIG_WIDGETS_LOG) << "Invalid codec name: " << codecName;
     return MIB_DEFAULT;
 }
+#endif
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
 QTextCodec *KCodecAction::codecForMib(int mib) const
 {
     if (mib == MIB_DEFAULT) {
@@ -142,6 +145,7 @@ QTextCodec *KCodecAction::codecForMib(int mib) const
         return QTextCodec::codecForMib(mib);
     }
 }
+#endif
 
 void KCodecAction::actionTriggered(QAction *action)
 {
@@ -205,11 +209,14 @@ void KCodecActionPrivate::subActionTriggered(QAction *action)
     }
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
 QTextCodec *KCodecAction::currentCodec() const
 {
     return codecForMib(currentCodecMib());
 }
+#endif
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
 bool KCodecAction::setCurrentCodec(QTextCodec *codec)
 {
     if (!codec) {
@@ -232,6 +239,7 @@ bool KCodecAction::setCurrentCodec(QTextCodec *codec)
     }
     return false;
 }
+#endif
 
 QString KCodecAction::currentCodecName() const
 {
@@ -240,14 +248,35 @@ QString KCodecAction::currentCodecName() const
 
 bool KCodecAction::setCurrentCodec(const QString &codecName)
 {
-    return setCurrentCodec(KCharsets::charsets()->codecForName(codecName));
+    if (codecName.isEmpty()) {
+        return false;
+    }
+
+    for (int i = 0; i < actions().size(); ++i) {
+        if (actions().at(i)->menu()) {
+            for (int j = 0; j < actions().at(i)->menu()->actions().size(); ++j) {
+                if (!j && !actions().at(i)->menu()->actions().at(j)->data().isNull()) {
+                    continue;
+                }
+                if (codecName == actions().at(i)->menu()->actions().at(j)->text()) {
+                    d->currentSubAction = actions().at(i)->menu()->actions().at(j);
+                    d->currentSubAction->trigger();
+                    return true;
+                }
+            }
+        }
+    }
+    return false;
 }
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
 int KCodecAction::currentCodecMib() const
 {
     return mibForName(currentCodecName());
 }
+#endif
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
 bool KCodecAction::setCurrentCodec(int mib)
 {
     if (mib == MIB_DEFAULT) {
@@ -256,6 +285,7 @@ bool KCodecAction::setCurrentCodec(int mib)
         return setCurrentCodec(codecForMib(mib));
     }
 }
+#endif
 
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
 KEncodingProber::ProberType KCodecAction::currentProberType() const
