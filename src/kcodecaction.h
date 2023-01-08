@@ -31,7 +31,9 @@ class KCONFIGWIDGETS_EXPORT KCodecAction : public KSelectAction
     Q_OBJECT
 
     Q_PROPERTY(QString codecName READ currentCodecName WRITE setCurrentCodec)
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
     Q_PROPERTY(int codecMib READ currentCodecMib)
+#endif
 
 public:
     explicit KCodecAction(QObject *parent, bool showAutoOptions = false);
@@ -43,17 +45,56 @@ public:
     ~KCodecAction() override;
 
 public:
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 103)
+    /**
+     * @deprecated since 5.103, use QTextCodec or QStringConverter.
+     */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 103, "Use QTextCodec or QStringConverter")
     int mibForName(const QString &codecName, bool *ok = nullptr) const;
-    QTextCodec *codecForMib(int mib) const;
+#endif
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 103)
+    /**
+     * @deprecated since 5.103, use QTextCodec or QStringConverter.
+     */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 103, "Use QTextCodec or QStringConverter")
+    QTextCodec *codecForMib(int mib) const;
+#endif
+
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 103)
+    /**
+     * @deprecated since 5.103, use currentCodecName
+     */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 103, "Use currentCodecName")
     QTextCodec *currentCodec() const;
+#endif
+
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 103)
+    /**
+     * @deprecated since 5.103, use setCurrentCodecName
+     */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 103, "Use setCurrentCodecName")
     bool setCurrentCodec(QTextCodec *codec);
+#endif
 
     QString currentCodecName() const;
     bool setCurrentCodec(const QString &codecName);
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 103)
+    /**
+     * @deprecated since 5.103, use currentCodecName
+     */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 103, "Use currentCodecName")
     int currentCodecMib() const;
+#endif
+
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 103)
+    /**
+     * @deprecated since 5.103, use setCurrentCodecName
+     */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 103, "Use setCurrentCodecName")
     bool setCurrentCodec(int mib);
+#endif
 
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 102)
     /**
