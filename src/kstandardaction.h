@@ -248,19 +248,27 @@ KCONFIGWIDGETS_EXPORT QAction *_k_createInternal(StandardAction id, QObject *par
  * @since 5.23 (The connectionType argument was added in 5.95)
  */
 #ifdef K_DOXYGEN
-inline QAction *create(StandardAction id, const QObject *recvr, Func slot, QObject *parent, Qt::ConnectionType connectionType = -1)
+inline QAction *create(StandardAction id, const QObject *recvr, Func slot, QObject *parent, Qt::ConnectionType connectionType = -1);
 #else
 template<class Receiver, class Func>
 inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *
-create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent, Qt::ConnectionType connectionType = static_cast<Qt::ConnectionType>(-1))
-#endif
+create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent, Qt::ConnectionType connectionType)
 {
     QAction *action = _k_createInternal(id, parent);
-    // ConfigureToolbars is special because of bug #200815
-    const Qt::ConnectionType defaultConnectionType = (id == ConfigureToolbars) ? Qt::QueuedConnection : Qt::AutoConnection;
-    QObject::connect(action, &QAction::triggered, recvr, slot, connectionType != static_cast<Qt::ConnectionType>(-1) ? connectionType : defaultConnectionType);
+    QObject::connect(action, &QAction::triggered, recvr, slot, connectionType);
     return action;
 }
+
+template<class Receiver, class Func>
+inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *
+create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent)
+{
+    QAction *action = _k_createInternal(id, parent);
+    // ConfigureToolbars is special because of bug #200815;
+    QObject::connect(action, &QAction::triggered, recvr, slot, (id == ConfigureToolbars) ? Qt::QueuedConnection : Qt::AutoConnection);
+    return action;
+}
+#endif
 
 /**
  * This will return the internal name of a given standard action.
