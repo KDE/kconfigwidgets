@@ -623,12 +623,14 @@ void KCommandBar::setActions(const QVector<ActionGroup> &actions)
 void KCommandBar::show()
 {
     QRect parentGeometry;
+    bool isInMainWindow = false;
     if (const QWidget *parent = parentWidget()) {
         parentGeometry = parent->geometry();
         const QMainWindow *window = qobject_cast<const QMainWindow *>(parent);
         if (window && window->centralWidget()) {
             parentGeometry.setTop(window->mapToGlobal(window->centralWidget()->pos()).y());
             parentGeometry.setHeight(window->centralWidget()->height());
+            isInMainWindow = true;
         }
     } else {
         parentGeometry = screen()->availableGeometry();
@@ -646,6 +648,11 @@ void KCommandBar::show()
 
     // resize() doesn't work here, so use setFixedSize() instead
     setFixedSize(size);
+
+    if (!isInMainWindow && parentWidget()) {
+        const int y = std::max(0, (parentGeometry.height() - size.height()) * 1 / 6);
+        parentGeometry.setTop(y);
+    }
 
     // set the position to the top-center of the parent
     // just below the menubar/toolbar (if any)

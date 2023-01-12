@@ -5,6 +5,8 @@
 */
 
 #include <QAbstractItemModel>
+#include <QHBoxLayout>
+#include <QListView>
 #include <QMainWindow>
 #include <QObject>
 #include <QTest>
@@ -23,6 +25,23 @@ private Q_SLOTS:
 
         KCommandBar b(&w);
         b.show();
+    }
+
+    void testNoMainWindowParent()
+    {
+        QMainWindow w;
+        auto central = new QWidget(&w);
+        w.setCentralWidget(central);
+        auto l = new QHBoxLayout(central);
+        auto lv = new QListView();
+        l->addWidget(lv);
+        l->addWidget(new QWidget(), 2);
+        w.showMaximized();
+        // QTest::qWaitForWindowExposed(&w);
+
+        KCommandBar b(lv);
+        b.show();
+        // QTest::qWait(100000);
     }
 };
 
