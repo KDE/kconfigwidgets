@@ -625,7 +625,8 @@ void KCommandBar::show()
     QRect parentGeometry;
     if (const QWidget *parent = parentWidget()) {
         parentGeometry = parent->geometry();
-        if (const QMainWindow *window = qobject_cast<const QMainWindow *>(parent)) {
+        const QMainWindow *window = qobject_cast<const QMainWindow *>(parent);
+        if (window && window->centralWidget()) {
             parentGeometry.setTop(window->mapToGlobal(window->centralWidget()->pos()).y());
             parentGeometry.setHeight(window->centralWidget()->height());
         }

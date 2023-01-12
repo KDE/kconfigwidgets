@@ -39,5 +39,6 @@ endforeach()
 
 ecm_add_test(klanguagenametest.cpp LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::ConfigWidgets)
 ecm_add_test(kcolorschemetest.cpp LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::ConfigWidgets)
+ecm_add_test(kcmdbartest.cpp LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::ConfigWidgets)
 
 ecm_add_test(krecentfilesactiontest.cpp TEST_NAME "krecentfilesaction_test" LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::ConfigWidgets)
