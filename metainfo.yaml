@@ -13,8 +13,8 @@ deprecated: false
 release: true
 libraries:
  - qmake: KConfigWidgets
-   cmake: "KF5::ConfigWidgets"
-cmakename: KF5ConfigWidgets
+   cmake: "KF6::ConfigWidgets"
+cmakename: KF6ConfigWidgets
 
 public_lib: true
 group: Frameworks

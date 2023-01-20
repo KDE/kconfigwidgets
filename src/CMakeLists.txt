@@ -1,7 +1,7 @@
-add_library(KF5ConfigWidgets)
-add_library(KF5::ConfigWidgets ALIAS KF5ConfigWidgets)
+add_library(KF6ConfigWidgets)
+add_library(KF6::ConfigWidgets ALIAS KF6ConfigWidgets)
 
-target_sources(KF5ConfigWidgets PRIVATE
+target_sources(KF6ConfigWidgets PRIVATE
   kcodecaction.cpp
   kcolorscheme.cpp
   kcolorschememanager.cpp
@@ -45,7 +45,7 @@ target_sources(KF5ConfigWidgets PRIVATE
   kconfigwidgets.qrc
 )
 
-ecm_qt_declare_logging_category(KF5ConfigWidgets
+ecm_qt_declare_logging_category(KF6ConfigWidgets
     HEADER kconfigwidgets_debug.h
     IDENTIFIER KCONFIG_WIDGETS_LOG
     CATEGORY_NAME kf.configwidgets
@@ -54,7 +54,7 @@ ecm_qt_declare_logging_category(KF5ConfigWidgets
     EXPORT KCONFIGWIDGETS
 )
 if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
-    target_sources(KF5ConfigWidgets PRIVATE kpastetextaction.cpp)
+    target_sources(KF6ConfigWidgets PRIVATE kpastetextaction.cpp)
 endif()
 
 if (WITH_KAUTH)
@@ -64,7 +64,7 @@ else()
 endif()
 set(define_with_kauth_code "#define KCONFIGWIDGETS_WITH_KAUTH ${WITH_KAUTH_DEFINE_VALUE}\n")
 
-ecm_generate_export_header(KF5ConfigWidgets
+ecm_generate_export_header(KF6ConfigWidgets
     BASE_NAME KConfigWidgets
     GROUP_BASE_NAME KF
     VERSION ${KF_VERSION}
@@ -74,48 +74,48 @@ ecm_generate_export_header(KF5ConfigWidgets
     CUSTOM_CONTENT_FROM_VARIABLE define_with_kauth_code
 )
 
-target_include_directories(KF5ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets>")
+target_include_directories(KF6ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets>")
 
-target_link_libraries(KF5ConfigWidgets
+target_link_libraries(KF6ConfigWidgets
   PUBLIC
-    KF5::WidgetsAddons # For K*Action, KPage*, KViewStateSerializer, KAcceleratorManager, K*GuiItem
-    KF5::ConfigGui # KStandardAction uses KStandardShortcut
+    KF6::WidgetsAddons # For K*Action, KPage*, KViewStateSerializer, KAcceleratorManager, K*GuiItem
+    KF6::ConfigGui # KStandardAction uses KStandardShortcut
   PRIVATE
-    KF5::CoreAddons # KCModule uses KAboutData
-    KF5::GuiAddons # KColorScheme uses KColorUtils
-    KF5::I18n # For action and widget texts
+    KF6::CoreAddons # KCModule uses KAboutData
+    KF6::GuiAddons # KColorScheme uses KColorUtils
+    KF6::I18n # For action and widget texts
 )
 
 if(NOT EXCLUDE_DEPRECATED_BEFORE_AND_AT STREQUAL "CURRENT" AND
    EXCLUDE_DEPRECATED_BEFORE_AND_AT VERSION_LESS 5.102.0)
-    target_link_libraries(KF5ConfigWidgets
+    target_link_libraries(KF6ConfigWidgets
       PUBLIC
-      KF5::Codecs # KCodecActions uses KCharsets, KEncodingProber
+      KF6::Codecs # KCodecActions uses KCharsets, KEncodingProber
     )
 else()
-    target_link_libraries(KF5ConfigWidgets
+    target_link_libraries(KF6ConfigWidgets
       PRIVATE
-      KF5::Codecs # KCodecActions uses KCharsets, KEncodingProber
+      KF6::Codecs # KCodecActions uses KCharsets, KEncodingProber
     )
 endif()
 
 if (WITH_KAUTH)
   if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(KF5ConfigWidgets PUBLIC KF5::AuthCore)
+    target_link_libraries(KF6ConfigWidgets PUBLIC KF6::AuthCore)
   else()
-    target_link_libraries(KF5ConfigWidgets PUBLIC KF5::Auth)
+    target_link_libraries(KF6ConfigWidgets PUBLIC KF6::Auth)
   endif()
 endif()
 
 if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
-  target_link_libraries(KF5ConfigWidgets PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # KPasteTextAction talks to Klipper via DBus
+  target_link_libraries(KF6ConfigWidgets PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # KPasteTextAction talks to Klipper via DBus
 endif()
 
 if (TARGET Qt6::Core5Compat)
-    target_link_libraries(KF5ConfigWidgets PUBLIC Qt6::Core5Compat)
+    target_link_libraries(KF6ConfigWidgets PUBLIC Qt6::Core5Compat)
 endif()
 
-set_target_properties(KF5ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION}
+set_target_properties(KF6ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION}
                                                   SOVERSION ${KCONFIGWIDGETS_SOVERSION}
                                                   EXPORT_NAME ConfigWidgets
 )
@@ -145,7 +145,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   REQUIRED_HEADERS KConfigWidgets_HEADERS
 )
 
-install(TARGETS KF5ConfigWidgets EXPORT KF5ConfigWidgetsTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KF6ConfigWidgets EXPORT KF6ConfigWidgetsTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_export.h
@@ -169,9 +169,9 @@ endif()
 
 if(BUILD_QCH)
     ecm_add_qch(
-        KF5ConfigWidgets_QCH
+        KF6ConfigWidgets_QCH
         NAME KConfigWidgets
-        BASE_NAME KF5ConfigWidgets
+        BASE_NAME KF6ConfigWidgets
         VERSION ${KF_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
@@ -179,10 +179,10 @@ if(BUILD_QCH)
         MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
         IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
         LINK_QCHS
-            KF5Codecs_QCH
-            KF5WidgetsAddons_QCH
-            KF5Config_QCH
-            KF5Auth_QCH
+            KF6Codecs_QCH
+            KF6WidgetsAddons_QCH
+            KF6Config_QCH
+            KF6Auth_QCH
         INCLUDE_DIRS
             ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
@@ -203,5 +203,5 @@ if(BUILD_QCH)
 endif()
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF5ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets)
+ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF6ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})

@@ -1,9 +1,9 @@
 include(ECMAddQtDesignerPlugin)
 
 ecm_qtdesignerplugin_widget(KLanguageButton
-    TOOLTIP "Language Button (KF5)"
+    TOOLTIP "Language Button (KF6)"
     WHATSTHIS "A pushbutton for language selection from a popup list."
-    GROUP "Buttons (KF5)"
+    GROUP "Buttons (KF6)"
 )
 
 ecm_add_qtdesignerplugin(kconfigwidgetswidgets
@@ -12,7 +12,7 @@ ecm_add_qtdesignerplugin(kconfigwidgetswidgets
     WIDGETS
         KLanguageButton
     LINK_LIBRARIES
-        KF5::ConfigWidgets
+        KF6::ConfigWidgets
     INSTALL_DESTINATION "${KDE_INSTALL_QTPLUGINDIR}/designer"
     COMPONENT Devel
 )

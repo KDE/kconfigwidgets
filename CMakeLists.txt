@@ -46,15 +46,15 @@ add_feature_info(DESIGNERPLUGIN ${BUILD_DESIGNERPLUGIN} "Build plugin for Qt Des
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX KCONFIGWIDGETS
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_version.h"
-                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfigVersion.cmake"
-                        SOVERSION 5)
-find_package(KF5CoreAddons ${KF_DEP_VERSION} REQUIRED)
-find_package(KF5Codecs ${KF_DEP_VERSION} REQUIRED)
-find_package(KF5Config ${KF_DEP_VERSION} REQUIRED)
-find_package(KF5DocTools ${KF_DEP_VERSION})
-find_package(KF5GuiAddons ${KF_DEP_VERSION} REQUIRED)
-find_package(KF5I18n ${KF_DEP_VERSION} REQUIRED)
-find_package(KF5WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
+                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF6ConfigWidgetsConfigVersion.cmake"
+                        SOVERSION 6)
+find_package(KF6CoreAddons ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6Codecs ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6Config ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6DocTools ${KF_DEP_VERSION})
+find_package(KF6GuiAddons ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6I18n ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 
 if (NOT ANDROID AND NOT WIN32)
     option(WITH_KAUTH "Build with KAuth support" ON)
@@ -64,7 +64,7 @@ endif()
 
 set(HAVE_KAUTH FALSE)
 if (WITH_KAUTH)
-  find_package(KF5Auth ${KF_DEP_VERSION} REQUIRED)
+  find_package(KF6Auth ${KF_DEP_VERSION} REQUIRED)
   set(HAVE_KAUTH TRUE)
 endif()
 
@@ -76,7 +76,7 @@ ecm_set_disabled_deprecation_versions(
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kconfigwidgets5\")
 ki18n_install(po)
-if (KF5DocTools_FOUND)
+if (KF6DocTools_FOUND)
     kdoctools_install(po)
 endif()
 
@@ -90,7 +90,7 @@ if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
     endforeach()
 endif()
 
-if (KF5DocTools_FOUND)
+if (KF6DocTools_FOUND)
     add_subdirectory(docs)
 endif()
 
@@ -101,34 +101,34 @@ if (BUILD_TESTING)
 endif()
 
 # create a Config.cmake and a ConfigVersion.cmake file and install them
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5ConfigWidgets")
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF6ConfigWidgets")
 
 if (BUILD_QCH)
     ecm_install_qch_export(
-        TARGETS KF5ConfigWidgets_QCH
-        FILE KF5ConfigWidgetsQchTargets.cmake
+        TARGETS KF6ConfigWidgets_QCH
+        FILE KF6ConfigWidgetsQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF5ConfigWidgetsQchTargets.cmake\")")
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF6ConfigWidgetsQchTargets.cmake\")")
 endif()
 
 include(CMakePackageConfigHelpers)
 
 configure_package_config_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/KF5ConfigWidgetsConfig.cmake.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfig.cmake"
+  "${CMAKE_CURRENT_SOURCE_DIR}/KF6ConfigWidgetsConfig.cmake.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF6ConfigWidgetsConfig.cmake"
   INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
 )
 
 install(FILES
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfig.cmake"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5ConfigWidgetsConfigVersion.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF6ConfigWidgetsConfig.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF6ConfigWidgetsConfigVersion.cmake"
   DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
   COMPONENT Devel
 )
 
-install(EXPORT KF5ConfigWidgetsTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5ConfigWidgetsTargets.cmake NAMESPACE KF5:: )
+install(EXPORT KF6ConfigWidgetsTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF6ConfigWidgetsTargets.cmake NAMESPACE KF6:: )
 
 install(FILES
    ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_version.h
