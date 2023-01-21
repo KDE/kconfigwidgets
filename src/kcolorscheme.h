@@ -372,17 +372,6 @@ public:
      */
     QColor shade(ShadeRole) const;
 
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 93)
-    /**
-     * Returns the contrast for borders.
-     * @return the contrast (between 0 for minimum and 10 for maximum
-     *         contrast)
-     * @deprecated since 5.93, use <tt>contrastF() * 10</tt>
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 93, "Use contrastF() * 10")
-    static int contrast();
-#endif
-
     /**
      * Returns the contrast for borders as a floating point value.
      * @param config pointer to the config from which to read the contrast
@@ -490,10 +479,5 @@ private:
 };
 
 Q_DECLARE_METATYPE(KColorScheme)
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 93)
-// Include for compatibility because class was defined here before
-#include "kstatefulbrush.h"
-#endif
 
 #endif // KCOLORSCHEME_H

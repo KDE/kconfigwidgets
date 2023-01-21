@@ -20,7 +20,6 @@ target_sources(KF6ConfigWidgets PRIVATE
   krecentfilesaction.cpp
   kstandardaction.cpp
   kstatefulbrush.cpp
-  ktipdialog.cpp
 
   kcodecaction.h
   kcolorscheme.h
@@ -40,9 +39,6 @@ target_sources(KF6ConfigWidgets PRIVATE
   krecentfilesaction.h
   kstandardaction.h
   kstatefulbrush.h
-  ktipdialog.h
-
-  kconfigwidgets.qrc
 )
 
 ecm_qt_declare_logging_category(KF6ConfigWidgets
@@ -53,9 +49,6 @@ ecm_qt_declare_logging_category(KF6ConfigWidgets
     DESCRIPTION "KConfigWidgets"
     EXPORT KCONFIGWIDGETS
 )
-if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
-    target_sources(KF6ConfigWidgets PRIVATE kpastetextaction.cpp)
-endif()
 
 if (WITH_KAUTH)
     set(WITH_KAUTH_DEFINE_VALUE 1)
@@ -69,7 +62,7 @@ ecm_generate_export_header(KF6ConfigWidgets
     GROUP_BASE_NAME KF
     VERSION ${KF_VERSION}
     DEPRECATED_BASE_VERSION 0
-    DEPRECATION_VERSIONS 4.0 5.0 5.23 5.32 5.38 5.39 5.64 5.78 5.80 5.82 5.83 5.84 5.85 5.90 5.93 5.102
+    DEPRECATION_VERSIONS 5.102
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
     CUSTOM_CONTENT_FROM_VARIABLE define_with_kauth_code
 )
@@ -107,10 +100,6 @@ if (WITH_KAUTH)
   endif()
 endif()
 
-if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
-  target_link_libraries(KF6ConfigWidgets PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # KPasteTextAction talks to Klipper via DBus
-endif()
-
 if (TARGET Qt6::Core5Compat)
     target_link_libraries(KF6ConfigWidgets PUBLIC Qt6::Core5Compat)
 endif()
@@ -135,12 +124,10 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KHelpClient
   KLanguageButton
   KLanguageName
-  KPasteTextAction
   KRecentFilesAction
   KStatefulBrush
   KViewStateMaintainer
   KStandardAction
-  KTipDialog
 
   REQUIRED_HEADERS KConfigWidgets_HEADERS
 )
@@ -150,7 +137,6 @@ install(TARGETS KF6ConfigWidgets EXPORT KF6ConfigWidgetsTargets ${KF_INSTALL_TAR
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_export.h
   ${KConfigWidgets_HEADERS}
-  ktip.h
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets COMPONENT Devel
 )
 

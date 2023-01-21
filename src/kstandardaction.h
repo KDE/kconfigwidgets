@@ -173,22 +173,10 @@ enum StandardAction {
     ShowMenubar, ///< Show/Hide the menubar.
     ShowToolbar, ///< Show/Hide the toolbar.
     ShowStatusbar, ///< Show/Hide the statusbar.
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
-    SaveOptions ///< @deprecated Since 5.38, no known users.
-        KCONFIGWIDGETS_ENUMERATOR_DEPRECATED_VERSION_BELATED(5, 82, 5, 38, "No known users"),
-#elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
-    SaveOptions_DEPRECATED_DO_NOT_USE,
-#endif
     KeyBindings, ///< Display the configure key bindings dialog.
     Preferences, ///< Display the preferences/options dialog.
     ConfigureToolbars, ///< Display the toolbar configuration dialog.
-// Help Menu
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
-    Help ///< @deprecated Since 5.38, use HelpContents instead.
-        KCONFIGWIDGETS_ENUMERATOR_DEPRECATED_VERSION_BELATED(5, 82, 5, 38, "Use HelpContents instead"),
-#elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
-    Help_DEPRECATED_DO_NOT_USE,
-#endif
+    // Help Menu
     HelpContents, ///< Display the handbook of the application.
     WhatsThis, ///< Trigger the What's This cursor.
     ReportBug, ///< Open up the Report Bug dialog.
@@ -199,12 +187,6 @@ enum StandardAction {
     ConfigureNotifications, ///< Display the notifications configuration dialog.
     FullScreen, ///< Switch to/from full screen mode.
     Clear, ///< Clear the content of the focus widget.
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 39)
-    PasteText ///< @deprecated Since 5.39, use Paste instead.
-        KCONFIGWIDGETS_ENUMERATOR_DEPRECATED_VERSION_BELATED(5, 82, 5, 39, "Use Paste instead"),
-#elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39)
-    PasteText_DEPRECATED_DO_NOT_USE,
-#endif
     SwitchApplicationLanguage, ///< Display the Switch Application Language dialog.
     DeleteFile, ///< Permanently deletes files or folders. @since 5.25
     RenameFile, ///< Renames files or folders. @since 5.25
@@ -268,15 +250,6 @@ create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent, Qt:
  * The returned const char* only contains ASCII characters.
  */
 KCONFIGWIDGETS_EXPORT const char *name(StandardAction id);
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(4, 0)
-/// @deprecated Since 4.0, use name(StandardAction)
-KCONFIGWIDGETS_DEPRECATED_VERSION(4, 0, "Use KStandardAction::name(StandardAction)")
-inline const char *stdName(StandardAction act_enum)
-{
-    return name(act_enum);
-}
-#endif
 
 /**
  * Returns a list of all standard names. Used by KAccelManager
@@ -563,32 +536,6 @@ KCONFIGWIDGETS_EXPORT QAction *paste(const QObject *recvr, const char *slot, QOb
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(paste, Paste)
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 39)
-/**
- * @deprecated since 5.39. Use paste() instead.
- */
-KCONFIGWIDGETS_EXPORT
-KCONFIGWIDGETS_DEPRECATED_VERSION(5, 39, "Use KStandardAction::paste(const QObject *, const char *, QObject *)")
-QAction *pasteText(const QObject *recvr, const char *slot, QObject *parent);
-#endif
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 39)
-/**
- * @since 5.23
- * @deprecated since 5.39. Use paste() instead.
- */
-#ifdef K_DOXYGEN
-inline QAction *pasteText(const QObject *recvr, Func slot, QObject *parent);
-#else
-template<class Receiver, class Func>
-KCONFIGWIDGETS_DEPRECATED_VERSION(5, 39, "Use KStandardAction::paste(const QObject *, Func, QObject *)")
-inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *pasteText(const Receiver *recvr, Func slot, QObject *parent)
-{
-    return create(PasteText, recvr, slot, parent);
-}
-#endif // K_DOXYGEN
-#endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
 
 /**
  * Clear the content of the focus widget
@@ -1000,43 +947,11 @@ fullScreen(const Receiver *recvr, Func slot, QWidget *window, QObject *parent)
     return ret;
 }
 
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
-/**
- * Display the save options dialog.
- * @deprecated since 5.38
- */
-KCONFIGWIDGETS_EXPORT
-KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "No usage known, candidate for removal on next ABI break")
-QAction *saveOptions(const QObject *recvr, const char *slot, QObject *parent);
-#endif
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
-/**
- * Display the save options dialog.
- * @since 5.23
- * @deprecated since 5.38
- */
-#ifdef K_DOXYGEN
-inline QAction *saveOptions(const QObject *recvr, Func slot, QObject *parent);
-#else
-template<class Receiver, class Func>
-KCONFIGWIDGETS_EXPORT KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "No usage known, candidate for removal on next ABI break") inline
-    typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *saveOptions(const Receiver *recvr, Func slot, QObject *parent)
-{
-    return create(SaveOptions, recvr, slot, parent);
-}
-#endif // K_DOXYGEN
-#endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
-
 /**
  * Display the configure keyboard shortcuts dialog.
  *
  * Note that you might be able to use the pre-built KXMLGUIFactory's function:
  * @code
- * // For versions older than 5.84:
- * KStandardAction::keyBindings(guiFactory(), SLOT(configureShortcuts()), actionCollection());
- * // Starting from 5.84 you can use this (the KXMLGUIFactory::configureShortcuts() method is
- * // deprecated in 5.84):
  * KStandardAction::keyBindings(guiFactory(), &KXMLGUIFactory::showConfigureShortcutsDialog, actionCollection());
  * @endcode
  *
@@ -1094,32 +1009,6 @@ KCONFIGWIDGETS_EXPORT QAction *switchApplicationLanguage(const QObject *recvr, c
  * @since 5.67
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(switchApplicationLanguage, SwitchApplicationLanguage)
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 23)
-/**
- * @deprecated since 5.38 Use helpContents() instead.
- */
-KCONFIGWIDGETS_EXPORT
-KCONFIGWIDGETS_DEPRECATED_VERSION(5, 23, "Use KStandardAction::helpContents(const QObject *, const char *, QObject *)")
-QAction *help(const QObject *recvr, const char *slot, QObject *parent);
-#endif
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 38)
-/**
- * @since 5.23
- * @deprecated since 5.38 Use helpContents() instead.
- */
-#ifdef K_DOXYGEN
-inline QAction *help(const QObject *recvr, Func slot, QObject *parent);
-#else
-template<class Receiver, class Func>
-KCONFIGWIDGETS_EXPORT KCONFIGWIDGETS_DEPRECATED_VERSION(5, 38, "Use KStandardAction::helpContents(const QObject *, Func, QObject *)") inline
-    typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *help(const Receiver *recvr, Func slot, QObject *parent)
-{
-    return create(Help, recvr, slot, parent);
-}
-#endif // K_DOXYGEN
-#endif // KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE
 
 /**
  * Display the handbook of the application.

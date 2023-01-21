@@ -208,20 +208,6 @@ Q_SIGNALS:
      */
     void settingsChanged(); // clazy:exclude=overloaded-signal
 
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 82)
-    /**
-     * TODO: Verify
-     * One or more of the settings have been changed.
-     * @param widget - The widget group (pass in via addWidget()) that
-     * contains the one or more modified setting.
-     * @see settingsChanged()
-     *
-     * @deprecated since 5.82, use the KConfigDialogManager::settingsChanged() signal instead.
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 82, "Use the KConfigDialogManager::settingsChanged() signal instead.")
-    void settingsChanged(QWidget *widget); // clazy:exclude=overloaded-signal
-#endif
-
     /**
      * If retrieveSettings() was told to track changes then if
      * any known setting was changed this signal will be emitted.  Note
@@ -238,20 +224,6 @@ public:
      * @param conf Object that contains settings
      */
     KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf);
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 84)
-    // No deprecation warning by compiler here, as the replacement will be
-    // automatically picked by the compiler in the future, being the method
-    // overload using the base-class of the argument type.
-    // Avoids the need to do extra-casting right now on the caller side.
-    /**
-     * Constructor.
-     * @param parent  Dialog widget to manage
-     * @param conf Object that contains settings
-     * @deprecated since 5.84, use KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf)
-     */
-    KConfigDialogManager(QWidget *parent, KConfigSkeleton *conf);
-#endif
 
     /**
      * Destructor.
@@ -281,19 +253,6 @@ public:
      * USER properties used for the configuration values.
      */
     static QHash<QString, QByteArray> *propertyMap();
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
-    /**
-     * Retrieve the map between widgets class names and signals that are listened
-     * to detect changes in the configuration values.
-     * @deprecated Since 5.32, rely on the property change signal noted
-     * by @c NOTIFY of the used property in the class definition
-     * instead of setting it in this map. Or set the
-     * "kcfg_propertyNotify" property on the widget instance.
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 32, "See API docs")
-    static QHash<QString, QByteArray> *changedMap();
-#endif
 
 public Q_SLOTS:
     /**

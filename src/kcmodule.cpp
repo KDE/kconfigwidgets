@@ -42,9 +42,6 @@ public:
     QString _rootOnlyMessage;
     QList<KConfigDialogManager *> managers;
     QString _quickHelp;
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 0)
-    QString m_ExportText;
-#endif
     bool _useRootOnlyMessage : 1;
     bool _firstshow : 1;
 
@@ -63,15 +60,6 @@ public:
 
     bool _defaultsIndicatorsVisible : 1;
 };
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 85)
-KCModule::KCModule(const KAboutData *aboutData, QWidget *parent, const QVariantList &)
-    : QWidget(parent)
-    , d(new KCModulePrivate)
-{
-    setAboutData(aboutData);
-}
-#endif
 
 KCModule::KCModule(QWidget *parent, const QVariantList &)
     : QWidget(parent)
@@ -114,20 +102,6 @@ KConfigDialogManager *KCModule::addConfig(KCoreConfigSkeleton *config, QWidget *
     d->managers.append(manager);
     return manager;
 }
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 84)
-KConfigDialogManager *KCModule::addConfig(KConfigSkeleton *config, QWidget *widget)
-{
-    KConfigDialogManager *manager = new KConfigDialogManager(widget, config);
-    manager->setObjectName(objectName());
-    connect(manager, &KConfigDialogManager::widgetModified, this, &KCModule::widgetChanged);
-    connect(manager, &QObject::destroyed, this, [this, manager]() {
-        d->managers.removeOne(manager);
-    });
-    d->managers.append(manager);
-    return manager;
-}
-#endif
 
 void KCModule::setNeedsAuthorization(bool needsAuth)
 {
@@ -282,13 +256,6 @@ void KCModule::unmanagedWidgetDefaultState(bool defaulted)
     widgetChanged();
 }
 
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 90)
-const KAboutData *KCModule::aboutData() const
-{
-    return d->_about;
-}
-#endif
-
 void KCModule::setAboutData(const KAboutData *about)
 {
     if (about != d->_about) {
@@ -319,38 +286,10 @@ bool KCModule::useRootOnlyMessage() const
     return d->_useRootOnlyMessage;
 }
 
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 64)
-void KCModule::changed()
-{
-    markAsChanged();
-}
-#endif
-
 void KCModule::markAsChanged()
 {
     Q_EMIT changed(true);
 }
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 90)
-KAboutData KCModule::componentData() const
-{
-    return *d->_about;
-}
-#endif
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 0)
-QString KCModule::exportText() const
-{
-    return d->m_ExportText;
-}
-#endif
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 0)
-void KCModule::setExportText(const QString &text)
-{
-    d->m_ExportText = text;
-}
-#endif
 
 void KCModule::setQuickHelp(const QString &help)
 {

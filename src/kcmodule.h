@@ -99,19 +99,6 @@ public:
      */
     Q_DECLARE_FLAGS(Buttons, Button)
 
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 85)
-    /**
-     * Base class for all KControlModules.
-     *
-     * @note do not emit changed signals here, since they are not yet connected
-     *       to any slot.
-     * @param aboutData becomes owned by the KCModule
-     * @deprecated since 5.85, use other constructor and setAboutData()
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 85, "Use other constructor and setAboutData()")
-    explicit KCModule(const KAboutData *aboutData, QWidget *parent = nullptr, const QVariantList &args = QVariantList());
-#endif
-
     /**
      * Base class for all KControlModules.
      *
@@ -137,19 +124,6 @@ public:
      * @note make sure the quick help text gets translated (use i18n()).
      */
     virtual QString quickHelp() const;
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 90)
-    /**
-     * This is generally only called for the KBugReport.
-     * If you override you should  have it return a pointer to a constant.
-     *
-     *
-     * @returns the KAboutData for this module
-     * @deprecated since 5.90. Use the KPluginMetaData the KCModule was instantiated from.
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 90, "Use the KPluginMetaData the KCModule was instantiated from")
-    virtual const KAboutData *aboutData() const;
-#endif
 
     /**
      * This sets the KAboutData returned by aboutData()
@@ -192,14 +166,6 @@ public:
      * @see KCModule::setUseRootOnlyMessage
      */
     bool useRootOnlyMessage() const;
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 90)
-    /**
-     * @deprecated since 5.90. Use the KPluginMetaData the KCModule was instantiated from.
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 90, "Use the KPluginMetaData the KCModule was instantiated from")
-    KAboutData componentData() const;
-#endif
 
     /**
      * @return a list of @ref KConfigDialogManager's in use, if any.
@@ -258,24 +224,6 @@ public:
      * @return The action that has to be authorized to execute the save() method.
      */
     KAuth::Action authAction() const;
-#endif
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 0)
-    /**
-     * Returns the value set by setExportText();
-     * @deprecated since 5.0, obsolete feature
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 0, "Obsolete feature")
-    QString exportText() const;
-#endif
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 0)
-    /**
-     * Sets the export QString value, used for exporting data.
-     * @deprecated since 5.0, obsolete feature
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 0, "Obsolete feature")
-    void setExportText(const QString &);
 #endif
 
 public Q_SLOTS:
@@ -347,24 +295,6 @@ protected:
      */
     KConfigDialogManager *addConfig(KCoreConfigSkeleton *config, QWidget *widget);
 
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 84)
-    // No deprecation warning by compiler here, as the replacement will be
-    // automatically picked by the compiler in the future, being the method
-    // overload using the base-class of the argument type.
-    // Avoids the need to do extra-casting right now on the caller side.
-    /**
-     * Adds a KConfigskeleton @p config to watch the widget @p widget
-     *
-     * This function is useful if you need to handle multiple configuration files.
-     *
-     * @return a pointer to the KConfigDialogManager in use
-     * @param config the KConfigSkeleton to use
-     * @param widget the widget to watch
-     * @deprecated since 5.84, use addConfig(KCoreConfigSkeleton *config, QWidget *widget);
-     */
-    KConfigDialogManager *addConfig(KConfigSkeleton *config, QWidget *widget);
-#endif
-
     /**
      * Sets the quick help.
      */
@@ -424,16 +354,6 @@ Q_SIGNALS:
     void defaultsIndicatorsVisibleChanged(bool show);
 
 protected Q_SLOTS:
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 64)
-    /**
-     * Calling this slot is equivalent to emitting changed(true).
-     * @deprecated Since 5.64, use markAsChanged
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 64, "Use KCModule::markAsChanged()")
-    void changed();
-#endif
-
     /**
      * Calling this slot is equivalent to emitting changed(true).
      * @since 5.64

@@ -37,17 +37,6 @@ KConfigDialogManager::KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton 
     init(true);
 }
 
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 84)
-KConfigDialogManager::KConfigDialogManager(QWidget *parent, KConfigSkeleton *conf)
-    : QObject(parent)
-    , d(new KConfigDialogManagerPrivate(this))
-{
-    d->m_conf = conf;
-    d->m_dialog = parent;
-    init(true);
-}
-#endif
-
 KConfigDialogManager::~KConfigDialogManager() = default;
 
 // KF6: Drop this and get signals only from metaObject and/or widget's dynamic properties kcfg_property/kcfg_propertyNotify
@@ -107,14 +96,6 @@ QHash<QString, QByteArray> *KConfigDialogManager::propertyMap()
     initMaps();
     return s_propertyMap();
 }
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 32)
-QHash<QString, QByteArray> *KConfigDialogManager::changedMap()
-{
-    initMaps();
-    return s_changedMap();
-}
-#endif
 
 void KConfigDialogManager::init(bool trackChanges)
 {

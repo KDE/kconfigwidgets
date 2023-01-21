@@ -18,8 +18,6 @@
 #include <QMainWindow>
 #include <QMenuBar>
 
-#include "kpastetextaction.h"
-
 namespace KStandardAction
 {
 AutomaticAction::AutomaticAction(const QIcon &icon,
@@ -170,11 +168,6 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
         case Home:
             sLabel = i18nc("home page", "&Home");
             break;
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 23)
-        case Help:
-            sLabel = i18nc("show help", "&Help");
-            break;
-#endif
         case Preferences:
         case AboutApp:
         case HelpContents: {
@@ -258,28 +251,10 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
             pAction = new KToggleFullScreenAction(parent);
             pAction->setCheckable(true);
             break;
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39) && defined(QT_DBUS_LIB)
-        case PasteText:
-            pAction = new KPasteTextAction(parent);
-            break;
-#endif
         // Same as default, but with the app icon
         case AboutApp: {
             pAction = new QAction(parent);
             icon = qApp->windowIcon();
-#if KCOREADDONS_BUILD_DEPRECATED_SINCE(5, 2)
-            // Using deprecated API for compatibility reasons, remove with KF6
-            if (icon.isNull()) {
-                const KAboutData data = KAboutData::applicationData();
-                QT_WARNING_PUSH
-                QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
-                QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
-                if (!data.programIconName().isEmpty()) {
-                    icon = QIcon::fromTheme(data.programIconName());
-                    QT_WARNING_POP
-                }
-            }
-#endif
             break;
         }
         case HamburgerMenu: {
@@ -448,13 +423,6 @@ QAction *paste(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(Paste, recvr, slot, parent);
 }
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39)
-QAction *pasteText(const QObject *recvr, const char *slot, QObject *parent)
-{
-    return KStandardAction::create(PasteText, recvr, slot, parent);
-}
-#endif
 
 QAction *clear(const QObject *recvr, const char *slot, QObject *parent)
 {
@@ -680,13 +648,6 @@ KToggleFullScreenAction *fullScreen(const QObject *recvr, const char *slot, QWid
     return ret;
 }
 
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
-QAction *saveOptions(const QObject *recvr, const char *slot, QObject *parent)
-{
-    return KStandardAction::create(SaveOptions, recvr, slot, parent);
-}
-#endif
-
 QAction *keyBindings(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(KeyBindings, recvr, slot, parent);
@@ -706,13 +667,6 @@ QAction *configureNotifications(const QObject *recvr, const char *slot, QObject 
 {
     return KStandardAction::create(ConfigureNotifications, recvr, slot, parent);
 }
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
-QAction *help(const QObject *recvr, const char *slot, QObject *parent)
-{
-    return KStandardAction::create(Help, recvr, slot, parent);
-}
-#endif
 
 QAction *helpContents(const QObject *recvr, const char *slot, QObject *parent)
 {

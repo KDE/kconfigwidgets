@@ -80,16 +80,6 @@ public:
 #endif
 
 Q_SIGNALS:
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 78)
-    /**
-     * Specific (proper) codec was selected
-     *
-     * Note that triggered(const QString &) is emitted too (as defined in KSelectAction).
-     * @deprecated Since 5.78, use codecTriggered(QTextCodec *)
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 78, "Use KCodecAction::codecTriggered(QTextCodec *)")
-    void triggered(QTextCodec *codec); // clazy:exclude=overloaded-signal
-#endif
     /**
      * Specific (proper) codec was selected
      *
@@ -114,18 +104,6 @@ Q_SIGNALS:
      * @since 5.78
      */
     void codecTriggered(QTextCodec *codec);
-
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 78)
-    /**
-     * Autodetection has been selected.
-     * emits KEncodingProber::Universal if Default was selected.
-     *
-     * Applicable only if showAutoOptions in c'tor was true
-     * @deprecated Since 5.78, use encodingProberTriggered(KEncodingProber::ProberType)
-     */
-    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 78, "Use KCodecAction::encodingProberTriggered(KEncodingProber::ProberType)")
-    void triggered(KEncodingProber::ProberType); // clazy:exclude=overloaded-signal
-#endif
 
 #if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 102)
     /**

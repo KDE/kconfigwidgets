@@ -454,15 +454,6 @@ bool KColorScheme::operator==(const KColorScheme &other) const
 }
 
 // static
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 93)
-int KColorScheme::contrast()
-{
-    KConfigGroup g(defaultConfig(), "KDE");
-    return g.readEntry("contrast", 7);
-}
-#endif
-
-// static
 qreal KColorScheme::contrastF(const KSharedConfigPtr &config)
 {
     KConfigGroup g(config ? config : defaultConfig(), "KDE");

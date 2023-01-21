@@ -86,12 +86,6 @@ void KCodecActionPrivate::init(bool showAutoOptions)
         q->addAction(tmp);
     }
     q->setCurrentItem(0);
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
-    // forward deprecated signals to undeprecated, to be backward-compatible to unported subclasses
-    QObject::connect(q, qOverload<QTextCodec *>(&KCodecAction::triggered), q, &KCodecAction::codecTriggered);
-    QObject::connect(q, qOverload<KEncodingProber::ProberType>(&KCodecAction::triggered), q, &KCodecAction::encodingProberTriggered);
-#endif
 }
 
 int KCodecAction::mibForName(const QString &codecName, bool *ok) const
@@ -143,9 +137,7 @@ void KCodecAction::actionTriggered(QAction *action)
     // we don't want to emit any signals from top-level items
     // except for the default one
     if (action == d->defaultAction) {
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
-        Q_EMIT triggered(KEncodingProber::Universal);
-#elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
         Q_EMIT encodingProberTriggered(KEncodingProber::Universal);
 #endif
         Q_EMIT defaultItemTriggered();
@@ -161,33 +153,16 @@ void KCodecActionPrivate::subActionTriggered(QAction *action)
     bool ok = false;
     int mib = q->mibForName(action->text(), &ok);
     if (ok) {
-#if KWIDGETSADDONS_BUILD_DEPRECATED_SINCE(5, 78)
-        QT_WARNING_PUSH
-        QT_WARNING_DISABLE_CLANG("-Wdeprecated-declarations")
-        QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
-        // will also indirectly emit textTriggered, due to signal connection in KSelectAction
-        Q_EMIT q->triggered(action->text());
-        QT_WARNING_POP
-#else
         Q_EMIT q->textTriggered(action->text());
-#endif
         QTextCodec *codec = q->codecForMib(mib);
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
-        // will also indirectly emit codecTriggered, due to signal connection in init()
-        Q_EMIT q->triggered(codec);
-#else
         Q_EMIT q->codecTriggered(codec);
-#endif
     } else {
         if (!action->data().isNull()) {
 #if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
             const auto encodingProberType = static_cast<KEncodingProber::ProberType>(action->data().toUInt());
 #endif
 
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 78)
-            // will also indirectly emit encodingProberTriggered, due to signal connection in init()
-            Q_EMIT q->triggered(encodingProberType);
-#elif KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
             Q_EMIT q->encodingProberTriggered(encodingProberType);
 #endif
         }

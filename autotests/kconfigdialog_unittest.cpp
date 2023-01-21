@@ -265,10 +265,6 @@ private Q_SLOTS:
         // make sure there is nothing registered for the property
         KConfigDialogManager::propertyMap()->remove("TextEditUserPropertyWidget");
 
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
-        KConfigDialogManager::changedMap()->insert("TextEditUserPropertyWidget", SIGNAL(textChanged(QString)));
-#endif
-
         TextEditUserPropertyWidget *edit = new TextEditUserPropertyWidget;
 
         testKConfigCompilerSignals<TextEditUserPropertyWidget>(edit, QStringLiteral("settings3"));
@@ -276,9 +272,6 @@ private Q_SLOTS:
 
     void testKConfigCompilerSignalsWithoutUserPropertyByMap()
     {
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
-        KConfigDialogManager::changedMap()->insert("TextEditNoUserPropertyWidget", SIGNAL(textChanged(QString)));
-#endif
         KConfigDialogManager::propertyMap()->insert("TextEditNoUserPropertyWidget", QByteArray("text"));
 
         TextEditNoUserPropertyWidget *edit = new TextEditNoUserPropertyWidget;
@@ -291,10 +284,6 @@ private Q_SLOTS:
         // make sure there is nothing registered for the property
         KConfigDialogManager::propertyMap()->remove("TextEditNoUserPropertyWidget");
 
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
-        KConfigDialogManager::changedMap()->insert("TextEditNoUserPropertyWidget", SIGNAL(textChanged(QString)));
-#endif
-
         TextEditNoUserPropertyWidget *edit = new TextEditNoUserPropertyWidget;
         edit->setProperty("kcfg_property", QByteArray("text"));
 
@@ -304,9 +293,6 @@ private Q_SLOTS:
     void testKConfigCompilerSignalsWithUserPropertyAutoSignal()
     {
         // make sure there is nothing registered
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
-        KConfigDialogManager::changedMap()->remove("TextEditUserPropertyWidget");
-#endif
         KConfigDialogManager::propertyMap()->remove("TextEditUserPropertyWidget");
 
         TextEditUserPropertyWidget *edit = new TextEditUserPropertyWidget;
@@ -316,11 +302,6 @@ private Q_SLOTS:
 
     void testKConfigCompilerSignalsWithoutUserPropertyByMapAutoSignal()
     {
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
-        // make sure there is nothing registered for the signal
-        KConfigDialogManager::changedMap()->remove("TextEditNoUserPropertyWidget");
-#endif
-
         KConfigDialogManager::propertyMap()->insert("TextEditNoUserPropertyWidget", QByteArray("text"));
 
         TextEditNoUserPropertyWidget *edit = new TextEditNoUserPropertyWidget;
@@ -330,10 +311,6 @@ private Q_SLOTS:
 
     void testKConfigCompilerSignalsWithoutUserPropertyByPropertyAutoSignal()
     {
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
-        // make sure there is no signal registered
-        KConfigDialogManager::changedMap()->remove("TextEditNoUserPropertyWidget");
-#endif
         // next to USER on "other" property, this one should also be ignored
         KConfigDialogManager::propertyMap()->insert("TextEditNoUserPropertyWidget", QByteArray("other"));
 
@@ -346,9 +323,6 @@ private Q_SLOTS:
     void testKConfigCompilerSignalsWithoutUserPropertyByPropertyBySignal()
     {
         // next to USER being on "other" property, this one should also be ignored
-#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 32)
-        KConfigDialogManager::changedMap()->insert("TextEditNoUserPropertyNoNotifyWidget", SIGNAL(otherChanged(QString)));
-#endif
         KConfigDialogManager::propertyMap()->insert("TextEditNoUserPropertyNoNotifyWidget", QByteArray("other"));
 
         TextEditNoUserPropertyNoNotifyWidget *edit = new TextEditNoUserPropertyNoNotifyWidget;

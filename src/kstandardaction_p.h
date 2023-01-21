@@ -44,9 +44,6 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { Cut,           KStandardShortcut::Cut, "edit_cut", kli18n("Cu&t"), kli18n("Cut selection to clipboard"), "edit-cut" },
     { Copy,          KStandardShortcut::Copy, "edit_copy", kli18n("&Copy"), kli18n("Copy selection to clipboard"), "edit-copy" },
     { Paste,         KStandardShortcut::Paste, "edit_paste", kli18n("&Paste"), kli18n("Paste clipboard content"), "edit-paste" },
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 39)
-    { PasteText,     KStandardShortcut::Paste, "edit_paste", kli18n("&Paste"), kli18n("Paste clipboard content"), "edit-paste" },
-#endif
     { Clear,         KStandardShortcut::Clear, "edit_clear", kli18n("C&lear"), {}, "edit-clear" },
     { SelectAll,     KStandardShortcut::SelectAll, "edit_select_all", kli18n("Select &All"), {}, "edit-select-all" },
     { Deselect,      KStandardShortcut::Deselect, "edit_deselect", kli18n("Dese&lect"), {}, "edit-select-none" },
@@ -88,9 +85,6 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { ShowToolbar,   KStandardShortcut::ShowToolbar, "options_show_toolbar", kli18n("Show &Toolbar"), kli18n("Show or hide toolbar"), nullptr },
     { ShowStatusbar, KStandardShortcut::ShowStatusbar, "options_show_statusbar", kli18n("Show St&atusbar"), kli18n("Show or hide statusbar"), nullptr },
     { FullScreen,    KStandardShortcut::FullScreen, "fullscreen", kli18n("F&ull Screen Mode"), {}, "view-fullscreen" },
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
-    { SaveOptions,   KStandardShortcut::SaveOptions_DEPRECATED_DO_NOT_USE, "options_save_options", kli18n("&Save Settings"), {}, nullptr },
-#endif
     { KeyBindings,   KStandardShortcut::KeyBindings, "options_configure_keybinding", kli18n("Configure Keyboard S&hortcuts..."), {}, "configure-shortcuts" },
     { Preferences,   KStandardShortcut::Preferences, "options_configure", kli18n("&Configure %1..."), {}, "configure" },
     { ConfigureToolbars, KStandardShortcut::ConfigureToolbars, "options_configure_toolbars", kli18n("Configure Tool&bars..."), {}, "configure-toolbars" },
@@ -98,9 +92,6 @@ static const KStandardActionInfo g_rgActionInfo[] = {
 
     // the idea here is that Contents is used in menus, and Help in dialogs, so both share the same
     // shortcut
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 38)
-    { Help,          KStandardShortcut::Help, "help", {}, {}, "help-contents" },
-#endif
     { HelpContents,  KStandardShortcut::Help, "help_contents", kli18n("%1 &Handbook"), {}, "help-contents" },
     { WhatsThis,     KStandardShortcut::WhatsThis, "help_whats_this", kli18n("What's &This?"), {}, "help-contextual" },
     { TipofDay,      KStandardShortcut::TipofDay, "help_show_tip", kli18n("Tip of the &Day"), {}, "help-hint" },

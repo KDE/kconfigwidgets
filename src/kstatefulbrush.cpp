@@ -8,10 +8,6 @@
 
 #include "kcolorschemehelpers_p.h"
 
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 84)
-#include <QWidget>
-#endif
-
 #include <array>
 
 class KStatefulBrushPrivate
@@ -103,14 +99,3 @@ QBrush KStatefulBrush::brush(const QPalette &pal) const
 {
     return brush(pal.currentColorGroup());
 }
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 84)
-QBrush KStatefulBrush::brush(const QWidget *widget) const
-{
-    if (widget) {
-        return brush(widget->palette());
-    } else {
-        return QBrush();
-    }
-}
-#endif
