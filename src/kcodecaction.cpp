@@ -14,12 +14,7 @@
 #include <KLocalizedString>
 
 #include <QMenu>
-#include <QTextCodec>
 #include <QVariant>
-
-// According to http://www.iana.org/assignments/ianacharset-mib
-// the default/unknown mib value is 2.
-#define MIB_DEFAULT 2
 
 class KCodecActionPrivate
 {
@@ -86,69 +81,13 @@ void KCodecActionPrivate::init(bool showAutoOptions)
         q->addAction(tmp);
     }
     q->setCurrentItem(0);
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-    QObject::connect(q, &KCodecAction::codecTriggered, q, [this](QTextCodec *codec) {
-        Q_EMIT q->codecNameTriggered(codec->name());
-    });
-#endif
 }
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-int KCodecAction::mibForName(const QString &codecName, bool *ok) const
-{
-    // FIXME logic is good but code is ugly
-
-    bool success = false;
-    int mib = MIB_DEFAULT;
-    KCharsets *charsets = KCharsets::charsets();
-
-    if (codecName == d->defaultAction->text()) {
-        success = true;
-    } else {
-        QTextCodec *codec = charsets->codecForName(codecName, success);
-        if (!success) {
-            // Maybe we got a description name instead
-            codec = charsets->codecForName(charsets->encodingForName(codecName), success);
-        }
-
-        if (codec) {
-            mib = codec->mibEnum();
-        }
-    }
-
-    if (ok) {
-        *ok = success;
-    }
-
-    if (success) {
-        return mib;
-    }
-
-    qCWarning(KCONFIG_WIDGETS_LOG) << "Invalid codec name: " << codecName;
-    return MIB_DEFAULT;
-}
-#endif
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-QTextCodec *KCodecAction::codecForMib(int mib) const
-{
-    if (mib == MIB_DEFAULT) {
-        // FIXME offer to change the default codec
-        return QTextCodec::codecForLocale();
-    } else {
-        return QTextCodec::codecForMib(mib);
-    }
-}
-#endif
 
 void KCodecAction::actionTriggered(QAction *action)
 {
     // we don't want to emit any signals from top-level items
     // except for the default one
     if (action == d->defaultAction) {
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
-        Q_EMIT encodingProberTriggered(KEncodingProber::Universal);
-#endif
         Q_EMIT defaultItemTriggered();
     }
 }
@@ -159,64 +98,9 @@ void KCodecActionPrivate::subActionTriggered(QAction *action)
         return;
     }
     currentSubAction = action;
-    bool ok = true;
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-    int mib = q->mibForName(action->text(), &ok);
-#endif
-    if (ok) {
-        Q_EMIT q->textTriggered(action->text());
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-        QTextCodec *codec = q->codecForMib(mib);
-#endif
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-        Q_EMIT q->codecTriggered(codec);
-#else
-        Q_EMIT q->codecNameTriggered(action->text().toUtf8());
-#endif
-    } else {
-        if (!action->data().isNull()) {
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
-            const auto encodingProberType = static_cast<KEncodingProber::ProberType>(action->data().toUInt());
-#endif
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
-            Q_EMIT q->encodingProberTriggered(encodingProberType);
-#endif
-        }
-    }
+    Q_EMIT q->textTriggered(action->text());
+    Q_EMIT q->codecNameTriggered(action->text().toUtf8());
 }
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-QTextCodec *KCodecAction::currentCodec() const
-{
-    return codecForMib(currentCodecMib());
-}
-#endif
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-bool KCodecAction::setCurrentCodec(QTextCodec *codec)
-{
-    if (!codec) {
-        return false;
-    }
-
-    for (int i = 0; i < actions().size(); ++i) {
-        if (actions().at(i)->menu()) {
-            for (int j = 0; j < actions().at(i)->menu()->actions().size(); ++j) {
-                if (!j && !actions().at(i)->menu()->actions().at(j)->data().isNull()) {
-                    continue;
-                }
-                if (codec == KCharsets::charsets()->codecForName(actions().at(i)->menu()->actions().at(j)->text())) {
-                    d->currentSubAction = actions().at(i)->menu()->actions().at(j);
-                    d->currentSubAction->trigger();
-                    return true;
-                }
-            }
-        }
-    }
-    return false;
-}
-#endif
 
 QString KCodecAction::currentCodecName() const
 {
@@ -245,53 +129,5 @@ bool KCodecAction::setCurrentCodec(const QString &codecName)
     }
     return false;
 }
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-int KCodecAction::currentCodecMib() const
-{
-    return mibForName(currentCodecName());
-}
-#endif
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 103)
-bool KCodecAction::setCurrentCodec(int mib)
-{
-    if (mib == MIB_DEFAULT) {
-        return setCurrentAction(d->defaultAction);
-    } else {
-        return setCurrentCodec(codecForMib(mib));
-    }
-}
-#endif
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
-KEncodingProber::ProberType KCodecAction::currentProberType() const
-{
-    return d->currentSubAction->data().isNull() ? KEncodingProber::None : (KEncodingProber::ProberType)d->currentSubAction->data().toUInt();
-}
-#endif
-
-#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 102)
-bool KCodecAction::setCurrentProberType(KEncodingProber::ProberType scri)
-{
-    if (scri == KEncodingProber::Universal) {
-        d->currentSubAction = d->defaultAction;
-        d->currentSubAction->trigger();
-        return true;
-    }
-
-    for (int i = 0; i < actions().size(); ++i) {
-        if (actions().at(i)->menu()) {
-            if (!actions().at(i)->menu()->actions().isEmpty() && !actions().at(i)->menu()->actions().at(0)->data().isNull()
-                && actions().at(i)->menu()->actions().at(0)->data().toUInt() == (uint)scri) {
-                d->currentSubAction = actions().at(i)->menu()->actions().at(0);
-                d->currentSubAction->trigger();
-                return true;
-            }
-        }
-    }
-    return false;
-}
-#endif
 
 #include "moc_kcodecaction.cpp"

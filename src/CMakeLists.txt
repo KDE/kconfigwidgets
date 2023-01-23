@@ -62,7 +62,7 @@ ecm_generate_export_header(KF6ConfigWidgets
     GROUP_BASE_NAME KF
     VERSION ${KF_VERSION}
     DEPRECATED_BASE_VERSION 0
-    DEPRECATION_VERSIONS 5.102 5.103
+    DEPRECATION_VERSIONS
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
     CUSTOM_CONTENT_FROM_VARIABLE define_with_kauth_code
 )
@@ -79,18 +79,10 @@ target_link_libraries(KF6ConfigWidgets
     KF6::I18n # For action and widget texts
 )
 
-if(NOT EXCLUDE_DEPRECATED_BEFORE_AND_AT STREQUAL "CURRENT" AND
-   EXCLUDE_DEPRECATED_BEFORE_AND_AT VERSION_LESS 5.102.0)
-    target_link_libraries(KF6ConfigWidgets
-      PUBLIC
-      KF6::Codecs # KCodecActions uses KCharsets, KEncodingProber
-    )
-else()
-    target_link_libraries(KF6ConfigWidgets
-      PRIVATE
-      KF6::Codecs # KCodecActions uses KCharsets, KEncodingProber
-    )
-endif()
+target_link_libraries(KF6ConfigWidgets
+  PRIVATE
+  KF6::Codecs # KCodecActions uses KCharsets, KEncodingProber
+)
 
 if (WITH_KAUTH)
   if (QT_MAJOR_VERSION STREQUAL "6")
