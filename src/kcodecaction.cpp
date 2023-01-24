@@ -74,7 +74,7 @@ void KCodecActionPrivate::init(bool showAutoOptions)
         for (int i = 1; i < encodingsForScript.size(); ++i) {
             tmp->addAction(encodingsForScript.at(i));
         }
-        q->connect(tmp, qOverload<QAction *>(&KSelectAction::triggered), q, [this](QAction *action) {
+        q->connect(tmp, &KSelectAction::actionTriggered, q, [this](QAction *action) {
             subActionTriggered(action);
         });
         tmp->setCheckable(true);
@@ -83,7 +83,7 @@ void KCodecActionPrivate::init(bool showAutoOptions)
     q->setCurrentItem(0);
 }
 
-void KCodecAction::actionTriggered(QAction *action)
+void KCodecAction::slotActionTriggered(QAction *action)
 {
     // we don't want to emit any signals from top-level items
     // except for the default one

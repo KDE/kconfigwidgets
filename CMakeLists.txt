@@ -71,7 +71,6 @@ endif()
 ecm_set_disabled_deprecation_versions(
     QT 5.15.2
     KF 5.97.0
-    KWIDGETSADDONS 5.77.0  # We need KSelectAction::triggered(QString)
 )
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kconfigwidgets5\")

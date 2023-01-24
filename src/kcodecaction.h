@@ -59,10 +59,10 @@ Q_SIGNALS:
     void defaultItemTriggered();
 
 protected Q_SLOTS:
-    void actionTriggered(QAction *) override;
+    void slotActionTriggered(QAction *) override;
 
 protected:
-    using KSelectAction::triggered;
+    using KSelectAction::actionTriggered;
 
 private:
     friend class KCodecActionPrivate;

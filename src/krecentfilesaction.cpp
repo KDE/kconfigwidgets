@@ -78,7 +78,7 @@ void KRecentFilesActionPrivate::init()
     clearAction->setObjectName(QStringLiteral("clear_action"));
     clearAction->setVisible(false);
     q->setEnabled(false);
-    q->connect(q, qOverload<QAction *>(&KSelectAction::triggered), q, [this](QAction *action) {
+    q->connect(q, &KSelectAction::actionTriggered, q, [this](QAction *action) {
         urlSelected(action);
     });
 }
