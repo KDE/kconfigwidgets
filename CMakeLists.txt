@@ -69,8 +69,8 @@ if (WITH_KAUTH)
 endif()
 
 ecm_set_disabled_deprecation_versions(
-    QT 5.15.2
-    KF 5.97.0
+    QT 6.4.0
+    KF 5.102.0
 )
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kconfigwidgets5\")

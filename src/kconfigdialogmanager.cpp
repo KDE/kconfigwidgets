@@ -155,7 +155,7 @@ void KConfigDialogManager::setupWidget(QWidget *widget, KConfigSkeletonItem *ite
     QGroupBox *gb = qobject_cast<QGroupBox *>(widget);
     if (gb && getCustomProperty(gb).isEmpty()) {
         const KConfigSkeletonItem *item = d->m_conf->findItem(widget->objectName().mid(5));
-        if (item->property().type() == QVariant::Int) {
+        if (item->property().userType() == QMetaType::Int) {
             QObjectList children = gb->children();
             children.removeAll(gb->layout());
             const QList<QAbstractButton *> buttons = gb->findChildren<QAbstractButton *>();
@@ -420,7 +420,7 @@ QByteArray KConfigDialogManager::getCustomProperty(const QWidget *widget) const
 {
     QVariant prop(widget->property("kcfg_property"));
     if (prop.isValid()) {
-        if (!prop.canConvert(QVariant::ByteArray)) {
+        if (!prop.canConvert<QByteArray>()) {
             qCWarning(KCONFIG_WIDGETS_LOG) << "kcfg_property on" << widget->metaObject()->className() << "is not of type ByteArray";
         } else {
             return prop.toByteArray();
@@ -452,7 +452,7 @@ QByteArray KConfigDialogManager::getCustomPropertyChangedSignal(const QWidget *w
 {
     QVariant prop(widget->property("kcfg_propertyNotify"));
     if (prop.isValid()) {
-        if (!prop.canConvert(QVariant::ByteArray)) {
+        if (!prop.canConvert<QByteArray>()) {
             qCWarning(KCONFIG_WIDGETS_LOG) << "kcfg_propertyNotify on" << widget->metaObject()->className() << "is not of type ByteArray";
         } else {
             return prop.toByteArray();

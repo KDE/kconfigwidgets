@@ -42,7 +42,7 @@ void tst_KStandardAction::changingShortcut()
 
     // GIVEN
     KStandardShortcut::saveShortcut(KStandardShortcut::Cut, KStandardShortcut::hardcodedDefaultShortcut(KStandardShortcut::Cut));
-    const QList<QKeySequence> newShortcut{Qt::CTRL + Qt::Key_Adiaeresis};
+    const QList<QKeySequence> newShortcut{Qt::CTRL | Qt::Key_Adiaeresis};
     QVERIFY(newShortcut != KStandardShortcut::cut());
 
     std::unique_ptr<QAction> action(KStandardAction::cut(nullptr));

@@ -369,7 +369,7 @@ private:
         QCOMPARE(spy.size(), 1);
         QVariantList args = spy.last();
         QCOMPARE(args.size(), 1);
-        QCOMPARE((QMetaType::Type)args[0].type(), QMetaType::QString);
+        QCOMPARE((QMetaType::Type)args[0].userType(), QMetaType::QString);
         QCOMPARE(args[0].toString(), changedValue);
         QCOMPARE(SignalTest::foo(), changedValue);
 
@@ -381,7 +381,7 @@ private:
         QCOMPARE(spy.size(), 2);
         args = spy.last();
         QCOMPARE(args.size(), 1);
-        QCOMPARE((QMetaType::Type)args[0].type(), QMetaType::QString);
+        QCOMPARE((QMetaType::Type)args[0].userType(), QMetaType::QString);
         QCOMPARE(args[0].toString(), someOtherValue);
         QCOMPARE(SignalTest::foo(), someOtherValue);
     }
