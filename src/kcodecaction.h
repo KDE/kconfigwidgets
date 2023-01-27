@@ -13,12 +13,10 @@
 #include <KSelectAction>
 #include <memory>
 
-class QTextCodec;
-
 /**
  *  @class KCodecAction kcodecaction.h KCodecAction
  *
- *  @short Action for selecting one of several QTextCodec.
+ *  @short Action for selecting one of several text codecs..
  *
  *  This action shows up a submenu with a list of the available codecs on the system.
  */

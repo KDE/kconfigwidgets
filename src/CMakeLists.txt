@@ -92,10 +92,6 @@ if (WITH_KAUTH)
   endif()
 endif()
 
-if (TARGET Qt6::Core5Compat)
-    target_link_libraries(KF6ConfigWidgets PUBLIC Qt6::Core5Compat)
-endif()
-
 set_target_properties(KF6ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION}
                                                   SOVERSION ${KCONFIGWIDGETS_SOVERSION}
                                                   EXPORT_NAME ConfigWidgets

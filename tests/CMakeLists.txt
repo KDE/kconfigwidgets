@@ -19,11 +19,8 @@ kconfigwidgets_executable_tests(
    kcommandbartest
 )
 
-if (TARGET Qt6::Core5Compat)
-    set(kcodecactiontest_libs Qt6::Core5Compat)
-endif()
 add_executable(kcodecactiontest kcodecactiontest.cpp)
-target_link_libraries(kcodecactiontest Qt${QT_MAJOR_VERSION}::Test KF6::ConfigWidgets ${kcodecactiontest_libs})
+target_link_libraries(kcodecactiontest Qt${QT_MAJOR_VERSION}::Test KF6::ConfigWidgets)
 ecm_mark_as_test(kcodecactiontest)
 
 ## kcolorutilsdemo

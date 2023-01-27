@@ -2,7 +2,6 @@
 #define KCODECACTION_TEST_H
 
 #include <QMainWindow>
-#include <QTextCodec>
 
 #include "kcodecaction.h"
 
