@@ -85,11 +85,7 @@ target_link_libraries(KF6ConfigWidgets
 )
 
 if (WITH_KAUTH)
-  if (QT_MAJOR_VERSION STREQUAL "6")
     target_link_libraries(KF6ConfigWidgets PUBLIC KF6::AuthCore)
-  else()
-    target_link_libraries(KF6ConfigWidgets PUBLIC KF6::Auth)
-  endif()
 endif()
 
 set_target_properties(KF6ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION}
