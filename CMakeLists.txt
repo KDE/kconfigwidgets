@@ -45,7 +45,6 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KCONFIGWIDGETS
 find_package(KF6CoreAddons ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6Codecs ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6Config ${KF_DEP_VERSION} REQUIRED)
-find_package(KF6DocTools ${KF_DEP_VERSION})
 find_package(KF6GuiAddons ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6I18n ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
@@ -69,9 +68,6 @@ ecm_set_disabled_deprecation_versions(
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kconfigwidgets5\")
 ki18n_install(po)
-if (KF6DocTools_FOUND)
-    kdoctools_install(po)
-endif()
 
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
     file(GLOB lang_dirs "po/*")
@@ -81,10 +77,6 @@ if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
           install( FILES po/${lang}/kf5_entry.desktop DESTINATION ${KDE_INSTALL_LOCALEDIR}/${lang} )
        endif()
     endforeach()
-endif()
-
-if (KF6DocTools_FOUND)
-    add_subdirectory(docs)
 endif()
 
 add_subdirectory(src)
