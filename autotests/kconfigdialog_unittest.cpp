@@ -162,19 +162,19 @@ public:
         colorItem = new ItemColor(currentGroup(), QStringLiteral("Color"), color, Qt::white);
         addItem(colorItem, QStringLiteral("Color"));
 
-        QList<ItemEnum::Choice2> textValues;
+        QList<ItemEnum::Choice> textValues;
         {
-            ItemEnum::Choice2 choice;
+            ItemEnum::Choice choice;
             choice.name = QStringLiteral("A");
             textValues.append(choice);
         }
         {
-            ItemEnum::Choice2 choice;
+            ItemEnum::Choice choice;
             choice.name = QStringLiteral("B");
             textValues.append(choice);
         }
         {
-            ItemEnum::Choice2 choice;
+            ItemEnum::Choice choice;
             choice.name = QStringLiteral("C");
             textValues.append(choice);
         }
