@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-08 00:42+0000\n"
-"PO-Revision-Date: 2023-02-15 11:04\n"
+"PO-Revision-Date: 2023-02-24 12:43\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -181,7 +181,7 @@ msgstr "另存为(&A)..."
 
 #: kstandardaction_p.h:34
 msgid "Save document under a new name"
-msgstr "用新名称保存文档"
+msgstr "用新文件名保存文档"
 
 #: kstandardaction_p.h:35
 msgid "Re&vert"
@@ -217,11 +217,11 @@ msgstr "显示文档的打印预览"
 
 #: kstandardaction_p.h:39
 msgid "&Mail..."
-msgstr "邮件(&M)..."
+msgstr "发送电子邮件(&M)..."
 
 #: kstandardaction_p.h:39
 msgid "Send document by mail"
-msgstr "通过邮件发送文档"
+msgstr "通过电子邮件发送文档"
 
 #: kstandardaction_p.h:40
 msgid "&Quit"
@@ -229,7 +229,7 @@ msgstr "退出(&Q)"
 
 #: kstandardaction_p.h:40
 msgid "Quit application"
-msgstr "退出程序"
+msgstr "退出应用程序"
 
 #: kstandardaction_p.h:42
 msgid "&Undo"
@@ -237,7 +237,7 @@ msgstr "撤销(&U)"
 
 #: kstandardaction_p.h:42
 msgid "Undo last action"
-msgstr "撤销上个操作"
+msgstr "撤销上一步操作"
 
 #: kstandardaction_p.h:43
 msgid "Re&do"
@@ -245,7 +245,7 @@ msgstr "重做(&D)"
 
 #: kstandardaction_p.h:43
 msgid "Redo last undone action"
-msgstr "重做上次撤销的操作"
+msgstr "重做上一次撤销的操作"
 
 #: kstandardaction_p.h:44
 msgid "Cu&t"
@@ -305,31 +305,31 @@ msgstr "缩放为实际大小(&A)"
 
 #: kstandardaction_p.h:58
 msgid "View document at its actual size"
-msgstr "以实际大小显示文档"
+msgstr "显示为文档的实际大小"
 
 #: kstandardaction_p.h:59
 msgid "&Fit to Page"
-msgstr "适合页面(&F)"
+msgstr "适合整个页面(&F)"
 
 #: kstandardaction_p.h:59
 msgid "Zoom to fit page in window"
-msgstr "缩放整个页面以适合窗口大小"
+msgstr "缩放以适合窗口中整个页面的大小"
 
 #: kstandardaction_p.h:60
 msgid "Fit to Page &Width"
-msgstr "适合页宽(&W)"
+msgstr "适合页面宽度(&W)"
 
 #: kstandardaction_p.h:60
 msgid "Zoom to fit page width in window"
-msgstr "缩放页面宽度以适合窗口大小"
+msgstr "缩放以适合窗口中页面的宽度"
 
 #: kstandardaction_p.h:61
 msgid "Fit to Page &Height"
-msgstr "适合页高(&H)"
+msgstr "适合页面高度(&H)"
 
 #: kstandardaction_p.h:61
 msgid "Zoom to fit page height in window"
-msgstr "缩放页面高度以适合窗口大小"
+msgstr "缩放以适合窗口中页面的高度"
 
 #: kstandardaction_p.h:62
 msgid "Zoom &In"
@@ -345,7 +345,7 @@ msgstr "缩放(&Z)..."
 
 #: kstandardaction_p.h:64
 msgid "Select zoom level"
-msgstr "选择缩放倍率"
+msgstr "选择缩放级别"
 
 #: kstandardaction_p.h:65
 msgid "&Refresh"
@@ -361,7 +361,7 @@ msgstr "向上(&U)"
 
 #: kstandardaction_p.h:67
 msgid "Go up"
-msgstr "转到上一级"
+msgstr "跳转到上一级"
 
 #: kstandardaction_p.h:72
 msgid "&Previous Page"
@@ -369,7 +369,7 @@ msgstr "上一页(&P)"
 
 #: kstandardaction_p.h:72
 msgid "Go to previous page"
-msgstr "转到上一页"
+msgstr "跳转到上一页"
 
 #: kstandardaction_p.h:73
 msgid "&Next Page"
@@ -377,19 +377,19 @@ msgstr "下一页(&N)"
 
 #: kstandardaction_p.h:73
 msgid "Go to next page"
-msgstr "转到下一页"
+msgstr "跳转到下一页"
 
 #: kstandardaction_p.h:74
 msgid "&Go To..."
-msgstr "转到(&G)..."
+msgstr "跳转到(&G)..."
 
 #: kstandardaction_p.h:75
 msgid "&Go to Page..."
-msgstr "转到页(&G)..."
+msgstr "跳转到页面(&G)..."
 
 #: kstandardaction_p.h:76
 msgid "&Go to Line..."
-msgstr "转到行(&G)..."
+msgstr "跳转到行(&G)..."
 
 #: kstandardaction_p.h:77
 msgid "&First Page"
@@ -397,7 +397,7 @@ msgstr "第一页(&F)"
 
 #: kstandardaction_p.h:77
 msgid "Go to first page"
-msgstr "转到第一页"
+msgstr "跳转到第一页"
 
 #: kstandardaction_p.h:78
 msgid "&Last Page"
@@ -405,7 +405,7 @@ msgstr "最后一页(&L)"
 
 #: kstandardaction_p.h:78
 msgid "Go to last page"
-msgstr "转到最后一页"
+msgstr "跳转到最后一页"
 
 #: kstandardaction_p.h:79
 msgid "&Back"
@@ -524,11 +524,11 @@ msgstr "删除(&D)"
 
 #: kstandardaction_p.h:112
 msgid "&Rename..."
-msgstr "&重命名..."
+msgstr "重命名(&R)..."
 
 #: kstandardaction_p.h:113
 msgid "&Move to Trash"
-msgstr "移至回收站(&M)"
+msgstr "移动到回收站(&M)"
 
 #: kstandardaction_p.h:114
 msgid "&Donate"
@@ -554,7 +554,7 @@ msgstr "您知道吗...？\n"
 #, kde-format
 msgctxt "@option:check"
 msgid "&Show tips on startup"
-msgstr "在启动时显示使用提示(&S)"
+msgstr "启动时显示使用提示(&S)"
 
 #: ktipdialog.cpp:296
 #, kde-format
