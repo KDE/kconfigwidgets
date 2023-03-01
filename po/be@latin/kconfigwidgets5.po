@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-08 00:42+0000\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2022-08-29 09:17\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -39,23 +39,23 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "komzpa@gmail.com, nashtlumach@gmail.com"
 
-#: kcmodule.cpp:198
+#: kcmodule.cpp:172
 #, kde-format
 msgid "You will be asked to authenticate before saving"
 msgstr "Pierad zachavanniem vam budzie prapanavana vykanać aŭtentyfikacyju"
 
-#: kcmodule.cpp:202
+#: kcmodule.cpp:176
 #, kde-format
 msgid "You are not allowed to save the configuration"
 msgstr "Vy nie majecie pravoŭ na zachavannie kanfihuracyi"
 
-#: kcodecaction.cpp:67
+#: kcodecaction.cpp:62
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Default"
 msgstr "Pradvyznačana"
 
-#: kcodecaction.cpp:75
+#: kcodecaction.cpp:70
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
@@ -117,37 +117,31 @@ msgstr "Niama zapisaŭ"
 msgid "Clear List"
 msgstr "Ačyscić spis"
 
-#: kstandardaction.cpp:157
+#: kstandardaction.cpp:155
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "&Nazad"
 
-#: kstandardaction.cpp:164
+#: kstandardaction.cpp:162
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&Daliej"
 
-#: kstandardaction.cpp:171
+#: kstandardaction.cpp:169
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Chatniaja staronka"
 
-#: kstandardaction.cpp:175
-#, kde-format
-msgctxt "show help"
-msgid "&Help"
-msgstr "&Daviedka"
-
-#: kstandardaction.cpp:232
+#: kstandardaction.cpp:225
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
 "Pakazvać mieniu<p>Pakazvaje mieniu paslia taho, jak jano bylo schavana</p>"
 
-#: kstandardaction.cpp:253
+#: kstandardaction.cpp:246
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -276,312 +270,305 @@ msgstr "&Skapijavać"
 msgid "Copy selection to clipboard"
 msgstr "Skapijavać abranaje ŭ bufier abmienu"
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 msgid "&Paste"
 msgstr "&Ustavić"
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 msgid "Paste clipboard content"
 msgstr "Ustavić zmiesciva z bufiera abmienu"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:47
 msgid "C&lear"
 msgstr "A&čyscić"
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:48
 msgid "Select &All"
 msgstr "Abrać &usio"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:49
 msgid "Dese&lect"
 msgstr "&Adkinuć vybar"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:50
 msgid "&Find..."
 msgstr "&Pošuk..."
 
-#: kstandardaction_p.h:54
+#: kstandardaction_p.h:51
 msgid "Find &Next"
 msgstr "Šukać &nastupnaje"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:52
 msgid "Find Pre&vious"
 msgstr "Šukać &papiaredniaje"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:53
 msgid "&Replace..."
 msgstr "&Zamianić..."
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 msgid "Zoom to &Actual Size"
 msgstr "Maštabavać da &sapraŭdnaha pamieru"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 msgid "View document at its actual size"
 msgstr "Pakazać dakumient u jaho sapraŭdnym pamiery"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 msgid "&Fit to Page"
 msgstr "Pa &pamiery staronki"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 msgid "Zoom to fit page in window"
 msgstr "Maštabavać pa pamiery akna"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Fit to Page &Width"
 msgstr "Pa &šyryni staronki"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Zoom to fit page width in window"
 msgstr "Maštabavać pa šyryni akna"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Fit to Page &Height"
 msgstr "Pa &vyšyni staronki"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Zoom to fit page height in window"
 msgstr "Maštabavać pa vyšyni akna"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:59
 msgid "Zoom &In"
 msgstr "&Pavialičyć"
 
-#: kstandardaction_p.h:63
+#: kstandardaction_p.h:60
 msgid "Zoom &Out"
 msgstr "&Pamienšyć"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 msgid "&Zoom..."
 msgstr "&Maštabavannie..."
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 msgid "Select zoom level"
 msgstr "Abrać uzrovień pavieličennia"
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 msgid "&Refresh"
 msgstr "&Abnavić"
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 msgid "Refresh document"
 msgstr "Abnavić dakumient"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "&Up"
 msgstr "&Uvierch"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "Go up"
 msgstr "Pierajsci vyšej"
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 msgid "&Previous Page"
 msgstr "&Papiaredniaja staronka"
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 msgid "Go to previous page"
 msgstr "Pierajsci da papiaredniaj staronki"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 msgid "&Next Page"
 msgstr "&Nastupnaja staronka"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 msgid "Go to next page"
 msgstr "Pierajsci da nastupnaj staronki"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:71
 msgid "&Go To..."
 msgstr "&Pierachod..."
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:72
 msgid "&Go to Page..."
 msgstr "&Pierajsci da staronki..."
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:73
 msgid "&Go to Line..."
 msgstr "Pierajsci da radka..."
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 msgid "&First Page"
 msgstr "&Pieršaja staronka"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 msgid "Go to first page"
 msgstr "Pierajsci da pieršaj staronki"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 msgid "&Last Page"
 msgstr "&Apošniaja staronka"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 msgid "Go to last page"
 msgstr "Pierajsci da apošniaj staronki"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 msgid "&Back"
 msgstr "&Nazad"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 msgid "Go back in document"
 msgstr "Pierajsci nazad u dakumiencie"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 msgid "&Forward"
 msgstr "D&aliej"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 msgid "Go forward in document"
 msgstr "Pierajsci napierad ŭ dakumiencie"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:79
 msgid "&Add Bookmark"
 msgstr "&Dadać zakladku"
 
-#: kstandardaction_p.h:83
+#: kstandardaction_p.h:80
 msgid "&Edit Bookmarks..."
 msgstr "&Redahavać zakladki..."
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 msgid "&Spelling..."
 msgstr "&Pravieryć pravapis..."
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 msgid "Check spelling in document"
 msgstr "Pravieryć pravapis u dakumiencie"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 msgid "Show &Menubar"
 msgstr "Pakazvać &mieniu"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 msgid "Show or hide menubar"
 msgstr "Pakazać abo schavać paneĺ mieniu"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 msgid "Show &Toolbar"
 msgstr "Pakazvać &paneĺ instrumientaŭ"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 msgid "Show or hide toolbar"
 msgstr "Pakazać abo schavać paneĺ instrumientaŭ"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 msgid "Show St&atusbar"
 msgstr "Pakazvać paneĺ st&anu"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 msgid "Show or hide statusbar"
 msgstr "Pakazać abo schavać paneĺ stanu"
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:87
 msgid "F&ull Screen Mode"
 msgstr "&Poŭnaekranny režym"
 
-#: kstandardaction_p.h:92
-msgid "&Save Settings"
-msgstr "&Zachavać nalady"
-
-#: kstandardaction_p.h:94
+#: kstandardaction_p.h:88
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "Naladžvannie &spalučenniaŭ klaviš..."
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:89
 #, kde-format
 msgid "&Configure %1..."
 msgstr "&Naladžvannie %1..."
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:90
 msgid "Configure Tool&bars..."
 msgstr "Naladžvannie paneli instrumientaŭ..."
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:91
 msgid "Configure &Notifications..."
 msgstr "Naladžvannie &apaviaščenniaŭ..."
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:95
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "&Daviednik pa %1"
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:96
 #, fuzzy
 #| msgid "Whats &This?"
 msgid "What's &This?"
 msgstr "Što &heta?"
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:97
 msgid "Tip of the &Day"
 msgstr "Karysnaja &parada"
 
-#: kstandardaction_p.h:107
+#: kstandardaction_p.h:98
 msgid "&Report Bug..."
 msgstr "&Paviedamić pra chibu..."
 
-#: kstandardaction_p.h:108
+#: kstandardaction_p.h:99
 msgid "Configure &Language..."
 msgstr "Naladžvannie &movy..."
 
-#: kstandardaction_p.h:109
+#: kstandardaction_p.h:100
 #, kde-format
 msgid "&About %1"
 msgstr "&Pra %1"
 
-#: kstandardaction_p.h:110
+#: kstandardaction_p.h:101
 msgid "About &KDE"
 msgstr "Pra &KDE"
 
-#: kstandardaction_p.h:111
+#: kstandardaction_p.h:102
 msgid "&Delete"
 msgstr "V&ydalić"
 
-#: kstandardaction_p.h:112
+#: kstandardaction_p.h:103
 msgid "&Rename..."
 msgstr "Z&mianić nazvu..."
 
-#: kstandardaction_p.h:113
+#: kstandardaction_p.h:104
 msgid "&Move to Trash"
 msgstr "&Pieramiascić u smietnicu"
 
-#: kstandardaction_p.h:114
+#: kstandardaction_p.h:105
 msgid "&Donate"
 msgstr "&Achviaravać"
 
-#: kstandardaction_p.h:115
+#: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Adkryć &mieniu"
 
-#: ktipdialog.cpp:222
-#, kde-format
-msgctxt "@title:window"
-msgid "Tip of the Day"
-msgstr "Karysnaja parada"
+#~ msgctxt "show help"
+#~ msgid "&Help"
+#~ msgstr "&Daviedka"
 
-#: ktipdialog.cpp:238
-#, kde-format
-msgctxt "@title"
-msgid "Did you know...?\n"
-msgstr "Vy viedali, što...?\n"
+#~ msgid "&Save Settings"
+#~ msgstr "&Zachavać nalady"
 
-#: ktipdialog.cpp:291
-#, kde-format
-msgctxt "@option:check"
-msgid "&Show tips on startup"
-msgstr "&Pakazvać parady padčas zapusku"
+#~ msgctxt "@title:window"
+#~ msgid "Tip of the Day"
+#~ msgstr "Karysnaja parada"
 
-#: ktipdialog.cpp:296
-#, kde-format
-msgctxt "@action:button Goes to previous tip"
-msgid "&Previous"
-msgstr "&Papiaredniaja"
+#~ msgctxt "@title"
+#~ msgid "Did you know...?\n"
+#~ msgstr "Vy viedali, što...?\n"
 
-#: ktipdialog.cpp:301
-#, kde-format
-msgctxt "@action:button Goes to next tip, opposite to previous"
-msgid "&Next"
-msgstr "&Nastupnaja"
+#~ msgctxt "@option:check"
+#~ msgid "&Show tips on startup"
+#~ msgstr "&Pakazvać parady padčas zapusku"
+
+#~ msgctxt "@action:button Goes to previous tip"
+#~ msgid "&Previous"
+#~ msgstr "&Papiaredniaja"
+
+#~ msgctxt "@action:button Goes to next tip, opposite to previous"
+#~ msgid "&Next"
+#~ msgstr "&Nastupnaja"
 
 #, fuzzy
 #~| msgid "Shortcuts"

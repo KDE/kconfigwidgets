@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-08 00:42+0000\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2022-02-14 11:55+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -37,23 +37,23 @@ msgstr ""
 "visnovsky@kde.org,Richard.Fric@kdemail.net,miguel@portugal.sk,vatrtj@gmail."
 "com,misurel@gmail.com"
 
-#: kcmodule.cpp:198
+#: kcmodule.cpp:172
 #, kde-format
 msgid "You will be asked to authenticate before saving"
 msgstr "Pred uložením budete požiadaný o overenie"
 
-#: kcmodule.cpp:202
+#: kcmodule.cpp:176
 #, kde-format
 msgid "You are not allowed to save the configuration"
 msgstr "Na uloženie konfigurácie nemáte oprávnenie"
 
-#: kcodecaction.cpp:67
+#: kcodecaction.cpp:62
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Default"
 msgstr "Štandardné"
 
-#: kcodecaction.cpp:75
+#: kcodecaction.cpp:70
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
@@ -115,36 +115,30 @@ msgstr "Žiadne položky"
 msgid "Clear List"
 msgstr "Vyčistiť zoznam"
 
-#: kstandardaction.cpp:157
+#: kstandardaction.cpp:155
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "Do&zadu"
 
-#: kstandardaction.cpp:164
+#: kstandardaction.cpp:162
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "Do&predu"
 
-#: kstandardaction.cpp:171
+#: kstandardaction.cpp:169
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Domov"
 
-#: kstandardaction.cpp:175
-#, kde-format
-msgctxt "show help"
-msgid "&Help"
-msgstr "&Pomocník"
-
-#: kstandardaction.cpp:232
+#: kstandardaction.cpp:225
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "Zobraziť ponuku<p>Znovu zobrazí ponuku potom, čo bola skrytá</p>"
 
-#: kstandardaction.cpp:253
+#: kstandardaction.cpp:246
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -273,312 +267,305 @@ msgstr "&Kopírovať"
 msgid "Copy selection to clipboard"
 msgstr "Skopírovať výber do schránky"
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 msgid "&Paste"
 msgstr "V&ložiť"
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 msgid "Paste clipboard content"
 msgstr "Vložiť obsah schránky"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:47
 msgid "C&lear"
 msgstr "Vyčis&tiť"
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:48
 msgid "Select &All"
 msgstr "Vybrať &všetko"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:49
 msgid "Dese&lect"
 msgstr "Zr&ušiť výber"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:50
 msgid "&Find..."
 msgstr "&Nájsť..."
 
-#: kstandardaction_p.h:54
+#: kstandardaction_p.h:51
 msgid "Find &Next"
 msgstr "Nájsť nasledu&júci"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:52
 msgid "Find Pre&vious"
 msgstr "Nájsť pre&dchádzajúci"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:53
 msgid "&Replace..."
 msgstr "Nahr&adiť..."
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 #, fuzzy
 #| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
 msgstr "&Aktuálna veľkosť"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 msgid "View document at its actual size"
 msgstr "Zobraziť dokument v pôvodnej veľkosti"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 msgid "&Fit to Page"
 msgstr "P&rispôsobiť stránke"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 msgid "Zoom to fit page in window"
 msgstr "Priblížiť na prispôsobenie strany"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Fit to Page &Width"
 msgstr "Prispôsobiť šírke &stránky"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Zoom to fit page width in window"
 msgstr "Priblížiť na prispôsobenie šírky strany"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Fit to Page &Height"
 msgstr "Prispôsobiť &výške stránky"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Zoom to fit page height in window"
 msgstr "Priblížiť na prispôsobenie výšky strany"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:59
 msgid "Zoom &In"
 msgstr "Z&väčšiť"
 
-#: kstandardaction_p.h:63
+#: kstandardaction_p.h:60
 msgid "Zoom &Out"
 msgstr "Z&menšiť"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 msgid "&Zoom..."
 msgstr "&Lupa..."
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 msgid "Select zoom level"
 msgstr "Vybrať úroveň priblíženia"
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 msgid "&Refresh"
 msgstr "&Obnoviť"
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 msgid "Refresh document"
 msgstr "Znovu načítať dokument"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "&Up"
 msgstr "Na&hor"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "Go up"
 msgstr "Prejsť vyššie"
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 msgid "&Previous Page"
 msgstr "&Predchádzajúca stránka"
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 msgid "Go to previous page"
 msgstr "Prejsť na predošlú stranu"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 msgid "&Next Page"
 msgstr "&Nasledujúca stránka"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 msgid "Go to next page"
 msgstr "Prejsť na nasledujúcu stránku"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:71
 msgid "&Go To..."
 msgstr "&Prejsť na..."
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:72
 msgid "&Go to Page..."
 msgstr "Prejsť na &stránku..."
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:73
 msgid "&Go to Line..."
 msgstr "Prejsť na &riadok..."
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 msgid "&First Page"
 msgstr "&Prvá stránka"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 msgid "Go to first page"
 msgstr "Prejsť na prvú stranu"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 msgid "&Last Page"
 msgstr "Po&sledná stránka"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 msgid "Go to last page"
 msgstr "Prejsť na poslednú stránku"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 msgid "&Back"
 msgstr "&Späť"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 msgid "Go back in document"
 msgstr "Prejsť späť v dokumente"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 msgid "&Forward"
 msgstr "Do&predu"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 msgid "Go forward in document"
 msgstr "Prejsť dopredu v dokumente"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:79
 msgid "&Add Bookmark"
 msgstr "&Pridať záložku"
 
-#: kstandardaction_p.h:83
+#: kstandardaction_p.h:80
 msgid "&Edit Bookmarks..."
 msgstr "&Upraviť záložky..."
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 msgid "&Spelling..."
 msgstr "Kontrola &pravopisu..."
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 msgid "Check spelling in document"
 msgstr "Skontrolovať pravopis v dokumente"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 msgid "Show &Menubar"
 msgstr "Zobraziť ponuku"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 msgid "Show or hide menubar"
 msgstr "Zobraziť alebo skryť ponuku"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 msgid "Show &Toolbar"
 msgstr "Zobraziť panel &nástrojov"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 msgid "Show or hide toolbar"
 msgstr "Zobraziť alebo skryť panel nástrojov"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 msgid "Show St&atusbar"
 msgstr "Zobraziť s&tavový riadok"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 msgid "Show or hide statusbar"
 msgstr "Zobraziť alebo skryť stavový riadok"
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:87
 msgid "F&ull Screen Mode"
 msgstr "Režim &celej obrazovky"
 
-#: kstandardaction_p.h:92
-msgid "&Save Settings"
-msgstr "&Uložiť nastavenie"
-
-#: kstandardaction_p.h:94
+#: kstandardaction_p.h:88
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "Nastaviť &klávesové skratky..."
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:89
 #, kde-format
 msgid "&Configure %1..."
 msgstr "Nas&taviť %1..."
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:90
 msgid "Configure Tool&bars..."
 msgstr "Nastaviť panely &nástrojov..."
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:91
 msgid "Configure &Notifications..."
 msgstr "Nastaviť &upozornenia..."
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:95
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "&Príručka %1"
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:96
 msgid "What's &This?"
 msgstr "Čo je &to?"
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:97
 msgid "Tip of the &Day"
 msgstr "Tip &dňa"
 
-#: kstandardaction_p.h:107
+#: kstandardaction_p.h:98
 msgid "&Report Bug..."
 msgstr "&Nahlásiť chybu..."
 
-#: kstandardaction_p.h:108
+#: kstandardaction_p.h:99
 msgid "Configure &Language..."
 msgstr "Nastaviť jazyk..."
 
-#: kstandardaction_p.h:109
+#: kstandardaction_p.h:100
 #, kde-format
 msgid "&About %1"
 msgstr "&O aplikácii %1"
 
-#: kstandardaction_p.h:110
+#: kstandardaction_p.h:101
 msgid "About &KDE"
 msgstr "Informácie o &KDE"
 
-#: kstandardaction_p.h:111
+#: kstandardaction_p.h:102
 msgid "&Delete"
 msgstr "Odstrániť"
 
-#: kstandardaction_p.h:112
+#: kstandardaction_p.h:103
 msgid "&Rename..."
 msgstr "Premenovať..."
 
-#: kstandardaction_p.h:113
+#: kstandardaction_p.h:104
 msgid "&Move to Trash"
 msgstr "Presunúť do &koša"
 
-#: kstandardaction_p.h:114
+#: kstandardaction_p.h:105
 msgid "&Donate"
 msgstr "Venovať peniaze"
 
-#: kstandardaction_p.h:115
+#: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Otvoriť ponuku"
 
-#: ktipdialog.cpp:222
-#, kde-format
-msgctxt "@title:window"
-msgid "Tip of the Day"
-msgstr "Tip dňa"
+#~ msgctxt "show help"
+#~ msgid "&Help"
+#~ msgstr "&Pomocník"
 
-#: ktipdialog.cpp:238
-#, kde-format
-msgctxt "@title"
-msgid "Did you know...?\n"
-msgstr "Viete, že...?\n"
+#~ msgid "&Save Settings"
+#~ msgstr "&Uložiť nastavenie"
 
-#: ktipdialog.cpp:291
-#, kde-format
-msgctxt "@option:check"
-msgid "&Show tips on startup"
-msgstr "Zobraziť tipy pri š&tarte"
+#~ msgctxt "@title:window"
+#~ msgid "Tip of the Day"
+#~ msgstr "Tip dňa"
 
-#: ktipdialog.cpp:296
-#, kde-format
-msgctxt "@action:button Goes to previous tip"
-msgid "&Previous"
-msgstr "&Predošlé"
+#~ msgctxt "@title"
+#~ msgid "Did you know...?\n"
+#~ msgstr "Viete, že...?\n"
 
-#: ktipdialog.cpp:301
-#, kde-format
-msgctxt "@action:button Goes to next tip, opposite to previous"
-msgid "&Next"
-msgstr "&Ďalšie"
+#~ msgctxt "@option:check"
+#~ msgid "&Show tips on startup"
+#~ msgstr "Zobraziť tipy pri š&tarte"
+
+#~ msgctxt "@action:button Goes to previous tip"
+#~ msgid "&Previous"
+#~ msgstr "&Predošlé"
+
+#~ msgctxt "@action:button Goes to next tip, opposite to previous"
+#~ msgid "&Next"
+#~ msgstr "&Ďalšie"
 
 #~ msgctxt ""
 #~ "@action:inmenu A menu text advertising its contents (more features)."

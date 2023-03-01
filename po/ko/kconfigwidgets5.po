@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-08 00:42+0000\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2022-07-13 14:09+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -28,23 +28,23 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "cho.sungjae@gmail.com,kde@peremen.name"
 
-#: kcmodule.cpp:198
+#: kcmodule.cpp:172
 #, kde-format
 msgid "You will be asked to authenticate before saving"
 msgstr "설정을 저장하기 전에 인증해야 합니다"
 
-#: kcmodule.cpp:202
+#: kcmodule.cpp:176
 #, kde-format
 msgid "You are not allowed to save the configuration"
 msgstr "설정을 저장할 수 없습니다"
 
-#: kcodecaction.cpp:67
+#: kcodecaction.cpp:62
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Default"
 msgstr "기본값"
 
-#: kcodecaction.cpp:75
+#: kcodecaction.cpp:70
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
@@ -53,7 +53,7 @@ msgstr "자동 감지"
 #: kcolorschememanager.cpp:220 kcolorschememanager.cpp:229
 #, kde-format
 msgid "Color Scheme"
-msgstr "색 배열"
+msgstr "색 구성표"
 
 #: kcolorschememodel.cpp:71
 #, kde-format
@@ -106,36 +106,30 @@ msgstr "항목 없음"
 msgid "Clear List"
 msgstr "목록 비우기"
 
-#: kstandardaction.cpp:157
+#: kstandardaction.cpp:155
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "뒤로(&B)"
 
-#: kstandardaction.cpp:164
+#: kstandardaction.cpp:162
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "앞으로(&F)"
 
-#: kstandardaction.cpp:171
+#: kstandardaction.cpp:169
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "홈(&H)"
 
-#: kstandardaction.cpp:175
-#, kde-format
-msgctxt "show help"
-msgid "&Help"
-msgstr "도움말(&H)"
-
-#: kstandardaction.cpp:232
+#: kstandardaction.cpp:225
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "메뉴 표시줄 표시<p>숨겨진 이후에 메뉴 표시줄을 다시 보여 줍니다</p>"
 
-#: kstandardaction.cpp:253
+#: kstandardaction.cpp:246
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -264,310 +258,303 @@ msgstr "복사(&C)"
 msgid "Copy selection to clipboard"
 msgstr "선택 항목을 클립보드에 복사"
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 msgid "&Paste"
 msgstr "붙여넣기(&P)"
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 msgid "Paste clipboard content"
 msgstr "클립보드 내용 붙여넣기"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:47
 msgid "C&lear"
 msgstr "지우기(&L)"
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:48
 msgid "Select &All"
 msgstr "모두 선택(&A)"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:49
 msgid "Dese&lect"
 msgstr "선택 해제(&L)"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:50
 msgid "&Find..."
 msgstr "찾기(&F)..."
 
-#: kstandardaction_p.h:54
+#: kstandardaction_p.h:51
 msgid "Find &Next"
 msgstr "다음 찾기(&N)"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:52
 msgid "Find Pre&vious"
 msgstr "이전 찾기(&V)"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:53
 msgid "&Replace..."
 msgstr "바꾸기(&R)..."
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 msgid "Zoom to &Actual Size"
 msgstr "실제 크기로 조정(&A)"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 msgid "View document at its actual size"
 msgstr "문서를 실제 크기로 보기"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 msgid "&Fit to Page"
 msgstr "쪽에 맞추기(&F)"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 msgid "Zoom to fit page in window"
 msgstr "쪽 크기를 창 크기에 맞게 조정"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Fit to Page &Width"
 msgstr "쪽 너비에 맞추기(&W)"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Zoom to fit page width in window"
 msgstr "쪽 너비를 창 너비에 맞게 조정"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Fit to Page &Height"
 msgstr "쪽 높이에 맞추기(&H)"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Zoom to fit page height in window"
 msgstr "쪽 높이를 창 높이에 맞게 조정"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:59
 msgid "Zoom &In"
 msgstr "확대(&I)"
 
-#: kstandardaction_p.h:63
+#: kstandardaction_p.h:60
 msgid "Zoom &Out"
 msgstr "축소(&O)"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 msgid "&Zoom..."
 msgstr "확대/축소(&Z)..."
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 msgid "Select zoom level"
 msgstr "확대/축소 단계 선택"
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 msgid "&Refresh"
 msgstr "새로 고침(&R)"
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 msgid "Refresh document"
 msgstr "문서 새로 고침"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "&Up"
 msgstr "위로(&U)"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "Go up"
 msgstr "위로 이동"
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 msgid "&Previous Page"
 msgstr "이전 쪽(&P)"
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 msgid "Go to previous page"
 msgstr "이전 쪽으로 이동"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 msgid "&Next Page"
 msgstr "다음 쪽(&N)"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 msgid "Go to next page"
 msgstr "다음 쪽으로 이동"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:71
 msgid "&Go To..."
 msgstr "이동(&G)..."
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:72
 msgid "&Go to Page..."
 msgstr "쪽으로 이동(&G)..."
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:73
 msgid "&Go to Line..."
 msgstr "줄로 이동(&G)..."
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 msgid "&First Page"
 msgstr "처음 쪽(&F)"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 msgid "Go to first page"
 msgstr "첫 쪽으로 이동"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 msgid "&Last Page"
 msgstr "마지막 쪽(&L)"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 msgid "Go to last page"
 msgstr "마지막 쪽으로 이동"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 msgid "&Back"
 msgstr "뒤로(&B)"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 msgid "Go back in document"
 msgstr "문서의 뒤로 이동"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 msgid "&Forward"
 msgstr "앞으로(&F)"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 msgid "Go forward in document"
 msgstr "문서의 앞으로 이동"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:79
 msgid "&Add Bookmark"
 msgstr "책갈피 추가(&A)"
 
-#: kstandardaction_p.h:83
+#: kstandardaction_p.h:80
 msgid "&Edit Bookmarks..."
 msgstr "책갈피 편집(&E)..."
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 msgid "&Spelling..."
 msgstr "맞춤법 검사(&S)..."
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 msgid "Check spelling in document"
 msgstr "문서의 맞춤법 검사"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 msgid "Show &Menubar"
 msgstr "메뉴 표시줄 표시(&M)"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 msgid "Show or hide menubar"
 msgstr "메뉴 표시줄을 보이거나 숨기기"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 msgid "Show &Toolbar"
 msgstr "도구 모음 표시(&T)"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 msgid "Show or hide toolbar"
 msgstr "도구 모음을 보이거나 숨기기"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 msgid "Show St&atusbar"
 msgstr "상태 표시줄 표시(&A)"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 msgid "Show or hide statusbar"
 msgstr "상태 표시줄을 보이거나 숨기기"
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:87
 msgid "F&ull Screen Mode"
 msgstr "전체 화면 모드(&U)"
 
-#: kstandardaction_p.h:92
-msgid "&Save Settings"
-msgstr "설정 저장(&S)"
-
-#: kstandardaction_p.h:94
+#: kstandardaction_p.h:88
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "키보드 단축키 설정(&H)..."
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:89
 #, kde-format
 msgid "&Configure %1..."
 msgstr "%1 설정(&C)..."
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:90
 msgid "Configure Tool&bars..."
 msgstr "도구 모음 설정(&B)..."
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:91
 msgid "Configure &Notifications..."
 msgstr "알림 설정(&N)..."
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:95
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "%1 도움말(&H)"
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:96
 msgid "What's &This?"
 msgstr "이것에 대한 설명(&T)"
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:97
 msgid "Tip of the &Day"
 msgstr "오늘의 팁(&D)"
 
-#: kstandardaction_p.h:107
+#: kstandardaction_p.h:98
 msgid "&Report Bug..."
 msgstr "버그 보고(&R)..."
 
-#: kstandardaction_p.h:108
+#: kstandardaction_p.h:99
 msgid "Configure &Language..."
 msgstr "언어 설정(&L)..."
 
-#: kstandardaction_p.h:109
+#: kstandardaction_p.h:100
 #, kde-format
 msgid "&About %1"
 msgstr "%1 정보(&A)"
 
-#: kstandardaction_p.h:110
+#: kstandardaction_p.h:101
 msgid "About &KDE"
 msgstr "KDE 정보(&K)"
 
-#: kstandardaction_p.h:111
+#: kstandardaction_p.h:102
 msgid "&Delete"
 msgstr "삭제(&D)"
 
-#: kstandardaction_p.h:112
+#: kstandardaction_p.h:103
 msgid "&Rename..."
 msgstr "이름 바꾸기(&R)..."
 
-#: kstandardaction_p.h:113
+#: kstandardaction_p.h:104
 msgid "&Move to Trash"
 msgstr "휴지통으로 이동(&M)"
 
-#: kstandardaction_p.h:114
+#: kstandardaction_p.h:105
 msgid "&Donate"
 msgstr "기부하기(&D)"
 
-#: kstandardaction_p.h:115
+#: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "메뉴 열기(&M)"
 
-#: ktipdialog.cpp:222
-#, kde-format
-msgctxt "@title:window"
-msgid "Tip of the Day"
-msgstr "오늘의 팁"
+#~ msgctxt "show help"
+#~ msgid "&Help"
+#~ msgstr "도움말(&H)"
 
-#: ktipdialog.cpp:238
-#, kde-format
-msgctxt "@title"
-msgid "Did you know...?\n"
-msgstr "알고 계십니까...?\n"
+#~ msgid "&Save Settings"
+#~ msgstr "설정 저장(&S)"
 
-#: ktipdialog.cpp:291
-#, kde-format
-msgctxt "@option:check"
-msgid "&Show tips on startup"
-msgstr "시작할 때 팁 보기(&S)"
+#~ msgctxt "@title:window"
+#~ msgid "Tip of the Day"
+#~ msgstr "오늘의 팁"
 
-#: ktipdialog.cpp:296
-#, kde-format
-msgctxt "@action:button Goes to previous tip"
-msgid "&Previous"
-msgstr "이전(&P)"
+#~ msgctxt "@title"
+#~ msgid "Did you know...?\n"
+#~ msgstr "알고 계십니까...?\n"
 
-#: ktipdialog.cpp:301
-#, kde-format
-msgctxt "@action:button Goes to next tip, opposite to previous"
-msgid "&Next"
-msgstr "다음(&N)"
+#~ msgctxt "@option:check"
+#~ msgid "&Show tips on startup"
+#~ msgstr "시작할 때 팁 보기(&S)"
+
+#~ msgctxt "@action:button Goes to previous tip"
+#~ msgid "&Previous"
+#~ msgstr "이전(&P)"
+
+#~ msgctxt "@action:button Goes to next tip, opposite to previous"
+#~ msgid "&Next"
+#~ msgstr "다음(&N)"
 
 #~ msgctxt ""
 #~ "@action:inmenu A menu text advertising its contents (more features)."

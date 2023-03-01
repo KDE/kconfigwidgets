@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-08 00:42+0000\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2009-12-04 22:09+0100\n"
 "Last-Translator: Mark Kwidzińśczi <mark@linuxcsb.org>\n"
 "Language-Team: Kaszëbsczi <i18n-csb@linuxcsb.org>\n"
@@ -29,24 +29,24 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "michol@linuxcsb.org, mark@linuxcsb.org"
 
-#: kcmodule.cpp:198
+#: kcmodule.cpp:172
 #, kde-format
 msgid "You will be asked to authenticate before saving"
 msgstr ""
 
-#: kcmodule.cpp:202
+#: kcmodule.cpp:176
 #, fuzzy, kde-format
 #| msgid "Do you want to reload KDE configuration?"
 msgid "You are not allowed to save the configuration"
 msgstr "Chcesz wczëtac znowa kònfigùracëjã KDE?"
 
-#: kcodecaction.cpp:67
+#: kcodecaction.cpp:62
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Default"
 msgstr "Domëszlné"
 
-#: kcodecaction.cpp:75
+#: kcodecaction.cpp:70
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
@@ -117,36 +117,30 @@ msgstr "Bez wprowadzeniô"
 msgid "Clear List"
 msgstr "Wëczëszczë lëstã"
 
-#: kstandardaction.cpp:157
+#: kstandardaction.cpp:155
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "&Nazôd"
 
-#: kstandardaction.cpp:164
+#: kstandardaction.cpp:162
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&W przódk"
 
-#: kstandardaction.cpp:171
+#: kstandardaction.cpp:169
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Domôcô starna"
 
-#: kstandardaction.cpp:175
-#, kde-format
-msgctxt "show help"
-msgid "&Help"
-msgstr "Pòmò&c"
-
-#: kstandardaction.cpp:232
+#: kstandardaction.cpp:225
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "Pòkôżë menu<p>Pòkazëje jesz rôz zataconą listew menu</p>"
 
-#: kstandardaction.cpp:253
+#: kstandardaction.cpp:246
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
@@ -297,365 +291,363 @@ msgstr "&Kòpérëjë"
 msgid "Copy selection to clipboard"
 msgstr ""
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 msgid "&Paste"
 msgstr "&Wlepi"
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 #, fuzzy
 #| msgid "Loading Preview"
 msgid "Paste clipboard content"
 msgstr "Ladëje pòdzérk"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:47
 msgid "C&lear"
 msgstr "Wë&czëszczë"
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:48
 msgid "Select &All"
 msgstr "Zaznaczë &wszëtkò"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:49
 msgid "Dese&lect"
 msgstr "&Rëmôj zaznaczenié"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:50
 msgid "&Find..."
 msgstr "N&alezë..."
 
-#: kstandardaction_p.h:54
+#: kstandardaction_p.h:51
 msgid "Find &Next"
 msgstr "&Nalezë zôstne"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:52
 msgid "Find Pre&vious"
 msgstr "Nalezë pòp&rzedni"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:53
 msgid "&Replace..."
 msgstr "&Zastãpi..."
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 #, fuzzy
 #| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
 msgstr "&Aktualnô miara"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 msgid "View document at its actual size"
 msgstr ""
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 msgid "&Fit to Page"
 msgstr "&Dopasëjë do starnë"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Zoom to fit page in window"
 msgstr "Biéj do réżczi"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Fit to Page &Width"
 msgstr "Dopasëjë do &szérzë starnë"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Zoom to fit page width in window"
 msgstr ""
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Fit to Page &Height"
 msgstr "Dopasëjë do &wiżë starnë"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Zoom to fit page height in window"
 msgstr ""
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:59
 msgid "Zoom &In"
 msgstr "Z&wikszë"
 
-#: kstandardaction_p.h:63
+#: kstandardaction_p.h:60
 msgid "Zoom &Out"
 msgstr "Z&miészë"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 msgid "&Zoom..."
 msgstr "&Zwikszenié..."
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 #, fuzzy
 #| msgid "Select a week"
 msgid "Select zoom level"
 msgstr "Wëbierzë tidzeń"
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 msgid "&Refresh"
 msgstr ""
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 #, fuzzy
 #| msgid "&Redisplay"
 msgid "Refresh document"
 msgstr "Òd&swiéżë"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "&Up"
 msgstr "W &górã"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "Go up"
 msgstr ""
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 msgid "&Previous Page"
 msgstr "&Pòprzédnô starna"
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 #, fuzzy
 #| msgid "&Previous Page"
 msgid "Go to previous page"
 msgstr "&Pòprzédnô starna"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 msgid "&Next Page"
 msgstr "&Zôstnô starna"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Go to next page"
 msgstr "Biéj do réżczi"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:71
 msgid "&Go To..."
 msgstr "&Biéj do..."
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:72
 msgid "&Go to Page..."
 msgstr "&Biéj do starnë..."
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:73
 msgid "&Go to Line..."
 msgstr "&Biéj do réżczi..."
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 msgid "&First Page"
 msgstr "&Pierszô starna"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Go to first page"
 msgstr "Biéj do réżczi"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 msgid "&Last Page"
 msgstr "&Slédnô starna"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 #, fuzzy
 #| msgid "&Go to Page..."
 msgid "Go to last page"
 msgstr "&Biéj do starnë..."
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 msgid "&Back"
 msgstr "&Nazôd"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 #, fuzzy
 #| msgid "&Back in the Document"
 msgid "Go back in document"
 msgstr "&Nazôd w dokùmence"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 #, fuzzy
 #| msgctxt "go forward"
 #| msgid "&Forward"
 msgid "&Forward"
 msgstr "&W przódk"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 #, fuzzy
 #| msgid "&Forward in the Document"
 msgid "Go forward in document"
 msgstr "W &przódk w dokùmence"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:79
 msgid "&Add Bookmark"
 msgstr "Dodôj z&ałóżkã"
 
-#: kstandardaction_p.h:83
+#: kstandardaction_p.h:80
 #, fuzzy
 #| msgid "&Edit Bookmarks"
 msgid "&Edit Bookmarks..."
 msgstr "&Editëjë załóżczi"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 msgid "&Spelling..."
 msgstr "&Bezzmiłkòwòsc pisënkù..."
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 #, fuzzy
 #| msgid "Check Spelling"
 msgid "Check spelling in document"
 msgstr "Sprôwdzë pisënk"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 msgid "Show &Menubar"
 msgstr "Pòkôżë listew &menu"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 #, fuzzy
 #| msgid "Show &Menubar"
 msgid "Show or hide menubar"
 msgstr "Pòkôżë listew &menu"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 msgid "Show &Toolbar"
 msgstr "Pòkôżë listew &nôrzãdzów"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Show Toolbar"
 msgid "Show or hide toolbar"
 msgstr "Wëskrzëni listew nôrzãdzów"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 msgid "Show St&atusbar"
 msgstr "Pòk&ôżë listew stónu"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Show Statusbar"
 msgid "Show or hide statusbar"
 msgstr "Wëskrzëni listew stónu"
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:87
 msgid "F&ull Screen Mode"
 msgstr "Fùl&ekranowi trib"
 
-#: kstandardaction_p.h:92
-msgid "&Save Settings"
-msgstr "&Zapiszë nastôwë"
-
-#: kstandardaction_p.h:94
+#: kstandardaction_p.h:88
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "Kònfigùracëjô s&krodzënów..."
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:89
 #, kde-format
 msgid "&Configure %1..."
 msgstr "&Kònfigùracëjô %1..."
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:90
 msgid "Configure Tool&bars..."
 msgstr "Kònfigùracëjô listwów nô&rzãdzy..."
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:91
 msgid "Configure &Notifications..."
 msgstr "Kònfigùrëjë ò&dkazë..."
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:95
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "Ùcz&bòwnik %1"
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:96
 msgid "What's &This?"
 msgstr "Co &to je?"
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:97
 msgid "Tip of the &Day"
 msgstr "Pòrada &dnia"
 
-#: kstandardaction_p.h:107
+#: kstandardaction_p.h:98
 msgid "&Report Bug..."
 msgstr "&Rapòrt ò felë..."
 
-#: kstandardaction_p.h:108
+#: kstandardaction_p.h:99
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "Kònfigùracëjô e-maila..."
 
-#: kstandardaction_p.h:109
+#: kstandardaction_p.h:100
 #, kde-format
 msgid "&About %1"
 msgstr "Ò pro&gramie %1"
 
-#: kstandardaction_p.h:110
+#: kstandardaction_p.h:101
 msgid "About &KDE"
 msgstr "Wëdowiédzô ò &KDE"
 
-#: kstandardaction_p.h:111
+#: kstandardaction_p.h:102
 #, fuzzy
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "Rëmôj"
 
-#: kstandardaction_p.h:112
+#: kstandardaction_p.h:103
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "&Zastãpi..."
 
-#: kstandardaction_p.h:113
+#: kstandardaction_p.h:104
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:114
+#: kstandardaction_p.h:105
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:115
+#: kstandardaction_p.h:106
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Òtemkni wcza&sniészi"
 
-#: ktipdialog.cpp:222
-#, fuzzy, kde-format
-#| msgid "Tip of the Day"
-msgctxt "@title:window"
-msgid "Tip of the Day"
-msgstr "Rada dnia"
+#~ msgctxt "show help"
+#~ msgid "&Help"
+#~ msgstr "Pòmò&c"
 
-#: ktipdialog.cpp:238
-#, fuzzy, kde-format
-#| msgid "Did you know...?\n"
-msgctxt "@title"
-msgid "Did you know...?\n"
-msgstr "Wiész të, że...?\n"
+#~ msgid "&Save Settings"
+#~ msgstr "&Zapiszë nastôwë"
 
-#: ktipdialog.cpp:291
-#, fuzzy, kde-format
-#| msgid "&Show tips on startup"
-msgctxt "@option:check"
-msgid "&Show tips on startup"
-msgstr "Pòkôżë &radë pò zrëszeniém"
+#, fuzzy
+#~| msgid "Tip of the Day"
+#~ msgctxt "@title:window"
+#~ msgid "Tip of the Day"
+#~ msgstr "Rada dnia"
 
-#: ktipdialog.cpp:296
-#, fuzzy, kde-format
-#| msgid "&Previous"
-msgctxt "@action:button Goes to previous tip"
-msgid "&Previous"
-msgstr "&Pòprzédny"
+#, fuzzy
+#~| msgid "Did you know...?\n"
+#~ msgctxt "@title"
+#~ msgid "Did you know...?\n"
+#~ msgstr "Wiész të, że...?\n"
 
-#: ktipdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "&Next"
-msgctxt "@action:button Goes to next tip, opposite to previous"
-msgid "&Next"
-msgstr "&Dali"
+#, fuzzy
+#~| msgid "&Show tips on startup"
+#~ msgctxt "@option:check"
+#~ msgid "&Show tips on startup"
+#~ msgstr "Pòkôżë &radë pò zrëszeniém"
+
+#, fuzzy
+#~| msgid "&Previous"
+#~ msgctxt "@action:button Goes to previous tip"
+#~ msgid "&Previous"
+#~ msgstr "&Pòprzédny"
+
+#, fuzzy
+#~| msgid "&Next"
+#~ msgctxt "@action:button Goes to next tip, opposite to previous"
+#~ msgid "&Next"
+#~ msgstr "&Dali"
 
 #, fuzzy
 #~| msgid "Shortcut(s) '%1' for action '%2'\n"

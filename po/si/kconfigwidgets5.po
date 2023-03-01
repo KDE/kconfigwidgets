@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-08 00:42+0000\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2011-07-25 07:45+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <danishka@gmail.com>\n"
@@ -28,24 +28,24 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "danishka@gmail.com"
 
-#: kcmodule.cpp:198
+#: kcmodule.cpp:172
 #, kde-format
 msgid "You will be asked to authenticate before saving"
 msgstr ""
 
-#: kcmodule.cpp:202
+#: kcmodule.cpp:176
 #, fuzzy, kde-format
 #| msgid "Do you want to reload KDE configuration?"
 msgid "You are not allowed to save the configuration"
 msgstr "ඔබට KDE මානකරණය යළි පූරණය කිරීමට ඇවශ්‍යද?"
 
-#: kcodecaction.cpp:67
+#: kcodecaction.cpp:62
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Default"
 msgstr "ප්‍රකෘතිය"
 
-#: kcodecaction.cpp:75
+#: kcodecaction.cpp:70
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
@@ -118,36 +118,30 @@ msgstr "ඇතුළත් කිරීම් නැත"
 msgid "Clear List"
 msgstr "ලැයිස්තුව මකන්න"
 
-#: kstandardaction.cpp:157
+#: kstandardaction.cpp:155
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "පසුපසට (&B)"
 
-#: kstandardaction.cpp:164
+#: kstandardaction.cpp:162
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "ඉදිරියට (&F)"
 
-#: kstandardaction.cpp:171
+#: kstandardaction.cpp:169
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "නිවස (&H)"
 
-#: kstandardaction.cpp:175
-#, kde-format
-msgctxt "show help"
-msgid "&Help"
-msgstr "උදව් (&H)"
-
-#: kstandardaction.cpp:232
+#: kstandardaction.cpp:225
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "මෙනුබාරය පෙන්වන්න<p>මෙනුතීරුව සැඟවූ පසු යළි පෙන්වීම</p>"
 
-#: kstandardaction.cpp:253
+#: kstandardaction.cpp:246
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
@@ -299,363 +293,361 @@ msgstr "පිටපත් කරන්න (&C)"
 msgid "Copy selection to clipboard"
 msgstr ""
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 msgid "&Paste"
 msgstr "අලවන්න (&P)"
 
-#: kstandardaction_p.h:46 kstandardaction_p.h:48
+#: kstandardaction_p.h:46
 #, fuzzy
 #| msgid "Loading Preview"
 msgid "Paste clipboard content"
 msgstr "පූර්‍වදසුන පූර්‍ණය වෙමින්"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:47
 msgid "C&lear"
 msgstr "පැහැදිලි කරන්න (&l)"
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:48
 msgid "Select &All"
 msgstr "සියල්ල තෝරන්න (&A)"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:49
 msgid "Dese&lect"
 msgstr "තෝරන්න ඒපා (&l)"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:50
 msgid "&Find..."
 msgstr "සොයන්න... (&F)"
 
-#: kstandardaction_p.h:54
+#: kstandardaction_p.h:51
 msgid "Find &Next"
 msgstr "මීළඟ සෙවුම (&N)"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:52
 msgid "Find Pre&vious"
 msgstr "පෙර සෙවුම (&v)"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:53
 msgid "&Replace..."
 msgstr "ආදේශය... (&R)"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 #, fuzzy
 #| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
 msgstr "නිසි ප්‍රමාණය (&A)"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:55
 msgid "View document at its actual size"
 msgstr ""
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 msgid "&Fit to Page"
 msgstr "පිටුවට ගලපන්න (&F)"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:56
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Zoom to fit page in window"
 msgstr "පෙළට යන්න"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Fit to Page &Width"
 msgstr "පිටුවේ පළලට ගලපන්න (&W)"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:57
 msgid "Zoom to fit page width in window"
 msgstr ""
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Fit to Page &Height"
 msgstr "පිටුවේ උසට ගලපන්න (&H)"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:58
 msgid "Zoom to fit page height in window"
 msgstr ""
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:59
 msgid "Zoom &In"
 msgstr "විශාල කරන්න (&I)"
 
-#: kstandardaction_p.h:63
+#: kstandardaction_p.h:60
 msgid "Zoom &Out"
 msgstr "කුඩා කරන්න (&O)"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 msgid "&Zoom..."
 msgstr "විශාලනය... (&Z)"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:61
 #, fuzzy
 #| msgid "Select a week"
 msgid "Select zoom level"
 msgstr "සතියක් තෝරන්න"
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 msgid "&Refresh"
 msgstr ""
 
-#: kstandardaction_p.h:65
+#: kstandardaction_p.h:62
 #, fuzzy
 #| msgid "&Redisplay"
 msgid "Refresh document"
 msgstr "යළි දර්ශනය (&R)"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "&Up"
 msgstr "ඉහළ (&U)"
 
-#: kstandardaction_p.h:67
+#: kstandardaction_p.h:64
 msgid "Go up"
 msgstr ""
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 msgid "&Previous Page"
 msgstr "පෙර පිටුව (&P)"
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:69
 #, fuzzy
 #| msgid "&Previous Page"
 msgid "Go to previous page"
 msgstr "පෙර පිටුව (&P)"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 msgid "&Next Page"
 msgstr "මීළඟ පිටුව (&N)"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:70
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Go to next page"
 msgstr "පෙළට යන්න"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:71
 msgid "&Go To..."
 msgstr "යායුත්තේ... (&G)"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:72
 msgid "&Go to Page..."
 msgstr "පිටුවට යන්න... (&G)"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:73
 msgid "&Go to Line..."
 msgstr "පේළියට යන්න... (&G)"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 msgid "&First Page"
 msgstr "පළමු පිටුව (&F)"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:74
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Go to first page"
 msgstr "පෙළට යන්න"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 msgid "&Last Page"
 msgstr "අවසන් පිටුව (&L)"
 
-#: kstandardaction_p.h:78
+#: kstandardaction_p.h:75
 #, fuzzy
 #| msgid "&Go to Page..."
 msgid "Go to last page"
 msgstr "පිටුවට යන්න... (&G)"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 msgid "&Back"
 msgstr "පිටු පසට (&B)"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:76
 #, fuzzy
 #| msgid "&Back in the Document"
 msgid "Go back in document"
 msgstr "ලේඛනයේ පසුපසින් (&B)"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 #, fuzzy
 #| msgctxt "go forward"
 #| msgid "&Forward"
 msgid "&Forward"
 msgstr "ඉදිරියට (&F)"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:77
 #, fuzzy
 #| msgid "&Forward in the Document"
 msgid "Go forward in document"
 msgstr "ලේඛනයේ ඉදිරියෙන් (&F)"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:79
 msgid "&Add Bookmark"
 msgstr "පිටු සලකුණු එක් කරන්න (&A)"
 
-#: kstandardaction_p.h:83
+#: kstandardaction_p.h:80
 msgid "&Edit Bookmarks..."
 msgstr "පිටු සලකුණු සකසන්න... (&E)"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 msgid "&Spelling..."
 msgstr "අක්‍ෂර වින්‍යාසය... (&S)"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:82
 #, fuzzy
 #| msgid "Check Spelling"
 msgid "Check spelling in document"
 msgstr "අක්‍ෂර වින්‍යාසය පරීක්‍ෂා කරන්න"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 msgid "Show &Menubar"
 msgstr "මෙනුතීරුව පෙන්වන්න (&M)"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:84
 #, fuzzy
 #| msgid "Show &Menubar"
 msgid "Show or hide menubar"
 msgstr "මෙනුතීරුව පෙන්වන්න (&M)"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 msgid "Show &Toolbar"
 msgstr "මෙවලම් තීරුව පෙන්වන්න"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:85
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Show Toolbar"
 msgid "Show or hide toolbar"
 msgstr "මෙවලම්තීරුව පෙන්වන්න"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 msgid "Show St&atusbar"
 msgstr "තත්ත්ව තීරුව පෙන්වන්න(&a)"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:86
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Show Statusbar"
 msgid "Show or hide statusbar"
 msgstr "තත්ත්වතීරුව පෙන්වන්න"
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:87
 msgid "F&ull Screen Mode"
 msgstr "පූර්‍ණතිර ආකාරය (&u)"
 
-#: kstandardaction_p.h:92
-msgid "&Save Settings"
-msgstr "සැකසුම් සුරකින්න (&S)"
-
-#: kstandardaction_p.h:94
+#: kstandardaction_p.h:88
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "කෙටි මාර්‍ග මානකරණය... (&h)"
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:89
 #, kde-format
 msgid "&Configure %1..."
 msgstr "%1 මානකරණය... (&C)"
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:90
 msgid "Configure Tool&bars..."
 msgstr "මෙවලම් තීරු මානකරණය... (&b)"
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:91
 msgid "Configure &Notifications..."
 msgstr "දැනුම් දීම් මානකරණය... (&N)"
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:95
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "%1 අත්පොත (&H)"
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:96
 msgid "What's &This?"
 msgstr "මේ කුමක්ඳ? (&T)"
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:97
 msgid "Tip of the &Day"
 msgstr "දවසේ ඉඟිය (&D)"
 
-#: kstandardaction_p.h:107
+#: kstandardaction_p.h:98
 msgid "&Report Bug..."
 msgstr "දෝෂ වාර්තා කරන්න... (&R)"
 
-#: kstandardaction_p.h:108
+#: kstandardaction_p.h:99
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "විද්‍යුත් තැපැල සකසන්න..."
 
-#: kstandardaction_p.h:109
+#: kstandardaction_p.h:100
 #, kde-format
 msgid "&About %1"
 msgstr "%1 පිළිබඳ (&A)"
 
-#: kstandardaction_p.h:110
+#: kstandardaction_p.h:101
 msgid "About &KDE"
 msgstr "&KDE පිළිබඳ"
 
-#: kstandardaction_p.h:111
+#: kstandardaction_p.h:102
 msgid "&Delete"
 msgstr "මකන්න (&D)"
 
-#: kstandardaction_p.h:112
+#: kstandardaction_p.h:103
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "ආදේශය... (&R)"
 
-#: kstandardaction_p.h:113
+#: kstandardaction_p.h:104
 #, fuzzy
 #| msgid "Move to Trash"
 msgid "&Move to Trash"
 msgstr "ඉවතලන්න"
 
-#: kstandardaction_p.h:114
+#: kstandardaction_p.h:105
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:115
+#: kstandardaction_p.h:106
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "මෑතකදි භාවිතා කළ දැ විවෘත කරන්න (&R)"
 
-#: ktipdialog.cpp:222
-#, fuzzy, kde-format
-#| msgid "Tip of the Day"
-msgctxt "@title:window"
-msgid "Tip of the Day"
-msgstr "දිනයේ ඉඟිය"
+#~ msgctxt "show help"
+#~ msgid "&Help"
+#~ msgstr "උදව් (&H)"
 
-#: ktipdialog.cpp:238
-#, fuzzy, kde-format
-#| msgid "Did you know...?\n"
-msgctxt "@title"
-msgid "Did you know...?\n"
-msgstr "ඔබ දැනගෙන සිටියාද...?\n"
+#~ msgid "&Save Settings"
+#~ msgstr "සැකසුම් සුරකින්න (&S)"
 
-#: ktipdialog.cpp:291
-#, fuzzy, kde-format
-#| msgid "&Show tips on startup"
-msgctxt "@option:check"
-msgid "&Show tips on startup"
-msgstr "ආරම්භයේදි ඉඟි දර්ෂණය කරන්න (&S)"
+#, fuzzy
+#~| msgid "Tip of the Day"
+#~ msgctxt "@title:window"
+#~ msgid "Tip of the Day"
+#~ msgstr "දිනයේ ඉඟිය"
 
-#: ktipdialog.cpp:296
-#, fuzzy, kde-format
-#| msgid "&Previous"
-msgctxt "@action:button Goes to previous tip"
-msgid "&Previous"
-msgstr "මීට පෙර (&P)"
+#, fuzzy
+#~| msgid "Did you know...?\n"
+#~ msgctxt "@title"
+#~ msgid "Did you know...?\n"
+#~ msgstr "ඔබ දැනගෙන සිටියාද...?\n"
 
-#: ktipdialog.cpp:301
-#, fuzzy, kde-format
-#| msgid "&Next"
-msgctxt "@action:button Goes to next tip, opposite to previous"
-msgid "&Next"
-msgstr "මීළඟ (&N)"
+#, fuzzy
+#~| msgid "&Show tips on startup"
+#~ msgctxt "@option:check"
+#~ msgid "&Show tips on startup"
+#~ msgstr "ආරම්භයේදි ඉඟි දර්ෂණය කරන්න (&S)"
+
+#, fuzzy
+#~| msgid "&Previous"
+#~ msgctxt "@action:button Goes to previous tip"
+#~ msgid "&Previous"
+#~ msgstr "මීට පෙර (&P)"
+
+#, fuzzy
+#~| msgid "&Next"
+#~ msgctxt "@action:button Goes to next tip, opposite to previous"
+#~ msgid "&Next"
+#~ msgstr "මීළඟ (&N)"
 
 #, fuzzy
 #~| msgid "Shortcut(s) '%1' for action '%2'\n"
