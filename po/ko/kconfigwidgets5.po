@@ -53,7 +53,7 @@ msgstr "자동 감지"
 #: kcolorschememanager.cpp:220 kcolorschememanager.cpp:229
 #, kde-format
 msgid "Color Scheme"
-msgstr "색 배열"
+msgstr "색 구성표"
 
 #: kcolorschememodel.cpp:71
 #, kde-format
