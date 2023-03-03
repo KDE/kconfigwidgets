@@ -533,30 +533,3 @@ msgstr "&Gje pengegåve"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Opna &meny"
-
-#~ msgctxt "show help"
-#~ msgid "&Help"
-#~ msgstr "&Hjelp"
-
-#~ msgid "&Save Settings"
-#~ msgstr "&Lagra innstillingar"
-
-#~ msgctxt "@title:window"
-#~ msgid "Tip of the Day"
-#~ msgstr "Dagens tips"
-
-#~ msgctxt "@title"
-#~ msgid "Did you know...?\n"
-#~ msgstr "Visste du …?\n"
-
-#~ msgctxt "@option:check"
-#~ msgid "&Show tips on startup"
-#~ msgstr "&Vis tips ved oppstart"
-
-#~ msgctxt "@action:button Goes to previous tip"
-#~ msgid "&Previous"
-#~ msgstr "&Førre"
-
-#~ msgctxt "@action:button Goes to next tip, opposite to previous"
-#~ msgid "&Next"
-#~ msgstr "&Neste"
