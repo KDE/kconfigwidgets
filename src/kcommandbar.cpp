@@ -114,7 +114,7 @@ public:
      * Paints a single item's text
      */
     static void
-    paintItemText(QPainter *p, const QString &textt, const QRect &rect, const QStyleOptionViewItem &options, QVector<QTextLayout::FormatRange> formats)
+    paintItemText(QPainter *p, const QString &textt, const QRect &rect, const QStyleOptionViewItem &options, QList<QTextLayout::FormatRange> formats)
     {
         QString text = options.fontMetrics.elidedText(textt, Qt::ElideRight, rect.width());
 
@@ -190,7 +190,7 @@ public:
             str = str.mid(actionNameStart);
         }
 
-        QVector<QTextLayout::FormatRange> formats;
+        QList<QTextLayout::FormatRange> formats;
         if (componentIdx > 0) {
             QTextCharFormat gray;
             gray.setForeground(option.palette.placeholderText());
@@ -257,7 +257,7 @@ public:
         };
 
         // compute the width of each shortcut segment
-        QVector<Button> btns;
+        QList<Button> btns;
         btns.reserve(shortcutSegments.count());
         const int hMargin = horizontalMargin(option);
         for (const QString &text : shortcutSegments) {
@@ -608,7 +608,7 @@ KCommandBar::~KCommandBar()
     d->m_lineEdit.removeEventFilter(this);
 }
 
-void KCommandBar::setActions(const QVector<ActionGroup> &actions)
+void KCommandBar::setActions(const QList<ActionGroup> &actions)
 {
     // First set last used actions in the model
     d->setLastUsedActions();

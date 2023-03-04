@@ -89,9 +89,9 @@ public:
         return menu->menuAction();
     }
 
-    QVector<KCommandBar::ActionGroup> getActions()
+    QList<KCommandBar::ActionGroup> getActions()
     {
-        QVector<KCommandBar::ActionGroup> acts(4);
+        QList<KCommandBar::ActionGroup> acts(4);
 
         /**
          * Menus with actions
@@ -126,9 +126,9 @@ public:
     }
 
     // Use ./bin/kcommandbartest -reverse to test this
-    QVector<KCommandBar::ActionGroup> getRTLActions()
+    QList<KCommandBar::ActionGroup> getRTLActions()
     {
-        QVector<KCommandBar::ActionGroup> acts(2);
+        QList<KCommandBar::ActionGroup> acts(2);
 
         acts[0].name = QStringLiteral("مینو گروپ");
         acts[0].actions = {new QAction(QIcon::fromTheme("folder"), QStringLiteral("یہ فولڈر ایکشن ہے"), this),

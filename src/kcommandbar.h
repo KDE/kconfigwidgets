@@ -33,7 +33,7 @@
  *
  *     // Load actions into the command bar
  *     // These actions can be from your menus / toolbars etc
- *     QVector<ActionGroup> actionGroups = ...;
+ *     QList<ActionGroup> actionGroups = ...;
  *     bar.setActions(actionGroups);
  *
  *     // Show
@@ -73,7 +73,7 @@ public:
      * of the component/menu where a QAction lives, for example in a menu "File -> Open File",
      * "File" should be the GroupName.
      */
-    void setActions(const QVector<ActionGroup> &actions);
+    void setActions(const QList<ActionGroup> &actions);
 
 public Q_SLOTS:
     void show();

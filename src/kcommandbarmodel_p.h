@@ -9,7 +9,7 @@
 #include "kcommandbar.h"
 
 #include <QAbstractTableModel>
-#include <QVector>
+#include <QList>
 
 class QAction;
 
@@ -37,7 +37,7 @@ public:
      * If you are using last Used actions functionality, make sure
      * to set the last used actions before calling this function
      */
-    void refresh(const QVector<KCommandBar::ActionGroup> &actionGroups);
+    void refresh(const QList<KCommandBar::ActionGroup> &actionGroups);
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const override
     {
@@ -88,7 +88,7 @@ public:
     void setLastUsedActions(const QStringList &actionNames);
 
 private:
-    QVector<Item> m_rows;
+    QList<Item> m_rows;
 
     /**
      * Last triggered actions by user

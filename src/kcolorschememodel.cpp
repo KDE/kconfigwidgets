@@ -30,7 +30,7 @@ struct KColorSchemeModelData {
 };
 
 struct KColorSchemeModelPrivate {
-    mutable QVector<KColorSchemeModelData> m_data;
+    mutable QList<KColorSchemeModelData> m_data;
 };
 
 KColorSchemeModel::KColorSchemeModel(QObject *parent)
