@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % Turkish "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Çeviri Aracı</title>
+
+<author
+><firstname
+>Matthias</firstname
+> <surname
+>Kiefer</surname
+> <affiliation
+> <address
+> <email
+>matthias.kiefer@gmx.de</email>
+</address>
+</affiliation>
+</author>
+
+<date
+>2014-03-04</date>
+<releaseinfo
+>Frameworks 5.0</releaseinfo>
+<productname
+>KDE Frameworks</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle>
+<command
+>preparetips5</command>
+</refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname>
+<command
+>preparetips5</command>
+</refname>
+<refpurpose
+>ipuçları dosyasından metin çıkarın</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis>
+<command
+>preparetips5</command>
+</cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Açıklama</title>
+<para
+><command
+>preparetips5</command
+>, bir ipuçları dosyasından metin çıkarmak için bir betiktir. Metni çıktılar; böylece <command
+>xgettext</command
+>, bir PO dosyasına ipuçlarını ekleyebilir. PO dosyaları, çeviriler için kullanılabilecek insan tarafından okunabilir bir dizi biçimi sağlar. </para>
+
+<para
+><command
+>preparetips5</command
+>, ipucu dosyası olarak bir <emphasis role="underline"
+>data/tips</emphasis
+> arar. </para>
+</refsect1>
+
+<refsect1>
+<title
+>Ayrıca</title>
+<para
+><command
+>kf5options</command
+>(7) </para>
+</refsect1>
+
+<refsect1>
+<title
+>Hatalar</title>
+<para
+>Hata bildirmek için lütfen <ulink url="https://bugs.kde.org"
+>&kde;'nin hata izleyicisini</ulink
+> kullanın; yazara doğrudan posta göndermeyin. </para>
+</refsect1>
+
+</refentry>
