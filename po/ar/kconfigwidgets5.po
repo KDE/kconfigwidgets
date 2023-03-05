@@ -506,7 +506,7 @@ msgstr "&عن %1"
 
 #: kstandardaction_p.h:101
 msgid "About &KDE"
-msgstr "عن &كدي"
+msgstr "عن &كِيدِي"
 
 #: kstandardaction_p.h:102
 msgid "&Delete"

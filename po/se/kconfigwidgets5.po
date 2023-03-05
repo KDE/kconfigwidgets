@@ -532,10 +532,3 @@ msgstr ""
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr ""
-
-#~ msgctxt "show help"
-#~ msgid "&Help"
-#~ msgstr "&Veahkki"
-
-#~ msgid "&Save Settings"
-#~ msgstr "&Vurke heivehusaid"
