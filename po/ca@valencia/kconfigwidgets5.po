@@ -538,30 +538,3 @@ msgstr "&Donatius"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Obri el &menú"
-
-#~ msgctxt "show help"
-#~ msgid "&Help"
-#~ msgstr "A&juda"
-
-#~ msgid "&Save Settings"
-#~ msgstr "Guar&da la configuració"
-
-#~ msgctxt "@title:window"
-#~ msgid "Tip of the Day"
-#~ msgstr "Consell del dia"
-
-#~ msgctxt "@title"
-#~ msgid "Did you know...?\n"
-#~ msgstr "Sabíeu que...?\n"
-
-#~ msgctxt "@option:check"
-#~ msgid "&Show tips on startup"
-#~ msgstr "Mo&stra consells en iniciar"
-
-#~ msgctxt "@action:button Goes to previous tip"
-#~ msgid "&Previous"
-#~ msgstr "&Anterior"
-
-#~ msgctxt "@action:button Goes to next tip, opposite to previous"
-#~ msgid "&Next"
-#~ msgstr "&Següent"
