@@ -578,16 +578,15 @@ KCommandBar::KCommandBar(QWidget *parent)
     setHidden(true);
 
     // Migrate last used action config to new location
-    auto cfg = KSharedConfig::openConfig();
-    KConfigGroup cg(cfg, "General");
+    KConfigGroup cg(KSharedConfig::openConfig(), "General");
+    if (cg.hasKey("CommandBarLastUsedActions")) {
+        const QStringList actionNames = cg.readEntry("CommandBarLastUsedActions", QStringList());
 
-    QStringList actionNames = cg.readEntry(QStringLiteral("CommandBarLastUsedActions"), QStringList());
+        KConfigGroup stateCg(KSharedConfig::openStateConfig(), "General");
+        stateCg.writeEntry(QStringLiteral("CommandBarLastUsedActions"), actionNames);
 
-    auto stateCfg = KSharedConfig::openStateConfig();
-    KConfigGroup stateCg(stateCfg, "General");
-    stateCg.writeEntry(QStringLiteral("CommandBarLastUsedActions"), actionNames);
-
-    cg.deleteEntry(QStringLiteral("CommandBarLastUsedActions"));
+        cg.deleteEntry(QStringLiteral("CommandBarLastUsedActions"));
+    }
 }
 
 /**
