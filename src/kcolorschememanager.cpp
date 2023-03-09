@@ -109,8 +109,17 @@ KColorSchemeManager::KColorSchemeManager(QObject *parent)
     QString schemePath;
 
     if (scheme.isEmpty() || scheme == QLatin1String("Default")) {
-        schemePath = d->automaticColorSchemePath();
-        d->m_defaultSchemeSelected = true;
+        // Color scheme might be already set from a platform theme
+        // This is used for example by QGnomePlatform that can set color scheme
+        // matching GNOME settings. This avoids issues where QGnomePlatform sets
+        // QPalette for dark theme, but end up mixing it also with Breeze light
+        // that is going to be used as a fallback for apps using KColorScheme.
+        // BUG: 447029
+        schemePath = qApp->property("KDE_COLOR_SCHEME_PATH").toString();
+        if (schemePath.isEmpty()) {
+            schemePath = d->automaticColorSchemePath();
+            d->m_defaultSchemeSelected = true;
+        }
     } else {
         schemePath = indexForScheme(scheme).data(KColorSchemeModel::PathRole).toString();
         d->m_defaultSchemeSelected = false;
