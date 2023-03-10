@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-10 02:26+0000\n"
 "PO-Revision-Date: 2022-01-31 09:51+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -49,7 +49,7 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Automatikus felismerés"
 
-#: kcolorschememanager.cpp:220 kcolorschememanager.cpp:229
+#: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
 #, kde-format
 msgid "Color Scheme"
 msgstr "Színséma"

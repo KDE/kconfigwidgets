@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-10 02:26+0000\n"
 "PO-Revision-Date: 2022-06-27 16:04+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -54,7 +54,7 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Automatická detekce"
 
-#: kcolorschememanager.cpp:220 kcolorschememanager.cpp:229
+#: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
 #, kde-format
 msgid "Color Scheme"
 msgstr "Barevné schéma"
@@ -534,30 +534,3 @@ msgstr "&Přispějte"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Otevřít na&bídku"
-
-#~ msgctxt "show help"
-#~ msgid "&Help"
-#~ msgstr "Nápo&věda"
-
-#~ msgid "&Save Settings"
-#~ msgstr "&Uložit nastavení"
-
-#~ msgctxt "@title:window"
-#~ msgid "Tip of the Day"
-#~ msgstr "Tip dne"
-
-#~ msgctxt "@title"
-#~ msgid "Did you know...?\n"
-#~ msgstr "Věděli jste...?\n"
-
-#~ msgctxt "@option:check"
-#~ msgid "&Show tips on startup"
-#~ msgstr "Zobrazovat tipy při &spuštění"
-
-#~ msgctxt "@action:button Goes to previous tip"
-#~ msgid "&Previous"
-#~ msgstr "&Předchozí"
-
-#~ msgctxt "@action:button Goes to next tip, opposite to previous"
-#~ msgid "&Next"
-#~ msgstr "&Následující"

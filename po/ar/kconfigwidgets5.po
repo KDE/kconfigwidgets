@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-10 02:26+0000\n"
 "PO-Revision-Date: 2022-06-04 19:49+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: Arabic <kde-l10n-ar@kde.org>\n"
@@ -49,7 +49,7 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "اكتشفه آليًا"
 
-#: kcolorschememanager.cpp:220 kcolorschememanager.cpp:229
+#: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
 #, kde-format
 msgid "Color Scheme"
 msgstr "مخطّط الألوان"
