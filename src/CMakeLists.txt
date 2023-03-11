@@ -11,7 +11,6 @@ target_sources(KF6ConfigWidgets PRIVATE
   kconfigdialog.cpp
   kconfigviewstatesaver.cpp
   kconfigdialogmanager.cpp
-  kcmodule.cpp
   khelpclient.cpp
   khamburgermenu.cpp
   khamburgermenuhelpers.cpp
@@ -30,7 +29,6 @@ target_sources(KF6ConfigWidgets PRIVATE
   kconfigdialog.h
   kconfigviewstatesaver.h
   kconfigdialogmanager.h
-  kcmodule.h
   khelpclient.h
   khamburgermenu.h
   khamburgermenuhelpers_p.h
@@ -74,7 +72,6 @@ target_link_libraries(KF6ConfigWidgets
     KF6::WidgetsAddons # For K*Action, KPage*, KViewStateSerializer, KAcceleratorManager, K*GuiItem
     KF6::ConfigGui # KStandardAction uses KStandardShortcut
   PRIVATE
-    KF6::CoreAddons # KCModule uses KAboutData
     KF6::GuiAddons # KColorScheme uses KColorUtils
     KF6::I18n # For action and widget texts
 )
@@ -103,7 +100,6 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KConfigDialog
   KConfigViewStateSaver
   KConfigDialogManager
-  KCModule
   KHamburgerMenu
   KHelpClient
   KLanguageButton
