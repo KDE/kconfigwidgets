@@ -335,6 +335,16 @@ public Q_SLOTS:
      */
     void setDefaultsIndicatorsVisible(bool show);
 
+    /**
+     * Get the associated widget that can be embedded
+     * The returned widget should be used as a parent for widgets you create
+     *
+     * It is the same as 'this'.
+     *
+     * @since 5.105
+     */
+    QWidget *widget();
+
 protected:
     /**
      * Adds a KCoreConfigskeleton @p config to watch the widget @p widget

@@ -367,3 +367,8 @@ QList<KConfigDialogManager *> KCModule::configs() const
 {
     return d->managers;
 }
+
+QWidget *KCModule::widget()
+{
+    return this;
+}
