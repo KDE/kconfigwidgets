@@ -66,7 +66,7 @@ ecm_set_disabled_deprecation_versions(
     KF 5.102.0
 )
 
-add_definitions(-DTRANSLATION_DOMAIN=\"kconfigwidgets5\")
+add_definitions(-DTRANSLATION_DOMAIN=\"kconfigwidgets6\")
 ki18n_install(po)
 
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
