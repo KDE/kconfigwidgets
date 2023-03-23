@@ -48,13 +48,6 @@ ecm_qt_declare_logging_category(KF6ConfigWidgets
     EXPORT KCONFIGWIDGETS
 )
 
-if (WITH_KAUTH)
-    set(WITH_KAUTH_DEFINE_VALUE 1)
-else()
-    set(WITH_KAUTH_DEFINE_VALUE 0)
-endif()
-set(define_with_kauth_code "#define KCONFIGWIDGETS_WITH_KAUTH ${WITH_KAUTH_DEFINE_VALUE}\n")
-
 ecm_generate_export_header(KF6ConfigWidgets
     BASE_NAME KConfigWidgets
     GROUP_BASE_NAME KF
@@ -62,7 +55,6 @@ ecm_generate_export_header(KF6ConfigWidgets
     DEPRECATED_BASE_VERSION 0
     DEPRECATION_VERSIONS
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
-    CUSTOM_CONTENT_FROM_VARIABLE define_with_kauth_code
 )
 
 target_include_directories(KF6ConfigWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets>")
@@ -81,10 +73,6 @@ target_link_libraries(KF6ConfigWidgets
   PRIVATE
   KF6::Codecs # KCodecActions uses KCharsets, KEncodingProber
 )
-
-if (WITH_KAUTH)
-    target_link_libraries(KF6ConfigWidgets PUBLIC KF6::AuthCore)
-endif()
 
 set_target_properties(KF6ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION}
                                                   SOVERSION ${KCONFIGWIDGETS_SOVERSION}
@@ -169,5 +157,5 @@ if(BUILD_QCH)
 endif()
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF6ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui KAuth" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets)
+ecm_generate_pri_file(BASE_NAME KConfigWidgets LIB_NAME KF6ConfigWidgets DEPS "KCodecs KWidgetsAddons KConfigGui" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})

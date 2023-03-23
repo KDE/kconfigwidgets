@@ -49,18 +49,6 @@ find_package(KF6GuiAddons ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6I18n ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 
-if (NOT ANDROID AND NOT WIN32)
-    option(WITH_KAUTH "Build with KAuth support" ON)
-else()
-    set(WITH_KAUTH OFF)
-endif()
-
-set(HAVE_KAUTH FALSE)
-if (WITH_KAUTH)
-  find_package(KF6Auth ${KF_DEP_VERSION} REQUIRED)
-  set(HAVE_KAUTH TRUE)
-endif()
-
 ecm_set_disabled_deprecation_versions(
     QT 6.4.0
     KF 5.102.0

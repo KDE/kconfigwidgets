@@ -9,10 +9,6 @@ Dependencies:
     'frameworks/ki18n' : '@same'
     'frameworks/kwidgetsaddons' : '@same'
 
-- 'on': ['Linux', 'FreeBSD']
-  'require':
-    'frameworks/kauth' : '@same'
-
 Options:
   test-before-installing: True
   require-passing-tests-on: [ 'Linux', 'FreeBSD', 'Windows' ]

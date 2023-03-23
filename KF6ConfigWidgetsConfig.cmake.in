@@ -1,9 +1,6 @@
 @PACKAGE_INIT@
 
 include(CMakeFindDependencyMacro)
-if (@HAVE_KAUTH@)
-  find_dependency(KF6Auth "@KF_DEP_VERSION@")
-endif()
 find_dependency(KF6Codecs "@KF_DEP_VERSION@")
 find_dependency(KF6Config "@KF_DEP_VERSION@")
 find_dependency(KF6WidgetsAddons "@KF_DEP_VERSION@")
