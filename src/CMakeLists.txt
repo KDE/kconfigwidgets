@@ -72,6 +72,7 @@ target_link_libraries(KF6ConfigWidgets
     KF6::WidgetsAddons # For K*Action, KPage*, KViewStateSerializer, KAcceleratorManager, K*GuiItem
     KF6::ConfigGui # KStandardAction uses KStandardShortcut
   PRIVATE
+    KF6::CoreAddons # KAboutData, KFuzzymatcher
     KF6::GuiAddons # KColorScheme uses KColorUtils
     KF6::I18n # For action and widget texts
 )
