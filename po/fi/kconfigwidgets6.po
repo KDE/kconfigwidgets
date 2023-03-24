@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-07-13 18:02+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -51,16 +51,6 @@ msgstr ""
 "kim.enkovaara@iki.fi, eleknader@phnet.fi, ikola@iki.fi, tpr@d5k.net, lasse."
 "liehu@gmail.com, niklas.laxstrom+kdetrans@gmail.com, juippis@roskakori.org, "
 "piippo@cc.helsinki.fi, translator@legisign.org, karvonen.jorma@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Sinua pyydetään tunnistautumaan ennen tallennusta"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Asetusten tallentamiseen ei ole lupaa"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -553,6 +543,12 @@ msgstr "&Lahjoita"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Avaa &valikko"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Sinua pyydetään tunnistautumaan ennen tallennusta"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Asetusten tallentamiseen ei ole lupaa"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

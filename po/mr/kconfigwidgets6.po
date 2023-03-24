@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2013-03-29 16:14+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -32,16 +32,6 @@ msgid "Your emails"
 msgstr ""
 "sandeep.shedmake@gmail.com, \n"
 "chetan@kompkin.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "बदल कायम करण्याकरिता तुमची परवानगी घेण्यात येइल"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "तुम्हाला व्यवस्था बदलांची परवानगी नाही"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -559,6 +549,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "अलिकडील उघडा (&R)"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "बदल कायम करण्याकरिता तुमची परवानगी घेण्यात येइल"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "तुम्हाला व्यवस्था बदलांची परवानगी नाही"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-05-31 21:56+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -29,16 +29,6 @@ msgstr "ம. ஸ்ரீ ராமதாஸ்"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "amachu@yavarkkum.org"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "சேமிப்பதற்குமுன் சான்றளிக்க கோரப்படுவீர்கள்."
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "அமைப்பை சேமிக்க உங்களுக்கு அனுமதியில்லை"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -530,6 +520,12 @@ msgstr "&நன்கொடை அளியுங்கள்"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "&பட்டியை திற"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "சேமிப்பதற்குமுன் சான்றளிக்க கோரப்படுவீர்கள்."
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "அமைப்பை சேமிக்க உங்களுக்கு அனுமதியில்லை"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

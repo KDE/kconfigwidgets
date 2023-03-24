@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-05-31 10:57+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -31,16 +31,6 @@ msgid "Your emails"
 msgstr ""
 "phu.nguyen@kdemail.net,herophuong93@gmail.com,hieu.d.hoang@gmail.com,"
 "clytie@riverland.net.au"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Bạn sẽ được yêu cầu xác thực trước khi lưu"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Bạn không được phép lưu cấu hình"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -532,6 +522,12 @@ msgstr "&Quyên góp"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Mở trìn&h đơn"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Bạn sẽ được yêu cầu xác thực trước khi lưu"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Bạn không được phép lưu cấu hình"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

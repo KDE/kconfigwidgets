@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2015-11-04 15:11+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -28,18 +28,6 @@ msgstr "GunChleoc"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "fios@foramnagaidhlig.net"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-"Thèid iarraidh ort gun dèan thu dearbhadh gur tusa a th' ann mus sàbhail thu "
-"rud"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Chan fhaod thu an rèiteachadh a shàbhaladh"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -549,6 +537,14 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Fosgail sgrìobhainn o chionn goi&rid"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr ""
+#~ "Thèid iarraidh ort gun dèan thu dearbhadh gur tusa a th' ann mus sàbhail "
+#~ "thu rud"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Chan fhaod thu an rèiteachadh a shàbhaladh"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

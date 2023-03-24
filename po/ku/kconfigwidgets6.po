@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2010-08-13 15:45+0200\n"
 "Last-Translator: Erdal Ronahî <erdal.ronahi@nospam.gmail.com>\n"
 "Language-Team: Kurdish Team http://pckurd.net\n"
@@ -35,16 +35,6 @@ msgstr "Erdal Ronahi"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "erdal.ronahi@nospam.gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Tu nikarî veavakirinan tomar bikî"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -617,6 +607,9 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Ya herî dawî hatiye bikaranîn veke"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Tu nikarî veavakirinan tomar bikî"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

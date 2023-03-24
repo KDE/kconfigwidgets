@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2021-09-30 22:37+0900\n"
 "Last-Translator: Ryunosuke Toda <toda.ryunosuke@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -39,16 +39,6 @@ msgid "Your emails"
 msgstr ""
 "kom@kde.gr.jp,shinobo@leo.bekkoame.ne.jp,toyohiro@ksmplus.com,md81@bird."
 "email.ne.jp,tsuno@ngy.1st.ne.jp"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "保存する前に認証を求められます"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "あなたは設定を保存することを許可されていません"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -574,6 +564,12 @@ msgstr "寄付(&D)"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "最近のファイルを開く(&R)"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "保存する前に認証を求められます"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "あなたは設定を保存することを許可されていません"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

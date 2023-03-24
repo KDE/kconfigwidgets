@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2011-07-25 07:45+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <danishka@gmail.com>\n"
@@ -27,17 +27,6 @@ msgstr "ඩනිෂ්ක නවින්"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "danishka@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-
-#: kcmodule.cpp:176
-#, fuzzy, kde-format
-#| msgid "Do you want to reload KDE configuration?"
-msgid "You are not allowed to save the configuration"
-msgstr "ඔබට KDE මානකරණය යළි පූරණය කිරීමට ඇවශ්‍යද?"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -611,6 +600,11 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "මෑතකදි භාවිතා කළ දැ විවෘත කරන්න (&R)"
+
+#, fuzzy
+#~| msgid "Do you want to reload KDE configuration?"
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "ඔබට KDE මානකරණය යළි පූරණය කිරීමට ඇවශ්‍යද?"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

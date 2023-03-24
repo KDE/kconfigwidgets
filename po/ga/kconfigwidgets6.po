@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2004-12-14 09:11-0600\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -29,16 +29,6 @@ msgstr "Séamus Ó Ciardhuáin,Kevin Scannell,Sean V. Kelley"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "seoc@iolfree.ie,kscanne@gmail.com,s_oceallaigh@yahoo.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Caithfidh tú fíordheimhniú a dhéanamh roimh shábháil"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Níl cead agat an chumraíocht a shábháil"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -561,6 +551,12 @@ msgstr "&Críochnaithe"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Oscail &Rudaí Deireanacha"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Caithfidh tú fíordheimhniú a dhéanamh roimh shábháil"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Níl cead agat an chumraíocht a shábháil"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

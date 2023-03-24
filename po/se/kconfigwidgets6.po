@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2012-05-30 23:19+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -28,16 +28,6 @@ msgstr "Børre Gaup"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "boerre@skolelinux.no"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Ovdalgo vurket, de fertet čállit hálddašanbeassansáni"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Dus ii leat lohpi vurket heivehusa"
 
 # unreviewed-context
 #: kcodecaction.cpp:62
@@ -532,3 +522,9 @@ msgstr ""
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr ""
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Ovdalgo vurket, de fertet čállit hálddašanbeassansáni"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Dus ii leat lohpi vurket heivehusa"

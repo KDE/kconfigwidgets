@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2011-07-22 16:08+0200\n"
 "Last-Translator: Marko Dimjašević <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -40,16 +40,6 @@ msgid "Your emails"
 msgstr ""
 "renato@translator-shop.org, zarko.pintar@gmail.com, marko@dimjasevic.net, "
 "adundovi@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Pitat će se Vas za prijavu prije spremanja"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Nije Vam dozvoljeno spremati postavu"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -615,6 +605,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Otvori &nedavno"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Pitat će se Vas za prijavu prije spremanja"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Nije Vam dozvoljeno spremati postavu"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

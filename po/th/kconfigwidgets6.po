@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2010-12-31 22:47+0700\n"
 "Last-Translator: Phuwanat Sakornsakolpat <narachai@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -30,16 +30,6 @@ msgstr "ถนอมทรัพย์ นพบูรณ์, สหชาติ
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "donga.nb@gmail.com, drrider@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "ถามเพื่อแสดงสิทธิ์ก่อนจะทำการบันทึก"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "คุณไม่ได้รับอนุญาตให้บันทึกการปรับแต่งค่า"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -620,6 +610,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "เปิดที่เ&คยเรียกใช้"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "ถามเพื่อแสดงสิทธิ์ก่อนจะทำการบันทึก"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "คุณไม่ได้รับอนุญาตให้บันทึกการปรับแต่งค่า"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

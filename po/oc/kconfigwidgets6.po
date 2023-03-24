@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2008-08-06 00:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -27,17 +27,6 @@ msgstr "Yannig Marchegay (Kokoyaya)"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yannig@marchegay.org"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-
-#: kcmodule.cpp:176
-#, fuzzy, kde-format
-#| msgid "Do you want to reload KDE configuration?"
-msgid "You are not allowed to save the configuration"
-msgstr "Volètz tornar cargar la configuracion de KDE ?"
 
 #: kcodecaction.cpp:62
 #, fuzzy, kde-format
@@ -635,6 +624,11 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Dobert(s) &Recentament"
+
+#, fuzzy
+#~| msgid "Do you want to reload KDE configuration?"
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Volètz tornar cargar la configuracion de KDE ?"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

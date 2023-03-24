@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-12-12 19:42+0200\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -37,16 +37,6 @@ msgid "Your emails"
 msgstr ""
 "rch@richard.eu.org, dgvirtual@akl.lt, gintautas@miselis.lt, stikonas@gmail."
 "com, liudas@akmc.lt, <>"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Prieš įrašant, jūsų bus paprašyta nustatyti savo tapatybę"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Jums neleidžiama įrašyti konfigūraciją"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -540,6 +530,12 @@ msgstr "Pa&remti"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Atverti &meniu"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Prieš įrašant, jūsų bus paprašyta nustatyti savo tapatybę"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Jums neleidžiama įrašyti konfigūraciją"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

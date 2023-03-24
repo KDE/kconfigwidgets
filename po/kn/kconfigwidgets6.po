@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2010-06-24 18:32+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn_IN <kde-i18n-doc@kde.org>\n"
@@ -30,16 +30,6 @@ msgstr "ಉಮೇಶ್ ರುದ್ರಪಟ್ಟಣ, ಸಿದ್ಧಾರೂ
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "umeshrs@gmail.com, siddharudh@gmail.com, svenkate@redhat.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "ಉಳಿಸುವ ಮೊದಲು ದೃಢೀಕರಿಸುವಂತೆ ನಿಮ್ಮನ್ನು ಕೇಳಲಾಗುತ್ತದೆ"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "ಸಂರಚನೆಯನ್ನು ಉಳಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -618,6 +608,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "ಇತ್ತೀಚಿನದನ್ನು ತೆರೆ(&R)"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "ಉಳಿಸುವ ಮೊದಲು ದೃಢೀಕರಿಸುವಂತೆ ನಿಮ್ಮನ್ನು ಕೇಳಲಾಗುತ್ತದೆ"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "ಸಂರಚನೆಯನ್ನು ಉಳಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

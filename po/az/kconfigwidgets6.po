@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2023-02-17 01:22+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -26,16 +26,6 @@ msgstr "Xəyyam Qocayev"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xxmn77@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Saxlamadan oncə parolu daxil etməniz tələb edilir"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Konfiqurasiyanı saxlamağa sizə icazə verilmir"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -529,6 +519,12 @@ msgstr "&Maddi Dəstək"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "&Menyunu açın"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Saxlamadan oncə parolu daxil etməniz tələb edilir"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Konfiqurasiyanı saxlamağa sizə icazə verilmir"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-10-19 22:37+0200\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -30,16 +30,6 @@ msgstr "Marek Laane"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "qiilaq69@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Sul palutakse enne salvestamist autentida"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Sul ei ole õigust seadistust salvestada"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -531,6 +521,12 @@ msgstr "A&nneta"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Ava &menüü"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Sul palutakse enne salvestamist autentida"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Sul ei ole õigust seadistust salvestada"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

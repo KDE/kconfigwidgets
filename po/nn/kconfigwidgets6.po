@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-06-19 14:02+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -32,16 +32,6 @@ msgstr "Gaute Hvoslef Kvalnes,Karl Ove Hufthammer"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "gaute@verdsveven.com,karl@huftis.org"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Du vert spurd om innloggingsdetaljar før lagringa"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Du har ikkje løyve til å lagra oppsettet"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -533,3 +523,9 @@ msgstr "&Gje pengegåve"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Opna &meny"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Du vert spurd om innloggingsdetaljar før lagringa"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Du har ikkje løyve til å lagra oppsettet"

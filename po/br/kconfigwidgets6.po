@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4-1.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2007-10-15 22:19+0200\n"
 "Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
 "Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
@@ -27,17 +27,6 @@ msgstr "Thierry Vignaud, Jañ-Mai Drapier"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "tvignaud@mandriva.com, jdrapier@club-internet.fr"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-
-#: kcmodule.cpp:176
-#, fuzzy, kde-format
-#| msgid "Could not create the new configuration file."
-msgid "You are not allowed to save the configuration"
-msgstr "Ne m'eus ket gallet krouiñ restr kefluniadur nevez."
 
 #: kcodecaction.cpp:62
 #, fuzzy, kde-format
@@ -611,6 +600,11 @@ msgstr "&Graet"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Digeriñ &nevezig"
+
+#, fuzzy
+#~| msgid "Could not create the new configuration file."
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Ne m'eus ket gallet krouiñ restr kefluniadur nevez."
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

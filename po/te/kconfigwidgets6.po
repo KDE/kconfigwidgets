@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2013-11-04 23:55+0630\n"
 "Last-Translator: Bhuvan Krishna <bhuvan@swecha.org>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -35,16 +35,6 @@ msgid "Your emails"
 msgstr ""
 "infyquest@gmail.com,kkrothap@redhat.com,bhuvan@swecha.org,gvs.giri@swecha."
 "net,sreekalyan3@gmail.com,naveen@swecha.net"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "మీరు దీనిని నిక్షిప్తం చేయు ముందు నిజపరుచుటకు అడుగుము"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "ఈ  రూపకరణ దాచుటకు మీకు అనుమతి లే"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -562,6 +552,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "(&R) ఇటీవలివి తెరువండి"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "మీరు దీనిని నిక్షిప్తం చేయు ముందు నిజపరుచుటకు అడుగుము"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "ఈ  రూపకరణ దాచుటకు మీకు అనుమతి లే"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

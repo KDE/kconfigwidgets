@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-06-03 18:00+0100\n"
 "Last-Translator: José Nuno Pires <zepires@gmail.com>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
@@ -115,16 +115,6 @@ msgstr "José Nuno Pires"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "zepires@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Ser-lhe-á pedida a autenticação antes de gravar"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Não tem permissão para gravar a configuração"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -618,6 +608,12 @@ msgstr "&Doar"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Abrir o &Menu"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Ser-lhe-á pedida a autenticação antes de gravar"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Não tem permissão para gravar a configuração"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

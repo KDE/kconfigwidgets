@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2021-08-21 16:25+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -30,16 +30,6 @@ msgstr "करुणाकर गुंटुपल्ली, राघवें
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "karunakar@indlinux.org, raghu@raghukamath.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "आपको सहेजने से पहले प्रमाणित करने के लिए कहा जाएगा"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "आपको कॉन्फ़िगरेशन सहेजने की अनुमति नहीं है"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -539,6 +529,12 @@ msgstr "दान करें (&D)"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "मेन्यू खोलें (&M)"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "आपको सहेजने से पहले प्रमाणित करने के लिए कहा जाएगा"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "आपको कॉन्फ़िगरेशन सहेजने की अनुमति नहीं है"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2023-01-05 11:44+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -40,16 +40,6 @@ msgstr "Σπύρος Γεωργαράς, Τούσης Μανώλης, Πέτρο
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sng@hellug.gr, manolis@koppermind.homelinux.org, p_vidalis@hotmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Θα σας ζητηθεί ταυτοποίηση πριν την αποθήκευση"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Δεν σας επιτρέπεται η αποθήκευση της διαμόρφωσης"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -544,6 +534,12 @@ msgstr "&Δωρεά"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Άνοιγμα &μενού"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Θα σας ζητηθεί ταυτοποίηση πριν την αποθήκευση"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Δεν σας επιτρέπεται η αποθήκευση της διαμόρφωσης"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

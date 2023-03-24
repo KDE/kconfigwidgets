@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2019-09-15 21:27+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -30,16 +30,6 @@ msgstr "Victor Ibragimov"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "victor.ibragimov@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Пеш аз нигоҳдорӣ ба шумо санҷиши ҳаққоният пешниҳод карда мешавад"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Шумо барои нигоҳ доштани танзимот иҷозат надоред"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -546,6 +536,12 @@ msgstr "&Дастгирии молӣ"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Кушодани маводи охирин"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Пеш аз нигоҳдорӣ ба шумо санҷиши ҳаққоният пешниҳод карда мешавад"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Шумо барои нигоҳ доштани танзимот иҷозат надоред"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

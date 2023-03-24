@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -27,16 +27,6 @@ msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "ساقلاشتىن ئاۋۋال دەلىللەش تەلەپ قىلىنىدۇ"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "تەڭشەكلەرنى ساقلاش ھوقۇقىڭىز يوق"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -556,6 +546,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "يېقىنقىنى ئاچ(&R)"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "ساقلاشتىن ئاۋۋال دەلىللەش تەلەپ قىلىنىدۇ"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "تەڭشەكلەرنى ساقلاش ھوقۇقىڭىز يوق"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-07-13 14:09+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -27,16 +27,6 @@ msgstr "조성재,박신조"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "cho.sungjae@gmail.com,kde@peremen.name"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "설정을 저장하기 전에 인증해야 합니다"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "설정을 저장할 수 없습니다"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -528,6 +518,12 @@ msgstr "기부하기(&D)"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "메뉴 열기(&M)"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "설정을 저장하기 전에 인증해야 합니다"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "설정을 저장할 수 없습니다"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-05-31 16:55+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -37,16 +37,6 @@ msgid "Your emails"
 msgstr ""
 "d96reftl@dtek.chalmers.se,awl@hem.passagen.se,pelinstr@algonet.se,"
 "newzella@linux.nu,stefan.asserhall@telia.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Du blir tillfrågat om behörighetskontroll innan något sparas"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Du har inte rättighet att spara inställningar"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -538,6 +528,12 @@ msgstr "&Ge bidrag"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Visa &meny"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Du blir tillfrågat om behörighetskontroll innan något sparas"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Du har inte rättighet att spara inställningar"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

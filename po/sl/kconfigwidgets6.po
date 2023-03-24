@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-06-01 07:47+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -43,16 +43,6 @@ msgid "Your emails"
 msgstr ""
 "roman.maurer@amis.net,gregor.rakar@kiss.si,andrej.vernekar@gmail.com,"
 "jlp@holodeck1.com,andrejm@ubuntu.si,matjaz.jeran@amis.net"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Preden shranite, se boste morali overiti"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Nimate dovoljenja za shranjevanje nastavitev"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -546,6 +536,12 @@ msgstr "&Donacija"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Odpri meni"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Preden shranite, se boste morali overiti"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Nimate dovoljenja za shranjevanje nastavitev"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

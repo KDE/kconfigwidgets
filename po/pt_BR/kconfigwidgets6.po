@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-06-22 16:15-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -41,16 +41,6 @@ msgid "Your emails"
 msgstr ""
 "diniz.bortolotto@gmail.com, lisiane@kdemail.net, alvarenga@kde.org, "
 "elchevive@opensuse.org"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Será solicitada a sua autenticação antes de salvar"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Você não tem permissão para salvar a configuração"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -544,6 +534,12 @@ msgstr "&Doar"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Abrir &menu"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Será solicitada a sua autenticação antes de salvar"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Você não tem permissão para salvar a configuração"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

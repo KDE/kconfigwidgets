@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2019-12-01 18:20+0000\n"
 "Last-Translator: Subin Siby <subins2000@gmail.com>\n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -32,16 +32,6 @@ msgid "Your emails"
 msgstr ""
 "pravi.a@gmail.com, peter.ani@gmail.com, maxinbjohn@gmail.com, gnuanu@gmail."
 "com, manusmad@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "സൂക്ഷിയ്ക്കുന്നതിനു് മുമ്പു് നിങ്ങളെ തിരിച്ചറിയേണ്ടി വരും"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "ക്രമീകരണം സൂക്ഷിയ്ക്കാന്‍ നിങ്ങള്‍ക്കനുവാദമില്ല"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -578,6 +568,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "അടുത്തുപയോഗിച്ചത് തുറക്കുക &r"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "സൂക്ഷിയ്ക്കുന്നതിനു് മുമ്പു് നിങ്ങളെ തിരിച്ചറിയേണ്ടി വരും"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "ക്രമീകരണം സൂക്ഷിയ്ക്കാന്‍ നിങ്ങള്‍ക്കനുവാദമില്ല"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

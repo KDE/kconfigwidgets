@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2012-07-04 17:33+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -31,16 +31,6 @@ msgstr "Lorint Hendschel,Pablo Saratxaga,Djan Cayron"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "laurent.hendschel@skynet.be,pablo@walon.org,jean.cayron@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Vos n' avoz nén l' droet d' schaper l' apontiaedje"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -617,6 +607,9 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Drovi les &dierins"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Vos n' avoz nén l' droet d' schaper l' apontiaedje"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2011-11-26 15:12+0400\n"
 "Last-Translator: Ainur Shakirov <ainur.shakirov.tt@gmail.com>\n"
 "Language-Team: Tatar <>\n"
@@ -26,16 +26,6 @@ msgstr "Ainur Shakirov"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ainur.shakirov.tt@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Перед сохранением настроек нужно будет подтвердить вход в систему"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Бу үзгәрешләрне ясау өчен хокуклар юк."
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -617,6 +607,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Күптән түгелдәге файллар"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Перед сохранением настроек нужно будет подтвердить вход в систему"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Бу үзгәрешләрне ясау өчен хокуклар юк."
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

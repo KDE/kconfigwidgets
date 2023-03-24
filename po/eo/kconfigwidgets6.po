@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2023-01-05 14:30+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
@@ -38,16 +38,6 @@ msgid "Your emails"
 msgstr ""
 "matthias@peick.de, okellogg@users.sourceforge.net, cfmckee@gmail.com, "
 "axel@esperanto-jeunes.org, michael.moroni@mailoo.org"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Vi ne estas permesita por konservi la agordojn"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -541,6 +531,9 @@ msgstr "&Donaci"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Malfe&rmi Menuon"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Vi ne estas permesita por konservi la agordojn"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

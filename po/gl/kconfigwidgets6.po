@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2019-10-08 13:56+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -35,16 +35,6 @@ msgstr "Xabier García Feal, marce villarino, Xosé Calvo"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xosecalvo@gmail.com, mvillarino@gmail.com, proxecto@trasno.gal"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Pediráselle que se autentique antes de gardar"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Non se lle permite gardar a configuración"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -558,6 +548,12 @@ msgstr "&Doar"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Abrir un &recente"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Pediráselle que se autentique antes de gardar"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Non se lle permite gardar a configuración"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

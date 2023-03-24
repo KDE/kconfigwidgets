@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2023-02-01 13:00+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -45,16 +45,6 @@ msgid "Your emails"
 msgstr ""
 "tulliana@gmail.com, gorkem@kde.org, ibrahim@pardus.org.tr, volkangezer@gmail."
 "com, emir_sari@icloud.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Kaydetmeden önce kimlik doğrulaması yapmanız istenecek"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Yapılandırmayı kaydetme izniniz yok"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -547,6 +537,12 @@ msgstr "&Bağış Yap"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Me&nüyü Aç"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Kaydetmeden önce kimlik doğrulaması yapmanız istenecek"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Yapılandırmayı kaydetme izniniz yok"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

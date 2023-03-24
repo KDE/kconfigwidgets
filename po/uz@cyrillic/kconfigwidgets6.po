@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2009-10-17 00:34+0200\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -26,17 +26,6 @@ msgstr "Машраб Қуватов"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kmashrab@uni-bremen.de"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-
-#: kcmodule.cpp:176
-#, fuzzy, kde-format
-#| msgid "Could not create the new configuration file."
-msgid "You are not allowed to save the configuration"
-msgstr "Янги мослама файлини яратиб бўлмади."
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -608,6 +597,11 @@ msgstr "&Тайёр"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Яқинда фойдаланилганни очиш"
+
+#, fuzzy
+#~| msgid "Could not create the new configuration file."
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Янги мослама файлини яратиб бўлмади."
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

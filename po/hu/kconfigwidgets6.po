@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-01-31 09:51+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -26,16 +26,6 @@ msgstr "Kiszel Kristóf,Szántó Tamás,Úr Balázs"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ulysses@fsf.hu,taszanto@gmail.com,ur.balazs@fsf.hu"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Mentés előtt felhasználóazonosítás történik"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Nincs jogosultsága a beállítások elmentéséhez"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -529,6 +519,12 @@ msgstr "&Támogatás"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "&Menü megnyitása"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Mentés előtt felhasználóazonosítás történik"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Nincs jogosultsága a beállítások elmentéséhez"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2012-06-28 16:40+0430\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@linuxshop.ir>\n"
 "Language-Team: Farsi (Persian) <kde-i18n-fa@kde.org>\n"
@@ -32,16 +32,6 @@ msgid "Your emails"
 msgstr ""
 "mohi@linuxshop.ir , kazemi@itland.ir , mebrahim@gmail.com , s.taghavi@gmail."
 "com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "قبل از ذخیره برای اعتبارسنجی از شما سوال خواهد شد"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "شما اجاره ذخیره تنظیمات را ندارید"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -618,6 +608,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "باز کردن &اخیر‌"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "قبل از ذخیره برای اعتبارسنجی از شما سوال خواهد شد"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "شما اجاره ذخیره تنظیمات را ندارید"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

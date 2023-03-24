@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-06-24 11:08+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -48,16 +48,6 @@ msgid "Your emails"
 msgstr ""
 "mok@kde.ru,shaforostoff@kde.ru,skull@kde.ru,leon@asplinux.ru,"
 "darkstar@altlinux.ru,translation-team@basealt.ru"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Сохранение параметров потребует ввода пароля"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "У вас нет прав на изменение этих настроек"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -551,6 +541,12 @@ msgstr "&Сделать пожертвование"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Открыть &меню"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Сохранение параметров потребует ввода пароля"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "У вас нет прав на изменение этих настроек"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

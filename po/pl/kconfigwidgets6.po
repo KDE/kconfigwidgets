@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-10-09 11:35+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -121,16 +121,6 @@ msgstr "Michał Rudolf, Artur Chłond, Łukasz Wojniłowicz"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mrudolf@kdewebdev.org, eugenewolfe@o2.pl, lukasz.wojnilowicz@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Do zapisania ustawień trzeba będzie podać hasło"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Brak uprawnień do zapisywania ustawień"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -622,6 +612,12 @@ msgstr "&Darowizna"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Otwórz &menu"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Do zapisania ustawień trzeba będzie podać hasło"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Brak uprawnień do zapisywania ustawień"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

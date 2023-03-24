@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-07-23 10:38+0800\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -38,16 +38,6 @@ msgstr "Franklin Weng, Jeff Huang"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "您在儲存前將會被要求認證"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "您沒有權限儲存此設定"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -537,6 +527,12 @@ msgstr "贊助(&D)"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "開啟選單(&M)"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "您在儲存前將會被要求認證"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "您沒有權限儲存此設定"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-05-31 14:03+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -36,16 +36,6 @@ msgstr ""
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "smart2128vr@gmail.com,,,,"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Ti sarà richiesto di autenticarti prima di salvare"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Non hai il permesso di salvare la configurazione"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -539,6 +529,12 @@ msgstr "&Donazione"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Apri &menu"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Ti sarà richiesto di autenticarti prima di salvare"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Non hai il permesso di salvare la configurazione"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

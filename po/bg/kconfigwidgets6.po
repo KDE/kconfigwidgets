@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-06-19 14:35+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -28,16 +28,6 @@ msgstr "Ясен Праматаров,Радостин Раднев,Златко
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yasen@lindeas.com,radnev@yahoo.com,zlatkopopov@fsa-bg.org"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Ще бъдете запитани за удостоверяване преди запазване"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Нямате право да записвате конфигурация"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -530,6 +520,12 @@ msgstr "&Дарение"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Отваряне на &меню"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Ще бъдете запитани за удостоверяване преди запазване"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Нямате право да записвате конфигурация"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

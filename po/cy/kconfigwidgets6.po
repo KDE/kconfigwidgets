@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2005-01-28 17:54+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg\n"
@@ -39,17 +39,6 @@ msgstr "KD wrth KGyfieithu"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-
-#: kcmodule.cpp:176
-#, fuzzy, kde-format
-#| msgid "Could not create the new configuration file."
-msgid "You are not allowed to save the configuration"
-msgstr "Methu creu'r ffeil ffurfweddiad newydd."
 
 #: kcodecaction.cpp:62
 #, fuzzy, kde-format
@@ -622,6 +611,11 @@ msgstr "&Wedi'i orffen"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Agor &Diweddar"
+
+#, fuzzy
+#~| msgid "Could not create the new configuration file."
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Methu creu'r ffeil ffurfweddiad newydd."
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

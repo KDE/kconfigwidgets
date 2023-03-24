@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-07-26 16:36+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -33,16 +33,6 @@ msgstr "Iñigo Salvador Azurmendi"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xalba@ni.eus"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Gorde baino lehen autentikatzeko eskatuko zaizu"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Ez duzu konfigurazioa gordetzeko baimenik"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -535,6 +525,12 @@ msgstr "Egin &dohaintza"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Ireki &Menua"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Gorde baino lehen autentikatzeko eskatuko zaizu"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Ez duzu konfigurazioa gordetzeko baimenik"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2017-09-28 17:57+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -31,16 +31,6 @@ msgstr "Топлица Танасковић,Часлав Илић"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "toptan@kde.org.yu,caslav.ilic@gmx.net"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Мораћете да се аутентификујете пре уписивања."
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Није вам дозвољено да сачувате поставу."
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -546,6 +536,12 @@ msgstr "&Донација"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Отвори &недавни"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Мораћете да се аутентификујете пре уписивања."
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Није вам дозвољено да сачувате поставу."
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

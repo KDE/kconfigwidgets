@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2023-02-24 12:43\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -28,16 +28,6 @@ msgid "Your emails"
 msgstr ""
 "kde-china@kde.org, chaofeng111@gmail.com, i@guoyunhe.me, tysontan@tysontan."
 "com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "在保存前您将需要进行身份验证"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "您不具备保存配置的权限"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -527,6 +517,12 @@ msgstr "捐款(&D)"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "打开菜单(&M)"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "在保存前您将需要进行身份验证"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "您不具备保存配置的权限"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

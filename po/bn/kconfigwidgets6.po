@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2012-07-16 14:27+0530\n"
 "Last-Translator: Deepayan Sarkar <deepayan.sarkar@gmail.com>\n"
 "Language-Team: American English <kde-translation@bengalinux.org>\n"
@@ -30,16 +30,6 @@ msgstr "দীপায়ন সরকার"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "deepayan.sarkar@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr ""
-
-#: kcmodule.cpp:176
-#, fuzzy, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "আপনি কি কনফিগারেশন ফাইল নতুন করে পড়তে চান?"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -562,6 +552,10 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&সম্প্রতি ব্যবহৃত"
+
+#, fuzzy
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "আপনি কি কনফিগারেশন ফাইল নতুন করে পড়তে চান?"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

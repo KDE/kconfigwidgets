@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2013-01-31 01:08+0400\n"
 "Last-Translator: Davit <nikdavnik@mail.ru>\n"
 "Language-Team: Armenian Language: hy\n"
@@ -30,16 +30,6 @@ msgstr "Դավիթ Նիկողոսյան"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "nikdavnik@mail.ru"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Նախքան կարգավորումների պահպանումը պետք է հաստատել մուտքը դեպի համակարգ"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Դուք չունեք իրավունք այս կարգավորումները փոխելու համար"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -571,6 +561,13 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Վերջի նիշքերը"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr ""
+#~ "Նախքան կարգավորումների պահպանումը պետք է հաստատել մուտքը դեպի համակարգ"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Դուք չունեք իրավունք այս կարգավորումները փոխելու համար"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

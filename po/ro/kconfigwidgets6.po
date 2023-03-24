@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-06-01 15:14+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -27,16 +27,6 @@ msgstr "Claudiu Costin,Sergiu Bivol,Laurențiu Buzdugan,Cristian Oneț"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ",sergiu@cip.md,lbuz@rolix.org,onet.cristian@gmail.com"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "Vi se va cere să vă autentificați înainte de salvare"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "Nu vi se permite să salvați configurarea"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -530,6 +520,12 @@ msgstr "&Donează"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Deschide &meniul"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "Vi se va cere să vă autentificați înainte de salvare"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "Nu vi se permite să salvați configurarea"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

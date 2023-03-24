@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 02:26+0000\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
 "PO-Revision-Date: 2022-05-31 16:33+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -45,16 +45,6 @@ msgid "Your emails"
 msgstr ""
 "rinsedevries@kde.nl,wbsoft@xs4all.nl,bramschoenmakers@kde.nl,tomalbers@kde."
 "nl,tijmenbaarda@kde.nl,,freekdekruijf@kde.nl"
-
-#: kcmodule.cpp:172
-#, kde-format
-msgid "You will be asked to authenticate before saving"
-msgstr "U zal worden gevraagd zich te authenticeren alvorens op te slaan"
-
-#: kcmodule.cpp:176
-#, kde-format
-msgid "You are not allowed to save the configuration"
-msgstr "U mag de configuratie niet opslaan"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -546,6 +536,12 @@ msgstr "&Doneren"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "&Menu openen"
+
+#~ msgid "You will be asked to authenticate before saving"
+#~ msgstr "U zal worden gevraagd zich te authenticeren alvorens op te slaan"
+
+#~ msgid "You are not allowed to save the configuration"
+#~ msgstr "U mag de configuratie niet opslaan"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"
