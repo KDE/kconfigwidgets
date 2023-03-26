@@ -523,9 +523,3 @@ msgstr "&Gje pengegåve"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Opna &meny"
-
-#~ msgid "You will be asked to authenticate before saving"
-#~ msgstr "Du vert spurd om innloggingsdetaljar før lagringa"
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "Du har ikkje løyve til å lagra oppsettet"
