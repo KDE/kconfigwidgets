@@ -176,7 +176,7 @@ Q_SIGNALS:
 
 private:
     // Internal
-    void clearEntries();
+    KCONFIGWIDGETS_NO_EXPORT void clearEntries();
     // Don't warn about the virtual overload. As the comment of the other
     // addAction() says, addAction( QAction* ) should not be used.
     using KSelectAction::addAction;
