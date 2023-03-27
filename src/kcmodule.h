@@ -335,6 +335,29 @@ public Q_SLOTS:
      */
     void setDefaultsIndicatorsVisible(bool show);
 
+    /**
+     * The returned widget should be used as a parent for widgets you create
+     * In KF6, KCModule is no longer a QWidget, but the embeddable QWidget is exposed using the widget() method
+     * This method exists as porting aid
+     *
+     * @since 5.105
+     */
+    inline QWidget *widget()
+    {
+        return this;
+    }
+
+    /**
+     * In KF6, the changed signal is removed in favor of the needsSave property
+     * This method exists as porting aid
+     *
+     * @since 5.105
+     */
+    inline void setNeedsSave(bool needsSave)
+    {
+        Q_EMIT changed(needsSave);
+    }
+
 protected:
     /**
      * Adds a KCoreConfigskeleton @p config to watch the widget @p widget
