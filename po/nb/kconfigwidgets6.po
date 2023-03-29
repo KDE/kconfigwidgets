@@ -527,9 +527,3 @@ msgstr ""
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr ""
-
-#~ msgid "You will be asked to authenticate before saving"
-#~ msgstr "Du blir bedt om å autentisere deg før lagring"
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "Du har ikke lov til å lagre oppsettet"
