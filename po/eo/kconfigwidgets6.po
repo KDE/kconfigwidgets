@@ -1,4 +1,4 @@
-# translation of kconfigwidgets5.pot to Esperanto
+# translation of kconfigwidgets6.pot to Esperanto
 # Esperantaj mesaĝoj por "kconfigwidgets"
 # Copyright (C) 1998,2002, 2003, 2004, 2005, 2007, 2008 Free Software Foundation, Inc.
 # Wolfram Diestel <wolfram@steloj.de>, 1998.
@@ -13,10 +13,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: kdelibs4\n"
+"Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-24 02:07+0000\n"
-"PO-Revision-Date: 2023-01-05 14:30+0100\n"
+"PO-Revision-Date: 2023-03-29 20:26+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -73,12 +73,10 @@ msgid "Configure"
 msgstr "Agordi"
 
 #: khamburgermenu.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu General purpose menu"
-#| msgid "Menu"
+#, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr "Menuo"
+msgstr "&Menuo"
 
 #: khamburgermenu.cpp:326
 #, kde-format
@@ -531,33 +529,3 @@ msgstr "&Donaci"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Malfe&rmi Menuon"
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "Vi ne estas permesita por konservi la agordojn"
-
-#~ msgctxt "show help"
-#~ msgid "&Help"
-#~ msgstr "&Helpo"
-
-#~ msgid "&Save Settings"
-#~ msgstr "Kon&servi agordojn"
-
-#~ msgctxt "@title:window"
-#~ msgid "Tip of the Day"
-#~ msgstr "Konsilo de la tago"
-
-#~ msgctxt "@title"
-#~ msgid "Did you know...?\n"
-#~ msgstr "Ĉu vi sciis...?\n"
-
-#~ msgctxt "@option:check"
-#~ msgid "&Show tips on startup"
-#~ msgstr "&Montri konsilojn ĉe lanĉo"
-
-#~ msgctxt "@action:button Goes to previous tip"
-#~ msgid "&Previous"
-#~ msgstr "&Antaŭa"
-
-#~ msgctxt "@action:button Goes to next tip, opposite to previous"
-#~ msgid "&Next"
-#~ msgstr "&Sekva"
