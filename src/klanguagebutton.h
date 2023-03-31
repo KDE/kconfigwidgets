@@ -155,8 +155,8 @@ Q_SIGNALS:
     void highlighted(const QString &languageCode);
 
 private Q_SLOTS:
-    void slotTriggered(QAction *action);
-    void slotHovered(QAction *action);
+    KCONFIGWIDGETS_NO_EXPORT void slotTriggered(QAction *action);
+    KCONFIGWIDGETS_NO_EXPORT void slotHovered(QAction *action);
 
 private:
     friend class KLanguageButtonPrivate;
