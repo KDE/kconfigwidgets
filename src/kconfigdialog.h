@@ -242,7 +242,7 @@ private Q_SLOTS:
     /**
      * Slot which cleans up the KConfigDialogManager of the page.
      * */
-    void onPageRemoved(KPageWidgetItem *item);
+    KCONFIGWIDGETS_NO_EXPORT void onPageRemoved(KPageWidgetItem *item);
 
 private:
     friend class KConfigDialogPrivate;
