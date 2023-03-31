@@ -524,9 +524,3 @@ msgstr "&Přispějte"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Otevřít na&bídku"
-
-#~ msgid "You will be asked to authenticate before saving"
-#~ msgstr "Před uložením budete požádáni o ověření"
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "Není vám dovoleno ukládat nastavení"
