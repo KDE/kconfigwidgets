@@ -80,8 +80,8 @@ target_link_libraries(KF5ConfigWidgets
   PUBLIC
     KF5::WidgetsAddons # For K*Action, KPage*, KViewStateSerializer, KAcceleratorManager, K*GuiItem
     KF5::ConfigGui # KStandardAction uses KStandardShortcut
+    KF5::CoreAddons # KCModule uses KAboutData and KPluginMetaData
   PRIVATE
-    KF5::CoreAddons # KCModule uses KAboutData
     KF5::GuiAddons # KColorScheme uses KColorUtils
     KF5::I18n # For action and widget texts
 )

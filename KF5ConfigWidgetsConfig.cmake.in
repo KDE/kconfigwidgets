@@ -7,6 +7,7 @@ endif()
 find_dependency(KF5Codecs "@KF_DEP_VERSION@")
 find_dependency(KF5Config "@KF_DEP_VERSION@")
 find_dependency(KF5WidgetsAddons "@KF_DEP_VERSION@")
+find_dependency(KF5CoreAddons "@KF_DEP_VERSION@")
 
 # Not using 'TARGET Qt6::Core5Compat' as it may be undefined at the
 # time this file is used
@@ -21,7 +22,6 @@ if (NOT @BUILD_SHARED_LIBS@)
         find_dependency(Qt@QT_MAJOR_VERSION@DBus @REQUIRED_QT_VERSION@)
     endif()
 
-    find_dependency(KF5CoreAddons "@KF_DEP_VERSION@")
     find_dependency(KF5GuiAddons "@KF_DEP_VERSION@")
     find_dependency(KF5I18n "@KF_DEP_VERSION@")
 endif()
