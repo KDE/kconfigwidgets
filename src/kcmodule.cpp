@@ -289,6 +289,7 @@ const KAboutData *KCModule::aboutData() const
 }
 #endif
 
+#if KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(5, 106)
 void KCModule::setAboutData(const KAboutData *about)
 {
     if (about != d->_about) {
@@ -296,6 +297,7 @@ void KCModule::setAboutData(const KAboutData *about)
         d->_about = about;
     }
 }
+#endif
 
 void KCModule::setRootOnlyMessage(const QString &message)
 {

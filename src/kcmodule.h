@@ -161,11 +161,17 @@ public:
     virtual const KAboutData *aboutData() const;
 #endif
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 106)
     /**
      * This sets the KAboutData returned by aboutData()
      * The about data is now owned by KCModule.
+     *
+     * @deprecated since 5.106, the about data is only relevant when using setNeedsAuthorization
+     * Since the implicit KAuth integration will be removed in KF6, you should not longer call this method unless strictly needed
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 106, "See API docs")
     void setAboutData(const KAboutData *about);
+#endif
 
     /**
      * Indicate which buttons will be used.
