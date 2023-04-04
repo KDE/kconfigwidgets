@@ -1,6 +1,12 @@
 add_library(KF6ConfigWidgets)
 add_library(KF6::ConfigWidgets ALIAS KF6ConfigWidgets)
 
+set_target_properties(KF6ConfigWidgets PROPERTIES
+    VERSION     ${KCONFIGWIDGETS_VERSION}
+    SOVERSION   ${KCONFIGWIDGETS_SOVERSION}
+    EXPORT_NAME ConfigWidgets
+)
+
 target_sources(KF6ConfigWidgets PRIVATE
   kcodecaction.cpp
   kcolorscheme.cpp
@@ -72,11 +78,6 @@ target_link_libraries(KF6ConfigWidgets
 target_link_libraries(KF6ConfigWidgets
   PRIVATE
   KF6::Codecs # KCodecActions uses KCharsets, KEncodingProber
-)
-
-set_target_properties(KF6ConfigWidgets PROPERTIES VERSION   ${KCONFIGWIDGETS_VERSION}
-                                                  SOVERSION ${KCONFIGWIDGETS_SOVERSION}
-                                                  EXPORT_NAME ConfigWidgets
 )
 
 ecm_generate_headers(KConfigWidgets_HEADERS
