@@ -123,7 +123,7 @@ public:
 
     /**
      * Constructor overload that is compatible with the Qt6 version of the constructor
-     * @since 5.106
+     * @since 5.105
      */
     explicit KCModule(QObject *parent, const KPluginMetaData & /*data*/ = {}, const QVariantList &args = QVariantList())
         : KCModule(qobject_cast<QWidget *>(parent), args)
@@ -356,7 +356,7 @@ public Q_SLOTS:
      * In KF6, KCModule is no longer a QWidget, but the embeddable QWidget is exposed using the widget() method
      * This method exists as porting aid
      *
-     * @since 5.106
+     * @since 5.105
      */
     inline QWidget *widget()
     {
@@ -367,7 +367,7 @@ public Q_SLOTS:
      * In KF6, the changed signal is removed in favor of the needsSave property
      * This method exists as porting aid
      *
-     * @since 5.106
+     * @since 5.105
      */
     inline void setNeedsSave(bool needsSave)
     {
