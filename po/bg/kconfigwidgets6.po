@@ -520,36 +520,3 @@ msgstr "&Дарение"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Отваряне на &меню"
-
-#~ msgid "You will be asked to authenticate before saving"
-#~ msgstr "Ще бъдете запитани за удостоверяване преди запазване"
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "Нямате право да записвате конфигурация"
-
-#~ msgctxt "show help"
-#~ msgid "&Help"
-#~ msgstr "Помо&щ"
-
-#~ msgid "&Save Settings"
-#~ msgstr "&Запис на настройките"
-
-#~ msgctxt "@title:window"
-#~ msgid "Tip of the Day"
-#~ msgstr "Съвет на деня"
-
-#~ msgctxt "@title"
-#~ msgid "Did you know...?\n"
-#~ msgstr "Знаете ли...?\n"
-
-#~ msgctxt "@option:check"
-#~ msgid "&Show tips on startup"
-#~ msgstr "&Показване на съвети при стартиране"
-
-#~ msgctxt "@action:button Goes to previous tip"
-#~ msgid "&Previous"
-#~ msgstr "&Предишен"
-
-#~ msgctxt "@action:button Goes to next tip, opposite to previous"
-#~ msgid "&Next"
-#~ msgstr "&Следващ"
