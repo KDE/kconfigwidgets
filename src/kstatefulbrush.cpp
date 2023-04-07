@@ -52,7 +52,7 @@ KStatefulBrush::KStatefulBrush(const QBrush &brush, KSharedConfigPtr config)
     : KStatefulBrush()
 {
     if (!config) {
-        config = defaultConfig();
+        config = kColorSchemeDefaultConfig();
     }
     d->brushes[QPalette::Active] = brush;
     d->brushes[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush);
@@ -63,7 +63,7 @@ KStatefulBrush::KStatefulBrush(const QBrush &brush, const QBrush &background, KS
     : KStatefulBrush()
 {
     if (!config) {
-        config = defaultConfig();
+        config = kColorSchemeDefaultConfig();
     }
     d->brushes[QPalette::Active] = brush;
     d->brushes[QPalette::Disabled] = StateEffects(QPalette::Disabled, config).brush(brush, background);

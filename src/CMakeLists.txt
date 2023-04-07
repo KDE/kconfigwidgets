@@ -9,7 +9,6 @@ set_target_properties(KF6ConfigWidgets PROPERTIES
 
 target_sources(KF6ConfigWidgets PRIVATE
   kcodecaction.cpp
-  kcolorscheme.cpp
   kcolorschememanager.cpp
   kcolorschememodel.cpp
   kcommandbar.cpp
@@ -27,7 +26,6 @@ target_sources(KF6ConfigWidgets PRIVATE
   kstatefulbrush.cpp
 
   kcodecaction.h
-  kcolorscheme.h
   kcolorschememanager.h
   kcolorschememodel.h
   kcommandbar.h
@@ -84,7 +82,6 @@ target_link_libraries(KF6ConfigWidgets
 ecm_generate_headers(KConfigWidgets_HEADERS
   HEADER_NAMES
   KCodecAction
-  KColorScheme
   KColorSchemeManager
   KColorSchemeModel
   KCommandBar

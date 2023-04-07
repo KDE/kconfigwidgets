@@ -7,7 +7,9 @@
 #ifndef KSTATEFULBRUSH_H
 #define KSTATEFULBRUSH_H
 
-#include "kcolorscheme.h"
+#include "kconfigwidgets_export.h"
+
+#include <KColorScheme>
 
 #include <memory>
 
