@@ -9,14 +9,14 @@
 # Xosé <xosecalvo@gmail.com>, 2010.
 # Marce Villarino <mvillarino@kde-espana.es>, 2011, 2012, 2013, 2014.
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-24 02:07+0000\n"
-"PO-Revision-Date: 2019-10-08 13:56+0200\n"
+"PO-Revision-Date: 2023-05-01 10:10+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.07.70\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -49,22 +49,19 @@ msgid "Autodetect"
 msgstr "Detectar automaticamente"
 
 #: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
-#, fuzzy, kde-format
-#| msgid "Shortcut Schemes"
+#, kde-format
 msgid "Color Scheme"
-msgstr "Esquemas de atallos"
+msgstr "Esquema de cores"
 
 #: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
+#, kde-format
 msgid "Default"
 msgstr "Predeterminada"
 
 #: kcommandbar.cpp:560
 #, kde-format
 msgid "No commands matching the filter"
-msgstr ""
+msgstr "Ningunha orde coincide co filtro."
 
 #: kconfigdialog.cpp:37
 #, kde-format
@@ -73,33 +70,25 @@ msgid "Configure"
 msgstr "Configurar"
 
 #: khamburgermenu.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "keyboard-key-name"
-#| msgid "Menu"
+#, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr "Menú"
+msgstr "&Menú"
 
 #: khamburgermenu.cpp:326
-#, fuzzy, kde-format
-#| msgid "Show all options"
+#, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
-msgstr "Mostrar todas as opcións"
+msgstr "Mostrar a barra de &menú con todas as accións"
 
 #: khamburgermenu.cpp:352
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "@option:check An item in a list of resources that allows to query for "
-#| "more resources to put in the list"
-#| msgid "More..."
+#, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
-msgstr "Máis..."
+msgstr "Máis"
 
 #: khamburgermenu.cpp:353
-#, fuzzy, kde-format
-#| msgid "More Actions"
+#, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
 msgid "More Actions"
@@ -305,10 +294,8 @@ msgid "&Replace..."
 msgstr "&Substituír…"
 
 #: kstandardaction_p.h:55
-#, fuzzy
-#| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
-msgstr "Tamaño &real"
+msgstr "&Ampliar ao tamaño real"
 
 #: kstandardaction_p.h:55
 msgid "View document at its actual size"
@@ -320,7 +307,7 @@ msgstr "&Axustar á páxina"
 
 #: kstandardaction_p.h:56
 msgid "Zoom to fit page in window"
-msgstr "Axustar o tamaño da páxino ao da xanela"
+msgstr "Axustar o tamaño da páxina ao da xanela"
 
 #: kstandardaction_p.h:57
 msgid "Fit to Page &Width"
@@ -356,13 +343,11 @@ msgstr "Escoller nivel de ampliación"
 
 #: kstandardaction_p.h:62
 msgid "&Refresh"
-msgstr ""
+msgstr "&Actualizar"
 
 #: kstandardaction_p.h:62
-#, fuzzy
-#| msgid "Redisplay document"
 msgid "Refresh document"
-msgstr "Redebuxar o documento"
+msgstr "Actualizar o documento"
 
 #: kstandardaction_p.h:64
 msgid "&Up"
@@ -477,10 +462,8 @@ msgid "F&ull Screen Mode"
 msgstr "Modo a pantalla &completa"
 
 #: kstandardaction_p.h:88
-#, fuzzy
-#| msgid "Configure S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts..."
-msgstr "Configurar os &atallos de teclado…"
+msgstr "Confi&gurar os atallos de teclado…"
 
 #: kstandardaction_p.h:89
 #, kde-format
@@ -513,10 +496,8 @@ msgid "&Report Bug..."
 msgstr "Informar dun &fallo…"
 
 #: kstandardaction_p.h:99
-#, fuzzy
-#| msgid "Configure Email..."
 msgid "Configure &Language..."
-msgstr "Configurar o correo..."
+msgstr "Configurar o &idioma…"
 
 #: kstandardaction_p.h:100
 #, kde-format
@@ -544,10 +525,8 @@ msgid "&Donate"
 msgstr "&Doar"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "Open &Recent"
 msgid "Open &Menu"
-msgstr "Abrir un &recente"
+msgstr "Abre o &menú"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Pediráselle que se autentique antes de gardar"
