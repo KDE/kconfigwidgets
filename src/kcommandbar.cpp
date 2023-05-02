@@ -18,8 +18,10 @@
 #include <QPainter>
 #include <QScreen>
 #include <QSortFilterProxyModel>
+#include <QStatusBar>
 #include <QStyledItemDelegate>
 #include <QTextLayout>
+#include <QToolBar>
 #include <QTreeView>
 #include <QVBoxLayout>
 
@@ -27,6 +29,60 @@
 #include <KFuzzyMatcher>
 #include <KLocalizedString>
 #include <KSharedConfig>
+
+static QRect getCommandBarBoundingRect(KCommandBar *commandBar)
+{
+    QWidget *parentWidget = commandBar->parentWidget();
+    Q_ASSERT(parentWidget);
+
+    const QMainWindow *mainWindow = qobject_cast<const QMainWindow *>(parentWidget);
+    if (!mainWindow) {
+        return parentWidget->geometry();
+    }
+
+    QRect boundingRect = mainWindow->contentsRect();
+
+    // exclude the menu bar from the bounding rect
+    if (const QWidget *menuWidget = mainWindow->menuWidget()) {
+        if (!menuWidget->isHidden()) {
+            boundingRect.setTop(boundingRect.top() + menuWidget->height());
+        }
+    }
+
+    // exclude the status bar from the bounding rect
+    if (const QStatusBar *statusBar = mainWindow->findChild<QStatusBar *>()) {
+        if (!statusBar->isHidden()) {
+            boundingRect.setBottom(boundingRect.bottom() - statusBar->height());
+        }
+    }
+
+    // exclude any undocked toolbar from the bounding rect
+    const QList<QToolBar *> toolBars = mainWindow->findChildren<QToolBar *>();
+    for (QToolBar *toolBar : toolBars) {
+        if (toolBar->isHidden() || toolBar->isFloating()) {
+            continue;
+        }
+
+        switch (mainWindow->toolBarArea(toolBar)) {
+        case Qt::TopToolBarArea:
+            boundingRect.setTop(std::max(boundingRect.top(), toolBar->geometry().bottom()));
+            break;
+        case Qt::RightToolBarArea:
+            boundingRect.setRight(std::min(boundingRect.right(), toolBar->geometry().left()));
+            break;
+        case Qt::BottomToolBarArea:
+            boundingRect.setBottom(std::min(boundingRect.bottom(), toolBar->geometry().top()));
+            break;
+        case Qt::LeftToolBarArea:
+            boundingRect.setLeft(std::max(boundingRect.left(), toolBar->geometry().right()));
+            break;
+        default:
+            break;
+        }
+    }
+
+    return boundingRect.translated(mainWindow->geometry().topLeft());
+}
 
 // BEGIN CommandBarFilterModel
 class CommandBarFilterModel final : public QSortFilterProxyModel
@@ -621,26 +677,14 @@ void KCommandBar::setActions(const QList<ActionGroup> &actions)
 
 void KCommandBar::show()
 {
-    QRect parentGeometry;
-    bool isInMainWindow = false;
-    if (const QWidget *parent = parentWidget()) {
-        parentGeometry = parent->geometry();
-        const QMainWindow *window = qobject_cast<const QMainWindow *>(parent);
-        if (window && window->centralWidget()) {
-            parentGeometry.setTop(window->mapToGlobal(window->centralWidget()->pos()).y());
-            parentGeometry.setHeight(window->centralWidget()->height());
-            isInMainWindow = true;
-        }
-    } else {
-        parentGeometry = screen()->availableGeometry();
-    }
+    const QRect boundingRect = getCommandBarBoundingRect(this);
 
     static constexpr int minWidth = 500;
-    const int maxWidth = parentGeometry.width();
+    const int maxWidth = boundingRect.width();
     const int preferredWidth = maxWidth / 2.4;
 
     static constexpr int minHeight = 250;
-    const int maxHeight = parentGeometry.height();
+    const int maxHeight = boundingRect.height();
     const int preferredHeight = maxHeight / 2;
 
     const QSize size{std::min(maxWidth, std::max(preferredWidth, minWidth)), std::min(maxHeight, std::max(preferredHeight, minHeight))};
@@ -648,14 +692,9 @@ void KCommandBar::show()
     // resize() doesn't work here, so use setFixedSize() instead
     setFixedSize(size);
 
-    if (!isInMainWindow && parentWidget()) {
-        const int y = std::max(0, (parentGeometry.height() - size.height()) * 1 / 6);
-        parentGeometry.setTop(y);
-    }
-
     // set the position to the top-center of the parent
     // just below the menubar/toolbar (if any)
-    const QPoint position{parentGeometry.center().x() - size.width() / 2, parentGeometry.y()};
+    const QPoint position{boundingRect.center().x() - size.width() / 2, boundingRect.y()};
 
     popup(position);
 }
