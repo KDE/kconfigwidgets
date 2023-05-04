@@ -1,4 +1,4 @@
-# Translation of kconfigwidgets5 to Northern Sami
+# Translation of kconfigwidgets6 to Northern Sami
 #
 # Børre Gaup <boerre@skolelinux.no>, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
 msgid ""
@@ -522,9 +522,3 @@ msgstr ""
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr ""
-
-#~ msgid "You will be asked to authenticate before saving"
-#~ msgstr "Ovdalgo vurket, de fertet čállit hálddašanbeassansáni"
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "Dus ii leat lohpi vurket heivehusa"
