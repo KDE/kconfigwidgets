@@ -1,0 +1,517 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kconfigwidgets package.
+#
+# Enol P. <enolp@softastur.org>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: kconfigwidgets\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-03-24 02:07+0000\n"
+"PO-Revision-Date: 2023-05-03 23:37+0200\n"
+"Last-Translator: Enol P. <enolp@softastur.org>\n"
+"Language-Team: \n"
+"Language: ast_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.04.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Softastur"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "alministradores@softastur.org"
+
+#: kcodecaction.cpp:62
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr ""
+
+#: kcodecaction.cpp:70
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr ""
+
+#: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
+#, kde-format
+msgid "Color Scheme"
+msgstr ""
+
+#: kcolorschememodel.cpp:71
+#, kde-format
+msgid "Default"
+msgstr ""
+
+#: kcommandbar.cpp:560
+#, kde-format
+msgid "No commands matching the filter"
+msgstr ""
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr ""
+
+#: khamburgermenu.cpp:125
+#, kde-format
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr ""
+
+#: khamburgermenu.cpp:326
+#, kde-format
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr ""
+
+#: khamburgermenu.cpp:352
+#, kde-format
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr ""
+
+#: khamburgermenu.cpp:353
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr ""
+
+#: krecentfilesaction.cpp:71
+#, kde-format
+msgid "No Entries"
+msgstr ""
+
+#: krecentfilesaction.cpp:77
+#, kde-format
+msgid "Clear List"
+msgstr ""
+
+#: kstandardaction.cpp:155
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr ""
+
+#: kstandardaction.cpp:162
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr ""
+
+#: kstandardaction.cpp:169
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr ""
+
+#: kstandardaction.cpp:225
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+
+#: kstandardaction.cpp:246
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr ""
+
+#: kstandardaction_p.h:30
+msgid "Create new document"
+msgstr ""
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr ""
+
+#: kstandardaction_p.h:31
+msgid "Open an existing document"
+msgstr ""
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr ""
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr ""
+
+#: kstandardaction_p.h:33
+msgid "Save document"
+msgstr ""
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr ""
+
+#: kstandardaction_p.h:34
+msgid "Save document under a new name"
+msgstr ""
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr ""
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr ""
+
+#: kstandardaction_p.h:36
+msgid "Close document"
+msgstr ""
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr ""
+
+#: kstandardaction_p.h:37
+msgid "Print document"
+msgstr ""
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr ""
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr ""
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr ""
+
+#: kstandardaction_p.h:39
+msgid "Send document by mail"
+msgstr ""
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr ""
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr ""
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr ""
+
+#: kstandardaction_p.h:42
+msgid "Undo last action"
+msgstr ""
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr ""
+
+#: kstandardaction_p.h:43
+msgid "Redo last undone action"
+msgstr ""
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr ""
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr ""
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: kstandardaction_p.h:46
+msgid "&Paste"
+msgstr ""
+
+#: kstandardaction_p.h:46
+msgid "Paste clipboard content"
+msgstr ""
+
+#: kstandardaction_p.h:47
+msgid "C&lear"
+msgstr ""
+
+#: kstandardaction_p.h:48
+msgid "Select &All"
+msgstr ""
+
+#: kstandardaction_p.h:49
+msgid "Dese&lect"
+msgstr ""
+
+#: kstandardaction_p.h:50
+msgid "&Find..."
+msgstr ""
+
+#: kstandardaction_p.h:51
+msgid "Find &Next"
+msgstr ""
+
+#: kstandardaction_p.h:52
+msgid "Find Pre&vious"
+msgstr ""
+
+#: kstandardaction_p.h:53
+msgid "&Replace..."
+msgstr ""
+
+#: kstandardaction_p.h:55
+msgid "Zoom to &Actual Size"
+msgstr ""
+
+#: kstandardaction_p.h:55
+msgid "View document at its actual size"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "&Fit to Page"
+msgstr ""
+
+#: kstandardaction_p.h:56
+msgid "Zoom to fit page in window"
+msgstr ""
+
+#: kstandardaction_p.h:57
+msgid "Fit to Page &Width"
+msgstr ""
+
+#: kstandardaction_p.h:57
+msgid "Zoom to fit page width in window"
+msgstr ""
+
+#: kstandardaction_p.h:58
+msgid "Fit to Page &Height"
+msgstr ""
+
+#: kstandardaction_p.h:58
+msgid "Zoom to fit page height in window"
+msgstr ""
+
+#: kstandardaction_p.h:59
+msgid "Zoom &In"
+msgstr ""
+
+#: kstandardaction_p.h:60
+msgid "Zoom &Out"
+msgstr ""
+
+#: kstandardaction_p.h:61
+msgid "&Zoom..."
+msgstr ""
+
+#: kstandardaction_p.h:61
+msgid "Select zoom level"
+msgstr ""
+
+#: kstandardaction_p.h:62
+msgid "&Refresh"
+msgstr ""
+
+#: kstandardaction_p.h:62
+msgid "Refresh document"
+msgstr ""
+
+#: kstandardaction_p.h:64
+msgid "&Up"
+msgstr ""
+
+#: kstandardaction_p.h:64
+msgid "Go up"
+msgstr ""
+
+#: kstandardaction_p.h:69
+msgid "&Previous Page"
+msgstr ""
+
+#: kstandardaction_p.h:69
+msgid "Go to previous page"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "&Next Page"
+msgstr ""
+
+#: kstandardaction_p.h:70
+msgid "Go to next page"
+msgstr ""
+
+#: kstandardaction_p.h:71
+msgid "&Go To..."
+msgstr ""
+
+#: kstandardaction_p.h:72
+msgid "&Go to Page..."
+msgstr ""
+
+#: kstandardaction_p.h:73
+msgid "&Go to Line..."
+msgstr ""
+
+#: kstandardaction_p.h:74
+msgid "&First Page"
+msgstr ""
+
+#: kstandardaction_p.h:74
+msgid "Go to first page"
+msgstr ""
+
+#: kstandardaction_p.h:75
+msgid "&Last Page"
+msgstr ""
+
+#: kstandardaction_p.h:75
+msgid "Go to last page"
+msgstr ""
+
+#: kstandardaction_p.h:76
+msgid "&Back"
+msgstr ""
+
+#: kstandardaction_p.h:76
+msgid "Go back in document"
+msgstr ""
+
+#: kstandardaction_p.h:77
+msgid "&Forward"
+msgstr ""
+
+#: kstandardaction_p.h:77
+msgid "Go forward in document"
+msgstr ""
+
+#: kstandardaction_p.h:79
+msgid "&Add Bookmark"
+msgstr ""
+
+#: kstandardaction_p.h:80
+msgid "&Edit Bookmarks..."
+msgstr ""
+
+#: kstandardaction_p.h:82
+msgid "&Spelling..."
+msgstr ""
+
+#: kstandardaction_p.h:82
+msgid "Check spelling in document"
+msgstr ""
+
+#: kstandardaction_p.h:84
+msgid "Show &Menubar"
+msgstr ""
+
+#: kstandardaction_p.h:84
+msgid "Show or hide menubar"
+msgstr ""
+
+#: kstandardaction_p.h:85
+msgid "Show &Toolbar"
+msgstr ""
+
+#: kstandardaction_p.h:85
+msgid "Show or hide toolbar"
+msgstr ""
+
+#: kstandardaction_p.h:86
+msgid "Show St&atusbar"
+msgstr ""
+
+#: kstandardaction_p.h:86
+msgid "Show or hide statusbar"
+msgstr ""
+
+#: kstandardaction_p.h:87
+msgid "F&ull Screen Mode"
+msgstr ""
+
+#: kstandardaction_p.h:88
+msgid "Configure Keyboard S&hortcuts..."
+msgstr ""
+
+#: kstandardaction_p.h:89
+#, kde-format
+msgid "&Configure %1..."
+msgstr ""
+
+#: kstandardaction_p.h:90
+msgid "Configure Tool&bars..."
+msgstr ""
+
+#: kstandardaction_p.h:91
+msgid "Configure &Notifications..."
+msgstr ""
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "%1 &Handbook"
+msgstr ""
+
+#: kstandardaction_p.h:96
+msgid "What's &This?"
+msgstr ""
+
+#: kstandardaction_p.h:97
+msgid "Tip of the &Day"
+msgstr ""
+
+#: kstandardaction_p.h:98
+msgid "&Report Bug..."
+msgstr ""
+
+#: kstandardaction_p.h:99
+msgid "Configure &Language..."
+msgstr ""
+
+#: kstandardaction_p.h:100
+#, kde-format
+msgid "&About %1"
+msgstr ""
+
+#: kstandardaction_p.h:101
+msgid "About &KDE"
+msgstr ""
+
+#: kstandardaction_p.h:102
+msgid "&Delete"
+msgstr ""
+
+#: kstandardaction_p.h:103
+msgid "&Rename..."
+msgstr ""
+
+#: kstandardaction_p.h:104
+msgid "&Move to Trash"
+msgstr ""
+
+#: kstandardaction_p.h:105
+msgid "&Donate"
+msgstr ""
+
+#: kstandardaction_p.h:106
+msgid "Open &Menu"
+msgstr ""
