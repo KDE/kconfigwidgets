@@ -79,46 +79,6 @@ public:
     QModelIndex indexForScheme(const QString &name) const;
 
     /**
-     * Creates a KActionMenu populated with all the available color schemes.
-     * All actions are in an action group and when one of the actions is triggered the scheme
-     * referenced by this action is activated.
-     *
-     * The color scheme with the same name as @p selectedSchemeName will be checked. If none
-     * of the available color schemes has the same name, the system theme entry will be checked.
-     *
-     * The KActionMenu will not be updated in case the installed color schemes change. It's the
-     * task of the user of the KActionMenu to monitor for changes if required.
-     *
-     * @param icon The icon to use for the KActionMenu
-     * @param text The text to use for the KActionMenu
-     * @param selectedSchemeName The name of the color scheme to select
-     * @param parent The parent of the KActionMenu
-     * @return KActionMenu populated with all available color schemes.
-     * @see activateScheme
-     */
-    KActionMenu *createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent);
-    /**
-     * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
-     *
-     * Since 5.67 sets the icon to theme id "preferences-desktop-color", before set a null icon.
-     */
-    KActionMenu *createSchemeSelectionMenu(const QString &text, const QString &selectedSchemeName, QObject *parent);
-    /**
-     * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
-     *
-     * Since 5.67 sets the icon to theme id "preferences-desktop-color" and the text to "Color Scheme", before set a null icon and an empty string.
-     */
-    KActionMenu *createSchemeSelectionMenu(const QString &selectedSchemeName, QObject *parent);
-    /**
-     * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
-     *
-     * Sets the icon to theme id "preferences-desktop-color" and the text to "Color Scheme".
-     * Since 5.93 the selectedSchemeName is set to the value previously saved (if any).
-     * Before that it was set to an empty string.
-     * @since 5.67
-     */
-    KActionMenu *createSchemeSelectionMenu(QObject *parent);
-    /**
      * Saves the color scheme to config file. The scheme is saved by default whenever it's changed.
      * Use this method when autosaving is turned off, see setAutosaveChanges().
      *
@@ -134,6 +94,14 @@ public:
      * @since 5.89
      */
     void setAutosaveChanges(bool autosaveChanges);
+
+    /**
+     * Returns the id of the currently active scheme or an empty string if the default
+     * scheme is active.
+     *
+     * @since 5.107
+     */
+    QString activeSchemeId() const;
 
 public Q_SLOTS:
     /**

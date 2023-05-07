@@ -11,6 +11,7 @@ target_sources(KF6ConfigWidgets PRIVATE
   kcodecaction.cpp
   kcolorscheme.cpp
   kcolorschememanager.cpp
+  kcolorschememenu.cpp
   kcolorschememodel.cpp
   kcommandbar.cpp
   kcommandbarmodel_p.cpp
@@ -86,6 +87,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KCodecAction
   KColorScheme
   KColorSchemeManager
+  KColorSchemeMenu
   KColorSchemeModel
   KCommandBar
   KConfigDialog
