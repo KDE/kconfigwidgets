@@ -78,6 +78,7 @@ public:
      */
     QModelIndex indexForScheme(const QString &name) const;
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(5, 107)
     /**
      * Creates a KActionMenu populated with all the available color schemes.
      * All actions are in an action group and when one of the actions is triggered the scheme
@@ -95,19 +96,29 @@ public:
      * @param parent The parent of the KActionMenu
      * @return KActionMenu populated with all available color schemes.
      * @see activateScheme
+     *
+     * @deprecated since 5.107, use KColorSchemeMenu::createMenu and set the text and icon manually  and check an action of the returned menu
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 107, "Use KColorSchemeMenu::createMenu")
     KActionMenu *createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent);
+
     /**
      * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
      *
      * Since 5.67 sets the icon to theme id "preferences-desktop-color", before set a null icon.
+     *
+     * @deprecated since 5.107, use KColorSchemeMenu::createMenu and set the text and check an action manually
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 107, "Use KColorSchemeMenu::createMenu")
     KActionMenu *createSchemeSelectionMenu(const QString &text, const QString &selectedSchemeName, QObject *parent);
     /**
      * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
      *
      * Since 5.67 sets the icon to theme id "preferences-desktop-color" and the text to "Color Scheme", before set a null icon and an empty string.
+     *
+     * @deprecated since 5.107, use KColorSchemeMenu::createMenu and check an action manually
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 107, "Use KColorSchemeMenu::createMenu")
     KActionMenu *createSchemeSelectionMenu(const QString &selectedSchemeName, QObject *parent);
     /**
      * Overload for createSchemeSelectionMenu(const QIcon &icon, const QString &text, const QString &selectedSchemeName, QObject *parent).
@@ -116,8 +127,12 @@ public:
      * Since 5.93 the selectedSchemeName is set to the value previously saved (if any).
      * Before that it was set to an empty string.
      * @since 5.67
+     * @deprecated since 5.107, use KColorSchemeMenu::createMenu
      */
+    KCONFIGWIDGETS_DEPRECATED_VERSION(5, 107, "Use KColorSchemeMenu::createMenu")
     KActionMenu *createSchemeSelectionMenu(QObject *parent);
+#endif
+
     /**
      * Saves the color scheme to config file. The scheme is saved by default whenever it's changed.
      * Use this method when autosaving is turned off, see setAutosaveChanges().
@@ -134,6 +149,14 @@ public:
      * @since 5.89
      */
     void setAutosaveChanges(bool autosaveChanges);
+
+    /**
+     * Returns the id of the currently active scheme or an empty string if the default
+     * scheme is active.
+     *
+     * @since 5.107
+     */
+    QString activeSchemeId() const;
 
 public Q_SLOTS:
     /**

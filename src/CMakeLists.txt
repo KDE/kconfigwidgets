@@ -5,6 +5,7 @@ target_sources(KF5ConfigWidgets PRIVATE
   kcodecaction.cpp
   kcolorscheme.cpp
   kcolorschememanager.cpp
+  kcolorschememenu.cpp
   kcolorschememodel.cpp
   kcommandbar.cpp
   kcommandbarmodel_p.cpp
@@ -25,7 +26,7 @@ target_sources(KF5ConfigWidgets PRIVATE
   kcodecaction.h
   kcolorscheme.h
   kcolorschememanager.h
-  kcolorschememodel.h
+  kcolorschememenu.cpp
   kcommandbar.h
   kcommandbarmodel_p.h
   kconfigdialog.h
@@ -69,7 +70,7 @@ ecm_generate_export_header(KF5ConfigWidgets
     GROUP_BASE_NAME KF
     VERSION ${KF_VERSION}
     DEPRECATED_BASE_VERSION 0
-    DEPRECATION_VERSIONS 4.0 5.0 5.23 5.32 5.38 5.39 5.64 5.78 5.80 5.82 5.83 5.84 5.85 5.90 5.93 5.102 5.103 5.106
+    DEPRECATION_VERSIONS 4.0 5.0 5.23 5.32 5.38 5.39 5.64 5.78 5.80 5.82 5.83 5.84 5.85 5.90 5.93 5.102 5.103 5.106 5.107
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
     CUSTOM_CONTENT_FROM_VARIABLE define_with_kauth_code
 )
@@ -125,6 +126,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KCodecAction
   KColorScheme
   KColorSchemeManager
+  KcolorSchemeMenu
   KColorSchemeModel
   KCommandBar
   KConfigDialog

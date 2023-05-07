@@ -21,7 +21,7 @@ public:
 
     std::unique_ptr<KColorSchemeModel> model;
     bool m_autosaveChanges = true;
-    bool m_defaultSchemeSelected = true;
+    QString m_activatedScheme;
 
     static QIcon createPreview(const QString &path);
     void activateSchemeInternal(const QString &colorSchemePath);

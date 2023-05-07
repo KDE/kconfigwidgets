@@ -7,6 +7,7 @@
 
 #include <KActionMenu>
 #include <kcolorschememanager.h>
+#include <kcolorschememenu.h>
 
 #include <QApplication>
 #include <QDialog>
@@ -37,7 +38,7 @@ public:
 
         QToolButton *button = new QToolButton(box);
         button->setIcon(QIcon::fromTheme(QStringLiteral("fill-color")));
-        button->setMenu(manager->createSchemeSelectionMenu(QStringLiteral("Oxygen"), button)->menu());
+        button->setMenu(KColorSchemeMenu::createMenu(manager, button)->menu());
         box->addButton(button, QDialogButtonBox::InvalidRole);
 
         QWidget *w = new QWidget();
@@ -48,7 +49,7 @@ public:
         setCentralWidget(w);
 
         QMenu *menu = new QMenu("Menu", this);
-        menu->addAction(manager->createSchemeSelectionMenu(this));
+        menu->addAction(KColorSchemeMenu::createMenu(manager, this));
         menuBar()->addMenu(menu);
     }
     ~KColorSchemeDemo() override
