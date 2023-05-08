@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 00:42+0000\n"
+"POT-Creation-Date: 2023-05-08 00:42+0000\n"
 "PO-Revision-Date: 2023-02-17 01:22+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -49,7 +49,7 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Avtomatik təyin etmə"
 
-#: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
+#: kcolorschememenu.cpp:25
 #, kde-format
 msgid "Color Scheme"
 msgstr "Rəng Seçimi"

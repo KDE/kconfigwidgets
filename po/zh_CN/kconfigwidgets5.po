@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 00:42+0000\n"
+"POT-Creation-Date: 2023-05-08 00:42+0000\n"
 "PO-Revision-Date: 2023-04-29 08:33\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -51,7 +51,7 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "自动检测"
 
-#: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
+#: kcolorschememenu.cpp:25
 #, kde-format
 msgid "Color Scheme"
 msgstr "配色方案"
