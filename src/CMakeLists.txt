@@ -9,10 +9,7 @@ set_target_properties(KF6ConfigWidgets PROPERTIES
 
 target_sources(KF6ConfigWidgets PRIVATE
   kcodecaction.cpp
-  kcolorscheme.cpp
-  kcolorschememanager.cpp
   kcolorschememenu.cpp
-  kcolorschememodel.cpp
   kcommandbar.cpp
   kcommandbarmodel_p.cpp
   kconfigdialog.cpp
@@ -25,12 +22,8 @@ target_sources(KF6ConfigWidgets PRIVATE
   klanguagename.cpp
   krecentfilesaction.cpp
   kstandardaction.cpp
-  kstatefulbrush.cpp
 
   kcodecaction.h
-  kcolorscheme.h
-  kcolorschememanager.h
-  kcolorschememodel.h
   kcommandbar.h
   kcommandbarmodel_p.h
   kconfigdialog.h
@@ -43,7 +36,6 @@ target_sources(KF6ConfigWidgets PRIVATE
   klanguagename.h
   krecentfilesaction.h
   kstandardaction.h
-  kstatefulbrush.h
 )
 
 ecm_qt_declare_logging_category(KF6ConfigWidgets
@@ -71,6 +63,7 @@ target_link_libraries(KF6ConfigWidgets
   PUBLIC
     KF6::WidgetsAddons # For K*Action, KPage*, KViewStateSerializer, KAcceleratorManager, K*GuiItem
     KF6::ConfigGui # KStandardAction uses KStandardShortcut
+    KF6::ColorScheme
   PRIVATE
     KF6::CoreAddons # KAboutData, KFuzzymatcher
     KF6::GuiAddons # KColorScheme uses KColorUtils
@@ -85,10 +78,7 @@ target_link_libraries(KF6ConfigWidgets
 ecm_generate_headers(KConfigWidgets_HEADERS
   HEADER_NAMES
   KCodecAction
-  KColorScheme
-  KColorSchemeManager
   KColorSchemeMenu
-  KColorSchemeModel
   KCommandBar
   KConfigDialog
   KConfigViewStateSaver
@@ -98,7 +88,6 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KLanguageButton
   KLanguageName
   KRecentFilesAction
-  KStatefulBrush
   KViewStateMaintainer
   KStandardAction
 

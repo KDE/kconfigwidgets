@@ -7,10 +7,9 @@
 
 #include "kcolorschememenu.h"
 
-#include "kcolorschememanager.h"
-#include "kcolorschememodel.h"
-
 #include <KActionMenu>
+#include <KColorSchemeManager>
+#include <KColorSchemeModel>
 #include <KLocalizedString>
 
 #include <QActionGroup>

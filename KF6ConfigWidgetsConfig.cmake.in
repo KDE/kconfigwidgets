@@ -4,6 +4,7 @@ include(CMakeFindDependencyMacro)
 find_dependency(KF6Codecs "@KF_DEP_VERSION@")
 find_dependency(KF6Config "@KF_DEP_VERSION@")
 find_dependency(KF6WidgetsAddons "@KF_DEP_VERSION@")
+find_dependency(KF6ColorScheme "@KF_DEP_VERSION@")
 
 if (NOT @BUILD_SHARED_LIBS@)
     find_dependency(Qt6Widgets @REQUIRED_QT_VERSION@)

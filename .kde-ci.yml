@@ -8,6 +8,7 @@ Dependencies:
     'frameworks/kguiaddons' : '@same'
     'frameworks/ki18n' : '@same'
     'frameworks/kwidgetsaddons' : '@same'
+    'frameworks/kcolorscheme' : '@same'
 
 Options:
   test-before-installing: True
