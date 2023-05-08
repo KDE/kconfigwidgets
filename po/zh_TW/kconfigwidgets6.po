@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-24 02:07+0000\n"
+"POT-Creation-Date: 2023-05-08 02:07+0000\n"
 "PO-Revision-Date: 2022-07-23 10:38+0800\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -51,7 +51,7 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "自動偵測"
 
-#: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
+#: kcolorschememenu.cpp:25
 #, kde-format
 msgid "Color Scheme"
 msgstr "配色"

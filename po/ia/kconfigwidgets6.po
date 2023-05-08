@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-24 02:07+0000\n"
+"POT-Creation-Date: 2023-05-08 02:07+0000\n"
 "PO-Revision-Date: 2022-07-14 22:59+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -39,7 +39,7 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Auto relevate"
 
-#: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
+#: kcolorschememenu.cpp:25
 #, kde-format
 msgid "Color Scheme"
 msgstr "Schema de color"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-24 02:07+0000\n"
+"POT-Creation-Date: 2023-05-08 02:07+0000\n"
 "PO-Revision-Date: 2009-02-12 23:29-0600\n"
 "Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
 "Language-Team: Qırımtatarca (Qırım Türkçesi)\n"
@@ -41,7 +41,7 @@ msgid "Autodetect"
 msgstr "Avto-tanıma"
 
 # tüklü
-#: kcolorschememanager.cpp:229 kcolorschememanager.cpp:238
+#: kcolorschememenu.cpp:25
 #, fuzzy, kde-format
 #| msgid "Shortcut Schemes"
 msgid "Color Scheme"
