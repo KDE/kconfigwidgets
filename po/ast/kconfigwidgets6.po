@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-08 02:07+0000\n"
-"PO-Revision-Date: 2023-05-03 23:37+0200\n"
+"PO-Revision-Date: 2023-05-09 01:00+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -64,7 +64,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr ""
+msgstr "&Menú"
 
 #: khamburgermenu.cpp:326
 #, kde-format
@@ -76,14 +76,14 @@ msgstr ""
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
-msgstr ""
+msgstr "Más"
 
 #: khamburgermenu.cpp:353
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
 msgid "More Actions"
-msgstr ""
+msgstr "Más aiciones"
 
 #: krecentfilesaction.cpp:71
 #, kde-format
@@ -477,7 +477,7 @@ msgstr ""
 
 #: kstandardaction_p.h:97
 msgid "Tip of the &Day"
-msgstr ""
+msgstr "Conseyu del &día"
 
 #: kstandardaction_p.h:98
 msgid "&Report Bug..."
@@ -510,7 +510,7 @@ msgstr ""
 
 #: kstandardaction_p.h:105
 msgid "&Donate"
-msgstr ""
+msgstr "&Donar"
 
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
