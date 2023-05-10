@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kde4libs\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2012-01-19 00:20-0500\n"
 "Last-Translator: Agron Selimaj <as9902613@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -38,18 +38,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Zbulim automatik"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
 msgid "Color Scheme"
 msgstr "Shkurtore"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
-msgid "Default"
-msgstr "I Parazgjedhur"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -592,6 +585,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Hap të &deritanishëm"
+
+#, fuzzy
+#~| msgctxt "Encodings menu"
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "I Parazgjedhur"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"

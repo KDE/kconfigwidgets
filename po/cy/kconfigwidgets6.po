@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2005-01-28 17:54+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg\n"
@@ -54,17 +54,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Hunan-gywiro"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
 msgid "Color Scheme"
 msgstr "Byrlwybrau"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgid "Default"
-msgid "Default"
-msgstr "Rhagosodol"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -611,6 +605,11 @@ msgstr "&Wedi'i orffen"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Agor &Diweddar"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "Rhagosodol"
 
 #, fuzzy
 #~| msgid "Could not create the new configuration file."

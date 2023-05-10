@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2023-01-08 20:43+0000\n"
 "Last-Translator: gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -55,15 +55,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Greina sjálfvirkt"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Litastef"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Sjálfgefið"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -535,6 +530,9 @@ msgstr "&Styrkja"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Opna &Valmynd"
+
+#~ msgid "Default"
+#~ msgstr "Sjálfgefið"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Beðið verður um auðkenni þitt fyrir vistun"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2023-02-17 01:22+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -39,15 +39,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Avtomatik təyin etmə"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Rəng Seçimi"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "İlkin göstərici"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -519,6 +514,9 @@ msgstr "&Maddi Dəstək"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "&Menyunu açın"
+
+#~ msgid "Default"
+#~ msgstr "İlkin göstərici"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Saxlamadan oncə parolu daxil etməniz tələb edilir"

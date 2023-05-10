@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-08-07 08:57+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -45,15 +45,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Автовиявлення"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Схема кольорів"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Типовий"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -525,6 +520,9 @@ msgstr "Підтримати &фінансово"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Відкрити &меню"
+
+#~ msgid "Default"
+#~ msgstr "Типовий"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Програма попросить вас пройти розпізнавання перед збереженням"

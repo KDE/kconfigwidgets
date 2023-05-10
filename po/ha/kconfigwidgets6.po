@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2009-03-17 11:22+0100\n"
 "Last-Translator: Adriaan de Groot <groot@kde.org>\n"
 "Language-Team: Hausa <kde-i18n-doc@lists.kde.org>\n"
@@ -40,14 +40,9 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr ""
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
-msgstr ""
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
 msgstr ""
 
 #: kcommandbar.cpp:560

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4-1.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2007-10-15 22:19+0200\n"
 "Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
 "Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
@@ -41,17 +41,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Reizhañ ent emgefreek"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
 msgid "Color Scheme"
 msgstr "Berradennoù"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgid "Default"
-msgid "Default"
-msgstr "Dre ziouer"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -600,6 +594,11 @@ msgstr "&Graet"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Digeriñ &nevezig"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "Dre ziouer"
 
 #, fuzzy
 #~| msgid "Could not create the new configuration file."

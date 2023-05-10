@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-06-01 07:47+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -56,15 +56,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Samodejna zaznava"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Sheme barv"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Privzeto"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -536,6 +531,9 @@ msgstr "&Donacija"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Odpri meni"
+
+#~ msgid "Default"
+#~ msgstr "Privzeto"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Preden shranite, se boste morali overiti"

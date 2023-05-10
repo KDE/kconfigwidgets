@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-06-19 14:35+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -41,15 +41,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Автоматично откриване"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Цветова схема"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "По подразбиране"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -520,3 +515,6 @@ msgstr "&Дарение"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Отваряне на &меню"
+
+#~ msgid "Default"
+#~ msgstr "По подразбиране"

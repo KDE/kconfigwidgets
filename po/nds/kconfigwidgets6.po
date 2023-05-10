@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2014-03-11 23:48+0100\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -41,18 +41,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Automaatsch"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcut Schemes"
 msgid "Color Scheme"
 msgstr "Tastkombinatschoon-Schemas"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
-msgid "Default"
-msgstr "Standard"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -545,6 +538,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Verleden opmaken"
+
+#, fuzzy
+#~| msgctxt "Encodings menu"
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "Standard"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Dien Verlöven warrt vör't Sekern pröövt"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2013-03-29 16:14+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -45,18 +45,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "स्वशोध"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcut Schemes"
 msgid "Color Scheme"
 msgstr "शॉर्टकट सुत्रयोजना"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
-msgid "Default"
-msgstr "मूलभूत"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -549,6 +542,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "अलिकडील उघडा (&R)"
+
+#, fuzzy
+#~| msgctxt "Encodings menu"
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "मूलभूत"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "बदल कायम करण्याकरिता तुमची परवानगी घेण्यात येइल"

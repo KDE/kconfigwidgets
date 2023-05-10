@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-01-31 09:51+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -39,15 +39,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Automatikus felismerés"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Színséma"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Alapértelmezés"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -519,6 +514,9 @@ msgstr "&Támogatás"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "&Menü megnyitása"
+
+#~ msgid "Default"
+#~ msgstr "Alapértelmezés"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Mentés előtt felhasználóazonosítás történik"

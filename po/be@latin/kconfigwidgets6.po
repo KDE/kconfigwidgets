@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-08-29 09:17\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -51,15 +51,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Aŭtamatyčnaje vyznačennie"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Kolieravaja schiema"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Pradvyznačana"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -532,6 +527,9 @@ msgstr "&Achviaravać"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Adkryć &mieniu"
+
+#~ msgid "Default"
+#~ msgstr "Pradvyznačana"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Pierad zachavanniem vam budzie prapanavana vykanać aŭtentyfikacyju"

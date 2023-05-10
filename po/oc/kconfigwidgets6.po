@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2008-08-06 00:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -41,17 +41,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Deteccion automatica"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
 msgid "Color Scheme"
 msgstr "Acorchis"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgid "Default"
-msgid "Default"
-msgstr "Defaut"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -624,6 +618,11 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Dobert(s) &Recentament"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "Defaut"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"

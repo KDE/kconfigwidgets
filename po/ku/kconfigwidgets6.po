@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2010-08-13 15:45+0200\n"
 "Last-Translator: Erdal Ronahî <erdal.ronahi@nospam.gmail.com>\n"
 "Language-Team: Kurdish Team http://pckurd.net\n"
@@ -48,18 +48,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Xweber bibîne"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcut Schemes"
 msgid "Color Scheme"
 msgstr "Şemayên Kurterê"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
-msgid "Default"
-msgstr "Standard"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -607,6 +600,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Ya herî dawî hatiye bikaranîn veke"
+
+#, fuzzy
+#~| msgctxt "Encodings menu"
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "Standard"
 
 #~ msgid "You are not allowed to save the configuration"
 #~ msgstr "Tu nikarî veavakirinan tomar bikî"

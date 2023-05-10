@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2013-11-08 01:24+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -47,18 +47,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Автобайқау"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcut Schemes"
 msgid "Color Scheme"
 msgstr "Тіркесім сұлбалары"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
-msgid "Default"
-msgstr "Әдетті"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -551,6 +544,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Жуырда ашылған"
+
+#, fuzzy
+#~| msgctxt "Encodings menu"
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "Әдетті"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Сақтау алдында аутентификациядан өту керек"

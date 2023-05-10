@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2023-04-16 12:22+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -51,15 +51,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Aŭtomate trovi"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Kolorskemo"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Defaŭlta"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -529,3 +524,6 @@ msgstr "&Donaci"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Malfe&rmi Menuon"
+
+#~ msgid "Default"
+#~ msgstr "Defaŭlta"

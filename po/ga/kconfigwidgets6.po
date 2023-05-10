@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2004-12-14 09:11-0600\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -42,18 +42,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Braith go hUathoibríoch"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcut Schemes"
 msgid "Color Scheme"
 msgstr "Scéimeanna Aicearraí"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
-msgid "Default"
-msgstr "Réamhshocrú"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -551,6 +544,12 @@ msgstr "&Críochnaithe"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Oscail &Rudaí Deireanacha"
+
+#, fuzzy
+#~| msgctxt "Encodings menu"
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "Réamhshocrú"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Caithfidh tú fíordheimhniú a dhéanamh roimh shábháil"

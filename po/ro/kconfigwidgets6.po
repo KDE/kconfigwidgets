@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-06-01 15:14+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -40,15 +40,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Detectare automată"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Schemă de culori"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Implicit"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -520,6 +515,9 @@ msgstr "&Donează"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Deschide &meniul"
+
+#~ msgid "Default"
+#~ msgstr "Implicit"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Vi se va cere să vă autentificați înainte de salvare"

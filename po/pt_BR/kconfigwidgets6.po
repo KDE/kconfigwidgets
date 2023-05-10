@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-06-22 16:15-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -54,15 +54,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Detectar automaticamente"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Esquema de cores"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Padrão"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -534,6 +529,9 @@ msgstr "&Doar"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Abrir &menu"
+
+#~ msgid "Default"
+#~ msgstr "Padrão"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Será solicitada a sua autenticação antes de salvar"

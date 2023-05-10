@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
-"PO-Revision-Date: 2023-05-09 01:00+0200\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
+"PO-Revision-Date: 2023-05-09 22:13+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -39,14 +39,9 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr ""
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
-msgstr ""
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
 msgstr ""
 
 #: kcommandbar.cpp:560
@@ -111,7 +106,7 @@ msgstr ""
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
-msgstr ""
+msgstr "&Aniciu"
 
 #: kstandardaction.cpp:225
 #, kde-format
@@ -131,15 +126,15 @@ msgstr ""
 
 #: kstandardaction_p.h:30
 msgid "Create new document"
-msgstr ""
+msgstr "Crea un documentu"
 
 #: kstandardaction_p.h:31
 msgid "&Open..."
-msgstr ""
+msgstr "&Abrir…"
 
 #: kstandardaction_p.h:31
 msgid "Open an existing document"
-msgstr ""
+msgstr "Abre un documentu esistente"
 
 #: kstandardaction_p.h:32
 msgid "Open &Recent"
@@ -147,19 +142,19 @@ msgstr ""
 
 #: kstandardaction_p.h:32
 msgid "Open a document which was recently opened"
-msgstr ""
+msgstr "Abre un documentu que s'abriere apocayá"
 
 #: kstandardaction_p.h:33
 msgid "&Save"
-msgstr ""
+msgstr "&Guardar"
 
 #: kstandardaction_p.h:33
 msgid "Save document"
-msgstr ""
+msgstr "Guarda'l documentu"
 
 #: kstandardaction_p.h:34
 msgid "Save &As..."
-msgstr ""
+msgstr "Guardar &como…"
 
 #: kstandardaction_p.h:34
 msgid "Save document under a new name"
@@ -175,19 +170,19 @@ msgstr ""
 
 #: kstandardaction_p.h:36
 msgid "&Close"
-msgstr ""
+msgstr "&Zarrar"
 
 #: kstandardaction_p.h:36
 msgid "Close document"
-msgstr ""
+msgstr "Zarra'l documentu"
 
 #: kstandardaction_p.h:37
 msgid "&Print..."
-msgstr ""
+msgstr "&Imprentar…"
 
 #: kstandardaction_p.h:37
 msgid "Print document"
-msgstr ""
+msgstr "Imprenta'l documentu"
 
 #: kstandardaction_p.h:38
 msgid "Print Previe&w"
@@ -203,35 +198,35 @@ msgstr ""
 
 #: kstandardaction_p.h:39
 msgid "Send document by mail"
-msgstr ""
+msgstr "Unvia'l documentu per corréu electrónicu"
 
 #: kstandardaction_p.h:40
 msgid "&Quit"
-msgstr ""
+msgstr "&Colar"
 
 #: kstandardaction_p.h:40
 msgid "Quit application"
-msgstr ""
+msgstr "Cola de l'aplicación"
 
 #: kstandardaction_p.h:42
 msgid "&Undo"
-msgstr ""
+msgstr "&Desfacer"
 
 #: kstandardaction_p.h:42
 msgid "Undo last action"
-msgstr ""
+msgstr "Desfai la última aición"
 
 #: kstandardaction_p.h:43
 msgid "Re&do"
-msgstr ""
+msgstr "&Refacer"
 
 #: kstandardaction_p.h:43
 msgid "Redo last undone action"
-msgstr ""
+msgstr "Vuelve facer la última aición"
 
 #: kstandardaction_p.h:44
 msgid "Cu&t"
-msgstr ""
+msgstr "Cor&tar"
 
 #: kstandardaction_p.h:44
 msgid "Cut selection to clipboard"
@@ -239,7 +234,7 @@ msgstr ""
 
 #: kstandardaction_p.h:45
 msgid "&Copy"
-msgstr ""
+msgstr "&Copiar"
 
 #: kstandardaction_p.h:45
 msgid "Copy selection to clipboard"
@@ -247,7 +242,7 @@ msgstr ""
 
 #: kstandardaction_p.h:46
 msgid "&Paste"
-msgstr ""
+msgstr "A&pegar"
 
 #: kstandardaction_p.h:46
 msgid "Paste clipboard content"
@@ -259,23 +254,23 @@ msgstr ""
 
 #: kstandardaction_p.h:48
 msgid "Select &All"
-msgstr ""
+msgstr "Seleicionar &too"
 
 #: kstandardaction_p.h:49
 msgid "Dese&lect"
-msgstr ""
+msgstr "Dese&leicionar"
 
 #: kstandardaction_p.h:50
 msgid "&Find..."
-msgstr ""
+msgstr "A&topar…"
 
 #: kstandardaction_p.h:51
 msgid "Find &Next"
-msgstr ""
+msgstr "Atopar lo si&guiente"
 
 #: kstandardaction_p.h:52
 msgid "Find Pre&vious"
-msgstr ""
+msgstr "Atopar lo ante&rior"
 
 #: kstandardaction_p.h:53
 msgid "&Replace..."
@@ -315,15 +310,15 @@ msgstr ""
 
 #: kstandardaction_p.h:59
 msgid "Zoom &In"
-msgstr ""
+msgstr "A&verar"
 
 #: kstandardaction_p.h:60
 msgid "Zoom &Out"
-msgstr ""
+msgstr "A&lloñar"
 
 #: kstandardaction_p.h:61
 msgid "&Zoom..."
-msgstr ""
+msgstr "&Zoom…"
 
 #: kstandardaction_p.h:61
 msgid "Select zoom level"
@@ -331,7 +326,7 @@ msgstr ""
 
 #: kstandardaction_p.h:62
 msgid "&Refresh"
-msgstr ""
+msgstr "&Anovar"
 
 #: kstandardaction_p.h:62
 msgid "Refresh document"
@@ -347,7 +342,7 @@ msgstr ""
 
 #: kstandardaction_p.h:69
 msgid "&Previous Page"
-msgstr ""
+msgstr "Páxina &anterior"
 
 #: kstandardaction_p.h:69
 msgid "Go to previous page"
@@ -355,7 +350,7 @@ msgstr ""
 
 #: kstandardaction_p.h:70
 msgid "&Next Page"
-msgstr ""
+msgstr "Páxina &siguiente"
 
 #: kstandardaction_p.h:70
 msgid "Go to next page"
@@ -375,7 +370,7 @@ msgstr ""
 
 #: kstandardaction_p.h:74
 msgid "&First Page"
-msgstr ""
+msgstr "&Primer páxina"
 
 #: kstandardaction_p.h:74
 msgid "Go to first page"
@@ -383,7 +378,7 @@ msgstr ""
 
 #: kstandardaction_p.h:75
 msgid "&Last Page"
-msgstr ""
+msgstr "&Última páxina"
 
 #: kstandardaction_p.h:75
 msgid "Go to last page"
@@ -391,7 +386,7 @@ msgstr ""
 
 #: kstandardaction_p.h:76
 msgid "&Back"
-msgstr ""
+msgstr "&Atrás"
 
 #: kstandardaction_p.h:76
 msgid "Go back in document"
@@ -451,7 +446,7 @@ msgstr ""
 
 #: kstandardaction_p.h:88
 msgid "Configure Keyboard S&hortcuts..."
-msgstr ""
+msgstr "Configurar los ata&yos del tecláu…"
 
 #: kstandardaction_p.h:89
 #, kde-format
@@ -469,7 +464,7 @@ msgstr ""
 #: kstandardaction_p.h:95
 #, kde-format
 msgid "%1 &Handbook"
-msgstr ""
+msgstr "&Manual de: %1"
 
 #: kstandardaction_p.h:96
 msgid "What's &This?"
@@ -485,20 +480,20 @@ msgstr ""
 
 #: kstandardaction_p.h:99
 msgid "Configure &Language..."
-msgstr ""
+msgstr "Configurar la &llingua…"
 
 #: kstandardaction_p.h:100
 #, kde-format
 msgid "&About %1"
-msgstr ""
+msgstr "&Tocante a «%1»"
 
 #: kstandardaction_p.h:101
 msgid "About &KDE"
-msgstr ""
+msgstr "Tocante a &KDE"
 
 #: kstandardaction_p.h:102
 msgid "&Delete"
-msgstr ""
+msgstr "&Desaniciar"
 
 #: kstandardaction_p.h:103
 msgid "&Rename..."
@@ -506,7 +501,7 @@ msgstr ""
 
 #: kstandardaction_p.h:104
 msgid "&Move to Trash"
-msgstr ""
+msgstr "&Tirar a la papelera"
 
 #: kstandardaction_p.h:105
 msgid "&Donate"
@@ -514,4 +509,4 @@ msgstr "&Donar"
 
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
-msgstr ""
+msgstr "Abrir el &menú"

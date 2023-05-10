@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-12-12 19:42+0200\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -50,15 +50,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Automatiškai aptikti"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Spalvų rinkinys"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Numatytasis"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -530,6 +525,9 @@ msgstr "Pa&remti"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Atverti &meniu"
+
+#~ msgid "Default"
+#~ msgstr "Numatytasis"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Prieš įrašant, jūsų bus paprašyta nustatyti savo tapatybę"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2023-01-05 11:44+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -53,15 +53,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Αυτόματη ανίχνευση"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Σχήμα χρώματος"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Προκαθορισμένο"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -534,6 +529,9 @@ msgstr "&Δωρεά"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Άνοιγμα &μενού"
+
+#~ msgid "Default"
+#~ msgstr "Προκαθορισμένο"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Θα σας ζητηθεί ταυτοποίηση πριν την αποθήκευση"

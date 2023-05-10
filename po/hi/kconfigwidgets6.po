@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2021-08-21 16:25+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -43,15 +43,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "अपने आप पता लगाएँ"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "रंग योजना"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "पूर्वन्यस्त"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -529,6 +524,9 @@ msgstr "दान करें (&D)"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "मेन्यू खोलें (&M)"
+
+#~ msgid "Default"
+#~ msgstr "पूर्वन्यस्त"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "आपको सहेजने से पहले प्रमाणित करने के लिए कहा जाएगा"

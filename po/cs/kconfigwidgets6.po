@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-06-27 16:04+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -44,15 +44,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Automatická detekce"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Barevné schéma"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Výchozí"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -524,3 +519,6 @@ msgstr "&Přispějte"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Otevřít na&bídku"
+
+#~ msgid "Default"
+#~ msgstr "Výchozí"

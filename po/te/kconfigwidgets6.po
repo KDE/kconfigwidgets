@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2013-11-04 23:55+0630\n"
 "Last-Translator: Bhuvan Krishna <bhuvan@swecha.org>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -48,18 +48,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "దానంతటదే కనిపెట్టు"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcut Schemes"
 msgid "Color Scheme"
 msgstr "శీఘ్ర మార్గాల స్కీములు"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
-msgid "Default"
-msgstr "అప్రమేయం"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -552,6 +545,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "(&R) ఇటీవలివి తెరువండి"
+
+#, fuzzy
+#~| msgctxt "Encodings menu"
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "అప్రమేయం"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "మీరు దీనిని నిక్షిప్తం చేయు ముందు నిజపరుచుటకు అడుగుము"

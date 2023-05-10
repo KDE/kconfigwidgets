@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-07-26 16:36+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -46,15 +46,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Auto-detektatu"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Kolore-antolaera"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Lehenetsia"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -525,6 +520,9 @@ msgstr "Egin &dohaintza"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Ireki &Menua"
+
+#~ msgid "Default"
+#~ msgstr "Lehenetsia"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Gorde baino lehen autentikatzeko eskatuko zaizu"

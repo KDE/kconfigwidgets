@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2019-09-15 21:27+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -43,17 +43,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Худмуайянкунии"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr ""
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
-msgid "Default"
-msgstr "Стандартӣ"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -536,6 +529,12 @@ msgstr "&Дастгирии молӣ"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Кушодани маводи охирин"
+
+#, fuzzy
+#~| msgctxt "Encodings menu"
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "Стандартӣ"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Пеш аз нигоҳдорӣ ба шумо санҷиши ҳаққоният пешниҳод карда мешавад"

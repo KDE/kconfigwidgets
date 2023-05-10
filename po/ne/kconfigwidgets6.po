@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -45,17 +45,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "स्वत:पत्ता लगाउनुहोस्"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
 msgid "Color Scheme"
 msgstr "सर्टकट"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgid "Default"
-msgid "Default"
-msgstr "पूर्वनिर्धारित"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -603,6 +597,11 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "हालैको खोल्नुहोस्"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "पूर्वनिर्धारित"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-10-19 22:37+0200\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -43,15 +43,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Automaatne tuvastamine"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Värviskeem"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Vaikimisi"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -521,6 +516,9 @@ msgstr "A&nneta"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Ava &menüü"
+
+#~ msgid "Default"
+#~ msgstr "Vaikimisi"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Sul palutakse enne salvestamist autentida"

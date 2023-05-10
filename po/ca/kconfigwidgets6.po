@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-07-08 15:45+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -47,15 +47,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Detecta automàticament"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Esquema de color"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Predeterminat"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -528,6 +523,9 @@ msgstr "&Donatius"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Obre el &menú"
+
+#~ msgid "Default"
+#~ msgstr "Predeterminat"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Se us demanarà l'autenticació abans de desar"

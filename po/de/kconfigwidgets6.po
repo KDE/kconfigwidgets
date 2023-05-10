@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2022-06-10 00:24+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -46,15 +46,10 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Autom. feststellen"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
 msgstr "Farbschema"
-
-#: kcolorschememodel.cpp:71
-#, kde-format
-msgid "Default"
-msgstr "Standard"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -526,6 +521,9 @@ msgstr "&Spenden"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "&Menü öffnen"
+
+#~ msgid "Default"
+#~ msgstr "Standard"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Vor dem Speichern müssen Sie sich authentifizieren."

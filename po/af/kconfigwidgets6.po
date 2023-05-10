@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4 stable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2006-01-12 16:33+0200\n"
 "Last-Translator: JUANITA FRANZ <JUANITA.FRANZ@VR-WEB.DE>\n"
 "Language-Team: AFRIKAANS <translate-discuss-af@lists.sourceforge.net>\n"
@@ -37,17 +37,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Auto Korrigeer"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
 msgid "Color Scheme"
 msgstr "Kortpaaie"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgid "Default"
-msgid "Default"
-msgstr "Verstek"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -597,6 +591,11 @@ msgstr "Klaar"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Maak Onlangse Oop"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "Verstek"
 
 #, fuzzy
 #~| msgid "Could not create the new configuration file."

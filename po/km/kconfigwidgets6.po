@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-08 02:07+0000\n"
+"POT-Creation-Date: 2023-05-10 02:05+0000\n"
 "PO-Revision-Date: 2012-06-27 10:04+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -40,18 +40,11 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "កែ​ស្វ័យប្រវត្តិ"
 
-#: kcolorschememenu.cpp:25
+#: kcolorschememenu.cpp:24
 #, fuzzy, kde-format
 #| msgid "Shortcut Schemes"
 msgid "Color Scheme"
 msgstr "គ្រោងការណ៍​ផ្លូវកាត់"
-
-#: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
-msgid "Default"
-msgstr "លំនាំដើម"
 
 #: kcommandbar.cpp:560
 #, kde-format
@@ -547,6 +540,12 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "បើក​ថ្មី​ៗ​នេះ"
+
+#, fuzzy
+#~| msgctxt "Encodings menu"
+#~| msgid "Default"
+#~ msgid "Default"
+#~ msgstr "លំនាំដើម"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "អ្នកនឹង​ត្រូវ​បាន​ស្នើ​ឲ្យ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​មុន​នឹង​រក្សាទុក"
