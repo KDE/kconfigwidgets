@@ -126,7 +126,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KCodecAction
   KColorScheme
   KColorSchemeManager
-  KcolorSchemeMenu
+  KColorSchemeMenu
   KColorSchemeModel
   KCommandBar
   KConfigDialog
