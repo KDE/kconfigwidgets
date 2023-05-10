@@ -26,12 +26,11 @@ KActionMenu *KColorSchemeMenu::createMenu(KColorSchemeManager *manager, QObject 
     QActionGroup *group = new QActionGroup(menu);
     QObject::connect(group, &QActionGroup::triggered, manager, [manager](QAction *action) {
         const QString schemePath = action->data().toString();
-
         if (schemePath.isEmpty()) {
             // Reset to default
             manager->activateScheme(QModelIndex());
         } else {
-            manager->activateScheme(manager->indexForScheme(schemePath));
+            manager->activateScheme(manager->indexForScheme(action->text()));
         }
     });
     const auto model = manager->model();
