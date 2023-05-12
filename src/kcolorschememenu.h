@@ -12,6 +12,9 @@ class QObject;
 
 #include <kconfigwidgets_export.h>
 
+/**
+ *  A menu for switching color schemes
+ */
 namespace KColorSchemeMenu
 {
 /**
