@@ -29,7 +29,8 @@ KActionMenu *KColorSchemeMenu::createMenu(KColorSchemeManager *manager, QObject 
             // Reset to default
             manager->activateScheme(QModelIndex());
         } else {
-            manager->activateScheme(manager->indexForScheme(action->text()));
+            const QString schemeName = KLocalizedString::removeAcceleratorMarker(action->text());
+            manager->activateScheme(manager->indexForScheme(schemeName));
         }
     });
     const auto model = manager->model();
