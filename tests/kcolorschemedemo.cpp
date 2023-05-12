@@ -8,6 +8,7 @@
 #include <KActionMenu>
 #include <kcolorschememanager.h>
 #include <kcolorschememenu.h>
+#include <kcolorschememodel.h>
 
 #include <QApplication>
 #include <QDialog>
@@ -30,7 +31,9 @@ public:
 
         QListView *view = new QListView(this);
         view->setModel(manager->model());
-        connect(view, &QListView::activated, manager, &KColorSchemeManager::activateScheme);
+        connect(view, &QListView::activated, manager, [manager](const QModelIndex &index) {
+            manager->activateScheme(index.data(KColorSchemeModel::IdRole).toString());
+        });
         manager->setAutosaveChanges(true);
 
         QDialogButtonBox *box = new QDialogButtonBox(QDialogButtonBox::Close, this);

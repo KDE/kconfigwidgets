@@ -24,22 +24,17 @@ KActionMenu *KColorSchemeMenu::createMenu(KColorSchemeManager *manager, QObject 
     KActionMenu *menu = new KActionMenu(QIcon::fromTheme(QStringLiteral("preferences-desktop-color")), i18n("Color Scheme"), parent);
     QActionGroup *group = new QActionGroup(menu);
     QObject::connect(group, &QActionGroup::triggered, manager, [manager](QAction *action) {
-        const QString schemePath = action->data().toString();
-        if (schemePath.isEmpty()) {
-            // Reset to default
-            manager->activateScheme(QModelIndex());
-        } else {
-            manager->activateScheme(manager->indexForScheme(action->text()));
-        }
+        manager->activateScheme(action->data().toString());
     });
     const auto model = manager->model();
     for (int i = 0; i < model->rowCount(); ++i) {
         QModelIndex index = model->index(i, 0);
         QAction *action = new QAction(index.data(KColorSchemeModel::NameRole).toString(), menu);
-        action->setData(index.data(KColorSchemeModel::PathRole));
+        const QString id = index.data(KColorSchemeModel::IdRole).toString();
+        action->setData(id);
         action->setActionGroup(group);
         action->setCheckable(true);
-        if (index.data(KColorSchemeModel::IdRole).toString() == manager->activeSchemeId()) {
+        if (id == manager->activeSchemeId()) {
             action->setChecked(true);
         }
         menu->addAction(action);
@@ -48,11 +43,6 @@ KActionMenu *KColorSchemeMenu::createMenu(KColorSchemeManager *manager, QObject 
                 action->setIcon(index.data(KColorSchemeModel::IconRole).value<QIcon>());
             }
         });
-    }
-    const auto groupActions = group->actions();
-    if (!group->checkedAction()) {
-        // If no (valid) color scheme has been selected we select the default one
-        groupActions[defaultSchemeRow]->setChecked(true);
     }
 
     return menu;
