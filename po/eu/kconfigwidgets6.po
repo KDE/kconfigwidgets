@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-10 02:05+0000\n"
+"POT-Creation-Date: 2023-05-15 02:02+0000\n"
 "PO-Revision-Date: 2022-07-26 16:36+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -51,7 +51,7 @@ msgstr "Auto-detektatu"
 msgid "Color Scheme"
 msgstr "Kolore-antolaera"
 
-#: kcommandbar.cpp:560
+#: kcommandbar.cpp:616
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "Ez dago iragazkiarekin bat datorren komandorik"

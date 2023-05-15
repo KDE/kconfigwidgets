@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-10 02:05+0000\n"
+"POT-Creation-Date: 2023-05-15 02:02+0000\n"
 "PO-Revision-Date: 2022-06-27 16:04+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -49,7 +49,7 @@ msgstr "Automatická detekce"
 msgid "Color Scheme"
 msgstr "Barevné schéma"
 
-#: kcommandbar.cpp:560
+#: kcommandbar.cpp:616
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "Příkazy odpovídající filtru"
