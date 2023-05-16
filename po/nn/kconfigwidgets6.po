@@ -518,6 +518,3 @@ msgstr "&Gje pengegåve"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Opna &meny"
-
-#~ msgid "Default"
-#~ msgstr "Standard"
