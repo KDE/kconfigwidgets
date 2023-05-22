@@ -9,14 +9,15 @@
 # Yukiko Bando <ybando@k6.dion.ne.jp>, 2006, 2007, 2008, 2009, 2010.
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019, 2020.
 # Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2006, 2007, 2008, 2010, 2011, 2015, 2019.
+# Ryuichi Yamada <ryuichi_ya220@outlook.jp>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-15 02:02+0000\n"
-"PO-Revision-Date: 2021-09-30 22:37+0900\n"
-"Last-Translator: Ryunosuke Toda <toda.ryunosuke@gmail.com>\n"
+"PO-Revision-Date: 2023-05-16 18:41+0900\n"
+"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -25,20 +26,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
-"Taiki Komoda,Noboru Sinohara,Toyohiro Asukai,Kurose Shushi,Shinichi Tsunoda"
+"Taiki Komoda,Noboru Sinohara,Toyohiro Asukai,Kurose Shushi,Shinichi Tsunoda,"
+"Ryuichi Yamada"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "kom@kde.gr.jp,shinobo@leo.bekkoame.ne.jp,toyohiro@ksmplus.com,md81@bird."
-"email.ne.jp,tsuno@ngy.1st.ne.jp"
+"email.ne.jp,tsuno@ngy.1st.ne.jp,ryuichi_ya220@outlook.jp"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -55,12 +57,12 @@ msgstr "自動検出"
 #: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
-msgstr ""
+msgstr "カラースキーム"
 
 #: kcommandbar.cpp:616
 #, kde-format
 msgid "No commands matching the filter"
-msgstr ""
+msgstr "フィルタにマッチするコマンドはありません"
 
 #: kconfigdialog.cpp:37
 #, kde-format
@@ -72,11 +74,10 @@ msgstr "設定"
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr ""
+msgstr "メニュー(&M)"
 
 #: khamburgermenu.cpp:326
-#, fuzzy, kde-format
-#| msgid "Show &Menubar"
+#, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "メニューバーを表示(&M)"
@@ -85,14 +86,14 @@ msgstr "メニューバーを表示(&M)"
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
-msgstr ""
+msgstr "その他"
 
 #: khamburgermenu.cpp:353
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
 msgid "More Actions"
-msgstr ""
+msgstr "その他のアクション"
 
 #: krecentfilesaction.cpp:71
 #, kde-format
@@ -149,10 +150,8 @@ msgid "&Open..."
 msgstr "開く(&O)..."
 
 #: kstandardaction_p.h:31
-#, fuzzy
-#| msgid "&Back in the Document"
 msgid "Open an existing document"
-msgstr "文書の閲覧履歴の前へ戻る(&B)"
+msgstr "既存の文書を開く"
 
 #: kstandardaction_p.h:32
 msgid "Open &Recent"
@@ -160,7 +159,7 @@ msgstr "最近のファイルを開く(&R)"
 
 #: kstandardaction_p.h:32
 msgid "Open a document which was recently opened"
-msgstr ""
+msgstr "最近開かれた文書を開く"
 
 #: kstandardaction_p.h:33
 msgid "&Save"
@@ -175,10 +174,8 @@ msgid "Save &As..."
 msgstr "名前を付けて保存(&A)..."
 
 #: kstandardaction_p.h:34
-#, fuzzy
-#| msgid "Close Document"
 msgid "Save document under a new name"
-msgstr "文書を閉じる"
+msgstr "新しい名前で文書を保存"
 
 #: kstandardaction_p.h:35
 msgid "Re&vert"
@@ -186,7 +183,7 @@ msgstr "戻す(&V)"
 
 #: kstandardaction_p.h:35
 msgid "Revert unsaved changes made to document"
-msgstr ""
+msgstr "保存されていない変更を元に戻す"
 
 #: kstandardaction_p.h:36
 msgid "&Close"
@@ -210,17 +207,15 @@ msgstr "印刷プレビュー(&W)"
 
 #: kstandardaction_p.h:38
 msgid "Show a print preview of document"
-msgstr ""
+msgstr "文書の印刷プレビューを表示"
 
 #: kstandardaction_p.h:39
 msgid "&Mail..."
 msgstr "メール(&M)..."
 
 #: kstandardaction_p.h:39
-#, fuzzy
-#| msgid "Close Document"
 msgid "Send document by mail"
-msgstr "文書を閉じる"
+msgstr "メールで文書を表示"
 
 #: kstandardaction_p.h:40
 msgid "&Quit"
@@ -235,26 +230,16 @@ msgid "&Undo"
 msgstr "元に戻す(&U)"
 
 #: kstandardaction_p.h:42
-#, fuzzy
-#| msgctxt ""
-#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
-#| "browser)"
-#| msgid "Make a donation"
 msgid "Undo last action"
-msgstr "募金する"
+msgstr "最後のアクションを取り消す"
 
 #: kstandardaction_p.h:43
 msgid "Re&do"
 msgstr "やり直す(&D)"
 
 #: kstandardaction_p.h:43
-#, fuzzy
-#| msgctxt ""
-#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
-#| "browser)"
-#| msgid "Make a donation"
 msgid "Redo last undone action"
-msgstr "募金する"
+msgstr "最後のアクションをやり直す"
 
 #: kstandardaction_p.h:44
 msgid "Cu&t"
@@ -262,7 +247,7 @@ msgstr "切り取り(&T)"
 
 #: kstandardaction_p.h:44
 msgid "Cut selection to clipboard"
-msgstr ""
+msgstr "選択したものをクリップボードにコピー"
 
 #: kstandardaction_p.h:45
 msgid "&Copy"
@@ -270,17 +255,15 @@ msgstr "コピー(&C)"
 
 #: kstandardaction_p.h:45
 msgid "Copy selection to clipboard"
-msgstr ""
+msgstr "選択したものをクリップボードにコピー"
 
 #: kstandardaction_p.h:46
 msgid "&Paste"
 msgstr "貼り付け(&P)"
 
 #: kstandardaction_p.h:46
-#, fuzzy
-#| msgid "Upload content"
 msgid "Paste clipboard content"
-msgstr "コンテンツをアップロード"
+msgstr "クリップボードの内容を貼り付け"
 
 #: kstandardaction_p.h:47
 msgid "C&lear"
@@ -311,25 +294,20 @@ msgid "&Replace..."
 msgstr "置換(&R)..."
 
 #: kstandardaction_p.h:55
-#, fuzzy
-#| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
-msgstr "実際のサイズ(&A)"
+msgstr "実際のサイズに拡大(&A)"
 
 #: kstandardaction_p.h:55
 msgid "View document at its actual size"
-msgstr ""
+msgstr "実際のサイズで文書を表示"
 
 #: kstandardaction_p.h:56
 msgid "&Fit to Page"
 msgstr "ページに合わせる(&F)"
 
 #: kstandardaction_p.h:56
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "Zoom to fit page in window"
-msgstr "行に移動"
+msgstr "ズームしてページに合わせる"
 
 #: kstandardaction_p.h:57
 msgid "Fit to Page &Width"
@@ -337,7 +315,7 @@ msgstr "ページの幅に合わせる(&W)"
 
 #: kstandardaction_p.h:57
 msgid "Zoom to fit page width in window"
-msgstr ""
+msgstr "ズームしてページの幅に合わせる"
 
 #: kstandardaction_p.h:58
 msgid "Fit to Page &Height"
@@ -345,7 +323,7 @@ msgstr "ページの高さに合わせる(&H)"
 
 #: kstandardaction_p.h:58
 msgid "Zoom to fit page height in window"
-msgstr ""
+msgstr "ズームしてページの高さに合わせる"
 
 #: kstandardaction_p.h:59
 msgid "Zoom &In"
@@ -360,20 +338,16 @@ msgid "&Zoom..."
 msgstr "ズーム(&Z)..."
 
 #: kstandardaction_p.h:61
-#, fuzzy
-#| msgid "Select a week"
 msgid "Select zoom level"
-msgstr "週を選択"
+msgstr "ズームのレベルを選択"
 
 #: kstandardaction_p.h:62
 msgid "&Refresh"
 msgstr "最新の情報に更新(&R)"
 
 #: kstandardaction_p.h:62
-#, fuzzy
-#| msgid "Redisplay document"
 msgid "Refresh document"
-msgstr "文書を再表示"
+msgstr "文書を再読み込み"
 
 #: kstandardaction_p.h:64
 msgid "&Up"
@@ -432,20 +406,16 @@ msgid "&Back"
 msgstr "戻る(&B)"
 
 #: kstandardaction_p.h:76
-#, fuzzy
-#| msgid "&Back in the Document"
 msgid "Go back in document"
-msgstr "文書の閲覧履歴の前へ戻る(&B)"
+msgstr "文書の閲覧履歴の前へ戻る"
 
 #: kstandardaction_p.h:77
 msgid "&Forward"
 msgstr "進む(&F)"
 
 #: kstandardaction_p.h:77
-#, fuzzy
-#| msgid "&Forward in the Document"
 msgid "Go forward in document"
-msgstr "文書の閲覧履歴の先へ進む(&F)"
+msgstr "文書の閲覧履歴の先へ進む"
 
 #: kstandardaction_p.h:79
 msgid "&Add Bookmark"
@@ -555,35 +525,5 @@ msgid "&Donate"
 msgstr "寄付(&D)"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "Open &Recent"
 msgid "Open &Menu"
-msgstr "最近のファイルを開く(&R)"
-
-#~ msgid "Default"
-#~ msgstr "デフォルト"
-
-#~ msgid "You will be asked to authenticate before saving"
-#~ msgstr "保存する前に認証を求められます"
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "あなたは設定を保存することを許可されていません"
-
-#~ msgctxt "show help"
-#~ msgid "&Help"
-#~ msgstr "ヘルプ(&H)"
-
-#~ msgid "&Save Settings"
-#~ msgstr "設定を保存(&S)"
-
-#~ msgctxt "@title:window"
-#~ msgid "Tip of the Day"
-#~ msgstr "今日の一言"
-
-#~ msgctxt "@action:button Goes to previous tip"
-#~ msgid "&Previous"
-#~ msgstr "前へ(&P)"
-
-#~ msgctxt "@action:button Goes to next tip, opposite to previous"
-#~ msgid "&Next"
-#~ msgstr "次へ(&N)"
+msgstr "メニューを開く(&M)"
