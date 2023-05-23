@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-15 02:02+0000\n"
-"PO-Revision-Date: 2023-02-24 12:43\n"
+"PO-Revision-Date: 2023-05-22 13:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/kconfigwidgets/kconfigwidgets5.pot\n"
-"X-Crowdin-File-ID: 5539\n"
+"X-Crowdin-File: /kf6-trunk/messages/kconfigwidgets/kconfigwidgets6.pot\n"
+"X-Crowdin-File-ID: 43033\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -90,7 +90,7 @@ msgstr "无项目"
 #: krecentfilesaction.cpp:77
 #, kde-format
 msgid "Clear List"
-msgstr "清空列表"
+msgstr "清除列表"
 
 #: kstandardaction.cpp:155
 #, kde-format
@@ -292,7 +292,7 @@ msgstr "适合整个页面(&F)"
 
 #: kstandardaction_p.h:56
 msgid "Zoom to fit page in window"
-msgstr "缩放以适合窗口中整个页面的大小"
+msgstr "缩放以在窗口中显示整个页面"
 
 #: kstandardaction_p.h:57
 msgid "Fit to Page &Width"
@@ -300,7 +300,7 @@ msgstr "适合页面宽度(&W)"
 
 #: kstandardaction_p.h:57
 msgid "Zoom to fit page width in window"
-msgstr "缩放以适合窗口中页面的宽度"
+msgstr "缩放以在窗口中适合页面宽度"
 
 #: kstandardaction_p.h:58
 msgid "Fit to Page &Height"
@@ -308,7 +308,7 @@ msgstr "适合页面高度(&H)"
 
 #: kstandardaction_p.h:58
 msgid "Zoom to fit page height in window"
-msgstr "缩放以适合窗口中页面的高度"
+msgstr "缩放以在窗口中适合页面高度"
 
 #: kstandardaction_p.h:59
 msgid "Zoom &In"
@@ -332,7 +332,7 @@ msgstr "刷新(&R)"
 
 #: kstandardaction_p.h:62
 msgid "Refresh document"
-msgstr "刷新"
+msgstr "刷新文档"
 
 #: kstandardaction_p.h:64
 msgid "&Up"
@@ -412,7 +412,7 @@ msgstr "编辑书签(&E)..."
 
 #: kstandardaction_p.h:82
 msgid "&Spelling..."
-msgstr "拼写(&S)..."
+msgstr "拼写检查(&S)..."
 
 #: kstandardaction_p.h:82
 msgid "Check spelling in document"
@@ -512,39 +512,3 @@ msgstr "捐款(&D)"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "打开菜单(&M)"
-
-#~ msgid "Default"
-#~ msgstr "默认"
-
-#~ msgid "You will be asked to authenticate before saving"
-#~ msgstr "在保存前您将需要进行身份验证"
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "您不具备保存配置的权限"
-
-#~ msgctxt "show help"
-#~ msgid "&Help"
-#~ msgstr "帮助(&H)"
-
-#~ msgid "&Save Settings"
-#~ msgstr "保存设置(&S)"
-
-#~ msgctxt "@title:window"
-#~ msgid "Tip of the Day"
-#~ msgstr "每日提示"
-
-#~ msgctxt "@title"
-#~ msgid "Did you know...?\n"
-#~ msgstr "您知道吗...？\n"
-
-#~ msgctxt "@option:check"
-#~ msgid "&Show tips on startup"
-#~ msgstr "启动时显示使用提示(&S)"
-
-#~ msgctxt "@action:button Goes to previous tip"
-#~ msgid "&Previous"
-#~ msgstr "上一个(&P)"
-
-#~ msgctxt "@action:button Goes to next tip, opposite to previous"
-#~ msgid "&Next"
-#~ msgstr "下一个(&N)"
