@@ -11,7 +11,7 @@
 # Joonas Niilola <juippis@roskakori.org>, 2006.
 # Mikko Piippo <piippo@cc.helsinki.fi>, 2007.
 # Teemu Rytilahti <tpr@d5k.net>, 2008.
-# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2019, 2020, 2021, 2022.
+# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2019, 2020, 2021, 2022, 2023.
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2006, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
 #
@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-08 00:42+0000\n"
-"PO-Revision-Date: 2022-07-13 18:02+0300\n"
+"PO-Revision-Date: 2023-05-18 12:20+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -34,7 +34,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 "X-POT-Import-Date: 2013-01-13 20:43:21+0000\n"
 
 #, kde-format
@@ -370,7 +370,7 @@ msgstr "&Lähennä tai loitonna…"
 
 #: kstandardaction_p.h:64
 msgid "Select zoom level"
-msgstr "Valitse zoomaustaso"
+msgstr "Valitse lähennystaso"
 
 #: kstandardaction_p.h:65
 msgid "&Refresh"
