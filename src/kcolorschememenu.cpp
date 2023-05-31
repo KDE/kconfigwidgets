@@ -29,6 +29,12 @@ KActionMenu *KColorSchemeMenu::createMenu(KColorSchemeManager *manager, QObject 
             // Reset to default
             manager->activateScheme(QModelIndex());
         } else {
+            // Software linking KXmlGui gets its static KCheckAccelerators object deploy
+            // KAcceleratorManager on the whole UI automatically, which adds accelerators
+            // also to the texts of this menu's actions.
+            // So they have to be remove here in case
+            // (hoping that no original names have them also in case no accelerators were added)
+            // See also KColorSchemeManager::saveSchemeToConfigFile(const QString &schemeName) const.
             const QString schemeName = KLocalizedString::removeAcceleratorMarker(action->text());
             manager->activateScheme(manager->indexForScheme(schemeName));
         }
