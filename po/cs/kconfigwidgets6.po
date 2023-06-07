@@ -519,6 +519,3 @@ msgstr "&Přispějte"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Otevřít na&bídku"
-
-#~ msgid "Default"
-#~ msgstr "Výchozí"
