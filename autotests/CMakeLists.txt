@@ -27,10 +27,10 @@ set(lang_entries
 # is able to find the fixtures in the bin dir as KDECMakeSettings sets a special
 # output dir.
 foreach(lang ${lang_entries})
-    set(src_dir "${CMAKE_CURRENT_SOURCE_DIR}/kf5_entry_data.cmake/locale/${lang}")
-    set(src_file "${src_dir}/kf5_entry.cmake")
-    set(bin_dir "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/kf5_entry_data/locale/${lang}")
-    set(bin_file "${bin_dir}/kf5_entry.desktop")
+    set(src_dir "${CMAKE_CURRENT_SOURCE_DIR}/kf6_entry_data.cmake/locale/${lang}")
+    set(src_file "${src_dir}/kf6_entry.cmake")
+    set(bin_dir "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/kf6_entry_data/locale/${lang}")
+    set(bin_file "${bin_dir}/kf6_entry.desktop")
     file(MAKE_DIRECTORY ${bin_dir})
     if(EXISTS ${src_file}) # not all languages have entries
         configure_file(${src_file} ${bin_file} COPYONLY)

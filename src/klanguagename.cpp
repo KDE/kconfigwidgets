@@ -22,7 +22,7 @@ QString KLanguageName::nameForCode(const QString &code)
 static std::tuple<QString, QString> namesFromEntryFile(const QString &realCode, const QString &realOutputCode)
 {
     const QString entryFile = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
-                                                     QStringLiteral("locale") + QLatin1Char('/') + realCode + QStringLiteral("/kf5_entry.desktop"));
+                                                     QStringLiteral("locale") + QLatin1Char('/') + realCode + QStringLiteral("/kf6_entry.desktop"));
 
     if (!entryFile.isEmpty()) {
         KConfig entry(entryFile, KConfig::SimpleConfig);
@@ -76,7 +76,7 @@ QStringList KLanguageName::allLanguageCodes()
     for (const QString &localeDir : localeDirs) {
         const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
         auto languageExists = [&localeDir](const QString &language) {
-            return QFile::exists(localeDir + QLatin1Char('/') + language + QLatin1String("/kf5_entry.desktop"));
+            return QFile::exists(localeDir + QLatin1Char('/') + language + QLatin1String("/kf6_entry.desktop"));
         };
         std::copy_if(entries.begin(), entries.end(), std::back_inserter(systemLangList), languageExists);
     }

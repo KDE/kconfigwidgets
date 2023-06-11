@@ -102,7 +102,7 @@ install(FILES
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets COMPONENT Devel
 )
 
-install( FILES entry.desktop  DESTINATION  ${KDE_INSTALL_LOCALEDIR}/en_US RENAME kf5_entry.desktop )
+install( FILES entry.desktop  DESTINATION  ${KDE_INSTALL_LOCALEDIR}/en_US RENAME kf6_entry.desktop )
 
 ecm_qt_install_logging_categories(
     EXPORT KCONFIGWIDGETS

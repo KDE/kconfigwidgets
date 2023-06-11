@@ -31,18 +31,18 @@ private Q_SLOTS:
     {
         // looking for the test data as deployed for this test, needs QApp instance created
 #ifdef Q_OS_WIN
-        const std::string source = QFINDTESTDATA("kf5_entry_data").toStdString();
+        const std::string source = QFINDTESTDATA("kf6_entry_data").toStdString();
         const std::string dest = QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)).toStdString();
 
         std::filesystem::remove_all(dest);
         std::filesystem::copy(source, dest, std::filesystem::copy_options::recursive);
 #else
-        qputenv("XDG_DATA_DIRS", qUtf8Printable(QFINDTESTDATA("kf5_entry_data")));
+        qputenv("XDG_DATA_DIRS", qUtf8Printable(QFINDTESTDATA("kf6_entry_data")));
 #endif
 
         // NOTE
         // - fr has no translations
-        // - es has no kf5_entry at all
+        // - es has no kf6_entry at all
         // - other languages under testing are complete
     }
 
