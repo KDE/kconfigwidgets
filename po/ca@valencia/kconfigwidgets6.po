@@ -523,12 +523,3 @@ msgstr "&Donatius"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Obri el &menú"
-
-#~ msgid "Default"
-#~ msgstr "Predeterminat"
-
-#~ msgid "You will be asked to authenticate before saving"
-#~ msgstr "Se us demanarà l'autenticació abans de guardar"
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "No se us permet guardar la configuració"
