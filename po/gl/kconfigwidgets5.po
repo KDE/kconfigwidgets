@@ -89,7 +89,7 @@ msgstr "&Menú"
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
-msgstr "Mostrar a barra de &menú con todas as accións"
+msgstr "Amosar a barra de &menú con todas as accións"
 
 #: khamburgermenu.cpp:352
 #, kde-format
@@ -142,7 +142,7 @@ msgstr "A&xuda"
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
-"Mostrar barra de menú<p>Mostra de novo a barra de menú tras agocharse</p>"
+"Amosar barra de menú<p>Mostra de novo a barra de menú tras agocharse</p>"
 
 #: kstandardaction.cpp:253
 #, kde-format
@@ -150,7 +150,7 @@ msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
 "window used for status information.</p>"
 msgstr ""
-"Mostrar a barra de estado<p>Mostra a barra de estado, que é a barra no fondo "
+"Amosar a barra de estado<p>Mostra a barra de estado, que é a barra no fondo "
 "da xanela onde se mostra información de estado.</p>"
 
 #: kstandardaction_p.h:30
@@ -451,27 +451,27 @@ msgstr "Comprobar a ortografía do documento"
 
 #: kstandardaction_p.h:87
 msgid "Show &Menubar"
-msgstr "Mostrar a barra de &menú"
+msgstr "Amosar a barra de &menú"
 
 #: kstandardaction_p.h:87
 msgid "Show or hide menubar"
-msgstr "Mostrar ou agochar a barra de menú"
+msgstr "Amosar ou agochar a barra de menú"
 
 #: kstandardaction_p.h:88
 msgid "Show &Toolbar"
-msgstr "Mostrar a barra de &ferramentas"
+msgstr "Amosar a barra de &ferramentas"
 
 #: kstandardaction_p.h:88
 msgid "Show or hide toolbar"
-msgstr "Mostrar ou agochar a barra de ferramentas"
+msgstr "Amosar ou agochar a barra de ferramentas"
 
 #: kstandardaction_p.h:89
 msgid "Show St&atusbar"
-msgstr "Mostrar a barra de &estado"
+msgstr "Amosar a barra de &estado"
 
 #: kstandardaction_p.h:89
 msgid "Show or hide statusbar"
-msgstr "Mostrar ou agochar a barra de estado"
+msgstr "Amosar ou agochar a barra de estado"
 
 #: kstandardaction_p.h:90
 msgid "F&ull Screen Mode"
@@ -564,7 +564,7 @@ msgstr "Sabía que…?\n"
 #, kde-format
 msgctxt "@option:check"
 msgid "&Show tips on startup"
-msgstr "Mostrar os con&sellos ao iniciar"
+msgstr "Amosar os con&sellos ao iniciar"
 
 #: ktipdialog.cpp:296
 #, kde-format
