@@ -184,3 +184,5 @@ void KRecentFilesActionTest::removeExecessItems()
 }
 
 QTEST_MAIN(KRecentFilesActionTest)
+
+#include "moc_krecentfilesactiontest.cpp"

@@ -433,3 +433,6 @@ void KHamburgerMenuPrivate::updateButtonStyle(QToolButton *hamburgerMenuButton) 
         hamburgerMenuButton->setToolButtonStyle(buttonStyle);
     }
 }
+
+#include "moc_khamburgermenu.cpp"
+#include "moc_khamburgermenu_p.cpp"

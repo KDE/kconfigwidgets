@@ -70,3 +70,5 @@ void CodecActionTest::slotActionTriggered(bool state)
 {
     qDebug() << sender() << " state " << state;
 }
+
+#include "moc_kcodecactiontest.cpp"

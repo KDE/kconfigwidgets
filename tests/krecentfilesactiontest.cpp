@@ -99,3 +99,5 @@ void KRecentFilesActionTest::saveEntries()
     qDebug() << "recentFiles->saveEntries()";
     d->recentFiles->saveEntries(d->testConfigGroup());
 }
+
+#include "moc_krecentfilesactiontest.cpp"

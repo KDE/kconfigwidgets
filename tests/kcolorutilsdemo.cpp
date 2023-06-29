@@ -189,3 +189,5 @@ int main(int argc, char *argv[])
     d->show();
     return app.exec();
 }
+
+#include "moc_kcolorutilsdemo.cpp"

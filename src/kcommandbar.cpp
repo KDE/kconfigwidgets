@@ -735,3 +735,5 @@ bool KCommandBar::eventFilter(QObject *obj, QEvent *event)
     return QWidget::eventFilter(obj, event);
 }
 // END KCommandBar
+
+#include "moc_kcommandbar.cpp"
