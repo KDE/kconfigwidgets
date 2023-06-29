@@ -369,3 +369,5 @@ QList<KConfigDialogManager *> KCModule::configs() const
 {
     return d->managers;
 }
+
+#include "moc_kcmodule.cpp"

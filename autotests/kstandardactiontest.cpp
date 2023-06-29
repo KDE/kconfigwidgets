@@ -174,3 +174,4 @@ void tst_KStandardAction::testCreateOldStyle()
 QTEST_MAIN(tst_KStandardAction)
 
 #include "kstandardactiontest.moc"
+#include "moc_kstandardactiontest.cpp"

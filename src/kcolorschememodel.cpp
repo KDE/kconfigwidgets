@@ -106,3 +106,5 @@ QVariant KColorSchemeModel::data(const QModelIndex &index, int role) const
         return QVariant();
     }
 }
+
+#include "moc_kcolorschememodel.cpp"

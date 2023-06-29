@@ -171,3 +171,5 @@ void KCommandBarModel::setLastUsedActions(const QStringList &actionNames)
         m_lastTriggered.pop_back();
     }
 }
+
+#include "moc_kcommandbarmodel_p.cpp"

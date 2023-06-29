@@ -41,3 +41,5 @@ void KImageFrame::paintEvent(QPaintEvent *)
 
     p.end();
 }
+
+#include "moc_kimageframe.cpp"

@@ -112,3 +112,5 @@ bool listContainsWidget(const std::forward_list<QPointer<const QWidget>> &list, 
     }
     return false;
 }
+
+#include "moc_khamburgermenuhelpers_p.cpp"

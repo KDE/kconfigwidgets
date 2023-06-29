@@ -279,3 +279,5 @@ void KLanguageButtonPrivate::setCurrentItem(QAction *a)
         button->setText(a->text());
     }
 }
+
+#include "moc_klanguagebutton.cpp"

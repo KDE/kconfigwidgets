@@ -43,3 +43,5 @@ void KConfigViewStateSaver::saveState(KConfigGroup &configGroup)
         configGroup.writeEntry(scrollStateHorizontalKey, _scrollState.second);
     }
 }
+
+#include "moc_kconfigviewstatesaver.cpp"
