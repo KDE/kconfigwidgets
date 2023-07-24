@@ -230,7 +230,7 @@ msgstr "끝내기(&Q)"
 
 #: kstandardaction_p.h:40
 msgid "Quit application"
-msgstr "프로그램 끝내기"
+msgstr "앱 끝내기"
 
 #: kstandardaction_p.h:42
 msgid "&Undo"
