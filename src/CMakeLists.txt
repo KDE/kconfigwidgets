@@ -20,6 +20,7 @@ target_sources(KF6ConfigWidgets PRIVATE
   khamburgermenuhelpers.cpp
   klanguagebutton.cpp
   klanguagename.cpp
+  kopenaction.cpp
   krecentfilesaction.cpp
   kstandardaction.cpp
 
@@ -34,6 +35,7 @@ target_sources(KF6ConfigWidgets PRIVATE
   khamburgermenuhelpers_p.h
   klanguagebutton.h
   klanguagename.h
+  kopenaction_p.h
   krecentfilesaction.h
   kstandardaction.h
 )

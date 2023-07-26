@@ -6,6 +6,7 @@
 */
 
 #include "kstandardaction.h"
+#include "kopenaction_p.h"
 #include "kstandardaction_p.h"
 #include "moc_kstandardaction_p.cpp"
 
@@ -216,6 +217,9 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
         QIcon icon = iconName.isEmpty() ? QIcon() : QIcon::fromTheme(iconName);
 
         switch (id) {
+        case Open:
+            pAction = new KOpenAction(parent);
+            break;
         case OpenRecent:
             pAction = new KRecentFilesAction(parent);
             break;
