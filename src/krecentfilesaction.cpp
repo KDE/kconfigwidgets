@@ -28,6 +28,7 @@
 #include <KConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
+#include <KShell>
 
 #include <set>
 
@@ -196,7 +197,7 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
     d->clearAction->setVisible(true);
     setEnabled(true);
     // add file to list
-    const QString title = titleWithSensibleWidth(tmpName, file);
+    const QString title = titleWithSensibleWidth(tmpName, KShell::tildeCollapse(file));
 
     QAction *action = new QAction(title, selectableActionGroup());
     addAction(action, url, tmpName);
@@ -312,7 +313,7 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
 
         nameKey = QStringLiteral("Name%1").arg(i);
         nameValue = cg.readPathEntry(nameKey, url.fileName());
-        title = titleWithSensibleWidth(nameValue, value);
+        title = titleWithSensibleWidth(nameValue, KShell::tildeCollapse(value));
         if (!value.isNull()) {
             thereAreEntries = true;
             addAction(new QAction(title, selectableActionGroup()), url, nameValue);
