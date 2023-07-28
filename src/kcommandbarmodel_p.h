@@ -101,4 +101,6 @@ private:
     QAction *m_clearHistoryAction;
 };
 
+Q_DECLARE_TYPEINFO(KCommandBarModel::Item, Q_MOVABLE_TYPE);
+
 #endif // KCOMMANDBARMODEL_H
