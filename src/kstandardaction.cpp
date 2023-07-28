@@ -729,5 +729,3 @@ KHamburgerMenu *hamburgerMenu(const QObject *recvr, const char *slot, QObject *p
 }
 
 }
-
-#include "moc_kstandardaction.cpp"
