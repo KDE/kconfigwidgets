@@ -85,4 +85,6 @@ private:
     std::unique_ptr<class KCommandBarPrivate> const d;
 };
 
+Q_DECLARE_TYPEINFO(KCommandBar::ActionGroup, Q_RELOCATABLE_TYPE);
+
 #endif
