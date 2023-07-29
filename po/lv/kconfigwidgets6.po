@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-15 02:02+0000\n"
+"POT-Creation-Date: 2023-07-29 01:58+0000\n"
 "PO-Revision-Date: 2020-11-13 10:45+0200\n"
 "Last-Translator: Maris Nartiss <maris.kde@gmail.com>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -96,12 +96,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Vairāk darbību"
 
-#: krecentfilesaction.cpp:71
+#: krecentfilesaction.cpp:72
 #, kde-format
 msgid "No Entries"
 msgstr "Nav ierakstu"
 
-#: krecentfilesaction.cpp:77
+#: krecentfilesaction.cpp:78
 #, kde-format
 msgid "Clear List"
 msgstr "Tīrīt sarakstu"

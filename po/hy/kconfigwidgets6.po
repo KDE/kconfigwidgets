@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-15 02:02+0000\n"
+"POT-Creation-Date: 2023-07-29 01:58+0000\n"
 "PO-Revision-Date: 2013-01-31 01:08+0400\n"
 "Last-Translator: Davit <nikdavnik@mail.ru>\n"
 "Language-Team: Armenian Language: hy\n"
@@ -94,12 +94,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Լրացուցիչ"
 
-#: krecentfilesaction.cpp:71
+#: krecentfilesaction.cpp:72
 #, kde-format
 msgid "No Entries"
 msgstr "Չկա գրանցումներ"
 
-#: krecentfilesaction.cpp:77
+#: krecentfilesaction.cpp:78
 #, kde-format
 msgid "Clear List"
 msgstr "Մաքրել ցանկը"

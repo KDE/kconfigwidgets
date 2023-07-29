@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-15 02:02+0000\n"
+"POT-Creation-Date: 2023-07-29 01:58+0000\n"
 "PO-Revision-Date: 2017-05-16 06:51-0400\n"
 "Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -96,12 +96,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr ""
 
-#: krecentfilesaction.cpp:71
+#: krecentfilesaction.cpp:72
 #, kde-format
 msgid "No Entries"
 msgstr "אין רשומות"
 
-#: krecentfilesaction.cpp:77
+#: krecentfilesaction.cpp:78
 #, kde-format
 msgid "Clear List"
 msgstr "נקה רשימה"

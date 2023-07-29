@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-15 02:02+0000\n"
+"POT-Creation-Date: 2023-07-29 01:58+0000\n"
 "PO-Revision-Date: 2012-07-04 17:33+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -94,12 +94,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Pus di faitindjes"
 
-#: krecentfilesaction.cpp:71
+#: krecentfilesaction.cpp:72
 #, kde-format
 msgid "No Entries"
 msgstr "Nole intrêye"
 
-#: krecentfilesaction.cpp:77
+#: krecentfilesaction.cpp:78
 #, kde-format
 msgid "Clear List"
 msgstr "Netyî l' djivêye"

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-15 02:02+0000\n"
+"POT-Creation-Date: 2023-07-29 01:58+0000\n"
 "PO-Revision-Date: 2022-07-26 16:36+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -87,12 +87,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Ekintza gehiago"
 
-#: krecentfilesaction.cpp:71
+#: krecentfilesaction.cpp:72
 #, kde-format
 msgid "No Entries"
 msgstr "Sarrerarik ez"
 
-#: krecentfilesaction.cpp:77
+#: krecentfilesaction.cpp:78
 #, kde-format
 msgid "Clear List"
 msgstr "Garbitu zerrenda"
