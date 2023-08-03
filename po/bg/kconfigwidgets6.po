@@ -515,6 +515,3 @@ msgstr "&Дарение"
 #: kstandardaction_p.h:106
 msgid "Open &Menu"
 msgstr "Отваряне на &меню"
-
-#~ msgid "Default"
-#~ msgstr "По подразбиране"
