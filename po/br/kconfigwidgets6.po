@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4-1.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-29 01:58+0000\n"
+"POT-Creation-Date: 2023-08-08 02:04+0000\n"
 "PO-Revision-Date: 2007-10-15 22:19+0200\n"
 "Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
 "Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
@@ -99,19 +99,19 @@ msgstr "N'eus bouetadur ebet"
 msgid "Clear List"
 msgstr "Endalc'had :"
 
-#: kstandardaction.cpp:155
+#: kstandardaction.cpp:156
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "War-gil"
 
-#: kstandardaction.cpp:162
+#: kstandardaction.cpp:163
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "War-raok"
 
-#: kstandardaction.cpp:169
+#: kstandardaction.cpp:170
 #, fuzzy, kde-format
 #| msgctxt "beginning (of line)"
 #| msgid "&Home"
@@ -119,12 +119,12 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Ker"
 
-#: kstandardaction.cpp:225
+#: kstandardaction.cpp:229
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
 
-#: kstandardaction.cpp:246
+#: kstandardaction.cpp:250
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "

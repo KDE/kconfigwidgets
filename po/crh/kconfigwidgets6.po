@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-29 01:58+0000\n"
+"POT-Creation-Date: 2023-08-08 02:04+0000\n"
 "PO-Revision-Date: 2009-02-12 23:29-0600\n"
 "Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
 "Language-Team: Qırımtatarca (Qırım Türkçesi)\n"
@@ -101,31 +101,31 @@ msgstr "Kirdi yoq"
 msgid "Clear List"
 msgstr "Kirdini temizle"
 
-#: kstandardaction.cpp:155
+#: kstandardaction.cpp:156
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "&Keri"
 
-#: kstandardaction.cpp:162
+#: kstandardaction.cpp:163
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&İleri"
 
-#: kstandardaction.cpp:169
+#: kstandardaction.cpp:170
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Ev"
 
-#: kstandardaction.cpp:225
+#: kstandardaction.cpp:229
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
 "&Menü Çubuğını Köster<p>Menü çubuğı gizlengenden soñ onı tekrar köstere</p>"
 
-#: kstandardaction.cpp:246
+#: kstandardaction.cpp:250
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "

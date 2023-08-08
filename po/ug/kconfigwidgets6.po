@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-29 01:58+0000\n"
+"POT-Creation-Date: 2023-08-08 02:04+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -101,32 +101,32 @@ msgstr "تۈر يوق"
 msgid "Clear List"
 msgstr "تىزىملىكنى تازىلا"
 
-#: kstandardaction.cpp:155
+#: kstandardaction.cpp:156
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "كەينى(&B)"
 
-#: kstandardaction.cpp:162
+#: kstandardaction.cpp:163
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "ئالدىغا(&F)"
 
-#: kstandardaction.cpp:169
+#: kstandardaction.cpp:170
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "ماكان(&H)"
 
-#: kstandardaction.cpp:225
+#: kstandardaction.cpp:229
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
 "تىزىملىك بالدىقىنى كۆرسەت<p>تىزىملىك بالدىقى يوشۇرۇنغاندىن كېيىن ئۇنى يەنە "
 "قايتا كۆرسىتىدۇ</p>"
 
-#: kstandardaction.cpp:246
+#: kstandardaction.cpp:250
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "

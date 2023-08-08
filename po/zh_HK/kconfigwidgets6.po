@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-29 01:58+0000\n"
+"POT-Creation-Date: 2023-08-08 02:04+0000\n"
 "PO-Revision-Date: 2006-01-04 13:32+0800\n"
 "Last-Translator: Abel Cheung <abel@oaka.org>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
@@ -125,19 +125,19 @@ msgstr "內容"
 msgid "Clear List"
 msgstr "清除輸入"
 
-#: kstandardaction.cpp:155
+#: kstandardaction.cpp:156
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "往回(&B)"
 
-#: kstandardaction.cpp:162
+#: kstandardaction.cpp:163
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "往前(&F)"
 
-#: kstandardaction.cpp:169
+#: kstandardaction.cpp:170
 #, fuzzy, kde-format
 #| msgctxt "beginning (of line)"
 #| msgid "&Home"
@@ -145,13 +145,13 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "行開頭(&H)"
 
-#: kstandardaction.cpp:225
+#: kstandardaction.cpp:229
 #, fuzzy, kde-format
 #| msgid "Show Menubar<p>Shows the menubar again after it has been hidden"
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "顯示選單列<p>隱藏選單列後再次顯示它"
 
-#: kstandardaction.cpp:246
+#: kstandardaction.cpp:250
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "

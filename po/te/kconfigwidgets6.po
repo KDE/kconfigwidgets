@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-29 01:58+0000\n"
+"POT-Creation-Date: 2023-08-08 02:04+0000\n"
 "PO-Revision-Date: 2013-11-04 23:55+0630\n"
 "Last-Translator: Bhuvan Krishna <bhuvan@swecha.org>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -109,30 +109,30 @@ msgstr "దాఖలాలు లేవు"
 msgid "Clear List"
 msgstr "వరుశ  చెరిపివేయుము"
 
-#: kstandardaction.cpp:155
+#: kstandardaction.cpp:156
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "(&B) వెనుకకు"
 
-#: kstandardaction.cpp:162
+#: kstandardaction.cpp:163
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "(&F) ముందుకు"
 
-#: kstandardaction.cpp:169
+#: kstandardaction.cpp:170
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "(&H) గృహము"
 
-#: kstandardaction.cpp:225
+#: kstandardaction.cpp:229
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "మెనూబార్‌ను చూపుము <p>మెనూబార్‌ను మరలా చూపుము అది దాయబడి తర్వాతన</p>"
 
-#: kstandardaction.cpp:246
+#: kstandardaction.cpp:250
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "

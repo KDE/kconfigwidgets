@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-29 01:58+0000\n"
+"POT-Creation-Date: 2023-08-08 02:04+0000\n"
 "PO-Revision-Date: 2021-09-05 20:26+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -98,30 +98,30 @@ msgstr "Ingen indgange"
 msgid "Clear List"
 msgstr "Ryd liste"
 
-#: kstandardaction.cpp:155
+#: kstandardaction.cpp:156
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "Til&bage"
 
-#: kstandardaction.cpp:162
+#: kstandardaction.cpp:163
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&Frem"
 
-#: kstandardaction.cpp:169
+#: kstandardaction.cpp:170
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Hjem"
 
-#: kstandardaction.cpp:225
+#: kstandardaction.cpp:229
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "Vis menulinje<p>Viser menulinjen igen efter den har været skjult</p>"
 
-#: kstandardaction.cpp:246
+#: kstandardaction.cpp:250
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "

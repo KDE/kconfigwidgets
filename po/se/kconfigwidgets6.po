@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-29 01:58+0000\n"
+"POT-Creation-Date: 2023-08-08 02:04+0000\n"
 "PO-Revision-Date: 2012-05-30 23:19+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -93,32 +93,32 @@ msgstr "Eai leat merkošat"
 msgid "Clear List"
 msgstr "Sálke listtu"
 
-#: kstandardaction.cpp:155
+#: kstandardaction.cpp:156
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "&Maŋos"
 
-#: kstandardaction.cpp:162
+#: kstandardaction.cpp:163
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&Ovddos"
 
-#: kstandardaction.cpp:169
+#: kstandardaction.cpp:170
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Ruoktut"
 
-#: kstandardaction.cpp:225
+#: kstandardaction.cpp:229
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
 "Čájet fálloholgga <p>Čájeha fálloholgga fas maŋŋá go lea leamaš "
 "čihkkojuvvon</p>"
 
-#: kstandardaction.cpp:246
+#: kstandardaction.cpp:250
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "

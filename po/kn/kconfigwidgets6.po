@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-29 01:58+0000\n"
+"POT-Creation-Date: 2023-08-08 02:04+0000\n"
 "PO-Revision-Date: 2010-06-24 18:32+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn_IN <kde-i18n-doc@kde.org>\n"
@@ -101,31 +101,31 @@ msgstr "ನಮೂದುಗಳಿಲ್ಲ"
 msgid "Clear List"
 msgstr "ಪಟ್ಟಿಯನ್ನು ತೆರವುಗೊಳಿಸು "
 
-#: kstandardaction.cpp:155
+#: kstandardaction.cpp:156
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "ಹಿಂದಕ್ಕೆ(&B)"
 
-#: kstandardaction.cpp:162
+#: kstandardaction.cpp:163
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "ಮುಂದಕ್ಕೆ(&F)"
 
-#: kstandardaction.cpp:169
+#: kstandardaction.cpp:170
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "ನೆಲೆ(&H)"
 
-#: kstandardaction.cpp:225
+#: kstandardaction.cpp:229
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
 "ಪರಿವಿಡಿಪಟ್ಟಿಕೆಯನ್ನು ತೋರಿಸು<p>ಪರಿವಿಡಿಪಟ್ಟಿಯನ್ನು ಅವಿತನಂತರವೂ ಅದನ್ನು ತೋರಿಸುತ್ತದೆ</p>"
 
-#: kstandardaction.cpp:246
+#: kstandardaction.cpp:250
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
