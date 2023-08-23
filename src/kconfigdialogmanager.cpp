@@ -465,6 +465,15 @@ void KConfigDialogManager::setProperty(QWidget *w, const QVariant &v)
     if (d->allExclusiveGroupBoxes.contains(w)) {
         const QList<QAbstractButton *> buttons = w->findChildren<QAbstractButton *>();
         if (v.toInt() < buttons.count()) {
+            for (const auto button : buttons) {
+                auto customValue = button->property("kcfg_value");
+                if (customValue.isValid() && customValue == v) {
+                    button->setChecked(true);
+                    return;
+                }
+            }
+
+            // fallback no custom kcfg_value
             buttons[v.toInt()]->setChecked(true);
         }
         return;
@@ -504,7 +513,12 @@ QVariant KConfigDialogManager::property(QWidget *w) const
         const QList<QAbstractButton *> buttons = w->findChildren<QAbstractButton *>();
         for (int i = 0; i < buttons.count(); ++i) {
             if (buttons[i]->isChecked()) {
-                return i;
+                auto customValue = buttons[i]->property("kcfg_value");
+                if (customValue.isValid()) {
+                    return customValue.value<QVariant>();
+                } else {
+                    return i;
+                }
             }
         }
         return -1;
