@@ -39,6 +39,7 @@ endforeach()
 
 ecm_add_test(klanguagenametest.cpp LINK_LIBRARIES Qt6::Test KF6::ConfigWidgets)
 ecm_add_test(kcmdbartest.cpp LINK_LIBRARIES Qt6::Test KF6::ConfigWidgets)
+ecm_add_test(khamburgermenutest.cpp LINK_LIBRARIES Qt6::Test KF6::ConfigWidgets)
 
 ecm_add_test(krecentfilesactiontest.cpp TEST_NAME "krecentfilesaction_test" LINK_LIBRARIES Qt6::Test KF6::ConfigWidgets)
 
