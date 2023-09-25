@@ -20,6 +20,8 @@
 #include <QUrl>
 #include <kconfigwidgets_export.h>
 
+#include <QMimeType>
+
 class KConfigGroup;
 class KRecentFilesActionPrivate;
 
@@ -87,21 +89,13 @@ public:
      * Do not use addAction(QAction*), as no url will be associated, and
      * consequently urlSelected() will not be emitted when \a action is selected.
      */
-    void addAction(QAction *action, const QUrl &url, const QString &name);
+    void addAction(QAction *action, const QUrl &url, const QString &name, const QMimeType &mimeType = QMimeType());
 
     /**
      * Reimplemented for internal reasons.
      */
     QAction *removeAction(QAction *action) override;
 
-public Q_SLOTS:
-    /**
-     * Clears the recent files list.
-     * Note that there is also an action shown to the user for clearing the list.
-     */
-    virtual void clear();
-
-public:
     /**
      *  Returns the maximum of items in the recent files list.
      */
@@ -158,6 +152,13 @@ public:
      *  Retrieve a list of all URLs in the recent files list.
      */
     QList<QUrl> urls() const;
+
+public Q_SLOTS:
+    /**
+     * Clears the recent files list.
+     * Note that there is also an action shown to the user for clearing the list.
+     */
+    virtual void clear();
 
 Q_SIGNALS:
     /**

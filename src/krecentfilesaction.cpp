@@ -25,6 +25,11 @@
 #include <QMimeType>
 #include <QScreen>
 
+#ifdef QT_DBUS_LIB
+#include <QDBusInterface>
+#include <QDBusMessage>
+#endif
+
 #include <KConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
@@ -199,18 +204,51 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
     // add file to list
     const QString title = titleWithSensibleWidth(tmpName, KShell::tildeCollapse(file));
 
+    const QMimeType mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
+
+#ifdef QT_DBUS_LIB
+    static bool isKdeSession = qgetenv("XDG_CURRENT_DESKTOP") == "KDE";
+    if (isKdeSession) {
+        const QDBusConnection bus = QDBusConnection::sessionBus();
+        if (bus.isConnected()) {
+            const static QString activityService = QStringLiteral("org.kde.ActivityManager");
+            const static QString activityResources = QStringLiteral("/ActivityManager/Resources");
+            const static QString activityResouceInferface = QStringLiteral("org.kde.ActivityManager.Resources");
+
+            const auto urlString = url.toString(QUrl::PreferLocalFile);
+            QDBusMessage message =
+                QDBusMessage::createMethodCall(activityService, activityResources, activityResouceInferface, QStringLiteral("RegisterResourceEvent"));
+            message.setArguments({qApp->desktopFileName(), uint(0) /* WinId */, urlString, uint(0) /* eventType Accessed */});
+            bus.asyncCall(message);
+
+            message = QDBusMessage::createMethodCall(activityService, activityResources, activityResouceInferface, QStringLiteral("RegisterResourceMimetype"));
+            message.setArguments({urlString, mimeType.name()});
+            bus.asyncCall(message);
+
+            message = QDBusMessage::createMethodCall(activityService, activityResources, activityResouceInferface, QStringLiteral("RegisterResourceTitle"));
+            message.setArguments({urlString, url.fileName()});
+            bus.asyncCall(message);
+        }
+    }
+#endif
+
     QAction *action = new QAction(title, selectableActionGroup());
-    addAction(action, url, tmpName);
+    addAction(action, url, tmpName, mimeType);
 }
 
-void KRecentFilesAction::addAction(QAction *action, const QUrl &url, const QString &name)
+void KRecentFilesAction::addAction(QAction *action, const QUrl &url, const QString &name, const QMimeType &_mimeType)
 {
     Q_D(KRecentFilesAction);
 
-    const QMimeType mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
+    auto mimeType = _mimeType;
+    if (!mimeType.isValid()) {
+        mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
+    }
+
     if (!mimeType.isDefault()) {
         action->setIcon(QIcon::fromTheme(mimeType.iconName()));
     }
+
     menu()->insertAction(menu()->actions().value(0), action);
     d->m_recentActions.push_back({action, url, name});
 }

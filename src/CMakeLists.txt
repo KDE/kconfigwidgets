@@ -70,12 +70,14 @@ target_link_libraries(KF6ConfigWidgets
     KF6::CoreAddons # KAboutData, KFuzzymatcher
     KF6::GuiAddons # KColorScheme uses KColorUtils
     KF6::I18n # For action and widget texts
+    KF6::Codecs # KCodecActions uses KCharsets, KEncodingProber
 )
-
-target_link_libraries(KF6ConfigWidgets
-  PRIVATE
-  KF6::Codecs # KCodecActions uses KCharsets, KEncodingProber
-)
+if (HAVE_DBUS)
+    target_link_libraries(KF6ConfigWidgets
+        PRIVATE
+        Qt::DBus # KRecentFilesAction to send call to ActivityManager
+    )
+endif()
 
 ecm_generate_headers(KConfigWidgets_HEADERS
   HEADER_NAMES
