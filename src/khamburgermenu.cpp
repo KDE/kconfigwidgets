@@ -34,6 +34,7 @@ KHamburgerMenuPrivate::KHamburgerMenuPrivate(KHamburgerMenu *qq)
 {
     q_ptr->setPriority(QAction::LowPriority);
     connect(q_ptr, &QAction::changed, this, &KHamburgerMenuPrivate::slotActionChanged);
+    connect(q_ptr, &QAction::triggered, this, &KHamburgerMenuPrivate::slotActionTriggered);
 }
 
 KHamburgerMenu::~KHamburgerMenu() = default;
@@ -208,6 +209,8 @@ QWidget *KHamburgerMenuPrivate::createWidget(QWidget *parent)
         connect(toolbar, &QToolBar::toolButtonStyleChanged, toolButton, &QToolButton::setToolButtonStyle);
     }
 
+    setToolButtonVisible(toolButton, !isMenuBarVisible(m_menuBar));
+
     // Make sure the menu will be ready in time
     toolButton->installEventFilter(m_listeners->get<ButtonPressListener>());
 
@@ -381,8 +384,12 @@ void KHamburgerMenuPrivate::updateVisibility()
      * menu bar because native menu bars can come in many shapes and sizes which don't necessarily
      * have the same usability benefits as a traditional in-window menu bar.
      * KDE applications normally allow the user to remove any actions from their toolbar(s) anyway. */
-    const bool menuBarVisible = m_menuBar && (m_menuBar->isVisible() && !m_menuBar->isNativeMenuBar());
-    q->setVisible(!menuBarVisible);
+    const bool menuBarVisible = isMenuBarVisible(m_menuBar);
+
+    const auto createdWidgets = q->createdWidgets();
+    for (auto widget : createdWidgets) {
+        setToolButtonVisible(widget, !menuBarVisible);
+    }
 
     if (!m_menuAction) {
         if (menuBarVisible && m_actualMenu) {
@@ -391,7 +398,6 @@ void KHamburgerMenuPrivate::updateVisibility()
         return;
     }
 
-    const auto createdWidgets = q->createdWidgets();
     // The m_menuAction acts as a fallback if both the m_menuBar and all createdWidgets() on the UI
     // are currently hidden. Only then should the m_menuAction ever be visible in a QMenu.
     if (menuBarVisible || (m_menuBar && m_menuBar->isNativeMenuBar()) // See [1] below.
@@ -415,6 +421,35 @@ void KHamburgerMenuPrivate::slotActionChanged()
         auto toolButton = static_cast<QToolButton *>(widget);
         updateButtonStyle(toolButton);
     }
+}
+
+void KHamburgerMenuPrivate::slotActionTriggered()
+{
+    if (isMenuBarVisible(m_menuBar)) {
+        const auto menuBarActions = m_menuBar->actions();
+        for (const auto action : menuBarActions) {
+            if (action->isEnabled() && !action->isSeparator()) {
+                m_menuBar->setActiveAction(m_menuBar->actions().constFirst());
+                return;
+            }
+        }
+    }
+
+    Q_Q(KHamburgerMenu);
+    const auto createdWidgets = q->createdWidgets();
+    for (auto widget : createdWidgets) {
+        if (isWidgetActuallyVisible(widget) && widget->isActiveWindow()) {
+            auto toolButton = static_cast<QToolButton *>(widget);
+            m_listeners->get<ButtonPressListener>()->prepareHamburgerButtonForPress(toolButton);
+            toolButton->pressed();
+            return;
+        }
+    }
+
+    Q_EMIT q->aboutToShowMenu();
+    resetMenu();
+    prepareParentlessMenuForShowing(m_actualMenu.get(), nullptr);
+    m_actualMenu->popup(QCursor::pos());
 }
 
 void KHamburgerMenuPrivate::updateButtonStyle(QToolButton *hamburgerMenuButton) const

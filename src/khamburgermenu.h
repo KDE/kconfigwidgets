@@ -89,6 +89,16 @@ class QMenuBar;
  *    a help menu as the second to last item (if you set a QMenuBar which is
  *    expected to have the help menu as the last action).
  *
+ * **Open menu by shortcut**
+ *
+ * For visually impaired users it is important to have a consistent way to open a general-purpose
+ * menu. Triggering the keyboard shortcut bound to KHamburgerMenu will always open a menu.
+ * - If setMenuBar() was called and that menu bar is visible, the shortcut will open the first menu
+ *   of that menu bar.
+ * - Otherwise, if there is a visible KHamburgerMenu button in the user interface, that menu will
+ *   open.
+ * - Otherwise, KHamburgerMenu's menu will open at the mouse cursor position.
+ *
  * @since 5.81
  */
 class KCONFIGWIDGETS_EXPORT KHamburgerMenu : public QWidgetAction

@@ -124,6 +124,16 @@ protected:
     void slotActionChanged();
 
     /**
+     * When m_menuBar->isVisible(): Opens the first menu of the menu bar.
+     * Otherwise it acts the same way as clicking on a visible KHamburgerMenu button.
+     * If no KHamburgerMenu button is visible, open its menu anyway.
+     *
+     * @note The action triggered signal is not emitted when a normal button that contains a menu
+     *       is pressed. So this slot will effectively only be called by keyboard shortcut.
+     */
+    void slotActionTriggered();
+
+    /**
      * Updates the style of @p hamburgerMenuButton based on its parent's style and q->priority().
      */
     void updateButtonStyle(QToolButton *hamburgerMenuButton) const;

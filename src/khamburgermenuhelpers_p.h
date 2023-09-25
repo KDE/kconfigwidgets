@@ -16,6 +16,7 @@
 #include <vector>
 
 class QFont;
+class QMenuBar;
 class QWidget;
 
 /**
@@ -80,10 +81,19 @@ class ButtonPressListener : public QObject
 {
     Q_OBJECT
 
+public:
+    /**
+     * Makes sure the button can show the expected menu in the expected way when pressed.
+     * A button that hasn't been prepared yet will have no menu at all because the menu is only
+     * created when it is needed.
+     */
+    void prepareHamburgerButtonForPress(QObject *button);
+
 protected:
     inline ButtonPressListener(QObject *parent)
         : QObject{parent} {};
 
+    /** Calls prepareButtonForPress() when an event that presses the button is detected. */
     bool eventFilter(QObject *watched, QEvent *event) override;
 
     friend class ListenerContainer;
@@ -130,10 +140,31 @@ protected:
     friend class ListenerContainer;
 };
 
+/*
+ * We only consider a visible m_menuBar as actually visible if it is not a native
+ * menu bar because native menu bars can come in many shapes and sizes which don't necessarily
+ * have the same usability benefits as a traditional in-window menu bar.
+ */
+bool isMenuBarVisible(const QMenuBar *menuBar);
+
 /**
  * Is the widget and all of its ancestors visible?
  */
 bool isWidgetActuallyVisible(const QWidget *widget);
+
+/*
+ * Call this on menus that don't have a parent or don't want to belong to a singular parent() so
+ * those menus won't be treated like their own separate windows.
+ * @param menu            Any menu. Though calling this doesn't make sense if the menu has a parent().
+ * @param surrogateParent The widget that is logically closest to be considered a parent at this
+ *                        point in time. Pass nullptr if this function is supposed to guess.
+ */
+void prepareParentlessMenuForShowing(QMenu *menu, const QWidget *surrogateParent);
+
+/**
+ * Use this instead of QWidget::isVisible() to work around a peculiarity of QToolBar/QToolButton.
+ */
+void setToolButtonVisible(QWidget *toolButton, bool visible);
 
 /**
  * Does the @p list contain the @p widget?
