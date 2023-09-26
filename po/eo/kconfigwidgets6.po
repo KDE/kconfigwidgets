@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-08 02:04+0000\n"
+"POT-Creation-Date: 2023-09-26 01:42+0000\n"
 "PO-Revision-Date: 2023-04-16 12:22+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -67,25 +67,25 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "Agordi"
 
-#: khamburgermenu.cpp:125
+#: khamburgermenu.cpp:126
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "&Menuo"
 
-#: khamburgermenu.cpp:326
+#: khamburgermenu.cpp:329
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "Montri &Menubreton kun Ĉiuj Agoj"
 
-#: khamburgermenu.cpp:352
+#: khamburgermenu.cpp:355
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "Pli"
 
-#: khamburgermenu.cpp:353
+#: khamburgermenu.cpp:356
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"

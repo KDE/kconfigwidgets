@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-08 02:04+0000\n"
+"POT-Creation-Date: 2023-09-26 01:42+0000\n"
 "PO-Revision-Date: 2017-09-28 17:57+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -60,26 +60,26 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "Подешавање"
 
-#: khamburgermenu.cpp:125
+#: khamburgermenu.cpp:126
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr ""
 
-#: khamburgermenu.cpp:326
+#: khamburgermenu.cpp:329
 #, fuzzy, kde-format
 #| msgid "Show &Menubar"
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "Прикажи траку &менија"
 
-#: khamburgermenu.cpp:352
+#: khamburgermenu.cpp:355
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr ""
 
-#: khamburgermenu.cpp:353
+#: khamburgermenu.cpp:356
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"

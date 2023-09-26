@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-08 02:04+0000\n"
+"POT-Creation-Date: 2023-09-26 01:42+0000\n"
 "PO-Revision-Date: 2010-07-22 09:48+0100\n"
 "Last-Translator: Berend Ytsma <berendy@gmail.com>\n"
 "Language-Team: nl <kde-i18n-doc@lists.kde.org>\n"
@@ -66,7 +66,7 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "Konfigurearje"
 
-#: khamburgermenu.cpp:125
+#: khamburgermenu.cpp:126
 #, fuzzy, kde-format
 #| msgctxt "keyboard-key-name"
 #| msgid "Menu"
@@ -74,21 +74,21 @@ msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "Menu"
 
-#: khamburgermenu.cpp:326
+#: khamburgermenu.cpp:329
 #, fuzzy, kde-format
 #| msgid "Show all options"
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "Alle opsjes sjen litte"
 
-#: khamburgermenu.cpp:352
+#: khamburgermenu.cpp:355
 #, fuzzy, kde-format
 #| msgid "Choose..."
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "Kies..."
 
-#: khamburgermenu.cpp:353
+#: khamburgermenu.cpp:356
 #, fuzzy, kde-format
 #| msgid "More Actions"
 msgctxt ""
