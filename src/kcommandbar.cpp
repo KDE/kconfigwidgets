@@ -133,16 +133,10 @@ protected:
         if (m_pattern.isEmpty()) {
             accept = true;
         } else {
-            // Example row= "File: Open File"
-            // actionName: OpenFile
             const QString row = index.data(Qt::DisplayRole).toString();
-            const int pos = row.indexOf(QLatin1Char(':'));
-            if (pos >= 0) {
-                const QString actionName = row.mid(pos + 2);
-                KFuzzyMatcher::Result res = KFuzzyMatcher::match(m_pattern, actionName);
-                sourceModel()->setData(index, res.score, KCommandBarModel::Score);
-                accept = res.matched;
-            }
+            KFuzzyMatcher::Result resAction = KFuzzyMatcher::match(m_pattern, row);
+            sourceModel()->setData(index, resAction.score, KCommandBarModel::Score);
+            accept = resAction.matched;
         }
 
         if (accept && !m_hasActionsWithIcons) {
