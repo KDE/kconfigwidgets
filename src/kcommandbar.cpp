@@ -93,12 +93,17 @@ public:
     {
         connect(this, &CommandBarFilterModel::modelAboutToBeReset, this, [this]() {
             m_hasActionsWithIcons = false;
+            m_hasActionsWithChecks = false;
         });
     }
 
     bool hasActionsWithIcons() const
     {
         return m_hasActionsWithIcons;
+    }
+    bool hasActionsWitchChecks() const
+    {
+        return m_hasActionsWithChecks;
     }
 
     Q_SLOT void setFilterString(const QString &string)
@@ -145,6 +150,9 @@ protected:
             }
         }
 
+        if (accept && !m_hasActionsWithChecks) {
+            m_hasActionsWithChecks |= index.data(KCommandBarModel::IsCheckable).toBool();
+        }
         if (accept && !m_hasActionsWithIcons) {
             m_hasActionsWithIcons |= !index.data(Qt::DecorationRole).isNull();
         }
@@ -155,6 +163,7 @@ protected:
 private:
     QString m_pattern;
     mutable bool m_hasActionsWithIcons = false;
+    mutable bool m_hasActionsWithChecks = false;
 };
 // END CommandBarFilterModel
 
@@ -219,6 +228,12 @@ public:
         QStyleOptionViewItem option = opt;
         initStyleOption(&option, index);
         option.text.clear(); // clear old text
+        if (index.data(KCommandBarModel::Role::IsCheckable).toBool()) {
+            option.features |= QStyleOptionViewItem::HasCheckIndicator;
+        }
+        if (index.data(KCommandBarModel::Role::IsChecked).toBool()) {
+            option.checkState = Qt::CheckState::Checked;
+        }
         QStyle *style = option.widget->style();
         style->drawControl(QStyle::CE_ItemViewItem, &option, painter, option.widget);
 
@@ -227,6 +242,15 @@ public:
         QRect textRect = option.rect;
 
         const CommandBarFilterModel *model = static_cast<const CommandBarFilterModel *>(index.model());
+
+        if (model->hasActionsWitchChecks()) {
+            const int checkboxWidth = QStyle::PM_IndicatorWidth;
+            if (option.direction == Qt::RightToLeft) {
+                textRect.adjust(0, 0, -checkboxWidth, 0);
+            } else {
+                textRect.adjust(checkboxWidth, 0, 0, 0);
+            }
+        }
         if (model->hasActionsWithIcons()) {
             const int iconWidth = option.decorationSize.width() + (hMargin * 2);
             if (option.direction == Qt::RightToLeft) {

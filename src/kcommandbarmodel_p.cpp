@@ -145,6 +145,10 @@ QVariant KCommandBarModel::data(const QModelIndex &index, int role) const
     }
     case Role::Score:
         return entry.score;
+    case Role::IsCheckable:
+        return entry.action->isCheckable();
+    case Role::IsChecked:
+        return entry.action->isChecked();
     }
 
     return {};

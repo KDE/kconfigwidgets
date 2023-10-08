@@ -27,7 +27,7 @@ public:
 
     KCommandBarModel(QObject *parent = nullptr);
 
-    enum Role { Score = Qt::UserRole + 1 };
+    enum Role { Score = Qt::UserRole + 1, IsCheckable = Qt::UserRole + 2, IsChecked = Qt::UserRole + 3 };
 
     enum Column { Column_Command, Column_Shortcut, Column_Count };
 
