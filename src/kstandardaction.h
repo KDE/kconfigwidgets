@@ -19,6 +19,7 @@
 #include <krecentfilesaction.h>
 #include <ktogglefullscreenaction.h>
 
+#include <optional>
 #include <type_traits>
 
 class QObject;
@@ -223,24 +224,24 @@ KCONFIGWIDGETS_EXPORT QAction *_k_createInternal(StandardAction id, QObject *par
  * @note if you use @c OpenRecent as @p id, you should manually connect to the urlSelected(const QUrl &)
  * signal of the returned KRecentFilesAction instead or use KStandardAction::openRecent(Receiver *, Func).
  *
- * If not explicitely specified, @p connectionType will be AutoConnection for all actions
- * except for ConfigureToolbars that will be QueuedConnection.
+ * If not explicitly specified, @p connectionType will be AutoConnection for all actions
+ * except for ConfigureToolbars it will be QueuedConnection.
  *
  * @see create(StandardAction, const QObject *, const char *, QObject *)
  * @since 5.23 (The connectionType argument was added in 5.95)
  */
 #ifdef K_DOXYGEN
-inline QAction *create(StandardAction id, const QObject *recvr, Func slot, QObject *parent, Qt::ConnectionType connectionType = -1)
+inline QAction *create(StandardAction id, const QObject *recvr, Func slot, QObject *parent, std::optional<Qt::ConnectionType> connectionType = std::nullopt)
 #else
 template<class Receiver, class Func>
 inline typename std::enable_if<!std::is_convertible<Func, const char *>::value, QAction>::type *
-create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent, Qt::ConnectionType connectionType = static_cast<Qt::ConnectionType>(-1))
+create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent, std::optional<Qt::ConnectionType> connectionType = std::nullopt)
 #endif
 {
     QAction *action = _k_createInternal(id, parent);
     // ConfigureToolbars is special because of bug #200815
     const Qt::ConnectionType defaultConnectionType = (id == ConfigureToolbars) ? Qt::QueuedConnection : Qt::AutoConnection;
-    QObject::connect(action, &QAction::triggered, recvr, slot, connectionType != static_cast<Qt::ConnectionType>(-1) ? connectionType : defaultConnectionType);
+    QObject::connect(action, &QAction::triggered, recvr, slot, connectionType.value_or(defaultConnectionType));
     return action;
 }
 
