@@ -150,7 +150,8 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
 
     if (pInfo) {
         QString sLabel;
-        QString iconName = QLatin1String(pInfo->psIconName);
+        QString iconName = pInfo->psIconName.toString();
+
         switch (id) {
         case Back:
             sLabel = i18nc("go back", "&Back");
@@ -590,7 +591,7 @@ static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const c
         return nullptr;
     }
 
-    AutomaticAction *action = new AutomaticAction(QIcon::fromTheme(QLatin1String(p->psIconName)), p->psLabel.toString(), p->idAccel, slot, parent);
+    AutomaticAction *action = new AutomaticAction(QIcon::fromTheme(p->psIconName.toString()), p->psLabel.toString(), p->idAccel, slot, parent);
 
     action->setObjectName(QLatin1String(p->psName));
     if (!p->psToolTip.isEmpty()) {
