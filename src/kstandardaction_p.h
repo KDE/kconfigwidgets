@@ -103,7 +103,7 @@ static const KStandardActionInfo g_rgActionInfo[] = {
     { RenameFile,    KStandardShortcut::RenameFile, "renamefile", kli18n("&Rename..."), {}, "edit-rename" },
     { MoveToTrash,   KStandardShortcut::MoveToTrash, "movetotrash", kli18n("&Move to Trash"), {}, "trash-empty" },
     { Donate,        KStandardShortcut::Donate, "help_donate", kli18n("&Donate"), {}, "help-donate"},
-    { HamburgerMenu, KStandardShortcut::AccelNone, "hamburger_menu", kli18n("Open &Menu"), {}, "application-menu" },
+    { HamburgerMenu, KStandardShortcut::OpenMainMenu, "hamburger_menu", kli18n("Open &Menu"), {}, "application-menu" },
     { ActionNone,    KStandardShortcut::AccelNone, nullptr, {}, {}, nullptr }
 };
 // clang-format on
