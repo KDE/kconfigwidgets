@@ -392,15 +392,15 @@ msgstr "Va a la pàgina següent"
 
 #: kstandardaction_p.h:74
 msgid "&Go To..."
-msgstr "&Ves a..."
+msgstr "&Ves fins a..."
 
 #: kstandardaction_p.h:75
 msgid "&Go to Page..."
-msgstr "&Ves a la pàgina..."
+msgstr "&Ves fins a la pàgina..."
 
 #: kstandardaction_p.h:76
 msgid "&Go to Line..."
-msgstr "&Ves a la línia..."
+msgstr "&Ves fins a la línia..."
 
 #: kstandardaction_p.h:77
 msgid "&First Page"
@@ -539,7 +539,7 @@ msgstr "Ca&nvia el nom..."
 
 #: kstandardaction_p.h:113
 msgid "&Move to Trash"
-msgstr "&Mou a la paperera"
+msgstr "&Mou cap a dins de la paperera"
 
 #: kstandardaction_p.h:114
 msgid "&Donate"
