@@ -247,10 +247,8 @@ create(StandardAction id, const Receiver *recvr, Func slot, QObject *parent, std
 
 /**
  * This will return the internal name of a given standard action.
- *
- * The returned const char* only contains ASCII characters.
  */
-KCONFIGWIDGETS_EXPORT const char *name(StandardAction id);
+KCONFIGWIDGETS_EXPORT QString name(StandardAction id);
 
 /**
  * Returns a list of all standard names. Used by KAccelManager

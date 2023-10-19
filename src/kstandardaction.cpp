@@ -316,7 +316,7 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
                              pAction->setProperty("defaultShortcuts", QVariant::fromValue(newShortcut));
                          });
 
-        pAction->setObjectName(QLatin1String(pInfo->psName));
+        pAction->setObjectName(pInfo->psName.toString());
     }
 
     if (pAction && parent && parent->inherits("KActionCollection")) {
@@ -343,10 +343,10 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
     return pAction;
 }
 
-const char *name(StandardAction id)
+QString name(StandardAction id)
 {
     const KStandardActionInfo *pInfo = infoPtr(id);
-    return (pInfo) ? pInfo->psName : nullptr;
+    return (pInfo) ? pInfo->psName.toString() : QString();
 }
 
 QAction *openNew(const QObject *recvr, const char *slot, QObject *parent)
@@ -593,7 +593,7 @@ static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const c
 
     AutomaticAction *action = new AutomaticAction(QIcon::fromTheme(p->psIconName.toString()), p->psLabel.toString(), p->idAccel, slot, parent);
 
-    action->setObjectName(QLatin1String(p->psName));
+    action->setObjectName(p->psName.toString());
     if (!p->psToolTip.isEmpty()) {
         action->setToolTip(p->psToolTip.toString());
     }

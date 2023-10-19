@@ -80,7 +80,7 @@ QWidget *KOpenAction::createWidget(QWidget *parentWidget)
         QAction *action = nullptr;
 
         if (parent() && parent()->inherits("KActionCollection")) {
-            const QString openRecentActionId = QString::fromUtf8(KStandardAction::name(KStandardAction::OpenRecent));
+            const QString openRecentActionId = KStandardAction::name(KStandardAction::OpenRecent);
             QMetaObject::invokeMethod(parent(), "action", Q_RETURN_ARG(QAction *, action), Q_ARG(QString, openRecentActionId));
         }
 
