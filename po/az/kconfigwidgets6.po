@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-26 01:42+0000\n"
+"POT-Creation-Date: 2023-10-22 02:04+0000\n"
 "PO-Revision-Date: 2023-02-17 01:22+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -90,32 +90,32 @@ msgstr "Giriş Olmayıb"
 msgid "Clear List"
 msgstr "Siyahını Təmizlə"
 
-#: kstandardaction.cpp:156
+#: kstandardaction.cpp:157
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "&Geriyə"
 
-#: kstandardaction.cpp:163
+#: kstandardaction.cpp:164
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&İrəli"
 
-#: kstandardaction.cpp:170
+#: kstandardaction.cpp:171
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Evə"
 
-#: kstandardaction.cpp:229
+#: kstandardaction.cpp:230
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
 "Menyu Çubuğunu Göstər<p>Gizlədildikdən sonra menyu çubuğunu yenidən göstər</"
 "p>"
 
-#: kstandardaction.cpp:250
+#: kstandardaction.cpp:251
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -124,394 +124,394 @@ msgstr ""
 "Vəziyyət Çubuğunu Göstər<p>Öəncərələrin ən alt hissəsində məlumat vermək "
 "üçün istifadə olunan vəziyyət çubuğunu göstərir.</p>"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "&New"
 msgstr "&Yeni"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "Create new document"
 msgstr "Yeni sənəd yarat"
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "&Open..."
 msgstr "&Aç"
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "Open an existing document"
 msgstr "Mövcud olan bir sənəd açın"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open &Recent"
 msgstr "&Sonuncunu aç"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
 msgstr "Ən son açılmış sənədi açın"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "&Save"
 msgstr "&Saxla"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "Save document"
 msgstr "Sənədi saxla"
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save &As..."
 msgstr "&Fərqli Saxla"
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save document under a new name"
 msgstr "Sənədi yeni adla saxla"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Re&vert"
 msgstr "Bərpa &et"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Revert unsaved changes made to document"
 msgstr "Sənədə daxil edilmiş lakin saxlanılmamış dəyişiklikləri bərpa et"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "&Close"
 msgstr "&Bağla"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "Close document"
 msgstr "Sənədi bağla"
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "&Print..."
 msgstr "&Çap et"
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "Print document"
 msgstr "Sənədi çap et"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Print Previe&w"
 msgstr "Önbaxışı Göst&ər"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Show a print preview of document"
 msgstr "Sənədın çapa haazır görünüşünü göstər"
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "&Mail..."
 msgstr "&E-poçt"
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "Send document by mail"
 msgstr "Sənədi e-poçtla göndər"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "&Quit"
 msgstr "&Çıx"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "Quit application"
 msgstr "Tətbiqdən çıx"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "&Undo"
 msgstr "&Geri qaytar"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "Undo last action"
 msgstr "Sonuncu hərəkəti geri qaytar"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Re&do"
 msgstr "Təkr&arla"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Redo last undone action"
 msgstr "Sonuncu ləğv edilən hərəkəti təkrar edin"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cu&t"
 msgstr "Kə&s"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
 msgstr "Seçiləni mübadilə yaddaşında saxlamaq üçün kəs"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "&Copy"
 msgstr "&Kopyala"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
 msgstr "Seçiləni mübadilə yaddaşında saxlamaq üçün kopyala"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "&Paste"
 msgstr "&Yerləşdir"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "Paste clipboard content"
 msgstr "Mübadilə yaddaşında olanı yerləşdir"
 
-#: kstandardaction_p.h:47
+#: kstandardaction_p.h:80
 msgid "C&lear"
 msgstr "Tə&mizlə"
 
-#: kstandardaction_p.h:48
+#: kstandardaction_p.h:81
 msgid "Select &All"
 msgstr "&Hamısını seç"
 
-#: kstandardaction_p.h:49
+#: kstandardaction_p.h:82
 msgid "Dese&lect"
 msgstr "Heçbirini &Seçmə"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:83
 msgid "&Find..."
 msgstr "&Tap..."
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:84
 msgid "Find &Next"
 msgstr "&Sonrakını Tap"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:85
 msgid "Find Pre&vious"
 msgstr "Əvv&əlkini Tap"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:86
 msgid "&Replace..."
 msgstr "&Əvəzlə"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
 msgstr "&Həqiqi ölçüsünə miqyaslayın"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 msgid "View document at its actual size"
 msgstr "Sənədi həqiqi ölçüsündə göstər"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "&Fit to Page"
 msgstr "&Səhifəni Tam Doldur"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "Zoom to fit page in window"
 msgstr "Səhifəni Pəncərəyə Sığışdır"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
 msgstr "Səhifəni &Enə Uyğunlaşdır"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Zoom to fit page width in window"
 msgstr "Səhifəni pəncərənin eninə uyğunlaşdır"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Fit to Page &Height"
 msgstr "Səhifəni &Hündürlüyə Uyğunlaşdır"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
 msgstr "Səhifəni pəncərənin hündürlüyünə görə böyüt"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:92
 msgid "Zoom &In"
 msgstr "Bö&yüt"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:93
 msgid "Zoom &Out"
 msgstr "Kiç&ilt"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "&Zoom..."
 msgstr "&Böyütmə"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "Select zoom level"
 msgstr "Böyütmə ölçüsünü seçin"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 msgid "&Refresh"
 msgstr "&Yenilə"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 msgid "Refresh document"
 msgstr "Sənədi yenilə"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "&Up"
 msgstr "&Aşağı"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "Go up"
 msgstr "Aşağı get"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "&Previous Page"
 msgstr "&Əvvəlki Səhifə"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "Go to previous page"
 msgstr "Əvvəlki səhifəyə keç"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "&Next Page"
 msgstr "&Sorakı Səhifə"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "Go to next page"
 msgstr "Sonrakı səhifəyə keç"
 
-#: kstandardaction_p.h:71
+#: kstandardaction_p.h:104
 msgid "&Go To..."
 msgstr "&Keç..."
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:105
 msgid "&Go to Page..."
 msgstr "&Səhifəyə keç"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:106
 msgid "&Go to Line..."
 msgstr "Sətirə &Keç"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "&First Page"
 msgstr "&İlk səhifə"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "Go to first page"
 msgstr "İlk səhifəyə keç"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "&Last Page"
 msgstr "&Sonuncu Səhifə"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "Go to last page"
 msgstr "Sonuncu səhifəyə keç"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "&Back"
 msgstr "&Geri"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "Go back in document"
 msgstr "Sənədə geri dön"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 msgid "&Forward"
 msgstr "&İrəli"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 msgid "Go forward in document"
 msgstr "Növbəti sənədə keç"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:112
 msgid "&Add Bookmark"
 msgstr "Əlfəcin &əlavə et"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:113
 msgid "&Edit Bookmarks..."
 msgstr "Əlfəcinə &Düzəliş et"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "&Spelling..."
 msgstr "&İmla Yoxlaması"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "Check spelling in document"
 msgstr "Sənədin Yazı Qaydalarını Yoxla"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show &Menubar"
 msgstr "Menyu &Çübüğunu Göstər"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show or hide menubar"
 msgstr "Menyu Çubuğunu gizlət və ya göstər"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show &Toolbar"
 msgstr "&Alətlər Çubuğunu Göstər"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show or hide toolbar"
 msgstr "Alətlər Çubuğunu göstər və ya gizlət"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show St&atusbar"
 msgstr "Vəziyyət &Çubuğunu Göstər"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show or hide statusbar"
 msgstr "Vəziyyət Çübüğunu göstər və ya gizlət"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:120
 msgid "F&ull Screen Mode"
 msgstr "T&am Ekran Rejimi"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:121
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "Klaviatura Q&ısayollarını Ayarla"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1..."
 msgstr "%1 &Ayarları..."
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:123
 msgid "Configure Tool&bars..."
 msgstr "Alətlər &Çubuğunu Ayarla"
 
-#: kstandardaction_p.h:91
+#: kstandardaction_p.h:124
 msgid "Configure &Notifications..."
 msgstr "&Bildirişləri Ayarla"
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:128
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "%1 &Sorğu Kitabı"
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:129
 msgid "What's &This?"
 msgstr "Bu &Nədir?"
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:130
 msgid "Tip of the &Day"
 msgstr "&Günün Məsləhəti"
 
-#: kstandardaction_p.h:98
+#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "Xəta &Bildir..."
 
-#: kstandardaction_p.h:99
+#: kstandardaction_p.h:132
 msgid "Configure &Language..."
 msgstr "Dil &Ayarları..."
 
-#: kstandardaction_p.h:100
+#: kstandardaction_p.h:133
 #, kde-format
 msgid "&About %1"
 msgstr "%1 &Haqqında"
 
-#: kstandardaction_p.h:101
+#: kstandardaction_p.h:134
 msgid "About &KDE"
 msgstr "&KDE haqqında"
 
-#: kstandardaction_p.h:102
+#: kstandardaction_p.h:135
 msgid "&Delete"
 msgstr "&Sil"
 
-#: kstandardaction_p.h:103
+#: kstandardaction_p.h:136
 msgid "&Rename..."
 msgstr "&Adını Dəyiş"
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:137
 msgid "&Move to Trash"
 msgstr "&Səbətə At"
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:138
 msgid "&Donate"
 msgstr "&Maddi Dəstək"
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:139
 msgid "Open &Menu"
 msgstr "&Menyunu açın"
 

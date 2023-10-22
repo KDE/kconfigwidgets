@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-26 01:42+0000\n"
+"POT-Creation-Date: 2023-10-22 02:04+0000\n"
 "PO-Revision-Date: 2022-06-04 18:44+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -117,32 +117,32 @@ msgstr "Aucun élément"
 msgid "Clear List"
 msgstr "Effacer la liste"
 
-#: kstandardaction.cpp:156
+#: kstandardaction.cpp:157
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "&Précédent"
 
-#: kstandardaction.cpp:163
+#: kstandardaction.cpp:164
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&Suivant"
 
-#: kstandardaction.cpp:170
+#: kstandardaction.cpp:171
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Début"
 
-#: kstandardaction.cpp:229
+#: kstandardaction.cpp:230
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
 "Afficher la barre de menus<p>Affiche la barre de menus à nouveau après "
 "qu'elle a été cachée</p>"
 
-#: kstandardaction.cpp:250
+#: kstandardaction.cpp:251
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -151,394 +151,394 @@ msgstr ""
 "Afficher la barre d'état<p>Affiche la barre d'état, qui est la barre située "
 "au bas de la fenêtre utilisée pour les informations d'état.</p>"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "&New"
 msgstr "&Nouveau"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "Create new document"
 msgstr "Créer un nouveau document"
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "&Open..."
 msgstr "&Ouvrir..."
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "Open an existing document"
 msgstr "Ouvrir un document existant"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open &Recent"
 msgstr "&Récemment ouvert(s)"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
 msgstr "Ouvre un document récemment ouvert"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "&Save"
 msgstr "&Enregistrer"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "Save document"
 msgstr "Enregistrer un document"
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save &As..."
 msgstr "Enregistrer &sous..."
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save document under a new name"
 msgstr "Enregistre le document sous un nouveau nom"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Re&vert"
 msgstr "Ann&uler"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Revert unsaved changes made to document"
 msgstr "Annule les changements non enregistrés apportés au document"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "&Close"
 msgstr "&Fermer"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "Close document"
 msgstr "Fermer un document"
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "&Print..."
 msgstr "Im&primer..."
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "Print document"
 msgstr "Imprimer un document"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Print Previe&w"
 msgstr "Aperçu avant i&mpression"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Show a print preview of document"
 msgstr "Affiche un aperçu avant impression d'un document"
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "&Mail..."
 msgstr "Envoyer par &courrier électronique..."
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "Send document by mail"
 msgstr "Envoie un document par courriel"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "&Quit"
 msgstr "&Quitter"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "Quit application"
 msgstr "Quitter l'application"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "&Undo"
 msgstr "Annu&ler"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "Undo last action"
 msgstr "Annuler la dernière action"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Re&do"
 msgstr "Re&faire"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Redo last undone action"
 msgstr "Ré-effectue la dernière action non réalisée"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cu&t"
 msgstr "Co&uper"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
 msgstr "Coupe la sélection dans le presse-papiers"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "&Copy"
 msgstr "Cop&ier"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
 msgstr "Copie la sélection dans le presse-papiers"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "&Paste"
 msgstr "C&oller"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "Paste clipboard content"
 msgstr "Colle le contenu du presse-papiers"
 
-#: kstandardaction_p.h:47
+#: kstandardaction_p.h:80
 msgid "C&lear"
 msgstr "E&ffacer"
 
-#: kstandardaction_p.h:48
+#: kstandardaction_p.h:81
 msgid "Select &All"
 msgstr "Tout &sélectionner"
 
-#: kstandardaction_p.h:49
+#: kstandardaction_p.h:82
 msgid "Dese&lect"
 msgstr "&Désélectionner"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:83
 msgid "&Find..."
 msgstr "&Chercher..."
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:84
 msgid "Find &Next"
 msgstr "&Poursuivre la recherche"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:85
 msgid "Find Pre&vious"
 msgstr "Chercher en arri&ère"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:86
 msgid "&Replace..."
 msgstr "&Remplacer..."
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
 msgstr "Zoomer jusqu'à la taille &actuelle"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 msgid "View document at its actual size"
 msgstr "Voir le document dans sa taille réelle"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "&Fit to Page"
 msgstr "Ajuster à la &page"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "Zoom to fit page in window"
 msgstr "Zoomer pour adapter la page dans la fenêtre"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
 msgstr "Ajuster à la &largeur de la page"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Zoom to fit page width in window"
 msgstr "Zoomer pour adapter la largeur de la page dans la fenêtre"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Fit to Page &Height"
 msgstr "Ajuster à la &hauteur de la page"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
 msgstr "Zoomer pour adapter la hauteur de la page fans la fenêtre"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:92
 msgid "Zoom &In"
 msgstr "Zoom ava&nt"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:93
 msgid "Zoom &Out"
 msgstr "&Zoom arrière"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "&Zoom..."
 msgstr "&Zoom..."
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "Select zoom level"
 msgstr "Sélectionner le niveau de zoom"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 msgid "&Refresh"
 msgstr "&Rafraîchir"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 msgid "Refresh document"
 msgstr "Rafraîchir le document"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "&Up"
 msgstr "&Haut"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "Go up"
 msgstr "Monter"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "&Previous Page"
 msgstr "Page &précédente"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "Go to previous page"
 msgstr "Aller à la page précédente"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "&Next Page"
 msgstr "Page &suivante"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "Go to next page"
 msgstr "Aller à la page suivante"
 
-#: kstandardaction_p.h:71
+#: kstandardaction_p.h:104
 msgid "&Go To..."
 msgstr "&Aller à..."
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:105
 msgid "&Go to Page..."
 msgstr "&Aller à la page..."
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:106
 msgid "&Go to Line..."
 msgstr "&Aller à la ligne..."
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "&First Page"
 msgstr "Pre&mière page"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "Go to first page"
 msgstr "Aller à la première page"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "&Last Page"
 msgstr "&Dernière page"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "Go to last page"
 msgstr "Aller à la dernière page"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "&Back"
 msgstr "&Précédent"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "Go back in document"
 msgstr "Reculer dans le document"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 msgid "&Forward"
 msgstr "&Suivant"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 msgid "Go forward in document"
 msgstr "Avancer dans le document"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:112
 msgid "&Add Bookmark"
 msgstr "&Ajouter un signet"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:113
 msgid "&Edit Bookmarks..."
 msgstr "&Modifier les signets..."
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "&Spelling..."
 msgstr "Ortho&graphe..."
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "Check spelling in document"
 msgstr "Vérification de l'orthographe dans le document"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show &Menubar"
 msgstr "Afficher la barre de &menus"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show or hide menubar"
 msgstr "Afficher ou cacher la barre de menus"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show &Toolbar"
 msgstr "Affic&her la barre d'outils"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show or hide toolbar"
 msgstr "Affiche ou cache la barre d'outils"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show St&atusbar"
 msgstr "Afficher la barre d'ét&at"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show or hide statusbar"
 msgstr "Afficher ou cacher la barre d'état"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:120
 msgid "F&ull Screen Mode"
 msgstr "&Mode plein écran"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:121
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "Configurer les raccourcis cla&vier..."
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1..."
 msgstr "&Configurer %1..."
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:123
 msgid "Configure Tool&bars..."
 msgstr "Configurer les &barres d'outils..."
 
-#: kstandardaction_p.h:91
+#: kstandardaction_p.h:124
 msgid "Configure &Notifications..."
 msgstr "Configurer les notifica&tions..."
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:128
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "&Manuel utilisateur de %1"
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:129
 msgid "What's &This?"
 msgstr "&Qu'est-ce que c'est ?"
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:130
 msgid "Tip of the &Day"
 msgstr "Astuce du &jour"
 
-#: kstandardaction_p.h:98
+#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "&Rapport de bogue..."
 
-#: kstandardaction_p.h:99
+#: kstandardaction_p.h:132
 msgid "Configure &Language..."
 msgstr "Confi&gurer votre langue..."
 
-#: kstandardaction_p.h:100
+#: kstandardaction_p.h:133
 #, kde-format
 msgid "&About %1"
 msgstr "À &propos de %1"
 
-#: kstandardaction_p.h:101
+#: kstandardaction_p.h:134
 msgid "About &KDE"
 msgstr "À propos de &KDE"
 
-#: kstandardaction_p.h:102
+#: kstandardaction_p.h:135
 msgid "&Delete"
 msgstr "&Supprimer"
 
-#: kstandardaction_p.h:103
+#: kstandardaction_p.h:136
 msgid "&Rename..."
 msgstr "&Renommer..."
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:137
 msgid "&Move to Trash"
 msgstr "&Déplacer dans la corbeille"
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:138
 msgid "&Donate"
 msgstr "&Faire un don pour le projet"
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:139
 msgid "Open &Menu"
 msgstr "Ouvrir le &menu"
 

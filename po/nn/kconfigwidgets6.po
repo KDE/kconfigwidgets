@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-26 01:42+0000\n"
+"POT-Creation-Date: 2023-10-22 02:04+0000\n"
 "PO-Revision-Date: 2022-06-19 14:02+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -96,30 +96,30 @@ msgstr "Ingen oppføringar"
 msgid "Clear List"
 msgstr "Tøm liste"
 
-#: kstandardaction.cpp:156
+#: kstandardaction.cpp:157
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "&Tilbake"
 
-#: kstandardaction.cpp:163
+#: kstandardaction.cpp:164
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&Fram"
 
-#: kstandardaction.cpp:170
+#: kstandardaction.cpp:171
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Heim"
 
-#: kstandardaction.cpp:229
+#: kstandardaction.cpp:230
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "Vis menylinje <p>Vis menylinja igjen etter at ho er gøymd.</p>"
 
-#: kstandardaction.cpp:250
+#: kstandardaction.cpp:251
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -128,393 +128,393 @@ msgstr ""
 "Vis statuslinje<p>Viser statuslinja, som ligg nedst i vindauget og vert "
 "brukt til å visa statusinformasjon.</p>"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "&New"
 msgstr "&Ny"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "Create new document"
 msgstr "Lag nytt dokument"
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "&Open..."
 msgstr "&Opna …"
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "Open an existing document"
 msgstr "Opna eit gammalt dokument"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open &Recent"
 msgstr "Nyleg &brukt"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
 msgstr "Opna eit nyleg opna dokument"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "&Save"
 msgstr "&Lagra"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "Save document"
 msgstr "Lagra dokument"
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save &As..."
 msgstr "Lagra &som …"
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save document under a new name"
 msgstr "Lagra dokument med nytt namn"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Re&vert"
 msgstr "&Tilbakestill"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Revert unsaved changes made to document"
 msgstr "Tilbakestill ulagra endringar i dokumentet"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "&Close"
 msgstr "&Lukk"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "Close document"
 msgstr "Lukk dokument"
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "&Print..."
 msgstr "Skriv &ut …"
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "Print document"
 msgstr "Skriv ut dokument"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Print Previe&w"
 msgstr "&Førehandsvising"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Show a print preview of document"
 msgstr "Vis ei førehandsvising av dokument"
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "&Mail..."
 msgstr "S&end …"
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "Send document by mail"
 msgstr "Send dokumentet med e-post"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "&Quit"
 msgstr "&Avslutt"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "Quit application"
 msgstr "Avslutt program"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "&Undo"
 msgstr "A&ngra"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "Undo last action"
 msgstr "Angra siste handling"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Re&do"
 msgstr "&Gjer om"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Redo last undone action"
 msgstr "Gjer om siste angra handling"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cu&t"
 msgstr "Klipp &ut"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
 msgstr "Klipp ut utvalet til utklippstavla"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "&Copy"
 msgstr "&Kopier"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
 msgstr "Kopierer utvalet til utklippstavla"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "&Paste"
 msgstr "&Lim inn"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "Paste clipboard content"
 msgstr "Lim inn frå utklippstavla"
 
-#: kstandardaction_p.h:47
+#: kstandardaction_p.h:80
 msgid "C&lear"
 msgstr "&Tøm"
 
-#: kstandardaction_p.h:48
+#: kstandardaction_p.h:81
 msgid "Select &All"
 msgstr "&Merk alt"
 
-#: kstandardaction_p.h:49
+#: kstandardaction_p.h:82
 msgid "Dese&lect"
 msgstr "&Fjern merking"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:83
 msgid "&Find..."
 msgstr "&Finn …"
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:84
 msgid "Find &Next"
 msgstr "Finn n&este"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:85
 msgid "Find Pre&vious"
 msgstr "Finn &førre"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:86
 msgid "&Replace..."
 msgstr "&Byt ut …"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
 msgstr "Vis &verkeleg storleik"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 msgid "View document at its actual size"
 msgstr "Vis dokumentet med faktisk storleik"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "&Fit to Page"
 msgstr "&Tilpass sidestorleik"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "Zoom to fit page in window"
 msgstr "Vis dokumentet slik at det får plass i vindauget"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
 msgstr "Tilpass side&breidd"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Zoom to fit page width in window"
 msgstr "Vis dokumentet slik at heile breidda får plass i vindauget"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Fit to Page &Height"
 msgstr "Tilpass side&høgd"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
 msgstr "Vis dokumentet slik at heile høgda får plass i vindauget"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:92
 msgid "Zoom &In"
 msgstr "Vis &større"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:93
 msgid "Zoom &Out"
 msgstr "Vis &mindre"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "&Zoom..."
 msgstr "&Vis større/mindre …"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "Select zoom level"
 msgstr "Vel forstørring"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 msgid "&Refresh"
 msgstr "&Oppdater"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 msgid "Refresh document"
 msgstr "Oppdater dokument"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "&Up"
 msgstr "&Opp"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "Go up"
 msgstr "Gå opp"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "&Previous Page"
 msgstr "&Førre side"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "Go to previous page"
 msgstr "Gå til førre side"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "&Next Page"
 msgstr "&Neste side"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "Go to next page"
 msgstr "Gå til neste side"
 
-#: kstandardaction_p.h:71
+#: kstandardaction_p.h:104
 msgid "&Go To..."
 msgstr "&Gå til …"
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:105
 msgid "&Go to Page..."
 msgstr "&Gå til side …"
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:106
 msgid "&Go to Line..."
 msgstr "G&å til linje …"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "&First Page"
 msgstr "&Første side"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "Go to first page"
 msgstr "Gå til første side"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "&Last Page"
 msgstr "&Siste side"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "Go to last page"
 msgstr "Gå til siste side"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "&Back"
 msgstr "&Tilbake"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "Go back in document"
 msgstr "Gå bakover i dokumentet"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 msgid "&Forward"
 msgstr "&Fram"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 msgid "Go forward in document"
 msgstr "Gå framover i dokumentet"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:112
 msgid "&Add Bookmark"
 msgstr "&Legg til bokmerke"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:113
 msgid "&Edit Bookmarks..."
 msgstr "&Rediger bokmerke …"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "&Spelling..."
 msgstr "&Stavekontroll …"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "Check spelling in document"
 msgstr "Køyr stavekontroll på dokumentet"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show &Menubar"
 msgstr "Vis &menylinje"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show or hide menubar"
 msgstr "Vis eller gøym menylinja"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show &Toolbar"
 msgstr "Vis &verktøylinje"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show or hide toolbar"
 msgstr "Vis eller gøym verktøylinja"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show St&atusbar"
 msgstr "Vis st&atuslinje"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show or hide statusbar"
 msgstr "Vis eller gøym statuslinja"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:120
 msgid "F&ull Screen Mode"
 msgstr "F&ullskjermmodus"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:121
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "Set opp &snøggtastar …"
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1..."
 msgstr "&Set opp %1 …"
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:123
 msgid "Configure Tool&bars..."
 msgstr "Set opp verktøy&linjer …"
 
-#: kstandardaction_p.h:91
+#: kstandardaction_p.h:124
 msgid "Configure &Notifications..."
 msgstr "Set opp &varslingar …"
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:128
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "%1-&handbok"
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:129
 msgid "What's &This?"
 msgstr "Kva er de&tte?"
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:130
 msgid "Tip of the &Day"
 msgstr "&Dagens tips"
 
-#: kstandardaction_p.h:98
+#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "&Meld frå om feil …"
 
-#: kstandardaction_p.h:99
+#: kstandardaction_p.h:132
 msgid "Configure &Language..."
 msgstr "Set opp &språk …"
 
-#: kstandardaction_p.h:100
+#: kstandardaction_p.h:133
 #, kde-format
 msgid "&About %1"
 msgstr "&Om %1"
 
-#: kstandardaction_p.h:101
+#: kstandardaction_p.h:134
 msgid "About &KDE"
 msgstr "Om &KDE"
 
-#: kstandardaction_p.h:102
+#: kstandardaction_p.h:135
 msgid "&Delete"
 msgstr "&Slett"
 
-#: kstandardaction_p.h:103
+#: kstandardaction_p.h:136
 msgid "&Rename..."
 msgstr "&Endra namn …"
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:137
 msgid "&Move to Trash"
 msgstr "&Flytt til papirkorga"
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:138
 msgid "&Donate"
 msgstr "&Gje pengegåve"
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:139
 msgid "Open &Menu"
 msgstr "Opna &meny"

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-26 01:42+0000\n"
+"POT-Creation-Date: 2023-10-22 02:04+0000\n"
 "PO-Revision-Date: 2018-11-01 21:27-0800\n"
 "Last-Translator: A S Alam <alam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -108,30 +108,30 @@ msgstr "ਕੋਈ ਐਂਟਰੀ ਨਹੀਂ"
 msgid "Clear List"
 msgstr "ਲਿਸਟ ਸਾਫ਼ ਕਰੋ"
 
-#: kstandardaction.cpp:156
+#: kstandardaction.cpp:157
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "ਪਿੱਛੇ(&B)"
 
-#: kstandardaction.cpp:163
+#: kstandardaction.cpp:164
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "ਅੱਗੇ(&F)"
 
-#: kstandardaction.cpp:170
+#: kstandardaction.cpp:171
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "ਘਰ(&H)"
 
-#: kstandardaction.cpp:229
+#: kstandardaction.cpp:230
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "ਮੇਨੂ-ਪੱਟੀ ਵੇਖੋ<p>ਜੇਕਰ ਮੇਨੂ-ਪੱਟੀ ਓਹਲੇ ਹੋ ਗਈ ਹੋਵੇ ਤਾਂ ਇਸਨੂੰ ਮੁੜ ਵੇਖੋ।</p>"
 
-#: kstandardaction.cpp:250
+#: kstandardaction.cpp:251
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -139,402 +139,402 @@ msgid ""
 msgstr ""
 "ਹਾਲਤ-ਪੱਟੀ ਵੇਖੋ<p>ਹਾਲਤ-ਪੱਟੀ ਵੇਖੋ, ਜੋ ਕਿ ਵਿੰਡੋ ਦੇ ਥੱਲੇ ਹਾਲਤ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇਣ ਲਈ ਪੱਟੀ ਹੈ।</p>"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "&New"
 msgstr "ਨਵਾਂ(&N)"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "Create new document"
 msgstr "ਨਵਾਂ ਡੌਕੂਮੈਂਟ ਬਣਾਓ"
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "&Open..."
 msgstr "ਖੋਲ੍ਹੋ(&O)..."
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "Open an existing document"
 msgstr "ਮੌਜੂਦਾ ਡੌਕੂਮੈਂਟ ਖੋਲ੍ਹੋ"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open &Recent"
 msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
 msgstr "ਡੌਕੂਮੈਂਟ ਖੋਲ੍ਹੋ, ਜੋ ਹੁਣੇ ਹੀ ਖੋਲ੍ਹਿਆ ਗਿਆ ਸੀ"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "&Save"
 msgstr "ਸੰਭਾਲੋ(&S)"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "Save document"
 msgstr "ਡੌਕੂਮੈਂਟ ਸੰਭਾਲੋ"
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save &As..."
 msgstr "ਇੰਝ ਸੰਭਾਲੋ(&A)..."
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save document under a new name"
 msgstr "ਡੌਕੂਮੈਂਟ ਨੂੰ ਨਵੇਂ ਨਾਂ ਹੇਠ ਸੰਭਾਲੋ"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Re&vert"
 msgstr "ਰੀਵਰਟ(&v)"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Revert unsaved changes made to document"
 msgstr "ਦਸਤਾਵੇਜ਼ ਲਈ ਨਾ-ਸੰਭਾਲੇ ਬਦਲਾਅ ਵਾਪਿਸ ਲਵੋ"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "&Close"
 msgstr "ਬੰਦ ਕਰੋ(&C)"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "Close document"
 msgstr "ਡੌਕੂਮੈਂਟ ਬੰਦ ਕਰੋ"
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "&Print..."
 msgstr "ਪਰਿੰਟ ਕਰੋ(&P)..."
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "Print document"
 msgstr "ਡੌਕੂਮੈਂਟ ਪਰਿੰਟ ਕਰੋ"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Print Previe&w"
 msgstr "ਪਰਿੰਟ ਝਲਕ(&w)"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Show a print preview of document"
 msgstr "ਡੌਕੂਮੈਂਟ ਦੀ ਪਰਿੰਟ ਝਲਕ ਵੇਖਾਓ"
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "&Mail..."
 msgstr "ਮੇਲ(&M)..."
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "Send document by mail"
 msgstr "ਡੌਕੂਮੈਂਟ ਮੇਲ ਰਾਹੀਂ ਭੇਜੋ"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "&Quit"
 msgstr "ਬੰਦ ਕਰੋ(&Q)"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "Quit application"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ ਬੰਦ ਕਰੋ"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "&Undo"
 msgstr "ਵਾਪਸ(&U)"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "Undo last action"
 msgstr "ਆਖਰੀ ਕਾਰਵਾਈ ਫੇਰ ਕਰੋ"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Re&do"
 msgstr "ਪਰਤਾਓ(&d)"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Redo last undone action"
 msgstr "ਆਖਰੀ ਵਾਪਸ ਲਈ ਕਾਰਵਾਈ ਫੇਰ ਕਰੋ"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cu&t"
 msgstr "ਕੱਟੋ(&t)"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
 msgstr "ਚੋਣ ਨੂੰ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕੱਟੋ"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "&Copy"
 msgstr "ਕਾਪੀ ਕਰੋ(&C)"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
 msgstr "ਚੋਣ ਨੂੰ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕਰੋ"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "&Paste"
 msgstr "ਚੇਪੋ(&P)"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "Paste clipboard content"
 msgstr "ਕਲਿੱਪਬੋਰਡ ਸਮੱਗਰੀ ਚੇਪੋ"
 
-#: kstandardaction_p.h:47
+#: kstandardaction_p.h:80
 msgid "C&lear"
 msgstr "ਸਾਫ਼ ਕਰੋ(&l)"
 
-#: kstandardaction_p.h:48
+#: kstandardaction_p.h:81
 msgid "Select &All"
 msgstr "ਸਭ ਚੁਣੋ(&A)"
 
-#: kstandardaction_p.h:49
+#: kstandardaction_p.h:82
 msgid "Dese&lect"
 msgstr "ਅਣ-ਚੁਣੇ(&l)"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:83
 msgid "&Find..."
 msgstr "ਖੋਜ(&F)..."
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:84
 msgid "Find &Next"
 msgstr "ਅੱਗੇ ਖੋਜ(&N)"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:85
 msgid "Find Pre&vious"
 msgstr "ਪਿੱਛੇ ਖੋਜ(&v)"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:86
 msgid "&Replace..."
 msgstr "ਤਬਦੀਲ(&R)..."
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 #, fuzzy
 #| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
 msgstr "ਅਸਲੀ ਸਾਈਜ਼(&A)"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 msgid "View document at its actual size"
 msgstr "ਡੌਕੂਮੈਂਟ ਨੂੰ ਇਸ ਦੇ ਅਸਲ ਆਕਾਰ ਵਿੱਚ ਵੇਖੋ"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "&Fit to Page"
 msgstr "ਪੇਜ਼ ਲਈ ਫਿੱਟ(&F)"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "Zoom to fit page in window"
 msgstr "ਵਿੰਡੋ ਵਿੱਚ ਪੇਜ਼ ਨੂੰ ਫਿੱਟ ਕਰਨ ਲਈ ਜ਼ੂਮ ਕਰੋ"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
 msgstr "ਪੇਜ਼ ਉਚਾਈ ਲਈ ਫਿੱਟ(&W)"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Zoom to fit page width in window"
 msgstr "ਵਿੰਡੋ ਵਿੱਚ ਪੇਜ਼ ਚੌੜਾਈ ਲਈ ਫਿੱਟ ਕਰਨ ਲਈ ਜ਼ੂਮ"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Fit to Page &Height"
 msgstr "ਪੇਜ਼ ਚੌੜਾਈ ਲਈ ਫਿੱਟ(&H)"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
 msgstr "ਵਿੰਡੋ ਵਿੱਚ ਪੇਜ਼ ਉਚਾਈ ਲਈ ਫਿੱਟ ਕਰਨ ਲਈ ਜ਼ੂਮ"
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:92
 msgid "Zoom &In"
 msgstr "ਜ਼ੂਮ ਇਨ(&I)"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:93
 msgid "Zoom &Out"
 msgstr "ਜ਼ੂਮ ਆਉਟ(&O)"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "&Zoom..."
 msgstr "ਜ਼ੂਮ(&Z)..."
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "Select zoom level"
 msgstr "ਜ਼ੂਮ ਲੈਵਲ ਚੁਣੋ"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 msgid "&Refresh"
 msgstr ""
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 #, fuzzy
 #| msgid "Redisplay document"
 msgid "Refresh document"
 msgstr "ਡੌਕੂਮੈਂਟ ਮੁੜ-ਵੇਖਾਓ"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "&Up"
 msgstr "ਉੱਤੇ(&U)"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "Go up"
 msgstr "ਉੱਤੇ ਜਾਓ"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "&Previous Page"
 msgstr "ਪਿੱਛੇ ਸਫ਼ਾ(&P)"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "Go to previous page"
 msgstr "ਪਿਛਲੇ ਪੇਜ਼ ਉੱਤੇ ਜਾਓ"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "&Next Page"
 msgstr "ਅੱਗੇ ਸਫ਼ਾ(&N)"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "Go to next page"
 msgstr "ਅਗਲੇ ਪੇਜ਼ ਉੱਤੇ ਜਾਓ"
 
-#: kstandardaction_p.h:71
+#: kstandardaction_p.h:104
 msgid "&Go To..."
 msgstr "ਜਾਓ(&G)..."
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:105
 msgid "&Go to Page..."
 msgstr "ਪੇਜ਼ ਉੱਤੇ ਜਾਓ(&G)..."
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:106
 msgid "&Go to Line..."
 msgstr "ਲਾਈਨ ਉੱਤੇ ਜਾਓ(&G)...."
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "&First Page"
 msgstr "ਪਹਿਲਾਂ ਪੇਜ਼(&F)"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "Go to first page"
 msgstr "ਪਹਿਲੇ ਪੇਜ਼ ਉੱਤੇ ਜਾਓ"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "&Last Page"
 msgstr "ਆਖਰੀ ਪੇਜ਼(&L)"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "Go to last page"
 msgstr "ਆਖਰੀ ਪੇਜ਼ ਉੱਤੇ ਜਾਓ"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "&Back"
 msgstr "ਪਿੱਛੇ(&B)"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "Go back in document"
 msgstr "ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਪਿੱਛੇ ਜਾਓ"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 msgid "&Forward"
 msgstr "ਅੱਗੇ(&F)"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 msgid "Go forward in document"
 msgstr "ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਅੱਗੇ ਜਾਓ"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:112
 msgid "&Add Bookmark"
 msgstr "ਬੁੱਕਮਾਰਕ ਸ਼ਾਮਲ(&A)"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:113
 msgid "&Edit Bookmarks..."
 msgstr "ਬੁੱਕਮਾਰਕ ਸੋਧ(&E)..."
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "&Spelling..."
 msgstr "ਸ਼ਬਦ-ਜੋੜ(&S)..."
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "Check spelling in document"
 msgstr "ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਸ਼ਬਦ ਜੋੜ ਜਾਂਚ"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show &Menubar"
 msgstr "ਮੇਨੂ-ਪੱਟੀ ਵੇਖੋ(&M)"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show or hide menubar"
 msgstr "ਮੇਨੂ-ਪੱਟੀ ਵੇਖਾਓ ਜਾਂ ਓਹਲੇ"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show &Toolbar"
 msgstr "ਟੂਲਬਾਰ ਵੇਖੋ(&T)"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show or hide toolbar"
 msgstr "ਟੂਲਬਾਰ ਵੇਖਾਓ ਜਾਂ ਓਹਲੇ"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show St&atusbar"
 msgstr "ਹਾਲਤ-ਪੱਟੀ ਵੇਖੋ(&a)"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show or hide statusbar"
 msgstr "ਹਾਲਤ-ਪੱਟੀ ਵੇਖਾਓ ਜਾਂ ਓਹਲੇ"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:120
 msgid "F&ull Screen Mode"
 msgstr "ਪੂਰੀ ਸਕਰੀਨ ਮੋਡ(&u)"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "ਸ਼ਾਰਟਕਟ ਸੰਰਚਨਾ(&h)...."
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1..."
 msgstr "%1 ਸੰਰਚਨਾ(&C)...."
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:123
 msgid "Configure Tool&bars..."
 msgstr "ਟੂਲਬਾਰ ਸੰਰਚਨਾ(&b)..."
 
-#: kstandardaction_p.h:91
+#: kstandardaction_p.h:124
 msgid "Configure &Notifications..."
 msgstr "ਨੋਟੀਫਿਕੇਸ਼ਨ ਸੰਰਚਨਾ(&N)..."
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:128
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "%1 ਹੈਂਡਬੁੱਕ(&H)"
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:129
 msgid "What's &This?"
 msgstr "ਇਹ ਕੀ ਹੈ?(&T)"
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:130
 msgid "Tip of the &Day"
 msgstr "ਅੱਜ ਦਾ ਟਿੱਪ(&D)"
 
-#: kstandardaction_p.h:98
+#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ(&R)..."
 
-#: kstandardaction_p.h:99
+#: kstandardaction_p.h:132
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "ਈ-ਮੇਲ ਸੰਰਚਨਾ...."
 
-#: kstandardaction_p.h:100
+#: kstandardaction_p.h:133
 #, kde-format
 msgid "&About %1"
 msgstr "%1 ਬਾਰੇ (&A)"
 
-#: kstandardaction_p.h:101
+#: kstandardaction_p.h:134
 msgid "About &KDE"
 msgstr "ਕੇਡੀਈ (&KDE) ਬਾਰੇ"
 
-#: kstandardaction_p.h:102
+#: kstandardaction_p.h:135
 msgid "&Delete"
 msgstr "ਹਟਾਓ(&D)"
 
-#: kstandardaction_p.h:103
+#: kstandardaction_p.h:136
 msgid "&Rename..."
 msgstr "ਨਾਂ ਬਦਲੋ(&R)..."
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:137
 msgid "&Move to Trash"
 msgstr "ਰੱਦੀ 'ਚ ਭੇਜੋ(&M)"
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:138
 msgid "&Donate"
 msgstr "ਦਾਨ ਕਰੋ(&D)"
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:139
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"

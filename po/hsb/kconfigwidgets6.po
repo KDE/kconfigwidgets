@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-26 01:42+0000\n"
+"POT-Creation-Date: 2023-10-22 02:04+0000\n"
 "PO-Revision-Date: 2008-12-19 22:49+0100\n"
 "Last-Translator: Eduard Werner <edi.werner@gmx.de>\n"
 "Language-Team: en_US <kde-i18n-doc@lists.kde.org>\n"
@@ -103,30 +103,30 @@ msgstr "Žane zapisy"
 msgid "Clear List"
 msgstr "Input wuprózdnić"
 
-#: kstandardaction.cpp:156
+#: kstandardaction.cpp:157
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "&Wróćo"
 
-#: kstandardaction.cpp:163
+#: kstandardaction.cpp:164
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&Doprědka"
 
-#: kstandardaction.cpp:170
+#: kstandardaction.cpp:171
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&Domjacy zapisk"
 
-#: kstandardaction.cpp:229
+#: kstandardaction.cpp:230
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "Pokaž meni <p>Pokazuje meni po tym, zo je so schował</p>"
 
-#: kstandardaction.cpp:250
+#: kstandardaction.cpp:251
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
@@ -138,461 +138,461 @@ msgstr ""
 "Statusowy pas pokazać <p>Pokazuje statusowy pas, to je delni dźěl wokna, kiž "
 "so za statusowu informaciju wužiwa."
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "&New"
 msgstr "&Stworić"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 #, fuzzy
 #| msgid "Create New Tag..."
 msgid "Create new document"
 msgstr "Nowy tag stworić..."
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "&Open..."
 msgstr "W&očiń ..."
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 #, fuzzy
 #| msgid "&Back in the Document"
 msgid "Open an existing document"
 msgstr "W&róćo w dokumenće"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open &Recent"
 msgstr "&Njedawno wočinjene wočinić"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
 msgstr ""
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "&Save"
 msgstr "Zawě&sćić"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 #, fuzzy
 #| msgid "Close Document"
 msgid "Save document"
 msgstr "Dokument začinić"
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save &As..."
 msgstr "Z&awěsćić jako..."
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 #, fuzzy
 #| msgid "Close Document"
 msgid "Save document under a new name"
 msgstr "Dokument začinić"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Re&vert"
 msgstr "&Wróćo na prěnjotny staw"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Revert unsaved changes made to document"
 msgstr ""
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "&Close"
 msgstr "&Začinić"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 #, fuzzy
 #| msgid "Close Document"
 msgid "Close document"
 msgstr "Dokument začinić"
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "&Print..."
 msgstr "Ć&išćeć ..."
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 #, fuzzy
 #| msgctxt "keyboard-key-name"
 #| msgid "PrintScreen"
 msgid "Print document"
 msgstr "Druck"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Print Previe&w"
 msgstr "Přeh&ladku za ćišć pokazać"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Show a print preview of document"
 msgstr ""
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "&Mail..."
 msgstr "&Póštu pósłać..."
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 #, fuzzy
 #| msgid "Close Document"
 msgid "Send document by mail"
 msgstr "Dokument začinić"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "&Quit"
 msgstr "Kón&c"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "Quit application"
 msgstr "Program wopušćić"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "&Undo"
 msgstr "W&róćo"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 #, fuzzy
 #| msgid "HTML documentation"
 msgid "Undo last action"
 msgstr "HTML-dokumentacija"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Re&do"
 msgstr "&Znowa činić"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 #, fuzzy
 #| msgid "HTML documentation"
 msgid "Redo last undone action"
 msgstr "HTML-dokumentacija"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cu&t"
 msgstr "Wu&třihać"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
 msgstr ""
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "&Copy"
 msgstr "&Kopěrować"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
 msgstr ""
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "&Paste"
 msgstr "&Zasunyć"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 #, fuzzy
 #| msgid "Loading Preview"
 msgid "Paste clipboard content"
 msgstr "Začitam přehladku"
 
-#: kstandardaction_p.h:47
+#: kstandardaction_p.h:80
 msgid "C&lear"
 msgstr "&Wuprózdnić"
 
-#: kstandardaction_p.h:48
+#: kstandardaction_p.h:81
 msgid "Select &All"
 msgstr "&Wšitko wubrać"
 
-#: kstandardaction_p.h:49
+#: kstandardaction_p.h:82
 msgid "Dese&lect"
 msgstr "Wubraće z&běhnyć"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:83
 msgid "&Find..."
 msgstr "Na&makać"
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:84
 msgid "Find &Next"
 msgstr "Přicho&dny namakać"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:85
 msgid "Find Pre&vious"
 msgstr "Pře&dchadny namakać"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:86
 msgid "&Replace..."
 msgstr "&Narunać"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 #, fuzzy
 #| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
 msgstr "&Woprawdźita wulkosć"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 msgid "View document at its actual size"
 msgstr ""
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "&Fit to Page"
 msgstr "Na &stronu připrawić"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Zoom to fit page in window"
 msgstr "Dźi na linku"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
 msgstr "Na šě&rokosć strony připrawić"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Zoom to fit page width in window"
 msgstr ""
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Fit to Page &Height"
 msgstr "Na wy&sokosć strony připrawić"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
 msgstr ""
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:92
 msgid "Zoom &In"
 msgstr "Po&wjetšić"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:93
 msgid "Zoom &Out"
 msgstr "Po&mjeńšić"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "&Zoom..."
 msgstr "&Zoom..."
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 #, fuzzy
 #| msgid "Select a week"
 msgid "Select zoom level"
 msgstr "Wubjerće tydźeń"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 msgid "&Refresh"
 msgstr ""
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 #, fuzzy
 #| msgid "&Redisplay"
 msgid "Refresh document"
 msgstr "&Wobraz aktualizować"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "&Up"
 msgstr "&Horje"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "Go up"
 msgstr ""
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "&Previous Page"
 msgstr "&Předchadna strona"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 #, fuzzy
 #| msgid "&Previous Page"
 msgid "Go to previous page"
 msgstr "&Předchadna strona"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "&Next Page"
 msgstr "Při&chodna strona"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Go to next page"
 msgstr "Dźi na linku"
 
-#: kstandardaction_p.h:71
+#: kstandardaction_p.h:104
 msgid "&Go To..."
 msgstr "&Dźi na ..."
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:105
 msgid "&Go to Page..."
 msgstr "&Dźi na stronu ..."
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:106
 msgid "&Go to Line..."
 msgstr "&Dźi na linku..."
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "&First Page"
 msgstr "&Prěnja strona"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Go to first page"
 msgstr "Dźi na linku"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "&Last Page"
 msgstr "&Poslednja strona"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 #, fuzzy
 #| msgid "&Go to Page..."
 msgid "Go to last page"
 msgstr "&Dźi na stronu ..."
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "&Back"
 msgstr "&Wróćo"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 #, fuzzy
 #| msgid "&Back in the Document"
 msgid "Go back in document"
 msgstr "W&róćo w dokumenće"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 #, fuzzy
 #| msgctxt "go forward"
 #| msgid "&Forward"
 msgid "&Forward"
 msgstr "&Doprědka"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 #, fuzzy
 #| msgid "&Forward in the Document"
 msgid "Go forward in document"
 msgstr "&Dale w dokumenće"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:112
 msgid "&Add Bookmark"
 msgstr "&Dodaj k lubuškam"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:113
 #, fuzzy
 #| msgid "&Edit Bookmarks"
 msgid "&Edit Bookmarks..."
 msgstr "Lubuški &wobdźěłać"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "&Spelling..."
 msgstr "&Pismikowanje"
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 #, fuzzy
 #| msgid "Check Spelling"
 msgid "Check spelling in document"
 msgstr "Přepruwuj prawopis"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show &Menubar"
 msgstr "&Meni pokazać"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 #, fuzzy
 #| msgid "Show &Menubar"
 msgid "Show or hide menubar"
 msgstr "&Meni pokazać"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show &Toolbar"
 msgstr "&Nastrojowy pas pokazać"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Show Toolbar"
 msgid "Show or hide toolbar"
 msgstr "Nastrojowy pas pokazać"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show St&atusbar"
 msgstr "Pokaž &statusowy pask"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Show Statusbar"
 msgid "Show or hide statusbar"
 msgstr "Pokaž statusowy pask"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:120
 msgid "F&ull Screen Mode"
 msgstr "&Cyła wobrazowka"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "Konfiguracija &skrótšenkow..."
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1..."
 msgstr "%1 &konfigurować ..."
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:123
 msgid "Configure Tool&bars..."
 msgstr "Konfiguracija &nastrojoweho paska ..."
 
-#: kstandardaction_p.h:91
+#: kstandardaction_p.h:124
 msgid "Configure &Notifications..."
 msgstr "Ko&nfiguracija zdźělenkow..."
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:128
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "&Přiručka za %1"
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:129
 msgid "What's &This?"
 msgstr "Što &to je?"
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:130
 msgid "Tip of the &Day"
 msgstr "Pokiw &dnja"
 
-#: kstandardaction_p.h:98
+#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "&Rozprawić wo zmylku"
 
-#: kstandardaction_p.h:99
+#: kstandardaction_p.h:132
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "Email konfigurować..."
 
-#: kstandardaction_p.h:100
+#: kstandardaction_p.h:133
 #, kde-format
 msgid "&About %1"
 msgstr "W&o %1"
 
-#: kstandardaction_p.h:101
+#: kstandardaction_p.h:134
 msgid "About &KDE"
 msgstr "Wo &KDE"
 
-#: kstandardaction_p.h:102
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "Zničić"
 
-#: kstandardaction_p.h:103
+#: kstandardaction_p.h:136
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "&Narunać"
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:137
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:138
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:139
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-26 01:42+0000\n"
+"POT-Creation-Date: 2023-10-22 02:04+0000\n"
 "PO-Revision-Date: 2010-12-31 22:47+0700\n"
 "Last-Translator: Phuwanat Sakornsakolpat <narachai@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -104,30 +104,30 @@ msgstr "ไม่มีรายการใด ๆ"
 msgid "Clear List"
 msgstr "ล้างรายการ"
 
-#: kstandardaction.cpp:156
+#: kstandardaction.cpp:157
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
 msgstr "ย้อน&กลับ"
 
-#: kstandardaction.cpp:163
+#: kstandardaction.cpp:164
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
 msgstr "&ต่อไป"
 
-#: kstandardaction.cpp:170
+#: kstandardaction.cpp:171
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
 msgstr "&หน้าหลัก"
 
-#: kstandardaction.cpp:229
+#: kstandardaction.cpp:230
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr "แสดงแถบเมนู<p>แสดงแถบเมนูอีกครั้งหลังจากที่ถูกซ่อน</p>"
 
-#: kstandardaction.cpp:250
+#: kstandardaction.cpp:251
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
@@ -139,115 +139,115 @@ msgstr ""
 "แสดงแถบสถานะ<br /><br />แสดงแถบสถานะ ซึ่งเป็นส่วนแถบที่อยู่ด้านล่างของหน้าต่าง "
 "เพื่อใช้ในการแสดงข้อมูลสถานะ"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 msgid "&New"
 msgstr "สร้างใ&หม่"
 
-#: kstandardaction_p.h:30
+#: kstandardaction_p.h:63
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Create new tag:"
 msgid "Create new document"
 msgstr "สร้างป้ายกำกับใหม่:"
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 msgid "&Open..."
 msgstr "เ&ปิด..."
 
-#: kstandardaction_p.h:31
+#: kstandardaction_p.h:64
 #, fuzzy
 #| msgid "&Back in the Document"
 msgid "Open an existing document"
 msgstr "&ย้อนกลับในเอกสาร"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open &Recent"
 msgstr "เปิดที่เ&คยเรียกใช้"
 
-#: kstandardaction_p.h:32
+#: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
 msgstr ""
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 msgid "&Save"
 msgstr "&บันทึก"
 
-#: kstandardaction_p.h:33
+#: kstandardaction_p.h:66
 #, fuzzy
 #| msgid "Close Document"
 msgid "Save document"
 msgstr "ปิดเอกสาร"
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 msgid "Save &As..."
 msgstr "บัน&ทึกเป็น..."
 
-#: kstandardaction_p.h:34
+#: kstandardaction_p.h:67
 #, fuzzy
 #| msgid "Close Document"
 msgid "Save document under a new name"
 msgstr "ปิดเอกสาร"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Re&vert"
 msgstr "&กลับค่า"
 
-#: kstandardaction_p.h:35
+#: kstandardaction_p.h:68
 msgid "Revert unsaved changes made to document"
 msgstr ""
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 msgid "&Close"
 msgstr "&ปิด"
 
-#: kstandardaction_p.h:36
+#: kstandardaction_p.h:69
 #, fuzzy
 #| msgid "Close Document"
 msgid "Close document"
 msgstr "ปิดเอกสาร"
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 msgid "&Print..."
 msgstr "&พิมพ์..."
 
-#: kstandardaction_p.h:37
+#: kstandardaction_p.h:70
 #, fuzzy
 #| msgctxt "keyboard-key-name"
 #| msgid "PrintScreen"
 msgid "Print document"
 msgstr "PrintScreen"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Print Previe&w"
 msgstr "&ตัวอย่างก่อนพิมพ์"
 
-#: kstandardaction_p.h:38
+#: kstandardaction_p.h:71
 msgid "Show a print preview of document"
 msgstr ""
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 msgid "&Mail..."
 msgstr "&อีเมล..."
 
-#: kstandardaction_p.h:39
+#: kstandardaction_p.h:72
 #, fuzzy
 #| msgid "Close Document"
 msgid "Send document by mail"
 msgstr "ปิดเอกสาร"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "&Quit"
 msgstr "&ออก"
 
-#: kstandardaction_p.h:40
+#: kstandardaction_p.h:73
 msgid "Quit application"
 msgstr "ออกจากโปรแกรม"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 msgid "&Undo"
 msgstr "เ&ลิกทำ"
 
-#: kstandardaction_p.h:42
+#: kstandardaction_p.h:75
 #, fuzzy
 #| msgctxt ""
 #| "A link to make a donation for a Get Hot New Stuff item (opens a web "
@@ -256,11 +256,11 @@ msgstr "เ&ลิกทำ"
 msgid "Undo last action"
 msgstr "ต้องการบริจาค"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 msgid "Re&do"
 msgstr "&ทำซ้ำ"
 
-#: kstandardaction_p.h:43
+#: kstandardaction_p.h:76
 #, fuzzy
 #| msgctxt ""
 #| "A link to make a donation for a Get Hot New Stuff item (opens a web "
@@ -269,336 +269,336 @@ msgstr "&ทำซ้ำ"
 msgid "Redo last undone action"
 msgstr "ต้องการบริจาค"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cu&t"
 msgstr "&ตัด"
 
-#: kstandardaction_p.h:44
+#: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
 msgstr ""
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "&Copy"
 msgstr "&คัดลอก"
 
-#: kstandardaction_p.h:45
+#: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
 msgstr ""
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 msgid "&Paste"
 msgstr "&วาง"
 
-#: kstandardaction_p.h:46
+#: kstandardaction_p.h:79
 #, fuzzy
 #| msgid "Upload content"
 msgid "Paste clipboard content"
 msgstr "อัปโหลดเนื้อหา"
 
-#: kstandardaction_p.h:47
+#: kstandardaction_p.h:80
 msgid "C&lear"
 msgstr "&ล้าง"
 
-#: kstandardaction_p.h:48
+#: kstandardaction_p.h:81
 msgid "Select &All"
 msgstr "เลือกทั้งห&มด"
 
-#: kstandardaction_p.h:49
+#: kstandardaction_p.h:82
 msgid "Dese&lect"
 msgstr "ยกเลิก&การเลือก"
 
-#: kstandardaction_p.h:50
+#: kstandardaction_p.h:83
 msgid "&Find..."
 msgstr "ค้น&หา..."
 
-#: kstandardaction_p.h:51
+#: kstandardaction_p.h:84
 msgid "Find &Next"
 msgstr "ค้&นหาตัวต่อไป"
 
-#: kstandardaction_p.h:52
+#: kstandardaction_p.h:85
 msgid "Find Pre&vious"
 msgstr "ค้นหาก่อ&นหน้านี้"
 
-#: kstandardaction_p.h:53
+#: kstandardaction_p.h:86
 msgid "&Replace..."
 msgstr "แ&ทนที่..."
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 #, fuzzy
 #| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
 msgstr "ขนาด&จริง"
 
-#: kstandardaction_p.h:55
+#: kstandardaction_p.h:88
 msgid "View document at its actual size"
 msgstr ""
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 msgid "&Fit to Page"
 msgstr "&พอดีกับทั้งหน้า"
 
-#: kstandardaction_p.h:56
+#: kstandardaction_p.h:89
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Zoom to fit page in window"
 msgstr "ไปบรรทัดที่"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
 msgstr "พอดีกับความ&กว้างหน้า"
 
-#: kstandardaction_p.h:57
+#: kstandardaction_p.h:90
 msgid "Zoom to fit page width in window"
 msgstr ""
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Fit to Page &Height"
 msgstr "พอดีกับความ&สูงหน้า"
 
-#: kstandardaction_p.h:58
+#: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
 msgstr ""
 
-#: kstandardaction_p.h:59
+#: kstandardaction_p.h:92
 msgid "Zoom &In"
 msgstr "ดู&ขยาย"
 
-#: kstandardaction_p.h:60
+#: kstandardaction_p.h:93
 msgid "Zoom &Out"
 msgstr "ดู&ย่อ"
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 msgid "&Zoom..."
 msgstr "ดูย่อ/ขยาย..."
 
-#: kstandardaction_p.h:61
+#: kstandardaction_p.h:94
 #, fuzzy
 #| msgid "Select a week"
 msgid "Select zoom level"
 msgstr "เลือกสัปดาห์"
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 msgid "&Refresh"
 msgstr ""
 
-#: kstandardaction_p.h:62
+#: kstandardaction_p.h:95
 #, fuzzy
 #| msgid "&Redisplay"
 msgid "Refresh document"
 msgstr "เรียกแ&สดงใหม่"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "&Up"
 msgstr "&ขึ้น"
 
-#: kstandardaction_p.h:64
+#: kstandardaction_p.h:97
 msgid "Go up"
 msgstr ""
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 msgid "&Previous Page"
 msgstr "หน้า&ก่อน"
 
-#: kstandardaction_p.h:69
+#: kstandardaction_p.h:102
 #, fuzzy
 #| msgid "&Previous Page"
 msgid "Go to previous page"
 msgstr "หน้า&ก่อน"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 msgid "&Next Page"
 msgstr "หน้า&ถัดไป"
 
-#: kstandardaction_p.h:70
+#: kstandardaction_p.h:103
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Go to next page"
 msgstr "ไปบรรทัดที่"
 
-#: kstandardaction_p.h:71
+#: kstandardaction_p.h:104
 msgid "&Go To..."
 msgstr "ไป&ยัง..."
 
-#: kstandardaction_p.h:72
+#: kstandardaction_p.h:105
 msgid "&Go to Page..."
 msgstr "ไป&ยังหน้า..."
 
-#: kstandardaction_p.h:73
+#: kstandardaction_p.h:106
 msgid "&Go to Line..."
 msgstr "ไป&ยังบรรทัด..."
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 msgid "&First Page"
 msgstr "หน้าแ&รก"
 
-#: kstandardaction_p.h:74
+#: kstandardaction_p.h:107
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Go to Line"
 msgid "Go to first page"
 msgstr "ไปบรรทัดที่"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 msgid "&Last Page"
 msgstr "หน้าสุ&ดท้าย"
 
-#: kstandardaction_p.h:75
+#: kstandardaction_p.h:108
 #, fuzzy
 #| msgid "&Go to Page..."
 msgid "Go to last page"
 msgstr "ไป&ยังหน้า..."
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 msgid "&Back"
 msgstr "&ย้อนกลับ"
 
-#: kstandardaction_p.h:76
+#: kstandardaction_p.h:109
 #, fuzzy
 #| msgid "&Back in the Document"
 msgid "Go back in document"
 msgstr "&ย้อนกลับในเอกสาร"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 #, fuzzy
 #| msgctxt "go forward"
 #| msgid "&Forward"
 msgid "&Forward"
 msgstr "&ต่อไป"
 
-#: kstandardaction_p.h:77
+#: kstandardaction_p.h:110
 #, fuzzy
 #| msgid "&Forward in the Document"
 msgid "Go forward in document"
 msgstr "เดินหน้า&ต่อไปในเอกสาร"
 
-#: kstandardaction_p.h:79
+#: kstandardaction_p.h:112
 msgid "&Add Bookmark"
 msgstr "เ&พิ่มคั่นหน้า"
 
-#: kstandardaction_p.h:80
+#: kstandardaction_p.h:113
 msgid "&Edit Bookmarks..."
 msgstr "แ&ก้ไขที่คั่นหน้า..."
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 msgid "&Spelling..."
 msgstr "ตรวจ&คำสะกด..."
 
-#: kstandardaction_p.h:82
+#: kstandardaction_p.h:115
 #, fuzzy
 #| msgid "Check Spelling"
 msgid "Check spelling in document"
 msgstr "ตรวจคำสะกด"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 msgid "Show &Menubar"
 msgstr "แสดงแถบเ&มนู"
 
-#: kstandardaction_p.h:84
+#: kstandardaction_p.h:117
 #, fuzzy
 #| msgid "Show &Menubar"
 msgid "Show or hide menubar"
 msgstr "แสดงแถบเ&มนู"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 msgid "Show &Toolbar"
 msgstr "แสดงแถบเ&ครื่องมือ"
 
-#: kstandardaction_p.h:85
+#: kstandardaction_p.h:118
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Show Toolbar"
 msgid "Show or hide toolbar"
 msgstr "แสดงแถบเครื่องมือ"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 msgid "Show St&atusbar"
 msgstr "แสดงแถบ&สถานะ"
 
-#: kstandardaction_p.h:86
+#: kstandardaction_p.h:119
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Show Statusbar"
 msgid "Show or hide statusbar"
 msgstr "แสดงแถบสถานะ"
 
-#: kstandardaction_p.h:87
+#: kstandardaction_p.h:120
 msgid "F&ull Screen Mode"
 msgstr "โหมดเ&ต็มหน้าจอ"
 
-#: kstandardaction_p.h:88
+#: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts..."
 msgstr "ปรับแต่งปุ่มพิมพ์&ลัด..."
 
-#: kstandardaction_p.h:89
+#: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1..."
 msgstr "&ปรับแต่ง %1..."
 
-#: kstandardaction_p.h:90
+#: kstandardaction_p.h:123
 msgid "Configure Tool&bars..."
 msgstr "ปรับแต่งแถบเ&ครื่องมือ..."
 
-#: kstandardaction_p.h:91
+#: kstandardaction_p.h:124
 msgid "Configure &Notifications..."
 msgstr "ปรับแต่งการแจ้งให้&ทราบ..."
 
-#: kstandardaction_p.h:95
+#: kstandardaction_p.h:128
 #, kde-format
 msgid "%1 &Handbook"
 msgstr "&คู่มือ %1"
 
-#: kstandardaction_p.h:96
+#: kstandardaction_p.h:129
 msgid "What's &This?"
 msgstr "นี่คือ&อะไร ?"
 
-#: kstandardaction_p.h:97
+#: kstandardaction_p.h:130
 msgid "Tip of the &Day"
 msgstr "คำแนะนำประจำ&วัน"
 
-#: kstandardaction_p.h:98
+#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "&รายงานข้อผิดพลาด..."
 
-#: kstandardaction_p.h:99
+#: kstandardaction_p.h:132
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "ปรับแต่งอีเมล..."
 
-#: kstandardaction_p.h:100
+#: kstandardaction_p.h:133
 #, kde-format
 msgid "&About %1"
 msgstr "เ&กี่ยวกับ %1"
 
-#: kstandardaction_p.h:101
+#: kstandardaction_p.h:134
 msgid "About &KDE"
 msgstr "เกี่ยวกับ &KDE"
 
-#: kstandardaction_p.h:102
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "ลบ"
 
-#: kstandardaction_p.h:103
+#: kstandardaction_p.h:136
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "แ&ทนที่..."
 
-#: kstandardaction_p.h:104
+#: kstandardaction_p.h:137
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:105
+#: kstandardaction_p.h:138
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:106
+#: kstandardaction_p.h:139
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
