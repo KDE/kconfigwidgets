@@ -359,7 +359,7 @@ msgstr "&Pàgina anterior"
 
 #: kstandardaction_p.h:102
 msgid "Go to previous page"
-msgstr "Va a la pàgina anterior"
+msgstr "Va fins a la pàgina anterior"
 
 #: kstandardaction_p.h:103
 msgid "&Next Page"
@@ -367,7 +367,7 @@ msgstr "Pàgina següe&nt"
 
 #: kstandardaction_p.h:103
 msgid "Go to next page"
-msgstr "Va a la pàgina següent"
+msgstr "Va fins a la pàgina següent"
 
 #: kstandardaction_p.h:104
 msgid "&Go To..."
@@ -387,7 +387,7 @@ msgstr "P&rimera pàgina"
 
 #: kstandardaction_p.h:107
 msgid "Go to first page"
-msgstr "Va a la primera pàgina"
+msgstr "Va fins a la primera pàgina"
 
 #: kstandardaction_p.h:108
 msgid "&Last Page"
@@ -395,7 +395,7 @@ msgstr "D&arrera pàgina"
 
 #: kstandardaction_p.h:108
 msgid "Go to last page"
-msgstr "Va a l'última pàgina"
+msgstr "Va fins a l'última pàgina"
 
 #: kstandardaction_p.h:109
 msgid "&Back"
