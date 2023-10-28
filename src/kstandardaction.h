@@ -183,7 +183,6 @@ enum StandardAction {
     ReportBug, ///< Open up the Report Bug dialog.
     AboutApp, ///< Display the application's About box.
     AboutKDE, ///< Display the About KDE dialog.
-    TipofDay, ///< Display the "Tip of the Day".
     // Other standard actions
     ConfigureNotifications, ///< Display the notifications configuration dialog.
     FullScreen, ///< Switch to/from full screen mode.
@@ -1030,17 +1029,6 @@ KCONFIGWIDGETS_EXPORT QAction *whatsThis(const QObject *recvr, const char *slot,
  * @since 5.23
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(whatsThis, WhatsThis)
-
-/**
- * Display "Tip of the Day"
- */
-KCONFIGWIDGETS_EXPORT QAction *tipOfDay(const QObject *recvr, const char *slot, QObject *parent);
-
-/**
- * Display "Tip of the Day"
- * @since 5.23
- */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(tipOfDay, TipofDay)
 
 /**
  * Open up the Report Bug dialog.

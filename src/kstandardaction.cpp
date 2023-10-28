@@ -683,11 +683,6 @@ QAction *whatsThis(const QObject *recvr, const char *slot, QObject *parent)
     return KStandardAction::create(WhatsThis, recvr, slot, parent);
 }
 
-QAction *tipOfDay(const QObject *recvr, const char *slot, QObject *parent)
-{
-    return KStandardAction::create(TipofDay, recvr, slot, parent);
-}
-
 QAction *reportBug(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(ReportBug, recvr, slot, parent);
