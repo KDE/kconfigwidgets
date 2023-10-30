@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2023-10-21 13:51\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -473,42 +473,41 @@ msgid "What's &This?"
 msgstr "这是什么(&T)？"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "每日提示(&D)"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "报告程序缺陷(&R)…"
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 msgid "Configure &Language..."
 msgstr "配置语言(&L)..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "关于 %1(&A)"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "关于 &KDE"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "删除(&D)"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 msgid "&Rename..."
 msgstr "重命名(&R)..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr "移动到回收站(&M)"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr "捐款(&D)"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "打开菜单(&M)"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "每日提示(&D)"

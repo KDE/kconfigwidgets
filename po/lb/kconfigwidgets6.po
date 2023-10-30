@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2006-06-22 16:29+0200\n"
 "Last-Translator: Michel Ludwig <michel.ludwig@kdemail.net>\n"
 "Language-Team: Luxembourgish <kde-i18n-lb@kde.org>\n"
@@ -547,53 +547,52 @@ msgid "What's &This?"
 msgstr "Wat ass &dat?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "&Rotschlag vum Dag"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "E Käfer &mellen..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "E-Mail configuréiren..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "&Iwwer %1"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "Iwwer &KDE"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "&Läschen"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "E&rsetzen..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 #, fuzzy
 #| msgid "&Done"
 msgid "&Donate"
 msgstr "&Fäerdeg"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Viru kuerzem opgemaachen Dateien"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "&Rotschlag vum Dag"
 
 #, fuzzy
 #~| msgid "Default"

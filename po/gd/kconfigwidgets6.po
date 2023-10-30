@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2015-11-04 15:11+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -485,51 +485,50 @@ msgid "What's &This?"
 msgstr "Dè &th' ann?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "&Gliocas an latha"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "Dèan aith&ris air buga..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "&Configure %1..."
 msgid "Configure &Language..."
 msgstr "Rèiti&ch %1..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "&Mu %1"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "Mu &KDE"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr ""
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "Cui&r 'na àite..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Fosgail sgrìobhainn o chionn goi&rid"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "&Gliocas an latha"
 
 #, fuzzy
 #~| msgctxt "Encodings menu"

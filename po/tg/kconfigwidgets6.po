@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2019-09-15 21:27+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -486,49 +486,48 @@ msgid "What's &This?"
 msgstr "Ин чист?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "&Маслиҳати рӯз"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "Гузориш дар бораи &хато..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "&Configure %1..."
 msgid "Configure &Language..."
 msgstr "&Танзим кардани %1..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "&Дар бораи барномаи %1"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "&Дар бораи KDE"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "&Нест кардан"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 msgid "&Rename..."
 msgstr "&Номро иваз кардан..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr "&Интиқол додан ба сабад"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr "&Дастгирии молӣ"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Кушодани маводи охирин"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "&Маслиҳати рӯз"
 
 #, fuzzy
 #~| msgctxt "Encodings menu"

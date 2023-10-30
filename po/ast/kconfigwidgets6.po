@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2023-10-24 23:40+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
@@ -471,42 +471,41 @@ msgid "What's &This?"
 msgstr ""
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "Conseyu del &día"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr ""
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 msgid "Configure &Language..."
 msgstr "Configurar la &llingua…"
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "&Tocante a «%1»"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "Tocante a &KDE"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "&Desaniciar"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 msgid "&Rename..."
 msgstr ""
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr "&Tirar a la papelera"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr "&Donar"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Abrir el &menú"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "Conseyu del &día"

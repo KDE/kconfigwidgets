@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2022-06-04 19:49+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: Arabic <kde-l10n-ar@kde.org>\n"
@@ -473,45 +473,44 @@ msgid "What's &This?"
 msgstr "ما &هذا؟"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "&فائدة اليوم"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "أ&بلغ عن علّة…"
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 msgid "Configure &Language..."
 msgstr "اضبط الل&غة..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "&عن %1"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "عن &كِيدِي"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "ا&حذف"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 msgid "&Rename..."
 msgstr "&غيّر الاسم…"
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr "ا&نقل إلى المهملات"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr "تبرّ&ع"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "افتح &قائمة"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "&فائدة اليوم"
 
 #~ msgid "Default"
 #~ msgstr "المبدئي"

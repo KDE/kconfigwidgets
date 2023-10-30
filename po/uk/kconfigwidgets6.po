@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2022-08-07 08:57+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -481,45 +481,44 @@ msgid "What's &This?"
 msgstr "&Що це?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "П&орада дня"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "Надіслати &звіт про помилку…"
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 msgid "Configure &Language..."
 msgstr "Налаштувати &мову…"
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "&Про %1"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "П&ро KDE"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "Ви&лучити"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 msgid "&Rename..."
 msgstr "П&ерейменувати…"
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr "&Пересунути до смітника"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr "Підтримати &фінансово"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Відкрити &меню"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "П&орада дня"
 
 #~ msgid "Default"
 #~ msgstr "Типовий"

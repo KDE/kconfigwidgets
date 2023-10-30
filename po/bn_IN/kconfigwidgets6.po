@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2009-12-28 14:35+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
@@ -542,53 +542,52 @@ msgid "What's &This?"
 msgstr "এটি কী? (&T)"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "দিনের উপদেশ (&D)"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "বাগ রিপোর্ট দায়ের করুন...(&R)"
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "ই-মেইল কনফিগার করুন..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "%1 পরিচিতি (&A)"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "KDE পরিচিতি (&K)"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 #, fuzzy
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "মুছে ফেলুন"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "প্রতিস্থাপন...(&R)"
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "সম্প্রতি ব্যবহৃত খুলুন (&R)"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "দিনের উপদেশ (&D)"
 
 #, fuzzy
 #~| msgctxt "Encodings menu"

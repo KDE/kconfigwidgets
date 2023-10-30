@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2009-02-10 20:44+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -546,53 +546,52 @@ msgid "What's &This?"
 msgstr "ये का हे? (&T)"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "आज के नुस्खा (&D)"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "बग रिपोट करव... (&R)"
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "ईमेल कान्फिगर करव..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "%1 परिचय (&A)"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "केडीई परिचय (&K)"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "बदलव...(&R)"
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 #, fuzzy
 #| msgid "Move to Trash"
 msgid "&Move to Trash"
 msgstr "घुरुवा मं ले जाव"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "अभी हाल के खोलव  (&R)"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "आज के नुस्खा (&D)"
 
 #, fuzzy
 #~| msgctxt "Encodings menu"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2023-02-17 01:22+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -475,45 +475,44 @@ msgid "What's &This?"
 msgstr "Bu &Nədir?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "&Günün Məsləhəti"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "Xəta &Bildir..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 msgid "Configure &Language..."
 msgstr "Dil &Ayarları..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "%1 &Haqqında"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "&KDE haqqında"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "&Sil"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 msgid "&Rename..."
 msgstr "&Adını Dəyiş"
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr "&Səbətə At"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr "&Maddi Dəstək"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "&Menyunu açın"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "&Günün Məsləhəti"
 
 #~ msgid "Default"
 #~ msgstr "İlkin göstərici"

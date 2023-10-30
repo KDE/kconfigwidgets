@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2009-10-17 00:34+0200\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -543,53 +543,52 @@ msgid "What's &This?"
 msgstr "&Бу нима?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "&Кун маслаҳати"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "&Хато ҳақида хабар қилиш"
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "Электрон почтани мослаш"
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "%1 ҳ&ақида"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "&KDE ҳақида"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "Ў&чириш"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "&Алмаштириш..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 #, fuzzy
 #| msgid "&Done"
 msgid "&Donate"
 msgstr "&Тайёр"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Яқинда фойдаланилганни очиш"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "&Кун маслаҳати"
 
 #, fuzzy
 #~| msgctxt "Encodings menu"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2013-12-21 17:26+0000\n"
 "Last-Translator: Ademovic Saudin <sademovic1@etf.unsa.ba>\n"
 "Language-Team: bosanski <bs@li.org>\n"
@@ -501,53 +501,52 @@ msgid "What's &This?"
 msgstr "Šta je &ovo?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "Savjet &dana"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "Prijavi &grešku..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "Podesi e‑poštu..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "&O modulu %1"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "O &KDE‑u"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 #, fuzzy
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "Obriši"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "&Zamijeni..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Otvori &skorašnje"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "Savjet &dana"
 
 #, fuzzy
 #~| msgctxt "Encodings menu"

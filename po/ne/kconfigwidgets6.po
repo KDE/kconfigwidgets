@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -550,53 +550,52 @@ msgid "What's &This?"
 msgstr "यो के हो ?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "आजको टिप"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "बग प्रतिवेदन गर्नुहोस्..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "इमेल कन्फिगर गर्नुहोस्..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "%1 का बारेमा"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "केडीईका बारेमा"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "मेट्नुहोस्"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "बदल्नुहोस्..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 #, fuzzy
 #| msgid "Move to Trash"
 msgid "&Move to Trash"
 msgstr "रद्दीटोकरीमा सार्नुहोस्"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "हालैको खोल्नुहोस्"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "आजको टिप"
 
 #, fuzzy
 #~| msgid "Default"

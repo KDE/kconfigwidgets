@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2011-07-16 00:57+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -551,53 +551,52 @@ msgid "What's &This?"
 msgstr "Apakah &Ini?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "Petua &Hari Ini"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "Lapor &Pepijat..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "Tetapkan Emel..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "Perih&al %1"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "Perihal &KDE"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 #, fuzzy
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "Padam"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "Gan&ti..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Buka &Terkini"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "Petua &Hari Ini"
 
 #, fuzzy
 #~| msgctxt "Encodings menu"

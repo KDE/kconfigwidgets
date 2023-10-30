@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4-1.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2007-10-15 22:19+0200\n"
 "Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
 "Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
@@ -545,55 +545,54 @@ msgid "What's &This?"
 msgstr "Petra zo an &Dra-se ?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "Lagadenn an &deiz"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "&Reiñ da c'houzout ur gudenn ..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "Kefluniañ al lizher elektronek ..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "&Diwar-benn %1"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "Diwar-benn &KDE"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "&Distruj"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "&Erlec'hiañ ..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 #, fuzzy
 #| msgid "Move to Trash"
 msgid "&Move to Trash"
 msgstr "Fiñval d'ar pod-lastez"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 #, fuzzy
 #| msgid "&Done"
 msgid "&Donate"
 msgstr "&Graet"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Digeriñ &nevezig"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "Lagadenn an &deiz"
 
 #, fuzzy
 #~| msgid "Default"

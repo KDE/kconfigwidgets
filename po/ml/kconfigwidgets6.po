@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2019-12-01 18:20+0000\n"
 "Last-Translator: Subin Siby <subins2000@gmail.com>\n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -516,51 +516,50 @@ msgid "What's &This?"
 msgstr "&ഇതെന്താണു്?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "&ഇന്നത്തെ നുറുങ്ങു്"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "പിഴവാണെന്നു് &പറയുക..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "ഈമെയില്‍ തയ്യാറാക്കുക..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "%1 &സംബന്ധിച്ചു്"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "&കെഡിഇയെക്കുറിച്ചു്"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 #, fuzzy
 msgid "&Delete"
 msgstr "വെട്ടി മാറ്റുക"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 msgid "&Rename..."
 msgstr "മാറ്റം &വരുത്തുക..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "അടുത്തുപയോഗിച്ചത് തുറക്കുക &r"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "&ഇന്നത്തെ നുറുങ്ങു്"
 
 #, fuzzy
 #~| msgctxt "Encodings menu"

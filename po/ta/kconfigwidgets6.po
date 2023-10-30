@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2022-05-31 21:56+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -476,45 +476,44 @@ msgid "What's &This?"
 msgstr "இது &என்ன?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "&இன்றைய தகவல்"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "&பிழையை தெரிவி…"
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 msgid "Configure &Language..."
 msgstr "&மொழியை அமை..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "%1 ப&ற்றி"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "&கே.டீ.யீ. பற்றி"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 msgid "&Delete"
 msgstr "&நீக்கு"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 msgid "&Rename..."
 msgstr "&மறுபெயரிடு…"
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr "&அகற்றிடத்துக்கு நகர்த்து"
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr "&நன்கொடை அளியுங்கள்"
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "&பட்டியை திற"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "&இன்றைய தகவல்"
 
 #~ msgid "Default"
 #~ msgstr "இயல்பிருப்பு"

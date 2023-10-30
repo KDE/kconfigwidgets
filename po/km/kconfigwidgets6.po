@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-22 02:04+0000\n"
+"POT-Creation-Date: 2023-10-30 01:39+0000\n"
 "PO-Revision-Date: 2012-06-27 10:04+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -493,53 +493,52 @@ msgid "What's &This?"
 msgstr "នេះ​ជា​អ្វី ?"
 
 #: kstandardaction_p.h:130
-msgid "Tip of the &Day"
-msgstr "ព័ត៌មាន​ជំនួយ​សម្រាប់​ថ្ងៃនេះ"
-
-#: kstandardaction_p.h:131
 msgid "&Report Bug..."
 msgstr "រាយការណ៍​កំហុស..."
 
-#: kstandardaction_p.h:132
+#: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
 msgid "Configure &Language..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​អ៊ីមែល..."
 
-#: kstandardaction_p.h:133
+#: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
 msgstr "អំពី %1"
 
-#: kstandardaction_p.h:134
+#: kstandardaction_p.h:133
 msgid "About &KDE"
 msgstr "អំពី KDE"
 
-#: kstandardaction_p.h:135
+#: kstandardaction_p.h:134
 #, fuzzy
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "លុប"
 
-#: kstandardaction_p.h:136
+#: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
 msgid "&Rename..."
 msgstr "ជំនួស..."
 
-#: kstandardaction_p.h:137
+#: kstandardaction_p.h:136
 msgid "&Move to Trash"
 msgstr ""
 
-#: kstandardaction_p.h:138
+#: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr ""
 
-#: kstandardaction_p.h:139
+#: kstandardaction_p.h:138
 #, fuzzy
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "បើក​ថ្មី​ៗ​នេះ"
+
+#~ msgid "Tip of the &Day"
+#~ msgstr "ព័ត៌មាន​ជំនួយ​សម្រាប់​ថ្ងៃនេះ"
 
 #, fuzzy
 #~| msgctxt "Encodings menu"
