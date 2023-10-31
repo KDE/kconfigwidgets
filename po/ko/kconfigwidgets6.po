@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-30 01:39+0000\n"
+"POT-Creation-Date: 2023-10-31 01:38+0000\n"
 "PO-Revision-Date: 2022-07-13 14:09+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -81,12 +81,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "더 많은 동작"
 
-#: krecentfilesaction.cpp:72
+#: krecentfilesaction.cpp:77
 #, kde-format
 msgid "No Entries"
 msgstr "항목 없음"
 
-#: krecentfilesaction.cpp:78
+#: krecentfilesaction.cpp:83
 #, kde-format
 msgid "Clear List"
 msgstr "목록 비우기"
