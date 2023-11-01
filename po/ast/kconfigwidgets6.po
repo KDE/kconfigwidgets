@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-31 01:38+0000\n"
-"PO-Revision-Date: 2023-10-24 23:40+0200\n"
+"PO-Revision-Date: 2023-10-31 20:44+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -94,13 +94,13 @@ msgstr ""
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
-msgstr ""
+msgstr "&Atrás"
 
 #: kstandardaction.cpp:164
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
-msgstr ""
+msgstr "A&lantre"
 
 #: kstandardaction.cpp:171
 #, kde-format
@@ -274,7 +274,7 @@ msgstr "Atopar lo ante&rior"
 
 #: kstandardaction_p.h:86
 msgid "&Replace..."
-msgstr ""
+msgstr "&Trocar…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -362,11 +362,11 @@ msgstr ""
 
 #: kstandardaction_p.h:105
 msgid "&Go to Page..."
-msgstr ""
+msgstr "&Dir a la páxina…"
 
 #: kstandardaction_p.h:106
 msgid "&Go to Line..."
-msgstr ""
+msgstr "&Dir a la llinia…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -394,7 +394,7 @@ msgstr ""
 
 #: kstandardaction_p.h:110
 msgid "&Forward"
-msgstr ""
+msgstr "A&lantre"
 
 #: kstandardaction_p.h:110
 msgid "Go forward in document"

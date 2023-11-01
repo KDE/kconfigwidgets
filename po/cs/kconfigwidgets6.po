@@ -515,6 +515,3 @@ msgstr "&Přispějte"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Otevřít na&bídku"
-
-#~ msgid "Tip of the &Day"
-#~ msgstr "Tip &dne"
