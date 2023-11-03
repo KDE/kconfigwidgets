@@ -514,6 +514,3 @@ msgstr "&Gje pengegåve"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Opna &meny"
-
-#~ msgid "Tip of the &Day"
-#~ msgstr "&Dagens tips"
