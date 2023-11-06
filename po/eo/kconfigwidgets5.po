@@ -42,7 +42,7 @@ msgstr ""
 #: kcmodule.cpp:198
 #, kde-format
 msgid "You will be asked to authenticate before saving"
-msgstr ""
+msgstr "Vi estos petata aŭtentikiĝi antaŭ konservi"
 
 #: kcmodule.cpp:202
 #, kde-format
@@ -74,7 +74,7 @@ msgstr "Defaŭlta"
 #: kcommandbar.cpp:560
 #, kde-format
 msgid "No commands matching the filter"
-msgstr ""
+msgstr "Neniuj komandoj kongruaj al la filtrilo"
 
 #: kconfigdialog.cpp:37
 #, kde-format
@@ -177,7 +177,7 @@ msgstr "Malfe&rmi lastajn"
 
 #: kstandardaction_p.h:32
 msgid "Open a document which was recently opened"
-msgstr ""
+msgstr "Malfermi dokumenton kiu estis lasttempe malfermita"
 
 #: kstandardaction_p.h:33
 msgid "&Save"
@@ -201,7 +201,7 @@ msgstr "Mal&fari"
 
 #: kstandardaction_p.h:35
 msgid "Revert unsaved changes made to document"
-msgstr ""
+msgstr "Malfari nekonservitajn ŝanĝojn faritajn al dokumento"
 
 #: kstandardaction_p.h:36
 msgid "&Close"
@@ -225,7 +225,7 @@ msgstr "Pres-Antaŭ&rigardo"
 
 #: kstandardaction_p.h:38
 msgid "Show a print preview of document"
-msgstr ""
+msgstr "Montri presan antaŭrigardon de dokumento"
 
 #: kstandardaction_p.h:39
 msgid "&Mail..."
@@ -265,7 +265,7 @@ msgstr "El&tondi"
 
 #: kstandardaction_p.h:44
 msgid "Cut selection to clipboard"
-msgstr ""
+msgstr "Tondi elektaĵon al tondujo"
 
 #: kstandardaction_p.h:45
 msgid "&Copy"
@@ -273,7 +273,7 @@ msgstr "&Kopii"
 
 #: kstandardaction_p.h:45
 msgid "Copy selection to clipboard"
-msgstr ""
+msgstr "Kopii elektaĵon al tondujo"
 
 #: kstandardaction_p.h:46 kstandardaction_p.h:48
 msgid "&Paste"
@@ -333,7 +333,7 @@ msgstr "Adapti al &larĝo de paĝo"
 
 #: kstandardaction_p.h:60
 msgid "Zoom to fit page width in window"
-msgstr ""
+msgstr "Zomi por ĝisrandigi paĝolarĝecon en fenestro"
 
 #: kstandardaction_p.h:61
 msgid "Fit to Page &Height"
@@ -341,7 +341,7 @@ msgstr "Adapti al &alto de paĝo"
 
 #: kstandardaction_p.h:61
 msgid "Zoom to fit page height in window"
-msgstr ""
+msgstr "Zomi por ĝisrandigi paĝaltecon en fenestro"
 
 #: kstandardaction_p.h:62
 msgid "Zoom &In"
@@ -361,7 +361,7 @@ msgstr "Elekti zomnivelon"
 
 #: kstandardaction_p.h:65
 msgid "&Refresh"
-msgstr ""
+msgstr "&Refreŝigi"
 
 #: kstandardaction_p.h:65
 msgid "Refresh document"
@@ -373,7 +373,7 @@ msgstr "S&upren"
 
 #: kstandardaction_p.h:67
 msgid "Go up"
-msgstr ""
+msgstr "Iri supren"
 
 #: kstandardaction_p.h:72
 msgid "&Previous Page"
