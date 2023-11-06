@@ -535,7 +535,7 @@ void KCommandBarPrivate::slotReturnPressed(KCommandBar *q)
 void KCommandBarPrivate::setLastUsedActions()
 {
     auto cfg = KSharedConfig::openStateConfig();
-    KConfigGroup cg(cfg, "General");
+    KConfigGroup cg(cfg, QStringLiteral("General"));
 
     QStringList actionNames = cg.readEntry(QStringLiteral("CommandBarLastUsedActions"), QStringList());
 
@@ -634,11 +634,11 @@ KCommandBar::KCommandBar(QWidget *parent)
     setHidden(true);
 
     // Migrate last used action config to new location
-    KConfigGroup cg(KSharedConfig::openConfig(), "General");
+    KConfigGroup cg(KSharedConfig::openConfig(), QStringLiteral("General"));
     if (cg.hasKey("CommandBarLastUsedActions")) {
         const QStringList actionNames = cg.readEntry("CommandBarLastUsedActions", QStringList());
 
-        KConfigGroup stateCg(KSharedConfig::openStateConfig(), "General");
+        KConfigGroup stateCg(KSharedConfig::openStateConfig(), QStringLiteral("General"));
         stateCg.writeEntry(QStringLiteral("CommandBarLastUsedActions"), actionNames);
 
         cg.deleteEntry(QStringLiteral("CommandBarLastUsedActions"));
@@ -652,7 +652,7 @@ KCommandBar::~KCommandBar()
 {
     auto lastUsedActions = d->lastUsedActions();
     auto cfg = KSharedConfig::openStateConfig();
-    KConfigGroup cg(cfg, "General");
+    KConfigGroup cg(cfg, QStringLiteral("General"));
     cg.writeEntry("CommandBarLastUsedActions", lastUsedActions);
 
     // Explicitly remove installed event filters of children of d-pointer

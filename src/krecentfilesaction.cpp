@@ -321,7 +321,7 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
     KConfigGroup cg = _config;
     // "<default>" means the group was constructed with an empty name
     if (cg.name() == QLatin1String("<default>")) {
-        cg = KConfigGroup(cg.config(), "RecentFiles");
+        cg = KConfigGroup(cg.config(), QStringLiteral("RecentFiles"));
     }
 
     std::set<QUrl> seenUrls;
@@ -372,7 +372,7 @@ void KRecentFilesAction::saveEntries(const KConfigGroup &_cg)
     KConfigGroup cg = _cg;
     // "<default>" means the group was constructed with an empty name
     if (cg.name() == QLatin1String("<default>")) {
-        cg = KConfigGroup(cg.config(), "RecentFiles");
+        cg = KConfigGroup(cg.config(), QStringLiteral("RecentFiles"));
     }
 
     cg.deleteGroup();

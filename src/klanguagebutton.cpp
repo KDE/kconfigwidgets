@@ -119,7 +119,7 @@ void KLanguageButton::showLanguageCodes(bool show)
 static QString nameFromEntryFile(const QString &entryFile)
 {
     const KConfig entry(entryFile, KConfig::SimpleConfig);
-    const KConfigGroup group(&entry, "KCM Locale");
+    const KConfigGroup group(&entry, QStringLiteral("KCM Locale"));
     return group.readEntry("Name", QString());
 }
 

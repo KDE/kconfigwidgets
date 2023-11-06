@@ -27,7 +27,7 @@ static std::tuple<QString, QString> namesFromEntryFile(const QString &realCode, 
     if (!entryFile.isEmpty()) {
         KConfig entry(entryFile, KConfig::SimpleConfig);
         entry.setLocale(realOutputCode);
-        const KConfigGroup group(&entry, "KCM Locale");
+        const KConfigGroup group(&entry, QStringLiteral("KCM Locale"));
         const QString name = group.readEntry("Name");
 
         entry.setLocale(QStringLiteral("en_US"));
