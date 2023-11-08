@@ -26,6 +26,7 @@
 #include <QScreen>
 
 #ifdef QT_DBUS_LIB
+#include <QDBusConnectionInterface>
 #include <QDBusInterface>
 #include <QDBusMessage>
 #endif
@@ -210,7 +211,7 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
     static bool isKdeSession = qgetenv("XDG_CURRENT_DESKTOP") == "KDE";
     if (isKdeSession) {
         const QDBusConnection bus = QDBusConnection::sessionBus();
-        if (bus.isConnected()) {
+        if (bus.isConnected() && bus.interface()->isServiceRegistered(QStringLiteral("org.kde.ActivityManager"))) {
             const static QString activityService = QStringLiteral("org.kde.ActivityManager");
             const static QString activityResources = QStringLiteral("/ActivityManager/Resources");
             const static QString activityResouceInferface = QStringLiteral("org.kde.ActivityManager.Resources");
