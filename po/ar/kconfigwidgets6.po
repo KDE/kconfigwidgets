@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-06-04 19:49+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: Arabic <kde-l10n-ar@kde.org>\n"
@@ -131,7 +131,9 @@ msgid "Create new document"
 msgstr "أنشئ مستندًا جديدًا"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "ا&فتح…"
 
 #: kstandardaction_p.h:64
@@ -155,7 +157,9 @@ msgid "Save document"
 msgstr "احفظ المستند"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "احفظ &كَ‍…"
 
 #: kstandardaction_p.h:67
@@ -179,7 +183,9 @@ msgid "Close document"
 msgstr "أغلق المستند"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "ا&طبع…"
 
 #: kstandardaction_p.h:70
@@ -195,7 +201,9 @@ msgid "Show a print preview of document"
 msgstr "اعرض معاينة للمستند مطبوعًا"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+#, fuzzy
+#| msgid "&Mail..."
+msgid "&Mail…"
 msgstr "أبرِ&د…"
 
 #: kstandardaction_p.h:72
@@ -263,7 +271,9 @@ msgid "Dese&lect"
 msgstr "أ&زل التحديد"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "ابح&ث…"
 
 #: kstandardaction_p.h:84
@@ -275,7 +285,9 @@ msgid "Find Pre&vious"
 msgstr "ابحث عن ال&سابق"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "ا&ستبدل…"
 
 #: kstandardaction_p.h:88
@@ -319,7 +331,9 @@ msgid "Zoom &Out"
 msgstr "ب&عّد"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "الت&قريب…"
 
 #: kstandardaction_p.h:94
@@ -359,15 +373,21 @@ msgid "Go to next page"
 msgstr "انتقل إلى الصفحة التالية"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "ا&نتقل إلى…"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "ا&نتقل إلى صفحة…"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "ا&نتقل إلى سطر…"
 
 #: kstandardaction_p.h:107
@@ -407,11 +427,15 @@ msgid "&Add Bookmark"
 msgstr "أ&ضف علامة"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "&حرّر العلامات…"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "الإ&ملاء…"
 
 #: kstandardaction_p.h:115
@@ -447,20 +471,27 @@ msgid "F&ull Screen Mode"
 msgstr "وضع ملء ال&شاشة"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "اضبط ا&ختصارات لوحة المفاتيح..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "ا&ضبط %1…"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+#, fuzzy
+#| msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "اضبط أشرطة الأ&دوات…"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "اضبط الإ&خطارات…"
 
 #: kstandardaction_p.h:128
@@ -473,11 +504,15 @@ msgid "What's &This?"
 msgstr "ما &هذا؟"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "أ&بلغ عن علّة…"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "اضبط الل&غة..."
 
 #: kstandardaction_p.h:132
@@ -494,7 +529,9 @@ msgid "&Delete"
 msgstr "ا&حذف"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&غيّر الاسم…"
 
 #: kstandardaction_p.h:136

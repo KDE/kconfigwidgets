@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2023-04-16 12:22+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -143,7 +143,9 @@ msgid "Create new document"
 msgstr "Krei novan dokumenton"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "&Malfermi..."
 
 #: kstandardaction_p.h:64
@@ -167,7 +169,9 @@ msgid "Save document"
 msgstr "Konservi dokumenton"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "Konservi &kiel..."
 
 #: kstandardaction_p.h:67
@@ -191,7 +195,9 @@ msgid "Close document"
 msgstr "Fermi dokumenton"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "&Presi..."
 
 #: kstandardaction_p.h:70
@@ -207,7 +213,9 @@ msgid "Show a print preview of document"
 msgstr "Montri presan antaŭrigardon de dokumento"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+#, fuzzy
+#| msgid "&Mail..."
+msgid "&Mail…"
 msgstr "&Retpoŝti..."
 
 #: kstandardaction_p.h:72
@@ -275,7 +283,9 @@ msgid "Dese&lect"
 msgstr "Male&lekti ù"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "&Trovi..."
 
 #: kstandardaction_p.h:84
@@ -287,7 +297,9 @@ msgid "Find Pre&vious"
 msgstr "Tro&vi antaŭan "
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "&Anstataŭigi... "
 
 #: kstandardaction_p.h:88
@@ -331,7 +343,9 @@ msgid "Zoom &Out"
 msgstr "&Malpligrandigi"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "&Grandigi..."
 
 #: kstandardaction_p.h:94
@@ -371,15 +385,21 @@ msgid "Go to next page"
 msgstr "Iri al sekva paĝo"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Iri al..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Iri al paĝo..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "&Iri al linio..."
 
 #: kstandardaction_p.h:107
@@ -419,11 +439,15 @@ msgid "&Add Bookmark"
 msgstr "&Aldoni legosignon"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "R&edakti legosignojn..."
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Literumado..."
 
 #: kstandardaction_p.h:115
@@ -459,20 +483,27 @@ msgid "F&ull Screen Mode"
 msgstr "T&utekrana maniero"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Agordi Fulmo&klavojn..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Agordi %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+#, fuzzy
+#| msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "Agordi ilo&bretojn..."
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Agordi ate&ntigojn..."
 
 #: kstandardaction_p.h:128
@@ -485,11 +516,15 @@ msgid "What's &This?"
 msgstr "Kio estas &tio?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "&Raporti cimon..."
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Agordi &Lingvon..."
 
 #: kstandardaction_p.h:132
@@ -506,7 +541,9 @@ msgid "&Delete"
 msgstr "For&igi"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Anstataŭigi... "
 
 #: kstandardaction_p.h:136

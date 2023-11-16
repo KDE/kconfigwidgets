@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2012-05-30 23:19+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -136,7 +136,9 @@ msgid "Create new document"
 msgstr "Ráhkat ođđa dokumeantta"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "&Raba …"
 
 #: kstandardaction_p.h:64
@@ -160,7 +162,9 @@ msgid "Save document"
 msgstr "Vurke dokumeantta"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "Vurke &nugo …"
 
 #: kstandardaction_p.h:67
@@ -184,7 +188,9 @@ msgid "Close document"
 msgstr "Gidde dokumeantta"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "Čá&lit …"
 
 #: kstandardaction_p.h:70
@@ -200,7 +206,9 @@ msgid "Show a print preview of document"
 msgstr "Čájet dokumeantta nugo čálihuvvo"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+#, fuzzy
+#| msgid "&Mail..."
+msgid "&Mail…"
 msgstr "&Sádde …"
 
 #: kstandardaction_p.h:72
@@ -268,7 +276,9 @@ msgid "Dese&lect"
 msgstr "&Váldde eret merkema"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "&Oza …"
 
 #: kstandardaction_p.h:84
@@ -280,7 +290,9 @@ msgid "Find Pre&vious"
 msgstr "Gávnna &ovddit"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "&Buhtte …"
 
 #: kstandardaction_p.h:88
@@ -324,7 +336,9 @@ msgid "Zoom &Out"
 msgstr "&Unnit"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "&Stuorit/unnit …"
 
 #: kstandardaction_p.h:94
@@ -364,15 +378,21 @@ msgid "Go to next page"
 msgstr "Mana boahtte siidui"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Mana …"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Mana siidui …"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "Mana &linjái …"
 
 #: kstandardaction_p.h:107
@@ -412,11 +432,15 @@ msgid "&Add Bookmark"
 msgstr "&Lasit girjemearkka"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "&Doaimmat girjemearkkaid …"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Riektačállin …"
 
 #: kstandardaction_p.h:115
@@ -452,20 +476,25 @@ msgid "F&ull Screen Mode"
 msgstr "D&ievasšearbmadoaibmanvuohki"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr ""
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Heivet %1 …"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+#, fuzzy
+#| msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "Heivet &reaidoholggaid …"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Heivet &dieđáhusaid …"
 
 #: kstandardaction_p.h:128
@@ -478,11 +507,13 @@ msgid "What's &This?"
 msgstr "Mii dat &lea?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "Vá&idal dihki …"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr ""
 
 #: kstandardaction_p.h:132
@@ -499,7 +530,9 @@ msgid "&Delete"
 msgstr "&Sihko"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "Bija ođđa nama …"
 
 #: kstandardaction_p.h:136

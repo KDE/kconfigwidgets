@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2021-09-05 20:26+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -139,8 +139,11 @@ msgid "Create new document"
 msgstr "Opret nyt dokument"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "Å&bn..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "Å&bn"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -163,8 +166,10 @@ msgid "Save document"
 msgstr "Gem dokument"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Gem &som..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Gem som"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -187,8 +192,10 @@ msgid "Close document"
 msgstr "Luk dokument"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Udskriv..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Udskriv"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -203,8 +210,11 @@ msgid "Show a print preview of document"
 msgstr "Vis udskrift for et dokument"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Send..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "E-mail"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -271,8 +281,10 @@ msgid "Dese&lect"
 msgstr "&Afmarkér"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Find..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Find"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -283,8 +295,10 @@ msgid "Find Pre&vious"
 msgstr "Find &forrige"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Erstat..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Erstat"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -329,8 +343,11 @@ msgid "Zoom &Out"
 msgstr "Zoom &ud"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zoom..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Zoom"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -369,16 +386,23 @@ msgid "Go to next page"
 msgstr "Gå til næste side"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Gå til..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Gå til side..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Gå til linje..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Gå til linje"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -417,12 +441,18 @@ msgid "&Add Bookmark"
 msgstr "&Tilføj bogmærke"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Redigér bogmærker..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Redigér bogmærker"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Stavekontrol..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Stavning"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -457,21 +487,28 @@ msgid "F&ull Screen Mode"
 msgstr "F&uldskærmstilstand"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Indstil tastatur&genveje..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Indstil %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Indstil &værktøjslinjer..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Indstil værktøjslinjer"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Indstil &bekendtgørelser..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Indstil bekendtgørelser"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -483,11 +520,16 @@ msgid "What's &This?"
 msgstr "Hvad er &dette?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Rapportér programfejl..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Rapportér programfejl"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Indstil &sprog..."
 
 #: kstandardaction_p.h:132
@@ -504,7 +546,9 @@ msgid "&Delete"
 msgstr "S&let"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Omdøb..."
 
 #: kstandardaction_p.h:136
@@ -518,6 +562,45 @@ msgstr "&Donér"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Åbn &menu"
+
+#~ msgid "&Open..."
+#~ msgstr "Å&bn..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Gem &som..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Udskriv..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Send..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Find..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Erstat..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zoom..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Gå til linje..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Redigér bogmærker..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Stavekontrol..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Indstil &værktøjslinjer..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Indstil &bekendtgørelser..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Rapportér programfejl..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Dagens tip"
@@ -1165,9 +1248,6 @@ msgstr "Åbn &menu"
 #~ "<p>Klik her for at erstatte denne forekomst af den ukendte tekst med "
 #~ "teksten i redigeringsfeltet ovenfor (i venstre side).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Erstat"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3812,9 +3892,6 @@ msgstr "Åbn &menu"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "S&kjul tekst når værktøjslinjen viser tekst ved siden af ikoner"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Indstil værktøjslinjer"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4020,9 +4097,6 @@ msgstr "Åbn &menu"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Indstil genveje"
-
-#~ msgid "Print"
-#~ msgstr "Udskriv"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Gendan standardindstillinger"
@@ -4256,9 +4330,6 @@ msgstr "Åbn &menu"
 #~ "<qt>Hvis du trykker på <b>Erstat</b>-knappen vil dokumentet blive "
 #~ "gennemsøgt for den tekst du indgav ovenfor og enhver forekomst vil blive "
 #~ "erstatte med erstatningsteksten.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Find"
 
 #~ msgid "Start searching"
 #~ msgstr "Start søgning"
@@ -4937,10 +5008,6 @@ msgstr "Åbn &menu"
 #~ msgstr "Slut på linje"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Gå til linje"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Et ord tilbage"
 
@@ -5025,10 +5092,6 @@ msgstr "Åbn &menu"
 #~ msgstr "Vis udskrift"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "E-mail"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Ryd"
 
@@ -5049,10 +5112,6 @@ msgstr "Åbn &menu"
 #~ msgstr "Tilpas til højden"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Zoom"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Gå til"
 
@@ -5067,14 +5126,6 @@ msgstr "Åbn &menu"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Dokument frem"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Redigér bogmærker"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Stavning"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5107,10 +5158,6 @@ msgstr "Åbn &menu"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Dagens tip"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Rapportér programfejl"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7554,9 +7601,6 @@ msgstr "Åbn &menu"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Gem som"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9064,9 +9108,6 @@ msgstr "Åbn &menu"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Læs brugervalgt tekst op"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Indstil bekendtgørelser"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Tilstand"
@@ -9115,10 +9156,6 @@ msgstr "Åbn &menu"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Å&bn med"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "Å&bn"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2006-06-22 16:29+0200\n"
 "Last-Translator: Michel Ludwig <michel.ludwig@kdemail.net>\n"
 "Language-Team: Luxembourgish <kde-i18n-lb@kde.org>\n"
@@ -148,8 +148,10 @@ msgid "Create new document"
 msgstr "Kierzel läschen"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Opmaachen..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Opmaachen"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -176,8 +178,10 @@ msgid "Save document"
 msgstr "Dokument zoumaachen"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Späicheren &Als..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Späicheren als"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -204,8 +208,10 @@ msgid "Close document"
 msgstr "Dokument zoumaachen"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Drécken..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Drécken"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -225,8 +231,10 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "Ver&schécken..."
+#, fuzzy
+#| msgid "Mailbox"
+msgid "&Mail…"
+msgstr "Mailbox"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -301,8 +309,10 @@ msgid "Dese&lect"
 msgstr "Of&wielen"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Sichen..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Sichen"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -313,8 +323,10 @@ msgid "Find Pre&vious"
 msgstr "Vir&dru sichen"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "E&rsetzen..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "E&rsetzen"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -361,8 +373,10 @@ msgid "Zoom &Out"
 msgstr "Era&uszoomen"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom"
+msgid "&Zoom…"
+msgstr "&Zoom"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -412,16 +426,22 @@ msgid "Go to next page"
 msgstr "Sprang op d'Zeil"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Goen..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Op d'Säit &goen..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "Op d'Zeil &goen..."
+#, fuzzy
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Sprang op d'Zeil"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -471,11 +491,15 @@ msgid "&Add Bookmark"
 msgstr "Lieszeechen &dobäimaachen"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "Lieszeechen ä&nneren..."
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Lieszeeche &veränneren"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Rechtschreiwung..."
 
 #: kstandardaction_p.h:115
@@ -521,20 +545,24 @@ msgstr "&Vollbildmodus"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "&Kierzel configuréieren..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 &configuréieren..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Tool&bare configuréieren..."
+#, fuzzy
+msgid "Configure Tool&bars…"
+msgstr "Toolbare configuréieren"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "&Norichte configuréieren..."
 
 #: kstandardaction_p.h:128
@@ -547,13 +575,15 @@ msgid "What's &This?"
 msgstr "Wat ass &dat?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "E Käfer &mellen..."
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "E-Mail configuréiren..."
 
 #: kstandardaction_p.h:132
@@ -572,7 +602,7 @@ msgstr "&Läschen"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "E&rsetzen..."
 
 #: kstandardaction_p.h:136
@@ -590,6 +620,45 @@ msgstr "&Fäerdeg"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Viru kuerzem opgemaachen Dateien"
+
+#~ msgid "&Open..."
+#~ msgstr "&Opmaachen..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Späicheren &Als..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Drécken..."
+
+#~ msgid "&Mail..."
+#~ msgstr "Ver&schécken..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Sichen..."
+
+#~ msgid "&Replace..."
+#~ msgstr "E&rsetzen..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zoom..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "Op d'Zeil &goen..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Lieszeechen ä&nneren..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Rechtschreiwung..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Tool&bare configuréieren..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "&Norichte configuréieren..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "E Käfer &mellen..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Rotschlag vum Dag"
@@ -1290,9 +1359,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ "<p>Klickt hei fir dësst Optriede vum onbekannten Text duerch den Text aus "
 #~ "der Këscht uëwe lénks z'ersetzen.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "E&rsetzen"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3898,10 +3964,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Text sichen"
 
-#, fuzzy
-#~ msgid "Configure Toolbars"
-#~ msgstr "Toolbare configuréieren"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4133,9 +4195,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Tastekierzel configuréieren"
 
-#~ msgid "Print"
-#~ msgstr "Drécken"
-
 #, fuzzy
 #~| msgid "Defaults"
 #~ msgid "Reset to Defaults"
@@ -4355,9 +4414,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ "<qt>Wann dir op den <b>Ersetzen</b>-Knäppche klickt, da gëtt am Dokument "
 #~ "no deem Text, deen dir uewen agin hutt, gesicht, an all Optriede gëtt "
 #~ "duerch den Ersatztext ersat.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Sichen"
 
 #~ msgid "Start searching"
 #~ msgstr "Mat der Sicht ufänken"
@@ -5111,12 +5167,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ msgstr "Enn vun der Linn"
 
 #, fuzzy
-#~| msgid "Go to Line"
-#~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Sprang op d'Zeil"
-
-#, fuzzy
 #~| msgid "Backward Word"
 #~ msgctxt "@action"
 #~ msgid "Backward Word"
@@ -5243,12 +5293,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ msgstr "Drocker&virschau..."
 
 #, fuzzy
-#~| msgid "Mailbox"
-#~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Mailbox"
-
-#, fuzzy
 #~| msgid "Clear"
 #~ msgctxt "@action"
 #~ msgid "Clear"
@@ -5314,12 +5358,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ msgstr "Lieszeeche &veränneren"
 
 #, fuzzy
-#~| msgid "&Spelling..."
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "&Rechtschreiwung..."
-
-#, fuzzy
 #~| msgid "Show &Toolbar"
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5365,12 +5403,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Rotschlag vum Dag"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "E Käfer &mellen..."
 
 #, fuzzy
 #~| msgid "sets the application name"
@@ -7909,9 +7941,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Späicheren als"
-
 #, fuzzy
 #~| msgid ""
 #~| "<qt>This untrusted page links to<BR><B>%1</B>.<BR>Do you want to follow "
@@ -9222,11 +9251,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ msgstr "Gitt w.e.g. den &Numm an:"
 
 #, fuzzy
-#~| msgid "Configure &Notifications..."
-#~ msgid "Configure Notifications"
-#~ msgstr "&Norichte configuréieren..."
-
-#, fuzzy
 #~| msgid "State"
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
@@ -9295,12 +9319,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Opmaache mat..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Opmaachen"
 
 #, fuzzy
 #~| msgid "Name:"
@@ -10212,9 +10230,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #, fuzzy
 #~ msgid "Form"
 #~ msgstr "Frame"
-
-#~ msgid "&Edit Bookmarks"
-#~ msgstr "Lieszeeche &veränneren"
 
 #~ msgctxt "of January"
 #~ msgid "of Jan"
@@ -13810,9 +13825,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 
 #~ msgid "Import"
 #~ msgstr "Importéieren"
-
-#~ msgid "&Zoom"
-#~ msgstr "&Zoom"
 
 #~ msgid "Malformed URL"
 #~ msgstr "Schlechtgeschriwwen URL"

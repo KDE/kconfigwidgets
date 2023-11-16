@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-07-13 14:09+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -132,7 +132,9 @@ msgid "Create new document"
 msgstr "새 문서 만들기"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "열기(&O)..."
 
 #: kstandardaction_p.h:64
@@ -156,7 +158,9 @@ msgid "Save document"
 msgstr "문서 저장"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "다른 이름으로 저장(&A)..."
 
 #: kstandardaction_p.h:67
@@ -180,7 +184,9 @@ msgid "Close document"
 msgstr "문서 닫기"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "인쇄(&P)..."
 
 #: kstandardaction_p.h:70
@@ -196,7 +202,9 @@ msgid "Show a print preview of document"
 msgstr "문서의 인쇄 미리 보기를 표시"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+#, fuzzy
+#| msgid "&Mail..."
+msgid "&Mail…"
 msgstr "보내기(&M)..."
 
 #: kstandardaction_p.h:72
@@ -264,7 +272,9 @@ msgid "Dese&lect"
 msgstr "선택 해제(&L)"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "찾기(&F)..."
 
 #: kstandardaction_p.h:84
@@ -276,7 +286,9 @@ msgid "Find Pre&vious"
 msgstr "이전 찾기(&V)"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "바꾸기(&R)..."
 
 #: kstandardaction_p.h:88
@@ -320,7 +332,9 @@ msgid "Zoom &Out"
 msgstr "축소(&O)"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "확대/축소(&Z)..."
 
 #: kstandardaction_p.h:94
@@ -360,15 +374,21 @@ msgid "Go to next page"
 msgstr "다음 쪽으로 이동"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "이동(&G)..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "쪽으로 이동(&G)..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "줄로 이동(&G)..."
 
 #: kstandardaction_p.h:107
@@ -408,11 +428,15 @@ msgid "&Add Bookmark"
 msgstr "책갈피 추가(&A)"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "책갈피 편집(&E)..."
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "맞춤법 검사(&S)..."
 
 #: kstandardaction_p.h:115
@@ -448,20 +472,27 @@ msgid "F&ull Screen Mode"
 msgstr "전체 화면 모드(&U)"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "키보드 단축키 설정(&H)..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 설정(&C)..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+#, fuzzy
+#| msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "도구 모음 설정(&B)..."
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "알림 설정(&N)..."
 
 #: kstandardaction_p.h:128
@@ -474,11 +505,15 @@ msgid "What's &This?"
 msgstr "이것에 대한 설명(&T)"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "버그 보고(&R)..."
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "언어 설정(&L)..."
 
 #: kstandardaction_p.h:132
@@ -495,7 +530,9 @@ msgid "&Delete"
 msgstr "삭제(&D)"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "이름 바꾸기(&R)..."
 
 #: kstandardaction_p.h:136

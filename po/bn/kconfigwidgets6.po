@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2012-07-16 14:27+0530\n"
 "Last-Translator: Deepayan Sarkar <deepayan.sarkar@gmail.com>\n"
 "Language-Team: American English <kde-translation@bengalinux.org>\n"
@@ -146,8 +146,11 @@ msgid "Create new document"
 msgstr "নতুন নথী তৈরি করো"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "খোলো (&খ)..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "খো&ল"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -172,8 +175,10 @@ msgid "Save document"
 msgstr "নথী সংরক্ষণ করো"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "&নতুন নামে সংরক্ষণ..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "নতুন নামে সংরক্ষণ করো"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -196,8 +201,10 @@ msgid "Close document"
 msgstr "নথী বন্ধ করো"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "ছাপা&ও..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "ছাপাও"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -212,8 +219,11 @@ msgid "Show a print preview of document"
 msgstr "নথীর মুদ্রণ প্রাকদর্শন দেখাও"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "মে&ইল করো..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "মেইল করো"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -282,8 +292,10 @@ msgid "Dese&lect"
 msgstr "নির্বা&চন বাতিল করো"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&সন্ধান করো..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "খোঁ&জ"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -294,8 +306,10 @@ msgid "Find Pre&vious"
 msgstr "আগে&রটি খোঁজো"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&বদলে বসাও..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&বদলাও"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -340,8 +354,11 @@ msgid "Zoom &Out"
 msgstr "ছো&ট করো"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "ছোট/ব&ড় করো..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "ছোট/বড় করো "
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -384,16 +401,23 @@ msgid "Go to next page"
 msgstr "পরের পাতায় যাও"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "...যা&ও"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "...পাতায় যা&ও"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "...লাইনে যা&ও"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "এই লাইনে যাও"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -432,12 +456,18 @@ msgid "&Add Bookmark"
 msgstr "বুকমার্ক &করো"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "বুকমার্ক &সম্পাদনা করো..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "বুকমার্ক সম্পাদনা করো"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "বানা&ন..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "বানান"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -474,21 +504,26 @@ msgstr "ফু&ল স্ক্রীণ মোড"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "&শর্টকাট কনফিগার করো..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 &কনফিগার করো..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "টুলবার ক&নফিগার করো..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "টুলবার কনফিগার করো"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "বার্তা&বলী কনফিগার করো..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "বার্তাবলী কনফিগার করো"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -500,13 +535,16 @@ msgid "What's &This?"
 msgstr "&এটা কী?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "বা&গ টিপোর্ট করো..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "বাগ টিপোর্ট করো"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "ই-মেইল কনফিগার করো..."
 
 #: kstandardaction_p.h:132
@@ -525,7 +563,7 @@ msgstr "মুছে ফেলো (&ম)"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&বদলে বসাও..."
 
 #: kstandardaction_p.h:136
@@ -541,6 +579,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&সম্প্রতি ব্যবহৃত"
+
+#~ msgid "&Open..."
+#~ msgstr "খোলো (&খ)..."
+
+#~ msgid "Save &As..."
+#~ msgstr "&নতুন নামে সংরক্ষণ..."
+
+#~ msgid "&Print..."
+#~ msgstr "ছাপা&ও..."
+
+#~ msgid "&Mail..."
+#~ msgstr "মে&ইল করো..."
+
+#~ msgid "&Find..."
+#~ msgstr "&সন্ধান করো..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&বদলে বসাও..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "ছোট/ব&ড় করো..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "...লাইনে যা&ও"
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "বুকমার্ক &সম্পাদনা করো..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "বানা&ন..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "টুলবার ক&নফিগার করো..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "বার্তা&বলী কনফিগার করো..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "বা&গ টিপোর্ট করো..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&আজকের টিপ"
@@ -1203,9 +1280,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ "<p>অজানা লেখাটি পাল্টে তার বদলে উপরে বাঁদিকের এডিট বক্স-এর লেখাটি বসাতে "
 #~ "এখানে ক্লিক করুন।</p>\n"
 #~ "</qt> "
-
-#~ msgid "&Replace"
-#~ msgstr "&বদলাও"
 
 #, fuzzy
 #~ msgid ""
@@ -3843,9 +3917,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgid "Icon te&xt:"
 #~ msgstr "&আইকন-এর লেখা:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "টুলবার কনফিগার করো"
-
 #, fuzzy
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
@@ -4058,9 +4129,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "শর্টকাট কনফিগার করো"
-
-#~ msgid "Print"
-#~ msgstr "ছাপাও"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "ডিফল্ট অবস্থায় ফেরাও"
@@ -4303,9 +4371,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgstr ""
 #~ "<qt> <b>বদল করো</b> বাটনটি টিপলে উপরে লেখা টেক্সটটি নথীর মধ্যে খোঁজা হবে, "
 #~ "এবং যেখানে যেখানে পাওয়া যাবে পাল্টে বদলি টেক্সটটি বসানো হবে।</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "খোঁ&জ"
 
 #~ msgid "Start searching"
 #~ msgstr "সন্ধান শুরু"
@@ -4990,10 +5055,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgstr "লাইনের শেষ"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "এই লাইনে যাও"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "আগের শব্দ"
 
@@ -5078,10 +5139,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgstr "মুদ্রণ প্রাকদর্শন"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "মেইল করো"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "ফাঁকা করো"
 
@@ -5102,10 +5159,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgstr "পাতার উচ্চতার মধ্যে আঁটাও"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "ছোট/বড় করো "
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "যাও"
 
@@ -5122,14 +5175,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "ডকুমেন্ট ফরওয়ার্ড"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "বুকমার্ক সম্পাদনা করো"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "বানান"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5163,10 +5208,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "আজকের টিপ"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "বাগ টিপোর্ট করো"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7565,9 +7606,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "নতুন নামে সংরক্ষণ করো"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9034,9 +9072,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgid "Speak Custom Text"
 #~ msgstr "স্বনির্বাচিত লেখা পড়ে শোনাও"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "বার্তাবলী কনফিগার করো"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "অবস্থা"
@@ -9085,10 +9120,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "খুলতে ব্যবহা&র করো"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "খো&ল"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

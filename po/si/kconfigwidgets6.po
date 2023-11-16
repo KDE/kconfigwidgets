@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2011-07-25 07:45+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <danishka@gmail.com>\n"
@@ -147,8 +147,11 @@ msgid "Create new document"
 msgstr "අලුත් ටැග් තනන්න..."
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "විවෘත කරන්න... (&O)"
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "විවෘත කරන්න (&O)"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -175,8 +178,10 @@ msgid "Save document"
 msgstr "ලේඛනය වසන්න"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "සුරකින අයුර... &A"
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "සුරකින අයුර"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -203,8 +208,10 @@ msgid "Close document"
 msgstr "ලේඛනය වසන්න"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "මුද්‍රණය... (&P)"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "මුද්‍රණය"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -222,8 +229,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "තැපැල්... (&M)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "විද්‍යුත් තැපැල"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -298,8 +308,10 @@ msgid "Dese&lect"
 msgstr "තෝරන්න ඒපා (&l)"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "සොයන්න... (&F)"
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "සොයන්න (&F)"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -310,8 +322,10 @@ msgid "Find Pre&vious"
 msgstr "පෙර සෙවුම (&v)"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "ආදේශය... (&R)"
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "ආදේශ කරන්න  (&R)"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -359,8 +373,11 @@ msgid "Zoom &Out"
 msgstr "කුඩා කරන්න (&O)"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "විශාලනය... (&Z)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "විශාලණය"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -408,16 +425,23 @@ msgid "Go to next page"
 msgstr "පෙළට යන්න"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "යායුත්තේ... (&G)"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "පිටුවට යන්න... (&G)"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "පේළියට යන්න... (&G)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "පෙළට යන්න"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -468,12 +492,18 @@ msgid "&Add Bookmark"
 msgstr "පිටු සලකුණු එක් කරන්න (&A)"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "පිටු සලකුණු සකසන්න... (&E)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "පිටු සලකුණු සකසන්න"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "අක්‍ෂර වින්‍යාසය... (&S)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "අක්‍ෂර වින්‍යාසය"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -520,21 +550,26 @@ msgstr "පූර්‍ණතිර ආකාරය (&u)"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "කෙටි මාර්‍ග මානකරණය... (&h)"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 මානකරණය... (&C)"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "මෙවලම් තීරු මානකරණය... (&b)"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "මෙවලම් තීරුව සකසන්න"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "දැනුම් දීම් මානකරණය... (&N)"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "සැකසුම් නිවේදන"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -546,13 +581,16 @@ msgid "What's &This?"
 msgstr "මේ කුමක්ඳ? (&T)"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "දෝෂ වාර්තා කරන්න... (&R)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "දෝෂය වාර්තා කරන්න"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "විද්‍යුත් තැපැල සකසන්න..."
 
 #: kstandardaction_p.h:132
@@ -571,7 +609,7 @@ msgstr "මකන්න (&D)"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "ආදේශය... (&R)"
 
 #: kstandardaction_p.h:136
@@ -589,6 +627,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "මෑතකදි භාවිතා කළ දැ විවෘත කරන්න (&R)"
+
+#~ msgid "&Open..."
+#~ msgstr "විවෘත කරන්න... (&O)"
+
+#~ msgid "Save &As..."
+#~ msgstr "සුරකින අයුර... &A"
+
+#~ msgid "&Print..."
+#~ msgstr "මුද්‍රණය... (&P)"
+
+#~ msgid "&Mail..."
+#~ msgstr "තැපැල්... (&M)"
+
+#~ msgid "&Find..."
+#~ msgstr "සොයන්න... (&F)"
+
+#~ msgid "&Replace..."
+#~ msgstr "ආදේශය... (&R)"
+
+#~ msgid "&Zoom..."
+#~ msgstr "විශාලනය... (&Z)"
+
+#~ msgid "&Go to Line..."
+#~ msgstr "පේළියට යන්න... (&G)"
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "පිටු සලකුණු සකසන්න... (&E)"
+
+#~ msgid "&Spelling..."
+#~ msgstr "අක්‍ෂර වින්‍යාසය... (&S)"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "මෙවලම් තීරු මානකරණය... (&b)"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "දැනුම් දීම් මානකරණය... (&N)"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "දෝෂ වාර්තා කරන්න... (&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "දවසේ ඉඟිය (&D)"
@@ -1250,9 +1327,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ "<p>ඉහත සැකසීම් කොටුවේ (වමට වන්නට ඇති) ඇති පෙළ මඟින් නොදන්නා පෙළේ මෙම හමුවීම ප්‍"
 #~ "රතිස්ථාපනය කිරීම සඳහා මෙහි ක්ලික් කරන්න.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "ආදේශ කරන්න  (&R)"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3839,9 +3913,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgid "Icon te&xt:"
 #~ msgstr "අයිකනයේ පෙළ (&x):"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "මෙවලම් තීරුව සකසන්න"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4044,9 +4115,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "කෙටි මං සකසන්න"
-
-#~ msgid "Print"
-#~ msgstr "මුද්‍රණය"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "පෙරනිමියට යළි සකසන්න"
@@ -4267,9 +4335,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgstr ""
 #~ "<qt>ඔබ <b>ප්‍රතිස්ථාපනය කරන්න</b> බොත්තම ක්ලික් කළොත්, ඔබ ඉහත ඇතුල් කළ පෙළ සඳහා ලිපිය "
 #~ "තුළ සොයා ඕනැම හමුවීමක් ප්‍රතිස්ථාපන පෙළ මඟින් ප්‍රතිස්ථාපනය කරනු ඇත.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "සොයන්න (&F)"
 
 #~ msgid "Start searching"
 #~ msgstr "සෙවීම  අරඹන්න"
@@ -4926,10 +4991,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgstr "පෙළ අවසානය"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "පෙළට යන්න"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "පසු පදය"
 
@@ -5014,10 +5075,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgstr "මුද්‍රණ පූර්‍වදසුන"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "විද්‍යුත් තැපැල"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "පැහැදිලි කරන්න"
 
@@ -5038,10 +5095,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgstr "පිටුවේ උසට ගලපන්න"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "විශාලණය"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "යායුතු"
 
@@ -5056,14 +5109,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "ලේඛනය ඉදිරියට"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "පිටු සලකුණු සකසන්න"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "අක්‍ෂර වින්‍යාසය"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5096,10 +5141,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "දිනයේ ඉඟිය"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "දෝෂය වාර්තා කරන්න"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7571,9 +7612,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "සුරකින අයුර"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9108,9 +9146,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgid "Speak Custom Text"
 #~ msgstr "රිසිකළ පෙළ පවසන්න"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "සැකසුම් නිවේදන"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "පවත්නා තත්වය"
@@ -9163,10 +9198,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "සමඟ විවෘත කරන්න... (&O)"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "විවෘත කරන්න (&O)"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-05-31 21:56+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -134,8 +134,11 @@ msgid "Create new document"
 msgstr "புதிய ஆவணத்தை உருவாக்கு"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&திற..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&திறக்க"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -158,8 +161,10 @@ msgid "Save document"
 msgstr "ஆவணத்தை சேமி"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "&இப்படி சேமி..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "மாற்றிக் காக்க"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -182,8 +187,10 @@ msgid "Close document"
 msgstr "ஆவணத்தை மூடு"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&அச்சிடு..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "அச்சிடுக"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -198,8 +205,11 @@ msgid "Show a print preview of document"
 msgstr "ஆவணம் அச்சிடப்பட்டால் எப்படி இருக்கும் என ஒரு மூன்னோட்டத்தை காட்டும்"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&அஞ்சலிடு..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "மடல்"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -266,8 +276,10 @@ msgid "Dese&lect"
 msgstr "தே&ர்வை நிராகரி"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&கண்டுபிடி..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&தேடுக"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -278,8 +290,10 @@ msgid "Find Pre&vious"
 msgstr "மு&ந்தையதை கண்டுபிடி"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "மா&ற்று…"
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&மாற்றுக"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -322,8 +336,11 @@ msgid "Zoom &Out"
 msgstr "&சிறிதாக்கு"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&உருப்பெருக்கம்..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "பெரிதாக்குக"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -362,16 +379,23 @@ msgid "Go to next page"
 msgstr "அடுத்த பக்கத்திற்கு செல்"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&இங்கு செல்…"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "ப&க்கத்திற்கு செல்…"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&வரிக்கு செல்…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "செல்ல வேண்டிய வரி"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -410,12 +434,18 @@ msgid "&Add Bookmark"
 msgstr "நினைவுக்குறியை &சேர்"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "நினைவுக்குறிகளை &திருத்து…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "நினைவுக்குறிகளைத் &தொகுக்க"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&எழுத்தாக்கம்…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "உச்சரிப்பு..."
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -450,21 +480,28 @@ msgid "F&ull Screen Mode"
 msgstr "&முழுத்திரை பயன்முறை"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "&விசை சுருக்குவழிகளை அமை…"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 தனை &அமை…"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "க&ருவிப்பட்டைகளை அமை…"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "கருவிப்பட்டைகளை வடிவமை"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "&அறிவிப்புகளை அமை…"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "அறிவிப்புகளை வடிவமைக்க"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -476,11 +513,16 @@ msgid "What's &This?"
 msgstr "இது &என்ன?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&பிழையை தெரிவி…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "வழுத்தாக்கல் செய்... "
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "&மொழியை அமை..."
 
 #: kstandardaction_p.h:132
@@ -497,7 +539,9 @@ msgid "&Delete"
 msgstr "&நீக்கு"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&மறுபெயரிடு…"
 
 #: kstandardaction_p.h:136
@@ -511,6 +555,45 @@ msgstr "&நன்கொடை அளியுங்கள்"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "&பட்டியை திற"
+
+#~ msgid "&Open..."
+#~ msgstr "&திற..."
+
+#~ msgid "Save &As..."
+#~ msgstr "&இப்படி சேமி..."
+
+#~ msgid "&Print..."
+#~ msgstr "&அச்சிடு..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&அஞ்சலிடு..."
+
+#~ msgid "&Find..."
+#~ msgstr "&கண்டுபிடி..."
+
+#~ msgid "&Replace..."
+#~ msgstr "மா&ற்று…"
+
+#~ msgid "&Zoom..."
+#~ msgstr "&உருப்பெருக்கம்..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&வரிக்கு செல்…"
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "நினைவுக்குறிகளை &திருத்து…"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&எழுத்தாக்கம்…"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "க&ருவிப்பட்டைகளை அமை…"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "&அறிவிப்புகளை அமை…"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&பிழையை தெரிவி…"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&இன்றைய தகவல்"
@@ -1159,9 +1242,6 @@ msgstr "&பட்டியை திற"
 #~ "<p>மேற்காணும் உரைப் பெட்டியில் இருக்கும் உரையினைக் கொண்டு (இடப் பக்கமாக) இந்நிகழ்வினை "
 #~ "மாற்ற இங்கே சொடுக்குக.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&மாற்றுக"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3788,9 +3868,6 @@ msgstr "&பட்டியை திற"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "கருவிப்பட்டை முகவுருகளுக்கு அருகே உரையைக் காட்டும் போது &உரையை மறை"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "கருவிப்பட்டைகளை வடிவமை"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -3992,9 +4069,6 @@ msgstr "&பட்டியை திற"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "சுருக்குவழிகளை வடிவமை"
-
-#~ msgid "Print"
-#~ msgstr "அச்சிடுக"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "இயல்பிருப்பையே அமை"
@@ -4224,9 +4298,6 @@ msgstr "&பட்டியை திற"
 #~ msgstr ""
 #~ "<qt>தாங்கள்<b>மாற்று</b> என்கிற பொத்தானை சொடுக்கினால், தாங்கள் மேலிட்ட உரை ஆவணத்தின் "
 #~ "ஊடே தேடப்பட்டு மாற்று உரையைக் கொண்டு கிடைக்கப்படும் எந்தப் பதமும் மாற்றப்படும்.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&தேடுக"
 
 #~ msgid "Start searching"
 #~ msgstr "தேடத் துவங்குகிறது"
@@ -4896,10 +4967,6 @@ msgstr "&பட்டியை திற"
 #~ msgstr "வரியின் முடிவு"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "செல்ல வேண்டிய வரி"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "பின்னுள்ளச் சொல்"
 
@@ -4984,10 +5051,6 @@ msgstr "&பட்டியை திற"
 #~ msgstr "அச்சு முன்தோற்றம்"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "மடல்"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "துடைக்க"
 
@@ -5008,10 +5071,6 @@ msgstr "&பட்டியை திற"
 #~ msgstr "பக்க உயரத்துடன் பொருத்துக"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "பெரிதாக்குக"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "செல்க"
 
@@ -5026,14 +5085,6 @@ msgstr "&பட்டியை திற"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "முன்னோக்கி"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "நினைவுக்குறிகளைத் &தொகுக்க"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "உச்சரிப்பு..."
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5066,10 +5117,6 @@ msgstr "&பட்டியை திற"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "இன்று ஒரு தகவல்"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "வழுத்தாக்கல் செய்... "
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7504,9 +7551,6 @@ msgstr "&பட்டியை திற"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "மாற்றிக் காக்க"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9005,9 +9049,6 @@ msgstr "&பட்டியை திற"
 #~ msgid "Speak Custom Text"
 #~ msgstr "இடப்பட்ட உரையைப் பேசுக"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "அறிவிப்புகளை வடிவமைக்க"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "நிலை"
@@ -9056,10 +9097,6 @@ msgstr "&பட்டியை திற"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&எதனால் திறக்க..."
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&திறக்க"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

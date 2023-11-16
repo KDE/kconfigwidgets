@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-06-24 11:08+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -155,8 +155,11 @@ msgid "Create new document"
 msgstr "Создать новый документ"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Открыть..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Открыть"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -179,8 +182,10 @@ msgid "Save document"
 msgstr "Сохранить документ"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Сохранить &как..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Сохранить как"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -203,8 +208,10 @@ msgid "Close document"
 msgstr "Закрыть документ"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "Пе&чать..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Печать"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -219,8 +226,11 @@ msgid "Show a print preview of document"
 msgstr "Показать предварительный просмотр документа"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "Отправить по &почте..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Отправить по почте"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -287,8 +297,10 @@ msgid "Dese&lect"
 msgstr "С&нять выделение"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Найти..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Поиск"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -299,8 +311,10 @@ msgid "Find Pre&vious"
 msgstr "Найти пред&ыдущее"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Заменить..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Заменить"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -343,8 +357,11 @@ msgid "Zoom &Out"
 msgstr "У&меньшить"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Масштаб..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Масштаб"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -383,16 +400,23 @@ msgid "Go to next page"
 msgstr "Перейти на следующую страницу"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Перейти..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Перейти на ст&раницу..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Перейти на строку..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Перейти к строке"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -431,12 +455,18 @@ msgid "&Add Bookmark"
 msgstr "Добавить &закладку"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Изменить закладки..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Изменить закладки"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Проверка орфографии..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Проверка орфографии"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -471,21 +501,28 @@ msgid "F&ull Screen Mode"
 msgstr "&Полноэкранный режим"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "&Комбинации клавиш..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Настроить %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Панели &инструментов..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Настройка панелей инструментов"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Настроить &уведомления..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Настройка уведомлений"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -497,11 +534,16 @@ msgid "What's &This?"
 msgstr "Что &это?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "Сооб&щить об ошибке..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Сообщить об ошибке"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Сменить &язык интерфейса..."
 
 #: kstandardaction_p.h:132
@@ -518,7 +560,9 @@ msgid "&Delete"
 msgstr "У&далить"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Переименовать..."
 
 #: kstandardaction_p.h:136
@@ -532,6 +576,45 @@ msgstr "&Сделать пожертвование"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Открыть &меню"
+
+#~ msgid "&Open..."
+#~ msgstr "&Открыть..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Сохранить &как..."
+
+#~ msgid "&Print..."
+#~ msgstr "Пе&чать..."
+
+#~ msgid "&Mail..."
+#~ msgstr "Отправить по &почте..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Найти..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Заменить..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Масштаб..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Перейти на строку..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Изменить закладки..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Проверка орфографии..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Панели &инструментов..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Настроить &уведомления..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "Сооб&щить об ошибке..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Совет &дня"
@@ -1176,9 +1259,6 @@ msgstr "Открыть &меню"
 #~ "<qt>\n"
 #~ "<p>Заменить слово в данном случае.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Заменить"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3811,9 +3891,6 @@ msgstr "Открыть &меню"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "&Скрывать текст при показе подписей сбоку от значков"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Настройка панелей инструментов"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4017,9 +4094,6 @@ msgstr "Открыть &меню"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Настройка комбинаций клавиш"
-
-#~ msgid "Print"
-#~ msgstr "Печать"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "По умолчанию"
@@ -4256,9 +4330,6 @@ msgstr "Открыть &меню"
 #~ "<qt>Если вы нажмёте копку <b>Заменить</b>, будет произведён поиск "
 #~ "введённого вами выражения, а затем замена каждого из найденных совпадений "
 #~ "на текст замены </qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Поиск"
 
 #~ msgid "Start searching"
 #~ msgstr "Начать поиск"
@@ -4951,10 +5022,6 @@ msgstr "Открыть &меню"
 #~ msgstr "Конец строки"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Перейти к строке"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "На слово назад"
 
@@ -5039,10 +5106,6 @@ msgstr "Открыть &меню"
 #~ msgstr "Предварительный просмотр"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Отправить по почте"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Очистить"
 
@@ -5063,10 +5126,6 @@ msgstr "Открыть &меню"
 #~ msgstr "Вместить по высоте"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Масштаб"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Перейти"
 
@@ -5081,14 +5140,6 @@ msgstr "Открыть &меню"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Вперёд"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Изменить закладки"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Проверка орфографии"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5121,10 +5172,6 @@ msgstr "Открыть &меню"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Совет дня"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Сообщить об ошибке"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7595,9 +7642,6 @@ msgstr "Открыть &меню"
 #~ msgid " - BCC: "
 #~ msgstr " - Скрытая копия: "
 
-#~ msgid "Save As"
-#~ msgstr "Сохранить как"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9119,9 +9163,6 @@ msgstr "Открыть &меню"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Зачитать указанный мною текст"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Настройка уведомлений"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Состояние"
@@ -9170,10 +9211,6 @@ msgstr "Открыть &меню"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Открыть с помощью..."
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Открыть"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

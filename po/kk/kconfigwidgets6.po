@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2013-11-08 01:24+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -149,8 +149,11 @@ msgid "Create new document"
 msgstr "Жаңа құжатты бастау"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Ашу..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Ашу"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -173,8 +176,10 @@ msgid "Save document"
 msgstr "Құжатты сақтау"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "&Былай сақтау..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Былай сақтау"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -197,8 +202,10 @@ msgid "Close document"
 msgstr "Құжатты жабу"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "Ба&сып шығару..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Басып шығару"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -213,8 +220,11 @@ msgid "Show a print preview of document"
 msgstr "Басып шығаратын құжатын алдын ала қарап шығу"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Поштамен жіберу..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Поштамен жіберу"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -281,8 +291,10 @@ msgid "Dese&lect"
 msgstr "&Таңдаудан қайту"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Табу..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Табу"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -293,8 +305,10 @@ msgid "Find Pre&vious"
 msgstr "&Алдыңғыны табу"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Алмастыру..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Алмастыру"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -339,8 +353,11 @@ msgid "Zoom &Out"
 msgstr "&Алыстау"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "Ұлғ&айту/Кішірейту..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Жақыңдау"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -381,16 +398,23 @@ msgid "Go to next page"
 msgstr "Келесі бетке өту"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Мынаған өту..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Қай &бетке өту..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "Өтетін &жол..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Өтетін жол"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -429,12 +453,18 @@ msgid "&Add Bookmark"
 msgstr "&Бетбелгіні қосу"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "Б&етбелгілерді өңдеу..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Бетбелгілерді өңдеу"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Емлесін тексеру..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Емлесін тексеру..."
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -471,21 +501,26 @@ msgstr "&Толық экран күйі"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "&Тіркесімдерді баптау..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 &баптауы..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Құ&ралдар панелін баптау..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Құрал панельдерін баптау"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Құ&лақтандыруларды баптау..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "&Құлақтандыруларды баптау..."
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -497,13 +532,16 @@ msgid "What's &This?"
 msgstr "&Бұл не?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "Қате туралы &хабарлау..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Қате туралы хабарлау"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Эл.поштаны баптау..."
 
 #: kstandardaction_p.h:132
@@ -524,7 +562,7 @@ msgstr "Өшіру"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Алмастыру..."
 
 #: kstandardaction_p.h:136
@@ -540,6 +578,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Жуырда ашылған"
+
+#~ msgid "&Open..."
+#~ msgstr "&Ашу..."
+
+#~ msgid "Save &As..."
+#~ msgstr "&Былай сақтау..."
+
+#~ msgid "&Print..."
+#~ msgstr "Ба&сып шығару..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Поштамен жіберу..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Табу..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Алмастыру..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "Ұлғ&айту/Кішірейту..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "Өтетін &жол..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Б&етбелгілерді өңдеу..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Емлесін тексеру..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Құ&ралдар панелін баптау..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Құ&лақтандыруларды баптау..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "Қате туралы &хабарлау..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Бүгінгі кеңес"
@@ -1186,9 +1263,6 @@ msgstr "&Жуырда ашылған"
 #~ "<p>Сөздің осы кездескенін жоғардағы өрістегі мәтінмен алмастыру үшін "
 #~ "осыны түртіңіз.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Алмастыру"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3808,9 +3882,6 @@ msgstr "&Жуырда ашылған"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "Панелінде таңбаша қасында жазуы көрсетілгенде мәтін &жасырылсын"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Құрал панельдерін баптау"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4015,9 +4086,6 @@ msgstr "&Жуырда ашылған"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Перне тіркесімдерін таңдау"
-
-#~ msgid "Print"
-#~ msgstr "Басып шығару"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Әдеттіге ысыру"
@@ -4246,9 +4314,6 @@ msgstr "&Жуырда ашылған"
 #~ msgstr ""
 #~ "<qt><b>Алмастыру</b> батырмасы басылса, келтірілген мәтінге іздеу "
 #~ "жүргізіледі де, ол табылған сайын алмастыратын мәтінмен ауыстырылады.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Табу"
 
 #~ msgid "Start searching"
 #~ msgstr "Іздеуді бастау"
@@ -4916,10 +4981,6 @@ msgstr "&Жуырда ашылған"
 #~ msgstr "Жолдың аяғы"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Өтетін жол"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Бір сөзге артқа"
 
@@ -5004,10 +5065,6 @@ msgstr "&Жуырда ашылған"
 #~ msgstr "Басатынды алдын-ала қарау"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Поштамен жіберу"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Тазалау"
 
@@ -5028,10 +5085,6 @@ msgstr "&Жуырда ашылған"
 #~ msgstr "Беттің биіктігіне шақтау"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Жақыңдау"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Өту"
 
@@ -5046,14 +5099,6 @@ msgstr "&Жуырда ашылған"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Құжаты алға"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Бетбелгілерді өңдеу"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Емлесін тексеру..."
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5086,10 +5131,6 @@ msgstr "&Жуырда ашылған"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Бүгінгі кеңес"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Қате туралы хабарлау"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7517,9 +7558,6 @@ msgstr "&Жуырда ашылған"
 #~ msgid " - BCC: "
 #~ msgstr " - Жасырын кімге: "
 
-#~ msgid "Save As"
-#~ msgstr "Былай сақтау"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9005,9 +9043,6 @@ msgstr "&Жуырда ашылған"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Оқиганың атауын дауыстау"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "&Құлақтандыруларды баптау..."
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Күйі"
@@ -9056,10 +9091,6 @@ msgstr "&Жуырда ашылған"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Мынамен &ашу"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Ашу"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2008-08-16 16:01-0800\n"
 "Last-Translator: Zabeeh Khan <zabeehkhan@gmail.com>\n"
 "Language-Team: Pashto <pathanisation@googlegroups.com>\n"
@@ -146,8 +146,10 @@ msgid "Create new document"
 msgstr "...نوی بچوی جوړول"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "...پرانيستل"
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "پرانيستل&"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -174,8 +176,10 @@ msgid "Save document"
 msgstr "لاسوند بندول"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "...ساتل &په"
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "ساتل په"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -202,8 +206,10 @@ msgid "Close document"
 msgstr "لاسوند بندول"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "...چاپول"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "چاپول"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -221,8 +227,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "...ليک"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "ليک"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -297,8 +306,10 @@ msgid "Dese&lect"
 msgstr "ناټا&کل"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "...لټول"
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "لټول"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -309,8 +320,10 @@ msgid "Find Pre&vious"
 msgstr "مخ&کنی لټول"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "...ځاېناستول"
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "ځاېناستول"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -358,8 +371,11 @@ msgid "Zoom &Out"
 msgstr "لو&کمول"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "...لويول"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "لويول"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -407,16 +423,23 @@ msgid "Go to next page"
 msgstr "ليکې ته ورتلل"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "ته ورتګ"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "...مخ ته ورتلل"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "...ليکې ته ورتلل"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "ليکې ته ورتلل"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -469,12 +492,15 @@ msgstr "ليکنښه &زياتول"
 #: kstandardaction_p.h:113
 #, fuzzy
 #| msgid "&Edit Bookmarks"
-msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "ليکنښې &سمول"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "...ليکدود"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "ليکدود"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -519,21 +545,26 @@ msgstr "ټ&وله پرده اکر"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "...ل&نډلاري سازول"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "...سازول %1"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "...توک&پټې سازول"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "توکپټې سازول"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "...يادښتونه &سازول"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "يادښتونه سازول"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -545,13 +576,16 @@ msgid "What's &This?"
 msgstr "دا &څه دي؟"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "ReportBug"
+msgid "&Report Bug…"
 msgstr "کړاو راپورول"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "...برېښليک سازول"
 
 #: kstandardaction_p.h:132
@@ -570,7 +604,7 @@ msgstr "ړنګول"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "...ځاېناستول"
 
 #: kstandardaction_p.h:136
@@ -588,6 +622,47 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "اوسني &پرانيستل"
+
+#~ msgid "&Open..."
+#~ msgstr "...پرانيستل"
+
+#~ msgid "Save &As..."
+#~ msgstr "...ساتل &په"
+
+#~ msgid "&Print..."
+#~ msgstr "...چاپول"
+
+#~ msgid "&Mail..."
+#~ msgstr "...ليک"
+
+#~ msgid "&Find..."
+#~ msgstr "...لټول"
+
+#~ msgid "&Replace..."
+#~ msgstr "...ځاېناستول"
+
+#~ msgid "&Zoom..."
+#~ msgstr "...لويول"
+
+#~ msgid "&Go to Line..."
+#~ msgstr "...ليکې ته ورتلل"
+
+#, fuzzy
+#~| msgid "&Edit Bookmarks"
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "ليکنښې &سمول"
+
+#~ msgid "&Spelling..."
+#~ msgstr "...ليکدود"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "...توک&پټې سازول"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "...يادښتونه &سازول"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "کړاو راپورول"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "د &ورځې نکته"
@@ -1079,9 +1154,6 @@ msgstr "اوسني &پرانيستل"
 
 #~ msgid "Suggested Words"
 #~ msgstr "وړاندې شوي ويېونه"
-
-#~ msgid "&Replace"
-#~ msgstr "ځاېناستول"
 
 #~ msgid "Replace &with:"
 #~ msgstr ":سره &ځاېناستول"
@@ -3382,9 +3454,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgid "Icon te&xt:"
 #~ msgstr ":د تړنۍ ليکنه"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "توکپټې سازول"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -3573,9 +3642,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgid "Configure Shortcuts"
 #~ msgstr "لنډلارې سازول"
 
-#~ msgid "Print"
-#~ msgstr "چاپول"
-
 #, fuzzy
 #~| msgid "&Defaults"
 #~ msgid "Reset to Defaults"
@@ -3743,9 +3809,6 @@ msgstr "اوسني &پرانيستل"
 
 #~ msgid "Start replace"
 #~ msgstr "ځاېناستی پېلول"
-
-#~ msgid "&Find"
-#~ msgstr "لټول"
 
 #~ msgid "Start searching"
 #~ msgstr "پلټنه پېلول"
@@ -4311,10 +4374,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgstr "د ليکې پای"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "ليکې ته ورتلل"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "ويې شاته کول"
 
@@ -4405,10 +4464,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgstr "چاپ مخليد"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "ليک"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "پاکول"
 
@@ -4440,10 +4495,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgstr "اوږدوالي سره برابرول"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "لويول"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "ته ورتلل"
 
@@ -4467,16 +4518,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "لاسوند مخکې"
-
-#, fuzzy
-#~| msgid "&Edit Bookmarks"
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "ليکنښې &سمول"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "ليکدود"
 
 #, fuzzy
 #~| msgid "Show &Toolbar"
@@ -4519,13 +4560,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "د ورځې نکته"
-
-#, fuzzy
-#~| msgctxt "@action"
-#~| msgid "ReportBug"
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "کړاو راپورول"
 
 #, fuzzy
 #~| msgid "Switch Application Language"
@@ -6684,9 +6718,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgid " - BCC: "
 #~ msgstr "  :پ.ل - "
 
-#~ msgid "Save As"
-#~ msgstr "ساتل په"
-
 #~ msgid "Follow"
 #~ msgstr "ورتلل"
 
@@ -7946,9 +7977,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgid "Speak Custom Text"
 #~ msgstr "دوديزه ليکنه لوستل"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "يادښتونه سازول"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "دريځ"
@@ -8011,12 +8039,6 @@ msgstr "اوسني &پرانيستل"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "...پرانيستل په&"
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "پرانيستل&"
 
 #, fuzzy
 #~| msgid "Name: "

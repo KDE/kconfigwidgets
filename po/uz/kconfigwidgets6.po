@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2008-05-30 17:29+0200\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -139,8 +139,10 @@ msgid "Create new document"
 msgstr "Tugmalar birikmasini oʻchirish"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Ochish..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Ochish"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -167,8 +169,10 @@ msgid "Save document"
 msgstr "Hujjatni yopish"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "...sifatida s&aqlash"
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Saqlash"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -195,8 +199,10 @@ msgid "Close document"
 msgstr "Hujjatni yopish"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Bosib chiqarish"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Bosib chiqarish"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -213,8 +219,10 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "Xatga ilova qilib &joʻnatish"
+#, fuzzy
+#| msgid "Mailbox"
+msgid "&Mail…"
+msgstr "Meylboks"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -289,7 +297,9 @@ msgid "Dese&lect"
 msgstr "Tan&lashni bekor qilish"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
 msgstr "&Qidirish"
 
 #: kstandardaction_p.h:84
@@ -301,8 +311,10 @@ msgid "Find Pre&vious"
 msgstr "&Oldingini qidirish"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Almashtirish..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Almashtirish"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -350,7 +362,9 @@ msgid "Zoom &Out"
 msgstr "K&ichiklashtirish"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom"
+msgid "&Zoom…"
 msgstr "&Kattalashtirish"
 
 #: kstandardaction_p.h:94
@@ -402,16 +416,23 @@ msgid "Go to next page"
 msgstr "Satrga oʻtish"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "Oʻ&tish..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Betga oʻtish..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Satrga oʻtish..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Satrga oʻtish"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -462,11 +483,15 @@ msgid "&Add Bookmark"
 msgstr "Xatchoʻplarga &qoʻshish"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks…"
 msgstr "Xatchoʻplarni &tahrirlash"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Imlo..."
 
 #: kstandardaction_p.h:115
@@ -512,20 +537,24 @@ msgstr "Butun &ekranga"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Tu&gmalar birikmasini moslash"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 &moslamasi"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Asboblar &panelini moslash"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Asboblar panellarini moslash"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+msgid "Configure &Notifications…"
 msgstr "&Xabar berishni moslash"
 
 #: kstandardaction_p.h:128
@@ -538,13 +567,15 @@ msgid "What's &This?"
 msgstr "&Bu nima?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "&Xato haqida xabar qilish"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Elektron pochtani moslash"
 
 #: kstandardaction_p.h:132
@@ -563,7 +594,7 @@ msgstr "Oʻ&chirish"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Almashtirish..."
 
 #: kstandardaction_p.h:136
@@ -581,6 +612,45 @@ msgstr "&Tayyor"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Yaqinda foydalanilganni ochish"
+
+#~ msgid "&Open..."
+#~ msgstr "&Ochish..."
+
+#~ msgid "Save &As..."
+#~ msgstr "...sifatida s&aqlash"
+
+#~ msgid "&Print..."
+#~ msgstr "&Bosib chiqarish"
+
+#~ msgid "&Mail..."
+#~ msgstr "Xatga ilova qilib &joʻnatish"
+
+#~ msgid "&Find..."
+#~ msgstr "&Qidirish"
+
+#~ msgid "&Replace..."
+#~ msgstr "&Almashtirish..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Kattalashtirish"
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Satrga oʻtish..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Xatchoʻplarni &tahrirlash"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Imlo..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Asboblar &panelini moslash"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "&Xabar berishni moslash"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Xato haqida xabar qilish"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Kun maslahati"
@@ -1175,9 +1245,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ "<p>Nomaʼlum soʻzni koʻrsatilgan soʻz (chapda) bilan almashtirish uchun "
 #~ "shu yerni bosing.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Almashtirish"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3480,9 +3547,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Matnni qidirish"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Asboblar panellarini moslash"
-
 #, fuzzy
 #~ msgid "Reset Toolbars"
 #~ msgstr "Asboblar panellari"
@@ -3663,9 +3727,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Tugmalar birikmasini moslash"
-
-#~ msgid "Print"
-#~ msgstr "Bosib chiqarish"
 
 #, fuzzy
 #~| msgid "Defaults"
@@ -3848,9 +3909,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ "<qt>Agar <b>Almashtirish</b> tugmasini bossangiz, qidirish uchun "
 #~ "kiritilgan matn hujjatda topilsa u almashtirish matni bilan "
 #~ "almashtiriladi.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Qidirish"
 
 #~ msgid "Start searching"
 #~ msgstr "Qidirishni boshlash"
@@ -4387,10 +4445,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ msgstr "Satrning oxiri"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Satrga oʻtish"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Orqadagi soʻz"
 
@@ -4487,12 +4541,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ msgstr "&Koʻrib chiqish"
 
 #, fuzzy
-#~| msgid "Mailbox"
-#~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Meylboks"
-
-#, fuzzy
 #~| msgid "Clear"
 #~ msgctxt "@action"
 #~ msgid "Clear"
@@ -4559,12 +4607,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ msgstr "Xatchoʻplarni &tahrirlash"
 
 #, fuzzy
-#~| msgid "&Spelling..."
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "&Imlo..."
-
-#, fuzzy
 #~| msgid "Show &Toolbar"
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -4609,12 +4651,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Kun maslahati"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "&Xato haqida xabar qilish"
 
 #, fuzzy
 #~| msgid "Switch Application Language"
@@ -6711,9 +6747,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Saqlash"
-
 #, fuzzy
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
@@ -7811,10 +7844,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ msgstr "Iltimos &nomini kiriting:"
 
 #, fuzzy
-#~ msgid "Configure Notifications"
-#~ msgstr "&Xabar berishni moslash"
-
-#, fuzzy
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Holati"
@@ -7879,12 +7908,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "...bilan &ochish"
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Ochish"
 
 #, fuzzy
 #~ msgctxt "@label File name"
@@ -8682,9 +8705,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 #, fuzzy
 #~ msgid "Form"
 #~ msgstr "Freym"
-
-#~ msgid "&Edit Bookmarks"
-#~ msgstr "Xatchoʻplarni &tahrirlash"
 
 #~ msgctxt "of January"
 #~ msgid "of Jan"
@@ -11910,9 +11930,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 
 #~ msgid "Import"
 #~ msgstr "Import qilish"
-
-#~ msgid "&Zoom"
-#~ msgstr "&Kattalashtirish"
 
 #~ msgid "Malformed URL"
 #~ msgstr "Xato URL"

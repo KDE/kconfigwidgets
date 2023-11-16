@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2005-01-28 17:54+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg\n"
@@ -163,8 +163,10 @@ msgid "Create new document"
 msgstr "Diddymu byrlwybr"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Agor..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Agor"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -191,8 +193,10 @@ msgid "Save document"
 msgstr "Cau Dogfen"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Cadw &Fel..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Cadw Fel"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -219,8 +223,10 @@ msgid "Close document"
 msgstr "Cau Dogfen"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Argraffu"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Argraffu"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -238,8 +244,10 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Ebost..."
+#, fuzzy
+#| msgid "Mailbox"
+msgid "&Mail…"
+msgstr "Bocs ebost"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -312,7 +320,9 @@ msgid "Dese&lect"
 msgstr "Dad-&ddewis"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
 msgstr "&Canfod"
 
 #: kstandardaction_p.h:84
@@ -324,7 +334,9 @@ msgid "Find Pre&vious"
 msgstr "Canfod &Diwethaf"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
 msgstr "&Amnewid"
 
 #: kstandardaction_p.h:88
@@ -372,8 +384,10 @@ msgid "Zoom &Out"
 msgstr "Pell&hàu"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Chwyddo.."
+#, fuzzy
+#| msgid "&Zoom"
+msgid "&Zoom…"
+msgstr "&Chwyddo"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -423,16 +437,22 @@ msgid "Go to next page"
 msgstr "Mynd i Linell"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Mynd i.."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Mynd i Dudalen"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Mynd i Linell..."
+#, fuzzy
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Mynd i Linell"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -482,11 +502,15 @@ msgid "&Add Bookmark"
 msgstr "&Ychwanegu Tudnod"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Golygu Tudnodau..."
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "&Golygu Tudnodau"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Sillafu..."
 
 #: kstandardaction_p.h:115
@@ -532,20 +556,24 @@ msgstr "&Modd Sgrîn Llawn"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Ffurfweddu &Byrlwybrau"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Ffurweddu %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Ffurfweddu Barrau &Offer"
+#, fuzzy
+msgid "Configure Tool&bars…"
+msgstr "Ffurfio Bar Offer"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Ffurfweddu &Negesau ..."
 
 #: kstandardaction_p.h:128
@@ -558,13 +586,15 @@ msgid "What's &This?"
 msgstr "Beth yw &Hwn?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "&Adroddi nam"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Ffurfweddu Ebost ..."
 
 #: kstandardaction_p.h:132
@@ -583,7 +613,7 @@ msgstr "&Dileu"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Amnewid"
 
 #: kstandardaction_p.h:136
@@ -601,6 +631,45 @@ msgstr "&Wedi'i orffen"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Agor &Diweddar"
+
+#~ msgid "&Open..."
+#~ msgstr "&Agor..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Cadw &Fel..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Argraffu"
+
+#~ msgid "&Mail..."
+#~ msgstr "&Ebost..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Canfod"
+
+#~ msgid "&Replace..."
+#~ msgstr "&Amnewid"
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Chwyddo.."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Mynd i Linell..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Golygu Tudnodau..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Sillafu..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Ffurfweddu Barrau &Offer"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Ffurfweddu &Negesau ..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Adroddi nam"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Awgrymiad y &Dydd"
@@ -1300,9 +1369,6 @@ msgstr "Agor &Diweddar"
 #~ "<p>Cliciwch yma i amnewid y digwyddiad yma o'r testun anghywir efo'r "
 #~ "testun yn y blwch golygu uchod (i'r chwith).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Amnewid"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3786,10 +3852,6 @@ msgstr "Agor &Diweddar"
 #~ msgstr "Canfod Testun"
 
 #, fuzzy
-#~ msgid "Configure Toolbars"
-#~ msgstr "Ffurfio Bar Offer"
-
-#, fuzzy
 #~ msgid "Reset Toolbars"
 #~ msgstr "Barrau Offer:"
 
@@ -4011,9 +4073,6 @@ msgstr "Agor &Diweddar"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Ffurfweddu Byrlwybrau"
-
-#~ msgid "Print"
-#~ msgstr "Argraffu"
 
 #, fuzzy
 #~| msgid "Defaults"
@@ -4237,9 +4296,6 @@ msgstr "Agor &Diweddar"
 #~ "<qt>Os gwasgwch y botwm <b>Amnewid</b>, mae'r testun a fewnosodwyd uchod "
 #~ "yn cael ei chwilio amdano tu mewn y ddogfen, ac mae pob digwyddiad yn "
 #~ "cael ei amnewid gan y testun amnewid.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Canfod"
 
 #~ msgid "Start searching"
 #~ msgstr "Dechrau chwilio"
@@ -4950,12 +5006,6 @@ msgstr "Agor &Diweddar"
 #~ msgstr "Diwedd y Llinell"
 
 #, fuzzy
-#~| msgid "Go to Line"
-#~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Mynd i Linell"
-
-#, fuzzy
 #~| msgid "Backward Word"
 #~ msgctxt "@action"
 #~ msgid "Backward Word"
@@ -5082,12 +5132,6 @@ msgstr "Agor &Diweddar"
 #~ msgstr "&Rhagweld Argraffiad"
 
 #, fuzzy
-#~| msgid "Mailbox"
-#~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Bocs ebost"
-
-#, fuzzy
 #~| msgid "Clear"
 #~ msgctxt "@action"
 #~ msgid "Clear"
@@ -5153,12 +5197,6 @@ msgstr "Agor &Diweddar"
 #~ msgstr "&Golygu Tudnodau"
 
 #, fuzzy
-#~| msgid "&Spelling..."
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "&Sillafu..."
-
-#, fuzzy
 #~| msgid "Show &Toolbar"
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5204,12 +5242,6 @@ msgstr "Agor &Diweddar"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Awgrymiad y Dydd"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "&Adroddi nam"
 
 #, fuzzy
 #~| msgid "sets the application name"
@@ -7722,9 +7754,6 @@ msgstr "Agor &Diweddar"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC:"
 
-#~ msgid "Save As"
-#~ msgstr "Cadw Fel"
-
 #, fuzzy
 #~| msgid ""
 #~| "<qt>This untrusted page links to<BR><B>%1</B>.<BR>Do you want to follow "
@@ -8883,11 +8912,6 @@ msgstr "Agor &Diweddar"
 #~ msgstr "Mewnosodwch &enw:"
 
 #, fuzzy
-#~| msgid "Configure &Notifications..."
-#~ msgid "Configure Notifications"
-#~ msgstr "Ffurfweddu &Negesau ..."
-
-#, fuzzy
 #~| msgid "State"
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
@@ -8956,12 +8980,6 @@ msgstr "Agor &Diweddar"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Agor Gyda..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Agor"
 
 #, fuzzy
 #~| msgid "Name:"
@@ -9873,9 +9891,6 @@ msgstr "Agor &Diweddar"
 #, fuzzy
 #~ msgid "Form"
 #~ msgstr "Ffrâm"
-
-#~ msgid "&Edit Bookmarks"
-#~ msgstr "&Golygu Tudnodau"
 
 #~ msgctxt "of January"
 #~ msgid "of Jan"
@@ -13366,9 +13381,6 @@ msgstr "Agor &Diweddar"
 
 #~ msgid "Import"
 #~ msgstr "Mewnforio"
-
-#~ msgid "&Zoom"
-#~ msgstr "&Chwyddo"
 
 #~ msgid "Malformed URL"
 #~ msgstr "URL annilys"

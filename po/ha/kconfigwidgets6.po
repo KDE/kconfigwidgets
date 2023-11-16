@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2009-03-17 11:22+0100\n"
 "Last-Translator: Adriaan de Groot <groot@kde.org>\n"
 "Language-Team: Hausa <kde-i18n-doc@lists.kde.org>\n"
@@ -135,7 +135,7 @@ msgid "Create new document"
 msgstr "Rufe wannan -dokumen-"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+msgid "&Open…"
 msgstr ""
 
 #: kstandardaction_p.h:64
@@ -161,7 +161,7 @@ msgid "Save document"
 msgstr "&Rufe -dokumen-"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+msgid "Save &As…"
 msgstr ""
 
 #: kstandardaction_p.h:67
@@ -191,7 +191,7 @@ msgid "Close document"
 msgstr "&Rufe -dokumen-"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+msgid "&Print…"
 msgstr ""
 
 #: kstandardaction_p.h:70
@@ -209,7 +209,7 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+msgid "&Mail…"
 msgstr ""
 
 #: kstandardaction_p.h:72
@@ -283,7 +283,7 @@ msgid "Dese&lect"
 msgstr ""
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+msgid "&Find…"
 msgstr ""
 
 #: kstandardaction_p.h:84
@@ -295,7 +295,7 @@ msgid "Find Pre&vious"
 msgstr ""
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+msgid "&Replace…"
 msgstr ""
 
 #: kstandardaction_p.h:88
@@ -339,7 +339,7 @@ msgid "Zoom &Out"
 msgstr ""
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr ""
 
 #: kstandardaction_p.h:94
@@ -381,15 +381,15 @@ msgid "Go to next page"
 msgstr ""
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+msgid "&Go To…"
 msgstr ""
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr ""
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr ""
 
 #: kstandardaction_p.h:107
@@ -433,11 +433,11 @@ msgid "&Add Bookmark"
 msgstr ""
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr ""
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr ""
 
 #: kstandardaction_p.h:115
@@ -477,24 +477,26 @@ msgstr ""
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure &Notifications..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Haɗawa &Sanerwa"
 
 #: kstandardaction_p.h:122
 #, fuzzy, kde-format
 #| msgid "Configure Email..."
-msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "Haɗawa wasikan lantarki"
 
 #: kstandardaction_p.h:123
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "Haɗawa wasikan lantarki"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Haɗawa &Sanerwa"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Haɗawa Sanerwa"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -506,13 +508,13 @@ msgid "What's &This?"
 msgstr ""
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr ""
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Haɗawa wasikan lantarki"
 
 #: kstandardaction_p.h:132
@@ -529,7 +531,7 @@ msgid "&Delete"
 msgstr ""
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr ""
 
 #: kstandardaction_p.h:136
@@ -543,6 +545,9 @@ msgstr ""
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr ""
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Haɗawa &Sanerwa"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"
@@ -864,9 +869,6 @@ msgstr ""
 
 #~ msgid "Language:"
 #~ msgstr "Yare:"
-
-#~ msgid "Configure Notifications"
-#~ msgstr "Haɗawa Sanerwa"
 
 #, fuzzy
 #~| msgid "Settings"

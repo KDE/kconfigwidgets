@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2012-07-04 17:33+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -148,8 +148,11 @@ msgid "Create new document"
 msgstr "Ahiver novele etikete :"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Drovi..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "Dr&ovi"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -176,8 +179,10 @@ msgid "Save document"
 msgstr "Clôre li documint?"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Sch&aper et rlomer..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Schaper et rlomer"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -204,8 +209,10 @@ msgid "Close document"
 msgstr "Clôre li documint?"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Imprimer..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Imprimer"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -223,8 +230,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Emiler..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Emile"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -305,8 +315,10 @@ msgid "Dese&lect"
 msgstr "&Distchoezi"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Trover..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Trover"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -317,8 +329,10 @@ msgid "Find Pre&vious"
 msgstr "Trover ci di d&vant"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "Dis&candjî..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Replaecî"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -366,8 +380,11 @@ msgid "Zoom &Out"
 msgstr "&Diszoumer"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zoumer..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Zoumer"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -415,16 +432,23 @@ msgid "Go to next page"
 msgstr "Potchî al roye"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Potchî a..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Potchî al pådje..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Potchî al roye..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Potchî al roye"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -475,12 +499,18 @@ msgid "&Add Bookmark"
 msgstr "R&adjouter ene rimåke"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Candjî rimåkes..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Candjî rimåkes"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Speli..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Coridjaedje d' ôrtografeye"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -527,21 +557,26 @@ msgstr "Môde tote li &waitroûle"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Apontyî les ras&courtis..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "A&pontyî %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Apontyî les &bårs ås usteyes..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Apontyî les bårs ås usteyes"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Apontyî les &notifiaedjes..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Apontyî les notifiaedjes"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -553,13 +588,16 @@ msgid "What's &This?"
 msgstr "&Cwè çki c' est d' ça?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Rapoirter on bug..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Rapoirter on bug"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Apontyî l' emilaedje..."
 
 #: kstandardaction_p.h:132
@@ -578,7 +616,7 @@ msgstr "&Disfacer"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "Dis&candjî..."
 
 #: kstandardaction_p.h:136
@@ -596,6 +634,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Drovi les &dierins"
+
+#~ msgid "&Open..."
+#~ msgstr "&Drovi..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Sch&aper et rlomer..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Imprimer..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Emiler..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Trover..."
+
+#~ msgid "&Replace..."
+#~ msgstr "Dis&candjî..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zoumer..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Potchî al roye..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Candjî rimåkes..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Speli..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Apontyî les &bårs ås usteyes..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Apontyî les &notifiaedjes..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Rapoirter on bug..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Li Boune Idêye do &Djoû"
@@ -1242,9 +1319,6 @@ msgstr "Drovi les &dierins"
 #~ "<p>Clitchîz vaici po replaecî ciste ocurince do tecse nén cnoxhou pal "
 #~ "tecse divins l' boesse d' aspougnaedje vaici pa dzeu (a hintche).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Replaecî"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3882,9 +3956,6 @@ msgstr "Drovi les &dierins"
 #~ msgid "Icon te&xt:"
 #~ msgstr "&Tecse di l' imådjete:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Apontyî les bårs ås usteyes"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4092,9 +4163,6 @@ msgstr "Drovi les &dierins"
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Apontyî les Tapes Rascourtis"
 
-#~ msgid "Print"
-#~ msgstr "Imprimer"
-
 #~ msgid "Reset to Defaults"
 #~ msgstr "Rimete come prémetou"
 
@@ -4294,9 +4362,6 @@ msgstr "Drovi les &dierins"
 
 #~ msgid "Start replace"
 #~ msgstr "Enonder l' replaeçmint"
-
-#~ msgid "&Find"
-#~ msgstr "&Trover"
 
 #~ msgid "Start searching"
 #~ msgstr "Enonder li cweraedje"
@@ -4888,10 +4953,6 @@ msgstr "Drovi les &dierins"
 #~ msgstr "Coron del roye"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Potchî al roye"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Mot en erî"
 
@@ -4976,10 +5037,6 @@ msgstr "Drovi les &dierins"
 #~ msgstr "Voeyaedje divant d' imprimer"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Emile"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Netyî"
 
@@ -5000,10 +5057,6 @@ msgstr "Drovi les &dierins"
 #~ msgstr "Al hôteur del pådje"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Zoumer"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Potchî a"
 
@@ -5018,14 +5071,6 @@ msgstr "Drovi les &dierins"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Documint en avant"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Candjî rimåkes"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Coridjaedje d' ôrtografeye"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5058,10 +5103,6 @@ msgstr "Drovi les &dierins"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Li boune idêye do djoû"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Rapoirter on bug"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7362,9 +7403,6 @@ msgstr "Drovi les &dierins"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Schaper et rlomer"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -8699,9 +8737,6 @@ msgstr "Drovi les &dierins"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Léré tecse da vosse"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Apontyî les notifiaedjes"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Estat"
@@ -8751,10 +8786,6 @@ msgstr "Drovi les &dierins"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Drovi avou"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "Dr&ovi"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

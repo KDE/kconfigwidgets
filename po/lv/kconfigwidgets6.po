@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2020-11-13 10:45+0200\n"
 "Last-Translator: Maris Nartiss <maris.kde@gmail.com>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -147,8 +147,11 @@ msgid "Create new document"
 msgstr "Izveidot jaunu dokumentu"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Atvērt..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Atvērt"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -171,8 +174,10 @@ msgid "Save document"
 msgstr "Saglabāt dokumentu"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Saglabāt &kā..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Saglabāt kā"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -195,8 +200,10 @@ msgid "Close document"
 msgstr "Aizvērt dokumentu"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Drukāt..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Drukāt"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -211,8 +218,11 @@ msgid "Show a print preview of document"
 msgstr "Rādīt dokumenta drukas priekšskatījumu"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Pasts..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Sūtīt pa pastu"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -279,8 +289,10 @@ msgid "Dese&lect"
 msgstr "&Noņemt iezīmējumu"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Meklēt..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Meklēt"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -291,8 +303,10 @@ msgid "Find Pre&vious"
 msgstr "Meklēt &iepriekšējo"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Aizvietot..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Aizvietot"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -337,8 +351,11 @@ msgid "Zoom &Out"
 msgstr "Sa&mazināt"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Mērogs..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Mērogs"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -377,16 +394,23 @@ msgid "Go to next page"
 msgstr "Iet uz nākošo lapu"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Iet uz..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Iet uz lapu..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Iet uz rindu..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Iet uz rindu"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -425,12 +449,18 @@ msgid "&Add Bookmark"
 msgstr "&Pievienot grāmatzīmi"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Rediģēt grāmatzīmes..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Rediģēt grāmatzīmes"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Pareizrakstība..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Pareizrakstība"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -465,21 +495,28 @@ msgid "F&ull Screen Mode"
 msgstr "Pilnekrāna &režīms"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Konfigurēt tastatūras &īsceļus..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Konfigurēt %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Konfigurēt rīk&joslas..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Konfigurēt rīkjoslas"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Konfigurēt &paziņojumus..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Konfigurēt paziņojumus"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -491,11 +528,16 @@ msgid "What's &This?"
 msgstr "Kas &tas ir?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Ziņot par kļūdu..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Ziņot par kļūdu"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Konfigurēt va&lodu..."
 
 #: kstandardaction_p.h:132
@@ -512,7 +554,9 @@ msgid "&Delete"
 msgstr "&Dzēst"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "Pā&rdēvēt..."
 
 #: kstandardaction_p.h:136
@@ -528,6 +572,45 @@ msgstr "Zie&dot"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Atvērt &nesenu"
+
+#~ msgid "&Open..."
+#~ msgstr "&Atvērt..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Saglabāt &kā..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Drukāt..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Pasts..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Meklēt..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Aizvietot..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Mērogs..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Iet uz rindu..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Rediģēt grāmatzīmes..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Pareizrakstība..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Konfigurēt rīk&joslas..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Konfigurēt &paziņojumus..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Ziņot par kļūdu..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Dienas padoms"
@@ -1181,9 +1264,6 @@ msgstr "Atvērt &nesenu"
 #~ "<p>Spiediet šeit, lai aizvietotu šo nezināmo tekstu ar tekstu rediģēšanas "
 #~ "lodziņā (pa kreisi).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Aizvietot"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3891,9 +3971,6 @@ msgstr "Atvērt &nesenu"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "&Slēpt tekstu, ja rīkjoslā tiek rādīts teksts blakus ikonām"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Konfigurēt rīkjoslas"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4097,9 +4174,6 @@ msgstr "Atvērt &nesenu"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Konfigurēt īsceļus"
-
-#~ msgid "Print"
-#~ msgstr "Drukāt"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Atjaunot noklusēto"
@@ -4334,9 +4408,6 @@ msgstr "Atvērt &nesenu"
 #~ "<qt>Nospiežot pogu <b>Aizvietot</b>, tiks veikta ievadītā teksta "
 #~ "meklēšana, un visi atrastie eksemplāri tiks aizvietoti ar aizvietošanas "
 #~ "tekstu.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Meklēt"
 
 #~ msgid "Start searching"
 #~ msgstr "Sākt meklēšanu"
@@ -5016,10 +5087,6 @@ msgstr "Atvērt &nesenu"
 #~ msgstr "Uz rindas beigām"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Iet uz rindu"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Vārdu atpakaļ"
 
@@ -5104,10 +5171,6 @@ msgstr "Atvērt &nesenu"
 #~ msgstr "Drukas priekšskatījums"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Sūtīt pa pastu"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Tīrīt"
 
@@ -5128,10 +5191,6 @@ msgstr "Atvērt &nesenu"
 #~ msgstr "Ietilpināt augstumā"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Mērogs"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Iet uz"
 
@@ -5146,14 +5205,6 @@ msgstr "Atvērt &nesenu"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Dokuments uz priekšu"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Rediģēt grāmatzīmes"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Pareizrakstība"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5186,10 +5237,6 @@ msgstr "Atvērt &nesenu"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Dienas padoms"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Ziņot par kļūdu"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7535,9 +7582,6 @@ msgstr "Atvērt &nesenu"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Saglabāt kā"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9052,9 +9096,6 @@ msgstr "Atvērt &nesenu"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Izrunāt pielāgotu tekstu"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Konfigurēt paziņojumus"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Stāvoklis"
@@ -9103,10 +9144,6 @@ msgstr "Atvērt &nesenu"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Atvērt ar"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Atvērt"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

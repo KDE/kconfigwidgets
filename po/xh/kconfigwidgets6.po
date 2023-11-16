@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2002-12-13 17:20SAST\n"
 "Last-Translator: Lwandle Mgidlana <lwandle@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -148,8 +148,10 @@ msgid "Create new document"
 msgstr "Cima indlela emfutshane"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Vula..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Vula"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -175,8 +177,10 @@ msgid "Save document"
 msgstr "Gcina Uxwebhu?"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Gcina &Njenge..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Gcina Njenge"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -201,8 +205,10 @@ msgid "Close document"
 msgstr "Gcina Uxwebhu?"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Shicilela..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Shicilela"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -220,8 +226,10 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Iposi..."
+#, fuzzy
+#| msgid "Mailbox"
+msgid "&Mail…"
+msgstr "Ibhosi yeposi"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -293,8 +301,10 @@ msgid "Dese&lect"
 msgstr "Sukukhet&ha"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Fumana..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Fumana"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -305,8 +315,10 @@ msgid "Find Pre&vious"
 msgstr "Fumana Okudl&ulileyo"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Buyisela..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Buyisela"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -353,8 +365,10 @@ msgid "Zoom &Out"
 msgstr "Sondeza &Ngaphandle"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Sondeza..."
+#, fuzzy
+#| msgid "&Zoom"
+msgid "&Zoom…"
+msgstr "&Ingxolo enkulu"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -404,16 +418,22 @@ msgid "Go to next page"
 msgstr "Yiya Elayinini"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Yiya Ku..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Yiya Kwiphepha..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Yiya Kumgca..."
+#, fuzzy
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Yiya Elayinini"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -463,11 +483,15 @@ msgid "&Add Bookmark"
 msgstr "&Yongeza Inqaku lencwadi"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Hlela Amanqaku eencwadi..."
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "&Hlela Amanqaku eencwadi"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Upelo..."
 
 #: kstandardaction_p.h:115
@@ -513,20 +537,24 @@ msgstr "Indlela &Yekhusi elipheleleyo"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Qwalasela Ii&ndlela ezimfutshane..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Qwalasela %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Qwalasela Izixh&obo ze bar..."
+#, fuzzy
+msgid "Configure Tool&bars…"
+msgstr "Qwalasela Iibars zezixhobo"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Qwalasela &Ulwaziso..."
 
 #: kstandardaction_p.h:128
@@ -539,13 +567,15 @@ msgid "What's &This?"
 msgstr "&Yintoni Le?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "&Chaza i Bug..."
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Qwalasela i Email..."
 
 #: kstandardaction_p.h:132
@@ -564,7 +594,7 @@ msgstr "&Cima"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Buyisela..."
 
 #: kstandardaction_p.h:136
@@ -582,6 +612,45 @@ msgstr "&Yenzekile"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Vula &Okusandukubakhona"
+
+#~ msgid "&Open..."
+#~ msgstr "&Vula..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Gcina &Njenge..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Shicilela..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Iposi..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Fumana..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Buyisela..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Sondeza..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Yiya Kumgca..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Hlela Amanqaku eencwadi..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Upelo..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Qwalasela Izixh&obo ze bar..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Qwalasela &Ulwaziso..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Chaza i Bug..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Uthsuphe We &Mini"
@@ -1087,9 +1156,6 @@ msgstr "Vula &Okusandukubakhona"
 #, fuzzy
 #~ msgid "Suggested Words"
 #~ msgstr "Iziphakamiso:"
-
-#~ msgid "&Replace"
-#~ msgstr "&Buyisela"
 
 #, fuzzy
 #~ msgid "Replace &with:"
@@ -3390,10 +3456,6 @@ msgstr "Vula &Okusandukubakhona"
 #~ msgstr "Fumana Okubhaliweyo"
 
 #, fuzzy
-#~ msgid "Configure Toolbars"
-#~ msgstr "Qwalasela Iibars zezixhobo"
-
-#, fuzzy
 #~ msgid "Reset Toolbars"
 #~ msgstr "Ibar yezixhobo"
 
@@ -3608,9 +3670,6 @@ msgstr "Vula &Okusandukubakhona"
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Qwalasela Ezimfutshane"
 
-#~ msgid "Print"
-#~ msgstr "Shicilela"
-
 #, fuzzy
 #~| msgid "Defaults"
 #~ msgid "Reset to Defaults"
@@ -3822,9 +3881,6 @@ msgstr "Vula &Okusandukubakhona"
 #, fuzzy
 #~ msgid "Start replace"
 #~ msgstr "&Unikezelo lusekubuyiselweni"
-
-#~ msgid "&Find"
-#~ msgstr "&Fumana"
 
 #, fuzzy
 #~ msgid "Start searching"
@@ -4458,12 +4514,6 @@ msgstr "Vula &Okusandukubakhona"
 #~ msgstr "Isiphelo Selayini"
 
 #, fuzzy
-#~| msgid "Go to Line"
-#~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Yiya Elayinini"
-
-#, fuzzy
 #~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "&Umbala Wesiqalo"
@@ -4585,12 +4635,6 @@ msgstr "Vula &Okusandukubakhona"
 #~ msgstr "Shicilela Imbonisel&o..."
 
 #, fuzzy
-#~| msgid "Mailbox"
-#~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Ibhosi yeposi"
-
-#, fuzzy
 #~| msgid "Clear"
 #~ msgctxt "@action"
 #~ msgid "Clear"
@@ -4656,12 +4700,6 @@ msgstr "Vula &Okusandukubakhona"
 #~ msgstr "&Hlela Amanqaku eencwadi"
 
 #, fuzzy
-#~| msgid "&Spelling..."
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "&Upelo..."
-
-#, fuzzy
 #~| msgid "Show &Toolbar"
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -4707,12 +4745,6 @@ msgstr "Vula &Okusandukubakhona"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Utsuphe Losuku"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "&Chaza i Bug..."
 
 #, fuzzy
 #~ msgctxt "@action"
@@ -7049,9 +7081,6 @@ msgstr "Vula &Okusandukubakhona"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Gcina Njenge"
-
 #, fuzzy
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
@@ -8067,11 +8096,6 @@ msgstr "Vula &Okusandukubakhona"
 #~ msgstr "Nceda ngenisa igama:"
 
 #, fuzzy
-#~| msgid "Configure &Notifications..."
-#~ msgid "Configure Notifications"
-#~ msgstr "Qwalasela &Ulwaziso..."
-
-#, fuzzy
 #~| msgid "State"
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
@@ -8138,12 +8162,6 @@ msgstr "Vula &Okusandukubakhona"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Vula nge:"
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Vula"
 
 #, fuzzy
 #~| msgid "Name:"
@@ -8912,9 +8930,6 @@ msgstr "Vula &Okusandukubakhona"
 #, fuzzy
 #~ msgid "Form"
 #~ msgstr "Igama Lokuqala"
-
-#~ msgid "&Edit Bookmarks"
-#~ msgstr "&Hlela Amanqaku eencwadi"
 
 #~ msgctxt "of January"
 #~ msgid "of Jan"
@@ -11864,9 +11879,6 @@ msgstr "Vula &Okusandukubakhona"
 
 #~ msgid "Import"
 #~ msgstr "Rhweba ngaphakathi"
-
-#~ msgid "&Zoom"
-#~ msgstr "&Ingxolo enkulu"
 
 #~ msgid "Malformed URL"
 #~ msgstr "URL eyenziwe kakubi"

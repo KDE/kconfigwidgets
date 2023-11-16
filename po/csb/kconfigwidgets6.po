@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2009-12-04 22:09+0100\n"
 "Last-Translator: Mark Kwidzińśczi <mark@linuxcsb.org>\n"
 "Language-Team: Kaszëbsczi <i18n-csb@linuxcsb.org>\n"
@@ -145,8 +145,10 @@ msgid "Create new document"
 msgstr "Ùsôdzë nowi merk..."
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "Ò&temkni..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "Ò&temkni"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -173,8 +175,10 @@ msgid "Save document"
 msgstr "Zamkni dokùment"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Zapiszë j&akno..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Zapiszë jaknò"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -201,8 +205,10 @@ msgid "Close document"
 msgstr "Zamkni dokùment"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Drëkùjë..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Drëkùjë"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -220,8 +226,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Wëslë..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Pòczta"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -296,8 +305,10 @@ msgid "Dese&lect"
 msgstr "&Rëmôj zaznaczenié"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "N&alezë..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Nalezë"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -308,8 +319,10 @@ msgid "Find Pre&vious"
 msgstr "Nalezë pòp&rzedni"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Zastãpi..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Zastãpi"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -357,8 +370,11 @@ msgid "Zoom &Out"
 msgstr "Z&miészë"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zwikszenié..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Zwikszi"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -406,16 +422,23 @@ msgid "Go to next page"
 msgstr "Biéj do réżczi"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Biéj do..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Biéj do starnë..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Biéj do réżczi..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Biéj do réżczi"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -467,13 +490,17 @@ msgstr "Dodôj z&ałóżkã"
 
 #: kstandardaction_p.h:113
 #, fuzzy
-#| msgid "&Edit Bookmarks"
-msgid "&Edit Bookmarks..."
-msgstr "&Editëjë załóżczi"
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Editëjë załóżczi"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Bezzmiłkòwòsc pisënkù..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Bezzmiłkòwòsc pisënkù"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -520,21 +547,26 @@ msgstr "Fùl&ekranowi trib"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Kònfigùracëjô s&krodzënów..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Kònfigùracëjô %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Kònfigùracëjô listwów nô&rzãdzy..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Kònfigùracëjô listwów nôrzãdzów"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Kònfigùrëjë ò&dkazë..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Kònfigùracëjô dôwaniô wiédzë"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -546,13 +578,16 @@ msgid "What's &This?"
 msgstr "Co &to je?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Rapòrt ò felë..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Rapòrt ò felë"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Kònfigùracëjô e-maila..."
 
 #: kstandardaction_p.h:132
@@ -573,7 +608,7 @@ msgstr "Rëmôj"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Zastãpi..."
 
 #: kstandardaction_p.h:136
@@ -589,6 +624,47 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Òtemkni wcza&sniészi"
+
+#~ msgid "&Open..."
+#~ msgstr "Ò&temkni..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Zapiszë j&akno..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Drëkùjë..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Wëslë..."
+
+#~ msgid "&Find..."
+#~ msgstr "N&alezë..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Zastãpi..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zwikszenié..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Biéj do réżczi..."
+
+#, fuzzy
+#~| msgid "&Edit Bookmarks"
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Editëjë załóżczi"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Bezzmiłkòwòsc pisënkù..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Kònfigùracëjô listwów nô&rzãdzy..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Kònfigùrëjë ò&dkazë..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Rapòrt ò felë..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Pòrada &dnia"
@@ -1236,9 +1312,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ "<p>Klëkni tuwò bë zastãpic wińdzenié nieznónegò słowa w teksce, wëbrónym "
 #~ "tekstã z lëstë wëżi (z lewa).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Zastãpi"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3938,9 +4011,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Te&kst ikònë:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Kònfigùracëjô listwów nôrzãdzów"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4128,9 +4198,6 @@ msgstr "Òtemkni wcza&sniészi"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Kònfigùracëjô skrodzënów"
-
-#~ msgid "Print"
-#~ msgstr "Drëkùjë"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "&Doprowôdzë nazôd do domëszlnégò"
@@ -4363,9 +4430,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ "<qt>Jeżlë wcësniesz knąpã <b>Zastãpi</b>, tekst wprowôdzony wëżi òstanie "
 #~ "òdnalazłi w teksce dokùmentu ë wszëtczé jego wëstãpienia òstaną "
 #~ "zastãpione tekstã niżi.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Nalezë"
 
 #~ msgid "Start searching"
 #~ msgstr "Naczni szëkbã"
@@ -5027,10 +5091,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgstr "Kùńc réżczi"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Biéj do réżczi"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Słowò nazôd"
 
@@ -5115,10 +5175,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgstr "Pòdzérk drëkù"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Pòczta"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Wëczëszczë"
 
@@ -5139,10 +5195,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgstr "Dopasëjë do wiżë starnë"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Zwikszi"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Biéj do"
 
@@ -5157,14 +5209,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Dokùment w przódk"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Editëjë załóżczi"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Bezzmiłkòwòsc pisënkù"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5193,10 +5237,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Rada dnia"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Rapòrt ò felë"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7614,9 +7654,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgid " - BCC: "
 #~ msgstr " - Slepô kòpéjô (BCC): "
 
-#~ msgid "Save As"
-#~ msgstr "Zapiszë jaknò"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9079,9 +9116,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Gôdôj swój tekst"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Kònfigùracëjô dôwaniô wiédzë"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Stón"
@@ -9144,12 +9178,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Òtemkni &w..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "Ò&temkni"
 
 #, fuzzy
 #~| msgid "Name: "

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-10-19 22:37+0200\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -135,8 +135,11 @@ msgid "Create new document"
 msgstr "Uue dokumendi loomine"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Ava..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Ava"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -159,8 +162,10 @@ msgid "Save document"
 msgstr "Dokumendi salvestamine"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Salvesta &kui ..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Salvestamine"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -183,8 +188,10 @@ msgid "Close document"
 msgstr "Dokumendi sulgemine"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Trüki..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Trükkimine"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -199,8 +206,11 @@ msgid "Show a print preview of document"
 msgstr "Dokumendi trükitava eelvaatluse näitamine"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Saada kirjaga ..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Saada e-kirjaga"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -267,8 +277,10 @@ msgid "Dese&lect"
 msgstr "Tühista va&lik"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Otsi..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Otsi"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -279,8 +291,10 @@ msgid "Find Pre&vious"
 msgstr "Otsi &eelmine"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Asenda..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Asenda"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -323,8 +337,10 @@ msgid "Zoom &Out"
 msgstr "&Vähenda"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Suurendus ..."
+#, fuzzy
+#| msgid "&Zoom"
+msgid "&Zoom…"
+msgstr "&Suurendus"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -363,16 +379,23 @@ msgid "Go to next page"
 msgstr "Liikumine järgmisele leheküljele"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Mine..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Mine leheküljele..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Mine reale..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Mine reale"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -411,12 +434,17 @@ msgid "&Add Bookmark"
 msgstr "&Lisa järjehoidja"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Redigeeri järjehoidjaid..."
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "&Redigeeri järjehoidjaid"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "Õi&gekirja kontroll..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Õigekirja kontroll"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -451,21 +479,28 @@ msgid "F&ull Screen Mode"
 msgstr "Täisekraanirežii&m"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Kiirkla&hvide seadistamine ..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 &seadistamine ..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Tööriistari&bade seadistamine ..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Tööriistaribade seadistamine"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Märgua&nnete seadistamine ..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Märguannete seadistamine"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -477,11 +512,16 @@ msgid "What's &This?"
 msgstr "Mis &see on?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "Saada vea&raport..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Saada vearaport"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Vaheta kee&lt..."
 
 #: kstandardaction_p.h:132
@@ -498,7 +538,9 @@ msgid "&Delete"
 msgstr "&Kustuta"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Muuda nime ..."
 
 #: kstandardaction_p.h:136
@@ -512,6 +554,45 @@ msgstr "A&nneta"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Ava &menüü"
+
+#~ msgid "&Open..."
+#~ msgstr "&Ava..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Salvesta &kui ..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Trüki..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Saada kirjaga ..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Otsi..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Asenda..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Suurendus ..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Mine reale..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Redigeeri järjehoidjaid..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "Õi&gekirja kontroll..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Tööriistari&bade seadistamine ..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Märgua&nnete seadistamine ..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "Saada vea&raport..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "P&äeva nõuanne"
@@ -1155,9 +1236,6 @@ msgstr "Ava &menüü"
 #~ "<p>Klõpsa siia, et asendada tundmatu sõna ülal vasakul asuva tekstikasti "
 #~ "sisuga.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Asenda"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3808,9 +3886,6 @@ msgstr "Ava &menüü"
 #~ msgstr ""
 #~ "Teksti &peitmine, kui tööriistaribal näidatakse ikoonide kõrval teksti"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Tööriistaribade seadistamine"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4016,9 +4091,6 @@ msgstr "Ava &menüü"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Kiirklahvide seadistamine"
-
-#~ msgid "Print"
-#~ msgstr "Trükkimine"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Vaikeväärtused"
@@ -4250,9 +4322,6 @@ msgstr "Ava &menüü"
 #~ "<qt>Kui klõpsad nupule <b>Asenda</b>, otsitakse dokumendis määratud "
 #~ "teksti ning leidmisel asendatakse see samuti määratud asendustekstiga.</"
 #~ "qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Otsi"
 
 #~ msgid "Start searching"
 #~ msgstr "Alusta otsingut"
@@ -4920,10 +4989,6 @@ msgstr "Ava &menüü"
 #~ msgstr "Rea lõpp"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Mine reale"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Eelmine sõna"
 
@@ -5008,10 +5073,6 @@ msgstr "Ava &menüü"
 #~ msgstr "Trükkimise eelvaatlus"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Saada e-kirjaga"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Puhasta"
 
@@ -5056,10 +5117,6 @@ msgstr "Ava &menüü"
 #~ msgstr "Redigeeri järjehoidjaid"
 
 #~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Õigekirja kontroll"
-
-#~ msgctxt "@action"
 #~ msgid "Show Toolbar"
 #~ msgstr "Tööriistariba näitamine"
 
@@ -5090,10 +5147,6 @@ msgstr "Ava &menüü"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Päeva nõuanne"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Saada vearaport"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7540,9 +7593,6 @@ msgstr "Ava &menüü"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Salvestamine"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9042,9 +9092,6 @@ msgstr "Ava &menüü"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Kohandatud teksti ettelugemine"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Märguannete seadistamine"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Olek"
@@ -9093,10 +9140,6 @@ msgstr "Ava &menüü"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Ava rakendusega"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Ava"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"
@@ -10238,9 +10281,6 @@ msgstr "Ava &menüü"
 
 #~ msgid "Form"
 #~ msgstr "Vorm"
-
-#~ msgid "&Edit Bookmarks"
-#~ msgstr "&Redigeeri järjehoidjaid"
 
 #~ msgctxt "of January"
 #~ msgid "of Jan"
@@ -13436,9 +13476,6 @@ msgstr "Ava &menüü"
 
 #~ msgid "Import"
 #~ msgstr "Import"
-
-#~ msgid "&Zoom"
-#~ msgstr "&Suurendus"
 
 #~ msgid "Malformed URL"
 #~ msgstr "Vigane URL"

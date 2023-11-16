@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kde4libs\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2012-01-19 00:20-0500\n"
 "Last-Translator: Agron Selimaj <as9902613@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -139,8 +139,10 @@ msgid "Create new document"
 msgstr "Krijo Shkurtore Web-i"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Hape..."
+#, fuzzy
+#| msgid "Open"
+msgid "&Open…"
+msgstr "Hape"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -167,8 +169,10 @@ msgid "Save document"
 msgstr "Mbylle Dokumentin"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Ruaji &Si..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Ruaje Si"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -195,8 +199,10 @@ msgid "Close document"
 msgstr "Mbylle Dokumentin"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Printo..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Printo"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -214,8 +220,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Posta..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Posta"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -290,8 +299,10 @@ msgid "Dese&lect"
 msgstr "Hiqe &Përzgjedhjen"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Gjej..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Gjej"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -302,7 +313,9 @@ msgid "Find Pre&vious"
 msgstr "Gjej të Më&parshmet"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
 msgstr "&Zëvendëso"
 
 #: kstandardaction_p.h:88
@@ -351,8 +364,11 @@ msgid "Zoom &Out"
 msgstr "Zoom &Out"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zoom..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Zmadho"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -400,16 +416,23 @@ msgid "Go to next page"
 msgstr "Shko tek Rreshti"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Shko Tek..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Shko Tek Faqja..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Shko Tek Rreshti..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Shko tek Rreshti"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -460,12 +483,18 @@ msgid "&Add Bookmark"
 msgstr "&Shto Faqerojtës"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "Ndrysho Faqerojtëset..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Ndrysho libërshënuesit"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Drejtshkrimi..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Drejtshkrim"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -512,21 +541,26 @@ msgstr "M&ënyra Me Ekran të Plotë"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Konfiguro Sh&kurtoret..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Konfiguro %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Konfiguro Shiri&tat..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Konfiguro Shiritat e Veglave"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Konfiguro &Shënimet..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Konfiguro Vërejtjet"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -538,13 +572,15 @@ msgid "What's &This?"
 msgstr "Çfarë Është &Kjo?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "&Raporto Gabim..."
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Konfiguro Email..."
 
 #: kstandardaction_p.h:132
@@ -565,7 +601,7 @@ msgstr "Fshije"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Zëvendëso"
 
 #: kstandardaction_p.h:136
@@ -581,6 +617,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Hap të &deritanishëm"
+
+#~ msgid "&Open..."
+#~ msgstr "&Hape..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Ruaji &Si..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Printo..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Posta..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Gjej..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Zëvendëso"
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zoom..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Shko Tek Rreshti..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Ndrysho Faqerojtëset..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Drejtshkrimi..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Konfiguro Shiri&tat..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Konfiguro &Shënimet..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Raporto Gabim..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Këshilla e &Ditës"
@@ -1160,9 +1235,6 @@ msgstr "Hap të &deritanishëm"
 #~ "<p>Kliko këtu për të zëvendësuar këtë përsëritje të tekstit të panjohur "
 #~ "me tekstin në kutinë e modifikimit këtu sipër (në të majtë).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Zëvendëso"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3386,9 +3458,6 @@ msgstr "Hap të &deritanishëm"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Pa tekst"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Konfiguro Shiritat e Veglave"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -3556,9 +3625,6 @@ msgstr "Hap të &deritanishëm"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Konfiguro Shkurtoret"
-
-#~ msgid "Print"
-#~ msgstr "Printo"
 
 #, fuzzy
 #~| msgid "&Defaults"
@@ -3768,9 +3834,6 @@ msgstr "Hap të &deritanishëm"
 #~ "<qt>Nëse klikoni butonin <b>Zëvendëso</b>, teksti që ju keni shkruar "
 #~ "sipër do të kërkohet brenda dokumentit dhe çdo gjetje do të zëvendësohet "
 #~ "me tekstin e zëvendësimit.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Gjej"
 
 #~ msgid "Start searching"
 #~ msgstr "Nis kërkimin"
@@ -4390,10 +4453,6 @@ msgstr "Hap të &deritanishëm"
 #~ msgstr "Fundi i Rreshtit"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Shko tek Rreshti"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Fjalë Mbrapsht"
 
@@ -4478,10 +4537,6 @@ msgstr "Hap të &deritanishëm"
 #~ msgstr "Pamja e parë e printimit"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Posta"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Pastro"
 
@@ -4502,10 +4557,6 @@ msgstr "Hap të &deritanishëm"
 #~ msgstr "Përshtate Me Lartësinë"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Zmadho"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Shko tek"
 
@@ -4520,14 +4571,6 @@ msgstr "Hap të &deritanishëm"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Dokumenti Përpara"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Ndrysho libërshënuesit"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Drejtshkrim"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -4556,12 +4599,6 @@ msgstr "Hap të &deritanishëm"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Këshilla e Ditës"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "&Raporto Gabim..."
 
 #, fuzzy
 #~| msgid "Switch Application Language"
@@ -6816,9 +6853,6 @@ msgstr "Hap të &deritanishëm"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Ruaje Si"
-
 #, fuzzy
 #~| msgid ""
 #~| "<qt>This site is requesting to open<p>%1</p>in a new browser window via "
@@ -8006,9 +8040,6 @@ msgstr "Hap të &deritanishëm"
 #~ msgid "Sp&eech"
 #~ msgstr "Fj&alim"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Konfiguro Vërejtjet"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Gjendja"
@@ -8067,12 +8098,6 @@ msgstr "Hap të &deritanishëm"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Hap Skriptin"
-
-#, fuzzy
-#~| msgid "Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "Hape"
 
 #, fuzzy
 #~| msgid "Name: "

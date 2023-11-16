@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2019-12-01 18:20+0000\n"
 "Last-Translator: Subin Siby <subins2000@gmail.com>\n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -147,8 +147,11 @@ msgid "Create new document"
 msgstr "പുതിയ ടാഗുണ്ടാക്കുക:"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&തുറക്കുക..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&തുറക്കുക"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -173,8 +176,10 @@ msgid "Save document"
 msgstr "രേഖ അടയ്ക്കുക"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "പേരു് &മാറ്റി സൂക്ഷിയ്ക്കുക..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "പേരു് മാറ്റി സൂക്ഷിക്കുക"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -199,8 +204,10 @@ msgid "Close document"
 msgstr "രേഖ അടയ്ക്കുക"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&അച്ചടിയ്ക്കുക..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "അച്ചടിയ്ക്കുക"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -216,8 +223,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "മെയിലയയ്ക്കുക &m..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "മെയില്‍"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -288,8 +298,10 @@ msgid "Dese&lect"
 msgstr "തെരഞ്ഞെടുത്തതൊഴിവാക്കുക"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&കണ്ടുപിടിക്കുക..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "കണ്ടുപിടിയ്ക്കുക &f"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -300,8 +312,10 @@ msgid "Find Pre&vious"
 msgstr "&മുമ്പത്തേത് കണ്ടുപിടിയ്ക്കുക"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "മാറ്റം &വരുത്തുക..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "മാറ്റുക &r"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -347,8 +361,11 @@ msgid "Zoom &Out"
 msgstr "വലുപ്പം കു&റയ്ക്കുക"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&വലുതാക്കുക..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "വലുപ്പം കൂട്ടുക"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -391,16 +408,23 @@ msgid "Go to next page"
 msgstr "വരിയിലേയ്ക്കു് പോകുക"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "പോകുക &g..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "താളിലേയ്ക്ക് പോകുക &g..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "വരിയിലേയ്ക്ക് പോകുക &g..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "വരിയിലേയ്ക്കു് പോകുക"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -444,12 +468,18 @@ msgid "&Add Bookmark"
 msgstr "ഓര്‍മ്മക്കുറിപ്പ് കൂട്ടിച്ചേര്‍ക്കുക &a"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "ഓര്‍മ്മക്കുറിപ്പുകള്‍ &ചിട്ടപ്പെടുത്തുക..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "ഓര്‍മ്മക്കുറിപ്പുകള്‍ അടുക്കിവയ്ക്കുക"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "അക്ഷരത്തെറ്റു്..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "അക്ഷരവിന്യാസം"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -490,21 +520,26 @@ msgstr "സ്ക്രീന്‍ &പരമാവധി വലിപ്പത
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "കുറുക്കുവഴികള്‍ ക്രമീകരിയ്ക്കുക &h..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 ക്രമീകരിയ്ക്കുക &c..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "&പണിയായുധനിരകള്‍ ക്രമീകരിയ്ക്കുക"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "പണിയായുധനിരകള്‍ ക്രമീകരിക്കുക"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "&അറിയിപ്പുകള്‍ ക്രമീകരിയ്ക്കുക..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "അറിയിപ്പുകള്‍ ക്രമീകരിക്കുക"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -516,13 +551,16 @@ msgid "What's &This?"
 msgstr "&ഇതെന്താണു്?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "പിഴവാണെന്നു് &പറയുക..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "പിഴവാണെന്നു് പറയുക"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "ഈമെയില്‍ തയ്യാറാക്കുക..."
 
 #: kstandardaction_p.h:132
@@ -541,7 +579,7 @@ msgstr "വെട്ടി മാറ്റുക"
 
 #: kstandardaction_p.h:135
 #, fuzzy
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "മാറ്റം &വരുത്തുക..."
 
 #: kstandardaction_p.h:136
@@ -557,6 +595,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "അടുത്തുപയോഗിച്ചത് തുറക്കുക &r"
+
+#~ msgid "&Open..."
+#~ msgstr "&തുറക്കുക..."
+
+#~ msgid "Save &As..."
+#~ msgstr "പേരു് &മാറ്റി സൂക്ഷിയ്ക്കുക..."
+
+#~ msgid "&Print..."
+#~ msgstr "&അച്ചടിയ്ക്കുക..."
+
+#~ msgid "&Mail..."
+#~ msgstr "മെയിലയയ്ക്കുക &m..."
+
+#~ msgid "&Find..."
+#~ msgstr "&കണ്ടുപിടിക്കുക..."
+
+#~ msgid "&Replace..."
+#~ msgstr "മാറ്റം &വരുത്തുക..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&വലുതാക്കുക..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "വരിയിലേയ്ക്ക് പോകുക &g..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "ഓര്‍മ്മക്കുറിപ്പുകള്‍ &ചിട്ടപ്പെടുത്തുക..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "അക്ഷരത്തെറ്റു്..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "&പണിയായുധനിരകള്‍ ക്രമീകരിയ്ക്കുക"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "&അറിയിപ്പുകള്‍ ക്രമീകരിയ്ക്കുക..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "പിഴവാണെന്നു് &പറയുക..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&ഇന്നത്തെ നുറുങ്ങു്"
@@ -1123,9 +1200,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 
 #~ msgid "Suggested Words"
 #~ msgstr "നിര്‍‌ദ്ദേശിയ്ക്കുന്ന വാക്കുകള്‍"
-
-#~ msgid "&Replace"
-#~ msgstr "മാറ്റുക &r"
 
 #~ msgid "Replace &with:"
 #~ msgstr "ഇത് വച്ച് മാറ്റുക &w:"
@@ -3482,9 +3556,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 #~ msgid "Icon te&xt:"
 #~ msgstr "ചിത്രരൂപത്തിനുള്ള പദാ&വലി:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "പണിയായുധനിരകള്‍ ക്രമീകരിക്കുക"
-
 #~ msgid "Reset Toolbars"
 #~ msgstr "പണിയായുധനിര വീണ്ടും സജ്ജമാക്കുക"
 
@@ -3660,9 +3731,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "കുറുക്കുവഴികള്‍ ക്രമീകരിക്കുക"
-
-#~ msgid "Print"
-#~ msgstr "അച്ചടിയ്ക്കുക"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "&സഹജവിലകളാക്കുക"
@@ -3846,9 +3914,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 
 #~ msgid "Start replace"
 #~ msgstr "മാറ്റിവയ്ക്കല്‍ തുടങ്ങുക"
-
-#~ msgid "&Find"
-#~ msgstr "കണ്ടുപിടിയ്ക്കുക &f"
 
 #~ msgid "Start searching"
 #~ msgstr "തെരച്ചില്‍ ആരംഭിക്കുക"
@@ -4402,10 +4467,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 #~ msgstr "വരിയുടെ അവസാനം"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "വരിയിലേയ്ക്കു് പോകുക"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "പിറകോട്ടുള്ള വാക്ക്"
 
@@ -4490,10 +4551,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 #~ msgstr "അച്ചടിയ്ക്കുന്നതിനു് മുമ്പു് കണ്ടുനോക്കുക"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "മെയില്‍"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "വൃത്തിയാക്കുക"
 
@@ -4514,10 +4571,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 #~ msgstr "ഉയരത്തിനനുസരിച്ച് കൊള്ളിയ്ക്കുക"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "വലുപ്പം കൂട്ടുക"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "ലക്ഷ്യം"
 
@@ -4532,14 +4585,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "രേഖയില്‍ മുമ്പോട്ടു്"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "ഓര്‍മ്മക്കുറിപ്പുകള്‍ അടുക്കിവയ്ക്കുക"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "അക്ഷരവിന്യാസം"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -4572,10 +4617,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "ഇന്നത്തെ നുറുങ്ങു്"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "പിഴവാണെന്നു് പറയുക"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -6674,9 +6715,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 #~ msgid " - BCC: "
 #~ msgstr " - ബിസിസി: "
 
-#~ msgid "Save As"
-#~ msgstr "പേരു് മാറ്റി സൂക്ഷിക്കുക"
-
 #~ msgid "Follow"
 #~ msgstr "പിന്തുടരുക"
 
@@ -7853,9 +7891,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 #~ msgid "Speak Custom Text"
 #~ msgstr "ഇഷ്ടപ്പെട്ട പദാവലി വായിയ്ക്കുക"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "അറിയിപ്പുകള്‍ ക്രമീകരിക്കുക"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "അവസ്ഥ:"
@@ -7906,10 +7941,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&തുറക്കേണ്ട പ്രയോഗം"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&തുറക്കുക"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

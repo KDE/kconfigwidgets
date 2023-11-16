@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2010-01-27 10:39+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -155,8 +155,11 @@ msgid "Create new document"
 msgstr "Креирај нова ознака..."
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Отвори..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Отвори"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -183,8 +186,10 @@ msgid "Save document"
 msgstr "Затвори документ"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Зачувај &како..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Зачувај како"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -211,8 +216,10 @@ msgid "Close document"
 msgstr "Затвори документ"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Печати..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Печати"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -230,8 +237,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Пошта..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "По пошта"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -306,8 +316,10 @@ msgid "Dese&lect"
 msgstr "&Одизбери"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Најди..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Пронајди"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -318,8 +330,10 @@ msgid "Find Pre&vious"
 msgstr "Најди &претходен"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Замени..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Замени"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -367,8 +381,11 @@ msgid "Zoom &Out"
 msgstr "&Намали"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Размер..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Зумирај"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -416,16 +433,23 @@ msgid "Go to next page"
 msgstr "Оди на ред"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Оди на..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Оди на &страница..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "Оди на &линија..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Оди на ред"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -477,13 +501,17 @@ msgstr "&Додај обележувач"
 
 #: kstandardaction_p.h:113
 #, fuzzy
-#| msgid "&Edit Bookmarks"
-msgid "&Edit Bookmarks..."
-msgstr "&Уреди обележувачи"
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Уреди обележувачи"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Правопис..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Правопис"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -530,21 +558,26 @@ msgstr "Преку целиот &екран"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Конфигурирај &кратенки..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Конфигурирај %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Конфигурирај &алатки..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Конфигурирање алатки"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Конфигурирај &известувања..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Конфигурирање на известувања"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -556,13 +589,16 @@ msgid "What's &This?"
 msgstr "Што е &ова?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Извести за бубачка..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Извести за бубачка"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Конфигурирај е-пошта..."
 
 #: kstandardaction_p.h:132
@@ -583,7 +619,7 @@ msgstr "Избриши"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Замени..."
 
 #: kstandardaction_p.h:136
@@ -599,6 +635,47 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Отвори &неодамнешни"
+
+#~ msgid "&Open..."
+#~ msgstr "&Отвори..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Зачувај &како..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Печати..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Пошта..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Најди..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Замени..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Размер..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "Оди на &линија..."
+
+#, fuzzy
+#~| msgid "&Edit Bookmarks"
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Уреди обележувачи"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Правопис..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Конфигурирај &алатки..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Конфигурирај &известувања..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Извести за бубачка..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Совет на &денот"
@@ -1251,9 +1328,6 @@ msgstr "Отвори &неодамнешни"
 #~ "<p>Кликнете тука за да го замените ова појавување на непознатиот текст со "
 #~ "текстот во текстуалното поле горе (на лево).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Замени"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3966,9 +4040,6 @@ msgstr "Отвори &неодамнешни"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Т&екст на иконата:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Конфигурирање алатки"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4172,9 +4243,6 @@ msgstr "Отвори &неодамнешни"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Конфигурирање кратенки"
-
-#~ msgid "Print"
-#~ msgstr "Печати"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Врати на почетни"
@@ -4402,9 +4470,6 @@ msgstr "Отвори &неодамнешни"
 #~ "<qt>Ако го притиснете копчето <b>Замени</b>, документот ќе биде "
 #~ "пребаруван за текстот што сте го внеле горе и секое појавување на истиот "
 #~ "ќе биде заменето со текстот за замена.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Пронајди"
 
 #~ msgid "Start searching"
 #~ msgstr "Почни со барање"
@@ -5045,10 +5110,6 @@ msgstr "Отвори &неодамнешни"
 #~ msgstr "Крај на ред"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Оди на ред"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Збор наназад"
 
@@ -5133,10 +5194,6 @@ msgstr "Отвори &неодамнешни"
 #~ msgstr "Преглед на печатење"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "По пошта"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Исчисти"
 
@@ -5157,10 +5214,6 @@ msgstr "Отвори &неодамнешни"
 #~ msgstr "Собери во височина"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Зумирај"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Оди на"
 
@@ -5175,14 +5228,6 @@ msgstr "Отвори &неодамнешни"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Документ напред"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Уреди обележувачи"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Правопис"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5211,10 +5256,6 @@ msgstr "Отвори &неодамнешни"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Совет на денот"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Извести за бубачка"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7604,9 +7645,6 @@ msgstr "Отвори &неодамнешни"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Зачувај како"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9067,9 +9105,6 @@ msgstr "Отвори &неодамнешни"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Изговори сопствен текст"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Конфигурирање на известувања"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Состојба"
@@ -9118,10 +9153,6 @@ msgstr "Отвори &неодамнешни"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Отвори со"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Отвори"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4 stable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2006-01-12 16:33+0200\n"
 "Last-Translator: JUANITA FRANZ <JUANITA.FRANZ@VR-WEB.DE>\n"
 "Language-Team: AFRIKAANS <translate-discuss-af@lists.sourceforge.net>\n"
@@ -145,8 +145,10 @@ msgid "Create new document"
 msgstr "Maak kortpad skoon"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "Maak oop..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "Maak oop"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -173,8 +175,10 @@ msgid "Save document"
 msgstr "Maak Dokument toe"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Stoor As..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Stoor As"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -201,8 +205,10 @@ msgid "Close document"
 msgstr "Maak Dokument toe"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "Druk..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Druk"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -222,8 +228,10 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "Pos..."
+#, fuzzy
+#| msgid "Mailbox"
+msgid "&Mail…"
+msgstr "Posbus"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -298,8 +306,10 @@ msgid "Dese&lect"
 msgstr "Ontkies"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "Soek..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "Soek"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -310,8 +320,10 @@ msgid "Find Pre&vious"
 msgstr "Soek Vorige"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "Vervang..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "Vervang"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -358,8 +370,10 @@ msgid "Zoom &Out"
 msgstr "Zoem Uit"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "Zoem..."
+#, fuzzy
+#| msgid "&Zoom"
+msgid "&Zoom…"
+msgstr "Zoom"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -409,16 +423,22 @@ msgid "Go to next page"
 msgstr "Gaan na Lyn"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "Gaan Na..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Gaan na Bladsy..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "Gaan na Lyn..."
+#, fuzzy
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Gaan na Lyn"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -468,11 +488,15 @@ msgid "&Add Bookmark"
 msgstr "Voeg Boekmerk by"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "Redigeer Boekmerke..."
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Redigeer Boekmerke"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "Spelling..."
 
 #: kstandardaction_p.h:115
@@ -518,20 +542,24 @@ msgstr "Volskerm Modus"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Stel Kortpaaie Op..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "Stel %1 Op..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Stel Nutsbalke Op..."
+#, fuzzy
+msgid "Configure Tool&bars…"
+msgstr "Konfigureer Nutsbalke"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Stel Inkennistellings Op..."
 
 #: kstandardaction_p.h:128
@@ -544,13 +572,15 @@ msgid "What's &This?"
 msgstr "Wat is hierdie?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "Raporteer Fout..."
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Konfigureer E-pos..."
 
 #: kstandardaction_p.h:132
@@ -569,7 +599,7 @@ msgstr "Vee uit"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "Vervang..."
 
 #: kstandardaction_p.h:136
@@ -587,6 +617,45 @@ msgstr "Klaar"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Maak Onlangse Oop"
+
+#~ msgid "&Open..."
+#~ msgstr "Maak oop..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Stoor As..."
+
+#~ msgid "&Print..."
+#~ msgstr "Druk..."
+
+#~ msgid "&Mail..."
+#~ msgstr "Pos..."
+
+#~ msgid "&Find..."
+#~ msgstr "Soek..."
+
+#~ msgid "&Replace..."
+#~ msgstr "Vervang..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "Zoem..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "Gaan na Lyn..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Redigeer Boekmerke..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "Spelling..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Stel Nutsbalke Op..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Stel Inkennistellings Op..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "Raporteer Fout..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Leidraad van die Dag"
@@ -1280,9 +1349,6 @@ msgstr "Maak Onlangse Oop"
 #~ "<p>Klier hier om hierdie voorkoms van die onbekende teks met die in die "
 #~ "redigeer boks, hier bo, te vervang.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "Vervang"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3879,10 +3945,6 @@ msgstr "Maak Onlangse Oop"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Soek Teks"
 
-#, fuzzy
-#~ msgid "Configure Toolbars"
-#~ msgstr "Konfigureer Nutsbalke"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4113,9 +4175,6 @@ msgstr "Maak Onlangse Oop"
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Stel Kortpaaie Op"
 
-#~ msgid "Print"
-#~ msgstr "Druk"
-
 #, fuzzy
 #~| msgid "Defaults"
 #~ msgid "Reset to Defaults"
@@ -4335,9 +4394,6 @@ msgstr "Maak Onlangse Oop"
 #~ "<qt>As jy die <b>Vervang</b> knoppie druk sal die dokument deursoek word "
 #~ "vir die teks wat hier bo ingetik is. Enige voorkomste daarvan sal vervang "
 #~ "word deur die vervang teks.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "Soek"
 
 #~ msgid "Start searching"
 #~ msgstr "Begin Soek"
@@ -5096,12 +5152,6 @@ msgstr "Maak Onlangse Oop"
 #~ msgstr "Einde van Lyn"
 
 #, fuzzy
-#~| msgid "Go to Line"
-#~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Gaan na Lyn"
-
-#, fuzzy
 #~| msgid "Backward Word"
 #~ msgctxt "@action"
 #~ msgid "Backward Word"
@@ -5228,12 +5278,6 @@ msgstr "Maak Onlangse Oop"
 #~ msgstr "Druk Voorskou..."
 
 #, fuzzy
-#~| msgid "Mailbox"
-#~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Posbus"
-
-#, fuzzy
 #~| msgid "Clear"
 #~ msgctxt "@action"
 #~ msgid "Clear"
@@ -5299,12 +5343,6 @@ msgstr "Maak Onlangse Oop"
 #~ msgstr "Redigeer Boekmerke"
 
 #, fuzzy
-#~| msgid "&Spelling..."
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Spelling..."
-
-#, fuzzy
 #~| msgid "Show &Toolbar"
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5350,12 +5388,6 @@ msgstr "Maak Onlangse Oop"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Leidraad van die Dag"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Raporteer Fout..."
 
 #, fuzzy
 #~| msgid "sets the application name"
@@ -7889,9 +7921,6 @@ msgstr "Maak Onlangse Oop"
 #~ msgid " - BCC: "
 #~ msgstr " - Bcc: "
 
-#~ msgid "Save As"
-#~ msgstr "Stoor As"
-
 #, fuzzy
 #~| msgid ""
 #~| "<qt>This untrusted page links to<BR><B>%1</B>.<BR>Do you want to follow "
@@ -9198,11 +9227,6 @@ msgstr "Maak Onlangse Oop"
 #~ msgstr "Voer asseblief 'n naam in:"
 
 #, fuzzy
-#~| msgid "Configure &Notifications..."
-#~ msgid "Configure Notifications"
-#~ msgstr "Stel Inkennistellings Op..."
-
-#, fuzzy
 #~| msgid "State"
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
@@ -9271,12 +9295,6 @@ msgstr "Maak Onlangse Oop"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Maak oop met..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "Maak oop"
 
 #, fuzzy
 #~| msgid "Name:"
@@ -10192,9 +10210,6 @@ msgstr "Maak Onlangse Oop"
 #, fuzzy
 #~ msgid "Form"
 #~ msgstr "Raam"
-
-#~ msgid "&Edit Bookmarks"
-#~ msgstr "Redigeer Boekmerke"
 
 #~ msgctxt "of January"
 #~ msgid "of Jan"
@@ -13784,9 +13799,6 @@ msgstr "Maak Onlangse Oop"
 
 #~ msgid "Import"
 #~ msgstr "Voer In"
-
-#~ msgid "&Zoom"
-#~ msgstr "Zoom"
 
 #~ msgid "Malformed URL"
 #~ msgstr "Ongeldige URL"

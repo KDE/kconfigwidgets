@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-05-31 10:57+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -136,7 +136,9 @@ msgid "Create new document"
 msgstr "Tạo tài liệu mới"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "&Mở..."
 
 #: kstandardaction_p.h:64
@@ -160,7 +162,9 @@ msgid "Save document"
 msgstr "Lưu tài liệu"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "Lưu thà&nh..."
 
 #: kstandardaction_p.h:67
@@ -184,7 +188,9 @@ msgid "Close document"
 msgstr "Đóng tài liệu"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "&In..."
 
 #: kstandardaction_p.h:70
@@ -200,7 +206,9 @@ msgid "Show a print preview of document"
 msgstr "Hiện một phần xem thử bản in của tài liệu"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+#, fuzzy
+#| msgid "&Mail..."
+msgid "&Mail…"
 msgstr "&Thư..."
 
 #: kstandardaction_p.h:72
@@ -268,7 +276,9 @@ msgid "Dese&lect"
 msgstr "&Bỏ chọn"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "&Tìm..."
 
 #: kstandardaction_p.h:84
@@ -280,7 +290,9 @@ msgid "Find Pre&vious"
 msgstr "Tìm &về trước"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "Tha&y thế..."
 
 #: kstandardaction_p.h:88
@@ -324,7 +336,9 @@ msgid "Zoom &Out"
 msgstr "Thu &nhỏ"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "Th&u phóng..."
 
 #: kstandardaction_p.h:94
@@ -364,15 +378,21 @@ msgid "Go to next page"
 msgstr "Đi đến trang sau"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "Đi đế&n..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Đi đến t&rang..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "Đi đến &dòng..."
 
 #: kstandardaction_p.h:107
@@ -412,11 +432,15 @@ msgid "&Add Bookmark"
 msgstr "T&hêm dấu nhớ"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "&Sửa dấu nhớ..."
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "Đánh &vần..."
 
 #: kstandardaction_p.h:115
@@ -452,20 +476,27 @@ msgid "F&ull Screen Mode"
 msgstr "Chế độ t&oàn màn hình"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Cấu hình phí&m tắt..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Cấu hình %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+#, fuzzy
+#| msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "Cấu hình th&anh công cụ..."
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Cấu hình thông &báo..."
 
 #: kstandardaction_p.h:128
@@ -478,11 +509,15 @@ msgid "What's &This?"
 msgstr "Đây là &cái gì?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "&Báo lỗi..."
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Cấu hình &ngôn ngữ..."
 
 #: kstandardaction_p.h:132
@@ -499,7 +534,9 @@ msgid "&Delete"
 msgstr "&Xoá"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "Đổ&i tên..."
 
 #: kstandardaction_p.h:136

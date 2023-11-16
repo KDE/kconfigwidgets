@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2023-11-07 21:26+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
@@ -129,7 +129,9 @@ msgid "Create new document"
 msgstr "Crea un documentu"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "&Abrir…"
 
 #: kstandardaction_p.h:64
@@ -153,7 +155,9 @@ msgid "Save document"
 msgstr "Guarda'l documentu"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "Guardar &como…"
 
 #: kstandardaction_p.h:67
@@ -177,7 +181,9 @@ msgid "Close document"
 msgstr "Zarra'l documentu"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "&Imprentar…"
 
 #: kstandardaction_p.h:70
@@ -193,7 +199,7 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+msgid "&Mail…"
 msgstr ""
 
 #: kstandardaction_p.h:72
@@ -261,7 +267,9 @@ msgid "Dese&lect"
 msgstr "Dese&leicionar"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "A&topar…"
 
 #: kstandardaction_p.h:84
@@ -273,7 +281,9 @@ msgid "Find Pre&vious"
 msgstr "Atopar lo ante&rior"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "&Trocar…"
 
 #: kstandardaction_p.h:88
@@ -317,7 +327,9 @@ msgid "Zoom &Out"
 msgstr "A&lloñar"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "&Zoom…"
 
 #: kstandardaction_p.h:94
@@ -357,15 +369,19 @@ msgid "Go to next page"
 msgstr ""
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+msgid "&Go To…"
 msgstr ""
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Dir a la páxina…"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "&Dir a la llinia…"
 
 #: kstandardaction_p.h:107
@@ -405,11 +421,11 @@ msgid "&Add Bookmark"
 msgstr ""
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr ""
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr ""
 
 #: kstandardaction_p.h:115
@@ -445,20 +461,23 @@ msgid "F&ull Screen Mode"
 msgstr ""
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Configurar los ata&yos del tecláu…"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Configurar %1…"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr ""
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr ""
 
 #: kstandardaction_p.h:128
@@ -471,11 +490,13 @@ msgid "What's &This?"
 msgstr ""
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr ""
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Configurar la &llingua…"
 
 #: kstandardaction_p.h:132
@@ -492,7 +513,7 @@ msgid "&Delete"
 msgstr "&Desaniciar"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr ""
 
 #: kstandardaction_p.h:136

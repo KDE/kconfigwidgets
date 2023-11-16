@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -150,8 +150,10 @@ msgid "Create new document"
 msgstr "नयाँ ट्याग सिर्जना गर्नुहोस्..."
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "खोल्नुहोस्..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "खोल्नुहोस्"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -178,8 +180,10 @@ msgid "Save document"
 msgstr "कागजात बन्द गर्नुहोस्"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "यस रूपमा बचत गर्नुहोस्..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "यस रूपमा बचत गर्नुहोस्"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -206,8 +210,10 @@ msgid "Close document"
 msgstr "कागजात बन्द गर्नुहोस्"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "मुद्रण गर्नुहोस्..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "मुद्रण गर्नुहोस्"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -226,8 +232,10 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "पत्र..."
+#, fuzzy
+#| msgid "Main:"
+msgid "&Mail…"
+msgstr "मुख्य:"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -302,8 +310,10 @@ msgid "Dese&lect"
 msgstr "चयनबाट हटाउनुहोस्"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "फेला पार्नुहोस्..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "फेला पार्नुहोस्"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -314,8 +324,10 @@ msgid "Find Pre&vious"
 msgstr "अघिल्लो फेला पार्नुहोस्"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "बदल्नुहोस्..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "बदल्नुहोस्"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -363,8 +375,11 @@ msgid "Zoom &Out"
 msgstr "जुम घटाउनुहोस्"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "जुम गर्नुहोस्..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom In"
+msgid "&Zoom…"
+msgstr "जुम बढाउनुहोस्"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -412,16 +427,23 @@ msgid "Go to next page"
 msgstr "लाइनमा जानुहोस्"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "यसमा जानुहोस्..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "पृष्ठमा जानुहोस्..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "रेखामा जानुहोस्..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "लाइनमा जानुहोस्"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -474,11 +496,13 @@ msgstr "पुस्तकचिनो थप्नुहोस्"
 #: kstandardaction_p.h:113
 #, fuzzy
 #| msgid "&Edit Bookmarks"
-msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "पुस्तकचिनो सम्पादन गर्नुहोस्"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "हिज्जे..."
 
 #: kstandardaction_p.h:115
@@ -524,21 +548,26 @@ msgstr "पूरा पर्दा मोड"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "सर्टकट कन्फिगर गर्नुहोस्..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 कन्फिगर गर्नुहोस्..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "उपकरणपट्टी कन्फिगर गर्नुहोस्..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "उपकरणपट्टी कन्फिगर गर्नुहोस्"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "सूचना कन्फिगर गर्नुहोस्..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "सूचना कन्फिगर गर्नुहोस्"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -550,13 +579,15 @@ msgid "What's &This?"
 msgstr "यो के हो ?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "बग प्रतिवेदन गर्नुहोस्..."
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "इमेल कन्फिगर गर्नुहोस्..."
 
 #: kstandardaction_p.h:132
@@ -575,7 +606,7 @@ msgstr "मेट्नुहोस्"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "बदल्नुहोस्..."
 
 #: kstandardaction_p.h:136
@@ -593,6 +624,47 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "हालैको खोल्नुहोस्"
+
+#~ msgid "&Open..."
+#~ msgstr "खोल्नुहोस्..."
+
+#~ msgid "Save &As..."
+#~ msgstr "यस रूपमा बचत गर्नुहोस्..."
+
+#~ msgid "&Print..."
+#~ msgstr "मुद्रण गर्नुहोस्..."
+
+#~ msgid "&Mail..."
+#~ msgstr "पत्र..."
+
+#~ msgid "&Find..."
+#~ msgstr "फेला पार्नुहोस्..."
+
+#~ msgid "&Replace..."
+#~ msgstr "बदल्नुहोस्..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "जुम गर्नुहोस्..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "रेखामा जानुहोस्..."
+
+#, fuzzy
+#~| msgid "&Edit Bookmarks"
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "पुस्तकचिनो सम्पादन गर्नुहोस्"
+
+#~ msgid "&Spelling..."
+#~ msgstr "हिज्जे..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "उपकरणपट्टी कन्फिगर गर्नुहोस्..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "सूचना कन्फिगर गर्नुहोस्..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "बग प्रतिवेदन गर्नुहोस्..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "आजको टिप"
@@ -1278,9 +1350,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ "<p>अज्ञात पाठको सो घटनालाई माथिको सम्पादन बाकस (बायाँ तिर) पाठसँग बदल्न यहाँ "
 #~ "क्लिक गर्नुहोस् ।</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "बदल्नुहोस्"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -4079,9 +4148,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgid "Icon te&xt:"
 #~ msgstr "पाठ फेला पार्नुहोस्"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "उपकरणपट्टी कन्फिगर गर्नुहोस्"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4306,9 +4372,6 @@ msgstr "हालैको खोल्नुहोस्"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "सर्टकट कन्फिगर गर्नुहोस्"
-
-#~ msgid "Print"
-#~ msgstr "मुद्रण गर्नुहोस्"
 
 #, fuzzy
 #~| msgid "&Defaults"
@@ -4565,9 +4628,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgstr ""
 #~ "<qt>यदि तपाईँले <b>बदल्नुहोस्</b> बटन थिच्नु भएमा, तपाईँले माथि प्रविष्ट गर्नुभएको "
 #~ "पाठलाई कागजात भित्र खोजिन्छ र पाठ प्रतिस्थापन मिल्दो कुनै घटनासँग बदलिन्छ ।</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "फेला पार्नुहोस्"
 
 #~ msgid "Start searching"
 #~ msgstr "खोजी सुरु गर्नुहोस्"
@@ -5258,10 +5318,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgstr "लाइनको अन्त्य"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "लाइनमा जानुहोस्"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "पछाडितिरको शब्द"
 
@@ -5354,12 +5410,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgstr "मुद्रण पूर्वावलोकन"
 
 #, fuzzy
-#~| msgid "Main:"
-#~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "मुख्य:"
-
-#, fuzzy
 #~| msgid "C&lear"
 #~ msgctxt "@action"
 #~ msgid "Clear"
@@ -5390,13 +5440,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgstr "पृष्ठ उचाइलाई मिलाउनुहोस्"
 
 #, fuzzy
-#~| msgctxt "@action"
-#~| msgid "Zoom In"
-#~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "जुम बढाउनुहोस्"
-
-#, fuzzy
 #~| msgid "&Go to Page..."
 #~ msgctxt "@action"
 #~ msgid "Goto Page"
@@ -5414,18 +5457,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "अगाडि"
-
-#, fuzzy
-#~| msgid "&Edit Bookmarks"
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "पुस्तकचिनो सम्पादन गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "&Spelling..."
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "हिज्जे..."
 
 #, fuzzy
 #~| msgid "Show &Toolbar"
@@ -5468,12 +5499,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "आजको टिप"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "बग प्रतिवेदन गर्नुहोस्..."
 
 #, fuzzy
 #~| msgid "Switch Application Language"
@@ -8011,9 +8036,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgid " - BCC: "
 #~ msgstr "गुप्त बोधार्थ प्रतिलिपि: "
 
-#~ msgid "Save As"
-#~ msgstr "यस रूपमा बचत गर्नुहोस्"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9591,9 +9613,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgid "Speak Custom Text"
 #~ msgstr "पछिल्लो कथनमा विच्छेद गर्नुहोस्"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "सूचना कन्फिगर गर्नुहोस्"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "अवस्था"
@@ -9656,12 +9675,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "यससँग खोल्नुहोस्..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "खोल्नुहोस्"
 
 #, fuzzy
 #~| msgid "Name:"

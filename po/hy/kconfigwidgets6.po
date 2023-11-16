@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2013-01-31 01:08+0400\n"
 "Last-Translator: Davit <nikdavnik@mail.ru>\n"
 "Language-Team: Armenian Language: hy\n"
@@ -149,8 +149,11 @@ msgid "Create new document"
 msgstr "Նոր հղում:"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Բացել..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Բացել"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -175,8 +178,10 @@ msgid "Save document"
 msgstr "Պահպանել փասթաթուղթը"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "&Պահպանել ինչպես..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Պահպանել ինչպես"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -201,8 +206,10 @@ msgid "Close document"
 msgstr "Փակել"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Տպել..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Տպել"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -217,8 +224,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Էլ-փոստ..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Էլ-փոստ"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -289,8 +299,10 @@ msgid "Dese&lect"
 msgstr "&Հանել նշվածը"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Որոնել..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Որոնում"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -300,9 +312,12 @@ msgstr "&Գտնել հաջորդը"
 msgid "Find Pre&vious"
 msgstr "&Գտնել նախորդը"
 
+# տեղափոխել
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Փոխել..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Փոխարինել"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -349,8 +364,11 @@ msgid "Zoom &Out"
 msgstr "&Փոքրացնել"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Մասշտաբ..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Մասշտաբ"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -391,16 +409,23 @@ msgid "Go to next page"
 msgstr "Անցնել մյուս էջին"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Անցնել..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Անցնել էջով..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Անցնել տողով..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Անցնել տողին"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -439,12 +464,18 @@ msgid "&Add Bookmark"
 msgstr "&Ավելացնել պահոցի մեջ"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Փոփոխել պահոցը..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Փոփոխել պահոցը"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Ուղղագրության ստուգում..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Ստուգել ուղղագրությունը"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -481,21 +512,26 @@ msgstr "&Լրիվ էկրանի ռեժիմ"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "&Տառերի կոմբինացիա..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Կարգավորել %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "&Գործիքների վահանակ..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Գործիքների վահանակի կարգավորում"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "&Կարգավորել ծանուցունմերը..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Հիշեցումների կարգավորում"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -507,13 +543,16 @@ msgid "What's &This?"
 msgstr "&Ի՞նչ է սա"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Տեղեկացնել սխալի մասին..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Տեղեկացնել սխալի մասին"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Էլ-փոստի պարամետրեր..."
 
 #: kstandardaction_p.h:132
@@ -534,7 +573,7 @@ msgstr "Ջնջել"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Փոխել..."
 
 #: kstandardaction_p.h:136
@@ -550,6 +589,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Վերջի նիշքերը"
+
+#~ msgid "&Open..."
+#~ msgstr "&Բացել..."
+
+#~ msgid "Save &As..."
+#~ msgstr "&Պահպանել ինչպես..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Տպել..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Էլ-փոստ..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Որոնել..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Փոխել..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Մասշտաբ..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Անցնել տողով..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Փոփոխել պահոցը..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Ուղղագրության ստուգում..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "&Գործիքների վահանակ..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "&Կարգավորել ծանուցունմերը..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Տեղեկացնել սխալի մասին..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Օրվա խորհուրդը"
@@ -1208,10 +1286,6 @@ msgstr "&Վերջի նիշքերը"
 #~ "<qt>\n"
 #~ "<p>Փոխել բառը տվյալ դեպքում.</p>\n"
 #~ "</qt>"
-
-# տեղափոխել
-#~ msgid "&Replace"
-#~ msgstr "&Փոխարինել"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3872,9 +3946,6 @@ msgstr "&Վերջի նիշքերը"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "&Թաքցնել տեքստը, անվանումները նշանների կողքին ցույց տալու ժամանակ "
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Գործիքների վահանակի կարգավորում"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4080,9 +4151,6 @@ msgstr "&Վերջի նիշքերը"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Կոճակների համադրության կարգավորում"
-
-#~ msgid "Print"
-#~ msgstr "Տպել"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Լռելյայն"
@@ -4313,9 +4381,6 @@ msgstr "&Վերջի նիշքերը"
 #~ "<qt>Եթե սեղմեք կոճակը <b>Փոխել</b>, կկատարվի ձեր մուտքագրած "
 #~ "արտահայտության որոնում, այնուհետև համընկնող արդյունքների փոփոխում տեքստի "
 #~ "հետ </qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Որոնում"
 
 #~ msgid "Start searching"
 #~ msgstr "Սկսել որոնումը"
@@ -4999,10 +5064,6 @@ msgstr "&Վերջի նիշքերը"
 #~ msgstr "Տեղի վերջ"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Անցնել տողին"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Մի բառ հետ"
 
@@ -5087,10 +5148,6 @@ msgstr "&Վերջի նիշքերը"
 #~ msgstr "Նախնական դիտում"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Էլ-փոստ"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Մաքրել"
 
@@ -5111,10 +5168,6 @@ msgstr "&Վերջի նիշքերը"
 #~ msgstr "Տեղավորել բարձրությամբ"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Մասշտաբ"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Անցնել"
 
@@ -5129,14 +5182,6 @@ msgstr "&Վերջի նիշքերը"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Առաջ"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Փոփոխել պահոցը"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Ստուգել ուղղագրությունը"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5169,10 +5214,6 @@ msgstr "&Վերջի նիշքերը"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Օրվա խորհուրդը"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Տեղեկացնել սխալի մասին"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7641,9 +7682,6 @@ msgstr "&Վերջի նիշքերը"
 #~ msgid " - BCC: "
 #~ msgstr " - Թաքնված կրկնօրինակ: "
 
-#~ msgid "Save As"
-#~ msgstr "Պահպանել ինչպես"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9171,9 +9209,6 @@ msgstr "&Վերջի նիշքերը"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Կարդալ իմ նշած տեքստը"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Հիշեցումների կարգավորում"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Վիճակ"
@@ -9222,10 +9257,6 @@ msgstr "&Վերջի նիշքերը"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Բացել ըստ..."
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Բացել"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-01-31 09:51+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -131,8 +131,11 @@ msgid "Create new document"
 msgstr "Új dokumentum létrehozása"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Megnyitás…"
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "Me&gnyitás"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -155,8 +158,10 @@ msgid "Save document"
 msgstr "Dokumentum mentése"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Mentés más&ként…"
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Mentés másként"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -179,8 +184,10 @@ msgid "Close document"
 msgstr "Dokumentum bezárása"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Nyomtatás…"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Nyomtatás"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -195,8 +202,11 @@ msgid "Show a print preview of document"
 msgstr "A  dokumentum nyomtatási előnézetének megjelenítése"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "Levél kül&dése…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "E-mail"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -263,8 +273,10 @@ msgid "Dese&lect"
 msgstr "Kijelö&lés megszüntetése"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "K&eresés…"
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Keresés"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -275,8 +287,10 @@ msgid "Find Pre&vious"
 msgstr "Előző &keresése"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "Cse&re…"
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "Cse&re"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -321,8 +335,11 @@ msgid "Zoom &Out"
 msgstr "Ki&csinyítés"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "N&agyítás…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Nagyítás"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -361,16 +378,23 @@ msgid "Go to next page"
 msgstr "Ugrás a következő oldalra"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Ugrás ide…"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Ugrás egy ol&dalra…"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "Ug&rás egy sorra…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Ugrás egy sorra"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -409,12 +433,18 @@ msgid "&Add Bookmark"
 msgstr "Hozzá&adás a könyvjelzőkhöz"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Könyvjelzők szerkesztése…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Könyvjelzőszerkesztő"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "Helye&sírás-ellenőrzés…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Helyesírás-ellenőrzés"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -449,21 +479,28 @@ msgid "F&ull Screen Mode"
 msgstr "&Teljes képernyős mód"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Billentyű&parancsok beállítása…"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 &beállítása…"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Eszkö&ztárak…"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Eszköztárak"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Értesí&tő üzenetek…"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Az értesítő üzenetek beállítása"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -475,11 +512,16 @@ msgid "What's &This?"
 msgstr "Mi e&z?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Hibabejelentés…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Hibabejelentés"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Nye&lvbeállítás…"
 
 #: kstandardaction_p.h:132
@@ -496,7 +538,9 @@ msgid "&Delete"
 msgstr "&Törlés"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "Át&nevezés…"
 
 #: kstandardaction_p.h:136
@@ -510,6 +554,45 @@ msgstr "&Támogatás"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "&Menü megnyitása"
+
+#~ msgid "&Open..."
+#~ msgstr "&Megnyitás…"
+
+#~ msgid "Save &As..."
+#~ msgstr "Mentés más&ként…"
+
+#~ msgid "&Print..."
+#~ msgstr "&Nyomtatás…"
+
+#~ msgid "&Mail..."
+#~ msgstr "Levél kül&dése…"
+
+#~ msgid "&Find..."
+#~ msgstr "K&eresés…"
+
+#~ msgid "&Replace..."
+#~ msgstr "Cse&re…"
+
+#~ msgid "&Zoom..."
+#~ msgstr "N&agyítás…"
+
+#~ msgid "&Go to Line..."
+#~ msgstr "Ug&rás egy sorra…"
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Könyvjelzők szerkesztése…"
+
+#~ msgid "&Spelling..."
+#~ msgstr "Helye&sírás-ellenőrzés…"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Eszkö&ztárak…"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Értesí&tő üzenetek…"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Hibabejelentés…"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Mai ti&pp"
@@ -1162,9 +1245,6 @@ msgstr "&Menü megnyitása"
 #~ "<p>Kattintson ide, ha ezt az ismeretlen szót le szeretné cserélni a fenti "
 #~ "szövegmezőben megadott szövegre.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "Cse&re"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3818,9 +3898,6 @@ msgstr "&Menü megnyitása"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "Szöveg e&lrejtése, ha az az ikon mellett jelenik meg az eszköztáron"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Eszköztárak"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4023,9 +4100,6 @@ msgstr "&Menü megnyitása"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Billentyűkombinációk beállítása"
-
-#~ msgid "Print"
-#~ msgstr "Nyomtatás"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Alapértelmezés"
@@ -4259,9 +4333,6 @@ msgstr "&Menü megnyitása"
 #~ "<qt>Ha megnyomja a <b>Csere</b> gombot, a program végigkeresi a "
 #~ "dokumentumot, és az illeszkedő szövegeket kicseréli a megadott új "
 #~ "szövegre.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Keresés"
 
 #~ msgid "Start searching"
 #~ msgstr "A keresés megkezdése"
@@ -4939,10 +5010,6 @@ msgstr "&Menü megnyitása"
 #~ msgstr "Sor vége"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Ugrás egy sorra"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Egy szót vissza"
 
@@ -5027,10 +5094,6 @@ msgstr "&Menü megnyitása"
 #~ msgstr "Nyomtatási előnézet"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "E-mail"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Törlés"
 
@@ -5051,10 +5114,6 @@ msgstr "&Menü megnyitása"
 #~ msgstr "Teljes magasság"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Nagyítás"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Ugrás"
 
@@ -5069,14 +5128,6 @@ msgstr "&Menü megnyitása"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "A dokumentum előre"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Könyvjelzőszerkesztő"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Helyesírás-ellenőrzés"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5109,10 +5160,6 @@ msgstr "&Menü megnyitása"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Mai tipp"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Hibabejelentés"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7562,9 +7609,6 @@ msgstr "&Menü megnyitása"
 #~ msgid " - BCC: "
 #~ msgstr " - titkos másolat: "
 
-#~ msgid "Save As"
-#~ msgstr "Mentés másként"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9077,9 +9121,6 @@ msgstr "&Menü megnyitása"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Adott szöveg felolvasása"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Az értesítő üzenetek beállítása"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Állapot"
@@ -9128,10 +9169,6 @@ msgstr "&Menü megnyitása"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Megnyitás e&zzel…"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "Me&gnyitás"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

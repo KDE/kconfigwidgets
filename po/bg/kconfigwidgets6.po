@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-06-19 14:35+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -134,7 +134,9 @@ msgid "Create new document"
 msgstr "Създаване на нов документ"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "&Отваряне..."
 
 #: kstandardaction_p.h:64
@@ -158,7 +160,9 @@ msgid "Save document"
 msgstr "Запис на документа"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "Запис &като..."
 
 #: kstandardaction_p.h:67
@@ -182,7 +186,9 @@ msgid "Close document"
 msgstr "Затваряне на документа"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "&Печат..."
 
 #: kstandardaction_p.h:70
@@ -198,7 +204,9 @@ msgid "Show a print preview of document"
 msgstr "Показване на предварителен преглед за печат"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+#, fuzzy
+#| msgid "&Mail..."
+msgid "&Mail…"
 msgstr "&Поща..."
 
 #: kstandardaction_p.h:72
@@ -266,7 +274,9 @@ msgid "Dese&lect"
 msgstr "&Размаркиране"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "&Търсене..."
 
 #: kstandardaction_p.h:84
@@ -278,7 +288,9 @@ msgid "Find Pre&vious"
 msgstr "Търсене на преди&шен"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "&Замяна..."
 
 #: kstandardaction_p.h:88
@@ -322,7 +334,9 @@ msgid "Zoom &Out"
 msgstr "&Намаляване"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "Ма&щаб..."
 
 #: kstandardaction_p.h:94
@@ -362,15 +376,21 @@ msgid "Go to next page"
 msgstr "Отиване на следващата страница"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "Отиван&е на..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Отив&ане на страница..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "Отиван&е на ред..."
 
 #: kstandardaction_p.h:107
@@ -410,11 +430,15 @@ msgid "&Add Bookmark"
 msgstr "&Добавяне на отметка"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "&Редактиране на отметките..."
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Проверка на правописа..."
 
 #: kstandardaction_p.h:115
@@ -450,20 +474,27 @@ msgid "F&ull Screen Mode"
 msgstr "&Цял екран"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Конфигуриране на к&лавишни комбинации..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Настройване на %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+#, fuzzy
+#| msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "Настройване на &инструментите..."
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Настройване на и&звестяванията..."
 
 #: kstandardaction_p.h:128
@@ -476,11 +507,15 @@ msgid "What's &This?"
 msgstr "&Какво е това?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "Съобщаване за &грешка..."
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Конфигуриране на &език..."
 
 #: kstandardaction_p.h:132
@@ -497,7 +532,9 @@ msgid "&Delete"
 msgstr "&Изтриване"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Преименуване..."
 
 #: kstandardaction_p.h:136

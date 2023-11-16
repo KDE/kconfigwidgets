@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-06-27 16:04+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -138,7 +138,9 @@ msgid "Create new document"
 msgstr "Vytvořit nový dokument"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "&Otevřít..."
 
 #: kstandardaction_p.h:64
@@ -162,7 +164,9 @@ msgid "Save document"
 msgstr "Uložit dokument"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "Uložit j&ako..."
 
 #: kstandardaction_p.h:67
@@ -186,7 +190,9 @@ msgid "Close document"
 msgstr "Zavřít dokument"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "&Tisknout..."
 
 #: kstandardaction_p.h:70
@@ -202,7 +208,9 @@ msgid "Show a print preview of document"
 msgstr "Zobrazit náhled před tiskem"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+#, fuzzy
+#| msgid "&Mail..."
+msgid "&Mail…"
 msgstr "Od&eslat poštou..."
 
 #: kstandardaction_p.h:72
@@ -270,7 +278,9 @@ msgid "Dese&lect"
 msgstr "Zr&ušit výběr"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "&Najít..."
 
 #: kstandardaction_p.h:84
@@ -282,7 +292,9 @@ msgid "Find Pre&vious"
 msgstr "Na&jít předchozí"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "Na&hradit..."
 
 #: kstandardaction_p.h:88
@@ -326,7 +338,9 @@ msgid "Zoom &Out"
 msgstr "O&ddálit"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "&Zvětšení..."
 
 #: kstandardaction_p.h:94
@@ -366,15 +380,21 @@ msgid "Go to next page"
 msgstr "Přejít na následující stranu"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Přejít na..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Př&ejít na stranu..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "Př&ejít na řádku..."
 
 #: kstandardaction_p.h:107
@@ -414,11 +434,15 @@ msgid "&Add Bookmark"
 msgstr "&Přidat k záložkám"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "Upr&avit záložky..."
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Kontrola pravopisu..."
 
 #: kstandardaction_p.h:115
@@ -454,20 +478,27 @@ msgid "F&ull Screen Mode"
 msgstr "Celoobrazovkový reži&m"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Nas&tavit klávesové zkratky..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "N&astavit '%1'..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+#, fuzzy
+#| msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "Nastavit panely nástro&jů..."
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "&Nastavit upozornění..."
 
 #: kstandardaction_p.h:128
@@ -480,11 +511,15 @@ msgid "What's &This?"
 msgstr "Co je &toto?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "Nahlásit &chybu..."
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Nastav&it jazyk..."
 
 #: kstandardaction_p.h:132
@@ -501,7 +536,9 @@ msgid "&Delete"
 msgstr "&Smazat"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Přejmenovat..."
 
 #: kstandardaction_p.h:136

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2009-02-12 23:29-0600\n"
 "Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
 "Language-Team: Qırımtatarca (Qırım Türkçesi)\n"
@@ -148,8 +148,10 @@ msgid "Create new document"
 msgstr "Yañı Nişan İcat Et..."
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Aç..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Aç"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -176,8 +178,10 @@ msgid "Save document"
 msgstr "Vesiqanı Qapat"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Şö&yle Saqla..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Şöyle Saqla"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -204,8 +208,10 @@ msgid "Close document"
 msgstr "Vesiqanı Qapat"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Bastır..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Bastır"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -223,8 +229,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Poçta..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Poçtala:"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -299,8 +308,10 @@ msgid "Dese&lect"
 msgstr "&Ğayrı Sayla"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Tap..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Tap"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -311,8 +322,10 @@ msgid "Find Pre&vious"
 msgstr "&Evelkisini Tap"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Deñiştir..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Almaştır"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -360,8 +373,11 @@ msgid "Zoom &Out"
 msgstr "&Uzaqlaştır"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Miqyas..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Yaqınlaştır"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -409,16 +425,23 @@ msgid "Go to next page"
 msgstr "Satırğa Bar"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Bar..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Saifege Bar..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Satırğa Bar..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Satırğa Bar"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -473,13 +496,17 @@ msgstr "Saife-imi &Ekle"
 
 #: kstandardaction_p.h:113
 #, fuzzy
-#| msgid "&Edit Bookmarks"
-msgid "&Edit Bookmarks..."
-msgstr "Saife-imini &Tarir Et"
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Saife-imlerini Tarir Et"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&İmlâ..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "İmlâ Teşkerüvi"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -526,21 +553,26 @@ msgstr "&Tam Ekran Nizamı"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "&Qısqa-yollarnı Ayarla..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 &Ayarlaması..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Alet &Çubuqlarını Ayarla..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Alet Çubuqlarını Ayarla"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "&Bildirmelerni Ayarla..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Bildirmelerni Ayarla"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -552,13 +584,16 @@ msgid "What's &This?"
 msgstr "&Bu nedir?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "Arızanı &Bildir..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Arızanı Bildir"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "E-poçtanı Ayarla..."
 
 #: kstandardaction_p.h:132
@@ -579,7 +614,7 @@ msgstr "Sil"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Deñiştir..."
 
 #: kstandardaction_p.h:136
@@ -595,6 +630,47 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Deminkini Aç"
+
+#~ msgid "&Open..."
+#~ msgstr "&Aç..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Şö&yle Saqla..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Bastır..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Poçta..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Tap..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Deñiştir..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Miqyas..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Satırğa Bar..."
+
+#, fuzzy
+#~| msgid "&Edit Bookmarks"
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Saife-imini &Tarir Et"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&İmlâ..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Alet &Çubuqlarını Ayarla..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "&Bildirmelerni Ayarla..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "Arızanı &Bildir..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Künniñ Qaranesi"
@@ -1062,9 +1138,6 @@ msgstr "&Deminkini Aç"
 #~ "<p>Bilinmegen kelimeniñ bu rastkelişini yuqarıdaki (sol tarafta) tarir "
 #~ "etüv qutusındaki metinnen almaştırmaq içün mında çertiñiz.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Almaştır"
 
 #~ msgid "Replace &with:"
 #~ msgstr "&Bunıñnen almaştır:"
@@ -3333,9 +3406,6 @@ msgstr "&Deminkini Aç"
 #~ msgid "Icon te&xt:"
 #~ msgstr "İlişim Metni:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Alet Çubuqlarını Ayarla"
-
 #~ msgid "Reset Toolbars"
 #~ msgstr "Alet Çubuqlarını Sıfırla"
 
@@ -3525,9 +3595,6 @@ msgstr "&Deminkini Aç"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Qısqa-yollarnı Ayarla"
-
-#~ msgid "Print"
-#~ msgstr "Bastır"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "&Ög-belgilemelerge keri dön"
@@ -3748,9 +3815,6 @@ msgstr "&Deminkini Aç"
 
 #~ msgid "Start replace"
 #~ msgstr "Deñiştirmeni başlat"
-
-#~ msgid "&Find"
-#~ msgstr "&Tap"
 
 #~ msgid "Start searching"
 #~ msgstr "Qıdıruvnı başlat"
@@ -4374,10 +4438,6 @@ msgstr "&Deminkini Aç"
 #~ msgstr "Satır Soñu"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Satırğa Bar"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Bir Söz Keri"
 
@@ -4462,20 +4522,12 @@ msgstr "&Deminkini Aç"
 #~ msgstr "Bastıruv Ög-baquv"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Poçtala:"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Temizle"
 
 #~ msgctxt "@action"
 #~ msgid "Actual Size"
 #~ msgstr "Fiiliy Ölçü"
-
-#~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Yaqınlaştır"
 
 #~ msgctxt "@action"
 #~ msgid "Goto Page"
@@ -4488,14 +4540,6 @@ msgstr "&Deminkini Aç"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Vesiqa İleri"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Saife-imlerini Tarir Et"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "İmlâ Teşkerüvi"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -4524,10 +4568,6 @@ msgstr "&Deminkini Aç"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Künniñ Qaranesi"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Arızanı Bildir"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -6872,9 +6912,6 @@ msgstr "&Deminkini Aç"
 #~ msgid " - BCC: "
 #~ msgstr " - KKK (BCC): "
 
-#~ msgid "Save As"
-#~ msgstr "Şöyle Saqla"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -8219,9 +8256,6 @@ msgstr "&Deminkini Aç"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Mahsus metinni söyle"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Bildirmelerni Ayarla"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Durum"
@@ -8284,12 +8318,6 @@ msgstr "&Deminkini Aç"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Bunıñnen &Aç..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Aç"
 
 #, fuzzy
 #~| msgid "Name: "

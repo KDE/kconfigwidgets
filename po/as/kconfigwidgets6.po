@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4_as\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2008-12-26 15:19+0530\n"
 "Last-Translator: Amitakhya Phukan <অমিতাক্ষ ফুকন>\n"
 "Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
@@ -141,8 +141,10 @@ msgid "Create new document"
 msgstr "নতুন টেগ নিৰ্মাণ কৰক"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "খোলক...(&O)"
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "খোলক (&O)"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -169,8 +171,10 @@ msgid "Save document"
 msgstr "আলেখ্যন বন্ধ কৰক"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "নতুন ৰূপে সংৰক্ষণ...(&A)"
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "নতুন ৰূপে সংৰক্ষণ"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -197,8 +201,10 @@ msgid "Close document"
 msgstr "আলেখ্যন বন্ধ কৰক"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "মূদ্ৰণ কৰক...(&P)"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "মূদ্ৰণ কৰক"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -216,8 +222,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "ডাক...(&M)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "ডাক"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -292,8 +301,10 @@ msgid "Dese&lect"
 msgstr "নিৰ্ব্বাচন বাতিল (&l)"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "অনুসন্ধান...(&F)"
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "অনুসন্ধান (&F)"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -304,8 +315,10 @@ msgid "Find Pre&vious"
 msgstr "পূৰ্ববৰ্তী উপস্থিতি অনুসন্ধান (&v)"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "প্ৰতিস্থাপন...(&R)"
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "প্ৰতিস্থাপন (&R)"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -353,8 +366,11 @@ msgid "Zoom &Out"
 msgstr "সৰুকৈ প্ৰদৰ্শন (&O)"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "প্ৰদৰ্শনৰ মাপ...(&Z)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "ডাঙৰকৈ প্ৰদৰ্শন"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -402,16 +418,23 @@ msgid "Go to next page"
 msgstr "উল্লেখিত পংক্তি সংখ্যা চাওক"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "-লৈ যাওক...(&G)"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "- পৃষ্ঠালৈ যাওক...(&G)"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "-পংক্তিলৈ যাওক...(&G)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "উল্লেখিত পংক্তি সংখ্যা চাওক"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -463,13 +486,17 @@ msgstr "পত্ৰচিহ্ন যোগ কৰক (&A)"
 
 #: kstandardaction_p.h:113
 #, fuzzy
-#| msgid "&Edit Bookmarks"
-msgid "&Edit Bookmarks..."
-msgstr "পত্ৰচিহ্ন সম্পাদনা (&E)"
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "পত্ৰচিহ্ন সম্পাদন কৰক"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "বানান...(&S)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "বানান"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -516,21 +543,26 @@ msgstr "সম্পূৰ্ণ পৰ্দ্দাত প্ৰদৰ্শ�
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "চমুপথ বিন্যাস কৰক...(&h)"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 বিন্যাস কৰক...(&C)"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "টুলবাৰ বিন্যাস কৰক... (&b)"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "টুল-বাৰ বিন্যাস কৰক"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "সূচনাবাৰ্তা বিন্যাস কৰক... (&N)"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "সূচনাবাৰ্তা বিন্যাস কৰক"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -542,13 +574,16 @@ msgid "What's &This?"
 msgstr "এইটো কি ? (&T)"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "বাগ প্ৰতিবেদন কৰক...(&R)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "বাগ প্ৰতিবেদন কৰক"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "ঈ-মেইল বিন্যাস কৰক..."
 
 #: kstandardaction_p.h:132
@@ -569,7 +604,7 @@ msgstr "আঁতৰাওঁক"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "প্ৰতিস্থাপন...(&R)"
 
 #: kstandardaction_p.h:136
@@ -585,6 +620,47 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
+
+#~ msgid "&Open..."
+#~ msgstr "খোলক...(&O)"
+
+#~ msgid "Save &As..."
+#~ msgstr "নতুন ৰূপে সংৰক্ষণ...(&A)"
+
+#~ msgid "&Print..."
+#~ msgstr "মূদ্ৰণ কৰক...(&P)"
+
+#~ msgid "&Mail..."
+#~ msgstr "ডাক...(&M)"
+
+#~ msgid "&Find..."
+#~ msgstr "অনুসন্ধান...(&F)"
+
+#~ msgid "&Replace..."
+#~ msgstr "প্ৰতিস্থাপন...(&R)"
+
+#~ msgid "&Zoom..."
+#~ msgstr "প্ৰদৰ্শনৰ মাপ...(&Z)"
+
+#~ msgid "&Go to Line..."
+#~ msgstr "-পংক্তিলৈ যাওক...(&G)"
+
+#, fuzzy
+#~| msgid "&Edit Bookmarks"
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "পত্ৰচিহ্ন সম্পাদনা (&E)"
+
+#~ msgid "&Spelling..."
+#~ msgstr "বানান...(&S)"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "টুলবাৰ বিন্যাস কৰক... (&b)"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "সূচনাবাৰ্তা বিন্যাস কৰক... (&N)"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "বাগ প্ৰতিবেদন কৰক...(&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "দিনৰ উপদেশ (&D)"
@@ -1171,9 +1247,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ "<p>অজ্ঞাত লিপিৰ পৰিবৰ্তে ওপৰত (বাওঁফালে) অৱস্থিত বক্সত লিখা তথ্য প্ৰয়োগ কৰাৰ "
 #~ "বাবে এই স্থানত টিপক ।</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "প্ৰতিস্থাপন (&R)"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3704,9 +3777,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgid "Icon te&xt:"
 #~ msgstr "লিঙ্কৰ লিপি:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "টুল-বাৰ বিন্যাস কৰক"
-
 #~ msgid "Reset Toolbars"
 #~ msgstr "টুল-বাৰৰ অবিকল্পিত মান ৰি-সেট কৰা হ'ব"
 
@@ -3876,9 +3946,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "চমুপথ বিন্যাস কৰক"
-
-#~ msgid "Print"
-#~ msgstr "মূদ্ৰণ কৰক"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "অবিকল্পিত মান পুনঃ স্থাপন কৰা হ'ব"
@@ -4089,9 +4156,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 
 #~ msgid "Start replace"
 #~ msgstr "প্ৰতিস্থাপন প্ৰাৰম্ভ"
-
-#~ msgid "&Find"
-#~ msgstr "অনুসন্ধান (&F)"
 
 #~ msgid "Start searching"
 #~ msgstr "অনুসন্ধান আৰম্ভ"
@@ -4686,10 +4750,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgstr "পংক্তিৰ সমাপ্তি"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "উল্লেখিত পংক্তি সংখ্যা চাওক"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "পূৰ্ববৰ্তী শব্দ"
 
@@ -4762,10 +4822,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgstr "মূদ্ৰণৰ পূৰ্বপ্ৰদৰ্শন"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "ডাক"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "পৰিশ্ৰুত কৰক"
 
@@ -4786,10 +4842,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgstr "পৃষ্ঠাৰ দৈৰ্ঘ্য অনুযায়ী মাপ নিৰ্ধাৰণ"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "ডাঙৰকৈ প্ৰদৰ্শন"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "-লৈ যাওক"
 
@@ -4804,14 +4856,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "আলেখ্যনৰ আগলৈ"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "পত্ৰচিহ্ন সম্পাদন কৰক"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "বানান"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -4844,10 +4888,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "আজিৰ উপদেশ"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "বাগ প্ৰতিবেদন কৰক"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7088,9 +7128,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "নতুন ৰূপে সংৰক্ষণ"
-
 #~ msgid "Follow"
 #~ msgstr "অনুসৰণ কৰক"
 
@@ -8415,9 +8452,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgid "Speak Custom Text"
 #~ msgstr "স্বনিৰ্ধাৰিত লিপি উচ্চাৰণ"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "সূচনাবাৰ্তা বিন্যাস কৰক"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "অৱস্থা"
@@ -8480,12 +8514,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "চিহ্নিত সামগ্ৰী সহ খোলক...(&O)"
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "খোলক (&O)"
 
 #, fuzzy
 #~| msgid "Name: "

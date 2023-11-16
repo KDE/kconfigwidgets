@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2013-11-04 23:55+0630\n"
 "Last-Translator: Bhuvan Krishna <bhuvan@swecha.org>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -150,8 +150,11 @@ msgid "Create new document"
 msgstr "కొత్త  పత్రం  సృష్టించుము..."
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "(&O) తెరువండి..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Oతెరువండి"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -174,8 +177,10 @@ msgid "Save document"
 msgstr "పత్రాన్ని దా"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "(&A) ఇలా దాచు..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "ఇలా దాచు"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -198,8 +203,10 @@ msgid "Close document"
 msgstr "పత్రం    మూసివేయి"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "(&P) ప్రచురించు..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "ప్రచురణ"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -214,8 +221,11 @@ msgid "Show a print preview of document"
 msgstr "ప్రచురించిన  ఉపదస్త్రాన్ని  చూపిం"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "(&M) తపాలా..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "మెయిల్"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -282,8 +292,10 @@ msgid "Dese&lect"
 msgstr "(&l) ఎంచుకొవద్దు"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "(&F) కనుగొను..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "(&F) కనుగొను"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -294,8 +306,10 @@ msgid "Find Pre&vious"
 msgstr "(&v) క్రిందటి ది వెతకండి"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "(&R) ప్రతిస్థాపించుము..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "(&R) ప్రతిస్థాపన"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -340,8 +354,11 @@ msgid "Zoom &Out"
 msgstr "(&O) దూర వీక్షణం"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "(&Z) పెద్ద పరిమాణము..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "సమీప వీక్షణం"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -382,16 +399,23 @@ msgid "Go to next page"
 msgstr "మరుసటి పుటకు వెళ్ళుట"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "(&G) వెళ్ళు..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "(&G) పుటకు వెళ్ళు..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "(&G) వరుసకు వెళ్ళు..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "వరుసకు వెళ్ళు"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -430,12 +454,18 @@ msgid "&Add Bookmark"
 msgstr "(&A) పేజిగుర్తు చేర్చుము"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "(&E) గుర్తులు   సరిచేయి"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "గుర్తులు మార్చుము"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "(&S) వర్ణక్రమము..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "వర్ణక్రమము"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -472,21 +502,26 @@ msgstr "(&u) పూర్తి తెర స్థితి"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "(&h) శీఘ్రమార్గాలను అమర్చు..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "(&C) %1 ను అమర్చు..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "(&b) పనిముట్ల పట్టిలను అమర్చు..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "పనిముట్ల పట్టీలను ఆకృతీకరించుము"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "(&N) ప్రకటనలను అమర్చు..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "ప్రకటనలను అమర్చు..."
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -498,13 +533,16 @@ msgid "What's &This?"
 msgstr "(&T) ఇది ఏమిటి?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "(&R) తప్పును తెలియచేయండి..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "తప్పును తెలియచేయండి"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "ఈ-మెయిల్ ను అమర్చు..."
 
 #: kstandardaction_p.h:132
@@ -525,7 +563,7 @@ msgstr "తొలగించు"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "(&R) ప్రతిస్థాపించుము..."
 
 #: kstandardaction_p.h:136
@@ -541,6 +579,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "(&R) ఇటీవలివి తెరువండి"
+
+#~ msgid "&Open..."
+#~ msgstr "(&O) తెరువండి..."
+
+#~ msgid "Save &As..."
+#~ msgstr "(&A) ఇలా దాచు..."
+
+#~ msgid "&Print..."
+#~ msgstr "(&P) ప్రచురించు..."
+
+#~ msgid "&Mail..."
+#~ msgstr "(&M) తపాలా..."
+
+#~ msgid "&Find..."
+#~ msgstr "(&F) కనుగొను..."
+
+#~ msgid "&Replace..."
+#~ msgstr "(&R) ప్రతిస్థాపించుము..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "(&Z) పెద్ద పరిమాణము..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "(&G) వరుసకు వెళ్ళు..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "(&E) గుర్తులు   సరిచేయి"
+
+#~ msgid "&Spelling..."
+#~ msgstr "(&S) వర్ణక్రమము..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "(&b) పనిముట్ల పట్టిలను అమర్చు..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "(&N) ప్రకటనలను అమర్చు..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "(&R) తప్పును తెలియచేయండి..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "(&D) ఈ రోజు సూచన"
@@ -1196,9 +1273,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ "<p>పైనగల (ఎడమకు) సరికూర్చు పెట్టెనందలి వచనముతో తెలియని వచనముయొక్క ఈ సంభవాన్ని మీరు "
 #~ "ప్రతిస్థాపించాలని అనుకుంటే యిక్కడ నొక్కండి.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "(&R) ప్రతిస్థాపన"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3761,9 +3835,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "(&H)పనిముట్ల పట్టా పాఠచిహ్నం తొ ఉంటే పాఠం అదృశ్యమొతుంది"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "పనిముట్ల పట్టీలను ఆకృతీకరించుము"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -3957,9 +4028,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "శీఘ్రమార్గాలను అమర్చండి"
-
-#~ msgid "Print"
-#~ msgstr "ప్రచురణ"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "అప్రమేయాలకు పునఃఅమర్పు చేయుము"
@@ -4174,9 +4242,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgstr ""
 #~ "<qt>మీరు గనుక <b>ప్రతిస్థాపన</b> బటన్ వత్తితే, మీరు ప్రవేశపెట్టిన వచనము పత్రము లోపల "
 #~ "శోదించబడుతుంది మరియు అది వున్న ప్రతిచోట ప్రతిస్థాపన వచనముతో ప్రతిస్థాపించబడుతుంది.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "(&F) కనుగొను"
 
 #~ msgid "Start searching"
 #~ msgstr "అన్వేషణ మొదలుపెట్టు"
@@ -4831,10 +4896,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgstr "వరుస చివర"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "వరుసకు వెళ్ళు"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "వెనుకటి పదం"
 
@@ -4919,10 +4980,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgstr "ముద్రణ ముందస్తు వీక్షణం"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "మెయిల్"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "ఖాళిచేయుము"
 
@@ -4943,10 +5000,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgstr "పేజీ ఎత్తునకు పట్టించు"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "సమీప వీక్షణం"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "వెళ్ళు..."
 
@@ -4961,14 +5014,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "పత్రము ముందుకుుకు"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "గుర్తులు మార్చుము"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "వర్ణక్రమము"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5001,10 +5046,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "ఈ రోజు సూచన"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "తప్పును తెలియచేయండి"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7288,9 +7329,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgid " - BCC: "
 #~ msgstr "- బిసిసి:"
 
-#~ msgid "Save As"
-#~ msgstr "ఇలా దాచు"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -8614,9 +8652,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgid "Speak Custom Text"
 #~ msgstr "నిర్దేశిత  వచనము పలుకుము"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "ప్రకటనలను అమర్చు..."
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "స్థితి"
@@ -8665,10 +8700,6 @@ msgstr "(&R) ఇటీవలివి తెరువండి"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&O దీనితో తెరువండి"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Oతెరువండి"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

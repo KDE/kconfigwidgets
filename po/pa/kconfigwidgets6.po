@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2018-11-01 21:27-0800\n"
 "Last-Translator: A S Alam <alam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -148,8 +148,11 @@ msgid "Create new document"
 msgstr "ਨਵਾਂ ਡੌਕੂਮੈਂਟ ਬਣਾਓ"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "ਖੋਲ੍ਹੋ(&O)..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "ਖੋਲ੍ਹੋ(&O)"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -172,8 +175,10 @@ msgid "Save document"
 msgstr "ਡੌਕੂਮੈਂਟ ਸੰਭਾਲੋ"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "ਇੰਝ ਸੰਭਾਲੋ(&A)..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "ਇੰਝ ਸੰਭਾਲੋ"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -196,8 +201,10 @@ msgid "Close document"
 msgstr "ਡੌਕੂਮੈਂਟ ਬੰਦ ਕਰੋ"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "ਪਰਿੰਟ ਕਰੋ(&P)..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "ਪਰਿੰਟ ਕਰੋ"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -212,8 +219,11 @@ msgid "Show a print preview of document"
 msgstr "ਡੌਕੂਮੈਂਟ ਦੀ ਪਰਿੰਟ ਝਲਕ ਵੇਖਾਓ"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "ਮੇਲ(&M)..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "ਮੇਲ ਕਰੋ"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -280,8 +290,10 @@ msgid "Dese&lect"
 msgstr "ਅਣ-ਚੁਣੇ(&l)"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "ਖੋਜ(&F)..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "ਖੋਜ(&F)"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -292,8 +304,10 @@ msgid "Find Pre&vious"
 msgstr "ਪਿੱਛੇ ਖੋਜ(&v)"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "ਤਬਦੀਲ(&R)..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "ਤਬਦੀਲ(&R)"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -338,8 +352,11 @@ msgid "Zoom &Out"
 msgstr "ਜ਼ੂਮ ਆਉਟ(&O)"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "ਜ਼ੂਮ(&Z)..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "ਜ਼ੂਮ"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -380,16 +397,23 @@ msgid "Go to next page"
 msgstr "ਅਗਲੇ ਪੇਜ਼ ਉੱਤੇ ਜਾਓ"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "ਜਾਓ(&G)..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "ਪੇਜ਼ ਉੱਤੇ ਜਾਓ(&G)..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "ਲਾਈਨ ਉੱਤੇ ਜਾਓ(&G)...."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "ਲਾਈਨ ਉੱਤੇ ਜਾਓ"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -428,12 +452,18 @@ msgid "&Add Bookmark"
 msgstr "ਬੁੱਕਮਾਰਕ ਸ਼ਾਮਲ(&A)"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "ਬੁੱਕਮਾਰਕ ਸੋਧ(&E)..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "ਬੁੱਕਮਾਰਕ ਸੋਧ"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "ਸ਼ਬਦ-ਜੋੜ(&S)..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "ਸ਼ਬਦ-ਜੋੜ"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -470,21 +500,26 @@ msgstr "ਪੂਰੀ ਸਕਰੀਨ ਮੋਡ(&u)"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "ਸ਼ਾਰਟਕਟ ਸੰਰਚਨਾ(&h)...."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 ਸੰਰਚਨਾ(&C)...."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "ਟੂਲਬਾਰ ਸੰਰਚਨਾ(&b)..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "ਟੂਲਬਾਰ ਸੰਰਚਨਾ"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "ਨੋਟੀਫਿਕੇਸ਼ਨ ਸੰਰਚਨਾ(&N)..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "ਨੋਟੀਫਿਕੇਸ਼ਨ ਸੰਰਚਨਾ"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -496,13 +531,16 @@ msgid "What's &This?"
 msgstr "ਇਹ ਕੀ ਹੈ?(&T)"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ(&R)..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "ਈ-ਮੇਲ ਸੰਰਚਨਾ...."
 
 #: kstandardaction_p.h:132
@@ -519,7 +557,9 @@ msgid "&Delete"
 msgstr "ਹਟਾਓ(&D)"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "ਨਾਂ ਬਦਲੋ(&R)..."
 
 #: kstandardaction_p.h:136
@@ -535,6 +575,45 @@ msgstr "ਦਾਨ ਕਰੋ(&D)"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
+
+#~ msgid "&Open..."
+#~ msgstr "ਖੋਲ੍ਹੋ(&O)..."
+
+#~ msgid "Save &As..."
+#~ msgstr "ਇੰਝ ਸੰਭਾਲੋ(&A)..."
+
+#~ msgid "&Print..."
+#~ msgstr "ਪਰਿੰਟ ਕਰੋ(&P)..."
+
+#~ msgid "&Mail..."
+#~ msgstr "ਮੇਲ(&M)..."
+
+#~ msgid "&Find..."
+#~ msgstr "ਖੋਜ(&F)..."
+
+#~ msgid "&Replace..."
+#~ msgstr "ਤਬਦੀਲ(&R)..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "ਜ਼ੂਮ(&Z)..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "ਲਾਈਨ ਉੱਤੇ ਜਾਓ(&G)...."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "ਬੁੱਕਮਾਰਕ ਸੋਧ(&E)..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "ਸ਼ਬਦ-ਜੋੜ(&S)..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "ਟੂਲਬਾਰ ਸੰਰਚਨਾ(&b)..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "ਨੋਟੀਫਿਕੇਸ਼ਨ ਸੰਰਚਨਾ(&N)..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ(&R)..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "ਅੱਜ ਦਾ ਟਿੱਪ(&D)"
@@ -1174,9 +1253,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ "<p>ਉੱਪਰਲੇ ਸੋਧ ਬਕਸੇ(ਖੱਬੇ ਪਾਸੇ) ਵਿਚਲੇ ਟੈਕਸਟ ਨਾਲ ਅਣਪਛਾਤਾ ਟੈਕਸਟ ਦੀ ਇਸ ਮੌਜੂਦਗੀ ਨੂੰ ਤਬਦੀਲ ਕਰਨ "
 #~ "ਲਈ ਇਥੇ ਦਬਾਉ।</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "ਤਬਦੀਲ(&R)"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3760,9 +3836,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "ਜਦੋਂ ਟੂਲਬਾਰ ਆਈਕਾਨ ਨਾਲ ਟੈਕਸਟ ਵੇਖਾਵੇ ਤਾਂ ਟੈਕਸਟ ਓਹਲੇ(&H)"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "ਟੂਲਬਾਰ ਸੰਰਚਨਾ"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -3963,9 +4036,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "ਸ਼ਾਰਟਕੱਟ ਸੰਰਚਨਾ"
-
-#~ msgid "Print"
-#~ msgstr "ਪਰਿੰਟ ਕਰੋ"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "ਡਿਫਾਲਟ ਲਈ ਰੀ-ਸੈੱਟ"
@@ -4192,9 +4262,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgstr ""
 #~ "<qt>ਜੇਕਰ ਤੁਸੀਂ <b>ਬਦਲੋ</b> ਬਟਨ ਦਬਾਇਆ ਤਾਂ, ਟੈਕਸਟ ਜੋ ਕਿ ਤੁਸੀ ਭਰਿਆ ਹੈ, ਇਸਨੂੰ ਡੌਕੂਮੈਂਟ ਵਿੱਚ "
 #~ "ਖੋਜਿਆ ਜਾਵੇਗਾ ਤੇ ਕੋਈ ਵੀ ਮੌਜੂਦਗੀ ਇਸ ਟੈਕਸਟ ਨਾਲ ਤਬਦੀਲ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "ਖੋਜ(&F)"
 
 #~ msgid "Start searching"
 #~ msgstr "ਖੋਜ ਸ਼ੁਰੂ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
@@ -4851,10 +4918,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgstr "ਲਾਈਨ ਦੀ ਸਮਾਪਤੀ"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "ਲਾਈਨ ਉੱਤੇ ਜਾਓ"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "ਪਿੱਛੇ ਸ਼ਬਦ"
 
@@ -4939,10 +5002,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgstr "ਪਰਿੰਟ ਝਲਕ"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "ਮੇਲ ਕਰੋ"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "ਸਾਫ਼ ਕਰੋ"
 
@@ -4963,10 +5022,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgstr "ਪੇਜ਼ ਚੌੜਾਈ ਲਈ ਫਿੱਟ"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "ਜ਼ੂਮ"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "ਜਾਓ"
 
@@ -4981,14 +5036,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "ਡੌਕੂਮੈਂਟ ਅੱਗੇ"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "ਬੁੱਕਮਾਰਕ ਸੋਧ"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "ਸ਼ਬਦ-ਜੋੜ"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5021,10 +5068,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "ਅੱਜ ਦਾ ਸੁਝਾਅ"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7404,9 +7447,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "ਇੰਝ ਸੰਭਾਲੋ"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -8872,9 +8912,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgid "Speak Custom Text"
 #~ msgstr "ਕਸਟਮ ਟੈਕਸਟ ਬੋਲੋ"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "ਨੋਟੀਫਿਕੇਸ਼ਨ ਸੰਰਚਨਾ"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "ਹਾਲਤ"
@@ -8923,10 +8960,6 @@ msgstr "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ(&R)"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "ਇਸ ਨਾਲ ਖੋਲ੍ਹੋ(&O)"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "ਖੋਲ੍ਹੋ(&O)"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

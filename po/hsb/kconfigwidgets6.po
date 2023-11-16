@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2008-12-19 22:49+0100\n"
 "Last-Translator: Eduard Werner <edi.werner@gmx.de>\n"
 "Language-Team: en_US <kde-i18n-doc@lists.kde.org>\n"
@@ -149,8 +149,10 @@ msgid "Create new document"
 msgstr "Nowy tag stworić..."
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "W&očiń ..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "W&očinić"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -177,8 +179,10 @@ msgid "Save document"
 msgstr "Dokument začinić"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Z&awěsćić jako..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Zawěsćić jako"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -205,8 +209,10 @@ msgid "Close document"
 msgstr "Dokument začinić"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "Ć&išćeć ..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Ćišćeć"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -224,8 +230,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Póštu pósłać..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Mejlka"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -300,8 +309,10 @@ msgid "Dese&lect"
 msgstr "Wubraće z&běhnyć"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "Na&makać"
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Namakaj"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -312,7 +323,9 @@ msgid "Find Pre&vious"
 msgstr "Pře&dchadny namakać"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
 msgstr "&Narunać"
 
 #: kstandardaction_p.h:88
@@ -361,8 +374,11 @@ msgid "Zoom &Out"
 msgstr "Po&mjeńšić"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zoom..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Zoomowanje"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -410,16 +426,23 @@ msgid "Go to next page"
 msgstr "Dźi na linku"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Dźi na ..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Dźi na stronu ..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Dźi na linku..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Dźi na linku"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -471,13 +494,17 @@ msgstr "&Dodaj k lubuškam"
 
 #: kstandardaction_p.h:113
 #, fuzzy
-#| msgid "&Edit Bookmarks"
-msgid "&Edit Bookmarks..."
-msgstr "Lubuški &wobdźěłać"
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Lubuški wobdźěłać"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Pismikowanje"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Pismikowanje"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -524,21 +551,26 @@ msgstr "&Cyła wobrazowka"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Konfiguracija &skrótšenkow..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 &konfigurować ..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Konfiguracija &nastrojoweho paska ..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Konfiguracija nastrojowych pasow"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Ko&nfiguracija zdźělenkow..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Konfiguracija zdźělenkow"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -550,13 +582,16 @@ msgid "What's &This?"
 msgstr "Što &to je?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Rozprawić wo zmylku"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Rozprawić wo zmylku"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Email konfigurować..."
 
 #: kstandardaction_p.h:132
@@ -577,7 +612,7 @@ msgstr "Zničić"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Narunać"
 
 #: kstandardaction_p.h:136
@@ -593,6 +628,47 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Njedawno wočinjene wočinić"
+
+#~ msgid "&Open..."
+#~ msgstr "W&očiń ..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Z&awěsćić jako..."
+
+#~ msgid "&Print..."
+#~ msgstr "Ć&išćeć ..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Póštu pósłać..."
+
+#~ msgid "&Find..."
+#~ msgstr "Na&makać"
+
+#~ msgid "&Replace..."
+#~ msgstr "&Narunać"
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zoom..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Dźi na linku..."
+
+#, fuzzy
+#~| msgid "&Edit Bookmarks"
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Lubuški &wobdźěłać"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Pismikowanje"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Konfiguracija &nastrojoweho paska ..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Ko&nfiguracija zdźělenkow..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Rozprawić wo zmylku"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Pokiw &dnja"
@@ -1252,9 +1328,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ "<qt>\n"
 #~ "<p>Klikńće tu, zo byšće njeznaty tekst z tekstom we wobdźěłanskim kašćiku "
 #~ "(nalěwo) narunali.</p></qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Narunać"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -4027,9 +4100,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Na tekst wotkazać:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Konfiguracija nastrojowych pasow"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4235,9 +4305,6 @@ msgstr "&Njedawno wočinjene wočinić"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Konfiguracija skrótšenkow"
-
-#~ msgid "Print"
-#~ msgstr "Ćišćeć"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Standardne hódnoty nastajić"
@@ -4469,9 +4536,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgstr ""
 #~ "<qt>Hdyž stłóčić na knefl <b> Narunać</b>, so dokument za pytanym tekstom "
 #~ "přepytuje; pytany tekst so wšudźom z narunanskim tekstom naruna</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Namakaj"
 
 #~ msgid "Start searching"
 #~ msgstr "Započeć pytać"
@@ -5162,10 +5226,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgstr "Kónc linki"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Dźi na linku"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Słowo dozady"
 
@@ -5250,10 +5310,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgstr "Přehladku pokazać"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Mejlka"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Wuprózdnić"
 
@@ -5274,10 +5330,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgstr "Na wysokosć strony připrawić"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Zoomowanje"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Dźi na"
 
@@ -5292,14 +5344,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Přichodny dokument"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Lubuški wobdźěłać"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Pismikowanje"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5332,10 +5376,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Pokiw dnja"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Rozprawić wo zmylku"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7862,9 +7902,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgid " - BCC: "
 #~ msgstr " - Dalša kopija na: "
 
-#~ msgid "Save As"
-#~ msgstr "Zawěsćić jako"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9389,9 +9426,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Postajeny tekst prajić"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Konfiguracija zdźělenkow"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Staw"
@@ -9454,12 +9488,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Wočinić z ..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "W&očinić"
 
 #, fuzzy
 #~| msgid "Name: "

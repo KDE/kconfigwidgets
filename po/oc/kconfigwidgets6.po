@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2008-08-06 00:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -141,8 +141,10 @@ msgid "Create new document"
 msgstr "Configurar los acorchis clavièr"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Dobrir..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Dobrir"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -169,8 +171,10 @@ msgid "Save document"
 msgstr "Tampar lo document"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Enregistrar &jos..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Enregistrar coma"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -199,8 +203,10 @@ msgid "Close document"
 msgstr "Tampar lo document"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Estampar..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Estampar"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -221,7 +227,7 @@ msgstr ""
 #: kstandardaction_p.h:72
 #, fuzzy
 #| msgid "Email"
-msgid "&Mail..."
+msgid "&Mail…"
 msgstr "Corrièl"
 
 #: kstandardaction_p.h:72
@@ -297,8 +303,10 @@ msgid "Dese&lect"
 msgstr ""
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Recercar..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Recercar"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -311,8 +319,10 @@ msgid "Find Pre&vious"
 msgstr "&Precedent"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Remplaçar..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Remplaçar"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -375,7 +385,7 @@ msgstr "Reduire el zoom"
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Zoom In"
-msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "Zoom"
 
 #: kstandardaction_p.h:94
@@ -427,16 +437,23 @@ msgid "Go to next page"
 msgstr "Anar a la linha"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Anar a..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Anar a la pagina..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Anar a la linha..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Anar a la linha"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -489,12 +506,14 @@ msgstr "&Apondre un favorit"
 #: kstandardaction_p.h:113
 #, fuzzy
 #| msgid "&Edit Bookmarks"
-msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "&Modificar los favorits"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Ortografia..."
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "&Spelling…"
+msgstr "Verificar l'ortografia"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -539,24 +558,25 @@ msgstr "&Mòde ecran complet"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure Shortcuts"
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Configurar los acorchis clavièr"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Configurar %1..."
 
 #: kstandardaction_p.h:123
 #, fuzzy
 #| msgid "Configure Toolbars"
-msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "Configurar las barras d'espleches"
 
 #: kstandardaction_p.h:124
 #, fuzzy
 #| msgid "Configure Shortcuts"
-msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Configurar los acorchis clavièr"
 
 #: kstandardaction_p.h:128
@@ -569,13 +589,15 @@ msgid "What's &This?"
 msgstr "Qu'es &aquò ?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "&Rapòrt de bòg..."
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Configurar l'adreça electronica..."
 
 #: kstandardaction_p.h:132
@@ -594,7 +616,7 @@ msgstr "&Suprimir"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Remplaçar..."
 
 #: kstandardaction_p.h:136
@@ -612,6 +634,40 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Dobert(s) &Recentament"
+
+#~ msgid "&Open..."
+#~ msgstr "&Dobrir..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Enregistrar &jos..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Estampar..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Recercar..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Remplaçar..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Anar a la linha..."
+
+#, fuzzy
+#~| msgid "&Edit Bookmarks"
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Modificar los favorits"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Ortografia..."
+
+#, fuzzy
+#~| msgid "Configure Toolbars"
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Configurar las barras d'espleches"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Rapòrt de bòg..."
 
 #, fuzzy
 #~| msgid "Tip of the Day"
@@ -1155,9 +1211,6 @@ msgstr "Dobert(s) &Recentament"
 #~ "<p>Clicatz aicí per remplaçar aquesta ocurréncia del tèxt desconegut pel "
 #~ "tèxt dins la zòna d'edicion aldessús (a esquèrra).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Remplaçar"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -2968,9 +3021,6 @@ msgstr "Dobert(s) &Recentament"
 #~ msgid "New Scheme"
 #~ msgstr "Accions en &cors :"
 
-#~ msgid "Print"
-#~ msgstr "Estampar"
-
 #, fuzzy
 #~| msgid "&Defaults"
 #~ msgid "Reset to Defaults"
@@ -3134,9 +3184,6 @@ msgstr "Dobert(s) &Recentament"
 #~ "<qt>S'accionatz lo boton <b>Remplaçar</b>, lo tèxt qu'avètz picat "
 #~ "aldessús es cercat dins lo document e tota occurréncia n'es remplaçada "
 #~ "pel tèxt de remplaçament.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Recercar"
 
 #~ msgid "Start searching"
 #~ msgstr "Començar la recèrca"
@@ -3687,10 +3734,6 @@ msgstr "Dobert(s) &Recentament"
 #~ msgstr "Fin de linha"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Anar a la linha"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Color de fons"
 
@@ -3767,18 +3810,6 @@ msgstr "Dobert(s) &Recentament"
 #~ msgstr "Trasmetre"
 
 #, fuzzy
-#~| msgid "&Edit Bookmarks"
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "&Modificar los favorits"
-
-#, fuzzy
-#~| msgid "Check Spelling"
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Verificar l'ortografia"
-
-#, fuzzy
 #~| msgid "Show &Toolbar"
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -3803,22 +3834,10 @@ msgstr "Dobert(s) &Recentament"
 #~ msgstr "Preferéncias"
 
 #, fuzzy
-#~| msgid "Configure Toolbars"
-#~ msgctxt "@action"
-#~ msgid "Configure Toolbars"
-#~ msgstr "Configurar las barras d'espleches"
-
-#, fuzzy
 #~| msgid "Tip of the Day"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Astúcia del jorn"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "&Rapòrt de bòg..."
 
 #, fuzzy
 #~| msgid "Quit application"
@@ -5344,9 +5363,6 @@ msgstr "Dobert(s) &Recentament"
 #~ msgid " - BCC: "
 #~ msgstr " - Bcc : "
 
-#~ msgid "Save As"
-#~ msgstr "Enregistrar coma"
-
 #~ msgid "Follow"
 #~ msgstr "Seguir"
 
@@ -6332,12 +6348,6 @@ msgstr "Dobert(s) &Recentament"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Dobrir amb..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Dobrir"
 
 #, fuzzy
 #~| msgid "Name: "

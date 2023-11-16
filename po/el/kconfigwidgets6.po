@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2023-01-05 11:44+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -148,8 +148,11 @@ msgid "Create new document"
 msgstr "Δημιουργία νέου εγγράφου"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "Ά&νοιγμα..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "Άν&οιγμα"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -172,8 +175,10 @@ msgid "Save document"
 msgstr "Αποθήκευση εγγράφου"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Αποθήκευση &ως..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Αποθήκευση ως"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -196,8 +201,10 @@ msgid "Close document"
 msgstr "Κλείσιμο εγγράφου"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Εκτύπωση..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Εκτύπωση"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -212,8 +219,11 @@ msgid "Show a print preview of document"
 msgstr "Εμφάνιση προεπισκόπησης εκτύπωσης εγγράφου"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Mail..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Αλληλογραφία"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -280,8 +290,10 @@ msgid "Dese&lect"
 msgstr "Αποεπι&λογή"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "Ανα&ζήτηση..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Αναζήτηση"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -292,8 +304,10 @@ msgid "Find Pre&vious"
 msgstr "Αναζήτηση προη&γούμενου"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Αντικατάσταση..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Αντικατάσταση"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -336,8 +350,11 @@ msgid "Zoom &Out"
 msgstr "&Σμίκρυνση"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Εστίαση..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Εστίαση"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -376,16 +393,23 @@ msgid "Go to next page"
 msgstr "Μετάβαση στην επόμενη σελίδα"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Μετάβαση σε..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Με&τάβαση στη σελίδα..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "Μετά&βαση στη γραμμή..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Μετάβαση στη γραμμή"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -424,12 +448,18 @@ msgid "&Add Bookmark"
 msgstr "Προσθήκη σελι&δοδείκτη"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Επεξεργασία σελιδοδεικτών..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Επεξεργασία σελιδοδεικτών"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "Ορ&θογραφία..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Ορθογραφία"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -464,21 +494,28 @@ msgid "F&ull Screen Mode"
 msgstr "Λειτουργία πλήρους &οθόνης"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Διαμόρφωση συντομεύσεων πλ&ηκτρολογίου..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Διαμόρφωση του %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Διαμόρφωση &γραμμών εργαλείων..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Διαμόρφωση γραμμών εργαλείων"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Διαμόρφωση ειδο&ποιήσεων..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Διαμόρφωση ειδοποιήσεων"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -490,11 +527,16 @@ msgid "What's &This?"
 msgstr "Τι είναι &αυτό"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "Αναφορά σ&φάλματος..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Αναφορά σφάλματος"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Διαμόρφωση γ&λώσσας..."
 
 #: kstandardaction_p.h:132
@@ -511,7 +553,9 @@ msgid "&Delete"
 msgstr "&Διαγραφή"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Μετονομασία..."
 
 #: kstandardaction_p.h:136
@@ -525,6 +569,45 @@ msgstr "&Δωρεά"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Άνοιγμα &μενού"
+
+#~ msgid "&Open..."
+#~ msgstr "Ά&νοιγμα..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Αποθήκευση &ως..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Εκτύπωση..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Mail..."
+
+#~ msgid "&Find..."
+#~ msgstr "Ανα&ζήτηση..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Αντικατάσταση..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Εστίαση..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "Μετά&βαση στη γραμμή..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Επεξεργασία σελιδοδεικτών..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "Ορ&θογραφία..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Διαμόρφωση &γραμμών εργαλείων..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Διαμόρφωση ειδο&ποιήσεων..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "Αναφορά σ&φάλματος..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Συμβουλή της ημέρας"
@@ -1182,9 +1265,6 @@ msgstr "Άνοιγμα &μενού"
 #~ "κειμένου με το κείμενο στο πλαίσιο επεξεργασίας παραπάνω (στα αριστερά).</"
 #~ "p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Αντικατάσταση"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3870,9 +3950,6 @@ msgstr "Άνοιγμα &μενού"
 #~ "&Απόκρυψη κειμένου όταν η γραμμή εργαλείων εμφανίζει κείμενο μαζί με τα "
 #~ "εικονίδια"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Διαμόρφωση γραμμών εργαλείων"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4084,9 +4161,6 @@ msgstr "Άνοιγμα &μενού"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Διαμόρφωση συντομεύσεων"
-
-#~ msgid "Print"
-#~ msgstr "Εκτύπωση"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Επαναφορά στα προκαθορισμένα"
@@ -4322,9 +4396,6 @@ msgstr "Άνοιγμα &μενού"
 #~ "<qt>Αν πατήσετε το κουμπί <b>Αντικατάσταση</b>, το κείμενο που δώσατε "
 #~ "παραπάνω αναζητείται μέσα στο έγγραφο και οποιαδήποτε εμφάνιση του "
 #~ "αντικαθίσταται με το κείμενο αντικατάστασης.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Αναζήτηση"
 
 #~ msgid "Start searching"
 #~ msgstr "Εκκίνηση αναζήτησης"
@@ -5015,10 +5086,6 @@ msgstr "Άνοιγμα &μενού"
 #~ msgstr "Τέλος γραμμής"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Μετάβαση στη γραμμή"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Λέξη προς τα πίσω"
 
@@ -5103,10 +5170,6 @@ msgstr "Άνοιγμα &μενού"
 #~ msgstr "Προεπισκόπηση εκτύπωσης"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Αλληλογραφία"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Καθαρισμός"
 
@@ -5127,10 +5190,6 @@ msgstr "Άνοιγμα &μενού"
 #~ msgstr "Προσαρμογή στο ύψος"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Εστίαση"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Μετάβαση"
 
@@ -5145,14 +5204,6 @@ msgstr "Άνοιγμα &μενού"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Έγγραφο μπροστά"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Επεξεργασία σελιδοδεικτών"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Ορθογραφία"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5185,10 +5236,6 @@ msgstr "Άνοιγμα &μενού"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Συμβουλή της ημέρας"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Αναφορά σφάλματος"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7649,9 +7696,6 @@ msgstr "Άνοιγμα &μενού"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Αποθήκευση ως"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9187,9 +9231,6 @@ msgstr "Άνοιγμα &μενού"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Εκφώνηση προσαρμοσμένου κειμένου"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Διαμόρφωση ειδοποιήσεων"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Κατάσταση"
@@ -9238,10 +9279,6 @@ msgstr "Άνοιγμα &μενού"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Άνοιγμα &με..."
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "Άν&οιγμα"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

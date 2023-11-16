@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2011-07-22 16:08+0200\n"
 "Last-Translator: Marko Dimjašević <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -160,8 +160,11 @@ msgid "Create new document"
 msgstr "Stvori novu oznaku:"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Otvori…"
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Otvori"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -186,8 +189,10 @@ msgid "Save document"
 msgstr "Zatvori dokument"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Spremi &kao…"
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Spremi kao"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -212,8 +217,10 @@ msgid "Close document"
 msgstr "Zatvori dokument"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Ispis…"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Ispis"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -231,8 +238,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Pošta…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Pošta"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -306,8 +316,10 @@ msgid "Dese&lect"
 msgstr "Od&znači"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Traži…"
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Traži"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -318,8 +330,10 @@ msgid "Find Pre&vious"
 msgstr "Nađi &prethodni"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Zamijeni…"
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Zamijeni"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -364,8 +378,11 @@ msgid "Zoom &Out"
 msgstr "U&manji"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zumiraj…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Zumiraj"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -413,15 +430,21 @@ msgid "Go to next page"
 msgstr "Kreni na redak"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Idi na…"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Idi &na stranicu…"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "I&di na redak…"
 
 #: kstandardaction_p.h:107
@@ -473,12 +496,18 @@ msgid "&Add Bookmark"
 msgstr "&Dodaj knjižnu oznaku"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Uredi oznake…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Uredi knjiške oznake…"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Pravopis…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Pravopis"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -525,21 +554,26 @@ msgstr "Preko punog &zaslona"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Podešavanje &prečaca…"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Podešavanje %1… |/| &Podešavanje $[gen %1]"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Podšavanje trake s &alatima…"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Konfiguriranje alatnih traka"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Podešava&nje obavijesti…"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Podešavanje obavijesti…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -551,13 +585,16 @@ msgid "What's &This?"
 msgstr "Š&to je ovo?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Prijava nedostatka…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Prijava greške"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Konfiguriranje e-pošte…"
 
 #: kstandardaction_p.h:132
@@ -578,7 +615,7 @@ msgstr "Izbriši"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Zamijeni…"
 
 #: kstandardaction_p.h:136
@@ -594,6 +631,42 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Otvori &nedavno"
+
+#~ msgid "&Open..."
+#~ msgstr "&Otvori…"
+
+#~ msgid "Save &As..."
+#~ msgstr "Spremi &kao…"
+
+#~ msgid "&Print..."
+#~ msgstr "&Ispis…"
+
+#~ msgid "&Mail..."
+#~ msgstr "&Pošta…"
+
+#~ msgid "&Find..."
+#~ msgstr "&Traži…"
+
+#~ msgid "&Replace..."
+#~ msgstr "&Zamijeni…"
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zumiraj…"
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Uredi oznake…"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Pravopis…"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Podšavanje trake s &alatima…"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Podešava&nje obavijesti…"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Prijava nedostatka…"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Savjet &dana"
@@ -834,9 +907,6 @@ msgstr "Otvori &nedavno"
 #~ "<p>Kliknite ovdje da biste zamijenili ovo pojavljivanje nepoznatog teksta "
 #~ "s tekstom iz okvira za uređivanje (lijevo).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Zamijeni"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -4320,9 +4390,6 @@ msgstr "Otvori &nedavno"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "S&akrij tekst kada alatna traka prikazuje tekst uz ikone"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Konfiguriranje alatnih traka"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4462,9 +4529,6 @@ msgstr "Otvori &nedavno"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Konfiguriranje prečaca"
-
-#~ msgid "Print"
-#~ msgstr "Ispis"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Vrati na uobičajeno"
@@ -4946,9 +5010,6 @@ msgstr "Otvori &nedavno"
 #~ "<qt>Ako pritisnete gumb <b>Zamijeni</b>, dokument će biti pretražen "
 #~ "tekstom za pretragu i svako pojavljivanje će biti zamijenjeno tekstom za "
 #~ "zamijenu.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Traži"
 
 #~ msgid "Start searching"
 #~ msgstr "Započni pretragu"
@@ -5714,10 +5775,6 @@ msgstr "Otvori &nedavno"
 #~ msgstr "Pregled prije ispisa"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Pošta"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Izbriši"
 
@@ -5738,10 +5795,6 @@ msgstr "Otvori &nedavno"
 #~ msgstr "Podesi prema visini"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Zumiraj"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Idi na"
 
@@ -5756,14 +5809,6 @@ msgstr "Otvori &nedavno"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Slijedeći dokument"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Uredi knjiške oznake…"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Pravopis"
 
 #~ msgctxt "@action"
 #~ msgid "Save Options"
@@ -5788,10 +5833,6 @@ msgstr "Otvori &nedavno"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Savjet dana"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Prijava greške"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7698,9 +7739,6 @@ msgstr "Otvori &nedavno"
 #~ msgid "Print header"
 #~ msgstr "Ispiši zaglavlje"
 
-#~ msgid "Save As"
-#~ msgstr "Spremi kao"
-
 #~ msgid "Inactive"
 #~ msgstr "Neaktivno"
 
@@ -9243,9 +9281,6 @@ msgstr "Otvori &nedavno"
 #~ msgid "Install Again"
 #~ msgstr "Ponovno instaliraj"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Podešavanje obavijesti…"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Stanje"
@@ -9310,10 +9345,6 @@ msgstr "Otvori &nedavno"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Otvori s"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Otvori"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

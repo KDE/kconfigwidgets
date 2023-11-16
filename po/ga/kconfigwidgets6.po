@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2004-12-14 09:11-0600\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -145,8 +145,11 @@ msgid "Create new document"
 msgstr "Cruthaigh cáipéis nua"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Oscail..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Oscail"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -170,8 +173,10 @@ msgid "Save document"
 msgstr "Sábháil an cháipéis"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Sábháil M&ar..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Sábháil Mar"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -194,8 +199,10 @@ msgid "Close document"
 msgstr "Dún an cháipéis"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Priontáil..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Priontáil"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -210,8 +217,11 @@ msgid "Show a print preview of document"
 msgstr "Taispeáin réamhamharc priontála"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Ríomhphost..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Post"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -278,8 +288,10 @@ msgid "Dese&lect"
 msgstr "Díro&ghnaigh"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Aimsigh..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Aimsigh"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -290,8 +302,10 @@ msgid "Find Pre&vious"
 msgstr "&Roimhe Seo"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Ionadaigh..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Ionadaigh"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -336,8 +350,10 @@ msgid "Zoom &Out"
 msgstr "Súmáil &Amach"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Súmáil..."
+#, fuzzy
+#| msgid "&Zoom"
+msgid "&Zoom…"
+msgstr "&Súmáil"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -378,16 +394,23 @@ msgid "Go to next page"
 msgstr "Go dtí an chéad leathanach eile"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Téigh go..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Téigh go &Leathanach..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "Téigh go Lí&ne..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Téigh go Líne"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -426,12 +449,17 @@ msgid "&Add Bookmark"
 msgstr "Cruthaigh Leabharmh&arc"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "Cuir Leabharmharcanna in &Eagar..."
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Cuir Leabharmharcanna in &Eagar"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Litriú..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Litriú"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -468,21 +496,26 @@ msgstr "Mód Lán&scáileáin"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "C&umraigh Aicearraí..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Cumraigh %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Cumraigh &Barraí Uirlisí..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Cumraigh Barraí Uirlisí"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "C&umraigh Fógairt..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Cumraigh Fógairt"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -494,13 +527,16 @@ msgid "What's &This?"
 msgstr "Cad É &Seo?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Seol tuairisc ar fhabht..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Seol tuairisc ar fhabht"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Cumraigh Ríomhphost..."
 
 #: kstandardaction_p.h:132
@@ -519,7 +555,7 @@ msgstr "&Scrios"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Ionadaigh..."
 
 #: kstandardaction_p.h:136
@@ -540,6 +576,45 @@ msgstr "&Críochnaithe"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Oscail &Rudaí Deireanacha"
+
+#~ msgid "&Open..."
+#~ msgstr "&Oscail..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Sábháil M&ar..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Priontáil..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Ríomhphost..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Aimsigh..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Ionadaigh..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Súmáil..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "Téigh go Lí&ne..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Cuir Leabharmharcanna in &Eagar..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Litriú..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Cumraigh &Barraí Uirlisí..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "C&umraigh Fógairt..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Seol tuairisc ar fhabht..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Leid an &Lae"
@@ -1213,9 +1288,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ "<p>Cliceáil anseo chun an téacs sa bhosca eagarthóireachta thuas (ar "
 #~ "chlé) a chur in ionad an téacs anaithnid (sa chás seo amháin).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Ionadaigh"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3946,9 +4018,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ "&Cuir téacs i bhfolach nuair a thaispeánann an barra uirlisí téacs in "
 #~ "aice le deilbhíní"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Cumraigh Barraí Uirlisí"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4157,9 +4226,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Cumraigh Aicearraí"
-
-#~ msgid "Print"
-#~ msgstr "Priontáil"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Fill ar Réamhshocruithe"
@@ -4397,9 +4463,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ "<qt>Má bhrúnn tú an cnaipe <b>Ionadaigh</b>, déanfar cuardach ar an téacs "
 #~ "a d'iontráil tú thuas agus cuirfear an téacs ionadaithe in ionad gach "
 #~ "cáis a aimsítear.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Aimsigh"
 
 #~ msgid "Start searching"
 #~ msgstr "Tosaigh an cuardach"
@@ -5098,10 +5161,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ msgstr "Deireadh na Líne"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Téigh go Líne"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Focal Siar"
 
@@ -5187,10 +5246,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ msgstr "Réamhamharc Priontála"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Post"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Glan"
 
@@ -5235,10 +5290,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ msgstr "Cuir Leabharmharcanna in Eagar"
 
 #~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Litriú"
-
-#~ msgctxt "@action"
 #~ msgid "Show Toolbar"
 #~ msgstr "Taispeáin an Barra Uirlisí"
 
@@ -5269,10 +5320,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Leid an Lae"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Seol tuairisc ar fhabht"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7770,9 +7817,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Sábháil Mar"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9319,9 +9363,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Abair Téacs Saincheaptha"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Cumraigh Fógairt"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Staid"
@@ -9370,10 +9411,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Oscail le"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Oscail"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"
@@ -10475,9 +10512,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 
 #~ msgid "Form"
 #~ msgstr "Foirm"
-
-#~ msgid "&Edit Bookmarks"
-#~ msgstr "Cuir Leabharmharcanna in &Eagar"
 
 #~ msgctxt "of January"
 #~ msgid "of Jan"
@@ -12714,9 +12748,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 
 #~ msgid "Import"
 #~ msgstr "Iompórtáil"
-
-#~ msgid "&Zoom"
-#~ msgstr "&Súmáil"
 
 #~ msgid "Malformed URL"
 #~ msgstr "URL míchumtha"

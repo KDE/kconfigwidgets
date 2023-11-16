@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2012-06-27 10:04+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -145,8 +145,11 @@ msgid "Create new document"
 msgstr "បង្កើតឯកសារ​ថ្មី"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "បើក..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "បើក"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -169,8 +172,10 @@ msgid "Save document"
 msgstr "រក្សាទុក​ឯកសារ"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "រក្សាទុក​ជា..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "រក្សាទុក​ជា"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -193,8 +198,10 @@ msgid "Close document"
 msgstr "បិទ​ឯកសារ"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "បោះពុម្ព..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "បោះពុម្ព"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -209,8 +216,11 @@ msgid "Show a print preview of document"
 msgstr "បង្ហាញ​ការ​មើល​ឯកសារ​មុនបោះពុម្ព"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "សំបុត្រ..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "សំបុត្រ"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -277,8 +287,10 @@ msgid "Dese&lect"
 msgstr "ដោះ​ជ្រើស"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "រក..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "រក"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -289,8 +301,10 @@ msgid "Find Pre&vious"
 msgstr "រក​មុន"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "ជំនួស..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "ជំនួស"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -335,8 +349,11 @@ msgid "Zoom &Out"
 msgstr "​បង្រួម"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "កែវពង្រីក..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "ពង្រីក"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -377,16 +394,23 @@ msgid "Go to next page"
 msgstr "ទៅ​ទំព័រ​បន្ទាប់"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "ទៅកាន់..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "ទៅ​កាន់​ទំព័រ..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "ទៅ​កាន់​បន្ទាត់..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "ទៅ​កាន់​បន្ទាត់"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -425,12 +449,18 @@ msgid "&Add Bookmark"
 msgstr "បន្ថែមចំណាំ"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "កែសម្រួល​ចំណាំ..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "កែសម្រួល​ចំណាំ"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "ការប្រកប..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "ការប្រកប"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -467,21 +497,26 @@ msgstr "​របៀប​ពេញ​អេក្រង់"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្លូវ​កាត់..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "កំណត់​រចនាសម្ព័ន្ធ​របារ​ឧបករណ៍..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​របារ​​ឧបករណ៍"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "កំណត់​រចនាសម្ព័ន្ធ​ការជូន​ដំណឹង..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ការ​ជូនដំណឹង"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -493,13 +528,16 @@ msgid "What's &This?"
 msgstr "នេះ​ជា​អ្វី ?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "រាយការណ៍​កំហុស..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "រាយការណ៍​កំហុស"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​អ៊ីមែល..."
 
 #: kstandardaction_p.h:132
@@ -520,7 +558,7 @@ msgstr "លុប"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "ជំនួស..."
 
 #: kstandardaction_p.h:136
@@ -536,6 +574,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "បើក​ថ្មី​ៗ​នេះ"
+
+#~ msgid "&Open..."
+#~ msgstr "បើក..."
+
+#~ msgid "Save &As..."
+#~ msgstr "រក្សាទុក​ជា..."
+
+#~ msgid "&Print..."
+#~ msgstr "បោះពុម្ព..."
+
+#~ msgid "&Mail..."
+#~ msgstr "សំបុត្រ..."
+
+#~ msgid "&Find..."
+#~ msgstr "រក..."
+
+#~ msgid "&Replace..."
+#~ msgstr "ជំនួស..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "កែវពង្រីក..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "ទៅ​កាន់​បន្ទាត់..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "កែសម្រួល​ចំណាំ..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "ការប្រកប..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "កំណត់​រចនាសម្ព័ន្ធ​របារ​ឧបករណ៍..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "កំណត់​រចនាសម្ព័ន្ធ​ការជូន​ដំណឹង..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "រាយការណ៍​កំហុស..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "ព័ត៌មាន​ជំនួយ​សម្រាប់​ថ្ងៃនេះ"
@@ -1182,9 +1259,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ "<p>ចុច​ទីនេះ ដើម្បី​ជំនួស​ការ​រកឃើញ​អត្ថបទ​មិនស្គាល់​ ដោយ​ពាក្យ​នៅ​ក្នុង​ប្រអប់​កែសម្រួល​ខាងលើ (នៅខាង​"
 #~ "ឆ្វេង) ។</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "ជំនួស"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3769,9 +3843,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "លាក់អត្ថបទ​នៅពេល​របារ​ឧបករណ៍​បង្ហាញ​អត្ថបទ​អែប​រូបតំណាង"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "កំណត់​រចនាសម្ព័ន្ធ​របារ​​ឧបករណ៍"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -3971,9 +4042,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្លូវកាត់"
-
-#~ msgid "Print"
-#~ msgstr "បោះពុម្ព"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "កំណត់​ទៅ​លំនាំដើម​វិញ"
@@ -4198,9 +4266,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgstr ""
 #~ "<qt>ប្រសិនបើ​អ្នក​ចុច​ប៊ូតុង <b>ជំនួស​</b> នោះ​អត្ថបទ​ដែល​អ្នក​បាន​បញ្ចូល​ខាងលើ ​នឹង​ត្រូវ​បាន​ស្វែង​រក​ក្នុង​"
 #~ "ឯកសារ ហើយ​​អត្ថបទ​ដែល​រកឃើញ នឹង​ត្រូវ​បាន​ជំនួស​ដោយ​អត្ថបទ​ជំនួស ។</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "រក"
 
 #~ msgid "Start searching"
 #~ msgstr "ចាប់ផ្តើម​ស្វែងរក"
@@ -4851,10 +4916,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgstr "ចុង​បន្ទាត់"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "ទៅ​កាន់​បន្ទាត់"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "ទៅ​ក្រោយ​ពាក្យ"
 
@@ -4939,10 +5000,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgstr "មើល​មុន​បោះពុម្ព"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "សំបុត្រ"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "ជម្រះ"
 
@@ -4963,10 +5020,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgstr "សម​នឹង​កម្ពស់​"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "ពង្រីក"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "ទៅ​កាន់"
 
@@ -4981,14 +5034,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "ឯកសារ​ទៅ​មុខ"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "កែសម្រួល​ចំណាំ"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "ការប្រកប"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5021,10 +5066,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "ព័ត៌មាន​ជំនួយ​ប្រចាំថ្ងៃ"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "រាយការណ៍​កំហុស"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7439,9 +7480,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgid " - BCC: "
 #~ msgstr " - ចម្លង​ជា​សម្ងាត់​ជូន ៖ "
 
-#~ msgid "Save As"
-#~ msgstr "រក្សាទុក​ជា"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -8911,9 +8949,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgid "Speak Custom Text"
 #~ msgstr "និយាយ​អត្ថបទ​ផ្ទាល់ខ្លួន"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ការ​ជូនដំណឹង"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "ស្ថាន​​ភាព"
@@ -8962,10 +8997,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "បើក​ជា​មួយ"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "បើក"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

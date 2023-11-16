@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2015-11-04 15:11+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -136,7 +136,9 @@ msgid "Create new document"
 msgstr "Cruthaich sgrìobhainn ùr"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "F&osgail..."
 
 #: kstandardaction_p.h:64
@@ -160,7 +162,9 @@ msgid "Save document"
 msgstr "Sàbhail an sgrìobhainn"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "Sàbhail m&ar..."
 
 #: kstandardaction_p.h:67
@@ -185,7 +189,9 @@ msgid "Close document"
 msgstr "Dùin an sgrìobhainn"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "&Clò-bhuail..."
 
 #: kstandardaction_p.h:70
@@ -201,7 +207,9 @@ msgid "Show a print preview of document"
 msgstr "Seall ro-shealladh air clò-bhualadh na sgrìobhainn"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+#, fuzzy
+#| msgid "&Mail..."
+msgid "&Mail…"
 msgstr "&Post-d..."
 
 #: kstandardaction_p.h:72
@@ -269,7 +277,9 @@ msgid "Dese&lect"
 msgstr "Neo-&thagh"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "&Lorg..."
 
 #: kstandardaction_p.h:84
@@ -281,7 +291,9 @@ msgid "Find Pre&vious"
 msgstr "Lorg am fear &roimhe"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "Cui&r 'na àite..."
 
 #: kstandardaction_p.h:88
@@ -327,7 +339,9 @@ msgid "Zoom &Out"
 msgstr "Sùm a-&mach"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "&Sùm..."
 
 #: kstandardaction_p.h:94
@@ -369,15 +383,21 @@ msgid "Go to next page"
 msgstr "Rach gun ath dhuilleag"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "Rach &gu..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Rach &gu duilleag..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "Rach &gu loidhne..."
 
 #: kstandardaction_p.h:107
@@ -417,11 +437,15 @@ msgid "&Add Bookmark"
 msgstr "&Cuir comharra-leabhair ris"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "D&easaich na comharran-leabhair..."
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "Dearbhaich an &litreachadh..."
 
 #: kstandardaction_p.h:115
@@ -459,20 +483,25 @@ msgstr "Modh &làn-sgrìn"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Rèitich na h-ath-g&hoiridean..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "Rèiti&ch %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+#, fuzzy
+#| msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "Rèitich na &bàraichean-inneal..."
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Rèitich na bratha&n..."
 
 #: kstandardaction_p.h:128
@@ -485,13 +514,15 @@ msgid "What's &This?"
 msgstr "Dè &th' ann?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "Dèan aith&ris air buga..."
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "&Configure %1..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Rèiti&ch %1..."
 
 #: kstandardaction_p.h:132
@@ -510,7 +541,7 @@ msgstr ""
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "Cui&r 'na àite..."
 
 #: kstandardaction_p.h:136

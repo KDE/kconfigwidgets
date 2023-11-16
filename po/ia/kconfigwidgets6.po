@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-07-14 22:59+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -133,8 +133,11 @@ msgid "Create new document"
 msgstr "Crea nove documento"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Aperi ..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Aperi"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -157,8 +160,10 @@ msgid "Save document"
 msgstr "Salveguarda documento"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "S&alveguarda como ..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Salva como"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -181,8 +186,10 @@ msgid "Close document"
 msgstr "Claude documento"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "Im&prime..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Imprime"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -197,8 +204,11 @@ msgid "Show a print preview of document"
 msgstr "Monstra un vista preliminar del documento"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "Invia via &E-posta..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Invia (Mail)"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -265,8 +275,10 @@ msgid "Dese&lect"
 msgstr "De-se&lectiona"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Trova..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Trova"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -277,7 +289,9 @@ msgid "Find Pre&vious"
 msgstr "Tro&va precedente "
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
 msgstr "&Reimplacia"
 
 #: kstandardaction_p.h:88
@@ -321,8 +335,11 @@ msgid "Zoom &Out"
 msgstr "Zoom&Out (diminue)"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zoom"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Zoom"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -361,16 +378,23 @@ msgid "Go to next page"
 msgstr "Vade a pagina proxime"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Vade a..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Vade a pagina ..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Vade a linea..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Vade a le Linea"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -409,12 +433,18 @@ msgid "&Add Bookmark"
 msgstr "&Adde marcator de libro"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Edita marcatores de libro..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Edita marcatores de libro"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "Controlo Ort&hographic..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Controlo orthographic"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -449,21 +479,28 @@ msgid "F&ull Screen Mode"
 msgstr "M&odo de schermo integre"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Confi&gura Vias breve de claviero ..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Configura %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Configura &barras de instrumento..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Configura le barras de instrumentos"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Configura &Notificationes..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Configura notificationes "
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -475,11 +512,16 @@ msgid "What's &This?"
 msgstr "Que es is&to?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Reporta Bug..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Reporta Bug"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Configura &Linguage ..."
 
 #: kstandardaction_p.h:132
@@ -496,7 +538,9 @@ msgid "&Delete"
 msgstr "&Dele"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Renomina..."
 
 #: kstandardaction_p.h:136
@@ -510,6 +554,45 @@ msgstr "&Dona"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Aperi &Menu"
+
+#~ msgid "&Open..."
+#~ msgstr "&Aperi ..."
+
+#~ msgid "Save &As..."
+#~ msgstr "S&alveguarda como ..."
+
+#~ msgid "&Print..."
+#~ msgstr "Im&prime..."
+
+#~ msgid "&Mail..."
+#~ msgstr "Invia via &E-posta..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Trova..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Reimplacia"
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zoom"
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Vade a linea..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Edita marcatores de libro..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "Controlo Ort&hographic..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Configura &barras de instrumento..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Configura &Notificationes..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Reporta Bug..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Consilio del &Die"
@@ -1158,9 +1241,6 @@ msgstr "Aperi &Menu"
 #~ "<p>ci pressa per reimplaciar iste evento de le texto incognite con le "
 #~ "texto in le quadro de edit de supra (a le sinistra),</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Reimplacia"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3834,9 +3914,6 @@ msgstr "Aperi &Menu"
 #~ msgstr ""
 #~ "&Cela texto quando le barra de instrumento monstra texto insimul icones"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Configura le barras de instrumentos"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4044,9 +4121,6 @@ msgstr "Aperi &Menu"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Configura Via Breve"
-
-#~ msgid "Print"
-#~ msgstr "Imprime"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Re-Fixa a le valores predefinite"
@@ -4281,9 +4355,6 @@ msgstr "Aperi &Menu"
 #~ "<qt>Si tu pressa le button <b>Reimplacia</b>, le texto que tu insertava "
 #~ "de supra esseva cercate inter le documento e omne evento es reimplaciate "
 #~ "con le texto de reimplaciamento.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Trova"
 
 #~ msgid "Start searching"
 #~ msgstr "On Initia cerca"
@@ -4966,10 +5037,6 @@ msgstr "Aperi &Menu"
 #~ msgstr "Fin de Linea"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Vade a le Linea"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Parola de retro"
 
@@ -5054,10 +5121,6 @@ msgstr "Aperi &Menu"
 #~ msgstr "Vista preliminar de imprimer"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Invia (Mail)"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Netta"
 
@@ -5078,10 +5141,6 @@ msgstr "Aperi &Menu"
 #~ msgstr "Adapta in altessa"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Zoom"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Vade a"
 
@@ -5096,14 +5155,6 @@ msgstr "Aperi &Menu"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Documento in Avante"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Edita marcatores de libro"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Controlo orthographic"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5136,10 +5187,6 @@ msgstr "Aperi &Menu"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Consilio del Die"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Reporta Bug"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7597,9 +7644,6 @@ msgstr "Aperi &Menu"
 #~ msgid " - BCC: "
 #~ msgstr "-BCC:"
 
-#~ msgid "Save As"
-#~ msgstr "Salva como"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9123,9 +9167,6 @@ msgstr "Aperi &Menu"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Declama texto personalisate"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Configura notificationes "
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Stato"
@@ -9174,10 +9215,6 @@ msgstr "Aperi &Menu"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "Aperi c&on"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Aperi"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

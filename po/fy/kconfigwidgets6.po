@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2010-07-22 09:48+0100\n"
 "Last-Translator: Berend Ytsma <berendy@gmail.com>\n"
 "Language-Team: nl <kde-i18n-doc@lists.kde.org>\n"
@@ -153,8 +153,11 @@ msgid "Create new document"
 msgstr "Nij lebel oanmeitsje:"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Iepenje..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Iepenje"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -181,8 +184,10 @@ msgid "Save document"
 msgstr "Dokumint slúte"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Bewarje &as..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Bewarje as"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -209,8 +214,10 @@ msgid "Close document"
 msgstr "Dokumint slúte"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Printsje..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Printsje"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -228,8 +235,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Ferstjoere..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "E-post"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -310,8 +320,10 @@ msgid "Dese&lect"
 msgstr "Untse&lektearje"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Sykje..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Sykje"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -322,8 +334,10 @@ msgid "Find Pre&vious"
 msgstr "Foa&rige sykje"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Ferfange..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "Fe&rfange"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -371,8 +385,11 @@ msgid "Zoom &Out"
 msgstr "&Utzoome"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zoome..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Zoome"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -420,16 +437,23 @@ msgid "Go to next page"
 msgstr "Gean nei rigel"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Gean nei..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Gean nei side..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Gean nei rigel..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Gean nei rigel"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -480,12 +504,18 @@ msgid "&Add Bookmark"
 msgstr "Blêdwizer &taheakje"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "Blêdwizers &bewurkje..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Blêdwizers bewurkje"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Stavering..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Stavering"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -532,21 +562,26 @@ msgstr "Folslein sker&m"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Fl&uchtoetsen ynstelle..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 &ynstelle..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Ark&balken ynstelle..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Arkbalken ynstelle"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "&Notifikaasjes ynstelle..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Notifikaasjes ynstelle"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -558,13 +593,16 @@ msgid "What's &This?"
 msgstr "Wat is di&t?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "Bug &rapportearje..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Bug rapportearje"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "E-post Ynstelle..."
 
 #: kstandardaction_p.h:132
@@ -585,7 +623,7 @@ msgstr "Wiskje"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Ferfange..."
 
 #: kstandardaction_p.h:136
@@ -601,6 +639,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Resint iepene"
+
+#~ msgid "&Open..."
+#~ msgstr "&Iepenje..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Bewarje &as..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Printsje..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Ferstjoere..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Sykje..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Ferfange..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zoome..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Gean nei rigel..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Blêdwizers &bewurkje..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Stavering..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Ark&balken ynstelle..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "&Notifikaasjes ynstelle..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "Bug &rapportearje..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Tip fan de &dei"
@@ -1249,9 +1326,6 @@ msgstr "&Resint iepene"
 #~ "<p>Klik hjir om de ûnbekende tekst op dit plak te ferfangen troch de hjir "
 #~ "loftsboppe yn te foegjen tekst</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "Fe&rfange"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3807,9 +3881,6 @@ msgstr "&Resint iepene"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Te&kst by byldkaike:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Arkbalken ynstelle"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -3997,9 +4068,6 @@ msgstr "&Resint iepene"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Fluchtoetsen ynstelle"
-
-#~ msgid "Print"
-#~ msgstr "Printsje"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Nei standert weromsette"
@@ -4233,9 +4301,6 @@ msgstr "&Resint iepene"
 #~ "<qt>At jo op de <b>Ferfange</b> knop klikke, dan wurdt mei de hjirboppe "
 #~ "ynfierde tekst socht yn it dokumint en alle oerienkomsten ferfong troch "
 #~ "de ferfangende tekst</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Sykje"
 
 #~ msgid "Start searching"
 #~ msgstr "Sykje starte"
@@ -4896,10 +4961,6 @@ msgstr "&Resint iepene"
 #~ msgstr "Ein fan 'e rigel"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Gean nei rigel"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "In wurd efterút"
 
@@ -4984,10 +5045,6 @@ msgstr "&Resint iepene"
 #~ msgstr "Printalyk"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "E-post"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Begjinwearde"
 
@@ -5008,10 +5065,6 @@ msgstr "&Resint iepene"
 #~ msgstr "Passend yn de hichte"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Zoome"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Gean nei"
 
@@ -5026,14 +5079,6 @@ msgstr "&Resint iepene"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Foarút yn it dokumint"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Blêdwizers bewurkje"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Stavering"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5066,10 +5111,6 @@ msgstr "&Resint iepene"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Tip fan de dei"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Bug rapportearje"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7447,9 +7488,6 @@ msgstr "&Resint iepene"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Bewarje as"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -8858,9 +8896,6 @@ msgstr "&Resint iepene"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Oanpaste tekst útsprekke"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Notifikaasjes ynstelle"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Tastân"
@@ -8909,10 +8944,6 @@ msgstr "&Resint iepene"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Iepenje mei"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Iepenje"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

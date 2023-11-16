@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2006-01-04 13:32+0800\n"
 "Last-Translator: Abel Cheung <abel@oaka.org>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
@@ -172,8 +172,10 @@ msgid "Create new document"
 msgstr "清除快速鍵"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "開啟(&O)..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "開啟(&O)"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -200,8 +202,10 @@ msgid "Save document"
 msgstr "關閉文件"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "另存新檔(&A)..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "另存新檔"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -228,8 +232,10 @@ msgid "Close document"
 msgstr "關閉文件"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "列印(&P)..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "列印"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -249,8 +255,10 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "郵寄(&M)..."
+#, fuzzy
+#| msgid "Mailbox"
+msgid "&Mail…"
+msgstr "信箱"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -325,8 +333,10 @@ msgid "Dese&lect"
 msgstr "取消選擇(&L)"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "尋找(&F)..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "尋找(&F)"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -337,8 +347,10 @@ msgid "Find Pre&vious"
 msgstr "尋找上一個(&V)"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "取代(&R)..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "取代(&R)"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -385,8 +397,10 @@ msgid "Zoom &Out"
 msgstr "縮小(&O)"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "縮放(&Z)..."
+#, fuzzy
+#| msgid "&Zoom"
+msgid "&Zoom…"
+msgstr "縮放(&Z)"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -436,16 +450,22 @@ msgid "Go to next page"
 msgstr "跳至行數"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "移至(&G)..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "移至頁面(&G)..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "跳至行數(&G)..."
+#, fuzzy
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "跳至行數"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -495,11 +515,15 @@ msgid "&Add Bookmark"
 msgstr "加入書籤(&A)"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "編輯書籤(&E)..."
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "編輯書籤(&E)"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "拼字檢查(&S)..."
 
 #: kstandardaction_p.h:115
@@ -545,20 +569,24 @@ msgstr "全螢幕模式(&U)"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "設定快速鍵(&H)..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "設定 %1(&C)..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "設定工具列(&B)..."
+#, fuzzy
+msgid "Configure Tool&bars…"
+msgstr "設定工具列"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "設定通知(&N)..."
 
 #: kstandardaction_p.h:128
@@ -571,13 +599,15 @@ msgid "What's &This?"
 msgstr "這是什麼？(&T)"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "報告問題(&R)..."
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "設定 Email..."
 
 #: kstandardaction_p.h:132
@@ -596,7 +626,7 @@ msgstr "刪除(&D)"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "取代(&R)..."
 
 #: kstandardaction_p.h:136
@@ -614,6 +644,45 @@ msgstr "完成(&D)"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "開啟最近的(&R)"
+
+#~ msgid "&Open..."
+#~ msgstr "開啟(&O)..."
+
+#~ msgid "Save &As..."
+#~ msgstr "另存新檔(&A)..."
+
+#~ msgid "&Print..."
+#~ msgstr "列印(&P)..."
+
+#~ msgid "&Mail..."
+#~ msgstr "郵寄(&M)..."
+
+#~ msgid "&Find..."
+#~ msgstr "尋找(&F)..."
+
+#~ msgid "&Replace..."
+#~ msgstr "取代(&R)..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "縮放(&Z)..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "跳至行數(&G)..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "編輯書籤(&E)..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "拼字檢查(&S)..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "設定工具列(&B)..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "設定通知(&N)..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "報告問題(&R)..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "每日小祕訣(&D)"
@@ -1283,9 +1352,6 @@ msgstr "開啟最近的(&R)"
 #~ "<qt>\n"
 #~ "<p>按這裏用左上方的詞語更正此未知詞語。</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "取代(&R)"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3832,10 +3898,6 @@ msgstr "開啟最近的(&R)"
 #~ msgid "Icon te&xt:"
 #~ msgstr "尋找文字"
 
-#, fuzzy
-#~ msgid "Configure Toolbars"
-#~ msgstr "設定工具列"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4059,9 +4121,6 @@ msgstr "開啟最近的(&R)"
 #~ msgid "Configure Shortcuts"
 #~ msgstr "設定快速鍵"
 
-#~ msgid "Print"
-#~ msgstr "列印"
-
 #, fuzzy
 #~| msgid "Defaults"
 #~ msgid "Reset to Defaults"
@@ -4276,9 +4335,6 @@ msgstr "開啟最近的(&R)"
 #~ msgstr ""
 #~ "<qt>如果你按下了<b>取代</b>，那麼文件中所有\"尋找文字\"的地方都會被取代成"
 #~ "\"替代文字\"。</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "尋找(&F)"
 
 #~ msgid "Start searching"
 #~ msgstr "開始搜尋"
@@ -5008,12 +5064,6 @@ msgstr "開啟最近的(&R)"
 #~ msgstr "行結尾"
 
 #, fuzzy
-#~| msgid "Go to Line"
-#~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "跳至行數"
-
-#, fuzzy
 #~| msgid "Backward Word"
 #~ msgctxt "@action"
 #~ msgid "Backward Word"
@@ -5140,12 +5190,6 @@ msgstr "開啟最近的(&R)"
 #~ msgstr "預覽列印(&W)..."
 
 #, fuzzy
-#~| msgid "Mailbox"
-#~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "信箱"
-
-#, fuzzy
 #~| msgid "Clear"
 #~ msgctxt "@action"
 #~ msgid "Clear"
@@ -5211,12 +5255,6 @@ msgstr "開啟最近的(&R)"
 #~ msgstr "編輯書籤(&E)"
 
 #, fuzzy
-#~| msgid "&Spelling..."
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "拼字檢查(&S)..."
-
-#, fuzzy
 #~| msgid "Show &Toolbar"
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5262,12 +5300,6 @@ msgstr "開啟最近的(&R)"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "每日小祕訣"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "報告問題(&R)..."
 
 #, fuzzy
 #~| msgid "sets the application name"
@@ -7774,9 +7806,6 @@ msgstr "開啟最近的(&R)"
 #~ msgid " - BCC: "
 #~ msgstr " - 密件副本："
 
-#~ msgid "Save As"
-#~ msgstr "另存新檔"
-
 #, fuzzy
 #~| msgid ""
 #~| "<qt>This untrusted page links to<BR><B>%1</B>.<BR>Do you want to follow "
@@ -9059,11 +9088,6 @@ msgstr "開啟最近的(&R)"
 #~ msgstr "請輸入名稱(&N)："
 
 #, fuzzy
-#~| msgid "Configure &Notifications..."
-#~ msgid "Configure Notifications"
-#~ msgstr "設定通知(&N)..."
-
-#, fuzzy
 #~| msgid "State"
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
@@ -9132,12 +9156,6 @@ msgstr "開啟最近的(&R)"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "開啟用(&O)..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "開啟(&O)"
 
 #, fuzzy
 #~| msgid "Name:"
@@ -10043,9 +10061,6 @@ msgstr "開啟最近的(&R)"
 #, fuzzy
 #~ msgid "Form"
 #~ msgstr "框架"
-
-#~ msgid "&Edit Bookmarks"
-#~ msgstr "編輯書籤(&E)"
 
 #~ msgctxt "of January"
 #~ msgid "of Jan"
@@ -13591,9 +13606,6 @@ msgstr "開啟最近的(&R)"
 
 #~ msgid "Import"
 #~ msgstr "匯入"
-
-#~ msgid "&Zoom"
-#~ msgstr "縮放(&Z)"
 
 #~ msgid "Malformed URL"
 #~ msgstr "不正確的 URL"

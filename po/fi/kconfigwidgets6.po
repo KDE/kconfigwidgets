@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2023-05-18 12:20+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -156,8 +156,11 @@ msgid "Create new document"
 msgstr "Luo uusi tiedosto"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Avaa…"
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Avaa"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -180,8 +183,10 @@ msgid "Save document"
 msgstr "Tallenna tiedosto"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Tallenna &nimellä…"
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Tallenna nimellä"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -204,8 +209,10 @@ msgid "Close document"
 msgstr "Sulje tiedosto"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "T&ulosta…"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Tulosta"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -220,8 +227,11 @@ msgid "Show a print preview of document"
 msgstr "Näytä tiedoston tulostuksen esikatselu"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Lähetä…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Lähetä"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -288,8 +298,10 @@ msgid "Dese&lect"
 msgstr "&Poista valinta"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Etsi…"
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Etsi"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -300,8 +312,10 @@ msgid "Find Pre&vious"
 msgstr "Etsi e&dellinen"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Korvaa…"
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "K&orvaa"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -344,8 +358,11 @@ msgid "Zoom &Out"
 msgstr "&Loitonna"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Lähennä tai loitonna…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Tarkenna"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -385,16 +402,23 @@ msgid "Go to next page"
 msgstr "Siirry seuraavalle sivulle"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Siirry…"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Siirry sivulle…"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "Siirry &riville…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Siirry riville"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -433,12 +457,18 @@ msgid "&Add Bookmark"
 msgstr "&Lisää kirjanmerkki"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Muokkaa kirjanmerkkejä…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Muokkaa kirjanmerkkejä"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Oikoluku…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Oikoluku"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -473,21 +503,28 @@ msgid "F&ull Screen Mode"
 msgstr "&Koko näytön tila"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Aseta &pikanäppäimet…"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Asetukset: %1…|/|$[gen %1] &asetukset…"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "&Muokkaa työkalurivejä…"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Muokkaa työkalurivejä"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Muokkaa &ilmoituksia…"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Ilmoitusten asetukset"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -499,11 +536,16 @@ msgid "What's &This?"
 msgstr "&Mikä tämä on?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Ilmoita viasta…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Ilmoita viasta"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "&Kieliasetukset…"
 
 #: kstandardaction_p.h:132
@@ -520,7 +562,9 @@ msgid "&Delete"
 msgstr "&Poista"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Muuta nimeä…"
 
 #: kstandardaction_p.h:136
@@ -534,6 +578,45 @@ msgstr "&Lahjoita"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Avaa &valikko"
+
+#~ msgid "&Open..."
+#~ msgstr "&Avaa…"
+
+#~ msgid "Save &As..."
+#~ msgstr "Tallenna &nimellä…"
+
+#~ msgid "&Print..."
+#~ msgstr "T&ulosta…"
+
+#~ msgid "&Mail..."
+#~ msgstr "&Lähetä…"
+
+#~ msgid "&Find..."
+#~ msgstr "&Etsi…"
+
+#~ msgid "&Replace..."
+#~ msgstr "&Korvaa…"
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Lähennä tai loitonna…"
+
+#~ msgid "&Go to Line..."
+#~ msgstr "Siirry &riville…"
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Muokkaa kirjanmerkkejä…"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Oikoluku…"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "&Muokkaa työkalurivejä…"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Muokkaa &ilmoituksia…"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Ilmoita viasta…"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Päivän &vinkki"
@@ -1179,9 +1262,6 @@ msgstr "Avaa &valikko"
 #~ "<p>Napsauta tästä korvataksesi tämän tuntemattoman sanan ylävasemmalla "
 #~ "olevan tekstikentän tekstillä.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "K&orvaa"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3830,9 +3910,6 @@ msgstr "Avaa &valikko"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "&Piilota teksti, kun työkalurivillä teksti on kuvakkeen vierellä"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Muokkaa työkalurivejä"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4039,9 +4116,6 @@ msgstr "Avaa &valikko"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Muokkaa pikanäppäimiä"
-
-#~ msgid "Print"
-#~ msgstr "Tulosta"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Palauta oletukset"
@@ -4273,9 +4347,6 @@ msgstr "Avaa &valikko"
 #~ msgstr ""
 #~ "<qt>Jos painat <b>Korvaa</b>-painiketta, tiedostosta korvataan etsitty "
 #~ "teksti korvaavalla tekstillä.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Etsi"
 
 #~ msgid "Start searching"
 #~ msgstr "Käynnistä etsintä"
@@ -4946,10 +5017,6 @@ msgstr "Avaa &valikko"
 #~ msgstr "Rivin loppu"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Siirry riville"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Edellinen sana"
 
@@ -5034,10 +5101,6 @@ msgstr "Avaa &valikko"
 #~ msgstr "Tulostuksen esikatselu"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Lähetä"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Tyhjennä"
 
@@ -5058,10 +5121,6 @@ msgstr "Avaa &valikko"
 #~ msgstr "Sovita korkeuteen"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Tarkenna"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Siirry"
 
@@ -5076,14 +5135,6 @@ msgstr "Avaa &valikko"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Tiedosto eteenpäin"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Muokkaa kirjanmerkkejä"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Oikoluku"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5116,10 +5167,6 @@ msgstr "Avaa &valikko"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Päivän vinkki"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Ilmoita viasta"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7569,9 +7616,6 @@ msgstr "Avaa &valikko"
 #~ msgid " - BCC: "
 #~ msgstr " - Piilokopio: "
 
-#~ msgid "Save As"
-#~ msgstr "Tallenna nimellä"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9071,9 +9115,6 @@ msgstr "Avaa &valikko"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Puhu oma teksti"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Ilmoitusten asetukset"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Tila"
@@ -9122,10 +9163,6 @@ msgstr "Avaa &valikko"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Avaa ohjelmalla"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Avaa"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

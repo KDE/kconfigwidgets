@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -144,8 +144,11 @@ msgid "Create new document"
 msgstr "يېڭى پۈتۈك قۇر"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "ئاچ(&O)…"
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "ئاچ(&O)"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -168,8 +171,10 @@ msgid "Save document"
 msgstr "پۈتۈك ساقلا"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "باشقا ئاتتا ساقلا(&A)…"
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "باشقا ئاتتا ساقلا"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -192,8 +197,10 @@ msgid "Close document"
 msgstr "پۈتۈكنى ياپىدۇ"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "باس(&P)…"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "بېسىپ چىقار"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -208,8 +215,11 @@ msgid "Show a print preview of document"
 msgstr "پۈتۈكنىڭ ئالدىن كۆزىتىشىنى كۆرسەت"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "ئېلخەت(&M)…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "خەت"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -276,8 +286,10 @@ msgid "Dese&lect"
 msgstr "ئەكسىچە تاللا(&L)"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "ئىزدە(&F)…"
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "ئىزدە(&F)"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -288,8 +300,10 @@ msgid "Find Pre&vious"
 msgstr "ئالدىنقىنى ئىزدە(&V)"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "ئالماشتۇر(&R)…"
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "ئالماشتۇر(&R)"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -334,8 +348,11 @@ msgid "Zoom &Out"
 msgstr "كىچىكلەت(&O)"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "چوڭايت ياكى كىچىكلەت(&Z)..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "كېڭەيت-تارايت"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -376,16 +393,23 @@ msgid "Go to next page"
 msgstr "كېيىنكى بەتكە يۆتكەل"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "يۆتكەل(&G)…"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "بەتكە يۆتكەل(&G)…"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "قۇرغا يۆتكەل(&G)…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "قۇرغا يۆتكەل"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -424,12 +448,18 @@ msgid "&Add Bookmark"
 msgstr "خەتكۈش قوش(&A)"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "خەتكۈش تەھرىرى(&E)…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "خەتكۈش تەھرىر"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "ئىملا تەكشۈر(&S)…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "ئىملا تەكشۈر"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -466,21 +496,26 @@ msgstr "پۈتۈن ئېكران ھالىتى(&U)"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "تېزلەتمە سەپلە(&H)…"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "%1 نى سەپلە(&C)…"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "قورال بالداق سەپلىمە(&B)…"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "قورال بالداق سەپلىمە"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "ئۇقتۇرۇش سەپلىمە(&N)…"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "ئۇقتۇرۇش سەپلەش"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -492,13 +527,16 @@ msgid "What's &This?"
 msgstr "بۇ نېمە؟(&T)"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "كەمتۈك مەلۇم قىل(&R)"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "كەمتۈك مەلۇم قىل"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "ئېلخەت سەپلىمە…"
 
 #: kstandardaction_p.h:132
@@ -519,7 +557,7 @@ msgstr "ئۆچۈر"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "ئالماشتۇر(&R)…"
 
 #: kstandardaction_p.h:136
@@ -535,6 +573,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "يېقىنقىنى ئاچ(&R)"
+
+#~ msgid "&Open..."
+#~ msgstr "ئاچ(&O)…"
+
+#~ msgid "Save &As..."
+#~ msgstr "باشقا ئاتتا ساقلا(&A)…"
+
+#~ msgid "&Print..."
+#~ msgstr "باس(&P)…"
+
+#~ msgid "&Mail..."
+#~ msgstr "ئېلخەت(&M)…"
+
+#~ msgid "&Find..."
+#~ msgstr "ئىزدە(&F)…"
+
+#~ msgid "&Replace..."
+#~ msgstr "ئالماشتۇر(&R)…"
+
+#~ msgid "&Zoom..."
+#~ msgstr "چوڭايت ياكى كىچىكلەت(&Z)..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "قۇرغا يۆتكەل(&G)…"
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "خەتكۈش تەھرىرى(&E)…"
+
+#~ msgid "&Spelling..."
+#~ msgstr "ئىملا تەكشۈر(&S)…"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "قورال بالداق سەپلىمە(&B)…"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "ئۇقتۇرۇش سەپلىمە(&N)…"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "كەمتۈك مەلۇم قىل(&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "كۈندىلىك ئەسكەرتىش(&D)"
@@ -1191,9 +1268,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ "<p>بۇ جاينى چېكىپ ئۈستى (سول تەرەپتىكى) تەھرىرلەش رامكىسىدىكى تېكىستنى "
 #~ "كۆرۈنگەن نامەلۇم تېكىستكە ئالماشتۇرغىلى بولىدۇ</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "ئالماشتۇر(&R)"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3820,9 +3894,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ "قورال بالداق سىنبەلگە بىلەن بىرگە تېكىستنى كۆرسەتكەن ۋاقىتتا تېكىستنى "
 #~ "يوشۇر(&H)"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "قورال بالداق سەپلىمە"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4025,9 +4096,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "تېزلەتمە سەپلىمە"
-
-#~ msgid "Print"
-#~ msgstr "بېسىپ چىقار"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "كۆڭۈلدىكىگە قايتۇر"
@@ -4256,9 +4324,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ "<qt><interface>ئالماشتۇر</interface> توپچىسى چېكىلسە، ئۈستىدە كىرگۈزۈلگەن "
 #~ "تېكىستنى ھازىرقى پۈتۈك ئىچىدىن ئىزدەپ تېپىپ ئۇنى يېڭىسىغا ئالماشتۇرىدۇ.</"
 #~ "qt>"
-
-#~ msgid "&Find"
-#~ msgstr "ئىزدە(&F)"
 
 #~ msgid "Start searching"
 #~ msgstr "ئىزدەشنى باشلايدۇ"
@@ -4930,10 +4995,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ msgstr "قۇر ئاخىرى"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "قۇرغا يۆتكەل"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "ئالدىدىكى سۆز"
 
@@ -5018,10 +5079,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ msgstr "بېسىشنى ئالدىن كۆر"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "خەت"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "تازىلا"
 
@@ -5042,10 +5099,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ msgstr "ئېگىزلىككە ماسلاشتۇر"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "كېڭەيت-تارايت"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "يۆتكەل"
 
@@ -5060,14 +5113,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "پۈتۈك كەينىگە"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "خەتكۈش تەھرىر"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "ئىملا تەكشۈر"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5100,10 +5145,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "بۈگۈنكى ئەسكەرتمە"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "كەمتۈك مەلۇم قىل"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7532,9 +7573,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ msgid " - BCC: "
 #~ msgstr " - يوشۇرۇن: "
 
-#~ msgid "Save As"
-#~ msgstr "باشقا ئاتتا ساقلا"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9031,9 +9069,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ msgid "Speak Custom Text"
 #~ msgstr "ئىختىيارى تېكىست تەلەپپۇزى"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "ئۇقتۇرۇش سەپلەش"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "ھالەت"
@@ -9082,10 +9117,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "ئاچقۇز(&O)"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "ئاچ(&O)"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

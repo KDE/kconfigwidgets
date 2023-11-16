@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2010-12-31 22:47+0700\n"
 "Last-Translator: Phuwanat Sakornsakolpat <narachai@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -151,8 +151,11 @@ msgid "Create new document"
 msgstr "สร้างป้ายกำกับใหม่:"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "เ&ปิด..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "เ&ปิด"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -179,8 +182,10 @@ msgid "Save document"
 msgstr "ปิดเอกสาร"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "บัน&ทึกเป็น..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "บันทึกเป็น"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -207,8 +212,10 @@ msgid "Close document"
 msgstr "ปิดเอกสาร"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&พิมพ์..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "พิมพ์"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -226,8 +233,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&อีเมล..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "เมล"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -308,8 +318,10 @@ msgid "Dese&lect"
 msgstr "ยกเลิก&การเลือก"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "ค้น&หา..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&ค้นหา"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -320,8 +332,10 @@ msgid "Find Pre&vious"
 msgstr "ค้นหาก่อ&นหน้านี้"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "แ&ทนที่..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "แท&นที่"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -369,8 +383,11 @@ msgid "Zoom &Out"
 msgstr "ดู&ย่อ"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "ดูย่อ/ขยาย..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "ดูย่อ/ขยาย"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -418,16 +435,23 @@ msgid "Go to next page"
 msgstr "ไปบรรทัดที่"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "ไป&ยัง..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "ไป&ยังหน้า..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "ไป&ยังบรรทัด..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "ไปบรรทัดที่"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -478,12 +502,18 @@ msgid "&Add Bookmark"
 msgstr "เ&พิ่มคั่นหน้า"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "แ&ก้ไขที่คั่นหน้า..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "แก้ไขที่คั่นหน้า"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "ตรวจ&คำสะกด..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "ตรวจคำสะกด"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -530,21 +560,26 @@ msgstr "โหมดเ&ต็มหน้าจอ"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "ปรับแต่งปุ่มพิมพ์&ลัด..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&ปรับแต่ง %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "ปรับแต่งแถบเ&ครื่องมือ..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "ปรับแต่งแถบเครื่องมือ"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "ปรับแต่งการแจ้งให้&ทราบ..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "ปรับแต่งการแจ้งให้ทราบ"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -556,13 +591,16 @@ msgid "What's &This?"
 msgstr "นี่คือ&อะไร ?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&รายงานข้อผิดพลาด..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "รายงานข้อผิดพลาด"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "ปรับแต่งอีเมล..."
 
 #: kstandardaction_p.h:132
@@ -583,7 +621,7 @@ msgstr "ลบ"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "แ&ทนที่..."
 
 #: kstandardaction_p.h:136
@@ -599,6 +637,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "เปิดที่เ&คยเรียกใช้"
+
+#~ msgid "&Open..."
+#~ msgstr "เ&ปิด..."
+
+#~ msgid "Save &As..."
+#~ msgstr "บัน&ทึกเป็น..."
+
+#~ msgid "&Print..."
+#~ msgstr "&พิมพ์..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&อีเมล..."
+
+#~ msgid "&Find..."
+#~ msgstr "ค้น&หา..."
+
+#~ msgid "&Replace..."
+#~ msgstr "แ&ทนที่..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "ดูย่อ/ขยาย..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "ไป&ยังบรรทัด..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "แ&ก้ไขที่คั่นหน้า..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "ตรวจ&คำสะกด..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "ปรับแต่งแถบเ&ครื่องมือ..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "ปรับแต่งการแจ้งให้&ทราบ..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&รายงานข้อผิดพลาด..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "คำแนะนำประจำ&วัน"
@@ -1236,9 +1313,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ "<p>คลิกที่นี่เพื่อแทนที่ข้อความที่ไม่รู้จักที่เกิดขึ้น ด้วยข้อความในกล่องแก้ไขข้อความด้านบน "
 #~ "(ไปทางซ้าย) </p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "แท&นที่"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3849,9 +3923,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgid "&Hide text when toolbar shows text alongside icons"
 #~ msgstr "ซ่&อนข้อความเมื่อแถบเครื่องมือแสดงข้อความอยู่ทางด้านข้างของไอคอนซ่อนข้อความเมื่อแ"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "ปรับแต่งแถบเครื่องมือ"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4051,9 +4122,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "ปรับแต่งปุ่มพิมพ์ลัด"
-
-#~ msgid "Print"
-#~ msgstr "พิมพ์"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "กลับไปใช้ค่าปริยาย"
@@ -4277,9 +4345,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgstr ""
 #~ "<qt>หากคุณกดปุ่ม <b>แทนที่</b> จะมีการค้นหาข้อความที่คุณกรอกไว้ด้านบนภายในเอกสาร "
 #~ "และจะมีการแทนที่ข้อความด้วยข้อความที่จะแทนที่หากพบข้อความที่ค้นหา</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&ค้นหา"
 
 #~ msgid "Start searching"
 #~ msgstr "เริ่มการค้นหา"
@@ -4934,10 +4999,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgstr "ท้ายบรรทัด"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "ไปบรรทัดที่"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "คำก่อนหน้า"
 
@@ -5022,10 +5083,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgstr "ตัวอย่างก่อนพิมพ์"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "เมล"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "ล้าง"
 
@@ -5046,10 +5103,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgstr "พอดีกับความสูง"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "ดูย่อ/ขยาย"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "ไปยัง"
 
@@ -5064,14 +5117,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "เอกสารตัวถัดไป"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "แก้ไขที่คั่นหน้า"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "ตรวจคำสะกด"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5104,10 +5149,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "คำแนะนำประจำวัน"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "รายงานข้อผิดพลาด"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7509,9 +7550,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgid " - BCC: "
 #~ msgstr " - สำเนาถึง (ซ่อน): "
 
-#~ msgid "Save As"
-#~ msgstr "บันทึกเป็น"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -8993,9 +9031,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgid "Speak Custom Text"
 #~ msgstr "พูดออกเสียงข้อความที่ตั้งเอง"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "ปรับแต่งการแจ้งให้ทราบ"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "สถานะ"
@@ -9044,10 +9079,6 @@ msgstr "เปิดที่เ&คยเรียกใช้"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "เ&ปิดด้วย"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "เ&ปิด"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

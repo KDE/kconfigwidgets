@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-06-01 15:14+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -134,8 +134,11 @@ msgid "Create new document"
 msgstr "Creează document nou"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Deschide..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Deschide"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -158,8 +161,10 @@ msgid "Save document"
 msgstr "Salvează documentul"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "S&alvează ca..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Salvează ca"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -182,8 +187,10 @@ msgid "Close document"
 msgstr "Închide documentul"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Tipărește..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Tipărește"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -198,8 +205,11 @@ msgid "Show a print preview of document"
 msgstr "Arată o previzualizare a tipăririi fișierului"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "E-&mail.."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Expediază"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -266,8 +276,10 @@ msgid "Dese&lect"
 msgstr "Dese&lectează"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "C&aută..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "C&aută"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -278,8 +290,10 @@ msgid "Find Pre&vious"
 msgstr "Caută &precedent"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "Î&nlocuiește..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "Î&nlocuiește"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -322,8 +336,11 @@ msgid "Zoom &Out"
 msgstr "Micș&orează"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Apropiere…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Scalează"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -362,16 +379,23 @@ msgid "Go to next page"
 msgstr "Mergi la pagina următoare"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Mergi la…"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Mergi la pagina…"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Mergi la linia…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Du-te la linia"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -410,12 +434,18 @@ msgid "&Add Bookmark"
 msgstr "&Adaugă semn de carte"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "R&edactează semne de carte…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Editează semne de carte"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Ortografie…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Ortografie"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -450,21 +480,28 @@ msgid "F&ull Screen Mode"
 msgstr "Regim de &ecran complet"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Co&nfigurează scurtături de tastatură…"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Configurează %1…"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Configurează &barele de unelte…"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Configurare bare de unelte"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Configurează &notificările…"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Configurează notificările"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -476,11 +513,16 @@ msgid "What's &This?"
 msgstr "Ce înseamnă aceas&ta?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Raportează defect…"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Raportează erori"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Configurează &limba…"
 
 #: kstandardaction_p.h:132
@@ -497,7 +539,9 @@ msgid "&Delete"
 msgstr "Ș&terge"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Redenumește…"
 
 #: kstandardaction_p.h:136
@@ -511,6 +555,45 @@ msgstr "&Donează"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Deschide &meniul"
+
+#~ msgid "&Open..."
+#~ msgstr "&Deschide..."
+
+#~ msgid "Save &As..."
+#~ msgstr "S&alvează ca..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Tipărește..."
+
+#~ msgid "&Mail..."
+#~ msgstr "E-&mail.."
+
+#~ msgid "&Find..."
+#~ msgstr "C&aută..."
+
+#~ msgid "&Replace..."
+#~ msgstr "Î&nlocuiește..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Apropiere…"
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Mergi la linia…"
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "R&edactează semne de carte…"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Ortografie…"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Configurează &barele de unelte…"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Configurează &notificările…"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Raportează defect…"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Sfatul zilei"
@@ -1167,9 +1250,6 @@ msgstr "Deschide &meniul"
 #~ "<p>Dați clic aici pentru a înlocui această apariție a textului necunoscut "
 #~ "cu textul din căsuța de editare de mai sus (din stânga).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "Î&nlocuiește"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3857,9 +3937,6 @@ msgstr "Deschide &meniul"
 #~ msgstr ""
 #~ "&Ascunde textul atunci când bara de unelte afișează text lângă pictograme"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Configurare bare de unelte"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4071,9 +4148,6 @@ msgstr "Deschide &meniul"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Configurare acceleratori"
-
-#~ msgid "Print"
-#~ msgstr "Tipărește"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Restabilire implicite"
@@ -4308,9 +4382,6 @@ msgstr "Deschide &meniul"
 #~ "<qt>Dacă apăsați butonul <b>Înlocuiește</b>, textul pe care l-ați "
 #~ "introdus mai sus va fi căutat în document și orice apariție a lui va fi "
 #~ "înlocuit cu textul de înlocuire.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "C&aută"
 
 #~ msgid "Start searching"
 #~ msgstr "Pornește căutarea"
@@ -4997,10 +5068,6 @@ msgstr "Deschide &meniul"
 #~ msgstr "Sfârșitul liniei"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Du-te la linia"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Cuvânt înapoi"
 
@@ -5085,10 +5152,6 @@ msgstr "Deschide &meniul"
 #~ msgstr "Previzualizare tipărire"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Expediază"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Șterge"
 
@@ -5109,10 +5172,6 @@ msgstr "Deschide &meniul"
 #~ msgstr "Încadrează în lungimea paginii"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Scalează"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Du-te"
 
@@ -5127,14 +5186,6 @@ msgstr "Deschide &meniul"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Document înainte"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Editează semne de carte"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Ortografie"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5167,10 +5218,6 @@ msgstr "Deschide &meniul"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Sfatul zilei"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Raportează erori"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7633,9 +7680,6 @@ msgstr "Deschide &meniul"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Salvează ca"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9166,9 +9210,6 @@ msgstr "Deschide &meniul"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Pronunță text personalizat"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Configurează notificările"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Stare"
@@ -9217,10 +9258,6 @@ msgstr "Deschide &meniul"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Deschide cu"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Deschide"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

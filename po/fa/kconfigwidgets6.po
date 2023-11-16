@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2012-06-28 16:40+0430\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@linuxshop.ir>\n"
 "Language-Team: Farsi (Persian) <kde-i18n-fa@kde.org>\n"
@@ -155,8 +155,11 @@ msgid "Create new document"
 msgstr "ایجاد برچسب جدید:"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&باز کردن...‌"
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&باز کردن‌"
 
 # &Back in the Document
 #: kstandardaction_p.h:64
@@ -184,8 +187,10 @@ msgid "Save document"
 msgstr "بستن سند"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "ذخیره &به عنوان...‌"
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "ذخیره به عنوان"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -212,8 +217,10 @@ msgid "Close document"
 msgstr "بستن سند"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&چاپ...‌"
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "چاپ"
 
 # PrintScreen
 #: kstandardaction_p.h:70
@@ -232,8 +239,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&نامه...‌"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "نامه"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -308,8 +318,10 @@ msgid "Dese&lect"
 msgstr "&عدم گزینش‌"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&یافتن...‌"
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&یافتن‌"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -320,8 +332,10 @@ msgid "Find Pre&vious"
 msgstr "یافتن &قبلی‌"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&جایگزینی...‌"
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&جایگزینی‌"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -369,8 +383,11 @@ msgid "Zoom &Out"
 msgstr "&کوچک‌نمایی‌"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&بزرگ‌نمایی...‌"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "بزرگ‌نمایی‌"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -419,16 +436,23 @@ msgid "Go to next page"
 msgstr "برو به خط"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&برو به...‌"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&برو به صفحه...‌"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&برو به خط...‌"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "برو به خط"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -478,12 +502,18 @@ msgid "&Add Bookmark"
 msgstr "&افزودن چوب الف‌"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&ویرایش چوب الفها‌"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "ویرایش چوب الفها‌"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&هجی کردن...‌"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "هجی کردن"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -528,21 +558,26 @@ msgstr "حالت &تمام صفحه‌"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "پیکربندی &میان‌برها...‌"
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&پیکربندی %1...‌"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "پیکربندی &میله‌ ابزارها...‌"
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "پیکربندی میله ابزارها"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "پیکربندی  &اخطارها...‌"
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "پیکربندی اخطارها"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -554,13 +589,16 @@ msgid "What's &This?"
 msgstr "&این چیست؟‌"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&گزارش اشکال...‌"
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "گزارش اشکال"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "پیکربندی رایانامه..."
 
 #: kstandardaction_p.h:132
@@ -579,7 +617,7 @@ msgstr "&حذف‌"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&جایگزینی...‌"
 
 #: kstandardaction_p.h:136
@@ -597,6 +635,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "باز کردن &اخیر‌"
+
+#~ msgid "&Open..."
+#~ msgstr "&باز کردن...‌"
+
+#~ msgid "Save &As..."
+#~ msgstr "ذخیره &به عنوان...‌"
+
+#~ msgid "&Print..."
+#~ msgstr "&چاپ...‌"
+
+#~ msgid "&Mail..."
+#~ msgstr "&نامه...‌"
+
+#~ msgid "&Find..."
+#~ msgstr "&یافتن...‌"
+
+#~ msgid "&Replace..."
+#~ msgstr "&جایگزینی...‌"
+
+#~ msgid "&Zoom..."
+#~ msgstr "&بزرگ‌نمایی...‌"
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&برو به خط...‌"
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&ویرایش چوب الفها‌"
+
+#~ msgid "&Spelling..."
+#~ msgstr "&هجی کردن...‌"
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "پیکربندی &میله‌ ابزارها...‌"
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "پیکربندی  &اخطارها...‌"
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&گزارش اشکال...‌"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&نکته روز"
@@ -1253,9 +1330,6 @@ msgstr "باز کردن &اخیر‌"
 #~ "<p>اینجا را برای جایگزینی این رخداد متن ناشناخته با متن در جعبه ویرایش "
 #~ "بالا )به چپ( فشار دهید.</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&جایگزینی‌"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -4046,9 +4120,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgid "Icon te&xt:"
 #~ msgstr "متن شمایل:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "پیکربندی میله ابزارها"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4252,9 +4323,6 @@ msgstr "باز کردن &اخیر‌"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "پیکربندی میان‌برها"
-
-#~ msgid "Print"
-#~ msgstr "چاپ"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "برگردان به پیش‌فرضها‌"
@@ -4488,9 +4556,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgstr ""
 #~ "<qt>اگر دکمه  <b>جایگزینی</b>را فشار دهید، متنی که بالا وارد کردید در سند "
 #~ "جستجو شده و هر رخداد با متن جایگزین، جایگزینی می‌شود.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&یافتن‌"
 
 #~ msgid "Start searching"
 #~ msgstr "آغاز جستجو"
@@ -5142,10 +5207,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgstr "انتهای خط"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "برو به خط"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "واژه پس‌سو"
 
@@ -5230,10 +5291,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgstr "پیش‌نمایش چاپ"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "نامه"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "پاک کردن"
 
@@ -5254,10 +5311,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgstr "متناسب با ارتفاع صفحه‌"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "بزرگ‌نمایی‌"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "برو به"
 
@@ -5272,14 +5325,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "سند بعد"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "ویرایش چوب الفها‌"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "هجی کردن"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5312,10 +5357,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "نکته روز"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "گزارش اشکال"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7752,9 +7793,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgid " - BCC: "
 #~ msgstr " - ر.ن.م:"
 
-#~ msgid "Save As"
-#~ msgstr "ذخیره به عنوان"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9281,9 +9319,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgid "Speak Custom Text"
 #~ msgstr "گفتن متن سفارشی"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "پیکربندی اخطارها"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "وضعیت"
@@ -9334,10 +9369,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&باز کردن با"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&باز کردن‌"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

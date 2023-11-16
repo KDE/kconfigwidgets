@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2015-02-24 20:39+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -141,7 +141,9 @@ msgid "Create new document"
 msgstr "Lag et nytt dokument"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgid "&Open..."
+msgid "&Open…"
 msgstr "&Åpne …"
 
 #: kstandardaction_p.h:64
@@ -165,7 +167,9 @@ msgid "Save document"
 msgstr "Lagre dokumentet"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save &As…"
 msgstr "Lagre &som …"
 
 #: kstandardaction_p.h:67
@@ -189,7 +193,9 @@ msgid "Close document"
 msgstr "Lukk dokumentet"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
+#, fuzzy
+#| msgid "&Print..."
+msgid "&Print…"
 msgstr "Sk&riv ut …"
 
 #: kstandardaction_p.h:70
@@ -205,7 +211,9 @@ msgid "Show a print preview of document"
 msgstr "Vis forhåndsvisning av dokumentutskriften"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
+#, fuzzy
+#| msgid "&Mail..."
+msgid "&Mail…"
 msgstr "S&end e-post …"
 
 #: kstandardaction_p.h:72
@@ -273,7 +281,9 @@ msgid "Dese&lect"
 msgstr "Ve&lg bort"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
+#, fuzzy
+#| msgid "&Find..."
+msgid "&Find…"
 msgstr "&Finn …"
 
 #: kstandardaction_p.h:84
@@ -285,7 +295,9 @@ msgid "Find Pre&vious"
 msgstr "Finn forri&ge"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
+#, fuzzy
+#| msgid "&Replace..."
+msgid "&Replace…"
 msgstr "&Erstatt …"
 
 #: kstandardaction_p.h:88
@@ -329,7 +341,9 @@ msgid "Zoom &Out"
 msgstr "Vis &mindre"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
+#, fuzzy
+#| msgid "&Zoom..."
+msgid "&Zoom…"
 msgstr "&Vis større/mindre …"
 
 #: kstandardaction_p.h:94
@@ -369,15 +383,21 @@ msgid "Go to next page"
 msgstr "Gå til neste side"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Gå til …"
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Gå til side …"
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
+#, fuzzy
+#| msgid "&Go to Line..."
+msgid "&Go to Line…"
 msgstr "&Gå til linje …"
 
 #: kstandardaction_p.h:107
@@ -417,11 +437,15 @@ msgid "&Add Bookmark"
 msgstr "&Legg til bokmerke"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
+#, fuzzy
+#| msgid "&Edit Bookmarks..."
+msgid "&Edit Bookmarks…"
 msgstr "&Rediger bokmerker …"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Stavekontroll …"
 
 #: kstandardaction_p.h:115
@@ -457,20 +481,25 @@ msgid "F&ull Screen Mode"
 msgstr "F&ullskjermmodus"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr ""
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Oppsett av %1 …"
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
+#, fuzzy
+#| msgid "Configure Tool&bars..."
+msgid "Configure Tool&bars…"
 msgstr "Oppsett av verktøy&linjer …"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Oppsett av &varslinger …"
 
 #: kstandardaction_p.h:128
@@ -483,11 +512,13 @@ msgid "What's &This?"
 msgstr "Hva er &dette?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "&Rapporter feil …"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr ""
 
 #: kstandardaction_p.h:132
@@ -504,7 +535,7 @@ msgid "&Delete"
 msgstr ""
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr ""
 
 #: kstandardaction_p.h:136

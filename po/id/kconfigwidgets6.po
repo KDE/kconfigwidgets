@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2022-09-27 18:12+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -136,7 +136,10 @@ msgid "Create new document"
 msgstr "Ciptakan dokumen baru"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
 msgstr "&Buka"
 
 #: kstandardaction_p.h:64
@@ -160,8 +163,10 @@ msgid "Save document"
 msgstr "Simpan dokumen"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Simpan Se&bagai..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Simpan Sebagai"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -184,8 +189,10 @@ msgid "Close document"
 msgstr "Tutup dokumen"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Cetak..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Cetak"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -200,8 +207,11 @@ msgid "Show a print preview of document"
 msgstr "Tampilkan pratinjau cetak dokumen"
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Mail..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Surat"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -268,8 +278,10 @@ msgid "Dese&lect"
 msgstr "Tidak P&ilih"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Temukan..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Cari"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -280,8 +292,10 @@ msgid "Find Pre&vious"
 msgstr "Temukan Se&belumnya"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Ganti..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Ganti"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -324,8 +338,11 @@ msgid "Zoom &Out"
 msgstr "Zoom Perke&cil"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zoom..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Pembesaran"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -364,16 +381,23 @@ msgid "Go to next page"
 msgstr "Menuju ke halaman selanjutnya"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "Menu&ju Ke..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "Menu&ju ke Halaman..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "Menu&ju ke Baris..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Ke Baris"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -412,12 +436,18 @@ msgid "&Add Bookmark"
 msgstr "Tambah &Markah"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Edit Markah..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Sunting Penanda"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Ejaan..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Ejaan"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -452,21 +482,28 @@ msgid "F&ull Screen Mode"
 msgstr "Mode Layar Pen&uh"
 
 #: kstandardaction_p.h:121
-msgid "Configure Keyboard S&hortcuts..."
+#, fuzzy
+#| msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Konfigurasikan &Pintasan Keyboard..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Konfigurasikan %1..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Konfigurasikan &Bilah Alat..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Atur Batang Alat"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "Konfigurasikan &Notifikasi..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Atur Notifikasi"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -478,11 +515,16 @@ msgid "What's &This?"
 msgstr "&Apakah Ini?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Laporkan Bug..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Laporkan Kutu"
 
 #: kstandardaction_p.h:131
-msgid "Configure &Language..."
+#, fuzzy
+#| msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Konfigurasi&kan Bahasa..."
 
 #: kstandardaction_p.h:132
@@ -499,7 +541,9 @@ msgid "&Delete"
 msgstr "&Hapus"
 
 #: kstandardaction_p.h:135
-msgid "&Rename..."
+#, fuzzy
+#| msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Ubah nama..."
 
 #: kstandardaction_p.h:136
@@ -513,6 +557,45 @@ msgstr "&Donasi"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Buka &Menu"
+
+#~ msgid "&Open..."
+#~ msgstr "&Buka"
+
+#~ msgid "Save &As..."
+#~ msgstr "Simpan Se&bagai..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Cetak..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Mail..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Temukan..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Ganti..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zoom..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "Menu&ju ke Baris..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Edit Markah..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Ejaan..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Konfigurasikan &Bilah Alat..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Konfigurasikan &Notifikasi..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Laporkan Bug..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Tip Hari &Ini"
@@ -1158,9 +1241,6 @@ msgstr "Buka &Menu"
 #~ "<p>Klik di sini untuk mengganti kecocokan ini dari kata tak dikenal "
 #~ "dengan teks di dalam kotak penyuntingan di atas (di sebelah kiri).</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Ganti"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3808,9 +3888,6 @@ msgstr "Buka &Menu"
 #~ msgstr ""
 #~ "&Sembunyikan teks ketika batang alat menunjukkan teks di samping ikon"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Atur Batang Alat"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -4018,9 +4095,6 @@ msgstr "Buka &Menu"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Atur Jalan Pintas"
-
-#~ msgid "Print"
-#~ msgstr "Cetak"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Kembalikan ke Standar"
@@ -4256,9 +4330,6 @@ msgstr "Buka &Menu"
 #~ "<qt>Jika anda menekan tombol <b>Ganti</b>, teks yang anda masukkan di "
 #~ "atas dicari di dalam dokumen dan kecocokan apapun yang ditemukan akan "
 #~ "diganti dengan teks pengganti.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Cari"
 
 #~ msgid "Start searching"
 #~ msgstr "Mulai cari"
@@ -4921,10 +4992,6 @@ msgstr "Buka &Menu"
 #~ msgstr "Akhir Baris"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Ke Baris"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Kata Mundur"
 
@@ -5009,10 +5076,6 @@ msgstr "Buka &Menu"
 #~ msgstr "Pratinjau Cetak"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Surat"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Bersihkan"
 
@@ -5033,10 +5096,6 @@ msgstr "Buka &Menu"
 #~ msgstr "Sesuai Tinggi"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Pembesaran"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Ke"
 
@@ -5051,14 +5110,6 @@ msgstr "Buka &Menu"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Dokumen Maju"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Sunting Penanda"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Ejaan"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -5091,10 +5142,6 @@ msgstr "Buka &Menu"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Tip Hari Ini"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Laporkan Kutu"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7535,9 +7582,6 @@ msgstr "Buka &Menu"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Simpan Sebagai"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -9040,9 +9084,6 @@ msgstr "Buka &Menu"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Katakan Teks Suai"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Atur Notifikasi"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Tingkat"
@@ -9091,10 +9132,6 @@ msgstr "Buka &Menu"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Buka dengan"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Buka"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"

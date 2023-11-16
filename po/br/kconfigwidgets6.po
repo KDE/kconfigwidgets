@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4-1.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2007-10-15 22:19+0200\n"
 "Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
 "Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
@@ -146,8 +146,10 @@ msgstr ""
 "%1"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Digeriñ ..."
+#, fuzzy
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Digeriñ"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -174,8 +176,10 @@ msgid "Save document"
 msgstr "Serriñ an teul"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Enrollañ e ..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Enrollañ e"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -202,8 +206,10 @@ msgid "Close document"
 msgstr "Serriñ an teul"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Moulañ ..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Moulañ"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -223,8 +229,10 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&Skrivañ ..."
+#, fuzzy
+#| msgid "Mailbox"
+msgid "&Mail…"
+msgstr "Boestoù-lizheroù"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -299,8 +307,10 @@ msgid "Dese&lect"
 msgstr "Andi&bab"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Klask ..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Kavout"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -311,8 +321,10 @@ msgid "Find Pre&vious"
 msgstr "Kavout dia&raok"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Erlec'hiañ ..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Erlec'hiañ"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -359,8 +371,10 @@ msgid "Zoom &Out"
 msgstr "&Pelloc'h"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Zoom ..."
+#, fuzzy
+#| msgid "&Zoom"
+msgid "&Zoom…"
+msgstr "&Zoom"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -410,16 +424,22 @@ msgid "Go to next page"
 msgstr "Kit da linenn"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Mont da ..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Mont d'ar bajenn ..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Mont d'al linenn ..."
+#, fuzzy
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Kit da linenn"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -469,11 +489,15 @@ msgid "&Add Bookmark"
 msgstr "&Ouzhpennañ ur sined"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "&Aozañ ar sinedoù ..."
+#, fuzzy
+#| msgid "&Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "&Aozañ ar sinedoù"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
+#, fuzzy
+#| msgid "&Spelling..."
+msgid "&Spelling…"
 msgstr "&Reizhskrivadur ..."
 
 #: kstandardaction_p.h:115
@@ -519,20 +543,25 @@ msgstr "M&od skramm leun"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "Kefluniañ ar berradenn ..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "&Kefluniañ %1 ..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "Kefluniañ barrennoù an ostilhoù ..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Kefluniañ barrennoù an ostilhoù"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure &Notifications…"
 msgstr "Kefluniañ ar &c'hemennadenn ..."
 
 #: kstandardaction_p.h:128
@@ -545,13 +574,15 @@ msgid "What's &This?"
 msgstr "Petra zo an &Dra-se ?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
+#, fuzzy
+#| msgid "&Report Bug..."
+msgid "&Report Bug…"
 msgstr "&Reiñ da c'houzout ur gudenn ..."
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "Kefluniañ al lizher elektronek ..."
 
 #: kstandardaction_p.h:132
@@ -570,7 +601,7 @@ msgstr "&Distruj"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Erlec'hiañ ..."
 
 #: kstandardaction_p.h:136
@@ -590,6 +621,45 @@ msgstr "&Graet"
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "Digeriñ &nevezig"
+
+#~ msgid "&Open..."
+#~ msgstr "&Digeriñ ..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Enrollañ e ..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Moulañ ..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&Skrivañ ..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Klask ..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Erlec'hiañ ..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Zoom ..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Mont d'al linenn ..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "&Aozañ ar sinedoù ..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Reizhskrivadur ..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "Kefluniañ barrennoù an ostilhoù ..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "Kefluniañ ar &c'hemennadenn ..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Reiñ da c'houzout ur gudenn ..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Lagadenn an &deiz"
@@ -1059,9 +1129,6 @@ msgstr "Digeriñ &nevezig"
 
 #~ msgid "Suggested Words"
 #~ msgstr "Gerioù kinniget"
-
-#~ msgid "&Replace"
-#~ msgstr "&Erlec'hiañ"
 
 #~ msgid "Replace &with:"
 #~ msgstr "Erlec'hiañ &gant :"
@@ -3126,9 +3193,6 @@ msgstr "Digeriñ &nevezig"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Klask ur skrid"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Kefluniañ barrennoù an ostilhoù"
-
 #, fuzzy
 #~ msgid "Reset Toolbars"
 #~ msgstr "Barrennoù ostilhoù"
@@ -3336,9 +3400,6 @@ msgstr "Digeriñ &nevezig"
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Kefluniañ ar Berradennoù"
 
-#~ msgid "Print"
-#~ msgstr "Moulañ"
-
 #, fuzzy
 #~| msgid "Defaults"
 #~ msgid "Reset to Defaults"
@@ -3527,9 +3588,6 @@ msgstr "Digeriñ &nevezig"
 #, fuzzy
 #~ msgid "Start replace"
 #~ msgstr "Klask ur restr"
-
-#~ msgid "&Find"
-#~ msgstr "&Kavout"
 
 #, fuzzy
 #~ msgid "Start searching"
@@ -4096,12 +4154,6 @@ msgstr "Digeriñ &nevezig"
 #~ msgstr "Fin al linenn"
 
 #, fuzzy
-#~| msgid "Go to Line"
-#~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Kit da linenn"
-
-#, fuzzy
 #~| msgid "Backward Word"
 #~ msgctxt "@action"
 #~ msgid "Backward Word"
@@ -4227,12 +4279,6 @@ msgstr "Digeriñ &nevezig"
 #~ msgstr "Moulañ ar rakgwel ..."
 
 #, fuzzy
-#~| msgid "Mailbox"
-#~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Boestoù-lizheroù"
-
-#, fuzzy
 #~| msgid "Clear"
 #~ msgctxt "@action"
 #~ msgid "Clear"
@@ -4299,12 +4345,6 @@ msgstr "Digeriñ &nevezig"
 #~ msgstr "&Aozañ ar sinedoù"
 
 #, fuzzy
-#~| msgid "&Spelling..."
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "&Reizhskrivadur ..."
-
-#, fuzzy
 #~| msgid "Show &Toolbar"
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -4350,12 +4390,6 @@ msgstr "Digeriñ &nevezig"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Lagadenn an deiz"
-
-#, fuzzy
-#~| msgid "&Report Bug..."
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "&Reiñ da c'houzout ur gudenn ..."
 
 #, fuzzy
 #~| msgid "sets the application name"
@@ -6404,9 +6438,6 @@ msgstr "Digeriñ &nevezig"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC : "
 
-#~ msgid "Save As"
-#~ msgstr "Enrollañ e"
-
 #~ msgid "Follow"
 #~ msgstr "Heuliañ"
 
@@ -7396,11 +7427,6 @@ msgstr "Digeriñ &nevezig"
 #~ msgstr "Skrivit un &anv mar plij :"
 
 #, fuzzy
-#~| msgid "Configure &Notifications..."
-#~ msgid "Configure Notifications"
-#~ msgstr "Kefluniañ ar &c'hemennadenn ..."
-
-#, fuzzy
 #~| msgid "State"
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
@@ -7471,12 +7497,6 @@ msgstr "Digeriñ &nevezig"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Digeriñ gant ..."
-
-#, fuzzy
-#~| msgid "&Open"
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Digeriñ"
 
 #, fuzzy
 #~| msgid "Name:"
@@ -8272,9 +8292,6 @@ msgstr "Digeriñ &nevezig"
 
 #~ msgid "Form"
 #~ msgstr "Paperenn-reol"
-
-#~ msgid "&Edit Bookmarks"
-#~ msgstr "&Aozañ ar sinedoù"
 
 #~ msgctxt "of January"
 #~ msgid "of Jan"
@@ -11409,9 +11426,6 @@ msgstr "Digeriñ &nevezig"
 
 #~ msgid "Import"
 #~ msgstr "Enporzh"
-
-#~ msgid "&Zoom"
-#~ msgstr "&Zoom"
 
 #~ msgid "Malformed URL"
 #~ msgstr "URL siek"

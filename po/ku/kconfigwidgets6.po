@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:36+0000\n"
+"POT-Creation-Date: 2023-11-16 01:43+0000\n"
 "PO-Revision-Date: 2010-08-13 15:45+0200\n"
 "Last-Translator: Erdal Ronahî <erdal.ronahi@nospam.gmail.com>\n"
 "Language-Team: Kurdish Team http://pckurd.net\n"
@@ -148,8 +148,11 @@ msgid "Create new document"
 msgstr "Etîketekî nû biafirîne:"
 
 #: kstandardaction_p.h:64
-msgid "&Open..."
-msgstr "&Veke..."
+#, fuzzy
+#| msgctxt "@label:button"
+#| msgid "&Open"
+msgid "&Open…"
+msgstr "&Veke"
 
 #: kstandardaction_p.h:64
 #, fuzzy
@@ -176,8 +179,10 @@ msgid "Save document"
 msgstr "Belgeyê Bigire"
 
 #: kstandardaction_p.h:67
-msgid "Save &As..."
-msgstr "Cuda &Tomarkirin..."
+#, fuzzy
+#| msgid "Save As"
+msgid "Save &As…"
+msgstr "Cuda tomar bike"
 
 #: kstandardaction_p.h:67
 #, fuzzy
@@ -204,8 +209,10 @@ msgid "Close document"
 msgstr "Belgeyê Bigire"
 
 #: kstandardaction_p.h:70
-msgid "&Print..."
-msgstr "&Çap bike..."
+#, fuzzy
+#| msgid "Print"
+msgid "&Print…"
+msgstr "Bide nivîsandin"
 
 #: kstandardaction_p.h:70
 #, fuzzy
@@ -223,8 +230,11 @@ msgid "Show a print preview of document"
 msgstr ""
 
 #: kstandardaction_p.h:72
-msgid "&Mail..."
-msgstr "&E-peyam..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Mail"
+msgid "&Mail…"
+msgstr "Posta"
 
 #: kstandardaction_p.h:72
 #, fuzzy
@@ -305,8 +315,10 @@ msgid "Dese&lect"
 msgstr "Yekê &Hilnejêre"
 
 #: kstandardaction_p.h:83
-msgid "&Find..."
-msgstr "&Bibîne..."
+#, fuzzy
+#| msgid "&Find"
+msgid "&Find…"
+msgstr "&Bibîne"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -317,8 +329,10 @@ msgid "Find Pre&vious"
 msgstr "&Ya Berê Bibîne"
 
 #: kstandardaction_p.h:86
-msgid "&Replace..."
-msgstr "&Biguherîne..."
+#, fuzzy
+#| msgid "&Replace"
+msgid "&Replace…"
+msgstr "&Biguherîne"
 
 #: kstandardaction_p.h:88
 #, fuzzy
@@ -366,8 +380,11 @@ msgid "Zoom &Out"
 msgstr "Biçûk&kirin"
 
 #: kstandardaction_p.h:94
-msgid "&Zoom..."
-msgstr "&Mezin/biçûkirin..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Zoom"
+msgid "&Zoom…"
+msgstr "Nêzîkkirin"
 
 #: kstandardaction_p.h:94
 #, fuzzy
@@ -415,16 +432,23 @@ msgid "Go to next page"
 msgstr "Biçe Rêzikê"
 
 #: kstandardaction_p.h:104
-msgid "&Go To..."
+#, fuzzy
+#| msgid "&Go To..."
+msgid "&Go To…"
 msgstr "&Biçe..."
 
 #: kstandardaction_p.h:105
-msgid "&Go to Page..."
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "&Go to Page…"
 msgstr "&Biçe Rûpel..."
 
 #: kstandardaction_p.h:106
-msgid "&Go to Line..."
-msgstr "&Biçe Rêzikê..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "&Go to Line…"
+msgstr "Biçe Rêzikê"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -475,12 +499,18 @@ msgid "&Add Bookmark"
 msgstr "&Bijareyekê Lê Zêde Bike"
 
 #: kstandardaction_p.h:113
-msgid "&Edit Bookmarks..."
-msgstr "Bijareyan &Sererast Bike..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Edit Bookmarks"
+msgid "&Edit Bookmarks…"
+msgstr "Bijareyan Sererast Bike"
 
 #: kstandardaction_p.h:115
-msgid "&Spelling..."
-msgstr "&Rastnivîs..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Spelling"
+msgid "&Spelling…"
+msgstr "Rastnivîs"
 
 #: kstandardaction_p.h:115
 #, fuzzy
@@ -527,21 +557,26 @@ msgstr "Moda Dîmender &Tije"
 #: kstandardaction_p.h:121
 #, fuzzy
 #| msgid "Configure S&hortcuts..."
-msgid "Configure Keyboard S&hortcuts..."
+msgid "Configure Keyboard S&hortcuts…"
 msgstr "K&urteriyan Veava Bike..."
 
 #: kstandardaction_p.h:122
-#, kde-format
-msgid "&Configure %1..."
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "&Configure %1…"
 msgstr "Bernameya %1 S&ererast Bike..."
 
 #: kstandardaction_p.h:123
-msgid "Configure Tool&bars..."
-msgstr "&Darikê Amûran Veava Bike..."
+#, fuzzy
+#| msgid "Configure Toolbars"
+msgid "Configure Tool&bars…"
+msgstr "Darikê Amûran Veava Bike"
 
 #: kstandardaction_p.h:124
-msgid "Configure &Notifications..."
-msgstr "&Hişyariyan Veava Bike..."
+#, fuzzy
+#| msgid "Configure Notifications"
+msgid "Configure &Notifications…"
+msgstr "Hişyariyan Veava Bike"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -553,13 +588,16 @@ msgid "What's &This?"
 msgstr "&Ev Çi Ye?"
 
 #: kstandardaction_p.h:130
-msgid "&Report Bug..."
-msgstr "&Raporekê Çêbike..."
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Report Bug"
+msgid "&Report Bug…"
+msgstr "Raporekê Çêbike"
 
 #: kstandardaction_p.h:131
 #, fuzzy
 #| msgid "Configure Email..."
-msgid "Configure &Language..."
+msgid "Configure &Language…"
 msgstr "E-peyamê Veava Bike..."
 
 #: kstandardaction_p.h:132
@@ -580,7 +618,7 @@ msgstr "Jê bibe"
 #: kstandardaction_p.h:135
 #, fuzzy
 #| msgid "&Replace..."
-msgid "&Rename..."
+msgid "&Rename…"
 msgstr "&Biguherîne..."
 
 #: kstandardaction_p.h:136
@@ -596,6 +634,45 @@ msgstr ""
 #| msgid "Open &Recent"
 msgid "Open &Menu"
 msgstr "&Ya herî dawî hatiye bikaranîn veke"
+
+#~ msgid "&Open..."
+#~ msgstr "&Veke..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Cuda &Tomarkirin..."
+
+#~ msgid "&Print..."
+#~ msgstr "&Çap bike..."
+
+#~ msgid "&Mail..."
+#~ msgstr "&E-peyam..."
+
+#~ msgid "&Find..."
+#~ msgstr "&Bibîne..."
+
+#~ msgid "&Replace..."
+#~ msgstr "&Biguherîne..."
+
+#~ msgid "&Zoom..."
+#~ msgstr "&Mezin/biçûkirin..."
+
+#~ msgid "&Go to Line..."
+#~ msgstr "&Biçe Rêzikê..."
+
+#~ msgid "&Edit Bookmarks..."
+#~ msgstr "Bijareyan &Sererast Bike..."
+
+#~ msgid "&Spelling..."
+#~ msgstr "&Rastnivîs..."
+
+#~ msgid "Configure Tool&bars..."
+#~ msgstr "&Darikê Amûran Veava Bike..."
+
+#~ msgid "Configure &Notifications..."
+#~ msgstr "&Hişyariyan Veava Bike..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Raporekê Çêbike..."
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Mijara &rojê"
@@ -1215,9 +1292,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ "<p>Heke tu dixwazî xuyanîbûna wê peyva nenas bi nivîsa ku di hundirê "
 #~ "qutiya sererastkirinan de ye biguherîne pêl vir bike</p>\n"
 #~ "</qt>"
-
-#~ msgid "&Replace"
-#~ msgstr "&Biguherîne"
 
 #~ msgid ""
 #~ "<qt>\n"
@@ -3681,9 +3755,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ msgid "Icon te&xt:"
 #~ msgstr "Ni&vîsa îkonê:"
 
-#~ msgid "Configure Toolbars"
-#~ msgstr "Darikê Amûran Veava Bike"
-
 #~ msgid ""
 #~ "Do you really want to reset all toolbars of this application to their "
 #~ "default? The changes will be applied immediately."
@@ -3870,9 +3941,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 
 #~ msgid "Configure Shortcuts"
 #~ msgstr "Rurteriyan Veava Bike"
-
-#~ msgid "Print"
-#~ msgstr "Bide nivîsandin"
 
 #~ msgid "Reset to Defaults"
 #~ msgstr "Bizivire Standardan"
@@ -4064,9 +4132,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ "<qt>Heke tu pêl bişkoka <b>Biguherîne</b> bike, teksta ku te li jor "
 #~ "nivîsiye wê di belgeyê de ji serî heta binî were lêgerîn û her ku tu "
 #~ "rastî wê hat wê bi teksta guherînê re bide guherandin.</qt>"
-
-#~ msgid "&Find"
-#~ msgstr "&Bibîne"
 
 #~ msgid "Start searching"
 #~ msgstr "Lêgerînê bide destpêkirin"
@@ -4676,10 +4741,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ msgstr "Dawiya Rêzikê"
 
 #~ msgctxt "@action"
-#~ msgid "Go to Line"
-#~ msgstr "Biçe Rêzikê"
-
-#~ msgctxt "@action"
 #~ msgid "Backward Word"
 #~ msgstr "Peyva Paş ve"
 
@@ -4756,10 +4817,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ msgstr "Pêşdîtina berî Çapkirinê"
 
 #~ msgctxt "@action"
-#~ msgid "Mail"
-#~ msgstr "Posta"
-
-#~ msgctxt "@action"
 #~ msgid "Clear"
 #~ msgstr "Paqijkirin"
 
@@ -4780,10 +4837,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ msgstr "Lihevkirina bilindahiya rûpel"
 
 #~ msgctxt "@action"
-#~ msgid "Zoom"
-#~ msgstr "Nêzîkkirin"
-
-#~ msgctxt "@action"
 #~ msgid "Goto"
 #~ msgstr "Biçe"
 
@@ -4798,14 +4851,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ msgctxt "@action"
 #~ msgid "Document Forward"
 #~ msgstr "Belgeya Paşîn"
-
-#~ msgctxt "@action"
-#~ msgid "Edit Bookmarks"
-#~ msgstr "Bijareyan Sererast Bike"
-
-#~ msgctxt "@action"
-#~ msgid "Spelling"
-#~ msgstr "Rastnivîs"
 
 #~ msgctxt "@action"
 #~ msgid "Show Toolbar"
@@ -4834,10 +4879,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ msgctxt "@action"
 #~ msgid "Tip Of Day"
 #~ msgstr "Mijara Rojê"
-
-#~ msgctxt "@action"
-#~ msgid "Report Bug"
-#~ msgstr "Raporekê Çêbike"
 
 #~ msgctxt "@action"
 #~ msgid "Switch Application Language"
@@ -7079,9 +7120,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ msgid " - BCC: "
 #~ msgstr " - BCC: "
 
-#~ msgid "Save As"
-#~ msgstr "Cuda tomar bike"
-
 #~ msgid ""
 #~ "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to "
 #~ "follow the link?</qt>"
@@ -8549,9 +8587,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ msgid "Speak Custom Text"
 #~ msgstr "Tekstekê Taybet Bibêje"
 
-#~ msgid "Configure Notifications"
-#~ msgstr "Hişyariyan Veava Bike"
-
 #~ msgctxt "State of the notified event"
 #~ msgid "State"
 #~ msgstr "Rewş"
@@ -8600,10 +8635,6 @@ msgstr "&Ya herî dawî hatiye bikaranîn veke"
 #~ msgctxt "@label:button"
 #~ msgid "&Open with"
 #~ msgstr "&Veke bi"
-
-#~ msgctxt "@label:button"
-#~ msgid "&Open"
-#~ msgstr "&Veke"
 
 #~ msgctxt "@label File name"
 #~ msgid "Name: %1"
