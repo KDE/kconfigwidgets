@@ -9,14 +9,14 @@
 # Xosé <xosecalvo@gmail.com>, 2010.
 # Marce Villarino <mvillarino@kde-espana.es>, 2011, 2012, 2013, 2014.
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+# SPDX-FileCopyrightText: 2023 Adrián Chaves (Gallaecio)
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-16 01:43+0000\n"
-"PO-Revision-Date: 2023-05-01 10:10+0200\n"
+"PO-Revision-Date: 2023-11-16 18:46+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -141,11 +141,8 @@ msgid "Create new document"
 msgstr "Crear un novo documento"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgctxt "@label:button"
-#| msgid "&Open"
 msgid "&Open…"
-msgstr "&Abrir"
+msgstr "&Abrir…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -168,10 +165,8 @@ msgid "Save document"
 msgstr "Gardar o documento"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save As"
 msgid "Save &As…"
-msgstr "Gardar como"
+msgstr "Gardar &como…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -194,10 +189,8 @@ msgid "Close document"
 msgstr "Pechar o documento"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "Print"
 msgid "&Print…"
-msgstr "Imprimir"
+msgstr "Im&primir…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -212,11 +205,8 @@ msgid "Show a print preview of document"
 msgstr "Mostra unha vista previa do documento"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Mail"
 msgid "&Mail…"
-msgstr "Enviar por correo"
+msgstr "Enviar por &correo…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -283,10 +273,8 @@ msgid "Dese&lect"
 msgstr "Anu&lar a escolla"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find"
 msgid "&Find…"
-msgstr "&Buscar"
+msgstr "&Atopar…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -297,10 +285,8 @@ msgid "Find Pre&vious"
 msgstr "Atopar a &anterior"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace"
 msgid "&Replace…"
-msgstr "&Substituír"
+msgstr "&Substituír…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -343,11 +329,8 @@ msgid "Zoom &Out"
 msgstr "Afastar"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Zoom"
 msgid "&Zoom…"
-msgstr "Achegar"
+msgstr "&Ampliar…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -386,23 +369,16 @@ msgid "Go to next page"
 msgstr "Ir á seguinte páxina"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "&Ir a…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
 msgstr "&Ir á páxina…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "&Go to Line…"
-msgstr "Ir para a liña"
+msgstr "&Ir á liña…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -441,18 +417,12 @@ msgid "&Add Bookmark"
 msgstr "&Engadir un marcador"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Edit Bookmarks"
 msgid "&Edit Bookmarks…"
-msgstr "Editar os marcadores"
+msgstr "&Editar os marcadores…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Spelling"
 msgid "&Spelling…"
-msgstr "Ortografía"
+msgstr "&Ortografía…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -487,28 +457,21 @@ msgid "F&ull Screen Mode"
 msgstr "Modo a pantalla &completa"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
 msgstr "Confi&gurar os atallos de teclado…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
 msgstr "&Configurar %1…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Toolbars"
 msgid "Configure Tool&bars…"
-msgstr "Configurar as barras de ferramentas"
+msgstr "Configurar as &barras de ferramentas…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure Notifications"
 msgid "Configure &Notifications…"
-msgstr "Configurar as notificacións"
+msgstr "Configurar as &notificacións…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -520,15 +483,10 @@ msgid "What's &This?"
 msgstr "Que é &isto?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Report Bug"
 msgid "&Report Bug…"
-msgstr "Informar dun fallo"
+msgstr "Informar dun &fallo…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
 msgstr "Configurar o &idioma…"
 
@@ -546,8 +504,6 @@ msgid "&Delete"
 msgstr "&Eliminar"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
 msgstr "&Renomear…"
 

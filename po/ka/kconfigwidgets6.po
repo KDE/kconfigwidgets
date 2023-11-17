@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-16 01:43+0000\n"
-"PO-Revision-Date: 2022-11-16 08:35+0100\n"
+"PO-Revision-Date: 2023-11-17 01:13+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -134,10 +134,8 @@ msgid "Create new document"
 msgstr "ახალი დოკუმენტის შექმნა"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
-msgstr "&გახსნა..."
+msgstr "&გახსნა…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -160,10 +158,8 @@ msgid "Save document"
 msgstr "დოკუმენტის შენახვა"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
-msgstr "შეინახვა &როგორც..."
+msgstr "შეინახვა &როგორც…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -186,10 +182,8 @@ msgid "Close document"
 msgstr "დოკუმენტის დახურვა"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
-msgstr "&ამობეჭდვა..."
+msgstr "&ბეჭდვა…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -204,10 +198,8 @@ msgid "Show a print preview of document"
 msgstr "მიმდინარე დოკუმენტების დაბეჭდვისწინა გადახედვის ჩვენება"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
-msgstr "&ფოსტა..."
+msgstr "&ელფოსტა…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -274,10 +266,8 @@ msgid "Dese&lect"
 msgstr "&მონიშვნის მოხსნა"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
-msgstr "&პოვნა..."
+msgstr "&პოვნა…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -288,10 +278,8 @@ msgid "Find Pre&vious"
 msgstr "&წინას მოძებნა"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
-msgstr "&ჩანაცვლება..."
+msgstr "&ჩანაცვლება…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -334,10 +322,8 @@ msgid "Zoom &Out"
 msgstr "გადიდება"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
-msgstr "&გადიდება..."
+msgstr "&გადიდება…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -376,22 +362,16 @@ msgid "Go to next page"
 msgstr "შემდეგ გვერდზე გადასვლა"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "&გადასვლა..."
+msgstr "გადასვლა…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "&გადადით გვერდზე..."
+msgstr "&გვერდზე გადასვლა…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
-msgstr "&გადადით ხაზზე..."
+msgstr "&ხაზზე გადასვლა…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -430,16 +410,12 @@ msgid "&Add Bookmark"
 msgstr "სანიშნის &დამატება"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
-msgstr "სანიშნების &ჩასწორება..."
+msgstr "&სანიშნეების ჩასწორება…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
-msgstr "&მართლწერა..."
+msgstr "&მართლწერა…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -474,28 +450,21 @@ msgid "F&ull Screen Mode"
 msgstr "&მთელ-ეკრანზე"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "კლავიატურის &მალსახმობების მორგება..."
+msgstr "კლავიატურის &მალსახმობების მორგება…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "%1-ის &მორგება..."
+msgstr "%1-ის &მორგება…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
-msgstr "ხელსაწყოების &პანელების მორგება...."
+msgstr "ხელსაწყოს &პანელების მორგება…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
-msgstr "&შეტყობინებების მორგება..."
+msgstr "&შეტყობინებების მორგება…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -507,16 +476,12 @@ msgid "What's &This?"
 msgstr "რა არის &ეს?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
-msgstr "&შეცდომის ანგარიში..."
+msgstr "&შეცდომის ანგარიში…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "&ენის მორგება..."
+msgstr "&ენის მორგება…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -532,10 +497,8 @@ msgid "&Delete"
 msgstr "&წაშლა"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "&სახელის გადარქმევა..."
+msgstr "&სახელის გადარქმევა…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"

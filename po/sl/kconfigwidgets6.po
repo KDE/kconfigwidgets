@@ -18,17 +18,17 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-16 01:43+0000\n"
-"PO-Revision-Date: 2022-06-01 07:47+0200\n"
+"PO-Revision-Date: 2023-11-16 13:41+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Lokalize 21.12.2\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
+"Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -150,11 +150,8 @@ msgid "Create new document"
 msgstr "Ustvari nov dokument"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgctxt "@label:button"
-#| msgid "&Open"
 msgid "&Open…"
-msgstr "&Odpri"
+msgstr "&Odpri…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -177,10 +174,8 @@ msgid "Save document"
 msgstr "Shrani dokument"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save As"
 msgid "Save &As…"
-msgstr "Shrani kot"
+msgstr "Shrani kot…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -203,10 +198,8 @@ msgid "Close document"
 msgstr "Zapri dokument"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "Print"
 msgid "&Print…"
-msgstr "Natisni"
+msgstr "Natisni…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -221,11 +214,8 @@ msgid "Show a print preview of document"
 msgstr "Pokaži predogled tiskanja dokumenta"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Mail"
 msgid "&Mail…"
-msgstr "E-Pošta"
+msgstr "E-Pošta…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -292,10 +282,8 @@ msgid "Dese&lect"
 msgstr "Odstrani izbiro"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find"
 msgid "&Find…"
-msgstr "&Najdi"
+msgstr "Najdi…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -306,10 +294,8 @@ msgid "Find Pre&vious"
 msgstr "Najdi predhodno"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace"
 msgid "&Replace…"
-msgstr "&Zamenjaj"
+msgstr "Zamenjaj…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -352,11 +338,8 @@ msgid "Zoom &Out"
 msgstr "Oddalji"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Zoom"
 msgid "&Zoom…"
-msgstr "Približanje"
+msgstr "Približanje…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -395,23 +378,16 @@ msgid "Go to next page"
 msgstr "Pojdi na naslednjo stran"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "Pojdi na..."
+msgstr "Pojdi na…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "Pojdi na stran..."
+msgstr "Pojdi na stran…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "&Go to Line…"
-msgstr "Pojdi v vrstico"
+msgstr "Pojdi v vrstico…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -450,18 +426,12 @@ msgid "&Add Bookmark"
 msgstr "Dodaj zaznamek"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Edit Bookmarks"
 msgid "&Edit Bookmarks…"
-msgstr "Uredi zaznamke"
+msgstr "Uredi zaznamke…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Spelling"
 msgid "&Spelling…"
-msgstr "Črkovanje"
+msgstr "Črkovanje…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -496,28 +466,21 @@ msgid "F&ull Screen Mode"
 msgstr "&Celozaslonski način"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Nastavi bližnjice..."
+msgstr "Nastavi bližnjice…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "Nastavi %1..."
+msgstr "Nastavi %1…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Toolbars"
 msgid "Configure Tool&bars…"
-msgstr "Nastavi orodne vrstice"
+msgstr "Nastavi orodne vrstice…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure Notifications"
 msgid "Configure &Notifications…"
-msgstr "Nastavi obvestila"
+msgstr "Nastavi obvestila…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -529,17 +492,12 @@ msgid "What's &This?"
 msgstr "Kaj je &to?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Report Bug"
 msgid "&Report Bug…"
-msgstr "Poročaj o hrošču"
+msgstr "Poročaj o napaki…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "Nastavi jezik..."
+msgstr "Nastavi jezik…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -555,10 +513,8 @@ msgid "&Delete"
 msgstr "&Izbriši"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "P&reimenuj ..."
+msgstr "P&reimenuj…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"

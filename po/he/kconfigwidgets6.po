@@ -23,14 +23,14 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-16 01:43+0000\n"
-"PO-Revision-Date: 2023-10-22 00:38+0300\n"
+"PO-Revision-Date: 2023-11-16 13:09+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -148,8 +148,6 @@ msgid "Create new document"
 msgstr "יצירת מסמך חדש"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
 msgstr "&פתיחה…"
 
@@ -174,8 +172,6 @@ msgid "Save document"
 msgstr "שמירת מסמך"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
 msgstr "שמירה &בשם…"
 
@@ -200,10 +196,8 @@ msgid "Close document"
 msgstr "סגירת המסמך"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
-msgstr "&הדפסה…"
+msgstr "ה&דפסה…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -218,10 +212,8 @@ msgid "Show a print preview of document"
 msgstr "הצגת תצוגה מקדימה להדפסת המסמך"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
-msgstr "ש&ליחה בדוא״ל…"
+msgstr "שליחה ב&דוא״ל…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -288,10 +280,8 @@ msgid "Dese&lect"
 msgstr "בי&טול בחירה"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
-msgstr "&חיפוש…"
+msgstr "&איתור…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -302,8 +292,6 @@ msgid "Find Pre&vious"
 msgstr "חיפוש ה&קודם"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
 msgstr "ה&חלפה…"
 
@@ -348,10 +336,8 @@ msgid "Zoom &Out"
 msgstr "הת&רחקות"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
-msgstr "&תקריב…"
+msgstr "ת&קריב…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -390,20 +376,14 @@ msgid "Go to next page"
 msgstr "מעבר לעמוד הבא"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "מעבר &אל…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "מעבר ל&עמוד..."
+msgstr "מעבר ל&עמוד…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
 msgstr "מעבר ל&שורה…"
 
@@ -444,14 +424,10 @@ msgid "&Add Bookmark"
 msgstr "&הוספת סימנייה"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
 msgstr "&עריכת סימניות…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
 msgstr "בדיקת &איות…"
 
@@ -488,26 +464,19 @@ msgid "F&ull Screen Mode"
 msgstr "מצב מסך מ&לא"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
 msgstr "הגדרות מקשי &קיצור במקלדת…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "&הגדרת %1…"
+msgstr "ה&גדרת %1…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
 msgstr "הגדרת סרגלי־&כלים…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
 msgstr "הגדרת ה&תראות…"
 
@@ -521,14 +490,10 @@ msgid "What's &This?"
 msgstr "מה &זה?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
 msgstr "&דיווח על תקלה…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
 msgstr "הגדרת &שפה…"
 
@@ -546,8 +511,6 @@ msgid "&Delete"
 msgstr "&מחיקה"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
 msgstr "&שינוי שם…"
 

@@ -6,13 +6,13 @@
 # Eugene Onischenko <oneugene@ukr.net>, 2002, 2003, 2004, 2005, 2006.
 # Andriy Rysin <arysin@bcsii.com>, 2002, 2003, 2006, 2007.
 # Ivan Petrouchtchak <fr.ivan@ukrainian-orthodox.org>, 2005, 2006, 2007, 2008.
-# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016, 2017, 2019, 2020, 2021, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-16 01:43+0000\n"
-"PO-Revision-Date: 2022-08-07 08:57+0300\n"
+"PO-Revision-Date: 2023-11-16 18:48+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -139,8 +139,6 @@ msgid "Create new document"
 msgstr "Створити новий документ"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
 msgstr "&Відкрити…"
 
@@ -165,8 +163,6 @@ msgid "Save document"
 msgstr "Зберегти документ"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
 msgstr "Зберегти &як…"
 
@@ -191,10 +187,8 @@ msgid "Close document"
 msgstr "Закрити документ"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
-msgstr "&Друкувати…"
+msgstr "&Надрукувати…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -209,10 +203,8 @@ msgid "Show a print preview of document"
 msgstr "Показати попередній перегляд результатів друку документа"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
-msgstr "&Надіслати листа…"
+msgstr "&Надіслати поштою…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -279,10 +271,8 @@ msgid "Dese&lect"
 msgstr "Скасувати ви&бір"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
-msgstr "&Пошук…"
+msgstr "З&найти…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -293,10 +283,8 @@ msgid "Find Pre&vious"
 msgstr "Знайти &позаду"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
-msgstr "&Замінити…"
+msgstr "З&амінити…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -339,8 +327,6 @@ msgid "Zoom &Out"
 msgstr "З&меншити"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
 msgstr "&Масштаб…"
 
@@ -381,22 +367,16 @@ msgid "Go to next page"
 msgstr "Перейти до наступної сторінки"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "П&ерейти…"
+msgstr "Пере&йти…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "Перейти до &сторінки…"
+msgstr "П&ерейти до сторінки…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
-msgstr "Перейти до ря&дка…"
+msgstr "Пе&рейти до рядка…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -435,16 +415,12 @@ msgid "&Add Bookmark"
 msgstr "&Додати закладку"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
 msgstr "&Редагувати закладки…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
-msgstr "&Перевірка правопису…"
+msgstr "Пр&авопис…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -479,28 +455,21 @@ msgid "F&ull Screen Mode"
 msgstr "Повноекранний &режим"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Налаштувати клавіатурні с&корочення…"
+msgstr "Налаштовування &клавіатурних скорочень…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
 msgstr "&Налаштувати %1…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
-msgstr "Налаштувати пенал&и…"
+msgstr "Налаштувати п&анелі…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
-msgstr "Налаштувати &сповіщення…"
+msgstr "Налаштувати спові&щення…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -512,16 +481,12 @@ msgid "What's &This?"
 msgstr "&Що це?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
-msgstr "Надіслати &звіт про помилку…"
+msgstr "&Повідомити про ваду…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "Налаштувати &мову…"
+msgstr "Нала&штувати мову…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -537,10 +502,8 @@ msgid "&Delete"
 msgstr "Ви&лучити"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "П&ерейменувати…"
+msgstr "Пере&йменувати…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"

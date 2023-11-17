@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-16 01:43+0000\n"
-"PO-Revision-Date: 2023-04-16 12:22+0100\n"
+"PO-Revision-Date: 2023-11-16 07:39+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -143,10 +143,8 @@ msgid "Create new document"
 msgstr "Krei novan dokumenton"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
-msgstr "&Malfermi..."
+msgstr "&Malfermi…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -169,10 +167,8 @@ msgid "Save document"
 msgstr "Konservi dokumenton"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
-msgstr "Konservi &kiel..."
+msgstr "Konservi &Kiel…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -195,10 +191,8 @@ msgid "Close document"
 msgstr "Fermi dokumenton"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
-msgstr "&Presi..."
+msgstr "&Presi…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -213,10 +207,8 @@ msgid "Show a print preview of document"
 msgstr "Montri presan antaŭrigardon de dokumento"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
-msgstr "&Retpoŝti..."
+msgstr "&Retpoŝti…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -283,10 +275,8 @@ msgid "Dese&lect"
 msgstr "Male&lekti ù"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
-msgstr "&Trovi..."
+msgstr "&Trovi…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -297,10 +287,8 @@ msgid "Find Pre&vious"
 msgstr "Tro&vi antaŭan "
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
-msgstr "&Anstataŭigi... "
+msgstr "&Anstataŭigi…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -336,17 +324,15 @@ msgstr "Zomi por adapti paĝan altecon en fenestro"
 
 #: kstandardaction_p.h:92
 msgid "Zoom &In"
-msgstr "Pl&igrandigi..."
+msgstr "Zom&i…"
 
 #: kstandardaction_p.h:93
 msgid "Zoom &Out"
 msgstr "&Malpligrandigi"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
-msgstr "&Grandigi..."
+msgstr "&Zomi…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -385,22 +371,16 @@ msgid "Go to next page"
 msgstr "Iri al sekva paĝo"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "&Iri al..."
+msgstr "&Iri al…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "&Iri al paĝo..."
+msgstr "&Iri al paĝo…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
-msgstr "&Iri al linio..."
+msgstr "&Iri al Linio…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -436,19 +416,15 @@ msgstr "Iri antaŭen en la dokumento"
 
 #: kstandardaction_p.h:112
 msgid "&Add Bookmark"
-msgstr "&Aldoni legosignon"
+msgstr "&Aldoni Legosignon"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
-msgstr "R&edakti legosignojn..."
+msgstr "R&edakti Legosignojn…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
-msgstr "&Literumado..."
+msgstr "&Literumado…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -483,28 +459,21 @@ msgid "F&ull Screen Mode"
 msgstr "T&utekrana maniero"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Agordi Fulmo&klavojn..."
+msgstr "Agordi Fulmo&klavojn…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "&Agordi %1..."
+msgstr "&Agordi %1…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
-msgstr "Agordi ilo&bretojn..."
+msgstr "Agordi Ilo&bretojn…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
-msgstr "Agordi ate&ntigojn..."
+msgstr "Agordi Ate&ntigojn…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -516,16 +485,12 @@ msgid "What's &This?"
 msgstr "Kio estas &tio?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
-msgstr "&Raporti cimon..."
+msgstr "&Raporti Cimon…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "Agordi &Lingvon..."
+msgstr "Agordi &Lingvon…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -541,10 +506,8 @@ msgid "&Delete"
 msgstr "For&igi"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "&Anstataŭigi... "
+msgstr "&Renomi… "
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
@@ -556,10 +519,4 @@ msgstr "&Donaci"
 
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
-msgstr "Malfe&rmi Menuon"
-
-#~ msgid "Tip of the &Day"
-#~ msgstr "Konsileto &de la tago"
-
-#~ msgid "Default"
-#~ msgstr "Defaŭlta"
+msgstr "Malfermi &Menuon"
