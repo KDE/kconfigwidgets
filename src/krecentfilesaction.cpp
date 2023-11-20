@@ -104,6 +104,7 @@ void KRecentFilesActionPrivate::urlSelected(QAction *action)
     Q_EMIT q->urlSelected(url);
 }
 
+// TODO: remove this helper function, it will crash if you use it in a loop
 void KRecentFilesActionPrivate::removeAction(std::vector<RecentActionInfo>::iterator it)
 {
     Q_Q(KRecentFilesAction);
@@ -130,8 +131,9 @@ void KRecentFilesAction::setMaxItems(int maxItems)
         auto endIt = d->m_recentActions.begin() + difference;
         for (auto it = beginIt; it < endIt; ++it) {
             // Remove the action from the menus, action groups ...etc
-            d->removeAction(it);
+            delete KSelectAction::removeAction(it->action);
         }
+        d->m_recentActions.erase(beginIt, endIt);
     }
 }
 
