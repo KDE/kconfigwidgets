@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-16 01:43+0000\n"
-"PO-Revision-Date: 2023-11-11 07:19\n"
+"PO-Revision-Date: 2023-11-19 03:37\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -131,10 +131,8 @@ msgid "Create new document"
 msgstr "创建新文档"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
-msgstr "打开(&O)..."
+msgstr ""
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -157,10 +155,8 @@ msgid "Save document"
 msgstr "保存文档"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
-msgstr "另存为(&A)..."
+msgstr ""
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -183,10 +179,8 @@ msgid "Close document"
 msgstr "关闭文档"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
-msgstr "打印(&P)..."
+msgstr ""
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -201,10 +195,8 @@ msgid "Show a print preview of document"
 msgstr "显示文档的打印预览"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
-msgstr "发送电子邮件(&M)..."
+msgstr ""
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -271,10 +263,8 @@ msgid "Dese&lect"
 msgstr "取消选择(&L)"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
-msgstr "查找(&F)..."
+msgstr ""
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -285,10 +275,8 @@ msgid "Find Pre&vious"
 msgstr "查找上一个(&V)"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
-msgstr "替换(&R)..."
+msgstr ""
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -331,10 +319,8 @@ msgid "Zoom &Out"
 msgstr "缩小(&O)"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
-msgstr "缩放(&Z)..."
+msgstr ""
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -373,22 +359,16 @@ msgid "Go to next page"
 msgstr "跳转到下一页"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "跳转到(&G)..."
+msgstr ""
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "跳转到页面(&G)..."
+msgstr ""
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
-msgstr "跳转到行(&G)..."
+msgstr ""
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -427,16 +407,12 @@ msgid "&Add Bookmark"
 msgstr "添加书签(&A)"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
-msgstr "编辑书签(&E)..."
+msgstr ""
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
-msgstr "拼写检查(&S)..."
+msgstr ""
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -471,28 +447,21 @@ msgid "F&ull Screen Mode"
 msgstr "全屏模式(&U)"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "配置键盘快捷键(&H)..."
+msgstr ""
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "配置 %1(&C)..."
+msgstr ""
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
-msgstr "配置工具栏(&B)..."
+msgstr ""
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
-msgstr "配置通知(&N)..."
+msgstr ""
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -504,16 +473,12 @@ msgid "What's &This?"
 msgstr "这是什么(&T)？"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
-msgstr "报告程序缺陷(&R)…"
+msgstr ""
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "配置语言(&L)..."
+msgstr ""
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -529,10 +494,8 @@ msgid "&Delete"
 msgstr "删除(&D)"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "重命名(&R)..."
+msgstr ""
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
