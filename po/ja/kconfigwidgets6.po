@@ -560,6 +560,3 @@ msgstr "寄付(&D)"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "メニューを開く(&M)"
-
-#~ msgid "Tip of the &Day"
-#~ msgstr "今日の一言(&D)"
