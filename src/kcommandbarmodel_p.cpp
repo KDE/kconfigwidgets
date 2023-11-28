@@ -10,6 +10,7 @@
 #include <KLocalizedString>
 
 #include <QAction>
+#include <QMenu>
 
 #include <unordered_set>
 

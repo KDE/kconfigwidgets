@@ -15,6 +15,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QMainWindow>
+#include <QMenu>
 #include <QPainter>
 #include <QScreen>
 #include <QSortFilterProxyModel>
@@ -81,7 +82,7 @@ static QRect getCommandBarBoundingRect(KCommandBar *commandBar)
         }
     }
 
-    return boundingRect.translated(mainWindow->geometry().topLeft());
+    return boundingRect;
 }
 
 // BEGIN CommandBarFilterModel
@@ -544,20 +545,22 @@ QStringList KCommandBarPrivate::lastUsedActions() const
 
 // BEGIN KCommandBar
 KCommandBar::KCommandBar(QWidget *parent)
-    : QMenu(parent)
+    : QFrame(parent)
     , d(new KCommandBarPrivate)
 {
-    /**
-     * There must be a parent, no nullptrs!
-     */
-    Q_ASSERT(parent);
+    QGraphicsDropShadowEffect *e = new QGraphicsDropShadowEffect(this);
+    e->setColor(palette().color(QPalette::Shadow));
+    e->setOffset(2.);
+    e->setBlurRadius(8.);
+    setGraphicsEffect(e);
 
-    setWindowFlag(Qt::FramelessWindowHint);
-    setAttribute(Qt::WA_TranslucentBackground);
+    setAutoFillBackground(true);
+    setFrameShadow(QFrame::Raised);
+    setFrameShape(QFrame::Box);
 
     QVBoxLayout *layout = new QVBoxLayout();
     layout->setSpacing(0);
-    layout->setContentsMargins(4, 4, 4, 4);
+    layout->setContentsMargins(2, 2, 2, 2);
     setLayout(layout);
 
     setFocusProxy(&d->m_lineEdit);
@@ -595,6 +598,7 @@ KCommandBar::KCommandBar(QWidget *parent)
     d->m_treeView.header()->setSectionResizeMode(KCommandBarModel::Column_Command, QHeaderView::Stretch);
     d->m_treeView.header()->setSectionResizeMode(KCommandBarModel::Column_Shortcut, QHeaderView::ResizeToContents);
 
+    parent->installEventFilter(this);
     d->m_treeView.installEventFilter(this);
     d->m_lineEdit.installEventFilter(this);
 
@@ -683,14 +687,14 @@ void KCommandBar::show()
 
     const QSize size{std::min(maxWidth, std::max(preferredWidth, minWidth)), std::min(maxHeight, std::max(preferredHeight, minHeight))};
 
-    // resize() doesn't work here, so use setFixedSize() instead
     setFixedSize(size);
 
     // set the position to the top-center of the parent
     // just below the menubar/toolbar (if any)
     const QPoint position{boundingRect.center().x() - size.width() / 2, boundingRect.y()};
+    move(position);
 
-    popup(position);
+    QWidget::show();
 }
 
 bool KCommandBar::eventFilter(QObject *obj, QEvent *event)
@@ -704,11 +708,7 @@ bool KCommandBar::eventFilter(QObject *obj, QEvent *event)
                 QCoreApplication::sendEvent(&d->m_treeView, event);
                 return true;
             }
-
-            if (key == Qt::Key_Escape) {
-                d->clearLineEdit();
-            }
-        } else {
+        } else if (obj == &d->m_treeView) {
             const int key = keyEvent->key();
             const bool forward2input = (key != Qt::Key_Up) && (key != Qt::Key_Down) && (key != Qt::Key_PageUp) && (key != Qt::Key_PageDown)
                 && (key != Qt::Key_Tab) && (key != Qt::Key_Backtab);
@@ -717,13 +717,25 @@ bool KCommandBar::eventFilter(QObject *obj, QEvent *event)
                 return true;
             }
         }
+
+        if (keyEvent->key() == Qt::Key_Escape) {
+            hide();
+            deleteLater();
+            return true;
+        }
     }
 
     // hide on focus out, if neither input field nor list have focus!
     else if (event->type() == QEvent::FocusOut && !(d->m_lineEdit.hasFocus() || d->m_treeView.hasFocus())) {
         d->clearLineEdit();
+        deleteLater();
         hide();
         return true;
+    }
+
+    // handle resizing
+    if (parent() == obj && event->type() == QEvent::Resize) {
+        show();
     }
 
     return QWidget::eventFilter(obj, event);

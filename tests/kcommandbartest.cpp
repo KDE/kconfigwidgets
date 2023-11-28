@@ -36,16 +36,16 @@ public:
 
         auto qo1 = toolBar->addAction(QStringLiteral("Open Command Bar"));
         connect(qo1, &QAction::triggered, this, [this] {
-            KCommandBar bar(this);
-            bar.setActions(getActions());
-            bar.exec();
+            KCommandBar *bar = new KCommandBar(this);
+            bar->setActions(getActions());
+            bar->show();
         });
 
         auto qo2 = toolBar->addAction(QStringLiteral("Open Command Bar (RTL)"));
         connect(qo2, &QAction::triggered, this, [this] {
-            KCommandBar bar(this);
-            bar.setActions(getRTLActions());
-            bar.exec();
+            KCommandBar *bar = new KCommandBar(this);
+            bar->setActions(getRTLActions());
+            bar->show();
         });
     }
 

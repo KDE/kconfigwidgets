@@ -8,7 +8,7 @@
 
 #include "kconfigwidgets_export.h"
 
-#include <QMenu>
+#include <QFrame>
 #include <memory>
 
 /**
@@ -29,22 +29,22 @@
  * {
  *      // `this` is important, you must pass a parent widget
  *      // here. Ideally it will be your mainWindow
- *     KCommandBar bar(this);
+ *     KCommandBar *bar = new KCommandBar(this);
  *
  *     // Load actions into the command bar
  *     // These actions can be from your menus / toolbars etc
  *     QList<ActionGroup> actionGroups = ...;
- *     bar.setActions(actionGroups);
+ *     bar->setActions(actionGroups);
  *
  *     // Show
- *     bar.exec();
+ *     bar->show();
  * }
  * @endcode
  *
  * @since 5.83
  * @author Waqar Ahmed <waqar.17a@gmail.com>
  */
-class KCONFIGWIDGETS_EXPORT KCommandBar : public QMenu
+class KCONFIGWIDGETS_EXPORT KCommandBar : public QFrame
 {
     Q_OBJECT
 
