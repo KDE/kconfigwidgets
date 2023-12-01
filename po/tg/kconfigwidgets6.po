@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-16 01:43+0000\n"
+"POT-Creation-Date: 2023-12-01 01:36+0000\n"
 "PO-Revision-Date: 2019-09-15 21:27+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -48,7 +48,7 @@ msgstr "Худмуайянкунии"
 msgid "Color Scheme"
 msgstr ""
 
-#: kcommandbar.cpp:616
+#: kcommandbar.cpp:610
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

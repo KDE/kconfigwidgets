@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-16 01:43+0000\n"
+"POT-Creation-Date: 2023-12-01 01:36+0000\n"
 "PO-Revision-Date: 2009-11-22 00:01+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
@@ -46,7 +46,7 @@ msgstr "આપમેળે ચકાસો"
 msgid "Color Scheme"
 msgstr "ટૂંકાણ પધ્ધતિઓ"
 
-#: kcommandbar.cpp:616
+#: kcommandbar.cpp:610
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""
