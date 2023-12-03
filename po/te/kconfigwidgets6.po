@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-01 01:36+0000\n"
+"POT-Creation-Date: 2023-12-03 01:34+0000\n"
 "PO-Revision-Date: 2013-11-04 23:55+0630\n"
 "Last-Translator: Bhuvan Krishna <bhuvan@swecha.org>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -54,7 +54,7 @@ msgstr "దానంతటదే కనిపెట్టు"
 msgid "Color Scheme"
 msgstr "శీఘ్ర మార్గాల స్కీములు"
 
-#: kcommandbar.cpp:610
+#: kcommandbar.cpp:614
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

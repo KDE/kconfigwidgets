@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-01 01:36+0000\n"
+"POT-Creation-Date: 2023-12-03 01:34+0000\n"
 "PO-Revision-Date: 2012-07-04 17:33+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -50,7 +50,7 @@ msgstr "Otomatike"
 msgid "Color Scheme"
 msgstr "Arindjmints d' rascourtis"
 
-#: kcommandbar.cpp:610
+#: kcommandbar.cpp:614
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

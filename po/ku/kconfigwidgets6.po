@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-01 01:36+0000\n"
+"POT-Creation-Date: 2023-12-03 01:34+0000\n"
 "PO-Revision-Date: 2010-08-13 15:45+0200\n"
 "Last-Translator: Erdal Ronahî <erdal.ronahi@nospam.gmail.com>\n"
 "Language-Team: Kurdish Team http://pckurd.net\n"
@@ -54,7 +54,7 @@ msgstr "Xweber bibîne"
 msgid "Color Scheme"
 msgstr "Şemayên Kurterê"
 
-#: kcommandbar.cpp:610
+#: kcommandbar.cpp:614
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""
