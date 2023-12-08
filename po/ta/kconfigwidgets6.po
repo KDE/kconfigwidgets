@@ -4,13 +4,13 @@
 # Sivakumar Shanmugasundaram <sshanmu@yahoo.com>, 2000.
 # Thuraiappah Vaseeharan <t_vasee@yahoo.com>, 2000-2001.
 # ம. ஸ்ரீ ராமதாஸ் | Sri Ramadoss M <amachu@yavarkkum.org>, 2007-2012.
-# Kishore G <kishore96@gmail.com>, 2021, 2022.
+# SPDX-FileCopyrightText: 2021, 2022, 2023 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-03 01:34+0000\n"
-"PO-Revision-Date: 2022-05-31 21:56+0530\n"
+"PO-Revision-Date: 2023-12-07 21:41+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.04.1\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -134,11 +134,8 @@ msgid "Create new document"
 msgstr "புதிய ஆவணத்தை உருவாக்கு"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgctxt "@label:button"
-#| msgid "&Open"
 msgid "&Open…"
-msgstr "&திறக்க"
+msgstr "&திற…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -161,10 +158,8 @@ msgid "Save document"
 msgstr "ஆவணத்தை சேமி"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save As"
 msgid "Save &As…"
-msgstr "மாற்றிக் காக்க"
+msgstr "&இப்படி சேமி…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -187,10 +182,8 @@ msgid "Close document"
 msgstr "ஆவணத்தை மூடு"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "Print"
 msgid "&Print…"
-msgstr "அச்சிடுக"
+msgstr "&அச்சிடு…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -205,11 +198,8 @@ msgid "Show a print preview of document"
 msgstr "ஆவணம் அச்சிடப்பட்டால் எப்படி இருக்கும் என ஒரு மூன்னோட்டத்தை காட்டும்"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Mail"
 msgid "&Mail…"
-msgstr "மடல்"
+msgstr "அ&ஞ்சலிடு…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -276,10 +266,8 @@ msgid "Dese&lect"
 msgstr "தே&ர்வை நிராகரி"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find"
 msgid "&Find…"
-msgstr "&தேடுக"
+msgstr "&தேடு…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -290,10 +278,8 @@ msgid "Find Pre&vious"
 msgstr "மு&ந்தையதை கண்டுபிடி"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace"
 msgid "&Replace…"
-msgstr "&மாற்றுக"
+msgstr "&மாற்று…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -336,11 +322,8 @@ msgid "Zoom &Out"
 msgstr "&சிறிதாக்கு"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Zoom"
 msgid "&Zoom…"
-msgstr "பெரிதாக்குக"
+msgstr "&உருப்பெருக்கம்…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -379,23 +362,16 @@ msgid "Go to next page"
 msgstr "அடுத்த பக்கத்திற்கு செல்"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "&இங்கு செல்…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "ப&க்கத்திற்கு செல்…"
+msgstr "&பக்கத்திற்கு செல்…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "&Go to Line…"
-msgstr "செல்ல வேண்டிய வரி"
+msgstr "&வரிக்கு செல்…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -434,18 +410,12 @@ msgid "&Add Bookmark"
 msgstr "நினைவுக்குறியை &சேர்"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Edit Bookmarks"
 msgid "&Edit Bookmarks…"
-msgstr "நினைவுக்குறிகளைத் &தொகுக்க"
+msgstr "&நினைவுக்குறிகளை திருத்து…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Spelling"
 msgid "&Spelling…"
-msgstr "உச்சரிப்பு..."
+msgstr "&எழுத்தாக்கம்…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -480,28 +450,21 @@ msgid "F&ull Screen Mode"
 msgstr "&முழுத்திரை பயன்முறை"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
 msgstr "&விசை சுருக்குவழிகளை அமை…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
 msgstr "%1 தனை &அமை…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Toolbars"
 msgid "Configure Tool&bars…"
-msgstr "கருவிப்பட்டைகளை வடிவமை"
+msgstr "க&ருவிப்பட்டைகளை அமை…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure Notifications"
 msgid "Configure &Notifications…"
-msgstr "அறிவிப்புகளை வடிவமைக்க"
+msgstr "அ&றிவிப்புகளை அமை…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -513,15 +476,10 @@ msgid "What's &This?"
 msgstr "இது &என்ன?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Report Bug"
 msgid "&Report Bug…"
-msgstr "வழுத்தாக்கல் செய்... "
+msgstr "பி&ழையை தெரிவி…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
 msgstr "&மொழியை அமை..."
 
@@ -539,8 +497,6 @@ msgid "&Delete"
 msgstr "&நீக்கு"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
 msgstr "&மறுபெயரிடு…"
 
