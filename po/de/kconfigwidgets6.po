@@ -6,7 +6,7 @@
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009.
 # Burkhard Lück <lueck@hube-lueck.de>, 2006, 2007, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020, 2021.
 # Frederik Schwarzer <schwarzer@kde.org>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2016, 2020, 2022.
-# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# SPDX-FileCopyrightText: 2010, 2023 Johannes Obermayr <johannesobermayr@gmx.de>
 # Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
 # Rolf Eike Beer <kde@opensource.sf-tec.de>, 2012.
 msgid ""
@@ -14,15 +14,15 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-03 01:34+0000\n"
-"PO-Revision-Date: 2022-06-10 00:24+0200\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"PO-Revision-Date: 2023-12-20 22:43+0100\n"
+"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -140,11 +140,8 @@ msgid "Create new document"
 msgstr "Neues Dokument erstellen"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgctxt "@label:button"
-#| msgid "&Open"
 msgid "&Open…"
-msgstr "Öff&nen"
+msgstr "Öff&nen …"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -167,10 +164,8 @@ msgid "Save document"
 msgstr "Dokument speichern"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save As"
 msgid "Save &As…"
-msgstr "Speichern unter"
+msgstr "Speichern &unter …"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -193,10 +188,8 @@ msgid "Close document"
 msgstr "Dokument schließen"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "Print"
 msgid "&Print…"
-msgstr "Drucken"
+msgstr "&Drucken …"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -211,11 +204,8 @@ msgid "Show a print preview of document"
 msgstr "Eine Druckvorschau des Dokuments anzeigen"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Mail"
 msgid "&Mail…"
-msgstr "Via E-Mail versenden"
+msgstr "E-&Mail …"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -282,10 +272,8 @@ msgid "Dese&lect"
 msgstr "Auswahl &aufheben"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find"
 msgid "&Find…"
-msgstr "&Suchen"
+msgstr "&Suchen …"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -296,10 +284,8 @@ msgid "Find Pre&vious"
 msgstr "Frü&here suchen"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace"
 msgid "&Replace…"
-msgstr "&Ersetzen"
+msgstr "&Ersetzen …"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -342,11 +328,8 @@ msgid "Zoom &Out"
 msgstr "Ver&kleinern"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Zoom"
 msgid "&Zoom…"
-msgstr "Skalierung"
+msgstr "&Vergrößerung …"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -385,23 +368,16 @@ msgid "Go to next page"
 msgstr "Zur nächsten Seite"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "&Gehe zu ..."
+msgstr "&Gehe zu …"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "Gehe zu &Seite ..."
+msgstr "Gehe zu &Seite …"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "&Go to Line…"
-msgstr "Gehe zu Zeile"
+msgstr "Gehe zu &Zeile …"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -440,18 +416,12 @@ msgid "&Add Bookmark"
 msgstr "Lesezeichen hin&zufügen"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Edit Bookmarks"
 msgid "&Edit Bookmarks…"
-msgstr "Lesezeichen bearbeiten"
+msgstr "&Lesezeichen bearbeiten …"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Spelling"
 msgid "&Spelling…"
-msgstr "Rechtschreibung"
+msgstr "&Rechtschreibung …"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -486,28 +456,21 @@ msgid "F&ull Screen Mode"
 msgstr "&Vollbildmodus"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Tastaturkurzbefe&hle festlegen ..."
+msgstr "Tastaturkurzbefe&hle festlegen …"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "%1 ein&richten ..."
+msgstr "%1 ein&richten …"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Toolbars"
 msgid "Configure Tool&bars…"
-msgstr "Werkzeugleisten einrichten"
+msgstr "&Werkzeugleisten einrichten …"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure Notifications"
 msgid "Configure &Notifications…"
-msgstr "Benachrichtigungen festlegen"
+msgstr "&Benachrichtigungen festlegen …"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -519,17 +482,12 @@ msgid "What's &This?"
 msgstr "Was ist &das?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Report Bug"
 msgid "&Report Bug…"
-msgstr "Probleme oder Wünsche berichten"
+msgstr "P&robleme oder Wünsche berichten …"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "&Sprache einrichten ..."
+msgstr "&Sprache einrichten …"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -545,10 +503,8 @@ msgid "&Delete"
 msgstr "&Löschen"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "&Umbenennen ..."
+msgstr "&Umbenennen …"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
