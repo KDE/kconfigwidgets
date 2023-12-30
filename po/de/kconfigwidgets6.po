@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-03 01:34+0000\n"
-"PO-Revision-Date: 2023-12-20 22:43+0100\n"
+"PO-Revision-Date: 2023-12-21 16:41+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -205,7 +205,7 @@ msgstr "Eine Druckvorschau des Dokuments anzeigen"
 
 #: kstandardaction_p.h:72
 msgid "&Mail…"
-msgstr "E-&Mail …"
+msgstr "&Mail …"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -417,11 +417,11 @@ msgstr "Lesezeichen hin&zufügen"
 
 #: kstandardaction_p.h:113
 msgid "&Edit Bookmarks…"
-msgstr "&Lesezeichen bearbeiten …"
+msgstr "Lesezeichen &bearbeiten …"
 
 #: kstandardaction_p.h:115
 msgid "&Spelling…"
-msgstr "&Rechtschreibung …"
+msgstr "Rech&tschreibung …"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -466,7 +466,7 @@ msgstr "%1 ein&richten …"
 
 #: kstandardaction_p.h:123
 msgid "Configure Tool&bars…"
-msgstr "&Werkzeugleisten einrichten …"
+msgstr "Werk&zeugleisten einrichten …"
 
 #: kstandardaction_p.h:124
 msgid "Configure &Notifications…"
