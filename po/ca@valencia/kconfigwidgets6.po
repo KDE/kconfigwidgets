@@ -243,7 +243,7 @@ msgstr "Re&talla"
 
 #: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
-msgstr "Retalla la selecció al porta-retalls"
+msgstr "Retalla la selecció a dins del porta-retalls"
 
 #: kstandardaction_p.h:78
 msgid "&Copy"
@@ -251,7 +251,7 @@ msgstr "&Copia"
 
 #: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
-msgstr "Copia la selecció al porta-retalls"
+msgstr "Copia la selecció a dins del porta-retalls"
 
 #: kstandardaction_p.h:79
 msgid "&Paste"
