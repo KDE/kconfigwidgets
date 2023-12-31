@@ -491,6 +491,7 @@ public:
 
 void KCommandBarPrivate::slotReturnPressed(KCommandBar *q)
 {
+    QPointer<KCommandBar> crashGuard = q;
     auto act = m_proxyModel.data(m_treeView.currentIndex(), Qt::UserRole).value<QAction *>();
     if (act) {
         // if the action is a menu, we take all its actions
@@ -523,8 +524,14 @@ void KCommandBarPrivate::slotReturnPressed(KCommandBar *q)
             act->trigger();
         }
     }
-    clearLineEdit();
-    q->hide();
+
+    // We might trigger an action that triggers focus change
+    // resulting in us getting deleted
+    if (crashGuard) {
+        clearLineEdit();
+        q->hide();
+        q->deleteLater();
+    }
 }
 
 void KCommandBarPrivate::setLastUsedActions()
