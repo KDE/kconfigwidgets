@@ -17,6 +17,7 @@
 #include <QMainWindow>
 #include <QMenu>
 #include <QPainter>
+#include <QPointer>
 #include <QScreen>
 #include <QSortFilterProxyModel>
 #include <QStatusBar>
