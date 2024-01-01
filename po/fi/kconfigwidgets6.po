@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-03 01:34+0000\n"
+"POT-Creation-Date: 2024-01-01 01:34+0000\n"
 "PO-Revision-Date: 2023-05-18 12:20+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -69,7 +69,7 @@ msgstr "Tunnista automaattisesti"
 msgid "Color Scheme"
 msgstr "Väriteema"
 
-#: kcommandbar.cpp:614
+#: kcommandbar.cpp:621
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "Ei suodatinta vastaavia komentoja"

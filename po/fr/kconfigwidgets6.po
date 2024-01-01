@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-03 01:34+0000\n"
+"POT-Creation-Date: 2024-01-01 01:34+0000\n"
 "PO-Revision-Date: 2023-11-17 10:21+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: fr\n"
@@ -71,7 +71,7 @@ msgstr "Détecter automatiquement"
 msgid "Color Scheme"
 msgstr "Schéma de couleurs"
 
-#: kcommandbar.cpp:614
+#: kcommandbar.cpp:621
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "Aucune commande ne correspondant au filtre"

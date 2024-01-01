@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4_as\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-03 01:34+0000\n"
+"POT-Creation-Date: 2024-01-01 01:34+0000\n"
 "PO-Revision-Date: 2008-12-26 15:19+0530\n"
 "Last-Translator: Amitakhya Phukan <অমিতাক্ষ ফুকন>\n"
 "Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
@@ -46,7 +46,7 @@ msgstr "স্বয়ংক্ৰিয় চিনাক্তকৰণ"
 msgid "Color Scheme"
 msgstr "চমু পথ আঁচনি"
 
-#: kcommandbar.cpp:614
+#: kcommandbar.cpp:621
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

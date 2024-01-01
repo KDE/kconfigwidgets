@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-03 01:34+0000\n"
+"POT-Creation-Date: 2024-01-01 01:34+0000\n"
 "PO-Revision-Date: 2010-12-31 22:47+0700\n"
 "Last-Translator: Phuwanat Sakornsakolpat <narachai@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -49,7 +49,7 @@ msgstr "ตรวจอัตโนมัติ"
 msgid "Color Scheme"
 msgstr "ชุดปุ่มพิมพ์ลัด"
 
-#: kcommandbar.cpp:614
+#: kcommandbar.cpp:621
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""
