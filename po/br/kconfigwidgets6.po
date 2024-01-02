@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4-1.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-01 01:34+0000\n"
+"POT-Creation-Date: 2024-01-02 01:30+0000\n"
 "PO-Revision-Date: 2007-10-15 22:19+0200\n"
 "Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
 "Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
@@ -47,7 +47,7 @@ msgstr "Reizhañ ent emgefreek"
 msgid "Color Scheme"
 msgstr "Berradennoù"
 
-#: kcommandbar.cpp:621
+#: kcommandbar.cpp:622
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

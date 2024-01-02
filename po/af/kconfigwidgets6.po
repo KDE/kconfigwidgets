@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4 stable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-01 01:34+0000\n"
+"POT-Creation-Date: 2024-01-02 01:30+0000\n"
 "PO-Revision-Date: 2006-01-12 16:33+0200\n"
 "Last-Translator: JUANITA FRANZ <JUANITA.FRANZ@VR-WEB.DE>\n"
 "Language-Team: AFRIKAANS <translate-discuss-af@lists.sourceforge.net>\n"
@@ -43,7 +43,7 @@ msgstr "Auto Korrigeer"
 msgid "Color Scheme"
 msgstr "Kortpaaie"
 
-#: kcommandbar.cpp:621
+#: kcommandbar.cpp:622
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-01 01:34+0000\n"
+"POT-Creation-Date: 2024-01-02 01:30+0000\n"
 "PO-Revision-Date: 2022-06-22 16:15-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -59,7 +59,7 @@ msgstr "Detectar automaticamente"
 msgid "Color Scheme"
 msgstr "Esquema de cores"
 
-#: kcommandbar.cpp:621
+#: kcommandbar.cpp:622
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "Nenhum comando correspondente ao filtro"

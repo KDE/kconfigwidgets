@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-01 01:34+0000\n"
+"POT-Creation-Date: 2024-01-02 01:30+0000\n"
 "PO-Revision-Date: 2023-11-16 13:09+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -61,7 +61,7 @@ msgstr "זיהוי אוטומטי"
 msgid "Color Scheme"
 msgstr "סכמת צבעים"
 
-#: kcommandbar.cpp:621
+#: kcommandbar.cpp:622
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "אין פקודות שתואמות למסנן"
