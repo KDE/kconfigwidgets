@@ -1,13 +1,13 @@
 # Traducerea kdelibs4.po în Română
 # Laurenţiu Buzdugan <lbuz@rolix.org>, 2008, 2009.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2021, 2022.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2021, 2022, 2024.
 # Cristian Oneț <onet.cristian@gmail.com>, 2010, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:24+0000\n"
-"PO-Revision-Date: 2022-06-01 15:14+0100\n"
+"PO-Revision-Date: 2024-01-07 14:13+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -432,7 +432,7 @@ msgstr "&Adaugă semn de carte"
 
 #: kstandardaction_p.h:83
 msgid "&Edit Bookmarks..."
-msgstr "R&edactează semne de carte…"
+msgstr "Modifică s&emnele de carte…"
 
 #: kstandardaction_p.h:85
 msgid "&Spelling..."
