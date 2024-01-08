@@ -1,13 +1,13 @@
 # Kiszel Kristóf <ulysses@kubuntu.org>, 2010.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013.
-# Kristof Kiszel <kiszel.kristof@gmail.com>, 2018, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2018, 2020, 2021, 2022, 2024 Kristof Kiszel <kiszel.kristof@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-02 01:30+0000\n"
-"PO-Revision-Date: 2022-01-31 09:51+0100\n"
+"PO-Revision-Date: 2024-01-07 22:12+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -15,17 +15,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.07.70\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Kiszel Kristóf,Szántó Tamás,Úr Balázs"
+msgstr "Kiszel Kristóf,Úr Balázs"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ulysses@fsf.hu,taszanto@gmail.com,ur.balazs@fsf.hu"
+msgstr "ulysses@fsf.hu,ur.balazs@fsf.hu"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -131,11 +131,8 @@ msgid "Create new document"
 msgstr "Új dokumentum létrehozása"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgctxt "@label:button"
-#| msgid "&Open"
 msgid "&Open…"
-msgstr "Me&gnyitás"
+msgstr "&Megnyitás…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -158,10 +155,8 @@ msgid "Save document"
 msgstr "Dokumentum mentése"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save As"
 msgid "Save &As…"
-msgstr "Mentés másként"
+msgstr "Mentés más&ként…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -184,10 +179,8 @@ msgid "Close document"
 msgstr "Dokumentum bezárása"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "Print"
 msgid "&Print…"
-msgstr "Nyomtatás"
+msgstr "&Nyomtatás…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -202,11 +195,8 @@ msgid "Show a print preview of document"
 msgstr "A  dokumentum nyomtatási előnézetének megjelenítése"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Mail"
 msgid "&Mail…"
-msgstr "E-mail"
+msgstr "E-&mail…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -273,10 +263,8 @@ msgid "Dese&lect"
 msgstr "Kijelö&lés megszüntetése"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find"
 msgid "&Find…"
-msgstr "&Keresés"
+msgstr "&Keresés…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -287,16 +275,12 @@ msgid "Find Pre&vious"
 msgstr "Előző &keresése"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace"
 msgid "&Replace…"
-msgstr "Cse&re"
+msgstr "Cse&re…"
 
 #: kstandardaction_p.h:88
-#, fuzzy
-#| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
-msgstr "&Tényleges méret"
+msgstr "N&agyítás a tényleges méretre"
 
 #: kstandardaction_p.h:88
 msgid "View document at its actual size"
@@ -335,11 +319,8 @@ msgid "Zoom &Out"
 msgstr "Ki&csinyítés"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Zoom"
 msgid "&Zoom…"
-msgstr "Nagyítás"
+msgstr "Nagyít&ás…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -378,23 +359,16 @@ msgid "Go to next page"
 msgstr "Ugrás a következő oldalra"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "&Ugrás ide…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
 msgstr "Ugrás egy ol&dalra…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "&Go to Line…"
-msgstr "Ugrás egy sorra"
+msgstr "U&grás egy sorra…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -433,18 +407,12 @@ msgid "&Add Bookmark"
 msgstr "Hozzá&adás a könyvjelzőkhöz"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Edit Bookmarks"
 msgid "&Edit Bookmarks…"
-msgstr "Könyvjelzőszerkesztő"
+msgstr "&Könyvjelzők szerkesztése…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Spelling"
 msgid "&Spelling…"
-msgstr "Helyesírás-ellenőrzés"
+msgstr "Helye&sírás-ellenőrzés…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -479,28 +447,21 @@ msgid "F&ull Screen Mode"
 msgstr "&Teljes képernyős mód"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
 msgstr "Billentyű&parancsok beállítása…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
 msgstr "%1 &beállítása…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Toolbars"
 msgid "Configure Tool&bars…"
-msgstr "Eszköztárak"
+msgstr "&Eszköztárak beállítása…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure Notifications"
 msgid "Configure &Notifications…"
-msgstr "Az értesítő üzenetek beállítása"
+msgstr "É&rtesítések beállítása…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -512,15 +473,10 @@ msgid "What's &This?"
 msgstr "Mi e&z?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Report Bug"
 msgid "&Report Bug…"
-msgstr "Hibabejelentés"
+msgstr "Hiba&bejelentés…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
 msgstr "Nye&lvbeállítás…"
 
@@ -538,8 +494,6 @@ msgid "&Delete"
 msgstr "&Törlés"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
 msgstr "Át&nevezés…"
 

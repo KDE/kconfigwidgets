@@ -1,13 +1,13 @@
 # Traducerea kdelibs4.po în Română
 # Laurenţiu Buzdugan <lbuz@rolix.org>, 2008, 2009.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2021, 2022.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2021, 2022, 2024.
 # Cristian Oneț <onet.cristian@gmail.com>, 2010, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-02 01:30+0000\n"
-"PO-Revision-Date: 2022-06-01 15:14+0100\n"
+"PO-Revision-Date: 2024-01-07 14:13+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -134,11 +134,8 @@ msgid "Create new document"
 msgstr "Creează document nou"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgctxt "@label:button"
-#| msgid "&Open"
 msgid "&Open…"
-msgstr "&Deschide"
+msgstr "&Deschide…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -161,10 +158,8 @@ msgid "Save document"
 msgstr "Salvează documentul"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save As"
 msgid "Save &As…"
-msgstr "Salvează ca"
+msgstr "S&alvează ca…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -187,10 +182,8 @@ msgid "Close document"
 msgstr "Închide documentul"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "Print"
 msgid "&Print…"
-msgstr "Tipărește"
+msgstr "Ti&părește…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -205,11 +198,8 @@ msgid "Show a print preview of document"
 msgstr "Arată o previzualizare a tipăririi fișierului"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Mail"
 msgid "&Mail…"
-msgstr "Expediază"
+msgstr "E-&mail…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -276,10 +266,8 @@ msgid "Dese&lect"
 msgstr "Dese&lectează"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find"
 msgid "&Find…"
-msgstr "C&aută"
+msgstr "&Caută…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -290,10 +278,8 @@ msgid "Find Pre&vious"
 msgstr "Caută &precedent"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace"
 msgid "&Replace…"
-msgstr "Î&nlocuiește"
+msgstr "Î&nlocuiește…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -336,11 +322,8 @@ msgid "Zoom &Out"
 msgstr "Micș&orează"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Zoom"
 msgid "&Zoom…"
-msgstr "Scalează"
+msgstr "&Apropie…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -379,23 +362,16 @@ msgid "Go to next page"
 msgstr "Mergi la pagina următoare"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "&Mergi la…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
 msgstr "&Mergi la pagina…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "&Go to Line…"
-msgstr "Du-te la linia"
+msgstr "&Mergi la linia…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -434,18 +410,12 @@ msgid "&Add Bookmark"
 msgstr "&Adaugă semn de carte"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Edit Bookmarks"
 msgid "&Edit Bookmarks…"
-msgstr "Editează semne de carte"
+msgstr "Modifică s&emnele de carte…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Spelling"
 msgid "&Spelling…"
-msgstr "Ortografie"
+msgstr "&Ortografie…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -480,28 +450,21 @@ msgid "F&ull Screen Mode"
 msgstr "Regim de &ecran complet"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
 msgstr "Co&nfigurează scurtături de tastatură…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
 msgstr "&Configurează %1…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Toolbars"
 msgid "Configure Tool&bars…"
-msgstr "Configurare bare de unelte"
+msgstr "Configurează &barele de unelte…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure Notifications"
 msgid "Configure &Notifications…"
-msgstr "Configurează notificările"
+msgstr "Configurează &notificările…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -513,15 +476,10 @@ msgid "What's &This?"
 msgstr "Ce înseamnă aceas&ta?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Report Bug"
 msgid "&Report Bug…"
-msgstr "Raportează erori"
+msgstr "&Raportează defect…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
 msgstr "Configurează &limba…"
 
@@ -539,8 +497,6 @@ msgid "&Delete"
 msgstr "Ș&terge"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
 msgstr "&Redenumește…"
 
