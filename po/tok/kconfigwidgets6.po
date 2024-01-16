@@ -1,132 +1,118 @@
-# Translation of kdelibs4 into Japanese.
-# SPDX-FileCopyrightText: 2023, 2024 Ryuichi Yamada <ryuichi_ya220@outlook.jp>
-# This file is distributed under the same license as the kdelibs package.
-# Taiki Komoda <kom@kde.gr.jp>, 2002, 2004, 2006, 2010.
-# Noboru Sinohara <shinobo@leo.bekkoame.ne.jp>, 2004.
-# Toyohiro Asukai <toyohiro@ksmplus.com>, 2004.
-# Kurose Shushi <md81@bird.email.ne.jp>, 2004.
-# AWASHIRO Ikuya <ikuya@oooug.jp>, 2004.
-# Shinichi Tsunoda <tsuno@ngy.1st.ne.jp>, 2005.
-# Yukiko Bando <ybando@k6.dion.ne.jp>, 2006, 2007, 2008, 2009, 2010.
-# Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019, 2020.
-# Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2006, 2007, 2008, 2010, 2011, 2015, 2019.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kconfigwidgets package.
 #
+# Janet Blackquill <uhhadd@gmail.com>, 2024.
 msgid ""
 msgstr ""
-"Project-Id-Version: kdelibs4\n"
+"Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-02 01:30+0000\n"
-"PO-Revision-Date: 2024-01-11 23:41+0900\n"
-"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
-"Language-Team: Japanese <kde-jp@kde.org>\n"
-"Language: ja\n"
+"PO-Revision-Date: 2024-01-15 17:53-0500\n"
+"Last-Translator: Janet Blackquill <uhhadd@gmail.com>\n"
+"Language-Team: C <kde-i18n-doc@kde.org>\n"
+"Language: tok\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Accelerator-Marker: &\n"
-"X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 23.08.4\n"
+"Plural-Forms: nplurals=4; plural=n == 0 ? 0 : n == 1 ? 1 : n == 2 ? 2 : 3;\n"
+"X-Generator: Lokalize 22.11.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
-"Taiki Komoda,Noboru Sinohara,Toyohiro Asukai,Kurose Shushi,Shinichi Tsunoda,"
-"Ryuichi Yamada"
+msgstr "akesi Jan"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
-"kom@kde.gr.jp,shinobo@leo.bekkoame.ne.jp,toyohiro@ksmplus.com,md81@bird."
-"email.ne.jp,tsuno@ngy.1st.ne.jp,ryuichi_ya220@outlook.jp"
+msgstr "uhhadd@gmail.com"
 
 #: kcodecaction.cpp:62
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Default"
-msgstr "デフォルト"
+msgstr "nasin open"
 
 #: kcodecaction.cpp:70
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
-msgstr "自動検出"
+msgstr "nasin tan lipu"
 
 #: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
-msgstr "カラースキーム"
+msgstr "nasin kule"
 
 #: kcommandbar.cpp:622
 #, kde-format
 msgid "No commands matching the filter"
-msgstr "フィルタにマッチするコマンドはありません"
+msgstr "pali ala li sama wile sina."
 
 #: kconfigdialog.cpp:37
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure"
-msgstr "設定"
+msgstr "o ante e lawa"
 
 #: khamburgermenu.cpp:126
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr "メニュー(&M)"
+msgstr "&ilo mute"
 
 #: khamburgermenu.cpp:329
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
-msgstr "メニューバーを表示(&M)"
+msgstr "o lukin e &supa ilo"
 
 #: khamburgermenu.cpp:355
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
-msgstr "その他"
+msgstr "ijo ante"
 
 #: khamburgermenu.cpp:356
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
 msgid "More Actions"
-msgstr "その他のアクション"
+msgstr "ilo ante"
 
 #: krecentfilesaction.cpp:78
 #, kde-format
 msgid "No Entries"
-msgstr "エントリなし"
+msgstr "ijo ala"
 
 #: krecentfilesaction.cpp:84
 #, kde-format
 msgid "Clear List"
-msgstr "リストをクリア"
+msgstr "o weka e ijo ni tan sona"
 
 #: kstandardaction.cpp:157
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
-msgstr "戻る(&B)"
+msgstr "o tawa ma pi tenpo &pini"
 
 #: kstandardaction.cpp:164
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
-msgstr "進む(&F)"
+msgstr "o tawa ma pi tenpo &kama"
 
 #: kstandardaction.cpp:171
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
-msgstr "ホーム(&H)"
+msgstr "&tomo"
 
 #: kstandardaction.cpp:230
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "メニューバーを表示<p>隠したメニューバーを再び表示します</p>"
+msgstr ""
+"o lukin e supa ilo<p>sina weka e supa ilo la ni li kama sin e supa ilo.</p>"
 
 #: kstandardaction.cpp:251
 #, kde-format
@@ -134,392 +120,392 @@ msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
 "window used for status information.</p>"
 msgstr ""
-"ステータスバーを表示 <p>ステータスバーを表示します (ウィンドウの下方にある"
-"バーで状態情報表示のために使用されています)。</p>"
+"o lukin e supa sona<p>ni li lon e supa sona. ona li lon anpa lupa li pana e "
+"sona tawa sina.</p>"
 
 #: kstandardaction_p.h:63
 msgid "&New"
-msgstr "新規(&N)"
+msgstr "&sin"
 
 #: kstandardaction_p.h:63
 msgid "Create new document"
-msgstr "新しい文書を作成"
+msgstr "o lon e lipu sin"
 
 #: kstandardaction_p.h:64
 msgid "&Open…"
-msgstr "開く(&O)..."
+msgstr "&o open…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
-msgstr "既存の文書を開く"
+msgstr "o lukin e lipu"
 
 #: kstandardaction_p.h:65
 msgid "Open &Recent"
-msgstr "最近のファイルを開く(&R)"
+msgstr "o open tan tenpo poka"
 
 #: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
-msgstr "最近開かれた文書を開く"
+msgstr "o open e lipu. lipu li open lon tenpo poka."
 
 #: kstandardaction_p.h:66
 msgid "&Save"
-msgstr "保存(&S)"
+msgstr "&o awen sona"
 
 #: kstandardaction_p.h:66
 msgid "Save document"
-msgstr "文書を保存"
+msgstr "o awen e lipu ni"
 
 #: kstandardaction_p.h:67
 msgid "Save &As…"
-msgstr "名前を付けて保存(&A)..."
+msgstr "o awen sona kepeken &nimi ante"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
-msgstr "新しい名前で文書を保存"
+msgstr "o awen e lipu ni kepeken nimi ante."
 
 #: kstandardaction_p.h:68
 msgid "Re&vert"
-msgstr "戻す(&V)"
+msgstr "o weka e ante"
 
 #: kstandardaction_p.h:68
 msgid "Revert unsaved changes made to document"
-msgstr "保存されていない変更を元に戻す"
+msgstr "o weka e ante tan lipu open. ona li lukin sama lipu lon poki sona."
 
 #: kstandardaction_p.h:69
 msgid "&Close"
-msgstr "閉じる(&C)"
+msgstr "&o weka"
 
 #: kstandardaction_p.h:69
 msgid "Close document"
-msgstr "文書を閉じる"
+msgstr "o pini lukin e lipu ni"
 
 #: kstandardaction_p.h:70
 msgid "&Print…"
-msgstr "印刷(&P)..."
+msgstr "o &sijelo e lipu…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
-msgstr "文書を印刷"
+msgstr "o sijelo e lipu ni. ni la sina ken pilin e ona."
 
 #: kstandardaction_p.h:71
 msgid "Print Previe&w"
-msgstr "印刷プレビュー(&W)"
+msgstr "o sitelen e sijelo lipu"
 
 #: kstandardaction_p.h:71
 msgid "Show a print preview of document"
-msgstr "文書の印刷プレビューを表示"
+msgstr "o lukin e lipu. ona li lukin sama lipu sijelo."
 
 #: kstandardaction_p.h:72
 msgid "&Mail…"
-msgstr "メール(&M)..."
+msgstr "o pana kepeken ilo Email…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
-msgstr "メールで文書を表示"
+msgstr "o pana e lipu ni tawa jan ante kepeken ilo Email."
 
 #: kstandardaction_p.h:73
 msgid "&Quit"
-msgstr "終了(&Q)"
+msgstr "o &pini e ilo"
 
 #: kstandardaction_p.h:73
 msgid "Quit application"
-msgstr "アプリケーションを終了します"
+msgstr "o pini e ilo open. ni la ona li kama open ala."
 
 #: kstandardaction_p.h:75
 msgid "&Undo"
-msgstr "元に戻す(&U)"
+msgstr "&o weka e pali"
 
 #: kstandardaction_p.h:75
 msgid "Undo last action"
-msgstr "最後のアクションを取り消す"
+msgstr "sina pali e ijo lon tenpo poka la ni li weka e pali sina."
 
 #: kstandardaction_p.h:76
 msgid "Re&do"
-msgstr "やり直す(&D)"
+msgstr "o &sin e pali weka"
 
 #: kstandardaction_p.h:76
 msgid "Redo last undone action"
-msgstr "最後のアクションをやり直す"
+msgstr "sina weka e pali sina lon tenpo poka la ni li sin e pali weka."
 
 #: kstandardaction_p.h:77
 msgid "Cu&t"
-msgstr "切り取り(&T)"
+msgstr "o &lanpan"
 
 #: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
-msgstr "選択したものをクリップボードにコピー"
+msgstr ""
 
 #: kstandardaction_p.h:78
 msgid "&Copy"
-msgstr "コピー(&C)"
+msgstr "o &jo"
 
 #: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
-msgstr "選択したものをクリップボードにコピー"
+msgstr ""
 
 #: kstandardaction_p.h:79
 msgid "&Paste"
-msgstr "貼り付け(&P)"
+msgstr "o &pana"
 
 #: kstandardaction_p.h:79
 msgid "Paste clipboard content"
-msgstr "クリップボードの内容を貼り付け"
+msgstr ""
 
 #: kstandardaction_p.h:80
 msgid "C&lear"
-msgstr "クリア(&L)"
+msgstr "o &ala e ijo wile"
 
 #: kstandardaction_p.h:81
 msgid "Select &All"
-msgstr "すべて選択(&A)"
+msgstr "o wile &ale"
 
 #: kstandardaction_p.h:82
 msgid "Dese&lect"
-msgstr "選択解除(&L)"
+msgstr "o wile ala"
 
 #: kstandardaction_p.h:83
 msgid "&Find…"
-msgstr "検索(&F)..."
+msgstr "o &alasa…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
-msgstr "次を検索(&N)"
+msgstr "o alasa e ijo &kama"
 
 #: kstandardaction_p.h:85
 msgid "Find Pre&vious"
-msgstr "前を検索(&V)"
+msgstr "o alasa e ijo &weka"
 
 #: kstandardaction_p.h:86
 msgid "&Replace…"
-msgstr "置換(&R)..."
+msgstr "o &ante…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
-msgstr "実際のサイズに拡大(&A)"
+msgstr "o lukin kepeken suli lipu"
 
 #: kstandardaction_p.h:88
 msgid "View document at its actual size"
-msgstr "実際のサイズで文書を表示"
+msgstr ""
 
 #: kstandardaction_p.h:89
 msgid "&Fit to Page"
-msgstr "ページに合わせる(&F)"
+msgstr "o lukin kepeken suli ni: lipu wan li ken lukin."
 
 #: kstandardaction_p.h:89
 msgid "Zoom to fit page in window"
-msgstr "ズームしてページに合わせる"
+msgstr ""
 
 #: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
-msgstr "ページの幅に合わせる(&W)"
+msgstr "o lukin kepeken suli ni: supa pi lipu wan li ken lukin."
 
 #: kstandardaction_p.h:90
 msgid "Zoom to fit page width in window"
-msgstr "ズームしてページの幅に合わせる"
+msgstr ""
 
 #: kstandardaction_p.h:91
 msgid "Fit to Page &Height"
-msgstr "ページの高さに合わせる(&H)"
+msgstr "o lukin kepeken suli ni: sinpin pi lipu wan li ken lukin."
 
 #: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
-msgstr "ズームしてページの高さに合わせる"
+msgstr ""
 
 #: kstandardaction_p.h:92
 msgid "Zoom &In"
-msgstr "拡大(&I)"
+msgstr "o &suli e lukin"
 
 #: kstandardaction_p.h:93
 msgid "Zoom &Out"
-msgstr "縮小(&O)"
+msgstr "o &lili e lukin"
 
 #: kstandardaction_p.h:94
 msgid "&Zoom…"
-msgstr "ズーム(&Z)..."
+msgstr "o ante e &lukin…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
-msgstr "ズームのレベルを選択"
+msgstr ""
 
 #: kstandardaction_p.h:95
 msgid "&Refresh"
-msgstr "最新の情報に更新(&R)"
+msgstr "o alasa &sin"
 
 #: kstandardaction_p.h:95
 msgid "Refresh document"
-msgstr "文書を再読み込み"
+msgstr ""
 
 #: kstandardaction_p.h:97
 msgid "&Up"
-msgstr "上へ(&U)"
+msgstr "o lukin e ijo &mama"
 
 #: kstandardaction_p.h:97
 msgid "Go up"
-msgstr "上へ"
+msgstr ""
 
 #: kstandardaction_p.h:102
 msgid "&Previous Page"
-msgstr "前のページ(&P)"
+msgstr "o lukin e ijo &weka"
 
 #: kstandardaction_p.h:102
 msgid "Go to previous page"
-msgstr "前のページへ"
+msgstr ""
 
 #: kstandardaction_p.h:103
 msgid "&Next Page"
-msgstr "次のページ(&N)"
+msgstr "o lukin e ijo &kama"
 
 #: kstandardaction_p.h:103
 msgid "Go to next page"
-msgstr "次のページへ"
+msgstr ""
 
 #: kstandardaction_p.h:104
 msgid "&Go To…"
-msgstr "移動(&G)..."
+msgstr "o lukin e…"
 
 #: kstandardaction_p.h:105
 msgid "&Go to Page…"
-msgstr "ページに移動(&G)..."
+msgstr "o lukin e lipu…"
 
 #: kstandardaction_p.h:106
 msgid "&Go to Line…"
-msgstr "行に移動(&G)..."
+msgstr "o lukin e linja sitelen nanpa…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
-msgstr "最初のページ(&F)"
+msgstr "lipu &open"
 
 #: kstandardaction_p.h:107
 msgid "Go to first page"
-msgstr "最初のページへ"
+msgstr ""
 
 #: kstandardaction_p.h:108
 msgid "&Last Page"
-msgstr "最後のページ(&L)"
+msgstr "lipu &pini"
 
 #: kstandardaction_p.h:108
 msgid "Go to last page"
-msgstr "最後のページへ"
+msgstr ""
 
 #: kstandardaction_p.h:109
 msgid "&Back"
-msgstr "戻る(&B)"
+msgstr "o lukin e ijo &weka"
 
 #: kstandardaction_p.h:109
 msgid "Go back in document"
-msgstr "文書の閲覧履歴の前へ戻る"
+msgstr ""
 
 #: kstandardaction_p.h:110
 msgid "&Forward"
-msgstr "進む(&F)"
+msgstr "o lukin e ijo &kama"
 
 #: kstandardaction_p.h:110
 msgid "Go forward in document"
-msgstr "文書の閲覧履歴の先へ進む"
+msgstr ""
 
 #: kstandardaction_p.h:112
 msgid "&Add Bookmark"
-msgstr "ブックマークに追加(&A)"
+msgstr "o awen e &nasin tawa lipu ni"
 
 #: kstandardaction_p.h:113
 msgid "&Edit Bookmarks…"
-msgstr "ブックマークを編集(&E)..."
+msgstr "o &ante e nasin tawa lipu ni"
 
 #: kstandardaction_p.h:115
 msgid "&Spelling…"
-msgstr "スペルチェック(&S)..."
+msgstr "nasin &sitelen"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
-msgstr "文書をスペルチェック"
+msgstr ""
 
 #: kstandardaction_p.h:117
 msgid "Show &Menubar"
-msgstr "メニューバーを表示(&M)"
+msgstr "o lukin e &supa ilo"
 
 #: kstandardaction_p.h:117
 msgid "Show or hide menubar"
-msgstr "メニューバーを表示・非表示"
+msgstr ""
 
 #: kstandardaction_p.h:118
 msgid "Show &Toolbar"
-msgstr "ツールバーを表示(&T)"
+msgstr "o lukin e &palisa ilo"
 
 #: kstandardaction_p.h:118
 msgid "Show or hide toolbar"
-msgstr "ツールバーを表示・非表示"
+msgstr ""
 
 #: kstandardaction_p.h:119
 msgid "Show St&atusbar"
-msgstr "ステータスバーを表示(&A)"
+msgstr "o lukin e &supa sona"
 
 #: kstandardaction_p.h:119
 msgid "Show or hide statusbar"
-msgstr "ステータスバーを表示・非表示"
+msgstr ""
 
 #: kstandardaction_p.h:120
 msgid "F&ull Screen Mode"
-msgstr "フルスクリーンモード(&U)|/|$[~setProps ~label 'フルスクリーン']"
+msgstr "o suli e lipu tawa ale sinpin"
 
 #: kstandardaction_p.h:121
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "キーボードショートカットを設定(&H)..."
+msgstr ""
 
 #: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1…"
-msgstr "%1 を設定(&C)..."
+msgstr "&o ante e %1…"
 
 #: kstandardaction_p.h:123
 msgid "Configure Tool&bars…"
-msgstr "ツールバーを設定(&B)..."
+msgstr "o ante e palisa ilo…"
 
 #: kstandardaction_p.h:124
 msgid "Configure &Notifications…"
-msgstr "通知を設定(&N)..."
+msgstr "o ante e mu ilo…"
 
 #: kstandardaction_p.h:128
 #, kde-format
 msgid "%1 &Handbook"
-msgstr "%1 ハンドブック(&H)"
+msgstr "lipu sona %1"
 
 #: kstandardaction_p.h:129
 msgid "What's &This?"
-msgstr "これは何？(&T)"
+msgstr "ni li seme?"
 
 #: kstandardaction_p.h:130
 msgid "&Report Bug…"
-msgstr "バグを報告(&R)..."
+msgstr "o toki e &pakala…"
 
 #: kstandardaction_p.h:131
 msgid "Configure &Language…"
-msgstr "言語を設定(&L)..."
+msgstr "o ante e toki ilo…"
 
 #: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
-msgstr "%1 について(&A)"
+msgstr "&sona %1"
 
 #: kstandardaction_p.h:133
 msgid "About &KDE"
-msgstr "KDE について(&K)"
+msgstr "sona &KDE"
 
 #: kstandardaction_p.h:134
 msgid "&Delete"
-msgstr "削除(&D)"
+msgstr "o &weka"
 
 #: kstandardaction_p.h:135
 msgid "&Rename…"
-msgstr "名前変更(&R)..."
+msgstr "o &ante e nimi…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
-msgstr "ごみ箱に移動(&M)"
+msgstr "o weka e ni tawa poki &jaki"
 
 #: kstandardaction_p.h:137
 msgid "&Donate"
-msgstr "寄付(&D)"
+msgstr "o pana &mani"
 
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
-msgstr "メニューを開く(&M)"
+msgstr "o lukin e ilo mute"
