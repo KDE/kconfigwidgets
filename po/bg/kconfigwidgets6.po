@@ -511,6 +511,3 @@ msgstr "&Дарение"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Отваряне на &меню"
-
-#~ msgid "Tip of the &Day"
-#~ msgstr "Съвет за &деня"
