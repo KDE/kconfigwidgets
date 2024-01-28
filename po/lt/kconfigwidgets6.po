@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-02 01:30+0000\n"
-"PO-Revision-Date: 2022-12-12 19:42+0200\n"
+"PO-Revision-Date: 2024-01-27 12:59+0200\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -144,10 +144,8 @@ msgid "Create new document"
 msgstr "Sukurti naują dokumentą"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
-msgstr "At&verti..."
+msgstr "At&verti…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -170,10 +168,8 @@ msgid "Save document"
 msgstr "Įrašyti dokumentą"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
-msgstr "Įrašyti &kaip..."
+msgstr "Įrašyti k&aip…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -196,10 +192,8 @@ msgid "Close document"
 msgstr "Užverti dokumentą"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
-msgstr "S&pausdinti..."
+msgstr "S&pausdinti…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -214,10 +208,8 @@ msgid "Show a print preview of document"
 msgstr "Rodyti dokumento spaudinio peržiūrą"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
-msgstr "&Siųsti paštu..."
+msgstr "&Siųsti paštu…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -277,17 +269,15 @@ msgstr "Iš&valyti"
 
 #: kstandardaction_p.h:81
 msgid "Select &All"
-msgstr "Pažymėti &viską"
+msgstr "Žymėti &viską"
 
 #: kstandardaction_p.h:82
 msgid "Dese&lect"
 msgstr "&Panaikinti žymėjimą"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
-msgstr "&Ieškoti..."
+msgstr "&Ieškoti…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -298,10 +288,8 @@ msgid "Find Pre&vious"
 msgstr "Ieškoti &ankstesnio"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
-msgstr "Pa&keisti..."
+msgstr "Pa&keisti…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -344,10 +332,8 @@ msgid "Zoom &Out"
 msgstr "&Mažinti"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
-msgstr "&Mastelis..."
+msgstr "&Mastelis…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -386,22 +372,16 @@ msgid "Go to next page"
 msgstr "Peršokti į kitą puslapį"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "&Eiti į..."
+msgstr "&Eiti į…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "&Eiti į puslapį..."
+msgstr "&Eiti į puslapį…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
-msgstr "&Eiti į eilutę..."
+msgstr "&Eiti į eilutę…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -440,16 +420,12 @@ msgid "&Add Bookmark"
 msgstr "&Pridėti žymelę"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
-msgstr "&Keisti žymeles..."
+msgstr "&Taisyti žymeles…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
-msgstr "&Rašybos tikrinimas..."
+msgstr "&Rašybos tikrinimas…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -484,28 +460,21 @@ msgid "F&ull Screen Mode"
 msgstr "Rodyti &visame ekrane"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Konfigūruoti &sparčiuosius klavišus..."
+msgstr "Konfigūruoti &sparčiuosius klavišus…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "&Konfigūruoti %1..."
+msgstr "&Konfigūruoti %1…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
-msgstr "Konfigūruoti į&rankių juostas..."
+msgstr "Konfigūruoti įrankių &juostas…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
-msgstr "Konfigūruoti &pranešimus..."
+msgstr "Konfigūruoti pra&nešimus…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -517,16 +486,12 @@ msgid "What's &This?"
 msgstr "Kas &tai yra?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
-msgstr "&Pranešti apie programos klaidą..."
+msgstr "P&ranešti apie programos klaidą…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "Konfigūruoti ka&lbą..."
+msgstr "Konfigūruoti ka&lbą…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -542,10 +507,8 @@ msgid "&Delete"
 msgstr "&Ištrinti"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "Pe&rvadinti..."
+msgstr "Pe&rvadinti…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
