@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-02 01:30+0000\n"
-"PO-Revision-Date: 2023-05-18 12:20+0300\n"
+"PO-Revision-Date: 2023-12-11 15:17+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -34,7 +34,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-POT-Import-Date: 2013-01-13 20:43:21+0000\n"
 
 #, kde-format
@@ -156,11 +156,8 @@ msgid "Create new document"
 msgstr "Luo uusi tiedosto"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgctxt "@label:button"
-#| msgid "&Open"
 msgid "&Open…"
-msgstr "&Avaa"
+msgstr "&Avaa…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -183,10 +180,8 @@ msgid "Save document"
 msgstr "Tallenna tiedosto"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save As"
 msgid "Save &As…"
-msgstr "Tallenna nimellä"
+msgstr "Tallenna &nimellä…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -209,10 +204,8 @@ msgid "Close document"
 msgstr "Sulje tiedosto"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "Print"
 msgid "&Print…"
-msgstr "Tulosta"
+msgstr "T&ulosta…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -227,11 +220,8 @@ msgid "Show a print preview of document"
 msgstr "Näytä tiedoston tulostuksen esikatselu"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Mail"
 msgid "&Mail…"
-msgstr "Lähetä"
+msgstr "&Lähetä…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -298,10 +288,8 @@ msgid "Dese&lect"
 msgstr "&Poista valinta"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find"
 msgid "&Find…"
-msgstr "&Etsi"
+msgstr "&Etsi…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -312,10 +300,8 @@ msgid "Find Pre&vious"
 msgstr "Etsi e&dellinen"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace"
 msgid "&Replace…"
-msgstr "K&orvaa"
+msgstr "&Korvaa…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -358,11 +344,8 @@ msgid "Zoom &Out"
 msgstr "&Loitonna"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Zoom"
 msgid "&Zoom…"
-msgstr "Tarkenna"
+msgstr "&Lähennä tai loitonna…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -402,23 +385,16 @@ msgid "Go to next page"
 msgstr "Siirry seuraavalle sivulle"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "&Siirry…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
 msgstr "&Siirry sivulle…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "&Go to Line…"
-msgstr "Siirry riville"
+msgstr "Siirry &riville…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -457,18 +433,12 @@ msgid "&Add Bookmark"
 msgstr "&Lisää kirjanmerkki"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Edit Bookmarks"
 msgid "&Edit Bookmarks…"
-msgstr "Muokkaa kirjanmerkkejä"
+msgstr "&Muokkaa kirjanmerkkejä…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Spelling"
 msgid "&Spelling…"
-msgstr "Oikoluku"
+msgstr "&Oikoluku…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -503,10 +473,8 @@ msgid "F&ull Screen Mode"
 msgstr "&Koko näytön tila"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Aseta &pikanäppäimet…"
+msgstr "&Pikanäppäinasetukset…"
 
 #: kstandardaction_p.h:122
 #, fuzzy, kde-format
@@ -515,16 +483,12 @@ msgid "&Configure %1…"
 msgstr "&Asetukset: %1…|/|$[gen %1] &asetukset…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Toolbars"
 msgid "Configure Tool&bars…"
-msgstr "Muokkaa työkalurivejä"
+msgstr "T&yökalurivien asetukset…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure Notifications"
 msgid "Configure &Notifications…"
-msgstr "Ilmoitusten asetukset"
+msgstr "&Ilmoitusasetukset…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -536,15 +500,10 @@ msgid "What's &This?"
 msgstr "&Mikä tämä on?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Report Bug"
 msgid "&Report Bug…"
-msgstr "Ilmoita viasta"
+msgstr "Ilmoita &viasta…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
 msgstr "&Kieliasetukset…"
 
@@ -562,10 +521,8 @@ msgid "&Delete"
 msgstr "&Poista"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "&Muuta nimeä…"
+msgstr "Muuta &nimeä…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
