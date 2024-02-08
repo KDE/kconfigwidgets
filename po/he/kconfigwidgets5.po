@@ -17,19 +17,20 @@
 # Meni Livne <livne@kde.org>, 2007.
 # tahmar1900 <tahmar1900@gmail.com>, 2008, 2009.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:24+0000\n"
-"PO-Revision-Date: 2017-05-16 06:51-0400\n"
-"Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2024-02-07 08:36+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -50,7 +51,7 @@ msgstr "בקשה להזדהות לפני שמירה"
 #: kcmodule.cpp:202
 #, kde-format
 msgid "You are not allowed to save the configuration"
-msgstr "אינך מורשה לשמור את ההגדרות"
+msgstr "אסור לך לשמור את ההגדרות"
 
 #: kcodecaction.cpp:67
 #, kde-format
@@ -62,24 +63,22 @@ msgstr "ברירת מחדל"
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
-msgstr "זהה אוטומטית"
+msgstr "זיהוי אוטומטי"
 
 #: kcolorschememenu.cpp:25
 #, kde-format
 msgid "Color Scheme"
-msgstr ""
+msgstr "ערכת צבעים"
 
 #: kcolorschememodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
+#, kde-format
 msgid "Default"
 msgstr "ברירת מחדל"
 
 #: kcommandbar.cpp:560
 #, kde-format
 msgid "No commands matching the filter"
-msgstr ""
+msgstr "אין פקודות שתואמות למסנן"
 
 #: kconfigdialog.cpp:37
 #, kde-format
@@ -91,27 +90,26 @@ msgstr "הגדרות"
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr ""
+msgstr "&תפריט"
 
 #: khamburgermenu.cpp:326
-#, fuzzy, kde-format
-#| msgid "Show &Menubar"
+#, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
-msgstr "הצג &שורת־תפריטים"
+msgstr "הצגת &שורת־תפריטים עם כל הפעולות"
 
 #: khamburgermenu.cpp:352
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
-msgstr ""
+msgstr "עוד"
 
 #: khamburgermenu.cpp:353
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
 msgid "More Actions"
-msgstr ""
+msgstr "פעולות נוספות"
 
 #: krecentfilesaction.cpp:71
 #, kde-format
@@ -121,7 +119,7 @@ msgstr "אין רשומות"
 #: krecentfilesaction.cpp:77
 #, kde-format
 msgid "Clear List"
-msgstr "נקה רשימה"
+msgstr "פינוי רשימה"
 
 #: kstandardaction.cpp:157
 #, kde-format
@@ -145,21 +143,21 @@ msgstr "&בית"
 #, kde-format
 msgctxt "show help"
 msgid "&Help"
-msgstr "&עזרה"
+msgstr "ע&זרה"
 
 #: kstandardaction.cpp:232
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "הצג שורת־תפריטים<p>הצגת שורת־התפריטים שוב לאחר שהוסתרה</p>"
+msgstr "הצגת שורת־תפריטים<p>הצגת שורת־התפריטים שוב לאחר שהוסתרה</p>"
 
 #: kstandardaction.cpp:253
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
 "window used for status information.</p>"
 msgstr ""
-"הצג שורת מצב<p>הצגת שורת־המצב - השורה בתחתית החלון המשמשת להצגת מידע לגבי "
-"מצב התוכנית.</p>"
+"הצגת שורת מצב<p>מציג את שורת המצב, שנמצאת בתחתית החלון ומשמשת להצגת מידע "
+"לגבי מצב התוכנית.</p>"
 
 #: kstandardaction_p.h:30
 msgid "&New"
@@ -167,267 +165,263 @@ msgstr "&חדש"
 
 #: kstandardaction_p.h:30
 msgid "Create new document"
-msgstr "צור מסמך חדש"
+msgstr "יצירת מסמך חדש"
 
 #: kstandardaction_p.h:31
 msgid "&Open..."
-msgstr "&פתיחה..."
+msgstr "&פתיחה…"
 
 #: kstandardaction_p.h:31
 msgid "Open an existing document"
-msgstr "פתח מסמך קיים"
+msgstr "פתיחת מסמך קיים"
 
 #: kstandardaction_p.h:32
 msgid "Open &Recent"
-msgstr "פתח &אחרונים"
+msgstr "פתיחת &אחרונים"
 
 #: kstandardaction_p.h:32
 msgid "Open a document which was recently opened"
-msgstr "פתח מסמך שהיה בשימוש לאחרונה"
+msgstr "פתיחת מסמך שהיה בשימוש לאחרונה"
 
 #: kstandardaction_p.h:33
 msgid "&Save"
-msgstr "&שמור"
+msgstr "&שמירה"
 
 #: kstandardaction_p.h:33
 msgid "Save document"
-msgstr "שמור מסמך"
+msgstr "שמירת מסמך"
 
 #: kstandardaction_p.h:34
 msgid "Save &As..."
-msgstr "שמירה &בשם..."
+msgstr "שמירה &בשם…"
 
 #: kstandardaction_p.h:34
 msgid "Save document under a new name"
-msgstr "שמור את המסמך בשם חדש"
+msgstr "שמירת המסמך בשם חדש"
 
 #: kstandardaction_p.h:35
 msgid "Re&vert"
-msgstr "שח&זר"
+msgstr "שח&זור"
 
 #: kstandardaction_p.h:35
 msgid "Revert unsaved changes made to document"
-msgstr "בטל שינויים שנעשו למסמך"
+msgstr "הסגת שינויים שנערכו במסמך"
 
 #: kstandardaction_p.h:36
 msgid "&Close"
-msgstr "&סגור"
+msgstr "&סגירה"
 
 #: kstandardaction_p.h:36
 msgid "Close document"
-msgstr "סגור את המסמך"
+msgstr "סגירת המסמך"
 
 #: kstandardaction_p.h:37
 msgid "&Print..."
-msgstr "&הדפסה..."
+msgstr "ה&דפסה…"
 
 #: kstandardaction_p.h:37
 msgid "Print document"
-msgstr "הדפס את המסמך"
+msgstr "הדפסת המסמך"
 
 #: kstandardaction_p.h:38
 msgid "Print Previe&w"
-msgstr "תצוגה מקדימה לפני הדפס&ה..."
+msgstr "תצוגה מ&קדימה לפני הדפסה…"
 
 #: kstandardaction_p.h:38
 msgid "Show a print preview of document"
-msgstr "הצג תצוגה מקדימה של הדפסת המסמך"
+msgstr "הצגת תצוגה מקדימה להדפסת המסמך"
 
 #: kstandardaction_p.h:39
 msgid "&Mail..."
-msgstr "ש&ליחה בדואר..."
+msgstr "ש&ליחה בדוא״ל…"
 
 #: kstandardaction_p.h:39
 msgid "Send document by mail"
-msgstr "שלח את המסמך בדוא\"ל"
+msgstr "שליחת המסמך בדוא״ל"
 
 #: kstandardaction_p.h:40
 msgid "&Quit"
-msgstr "&יציאה"
+msgstr "י&ציאה"
 
 #: kstandardaction_p.h:40
 msgid "Quit application"
-msgstr "יציאה מהתוכנית"
+msgstr "יציאה מהיישום"
 
 #: kstandardaction_p.h:42
 msgid "&Undo"
-msgstr "&בטל"
+msgstr "ה&סגה"
 
 #: kstandardaction_p.h:42
 msgid "Undo last action"
-msgstr "בטל את הפעילות האחרונה"
+msgstr "הסגת הפעולה האחרונה"
 
 #: kstandardaction_p.h:43
 msgid "Re&do"
-msgstr "בצע &שוב"
+msgstr "ביצוע &חוזר"
 
 #: kstandardaction_p.h:43
 msgid "Redo last undone action"
-msgstr "בצע מחדש את הפעילות האחרונה"
+msgstr "ביצוע הפעולה האחרונה מחדש"
 
 #: kstandardaction_p.h:44
 msgid "Cu&t"
-msgstr "ג&זור"
+msgstr "ג&זירה"
 
 #: kstandardaction_p.h:44
 msgid "Cut selection to clipboard"
-msgstr "גזור את הבחירה אל לוח העריכה"
+msgstr "גזירת הבחירה ללוח הגזירים"
 
 #: kstandardaction_p.h:45
 msgid "&Copy"
-msgstr "&העתק"
+msgstr "ה&עתקה"
 
 #: kstandardaction_p.h:45
 msgid "Copy selection to clipboard"
-msgstr "העתק את הבחירה אל לוח העריכה"
+msgstr "העתקת הבחירה ללוח הגזירים"
 
 #: kstandardaction_p.h:46 kstandardaction_p.h:48
 msgid "&Paste"
-msgstr "&הדבק"
+msgstr "ה&דבקה"
 
 #: kstandardaction_p.h:46 kstandardaction_p.h:48
 msgid "Paste clipboard content"
-msgstr "הדבק את תוכן לוח העריכה"
+msgstr "הדבקת תוכן לוח הגזירים"
 
 #: kstandardaction_p.h:50
 msgid "C&lear"
-msgstr "נ&קה"
+msgstr "ני&קוי"
 
 #: kstandardaction_p.h:51
 msgid "Select &All"
-msgstr "בחר &הכל"
+msgstr "בחירה בה&כול"
 
 #: kstandardaction_p.h:52
 msgid "Dese&lect"
-msgstr "ב&טל בחירה"
+msgstr "בי&טול בחירה"
 
 #: kstandardaction_p.h:53
 msgid "&Find..."
-msgstr "&חיפוש..."
+msgstr "&חיפוש…"
 
 #: kstandardaction_p.h:54
 msgid "Find &Next"
-msgstr "חפש &את הבא"
+msgstr "חיפוש ה&מופע הבא"
 
 #: kstandardaction_p.h:55
 msgid "Find Pre&vious"
-msgstr "חפש את הק&ודם"
+msgstr "חיפוש המופע ה&קודם"
 
 #: kstandardaction_p.h:56
 msgid "&Replace..."
-msgstr "&החלפה..."
+msgstr "ה&חלפה…"
 
 #: kstandardaction_p.h:58
-#, fuzzy
-#| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
-msgstr "גודל &אמיתי"
+msgstr "תקריב לגודל &אמיתי"
 
 #: kstandardaction_p.h:58
 msgid "View document at its actual size"
-msgstr "הצג את המסמך בגודל האמיתי שלו"
+msgstr "הצגת המסמך בגודל האמיתי שלו"
 
 #: kstandardaction_p.h:59
 msgid "&Fit to Page"
-msgstr "&התאם לגודל העמוד"
+msgstr "ה&תאמה לגודל העמוד"
 
 #: kstandardaction_p.h:59
 msgid "Zoom to fit page in window"
-msgstr "הגדל את המסמך כדי שיראה כולו בעמוד אחד"
+msgstr "שינוי גודל המסמך כך שיופיע כולו בעמוד אחד"
 
 #: kstandardaction_p.h:60
 msgid "Fit to Page &Width"
-msgstr "התאם לרוחב &העמוד"
+msgstr "התאמה לרוחב ה&עמוד"
 
 #: kstandardaction_p.h:60
 msgid "Zoom to fit page width in window"
-msgstr "הגדל את המסמך כדי שיתאים לרוחב החלון"
+msgstr "לשנות את גודל המסמך כך שיתאים לרוחב החלון"
 
 #: kstandardaction_p.h:61
 msgid "Fit to Page &Height"
-msgstr "התאם לאורך &העמוד"
+msgstr "התאמה ל&אורך העמוד"
 
 #: kstandardaction_p.h:61
 msgid "Zoom to fit page height in window"
-msgstr "הגדל את המסמך כדי שאיתים לגובה החלון"
+msgstr "שינוי גודל המסמך כדי שיתאים לגובה החלון"
 
 #: kstandardaction_p.h:62
 msgid "Zoom &In"
-msgstr "&התקרב"
+msgstr "הת&קרבות"
 
 #: kstandardaction_p.h:63
 msgid "Zoom &Out"
-msgstr "&התרחק"
+msgstr "הת&רחקות"
 
 #: kstandardaction_p.h:64
 msgid "&Zoom..."
-msgstr "&התקרבות..."
+msgstr "&תקריב…"
 
 #: kstandardaction_p.h:64
 msgid "Select zoom level"
-msgstr "בחר את מצב ההתקרבות"
+msgstr "בחירת מרחק התקריב"
 
 #: kstandardaction_p.h:65
 msgid "&Refresh"
-msgstr ""
+msgstr "&רענון"
 
 #: kstandardaction_p.h:65
-#, fuzzy
-#| msgid "Redisplay document"
 msgid "Refresh document"
-msgstr "הצג מחדש את המסמך"
+msgstr "רענון המסמך"
 
 #: kstandardaction_p.h:67
 msgid "&Up"
-msgstr "&מעלה"
+msgstr "מ&עלה"
 
 #: kstandardaction_p.h:67
 msgid "Go up"
-msgstr "עבור למעלה"
+msgstr "עלייה למעלה"
 
 #: kstandardaction_p.h:72
 msgid "&Previous Page"
-msgstr "&העמוד הקודם"
+msgstr "העמוד ה&קודם"
 
 #: kstandardaction_p.h:72
 msgid "Go to previous page"
-msgstr "עבור אל עמוד הקודם"
+msgstr "מעבר לעמוד הקודם"
 
 #: kstandardaction_p.h:73
 msgid "&Next Page"
-msgstr "&העמוד הבא"
+msgstr "העמוד ה&בא"
 
 #: kstandardaction_p.h:73
 msgid "Go to next page"
-msgstr "עבור אל העמוד הבא"
+msgstr "מעבר לעמוד הבא"
 
 #: kstandardaction_p.h:74
 msgid "&Go To..."
-msgstr "&עבור אל..."
+msgstr "מ&עבר אל…"
 
 #: kstandardaction_p.h:75
 msgid "&Go to Page..."
-msgstr "&מעבר לעמוד..."
+msgstr "מ&עבר לעמוד…"
 
 #: kstandardaction_p.h:76
 msgid "&Go to Line..."
-msgstr "&מעבר לשורה..."
+msgstr "מ&עבר לשורה…"
 
 #: kstandardaction_p.h:77
 msgid "&First Page"
-msgstr "&העמוד הראשון"
+msgstr "העמוד ה&ראשון"
 
 #: kstandardaction_p.h:77
 msgid "Go to first page"
-msgstr "עבור לעמוד הראשון"
+msgstr "מעבר לעמוד הראשון"
 
 #: kstandardaction_p.h:78
 msgid "&Last Page"
-msgstr "&העמוד האחרון"
+msgstr "מעבר לעמוד ה&אחרון"
 
 #: kstandardaction_p.h:78
 msgid "Go to last page"
-msgstr "עובר לעמוד האחרון"
+msgstr "מעבר לעמוד האחרון"
 
 #: kstandardaction_p.h:79
 msgid "&Back"
@@ -435,7 +429,7 @@ msgstr "&אחורה"
 
 #: kstandardaction_p.h:79
 msgid "Go back in document"
-msgstr "חזור במסמך"
+msgstr "חזרה אחורה במסמך"
 
 #: kstandardaction_p.h:80
 msgid "&Forward"
@@ -443,47 +437,47 @@ msgstr "&קדימה"
 
 #: kstandardaction_p.h:80
 msgid "Go forward in document"
-msgstr "התקדם במסמך"
+msgstr "התקדמות קדימה במסמך"
 
 #: kstandardaction_p.h:82
 msgid "&Add Bookmark"
-msgstr "&הוסף לסימניות"
+msgstr "הו&ספה לסימניות"
 
 #: kstandardaction_p.h:83
 msgid "&Edit Bookmarks..."
-msgstr "&ערוך סימניות..."
+msgstr "&עריכת סימניות…"
 
 #: kstandardaction_p.h:85
 msgid "&Spelling..."
-msgstr "&איות..."
+msgstr "&איות…"
 
 #: kstandardaction_p.h:85
 msgid "Check spelling in document"
-msgstr "בדוק איות במסמך"
+msgstr "בדיקת איות במסמך"
 
 #: kstandardaction_p.h:87
 msgid "Show &Menubar"
-msgstr "הצג &שורת־תפריטים"
+msgstr "הצגת &שורת־תפריטים"
 
 #: kstandardaction_p.h:87
 msgid "Show or hide menubar"
-msgstr "הצג או הסתר את שורת־תפריטים"
+msgstr "הצגה או הסתרה של שורת־תפריטים"
 
 #: kstandardaction_p.h:88
 msgid "Show &Toolbar"
-msgstr "הצג &סרגל־כלים"
+msgstr "הצגת &סרגל־כלים"
 
 #: kstandardaction_p.h:88
 msgid "Show or hide toolbar"
-msgstr "הצג או הסתר סרגל־כלים"
+msgstr "הצגה או הסתרה של סרגל־כלים"
 
 #: kstandardaction_p.h:89
 msgid "Show St&atusbar"
-msgstr "הצג ש&ורת־מצב"
+msgstr "הצגת שורת־מ&צב"
 
 #: kstandardaction_p.h:89
 msgid "Show or hide statusbar"
-msgstr "הצג או הסתר את שורת מצב"
+msgstr "הצגה או הסתרה של שורת מצב"
 
 #: kstandardaction_p.h:90
 msgid "F&ull Screen Mode"
@@ -491,31 +485,29 @@ msgstr "מצב מסך מ&לא"
 
 #: kstandardaction_p.h:92
 msgid "&Save Settings"
-msgstr "&שמור הגדרות"
+msgstr "&שמירת הגדרות"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "Configure S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts..."
-msgstr "הגדרות &קיצורי־מקשים..."
+msgstr "הגדרות מקשי &קיצור במקלדת…"
 
 #: kstandardaction_p.h:95
 #, kde-format
 msgid "&Configure %1..."
-msgstr "&הגדרות %1..."
+msgstr "ה&גדרת %1…"
 
 #: kstandardaction_p.h:96
 msgid "Configure Tool&bars..."
-msgstr "הגדרות סרגלי־&כלים..."
+msgstr "הגדרת סרגלי־&כלים…"
 
 #: kstandardaction_p.h:97
 msgid "Configure &Notifications..."
-msgstr "הגדרות &הודעות..."
+msgstr "הגדרת הו&דעות…"
 
 #: kstandardaction_p.h:104
 #, kde-format
 msgid "%1 &Handbook"
-msgstr "&ספר ההדרכה של %1"
+msgstr "ספרון הה&דרכה של %1"
 
 #: kstandardaction_p.h:105
 msgid "What's &This?"
@@ -523,81 +515,74 @@ msgstr "מה &זה?"
 
 #: kstandardaction_p.h:106
 msgid "Tip of the &Day"
-msgstr "&העצה היומית"
+msgstr "ה&עצה היומית"
 
 #: kstandardaction_p.h:107
 msgid "&Report Bug..."
-msgstr "&דיווח על באג..."
+msgstr "&דיווח על תקלה…"
 
 #: kstandardaction_p.h:108
-#, fuzzy
-#| msgid "&Configure %1..."
 msgid "Configure &Language..."
-msgstr "&הגדרות %1..."
+msgstr "הגדרת &שפה…"
 
 #: kstandardaction_p.h:109
 #, kde-format
 msgid "&About %1"
-msgstr "&אודות %1"
+msgstr "&על %1"
 
 #: kstandardaction_p.h:110
 msgid "About &KDE"
-msgstr "אודות &KDE"
+msgstr "ע&ל KDE"
 
 #: kstandardaction_p.h:111
-#, fuzzy
 msgid "&Delete"
-msgstr "&מחק"
+msgstr "מ&חיקה"
 
 #: kstandardaction_p.h:112
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Rename..."
-msgstr "&החלפה..."
+msgstr "&שינוי שם…"
 
 #: kstandardaction_p.h:113
 msgid "&Move to Trash"
-msgstr ""
+msgstr "העברה ל&אשפה"
 
 #: kstandardaction_p.h:114
 msgid "&Donate"
-msgstr ""
+msgstr "&תרומה"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "Open &Recent"
 msgid "Open &Menu"
-msgstr "פתח &אחרונים"
+msgstr "פתיחת &תפריט"
 
 #: ktipdialog.cpp:222
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Tip of the Day"
 msgstr "העצה היומית"
 
 #: ktipdialog.cpp:238
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title"
 msgid "Did you know...?\n"
-msgstr "הידעת...?\n"
+msgstr "הידעת…?\n"
 
 #: ktipdialog.cpp:291
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:check"
 msgid "&Show tips on startup"
-msgstr "&הצג עצות בעת ההפעלה"
+msgstr "ה&צגת עצות עם הכניסה למערכת"
 
 #: ktipdialog.cpp:296
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button Goes to previous tip"
 msgid "&Previous"
-msgstr "&הקודם"
+msgstr "ה&קודמת"
 
 #: ktipdialog.cpp:301
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button Goes to next tip, opposite to previous"
 msgid "&Next"
-msgstr "&הבא"
+msgstr "ה&באה"
 
 #~ msgid "Switch Application &Language..."
 #~ msgstr "החלפת &שפת היישום..."
