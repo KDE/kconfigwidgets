@@ -492,7 +492,6 @@ public:
 
 void KCommandBarPrivate::slotReturnPressed(KCommandBar *q)
 {
-    QPointer<KCommandBar> crashGuard = q;
     auto act = m_proxyModel.data(m_treeView.currentIndex(), Qt::UserRole).value<QAction *>();
     if (act) {
         // if the action is a menu, we take all its actions
@@ -522,17 +521,14 @@ void KCommandBarPrivate::slotReturnPressed(KCommandBar *q)
             return;
         } else {
             m_model.actionTriggered(act->text());
+            q->hide();
             act->trigger();
         }
     }
 
-    // We might trigger an action that triggers focus change
-    // resulting in us getting deleted
-    if (crashGuard) {
-        clearLineEdit();
-        q->hide();
-        q->deleteLater();
-    }
+    clearLineEdit();
+    q->hide();
+    q->deleteLater();
 }
 
 void KCommandBarPrivate::setLastUsedActions()
@@ -734,7 +730,7 @@ bool KCommandBar::eventFilter(QObject *obj, QEvent *event)
     }
 
     // hide on focus out, if neither input field nor list have focus!
-    else if (event->type() == QEvent::FocusOut && !(d->m_lineEdit.hasFocus() || d->m_treeView.hasFocus())) {
+    else if (event->type() == QEvent::FocusOut && isVisible() && !(d->m_lineEdit.hasFocus() || d->m_treeView.hasFocus())) {
         d->clearLineEdit();
         deleteLater();
         hide();
