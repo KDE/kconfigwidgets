@@ -46,67 +46,47 @@ class KToggleFullScreenAction;
  * In general, using standard actions should be a drop in replacement
  * for regular actions. For example, if you previously had:
  * @code
- * QAction *newAct = new QAction(i18n("&New"),
- *                               QIcon::fromTheme("document-new"),
- *                               KStandardShortcut::shortcut(KStandardShortcut::New),
- *                               this,
- *                               &ClassFoo::fileNew,
- *                               actionCollection());
+ * QAction *newAct = new QAction(QIcon::fromTheme("document-new"),
+ *                               i18n("&New"),
+ *                               this);
+ * newAct->setShortcut(KStandardShortcut::shortcut(KStandardShortcut::New).constFirst());
+ * connect(newAct, &QAction::triggered, this, &ClassFoo::fileNew);
  * @endcode
  *
  * You can replace it with:
  * @code
- * QAction *newAct = KStandardAction::openNew(this, &ClassFoo::fileNew, actionCollection());
+ * QAction *newAct = KStandardAction::openNew(this, &ClassFoo::fileNew, this);
  * @endcode
  *
- * <b>Non-standard Usages</b>\n
- *
- * It is possible to use the standard actions in various
- * non-recommended ways.  Say, for instance, you wanted to have a
- * standard action (with the associated correct text and icon and
- * accelerator, etc) but you didn't want it to go in the standard
- * place (this is not recommended, by the way).  One way to do this is
- * to simply not use the XML UI framework and plug it into wherever
- * you want.  If you do want to use the XML UI framework (good!), then
- * it is still possible.
- *
- * Basically, the XML building code matches names in the XML code with
- * the internal names of the actions.  You can find out the internal
- * names of each of the standard actions by using the name
- * method like so: KStandardAction::name(KStandardAction::Cut) would return
- * 'edit_cut'.  The XML building code will match 'edit_cut' to the
- * attribute in the global XML file and place your action there.
- *
- * However, you can change the internal name.  In this example, just
- * do something like:
+ * Alternatively you can instantiate the action using the StandardAction enums
+ * provided.  This author can't think of a reason why you would want to, but, hey,
+ * if you do, here's how:
  *
  * \code
- * (void)KStandardAction::cut(this, SLOT(editCut()), actionCollection(), "my_cut");
+ * QAction *newAct = KStandardAction::create(KStandardAction::New, this, &ClassFoo::fileNew, this);
  * \endcode
  *
- * Now, in your local XML resource file (e.g., yourappui.rc), simply
- * put 'my_cut' where you want it to go.
+ * <b>Relationship with KActionCollection from KXMLGui</b>\n
  *
- * Another non-standard usage concerns getting a pointer to an
- * existing action if, say, you want to enable or disable the action.
- * You could do it the recommended way and just grab a pointer when
- * you instantiate it as in the 'openNew' example above... or you
- * could do it the hard way:
- *
+ * If a KActionCollection is passed as the parent then the action will be
+ * automatically added to that collection:
  * \code
- * QAction *cut = actionCollection()->action(KStandardAction::name(KStandardAction::Cut));
+ * QAction *cut = KStandardAction::cut(this, &ClassFoo::editCut, actionCollection());
  * \endcode
  *
- * Another non-standard usage concerns instantiating the action in the
- * first place.  Usually, you would use the member functions as
- * shown above (e.g., KStandardAction::cut(this, SLOT, parent)).  You
- * may, however, do this using the enums provided.  This author can't
- * think of a reason why you would want to, but, hey, if you do,
- * here's how:
- *
+ * Each action has a unique internal name which can be queried using the
+ * name method.  For example KStandardAction::name(KStandardAction::Cut)
+ * would return 'edit_cut'.  This name can be used as a unique identifier
+ * for the actions.  So if you wanted to add an existing standard action
+ * to an action collection you can do so like this:
  * \code
- * (void)KStandardAction::action(KStandardAction::New, this, SLOT(fileNew()), actionCollection());
- * (void)KStandardAction::action(KStandardAction::Cut, this, SLOT(editCut()), actionCollection());
+ * QAction *cut = KStandardAction::cut(this, &ClassFoo::editCut, this);
+ * actionCollection()->addAction(KStandardAction::name(KStandardAction::Cut), cut);
+ * \endcode
+ *
+ * You can then get a pointer to the action using
+ * \code
+ * QAction *cutPtr = actionCollection()->action(KStandardAction::name(KStandardAction::Cut));
  * \endcode
  *
  * @author Kurt Granroth <granroth@kde.org>
@@ -473,6 +453,7 @@ KCONFIGWIDGETS_EXPORT QAction *copy(QObject *parent);
  */
 KCONFIGWIDGETS_EXPORT QAction *paste(QObject *parent);
 
+// TODO K3ListView is long gone. Is this still relevant?
 /**
  * Clear selected area.  Calls clear() on the widget with the current focus.
  * Note that for some widgets, this may not provide the intended behavior.  For
