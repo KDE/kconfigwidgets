@@ -1,20 +1,20 @@
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2017, 2018.
-# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2021, 2022.
+# SPDX-FileCopyrightText: 2021, 2022, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-02 01:30+0000\n"
-"PO-Revision-Date: 2022-06-04 19:49+0400\n"
+"PO-Revision-Date: 2024-02-15 17:30+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
-"Language-Team: Arabic <kde-l10n-ar@kde.org>\n"
+"Language-Team: ar\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Lokalize 21.07.70\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -131,8 +131,6 @@ msgid "Create new document"
 msgstr "أنشئ مستندًا جديدًا"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
 msgstr "ا&فتح…"
 
@@ -157,8 +155,6 @@ msgid "Save document"
 msgstr "احفظ المستند"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
 msgstr "احفظ &كَ‍…"
 
@@ -183,8 +179,6 @@ msgid "Close document"
 msgstr "أغلق المستند"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
 msgstr "ا&طبع…"
 
@@ -201,8 +195,6 @@ msgid "Show a print preview of document"
 msgstr "اعرض معاينة للمستند مطبوعًا"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
 msgstr "أبرِ&د…"
 
@@ -271,8 +263,6 @@ msgid "Dese&lect"
 msgstr "أ&زل التحديد"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
 msgstr "ابح&ث…"
 
@@ -285,8 +275,6 @@ msgid "Find Pre&vious"
 msgstr "ابحث عن ال&سابق"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
 msgstr "ا&ستبدل…"
 
@@ -331,8 +319,6 @@ msgid "Zoom &Out"
 msgstr "ب&عّد"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
 msgstr "الت&قريب…"
 
@@ -373,20 +359,14 @@ msgid "Go to next page"
 msgstr "انتقل إلى الصفحة التالية"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "ا&نتقل إلى…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
 msgstr "ا&نتقل إلى صفحة…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
 msgstr "ا&نتقل إلى سطر…"
 
@@ -427,14 +407,10 @@ msgid "&Add Bookmark"
 msgstr "أ&ضف علامة"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
 msgstr "&حرّر العلامات…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
 msgstr "الإ&ملاء…"
 
@@ -471,26 +447,19 @@ msgid "F&ull Screen Mode"
 msgstr "وضع ملء ال&شاشة"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
 msgstr "اضبط ا&ختصارات لوحة المفاتيح..."
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
 msgstr "ا&ضبط %1…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
 msgstr "اضبط أشرطة الأ&دوات…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
 msgstr "اضبط الإ&خطارات…"
 
@@ -504,14 +473,10 @@ msgid "What's &This?"
 msgstr "ما &هذا؟"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
 msgstr "أ&بلغ عن علّة…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
 msgstr "اضبط الل&غة..."
 
@@ -529,8 +494,6 @@ msgid "&Delete"
 msgstr "ا&حذف"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
 msgstr "&غيّر الاسم…"
 
