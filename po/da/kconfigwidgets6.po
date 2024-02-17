@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-02 01:30+0000\n"
+"POT-Creation-Date: 2024-02-17 00:35+0000\n"
 "PO-Revision-Date: 2021-09-05 20:26+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -46,7 +46,7 @@ msgstr "Autofind"
 msgid "Color Scheme"
 msgstr "Farvetema"
 
-#: kcommandbar.cpp:622
+#: kcommandbar.cpp:618
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

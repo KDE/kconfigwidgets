@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-02 01:30+0000\n"
+"POT-Creation-Date: 2024-02-17 00:35+0000\n"
 "PO-Revision-Date: 2008-05-30 17:29+0200\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -45,7 +45,7 @@ msgstr "Avto-aniqlash"
 msgid "Color Scheme"
 msgstr "Tugmalar birikmasi"
 
-#: kcommandbar.cpp:622
+#: kcommandbar.cpp:618
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

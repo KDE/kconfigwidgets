@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-02 01:30+0000\n"
+"POT-Creation-Date: 2024-02-17 00:35+0000\n"
 "PO-Revision-Date: 2019-12-01 18:20+0000\n"
 "Last-Translator: Subin Siby <subins2000@gmail.com>\n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -51,7 +51,7 @@ msgstr "തനിയെ കണ്ടുപിടിക്കുക"
 msgid "Color Scheme"
 msgstr "കുറുക്കുവഴികളുടെ പദ്ധതികള്‍"
 
-#: kcommandbar.cpp:622
+#: kcommandbar.cpp:618
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

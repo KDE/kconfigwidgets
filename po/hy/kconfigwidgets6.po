@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-02 01:30+0000\n"
+"POT-Creation-Date: 2024-02-17 00:35+0000\n"
 "PO-Revision-Date: 2013-01-31 01:08+0400\n"
 "Last-Translator: Davit <nikdavnik@mail.ru>\n"
 "Language-Team: Armenian Language: hy\n"
@@ -49,7 +49,7 @@ msgstr "Ավտոմատ որոշում"
 msgid "Color Scheme"
 msgstr "Միացման սխեմաներ"
 
-#: kcommandbar.cpp:622
+#: kcommandbar.cpp:618
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""
