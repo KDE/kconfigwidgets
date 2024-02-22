@@ -9,7 +9,7 @@
 # Gregor Rakar <gregor.rakar@kiss.uni-lj.si>, 2002,2003.
 # Gregor Rakar <gregor.rakar@kiss.si>, 2003, 2004, 2005.
 # Andrej Vernekar <andrej.vernekar@moj.net>, 2005, 2007, 2008, 2009, 2010.
-# Jure Repinc <jlp@holodeck1.com>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
+# Jure Repinc <jlp@holodeck1.com>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2024.
 # Andrej Vernekar <andrej.vernerkar@moj.net>, 2008, 2011, 2012.
 # Andrej Mernik <andrejm@ubuntu.si>, 2012, 2013, 2015, 2016, 2018.
 # Matjaž Jeran <matjaz.jeran@amis.net>, 2020, 2021, 2022.
@@ -18,8 +18,8 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-17 00:35+0000\n"
-"PO-Revision-Date: 2023-11-16 13:41+0100\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"PO-Revision-Date: 2024-02-21 21:29+0100\n"
+"Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Lokalize 23.11.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -48,7 +48,7 @@ msgstr ""
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Default"
-msgstr "Privzet"
+msgstr "Privzeto"
 
 #: kcodecaction.cpp:70
 #, kde-format
@@ -59,7 +59,7 @@ msgstr "Samodejna zaznava"
 #: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
-msgstr "Sheme barv"
+msgstr "Barvna shema"
 
 #: kcommandbar.cpp:618
 #, kde-format
@@ -76,13 +76,13 @@ msgstr "Nastavi"
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr "Meni"
+msgstr "&Meni"
 
 #: khamburgermenu.cpp:329
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
-msgstr "Pokaži menijsko vrstico z vsemi možnostmi"
+msgstr "Pokaži &menijsko vrstico z vsemi dejanji"
 
 #: khamburgermenu.cpp:355
 #, kde-format
@@ -111,7 +111,7 @@ msgstr "Počisti seznam"
 #, kde-format
 msgctxt "go back"
 msgid "&Back"
-msgstr "Nazaj"
+msgstr "N&azaj"
 
 #: kstandardaction.cpp:164
 #, kde-format
@@ -123,7 +123,7 @@ msgstr "&Naprej"
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
-msgstr "Domov"
+msgstr "&Domov"
 
 #: kstandardaction.cpp:230
 #, kde-format
@@ -139,7 +139,7 @@ msgid ""
 "window used for status information.</p>"
 msgstr ""
 "Pokaži vrstico stanja<p>Pokaže vrstico stanja; t.j. vrstica na dnu okna, ki "
-"se uporablja za podatke o stanju,</p>"
+"se uporablja za podatke o stanju.</p>"
 
 #: kstandardaction_p.h:63
 msgid "&New"
@@ -151,7 +151,7 @@ msgstr "Ustvari nov dokument"
 
 #: kstandardaction_p.h:64
 msgid "&Open…"
-msgstr "&Odpri…"
+msgstr "&Odpri …"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -159,7 +159,7 @@ msgstr "Odpri obstoječ dokument"
 
 #: kstandardaction_p.h:65
 msgid "Open &Recent"
-msgstr "Odpri nedavno"
+msgstr "Odpri n&edavno"
 
 #: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
@@ -175,7 +175,7 @@ msgstr "Shrani dokument"
 
 #: kstandardaction_p.h:67
 msgid "Save &As…"
-msgstr "Shrani kot…"
+msgstr "S&hrani kot …"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -191,7 +191,7 @@ msgstr "Povrni neshranjene spremembe dokumenta"
 
 #: kstandardaction_p.h:69
 msgid "&Close"
-msgstr "Zapri"
+msgstr "&Zapri"
 
 #: kstandardaction_p.h:69
 msgid "Close document"
@@ -199,7 +199,7 @@ msgstr "Zapri dokument"
 
 #: kstandardaction_p.h:70
 msgid "&Print…"
-msgstr "Natisni…"
+msgstr "Na&tisni …"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -207,7 +207,7 @@ msgstr "Natisni dokument"
 
 #: kstandardaction_p.h:71
 msgid "Print Previe&w"
-msgstr "Predogled tiskanja"
+msgstr "Predo&gled tiskanja"
 
 #: kstandardaction_p.h:71
 msgid "Show a print preview of document"
@@ -215,7 +215,7 @@ msgstr "Pokaži predogled tiskanja dokumenta"
 
 #: kstandardaction_p.h:72
 msgid "&Mail…"
-msgstr "E-Pošta…"
+msgstr "E-Po&šta …"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -223,7 +223,7 @@ msgstr "Pošlji dokument po e-pošti"
 
 #: kstandardaction_p.h:73
 msgid "&Quit"
-msgstr "Končaj"
+msgstr "Konča&j"
 
 #: kstandardaction_p.h:73
 msgid "Quit application"
@@ -231,7 +231,7 @@ msgstr "Končaj program"
 
 #: kstandardaction_p.h:75
 msgid "&Undo"
-msgstr "Razveljavi"
+msgstr "&Razveljavi"
 
 #: kstandardaction_p.h:75
 msgid "Undo last action"
@@ -239,7 +239,7 @@ msgstr "Razveljavi zadnje dejanje"
 
 #: kstandardaction_p.h:76
 msgid "Re&do"
-msgstr "Uveljavi"
+msgstr "&Uveljavi"
 
 #: kstandardaction_p.h:76
 msgid "Redo last undone action"
@@ -247,23 +247,23 @@ msgstr "Uveljavi zadnje razveljavljeno dejanje"
 
 #: kstandardaction_p.h:77
 msgid "Cu&t"
-msgstr "Izreži"
+msgstr "&Izreži"
 
 #: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
-msgstr "Izreži izbor v odložišče"
+msgstr "Izreži izbor na odložišče"
 
 #: kstandardaction_p.h:78
 msgid "&Copy"
-msgstr "Kopiraj"
+msgstr "&Kopiraj"
 
 #: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
-msgstr "Kopiraj izbor v odložišče"
+msgstr "Kopiraj izbor na odložišče"
 
 #: kstandardaction_p.h:79
 msgid "&Paste"
-msgstr "Prilepi"
+msgstr "Pri&lepi"
 
 #: kstandardaction_p.h:79
 msgid "Paste clipboard content"
@@ -271,35 +271,35 @@ msgstr "Prilepi vsebino odložišča"
 
 #: kstandardaction_p.h:80
 msgid "C&lear"
-msgstr "Počisti"
+msgstr "Po&čisti"
 
 #: kstandardaction_p.h:81
 msgid "Select &All"
-msgstr "Izberi vse"
+msgstr "Izberi &vse"
 
 #: kstandardaction_p.h:82
 msgid "Dese&lect"
-msgstr "Odstrani izbiro"
+msgstr "&Odstrani izbiro"
 
 #: kstandardaction_p.h:83
 msgid "&Find…"
-msgstr "Najdi…"
+msgstr "&Najdi …"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
-msgstr "Najdi naslednje"
+msgstr "N&ajdi naslednje"
 
 #: kstandardaction_p.h:85
 msgid "Find Pre&vious"
-msgstr "Najdi predhodno"
+msgstr "Naj&di predhodno"
 
 #: kstandardaction_p.h:86
 msgid "&Replace…"
-msgstr "Zamenjaj…"
+msgstr "&Zamenjaj …"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
-msgstr "Prilagodi na dejansko velikost"
+msgstr "Prilagodi na &dejansko velikost"
 
 #: kstandardaction_p.h:88
 msgid "View document at its actual size"
@@ -307,15 +307,15 @@ msgstr "Pokaži dokument v njegovi dejanski velikosti"
 
 #: kstandardaction_p.h:89
 msgid "&Fit to Page"
-msgstr "Prilagodi strani"
+msgstr "Prilagodi &strani"
 
 #: kstandardaction_p.h:89
 msgid "Zoom to fit page in window"
-msgstr "Prilagodi približanje, da se bo stran prilegala oknu"
+msgstr "Prilagodi približanje, da se bo celotna stran prilegala oknu"
 
 #: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
-msgstr "Prilagodi širini strani"
+msgstr "Prilagodi &širini strani"
 
 #: kstandardaction_p.h:90
 msgid "Zoom to fit page width in window"
@@ -323,7 +323,7 @@ msgstr "Prilagodi približanje, da se bo širina strani prilegala oknu"
 
 #: kstandardaction_p.h:91
 msgid "Fit to Page &Height"
-msgstr "Prilagodi višini strani"
+msgstr "Prilagodi &višini strani"
 
 #: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
@@ -331,15 +331,15 @@ msgstr "Prilagodi približanje, da se bo višina strani prilegala oknu"
 
 #: kstandardaction_p.h:92
 msgid "Zoom &In"
-msgstr "Približaj"
+msgstr "Pri&bližaj"
 
 #: kstandardaction_p.h:93
 msgid "Zoom &Out"
-msgstr "Oddalji"
+msgstr "&Oddalji"
 
 #: kstandardaction_p.h:94
 msgid "&Zoom…"
-msgstr "Približanje…"
+msgstr "&Približanje …"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -347,7 +347,7 @@ msgstr "Izberite stopnjo približanja"
 
 #: kstandardaction_p.h:95
 msgid "&Refresh"
-msgstr "Osveži"
+msgstr "Osve&ži"
 
 #: kstandardaction_p.h:95
 msgid "Refresh document"
@@ -355,7 +355,7 @@ msgstr "Osveži dokument"
 
 #: kstandardaction_p.h:97
 msgid "&Up"
-msgstr "Gor"
+msgstr "&Gor"
 
 #: kstandardaction_p.h:97
 msgid "Go up"
@@ -363,7 +363,7 @@ msgstr "Pojdi gor"
 
 #: kstandardaction_p.h:102
 msgid "&Previous Page"
-msgstr "&Predhodna stran"
+msgstr "Predhodn&a stran"
 
 #: kstandardaction_p.h:102
 msgid "Go to previous page"
@@ -379,19 +379,19 @@ msgstr "Pojdi na naslednjo stran"
 
 #: kstandardaction_p.h:104
 msgid "&Go To…"
-msgstr "Pojdi na…"
+msgstr "&Pojdi na …"
 
 #: kstandardaction_p.h:105
 msgid "&Go to Page…"
-msgstr "Pojdi na stran…"
+msgstr "Pojdi na &stran …"
 
 #: kstandardaction_p.h:106
 msgid "&Go to Line…"
-msgstr "Pojdi v vrstico…"
+msgstr "Pojdi v &vrstico …"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
-msgstr "Prva stran"
+msgstr "P&rva stran"
 
 #: kstandardaction_p.h:107
 msgid "Go to first page"
@@ -399,7 +399,7 @@ msgstr "Pojdi na prvo stran"
 
 #: kstandardaction_p.h:108
 msgid "&Last Page"
-msgstr "Zadnja stran"
+msgstr "&Zadnja stran"
 
 #: kstandardaction_p.h:108
 msgid "Go to last page"
@@ -407,7 +407,7 @@ msgstr "Pojdi na zadnjo stran"
 
 #: kstandardaction_p.h:109
 msgid "&Back"
-msgstr "Nazaj"
+msgstr "N&azaj"
 
 #: kstandardaction_p.h:109
 msgid "Go back in document"
@@ -415,7 +415,7 @@ msgstr "Pojdi nazaj po dokumentu"
 
 #: kstandardaction_p.h:110
 msgid "&Forward"
-msgstr "Naprej"
+msgstr "&Naprej"
 
 #: kstandardaction_p.h:110
 msgid "Go forward in document"
@@ -423,15 +423,15 @@ msgstr "Pojdi naprej po dokumentu"
 
 #: kstandardaction_p.h:112
 msgid "&Add Bookmark"
-msgstr "Dodaj zaznamek"
+msgstr "Dodaj &zaznamek"
 
 #: kstandardaction_p.h:113
 msgid "&Edit Bookmarks…"
-msgstr "Uredi zaznamke…"
+msgstr "Ur&edi zaznamke …"
 
 #: kstandardaction_p.h:115
 msgid "&Spelling…"
-msgstr "Črkovanje…"
+msgstr "&Črkovanje …"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -467,25 +467,25 @@ msgstr "&Celozaslonski način"
 
 #: kstandardaction_p.h:121
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Nastavi bližnjice…"
+msgstr "Nastavi &bližnjice …"
 
 #: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1…"
-msgstr "Nastavi %1…"
+msgstr "&Nastavi %1 …"
 
 #: kstandardaction_p.h:123
 msgid "Configure Tool&bars…"
-msgstr "Nastavi orodne vrstice…"
+msgstr "Nastavi o&rodne vrstice …"
 
 #: kstandardaction_p.h:124
 msgid "Configure &Notifications…"
-msgstr "Nastavi obvestila…"
+msgstr "Na&stavi obvestila …"
 
 #: kstandardaction_p.h:128
 #, kde-format
 msgid "%1 &Handbook"
-msgstr "Priročnik za %1"
+msgstr "P&riročnik za %1"
 
 #: kstandardaction_p.h:129
 msgid "What's &This?"
@@ -493,16 +493,16 @@ msgstr "Kaj je &to?"
 
 #: kstandardaction_p.h:130
 msgid "&Report Bug…"
-msgstr "Poročaj o napaki…"
+msgstr "Poročaj o &napaki …"
 
 #: kstandardaction_p.h:131
 msgid "Configure &Language…"
-msgstr "Nastavi jezik…"
+msgstr "Nastavi j&ezik …"
 
 #: kstandardaction_p.h:132
 #, kde-format
 msgid "&About %1"
-msgstr "O programu %1"
+msgstr "&O %1"
 
 #: kstandardaction_p.h:133
 msgid "About &KDE"
@@ -514,7 +514,7 @@ msgstr "&Izbriši"
 
 #: kstandardaction_p.h:135
 msgid "&Rename…"
-msgstr "P&reimenuj…"
+msgstr "P&reimenuj …"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
@@ -526,7 +526,7 @@ msgstr "&Donacija"
 
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
-msgstr "Odpri meni"
+msgstr "Odpri &meni"
 
 #~ msgid "&Open..."
 #~ msgstr "&Odpri..."
