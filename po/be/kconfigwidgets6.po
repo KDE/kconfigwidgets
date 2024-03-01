@@ -9,10 +9,10 @@
 # kom <me@komzpa.net>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
+"Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-17 00:35+0000\n"
-"PO-Revision-Date: 2022-12-25 17:04\n"
+"PO-Revision-Date: 2024-02-22 13:31\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -23,11 +23,12 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-"X-Crowdin-Project: 86ff119b1606fcaa910d6b44fc14b611\n"
-"X-Crowdin-Project-ID: 127\n"
+"X-Crowdin-Project: fc57ad16a28d02dea100ceb1c60de14e\n"
+"X-Crowdin-Project-ID: 136\n"
 "X-Crowdin-Language: be\n"
-"X-Crowdin-File: /main/be/kconfigwidgets/kconfigwidgets5.po\n"
-"X-Crowdin-File-ID: 7797\n"
+"X-Crowdin-File: /[antikruk.KDE] main/KDE6/be/messages/kconfigwidgets/"
+"kconfigwidgets6.po\n"
+"X-Crowdin-File-ID: 9946\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -143,10 +144,8 @@ msgid "Create new document"
 msgstr "Стварыць новы дакумент"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open"
 msgid "&Open…"
-msgstr "&Адкрыць"
+msgstr ""
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -169,10 +168,8 @@ msgid "Save document"
 msgstr "Захаваць дакумент"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save As"
 msgid "Save &As…"
-msgstr "Запісаць як"
+msgstr ""
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -195,10 +192,8 @@ msgid "Close document"
 msgstr "Закрыць дакумент"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "Print"
 msgid "&Print…"
-msgstr "Друкаваць"
+msgstr ""
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -213,10 +208,8 @@ msgid "Show a print preview of document"
 msgstr "Вывесці папярэдні прагляд дакумента для друкавання"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "Main:"
 msgid "&Mail…"
-msgstr "Пошта"
+msgstr ""
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -283,10 +276,8 @@ msgid "Dese&lect"
 msgstr "&Адкінуць выбар"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find"
 msgid "&Find…"
-msgstr "З&найсці"
+msgstr ""
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -297,10 +288,8 @@ msgid "Find Pre&vious"
 msgstr "Шукаць &папярэдняе"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace"
 msgid "&Replace…"
-msgstr "&Замяніць"
+msgstr ""
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -343,11 +332,8 @@ msgid "Zoom &Out"
 msgstr "&Паменшыць"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Zoom In"
 msgid "&Zoom…"
-msgstr "Маштаб"
+msgstr ""
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -386,23 +372,16 @@ msgid "Go to next page"
 msgstr "Перайсці да наступнай старонкі"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "&Пераход..."
+msgstr ""
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "&Перайсці да старонкі..."
+msgstr ""
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "&Go to Line…"
-msgstr "Ісці да радка"
+msgstr ""
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -441,16 +420,12 @@ msgid "&Add Bookmark"
 msgstr "&Дадаць закладку"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks"
 msgid "&Edit Bookmarks…"
-msgstr "&Рэдагаваць закладкі"
+msgstr ""
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
-msgstr "Праверка правапісу"
+msgstr ""
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -485,28 +460,21 @@ msgid "F&ull Screen Mode"
 msgstr "&Поўнаэкранны рэжым"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Наладжванне &спалучэнняў клавіш..."
+msgstr ""
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "&Наладжванне \"%1\"..."
+msgstr ""
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Toolbars"
 msgid "Configure Tool&bars…"
-msgstr "Настаўленне панеляў начыння"
+msgstr ""
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure Notifications"
 msgid "Configure &Notifications…"
-msgstr "Наставіць &абвяшчэнні..."
+msgstr ""
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -518,16 +486,12 @@ msgid "What's &This?"
 msgstr "Што &гэта?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
-msgstr "&Паведаміць пра памылку..."
+msgstr ""
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "Наладжванне &мовы..."
+msgstr ""
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -543,10 +507,8 @@ msgid "&Delete"
 msgstr "В&ыдаліць"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "З&мяніць назву..."
+msgstr ""
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
