@@ -25,7 +25,6 @@
 class QObject;
 class QWidget;
 class QAction;
-class KToggleAction;
 class KToggleFullScreenAction;
 
 /**
