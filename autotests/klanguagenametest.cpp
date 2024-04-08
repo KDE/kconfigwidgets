@@ -91,8 +91,8 @@ private Q_SLOTS:
 
     void testNoString()
     {
-        // Qt doesn't have za support, we have no test fixture, so no string.
-        QCOMPARE(KLanguageName::nameForCode("za"), QString());
+        // test that a language that doesn't exist gives the empty string
+        QCOMPARE(KLanguageName::nameForCode("xx"), QString());
     }
 };
 
