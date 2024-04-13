@@ -2,7 +2,6 @@
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 2003, 2004, 2005, 2006.
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2003, 2005.
-# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2020, 2021, 2022.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008, 2009, 2010.
 # Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2022.
 msgid ""
@@ -10,14 +9,14 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-17 00:35+0000\n"
-"PO-Revision-Date: 2022-06-19 14:02+0200\n"
+"PO-Revision-Date: 2024-04-12 16:47+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.04.2\n"
+"X-Generator: Lokalize 24.02.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -137,8 +136,6 @@ msgid "Create new document"
 msgstr "Lag nytt dokument"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
 msgstr "&Opna …"
 
@@ -163,8 +160,6 @@ msgid "Save document"
 msgstr "Lagra dokument"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
 msgstr "Lagra &som …"
 
@@ -189,8 +184,6 @@ msgid "Close document"
 msgstr "Lukk dokument"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
 msgstr "Skriv &ut …"
 
@@ -207,14 +200,12 @@ msgid "Show a print preview of document"
 msgstr "Vis ei førehandsvising av dokument"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
 msgstr "S&end …"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
-msgstr "Send dokumentet med e-post"
+msgstr "Send dokumentet på e-post"
 
 #: kstandardaction_p.h:73
 msgid "&Quit"
@@ -277,8 +268,6 @@ msgid "Dese&lect"
 msgstr "&Fjern merking"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
 msgstr "&Finn …"
 
@@ -291,8 +280,6 @@ msgid "Find Pre&vious"
 msgstr "Finn &førre"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
 msgstr "&Byt ut …"
 
@@ -337,8 +324,6 @@ msgid "Zoom &Out"
 msgstr "Vis &mindre"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
 msgstr "&Vis større/mindre …"
 
@@ -379,20 +364,14 @@ msgid "Go to next page"
 msgstr "Gå til neste side"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "&Gå til …"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
 msgstr "&Gå til side …"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
 msgstr "G&å til linje …"
 
@@ -433,14 +412,10 @@ msgid "&Add Bookmark"
 msgstr "&Legg til bokmerke"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
 msgstr "&Rediger bokmerke …"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
 msgstr "&Stavekontroll …"
 
@@ -477,26 +452,19 @@ msgid "F&ull Screen Mode"
 msgstr "F&ullskjermmodus"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
 msgstr "Set opp &snøggtastar …"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
 msgstr "&Set opp %1 …"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
 msgstr "Set opp verktøy&linjer …"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
 msgstr "Set opp &varslingar …"
 
@@ -510,14 +478,10 @@ msgid "What's &This?"
 msgstr "Kva er de&tte?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
 msgstr "&Meld frå om feil …"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
 msgstr "Set opp &språk …"
 
@@ -535,8 +499,6 @@ msgid "&Delete"
 msgstr "&Slett"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
 msgstr "&Endra namn …"
 
