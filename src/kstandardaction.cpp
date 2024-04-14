@@ -6,12 +6,14 @@
 */
 
 #include "kstandardaction.h"
+#include "kguistandardaction_p.h" // from KConfigGui
 #include "kopenaction_p.h"
 #include "kstandardaction_p.h"
 #include "moc_kstandardaction_p.cpp"
 
 #include <KAboutData>
 #include <KAcceleratorManager>
+#include <KGuiStandardAction>
 #include <KLocalizedString>
 #include <KStandardShortcutWatcher>
 #include <QGuiApplication>
@@ -50,15 +52,15 @@ AutomaticAction::AutomaticAction(const QIcon &icon,
 
 QStringList stdNames()
 {
-    return internal_stdNames();
+    return KGuiStandardAction::internal_stdNames();
 }
 
 QList<StandardAction> actionIds()
 {
     QList<StandardAction> result;
 
-    for (uint i = 0; g_rgActionInfo[i].id != ActionNone; i++) {
-        result.append(g_rgActionInfo[i].id);
+    for (uint i = 0; KGuiStandardAction::g_rgActionInfo[i].id != static_cast<KGuiStandardAction::StandardAction>(ActionNone); i++) {
+        result.append(static_cast<StandardAction>(KGuiStandardAction::g_rgActionInfo[i].id));
     }
 
     return result;
@@ -66,8 +68,7 @@ QList<StandardAction> actionIds()
 
 KStandardShortcut::StandardShortcut shortcutForActionId(StandardAction id)
 {
-    const KStandardActionInfo *pInfo = infoPtr(id);
-    return (pInfo) ? pInfo->idAccel : KStandardShortcut::AccelNone;
+    return KGuiStandardAction::shortcutForActionId(static_cast<KGuiStandardAction::StandardAction>(id));
 }
 
 class ShowMenubarActionFilter : public QObject
@@ -144,7 +145,7 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
     }
 
     QAction *pAction = nullptr;
-    const KStandardActionInfo *pInfo = infoPtr(id);
+    const auto *pInfo = KGuiStandardAction::infoPtr(static_cast<KGuiStandardAction::StandardAction>(id));
 
     // qCDebug(KCONFIG_WIDGETS_LOG) << "KStandardAction::create( " << id << "=" << (pInfo ? pInfo->psName : (const char*)0) << ", " << parent << " )"; // ellis
 
@@ -177,10 +178,10 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
             if (appDisplayName.isEmpty()) {
                 appDisplayName = QCoreApplication::applicationName();
             }
-            sLabel = pInfo->psLabel.subs(appDisplayName).toString();
+            sLabel = QCoreApplication::tr(pInfo->psLabel).arg(appDisplayName);
         } break;
         default:
-            sLabel = pInfo->psLabel.toString();
+            sLabel = QCoreApplication::tr(pInfo->psLabel);
         }
 
         if (QGuiApplication::isRightToLeft()) {
@@ -294,8 +295,8 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
             break;
         }
 
-        if (!pInfo->psToolTip.isEmpty()) {
-            pAction->setToolTip(pInfo->psToolTip.toString());
+        if (!QCoreApplication::tr(pInfo->psToolTip).isEmpty()) {
+            pAction->setToolTip(QCoreApplication::tr(pInfo->psToolTip));
         }
         pAction->setIcon(icon);
 
@@ -345,7 +346,7 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
 
 QString name(StandardAction id)
 {
-    const KStandardActionInfo *pInfo = infoPtr(id);
+    const auto pInfo = KGuiStandardAction::infoPtr(static_cast<KGuiStandardAction::StandardAction>(id));
     return (pInfo) ? pInfo->psName.toString() : QString();
 }
 
@@ -586,16 +587,16 @@ QAction *spelling(const QObject *recvr, const char *slot, QObject *parent)
 
 static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const char *slot)
 {
-    const KStandardActionInfo *p = infoPtr(id);
+    const auto p = KGuiStandardAction::infoPtr(static_cast<KGuiStandardAction::StandardAction>(id));
     if (!p) {
         return nullptr;
     }
 
-    AutomaticAction *action = new AutomaticAction(QIcon::fromTheme(p->psIconName.toString()), p->psLabel.toString(), p->idAccel, slot, parent);
+    AutomaticAction *action = new AutomaticAction(QIcon::fromTheme(p->psIconName.toString()), QCoreApplication::tr(p->psLabel), p->idAccel, slot, parent);
 
     action->setObjectName(p->psName.toString());
-    if (!p->psToolTip.isEmpty()) {
-        action->setToolTip(p->psToolTip.toString());
+    if (!QCoreApplication::tr(p->psToolTip).isEmpty()) {
+        action->setToolTip(QCoreApplication::tr(p->psToolTip));
     }
 
     if (parent && parent->inherits("KActionCollection")) {
