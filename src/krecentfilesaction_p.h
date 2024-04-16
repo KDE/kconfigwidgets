@@ -43,6 +43,7 @@ public:
         QAction *action = nullptr;
         QUrl url;
         QString shortName;
+        QMimeType mimeType;
     };
     std::vector<RecentActionInfo> m_recentActions;
 

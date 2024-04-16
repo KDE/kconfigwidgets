@@ -88,6 +88,22 @@ void KRecentFilesActionPrivate::init()
     q->connect(q, &KSelectAction::actionTriggered, q, [this](QAction *action) {
         urlSelected(action);
     });
+
+    q->connect(q->menu(), &QMenu::aboutToShow, q, [q] {
+        std::vector<RecentActionInfo> &recentActions = q->d_ptr->m_recentActions;
+        // Set icons lazily based on the mimetype
+        for (auto action : recentActions) {
+            if (action.action->icon().isNull()) {
+                if (!action.mimeType.isValid()) {
+                    action.mimeType = QMimeDatabase().mimeTypeForFile(action.url.path(), QMimeDatabase::MatchExtension);
+                }
+
+                if (!action.mimeType.isDefault()) {
+                    action.action->setIcon(QIcon::fromTheme(action.mimeType.iconName()));
+                }
+            }
+        }
+    });
 }
 
 KRecentFilesAction::~KRecentFilesAction() = default;
@@ -207,8 +223,6 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
     // add file to list
     const QString title = titleWithSensibleWidth(tmpName, KShell::tildeCollapse(file));
 
-    const QMimeType mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
-
 #ifdef QT_DBUS_LIB
     static bool isKdeSession = qgetenv("XDG_CURRENT_DESKTOP") == "KDE";
     if (isKdeSession) {
@@ -217,6 +231,7 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
             const static QString activityService = QStringLiteral("org.kde.ActivityManager");
             const static QString activityResources = QStringLiteral("/ActivityManager/Resources");
             const static QString activityResouceInferface = QStringLiteral("org.kde.ActivityManager.Resources");
+            const QMimeType mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
 
             const auto urlString = url.toString(QUrl::PreferLocalFile);
             QDBusMessage message =
@@ -236,24 +251,14 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
 #endif
 
     QAction *action = new QAction(title, selectableActionGroup());
-    addAction(action, url, tmpName, mimeType);
+    addAction(action, url, tmpName, QMimeType());
 }
 
-void KRecentFilesAction::addAction(QAction *action, const QUrl &url, const QString &name, const QMimeType &_mimeType)
+void KRecentFilesAction::addAction(QAction *action, const QUrl &url, const QString &name, const QMimeType &mimeType)
 {
     Q_D(KRecentFilesAction);
-
-    auto mimeType = _mimeType;
-    if (!mimeType.isValid()) {
-        mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
-    }
-
-    if (!mimeType.isDefault()) {
-        action->setIcon(QIcon::fromTheme(mimeType.iconName()));
-    }
-
     menu()->insertAction(menu()->actions().value(0), action);
-    d->m_recentActions.push_back({action, url, name});
+    d->m_recentActions.push_back({action, url, name, mimeType});
 }
 
 QAction *KRecentFilesAction::removeAction(QAction *action)
@@ -382,7 +387,7 @@ void KRecentFilesAction::saveEntries(const KConfigGroup &_cg)
 
     // write file list
     int i = 1;
-    for (const auto &[action, url, shortName] : d->m_recentActions) {
+    for (const auto &[action, url, shortName, _] : d->m_recentActions) {
         cg.writePathEntry(QStringLiteral("File%1").arg(i), url.toDisplayString(QUrl::PreferLocalFile));
         cg.writePathEntry(QStringLiteral("Name%1").arg(i), shortName);
 
