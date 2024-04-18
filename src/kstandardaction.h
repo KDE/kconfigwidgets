@@ -190,7 +190,11 @@ enum StandardAction {
  * @param parent The QObject that should own the created QAction, or @c nullptr if no parent will
  *               own the QAction returned (ensure you delete it manually in this case).
  */
-KCONFIGWIDGETS_EXPORT QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObject *parent);
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use overload with new connect syntax")
+QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * @internal
@@ -264,21 +268,47 @@ KCONFIGWIDGETS_EXPORT KStandardShortcut::StandardShortcut shortcutForActionId(St
 #endif
 // clang-format on
 
+// clang-format off
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
+// we have to disable the templated function for const char* as Func, since it is ambiguous otherwise
+// TODO: KF6: unify const char* version and new style by removing std::enable_if
+#ifdef K_DOXYGEN
+#define KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(name, enumValue) \
+    [[deprecated("Use KGuiStandardAction instead")]] \
+    inline QAction *name(const QObject *recvr, Func slot, QObject *parent);
+#else
+#define KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(name, enumValue) \
+    KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::" #name " instead") \
+    template<class Receiver, class Func> \
+    inline typename std::enable_if<!std::is_convertible<Func, const char*>::value, QAction>::type *name(const Receiver *recvr, Func slot, QObject *parent) \
+    { return create(enumValue, recvr, slot, parent); }
+#endif
+#endif
+// clang-format on
+
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Create a new document or window.
  */
-KCONFIGWIDGETS_EXPORT QAction *openNew(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::openNew instead")
+QAction *openNew(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Create a new document or window.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(openNew, New)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(openNew, New)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Open an existing file.
  */
-KCONFIGWIDGETS_EXPORT QAction *open(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KStandardAction::open overload with new connect syntax instead")
+QAction *open(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Open an existing file.
@@ -286,6 +316,7 @@ KCONFIGWIDGETS_EXPORT QAction *open(const QObject *recvr, const char *slot, QObj
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(open, Open)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Open a recently used document. The signature of the slot being called
  * is of the form slotURLSelected( const QUrl & ).
@@ -294,7 +325,10 @@ KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(open, Open)
  * signature is slotURLSelected( const QUrl & ).
  * @param parent parent widget
  */
-KCONFIGWIDGETS_EXPORT KRecentFilesAction *openRecent(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KStandardAction::openRecent overload with new connect syntax instead")
+KRecentFilesAction *openRecent(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * The same as openRecent(const QObject *, const char *, QObject *), but using new-style connect syntax
@@ -316,84 +350,112 @@ openRecent(const Receiver *recvr, Func slot, QObject *parent)
     return recentAction;
 }
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Save the current document.
  */
-KCONFIGWIDGETS_EXPORT QAction *save(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::save instead")
+QAction *save(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Save the current document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(save, Save)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(save, Save)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Save the current document under a different name.
  */
-KCONFIGWIDGETS_EXPORT QAction *saveAs(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::saveAs instead")
+QAction *saveAs(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Save the current document under a different name.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(saveAs, SaveAs)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(saveAs, SaveAs)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Revert the current document to the last saved version
  * (essentially will undo all changes).
  */
-KCONFIGWIDGETS_EXPORT QAction *revert(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::revert instead")
+QAction *revert(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Revert the current document to the last saved version
  * (essentially will undo all changes).
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(revert, Revert)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(revert, Revert)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Close the current document.
  */
-KCONFIGWIDGETS_EXPORT QAction *close(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::close instead")
+QAction *close(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Close the current document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(close, Close)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(close, Close)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Print the current document.
  */
-KCONFIGWIDGETS_EXPORT QAction *print(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::print instead")
+QAction *print(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Print the current document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(print, Print)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(print, Print)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Show a print preview of the current document.
  */
-KCONFIGWIDGETS_EXPORT QAction *printPreview(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::printPreview instead")
+QAction *printPreview(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Show a print preview of the current document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(printPreview, PrintPreview)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(printPreview, PrintPreview)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Send the current document by mail.
  */
-KCONFIGWIDGETS_EXPORT QAction *mail(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::saveAs instead")
+QAction *mail(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Mail this document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(mail, Mail)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(mail, Mail)
 
 /**
  * Quit the program.
@@ -403,19 +465,27 @@ KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(mail, Mail)
  * KMainWindow::queryClose() is called on any open window (to warn the user
  * about unsaved changes for example).
  */
-KCONFIGWIDGETS_EXPORT QAction *quit(const QObject *recvr, const char *slot, QObject *parent);
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::quit instead")
+QAction *quit(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Quit the program.
  * @see quit(const QObject *recvr, const char *slot, QObject *parent)
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(quit, Quit)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(quit, Quit)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Undo the last operation.
  */
-KCONFIGWIDGETS_EXPORT QAction *undo(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::undo instead")
+QAction *undo(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Undo the last operation.
@@ -423,10 +493,14 @@ KCONFIGWIDGETS_EXPORT QAction *undo(const QObject *recvr, const char *slot, QObj
  */
 KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(undo, Undo)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Redo the last operation.
  */
-KCONFIGWIDGETS_EXPORT QAction *redo(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::redo instead")
+QAction *redo(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Redo the last operation.
@@ -480,386 +554,526 @@ KCONFIGWIDGETS_EXPORT QAction *clear(QObject *parent);
  */
 KCONFIGWIDGETS_EXPORT QAction *selectAll(QObject *parent);
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Cut selected area and store it in the clipboard.
  */
-KCONFIGWIDGETS_EXPORT QAction *cut(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::cut instead")
+QAction *cut(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Cut selected area and store it in the clipboard.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(cut, Cut)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(cut, Cut)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Copy the selected area into the clipboard.
  */
-KCONFIGWIDGETS_EXPORT QAction *copy(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::copy instead")
+QAction *copy(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Copy the selected area into the clipboard.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(copy, Copy)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(copy, Copy)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Paste the contents of clipboard at the current mouse or cursor
  * position.
  */
-KCONFIGWIDGETS_EXPORT QAction *paste(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::paste instead")
+QAction *paste(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Paste the contents of clipboard at the current mouse or cursor
  * position.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(paste, Paste)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(paste, Paste)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Clear the content of the focus widget
  */
-KCONFIGWIDGETS_EXPORT QAction *clear(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::clear instead")
+QAction *clear(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Clear the content of the focus widget
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(clear, Clear)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(clear, Clear)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Select all elements in the current document.
  */
-KCONFIGWIDGETS_EXPORT QAction *selectAll(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::selectAll instead")
+QAction *selectAll(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Select all elements in the current document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(selectAll, SelectAll)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(selectAll, SelectAll)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Deselect any selected elements in the current document.
  */
-KCONFIGWIDGETS_EXPORT QAction *deselect(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::deselect instead")
+QAction *deselect(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Deselect any selected elements in the current document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(deselect, Deselect)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(deselect, Deselect)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Initiate a 'find' request in the current document.
  */
-KCONFIGWIDGETS_EXPORT QAction *find(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::find instead")
+QAction *find(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Initiate a 'find' request in the current document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(find, Find)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(find, Find)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Find the next instance of a stored 'find'.
  */
-KCONFIGWIDGETS_EXPORT QAction *findNext(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::findNext instead")
+QAction *findNext(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Find the next instance of a stored 'find'.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(findNext, FindNext)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(findNext, FindNext)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Find a previous instance of a stored 'find'.
  */
-KCONFIGWIDGETS_EXPORT QAction *findPrev(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::findPrev instead")
+QAction *findPrev(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Find a previous instance of a stored 'find'.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(findPrev, FindPrev)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(findPrev, FindPrev)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Find and replace matches.
  */
-KCONFIGWIDGETS_EXPORT QAction *replace(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::replace instead")
+QAction *replace(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Find and replace matches.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(replace, Replace)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(replace, Replace)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * View the document at its actual size.
  */
-KCONFIGWIDGETS_EXPORT QAction *actualSize(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::actualSize instead")
+QAction *actualSize(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * View the document at its actual size.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(actualSize, ActualSize)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(actualSize, ActualSize)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Fit the document view to the size of the current window.
  */
-KCONFIGWIDGETS_EXPORT QAction *fitToPage(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::fitToPage instead")
+QAction *fitToPage(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Fit the document view to the size of the current window.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(fitToPage, FitToPage)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(fitToPage, FitToPage)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Fit the document view to the width of the current window.
  */
-KCONFIGWIDGETS_EXPORT QAction *fitToWidth(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::fitToWidth instead")
+QAction *fitToWidth(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Fit the document view to the width of the current window.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(fitToWidth, FitToWidth)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(fitToWidth, FitToWidth)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Fit the document view to the height of the current window.
  */
-KCONFIGWIDGETS_EXPORT QAction *fitToHeight(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::fitToHeight instead")
+QAction *fitToHeight(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Fit the document view to the height of the current window.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(fitToHeight, FitToHeight)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(fitToHeight, FitToHeight)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Zoom in the current document view.
  */
-KCONFIGWIDGETS_EXPORT QAction *zoomIn(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::zoomIn instead")
+QAction *zoomIn(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Zoom in the current document view.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(zoomIn, ZoomIn)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(zoomIn, ZoomIn)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Zoom out the current document view.
  */
-KCONFIGWIDGETS_EXPORT QAction *zoomOut(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::zoomOut instead")
+QAction *zoomOut(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Zoom out the current document view.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(zoomOut, ZoomOut)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(zoomOut, ZoomOut)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Select the current zoom level.
  */
-KCONFIGWIDGETS_EXPORT QAction *zoom(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::zoom instead")
+QAction *zoom(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Select the current zoom level.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(zoom, Zoom)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(zoom, Zoom)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Redisplay or redraw the document.
  */
-KCONFIGWIDGETS_EXPORT QAction *redisplay(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::redisplay instead")
+QAction *redisplay(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Redisplay or redraw the document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(redisplay, Redisplay)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(redisplay, Redisplay)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Move up (web style menu).
  */
-KCONFIGWIDGETS_EXPORT QAction *up(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::up instead")
+QAction *up(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Move up (web style menu).
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(up, Up)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(up, Up)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Move back (web style menu).
  */
-KCONFIGWIDGETS_EXPORT QAction *back(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::back instead")
+QAction *back(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Move back (web style menu).
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(back, Back)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(back, Back)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Move forward (web style menu).
  */
-KCONFIGWIDGETS_EXPORT QAction *forward(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::forward instead")
+QAction *forward(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Move forward (web style menu).
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(forward, Forward)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(forward, Forward)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Go to the "Home" position or document.
  */
-KCONFIGWIDGETS_EXPORT QAction *home(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::home instead")
+QAction *home(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Go to the "Home" position or document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(home, Home)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(home, Home)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Scroll up one page.
  */
-KCONFIGWIDGETS_EXPORT QAction *prior(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::prior instead")
+QAction *prior(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Scroll up one page.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(prior, Prior)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(prior, Prior)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Scroll down one page.
  */
-KCONFIGWIDGETS_EXPORT QAction *next(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::next instead")
+QAction *next(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Scroll down one page.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(next, Next)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(next, Next)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Jump to some specific location in the document.
  */
-KCONFIGWIDGETS_EXPORT QAction *goTo(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::goTo instead")
+QAction *goTo(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Jump to some specific location in the document.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(goTo, Goto)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(goTo, Goto)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Go to a specific page.
  */
-KCONFIGWIDGETS_EXPORT QAction *gotoPage(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::goToPage instead")
+QAction *gotoPage(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Go to a specific page.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(gotoPage, GotoPage)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(gotoPage, GotoPage)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Go to a specific line.
  */
-KCONFIGWIDGETS_EXPORT QAction *gotoLine(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::goToLine instead")
+QAction *gotoLine(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Go to a specific line.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(gotoLine, GotoLine)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(gotoLine, GotoLine)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Jump to the first page.
  */
-KCONFIGWIDGETS_EXPORT QAction *firstPage(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::firstPage instead")
+QAction *firstPage(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Jump to the first page.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(firstPage, FirstPage)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(firstPage, FirstPage)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Jump to the last page.
  */
-KCONFIGWIDGETS_EXPORT QAction *lastPage(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::lastPage instead")
+QAction *lastPage(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Jump to the last page.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(lastPage, LastPage)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(lastPage, LastPage)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Move back (document style menu).
  */
-KCONFIGWIDGETS_EXPORT QAction *documentBack(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::documentBack instead")
+QAction *documentBack(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Move back (document style menu).
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(documentBack, DocumentBack)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(documentBack, DocumentBack)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Move forward (document style menu).
  */
-KCONFIGWIDGETS_EXPORT QAction *documentForward(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::documentForward instead")
+QAction *documentForward(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Move forward (document style menu).
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(documentForward, DocumentForward)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(documentForward, DocumentForward)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Add the current page to the bookmarks tree.
  */
-KCONFIGWIDGETS_EXPORT QAction *addBookmark(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::addBookmark instead")
+QAction *addBookmark(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Add the current page to the bookmarks tree.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(addBookmark, AddBookmark)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(addBookmark, AddBookmark)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Edit the application bookmarks.
  */
-KCONFIGWIDGETS_EXPORT QAction *editBookmarks(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::editBookmarks instead")
+QAction *editBookmarks(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Edit the application bookmarks.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(editBookmarks, EditBookmarks)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(editBookmarks, EditBookmarks)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Pop up the spell checker.
  */
-KCONFIGWIDGETS_EXPORT QAction *spelling(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::spelling instead")
+QAction *spelling(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Pop up the spell checker.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(spelling, Spelling)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(spelling, Spelling)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Show/Hide the menubar.
  */
-KCONFIGWIDGETS_EXPORT KToggleAction *showMenubar(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KStandardAction::showMenubar overload with new connect syntax instead")
+KToggleAction *showMenubar(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * The same as showMenubar(const QObject *, const char *, QObject *), but using new-style connect syntax
@@ -879,10 +1093,14 @@ showMenubar(const Receiver *recvr, Func slot, QObject *parent)
     return static_cast<KToggleAction *>(ret);
 }
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Show/Hide the statusbar.
  */
-KCONFIGWIDGETS_EXPORT KToggleAction *showStatusbar(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KStandardAction::showStatusBar overload with new connect syntax instead")
+KToggleAction *showStatusbar(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Show/Hide the statusbar.
@@ -901,10 +1119,14 @@ showStatusbar(const Receiver *recvr, Func slot, QObject *parent)
     return static_cast<KToggleAction *>(ret);
 }
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Switch to/from full screen mode
  */
-KCONFIGWIDGETS_EXPORT KToggleFullScreenAction *fullScreen(const QObject *recvr, const char *slot, QWidget *window, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KStandardAction::fullScreen overload with new connect syntax instead")
+KToggleFullScreenAction *fullScreen(const QObject *recvr, const char *slot, QWidget *window, QObject *parent);
+#endif
 
 /**
  * Switch to/from full screen mode
@@ -925,6 +1147,7 @@ fullScreen(const Receiver *recvr, Func slot, QWidget *window, QObject *parent)
     return ret;
 }
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Display the configure keyboard shortcuts dialog.
  *
@@ -932,170 +1155,228 @@ fullScreen(const Receiver *recvr, Func slot, QWidget *window, QObject *parent)
  * @code
  * KStandardAction::keyBindings(guiFactory(), &KXMLGUIFactory::showConfigureShortcutsDialog, actionCollection());
  * @endcode
- *
  */
-KCONFIGWIDGETS_EXPORT QAction *keyBindings(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::keyBindings instead")
+QAction *keyBindings(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Display the configure key bindings dialog.
  * @see keyBindings(const QObject *recvr, const char *slot, QObject *parent)
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(keyBindings, KeyBindings)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(keyBindings, KeyBindings)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Display the preferences/options dialog.
  */
-KCONFIGWIDGETS_EXPORT QAction *preferences(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::preferences instead")
+QAction *preferences(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Display the preferences/options dialog.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(preferences, Preferences)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(preferences, Preferences)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Display the toolbar configuration dialog.
  */
-KCONFIGWIDGETS_EXPORT QAction *configureToolbars(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::configureToolbars instead")
+QAction *configureToolbars(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Display the toolbar configuration dialog.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(configureToolbars, ConfigureToolbars)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(configureToolbars, ConfigureToolbars)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Display the notifications configuration dialog.
  */
-KCONFIGWIDGETS_EXPORT QAction *configureNotifications(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::configureNotifications instead")
+QAction *configureNotifications(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Display the notifications configuration dialog.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(configureNotifications, ConfigureNotifications)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(configureNotifications, ConfigureNotifications)
+
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
+/**
+ * Display the Switch Application Language dialog.
+ * @since 5.67
+ */
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::switchApplicationLanguage instead")
+QAction *switchApplicationLanguage(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Display the Switch Application Language dialog.
  * @since 5.67
  */
-KCONFIGWIDGETS_EXPORT QAction *switchApplicationLanguage(const QObject *recvr, const char *slot, QObject *parent);
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(switchApplicationLanguage, SwitchApplicationLanguage)
 
-/**
- * Display the Switch Application Language dialog.
- * @since 5.67
- */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(switchApplicationLanguage, SwitchApplicationLanguage)
-
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Display the handbook of the application.
  */
-KCONFIGWIDGETS_EXPORT QAction *helpContents(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::helpContents instead")
+QAction *helpContents(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Display the handbook of the application.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(helpContents, HelpContents)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(helpContents, HelpContents)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Trigger the What's This cursor.
  */
-KCONFIGWIDGETS_EXPORT QAction *whatsThis(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::whatsThis instead")
+QAction *whatsThis(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Trigger the What's This cursor.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(whatsThis, WhatsThis)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(whatsThis, WhatsThis)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Open up the Report Bug dialog.
  */
-KCONFIGWIDGETS_EXPORT QAction *reportBug(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::reportBug instead")
+QAction *reportBug(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Open up the Report Bug dialog.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(reportBug, ReportBug)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(reportBug, ReportBug)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Display the application's About box.
  */
-KCONFIGWIDGETS_EXPORT QAction *aboutApp(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::aboutApp instead")
+QAction *aboutApp(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Display the application's About box.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(aboutApp, AboutApp)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(aboutApp, AboutApp)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
  * Display the About KDE dialog.
  */
-KCONFIGWIDGETS_EXPORT QAction *aboutKDE(const QObject *recvr, const char *slot, QObject *parent);
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::aboutKDE instead")
+QAction *aboutKDE(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Display the About KDE dialog.
  * @since 5.23
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(aboutKDE, AboutKDE)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(aboutKDE, AboutKDE)
+
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
+/**
+ * Permanently deletes files or folders.
+ * @since 5.25
+ */
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::deleteFile instead")
+QAction *deleteFile(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Permanently deletes files or folders.
  * @since 5.25
  */
-KCONFIGWIDGETS_EXPORT QAction *deleteFile(const QObject *recvr, const char *slot, QObject *parent);
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(deleteFile, DeleteFile)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
- * Permanently deletes files or folders.
+ * Renames files or folders.
  * @since 5.25
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(deleteFile, DeleteFile)
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::renameFile instead")
+QAction *renameFile(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Renames files or folders.
  * @since 5.25
  */
-KCONFIGWIDGETS_EXPORT QAction *renameFile(const QObject *recvr, const char *slot, QObject *parent);
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(renameFile, RenameFile)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
- * Renames files or folders.
+ * Moves files or folders to the trash.
  * @since 5.25
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(renameFile, RenameFile)
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::moveToTrash instead")
+QAction *moveToTrash(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Moves files or folders to the trash.
  * @since 5.25
  */
-KCONFIGWIDGETS_EXPORT QAction *moveToTrash(const QObject *recvr, const char *slot, QObject *parent);
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(moveToTrash, MoveToTrash)
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 /**
- * Moves files or folders to the trash.
- * @since 5.25
+ * Open donation page on kde.org.
+ * @since 5.26
  */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(moveToTrash, MoveToTrash)
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KGuiStandardAction::donate instead")
+QAction *donate(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Open donation page on kde.org.
  * @since 5.26
  */
-KCONFIGWIDGETS_EXPORT QAction *donate(const QObject *recvr, const char *slot, QObject *parent);
-
-/**
- * Open donation page on kde.org.
- * @since 5.26
- */
-KSTANDARDACTION_WITH_NEW_STYLE_CONNECT(donate, Donate)
+KSTANDARDACTION_WITH_NEW_STYLE_CONNECT_DEPRECATED(donate, Donate)
 
 /**
  * Opens a menu that substitutes the menubar.
  * @since 5.81
  */
-KCONFIGWIDGETS_EXPORT KHamburgerMenu *hamburgerMenu(const QObject *recvr, const char *slot, QObject *parent);
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
+KCONFIGWIDGETS_EXPORT
+KCONFIGWIDGETS_DEPRECATED_VERSION(6, 2, "Use KStandardAction::hamburgerMenu with new connect syntax instead")
+KHamburgerMenu *hamburgerMenu(const QObject *recvr, const char *slot, QObject *parent);
+#endif
 
 /**
  * Opens a menu that substitutes the menubar.

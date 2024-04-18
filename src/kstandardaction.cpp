@@ -260,7 +260,7 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
         // Same as default, but with the app icon
         case AboutApp: {
             pAction = new QAction(parent);
-            icon = qApp->windowIcon();
+            icon = qGuiApp->windowIcon();
             break;
         }
         case HamburgerMenu: {
@@ -350,6 +350,7 @@ QString name(StandardAction id)
     return (pInfo) ? pInfo->psName.toString() : QString();
 }
 
+#if KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(6, 2)
 QAction *openNew(const QObject *recvr, const char *slot, QObject *parent)
 {
     return KStandardAction::create(New, recvr, slot, parent);
@@ -728,5 +729,5 @@ KHamburgerMenu *hamburgerMenu(const QObject *recvr, const char *slot, QObject *p
 {
     return static_cast<KHamburgerMenu *>(KStandardAction::create(HamburgerMenu, recvr, slot, parent));
 }
-
+#endif
 }
