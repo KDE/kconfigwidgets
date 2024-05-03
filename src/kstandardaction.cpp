@@ -21,6 +21,18 @@
 #include <QMainWindow>
 #include <QMenuBar>
 
+static void addStandardActionName()
+{
+    static bool stdNamesInitialized = false;
+
+    if (!stdNamesInitialized) {
+        KAcceleratorManager::addStandardActionNames(KGuiStandardAction::stdNames());
+        stdNamesInitialized = true;
+    }
+}
+
+Q_COREAPP_STARTUP_FUNCTION(addStandardActionName)
+
 namespace KStandardAction
 {
 AutomaticAction::AutomaticAction(const QIcon &icon,
@@ -137,13 +149,6 @@ public:
 
 QAction *_k_createInternal(StandardAction id, QObject *parent)
 {
-    static bool stdNamesInitialized = false;
-
-    if (!stdNamesInitialized) {
-        KAcceleratorManager::addStandardActionNames(stdNames());
-        stdNamesInitialized = true;
-    }
-
     QAction *pAction = nullptr;
     const auto *pInfo = KGuiStandardAction::infoPtr(static_cast<KGuiStandardAction::StandardAction>(id));
 
