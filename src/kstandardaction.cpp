@@ -6,15 +6,15 @@
 */
 
 #include "kstandardaction.h"
-#include "kguistandardaction_p.h" // from KConfigGui
 #include "kopenaction_p.h"
 #include "kstandardaction_p.h"
+#include "kstandardactions_p.h" // from KConfigGui
 #include "moc_kstandardaction_p.cpp"
 
 #include <KAboutData>
 #include <KAcceleratorManager>
-#include <KGuiStandardAction>
 #include <KLocalizedString>
+#include <KStandardActions>
 #include <KStandardShortcutWatcher>
 #include <QGuiApplication>
 #include <QLayout>
@@ -26,7 +26,7 @@ static void addStandardActionName()
     static bool stdNamesInitialized = false;
 
     if (!stdNamesInitialized) {
-        KAcceleratorManager::addStandardActionNames(KGuiStandardAction::stdNames());
+        KAcceleratorManager::addStandardActionNames(KStandardActions::internal_stdNames());
         stdNamesInitialized = true;
     }
 }
@@ -64,15 +64,15 @@ AutomaticAction::AutomaticAction(const QIcon &icon,
 
 QStringList stdNames()
 {
-    return KGuiStandardAction::internal_stdNames();
+    return KStandardActions::internal_stdNames();
 }
 
 QList<StandardAction> actionIds()
 {
     QList<StandardAction> result;
 
-    for (uint i = 0; KGuiStandardAction::g_rgActionInfo[i].id != static_cast<KGuiStandardAction::StandardAction>(ActionNone); i++) {
-        result.append(static_cast<StandardAction>(KGuiStandardAction::g_rgActionInfo[i].id));
+    for (uint i = 0; KStandardActions::g_rgActionInfo[i].id != static_cast<KStandardActions::StandardAction>(ActionNone); i++) {
+        result.append(static_cast<StandardAction>(KStandardActions::g_rgActionInfo[i].id));
     }
 
     return result;
@@ -80,7 +80,7 @@ QList<StandardAction> actionIds()
 
 KStandardShortcut::StandardShortcut shortcutForActionId(StandardAction id)
 {
-    return KGuiStandardAction::shortcutForActionId(static_cast<KGuiStandardAction::StandardAction>(id));
+    return KStandardActions::shortcutForActionId(static_cast<KStandardActions::StandardAction>(id));
 }
 
 class ShowMenubarActionFilter : public QObject
@@ -150,9 +150,10 @@ public:
 QAction *_k_createInternal(StandardAction id, QObject *parent)
 {
     QAction *pAction = nullptr;
-    const auto *pInfo = KGuiStandardAction::infoPtr(static_cast<KGuiStandardAction::StandardAction>(id));
+    const auto *pInfo = KStandardActions::infoPtr(static_cast<KStandardActions::StandardAction>(id));
 
-    // qCDebug(KCONFIG_WIDGETS_LOG) << "KStandardAction::create( " << id << "=" << (pInfo ? pInfo->psName : (const char*)0) << ", " << parent << " )"; // ellis
+    // qCDebug(KCONFIG_WIDGETS_LOG) << "KStandardAction::create( " << id  << "=" << (pInfo ? pInfo->psName.toString() : QString()) << ", " << parent << " )"; //
+    // ellis
 
     if (pInfo) {
         QString sLabel;
@@ -351,7 +352,7 @@ QAction *create(StandardAction id, const QObject *recvr, const char *slot, QObje
 
 QString name(StandardAction id)
 {
-    const auto pInfo = KGuiStandardAction::infoPtr(static_cast<KGuiStandardAction::StandardAction>(id));
+    const auto pInfo = KStandardActions::infoPtr(static_cast<KStandardActions::StandardAction>(id));
     return (pInfo) ? pInfo->psName.toString() : QString();
 }
 
@@ -593,7 +594,7 @@ QAction *spelling(const QObject *recvr, const char *slot, QObject *parent)
 
 static QAction *buildAutomaticAction(QObject *parent, StandardAction id, const char *slot)
 {
-    const auto p = KGuiStandardAction::infoPtr(static_cast<KGuiStandardAction::StandardAction>(id));
+    const auto p = KStandardActions::infoPtr(static_cast<KStandardActions::StandardAction>(id));
     if (!p) {
         return nullptr;
     }
