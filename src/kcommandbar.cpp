@@ -552,28 +552,31 @@ KCommandBar::KCommandBar(QWidget *parent)
     : QFrame(parent)
     , d(new KCommandBarPrivate)
 {
-    QGraphicsDropShadowEffect *e = new QGraphicsDropShadowEffect(this);
-    e->setColor(palette().color(QPalette::Shadow));
-    e->setOffset(2.);
-    e->setBlurRadius(8.);
-    setGraphicsEffect(e);
+    setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
+    setProperty("_breeze_force_frame", true);
 
-    setAutoFillBackground(true);
-    setFrameShadow(QFrame::Raised);
-    setFrameShape(QFrame::Box);
+    QGraphicsDropShadowEffect *e = new QGraphicsDropShadowEffect(this);
+    e->setColor(palette().color(QPalette::Dark));
+    e->setOffset(0, 4);
+    e->setBlurRadius(48);
+    setGraphicsEffect(e);
 
     QVBoxLayout *layout = new QVBoxLayout();
     layout->setSpacing(0);
-    layout->setContentsMargins(2, 2, 2, 2);
+    layout->setContentsMargins(QMargins());
     setLayout(layout);
 
-    setFocusProxy(&d->m_lineEdit);
-
     layout->addWidget(&d->m_lineEdit);
+    d->m_lineEdit.setClearButtonEnabled(true);
+    d->m_lineEdit.addAction(QIcon::fromTheme(QStringLiteral("search")), QLineEdit::LeadingPosition);
+    d->m_lineEdit.setFrame(false);
+    d->m_lineEdit.setTextMargins(QMargins() + style()->pixelMetric(QStyle::PM_ButtonMargin));
+    setFocusProxy(&d->m_lineEdit);
 
     layout->addWidget(&d->m_treeView);
     d->m_treeView.setTextElideMode(Qt::ElideLeft);
     d->m_treeView.setUniformRowHeights(true);
+    d->m_treeView.setProperty("_breeze_borders_sides", QVariant::fromValue(QFlags(Qt::TopEdge)));
 
     CommandBarStyleDelegate *delegate = new CommandBarStyleDelegate(this);
     ShortcutStyleDelegate *del = new ShortcutStyleDelegate(this);
@@ -615,7 +618,6 @@ KCommandBar::KCommandBar(QWidget *parent)
     placeholderLabel->setAlignment(Qt::AlignCenter);
     placeholderLabel->setTextInteractionFlags(Qt::NoTextInteraction);
     placeholderLabel->setWordWrap(true);
-    placeholderLabel->setText(i18n("No commands matching the filter"));
     // To match the size of a level 2 Heading/KTitleWidget
     QFont placeholderLabelFont = placeholderLabel->font();
     placeholderLabelFont.setPointSize(qRound(placeholderLabelFont.pointSize() * 1.3));
@@ -630,7 +632,16 @@ KCommandBar::KCommandBar(QWidget *parent)
     d->m_treeView.setLayout(placeholderLayout);
 
     connect(&d->m_proxyModel, &CommandBarFilterModel::modelReset, this, [this, placeholderLabel]() {
-        placeholderLabel->setHidden(d->m_proxyModel.rowCount() > 0);
+        if (d->m_proxyModel.rowCount() > 0) {
+            placeholderLabel->hide();
+        } else {
+            if (d->m_model.rowCount() == 0) {
+                placeholderLabel->setText(i18n("No commands to display"));
+            } else {
+                placeholderLabel->setText(i18n("No commands matching the filter"));
+            }
+            placeholderLabel->show();
+        }
     });
 
     setHidden(true);
@@ -695,7 +706,7 @@ void KCommandBar::show()
 
     // set the position to the top-center of the parent
     // just below the menubar/toolbar (if any)
-    const QPoint position{boundingRect.center().x() - size.width() / 2, boundingRect.y()};
+    const QPoint position{boundingRect.center().x() - size.width() / 2, boundingRect.y() + 6};
     move(position);
 
     QWidget::show();
