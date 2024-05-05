@@ -50,8 +50,12 @@ void KConfigDialogManager::initMaps()
     }
 
     if (s_changedMap()->isEmpty()) {
-        // QT
+        // Qt
+#if QT_VERSION >= QT_VERSION_CHECK(6, 7, 0)
+        s_changedMap()->insert(QStringLiteral("QCheckBox"), SIGNAL(checkStateChanged(Qt::CheckState)));
+#else
         s_changedMap()->insert(QStringLiteral("QCheckBox"), SIGNAL(stateChanged(int)));
+#endif
         s_changedMap()->insert(QStringLiteral("QPushButton"), SIGNAL(clicked(bool)));
         s_changedMap()->insert(QStringLiteral("QRadioButton"), SIGNAL(toggled(bool)));
         s_changedMap()->insert(QStringLiteral("QGroupBox"), SIGNAL(toggled(bool)));
