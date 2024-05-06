@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-17 00:35+0000\n"
+"POT-Creation-Date: 2024-05-06 00:36+0000\n"
 "PO-Revision-Date: 2024-01-07 14:13+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -45,7 +45,13 @@ msgstr "Detectare automată"
 msgid "Color Scheme"
 msgstr "Schemă de culori"
 
-#: kcommandbar.cpp:618
+#: kcommandbar.cpp:639
+#, fuzzy, kde-format
+#| msgid "No commands matching the filter"
+msgid "No commands to display"
+msgstr "Nicio comandă care să se potrivească filtrului"
+
+#: kcommandbar.cpp:641
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "Nicio comandă care să se potrivească filtrului"

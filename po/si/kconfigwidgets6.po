@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-17 00:35+0000\n"
+"POT-Creation-Date: 2024-05-06 00:36+0000\n"
 "PO-Revision-Date: 2011-07-25 07:45+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <danishka@gmail.com>\n"
@@ -46,7 +46,12 @@ msgstr "ස්වයංහැදිනුම"
 msgid "Color Scheme"
 msgstr "කෙටි මං ක්‍රම"
 
-#: kcommandbar.cpp:618
+#: kcommandbar.cpp:639
+#, kde-format
+msgid "No commands to display"
+msgstr ""
+
+#: kcommandbar.cpp:641
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

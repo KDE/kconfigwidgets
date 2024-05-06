@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-17 00:35+0000\n"
+"POT-Creation-Date: 2024-05-06 00:36+0000\n"
 "PO-Revision-Date: 2015-11-04 15:11+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -46,7 +46,12 @@ msgstr "Mothaich gu fèin-obrachail"
 msgid "Color Scheme"
 msgstr ""
 
-#: kcommandbar.cpp:618
+#: kcommandbar.cpp:639
+#, kde-format
+msgid "No commands to display"
+msgstr ""
+
+#: kcommandbar.cpp:641
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

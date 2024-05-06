@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-17 00:35+0000\n"
+"POT-Creation-Date: 2024-05-06 00:36+0000\n"
 "PO-Revision-Date: 2013-11-08 01:24+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -53,7 +53,12 @@ msgstr "Автобайқау"
 msgid "Color Scheme"
 msgstr "Тіркесім сұлбалары"
 
-#: kcommandbar.cpp:618
+#: kcommandbar.cpp:639
+#, kde-format
+msgid "No commands to display"
+msgstr ""
+
+#: kcommandbar.cpp:641
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

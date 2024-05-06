@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-17 00:35+0000\n"
+"POT-Creation-Date: 2024-05-06 00:36+0000\n"
 "PO-Revision-Date: 2024-02-09 23:25+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -45,7 +45,13 @@ msgstr "자동 감지"
 msgid "Color Scheme"
 msgstr "색 구성표"
 
-#: kcommandbar.cpp:618
+#: kcommandbar.cpp:639
+#, fuzzy, kde-format
+#| msgid "No commands matching the filter"
+msgid "No commands to display"
+msgstr "필터와 일치하는 명령 없음"
+
+#: kcommandbar.cpp:641
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "필터와 일치하는 명령 없음"
