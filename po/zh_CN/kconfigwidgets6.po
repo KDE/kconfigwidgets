@@ -45,10 +45,9 @@ msgid "Color Scheme"
 msgstr "配色方案"
 
 #: kcommandbar.cpp:639
-#, fuzzy, kde-format
-#| msgid "No commands matching the filter"
+#, kde-format
 msgid "No commands to display"
-msgstr "没有匹配该过滤条件的命令"
+msgstr ""
 
 #: kcommandbar.cpp:641
 #, kde-format
