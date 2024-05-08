@@ -23,6 +23,7 @@ target_sources(KF6ConfigWidgets PRIVATE
   kopenaction.cpp
   krecentfilesaction.cpp
   kstandardaction.cpp
+  kstylemanager.cpp
 
   kcodecaction.h
   kcommandbar.h
@@ -38,6 +39,7 @@ target_sources(KF6ConfigWidgets PRIVATE
   kopenaction_p.h
   krecentfilesaction.h
   kstandardaction.h
+  kstylemanager.h
 )
 
 ecm_qt_declare_logging_category(KF6ConfigWidgets
@@ -67,6 +69,7 @@ target_link_libraries(KF6ConfigWidgets
     KF6::ConfigGui # KStandardAction uses KStandardShortcut
     KF6::ColorScheme
   PRIVATE
+    Qt6::GuiPrivate # KStyleManager::initStyle
     KF6::CoreAddons # KAboutData, KFuzzymatcher
     KF6::GuiAddons # KColorScheme uses KColorUtils
     KF6::I18n # For action and widget texts
@@ -94,6 +97,7 @@ ecm_generate_headers(KConfigWidgets_HEADERS
   KRecentFilesAction
   KViewStateMaintainer
   KStandardAction
+  KStyleManager
 
   REQUIRED_HEADERS KConfigWidgets_HEADERS
 )
