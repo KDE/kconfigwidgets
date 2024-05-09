@@ -47,7 +47,7 @@ msgstr "配色方案"
 #: kcommandbar.cpp:639
 #, kde-format
 msgid "No commands to display"
-msgstr ""
+msgstr "没有可以显示的命令"
 
 #: kcommandbar.cpp:641
 #, kde-format
