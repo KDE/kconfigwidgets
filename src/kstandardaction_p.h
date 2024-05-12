@@ -157,7 +157,7 @@ static inline QStringList internal_stdNames()
 
     for (uint i = 0; g_rgActionInfo[i].id != ActionNone; i++)
         if (!g_rgActionInfo[i].psLabel.isEmpty()) {
-            if (QByteArray(g_rgActionInfo[i].psLabel.untranslatedText()).contains("%1"))
+            if (QByteArrayView(g_rgActionInfo[i].psLabel.untranslatedText()).contains("%1"))
             // Prevents KLocalizedString::toString() from complaining about unsubstituted placeholder.
             {
                 result.append(g_rgActionInfo[i].psLabel.subs(QString()).toString());
