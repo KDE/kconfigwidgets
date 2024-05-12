@@ -164,7 +164,7 @@ msgstr "Crea un document nou"
 
 #: kstandardaction_p.h:31
 msgid "&Open..."
-msgstr "O&bri..."
+msgstr "O&bri…"
 
 #: kstandardaction_p.h:31
 msgid "Open an existing document"
@@ -188,7 +188,7 @@ msgstr "Guarda el document"
 
 #: kstandardaction_p.h:34
 msgid "Save &As..."
-msgstr "Anomena i gu&arda..."
+msgstr "Anomena i gu&arda…"
 
 #: kstandardaction_p.h:34
 msgid "Save document under a new name"
@@ -212,7 +212,7 @@ msgstr "Tanca el document"
 
 #: kstandardaction_p.h:37
 msgid "&Print..."
-msgstr "Im&primix..."
+msgstr "Im&primix…"
 
 #: kstandardaction_p.h:37
 msgid "Print document"
@@ -228,7 +228,7 @@ msgstr "Mostra una vista prèvia d'impressió del document"
 
 #: kstandardaction_p.h:39
 msgid "&Mail..."
-msgstr "Corr&eu..."
+msgstr "Corr&eu…"
 
 #: kstandardaction_p.h:39
 msgid "Send document by mail"
@@ -296,7 +296,7 @@ msgstr "Desse&lecciona"
 
 #: kstandardaction_p.h:53
 msgid "&Find..."
-msgstr "Bu&sca..."
+msgstr "Bu&sca…"
 
 #: kstandardaction_p.h:54
 msgid "Find &Next"
@@ -308,7 +308,7 @@ msgstr "Busca l'a&nterior"
 
 #: kstandardaction_p.h:56
 msgid "&Replace..."
-msgstr "Su&bstituïx..."
+msgstr "Su&bstituïx…"
 
 #: kstandardaction_p.h:58
 msgid "Zoom to &Actual Size"
@@ -352,7 +352,7 @@ msgstr "Red&uix"
 
 #: kstandardaction_p.h:64
 msgid "&Zoom..."
-msgstr "&Zoom..."
+msgstr "&Zoom…"
 
 #: kstandardaction_p.h:64
 msgid "Select zoom level"
@@ -392,15 +392,15 @@ msgstr "Va fins a la pàgina següent"
 
 #: kstandardaction_p.h:74
 msgid "&Go To..."
-msgstr "&Ves fins a..."
+msgstr "&Ves fins a…"
 
 #: kstandardaction_p.h:75
 msgid "&Go to Page..."
-msgstr "&Ves fins a la pàgina..."
+msgstr "&Ves fins a la pàgina…"
 
 #: kstandardaction_p.h:76
 msgid "&Go to Line..."
-msgstr "&Ves fins a la línia..."
+msgstr "&Ves fins a la línia…"
 
 #: kstandardaction_p.h:77
 msgid "&First Page"
@@ -440,11 +440,11 @@ msgstr "Afi&g una adreça d'interés"
 
 #: kstandardaction_p.h:83
 msgid "&Edit Bookmarks..."
-msgstr "&Edita les adreces d'interés..."
+msgstr "&Edita les adreces d'interés…"
 
 #: kstandardaction_p.h:85
 msgid "&Spelling..."
-msgstr "&Ortografia..."
+msgstr "&Ortografia…"
 
 #: kstandardaction_p.h:85
 msgid "Check spelling in document"
@@ -484,20 +484,20 @@ msgstr "Guar&da la configuració"
 
 #: kstandardaction_p.h:94
 msgid "Configure Keyboard S&hortcuts..."
-msgstr "Configura les &dreceres de teclat..."
+msgstr "Configura les &dreceres de teclat…"
 
 #: kstandardaction_p.h:95
 #, kde-format
 msgid "&Configure %1..."
-msgstr "&Configura %1..."
+msgstr "&Configura %1…"
 
 #: kstandardaction_p.h:96
 msgid "Configure Tool&bars..."
-msgstr "Configura les &barres d'eines..."
+msgstr "Configura les &barres d'eines…"
 
 #: kstandardaction_p.h:97
 msgid "Configure &Notifications..."
-msgstr "Configura les &notificacions..."
+msgstr "Configura les &notificacions…"
 
 #: kstandardaction_p.h:104
 #, kde-format
@@ -514,11 +514,11 @@ msgstr "Consell del &dia"
 
 #: kstandardaction_p.h:107
 msgid "&Report Bug..."
-msgstr "&Informeu d'un error..."
+msgstr "&Informeu d'un error…"
 
 #: kstandardaction_p.h:108
 msgid "Configure &Language..."
-msgstr "Configura &l'idioma..."
+msgstr "Configura &l'idioma…"
 
 #: kstandardaction_p.h:109
 #, kde-format
@@ -535,7 +535,7 @@ msgstr "Sup&rimix"
 
 #: kstandardaction_p.h:112
 msgid "&Rename..."
-msgstr "Ca&nvia el nom..."
+msgstr "Ca&nvia el nom…"
 
 #: kstandardaction_p.h:113
 msgid "&Move to Trash"
@@ -559,7 +559,7 @@ msgstr "Consell del dia"
 #, kde-format
 msgctxt "@title"
 msgid "Did you know...?\n"
-msgstr "Sabíeu que...?\n"
+msgstr "Sabíeu que?\n"
 
 #: ktipdialog.cpp:291
 #, kde-format
