@@ -15,6 +15,8 @@
 #include <KLocalizedString>
 #include <KStandardShortcut>
 
+#include <algorithm>
+#include <ranges>
 #include <string>
 
 namespace KStandardAction
@@ -157,7 +159,8 @@ static inline QStringList internal_stdNames()
 
     for (uint i = 0; g_rgActionInfo[i].id != ActionNone; i++)
         if (!g_rgActionInfo[i].psLabel.isEmpty()) {
-            if (QByteArrayView(g_rgActionInfo[i].psLabel.untranslatedText()).contains("%1"))
+            if (QUtf8StringView untranslatedText(g_rgActionInfo[i].psLabel.untranslatedText());
+                !std::ranges::search(untranslatedText, QUtf8StringView("%1")).empty())
             // Prevents KLocalizedString::toString() from complaining about unsubstituted placeholder.
             {
                 result.append(g_rgActionInfo[i].psLabel.subs(QString()).toString());
