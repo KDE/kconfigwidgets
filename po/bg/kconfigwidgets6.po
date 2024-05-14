@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-06 00:36+0000\n"
-"PO-Revision-Date: 2024-05-06 10:28+0200\n"
+"PO-Revision-Date: 2024-05-13 22:47+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -140,7 +140,7 @@ msgstr "Създаване на нов документ"
 
 #: kstandardaction_p.h:64
 msgid "&Open…"
-msgstr "&Отваряне..."
+msgstr "&Отваряне…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -164,7 +164,7 @@ msgstr "Запис на документа"
 
 #: kstandardaction_p.h:67
 msgid "Save &As…"
-msgstr "Запис &като..."
+msgstr "Запис &като…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -188,7 +188,7 @@ msgstr "Затваряне на документа"
 
 #: kstandardaction_p.h:70
 msgid "&Print…"
-msgstr "&Печат..."
+msgstr "&Печат…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -204,7 +204,7 @@ msgstr "Показване на предварителен преглед за �
 
 #: kstandardaction_p.h:72
 msgid "&Mail…"
-msgstr "&Поща..."
+msgstr "&Поща…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -272,7 +272,7 @@ msgstr "&Размаркиране"
 
 #: kstandardaction_p.h:83
 msgid "&Find…"
-msgstr "&Търсене..."
+msgstr "&Търсене…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -284,7 +284,7 @@ msgstr "Търсене на преди&шен"
 
 #: kstandardaction_p.h:86
 msgid "&Replace…"
-msgstr "&Замяна..."
+msgstr "&Замяна…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -328,7 +328,7 @@ msgstr "&Намаляване"
 
 #: kstandardaction_p.h:94
 msgid "&Zoom…"
-msgstr "Ма&щаб..."
+msgstr "Ма&щаб…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -368,15 +368,15 @@ msgstr "Отиване на следващата страница"
 
 #: kstandardaction_p.h:104
 msgid "&Go To…"
-msgstr "Отиван&е на..."
+msgstr "Отиван&е на…"
 
 #: kstandardaction_p.h:105
 msgid "&Go to Page…"
-msgstr "Отив&ане на страница..."
+msgstr "Отив&ане на страница…"
 
 #: kstandardaction_p.h:106
 msgid "&Go to Line…"
-msgstr "Отиван&е на ред..."
+msgstr "Отиван&е на ред…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -416,11 +416,11 @@ msgstr "&Добавяне на отметка"
 
 #: kstandardaction_p.h:113
 msgid "&Edit Bookmarks…"
-msgstr "&Редактиране на отметките..."
+msgstr "&Редактиране на отметките…"
 
 #: kstandardaction_p.h:115
 msgid "&Spelling…"
-msgstr "&Проверка на правописа..."
+msgstr "&Проверка на правописа…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -456,20 +456,20 @@ msgstr "&Цял екран"
 
 #: kstandardaction_p.h:121
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Конфигуриране на к&лавишни комбинации..."
+msgstr "Конфигуриране на к&лавишни комбинации…"
 
 #: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1…"
-msgstr "&Настройване на %1..."
+msgstr "&Настройване на %1…"
 
 #: kstandardaction_p.h:123
 msgid "Configure Tool&bars…"
-msgstr "Настройване на лентата с &инструменти..."
+msgstr "Настройване на лентата с &инструменти…"
 
 #: kstandardaction_p.h:124
 msgid "Configure &Notifications…"
-msgstr "Настройване на и&звестията..."
+msgstr "Настройване на и&звестията…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -482,11 +482,11 @@ msgstr "&Какво е това?"
 
 #: kstandardaction_p.h:130
 msgid "&Report Bug…"
-msgstr "Съобщаване за &грешка..."
+msgstr "Съобщаване за &грешка…"
 
 #: kstandardaction_p.h:131
 msgid "Configure &Language…"
-msgstr "Конфигуриране на &език..."
+msgstr "Конфигуриране на &език…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -503,7 +503,7 @@ msgstr "&Изтриване"
 
 #: kstandardaction_p.h:135
 msgid "&Rename…"
-msgstr "&Преименуване..."
+msgstr "&Преименуване…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
