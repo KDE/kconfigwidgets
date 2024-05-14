@@ -118,6 +118,8 @@ if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)
 endif()
 
+add_subdirectory(integrationplugin)
+
 if(BUILD_QCH)
     ecm_add_qch(
         KF6ConfigWidgets_QCH
