@@ -9,6 +9,9 @@
 
 #include <kconfigwidgets_export.h>
 
+class QAction;
+class QObject;
+
 /**
  * Manager for Qt widget styles
  */
@@ -28,6 +31,17 @@ namespace KStyleManager
  * @since 6.3
  */
 KCONFIGWIDGETS_EXPORT void initStyle();
+
+/**
+ * Creates an action to configure the current used style.
+ *
+ * If the application is running using the KDE platform theme, this will
+ * just return a disabled and hidden action, else it will provide an action to
+ * show a menu to select the style to use for this applications.
+ *
+ * @since 6.3
+ */
+KCONFIGWIDGETS_EXPORT QAction *createConfigureAction(QObject *parent = nullptr);
 }
 
 #endif
