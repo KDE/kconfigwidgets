@@ -14,6 +14,7 @@
 #include <QAction>
 #include <QActionGroup>
 #include <QApplication>
+#include <QStringList>
 #include <QStyle>
 #include <QStyleFactory>
 
@@ -39,7 +40,7 @@ void KStyleManager::initStyle()
     }
 }
 
-QAction *KStyleManager::createConfigureAction(QObject *parent)
+QAction *KStyleManager::createConfigureAction(QObject *parent, const QStringList &stylesToHide)
 {
     // if we are running with our application theme, just return a disabled & hidden action
     // there we just follow the Plasma theme
@@ -61,6 +62,10 @@ QAction *KStyleManager::createConfigureAction(QObject *parent)
     QActionGroup *group = new QActionGroup(menu);
     const QStringList styles = QStringList() << QString() << QStyleFactory::keys();
     for (const QString &style : styles) {
+        if (!style.isEmpty() && stylesToHide.contains(style, Qt::CaseInsensitive)) {
+            continue;
+        }
+
         QAction *action = new QAction(style.isEmpty() ? i18n("Default") : style, menu);
         action->setData(style);
         action->setActionGroup(group);

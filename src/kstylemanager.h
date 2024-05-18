@@ -9,6 +9,8 @@
 
 #include <kconfigwidgets_export.h>
 
+#include <QStringList>
+
 class QAction;
 class QObject;
 
@@ -39,9 +41,15 @@ KCONFIGWIDGETS_EXPORT void initStyle();
  * just return a disabled and hidden action, else it will provide an action to
  * show a menu to select the style to use for this applications.
  *
+ * @param parent The parent for the new action
+ *
+ * @param stylesToHide An optional list of style ids that should not be shown
+ * as selection option
+ *
+ *
  * @since 6.3
  */
-KCONFIGWIDGETS_EXPORT QAction *createConfigureAction(QObject *parent = nullptr);
+KCONFIGWIDGETS_EXPORT QAction *createConfigureAction(QObject *parent = nullptr, const QStringList &stylesToHide = {});
 }
 
 #endif
