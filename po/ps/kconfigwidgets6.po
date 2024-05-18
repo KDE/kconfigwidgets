@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2008-08-16 16:01-0800\n"
 "Last-Translator: Zabeeh Khan <zabeehkhan@gmail.com>\n"
 "Language-Team: Pashto <pathanisation@googlegroups.com>\n"
@@ -628,6 +628,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "اوسني &پرانيستل"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr ":کاريال"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "تلواله"
+
 #~ msgid "&Open..."
 #~ msgstr "...پرانيستل"
 
@@ -671,12 +684,6 @@ msgstr "اوسني &پرانيستل"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "د &ورځې نکته"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "تلواله"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"
@@ -3177,9 +3184,6 @@ msgstr "اوسني &پرانيستل"
 
 #~ msgid "Send this bug report to %1."
 #~ msgstr ".ته لېږل %1 دا کړاو راپور"
-
-#~ msgid "Application: "
-#~ msgstr ":کاريال"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

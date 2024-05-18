@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2010-01-27 10:39+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -641,6 +641,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "Отвори &неодамнешни"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Апликација:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Стандардно"
+
 #~ msgid "&Open..."
 #~ msgstr "&Отвори..."
 
@@ -684,12 +697,6 @@ msgstr "Отвори &неодамнешни"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Совет на &денот"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Стандардно"
 
 #~ msgid "You are not allowed to save the configuration"
 #~ msgstr "Не ви е дозволено да ја зачувате конфигурацијата"
@@ -3716,9 +3723,6 @@ msgstr "Отвори &неодамнешни"
 #~ "Апликацијата за која сакате да поднесете извештај за бубачка - ако не сте "
 #~ "сигурни, користете ја опцијата Извести за бубачка од менито на самата "
 #~ "апликација"
-
-#~ msgid "Application: "
-#~ msgstr "Апликација:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

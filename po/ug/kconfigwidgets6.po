@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -579,6 +579,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "يېقىنقىنى ئاچ(&R)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "پروگرامما: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "كۆڭۈلدىكى"
+
 #~ msgid "&Open..."
 #~ msgstr "ئاچ(&O)…"
 
@@ -620,12 +633,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "كۈندىلىك ئەسكەرتىش(&D)"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "كۆڭۈلدىكى"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "ساقلاشتىن ئاۋۋال دەلىللەش تەلەپ قىلىنىدۇ"
@@ -3556,9 +3563,6 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 #~ msgstr ""
 #~ "كەمتۈك دوكلاتى ئەۋەتىدىغان پروگرامما. ئەگەر توغرا بولمىسا، توغرا بولغان "
 #~ "پروگراممىنىڭ كەمتۈك يوللا دېگەن تىزىملىكىنى تاللاڭ."
-
-#~ msgid "Application: "
-#~ msgstr "پروگرامما: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

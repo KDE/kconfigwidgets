@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2006-01-04 13:32+0800\n"
 "Last-Translator: Abel Cheung <abel@oaka.org>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
@@ -650,6 +650,18 @@ msgstr "完成(&D)"
 msgid "Open &Menu"
 msgstr "開啟最近的(&R)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "應用程式："
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgid "Default"
+msgid "Default"
+msgstr "預設"
+
 #~ msgid "&Open..."
 #~ msgstr "開啟(&O)..."
 
@@ -691,11 +703,6 @@ msgstr "開啟最近的(&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "每日小祕訣(&D)"
-
-#, fuzzy
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "預設"
 
 #, fuzzy
 #~| msgid "Could not create the new configuration file."
@@ -3562,9 +3569,6 @@ msgstr "開啟最近的(&R)"
 #~ msgstr ""
 #~ "你希望提交問題報告的應用程式──如果不正確，請使用正確的應用程式的 [報告問"
 #~ "題] 選單"
-
-#~ msgid "Application: "
-#~ msgstr "應用程式："
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

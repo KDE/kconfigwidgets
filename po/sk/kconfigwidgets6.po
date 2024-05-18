@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-04-27 16:34+0200\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -525,6 +525,17 @@ msgstr "Venovať peniaze"
 msgid "Open &Menu"
 msgstr "Otvoriť ponuku"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Aplikácia: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Štandardné"
+
 #~ msgid "&Open..."
 #~ msgstr "&Otvoriť..."
 
@@ -566,9 +577,6 @@ msgstr "Otvoriť ponuku"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Tip &dňa"
-
-#~ msgid "Default"
-#~ msgstr "Štandardné"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Pred uložením budete požiadaný o overenie"
@@ -3514,9 +3522,6 @@ msgstr "Otvoriť ponuku"
 #~ msgstr ""
 #~ "Aplikácia, pre ktorú chcete odoslať hlásenie o chybe - ak je to nesprávna "
 #~ "aplikácia, použite položku menu 'Nahlásiť chybu' v správnej aplikácii"
-
-#~ msgid "Application: "
-#~ msgstr "Aplikácia: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

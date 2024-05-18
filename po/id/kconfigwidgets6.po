@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2022-09-27 18:12+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -564,6 +564,17 @@ msgstr "&Donasi"
 msgid "Open &Menu"
 msgstr "Buka &Menu"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Aplikasi: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Baku"
+
 #~ msgid "&Open..."
 #~ msgstr "&Buka"
 
@@ -605,9 +616,6 @@ msgstr "Buka &Menu"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Tip Hari &Ini"
-
-#~ msgid "Default"
-#~ msgstr "Baku"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Anda akan diminta untuk mengotentikasi sebelum menyimpan"
@@ -3545,9 +3553,6 @@ msgstr "Buka &Menu"
 #~ msgstr ""
 #~ "Aplikasi yang ingin anda masukkan laporan kutunya - jika salah, silakan "
 #~ "gunakan item menu Laporkan Kutu aplikasi yang benar"
-
-#~ msgid "Application: "
-#~ msgstr "Aplikasi: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2010-07-22 09:48+0100\n"
 "Last-Translator: Berend Ytsma <berendy@gmail.com>\n"
 "Language-Team: nl <kde-i18n-doc@lists.kde.org>\n"
@@ -645,6 +645,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "&Resint iepene"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Applikaasje:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Standert"
+
 #~ msgid "&Open..."
 #~ msgstr "&Iepenje..."
 
@@ -686,12 +699,6 @@ msgstr "&Resint iepene"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Tip fan de &dei"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Standert"
 
 #~ msgid "You are not allowed to save the configuration"
 #~ msgstr "It is jo op it stuit net tastean dizze konfiguraasje te bewarjen"
@@ -3541,9 +3548,6 @@ msgstr "&Resint iepene"
 #~ "It programma dêr't jo in brekrapport foar yntsjinje wolle. As dat net "
 #~ "goed is, brûk dan de opsje Brek Rapportearje út it menu fan it programma "
 #~ "sels."
-
-#~ msgid "Application: "
-#~ msgstr "Applikaasje:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

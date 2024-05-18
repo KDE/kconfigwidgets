@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2011-07-25 07:45+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <danishka@gmail.com>\n"
@@ -633,6 +633,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "මෑතකදි භාවිතා කළ දැ විවෘත කරන්න (&R)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "යෙදුම:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "ප්‍රකෘතිය"
+
 #~ msgid "&Open..."
 #~ msgstr "විවෘත කරන්න... (&O)"
 
@@ -674,12 +687,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "දවසේ ඉඟිය (&D)"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "ප්‍රකෘතිය"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"
@@ -3557,9 +3564,6 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 #~ msgstr ""
 #~ "ඔබට දෝෂ වාර්තාවක් යොමු කිරීමට අවශ්‍ය වූ වැඩසටහන - වැරදි නම්, කරුණාකර නොවැරදි වැඩසටහනේ "
 #~ "දෝෂයක් වාර්තා කරන්න මෙනු අයිතමය භාවිතා කරන්න"
-
-#~ msgid "Application: "
-#~ msgstr "යෙදුම:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

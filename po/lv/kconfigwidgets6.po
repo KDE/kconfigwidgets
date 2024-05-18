@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-02-29 12:58+0200\n"
 "Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -524,6 +524,17 @@ msgstr "Zie&dot"
 msgid "Open &Menu"
 msgstr "&Atvērt izvēlni"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Programma: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Noklusētais"
+
 #~ msgid "&Open..."
 #~ msgstr "&Atvērt..."
 
@@ -565,9 +576,6 @@ msgstr "&Atvērt izvēlni"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Dienas padoms"
-
-#~ msgid "Default"
-#~ msgstr "Noklusētais"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Jums prasīs autentificēties pirms saglabāšanas"
@@ -3579,9 +3587,6 @@ msgstr "&Atvērt izvēlni"
 #~ "Programma, par kuru jūs vēlaties sūtīt kļūdas ziņojumu - ja nepareiza, "
 #~ "lūdzu, izmantojiet \"Ziņot par kļūdu\" izvēlnes elementu pareizajā "
 #~ "programmā"
-
-#~ msgid "Application: "
-#~ msgstr "Programma: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-01-29 22:10-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -521,6 +521,19 @@ msgstr "ਦਾਨ ਕਰੋ(&D)"
 msgid "Open &Menu"
 msgstr "ਮੇਨੂ ਖੋਲ੍ਹੋ(&M)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "ਐਪਲੀਕੇਸ਼ਨ:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "ਡਿਫਾਲਟ"
+
 #~ msgid "&Open..."
 #~ msgstr "ਖੋਲ੍ਹੋ(&O)..."
 
@@ -562,12 +575,6 @@ msgstr "ਮੇਨੂ ਖੋਲ੍ਹੋ(&M)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "ਅੱਜ ਦਾ ਟਿੱਪ(&D)"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "ਡਿਫਾਲਟ"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "ਤੁਹਾਨੂੰ ਸੰਭਾਲਣ ਤੋਂ ਪਹਿਲਾਂ ਪਰਮਾਣਿਕਤਾ ਲਈ ਪੁੱਛਿਆ ਜਾਵੇਗਾ"
@@ -3444,9 +3451,6 @@ msgstr "ਮੇਨੂ ਖੋਲ੍ਹੋ(&M)"
 #~ msgstr ""
 #~ "ਜੇਕਰ ਐਪਲੀਕੇਸ਼ਨ, ਜਿਸ ਲਈ ਤੁਸੀਂ ਬੱਗ-ਜਾਣਕਾਰੀ ਭੇਜਣ ਜਾ ਰਿਹੇ ਹੋ, ਗਲਤ ਹੈ, ਸਹੀ ਐਪਲੀਕੇਸ਼ਨ ਦੇ "
 #~ "ਰਿਪੋਰਟ ਬੱਗ ਜਾਣਕਾਰੀ ਮੇਨੂ ਇਕਾਈ ਨੂੰ ਵਰਤੋਂ ਜੀ।"
-
-#~ msgid "Application: "
-#~ msgstr "ਐਪਲੀਕੇਸ਼ਨ:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

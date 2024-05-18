@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-08 00:10+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -526,6 +526,17 @@ msgstr "Hacer un &donativo"
 msgid "Open &Menu"
 msgstr "Abrir &menú"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Aplicación: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Por omisión"
+
 #~ msgid "&Open..."
 #~ msgstr "&Abrir..."
 
@@ -567,9 +578,6 @@ msgstr "Abrir &menú"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Sugerencia del &día"
-
-#~ msgid "Default"
-#~ msgstr "Por omisión"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Se le pedirá que se autentique antes de guardar"
@@ -3542,9 +3550,6 @@ msgstr "Abrir &menú"
 #~ "La aplicación para la cual desea enviar el informe de fallos (si no es "
 #~ "correcta, use la opción de menú «Informar de fallo» de la aplicación "
 #~ "correcta)"
-
-#~ msgid "Application: "
-#~ msgstr "Aplicación: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

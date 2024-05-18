@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2004-12-14 09:11-0600\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -582,6 +582,19 @@ msgstr "&Críochnaithe"
 msgid "Open &Menu"
 msgstr "Oscail &Rudaí Deireanacha"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Feidhmchlár:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Réamhshocrú"
+
 #~ msgid "&Open..."
 #~ msgstr "&Oscail..."
 
@@ -623,12 +636,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Leid an &Lae"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Réamhshocrú"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Caithfidh tú fíordheimhniú a dhéanamh roimh shábháil"
@@ -3671,9 +3678,6 @@ msgstr "Oscail &Rudaí Deireanacha"
 #~ "An feidhmchlár ar mian leat tuairisc fhabht a sheoladh faoi - má tá sé "
 #~ "seo mícheart, bain úsáid as an rogha \"Seol tuairisc ar fhabht\" i "
 #~ "roghchlár an fheidhmchláir chirt"
-
-#~ msgid "Application: "
-#~ msgstr "Feidhmchlár:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

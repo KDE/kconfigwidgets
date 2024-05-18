@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2023-11-21 15:02+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -520,3 +520,16 @@ msgstr "&Přispějte"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Otevřít na&bídku"
+
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Quit application"
+msgid "Application Style"
+msgstr "Ukončit aplikaci"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Výchozí"

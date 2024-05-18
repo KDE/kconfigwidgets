@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-02-19 08:44+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
@@ -533,6 +533,17 @@ msgstr "&Styrkja"
 msgid "Open &Menu"
 msgstr "Opna &Valmynd"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Forrit: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Sjálfgefið"
+
 #~ msgid "&Open..."
 #~ msgstr "&Opna..."
 
@@ -574,9 +585,6 @@ msgstr "Opna &Valmynd"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Vísbending &dagsins"
-
-#~ msgid "Default"
-#~ msgstr "Sjálfgefið"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Beðið verður um auðkenni þitt fyrir vistun"
@@ -3500,9 +3508,6 @@ msgstr "Opna &Valmynd"
 #~ msgstr ""
 #~ "Forritið sem þú vilt senda inn villutilkynningu um - Ef það er rangt "
 #~ "getur þú notað \"Senda villuskýrslu\" hnappinn í réttu forriti"
-
-#~ msgid "Application: "
-#~ msgstr "Forrit: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

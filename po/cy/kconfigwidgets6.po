@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2005-01-28 17:54+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg\n"
@@ -637,6 +637,18 @@ msgstr "&Wedi'i orffen"
 msgid "Open &Menu"
 msgstr "Agor &Diweddar"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Cymhwysiad:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgid "Default"
+msgid "Default"
+msgstr "Rhagosodol"
+
 #~ msgid "&Open..."
 #~ msgstr "&Agor..."
 
@@ -678,11 +690,6 @@ msgstr "Agor &Diweddar"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Awgrymiad y &Dydd"
-
-#, fuzzy
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Rhagosodol"
 
 #, fuzzy
 #~| msgid "Could not create the new configuration file."
@@ -3512,9 +3519,6 @@ msgstr "Agor &Diweddar"
 #~ msgstr ""
 #~ " Y cymhwysiad a ddymunir cyflwyno adroddiad nam amdano - os yn anghywir, "
 #~ "defnyddiwch yr eitem dewislen Adrodd Nam o'r rhaglen cywir."
-
-#~ msgid "Application: "
-#~ msgstr "Cymhwysiad:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

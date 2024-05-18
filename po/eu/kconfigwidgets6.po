@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2023-11-30 09:41+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -522,6 +522,17 @@ msgstr "Egin &dohaintza"
 msgid "Open &Menu"
 msgstr "Ireki &Menua"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Aplikazioa: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Lehenetsia"
+
 #~ msgid "&Open..."
 #~ msgstr "I&reki..."
 
@@ -563,9 +574,6 @@ msgstr "Ireki &Menua"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Eguneko ira&dokizuna"
-
-#~ msgid "Default"
-#~ msgstr "Lehenetsia"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Gorde baino lehen autentikatzeko eskatuko zaizu"
@@ -3529,9 +3537,6 @@ msgstr "Ireki &Menua"
 #~ msgstr ""
 #~ "Aplikazioa, gertatu zaion errorearen berri emateko. Zuzena ez bada, "
 #~ "erabili aplikazio zuzenaren \"Eman erroreen berri\" menu-elementua "
-
-#~ msgid "Application: "
-#~ msgstr "Aplikazioa: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

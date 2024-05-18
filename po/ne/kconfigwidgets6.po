@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -630,6 +630,18 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "हालैको खोल्नुहोस्"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "अनुप्रयोग: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgid "Default"
+msgid "Default"
+msgstr "पूर्वनिर्धारित"
+
 #~ msgid "&Open..."
 #~ msgstr "खोल्नुहोस्..."
 
@@ -673,11 +685,6 @@ msgstr "हालैको खोल्नुहोस्"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "आजको टिप"
-
-#, fuzzy
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "पूर्वनिर्धारित"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"
@@ -3792,9 +3799,6 @@ msgstr "हालैको खोल्नुहोस्"
 #~ msgstr ""
 #~ "तपाईँले बग प्रतिवेदन पेश गर्न चाहनुभएको अनुप्रयोग - यदि गलत भएमा, कृपया सही "
 #~ "अनुप्रयोगको 'बग मेनु वस्तु प्रतिवेन गर्नुहोस्' प्रयोग गर्नुहोस्"
-
-#~ msgid "Application: "
-#~ msgstr "अनुप्रयोग: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

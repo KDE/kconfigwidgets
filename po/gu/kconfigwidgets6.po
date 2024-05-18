@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2009-11-22 00:01+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
@@ -634,6 +634,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "તાજેતરનું ખોલો (&R)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "કાર્યક્રમ: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "મૂળભૂત"
+
 #~ msgid "&Open..."
 #~ msgstr "ખોલો (&O)..."
 
@@ -677,12 +690,6 @@ msgstr "તાજેતરનું ખોલો (&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "દિવસની શિખામણ (&D)"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "મૂળભૂત"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "સંગ્રહ કરતા પહેલાં તમને સત્તાધિકરણ માટે પૂછવામાં આવશે"
@@ -3618,9 +3625,6 @@ msgstr "તાજેતરનું ખોલો (&R)"
 #~ msgstr ""
 #~ "કાર્યક્રમ કે જેના માટે તમે ક્ષતિ અહેવાલ જમા કરવા ઈચ્છો છો - જો ખોટું હોય તો, મહેરબાની "
 #~ "કરીને યોગ્ય કાર્યક્રમનો ક્ષતિ અહેવાલ મેનુ વસ્તુ વાપરો"
-
-#~ msgid "Application: "
-#~ msgstr "કાર્યક્રમ: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

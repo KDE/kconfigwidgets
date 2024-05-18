@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-06 10:28+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -533,6 +533,17 @@ msgstr "&Doneren"
 msgid "Open &Menu"
 msgstr "&Menu openen"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Toepassing: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Standaard"
+
 #~ msgid "&Open..."
 #~ msgstr "&Openen..."
 
@@ -574,9 +585,6 @@ msgstr "&Menu openen"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Tip van de &dag"
-
-#~ msgid "Default"
-#~ msgstr "Standaard"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "U zal worden gevraagd zich te authenticeren alvorens op te slaan"
@@ -3548,9 +3556,6 @@ msgstr "&Menu openen"
 #~ "Het programma waarvoor u een bugrapport wilt indienen. Indien onjuist, "
 #~ "gebruik dan de optie \"Bug rapporteren\" uit het menu van het programma "
 #~ "zelf"
-
-#~ msgid "Application: "
-#~ msgstr "Toepassing: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

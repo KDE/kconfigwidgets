@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-06 11:26+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -516,6 +516,17 @@ msgstr "&Dona"
 msgid "Open &Menu"
 msgstr "Aperi &Menu"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Application:"
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Predefinite"
+
 #~ msgid "&Open..."
 #~ msgstr "&Aperi ..."
 
@@ -557,9 +568,6 @@ msgstr "Aperi &Menu"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Consilio del &Die"
-
-#~ msgid "Default"
-#~ msgstr "Predefinite"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Tu essera requirite de authenticar ante salveguardar"
@@ -3530,9 +3538,6 @@ msgstr "Aperi &Menu"
 #~ "Le application pro lo que tu vole submitter un reporto de bug - es "
 #~ "incorrecte, pro favor tu usa le termino de menu de Reporto de Bug de le "
 #~ "application correcte"
-
-#~ msgid "Application: "
-#~ msgstr "Application:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2008-05-30 17:29+0200\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -618,6 +618,19 @@ msgstr "&Tayyor"
 msgid "Open &Menu"
 msgstr "&Yaqinda foydalanilganni ochish"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Dastur:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Andoza"
+
 #~ msgid "&Open..."
 #~ msgstr "&Ochish..."
 
@@ -659,12 +672,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Kun maslahati"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Andoza"
 
 #, fuzzy
 #~| msgid "Could not create the new configuration file."
@@ -3234,9 +3241,6 @@ msgstr "&Yaqinda foydalanilganni ochish"
 
 #~ msgid "Send this bug report to %1."
 #~ msgstr "Xato haqida xabarni %1'ga yuborish."
-
-#~ msgid "Application: "
-#~ msgstr "Dastur:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

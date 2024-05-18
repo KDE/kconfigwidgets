@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-12 15:16+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -517,6 +517,17 @@ msgstr "&நன்கொடை அளியுங்கள்"
 msgid "Open &Menu"
 msgstr "&பட்டியை திற"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "நிரல்: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "இயல்பிருப்பு"
+
 #~ msgid "&Open..."
 #~ msgstr "&திற..."
 
@@ -558,9 +569,6 @@ msgstr "&பட்டியை திற"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&இன்றைய தகவல்"
-
-#~ msgid "Default"
-#~ msgstr "இயல்பிருப்பு"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "சேமிப்பதற்குமுன் சான்றளிக்க கோரப்படுவீர்கள்."
@@ -3487,9 +3495,6 @@ msgstr "&பட்டியை திற"
 #~ msgstr ""
 #~ "தாங்கள் வழுவறிக்கை தாக்கல் செய்யவிருக்கும் பயன்பாடு - தவறெனின், உரிய பயன்பாட்டின் வழுத் "
 #~ "தாக்கல் மெனுவினைப் பயன்படுத்துக"
-
-#~ msgid "Application: "
-#~ msgstr "நிரல்: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

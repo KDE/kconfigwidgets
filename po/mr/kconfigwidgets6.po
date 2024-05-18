@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2013-03-29 16:14+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -582,6 +582,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "अलिकडील उघडा (&R)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "अनुप्रयोग: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "मूलभूत"
+
 #~ msgid "&Open..."
 #~ msgstr "उघडा (&O)..."
 
@@ -623,12 +636,6 @@ msgstr "अलिकडील उघडा (&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "आजची विशेष टिपण्णी (&D)"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "मूलभूत"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "बदल कायम करण्याकरिता तुमची परवानगी घेण्यात येइल"
@@ -3340,9 +3347,6 @@ msgstr "अलिकडील उघडा (&R)"
 #~ msgstr ""
 #~ "अनुप्रयोग ज्याकरिता आपण बग अहवाल जमा करण्याची इच्छा ठेवता - चुकीचे असल्यास, त्यास "
 #~ "कृपया योग्य अनुप्रयोगातील रिपोर्ट बग मेन्यू घटक वापरा"
-
-#~ msgid "Application: "
-#~ msgstr "अनुप्रयोग: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

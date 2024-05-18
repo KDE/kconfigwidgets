@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2012-06-27 10:04+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -580,6 +580,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "បើក​ថ្មី​ៗ​នេះ"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "កម្មវិធី ៖ "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "លំនាំដើម"
+
 #~ msgid "&Open..."
 #~ msgstr "បើក..."
 
@@ -621,12 +634,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "ព័ត៌មាន​ជំនួយ​សម្រាប់​ថ្ងៃនេះ"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "លំនាំដើម"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "អ្នកនឹង​ត្រូវ​បាន​ស្នើ​ឲ្យ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​មុន​នឹង​រក្សាទុក"
@@ -3513,9 +3520,6 @@ msgstr "បើក​ថ្មី​ៗ​នេះ"
 #~ msgstr ""
 #~ "កម្មវិធី​ដែល​អ្នក​ចង់​ដាក់​ស្នើរបាយការណ៍កំហុស - ប្រសិន​បើ​មិន​ត្រឹម​ត្រូវ សូម​ប្រើ​ធាតុ​ម៉ឺនុយ រាយការណ៍​កំហុស នៃ​"
 #~ "របស់​ដែលកម្មវិធី​ត្រឹមត្រូវ"
-
-#~ msgid "Application: "
-#~ msgstr "កម្មវិធី ៖ "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

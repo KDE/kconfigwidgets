@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-12 08:44+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -609,6 +609,17 @@ msgstr "&Darowizna"
 msgid "Open &Menu"
 msgstr "Otwórz &menu"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Program: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Domyślne"
+
 #~ msgid "&Open..."
 #~ msgstr "&Otwórz..."
 
@@ -650,9 +661,6 @@ msgstr "Otwórz &menu"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Porada &dnia"
-
-#~ msgid "Default"
-#~ msgstr "Domyślne"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Do zapisania ustawień trzeba będzie podać hasło"
@@ -3611,9 +3619,6 @@ msgstr "Otwórz &menu"
 #~ msgstr ""
 #~ "Program, którego dotyczy zgłoszenie o błędzie - jeżeli chodzi o inny, "
 #~ "użyj opcji wysyłania zgłoszenia o błędzie w menu odpowiedniego programu"
-
-#~ msgid "Application: "
-#~ msgstr "Program: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

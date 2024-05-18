@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2019-12-01 18:20+0000\n"
 "Last-Translator: Subin Siby <subins2000@gmail.com>\n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -601,6 +601,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "അടുത്തുപയോഗിച്ചത് തുറക്കുക &r"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "പ്രയോഗം:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "സഹജമായ"
+
 #~ msgid "&Open..."
 #~ msgstr "&തുറക്കുക..."
 
@@ -642,12 +655,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&ഇന്നത്തെ നുറുങ്ങു്"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "സഹജമായ"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "സൂക്ഷിയ്ക്കുന്നതിനു് മുമ്പു് നിങ്ങളെ തിരിച്ചറിയേണ്ടി വരും"
@@ -3282,9 +3289,6 @@ msgstr "അടുത്തുപയോഗിച്ചത് തുറക്ക�
 
 #~ msgid "Send this bug report to %1."
 #~ msgstr "%1-ലേക്കു് ബഗ് റിപോര്‍ട്ട് അയയ്ക്കുക."
-
-#~ msgid "Application: "
-#~ msgstr "പ്രയോഗം:"
 
 #~ msgid "Version:"
 #~ msgstr "ലക്കം:"

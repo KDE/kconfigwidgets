@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2013-01-31 01:08+0400\n"
 "Last-Translator: Davit <nikdavnik@mail.ru>\n"
 "Language-Team: Armenian Language: hy\n"
@@ -595,6 +595,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "&Վերջի նիշքերը"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Ծրագիր: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Լռելյայն"
+
 #~ msgid "&Open..."
 #~ msgstr "&Բացել..."
 
@@ -636,12 +649,6 @@ msgstr "&Վերջի նիշքերը"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Օրվա խորհուրդը"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Լռելյայն"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr ""
@@ -3606,9 +3613,6 @@ msgstr "&Վերջի նիշքերը"
 #~ "Ծրագիր, որը պարունակում է նկարագրված սխալը։ Եթե նշված է սխալ ծրագիր, ապա "
 #~ "օգտագործեք «Ուղարկել սխալի մասին տեղեկություն» մենյուն, անհրաժեշտ ծրագրի "
 #~ "համար"
-
-#~ msgid "Application: "
-#~ msgstr "Ծրագիր: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2009-12-28 14:35+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
@@ -627,6 +627,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "সম্প্রতি ব্যবহৃত খুলুন (&R)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "অ্যাপ্লিকেশন: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "ডিফল্ট"
+
 #~ msgid "&Open..."
 #~ msgstr "খুলুন...(&O)"
 
@@ -670,12 +683,6 @@ msgstr "সম্প্রতি ব্যবহৃত খুলুন (&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "দিনের উপদেশ (&D)"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "ডিফল্ট"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "সংরক্ষণের পূর্বে পরিচয় প্রমাণ করার অনুরোধ জানানো হবে"
@@ -3443,9 +3450,6 @@ msgstr "সম্প্রতি ব্যবহৃত খুলুন (&R)"
 #~ msgstr ""
 #~ "যে অ্যাপ্লিকেশনের জন্য বাগ রিপোর্ট দায়ের করা হচ্ছে - সঠিক না হলে, অনুগ্রহ করে "
 #~ "'বাগ রিপোর্ট দায়ের করুন' শীর্ষক মেনু থেকে যথাযত অ্যাপ্লিকেশন নির্বাচন করুন"
-
-#~ msgid "Application: "
-#~ msgstr "অ্যাপ্লিকেশন: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

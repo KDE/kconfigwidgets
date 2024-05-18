@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2008-12-19 22:49+0100\n"
 "Last-Translator: Eduard Werner <edi.werner@gmx.de>\n"
 "Language-Team: en_US <kde-i18n-doc@lists.kde.org>\n"
@@ -634,6 +634,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "&Njedawno wočinjene wočinić"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Program: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Standard"
+
 #~ msgid "&Open..."
 #~ msgstr "W&očiń ..."
 
@@ -677,12 +690,6 @@ msgstr "&Njedawno wočinjene wočinić"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Pokiw &dnja"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Standard"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"
@@ -3727,9 +3734,6 @@ msgstr "&Njedawno wočinjene wočinić"
 #~ "The application for which you wish to submit a bug report - if incorrect, "
 #~ "please use the Report Bug menu item of the correct application"
 #~ msgstr "Program, wo kotrymž chceće rozprawić. "
-
-#~ msgid "Application: "
-#~ msgstr "Program: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

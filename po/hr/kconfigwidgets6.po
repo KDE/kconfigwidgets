@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2011-07-22 16:08+0200\n"
 "Last-Translator: Marko Dimjašević <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -637,6 +637,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "Otvori &nedavno"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Aplikacija:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Uuobičajeno"
+
 #~ msgid "&Open..."
 #~ msgstr "&Otvori…"
 
@@ -675,12 +688,6 @@ msgstr "Otvori &nedavno"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Savjet &dana"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Uuobičajeno"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Pitat će se Vas za prijavu prije spremanja"
@@ -4687,9 +4694,6 @@ msgstr "Otvori &nedavno"
 #~ msgstr ""
 #~ "Aplikacija za koju želite poslati prijavu nedostatka. Ako je netočno, "
 #~ "putem izbornika \"Prijava nedostatka\" odaberite željenu aplikaciju."
-
-#~ msgid "Application: "
-#~ msgstr "Aplikacija:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

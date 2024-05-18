@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4_as\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2008-12-26 15:19+0530\n"
 "Last-Translator: Amitakhya Phukan <অমিতাক্ষ ফুকন>\n"
 "Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
@@ -626,6 +626,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "অনুপ্ৰয়োগ: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "অবিকল্পিত মান"
+
 #~ msgid "&Open..."
 #~ msgstr "খোলক...(&O)"
 
@@ -669,12 +682,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "দিনৰ উপদেশ (&D)"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "অবিকল্পিত মান"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"
@@ -3468,9 +3475,6 @@ msgstr "সম্প্ৰতি ব্যৱহৃত খোলক (&R)"
 #~ msgstr ""
 #~ "যি অনুপ্ৰয়োগৰ বাবে বাগ প্ৰতিবেদন কৰা হৈছে - সঠিক নহ'লে, অনুগ্ৰহ কৰি 'বাগ "
 #~ "প্ৰতিবেদন কৰক' শীৰ্ষক তালিকাৰ পৰা যথাযত অনুপ্ৰয়োগ নিৰ্ব্বাচন কৰক"
-
-#~ msgid "Application: "
-#~ msgstr "অনুপ্ৰয়োগ: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

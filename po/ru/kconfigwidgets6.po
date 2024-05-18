@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-12 16:07+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -538,6 +538,17 @@ msgstr "&Сделать пожертвование"
 msgid "Open &Menu"
 msgstr "Открыть &меню"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Приложение: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "По умолчанию"
+
 #~ msgid "&Open..."
 #~ msgstr "&Открыть..."
 
@@ -579,9 +590,6 @@ msgstr "Открыть &меню"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Совет &дня"
-
-#~ msgid "Default"
-#~ msgstr "По умолчанию"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Сохранение параметров потребует ввода пароля"
@@ -3513,9 +3521,6 @@ msgstr "Открыть &меню"
 #~ "Приложение, содержащее описываемую ошибку. Если здесь указано не то "
 #~ "приложение, используйте пункт меню «Отправить сообщение об ошибке» "
 #~ "нужного приложения"
-
-#~ msgid "Application: "
-#~ msgstr "Приложение: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

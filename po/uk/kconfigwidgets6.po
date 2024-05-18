@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-06 07:32+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian\n"
@@ -522,11 +522,19 @@ msgstr "Підтримати &фінансово"
 msgid "Open &Menu"
 msgstr "Відкрити &меню"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Quit application"
+msgid "Application Style"
+msgstr "Вийти з програми"
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Типовий"
+
 #~ msgid "Tip of the &Day"
 #~ msgstr "П&орада дня"
-
-#~ msgid "Default"
-#~ msgstr "Типовий"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Програма попросить вас пройти розпізнавання перед збереженням"

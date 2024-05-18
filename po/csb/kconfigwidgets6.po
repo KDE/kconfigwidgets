@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2009-12-04 22:09+0100\n"
 "Last-Translator: Mark Kwidzińśczi <mark@linuxcsb.org>\n"
 "Language-Team: Kaszëbsczi <i18n-csb@linuxcsb.org>\n"
@@ -630,6 +630,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "Òtemkni wcza&sniészi"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Programa: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Domëszlné"
+
 #~ msgid "&Open..."
 #~ msgstr "Ò&temkni..."
 
@@ -673,12 +686,6 @@ msgstr "Òtemkni wcza&sniészi"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Pòrada &dnia"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Domëszlné"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"
@@ -3687,9 +3694,6 @@ msgstr "Òtemkni wcza&sniészi"
 #~ msgstr ""
 #~ "Programa do jaczi chcesz wësłac rapòrt ò felë - eżlë zmiłkòwô, brëkùjë "
 #~ "òptacëji wësłaniô rapòrtu ò felë w menu pasowny programë"
-
-#~ msgid "Application: "
-#~ msgstr "Programa: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

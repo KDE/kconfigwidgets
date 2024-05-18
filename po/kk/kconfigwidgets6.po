@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2013-11-08 01:24+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -584,6 +584,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "&Жуырда ашылған"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Бағдарлама: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Әдетті"
+
 #~ msgid "&Open..."
 #~ msgstr "&Ашу..."
 
@@ -625,12 +638,6 @@ msgstr "&Жуырда ашылған"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Бүгінгі кеңес"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Әдетті"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Сақтау алдында аутентификациядан өту керек"
@@ -3543,9 +3550,6 @@ msgstr "&Жуырда ашылған"
 #~ msgstr ""
 #~ "Қатені тудырған бағдарлама. Егер бағдарлама дұрыс көрсетілмесе, дұрыс "
 #~ "бағдарламаның \"Қате туралы хабарлау \" мәзір жолын қолданыңыз"
-
-#~ msgid "Application: "
-#~ msgstr "Бағдарлама: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

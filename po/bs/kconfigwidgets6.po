@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2013-12-21 17:26+0000\n"
 "Last-Translator: Ademovic Saudin <sademovic1@etf.unsa.ba>\n"
 "Language-Team: bosanski <bs@li.org>\n"
@@ -589,6 +589,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "Otvori &skorašnje"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Program: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "podrazumijevano"
+
 #~ msgid "&Open..."
 #~ msgstr "&Otvori..."
 
@@ -630,12 +643,6 @@ msgstr "Otvori &skorašnje"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Savjet &dana"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "podrazumijevano"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Moraćete da se autentifikujete prije upisivanja."
@@ -3607,9 +3614,6 @@ msgstr "Otvori &skorašnje"
 #~ msgstr ""
 #~ "Program za koji želite da prijavite grešku — ako nije ovaj, upotrijebite "
 #~ "stavku Prijavi grešku... u meniju pomoći tog programa."
-
-#~ msgid "Application: "
-#~ msgstr "Program: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

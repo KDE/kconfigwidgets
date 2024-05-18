@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-01-07 14:13+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -518,6 +518,17 @@ msgstr "&Donează"
 msgid "Open &Menu"
 msgstr "Deschide &meniul"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Aplicația: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Implicit"
+
 #~ msgid "&Open..."
 #~ msgstr "&Deschide..."
 
@@ -559,9 +570,6 @@ msgstr "Deschide &meniul"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Sfatul zilei"
-
-#~ msgid "Default"
-#~ msgstr "Implicit"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Vi se va cere să vă autentificați înainte de salvare"
@@ -3548,9 +3556,6 @@ msgstr "Deschide &meniul"
 #~ "Aplicația pentru care doriți să trimiteți raportul de eroare. Dacă este "
 #~ "incorectă, atunci utilizați meniul „Raportează erori” al aplicației "
 #~ "corespunzătoare."
-
-#~ msgid "Application: "
-#~ msgstr "Aplicația: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2011-11-26 15:12+0400\n"
 "Last-Translator: Ainur Shakirov <ainur.shakirov.tt@gmail.com>\n"
 "Language-Team: Tatar <>\n"
@@ -640,6 +640,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "&Күптән түгелдәге файллар"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Кушымта: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Үрнәкле"
+
 #~ msgid "&Open..."
 #~ msgstr "&Ачу..."
 
@@ -681,12 +694,6 @@ msgstr "&Күптән түгелдәге файллар"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Бар мон&да бер киңәш..."
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Үрнәкле"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Перед сохранением настроек нужно будет подтвердить вход в систему"
@@ -3642,9 +3649,6 @@ msgstr "&Күптән түгелдәге файллар"
 #~ "Тасвирланган хатаны тәшкил итүче кушымта. Әгәр монда башка кушымта "
 #~ "кулланылган булса, \"Хата турында хәбәр җибәрү\" менюсындагы пунктны "
 #~ "кулланыгыз."
-
-#~ msgid "Application: "
-#~ msgstr "Кушымта: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

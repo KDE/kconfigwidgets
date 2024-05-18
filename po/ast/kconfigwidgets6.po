@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2023-12-12 00:53+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -511,6 +511,17 @@ msgstr "&Donar"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Abrir el &menú"
+
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Quit application"
+msgid "Application Style"
+msgstr "Cola de l'aplicación"
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr ""
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Conseyu del &día"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2012-07-04 17:33+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -640,6 +640,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "Drovi les &dierins"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Programe: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Prémetou"
+
 #~ msgid "&Open..."
 #~ msgstr "&Drovi..."
 
@@ -681,12 +694,6 @@ msgstr "Drovi les &dierins"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Li Boune Idêye do &Djoû"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Prémetou"
 
 #~ msgid "You are not allowed to save the configuration"
 #~ msgstr "Vos n' avoz nén l' droet d' schaper l' apontiaedje"
@@ -3619,9 +3626,6 @@ msgstr "Drovi les &dierins"
 #~ "L' aplicåcion k' vos voloz evoyî on rapoirt di bug dissu  - si ça n' est "
 #~ "nén cisse lale, eployîz l' intrêye Rapoirt di Bug e menu di l' aplicåcion "
 #~ "ki convént"
-
-#~ msgid "Application: "
-#~ msgstr "Programe: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

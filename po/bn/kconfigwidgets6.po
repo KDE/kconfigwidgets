@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2012-07-16 14:27+0530\n"
 "Last-Translator: Deepayan Sarkar <deepayan.sarkar@gmail.com>\n"
 "Language-Team: American English <kde-translation@bengalinux.org>\n"
@@ -585,6 +585,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "&সম্প্রতি ব্যবহৃত"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "অ্যাপলিকেশন:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "ডিফল্ট"
+
 #~ msgid "&Open..."
 #~ msgstr "খোলো (&খ)..."
 
@@ -626,12 +639,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&আজকের টিপ"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "ডিফল্ট"
 
 #, fuzzy
 #~ msgid "You are not allowed to save the configuration"
@@ -3578,9 +3585,6 @@ msgstr "&সম্প্রতি ব্যবহৃত"
 #~ "যে অ্যাপলিকেশনের জন্য আপনি বাগ রিপোর্ট পাঠাতে চান - যদি এখানে ভুল নাম দেখানো "
 #~ "হয়, তাহলে সঠিক অ্যাপলিকেশনটি চালিয়ে তার বাগ রিপোর্ট করার মেনু আইটেমটি ব্যবহার "
 #~ "করুন"
-
-#~ msgid "Application: "
-#~ msgstr "অ্যাপলিকেশন:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-13 22:47+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -516,3 +516,16 @@ msgstr "&Дарение"
 #: kstandardaction_p.h:138
 msgid "Open &Menu"
 msgstr "Отваряне на &меню"
+
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Quit application"
+msgid "Application Style"
+msgstr "Изход от програмата"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "Стандартни"

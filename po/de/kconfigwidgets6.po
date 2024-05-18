@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2023-12-21 16:41+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -524,6 +524,17 @@ msgstr "&Spenden"
 msgid "Open &Menu"
 msgstr "&Menü öffnen"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Programm: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Standard"
+
 #~ msgid "&Open..."
 #~ msgstr "Öff&nen ..."
 
@@ -565,9 +576,6 @@ msgstr "&Menü öffnen"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Tipp des Tages"
-
-#~ msgid "Default"
-#~ msgstr "Standard"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Vor dem Speichern müssen Sie sich authentifizieren."
@@ -3563,9 +3571,6 @@ msgstr "&Menü öffnen"
 #~ "Das Programm, zu dem Sie einen Fehlerbericht einschicken möchten. Falls "
 #~ "inkorrekt, benutzen Sie bitte den Knopf „Probleme oder Wünsche "
 #~ "berichten ...“ des betreffenden Programms."
-
-#~ msgid "Application: "
-#~ msgstr "Programm: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

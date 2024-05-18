@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2012-06-28 16:40+0430\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@linuxshop.ir>\n"
 "Language-Team: Farsi (Persian) <kde-i18n-fa@kde.org>\n"
@@ -641,6 +641,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "باز کردن &اخیر‌"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "کاربرد:"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "پیش‌فرض"
+
 #~ msgid "&Open..."
 #~ msgstr "&باز کردن...‌"
 
@@ -682,12 +695,6 @@ msgstr "باز کردن &اخیر‌"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&نکته روز"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "پیش‌فرض"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "قبل از ذخیره برای اعتبارسنجی از شما سوال خواهد شد"
@@ -3758,9 +3765,6 @@ msgstr "باز کردن &اخیر‌"
 #~ msgstr ""
 #~ "کاربردی که می‌خواهید برای آن گزارش اشکال ارائه کنید - اگر نادرست است، از "
 #~ "فقره گزینگان گزارش اشکال کاربرد درست استفاده کنید"
-
-#~ msgid "Application: "
-#~ msgstr "کاربرد:"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

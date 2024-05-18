@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2008-08-06 00:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -640,6 +640,18 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "Dobert(s) &Recentament"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Aplicacion : "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgid "Default"
+msgid "Default"
+msgstr "Defaut"
+
 #~ msgid "&Open..."
 #~ msgstr "&Dobrir..."
 
@@ -678,11 +690,6 @@ msgstr "Dobert(s) &Recentament"
 #~| msgid "Tip of the Day"
 #~ msgid "Tip of the &Day"
 #~ msgstr "Astúcia del jorn"
-
-#, fuzzy
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Defaut"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"
@@ -2519,9 +2526,6 @@ msgstr "Dobert(s) &Recentament"
 #~ msgstr ""
 #~ "L'aplicacion per laquala desiratz un rapòrt de bòg. En cas d'error, "
 #~ "utilizatz l'element de menut Rapòrt de bòg de l'aplicacion correspondenta."
-
-#~ msgid "Application: "
-#~ msgstr "Aplicacion : "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

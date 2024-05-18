@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2023-12-11 15:17+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -542,6 +542,17 @@ msgstr "&Lahjoita"
 msgid "Open &Menu"
 msgstr "Avaa &valikko"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Sovellus: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Oletus"
+
 #~ msgid "&Open..."
 #~ msgstr "&Avaa…"
 
@@ -583,9 +594,6 @@ msgstr "Avaa &valikko"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Päivän &vinkki"
-
-#~ msgid "Default"
-#~ msgstr "Oletus"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Sinua pyydetään tunnistautumaan ennen tallennusta"
@@ -3529,9 +3537,6 @@ msgstr "Avaa &valikko"
 #~ msgstr ""
 #~ "Sovellus, josta haluat lähettää vikailmoituksen. Jos tämä on "
 #~ "virheellinen, käytä Ilmoita viasta -valintaa oikeasta sovelluksesta"
-
-#~ msgid "Application: "
-#~ msgstr "Sovellus: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

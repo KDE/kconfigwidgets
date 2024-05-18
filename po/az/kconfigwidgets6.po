@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2023-02-17 01:22+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -554,11 +554,19 @@ msgstr "&Maddi Dəstək"
 msgid "Open &Menu"
 msgstr "&Menyunu açın"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Quit application"
+msgid "Application Style"
+msgstr "Tətbiqdən çıx"
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "İlkin göstərici"
+
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Günün Məsləhəti"
-
-#~ msgid "Default"
-#~ msgstr "İlkin göstərici"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Saxlamadan oncə parolu daxil etməniz tələb edilir"

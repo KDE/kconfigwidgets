@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2022-10-19 22:37+0200\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -561,6 +561,17 @@ msgstr "A&nneta"
 msgid "Open &Menu"
 msgstr "Ava &menüü"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Rakendus: "
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Vaikimisi"
+
 #~ msgid "&Open..."
 #~ msgstr "&Ava..."
 
@@ -602,9 +613,6 @@ msgstr "Ava &menüü"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "P&äeva nõuanne"
-
-#~ msgid "Default"
-#~ msgstr "Vaikimisi"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Sul palutakse enne salvestamist autentida"
@@ -3547,9 +3555,6 @@ msgstr "Ava &menüü"
 #~ msgstr ""
 #~ "Rakendus, mille kohta sa soovid vearaporti saata - kui see ei ole "
 #~ "korrektne, siis kasuta vearaporti saatmiseks õige rakenduse menüüd."
-
-#~ msgid "Application: "
-#~ msgstr "Rakendus: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

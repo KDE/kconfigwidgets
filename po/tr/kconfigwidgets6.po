@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-06 13:57+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -534,11 +534,19 @@ msgstr "&Bağış Yap"
 msgid "Open &Menu"
 msgstr "Me&nüyü Aç"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Quit application"
+msgid "Application Style"
+msgstr "Uygulamadan Çık"
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Öntanımlı"
+
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Günün İpucu"
-
-#~ msgid "Default"
-#~ msgstr "Öntanımlı"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Kaydetmeden önce kimlik doğrulaması yapmanız istenecek"

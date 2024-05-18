@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2006-06-22 16:29+0200\n"
 "Last-Translator: Michel Ludwig <michel.ludwig@kdemail.net>\n"
 "Language-Team: Luxembourgish <kde-i18n-lb@kde.org>\n"
@@ -626,6 +626,18 @@ msgstr "&Fäerdeg"
 msgid "Open &Menu"
 msgstr "&Viru kuerzem opgemaachen Dateien"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Programm: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgid "Default"
+msgid "Default"
+msgstr "Standard"
+
 #~ msgid "&Open..."
 #~ msgstr "&Opmaachen..."
 
@@ -667,11 +679,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Rotschlag vum Dag"
-
-#, fuzzy
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "Standard"
 
 #, fuzzy
 #~| msgid "Could not create the new configuration file."
@@ -3616,9 +3623,6 @@ msgstr "&Viru kuerzem opgemaachen Dateien"
 #~ "De Programm an deem dir de Käfer fonnt hutt - Falls hei dee falsche "
 #~ "Programm steet, bënotzt w.e.g. de \"Käfer Mellen\"-Menü vun deem richtege "
 #~ "Programm"
-
-#~ msgid "Application: "
-#~ msgstr "Programm: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

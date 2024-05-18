@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kde4libs\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2012-01-19 00:20-0500\n"
 "Last-Translator: Agron Selimaj <as9902613@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -623,6 +623,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "Hap të &deritanishëm"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "Programi: "
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "I Parazgjedhur"
+
 #~ msgid "&Open..."
 #~ msgstr "&Hape..."
 
@@ -664,12 +677,6 @@ msgstr "Hap të &deritanishëm"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "Këshilla e &Ditës"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "I Parazgjedhur"
 
 #~ msgctxt "show help"
 #~ msgid "&Help"
@@ -3183,9 +3190,6 @@ msgstr "Hap të &deritanishëm"
 #~ "Programi për të cilin dëshironi të dërgoni një raport gabiimi - nëse nuk "
 #~ "është i saktë, ju lutemi të përdorni menunë Raporto Gabimet për programin "
 #~ "e duhur"
-
-#~ msgid "Application: "
-#~ msgstr "Programi: "
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

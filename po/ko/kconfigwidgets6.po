@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-02-09 23:25+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -516,11 +516,19 @@ msgstr "기부하기(&D)"
 msgid "Open &Menu"
 msgstr "메뉴 열기(&M)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Quit application"
+msgid "Application Style"
+msgstr "앱 끝내기"
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "기본값"
+
 #~ msgid "Tip of the &Day"
 #~ msgstr "오늘의 팁(&D)"
-
-#~ msgid "Default"
-#~ msgstr "기본값"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "설정을 저장하기 전에 인증해야 합니다"

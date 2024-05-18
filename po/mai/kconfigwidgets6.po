@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2010-09-24 15:44+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -639,6 +639,19 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "हाल क' खोलू (&R)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "अनुप्रयोग"
+
+#: kstylemanager.cpp:64
+#, fuzzy, kde-format
+#| msgctxt "Encodings menu"
+#| msgid "Default"
+msgid "Default"
+msgstr "मूलभूत"
+
 #~ msgid "&Open..."
 #~ msgstr "खोलू (&O)..."
 
@@ -682,12 +695,6 @@ msgstr "हाल क' खोलू (&R)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "आइ क' नुस्ख़ा (&D)"
-
-#, fuzzy
-#~| msgctxt "Encodings menu"
-#~| msgid "Default"
-#~ msgid "Default"
-#~ msgstr "मूलभूत"
 
 #, fuzzy
 #~| msgid "Do you want to reload KDE configuration?"
@@ -3250,9 +3257,6 @@ msgstr "हाल क' खोलू (&R)"
 #~ msgstr ""
 #~ "अनुप्रयोग जकरा लेल अहाँ बग रिपोट भेजना चाहैत छी - जँ गलत अछि.  तँ कृप्या उचित "
 #~ "अनुप्रयोग क'  रिपोट बग मेनू आइटम इस्तेमाल करू"
-
-#~ msgid "Application: "
-#~ msgstr "अनुप्रयोग"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

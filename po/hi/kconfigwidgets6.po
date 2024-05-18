@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2021-08-21 16:25+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -570,6 +570,17 @@ msgstr "दान करें (&D)"
 msgid "Open &Menu"
 msgstr "मेन्यू खोलें (&M)"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Application: "
+msgid "Application Style"
+msgstr "अनुप्रयोग"
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "पूर्वन्यस्त"
+
 #~ msgid "&Open..."
 #~ msgstr "खोलें... (&O)"
 
@@ -611,9 +622,6 @@ msgstr "मेन्यू खोलें (&M)"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "आज का नुस्ख़ा (&D)"
-
-#~ msgid "Default"
-#~ msgstr "पूर्वन्यस्त"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "आपको सहेजने से पहले प्रमाणित करने के लिए कहा जाएगा"
@@ -3107,9 +3115,6 @@ msgstr "मेन्यू खोलें (&M)"
 #~ msgstr ""
 #~ "अनुप्रयोग जिसके लिए आप बग रिपोर्ट भेजना चाहते हैं - यदि गलत है,  तो कृपया उचित "
 #~ "अनुप्रयोग का रिपोर्ट बग मेन्यू आइटम इस्तेमाल करें"
-
-#~ msgid "Application: "
-#~ msgstr "अनुप्रयोग"
 
 #~ msgid ""
 #~ "The version of this application - please make sure that no newer version "

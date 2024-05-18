@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-06 00:36+0000\n"
+"POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-05-16 21:53+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -527,11 +527,19 @@ msgstr "Pa&remti"
 msgid "Open &Menu"
 msgstr "Atverti &meniu"
 
+#: kstylemanager.cpp:60
+#, fuzzy, kde-format
+#| msgid "Quit application"
+msgid "Application Style"
+msgstr "Išjungti programą"
+
+#: kstylemanager.cpp:64
+#, kde-format
+msgid "Default"
+msgstr "Numatytasis"
+
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Dienos patarimas"
-
-#~ msgid "Default"
-#~ msgstr "Numatytasis"
 
 #~ msgid "You will be asked to authenticate before saving"
 #~ msgstr "Prieš įrašant, jūsų bus paprašyta nustatyti savo tapatybę"
