@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-05-06 10:28+0200\n"
+"PO-Revision-Date: 2024-05-18 10:20+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -534,10 +534,9 @@ msgid "Open &Menu"
 msgstr "&Menu openen"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Application: "
+#, kde-format
 msgid "Application Style"
-msgstr "Toepassing: "
+msgstr "Stijl van toepassing"
 
 #: kstylemanager.cpp:64
 #, kde-format

@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-05-07 16:52+0900\n"
+"PO-Revision-Date: 2024-05-18 16:10+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -525,10 +525,9 @@ msgid "Open &Menu"
 msgstr "開啟選單(&M)"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Quit application"
+#, kde-format
 msgid "Application Style"
-msgstr "結束應用程式"
+msgstr "應用程式風格"
 
 #: kstylemanager.cpp:64
 #, kde-format
