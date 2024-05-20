@@ -513,14 +513,11 @@ msgid "Open &Menu"
 msgstr "打开菜单(&M)"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Quit application"
+#, kde-format
 msgid "Application Style"
-msgstr "退出应用程序"
+msgstr ""
 
 #: kstylemanager.cpp:64
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
+#, kde-format
 msgid "Default"
-msgstr "默认"
+msgstr ""
