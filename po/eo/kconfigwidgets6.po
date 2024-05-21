@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-05-09 22:01+0100\n"
+"PO-Revision-Date: 2024-05-20 13:35+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -527,14 +527,11 @@ msgid "Open &Menu"
 msgstr "Malfermi &Menuon"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Quit application"
+#, kde-format
 msgid "Application Style"
-msgstr "Forlasi aplikaĵon"
+msgstr "Aplikaĵa Stilo"
 
 #: kstylemanager.cpp:64
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
+#, kde-format
 msgid "Default"
 msgstr "Defaŭlta"
