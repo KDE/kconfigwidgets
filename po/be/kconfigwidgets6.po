@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-02-22 13:31\n"
+"PO-Revision-Date: 2024-05-20 09:10\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -58,10 +58,9 @@ msgid "Color Scheme"
 msgstr "Колеравая схема"
 
 #: kcommandbar.cpp:639
-#, fuzzy, kde-format
-#| msgid "No commands matching the filter"
+#, kde-format
 msgid "No commands to display"
-msgstr "Няма загадаў, якія адпавядаюць фільтру"
+msgstr "Няма загадаў для паказу"
 
 #: kcommandbar.cpp:641
 #, kde-format
@@ -151,7 +150,7 @@ msgstr "Стварыць новы дакумент"
 
 #: kstandardaction_p.h:64
 msgid "&Open…"
-msgstr ""
+msgstr "&Адкрыць…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -175,7 +174,7 @@ msgstr "Захаваць дакумент"
 
 #: kstandardaction_p.h:67
 msgid "Save &As…"
-msgstr ""
+msgstr "Захаваць &як…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -199,7 +198,7 @@ msgstr "Закрыць дакумент"
 
 #: kstandardaction_p.h:70
 msgid "&Print…"
-msgstr ""
+msgstr "&Друкаванне…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -215,7 +214,7 @@ msgstr "Вывесці папярэдні прагляд дакумента дл
 
 #: kstandardaction_p.h:72
 msgid "&Mail…"
-msgstr ""
+msgstr "&Пошта…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -283,7 +282,7 @@ msgstr "&Адкінуць выбар"
 
 #: kstandardaction_p.h:83
 msgid "&Find…"
-msgstr ""
+msgstr "&Пошук…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -295,7 +294,7 @@ msgstr "Шукаць &папярэдняе"
 
 #: kstandardaction_p.h:86
 msgid "&Replace…"
-msgstr ""
+msgstr "&Замяніць…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -339,7 +338,7 @@ msgstr "&Паменшыць"
 
 #: kstandardaction_p.h:94
 msgid "&Zoom…"
-msgstr ""
+msgstr "&Маштабаванне…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -379,15 +378,15 @@ msgstr "Перайсці да наступнай старонкі"
 
 #: kstandardaction_p.h:104
 msgid "&Go To…"
-msgstr ""
+msgstr "&Перайсці да…"
 
 #: kstandardaction_p.h:105
 msgid "&Go to Page…"
-msgstr ""
+msgstr "&Перайсці да старонкі…"
 
 #: kstandardaction_p.h:106
 msgid "&Go to Line…"
-msgstr ""
+msgstr "&Перайсці да радка…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -427,11 +426,11 @@ msgstr "&Дадаць закладку"
 
 #: kstandardaction_p.h:113
 msgid "&Edit Bookmarks…"
-msgstr ""
+msgstr "&Рэдагаваць закладкі…"
 
 #: kstandardaction_p.h:115
 msgid "&Spelling…"
-msgstr ""
+msgstr "&Правапіс…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -467,20 +466,20 @@ msgstr "&Поўнаэкранны рэжым"
 
 #: kstandardaction_p.h:121
 msgid "Configure Keyboard S&hortcuts…"
-msgstr ""
+msgstr "Наладжванне &спалучэнняў клавіш…"
 
 #: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1…"
-msgstr ""
+msgstr "&Наладжванне %1…"
 
 #: kstandardaction_p.h:123
 msgid "Configure Tool&bars…"
-msgstr ""
+msgstr "Наладжванне панэлі &інструментаў…"
 
 #: kstandardaction_p.h:124
 msgid "Configure &Notifications…"
-msgstr ""
+msgstr "Наладжванне &апавяшчэнняў…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -493,11 +492,11 @@ msgstr "Што &гэта?"
 
 #: kstandardaction_p.h:130
 msgid "&Report Bug…"
-msgstr ""
+msgstr "&Паведаміць пра хібу…"
 
 #: kstandardaction_p.h:131
 msgid "Configure &Language…"
-msgstr ""
+msgstr "Наладжванне &мовы…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -514,7 +513,7 @@ msgstr "В&ыдаліць"
 
 #: kstandardaction_p.h:135
 msgid "&Rename…"
-msgstr ""
+msgstr "&Змяніць назву…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
@@ -529,10 +528,9 @@ msgid "Open &Menu"
 msgstr "Адкрыць &меню"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Application: "
+#, kde-format
 msgid "Application Style"
-msgstr "Праграма: "
+msgstr "Стыль праграм"
 
 #: kstylemanager.cpp:64
 #, kde-format

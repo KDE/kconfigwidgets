@@ -515,9 +515,9 @@ msgstr "打开菜单(&M)"
 #: kstylemanager.cpp:60
 #, kde-format
 msgid "Application Style"
-msgstr ""
+msgstr "应用程序外观样式"
 
 #: kstylemanager.cpp:64
 #, kde-format
 msgid "Default"
-msgstr ""
+msgstr "默认"

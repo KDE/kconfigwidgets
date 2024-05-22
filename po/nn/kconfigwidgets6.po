@@ -526,8 +526,6 @@ msgid "Application Style"
 msgstr "Avslutt program"
 
 #: kstylemanager.cpp:64
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
+#, kde-format
 msgid "Default"
 msgstr "Standard"
