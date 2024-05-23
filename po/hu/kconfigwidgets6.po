@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KDE 4.4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-01-07 22:12+0100\n"
+"PO-Revision-Date: 2024-05-22 10:39+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -45,10 +45,9 @@ msgid "Color Scheme"
 msgstr "Színséma"
 
 #: kcommandbar.cpp:639
-#, fuzzy, kde-format
-#| msgid "No commands matching the filter"
+#, kde-format
 msgid "No commands to display"
-msgstr "Nincsenek a szűrőre illeszkedő parancsok"
+msgstr "Nincsenek megjelenítendő parancsok"
 
 #: kcommandbar.cpp:641
 #, kde-format
@@ -516,10 +515,9 @@ msgid "Open &Menu"
 msgstr "&Menü megnyitása"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Application: "
+#, kde-format
 msgid "Application Style"
-msgstr "Alkalmazás: "
+msgstr "Alkalmazásstílus"
 
 #: kstylemanager.cpp:64
 #, kde-format
