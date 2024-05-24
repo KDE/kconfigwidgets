@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-02-19 08:44+0000\n"
+"PO-Revision-Date: 2024-05-23 14:50+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -61,10 +61,9 @@ msgid "Color Scheme"
 msgstr "Litastef"
 
 #: kcommandbar.cpp:639
-#, fuzzy, kde-format
-#| msgid "No commands matching the filter"
+#, kde-format
 msgid "No commands to display"
-msgstr "Engar skipanir passa við síuna"
+msgstr "Engar skipanir til að birta"
 
 #: kcommandbar.cpp:641
 #, kde-format
@@ -534,10 +533,9 @@ msgid "Open &Menu"
 msgstr "Opna &Valmynd"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Application: "
+#, kde-format
 msgid "Application Style"
-msgstr "Forrit: "
+msgstr "Stíll forrits"
 
 #: kstylemanager.cpp:64
 #, kde-format
