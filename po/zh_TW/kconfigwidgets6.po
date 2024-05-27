@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-05-18 16:10+0900\n"
+"PO-Revision-Date: 2024-05-26 15:39+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -247,7 +247,7 @@ msgstr "剪下(&T)"
 
 #: kstandardaction_p.h:77
 msgid "Cut selection to clipboard"
-msgstr "將所選取的項目剪下放到剪貼簿"
+msgstr "將選取內容剪下到剪貼簿"
 
 #: kstandardaction_p.h:78
 msgid "&Copy"
@@ -255,7 +255,7 @@ msgstr "複製(&C)"
 
 #: kstandardaction_p.h:78
 msgid "Copy selection to clipboard"
-msgstr "將選取區複製到剪貼簿中"
+msgstr "將選取內容複製到剪貼簿"
 
 #: kstandardaction_p.h:79
 msgid "&Paste"
@@ -307,7 +307,7 @@ msgstr "調整成適合頁面大小(&F)"
 
 #: kstandardaction_p.h:89
 msgid "Zoom to fit page in window"
-msgstr "縮放到適合視窗內頁面"
+msgstr "縮放到整個頁面適合視窗"
 
 #: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
@@ -315,7 +315,7 @@ msgstr "調整成適合頁面寬度(&W)"
 
 #: kstandardaction_p.h:90
 msgid "Zoom to fit page width in window"
-msgstr "縮放到適合視窗內頁面寬度"
+msgstr "縮放到頁面寬度適合視窗"
 
 #: kstandardaction_p.h:91
 msgid "Fit to Page &Height"
@@ -323,7 +323,7 @@ msgstr "調整成適合頁面高度(&H)"
 
 #: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
-msgstr "縮放到適合視窗內頁面高度"
+msgstr "縮放到頁面高度適合視窗"
 
 #: kstandardaction_p.h:92
 msgid "Zoom &In"
@@ -375,11 +375,11 @@ msgstr "前往下一頁"
 
 #: kstandardaction_p.h:104
 msgid "&Go To…"
-msgstr "移至(&G)…"
+msgstr "前往(&G)…"
 
 #: kstandardaction_p.h:105
 msgid "&Go to Page…"
-msgstr "移至頁面(&G)…"
+msgstr "前往頁面(&G)…"
 
 #: kstandardaction_p.h:106
 msgid "&Go to Line…"
@@ -399,7 +399,7 @@ msgstr "最後一頁(&L)"
 
 #: kstandardaction_p.h:108
 msgid "Go to last page"
-msgstr "前往最末頁"
+msgstr "前往最後一頁"
 
 #: kstandardaction_p.h:109
 msgid "&Back"
