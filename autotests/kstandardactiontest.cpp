@@ -36,8 +36,8 @@ void tst_KStandardAction::shortcutForActionId()
 
 void tst_KStandardAction::changingShortcut()
 {
-#ifdef Q_OS_WINDOWS
-    QSKIP("DBus notifications are disabled on Windows");
+#if !HAVE_QTDBUS
+    QSKIP("DBus notifications are disabled");
 #endif
 
     // GIVEN

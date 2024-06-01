@@ -26,10 +26,17 @@ include(CMakeDependentOption)
 
 set(REQUIRED_QT_VERSION 6.5.0)
 find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Widgets)
-set(HAVE_DBUS false)
-if (NOT ANDROID AND NOT WIN32 AND NOT APPLE)
+
+# shall we use DBus?
+# enabled per default on Linux & BSD systems
+set(USE_DBUS_DEFAULT OFF)
+if(UNIX AND NOT APPLE AND NOT ANDROID AND NOT HAIKU)
+    set(USE_DBUS_DEFAULT ON)
+endif()
+option(USE_DBUS "Build components using DBus" ${USE_DBUS_DEFAULT})
+if(USE_DBUS)
   find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED DBus)
-  set(HAVE_DBUS true)
+  set(HAVE_DBUS ON)
 endif()
 
 set(EXCLUDE_DEPRECATED_BEFORE_AND_AT 0 CACHE STRING "Control the range of deprecated API excluded from the build [default=0].")

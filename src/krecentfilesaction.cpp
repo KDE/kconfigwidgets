@@ -25,7 +25,7 @@
 #include <QMimeType>
 #include <QScreen>
 
-#ifdef QT_DBUS_LIB
+#if HAVE_QTDBUS
 #include <QDBusConnectionInterface>
 #include <QDBusInterface>
 #include <QDBusMessage>
@@ -223,7 +223,7 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
     // add file to list
     const QString title = titleWithSensibleWidth(tmpName, KShell::tildeCollapse(file));
 
-#ifdef QT_DBUS_LIB
+#if HAVE_QTDBUS
     static bool isKdeSession = qgetenv("XDG_CURRENT_DESKTOP") == "KDE";
     if (isKdeSession) {
         const QDBusConnection bus = QDBusConnection::sessionBus();

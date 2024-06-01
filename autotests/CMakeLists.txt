@@ -3,6 +3,12 @@ find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 
+if (HAVE_DBUS)
+    add_definitions(-DHAVE_QTDBUS=1)
+else()
+    add_definitions(-DHAVE_QTDBUS=0)
+endif()
+
 include(ECMAddTests)
 
 ecm_add_test(kstandardactiontest.cpp LINK_LIBRARIES Qt6::Test KF6::ConfigWidgets)
