@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-05-20 09:10\n"
+"PO-Revision-Date: 2024-06-01 17:50\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -60,12 +60,12 @@ msgstr "Колеравая схема"
 #: kcommandbar.cpp:639
 #, kde-format
 msgid "No commands to display"
-msgstr "Няма загадаў для паказу"
+msgstr "Няма каманд для паказу"
 
 #: kcommandbar.cpp:641
 #, kde-format
 msgid "No commands matching the filter"
-msgstr "Няма загадаў, якія адпавядаюць фільтру"
+msgstr "Няма каманд, якія адпавядаюць фільтру"
 
 #: kconfigdialog.cpp:37
 #, kde-format
