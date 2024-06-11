@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-01-07 14:13+0000\n"
+"PO-Revision-Date: 2024-06-09 11:29+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -46,10 +46,9 @@ msgid "Color Scheme"
 msgstr "Schemă de culori"
 
 #: kcommandbar.cpp:639
-#, fuzzy, kde-format
-#| msgid "No commands matching the filter"
+#, kde-format
 msgid "No commands to display"
-msgstr "Nicio comandă care să se potrivească filtrului"
+msgstr "Nicio comandă de afișat"
 
 #: kcommandbar.cpp:641
 #, kde-format
@@ -519,10 +518,9 @@ msgid "Open &Menu"
 msgstr "Deschide &meniul"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Application: "
+#, kde-format
 msgid "Application Style"
-msgstr "Aplicația: "
+msgstr "Stil aplicație"
 
 #: kstylemanager.cpp:64
 #, kde-format
