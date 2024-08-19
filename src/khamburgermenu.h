@@ -203,7 +203,7 @@ protected:
     /**
      * @see QWidgetAction::createWidget
      */
-    virtual QWidget *createWidget(QWidget *parent) override;
+    QWidget *createWidget(QWidget *parent) override;
 
 private:
     std::unique_ptr<KHamburgerMenuPrivate> const d_ptr;
