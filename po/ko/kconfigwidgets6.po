@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-02-09 23:25+0100\n"
+"PO-Revision-Date: 2024-08-19 22:38+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -46,10 +46,9 @@ msgid "Color Scheme"
 msgstr "색 구성표"
 
 #: kcommandbar.cpp:639
-#, fuzzy, kde-format
-#| msgid "No commands matching the filter"
+#, kde-format
 msgid "No commands to display"
-msgstr "필터와 일치하는 명령 없음"
+msgstr "표시할 명령 없음"
 
 #: kcommandbar.cpp:641
 #, kde-format
@@ -517,10 +516,9 @@ msgid "Open &Menu"
 msgstr "메뉴 열기(&M)"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Quit application"
+#, kde-format
 msgid "Application Style"
-msgstr "앱 끝내기"
+msgstr "앱 스타일"
 
 #: kstylemanager.cpp:64
 #, kde-format
