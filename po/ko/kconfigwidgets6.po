@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-08-19 22:38+0200\n"
+"PO-Revision-Date: 2024-08-20 23:33+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -198,7 +198,7 @@ msgstr "인쇄 미리 보기(&W)"
 
 #: kstandardaction_p.h:71
 msgid "Show a print preview of document"
-msgstr "문서의 인쇄 미리 보기를 표시"
+msgstr "문서의 인쇄 미리 보기 표시"
 
 #: kstandardaction_p.h:72
 msgid "&Mail…"
@@ -378,11 +378,11 @@ msgstr "줄로 이동(&G)…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
-msgstr "처음 쪽(&F)"
+msgstr "첫 쪽(&F)"
 
 #: kstandardaction_p.h:107
 msgid "Go to first page"
-msgstr "첫 쪽으로 이동"
+msgstr "첫 번째 쪽으로 이동"
 
 #: kstandardaction_p.h:108
 msgid "&Last Page"
@@ -398,7 +398,7 @@ msgstr "뒤로(&B)"
 
 #: kstandardaction_p.h:109
 msgid "Go back in document"
-msgstr "문서의 뒤로 이동"
+msgstr "문서에서 뒤로 이동"
 
 #: kstandardaction_p.h:110
 msgid "&Forward"
@@ -406,7 +406,7 @@ msgstr "앞으로(&F)"
 
 #: kstandardaction_p.h:110
 msgid "Go forward in document"
-msgstr "문서의 앞으로 이동"
+msgstr "문서에서 앞으로 이동"
 
 #: kstandardaction_p.h:112
 msgid "&Add Bookmark"
@@ -430,7 +430,7 @@ msgstr "메뉴 표시줄 표시(&M)"
 
 #: kstandardaction_p.h:117
 msgid "Show or hide menubar"
-msgstr "메뉴 표시줄을 보이거나 숨기기"
+msgstr "메뉴 표시줄 표시 또는 숨기기"
 
 #: kstandardaction_p.h:118
 msgid "Show &Toolbar"
@@ -438,7 +438,7 @@ msgstr "도구 모음 표시(&T)"
 
 #: kstandardaction_p.h:118
 msgid "Show or hide toolbar"
-msgstr "도구 모음을 보이거나 숨기기"
+msgstr "도구 모음 표시 또는 숨기기"
 
 #: kstandardaction_p.h:119
 msgid "Show St&atusbar"
@@ -446,7 +446,7 @@ msgstr "상태 표시줄 표시(&A)"
 
 #: kstandardaction_p.h:119
 msgid "Show or hide statusbar"
-msgstr "상태 표시줄을 보이거나 숨기기"
+msgstr "상태 표시줄 표시 또는 숨기기"
 
 #: kstandardaction_p.h:120
 msgid "F&ull Screen Mode"
