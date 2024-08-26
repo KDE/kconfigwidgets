@@ -147,7 +147,6 @@ msgstr "Lag et nytt dokument"
 
 #: kstandardaction_p.h:64
 #, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
 msgstr "&Åpne …"
 
@@ -173,7 +172,6 @@ msgstr "Lagre dokumentet"
 
 #: kstandardaction_p.h:67
 #, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
 msgstr "Lagre &som …"
 
@@ -199,7 +197,6 @@ msgstr "Lukk dokumentet"
 
 #: kstandardaction_p.h:70
 #, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
 msgstr "Sk&riv ut …"
 
@@ -217,7 +214,6 @@ msgstr "Vis forhåndsvisning av dokumentutskriften"
 
 #: kstandardaction_p.h:72
 #, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
 msgstr "S&end e-post …"
 
@@ -287,7 +283,6 @@ msgstr "Ve&lg bort"
 
 #: kstandardaction_p.h:83
 #, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
 msgstr "&Finn …"
 
@@ -301,7 +296,6 @@ msgstr "Finn forri&ge"
 
 #: kstandardaction_p.h:86
 #, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
 msgstr "&Erstatt …"
 
@@ -347,7 +341,6 @@ msgstr "Vis &mindre"
 
 #: kstandardaction_p.h:94
 #, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
 msgstr "&Vis større/mindre …"
 
@@ -389,19 +382,16 @@ msgstr "Gå til neste side"
 
 #: kstandardaction_p.h:104
 #, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "&Gå til …"
 
 #: kstandardaction_p.h:105
 #, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
 msgstr "&Gå til side …"
 
 #: kstandardaction_p.h:106
 #, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
 msgstr "&Gå til linje …"
 
@@ -443,13 +433,11 @@ msgstr "&Legg til bokmerke"
 
 #: kstandardaction_p.h:113
 #, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
 msgstr "&Rediger bokmerker …"
 
 #: kstandardaction_p.h:115
 #, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
 msgstr "&Stavekontroll …"
 
@@ -491,19 +479,16 @@ msgstr ""
 
 #: kstandardaction_p.h:122
 #, fuzzy, kde-format
-#| msgid "&Configure %1..."
 msgid "&Configure %1…"
 msgstr "&Oppsett av %1 …"
 
 #: kstandardaction_p.h:123
 #, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
 msgstr "Oppsett av verktøy&linjer …"
 
 #: kstandardaction_p.h:124
 #, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
 msgstr "Oppsett av &varslinger …"
 
@@ -518,7 +503,6 @@ msgstr "Hva er &dette?"
 
 #: kstandardaction_p.h:130
 #, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
 msgstr "&Rapporter feil …"
 
@@ -557,13 +541,10 @@ msgstr ""
 
 #: kstylemanager.cpp:60
 #, fuzzy, kde-format
-#| msgid "Quit application"
 msgid "Application Style"
 msgstr "Avslutt program"
 
 #: kstylemanager.cpp:64
 #, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
 msgid "Default"
 msgstr "Standard"

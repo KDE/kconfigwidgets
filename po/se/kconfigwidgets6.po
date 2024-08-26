@@ -142,7 +142,6 @@ msgstr "Ráhkat ođđa dokumeantta"
 
 #: kstandardaction_p.h:64
 #, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
 msgstr "&Raba …"
 
@@ -168,7 +167,6 @@ msgstr "Vurke dokumeantta"
 
 #: kstandardaction_p.h:67
 #, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
 msgstr "Vurke &nugo …"
 
@@ -194,7 +192,6 @@ msgstr "Gidde dokumeantta"
 
 #: kstandardaction_p.h:70
 #, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
 msgstr "Čá&lit …"
 
@@ -212,7 +209,6 @@ msgstr "Čájet dokumeantta nugo čálihuvvo"
 
 #: kstandardaction_p.h:72
 #, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
 msgstr "&Sádde …"
 
@@ -282,7 +278,6 @@ msgstr "&Váldde eret merkema"
 
 #: kstandardaction_p.h:83
 #, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
 msgstr "&Oza …"
 
@@ -296,7 +291,6 @@ msgstr "Gávnna &ovddit"
 
 #: kstandardaction_p.h:86
 #, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
 msgstr "&Buhtte …"
 
@@ -342,7 +336,6 @@ msgstr "&Unnit"
 
 #: kstandardaction_p.h:94
 #, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
 msgstr "&Stuorit/unnit …"
 
@@ -384,19 +377,16 @@ msgstr "Mana boahtte siidui"
 
 #: kstandardaction_p.h:104
 #, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "&Mana …"
 
 #: kstandardaction_p.h:105
 #, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
 msgstr "&Mana siidui …"
 
 #: kstandardaction_p.h:106
 #, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
 msgstr "Mana &linjái …"
 
@@ -438,13 +428,11 @@ msgstr "&Lasit girjemearkka"
 
 #: kstandardaction_p.h:113
 #, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
 msgstr "&Doaimmat girjemearkkaid …"
 
 #: kstandardaction_p.h:115
 #, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
 msgstr "&Riektačállin …"
 
@@ -486,19 +474,16 @@ msgstr ""
 
 #: kstandardaction_p.h:122
 #, fuzzy, kde-format
-#| msgid "&Configure %1..."
 msgid "&Configure %1…"
 msgstr "&Heivet %1 …"
 
 #: kstandardaction_p.h:123
 #, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
 msgstr "Heivet &reaidoholggaid …"
 
 #: kstandardaction_p.h:124
 #, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
 msgstr "Heivet &dieđáhusaid …"
 
@@ -513,7 +498,6 @@ msgstr "Mii dat &lea?"
 
 #: kstandardaction_p.h:130
 #, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
 msgstr "Vá&idal dihki …"
 
@@ -536,7 +520,6 @@ msgstr "&Sihko"
 
 #: kstandardaction_p.h:135
 #, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
 msgstr "Bija ođđa nama …"
 
@@ -554,14 +537,11 @@ msgstr ""
 
 #: kstylemanager.cpp:60
 #, fuzzy, kde-format
-#| msgid "Quit application"
 msgid "Application Style"
 msgstr "Heaittit prográmma"
 
 # unreviewed-context
 #: kstylemanager.cpp:64
 #, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
 msgid "Default"
 msgstr "Standárda"
