@@ -11,7 +11,7 @@
 # Rolf Eike Beer <kde@opensource.sf-tec.de>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: kdelibs4\n"
+"Project-Id-Version: kconfigwidgets6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
 "PO-Revision-Date: 2024-08-26 18:27+0200\n"
