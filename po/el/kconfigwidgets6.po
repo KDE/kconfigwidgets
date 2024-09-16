@@ -28,8 +28,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -154,11 +154,8 @@ msgid "Create new document"
 msgstr "Δημιουργία νέου εγγράφου"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgctxt "@label:button"
-#| msgid "&Open"
 msgid "&Open…"
-msgstr "Άν&οιγμα"
+msgstr "Άν&οιγμα…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -181,10 +178,8 @@ msgid "Save document"
 msgstr "Αποθήκευση εγγράφου"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save As"
 msgid "Save &As…"
-msgstr "Αποθήκευση ως"
+msgstr "Αποθήκευσ&η ως…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -207,10 +202,8 @@ msgid "Close document"
 msgstr "Κλείσιμο εγγράφου"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "Print"
 msgid "&Print…"
-msgstr "Εκτύπωση"
+msgstr "Εκτύπ&ωση…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -225,11 +218,8 @@ msgid "Show a print preview of document"
 msgstr "Εμφάνιση προεπισκόπησης εκτύπωσης εγγράφου"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Mail"
 msgid "&Mail…"
-msgstr "Αλληλογραφία"
+msgstr "Αλληλ&ογραφία…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -296,10 +286,8 @@ msgid "Dese&lect"
 msgstr "Αποεπι&λογή"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find"
 msgid "&Find…"
-msgstr "&Αναζήτηση"
+msgstr "&Αναζήτηση…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -310,10 +298,8 @@ msgid "Find Pre&vious"
 msgstr "Αναζήτηση προη&γούμενου"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace"
 msgid "&Replace…"
-msgstr "&Αντικατάσταση"
+msgstr "&Αντικατάσταση…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -356,11 +342,8 @@ msgid "Zoom &Out"
 msgstr "&Σμίκρυνση"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Zoom"
 msgid "&Zoom…"
-msgstr "Εστίαση"
+msgstr "Ε&στίαση…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -399,23 +382,16 @@ msgid "Go to next page"
 msgstr "Μετάβαση στην επόμενη σελίδα"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "&Μετάβαση σε..."
+msgstr "&Μετάβαση σε…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "Με&τάβαση στη σελίδα..."
+msgstr "Με&τάβαση στη σελίδα…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "&Go to Line…"
-msgstr "Μετάβαση στη γραμμή"
+msgstr "Μετά&βαση στη γραμμή…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -454,18 +430,12 @@ msgid "&Add Bookmark"
 msgstr "Προσθήκη σελι&δοδείκτη"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Edit Bookmarks"
 msgid "&Edit Bookmarks…"
-msgstr "Επεξεργασία σελιδοδεικτών"
+msgstr "Επεξερ&γασία σελιδοδεικτών…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Spelling"
 msgid "&Spelling…"
-msgstr "Ορθογραφία"
+msgstr "Ορ&θογραφία…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -500,28 +470,21 @@ msgid "F&ull Screen Mode"
 msgstr "Λειτουργία πλήρους &οθόνης"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Διαμόρφωση συντομεύσεων πλ&ηκτρολογίου..."
+msgstr "Διαμόρφωση συντομεύσεων πλ&ηκτρολογίου…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "&Διαμόρφωση του %1..."
+msgstr "&Διαμόρφωση του %1…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Toolbars"
 msgid "Configure Tool&bars…"
-msgstr "Διαμόρφωση γραμμών εργαλείων"
+msgstr "Διαμό&ρφωση γραμμών εργαλείων…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure Notifications"
 msgid "Configure &Notifications…"
-msgstr "Διαμόρφωση ειδοποιήσεων"
+msgstr "Διαμόρ&φωση ειδοποιήσεων…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -533,17 +496,12 @@ msgid "What's &This?"
 msgstr "Τι είναι &αυτό"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgctxt "@action"
-#| msgid "Report Bug"
 msgid "&Report Bug…"
-msgstr "Αναφορά σφάλματος"
+msgstr "Αναφ&ορά σφάλματος…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "Διαμόρφωση γ&λώσσας..."
+msgstr "Διαμόρφωση γ&λώσσας…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -559,10 +517,8 @@ msgid "&Delete"
 msgstr "&Διαγραφή"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "&Μετονομασία..."
+msgstr "&Μετονομασία…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
