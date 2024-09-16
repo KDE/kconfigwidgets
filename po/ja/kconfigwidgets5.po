@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:24+0000\n"
-"PO-Revision-Date: 2023-05-16 18:41+0900\n"
-"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
+"PO-Revision-Date: 2024-09-15 22:26+0900\n"
+"Last-Translator: UTUMI Hirosi <utuhiro78@yahoo.co.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -236,7 +236,7 @@ msgstr "メール(&M)..."
 
 #: kstandardaction_p.h:39
 msgid "Send document by mail"
-msgstr "メールで文書を表示"
+msgstr "文書をメールで送る"
 
 #: kstandardaction_p.h:40
 msgid "&Quit"
@@ -252,7 +252,7 @@ msgstr "元に戻す(&U)"
 
 #: kstandardaction_p.h:42
 msgid "Undo last action"
-msgstr "最後のアクションを取り消す"
+msgstr "最後の操作を元に戻す"
 
 #: kstandardaction_p.h:43
 msgid "Re&do"
@@ -260,7 +260,7 @@ msgstr "やり直す(&D)"
 
 #: kstandardaction_p.h:43
 msgid "Redo last undone action"
-msgstr "最後のアクションをやり直す"
+msgstr "最後に元に戻した操作をやり直す"
 
 #: kstandardaction_p.h:44
 msgid "Cu&t"
@@ -268,7 +268,7 @@ msgstr "切り取り(&T)"
 
 #: kstandardaction_p.h:44
 msgid "Cut selection to clipboard"
-msgstr "選択したものをクリップボードにコピー"
+msgstr "選択範囲をクリップボードに切り取る"
 
 #: kstandardaction_p.h:45
 msgid "&Copy"
@@ -276,7 +276,7 @@ msgstr "コピー(&C)"
 
 #: kstandardaction_p.h:45
 msgid "Copy selection to clipboard"
-msgstr "選択したものをクリップボードにコピー"
+msgstr "選択範囲をクリップボードにコピー"
 
 #: kstandardaction_p.h:46 kstandardaction_p.h:48
 msgid "&Paste"
@@ -296,7 +296,7 @@ msgstr "すべて選択(&A)"
 
 #: kstandardaction_p.h:52
 msgid "Dese&lect"
-msgstr "選択解除(&L)"
+msgstr "選択を解除(&L)"
 
 #: kstandardaction_p.h:53
 msgid "&Find..."
@@ -364,7 +364,7 @@ msgstr "ズームのレベルを選択"
 
 #: kstandardaction_p.h:65
 msgid "&Refresh"
-msgstr "最新の情報に更新(&R)"
+msgstr "更新(&R)"
 
 #: kstandardaction_p.h:65
 msgid "Refresh document"
@@ -452,7 +452,7 @@ msgstr "スペルチェック(&S)..."
 
 #: kstandardaction_p.h:85
 msgid "Check spelling in document"
-msgstr "文書をスペルチェック"
+msgstr "文書内のスペルをチェック"
 
 #: kstandardaction_p.h:87
 msgid "Show &Menubar"
@@ -460,7 +460,7 @@ msgstr "メニューバーを表示(&M)"
 
 #: kstandardaction_p.h:87
 msgid "Show or hide menubar"
-msgstr "メニューバーを表示・非表示"
+msgstr "メニューバーの表示を切り替え"
 
 #: kstandardaction_p.h:88
 msgid "Show &Toolbar"
@@ -468,7 +468,7 @@ msgstr "ツールバーを表示(&T)"
 
 #: kstandardaction_p.h:88
 msgid "Show or hide toolbar"
-msgstr "ツールバーを表示・非表示"
+msgstr "ツールバーの表示を切り替え"
 
 #: kstandardaction_p.h:89
 msgid "Show St&atusbar"
@@ -476,7 +476,7 @@ msgstr "ステータスバーを表示(&A)"
 
 #: kstandardaction_p.h:89
 msgid "Show or hide statusbar"
-msgstr "ステータスバーを表示・非表示"
+msgstr "ステータスバーの表示を切り替え"
 
 #: kstandardaction_p.h:90
 msgid "F&ull Screen Mode"
@@ -514,7 +514,7 @@ msgstr "これは何？(&T)"
 
 #: kstandardaction_p.h:106
 msgid "Tip of the &Day"
-msgstr "今日の一言(&D)"
+msgstr "今日のヒント(&D)"
 
 #: kstandardaction_p.h:107
 msgid "&Report Bug..."
@@ -539,7 +539,7 @@ msgstr "削除(&D)"
 
 #: kstandardaction_p.h:112
 msgid "&Rename..."
-msgstr "名前変更(&R)..."
+msgstr "名前を変更(&R)..."
 
 #: kstandardaction_p.h:113
 msgid "&Move to Trash"
@@ -547,7 +547,7 @@ msgstr "ごみ箱に移動(&M)"
 
 #: kstandardaction_p.h:114
 msgid "&Donate"
-msgstr "寄付(&D)"
+msgstr "寄付する(&D)"
 
 #: kstandardaction_p.h:115
 msgid "Open &Menu"
@@ -557,7 +557,7 @@ msgstr "メニューを開く(&M)"
 #, kde-format
 msgctxt "@title:window"
 msgid "Tip of the Day"
-msgstr "今日の一言"
+msgstr "今日のヒント"
 
 #: ktipdialog.cpp:238
 #, kde-format
