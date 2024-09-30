@@ -32,7 +32,7 @@ void KStyleManager::initStyle()
 
     // enforce the style configured by the user, with kdeglobals fallback
     // if not set or the style is not there, use Breeze
-    QString styleToUse = KConfigGroup(config, QStringLiteral("General")).readEntry("widgetStyle", QString());
+    QString styleToUse = KConfigGroup(config, QStringLiteral("KDE")).readEntry("widgetStyle", QString());
     if (styleToUse.isEmpty() || !QApplication::setStyle(styleToUse)) {
         styleToUse = QStringLiteral("breeze");
         QApplication::setStyle(styleToUse);
@@ -54,7 +54,7 @@ QAction *KStyleManager::createConfigureAction(QObject *parent)
 
     // get config, without fallback to kdeglobals
     const auto config = KSharedConfig::openConfig(QString(), KConfig::NoGlobals);
-    const QString styleWeUse = KConfigGroup(config, QStringLiteral("General")).readEntry("widgetStyle", QString());
+    const QString styleWeUse = KConfigGroup(config, QStringLiteral("KDE")).readEntry("widgetStyle", QString());
 
     // build menu with default to reset setting and all known styles
     KActionMenu *menu = new KActionMenu(QIcon::fromTheme(QStringLiteral("preferences-desktop-theme-applications")), i18n("Application Style"), parent);
@@ -76,9 +76,9 @@ QAction *KStyleManager::createConfigureAction(QObject *parent)
         const QString styleToUse = action->data().toString();
         const auto config = KSharedConfig::openConfig();
         if (styleToUse.isEmpty()) {
-            KConfigGroup(config, QStringLiteral("General")).deleteEntry("widgetStyle");
+            KConfigGroup(config, QStringLiteral("KDE")).deleteEntry("widgetStyle");
         } else {
-            KConfigGroup(config, QStringLiteral("General")).writeEntry("widgetStyle", styleToUse);
+            KConfigGroup(config, QStringLiteral("KDE")).writeEntry("widgetStyle", styleToUse);
         }
         initStyle();
     });
