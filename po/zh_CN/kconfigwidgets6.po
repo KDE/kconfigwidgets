@@ -335,7 +335,7 @@ msgstr "刷新(&R)"
 
 #: kstandardaction_p.h:95
 msgid "Refresh document"
-msgstr "刷新文档"
+msgstr "刷新"
 
 #: kstandardaction_p.h:97
 msgid "&Up"
