@@ -31,7 +31,7 @@ public:
 
     enum Column { Column_Command, Column_Shortcut, Column_Count };
 
-    /**
+    /*
      * Resets the model
      *
      * If you are using last Used actions functionality, make sure
@@ -53,7 +53,7 @@ public:
         return Column_Count;
     }
 
-    /**
+    /*!
      * reimplemented function to update score that is calculated by KFuzzyMatcher
      */
     bool setData(const QModelIndex &index, const QVariant &value, int role) override
@@ -69,18 +69,18 @@ public:
 
     QVariant data(const QModelIndex &index, int role) const override;
 
-    /**
+    /*!
      * action with name @p name was triggered, store it in m_lastTriggered
      */
     void actionTriggered(const QString &name);
 
-    /**
+    /*!
      * last used actions
      * max = 6;
      */
     QStringList lastUsedActions() const;
 
-    /**
+    /*!
      * incoming lastUsedActions
      *
      * should be set before calling refresh()
@@ -90,7 +90,7 @@ public:
 private:
     QList<Item> m_rows;
 
-    /**
+    /*!
      * Last triggered actions by user
      *
      * Ordered descending i.e., least recently invoked

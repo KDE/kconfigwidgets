@@ -84,7 +84,7 @@ public:
     };
     std::vector<WidgetManager> m_managerForPage;
 
-    /**
+    /*
      * The list of existing dialogs.
      */
     struct OpenDialogInfo {

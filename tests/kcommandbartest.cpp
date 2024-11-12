@@ -16,7 +16,7 @@
 
 class Window;
 
-/**
+/*!
  * Fwd decl
  * A helper function to generate a QAction
  */
@@ -93,7 +93,7 @@ public:
     {
         QList<KCommandBar::ActionGroup> acts(4);
 
-        /**
+        /*!
          * Menus with actions
          */
         acts[0].actions = {getAboutToShowMenu(), getMenu()};

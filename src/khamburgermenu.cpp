@@ -379,7 +379,7 @@ void KHamburgerMenuPrivate::resetMenu()
 void KHamburgerMenuPrivate::updateVisibility()
 {
     Q_Q(KHamburgerMenu);
-    /** The visibility of KHamburgerMenu should be opposite to the visibility of m_menuBar.
+    /* The visibility of KHamburgerMenu should be opposite to the visibility of m_menuBar.
      * Exception: We only consider a visible m_menuBar as actually visible if it is not a native
      * menu bar because native menu bars can come in many shapes and sizes which don't necessarily
      * have the same usability benefits as a traditional in-window menu bar.

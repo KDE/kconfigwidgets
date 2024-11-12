@@ -18,10 +18,11 @@ class KHamburgerMenuPrivate;
 
 class QMenuBar;
 
-/**
- * @class KHamburgerMenu khamburgermenu.h KHamburgerMenu
+/*!
+ * \class KHamburgerMenu
+ * \inmodule KConfigWidgets
  *
- * @short A menu that substitutes a menu bar when necessary
+ * \brief A menu that substitutes a menu bar when necessary.
  *
  * Allowing users to toggle the visibility of the menu bar and/or toolbars,
  * while pretty/"simple by default", can lead to various grave usability issues.
@@ -52,7 +53,7 @@ class QMenuBar;
  * The added menu will only be visible if the QMenuBar is hidden and the
  * hamburgerMenu->createdWidgets() are all invisible to the user.
  *
- * **Populating the KHamburgerMenu**
+ * \section1 Populating the KHamburgerMenu
  *
  * This is easy:
  *
@@ -73,7 +74,7 @@ class QMenuBar;
  * // You might want to disconnect the signal after initial creation if the contents never change.
  * \endcode
  *
- * **Deciding what to put on the hamburger menu**
+ * \section1 Deciding what to put on the hamburger menu
  *
  * 1. Be sure to add all of the most important actions. Actions which are already
  *    visible on QToolBars, etc. will not show up in the hamburgerMenu. To manage
@@ -81,25 +82,29 @@ class QMenuBar;
  *    hideActionsOf(QWidget *) and showActionsOf(QWidget *).
  *    When a KHamburgerMenu is added to a widget, hideActionsOf(that widget)
  *    will automatically be called.
+ *
  * 2. Do not worry about adding all actions the application has to offer.
  *    The KHamburgerMenu will automatically have a section advertising excluded
  *    actions which can be found in the QMenuBar. There will also be the
  *    showMenuBarAction if you set it with setShowMenuBarAction().
+ *
  * 3. Do not worry about the help menu. KHamburgerMenu will automatically contain
  *    a help menu as the second to last item (if you set a QMenuBar which is
  *    expected to have the help menu as the last action).
  *
- * **Open menu by shortcut**
+ * \section1 Open menu by shortcut
  *
  * For visually impaired users it is important to have a consistent way to open a general-purpose
  * menu. Triggering the keyboard shortcut bound to KHamburgerMenu will always open a menu.
- * - If setMenuBar() was called and that menu bar is visible, the shortcut will open the first menu
+ * \list
+ * \li If setMenuBar() was called and that menu bar is visible, the shortcut will open the first menu
  *   of that menu bar.
- * - Otherwise, if there is a visible KHamburgerMenu button in the user interface, that menu will
+ * \li Otherwise, if there is a visible KHamburgerMenu button in the user interface, that menu will
  *   open.
- * - Otherwise, KHamburgerMenu's menu will open at the mouse cursor position.
+ * \li Otherwise, KHamburgerMenu's menu will open at the mouse cursor position.
+ * \endlist
  *
- * @since 5.81
+ * \since 5.81
  */
 class KCONFIGWIDGETS_EXPORT KHamburgerMenu : public QWidgetAction
 {
@@ -107,92 +112,97 @@ class KCONFIGWIDGETS_EXPORT KHamburgerMenu : public QWidgetAction
     Q_DECLARE_PRIVATE(KHamburgerMenu)
 
 public:
+    /*!
+     *
+     */
     explicit KHamburgerMenu(QObject *parent);
 
     ~KHamburgerMenu() override;
 
-    /**
-     * Associates this KHamburgerMenu with @p menuBar. The KHamburgerMenu will from now
-     * on only be visible when @p menuBar is hidden.
+    /*!
+     * Associates this KHamburgerMenu with \a menuBar. The KHamburgerMenu will from now
+     * on only be visible when \a menuBar is hidden.
      * (Menu bars with QMenuBar::isNativeMenuBar() == true are considered hidden.)
      *
-     * Furthermore the KHamburgerMenu will have the help menu from the @p menuBar added
+     * Furthermore the KHamburgerMenu will have the help menu from the \a menuBar added
      * at the end. There will also be a special sub-menu advertising actions which are
      * only available in the menu bar unless advertiseMenuBar(false) was called.
      *
-     * @param menuBar   The QMenuBar the KHamburgerMenu should be associated with.
+     * \a menuBar The QMenuBar the KHamburgerMenu should be associated with.
      *                  This can be set to nullptr.
      */
     void setMenuBar(QMenuBar *menuBar);
 
-    /** @see setMenuBar() */
+    /*! \sa setMenuBar() */
     QMenuBar *menuBar() const;
 
-    /**
+    /*!
      * By default the KHamburgerMenu contains a special sub-menu that advertises actions
      * of the menu bar which would otherwise not be visible or discoverable for the user.
      * This method removes or re-adds that sub-menu.
      *
-     * @param advertise sets whether the special sub-menu that advertises menu bar only
+     * \a advertise sets whether the special sub-menu that advertises menu bar only
      *                  actions should exist.
      */
     void setMenuBarAdvertised(bool advertise);
 
-    /** @see setMenuBarAdvertised() */
+    /*! \a setMenuBarAdvertised() */
     bool menuBarAdvertised() const;
 
-    /**
-     * Adds the @p showMenuBarAction as the first item of the sub-menu which advertises actions
+    /*!
+     * Adds the \a showMenuBarAction as the first item of the sub-menu which advertises actions
      * from the menu bar.
-     * @see setMenuBarAdvertised()
+     * \a setMenuBarAdvertised()
      */
     void setShowMenuBarAction(QAction *showMenuBarAction);
 
-    /**
-     * Adds this KHamburgerMenu to @p menu.
+    /*!
+     * Adds this KHamburgerMenu to \a menu.
      * It will only be visible in the menu if both the menu bar and all of this
      * QWidgetAction's createdWidgets() are invisible.
      * If it is visible in the menu, then opening the menu emits the aboutToShowMenu
      * signal.
      *
-     * @param menu The menu this KHamburgerMenu is supposed to appear in.
+     * \a menu The menu this KHamburgerMenu is supposed to appear in.
      */
     void addToMenu(QMenu *menu);
 
-    /**
-     * Inserts this KHamburgerMenu to @p menu's list of actions, before the action @p before.
+    /*!
+     * Inserts this KHamburgerMenu to \a menu's list of actions, before the action \a before.
      * It will only be visible in the menu if both the menu bar and all of this
      * QWidgetAction's createdWidgets() are invisible.
      * If it is visible in the menu, then opening the menu emits the aboutToShowMenu
      * signal.
      *
-     * @param before The action before which KHamburgerMenu should be inserted.
-     * @param menu The menu this KHamburgerMenu is supposed to appear in.
+     * \a before The action before which KHamburgerMenu should be inserted.
      *
-     * @see QWidget::insertAction(), QMenu::insertMenu()
+     * \a menu The menu this KHamburgerMenu is supposed to appear in.
      *
-     * @since 5.99
+     * \a QWidget::insertAction(), QMenu::insertMenu()
+     *
+     * \since 5.99
      */
     void insertIntoMenuBefore(QMenu *menu, QAction *before);
 
-    /**
-     * Adds @p widget to a list of widgets that should be monitored for their actions().
+    /*!
+     * Adds \a widget to a list of widgets that should be monitored for their actions().
      * If the widget is a QMenu, its actions will be treated as known to the user.
      * If the widget isn't a QMenu, its actions will only be treated as known to the user
      * when the widget is actually visible.
-     * @param widget A widget that contains actions which should not show up in the
+     * \a widget A widget that contains actions which should not show up in the
      *               KHamburgerMenu redundantly.
      */
     void hideActionsOf(QWidget *widget);
 
-    /**
+    /*!
      * Reverses a hideActionsOf(widget) method call.
-     * @see hideActionsOf()
+     *
+     * \a hideActionsOf()
      */
     void showActionsOf(QWidget *widget);
 
 Q_SIGNALS:
-    /**
+    /*!
      * This signal is emitted when a hamburger menu button is about to be pressed down.
      * It is also emitted when a QMenu that contains a visible KHamburgerMenu emits
      * QMenu::aboutToShow.
@@ -200,8 +210,8 @@ Q_SIGNALS:
     void aboutToShowMenu();
 
 protected:
-    /**
-     * @see QWidgetAction::createWidget
+    /*!
+     * \a QWidgetAction::createWidget
      */
     QWidget *createWidget(QWidget *parent) override;
 

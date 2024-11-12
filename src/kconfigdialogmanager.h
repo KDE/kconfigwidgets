@@ -22,10 +22,11 @@ class KConfigSkeleton;
 class KConfigSkeletonItem;
 class QWidget;
 
-/**
- * @class KConfigDialogManager kconfigdialogmanager.h KConfigDialogManager
+/*!
+ * \class KConfigDialogManager
+ * \inmodule KConfigWidgets
  *
- * @short Provides a means of automatically retrieving,
+ * \brief Provides a means of automatically retrieving,
  * saving and resetting KConfigSkeleton based settings in a dialog.
  *
  * The KConfigDialogManager class provides a means of automatically
@@ -42,8 +43,7 @@ class QWidget;
  * The widget classes of Qt and KDE Frameworks are supported out of the box,
  * for other widgets see below:
  *
- * @par Using Custom Widgets
- * @parblock
+ * \section1 Using Custom Widgets
  * Custom widget classes are supported if they have a Q_PROPERTY defined for the
  * property representing the value edited by the widget. By default the property
  * is used for which "USER true" is set. For using another property, see below.
@@ -60,10 +60,8 @@ class QWidget;
  * read & write methods and the notify signal.
  * This class then can be used directly with KConfigDialogManager and does not need
  * further setup.
- * @endparblock
  *
- * @par Using Other Properties than The USER Property
- * @parblock
+ * \section1 Using Other Properties than The USER Property
  * To use a widget's property that is not the USER property, the property to use
  * can be selected by setting onto the widget instance a property with the key
  * "kcfg_property" and as the value the name of the property:
@@ -73,10 +71,8 @@ class QWidget;
  * \endcode
  * This selection of the property to use is just valid for this widget instance.
  * When using a UI file, the "kcfg_property" property can also be set using Qt Designer.
- * @endparblock
  *
- * @par Configuring Classes to use Other Properties Globally
- * @parblock
+ * \section1 Configuring Classes to use Other Properties Globally
  * Alternatively a non-USER property can be defined for a widget class globally
  * by registering it for the class in the KConfigDialogManager::propertyMap().
  * This global registration has lower priority than any "kcfg_property" property
@@ -98,10 +94,8 @@ class QWidget;
  * \code
  * KConfigDialogManager::propertyMap()->insert("ColorEditWidget", QByteArray("redColorPart"));
  * \endcode
- * @endparblock
  *
- * @par Using Different Signals than The NOTIFY Signal
- * @parblock
+ * \section1 Using Different Signals than The NOTIFY Signal
  * If some non-default signal should be used, e.g. because the property to use does not
  * have a NOTIFY setting, for a given widget instance the signal to use can be set
  * by a property with the key "kcfg_propertyNotify" and as the value the signal signature.
@@ -123,24 +117,20 @@ class QWidget;
  * OtherColorEditWidget *myWidget = new OtherColorEditWidget;
  * myWidget->setProperty("kcfg_propertyNotify", QByteArray(SIGNAL(colorSelected(QColor))));
  * \endcode
- * @endparblock
- *
- * @author Benjamin C Meyer <ben+kdelibs at meyerhome dot net>
- * @author Waldo Bastian <bastian@kde.org>
  */
 class KCONFIGWIDGETS_EXPORT KConfigDialogManager : public QObject
 {
     Q_OBJECT
 
 Q_SIGNALS:
-    /**
+    /*!
      * One or more of the settings have been saved (such as when the user
      * clicks on the Apply button).  This is only emitted by updateSettings()
      * whenever one or more setting were changed and consequently saved.
      */
     void settingsChanged(); // clazy:exclude=overloaded-signal
 
-    /**
+    /*!
      * If retrieveSettings() was told to track changes then if
      * any known setting was changed this signal will be emitted.  Note
      * that a settings can be modified several times and might go back to the
@@ -150,44 +140,44 @@ Q_SIGNALS:
     void widgetModified();
 
 public:
-    /**
+    /*!
      * Constructor.
-     * @param parent  Dialog widget to manage
-     * @param conf Object that contains settings
+     *
+     * \a parent  Dialog widget to manage
+     *
+     * \a conf Object that contains settings
      */
     KConfigDialogManager(QWidget *parent, KCoreConfigSkeleton *conf);
 
-    /**
-     * Destructor.
-     */
     ~KConfigDialogManager() override;
 
-    /**
+    /*!
      * Add additional widgets to manage
-     * @param widget Additional widget to manage, including all its children
+     *
+     * \a widget Additional widget to manage, including all its children
      */
     void addWidget(QWidget *widget);
 
-    /**
+    /*!
      * Returns whether the current state of the known widgets are
      * different from the state in the config object.
      */
     bool hasChanged() const;
 
-    /**
+    /*!
      * Returns whether the current state of the known widgets are
      * the same as the default state in the config object.
      */
     bool isDefault() const;
 
-    /**
+    /*!
      * Retrieve the map between widgets class names and the
      * USER properties used for the configuration values.
      */
     static QHash<QString, QByteArray> *propertyMap();
 
 public Q_SLOTS:
-    /**
+    /*!
      * Traverse the specified widgets, saving the settings of all known
      * widgets in the settings object.
      *
@@ -195,16 +185,17 @@ public Q_SLOTS:
      */
     void updateSettings();
 
-    /**
+    /*!
      * Traverse the specified widgets, sets the state of all known
      * widgets according to the state in the settings object.
      *
      * Example use: Initialisation of dialog.
+     *
      * Example use: User clicks Reset button in a configure dialog.
      */
     void updateWidgets();
 
-    /**
+    /*!
      * Traverse the specified widgets, sets the state of all known
      * widgets according to the default state in the settings object.
      *
@@ -212,87 +203,86 @@ public Q_SLOTS:
      */
     void updateWidgetsDefault();
 
-    /**
+    /*!
      * Show or hide an indicator when settings have changed from their default value.
      * Update all widgets to show or hide the indicator accordingly.
      *
-     * @since 5.73
+     * \since 5.73
      */
     void setDefaultsIndicatorsVisible(bool enabled);
 
 protected:
-    /**
-     * @param trackChanges - If any changes by the widgets should be tracked
-     * set true.  This causes the emitting the modified() signal when
+    /*!
+     * \a trackChanges If any changes by the widgets should be tracked
+     * set true. This causes the emitting the modified() signal when
      * something changes.
-     * TODO: @return bool - True if any setting was changed from the default.
      */
     void init(bool trackChanges);
 
-    /**
+    /*!
      * Recursive function that finds all known children.
+     *
      * Goes through the children of widget and if any are known and not being
      * ignored, stores them in currentGroup.  Also checks if the widget
      * should be disabled because it is set immutable.
-     * @param widget - Parent of the children to look at.
-     * @param trackChanges - If true then tracks any changes to the children of
+     *
+     * \a widget Parent of the children to look at.
+     *
+     * \a trackChanges If \c true then tracks any changes to the children of
      * widget that are known.
-     * @return bool - If a widget was set to something other than its default.
+     * Returns bool: if a widget was set to something other than its default.
      */
     bool parseChildren(const QWidget *widget, bool trackChanges);
 
-    /**
+    /*!
      * Finds the USER property name using Qt's MetaProperty system, and caches
      * it in the property map (the cache could be retrieved by propertyMap() ).
      */
     QByteArray getUserProperty(const QWidget *widget) const;
 
-    /**
+    /*!
      * Find the property to use for a widget by querying the "kcfg_property"
      * property of the widget. Like a widget can use a property other than the
      * USER property.
-     * @since 4.3
+     * \since 4.3
      */
     QByteArray getCustomProperty(const QWidget *widget) const;
 
-    /**
+    /*!
      * Finds the changed signal of the USER property using Qt's MetaProperty system.
-     * @since 5.32
+     * \since 5.32
      */
     QByteArray getUserPropertyChangedSignal(const QWidget *widget) const;
 
-    /**
+    /*!
      * Find the changed signal of the property to use for a widget by querying
      * the "kcfg_propertyNotify" property of the widget. Like a widget can use a
      * property change signal other than the one for USER property, if there even is one.
-     * @since 5.32
+     * \since 5.32
      */
     QByteArray getCustomPropertyChangedSignal(const QWidget *widget) const;
 
-    /**
+    /*!
      * Set a property
      */
     void setProperty(QWidget *w, const QVariant &v);
 
-    /**
+    /*!
      * Retrieve a property
      */
     QVariant property(QWidget *w) const;
 
-    /**
+    /*!
      * Setup secondary widget properties
      */
     void setupWidget(QWidget *widget, KConfigSkeletonItem *item);
 
-    /**
+    /*!
      * Initializes the property maps
      */
     static void initMaps();
 
 private:
-    /**
-     * KConfigDialogManager KConfigDialogManagerPrivate class.
-     */
     std::unique_ptr<KConfigDialogManagerPrivate> const d;
     friend class KConfigDialogManagerPrivate;
 

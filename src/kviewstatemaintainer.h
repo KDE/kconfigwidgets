@@ -14,20 +14,21 @@
 
 #include <KConfigGroup>
 
-/**
- * @class KViewStateMaintainer kviewstatemaintainer.h KViewStateMaintainer
+/*!
+ * \class KViewStateMaintainer
+ * \inmodule KConfigWidgets
  *
- * @brief Encapsulates the maintenance of state between resets of QAbstractItemModel
+ * \brief Encapsulates the maintenance of state between resets of QAbstractItemModel.
  *
- * @code
+ * \code
  *   m_collectionViewStateMaintainer = new KViewStateMaintainer<Akonadi::ETMViewStateSaver>(KSharedConfig::openConfig()->group("collectionView"));
  *   m_collectionViewStateMaintainer->setView(m_collectionView);
  *
  *   m_collectionCheckStateMaintainer = new KViewStateMaintainer<Akonadi::ETMViewStateSaver>(KSharedConfig::openConfig()->group("collectionCheckState"));
  *   m_collectionCheckStateMaintainer->setSelectionModel(m_checkableProxy->selectionModel());
- * @endcode
+ * \endcode
  *
- * @see KConfigViewStateSaver
+ * \sa KConfigViewStateSaver
  */
 template<typename StateSaver>
 class KViewStateMaintainer : public KViewStateMaintainerBase
@@ -35,6 +36,9 @@ class KViewStateMaintainer : public KViewStateMaintainerBase
     typedef StateSaver StateRestorer;
 
 public:
+    /*!
+     *
+     */
     KViewStateMaintainer(const KConfigGroup &configGroup, QObject *parent = nullptr)
         : KViewStateMaintainerBase(parent)
         , m_configGroup(configGroup)

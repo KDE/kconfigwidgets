@@ -126,37 +126,4 @@ if(BUILD_DESIGNERPLUGIN)
     add_subdirectory(designer)
 endif()
 
-if(BUILD_QCH)
-    ecm_add_qch(
-        KF6ConfigWidgets_QCH
-        NAME KConfigWidgets
-        BASE_NAME KF6ConfigWidgets
-        VERSION ${KF_VERSION}
-        ORG_DOMAIN org.kde
-        SOURCES # using only public headers, to cover only public API
-            ${KConfigWidgets_HEADERS}
-        MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
-        IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
-        LINK_QCHS
-            KF6Codecs_QCH
-            KF6WidgetsAddons_QCH
-            KF6Config_QCH
-            KF6Auth_QCH
-        INCLUDE_DIRS
-            ${CMAKE_CURRENT_BINARY_DIR}
-        BLANK_MACROS
-            KCONFIGWIDGETS_EXPORT
-            KCONFIGWIDGETS_DEPRECATED
-            KCONFIGWIDGETS_DEPRECATED_EXPORT
-            "KCONFIGWIDGETS_DEPRECATED_VERSION(x, y, t)"
-            "KCONFIGWIDGETS_DEPRECATED_VERSION_BELATED(x, y, xt, yt, t)"
-            "KCONFIGWIDGETS_ENUMERATOR_DEPRECATED_VERSION(x, y, t)"
-            "KCONFIGWIDGETS_ENUMERATOR_DEPRECATED_VERSION_BELATED(x, y, xt, yt, t)"
-        PREDEFINED_MACROS
-            "KCONFIGWIDGETS_ENABLE_DEPRECATED_SINCE(x, y)=1"
-            "KCONFIGWIDGETS_BUILD_DEPRECATED_SINCE(x, y)=1"
-        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        COMPONENT Devel
-    )
-endif()
+ecm_generate_qdoc(KF6ConfigWidgets kconfigwidgets.qdocconf)
