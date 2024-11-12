@@ -13,7 +13,7 @@
 #include <KSelectAction>
 #include <memory>
 
-/**
+/*!
  *  @class KCodecAction kcodecaction.h KCodecAction
  *
  *  @short Action for selecting one of several text codecs..
@@ -40,7 +40,7 @@ public:
     bool setCurrentCodec(const QString &codecName);
 
 Q_SIGNALS:
-    /**
+    /*!
      * Emitted when a codec was selected
      *
      * @param name the name of the selected encoding.
@@ -51,7 +51,7 @@ Q_SIGNALS:
      */
     void codecNameTriggered(const QByteArray &name);
 
-    /**
+    /*!
      * Emitted when the 'Default' codec action is triggered.
      */
     void defaultItemTriggered();

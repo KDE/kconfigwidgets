@@ -25,7 +25,7 @@ private Q_SLOTS:
     void initTestCase();
     void init();
 
-    /**
+    /*!
      * Tests whether the hamburger button actually hides when it is redundant.
      * Also makes sure that the "Menu" action, that can be added to context menus in situations in which no other menus are available,
      * only appears in such situations.
@@ -33,14 +33,14 @@ private Q_SLOTS:
      */
     void visibilityTest();
 
-    /**
+    /*!
      * Tests whether the populating of the hamburger menu happens correctly based on the provided information.
      * A special focus is set on making sure that the aboutToShowMenu() signal is emitted correctly to avoid premature population of menus.
      * We don't want those menus to be populated until the aboutToShowMenu() has been emitted, so the populating code is not triggered until needed.
      */
     void menuContentsTest();
 
-    /**
+    /*!
      * For accessibility we want the shortcut of KHamburgerMenu to always open a menu.
      */
     void openMenuByShortcutTest();

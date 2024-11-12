@@ -11,7 +11,7 @@
 #include <QFrame>
 #include <memory>
 
-/**
+/*!
  * @class KCommandBar kcommandbar.h KCommandBar
  *
  * @short A hud style menu which allows listing and executing actions
@@ -49,7 +49,7 @@ class KCONFIGWIDGETS_EXPORT KCommandBar : public QFrame
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Represents a list of action that belong to the same group.
      * For example:
      * - All actions under the menu "File" or "Tool"
@@ -59,7 +59,7 @@ public:
         QList<QAction *> actions;
     };
 
-    /**
+    /*!
      * constructor
      *
      * @p parent is used to determine position and size of the
@@ -68,7 +68,7 @@ public:
     explicit KCommandBar(QWidget *parent);
     ~KCommandBar() override;
 
-    /**
+    /*!
      * @p actions is a list of {GroupName, QAction}. Group name can be the name
      * of the component/menu where a QAction lives, for example in a menu "File -> Open File",
      * "File" should be the GroupName.

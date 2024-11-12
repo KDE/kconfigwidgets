@@ -18,7 +18,7 @@ class KConfig;
 class KCoreConfigSkeleton;
 class KConfigDialogManager;
 
-/**
+/*!
  * @class KConfigDialog kconfigdialog.h KConfigDialog
  *
  * \short Standard %KDE configuration dialog class
@@ -68,12 +68,12 @@ class KCONFIGWIDGETS_EXPORT KConfigDialog : public KPageDialog
     Q_OBJECT
 
 Q_SIGNALS:
-    /**
+    /*!
      * A widget in the dialog was modified.
      */
     void widgetModified();
 
-    /**
+    /*!
      * One or more of the settings have been permanently changed such as if
      * the user clicked on the Apply or Ok button.
      * @param dialogName the name of the dialog.
@@ -81,7 +81,7 @@ Q_SIGNALS:
     void settingsChanged(const QString &dialogName);
 
 public:
-    /**
+    /*!
      * @param parent - The parent of this object.  Even though the class
      * deletes itself the parent should be set so the dialog can be centered
      * with the application on the screen.
@@ -95,14 +95,14 @@ public:
      */
     KConfigDialog(QWidget *parent, const QString &name, KCoreConfigSkeleton *config);
 
-    /**
+    /*!
      * Deconstructor, removes name from the list of open dialogs.
      * Deletes private class.
      * @see exists()
      */
     ~KConfigDialog() override;
 
-    /**
+    /*!
      * Adds page to the dialog and to KConfigDialogManager.  When an
      * application is done adding pages show() should be called to
      * display the dialog.
@@ -121,7 +121,7 @@ public:
     KPageWidgetItem *
     addPage(QWidget *page, const QString &itemName, const QString &pixmapName = QString(), const QString &header = QString(), bool manage = true);
 
-    /**
+    /*!
      * Adds page to the dialog that is managed by a custom KConfigDialogManager.
      * This is useful for dialogs that contain settings spread over more than
      * one configuration file and thus have/need more than one KConfigSkeleton.
@@ -142,7 +142,7 @@ public:
     KPageWidgetItem *
     addPage(QWidget *page, KCoreConfigSkeleton *config, const QString &itemName, const QString &pixmapName = QString(), const QString &header = QString());
 
-    /**
+    /*!
      * See if a dialog with the name 'name' already exists.
      * @see showDialog()
      * @param name - Dialog name to look for.
@@ -150,7 +150,7 @@ public:
      */
     static KConfigDialog *exists(const QString &name);
 
-    /**
+    /*!
      * Attempts to show the dialog with the name 'name'.
      * @see exists()
      * @param name - The name of the dialog to show.
@@ -159,7 +159,7 @@ public:
     static bool showDialog(const QString &name);
 
 protected Q_SLOTS:
-    /**
+    /*!
      * Update the settings from the dialog.
      * Virtual function for custom additions.
      *
@@ -167,7 +167,7 @@ protected Q_SLOTS:
      */
     virtual void updateSettings();
 
-    /**
+    /*!
      * Update the dialog based on the settings.
      * Virtual function for custom additions.
      *
@@ -176,7 +176,7 @@ protected Q_SLOTS:
      */
     virtual void updateWidgets();
 
-    /**
+    /*!
      * Update the dialog based on the default settings.
      * Virtual function for custom additions.
      *
@@ -184,7 +184,7 @@ protected Q_SLOTS:
      */
     virtual void updateWidgetsDefault();
 
-    /**
+    /*!
      * Updates the Apply and Default buttons.
      * Connect to this slot if you implement your own hasChanged()
      * or isDefault() methods for widgets not managed by KConfig.
@@ -192,14 +192,14 @@ protected Q_SLOTS:
      */
     void updateButtons();
 
-    /**
+    /*!
      * Some setting was changed. Emit the signal with the dialogs name.
      * Connect to this slot if there are widgets not managed by KConfig.
      * @since 4.3
      */
     void settingsChangedSlot();
 
-    /**
+    /*!
      * Sets the help path and topic.
      *
      * The HTML file will be found using the X-DocPath entry in the application's desktop file.
@@ -213,33 +213,33 @@ protected Q_SLOTS:
      */
     void setHelp(const QString &anchor, const QString &appname = QString());
 
-    /**
+    /*!
      * Displays help for this config dialog.
      * @since 5.0
      */
     virtual void showHelp();
 
 protected:
-    /**
+    /*!
      * Returns whether the current state of the dialog is
      * different from the current configuration.
      * Virtual function for custom additions.
      */
     virtual bool hasChanged();
 
-    /**
+    /*!
      * Returns whether the current state of the dialog is
      * the same as the default configuration.
      */
     virtual bool isDefault();
 
-    /**
+    /*!
      * @internal
      */
     void showEvent(QShowEvent *e) override;
 
 private Q_SLOTS:
-    /**
+    /*!
      * Slot which cleans up the KConfigDialogManager of the page.
      * */
     KCONFIGWIDGETS_NO_EXPORT void onPageRemoved(KPageWidgetItem *item);

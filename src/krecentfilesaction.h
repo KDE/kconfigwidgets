@@ -25,7 +25,7 @@
 class KConfigGroup;
 class KRecentFilesActionPrivate;
 
-/**
+/*!
  *  @class KRecentFilesAction krecentfilesaction.h KRecentFilesAction
  *
  *  @short Recent files action
@@ -44,14 +44,14 @@ class KCONFIGWIDGETS_EXPORT KRecentFilesAction : public KSelectAction
     Q_DECLARE_PRIVATE(KRecentFilesAction)
 
 public:
-    /**
+    /*!
      * Constructs an action with the specified parent.
      *
      * @param parent The parent of this action.
      */
     explicit KRecentFilesAction(QObject *parent);
 
-    /**
+    /*!
      * Constructs an action with text; a shortcut may be specified by
      * the ampersand character (e.g. \"&amp;Option\" creates a shortcut with key \e O )
      *
@@ -65,7 +65,7 @@ public:
      */
     KRecentFilesAction(const QString &text, QObject *parent);
 
-    /**
+    /*!
      * Constructs an action with text and an icon; a shortcut may be specified by
      * the ampersand character (e.g. \"&amp;Option\" creates a shortcut with key \e O )
      *
@@ -78,12 +78,12 @@ public:
      */
     KRecentFilesAction(const QIcon &icon, const QString &text, QObject *parent);
 
-    /**
+    /*!
      *  Destructor.
      */
     ~KRecentFilesAction() override;
 
-    /**
+    /*!
      * Adds \a action to the list of URLs, with \a url and title \a name.
      *
      * Do not use addAction(QAction*), as no url will be associated, and
@@ -91,17 +91,17 @@ public:
      */
     void addAction(QAction *action, const QUrl &url, const QString &name, const QMimeType &mimeType = QMimeType());
 
-    /**
+    /*!
      * Reimplemented for internal reasons.
      */
     QAction *removeAction(QAction *action) override;
 
-    /**
+    /*!
      *  Returns the maximum of items in the recent files list.
      */
     int maxItems() const;
 
-    /**
+    /*!
      *  Sets the maximum of items in the recent files list.
      *  The default for this value is 10 set in the constructor.
      *
@@ -113,7 +113,7 @@ public:
      */
     void setMaxItems(int maxItems);
 
-    /**
+    /*!
      *  Loads the recent files entries from a given KConfigGroup object.
      *  You can provide the name of the group used to load the entries.
      *  If the groupname is empty, entries are loaded from a group called 'RecentFiles'.
@@ -122,7 +122,7 @@ public:
      */
     void loadEntries(const KConfigGroup &config);
 
-    /**
+    /*!
      *  Saves the current recent files entries to a given KConfigGroup object.
      *  You can provide the name of the group used to load the entries.
      *  If the groupname is empty, entries are saved to a group called 'RecentFiles'.
@@ -130,7 +130,7 @@ public:
      */
     void saveEntries(const KConfigGroup &config);
 
-    /**
+    /*!
      * Add URL to the recent files list. This will enable this action.
      *
      *  @param url The URL of the file
@@ -141,34 +141,34 @@ public:
      */
     void addUrl(const QUrl &url, const QString &name = QString());
 
-    /**
+    /*!
      *  Remove an URL from the recent files list.
      *
      *  @param url The URL of the file
      */
     void removeUrl(const QUrl &url);
 
-    /**
+    /*!
      *  Retrieve a list of all URLs in the recent files list.
      */
     QList<QUrl> urls() const;
 
 public Q_SLOTS:
-    /**
+    /*!
      * Clears the recent files list.
      * Note that there is also an action shown to the user for clearing the list.
      */
     virtual void clear();
 
 Q_SIGNALS:
-    /**
+    /*!
      *  This signal gets emitted when the user selects an URL.
      *
      *  @param url The URL that the user selected.
      */
     void urlSelected(const QUrl &url);
 
-    /**
+    /*!
      *  This signal gets emitted when the user clear list.
      *  So when user store url in specific config file it can saveEntry.
      *  @since 4.3

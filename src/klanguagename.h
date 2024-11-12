@@ -15,7 +15,7 @@
 
 class QString;
 
-/**
+/*!
  * @class KLanguageName klanguagename.h KLanguageName
  *
  * KLanguageName is a helper namespace that returns the name of a given language code.
@@ -25,7 +25,7 @@ class QString;
  */
 namespace KLanguageName
 {
-/**
+/*!
  * Returns the name of the given language code in the current locale.
  *
  * If it can't be found in the current locale it returns the name in English.
@@ -36,7 +36,7 @@ namespace KLanguageName
  */
 KCONFIGWIDGETS_EXPORT QString nameForCode(const QString &code);
 
-/**
+/*!
  * Returns the name of the given language code in the other given locale code.
  *
  * If it can't be found in the given locale it returns the name in English.
@@ -48,7 +48,7 @@ KCONFIGWIDGETS_EXPORT QString nameForCode(const QString &code);
  */
 KCONFIGWIDGETS_EXPORT QString nameForCodeInLocale(const QString &code, const QString &outputLocale);
 
-/**
+/*!
  * Returns the list of language codes found on the system.
  *
  * @since 5.74

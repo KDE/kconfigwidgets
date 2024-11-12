@@ -18,7 +18,7 @@ class KHamburgerMenuPrivate;
 
 class QMenuBar;
 
-/**
+/*!
  * @class KHamburgerMenu khamburgermenu.h KHamburgerMenu
  *
  * @short A menu that substitutes a menu bar when necessary
@@ -111,7 +111,7 @@ public:
 
     ~KHamburgerMenu() override;
 
-    /**
+    /*!
      * Associates this KHamburgerMenu with @p menuBar. The KHamburgerMenu will from now
      * on only be visible when @p menuBar is hidden.
      * (Menu bars with QMenuBar::isNativeMenuBar() == true are considered hidden.)
@@ -125,10 +125,10 @@ public:
      */
     void setMenuBar(QMenuBar *menuBar);
 
-    /** @see setMenuBar() */
+    /*! @see setMenuBar() */
     QMenuBar *menuBar() const;
 
-    /**
+    /*!
      * By default the KHamburgerMenu contains a special sub-menu that advertises actions
      * of the menu bar which would otherwise not be visible or discoverable for the user.
      * This method removes or re-adds that sub-menu.
@@ -138,17 +138,17 @@ public:
      */
     void setMenuBarAdvertised(bool advertise);
 
-    /** @see setMenuBarAdvertised() */
+    /*! @see setMenuBarAdvertised() */
     bool menuBarAdvertised() const;
 
-    /**
+    /*!
      * Adds the @p showMenuBarAction as the first item of the sub-menu which advertises actions
      * from the menu bar.
      * @see setMenuBarAdvertised()
      */
     void setShowMenuBarAction(QAction *showMenuBarAction);
 
-    /**
+    /*!
      * Adds this KHamburgerMenu to @p menu.
      * It will only be visible in the menu if both the menu bar and all of this
      * QWidgetAction's createdWidgets() are invisible.
@@ -159,7 +159,7 @@ public:
      */
     void addToMenu(QMenu *menu);
 
-    /**
+    /*!
      * Inserts this KHamburgerMenu to @p menu's list of actions, before the action @p before.
      * It will only be visible in the menu if both the menu bar and all of this
      * QWidgetAction's createdWidgets() are invisible.
@@ -175,7 +175,7 @@ public:
      */
     void insertIntoMenuBefore(QMenu *menu, QAction *before);
 
-    /**
+    /*!
      * Adds @p widget to a list of widgets that should be monitored for their actions().
      * If the widget is a QMenu, its actions will be treated as known to the user.
      * If the widget isn't a QMenu, its actions will only be treated as known to the user
@@ -185,14 +185,14 @@ public:
      */
     void hideActionsOf(QWidget *widget);
 
-    /**
+    /*!
      * Reverses a hideActionsOf(widget) method call.
      * @see hideActionsOf()
      */
     void showActionsOf(QWidget *widget);
 
 Q_SIGNALS:
-    /**
+    /*!
      * This signal is emitted when a hamburger menu button is about to be pressed down.
      * It is also emitted when a QMenu that contains a visible KHamburgerMenu emits
      * QMenu::aboutToShow.
@@ -200,7 +200,7 @@ Q_SIGNALS:
     void aboutToShowMenu();
 
 protected:
-    /**
+    /*!
      * @see QWidgetAction::createWidget
      */
     QWidget *createWidget(QWidget *parent) override;

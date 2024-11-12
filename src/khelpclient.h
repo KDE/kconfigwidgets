@@ -11,13 +11,13 @@
 #include "kconfigwidgets_export.h"
 #include <QString>
 
-/**
+/*!
  * @namespace KHelpClient
  * Provides utility functions for access to help manuals.
  */
 namespace KHelpClient
 {
-/**
+/*!
  * Invokes the KHelpCenter HTML help viewer from docbook sources.
  *
  * The HTML file will be found using the X-DocPath entry in the application's desktop file.

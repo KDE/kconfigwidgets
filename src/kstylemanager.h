@@ -12,13 +12,13 @@
 class QAction;
 class QObject;
 
-/**
+/*!
  * Manager for Qt widget styles
  */
 namespace KStyleManager
 {
 
-/**
+/*!
  * Enforces the style configured by the user with fallback to the Breeze style.
  *
  * (following the settings in the application configuration with fallback to kdeglobals)
@@ -32,7 +32,7 @@ namespace KStyleManager
  */
 KCONFIGWIDGETS_EXPORT void initStyle();
 
-/**
+/*!
  * Creates an action to configure the current used style.
  *
  * If the application is running using the KDE platform theme, this will

@@ -19,7 +19,7 @@
 class QAction;
 class KLanguageButtonPrivate;
 
-/**
+/*!
  * @class KLanguageButton klanguagebutton.h KLanguageButton
  *
  * KLanguageButton is a pushbutton which allows a language to be selected from
@@ -37,7 +37,7 @@ class KCONFIGWIDGETS_EXPORT KLanguageButton : public QWidget
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Constructs a button whose text is determined by the current language
      * in the popup list.
      *
@@ -45,7 +45,7 @@ public:
      */
     explicit KLanguageButton(QWidget *parent = nullptr);
 
-    /**
+    /*!
      * Constructs a button with static text.
      *
      * @param text the text of the button
@@ -53,26 +53,26 @@ public:
      */
     explicit KLanguageButton(const QString &text, QWidget *parent = nullptr);
 
-    /**
+    /*!
      * Deconstructor
      */
     ~KLanguageButton() override;
 
-    /**
+    /*!
      * Sets the locale to display language names. By default, QLocale::system().name() is used.
      *
      * @param locale locale to use
      */
     void setLocale(const QString &locale);
 
-    /**
+    /*!
      * Sets a static button text.
      *
      * @param text button text
      */
     void setText(const QString &text);
 
-    /**
+    /*!
      * Specifies whether language codes should be shown alongside language names
      * in the popup. Calling this method does not affect any previously
      * inserted language texts, so it should normally be called before
@@ -82,14 +82,14 @@ public:
      */
     void showLanguageCodes(bool show);
 
-    /**
+    /*!
      * Load all known languages into the popup list.
      * The current language in the list is set to the default language for the
      * current locale (as modified by setLocale()).
      */
     void loadAllLanguages();
 
-    /**
+    /*!
      * Inserts a language into the combo box.
      * Normally the display name of the language is obtained automatically, but
      * if either the language code does not exist, or there are special display
@@ -101,31 +101,31 @@ public:
      */
     void insertLanguage(const QString &languageCode, const QString &name = QString(), int index = -1);
 
-    /**
+    /*!
      * Inserts a separator item into the combo box. A negative index will append the item.
      *
      * @param index the insertion position
      */
     void insertSeparator(int index = -1);
 
-    /**
+    /*!
      * Returns the number of items in the combo box.
      */
     int count() const;
 
-    /**
+    /*!
      * Removes all combobox items.
      */
     void clear();
 
-    /**
+    /*!
      * Returns the language code of the combobox's current item.
      *
      * @return the current item's language code
      */
     QString current() const;
 
-    /**
+    /*!
      * Checks whether the specified language is in the popup list.
      *
      * @param languageCode the language's code
@@ -133,7 +133,7 @@ public:
      */
     bool contains(const QString &languageCode) const;
 
-    /**
+    /*!
      * Sets a given language to be the current item.
      *
      * @param languageCode the language's code
@@ -141,13 +141,13 @@ public:
     void setCurrentItem(const QString &languageCode);
 
 Q_SIGNALS:
-    /**
+    /*!
      * This signal is emitted when a new item is activated.
      *
      * @param languageCode code of the activated language
      */
     void activated(const QString &languageCode);
-    /**
+    /*!
      * This signal is emitted when a new item is highlighted.
      *
      * @param languageCode code of the highlighted language
