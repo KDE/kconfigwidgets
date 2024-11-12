@@ -13,50 +13,73 @@
 #include <KSelectAction>
 #include <memory>
 
-/**
- *  @class KCodecAction kcodecaction.h KCodecAction
+/*!
+ * \class KCodecAction
+ * \inmodule KConfigWidgets
  *
- *  @short Action for selecting one of several text codecs..
+ * \brief Action for selecting one of several text codecs.
  *
- *  This action shows up a submenu with a list of the available codecs on the system.
+ * This action shows up a submenu with a list of the available codecs on the system.
  */
 class KCONFIGWIDGETS_EXPORT KCodecAction : public KSelectAction
 {
     Q_OBJECT
 
+    /*!
+     * \property KCodecAction::codecName
+     */
     Q_PROPERTY(QString codecName READ currentCodecName WRITE setCurrentCodec)
 
 public:
+    /*!
+     *
+     */
     explicit KCodecAction(QObject *parent, bool showAutoOptions = false);
 
+    /*!
+     *
+     */
     KCodecAction(const QString &text, QObject *parent, bool showAutoOptions = false);
 
+    /*!
+     *
+     */
     KCodecAction(const QIcon &icon, const QString &text, QObject *parent, bool showAutoOptions = false);
 
     ~KCodecAction() override;
 
 public:
+    /*!
+     *
+     */
     QString currentCodecName() const;
+
+    /*!
+     *
+     */
     bool setCurrentCodec(const QString &codecName);
 
 Q_SIGNALS:
-    /**
+    /*!
      * Emitted when a codec was selected
      *
-     * @param name the name of the selected encoding.
+     * \a name the name of the selected encoding.
      *
      * Note that textTriggered(const QString &) is emitted too (as defined in KSelectAction).
      *
-     * @since 5.103
+     * \since 5.103
      */
     void codecNameTriggered(const QByteArray &name);
 
-    /**
+    /*!
      * Emitted when the 'Default' codec action is triggered.
      */
     void defaultItemTriggered();
 
 protected Q_SLOTS:
+    /*!
+     *
+     */
     void slotActionTriggered(QAction *) override;
 
 protected:

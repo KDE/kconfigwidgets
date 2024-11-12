@@ -162,7 +162,7 @@ public:
     {
     }
 
-    /**
+    /*
      * Paints a single item's text
      */
     static void
@@ -195,7 +195,7 @@ public:
 
         textLayout.endLayout();
 
-        /**
+        /*
          * get "Y" so that we can properly V-Center align the text in row
          */
         const int y = QStyle::alignedRect(Qt::LeftToRight, Qt::AlignVCenter, textLayout.boundingRect().size().toSize(), rect).y();
@@ -209,7 +209,7 @@ public:
     {
         painter->save();
 
-        /**
+        /*
          * Draw everything, (widget, icon etc) except the text
          */
         QStyleOptionViewItem option = opt;
@@ -253,7 +253,7 @@ public:
         fmt.setForeground(option.palette.link());
         fmt.setFontWeight(QFont::Bold);
 
-        /**
+        /*
          * Highlight matches from fuzzy matcher
          */
         const auto fmtRanges = KFuzzyMatcher::matchedRanges(m_filterString, str);
@@ -464,7 +464,7 @@ public:
     KCommandBarModel m_model;
     CommandBarFilterModel m_proxyModel;
 
-    /**
+    /*
      * selects first item in treeview
      */
     void reselectFirst()
@@ -473,7 +473,7 @@ public:
         m_treeView.setCurrentIndex(index);
     }
 
-    /**
+    /*
      * blocks signals before clearing line edit to ensure
      * we don't trigger filtering / sorting
      */
@@ -512,7 +512,7 @@ void KCommandBarPrivate::slotReturnPressed(KCommandBar *q)
 
             m_model.refresh({ag});
             reselectFirst();
-            /**
+            /*
              *  We want the "textChanged" signal here
              *  so that proxy model triggers filtering again
              *  so don't use d->clearLineEdit()
@@ -658,7 +658,7 @@ KCommandBar::KCommandBar(QWidget *parent)
     }
 }
 
-/**
+/*
  * Destructor defined here to make unique_ptr work
  */
 KCommandBar::~KCommandBar()

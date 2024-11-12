@@ -1,0 +1,23 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = KConfigWidgets
+description = Widgets for configuration dialogs
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += .
+
+imagedirs = ../docs/pics
+
+outputformats = HTML
+
+depends += \
+    kde \
+    qtcore \
+    qtgui \
+    qtwidgets \
+    kwidgetsaddons \
+    kcolorscheme \
+    kconfigcore \
+    kconfiggui

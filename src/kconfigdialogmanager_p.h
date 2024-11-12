@@ -33,12 +33,12 @@ public:
 public:
     KConfigDialogManager *const q;
 
-    /**
+    /*
      * KConfigSkeleton object used to store settings
      */
     KCoreConfigSkeleton *m_conf = nullptr;
 
-    /**
+    /*
      * Dialog being managed
      */
     QWidget *m_dialog = nullptr;

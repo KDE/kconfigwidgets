@@ -19,7 +19,7 @@ class QFont;
 class QMenuBar;
 class QWidget;
 
-/**
+/*!
  * @brief Makes sure there are no redundant event listeners.
  *
  * Functionally identical event listeners are needed throughout khamburgermenu.cpp.
@@ -33,7 +33,7 @@ public:
     explicit ListenerContainer(KHamburgerMenuPrivate *hamburgerMenuPrivate);
     ~ListenerContainer() override;
 
-    /**
+    /*!
      * @return an object of class @p Listener with the same parent as ListenerContainer.
      */
     template<class Listener>
@@ -54,7 +54,7 @@ protected:
     std::vector<std::unique_ptr<QObject>> m_listeners;
 };
 
-/**
+/*!
  * When an action is added or removed, calls KHamburgerMenuPrivate::notifyMenuResetNeeded().
  * \internal
  */
@@ -71,7 +71,7 @@ protected:
     friend class ListenerContainer;
 };
 
-/**
+/*!
  * When the button is pressed, emits KHamburgerMenu::aboutToShowMenu(), then calls
  * KHamburgerMenuPrivate::resetMenu() (which will only actually reset the menu if
  * a menu reset is needed).
@@ -82,7 +82,7 @@ class ButtonPressListener : public QObject
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Makes sure the button can show the expected menu in the expected way when pressed.
      * A button that hasn't been prepared yet will have no menu at all because the menu is only
      * created when it is needed.
@@ -93,13 +93,13 @@ protected:
     inline ButtonPressListener(QObject *parent)
         : QObject{parent} {};
 
-    /** Calls prepareButtonForPress() when an event that presses the button is detected. */
+    /*! Calls prepareButtonForPress() when an event that presses the button is detected. */
     bool eventFilter(QObject *watched, QEvent *event) override;
 
     friend class ListenerContainer;
 };
 
-/**
+/*!
  * When either
  * - the visibility of the widget changes or
  * - actions are added or removed from the widget while it isVisible()
@@ -114,7 +114,7 @@ protected:
     inline VisibleActionsChangeListener(QObject *parent)
         : QObject{parent} {};
 
-    /**
+    /*!
      * Listen for events that potentially lead to a change in user-visible actions.
      * Examples: Adding an action or hiding a toolbar.
      */
@@ -123,7 +123,7 @@ protected:
     friend class ListenerContainer;
 };
 
-/**
+/*!
  * When the visibility of the widget changes calls KHamburgerMenuPrivate::updateVisibility().
  * \internal
  */
@@ -147,7 +147,7 @@ protected:
  */
 bool isMenuBarVisible(const QMenuBar *menuBar);
 
-/**
+/*
  * Is the widget and all of its ancestors visible?
  */
 bool isWidgetActuallyVisible(const QWidget *widget);
@@ -161,13 +161,13 @@ bool isWidgetActuallyVisible(const QWidget *widget);
  */
 void prepareParentlessMenuForShowing(QMenu *menu, const QWidget *surrogateParent);
 
-/**
+/*
  * Use this instead of QWidget::isVisible() to work around a peculiarity of QToolBar/QToolButton.
  */
 void setToolButtonVisible(QWidget *toolButton, bool visible);
 
-/**
- * Does the @p list contain the @p widget?
+/*
+ * Does the list contain the widget?
  */
 bool listContainsWidget(const std::forward_list<QPointer<const QWidget>> &list, const QWidget *widget);
 

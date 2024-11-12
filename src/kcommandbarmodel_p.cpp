@@ -83,7 +83,7 @@ void KCommandBarModel::refresh(const QList<KCommandBar::ActionGroup> &actionGrou
 
     temp_rows.push_back({tr("Command Bar"), m_clearHistoryAction, -1});
 
-    /**
+    /*
      * For each action in last triggered actions,
      *  - Find it in the actions
      *  - Use the score variable to set its score

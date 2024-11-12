@@ -11,10 +11,11 @@
 #include <QFrame>
 #include <memory>
 
-/**
- * @class KCommandBar kcommandbar.h KCommandBar
+/*!
+ * \class KCommandBar
+ * \inmodule KConfigWidgets
  *
- * @short A hud style menu which allows listing and executing actions
+ * \brief A hud style menu which allows listing and executing actions.
  *
  * KCommandBar takes as input a list of QActions and then shows them
  * in a "list-like-view" with a filter line edit. This allows quickly
@@ -24,7 +25,7 @@
  * and throw it away once the user is done with it. You can store it as
  * a class member as well but there is little benefit in that. Example:
  *
- * @code
+ * \code
  * void slotOpenCommandBar()
  * {
  *      // `this` is important, you must pass a parent widget
@@ -39,43 +40,55 @@
  *     // Show
  *     bar->show();
  * }
- * @endcode
+ * \endcode
  *
- * @since 5.83
- * @author Waqar Ahmed <waqar.17a@gmail.com>
+ * \since 5.83
  */
 class KCONFIGWIDGETS_EXPORT KCommandBar : public QFrame
 {
     Q_OBJECT
 
 public:
-    /**
+    /*!
+     * \inmodule KConfigWidgets
      * Represents a list of action that belong to the same group.
      * For example:
-     * - All actions under the menu "File" or "Tool"
+     * \list
+     * \li All actions under the menu "File" or "Tool"
+     * \endlist
      */
     struct ActionGroup {
+        /*!
+         *
+         */
         QString name;
+
+        /*!
+         *
+         */
         QList<QAction *> actions;
     };
 
-    /**
-     * constructor
+    /*!
+     * Constructor
      *
-     * @p parent is used to determine position and size of the
-     * command bar. It *must* not be @c nullptr.
+     * \a parent is used to determine position and size of the
+     * command bar. It *must* not be \c nullptr.
      */
     explicit KCommandBar(QWidget *parent);
     ~KCommandBar() override;
 
-    /**
-     * @p actions is a list of {GroupName, QAction}. Group name can be the name
+    /*!
+     * \a actions is a list of {GroupName, QAction}. Group name can be the name
      * of the component/menu where a QAction lives, for example in a menu "File -> Open File",
      * "File" should be the GroupName.
      */
     void setActions(const QList<ActionGroup> &actions);
 
 public Q_SLOTS:
+    /*!
+     *
+     */
     void show();
 
 protected:
