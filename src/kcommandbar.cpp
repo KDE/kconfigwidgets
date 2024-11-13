@@ -162,7 +162,7 @@ public:
     {
     }
 
-    /*!
+    /*
      * Paints a single item's text
      */
     static void
@@ -464,7 +464,7 @@ public:
     KCommandBarModel m_model;
     CommandBarFilterModel m_proxyModel;
 
-    /*!
+    /*
      * selects first item in treeview
      */
     void reselectFirst()
@@ -473,7 +473,7 @@ public:
         m_treeView.setCurrentIndex(index);
     }
 
-    /*!
+    /*
      * blocks signals before clearing line edit to ensure
      * we don't trigger filtering / sorting
      */
@@ -658,7 +658,7 @@ KCommandBar::KCommandBar(QWidget *parent)
     }
 }
 
-/*!
+/*
  * Destructor defined here to make unique_ptr work
  */
 KCommandBar::~KCommandBar()

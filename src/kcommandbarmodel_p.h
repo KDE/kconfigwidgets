@@ -31,7 +31,7 @@ public:
 
     enum Column { Column_Command, Column_Shortcut, Column_Count };
 
-    /*!
+    /*
      * Resets the model
      *
      * If you are using last Used actions functionality, make sure

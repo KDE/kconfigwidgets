@@ -9,9 +9,10 @@
 class KConfigGroup;
 
 /*!
- * @class KConfigViewStateSaver kconfigviewstatesaver.h KConfigViewStateSaver
+ * \class KConfigViewStateSaver
+ * \inmodule KConfigWidgets
  *
- * @brief Base class for saving and restoring state in QTreeViews and QItemSelectionModels using KConfig as storage
+ * \brief Base class for saving and restoring state in QTreeViews and QItemSelectionModels using KConfig as storage.
  */
 class KCONFIGWIDGETS_EXPORT KConfigViewStateSaver : public KViewStateSerializer
 {
@@ -20,12 +21,12 @@ public:
     explicit KConfigViewStateSaver(QObject *parent = nullptr);
 
     /*!
-      Saves the state to the @p configGroup
+      Saves the state to the \a configGroup
     */
     void saveState(KConfigGroup &configGroup);
 
     /*!
-      Restores the state from the @p configGroup
+      Restores the state from the \a configGroup
     */
     void restoreState(const KConfigGroup &configGroup);
 };

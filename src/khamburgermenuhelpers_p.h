@@ -147,7 +147,7 @@ protected:
  */
 bool isMenuBarVisible(const QMenuBar *menuBar);
 
-/*!
+/*
  * Is the widget and all of its ancestors visible?
  */
 bool isWidgetActuallyVisible(const QWidget *widget);
@@ -161,13 +161,13 @@ bool isWidgetActuallyVisible(const QWidget *widget);
  */
 void prepareParentlessMenuForShowing(QMenu *menu, const QWidget *surrogateParent);
 
-/*!
+/*
  * Use this instead of QWidget::isVisible() to work around a peculiarity of QToolBar/QToolButton.
  */
 void setToolButtonVisible(QWidget *toolButton, bool visible);
 
-/*!
- * Does the @p list contain the @p widget?
+/*
+ * Does the list contain the widget?
  */
 bool listContainsWidget(const std::forward_list<QPointer<const QWidget>> &list, const QWidget *widget);
 

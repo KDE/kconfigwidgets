@@ -11,4 +11,10 @@ sourcedirs = .
 outputformats = HTML
 
 depends += \
-    qtcore
+    qtcore \
+    qtgui \
+    qtwidgets \
+    kwidgetsaddons \
+    kcolorscheme \
+    kconfigcore \
+    kconfiggui

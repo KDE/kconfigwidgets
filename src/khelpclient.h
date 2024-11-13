@@ -12,8 +12,10 @@
 #include <QString>
 
 /*!
- * @namespace KHelpClient
- * Provides utility functions for access to help manuals.
+ * \namespace KHelpClient
+ * \inmodule KConfigWidgets
+ *
+ * \brief Provides utility functions for access to help manuals.
  */
 namespace KHelpClient
 {
@@ -23,12 +25,12 @@ namespace KHelpClient
  * The HTML file will be found using the X-DocPath entry in the application's desktop file.
  * It can be either a relative path, or a website URL.
  *
- * @param anchor      This has to be a defined anchor in your
+ * \a anchor This has to be a defined anchor in your
  *                    docbook sources or website. If empty the main index
  *                    is loaded.
- * @param appname     This allows you to specify the .desktop file to get the help path from.
+ * \a appname This allows you to specify the .desktop file to get the help path from.
  *                    If empty the QCoreApplication::applicationName() is used.
- * @since 5.0
+ * \since 5.0
  */
 KCONFIGWIDGETS_EXPORT void invokeHelp(const QString &anchor = QString(), const QString &appname = QString());
 }
