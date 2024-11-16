@@ -188,6 +188,11 @@ static QString titleWithSensibleWidth(const QString &nameValue, const QString &v
 
 void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
 {
+    addUrl(url, name, QString());
+}
+
+void KRecentFilesAction::addUrl(const QUrl &url, const QString &name, const QString &mimeTypeStr)
+{
     Q_D(KRecentFilesAction);
 
     // ensure we never add items if we want none
@@ -227,11 +232,19 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name)
     static bool isKdeSession = qgetenv("XDG_CURRENT_DESKTOP") == "KDE";
     if (isKdeSession) {
         const QDBusConnection bus = QDBusConnection::sessionBus();
-        if (bus.isConnected() && bus.interface()->isServiceRegistered(QStringLiteral("org.kde.ActivityManager"))) {
+        if (bus.isConnected()
+            && bus.interface()->isServiceRegistered(QStringLiteral("org.kde.ActivityManager"))
+            // skip files in hidden directories
+            && !url.path().contains(QStringLiteral("/."))) {
             const static QString activityService = QStringLiteral("org.kde.ActivityManager");
             const static QString activityResources = QStringLiteral("/ActivityManager/Resources");
             const static QString activityResouceInferface = QStringLiteral("org.kde.ActivityManager.Resources");
-            const QMimeType mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
+            QMimeType mimeType;
+            if (!mimeTypeStr.isEmpty()) {
+                mimeType = QMimeDatabase().mimeTypeForName(mimeTypeStr);
+            } else {
+                mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
+            }
 
             const auto urlString = url.toString(QUrl::PreferLocalFile);
             QDBusMessage message =

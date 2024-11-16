@@ -140,6 +140,18 @@ public:
      * (see @ref QDir::tempPath()) are automatically ignored by this method.
      */
     void addUrl(const QUrl &url, const QString &name = QString());
+    /**
+     * Add URL to the recent files list. This will enable this action.
+     *
+     *  @param url The URL of the file
+     *  @param name The user visible pretty name that appears before the URL
+     *  @param mimeType Specify the mimeType of the file
+     *
+     * @note URLs corresponding to local files in the temporary directory
+     * (see @ref QDir::tempPath()) are automatically ignored by this method.
+     */
+    /// @since 6.9
+    void addUrl(const QUrl &url, const QString &name, const QString &mimeType);
 
     /**
      *  Remove an URL from the recent files list.
