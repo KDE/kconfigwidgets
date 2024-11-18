@@ -62,8 +62,8 @@ find_package(KF6ColorScheme ${KF_DEP_VERSION} REQUIRED)
 
 
 ecm_set_disabled_deprecation_versions(
-    QT 6.5.0
-    KF 5.102.0
+    QT 6.8.0
+    KF 6.8.0
 )
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kconfigwidgets6\")

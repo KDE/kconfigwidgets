@@ -26,8 +26,7 @@ public:
     KColorSchemeDemo()
         : QMainWindow(nullptr)
     {
-        KColorSchemeManager *manager = new KColorSchemeManager(this);
-
+        KColorSchemeManager *manager = KColorSchemeManager::instance();
         QListView *view = new QListView(this);
         view->setModel(manager->model());
         connect(view, &QListView::activated, manager, &KColorSchemeManager::activateScheme);
