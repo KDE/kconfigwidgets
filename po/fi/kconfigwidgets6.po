@@ -11,7 +11,7 @@
 # Joonas Niilola <juippis@roskakori.org>, 2006.
 # Mikko Piippo <piippo@cc.helsinki.fi>, 2007.
 # Teemu Rytilahti <tpr@d5k.net>, 2008.
-# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2019, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2009, 2010, 2011, 2019, 2020, 2021, 2022, 2023, 2024 Tommi Nieminen <translator@legisign.org>
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2006, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
 #
@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2023-12-11 15:17+0200\n"
+"PO-Revision-Date: 2024-10-21 17:23+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -34,8 +34,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
-"X-POT-Import-Date: 2013-01-13 20:43:21+0000\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -70,10 +69,9 @@ msgid "Color Scheme"
 msgstr "Väriteema"
 
 #: kcommandbar.cpp:639
-#, fuzzy, kde-format
-#| msgid "No commands matching the filter"
+#, kde-format
 msgid "No commands to display"
-msgstr "Ei suodatinta vastaavia komentoja"
+msgstr "Ei näytettäviä komentoja"
 
 #: kcommandbar.cpp:641
 #, kde-format
@@ -483,8 +481,7 @@ msgid "Configure Keyboard S&hortcuts…"
 msgstr "&Pikanäppäinasetukset…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
 msgstr "&Asetukset: %1…|/|$[gen %1] &asetukset…"
 
@@ -543,10 +540,9 @@ msgid "Open &Menu"
 msgstr "Avaa &valikko"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Application: "
+#, kde-format
 msgid "Application Style"
-msgstr "Sovellus: "
+msgstr "Sovellustyyli"
 
 #: kstylemanager.cpp:64
 #, kde-format
