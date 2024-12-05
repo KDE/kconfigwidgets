@@ -149,8 +149,9 @@ public:
      *
      * @note URLs corresponding to local files in the temporary directory
      * (see @ref QDir::tempPath()) are automatically ignored by this method.
+     *
+     * @since 6.9
      */
-    /// @since 6.9
     void addUrl(const QUrl &url, const QString &name, const QString &mimeType);
 
     /**
