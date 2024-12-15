@@ -3,28 +3,31 @@
 # This file is distributed under the same license as the kconfigwidgets package.
 # Kali <EMAIL@ADDRESS>, 2024.
 #
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-12-13 19:10+0530\n"
-"Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
+"PO-Revision-Date: 2024-12-14 01:48+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "भवतः नामानि"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "भवतः ईमेलपत्राणि"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -36,7 +39,7 @@ msgstr "मूलभूतम्‌"
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
-msgstr ""
+msgstr "ऑटोडिटेक्ट्"
 
 #: kcolorschememenu.cpp:24
 #, kde-format
@@ -57,32 +60,32 @@ msgstr "फ़िल्टरस्य मेलनं कुर्वन्त�
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure"
-msgstr ""
+msgstr "विन्यस्तं कुर्वन्तु"
 
 #: khamburgermenu.cpp:126
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr ""
+msgstr "&मेनू"
 
 #: khamburgermenu.cpp:329
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
-msgstr ""
+msgstr "सर्वेषां क्रियाभिः सह &Menubar दर्शयतु"
 
 #: khamburgermenu.cpp:355
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
-msgstr ""
+msgstr "अधिकः"
 
 #: khamburgermenu.cpp:356
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
 msgid "More Actions"
-msgstr ""
+msgstr "अधिकानि क्रियाः"
 
 #: krecentfilesaction.cpp:78
 #, kde-format
@@ -110,7 +113,7 @@ msgstr "&अग्रतः"
 #, kde-format
 msgctxt "home page"
 msgid "&Home"
-msgstr ""
+msgstr "&गृहम्‌"
 
 #: kstandardaction.cpp:230
 #, kde-format
@@ -160,7 +163,7 @@ msgstr "दस्तावेजं रक्षन्तु"
 
 #: kstandardaction_p.h:67
 msgid "Save &As…"
-msgstr "Save &As..."
+msgstr "Save &As…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -184,7 +187,7 @@ msgstr "दस्तावेजं बन्दं कुर्वन्तु"
 
 #: kstandardaction_p.h:70
 msgid "&Print…"
-msgstr "&मुद्रण..."
+msgstr "&मुद्रण…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -200,7 +203,7 @@ msgstr "दस्तावेजस्य मुद्रणपूर्वा�
 
 #: kstandardaction_p.h:72
 msgid "&Mail…"
-msgstr "&मेल..."
+msgstr "&मेल…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -324,7 +327,7 @@ msgstr "जूम &आउट"
 
 #: kstandardaction_p.h:94
 msgid "&Zoom…"
-msgstr "&ज़ूम..."
+msgstr "&ज़ूम…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -364,15 +367,15 @@ msgstr "अग्रिमपृष्ठं गच्छन्तु"
 
 #: kstandardaction_p.h:104
 msgid "&Go To…"
-msgstr "&Go To..."
+msgstr "&Go To…"
 
 #: kstandardaction_p.h:105
 msgid "&Go to Page…"
-msgstr "&पृष्ठं गच्छन्तु..."
+msgstr "&पृष्ठं गच्छन्तु…"
 
 #: kstandardaction_p.h:106
 msgid "&Go to Line…"
-msgstr "&रेखायां गच्छन्तु..."
+msgstr "&रेखायां गच्छन्तु…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -412,11 +415,11 @@ msgstr "&बुकमार्कं योजयतु"
 
 #: kstandardaction_p.h:113
 msgid "&Edit Bookmarks…"
-msgstr "&Edit बुकमार्क्स..."
+msgstr "&Edit बुकमार्क्स…"
 
 #: kstandardaction_p.h:115
 msgid "&Spelling…"
-msgstr "&वर्तनी..."
+msgstr "&वर्तनी…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -452,20 +455,20 @@ msgstr "F&ull स्क्रीन मोड"
 
 #: kstandardaction_p.h:121
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "कीबोर्ड S&hortcuts विन्यस्तं कुर्वन्तु..."
+msgstr "कीबोर्ड S&hortcuts विन्यस्तं कुर्वन्तु…"
 
 #: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1…"
-msgstr "&%1 विन्यस्तं कुर्वन्तु..."
+msgstr "&%1 विन्यस्तं कुर्वन्तु…"
 
 #: kstandardaction_p.h:123
 msgid "Configure Tool&bars…"
-msgstr "Tool&bars विन्यस्तं कुर्वन्तु..."
+msgstr "Tool&bars विन्यस्तं कुर्वन्तु…"
 
 #: kstandardaction_p.h:124
 msgid "Configure &Notifications…"
-msgstr "&सूचनाः विन्यस्तं कुर्वन्तु..."
+msgstr "&सूचनाः विन्यस्तं कुर्वन्तु…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -478,11 +481,11 @@ msgstr "किम् &इदम् ?"
 
 #: kstandardaction_p.h:130
 msgid "&Report Bug…"
-msgstr "&रिपोर्ट बग..."
+msgstr "&रिपोर्ट बग…"
 
 #: kstandardaction_p.h:131
 msgid "Configure &Language…"
-msgstr "&Language विन्यस्तं कुर्वन्तु..."
+msgstr "&Language विन्यस्तं कुर्वन्तु…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -499,7 +502,7 @@ msgstr "&लुप्"
 
 #: kstandardaction_p.h:135
 msgid "&Rename…"
-msgstr "&नाम पुनर्नाम..."
+msgstr "&नाम पुनर्नाम…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
