@@ -6,20 +6,21 @@
 # Ravishankar Shrivastava <raviratlami@aol.in>, 2008.
 # G Karunakar <karunakar@indlinux.org>, 2009, 2010, 2012.
 # Raghavendra Kamath <raghu@raghukamath.com>, 2021.
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2021-08-21 16:25+0530\n"
-"Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
-"Language-Team: kde-hindi\n"
+"PO-Revision-Date: 2024-12-15 19:32+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Lokalize 21.08.0\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -396,13 +397,13 @@ msgstr "अगले पृष्ठ पर जाएँ"
 #, fuzzy
 #| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "यहाँ जाएं... (&G)"
+msgstr "यहाँ जाएं… (&G)"
 
 #: kstandardaction_p.h:105
 #, fuzzy
 #| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "पृष्ठ पर जाएं... (&G)"
+msgstr "पृष्ठ पर जाएं… (&G)"
 
 #: kstandardaction_p.h:106
 #, fuzzy
@@ -497,13 +498,13 @@ msgstr "पूर्ण स्क्रीन मोड (&u)"
 #, fuzzy
 #| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "कुंजीपटल शॉर्टकटों को विन्यस्त करें... (&h)"
+msgstr "कुंजीपटल शॉर्टकटों को विन्यस्त करें… (&h)"
 
 #: kstandardaction_p.h:122
 #, fuzzy, kde-format
 #| msgid "&Configure %1..."
 msgid "&Configure %1…"
-msgstr "%1 विन्यस्त करें...(&C)"
+msgstr "%1 विन्यस्त करें…(&C)"
 
 #: kstandardaction_p.h:123
 #, fuzzy
@@ -537,7 +538,7 @@ msgstr "बग रिपोर्ट करें"
 #, fuzzy
 #| msgid "Configure &Language..."
 msgid "Configure &Language…"
-msgstr "भाषा विन्यस्त करें... (&L)"
+msgstr "भाषा विन्यस्त करें… (&L)"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -556,7 +557,7 @@ msgstr "मिटाएँ (&D)"
 #, fuzzy
 #| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "नाम बदलें... (&R)"
+msgstr "नाम बदलें… (&R)"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
