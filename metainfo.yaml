@@ -12,7 +12,7 @@ portingAid: false
 deprecated: false
 release: true
 libraries:
- - cmake: "KF6::ConfigWidgets"
+    - cmake: "KF6::ConfigWidgets"
 cmakename: KF6ConfigWidgets
 
 public_lib: true
