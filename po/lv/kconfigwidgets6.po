@@ -8,14 +8,14 @@
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2007, 2008, 2010.
 # Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
 # Einars Sprugis <einars8@gmail.com>, 2009.
-# SPDX-FileCopyrightText: 2024 Toms Trasūns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasūns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2024-02-29 12:58+0200\n"
-"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
+"PO-Revision-Date: 2025-01-30 16:08+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 "X-Launchpad-Export-Date: 2007-11-22 17:44+0000\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -54,10 +54,9 @@ msgid "Color Scheme"
 msgstr "Krāsu shēma"
 
 #: kcommandbar.cpp:639
-#, fuzzy, kde-format
-#| msgid "No commands matching the filter"
+#, kde-format
 msgid "No commands to display"
-msgstr "Neviena komanda neatbilst filtram"
+msgstr "Nav parādāmu komandu"
 
 #: kcommandbar.cpp:641
 #, kde-format
@@ -525,10 +524,9 @@ msgid "Open &Menu"
 msgstr "&Atvērt izvēlni"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Application: "
+#, kde-format
 msgid "Application Style"
-msgstr "Programma: "
+msgstr "Programmas stils"
 
 #: kstylemanager.cpp:64
 #, kde-format
