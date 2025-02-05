@@ -20,10 +20,24 @@
 #include <private/qguiapplication_p.h>
 #include <qpa/qplatformtheme.h>
 
-void KStyleManager::initStyle()
+static bool supported()
 {
+    // do nothing if an explicit style has been requested
+    if (!QGuiApplicationPrivate::styleOverride.isEmpty()) {
+        return false;
+    }
+
     // do nothing if we have the proper platform theme already
     if (QGuiApplicationPrivate::platformTheme() && QGuiApplicationPrivate::platformTheme()->name() == QLatin1String("kde")) {
+        return false;
+    }
+
+    return true;
+}
+
+void KStyleManager::initStyle()
+{
+    if (!supported()) {
         return;
     }
 
@@ -43,7 +57,7 @@ QAction *KStyleManager::createConfigureAction(QObject *parent)
 {
     // if we are running with our application theme, just return a disabled & hidden action
     // there we just follow the Plasma theme
-    if (QGuiApplicationPrivate::platformTheme() && QGuiApplicationPrivate::platformTheme()->name() == QLatin1String("kde")) {
+    if (!supported()) {
         QAction *a = new QAction(parent);
         a->setEnabled(false);
         a->setVisible(false);
