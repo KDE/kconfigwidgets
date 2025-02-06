@@ -13,27 +13,28 @@
 # Doutor Zero <doutor.zero@gmail.com>, 2007, 2009.
 # Marcus Vinícius de Andrade Gama <marcus.gama@gmail.com>, 2010, 2012.
 # Aracele Torres <araceletorres@gmail.com>, 2010.
+# SPDX-FileCopyrightText: 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-18 00:36+0000\n"
-"PO-Revision-Date: 2022-06-22 16:15-0300\n"
-"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
-"Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
+"PO-Revision-Date: 2025-02-04 23:09-0300\n"
+"Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 "Diniz Bortolotto, Lisiane Sztoltz Teixeira, André Marcelo Alvarenga, Luiz "
-"Fernando Ranghetti"
+"Fernando Ranghetti, Geraldo Simião"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -60,10 +61,9 @@ msgid "Color Scheme"
 msgstr "Esquema de cores"
 
 #: kcommandbar.cpp:639
-#, fuzzy, kde-format
-#| msgid "No commands matching the filter"
+#, kde-format
 msgid "No commands to display"
-msgstr "Nenhum comando correspondente ao filtro"
+msgstr "Nenhum comando para exibir"
 
 #: kcommandbar.cpp:641
 #, kde-format
@@ -154,8 +154,6 @@ msgid "Create new document"
 msgstr "Cria um novo documento"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
 msgstr "&Abrir..."
 
@@ -180,8 +178,6 @@ msgid "Save document"
 msgstr "Salva o documento"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
 msgstr "Salvar &como..."
 
@@ -206,8 +202,6 @@ msgid "Close document"
 msgstr "Fecha o documento"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
 msgstr "&Imprimir..."
 
@@ -224,8 +218,6 @@ msgid "Show a print preview of document"
 msgstr "Mostra uma previsão da impressão do documento"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
 msgstr "Enviar por e-&mail..."
 
@@ -294,8 +286,6 @@ msgid "Dese&lect"
 msgstr "&Desmarcar"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
 msgstr "&Localizar..."
 
@@ -308,8 +298,6 @@ msgid "Find Pre&vious"
 msgstr "Localizar &anterior"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
 msgstr "Substitui&r..."
 
@@ -354,8 +342,6 @@ msgid "Zoom &Out"
 msgstr "&Reduzir"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
 msgstr "&Zoom..."
 
@@ -396,20 +382,14 @@ msgid "Go to next page"
 msgstr "Ir para a próxima página"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
 msgstr "&Ir para..."
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
 msgstr "&Ir para a página..."
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
 msgstr "&Ir para a linha..."
 
@@ -450,14 +430,10 @@ msgid "&Add Bookmark"
 msgstr "&Adicionar favorito"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
 msgstr "&Editar favoritos..."
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
 msgstr "&Ortografia..."
 
@@ -494,26 +470,19 @@ msgid "F&ull Screen Mode"
 msgstr "&Modo de tela inteira"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure Keyboard S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
 msgstr "Configurar atal&hos do teclado..."
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "&Configurar o %1..."
+msgstr "&Configurar %1..."
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
 msgstr "Configurar &barras de ferramentas..."
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
 msgstr "Configurar &notificações..."
 
@@ -527,14 +496,10 @@ msgid "What's &This?"
 msgstr "O que é is&to?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
 msgstr "&Relatar erro..."
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "Configure &Language..."
 msgid "Configure &Language…"
 msgstr "Configurar &idioma..."
 
@@ -552,8 +517,6 @@ msgid "&Delete"
 msgstr "&Remover"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
 msgstr "&Renomear..."
 
@@ -570,10 +533,9 @@ msgid "Open &Menu"
 msgstr "Abrir &menu"
 
 #: kstylemanager.cpp:60
-#, fuzzy, kde-format
-#| msgid "Quit application"
+#, kde-format
 msgid "Application Style"
-msgstr "Fecha o aplicativo"
+msgstr "Estilo dos aplicativos"
 
 #: kstylemanager.cpp:64
 #, kde-format
