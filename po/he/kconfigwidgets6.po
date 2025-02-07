@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2025-01-24 09:27+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -531,12 +531,12 @@ msgstr "&תרומה"
 msgid "Open &Menu"
 msgstr "פתיחת &תפריט"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, kde-format
 msgid "Application Style"
 msgstr "סגנון היישום"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, kde-format
 msgid "Default"
 msgstr "ברירת מחדל"

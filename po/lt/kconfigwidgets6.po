@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2024-05-25 13:59+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -527,12 +527,12 @@ msgstr "Pa&remti"
 msgid "Open &Menu"
 msgstr "Atverti &meniu"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, kde-format
 msgid "Application Style"
 msgstr "Programų stilius"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, kde-format
 msgid "Default"
 msgstr "Numatytasis"

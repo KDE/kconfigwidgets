@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2024-04-27 16:34+0200\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -525,13 +525,13 @@ msgstr "Venovať peniaze"
 msgid "Open &Menu"
 msgstr "Otvoriť ponuku"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, fuzzy, kde-format
 #| msgid "Application: "
 msgid "Application Style"
 msgstr "Aplikácia: "
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, kde-format
 msgid "Default"
 msgstr "Štandardné"

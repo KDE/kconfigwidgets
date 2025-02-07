@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2004-12-14 09:11-0600\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -582,13 +582,13 @@ msgstr "&Críochnaithe"
 msgid "Open &Menu"
 msgstr "Oscail &Rudaí Deireanacha"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, fuzzy, kde-format
 #| msgid "Application: "
 msgid "Application Style"
 msgstr "Feidhmchlár:"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, fuzzy, kde-format
 #| msgctxt "Encodings menu"
 #| msgid "Default"

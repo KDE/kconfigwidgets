@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2013-11-04 23:55+0630\n"
 "Last-Translator: Bhuvan Krishna <bhuvan@swecha.org>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -585,13 +585,13 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "(&R) ఇటీవలివి తెరువండి"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, fuzzy, kde-format
 #| msgid "Application: "
 msgid "Application Style"
 msgstr "అప్లికేషన్:"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, fuzzy, kde-format
 #| msgctxt "Encodings menu"
 #| msgid "Default"

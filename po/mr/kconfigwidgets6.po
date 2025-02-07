@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2013-03-29 16:14+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -582,13 +582,13 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "अलिकडील उघडा (&R)"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, fuzzy, kde-format
 #| msgid "Application: "
 msgid "Application Style"
 msgstr "अनुप्रयोग: "
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, fuzzy, kde-format
 #| msgctxt "Encodings menu"
 #| msgid "Default"

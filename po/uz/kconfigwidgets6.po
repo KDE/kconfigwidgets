@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2008-05-30 17:29+0200\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -618,13 +618,13 @@ msgstr "&Tayyor"
 msgid "Open &Menu"
 msgstr "&Yaqinda foydalanilganni ochish"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, fuzzy, kde-format
 #| msgid "Application: "
 msgid "Application Style"
 msgstr "Dastur:"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, fuzzy, kde-format
 #| msgctxt "Encodings menu"
 #| msgid "Default"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2015-11-04 15:11+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -563,13 +563,13 @@ msgstr ""
 msgid "Open &Menu"
 msgstr "Fosgail sgrìobhainn o chionn goi&rid"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, fuzzy, kde-format
 #| msgid "Quit application"
 msgid "Application Style"
 msgstr "Fàg an aplacaid"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, fuzzy, kde-format
 #| msgctxt "Encodings menu"
 #| msgid "Default"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2024-05-20 12:33+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -516,12 +516,12 @@ msgstr "&Dona"
 msgid "Open &Menu"
 msgstr "Aperi &Menu"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, kde-format
 msgid "Application Style"
 msgstr "Stilo de Application"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, kde-format
 msgid "Default"
 msgstr "Predefinite"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2023-02-17 01:22+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -554,13 +554,13 @@ msgstr "&Maddi Dəstək"
 msgid "Open &Menu"
 msgstr "&Menyunu açın"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, fuzzy, kde-format
 #| msgid "Quit application"
 msgid "Application Style"
 msgstr "Tətbiqdən çıx"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, kde-format
 msgid "Default"
 msgstr "İlkin göstərici"

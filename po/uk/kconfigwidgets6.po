@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2024-05-18 09:13+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian\n"
@@ -522,12 +522,12 @@ msgstr "Підтримати &фінансово"
 msgid "Open &Menu"
 msgstr "Відкрити &меню"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, kde-format
 msgid "Application Style"
 msgstr "Стиль вікон програм"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, kde-format
 msgid "Default"
 msgstr "Типовий"

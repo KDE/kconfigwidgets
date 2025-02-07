@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-18 00:36+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2024-08-26 18:27+0200\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -523,12 +523,12 @@ msgstr "&Spenden"
 msgid "Open &Menu"
 msgstr "&Menü öffnen"
 
-#: kstylemanager.cpp:60
+#: kstylemanager.cpp:74
 #, kde-format
 msgid "Application Style"
 msgstr "Anwendungs-Stil"
 
-#: kstylemanager.cpp:64
+#: kstylemanager.cpp:78
 #, kde-format
 msgid "Default"
 msgstr "Standard"
