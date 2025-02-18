@@ -239,11 +239,10 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name, const QStr
             const static QString activityService = QStringLiteral("org.kde.ActivityManager");
             const static QString activityResources = QStringLiteral("/ActivityManager/Resources");
             const static QString activityResouceInferface = QStringLiteral("org.kde.ActivityManager.Resources");
-            QMimeType mimeType;
-            if (!mimeTypeStr.isEmpty()) {
-                mimeType = QMimeDatabase().mimeTypeForName(mimeTypeStr);
-            } else {
-                mimeType = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension);
+
+            QString mimeTypeName = mimeTypeStr;
+            if (mimeTypeName.isEmpty()) {
+                mimeTypeName = QMimeDatabase().mimeTypeForFile(url.path(), QMimeDatabase::MatchExtension).name();
             }
 
             const auto urlString = url.toString(QUrl::PreferLocalFile);
@@ -253,7 +252,7 @@ void KRecentFilesAction::addUrl(const QUrl &url, const QString &name, const QStr
             bus.asyncCall(message);
 
             message = QDBusMessage::createMethodCall(activityService, activityResources, activityResouceInferface, QStringLiteral("RegisterResourceMimetype"));
-            message.setArguments({urlString, mimeType.name()});
+            message.setArguments({urlString, mimeTypeName});
             bus.asyncCall(message);
 
             message = QDBusMessage::createMethodCall(activityService, activityResources, activityResouceInferface, QStringLiteral("RegisterResourceTitle"));
