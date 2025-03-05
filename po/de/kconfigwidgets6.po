@@ -27,12 +27,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Thomas Reitelbach, Stephan Johach, Thomas Diehl"
+msgstr "Deutsches KDE-Übersetzungsteam"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "tr@erdfunkstelle.de, hunsum@gmx.de, thd@kde.org"
+msgstr "kde-i18n-de@kde.org"
 
 #: kcodecaction.cpp:62
 #, kde-format
