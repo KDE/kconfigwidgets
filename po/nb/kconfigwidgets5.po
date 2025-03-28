@@ -12,14 +12,14 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:24+0000\n"
-"PO-Revision-Date: 2015-02-24 20:39+0100\n"
-"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"PO-Revision-Date: 2025-03-24 07:42+0100\n"
+"Last-Translator: Martin Hansen <mh306602@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 24.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -28,13 +28,14 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Knut Yrvin,Axel Bojer,Bjørn Steensrud"
+msgstr "Knut Yrvin,Axel Bojer,Bjørn Steensrud,Martin Hansen"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
-"knut.yrvin@gmail.com,fri_programvare@bojer.no,bjornst@skogkatt.homelinux.org"
+"knut.yrvin@gmail.com,fri_programvare@bojer.no,bjornst@skogkatt.homelinux.org,"
+"mh306602@gmail.com"
 
 #: kcmodule.cpp:198
 #, kde-format
@@ -44,7 +45,7 @@ msgstr "Du blir bedt om å autentisere deg før lagring"
 #: kcmodule.cpp:202
 #, kde-format
 msgid "You are not allowed to save the configuration"
-msgstr "Du har ikke lov til å lagre oppsettet"
+msgstr "Du har ikke tillatelse til å lagre oppsettet"
 
 #: kcodecaction.cpp:67
 #, kde-format
@@ -61,17 +62,17 @@ msgstr "Oppdag automatisk"
 #: kcolorschememenu.cpp:25
 #, kde-format
 msgid "Color Scheme"
-msgstr ""
+msgstr "Fargeoppsett"
 
 #: kcolorschememodel.cpp:71
 #, kde-format
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: kcommandbar.cpp:560
 #, kde-format
 msgid "No commands matching the filter"
-msgstr ""
+msgstr "Ingen kommando i samsvar med filteret"
 
 #: kconfigdialog.cpp:37
 #, kde-format
@@ -83,26 +84,26 @@ msgstr "Sett opp"
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr ""
+msgstr "&Meny"
 
 #: khamburgermenu.cpp:326
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
-msgstr ""
+msgstr "Vis handlingene i en &menylinje"
 
 #: khamburgermenu.cpp:352
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
-msgstr ""
+msgstr "Flere"
 
 #: khamburgermenu.cpp:353
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
 msgid "More Actions"
-msgstr ""
+msgstr "Flere handlinger"
 
 #: krecentfilesaction.cpp:71
 #, kde-format
@@ -124,7 +125,7 @@ msgstr "&Tilbake"
 #, kde-format
 msgctxt "go forward"
 msgid "&Forward"
-msgstr "&Fram"
+msgstr "&Frem"
 
 #: kstandardaction.cpp:171
 #, kde-format
@@ -142,7 +143,7 @@ msgstr "&Hjelp"
 #, kde-format
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
-"Vis menylinja <p>Viser menylinja igjen etter at den har vært skjult</p>"
+"Vis menylinja<p>Viser menylinja igjen etter at den har vært skjult.</p>"
 
 #: kstandardaction.cpp:253
 #, kde-format
@@ -159,11 +160,11 @@ msgstr "&Ny"
 
 #: kstandardaction_p.h:30
 msgid "Create new document"
-msgstr "Lag et nytt dokument"
+msgstr "Lag nytt dokument"
 
 #: kstandardaction_p.h:31
 msgid "&Open..."
-msgstr "&Åpne …"
+msgstr "&Åpne …"
 
 #: kstandardaction_p.h:31
 msgid "Open an existing document"
@@ -183,15 +184,15 @@ msgstr "&Lagre"
 
 #: kstandardaction_p.h:33
 msgid "Save document"
-msgstr "Lagre dokumentet"
+msgstr "Lagre dokument"
 
 #: kstandardaction_p.h:34
 msgid "Save &As..."
-msgstr "Lagre &som …"
+msgstr "Lagre &som …"
 
 #: kstandardaction_p.h:34
 msgid "Save document under a new name"
-msgstr "Lagre dokumentet med et nytt navn"
+msgstr "Lagre dokument med et nytt navn"
 
 #: kstandardaction_p.h:35
 msgid "Re&vert"
@@ -207,15 +208,15 @@ msgstr "&Lukk"
 
 #: kstandardaction_p.h:36
 msgid "Close document"
-msgstr "Lukk dokumentet"
+msgstr "Lukk dokument"
 
 #: kstandardaction_p.h:37
 msgid "&Print..."
-msgstr "Sk&riv ut …"
+msgstr "Skriv &ut …"
 
 #: kstandardaction_p.h:37
 msgid "Print document"
-msgstr "Skriv ut dokumentet"
+msgstr "Skriv ut dokument"
 
 #: kstandardaction_p.h:38
 msgid "Print Previe&w"
@@ -227,7 +228,7 @@ msgstr "Vis forhåndsvisning av dokumentutskriften"
 
 #: kstandardaction_p.h:39
 msgid "&Mail..."
-msgstr "S&end e-post …"
+msgstr "S&end …"
 
 #: kstandardaction_p.h:39
 msgid "Send document by mail"
@@ -255,11 +256,11 @@ msgstr "&Gjør om"
 
 #: kstandardaction_p.h:43
 msgid "Redo last undone action"
-msgstr "Gjør forrige angrede handling på nytt"
+msgstr "Gjør om forrige handling"
 
 #: kstandardaction_p.h:44
 msgid "Cu&t"
-msgstr "&Klipp ut"
+msgstr "Klipp &ut"
 
 #: kstandardaction_p.h:44
 msgid "Cut selection to clipboard"
@@ -267,7 +268,7 @@ msgstr "Klipp ut utvalget til utklippstavla"
 
 #: kstandardaction_p.h:45
 msgid "&Copy"
-msgstr "Ko&pier"
+msgstr "&Kopier"
 
 #: kstandardaction_p.h:45
 msgid "Copy selection to clipboard"
@@ -287,15 +288,15 @@ msgstr "&Tøm"
 
 #: kstandardaction_p.h:51
 msgid "Select &All"
-msgstr "Velg &alt"
+msgstr "&Merk alt"
 
 #: kstandardaction_p.h:52
 msgid "Dese&lect"
-msgstr "Ve&lg bort"
+msgstr "&Fjern merking"
 
 #: kstandardaction_p.h:53
 msgid "&Find..."
-msgstr "&Finn …"
+msgstr "&Finn …"
 
 #: kstandardaction_p.h:54
 msgid "Find &Next"
@@ -303,27 +304,27 @@ msgstr "Finn &neste"
 
 #: kstandardaction_p.h:55
 msgid "Find Pre&vious"
-msgstr "Finn forri&ge"
+msgstr "Finn &forrige"
 
 #: kstandardaction_p.h:56
 msgid "&Replace..."
-msgstr "&Erstatt …"
+msgstr "&Erstatt …"
 
 #: kstandardaction_p.h:58
 msgid "Zoom to &Actual Size"
-msgstr ""
+msgstr "Vis &virkelige størrelse"
 
 #: kstandardaction_p.h:58
 msgid "View document at its actual size"
-msgstr "Vis dokumentet i virkelig størrelse"
+msgstr "Vis dokumentet med virkelige størrelse"
 
 #: kstandardaction_p.h:59
 msgid "&Fit to Page"
-msgstr "&Tilpass sidestørrelsen"
+msgstr "Tilpass til siden"
 
 #: kstandardaction_p.h:59
 msgid "Zoom to fit page in window"
-msgstr "Tilpass sida til vindustørrelsen"
+msgstr "Tilpass siden til vindustørrelsen"
 
 #: kstandardaction_p.h:60
 msgid "Fit to Page &Width"
@@ -331,7 +332,7 @@ msgstr "Tilpass til side&bredden"
 
 #: kstandardaction_p.h:60
 msgid "Zoom to fit page width in window"
-msgstr "Tilpass så sidebredden passer i vinduet"
+msgstr "Tilpass slik at sidebredden passer i vinduet"
 
 #: kstandardaction_p.h:61
 msgid "Fit to Page &Height"
@@ -339,19 +340,19 @@ msgstr "Tilpass til side&høyden"
 
 #: kstandardaction_p.h:61
 msgid "Zoom to fit page height in window"
-msgstr "Tilpass så sidehøyden passer i vinduet"
+msgstr "Tilpass slik at sidehøyden passer i vinduet"
 
 #: kstandardaction_p.h:62
 msgid "Zoom &In"
-msgstr "Vis &større"
+msgstr "For&størr"
 
 #: kstandardaction_p.h:63
 msgid "Zoom &Out"
-msgstr "Vis &mindre"
+msgstr "For&minsk"
 
 #: kstandardaction_p.h:64
 msgid "&Zoom..."
-msgstr "&Vis større/mindre …"
+msgstr "&Vis større/mindre …"
 
 #: kstandardaction_p.h:64
 msgid "Select zoom level"
@@ -359,11 +360,11 @@ msgstr "Velg forstørringsnivå"
 
 #: kstandardaction_p.h:65
 msgid "&Refresh"
-msgstr ""
+msgstr "&Oppdater"
 
 #: kstandardaction_p.h:65
 msgid "Refresh document"
-msgstr ""
+msgstr "Oppdater dokument"
 
 #: kstandardaction_p.h:67
 msgid "&Up"
@@ -391,15 +392,15 @@ msgstr "Gå til neste side"
 
 #: kstandardaction_p.h:74
 msgid "&Go To..."
-msgstr "&Gå til …"
+msgstr "&Gå til …"
 
 #: kstandardaction_p.h:75
 msgid "&Go to Page..."
-msgstr "&Gå til side …"
+msgstr "&Gå til side …"
 
 #: kstandardaction_p.h:76
 msgid "&Go to Line..."
-msgstr "&Gå til linje …"
+msgstr "&Gå til linje …"
 
 #: kstandardaction_p.h:77
 msgid "&First Page"
@@ -427,11 +428,11 @@ msgstr "Gå bakover i dokumentet"
 
 #: kstandardaction_p.h:80
 msgid "&Forward"
-msgstr "&Forover"
+msgstr "&Frem"
 
 #: kstandardaction_p.h:80
 msgid "Go forward in document"
-msgstr "Gå forover i dokumentet"
+msgstr "Gå fremover i dokumentet"
 
 #: kstandardaction_p.h:82
 msgid "&Add Bookmark"
@@ -439,11 +440,11 @@ msgstr "&Legg til bokmerke"
 
 #: kstandardaction_p.h:83
 msgid "&Edit Bookmarks..."
-msgstr "&Rediger bokmerker …"
+msgstr "&Rediger bokmerker …"
 
 #: kstandardaction_p.h:85
 msgid "&Spelling..."
-msgstr "&Stavekontroll …"
+msgstr "&Stavekontroll …"
 
 #: kstandardaction_p.h:85
 msgid "Check spelling in document"
@@ -463,11 +464,11 @@ msgstr "Vis &verktøylinje"
 
 #: kstandardaction_p.h:88
 msgid "Show or hide toolbar"
-msgstr "Vis eller skjul verktøylinje"
+msgstr "Vis eller skjul verktøylinja"
 
 #: kstandardaction_p.h:89
 msgid "Show St&atusbar"
-msgstr "Vis &statuslinja"
+msgstr "Vis &statuslinje"
 
 #: kstandardaction_p.h:89
 msgid "Show or hide statusbar"
@@ -483,20 +484,20 @@ msgstr "&Lagre innstillinger"
 
 #: kstandardaction_p.h:94
 msgid "Configure Keyboard S&hortcuts..."
-msgstr ""
+msgstr "Sett opp &hurtigtaster …"
 
 #: kstandardaction_p.h:95
 #, kde-format
 msgid "&Configure %1..."
-msgstr "&Oppsett av %1 …"
+msgstr "Sett opp %1 …"
 
 #: kstandardaction_p.h:96
 msgid "Configure Tool&bars..."
-msgstr "Oppsett av verktøy&linjer …"
+msgstr "Sett opp verktøy&linjer …"
 
 #: kstandardaction_p.h:97
 msgid "Configure &Notifications..."
-msgstr "Oppsett av &varslinger …"
+msgstr "Sett opp &varslinger …"
 
 #: kstandardaction_p.h:104
 #, kde-format
@@ -513,11 +514,11 @@ msgstr "&Dagens tips"
 
 #: kstandardaction_p.h:107
 msgid "&Report Bug..."
-msgstr "&Rapporter feil …"
+msgstr "&Meld fra om feil …"
 
 #: kstandardaction_p.h:108
 msgid "Configure &Language..."
-msgstr ""
+msgstr "Sett opp &språk …"
 
 #: kstandardaction_p.h:109
 #, kde-format
@@ -530,23 +531,23 @@ msgstr "Om &KDE"
 
 #: kstandardaction_p.h:111
 msgid "&Delete"
-msgstr ""
+msgstr "&Slett"
 
 #: kstandardaction_p.h:112
 msgid "&Rename..."
-msgstr ""
+msgstr "&Endre navn …"
 
 #: kstandardaction_p.h:113
 msgid "&Move to Trash"
-msgstr ""
+msgstr "&Flytt til papirkurven"
 
 #: kstandardaction_p.h:114
 msgid "&Donate"
-msgstr ""
+msgstr "&Gi pengegave"
 
 #: kstandardaction_p.h:115
 msgid "Open &Menu"
-msgstr ""
+msgstr "Åpne &meny"
 
 #: ktipdialog.cpp:222
 #, kde-format
@@ -558,13 +559,13 @@ msgstr "Dagens tips"
 #, kde-format
 msgctxt "@title"
 msgid "Did you know...?\n"
-msgstr "Visste du …?\n"
+msgstr "Visste du …?\n"
 
 #: ktipdialog.cpp:291
 #, kde-format
 msgctxt "@option:check"
 msgid "&Show tips on startup"
-msgstr "&Vis ved oppstart"
+msgstr "&Vis tips ved oppstart"
 
 #: ktipdialog.cpp:296
 #, kde-format
