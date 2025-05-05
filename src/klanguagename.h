@@ -16,7 +16,7 @@
 class QString;
 
 /*!
- * \class KLanguageName
+ * \namespace KLanguageName
  * \inmodule KConfigWidgets
  *
  * \brief KLanguageName is a helper namespace that returns the name of a given language code.
