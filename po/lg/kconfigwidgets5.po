@@ -1,0 +1,576 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the kconfigwidgets package.
+#
+# SPDX-FileCopyrightText: 2025 Kizito Birabwa <kbirabwa@yahoo.co.uk>
+msgid ""
+msgstr ""
+"Project-Id-Version: kconfigwidgets\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-11-05 12:24+0000\n"
+"PO-Revision-Date: 2025-05-25 19:06+0100\n"
+"Last-Translator: Kizito Birabwa <kbirabwa@yahoo.co.uk>\n"
+"Language-Team: Luganda\n"
+"Language: lg_UG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.05.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kizito Birabwa"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kbirabwa@yahoo.co.uk"
+
+#: kcmodule.cpp:198
+#, kde-format
+msgid "You will be asked to authenticate before saving"
+msgstr "Okukazza by'okoze puloguramu eja okusooka okukukakasa"
+
+#: kcmodule.cpp:202
+#, kde-format
+msgid "You are not allowed to save the configuration"
+msgstr "Enteekateeka tokkirizibwa okugikazza"
+
+#: kcodecaction.cpp:67
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Ebya bulijjo"
+
+#: kcodecaction.cpp:75
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Yevumbulire"
+
+#: kcolorschememenu.cpp:25
+#, kde-format
+msgid "Color Scheme"
+msgstr "Nteekateeka ya Langi"
+
+#: kcolorschememodel.cpp:71
+#, kde-format
+msgid "Default"
+msgstr "Ebya bulijjo"
+
+#: kcommandbar.cpp:560
+#, kde-format
+msgid "No commands matching the filter"
+msgstr "Ebisunsuzibwa tebizuddeyo biragiro"
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Teekateeka"
+
+#: khamburgermenu.cpp:125
+#, kde-format
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "&Menyu"
+
+#: khamburgermenu.cpp:326
+#, kde-format
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Olubaawo lwa &Menyu Lulabike n'Ebisangibwa ko Byonna"
+
+#: khamburgermenu.cpp:352
+#, kde-format
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Ebisinga wo"
+
+#: khamburgermenu.cpp:353
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Ebirondeka Ebisinga Wo"
+
+#: krecentfilesaction.cpp:71
+#, kde-format
+msgid "No Entries"
+msgstr "Tewali"
+
+#: krecentfilesaction.cpp:77
+#, kde-format
+msgid "Clear List"
+msgstr "Ebiri ku lukalala byonna bigyeko"
+
+#: kstandardaction.cpp:157
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "&Ddayo"
+
+#: kstandardaction.cpp:164
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "&Weyongereyo"
+
+#: kstandardaction.cpp:171
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "Dda &Awatandikirwa"
+
+#: kstandardaction.cpp:175
+#, kde-format
+msgctxt "show help"
+msgid "&Help"
+msgstr "&Nyamba"
+
+#: kstandardaction.cpp:232
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Olubaawo lwa &Menyu Lulabike</p>Kino kikomyawo olubaawo lwa menyu nga "
+"lubadde lukisidwa</p>"
+
+#: kstandardaction.cpp:253
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Olubaawo Olulaga Mbeera y'Egibumbujja Lulabike<p>Kino kireeta olubaawo "
+"olulaga mbeera y'egibumbujja, olusangibwa ku mwango gw'eddirisa wansi.</p>"
+
+#: kstandardaction_p.h:30
+msgid "&New"
+msgstr "Kolawo Eki&pya"
+
+#: kstandardaction_p.h:30
+msgid "Create new document"
+msgstr "Kolawo ekwandike ekipya"
+
+#: kstandardaction_p.h:31
+msgid "&Open..."
+msgstr "&Bikkula..."
+
+#: kstandardaction_p.h:31
+msgid "Open an existing document"
+msgstr "Bikkula ekiwandike ekisangidwawo"
+
+#: kstandardaction_p.h:32
+msgid "Open &Recent"
+msgstr "Bikkula ku Bya&semba okubikkulibwa"
+
+#: kstandardaction_p.h:32
+msgid "Open a document which was recently opened"
+msgstr "Bikkulayo ekiwandike mu byasemba okubikkulibwa"
+
+#: kstandardaction_p.h:33
+msgid "&Save"
+msgstr "&Kazza"
+
+#: kstandardaction_p.h:33
+msgid "Save document"
+msgstr "Ekiwandike kikazze"
+
+#: kstandardaction_p.h:34
+msgid "Save &As..."
+msgstr "Kolamu K&oppi..."
+
+#: kstandardaction_p.h:34
+msgid "Save document under a new name"
+msgstr "Ekiwandike kikolemu koppi ogiwe erinnya ppya"
+
+#: kstandardaction_p.h:35
+msgid "Re&vert"
+msgstr "Enkyukakyuka Zi&jjulule"
+
+#: kstandardaction_p.h:35
+msgid "Revert unsaved changes made to document"
+msgstr "Jjulula ebikyusidwa mu kiwandike ebitannakazzibwa"
+
+#: kstandardaction_p.h:36
+msgid "&Close"
+msgstr "&Gala"
+
+#: kstandardaction_p.h:36
+msgid "Close document"
+msgstr "Komya by'okola ku kiwandike kizingibweko"
+
+#: kstandardaction_p.h:37
+msgid "&Print..."
+msgstr "&Kubisa..."
+
+#: kstandardaction_p.h:37
+msgid "Print document"
+msgstr "Ekiwandike kisindike ku pulinta"
+
+#: kstandardaction_p.h:38
+msgid "Print Previe&w"
+msgstr "Laba B&we Binaafaanana"
+
+#: kstandardaction_p.h:38
+msgid "Show a print preview of document"
+msgstr "Kikulaga ekiwandise bwe kinaafaanana nga pulinta ekifulumyizza"
+
+#: kstandardaction_p.h:39
+msgid "&Mail..."
+msgstr "Yi&meero..."
+
+#: kstandardaction_p.h:39
+msgid "Send document by mail"
+msgstr "Ekiwandike kisindike mu yimeero"
+
+#: kstandardaction_p.h:40
+msgid "&Quit"
+msgstr "&Mala"
+
+#: kstandardaction_p.h:40
+msgid "Quit application"
+msgstr "Puloguramu givemu era gikomye"
+
+#: kstandardaction_p.h:42
+msgid "&Undo"
+msgstr "&Bijjulule"
+
+#: kstandardaction_p.h:42
+msgid "Undo last action"
+msgstr "Jjulula ebivudde mu ky'osembye okukola"
+
+#: kstandardaction_p.h:43
+msgid "Re&do"
+msgstr "&Zzawo"
+
+#: kstandardaction_p.h:43
+msgid "Redo last undone action"
+msgstr "Zzawo by'osembye okujjulula"
+
+#: kstandardaction_p.h:44
+msgid "Cu&t"
+msgstr "Si&tulawo"
+
+#: kstandardaction_p.h:44
+msgid "Cut selection to clipboard"
+msgstr "Ebitangaazidwa bisitulewo biterekebwe mu ggwanika ly'ebikwatidwa"
+
+#: kstandardaction_p.h:45
+msgid "&Copy"
+msgstr "&Koppa"
+
+#: kstandardaction_p.h:45
+msgid "Copy selection to clipboard"
+msgstr "Kwata koppi y'ebitangaazidwa eterekebwe mu ggwanika ly'ebikwatidwa"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "&Paste"
+msgstr "&Paatiika"
+
+#: kstandardaction_p.h:46 kstandardaction_p.h:48
+msgid "Paste clipboard content"
+msgstr "Paatiikawo ebiri mu ggwanika ly'ebikwatidwa"
+
+#: kstandardaction_p.h:50
+msgid "C&lear"
+msgstr "Yeru&la"
+
+#: kstandardaction_p.h:51
+msgid "Select &All"
+msgstr "Lond&a Byonna"
+
+#: kstandardaction_p.h:52
+msgid "Dese&lect"
+msgstr "&Ta"
+
+#: kstandardaction_p.h:53
+msgid "&Find..."
+msgstr "&Noonya..."
+
+#: kstandardaction_p.h:54
+msgid "Find &Next"
+msgstr "Noonya Eki&ddako"
+
+#: kstandardaction_p.h:55
+msgid "Find Pre&vious"
+msgstr "Noonya Ebik&ulembera Bino"
+
+#: kstandardaction_p.h:56
+msgid "&Replace..."
+msgstr "&Wanyisa..."
+
+#: kstandardaction_p.h:58
+msgid "Zoom to &Actual Size"
+msgstr "Dd&a ku Buzimbulukufu Obwa Ddala"
+
+#: kstandardaction_p.h:58
+msgid "View document at its actual size"
+msgstr "Ekiwandike kyoleseze ku bunene bwa kyo obwa ddala"
+
+#: kstandardaction_p.h:59
+msgid "&Fit to Page"
+msgstr "Bi&ggweere ku lupapula lumu"
+
+#: kstandardaction_p.h:59
+msgid "Zoom to fit page in window"
+msgstr ""
+"Kyusa obunene bw'ekyolesebwa kiggweere ku lupapula olulabikira mu ddirisa"
+
+#: kstandardaction_p.h:60
+msgid "Fit to Page &Width"
+msgstr "Bijje mu Bugazi b&w'Olupapula"
+
+#: kstandardaction_p.h:60
+msgid "Zoom to fit page width in window"
+msgstr ""
+"Kyusa obunene bw'ekyolesebwa kiggweere mu bugazi bw'olupapula olulabikira mu "
+"ddirisa"
+
+#: kstandardaction_p.h:61
+msgid "Fit to Page &Height"
+msgstr "Bijje mu Buwan&vu bw'Olupapula"
+
+#: kstandardaction_p.h:61
+msgid "Zoom to fit page height in window"
+msgstr ""
+"Kyusa obunene bw'ekyolesebwa kiggweere mu buwanvu bw'olupapula olulabikira "
+"mu ddirisa"
+
+#: kstandardaction_p.h:62
+msgid "Zoom &In"
+msgstr "Z&imbulukusa"
+
+#: kstandardaction_p.h:63
+msgid "Zoom &Out"
+msgstr "K&endeeza"
+
+#: kstandardaction_p.h:64
+msgid "&Zoom..."
+msgstr "Obu&zimbulukufu..."
+
+#: kstandardaction_p.h:64
+msgid "Select zoom level"
+msgstr "Londa obuzimbulukufu"
+
+#: kstandardaction_p.h:65
+msgid "&Refresh"
+msgstr "N&yumunguza"
+
+#: kstandardaction_p.h:65
+msgid "Refresh document"
+msgstr "Ekiwandike damu okunona n'okwolesa ebikirimu"
+
+#: kstandardaction_p.h:67
+msgid "&Up"
+msgstr "Wagg&ulu"
+
+#: kstandardaction_p.h:67
+msgid "Go up"
+msgstr "Yongerayo waggulu"
+
+#: kstandardaction_p.h:72
+msgid "&Previous Page"
+msgstr "Lu&papula Olukulembera Luno"
+
+#: kstandardaction_p.h:72
+msgid "Go to previous page"
+msgstr "Dda ku lupapula olukulembera luno"
+
+#: kstandardaction_p.h:73
+msgid "&Next Page"
+msgstr "Lupapula Olu&ddako"
+
+#: kstandardaction_p.h:73
+msgid "Go to next page"
+msgstr "Genda ku lupapula oludda ku luno"
+
+#: kstandardaction_p.h:74
+msgid "&Go To..."
+msgstr "&Genda Ku..."
+
+#: kstandardaction_p.h:75
+msgid "&Go to Page..."
+msgstr "&Genda ku Lupapula..."
+
+#: kstandardaction_p.h:76
+msgid "&Go to Line..."
+msgstr "&Genda lu lunyiriri..."
+
+#: kstandardaction_p.h:77
+msgid "&First Page"
+msgstr "Lupapula Olu&sooka"
+
+#: kstandardaction_p.h:77
+msgid "Go to first page"
+msgstr "Dda ku lupapula olusooka"
+
+#: kstandardaction_p.h:78
+msgid "&Last Page"
+msgstr "Lupapula Olus&emba"
+
+#: kstandardaction_p.h:78
+msgid "Go to last page"
+msgstr "Genda ku lupapula olusemba"
+
+#: kstandardaction_p.h:79
+msgid "&Back"
+msgstr "&Ddayo"
+
+#: kstandardaction_p.h:79
+msgid "Go back in document"
+msgstr "Dda ku kifo mu kiwandike ekikulembera ky'oliko kakano"
+
+#: kstandardaction_p.h:80
+msgid "&Forward"
+msgstr "&Weyongereyo"
+
+#: kstandardaction_p.h:80
+msgid "Go forward in document"
+msgstr "Genda ku kifo mu kiwandike ekidda ku ky'oliko kakano"
+
+#: kstandardaction_p.h:82
+msgid "&Add Bookmark"
+msgstr "Yonger&a ku Bukwatakifo"
+
+#: kstandardaction_p.h:83
+msgid "&Edit Bookmarks..."
+msgstr "K&yusamu Obukwatakifo..."
+
+#: kstandardaction_p.h:85
+msgid "&Spelling..."
+msgstr "Empandika y'Ebigambo..."
+
+#: kstandardaction_p.h:85
+msgid "Check spelling in document"
+msgstr "Golola empandika y'ebigambo mu kiwandike"
+
+#: kstandardaction_p.h:87
+msgid "Show &Menubar"
+msgstr "Olubaawo lwa &Menyu Lulabike"
+
+#: kstandardaction_p.h:87
+msgid "Show or hide menubar"
+msgstr "Kino kirabisa ne kikisa olubaawo lwa menyu"
+
+#: kstandardaction_p.h:88
+msgid "Show &Toolbar"
+msgstr "Olubaawo lw'Ebi&yamba Lulabike"
+
+#: kstandardaction_p.h:88
+msgid "Show or hide toolbar"
+msgstr "Kino kirabisa ne kikisa olubaawo lw'ebiyamba"
+
+#: kstandardaction_p.h:89
+msgid "Show St&atusbar"
+msgstr "Olubaawo Olulaga Mbeer&a y'Egibumbujja Lulabike"
+
+#: kstandardaction_p.h:89
+msgid "Show or hide statusbar"
+msgstr "Kino kirabisa ne kikisa olubaawo olulaga mbeera y'egibumbujja"
+
+#: kstandardaction_p.h:90
+msgid "F&ull Screen Mode"
+msgstr "B&una Lutimbe"
+
+#: kstandardaction_p.h:92
+msgid "&Save Settings"
+msgstr "Ebiteekateekedwa Bika&zze"
+
+#: kstandardaction_p.h:94
+msgid "Configure Keyboard S&hortcuts..."
+msgstr "Teekateeka Mapeesa A&gagonza Emirimu"
+
+#: kstandardaction_p.h:95
+#, kde-format
+msgid "&Configure %1..."
+msgstr "&Teekateeka %1..."
+
+#: kstandardaction_p.h:96
+msgid "Configure Tool&bars..."
+msgstr "Teekateeka &Bubaawo Bw'ebiyamba..."
+
+#: kstandardaction_p.h:97
+msgid "Configure &Notifications..."
+msgstr "Teekateeka Eby'obubaka Obu&tangaaza"
+
+#: kstandardaction_p.h:104
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "Eki&wandike Ekiragirira Enkozesa ya %1"
+
+#: kstandardaction_p.h:105
+msgid "What's &This?"
+msgstr "Kino &Kiki?"
+
+#: kstandardaction_p.h:106
+msgid "Tip of the &Day"
+msgstr "Kigambo kya &Leero"
+
+#: kstandardaction_p.h:107
+msgid "&Report Bug..."
+msgstr "&Sindika Obubaka ku Mpulunguse..."
+
+#: kstandardaction_p.h:108
+msgid "Configure &Language..."
+msgstr "Teekateeka Eby'&olulimi..."
+
+#: kstandardaction_p.h:109
+#, kde-format
+msgid "&About %1"
+msgstr "Kw&anjula %1"
+
+#: kstandardaction_p.h:110
+msgid "About &KDE"
+msgstr "Kwanjula &KDE"
+
+#: kstandardaction_p.h:111
+msgid "&Delete"
+msgstr "&Gyawo"
+
+#: kstandardaction_p.h:112
+msgid "&Rename..."
+msgstr "&Kyusa Linnya..."
+
+#: kstandardaction_p.h:113
+msgid "&Move to Trash"
+msgstr "&Twala mu Bisuulidwa"
+
+#: kstandardaction_p.h:114
+msgid "&Donate"
+msgstr "&Wa Obuyambi"
+
+#: kstandardaction_p.h:115
+msgid "Open &Menu"
+msgstr "Bikkula &Menyu"
+
+#: ktipdialog.cpp:222
+#, kde-format
+msgctxt "@title:window"
+msgid "Tip of the Day"
+msgstr "Kigambo kya Leero"
+
+#: ktipdialog.cpp:238
+#, kde-format
+msgctxt "@title"
+msgid "Did you know...?\n"
+msgstr "Waategedde...?\n"
+
+#: ktipdialog.cpp:291
+#, kde-format
+msgctxt "@option:check"
+msgid "&Show tips on startup"
+msgstr "Akadiri&sa akawa magezi kabonekenga buli kutandika olutuula"
+
+#: ktipdialog.cpp:296
+#, kde-format
+msgctxt "@action:button Goes to previous tip"
+msgid "&Previous"
+msgstr "&Agaakulembera"
+
+#: ktipdialog.cpp:301
+#, kde-format
+msgctxt "@action:button Goes to next tip, opposite to previous"
+msgid "&Next"
+msgstr "Aga&ddako"
