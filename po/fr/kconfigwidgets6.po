@@ -314,7 +314,7 @@ msgstr "&Remplacer..."
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
-msgstr "Zoomer jusqu'à la taille &actuelle"
+msgstr "Zoomer jusqu'à la t&aille réelle"
 
 #: kstandardaction_p.h:88
 msgid "View document at its actual size"
