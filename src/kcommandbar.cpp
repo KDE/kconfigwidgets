@@ -737,6 +737,11 @@ bool KCommandBar::eventFilter(QObject *obj, QEvent *event)
         }
 
         if (keyEvent->key() == Qt::Key_Escape) {
+            if (event->type() == QEvent::ShortcutOverride) {
+                // Override the shortcut. We will get KeyPress event for Key_Escape
+                // later and then hide
+                return true;
+            }
             hide();
             deleteLater();
             return true;
