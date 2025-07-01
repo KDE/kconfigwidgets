@@ -70,16 +70,6 @@ ecm_set_disabled_deprecation_versions(
 add_definitions(-DTRANSLATION_DOMAIN=\"kconfigwidgets6\")
 ki18n_install(po)
 
-if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
-    file(GLOB lang_dirs "po/*")
-    foreach(lang_dir ${lang_dirs})
-       get_filename_component(lang ${lang_dir} NAME)
-       if (EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/po/${lang}/kf6_entry.desktop")
-          install( FILES po/${lang}/kf6_entry.desktop DESTINATION ${KDE_INSTALL_LOCALEDIR}/${lang} )
-       endif()
-    endforeach()
-endif()
-
 add_subdirectory(src)
 if (BUILD_TESTING)
     add_subdirectory(tests)
