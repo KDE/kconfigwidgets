@@ -159,6 +159,12 @@ install(FILES
 install(PROGRAMS preparetips5 DESTINATION ${KDE_INSTALL_BINDIR} )
 install( FILES entry.desktop  DESTINATION  ${KDE_INSTALL_LOCALEDIR}/en_US RENAME kf5_entry.desktop )
 
+file(GLOB lang_dirs "language_files/*")
+foreach(lang_dir ${lang_dirs})
+    get_filename_component(lang ${lang_dir} NAME)
+    install( FILES language_files/${lang}/kf5_entry.desktop DESTINATION ${KDE_INSTALL_LOCALEDIR}/${lang} )
+endforeach()
+
 ecm_qt_install_logging_categories(
     EXPORT KCONFIGWIDGETS
     FILE kconfigwidgets.categories
