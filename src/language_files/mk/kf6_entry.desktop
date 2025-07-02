@@ -1,5 +1,9 @@
 [KCM Locale]
 Name=Macedonian
+Name[ia]=Macedone 
+Name[nl]=Macedonisch
+Name[tr]=Makedonca
+Name[uk]=македонська
 Languages=mk
 Region=easteurope
 DecimalSymbol=,

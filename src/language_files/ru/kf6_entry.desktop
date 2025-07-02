@@ -1,4 +1,8 @@
 [KCM Locale]
 Name=Russian
+Name[ia]=Russo
+Name[nl]=Russisch
+Name[tr]=Rusça
+Name[uk]=російська
 DateMonthNamePossessive=true
 NounDeclension=true

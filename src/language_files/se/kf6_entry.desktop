@@ -1,5 +1,9 @@
 [KCM Locale]
 Name=Northern Sami
+Name[ia]=Sami Septentrional
+Name[nl]=Noord-Sami
+Name[tr]=Kuzey Laponcası
+Name[uk]=північносаамська
 Region=northeurope
 DateMonthNamePossessive=true
 NounDeclension=true
