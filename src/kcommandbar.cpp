@@ -89,6 +89,7 @@ static QRect getCommandBarBoundingRect(KCommandBar *commandBar)
 // BEGIN CommandBarFilterModel
 class CommandBarFilterModel final : public QSortFilterProxyModel
 {
+    Q_OBJECT
 public:
     CommandBarFilterModel(QObject *parent = nullptr)
         : QSortFilterProxyModel(parent)
@@ -156,6 +157,7 @@ private:
 
 class CommandBarStyleDelegate final : public QStyledItemDelegate
 {
+    Q_OBJECT
 public:
     CommandBarStyleDelegate(QObject *parent = nullptr)
         : QStyledItemDelegate(parent)
@@ -282,6 +284,7 @@ private:
 
 class ShortcutStyleDelegate final : public QStyledItemDelegate
 {
+    Q_OBJECT
 public:
     ShortcutStyleDelegate(QObject *parent = nullptr)
         : QStyledItemDelegate(parent)
@@ -757,4 +760,5 @@ bool KCommandBar::eventFilter(QObject *obj, QEvent *event)
 }
 // END KCommandBar
 
+#include "kcommandbar.moc"
 #include "moc_kcommandbar.cpp"
