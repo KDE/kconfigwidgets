@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:38+0000\n"
+"POT-Creation-Date: 2025-07-04 00:39+0000\n"
 "PO-Revision-Date: 2024-05-19 16:50+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -47,12 +47,12 @@ msgstr "தானாக கண்டுபிடி"
 msgid "Color Scheme"
 msgstr "நிறத் திட்டம்"
 
-#: kcommandbar.cpp:639
+#: kcommandbar.cpp:642
 #, kde-format
 msgid "No commands to display"
 msgstr "காட்ட எந்த கட்டளையும் இல்லை"
 
-#: kcommandbar.cpp:641
+#: kcommandbar.cpp:644
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "வடிகட்டிக்கு பொருந்தும் கட்டளைகள் இல்லை"

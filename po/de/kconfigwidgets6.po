@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:38+0000\n"
+"POT-Creation-Date: 2025-07-04 00:39+0000\n"
 "PO-Revision-Date: 2025-02-22 02:35+0100\n"
 "Last-Translator: Flori G <Renner03@protonmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -52,12 +52,12 @@ msgstr "Autom. feststellen"
 msgid "Color Scheme"
 msgstr "Farbschema"
 
-#: kcommandbar.cpp:639
+#: kcommandbar.cpp:642
 #, kde-format
 msgid "No commands to display"
 msgstr "Es sind keine anzuzeigenden Befehle vorhanden"
 
-#: kcommandbar.cpp:641
+#: kcommandbar.cpp:644
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "Es passen keine Befehle zu dem Filter"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:38+0000\n"
+"POT-Creation-Date: 2025-07-04 00:39+0000\n"
 "PO-Revision-Date: 2025-06-28 17:34+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -45,12 +45,12 @@ msgstr "اكتشفه آليًا"
 msgid "Color Scheme"
 msgstr "مخطّط الألوان"
 
-#: kcommandbar.cpp:639
+#: kcommandbar.cpp:642
 #, kde-format
 msgid "No commands to display"
 msgstr "لا يوجد أمر ليُعرض"
 
-#: kcommandbar.cpp:641
+#: kcommandbar.cpp:644
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "لا يوجد أمر يطابق المرشح"

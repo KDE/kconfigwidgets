@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:38+0000\n"
+"POT-Creation-Date: 2025-07-04 00:39+0000\n"
 "PO-Revision-Date: 2024-01-15 17:53-0500\n"
 "Last-Translator: Janet Blackquill <uhhadd@gmail.com>\n"
 "Language-Team: C <kde-i18n-doc@kde.org>\n"
@@ -44,13 +44,13 @@ msgstr "nasin tan lipu"
 msgid "Color Scheme"
 msgstr "nasin kule"
 
-#: kcommandbar.cpp:639
+#: kcommandbar.cpp:642
 #, fuzzy, kde-format
 #| msgid "No commands matching the filter"
 msgid "No commands to display"
 msgstr "pali ala li sama wile sina."
 
-#: kcommandbar.cpp:641
+#: kcommandbar.cpp:644
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "pali ala li sama wile sina."

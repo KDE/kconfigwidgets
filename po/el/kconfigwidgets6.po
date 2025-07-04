@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:38+0000\n"
+"POT-Creation-Date: 2025-07-04 00:39+0000\n"
 "PO-Revision-Date: 2023-01-05 11:44+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -58,13 +58,13 @@ msgstr "Αυτόματη ανίχνευση"
 msgid "Color Scheme"
 msgstr "Σχήμα χρώματος"
 
-#: kcommandbar.cpp:639
+#: kcommandbar.cpp:642
 #, fuzzy, kde-format
 #| msgid "No commands matching the filter"
 msgid "No commands to display"
 msgstr "Καμία εντολή δεν ταιριάζει με το φίλτρο"
 
-#: kcommandbar.cpp:641
+#: kcommandbar.cpp:644
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "Καμία εντολή δεν ταιριάζει με το φίλτρο"

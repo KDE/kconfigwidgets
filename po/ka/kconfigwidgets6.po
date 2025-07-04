@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-07 00:38+0000\n"
+"POT-Creation-Date: 2025-07-04 00:39+0000\n"
 "PO-Revision-Date: 2024-05-19 05:28+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -45,12 +45,12 @@ msgstr "ავტოამოცნობა"
 msgid "Color Scheme"
 msgstr "ფერების სქემა"
 
-#: kcommandbar.cpp:639
+#: kcommandbar.cpp:642
 #, kde-format
 msgid "No commands to display"
 msgstr "საჩვენებელი ბრძანებების გარეშე"
 
-#: kcommandbar.cpp:641
+#: kcommandbar.cpp:644
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "ფილტრის შესაბამისი ბრძანებები არ არსებობს"
