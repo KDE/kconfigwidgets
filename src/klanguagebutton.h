@@ -151,6 +151,9 @@ Q_SIGNALS:
      */
     void highlighted(const QString &languageCode);
 
+protected:
+    bool event(QEvent *event) override;
+
 private Q_SLOTS:
     KCONFIGWIDGETS_NO_EXPORT void slotTriggered(QAction *action);
     KCONFIGWIDGETS_NO_EXPORT void slotHovered(QAction *action);

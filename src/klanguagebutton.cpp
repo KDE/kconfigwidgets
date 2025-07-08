@@ -8,6 +8,7 @@
 #include "klanguagebutton.h"
 
 #include <QDir>
+#include <QEvent>
 #include <QFile>
 #include <QHBoxLayout>
 #include <QLocale>
@@ -278,6 +279,14 @@ void KLanguageButtonPrivate::setCurrentItem(QAction *a)
     if (!staticText) {
         button->setText(a->text());
     }
+}
+
+bool KLanguageButton::event(QEvent *event)
+{
+    if (event->type() == QEvent::ToolTipChange) {
+        d->button->setToolTip(toolTip());
+    }
+    return QObject::event(event);
 }
 
 #include "moc_klanguagebutton.cpp"
