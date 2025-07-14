@@ -32,7 +32,7 @@ msgstr "Temuri.doghonadze@gmail.com"
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Default"
-msgstr "ნაგულისხმები"
+msgstr "ნაგულისხმევი"
 
 #: kcodecaction.cpp:70
 #, kde-format
@@ -525,7 +525,7 @@ msgstr "აპლიკაციის სტილი"
 #: kstylemanager.cpp:78
 #, kde-format
 msgid "Default"
-msgstr "ნაგულისხმები"
+msgstr "ნაგულისხმევი"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&დღის მინიშნება"
