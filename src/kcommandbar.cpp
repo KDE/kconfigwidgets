@@ -155,6 +155,19 @@ private:
 };
 // END CommandBarFilterModel
 
+static QColor getTextColor(const QStyleOptionViewItem &option)
+{
+    QPalette::ColorGroup cg = option.state & QStyle::State_Enabled ? QPalette::Normal : QPalette::Disabled;
+    if (cg == QPalette::Normal && !(option.state & QStyle::State_Active)) {
+        cg = QPalette::Inactive;
+    }
+
+    if (option.state & QStyle::State_Selected) {
+        return option.palette.color(cg, QPalette::HighlightedText);
+    }
+    return option.palette.color(cg, QPalette::Text);
+}
+
 class CommandBarStyleDelegate final : public QStyledItemDelegate
 {
     Q_OBJECT
@@ -216,6 +229,8 @@ public:
          */
         QStyleOptionViewItem option = opt;
         initStyleOption(&option, index);
+        const bool isSelected = option.state & QStyle::State_Selected;
+
         option.text.clear(); // clear old text
         QStyle *style = option.widget->style();
         style->drawControl(QStyle::CE_ItemViewItem, &option, painter, option.widget);
@@ -234,39 +249,38 @@ public:
             }
         }
 
-        const QString original = index.data().toString();
-        QStringView str = original;
-        int componentIdx = original.indexOf(QLatin1Char(':'));
-        int actionNameStart = 0;
-        if (componentIdx > 0) {
-            actionNameStart = componentIdx + 2;
-            // + 2 because there is a space after colon
-            str = str.mid(actionNameStart);
-        }
-
         QList<QTextLayout::FormatRange> formats;
-        if (componentIdx > 0) {
-            QTextCharFormat gray;
-            gray.setForeground(option.palette.placeholderText());
-            formats.append({0, componentIdx, gray});
+        const QString original = index.data().toString();
+        if (!isSelected) {
+            // omit custom text coloring if item is selected because the contrast ratio between the custom text colors
+            // and highlight background is often bad, especially if highlighted text has inverted text color
+            QStringView str = original;
+            int componentIdx = original.indexOf(QLatin1Char(':'));
+            int actionNameStart = 0;
+            if (componentIdx > 0) {
+                actionNameStart = componentIdx + 2;
+                // + 2 because there is a space after colon
+                str = str.mid(actionNameStart);
+
+                QTextCharFormat gray;
+                gray.setForeground(option.palette.placeholderText());
+                formats.append({0, componentIdx, gray});
+            }
+
+            /*
+             * Highlight matches from fuzzy matcher
+             */
+            const auto fmtRanges = KFuzzyMatcher::matchedRanges(m_filterString, str);
+            QTextCharFormat f;
+            f.setForeground(option.palette.link());
+            formats.reserve(formats.size() + fmtRanges.size());
+            std::transform(fmtRanges.begin(), fmtRanges.end(), std::back_inserter(formats), [f, actionNameStart](const KFuzzyMatcher::Range &fr) {
+                return QTextLayout::FormatRange{fr.start + actionNameStart, fr.length, f};
+            });
         }
-
-        QTextCharFormat fmt;
-        fmt.setForeground(option.palette.link());
-        fmt.setFontWeight(QFont::Bold);
-
-        /*
-         * Highlight matches from fuzzy matcher
-         */
-        const auto fmtRanges = KFuzzyMatcher::matchedRanges(m_filterString, str);
-        QTextCharFormat f;
-        f.setForeground(option.palette.link());
-        formats.reserve(formats.size() + fmtRanges.size());
-        std::transform(fmtRanges.begin(), fmtRanges.end(), std::back_inserter(formats), [f, actionNameStart](const KFuzzyMatcher::Range &fr) {
-            return QTextLayout::FormatRange{fr.start + actionNameStart, fr.length, f};
-        });
 
         textRect.adjust(hMargin, 0, -hMargin, 0);
+        painter->setPen(getTextColor(option));
         paintItemText(painter, original, textRect, option, std::move(formats));
 
         painter->restore();
