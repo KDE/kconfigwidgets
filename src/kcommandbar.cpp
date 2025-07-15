@@ -349,8 +349,9 @@ public:
             x = option.rect.right() - shortcutDrawingWidth(option, shortcutSegments, hMargin) - hMargin;
         }
 
+        const QColor keyTextColor = option.palette.buttonText().color();
+        const QColor textColor = getTextColor(option);
         painter->save();
-        painter->setPen(option.palette.buttonText().color());
         painter->setRenderHint(QPainter::Antialiasing);
         for (int i = 0, n = btns.count(); i < n; ++i) {
             const Button &button = btns.at(i);
@@ -375,6 +376,7 @@ public:
             }
 
             // draw shortcut segment
+            painter->setPen((i % 2 == 0) ? keyTextColor : textColor);
             painter->drawText(outputRect, Qt::AlignCenter, button.text);
 
             x += outputRect.width();
