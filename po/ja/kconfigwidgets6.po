@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-04 00:39+0000\n"
+"POT-Creation-Date: 2025-07-29 00:38+0000\n"
 "PO-Revision-Date: 2024-09-15 22:26+0900\n"
 "Last-Translator: UTUMI Hirosi <utuhiro78@yahoo.co.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -59,12 +59,12 @@ msgstr "自動検出"
 msgid "Color Scheme"
 msgstr "カラースキーム"
 
-#: kcommandbar.cpp:642
+#: kcommandbar.cpp:658
 #, kde-format
 msgid "No commands to display"
 msgstr "表示するコマンドはありません"
 
-#: kcommandbar.cpp:644
+#: kcommandbar.cpp:660
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "フィルタにマッチするコマンドはありません"

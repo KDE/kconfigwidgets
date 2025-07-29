@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-04 00:39+0000\n"
+"POT-Creation-Date: 2025-07-29 00:38+0000\n"
 "PO-Revision-Date: 2022-10-19 22:37+0200\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -48,13 +48,13 @@ msgstr "Automaatne tuvastamine"
 msgid "Color Scheme"
 msgstr "Värviskeem"
 
-#: kcommandbar.cpp:642
+#: kcommandbar.cpp:658
 #, fuzzy, kde-format
 #| msgid "No commands matching the filter"
 msgid "No commands to display"
 msgstr "Filtrile ei vasta ükski käsk"
 
-#: kcommandbar.cpp:644
+#: kcommandbar.cpp:660
 #, kde-format
 msgid "No commands matching the filter"
 msgstr "Filtrile ei vasta ükski käsk"

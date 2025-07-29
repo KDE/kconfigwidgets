@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-04 00:39+0000\n"
+"POT-Creation-Date: 2025-07-29 00:38+0000\n"
 "PO-Revision-Date: 2024-12-15 19:32+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -49,12 +49,12 @@ msgstr "अपने आप पता लगाएँ"
 msgid "Color Scheme"
 msgstr "रंग योजना"
 
-#: kcommandbar.cpp:642
+#: kcommandbar.cpp:658
 #, kde-format
 msgid "No commands to display"
 msgstr ""
 
-#: kcommandbar.cpp:644
+#: kcommandbar.cpp:660
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

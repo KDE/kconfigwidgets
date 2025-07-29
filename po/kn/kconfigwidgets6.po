@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-04 00:39+0000\n"
+"POT-Creation-Date: 2025-07-29 00:38+0000\n"
 "PO-Revision-Date: 2010-06-24 18:32+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn_IN <kde-i18n-doc@kde.org>\n"
@@ -49,12 +49,12 @@ msgstr "ಸ್ವಯಂಶೋಧನ"
 msgid "Color Scheme"
 msgstr "ಶೀಘ್ರಮಾರ್ಗ (ಶಾರ್ಟ್ ಕಟ್) ಪದ್ಧತಿಗಳು"
 
-#: kcommandbar.cpp:642
+#: kcommandbar.cpp:658
 #, kde-format
 msgid "No commands to display"
 msgstr ""
 
-#: kcommandbar.cpp:644
+#: kcommandbar.cpp:660
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""

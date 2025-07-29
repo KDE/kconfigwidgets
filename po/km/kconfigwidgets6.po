@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-04 00:39+0000\n"
+"POT-Creation-Date: 2025-07-29 00:38+0000\n"
 "PO-Revision-Date: 2012-06-27 10:04+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -46,12 +46,12 @@ msgstr "កែ​ស្វ័យប្រវត្តិ"
 msgid "Color Scheme"
 msgstr "គ្រោងការណ៍​ផ្លូវកាត់"
 
-#: kcommandbar.cpp:642
+#: kcommandbar.cpp:658
 #, kde-format
 msgid "No commands to display"
 msgstr ""
 
-#: kcommandbar.cpp:644
+#: kcommandbar.cpp:660
 #, kde-format
 msgid "No commands matching the filter"
 msgstr ""
