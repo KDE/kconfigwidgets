@@ -94,7 +94,7 @@ msgstr "لا مدخلات"
 #: krecentfilesaction.cpp:84
 #, kde-format
 msgid "Clear List"
-msgstr "امسح القائمة"
+msgstr "امحُ القائمة"
 
 #: kstandardaction.cpp:157
 #, kde-format
