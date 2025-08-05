@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:24+0000\n"
-"PO-Revision-Date: 2025-06-28 17:34+0400\n"
+"PO-Revision-Date: 2025-08-04 14:46+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -48,7 +48,7 @@ msgstr "المبدئي"
 #, kde-format
 msgctxt "Encodings menu"
 msgid "Autodetect"
-msgstr "اكتشفه آليًا"
+msgstr "اكتشفه آليًّا"
 
 #: kcolorschememenu.cpp:25
 #, kde-format
@@ -274,7 +274,7 @@ msgstr "ألصق محتوى الحافظة"
 
 #: kstandardaction_p.h:50
 msgid "C&lear"
-msgstr "ام&سح"
+msgstr "ام&حُ"
 
 #: kstandardaction_p.h:51
 msgid "Select &All"
