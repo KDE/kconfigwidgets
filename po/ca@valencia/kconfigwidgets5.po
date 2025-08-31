@@ -288,7 +288,7 @@ msgstr "&Neteja"
 
 #: kstandardaction_p.h:51
 msgid "Select &All"
-msgstr "Selecciona-ho &tot"
+msgstr "Tria-ho &tot"
 
 #: kstandardaction_p.h:52
 msgid "Dese&lect"
@@ -356,7 +356,7 @@ msgstr "&Zoom…"
 
 #: kstandardaction_p.h:64
 msgid "Select zoom level"
-msgstr "Seleccioneu el nivell de zoom"
+msgstr "Trieu el nivell de zoom"
 
 #: kstandardaction_p.h:65
 msgid "&Refresh"
