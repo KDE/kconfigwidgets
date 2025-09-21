@@ -22,7 +22,6 @@
 #include <QGuiApplication>
 #include <QMenu>
 #include <QMimeDatabase>
-#include <QMimeType>
 #include <QScreen>
 
 #if HAVE_QTDBUS
