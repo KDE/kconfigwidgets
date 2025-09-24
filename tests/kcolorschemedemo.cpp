@@ -29,7 +29,7 @@ public:
         KColorSchemeManager *manager = KColorSchemeManager::instance();
         QListView *view = new QListView(this);
         view->setModel(manager->model());
-        connect(view, &QListView::activated, manager, &KColorSchemeManager::activateScheme);
+        connect(view, &QListView::activated, manager, static_cast<void (KColorSchemeManager::*)(const QModelIndex &)>(&KColorSchemeManager::activateScheme));
         manager->setAutosaveChanges(true);
 
         QDialogButtonBox *box = new QDialogButtonBox(QDialogButtonBox::Close, this);
