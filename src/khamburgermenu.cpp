@@ -369,7 +369,11 @@ void KHamburgerMenuPrivate::resetMenu()
 
     const auto createdWidgets = q->createdWidgets();
     for (auto widget : createdWidgets) {
-        static_cast<QToolButton *>(widget)->setMenu(m_actualMenu.get());
+        auto toolButton = static_cast<QToolButton *>(widget);
+        toolButton->setMenu(m_actualMenu.get());
+        // Workaround for QTBUG-140793 ensure the popupMode is
+        // InstantPopup because QToolButton now resets to MenuButtonPopup when a menu is set
+        toolButton->setPopupMode(QToolButton::InstantPopup);
     }
     if (m_menuAction) {
         m_menuAction->setMenu(m_actualMenu.get());
