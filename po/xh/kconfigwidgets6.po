@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-29 00:38+0000\n"
+"POT-Creation-Date: 2025-10-04 00:39+0000\n"
 "PO-Revision-Date: 2002-12-13 17:20SAST\n"
 "Last-Translator: Lwandle Mgidlana <lwandle@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -99,12 +99,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Intshukumo"
 
-#: krecentfilesaction.cpp:78
+#: krecentfilesaction.cpp:77
 #, fuzzy, kde-format
 msgid "No Entries"
 msgstr "Iimpahla"
 
-#: krecentfilesaction.cpp:84
+#: krecentfilesaction.cpp:83
 #, fuzzy, kde-format
 #| msgid "Clear input"
 msgid "Clear List"

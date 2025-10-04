@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-29 00:38+0000\n"
+"POT-Creation-Date: 2025-10-04 00:39+0000\n"
 "PO-Revision-Date: 2024-05-22 10:39+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -85,12 +85,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "További műveletek"
 
-#: krecentfilesaction.cpp:78
+#: krecentfilesaction.cpp:77
 #, kde-format
 msgid "No Entries"
 msgstr "Nincs bejegyzés"
 
-#: krecentfilesaction.cpp:84
+#: krecentfilesaction.cpp:83
 #, kde-format
 msgid "Clear List"
 msgstr "Lista törlése"

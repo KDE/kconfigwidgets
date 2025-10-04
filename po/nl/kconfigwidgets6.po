@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-29 00:38+0000\n"
+"POT-Creation-Date: 2025-10-04 00:39+0000\n"
 "PO-Revision-Date: 2024-05-18 10:20+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -104,12 +104,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Meer acties"
 
-#: krecentfilesaction.cpp:78
+#: krecentfilesaction.cpp:77
 #, kde-format
 msgid "No Entries"
 msgstr "Geen items"
 
-#: krecentfilesaction.cpp:84
+#: krecentfilesaction.cpp:83
 #, kde-format
 msgid "Clear List"
 msgstr "Lijst wissen"
