@@ -257,7 +257,7 @@ void KHamburgerMenuTest::openMenuByShortcutTest()
     QToolButton *hamburgerToolButton = qobject_cast<QToolButton *>(m_toolBar->widgetForAction(hamburgerMenuAction));
     hamburgerMenuAction->trigger();
     QTRY_VERIFY(hamburgerToolButton->menu()->isVisible()); // Wait for the menu to be shown
-    QVERIFY(hamburgerToolButton->menu()->actions().first() == testActionInsideHamburgerMenu);
+    QCOMPARE(hamburgerToolButton->menu()->actions().first(), testActionInsideHamburgerMenu);
     hamburgerToolButton->menu()->close();
     QTRY_VERIFY(!hamburgerToolButton->menu()->isVisible());
     QCOMPARE(aboutToShowMenuSignalsSpy.count(), 1);
@@ -267,7 +267,7 @@ void KHamburgerMenuTest::openMenuByShortcutTest()
     hamburgerMenuAction->trigger();
     QTRY_VERIFY(hamburgerToolButton->menu()->isVisible()); // We test for the toolButton's menu even though the menu that will be shown won't visually belong
                                                            // to the button (which is invisible) because the menu should still be the same.
-    QVERIFY(hamburgerToolButton->menu()->actions().first() == testActionInsideHamburgerMenu);
+    QCOMPARE(hamburgerToolButton->menu()->actions().first(), testActionInsideHamburgerMenu);
     QVERIFY(!hamburgerToolButton->isDown());
     hamburgerToolButton->menu()->close();
     QTRY_VERIFY(!hamburgerToolButton->menu()->isVisible());
@@ -287,7 +287,7 @@ void KHamburgerMenuTest::openMenuByShortcutTest()
     m_toolBar->show();
     hamburgerMenuAction->trigger();
     QTRY_VERIFY(hamburgerToolButton->menu()->isVisible()); // Wait for the menu to be shown
-    QVERIFY(hamburgerToolButton->menu()->actions().first() == testActionInsideHamburgerMenu);
+    QCOMPARE(hamburgerToolButton->menu()->actions().first(), testActionInsideHamburgerMenu);
     hamburgerToolButton->menu()->close();
     QTRY_VERIFY(!hamburgerToolButton->menu()->isVisible());
     QCOMPARE(aboutToShowMenuSignalsSpy.count(), 3);
