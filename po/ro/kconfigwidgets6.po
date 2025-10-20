@@ -1,13 +1,13 @@
 # Traducerea kdelibs4.po în Română
+# SPDX-FileCopyrightText: 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2021, 2022, 2024, 2025 Sergiu Bivol <sergiu@cip.md>
 # Laurenţiu Buzdugan <lbuz@rolix.org>, 2008, 2009.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2021, 2022, 2024.
 # Cristian Oneț <onet.cristian@gmail.com>, 2010, 2011, 2012, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: kdelibs4\n"
+"Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-10-04 00:39+0000\n"
-"PO-Revision-Date: 2024-06-09 11:29+0100\n"
+"PO-Revision-Date: 2025-10-19 01:30+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -172,7 +172,7 @@ msgstr "Salvează documentul cu denumire nouă"
 
 #: kstandardaction_p.h:68
 msgid "Re&vert"
-msgstr "In&versează"
+msgstr "An&ulează"
 
 #: kstandardaction_p.h:68
 msgid "Revert unsaved changes made to document"
@@ -204,7 +204,7 @@ msgstr "Arată o previzualizare a tipăririi fișierului"
 
 #: kstandardaction_p.h:72
 msgid "&Mail…"
-msgstr "E-&mail…"
+msgstr "Tri&mite prin poștă…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -300,7 +300,7 @@ msgstr "Încadrează în &pagină"
 
 #: kstandardaction_p.h:89
 msgid "Zoom to fit page in window"
-msgstr "Panoramează pentru a încadra pagina în fereastră"
+msgstr "Apropie pentru a încadra pagina în fereastră"
 
 #: kstandardaction_p.h:90
 msgid "Fit to Page &Width"
@@ -316,19 +316,19 @@ msgstr "Încadrează în l&ungimea paginii"
 
 #: kstandardaction_p.h:91
 msgid "Zoom to fit page height in window"
-msgstr "Panoramează pentru a încadra lungimea paginii în fereastră"
+msgstr "Apropie pentru a încadra lungimea paginii în fereastră"
 
 #: kstandardaction_p.h:92
 msgid "Zoom &In"
-msgstr "&Mărește"
+msgstr "Aprop&ie"
 
 #: kstandardaction_p.h:93
 msgid "Zoom &Out"
-msgstr "Micș&orează"
+msgstr "În&depărtează"
 
 #: kstandardaction_p.h:94
 msgid "&Zoom…"
-msgstr "&Apropie…"
+msgstr "&Apropiere…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -368,15 +368,15 @@ msgstr "Mergi la pagina următoare"
 
 #: kstandardaction_p.h:104
 msgid "&Go To…"
-msgstr "&Mergi la…"
+msgstr "Mer&gi la…"
 
 #: kstandardaction_p.h:105
 msgid "&Go to Page…"
-msgstr "&Mergi la pagina…"
+msgstr "Mer&gi la pagina…"
 
 #: kstandardaction_p.h:106
 msgid "&Go to Line…"
-msgstr "&Mergi la linia…"
+msgstr "Mer&gi la linia…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
