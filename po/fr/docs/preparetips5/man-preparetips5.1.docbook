@@ -63,7 +63,7 @@
 >preparetips5</command
 > est un script extrayant le texte depuis un fichier d'astuces. Il extrait le texte de façon à ce que <command
 >xgettext</command
-> puisse ajouter les astuces au fichier « po ». Les fichiers « po » se présentent sous la forme d'un format de chaînes de textes, lisibles par un humain et sont utilisés pour les traductions. </para>
+> puisse ajouter les astuces au fichier « po ». Les fichiers « po » se présentent sous la forme d'un format de chaines de textes, lisibles par un humain et sont utilisés pour les traductions. </para>
 
 <para
 ><command
