@@ -20,15 +20,15 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-10-04 00:39+0000\n"
-"PO-Revision-Date: 2025-09-14 08:44-0300\n"
-"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
+"PO-Revision-Date: 2025-11-08 21:10-0300\n"
+"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -156,7 +156,7 @@ msgstr "Cria um novo documento"
 
 #: kstandardaction_p.h:64
 msgid "&Open…"
-msgstr "&Abrir..."
+msgstr "&Abrir…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -180,7 +180,7 @@ msgstr "Salva o documento"
 
 #: kstandardaction_p.h:67
 msgid "Save &As…"
-msgstr "Salvar &como..."
+msgstr "Salvar &como…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -204,7 +204,7 @@ msgstr "Fecha o documento"
 
 #: kstandardaction_p.h:70
 msgid "&Print…"
-msgstr "&Imprimir..."
+msgstr "&Imprimir…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -220,7 +220,7 @@ msgstr "Mostra uma previsão da impressão do documento"
 
 #: kstandardaction_p.h:72
 msgid "&Mail…"
-msgstr "Enviar por e-&mail..."
+msgstr "Enviar por e-&mail…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -288,7 +288,7 @@ msgstr "&Desmarcar"
 
 #: kstandardaction_p.h:83
 msgid "&Find…"
-msgstr "&Localizar..."
+msgstr "&Localizar…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -300,7 +300,7 @@ msgstr "Localizar &anterior"
 
 #: kstandardaction_p.h:86
 msgid "&Replace…"
-msgstr "Substitui&r..."
+msgstr "Substitui&r…"
 
 #: kstandardaction_p.h:88
 msgid "Zoom to &Actual Size"
@@ -344,7 +344,7 @@ msgstr "&Reduzir"
 
 #: kstandardaction_p.h:94
 msgid "&Zoom…"
-msgstr "&Zoom..."
+msgstr "&Zoom…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -384,15 +384,15 @@ msgstr "Ir para a próxima página"
 
 #: kstandardaction_p.h:104
 msgid "&Go To…"
-msgstr "&Ir para..."
+msgstr "&Ir para…"
 
 #: kstandardaction_p.h:105
 msgid "&Go to Page…"
-msgstr "&Ir para a página..."
+msgstr "&Ir para a página…"
 
 #: kstandardaction_p.h:106
 msgid "&Go to Line…"
-msgstr "&Ir para a linha..."
+msgstr "&Ir para a linha…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -432,11 +432,11 @@ msgstr "&Adicionar favorito"
 
 #: kstandardaction_p.h:113
 msgid "&Edit Bookmarks…"
-msgstr "&Editar favoritos..."
+msgstr "&Editar favoritos…"
 
 #: kstandardaction_p.h:115
 msgid "&Spelling…"
-msgstr "&Ortografia..."
+msgstr "&Ortografia…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -472,12 +472,12 @@ msgstr "&Modo de tela cheia"
 
 #: kstandardaction_p.h:121
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Configurar atal&hos do teclado..."
+msgstr "Configurar atal&hos do teclado…"
 
 #: kstandardaction_p.h:122
 #, kde-format
 msgid "&Configure %1…"
-msgstr "&Configurar %1..."
+msgstr "&Configurar %1…"
 
 #: kstandardaction_p.h:123
 msgid "Configure Tool&bars…"
@@ -485,7 +485,7 @@ msgstr "Configurar &barras de ferramentas…"
 
 #: kstandardaction_p.h:124
 msgid "Configure &Notifications…"
-msgstr "Configurar &notificações..."
+msgstr "Configurar &notificações…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -498,7 +498,7 @@ msgstr "O que é is&to?"
 
 #: kstandardaction_p.h:130
 msgid "&Report Bug…"
-msgstr "&Relatar erro..."
+msgstr "&Relatar erro…"
 
 #: kstandardaction_p.h:131
 msgid "Configure &Language…"
@@ -519,7 +519,7 @@ msgstr "&Remover"
 
 #: kstandardaction_p.h:135
 msgid "&Rename…"
-msgstr "&Renomear..."
+msgstr "&Renomear…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
