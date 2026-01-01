@@ -74,7 +74,7 @@ QStringList KLanguageName::allLanguageCodes()
     QStringList systemLangList;
     const QStringList localeDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("locale"), QStandardPaths::LocateDirectory);
     for (const QString &localeDir : localeDirs) {
-        const QStringList entries = QDir(localeDir).entryList(QDir::Dirs);
+        const QStringList entries = QDir(localeDir).entryList(QDir::Dirs | QDir::NoDotAndDotDot);
         auto languageExists = [&localeDir](const QString &language) {
             return QFile::exists(localeDir + QLatin1Char('/') + language + QLatin1String("/kf6_entry.desktop"));
         };

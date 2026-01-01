@@ -179,7 +179,7 @@ void KLanguageButton::loadAllLanguages()
 {
     const QStringList localeDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("locale"), QStandardPaths::LocateDirectory);
     for (const QString &localeDir : localeDirs) {
-        const QStringList entries = QDir(localeDir).entryList(QDir::Dirs, QDir::Name);
+        const QStringList entries = QDir(localeDir).entryList(QDir::Dirs | QDir::NoDotAndDotDot, QDir::Name);
         for (const QString &d : entries) {
             const QString entryFile = localeDir + QLatin1Char('/') + d + QStringLiteral("/kf6_entry.desktop");
             if (QFile::exists(entryFile)) {
