@@ -96,7 +96,6 @@ bool isMenuBarVisible(const QMenuBar *menuBar)
 
 bool isWidgetActuallyVisible(const QWidget *widget)
 {
-    Q_CHECK_PTR(widget);
     if (widget->width() < 1 || widget->height() < 1) {
         return false;
     }
@@ -112,7 +111,6 @@ bool isWidgetActuallyVisible(const QWidget *widget)
 
 void prepareParentlessMenuForShowing(QMenu *menu, const QWidget *surrogateParent)
 {
-    Q_CHECK_PTR(menu);
     // ensure polished so the style can change the surfaceformat of the window which is
     // not possible once the window has been created
     menu->ensurePolished();

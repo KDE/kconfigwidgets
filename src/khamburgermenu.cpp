@@ -119,7 +119,6 @@ void KHamburgerMenu::insertIntoMenuBefore(QMenu *menu, QAction *before)
 
 void KHamburgerMenuPrivate::insertIntoMenuBefore(QMenu *menu, QAction *before)
 {
-    Q_CHECK_PTR(menu);
     Q_Q(KHamburgerMenu);
     if (!m_menuAction) {
         m_menuAction = new QAction(this);
@@ -147,7 +146,6 @@ void KHamburgerMenu::hideActionsOf(QWidget *widget)
 
 void KHamburgerMenuPrivate::hideActionsOf(QWidget *widget)
 {
-    Q_CHECK_PTR(widget);
     m_widgetsWithActionsToBeHidden.remove(nullptr);
     if (listContainsWidget(m_widgetsWithActionsToBeHidden, widget)) {
         return;
@@ -174,7 +172,6 @@ void KHamburgerMenu::showActionsOf(QWidget *widget)
 
 void KHamburgerMenuPrivate::showActionsOf(QWidget *widget)
 {
-    Q_CHECK_PTR(widget);
     m_widgetsWithActionsToBeHidden.remove(widget);
     widget->removeEventFilter(m_listeners->get<AddOrRemoveActionListener>());
     widget->removeEventFilter(m_listeners->get<VisibleActionsChangeListener>());
@@ -220,7 +217,6 @@ QWidget *KHamburgerMenuPrivate::createWidget(QWidget *parent)
 
 QAction *KHamburgerMenuPrivate::actionWithExclusivesFrom(QAction *from, QWidget *parent, std::unordered_set<const QAction *> &nonExclusives) const
 {
-    Q_CHECK_PTR(from);
     if (nonExclusives.count(from) > 0) {
         return nullptr; // The action is non-exclusive/already visible elsewhere.
     }
