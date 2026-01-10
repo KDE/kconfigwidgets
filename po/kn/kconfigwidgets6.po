@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2026-01-10 00:39+0000\n"
 "PO-Revision-Date: 2010-06-24 18:32+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn_IN <kde-i18n-doc@kde.org>\n"
@@ -66,7 +66,7 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "ಸಂರಚಿಸು"
 
-#: khamburgermenu.cpp:126
+#: khamburgermenu.cpp:125
 #, fuzzy, kde-format
 #| msgctxt "keyboard-key-name"
 #| msgid "Menu"
@@ -74,21 +74,21 @@ msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "ಪರಿವಿಡಿ"
 
-#: khamburgermenu.cpp:329
+#: khamburgermenu.cpp:325
 #, fuzzy, kde-format
 #| msgid "Show all options"
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "ಎಲ್ಲ ಆಯ್ಕೆಗಳನ್ನು ತೋರಿಸು"
 
-#: khamburgermenu.cpp:355
+#: khamburgermenu.cpp:351
 #, fuzzy, kde-format
 #| msgid "Choose..."
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "ಆರಿಸಿ..."
 
-#: khamburgermenu.cpp:356
+#: khamburgermenu.cpp:352
 #, fuzzy, kde-format
 #| msgid "More Actions"
 msgctxt ""

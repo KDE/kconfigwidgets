@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2026-01-10 00:39+0000\n"
 "PO-Revision-Date: 2025-05-27 20:26+0100\n"
 "Last-Translator: Kizito Birabwa <kbirabwa@yahoo.co.uk>\n"
 "Language-Team: Luganda\n"
@@ -60,25 +60,25 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "Teekateeka"
 
-#: khamburgermenu.cpp:126
+#: khamburgermenu.cpp:125
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "&Menyu"
 
-#: khamburgermenu.cpp:329
+#: khamburgermenu.cpp:325
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "Olubaawo lwa &Menyu Lulabike n'Ebisangibwa ko Byonna"
 
-#: khamburgermenu.cpp:355
+#: khamburgermenu.cpp:351
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "Ebisinga wo"
 
-#: khamburgermenu.cpp:356
+#: khamburgermenu.cpp:352
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"

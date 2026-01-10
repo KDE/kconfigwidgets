@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2026-01-10 00:39+0000\n"
 "PO-Revision-Date: 2024-01-29 22:10-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -68,25 +68,25 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "ਸੰਰਚਨਾ"
 
-#: khamburgermenu.cpp:126
+#: khamburgermenu.cpp:125
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "ਮੇਨੂ(&M)"
 
-#: khamburgermenu.cpp:329
+#: khamburgermenu.cpp:325
 #, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "ਸਭ ਕਾਰਵਾਈਆਂ ਨਾਲ ਮੇਨੂ ਵੇਖਾਓ(&M)"
 
-#: khamburgermenu.cpp:355
+#: khamburgermenu.cpp:351
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "ਹੋਰ"
 
-#: khamburgermenu.cpp:356
+#: khamburgermenu.cpp:352
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"

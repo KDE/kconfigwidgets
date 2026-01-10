@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2026-01-10 00:39+0000\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -68,28 +68,28 @@ msgctxt "@title:window"
 msgid "Configure"
 msgstr "कन्फिगर गर्नुहोस्"
 
-#: khamburgermenu.cpp:126
+#: khamburgermenu.cpp:125
 #, fuzzy, kde-format
 #| msgid "Menu"
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
 msgstr "मेनु"
 
-#: khamburgermenu.cpp:329
+#: khamburgermenu.cpp:325
 #, fuzzy, kde-format
 #| msgid "Show all options"
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
 msgstr "सबै विकल्प देखाउनुहोस्"
 
-#: khamburgermenu.cpp:355
+#: khamburgermenu.cpp:351
 #, fuzzy, kde-format
 #| msgid "Choose..."
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
 msgstr "रोज्नुहोस्..."
 
-#: khamburgermenu.cpp:356
+#: khamburgermenu.cpp:352
 #, fuzzy, kde-format
 #| msgid "Action"
 msgctxt ""
