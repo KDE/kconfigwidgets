@@ -330,9 +330,7 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
     Q_D(KRecentFilesAction);
     clearEntries();
 
-    QString key;
     QString value;
-    QString nameKey;
     QString nameValue;
     QString title;
     QUrl url;
@@ -348,7 +346,8 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
     bool thereAreEntries = false;
     // read file list
     for (int i = 1; i <= d->m_maxItems; i++) {
-        key = QStringLiteral("File%1").arg(i);
+        char key[128]{};
+        std::snprintf(key, sizeof key, "File%d", i);
         value = cg.readPathEntry(key, QString());
         if (value.isEmpty()) {
             continue;
@@ -368,7 +367,8 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
         }
 #endif
 
-        nameKey = QStringLiteral("Name%1").arg(i);
+        char nameKey[128]{};
+        std::snprintf(nameKey, sizeof nameKey, "Name%d", i);
         nameValue = cg.readPathEntry(nameKey, url.fileName());
         title = titleWithSensibleWidth(nameValue, KShell::tildeCollapse(value));
         if (!value.isNull()) {
@@ -399,8 +399,13 @@ void KRecentFilesAction::saveEntries(const KConfigGroup &_cg)
     // write file list
     int i = 1;
     for (const auto &[action, url, shortName, _] : d->m_recentActions) {
-        cg.writePathEntry(QStringLiteral("File%1").arg(i), url.toDisplayString(QUrl::PreferLocalFile));
-        cg.writePathEntry(QStringLiteral("Name%1").arg(i), shortName);
+        char key[128]{};
+        std::snprintf(key, sizeof key, "File%d", i);
+        cg.writePathEntry(key, url.toDisplayString(QUrl::PreferLocalFile));
+
+        char nameKey[128]{};
+        std::snprintf(nameKey, sizeof nameKey, "Name%d", i);
+        cg.writePathEntry(nameKey, shortName);
 
         ++i;
     }
