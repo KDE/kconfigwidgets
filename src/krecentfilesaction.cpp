@@ -35,6 +35,7 @@
 #include <KLocalizedString>
 #include <KShell>
 
+#include <memory_resource>
 #include <set>
 
 KRecentFilesAction::KRecentFilesAction(QObject *parent)
@@ -341,7 +342,9 @@ void KRecentFilesAction::loadEntries(const KConfigGroup &_config)
         cg = KConfigGroup(cg.config(), QStringLiteral("RecentFiles"));
     }
 
-    std::set<QUrl> seenUrls;
+    std::byte memory[sizeof(QUrl) * 32];
+    std::pmr::monotonic_buffer_resource resource(memory, sizeof(memory));
+    std::pmr::set<QUrl> seenUrls(&resource);
 
     bool thereAreEntries = false;
     // read file list
