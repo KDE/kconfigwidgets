@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:39+0000\n"
+"POT-Creation-Date: 2026-02-08 00:39+0000\n"
 "PO-Revision-Date: 2024-12-15 19:32+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -96,12 +96,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "और क्रियाएँ"
 
-#: krecentfilesaction.cpp:77
+#: krecentfilesaction.cpp:78
 #, kde-format
 msgid "No Entries"
 msgstr "कोई प्रविष्टि नहीं"
 
-#: krecentfilesaction.cpp:83
+#: krecentfilesaction.cpp:84
 #, kde-format
 msgid "Clear List"
 msgstr "सूची साफ करें"

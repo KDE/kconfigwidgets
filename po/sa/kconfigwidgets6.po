@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:39+0000\n"
+"POT-Creation-Date: 2026-02-08 00:39+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -87,12 +87,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "अधिकानि क्रियाः"
 
-#: krecentfilesaction.cpp:77
+#: krecentfilesaction.cpp:78
 #, kde-format
 msgid "No Entries"
 msgstr "प्रविष्टयः नास्ति"
 
-#: krecentfilesaction.cpp:83
+#: krecentfilesaction.cpp:84
 #, kde-format
 msgid "Clear List"
 msgstr "स्पष्ट सूची"

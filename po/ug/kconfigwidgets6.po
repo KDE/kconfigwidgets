@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:39+0000\n"
+"POT-Creation-Date: 2026-02-08 00:39+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -96,12 +96,12 @@ msgctxt ""
 msgid "More Actions"
 msgstr "تېخىمۇ كۆپ مەشغۇلاتلار"
 
-#: krecentfilesaction.cpp:77
+#: krecentfilesaction.cpp:78
 #, kde-format
 msgid "No Entries"
 msgstr "تۈر يوق"
 
-#: krecentfilesaction.cpp:83
+#: krecentfilesaction.cpp:84
 #, kde-format
 msgid "Clear List"
 msgstr "تىزىملىكنى تازىلا"

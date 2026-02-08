@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:39+0000\n"
+"POT-Creation-Date: 2026-02-08 00:39+0000\n"
 "PO-Revision-Date: 2008-08-06 00:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Occitan <oc@li.org>\n"
@@ -93,13 +93,13 @@ msgctxt ""
 msgid "More Actions"
 msgstr "Accion"
 
-#: krecentfilesaction.cpp:77
+#: krecentfilesaction.cpp:78
 #, fuzzy, kde-format
 #| msgid "Notes:"
 msgid "No Entries"
 msgstr "Nòtas :"
 
-#: krecentfilesaction.cpp:83
+#: krecentfilesaction.cpp:84
 #, fuzzy, kde-format
 #| msgid "Clear input"
 msgid "Clear List"
