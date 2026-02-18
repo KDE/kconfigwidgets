@@ -1,13 +1,13 @@
 # Traducerea kdelibs4.po în Română
+# SPDX-FileCopyrightText: 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2021, 2022, 2024, 2025 Sergiu Bivol <sergiu@cip.md>
 # Laurenţiu Buzdugan <lbuz@rolix.org>, 2008, 2009.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2021, 2022, 2024.
 # Cristian Oneț <onet.cristian@gmail.com>, 2010, 2011, 2012, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: kdelibs4\n"
+"Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 09:00+0000\n"
-"PO-Revision-Date: 2024-01-07 14:13+0000\n"
+"PO-Revision-Date: 2025-10-19 01:30+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -156,7 +156,7 @@ msgstr "Creează document nou"
 
 #: kstandardaction_p.h:31
 msgid "&Open..."
-msgstr "&Deschide..."
+msgstr "&Deschide…"
 
 #: kstandardaction_p.h:31
 msgid "Open an existing document"
@@ -180,7 +180,7 @@ msgstr "Salvează documentul"
 
 #: kstandardaction_p.h:34
 msgid "Save &As..."
-msgstr "S&alvează ca..."
+msgstr "S&alvează ca…"
 
 #: kstandardaction_p.h:34
 msgid "Save document under a new name"
@@ -188,7 +188,7 @@ msgstr "Salvează documentul cu denumire nouă"
 
 #: kstandardaction_p.h:35
 msgid "Re&vert"
-msgstr "In&versează"
+msgstr "An&ulează"
 
 #: kstandardaction_p.h:35
 msgid "Revert unsaved changes made to document"
@@ -204,7 +204,7 @@ msgstr "Închide documentul"
 
 #: kstandardaction_p.h:37
 msgid "&Print..."
-msgstr "&Tipărește..."
+msgstr "Ti&părește…"
 
 #: kstandardaction_p.h:37
 msgid "Print document"
@@ -220,7 +220,7 @@ msgstr "Arată o previzualizare a tipăririi fișierului"
 
 #: kstandardaction_p.h:39
 msgid "&Mail..."
-msgstr "E-&mail.."
+msgstr "Tri&mite prin poștă…"
 
 #: kstandardaction_p.h:39
 msgid "Send document by mail"
@@ -288,7 +288,7 @@ msgstr "Dese&lectează"
 
 #: kstandardaction_p.h:53
 msgid "&Find..."
-msgstr "C&aută..."
+msgstr "&Caută…"
 
 #: kstandardaction_p.h:54
 msgid "Find &Next"
@@ -300,7 +300,7 @@ msgstr "Caută &precedent"
 
 #: kstandardaction_p.h:56
 msgid "&Replace..."
-msgstr "Î&nlocuiește..."
+msgstr "Î&nlocuiește…"
 
 #: kstandardaction_p.h:58
 msgid "Zoom to &Actual Size"
@@ -316,7 +316,7 @@ msgstr "Încadrează în &pagină"
 
 #: kstandardaction_p.h:59
 msgid "Zoom to fit page in window"
-msgstr "Panoramează pentru a încadra pagina în fereastră"
+msgstr "Apropie pentru a încadra pagina în fereastră"
 
 #: kstandardaction_p.h:60
 msgid "Fit to Page &Width"
@@ -332,15 +332,15 @@ msgstr "Încadrează în l&ungimea paginii"
 
 #: kstandardaction_p.h:61
 msgid "Zoom to fit page height in window"
-msgstr "Panoramează pentru a încadra lungimea paginii în fereastră"
+msgstr "Apropie pentru a încadra lungimea paginii în fereastră"
 
 #: kstandardaction_p.h:62
 msgid "Zoom &In"
-msgstr "&Mărește"
+msgstr "Aprop&ie"
 
 #: kstandardaction_p.h:63
 msgid "Zoom &Out"
-msgstr "Micș&orează"
+msgstr "În&depărtează"
 
 #: kstandardaction_p.h:64
 msgid "&Zoom..."
@@ -384,15 +384,15 @@ msgstr "Mergi la pagina următoare"
 
 #: kstandardaction_p.h:74
 msgid "&Go To..."
-msgstr "&Mergi la…"
+msgstr "Mer&gi la…"
 
 #: kstandardaction_p.h:75
 msgid "&Go to Page..."
-msgstr "&Mergi la pagina…"
+msgstr "Mer&gi la pagina…"
 
 #: kstandardaction_p.h:76
 msgid "&Go to Line..."
-msgstr "&Mergi la linia…"
+msgstr "Mer&gi la linia…"
 
 #: kstandardaction_p.h:77
 msgid "&First Page"
