@@ -74,7 +74,13 @@ QAction *KStyleManager::createConfigureAction(QObject *parent)
     KActionMenu *menu = new KActionMenu(QIcon::fromTheme(QStringLiteral("preferences-desktop-theme-applications")), i18n("Application Style"), parent);
     QActionGroup *group = new QActionGroup(menu);
     const QStringList styles = QStringList() << QString() << QStyleFactory::keys();
+    // Hide Windows Vista style: it is unusable with dark color schemes,
+    // because recoloring does not work for multiple widgets like the menu bar
+    const QStringList stylesToHide = {QStringLiteral("windowsvista")};
     for (const QString &style : styles) {
+        if (stylesToHide.contains(style, Qt::CaseInsensitive)) {
+            continue;
+        }
         QAction *action = new QAction(style.isEmpty() ? i18n("Default") : style, menu);
         action->setData(style);
         action->setActionGroup(group);
