@@ -19,7 +19,7 @@ QString KCommandBarModel::Item::displayName() const
     const QString group = KLocalizedString::removeAcceleratorMarker(groupName);
     const QString command = KLocalizedString::removeAcceleratorMarker(action->text());
 
-    return group + QStringLiteral(": ") + command;
+    return group.isEmpty() ? command : group + QStringLiteral(": ") + command;
 }
 
 KCommandBarModel::KCommandBarModel(QObject *parent)
