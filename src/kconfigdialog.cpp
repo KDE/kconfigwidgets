@@ -269,6 +269,7 @@ bool KConfigDialog::showDialog(const QString &name)
     KConfigDialog *dialog = exists(name);
     if (dialog) {
         dialog->show();
+        dialog->activateWindow();
     }
     return (dialog != nullptr);
 }
