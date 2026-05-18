@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-25 00:42+0000\n"
+"POT-Creation-Date: 2026-05-18 00:40+0000\n"
 "PO-Revision-Date: 2010-06-24 18:32+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn_IN <kde-i18n-doc@kde.org>\n"
@@ -647,7 +647,7 @@ msgstr "ಇತ್ತೀಚಿನದನ್ನು ತೆರೆ(&R)"
 msgid "Application Style"
 msgstr "ಅನ್ವಯಿಕ (application):  "
 
-#: kstylemanager.cpp:78
+#: kstylemanager.cpp:84
 #, fuzzy, kde-format
 #| msgctxt "Encodings menu"
 #| msgid "Default"

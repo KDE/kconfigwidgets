@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-25 00:42+0000\n"
+"POT-Creation-Date: 2026-05-18 00:40+0000\n"
 "PO-Revision-Date: 2011-07-25 07:45+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <danishka@gmail.com>\n"
@@ -639,7 +639,7 @@ msgstr "මෑතකදි භාවිතා කළ දැ විවෘත ක�
 msgid "Application Style"
 msgstr "යෙදුම:"
 
-#: kstylemanager.cpp:78
+#: kstylemanager.cpp:84
 #, fuzzy, kde-format
 #| msgctxt "Encodings menu"
 #| msgid "Default"
