@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-18 00:40+0000\n"
-"PO-Revision-Date: 2026-04-01 08:40-0400\n"
+"PO-Revision-Date: 2026-05-30 17:11-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -152,7 +152,7 @@ msgstr "يېقىنقىنى ئاچ(&R)"
 
 #: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
-msgstr "يېقىندا ئاچقان بىر پۈتۈكنى ئاچىدۇ"
+msgstr "يېقىندا ئاچقان بىر پۈتۈكنى ئاچ"
 
 #: kstandardaction_p.h:66
 msgid "&Save"
@@ -168,7 +168,7 @@ msgstr "باشقا ئاتتا ساقلا(&A)…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
-msgstr "پۈتۈكنى يېڭى بىر ئاتتا ساقلايدۇ"
+msgstr "پۈتۈكنى يېڭى ئاتتا ساقلا"
 
 #: kstandardaction_p.h:68
 msgid "Re&vert"
@@ -320,11 +320,11 @@ msgstr "بەت ئېگىزلىكىنى كۆزنەككە ماسلاشتۇر"
 
 #: kstandardaction_p.h:92
 msgid "Zoom &In"
-msgstr "چوڭايت(&I)"
+msgstr "يېقىنلات(&I)"
 
 #: kstandardaction_p.h:93
 msgid "Zoom &Out"
-msgstr "كىچىكلەت(&O)"
+msgstr "يىراقلات(&O)"
 
 #: kstandardaction_p.h:94
 msgid "&Zoom…"
@@ -495,7 +495,7 @@ msgstr "%1 ھەققىدە(&A)"
 
 #: kstandardaction_p.h:133
 msgid "About &KDE"
-msgstr "ك د ئې(&KDE) ھەققىدە"
+msgstr "&KDE ھەققىدە"
 
 #: kstandardaction_p.h:134
 msgid "&Delete"
