@@ -1,0 +1,527 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the kconfigwidgets package.
+#
+# SPDX-FileCopyrightText: 2025-2026 Kisaragi Hiu <mail@kisaragi-hiu.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: kconfigwidgets\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"PO-Revision-Date: 2026-05-25 19:12+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Taiwanese Hokkien <zh-l10n@lists.slat.org>\n"
+"Language: nan_TW@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 26.07.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kisaragi Hiu"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "mail@kisaragi-hiu.com"
+
+#: kcodecaction.cpp:62
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Default"
+msgstr "Ū-siat"
+
+#: kcodecaction.cpp:70
+#, kde-format
+msgctxt "Encodings menu"
+msgid "Autodetect"
+msgstr "Tsū-tōng tsing-tshik"
+
+#: kcolorschememenu.cpp:24
+#, kde-format
+msgid "Color Scheme"
+msgstr "Phuè-sik Hong-àn"
+
+#: kcommandbar.cpp:660
+#, kde-format
+msgid "No commands to display"
+msgstr "Bô be̍h hiān-sî ê tsí-līng"
+
+#: kcommandbar.cpp:662
+#, kde-format
+msgid "No commands matching the filter"
+msgstr "Bô hû-ha̍p lī-á ê tsí-līng"
+
+#: kconfigdialog.cpp:37
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Siat-tīng"
+
+#: khamburgermenu.cpp:125
+#, kde-format
+msgctxt "@action:inmenu General purpose menu"
+msgid "&Menu"
+msgstr "Suán-tuann(&M)"
+
+#: khamburgermenu.cpp:325
+#, kde-format
+msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
+msgid "Show &Menubar with All Actions"
+msgstr "Hián-sī ū Sóo-ū Tōng-tsok ê Suán-tuann-lia̍t"
+
+#: khamburgermenu.cpp:351
+#, kde-format
+msgctxt "@action:inmenu A menu text advertising its contents (more features)."
+msgid "More"
+msgstr "Khah-tsè"
+
+#: khamburgermenu.cpp:352
+#, kde-format
+msgctxt ""
+"@action:inmenu A section heading advertising the contents of the menu bar"
+msgid "More Actions"
+msgstr "Khah-tsè tōng-tsok"
+
+#: krecentfilesaction.cpp:78
+#, kde-format
+msgid "No Entries"
+msgstr "Bô hāng-bo̍k"
+
+#: krecentfilesaction.cpp:84
+#, kde-format
+msgid "Clear List"
+msgstr "Tshing-tû Tuann"
+
+#: kstandardaction.cpp:157
+#, kde-format
+msgctxt "go back"
+msgid "&Back"
+msgstr "Tńg-khì(&B)"
+
+#: kstandardaction.cpp:164
+#, kde-format
+msgctxt "go forward"
+msgid "&Forward"
+msgstr "Hiòng-tsiân(&F)"
+
+#: kstandardaction.cpp:171
+#, kde-format
+msgctxt "home page"
+msgid "&Home"
+msgstr "Thâu-ia̍h(&H)"
+
+#: kstandardaction.cpp:230
+#, kde-format
+msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+msgstr ""
+"Hián-sī Suán-tuann-lia̍t<p>Suán-tuann-lia̍t ún-tsông liáu-āu koh kā i hiān-sî</"
+"p>"
+
+#: kstandardaction.cpp:251
+#, kde-format
+msgid ""
+"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
+"window used for status information.</p>"
+msgstr ""
+"Hián-sī Tsōng-thài-lia̍t<p>Hián-sī sī-thang ē-kha piáu-sī tsōng-thài tsu-sìn "
+"iōng ê tsōng-thài-lia̍t.</p>"
+
+#: kstandardaction_p.h:63
+msgid "&New"
+msgstr "Kiàn-li̍p(&N)"
+
+#: kstandardaction_p.h:63
+msgid "Create new document"
+msgstr "Kiàn-li̍p sin ê bûn-kiānn"
+
+#: kstandardaction_p.h:64
+msgid "&Open…"
+msgstr "Phah-khui(&O)…"
+
+#: kstandardaction_p.h:64
+msgid "Open an existing document"
+msgstr "Khui hiān-tsûn tóng-àn"
+
+#: kstandardaction_p.h:65
+msgid "Open &Recent"
+msgstr "Khui Kīn-lâi Iōng--ê(&R)"
+
+#: kstandardaction_p.h:65
+msgid "Open a document which was recently opened"
+msgstr "Khui tsuè-kīn ū khui kuè ê bûn-kiānn"
+
+#: kstandardaction_p.h:66
+msgid "&Save"
+msgstr "Tû-tsûn(&S)"
+
+#: kstandardaction_p.h:66
+msgid "Save document"
+msgstr "Tû-tsûn bûn-kiānn"
+
+#: kstandardaction_p.h:67
+msgid "Save &As…"
+msgstr "Iōng Pa̍t-ê Miâ Tû-tsûn(&A)…"
+
+#: kstandardaction_p.h:67
+msgid "Save document under a new name"
+msgstr "Iōng sin-ê miâ tû-tsûn bûn-kiānn"
+
+#: kstandardaction_p.h:68
+msgid "Re&vert"
+msgstr "Hue-ho̍k(&V)"
+
+#: kstandardaction_p.h:68
+msgid "Revert unsaved changes made to document"
+msgstr "Kā bûn-kiānn iáu-buē tû-tsûn ê piàn-king hue-ho̍k--tiāu"
+
+#: kstandardaction_p.h:69
+msgid "&Close"
+msgstr "Kuainn(&C)"
+
+#: kstandardaction_p.h:69
+msgid "Close document"
+msgstr "Kuainn-tiāu bûn-kiānn"
+
+#: kstandardaction_p.h:70
+msgid "&Print…"
+msgstr "Lia̍t-ìn(&P)…"
+
+#: kstandardaction_p.h:70
+msgid "Print document"
+msgstr "Lia̍t-ìn bûn-kiānn"
+
+#: kstandardaction_p.h:71
+msgid "Print Previe&w"
+msgstr "Ī-lám Lia̍t-ìn(&W)"
+
+#: kstandardaction_p.h:71
+msgid "Show a print preview of document"
+msgstr "Hián-sī bûn-kiānn ê lia̍t-ìn liáu-āu ê kiat-kó ê ī-lám"
+
+#: kstandardaction_p.h:72
+msgid "&Mail…"
+msgstr "E&mail…"
+
+#: kstandardaction_p.h:72
+msgid "Send document by mail"
+msgstr "Iōng email thuân bûn-kiānn"
+
+#: kstandardaction_p.h:73
+msgid "&Quit"
+msgstr "&Lī-khui"
+
+#: kstandardaction_p.h:73
+msgid "Quit application"
+msgstr "Lī-khui ìng-iōng-tîng-sik"
+
+#: kstandardaction_p.h:75
+msgid "&Undo"
+msgstr "&Ho̍k-guân"
+
+#: kstandardaction_p.h:75
+msgid "Undo last action"
+msgstr "Ho̍k-guân tíng-kái ê tōng-tsok"
+
+#: kstandardaction_p.h:76
+msgid "Re&do"
+msgstr "Tshú-s&iau ho̍k-guân"
+
+#: kstandardaction_p.h:76
+msgid "Redo last undone action"
+msgstr "Kah tíng-kái ho̍k-guân ê tōng-tsok koh tsò tsi̍t-pái"
+
+#: kstandardaction_p.h:77
+msgid "Cu&t"
+msgstr "Ka--lo̍h-lâi(&T)"
+
+#: kstandardaction_p.h:77
+msgid "Cut selection to clipboard"
+msgstr "Kā suán-ê ka--lo̍h-lâi kàu tsián-tah-phōo"
+
+#: kstandardaction_p.h:78
+msgid "&Copy"
+msgstr "&Khóo-pih"
+
+#: kstandardaction_p.h:78
+msgid "Copy selection to clipboard"
+msgstr "Kā suán-ê khóo-pih kàu tsián-tah-phōo"
+
+#: kstandardaction_p.h:79
+msgid "&Paste"
+msgstr "Tah--khí-khì(&P)"
+
+#: kstandardaction_p.h:79
+msgid "Paste clipboard content"
+msgstr "Kā tsián-tah-phōo ê lāi-iông tah--khí-khì"
+
+#: kstandardaction_p.h:80
+msgid "C&lear"
+msgstr "Tshing-tû(&L)"
+
+#: kstandardaction_p.h:81
+msgid "Select &All"
+msgstr "Tsuān Suán(&A)"
+
+#: kstandardaction_p.h:82
+msgid "Dese&lect"
+msgstr "Bái Suán(&L)"
+
+#: kstandardaction_p.h:83
+msgid "&Find…"
+msgstr "Tshuē(&F)…"
+
+#: kstandardaction_p.h:84
+msgid "Find &Next"
+msgstr "Tshuē Ē-tsi̍t-ē(&N)"
+
+#: kstandardaction_p.h:85
+msgid "Find Pre&vious"
+msgstr "Tshuē Tíng-tsi̍t-ê(&V)"
+
+#: kstandardaction_p.h:86
+msgid "&Replace…"
+msgstr "Tshú-tāi(&R)…"
+
+#: kstandardaction_p.h:88
+msgid "Zoom to &Actual Size"
+msgstr "Hòng-tuā kàu Si̍t-tsè Tuā-sè(&A)"
+
+#: kstandardaction_p.h:88
+msgid "View document at its actual size"
+msgstr "Iōng si̍t-tsè ê tuā-sè kiám-sī bûn-kiānn"
+
+#: kstandardaction_p.h:89
+msgid "&Fit to Page"
+msgstr "Hû-ha̍p Ia̍h(&F)"
+
+#: kstandardaction_p.h:89
+msgid "Zoom to fit page in window"
+msgstr "Hòng-tuā kàu ia̍h hû-ha̍p sī-thang tuā-sè"
+
+#: kstandardaction_p.h:90
+msgid "Fit to Page &Width"
+msgstr "Hû-ha̍p Ia̍h Khuan(&W)"
+
+#: kstandardaction_p.h:90
+msgid "Zoom to fit page width in window"
+msgstr "Hòng-tuā kàu ia̍h ê khuah-tōo hû-ha̍p sī-thang"
+
+#: kstandardaction_p.h:91
+msgid "Fit to Page &Height"
+msgstr "Hû-ha̍p Ia̍h Kuân(&H)"
+
+#: kstandardaction_p.h:91
+msgid "Zoom to fit page height in window"
+msgstr "Hòng-tuā kàu ia̍h ê kuân-tōo hû-ha̍p sī-thang"
+
+#: kstandardaction_p.h:92
+msgid "Zoom &In"
+msgstr "Hòng-tuā(&I)"
+
+#: kstandardaction_p.h:93
+msgid "Zoom &Out"
+msgstr "Sok-sió(&O)"
+
+#: kstandardaction_p.h:94
+msgid "&Zoom…"
+msgstr "Hòng-tuā Sok-sió(&Z)…"
+
+#: kstandardaction_p.h:94
+msgid "Select zoom level"
+msgstr "Suán hòng-tuā thîng-tōo"
+
+#: kstandardaction_p.h:95
+msgid "&Refresh"
+msgstr "Tîng tsíng-lí"
+
+#: kstandardaction_p.h:95
+msgid "Refresh document"
+msgstr "Tîng tsíng-lí bûn-kiānn"
+
+#: kstandardaction_p.h:97
+msgid "&Up"
+msgstr "Óng siōng(&U)"
+
+#: kstandardaction_p.h:97
+msgid "Go up"
+msgstr "Óng siōng khì"
+
+#: kstandardaction_p.h:102
+msgid "&Previous Page"
+msgstr "Tíng-tsi̍t-ia̍h"
+
+#: kstandardaction_p.h:102
+msgid "Go to previous page"
+msgstr "Tsiân-óng tíng-tsi̍t-ia̍h"
+
+#: kstandardaction_p.h:103
+msgid "&Next Page"
+msgstr "Ē-tsi̍t-ia̍h"
+
+#: kstandardaction_p.h:103
+msgid "Go to next page"
+msgstr "Tsiân-óng ē-tsi̍t-ia̍h"
+
+#: kstandardaction_p.h:104
+msgid "&Go To…"
+msgstr "Tsiân-óng(&G)…"
+
+#: kstandardaction_p.h:105
+msgid "&Go to Page…"
+msgstr "Tsiân-óng Ia̍h(&G)…"
+
+#: kstandardaction_p.h:106
+msgid "&Go to Line…"
+msgstr "Tsiân-óng Hâng(&G)…"
+
+#: kstandardaction_p.h:107
+msgid "&First Page"
+msgstr "Thâu-ia̍h(&F)"
+
+#: kstandardaction_p.h:107
+msgid "Go to first page"
+msgstr "Tsiân-óng thâu-ia̍h"
+
+#: kstandardaction_p.h:108
+msgid "&Last Page"
+msgstr "Bué-ia̍h(&L)"
+
+#: kstandardaction_p.h:108
+msgid "Go to last page"
+msgstr "Tsiân-óng bué-ia̍h"
+
+#: kstandardaction_p.h:109
+msgid "&Back"
+msgstr "Hiòng-āu(&B)"
+
+#: kstandardaction_p.h:109
+msgid "Go back in document"
+msgstr "Tī bûn-kiānn lāi-té hiòng-āu"
+
+#: kstandardaction_p.h:110
+msgid "&Forward"
+msgstr "Hiòng-tsiân(&F)"
+
+#: kstandardaction_p.h:110
+msgid "Go forward in document"
+msgstr "Tī bûn-kiānn lāi-té hiòng-tsiân"
+
+#: kstandardaction_p.h:112
+msgid "&Add Bookmark"
+msgstr "Thi&am Su-tshiam"
+
+#: kstandardaction_p.h:113
+msgid "&Edit Bookmarks…"
+msgstr "Pian-tsi̍p Su-tshiam(&E)…"
+
+#: kstandardaction_p.h:115
+msgid "&Spelling…"
+msgstr "Kiám-t&sa Phing-jī…"
+
+#: kstandardaction_p.h:115
+msgid "Check spelling in document"
+msgstr "Kiám-tsa bûn-kiānn phing-jī"
+
+#: kstandardaction_p.h:117
+msgid "Show &Menubar"
+msgstr "Hián-sī Suán-tuann-lia̍t"
+
+#: kstandardaction_p.h:117
+msgid "Show or hide menubar"
+msgstr "Tshiat-uānn hián-sī suán-tuann-lia̍t"
+
+#: kstandardaction_p.h:118
+msgid "Show &Toolbar"
+msgstr "Hián-sī Kang-kū-lia̍t(&T)"
+
+#: kstandardaction_p.h:118
+msgid "Show or hide toolbar"
+msgstr "Tshiat-uānn hián-sī kang-kū-lia̍t"
+
+#: kstandardaction_p.h:119
+msgid "Show St&atusbar"
+msgstr "Hián-sī Tsōng-thài-lia̍t(&A)"
+
+#: kstandardaction_p.h:119
+msgid "Show or hide statusbar"
+msgstr "Tshiat-uānn hián-sī tsōng-thài-lia̍t"
+
+#: kstandardaction_p.h:120
+msgid "F&ull Screen Mode"
+msgstr "Ts&uân-îng-bōo Bôo-sik"
+
+#: kstandardaction_p.h:121
+msgid "Configure Keyboard S&hortcuts…"
+msgstr "Siat-tīng K&hí-puânn Khuài-sok-khí…"
+
+#: kstandardaction_p.h:122
+#, kde-format
+msgid "&Configure %1…"
+msgstr "Siat-tīng %1(&C)…"
+
+#: kstandardaction_p.h:123
+msgid "Configure Tool&bars…"
+msgstr "Siat-tīng Kang-kū-lia̍t(&B)…"
+
+#: kstandardaction_p.h:124
+msgid "Configure &Notifications…"
+msgstr "Siat-tīng Thong-ti(&N)…"
+
+#: kstandardaction_p.h:128
+#, kde-format
+msgid "%1 &Handbook"
+msgstr "%1 Ts&hiú-tsheh"
+
+#: kstandardaction_p.h:129
+msgid "What's &This?"
+msgstr "&Tse-sī siánn?"
+
+#: kstandardaction_p.h:130
+msgid "&Report Bug…"
+msgstr "Huê-pò tshò-gōo(&R)…"
+
+#: kstandardaction_p.h:131
+msgid "Configure &Language…"
+msgstr "Siat-tīng gí-giân(&L)…"
+
+#: kstandardaction_p.h:132
+#, kde-format
+msgid "&About %1"
+msgstr "%1 ê s&iāu-kài"
+
+#: kstandardaction_p.h:133
+msgid "About &KDE"
+msgstr "&KDE ê siāu-kài"
+
+#: kstandardaction_p.h:134
+msgid "&Delete"
+msgstr "Thâi-tiāu(&D)"
+
+#: kstandardaction_p.h:135
+msgid "&Rename…"
+msgstr "Kái-miâ(&R)…"
+
+#: kstandardaction_p.h:136
+msgid "&Move to Trash"
+msgstr "Suá-khì pùn-sò-tháng(&M)"
+
+#: kstandardaction_p.h:137
+msgid "&Donate"
+msgstr "Kià-hù(&D)"
+
+#: kstandardaction_p.h:138
+msgid "Open &Menu"
+msgstr "Phah-khui Suán-tuann(&M)"
+
+#: kstylemanager.cpp:74
+#, kde-format
+msgid "Application Style"
+msgstr "Ìng-iōng-tîng-sik Hong-keh"
+
+#: kstylemanager.cpp:84
+#, kde-format
+msgid "Default"
+msgstr "Ū-siat"
