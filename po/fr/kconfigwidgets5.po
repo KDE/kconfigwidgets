@@ -202,7 +202,7 @@ msgstr "&Enregistrer"
 
 #: kstandardaction_p.h:33
 msgid "Save document"
-msgstr "Enregistrer un document"
+msgstr "Enregistrer le document"
 
 #: kstandardaction_p.h:34
 msgid "Save &As..."
@@ -226,7 +226,7 @@ msgstr "&Fermer"
 
 #: kstandardaction_p.h:36
 msgid "Close document"
-msgstr "Fermer un document"
+msgstr "Fermer le document"
 
 #: kstandardaction_p.h:37
 msgid "&Print..."
@@ -234,7 +234,7 @@ msgstr "Im&primer..."
 
 #: kstandardaction_p.h:37
 msgid "Print document"
-msgstr "Imprimer un document"
+msgstr "Imprimer le document"
 
 #: kstandardaction_p.h:38
 msgid "Print Previe&w"
@@ -250,7 +250,7 @@ msgstr "Envoyer par &courrier électronique..."
 
 #: kstandardaction_p.h:39
 msgid "Send document by mail"
-msgstr "Envoie un document par courriel"
+msgstr "Envoie le document par courriel"
 
 #: kstandardaction_p.h:40
 msgid "&Quit"
