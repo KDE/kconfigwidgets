@@ -8,6 +8,9 @@
 #ifndef KVIEWSTATEMAINTAINER_H
 #define KVIEWSTATEMAINTAINER_H
 
+// public header: while no export header needed, still always provide version macros
+#include "kconfigwidgets_version.h"
+
 #include <KViewStateMaintainerBase>
 
 #include <QAbstractItemView>
