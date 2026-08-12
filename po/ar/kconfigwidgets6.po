@@ -146,7 +146,7 @@ msgstr "افتح مستندًا موجودًا"
 
 #: kstandardaction_p.h:65
 msgid "Open &Recent"
-msgstr "افتح ملفاً &حديثًا"
+msgstr "افتح ملفًا &حديثًا"
 
 #: kstandardaction_p.h:65
 msgid "Open a document which was recently opened"
