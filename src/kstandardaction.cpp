@@ -226,9 +226,6 @@ QAction *_k_createInternal(StandardAction id, QObject *parent)
             break;
         case ShowMenubar: {
             pAction = new KToggleAction(parent);
-            pAction->setWhatsThis(
-                i18n("Show Menubar<p>"
-                     "Shows the menubar again after it has been hidden</p>"));
             pAction->setChecked(true);
 
             ShowMenubarActionFilter *mf = new ShowMenubarActionFilter(pAction);
