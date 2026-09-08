@@ -1,12 +1,12 @@
 # Translation of kconfigwidgets5.po to Catalan (Valencian)
-# Copyright (C) 1998-2025 This_file_is_part_of_KDE
+# Copyright (C) 1998-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # SPDX-FileCopyrightText: 1998-2007 Sebastià Pla i Sanz <sps@sastia.com>
 # SPDX-FileCopyrightText: 2003, 2006, 2011-2017, 2019-2021 Antoni Bella Pérez <antonibella5@yahoo.com>
 # SPDX-FileCopyrightText: 2004-2005, 2007 Albert Astals Cid <aacid@kde.org>
-# SPDX-FileCopyrightText: 2007-2017, 2019-2022, 2024-2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2007-2017, 2019-2022, 2024-2026 Josep M. Ferrer <txemaq@gmail.com>
 # SPDX-FileCopyrightText: 2009 Robert Millan <rmh@aybabtu.com>
 # SPDX-FileCopyrightText: 2010 Orestes Mas <orestes@tsc.upc.edu>
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 09:00+0000\n"
-"PO-Revision-Date: 2025-12-02 09:53+0100\n"
+"PO-Revision-Date: 2026-09-06 22:51+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -336,7 +336,7 @@ msgstr "Zoom fins a ajustar l'amplària de la pàgina en la finestra"
 
 #: kstandardaction_p.h:61
 msgid "Fit to Page &Height"
-msgstr "Ajusta a l'a&lçària de la pàgina"
+msgstr "Ajusta a l'al&çada de la pàgina"
 
 #: kstandardaction_p.h:61
 msgid "Zoom to fit page height in window"
