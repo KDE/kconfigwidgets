@@ -362,11 +362,11 @@ msgstr "Sélectionner le niveau de zoom"
 
 #: kstandardaction_p.h:95
 msgid "&Refresh"
-msgstr "&Rafraîchir"
+msgstr "&Rafraichir"
 
 #: kstandardaction_p.h:95
 msgid "Refresh document"
-msgstr "Rafraîchir le document"
+msgstr "Rafraichir le document"
 
 #: kstandardaction_p.h:97
 msgid "&Up"
