@@ -86,7 +86,7 @@ else()
     target_compile_definitions(KF6ConfigWidgets PRIVATE -DHAVE_QTDBUS=0)
 endif()
 
-ecm_generate_headers(KConfigWidgets_HEADERS
+ecm_generate_headers(KConfigWidgets_CamelCase_HEADERS
   HEADER_NAMES
   KCodecAction
   KColorSchemeMenu
@@ -111,6 +111,7 @@ install(TARGETS KF6ConfigWidgets EXPORT KF6ConfigWidgetsTargets ${KF_INSTALL_TAR
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kconfigwidgets_export.h
   ${KConfigWidgets_HEADERS}
+  ${KConfigWidgets_CamelCase_HEADERS}
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KConfigWidgets COMPONENT Devel
 )
 
@@ -133,3 +134,16 @@ if(BUILD_DESIGNERPLUGIN)
 endif()
 
 ecm_generate_qdoc(KF6ConfigWidgets kconfigwidgets.qdocconf)
+
+ecm_add_installed_library_check(KF6ConfigWidgets
+    PACKAGE_NAME "KF6ConfigWidgets"
+    PACKAGE_TARGET_NAMESPACE "KF6::"
+)
+
+ecm_installed_library_check_include_strings(KF6ConfigWidgets
+    HEADERS ${KConfigWidgets_CamelCase_HEADERS}
+)
+
+ecm_installed_library_check_version_preprocessor_macros(KF6ConfigWidgets
+    PREFIX KCONFIGWIDGETS
+)
