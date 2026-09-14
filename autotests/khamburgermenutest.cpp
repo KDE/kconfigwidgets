@@ -182,7 +182,7 @@ void openAndCloseToolButton(QToolButton *button)
         button->menu()->close();
     }); // This seems to be the only way because code that isn't already set in motion through a timer doesn't get executed after the menu pops up.
 
-    QTest::mouseClick(button, Qt::LeftButton);
+    QTest::mousePress(button, Qt::LeftButton);
 }
 
 void KHamburgerMenuTest::menuContentsTest()
