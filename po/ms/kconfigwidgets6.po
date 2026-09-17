@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2011-07-16 00:57+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -127,13 +127,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "Ruma&h"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Papar Bar Menu<p>Memaparkan bar menu kembali selepas ia disembunyikan</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "
@@ -650,6 +644,10 @@ msgstr "Aplikasi "
 #| msgid "Default"
 msgid "Default"
 msgstr "Default"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Papar Bar Menu<p>Memaparkan bar menu kembali selepas ia disembunyikan</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "&Buka."

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-05-20 13:35+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -125,12 +125,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Hejmo"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "Montri menuobreton<p>Remontras la menuobreton post ĝia kaŝado</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -535,3 +530,6 @@ msgstr "Aplikaĵa Stilo"
 #, kde-format
 msgid "Default"
 msgstr "Defaŭlta"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr "Montri menuobreton<p>Remontras la menuobreton post ĝia kaŝado</p>"

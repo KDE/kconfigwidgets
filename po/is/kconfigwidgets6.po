@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-05-23 14:50+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
@@ -129,14 +129,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Heim"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Sýna valmyndastiku<p>Sýnir valmyndastikuna aftur eftir að búið er að fela "
-"hana</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -541,6 +534,11 @@ msgstr "Stíll forrits"
 #, kde-format
 msgid "Default"
 msgstr "Sjálfgefið"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Sýna valmyndastiku<p>Sýnir valmyndastikuna aftur eftir að búið er að fela "
+#~ "hana</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "&Opna..."

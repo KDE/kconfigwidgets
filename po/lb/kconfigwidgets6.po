@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2006-06-22 16:29+0200\n"
 "Last-Translator: Michel Ludwig <michel.ludwig@kdemail.net>\n"
 "Language-Team: Luxembourgish <kde-i18n-lb@kde.org>\n"
@@ -124,13 +124,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Ufank"
 
-#: kstandardaction.cpp:230
-#, fuzzy, kde-format
-#| msgid "Show Menubar<p>Shows the menubar again after it has been hidden"
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "Menübar weisen<p>Weist d'Menübar nees un, nodeems se verstoppt gi war"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "
@@ -637,6 +631,12 @@ msgstr "Programm: "
 #| msgid "Default"
 msgid "Default"
 msgstr "Standard"
+
+#, fuzzy
+#~| msgid "Show Menubar<p>Shows the menubar again after it has been hidden"
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Menübar weisen<p>Weist d'Menübar nees un, nodeems se verstoppt gi war"
 
 #~ msgid "&Open..."
 #~ msgstr "&Opmaachen..."

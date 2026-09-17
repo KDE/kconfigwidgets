@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2026-09-06 18:21+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -121,14 +121,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Inici"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Mostra la barra de menús<p>Torna a mostrar la barra de menús després d'haver-"
-"se ocultat</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -534,3 +527,8 @@ msgstr "Estil de l'aplicació"
 #, kde-format
 msgid "Default"
 msgstr "Predeterminat"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Mostra la barra de menús<p>Torna a mostrar la barra de menús després "
+#~ "d'haver-se ocultat</p>"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2019-09-15 21:27+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -118,14 +118,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Асосӣ"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Нишон додани навори феҳрист<p>Навори менюро аз нав нишон медиҳад, агар он "
-"пинҳон карда шуда бошад</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -576,6 +569,11 @@ msgstr "Баромадан аз барнома"
 #| msgid "Default"
 msgid "Default"
 msgstr "Стандартӣ"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Нишон додани навори феҳрист<p>Навори менюро аз нав нишон медиҳад, агар он "
+#~ "пинҳон карда шуда бошад</p>"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "&Маслиҳати рӯз"

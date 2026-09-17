@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-01-15 17:53-0500\n"
 "Last-Translator: Janet Blackquill <uhhadd@gmail.com>\n"
 "Language-Team: C <kde-i18n-doc@kde.org>\n"
@@ -114,13 +114,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&tomo"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"o lukin e supa ilo<p>sina weka e supa ilo la ni li kama sin e supa ilo.</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -528,3 +522,8 @@ msgstr "o pini e ilo open. ni la ona li kama open ala."
 #| msgid "Default"
 msgid "Default"
 msgstr "nasin open"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "o lukin e supa ilo<p>sina weka e supa ilo la ni li kama sin e supa ilo.</"
+#~ "p>"

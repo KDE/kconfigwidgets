@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2012-07-04 17:33+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -127,14 +127,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Måjhon"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Mostrer l' bår di menu<p>Rimostere li bår di menu après k' ele åye sitî "
-"catcheye</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -652,6 +645,11 @@ msgstr "Programe: "
 #| msgid "Default"
 msgid "Default"
 msgstr "Prémetou"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Mostrer l' bår di menu<p>Rimostere li bår di menu après k' ele åye sitî "
+#~ "catcheye</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "&Drovi..."

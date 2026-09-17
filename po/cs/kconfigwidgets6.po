@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2026-06-28 23:38+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -119,14 +119,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Domů"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Zobrazovat hlavní nabídku<p>Znovu zobrazí hlavní nabídku, poté co byla "
-"skryta</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -531,3 +524,8 @@ msgstr "Styl aplikací"
 #, kde-format
 msgid "Default"
 msgstr "Výchozí"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Zobrazovat hlavní nabídku<p>Znovu zobrazí hlavní nabídku, poté co byla "
+#~ "skryta</p>"

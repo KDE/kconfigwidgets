@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2008-05-30 17:29+0200\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -119,12 +119,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr ""
 
-#: kstandardaction.cpp:230
-#, fuzzy, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "Menyular panelini koʻrsatish<p>Bekitilgan menyular panelini koʻrsatish"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, fuzzy, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -630,6 +625,11 @@ msgstr "Dastur:"
 #| msgid "Default"
 msgid "Default"
 msgstr "Andoza"
+
+#, fuzzy
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Menyular panelini koʻrsatish<p>Bekitilgan menyular panelini koʻrsatish"
 
 #~ msgid "&Open..."
 #~ msgstr "&Ochish..."

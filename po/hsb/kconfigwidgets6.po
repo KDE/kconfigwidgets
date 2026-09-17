@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2008-12-19 22:49+0100\n"
 "Last-Translator: Eduard Werner <edi.werner@gmx.de>\n"
 "Language-Team: en_US <kde-i18n-doc@lists.kde.org>\n"
@@ -126,12 +126,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Domjacy zapisk"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "Pokaž meni <p>Pokazuje meni po tym, zo je so schował</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
@@ -646,6 +641,9 @@ msgstr "Program: "
 #| msgid "Default"
 msgid "Default"
 msgstr "Standard"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr "Pokaž meni <p>Pokazuje meni po tym, zo je so schował</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "W&očiń ..."

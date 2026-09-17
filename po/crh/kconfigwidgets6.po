@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2009-02-12 23:29-0600\n"
 "Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
 "Language-Team: Qırımtatarca (Qırım Türkçesi)\n"
@@ -124,13 +124,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Ev"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"&Menü Çubuğını Köster<p>Menü çubuğı gizlengenden soñ onı tekrar köstere</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
@@ -648,6 +642,11 @@ msgstr "Uyğulama:"
 #| msgid "Default"
 msgid "Default"
 msgstr "Ög-belgilengen"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "&Menü Çubuğını Köster<p>Menü çubuğı gizlengenden soñ onı tekrar köstere</"
+#~ "p>"
 
 #~ msgid "&Open..."
 #~ msgstr "&Aç..."

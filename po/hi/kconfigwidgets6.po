@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-12-15 19:32+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -124,12 +124,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "घर (&H)"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "मेन्यू पट्टी दिखाएँ<p>मेन्यू पट्टी को छुपाए जाने के बाद फिर से दिखाता है</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -581,6 +576,9 @@ msgstr "अनुप्रयोग"
 #, kde-format
 msgid "Default"
 msgstr "पूर्वन्यस्त"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr "मेन्यू पट्टी दिखाएँ<p>मेन्यू पट्टी को छुपाए जाने के बाद फिर से दिखाता है</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "खोलें... (&O)"

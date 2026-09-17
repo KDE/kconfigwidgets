@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2026-05-30 17:11-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -114,14 +114,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "باش قىسقۇچ(&H)"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"تىزىملىك بالدىقىنى كۆرسەت<p>تىزىملىك بالدىقى يوشۇرۇنغاندىن كېيىن ئۇنى يەنە "
-"قايتا كۆرسىتىدۇ</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -526,6 +519,11 @@ msgstr "پىروگرامما ئۇسلۇبى"
 #, kde-format
 msgid "Default"
 msgstr "كۆڭۈلدىكى"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "تىزىملىك بالدىقىنى كۆرسەت<p>تىزىملىك بالدىقى يوشۇرۇنغاندىن كېيىن ئۇنى "
+#~ "يەنە قايتا كۆرسىتىدۇ</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "ئاچ(&O)…"

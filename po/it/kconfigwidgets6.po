@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-05-18 22:00+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -123,14 +123,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Home"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Mostra la barra dei menu<p>Mostra di nuovo la barra dei menu dopo che è "
-"stata nascosta</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -535,6 +528,11 @@ msgstr "Stile delle applicazioni"
 #, kde-format
 msgid "Default"
 msgstr "Predefinito"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Mostra la barra dei menu<p>Mostra di nuovo la barra dei menu dopo che è "
+#~ "stata nascosta</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "&Apri..."

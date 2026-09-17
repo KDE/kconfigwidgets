@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-05-19 16:50+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -116,12 +116,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&முகப்பு"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "பட்டிப்பட்டையை காட்டு<p>மறைக்கப்பட்ட பட்டிப்பட்டையை மீண்டும் காட்ட உதவும்</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -526,6 +521,9 @@ msgstr "செயலி தோற்றம்"
 #, kde-format
 msgid "Default"
 msgstr "இயல்பிருப்பு"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr "பட்டிப்பட்டையை காட்டு<p>மறைக்கப்பட்ட பட்டிப்பட்டையை மீண்டும் காட்ட உதவும்</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "&திற..."

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2026-08-09 10:29+0200\n"
 "Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -126,14 +126,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Početak"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Prikaži traku s izbornikom<p>Prikazuje traku s izbornikom nakon skrivanja.</"
-"p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -538,6 +531,11 @@ msgstr "Stil aplikacije"
 #, kde-format
 msgid "Default"
 msgstr "Default"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Prikaži traku s izbornikom<p>Prikazuje traku s izbornikom nakon skrivanja."
+#~ "</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "&Otvori…"

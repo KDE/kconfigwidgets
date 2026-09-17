@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2025-02-22 02:35+0100\n"
 "Last-Translator: Flori G <Renner03@protonmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -121,14 +121,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Startseite"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Menüleiste anzeigen<p>Zeigt die Leiste wieder an, nachdem sie ausgeblendet "
-"wurde.</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -533,6 +526,11 @@ msgstr "Anwendungs-Stil"
 #, kde-format
 msgid "Default"
 msgstr "Standard"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Menüleiste anzeigen<p>Zeigt die Leiste wieder an, nachdem sie "
+#~ "ausgeblendet wurde.</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "Öff&nen ..."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -115,12 +115,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&गृहम्‌"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "मेनूबारं दर्शयतु<p> मेनूपट्टिकां गोपितस्य अनन्तरं पुनः दर्शयति</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -525,3 +520,6 @@ msgstr "अनुप्रयोगशैली"
 #, kde-format
 msgid "Default"
 msgstr "मूलभूतम्‌"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr "मेनूबारं दर्शयतु<p> मेनूपट्टिकां गोपितस्य अनन्तरं पुनः दर्शयति</p>"

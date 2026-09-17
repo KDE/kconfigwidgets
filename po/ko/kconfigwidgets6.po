@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-08-20 23:33+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -114,12 +114,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "홈(&H)"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "메뉴 표시줄 표시<p>숨겨진 이후에 메뉴 표시줄을 다시 보여 줍니다</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -524,6 +519,9 @@ msgstr "앱 스타일"
 #, kde-format
 msgid "Default"
 msgstr "기본값"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr "메뉴 표시줄 표시<p>숨겨진 이후에 메뉴 표시줄을 다시 보여 줍니다</p>"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "오늘의 팁(&D)"

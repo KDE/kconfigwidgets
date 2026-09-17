@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2009-01-02 17:37+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
@@ -128,12 +128,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "ମୂଳ ସ୍ଥାନ (&H)"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "ତାଲିକା ପଟି ଦର୍ଶାନ୍ତୁ<p>ଏହା ଲୁଚିଗଲାପରେ ତାଲିକା ପଟିକୁ ପୁଣିଥରେ ଦର୍ଶାନ୍ତୁ</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, fuzzy, kde-format
 #| msgid ""
 #| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
@@ -648,6 +643,9 @@ msgstr "ପ୍ରୟୋଗ: "
 #| msgid "Default"
 msgid "Default"
 msgstr "ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr "ତାଲିକା ପଟି ଦର୍ଶାନ୍ତୁ<p>ଏହା ଲୁଚିଗଲାପରେ ତାଲିକା ପଟିକୁ ପୁଣିଥରେ ଦର୍ଶାନ୍ତୁ</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "ଖୋଲନ୍ତୁ (&O)..."

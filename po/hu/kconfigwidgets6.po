@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-05-22 10:39+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -113,12 +113,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Saját mappa"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "A menüsor megjelenítése<p>Ismét megjeleníti az elrejtett menüsort</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -523,6 +518,10 @@ msgstr "Alkalmazásstílus"
 #, kde-format
 msgid "Default"
 msgstr "Alapértelmezés"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "A menüsor megjelenítése<p>Ismét megjeleníti az elrejtett menüsort</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "&Megnyitás…"

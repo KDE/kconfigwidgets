@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2024-09-05 14:43+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -135,14 +135,8 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Домой"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Показать меню<p>Показать меню снова после того, как оно было скрыто</p>"
-
 # BUGME: whatsthis on "Hide Statusbar" should be about "Hide Statusbar", not "Show Statusbar"
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -547,6 +541,10 @@ msgstr "Стиль приложения"
 #, kde-format
 msgid "Default"
 msgstr "По умолчанию"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Показать меню<p>Показать меню снова после того, как оно было скрыто</p>"
 
 #~ msgid "&Open..."
 #~ msgstr "&Открыть..."

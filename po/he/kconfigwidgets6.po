@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2025-01-24 09:27+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -130,12 +130,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&בית"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr "הצגת שורת־תפריטים<p>הצגת שורת־התפריטים שוב לאחר שהוסתרה</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -540,6 +535,9 @@ msgstr "סגנון היישום"
 #, kde-format
 msgid "Default"
 msgstr "ברירת מחדל"
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr "הצגת שורת־תפריטים<p>הצגת שורת־התפריטים שוב לאחר שהוסתרה</p>"
 
 #~ msgid "Tip of the &Day"
 #~ msgstr "הע&צה היומית"

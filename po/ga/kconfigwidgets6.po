@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:40+0000\n"
+"POT-Creation-Date: 2026-09-17 00:40+0000\n"
 "PO-Revision-Date: 2004-12-14 09:11-0600\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -115,14 +115,7 @@ msgctxt "home page"
 msgid "&Home"
 msgstr "&Baile"
 
-#: kstandardaction.cpp:230
-#, kde-format
-msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-msgstr ""
-"Taispeáin an Barra Roghchláir<p>Taispeáin an barra roghchláir arís tar éis "
-"dó a bheith i bhfolach</p>"
-
-#: kstandardaction.cpp:251
+#: kstandardaction.cpp:248
 #, kde-format
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
@@ -528,3 +521,8 @@ msgstr ""
 #, kde-format
 msgid "Default"
 msgstr ""
+
+#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
+#~ msgstr ""
+#~ "Taispeáin an Barra Roghchláir<p>Taispeáin an barra roghchláir arís tar "
+#~ "éis dó a bheith i bhfolach</p>"
