@@ -529,7 +529,3 @@ msgstr "Programstil"
 #, kde-format
 msgid "Default"
 msgstr "Standard"
-
-#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-#~ msgstr ""
-#~ "Vis menylinja<p>Viser menylinja igjen etter at den har vært skjult.</p>"

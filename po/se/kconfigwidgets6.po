@@ -538,8 +538,3 @@ msgstr "Heaittit prográmma"
 #, fuzzy, kde-format
 msgid "Default"
 msgstr "Standárda"
-
-#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-#~ msgstr ""
-#~ "Čájet fálloholgga <p>Čájeha fálloholgga fas maŋŋá go lea leamaš "
-#~ "čihkkojuvvon</p>"
