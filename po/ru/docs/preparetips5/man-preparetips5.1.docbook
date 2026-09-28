@@ -23,9 +23,11 @@
 </author>
 
 <date
->1 июня 2006 г.</date>
+>4 марта 2014 г.</date>
+<releaseinfo
+>Frameworks 5.0</releaseinfo>
 <productname
->Программное обеспечение KDE</productname>
+>KDE Frameworks</productname>
 </refentryinfo>
 
 <refmeta>
@@ -67,7 +69,7 @@
 ><command
 >preparetips5</command
 > ищет файл <emphasis role="underline"
->data/tips-en</emphasis
+>data/tips</emphasis
 > в качестве входного файла с полезными советами. </para>
 </refsect1>
 
@@ -84,9 +86,9 @@
 <title
 >Ошибки</title>
 <para
->KDE Frameworks может содержать ошибки. Сообщайте о них разработчикам на <ulink url="http://bugs.kde.org"
->bugs.kde.org</ulink
->. </para>
+>Сообщайте об ошибках через <ulink url="https://bugs.kde.org"
+>систему отслеживания ошибок &kde;</ulink
+>, не пишите автору напрямую. </para>
 </refsect1>
 
 </refentry>
