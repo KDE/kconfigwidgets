@@ -288,7 +288,7 @@ bool KLanguageButton::event(QEvent *event)
     if (event->type() == QEvent::ToolTipChange) {
         d->button->setToolTip(toolTip());
     }
-    return QObject::event(event);
+    return QWidget::event(event);
 }
 
 #include "moc_klanguagebutton.cpp"
