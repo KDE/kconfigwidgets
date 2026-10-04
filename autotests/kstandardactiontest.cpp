@@ -133,7 +133,8 @@ void tst_KStandardAction::testCreateNewStyle()
     QVERIFY(toggle1);
     KToggleAction *toggle2 = KStandardAction::showStatusbar(&receiver, &Receiver::onTriggered, &receiver);
     QVERIFY(toggle2);
-    KToggleFullScreenAction *toggle3 = KStandardAction::fullScreen(&receiver, &Receiver::onTriggered, new QWidget, &receiver);
+    QWidget parentWidget;
+    KToggleFullScreenAction *toggle3 = KStandardAction::fullScreen(&receiver, &Receiver::onTriggered, &parentWidget, &receiver);
     QVERIFY(toggle3);
 }
 
