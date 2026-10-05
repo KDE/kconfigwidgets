@@ -435,7 +435,7 @@ msgstr "Изменить &закладки…"
 
 #: kstandardaction_p.h:115
 msgid "&Spelling…"
-msgstr "Проверка орфографии…"
+msgstr "&Проверка орфографии…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
