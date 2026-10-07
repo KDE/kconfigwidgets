@@ -3,13 +3,14 @@
 # Toplica Tanaskovic <toptan@kde.org.yu>, 2003, 2004, 2005.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2009, 2010, 2011.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kconfigwidgets5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-17 00:40+0000\n"
-"PO-Revision-Date: 2017-09-28 17:57+0200\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-06 08:03+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@ijekavian\n"
 "MIME-Version: 1.0\n"
@@ -24,12 +25,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Топлица Танасковић,Часлав Илић"
+msgstr "Топлица Танасковић,Часлав Илић,Немања Хиршл"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "toptan@kde.org.yu,caslav.ilic@gmx.net"
+msgstr "toptan@kde.org.yu,caslav.ilic@gmx.net,nemhirsl@gmail.com"
 
 #: kcodecaction.cpp:62
 #, kde-format
@@ -46,17 +47,17 @@ msgstr "аутоматски"
 #: kcolorschememenu.cpp:24
 #, kde-format
 msgid "Color Scheme"
-msgstr ""
+msgstr "Шема боја"
 
 #: kcommandbar.cpp:660
 #, kde-format
 msgid "No commands to display"
-msgstr ""
+msgstr "Нема наредби за приказ"
 
 #: kcommandbar.cpp:662
 #, kde-format
 msgid "No commands matching the filter"
-msgstr ""
+msgstr "Нема наредби које одговарају филтеру"
 
 #: kconfigdialog.cpp:37
 #, kde-format
@@ -68,27 +69,26 @@ msgstr "Подешавање"
 #, kde-format
 msgctxt "@action:inmenu General purpose menu"
 msgid "&Menu"
-msgstr ""
+msgstr "&Мени"
 
 #: khamburgermenu.cpp:325
-#, fuzzy, kde-format
-#| msgid "Show &Menubar"
+#, kde-format
 msgctxt "@action:inmenu A menu item that advertises and enables the menubar"
 msgid "Show &Menubar with All Actions"
-msgstr "Прикажи траку &менија"
+msgstr "Прикажи траку &менија са свим радњама"
 
 #: khamburgermenu.cpp:351
 #, kde-format
 msgctxt "@action:inmenu A menu text advertising its contents (more features)."
 msgid "More"
-msgstr ""
+msgstr "Више"
 
 #: khamburgermenu.cpp:352
 #, kde-format
 msgctxt ""
 "@action:inmenu A section heading advertising the contents of the menu bar"
 msgid "More Actions"
-msgstr ""
+msgstr "Више радњи"
 
 #: krecentfilesaction.cpp:78
 #, kde-format
@@ -136,10 +136,8 @@ msgid "Create new document"
 msgstr "Направи нови документ"
 
 #: kstandardaction_p.h:64
-#, fuzzy
-#| msgid "&Open..."
 msgid "&Open…"
-msgstr "&Отвори..."
+msgstr "&Отвори…"
 
 #: kstandardaction_p.h:64
 msgid "Open an existing document"
@@ -162,10 +160,8 @@ msgid "Save document"
 msgstr "Сачувај документ"
 
 #: kstandardaction_p.h:67
-#, fuzzy
-#| msgid "Save &As..."
 msgid "Save &As…"
-msgstr "Сачувај &као..."
+msgstr "Сачувај &као…"
 
 #: kstandardaction_p.h:67
 msgid "Save document under a new name"
@@ -177,7 +173,7 @@ msgstr "&Врати"
 
 #: kstandardaction_p.h:68
 msgid "Revert unsaved changes made to document"
-msgstr "Одбаци несачуване измене над документом"
+msgstr "Одбаци несачуване измјене над документом"
 
 #: kstandardaction_p.h:69
 msgid "&Close"
@@ -188,10 +184,8 @@ msgid "Close document"
 msgstr "Затвори документ"
 
 #: kstandardaction_p.h:70
-#, fuzzy
-#| msgid "&Print..."
 msgid "&Print…"
-msgstr "&Штампај..."
+msgstr "&Штампај…"
 
 #: kstandardaction_p.h:70
 msgid "Print document"
@@ -206,10 +200,8 @@ msgid "Show a print preview of document"
 msgstr "Прикажи преглед пред штампање документа"
 
 #: kstandardaction_p.h:72
-#, fuzzy
-#| msgid "&Mail..."
 msgid "&Mail…"
-msgstr "&Поштом..."
+msgstr "&Поштом…"
 
 #: kstandardaction_p.h:72
 msgid "Send document by mail"
@@ -229,7 +221,7 @@ msgstr "&Опозови"
 
 #: kstandardaction_p.h:75
 msgid "Undo last action"
-msgstr "Опозови последњу радњу"
+msgstr "Опозови посљедњу радњу"
 
 #: kstandardaction_p.h:76
 msgid "Re&do"
@@ -237,7 +229,7 @@ msgstr "&Понови"
 
 #: kstandardaction_p.h:76
 msgid "Redo last undone action"
-msgstr "Понови последњу опозвану радњу"
+msgstr "Понови посљедњу опозвану радњу"
 
 #: kstandardaction_p.h:77
 msgid "Cu&t"
@@ -276,10 +268,8 @@ msgid "Dese&lect"
 msgstr "Поништи &избор"
 
 #: kstandardaction_p.h:83
-#, fuzzy
-#| msgid "&Find..."
 msgid "&Find…"
-msgstr "&Нађи..."
+msgstr "&Нађи…"
 
 #: kstandardaction_p.h:84
 msgid "Find &Next"
@@ -290,16 +280,12 @@ msgid "Find Pre&vious"
 msgstr "Нађи &претходно"
 
 #: kstandardaction_p.h:86
-#, fuzzy
-#| msgid "&Replace..."
 msgid "&Replace…"
-msgstr "&Замијени..."
+msgstr "&Замијени…"
 
 #: kstandardaction_p.h:88
-#, fuzzy
-#| msgid "&Actual Size"
 msgid "Zoom to &Actual Size"
-msgstr "&Стварна величина"
+msgstr "Увеличај на &стварну величину"
 
 #: kstandardaction_p.h:88
 msgid "View document at its actual size"
@@ -338,10 +324,8 @@ msgid "Zoom &Out"
 msgstr "У&мањи"
 
 #: kstandardaction_p.h:94
-#, fuzzy
-#| msgid "&Zoom..."
 msgid "&Zoom…"
-msgstr "У&величај..."
+msgstr "У&величај…"
 
 #: kstandardaction_p.h:94
 msgid "Select zoom level"
@@ -349,13 +333,11 @@ msgstr "Изабери степен увеличања"
 
 #: kstandardaction_p.h:95
 msgid "&Refresh"
-msgstr ""
+msgstr "&Освјежи"
 
 #: kstandardaction_p.h:95
-#, fuzzy
-#| msgid "Redisplay document"
 msgid "Refresh document"
-msgstr "Поново прикажи документ"
+msgstr "Освјежи документ"
 
 #: kstandardaction_p.h:97
 msgid "&Up"
@@ -363,7 +345,7 @@ msgstr "&Горе"
 
 #: kstandardaction_p.h:97
 msgid "Go up"
-msgstr "Помери се нагоре"
+msgstr "Помјери се нагоре"
 
 #: kstandardaction_p.h:102
 msgid "&Previous Page"
@@ -379,25 +361,19 @@ msgstr "&Сљедећа страница"
 
 #: kstandardaction_p.h:103
 msgid "Go to next page"
-msgstr "Пређи на следећу страницу"
+msgstr "Пријеђи на сљедећу страницу"
 
 #: kstandardaction_p.h:104
-#, fuzzy
-#| msgid "&Go To..."
 msgid "&Go To…"
-msgstr "&Иди на..."
+msgstr "&Иди на…"
 
 #: kstandardaction_p.h:105
-#, fuzzy
-#| msgid "&Go to Page..."
 msgid "&Go to Page…"
-msgstr "Иди на &страницу..."
+msgstr "Иди на &страницу…"
 
 #: kstandardaction_p.h:106
-#, fuzzy
-#| msgid "&Go to Line..."
 msgid "&Go to Line…"
-msgstr "Иди на &ред..."
+msgstr "Иди на &ред…"
 
 #: kstandardaction_p.h:107
 msgid "&First Page"
@@ -405,7 +381,7 @@ msgstr "&Прва страница"
 
 #: kstandardaction_p.h:107
 msgid "Go to first page"
-msgstr "Пређи на прву страницу"
+msgstr "Пријеђи на прву страницу"
 
 #: kstandardaction_p.h:108
 msgid "&Last Page"
@@ -413,7 +389,7 @@ msgstr "Посље&дња страница"
 
 #: kstandardaction_p.h:108
 msgid "Go to last page"
-msgstr "Пређи на последњу страницу"
+msgstr "Пријеђи на посљедњу страницу"
 
 #: kstandardaction_p.h:109
 msgid "&Back"
@@ -436,16 +412,12 @@ msgid "&Add Bookmark"
 msgstr "&Додај обиљеживач"
 
 #: kstandardaction_p.h:113
-#, fuzzy
-#| msgid "&Edit Bookmarks..."
 msgid "&Edit Bookmarks…"
-msgstr "&Уреди обиљеживаче..."
+msgstr "&Уреди обиљеживаче…"
 
 #: kstandardaction_p.h:115
-#, fuzzy
-#| msgid "&Spelling..."
 msgid "&Spelling…"
-msgstr "&Правопис..."
+msgstr "&Правопис…"
 
 #: kstandardaction_p.h:115
 msgid "Check spelling in document"
@@ -480,28 +452,21 @@ msgid "F&ull Screen Mode"
 msgstr "Преко &цијелог екрана"
 
 #: kstandardaction_p.h:121
-#, fuzzy
-#| msgid "Configure S&hortcuts..."
 msgid "Configure Keyboard S&hortcuts…"
-msgstr "Подеси п&речице..."
+msgstr "Подеси п&речице са тастатуре…"
 
 #: kstandardaction_p.h:122
-#, fuzzy, kde-format
-#| msgid "&Configure %1..."
+#, kde-format
 msgid "&Configure %1…"
-msgstr "&Подеси %1...|/|&Подеси $[аку %1]..."
+msgstr "&Подеси %1…|/|&Подеси $[аку %1]…"
 
 #: kstandardaction_p.h:123
-#, fuzzy
-#| msgid "Configure Tool&bars..."
 msgid "Configure Tool&bars…"
-msgstr "Подеси &траке алатки..."
+msgstr "Подеси &траке алатки…"
 
 #: kstandardaction_p.h:124
-#, fuzzy
-#| msgid "Configure &Notifications..."
 msgid "Configure &Notifications…"
-msgstr "Подеси &обавјештења..."
+msgstr "Подеси &обавјештења…"
 
 #: kstandardaction_p.h:128
 #, kde-format
@@ -513,16 +478,12 @@ msgid "What's &This?"
 msgstr "Шта је &ово?"
 
 #: kstandardaction_p.h:130
-#, fuzzy
-#| msgid "&Report Bug..."
 msgid "&Report Bug…"
-msgstr "Пријави &грешку..."
+msgstr "Пријави &грешку…"
 
 #: kstandardaction_p.h:131
-#, fuzzy
-#| msgid "&Configure %1..."
 msgid "Configure &Language…"
-msgstr "&Подеси %1...|/|&Подеси $[аку %1]..."
+msgstr "Подеси &језик…"
 
 #: kstandardaction_p.h:132
 #, kde-format
@@ -538,78 +499,27 @@ msgid "&Delete"
 msgstr "&Обриши"
 
 #: kstandardaction_p.h:135
-#, fuzzy
-#| msgid "&Rename..."
 msgid "&Rename…"
-msgstr "&Преименуј..."
+msgstr "&Преименуј…"
 
 #: kstandardaction_p.h:136
 msgid "&Move to Trash"
-msgstr "Премести у &смеће"
+msgstr "Премјести у &смеће"
 
 #: kstandardaction_p.h:137
 msgid "&Donate"
 msgstr "&Донација"
 
 #: kstandardaction_p.h:138
-#, fuzzy
-#| msgid "Open &Recent"
 msgid "Open &Menu"
-msgstr "Отвори &недавни"
+msgstr "Отвори &мени"
 
 #: kstylemanager.cpp:74
-#, fuzzy, kde-format
-#| msgid "Quit application"
+#, kde-format
 msgid "Application Style"
-msgstr "Напусти програм"
+msgstr "Стил програма"
 
 #: kstylemanager.cpp:84
-#, fuzzy, kde-format
-#| msgctxt "Encodings menu"
-#| msgid "Default"
+#, kde-format
 msgid "Default"
-msgstr "подразумијевано"
-
-#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-#~ msgstr ""
-#~ "Прикажи траку менија<p>Поново приказује мени пошто је претходно сакривен."
-#~ "</p>"
-
-#~ msgid "Tip of the &Day"
-#~ msgstr "Савјет &дана"
-
-#~ msgid "You will be asked to authenticate before saving"
-#~ msgstr "Мораћете да се аутентификујете прије уписивања."
-
-#~ msgid "You are not allowed to save the configuration"
-#~ msgstr "Није вам дозвољено да сачувате поставу."
-
-#~ msgctxt "show help"
-#~ msgid "&Help"
-#~ msgstr "&Помоћ"
-
-#~ msgid "&Save Settings"
-#~ msgstr "&Сачувај поставке"
-
-#~ msgid "Switch Application &Language..."
-#~ msgstr "Промијени &језик програма..."
-
-#~ msgctxt "@title:window"
-#~ msgid "Tip of the Day"
-#~ msgstr "Савјет дана"
-
-#~ msgctxt "@title"
-#~ msgid "Did you know...?\n"
-#~ msgstr "Да ли сте знали...?\n"
-
-#~ msgctxt "@option:check"
-#~ msgid "&Show tips on startup"
-#~ msgstr "&Савјети по покретању"
-
-#~ msgctxt "@action:button Goes to previous tip"
-#~ msgid "&Previous"
-#~ msgstr "&Претходни"
-
-#~ msgctxt "@action:button Goes to next tip, opposite to previous"
-#~ msgid "&Next"
-#~ msgstr "&Сљедећи"
+msgstr "подразумијевани"
