@@ -7,32 +7,54 @@
 
 #include "klanguagebutton.h"
 
+#include <QComboBox>
 #include <QDir>
 #include <QEvent>
 #include <QFile>
 #include <QHBoxLayout>
 #include <QLocale>
-#include <QMenu>
-#include <QPushButton>
+#include <QStylePainter>
 
-#include <KAcceleratorManager>
 #include <KConfig>
 #include <KConfigGroup>
 
-static void checkInsertPos(QMenu *popup, const QString &str, int &index)
+// Shows staticText instead of the current item when it is set.
+class KLanguageComboBox : public QComboBox
+{
+public:
+    using QComboBox::QComboBox;
+
+    QString staticText;
+
+protected:
+    void paintEvent(QPaintEvent *event) override
+    {
+        if (staticText.isNull()) {
+            QComboBox::paintEvent(event);
+            return;
+        }
+        QStylePainter painter(this);
+        QStyleOptionComboBox option;
+        initStyleOption(&option);
+        option.currentText = staticText;
+        option.currentIcon = QIcon();
+        painter.drawComplexControl(QStyle::CC_ComboBox, option);
+        painter.drawControl(QStyle::CE_ComboBoxLabel, option);
+    }
+};
+
+static void checkInsertPos(QComboBox *combo, const QString &str, int &index)
 {
     if (index != -1) {
         return;
     }
 
     int a = 0;
-    const QList<QAction *> actions = popup->actions();
-    int b = actions.count();
+    int b = combo->count();
 
     while (a < b) {
         int w = (a + b) / 2;
-        QAction *ac = actions[w];
-        int j = str.localeAwareCompare(ac->text());
+        int j = str.localeAwareCompare(combo->itemText(w));
         if (j > 0) {
             a = w + 1;
         } else {
@@ -49,21 +71,13 @@ class KLanguageButtonPrivate
 {
 public:
     explicit KLanguageButtonPrivate(KLanguageButton *parent);
-    ~KLanguageButtonPrivate()
-    {
-        delete button;
-        delete popup;
-    }
-    void setCurrentItem(QAction *);
+    void setCurrentItem(int index);
     void clear();
-    QAction *findAction(const QString &data) const;
 
-    QPushButton *button = nullptr;
+    KLanguageComboBox *combo = nullptr;
     QStringList ids;
-    QMenu *popup = nullptr;
     QString current;
     QString locale;
-    bool staticText : 1;
     bool showCodes : 1;
 };
 
@@ -81,32 +95,34 @@ KLanguageButton::KLanguageButton(const QString &text, QWidget *parent)
 }
 
 KLanguageButtonPrivate::KLanguageButtonPrivate(KLanguageButton *parent)
-    : button(new QPushButton(parent))
-    , popup(new QMenu(parent))
+    : combo(new KLanguageComboBox(parent))
     , locale(QLocale::system().name())
-    , staticText(false)
     , showCodes(false)
 {
     QHBoxLayout *layout = new QHBoxLayout(parent);
     layout->setContentsMargins(0, 0, 0, 0);
-    layout->addWidget(button);
+    layout->addWidget(combo);
 
-    parent->setFocusProxy(button);
-    parent->setFocusPolicy(button->focusPolicy());
+    parent->setFocusProxy(combo);
+    parent->setFocusPolicy(combo->focusPolicy());
 
-    button->setMenu(popup);
-    KAcceleratorManager::manage(popup);
-
-    QObject::connect(popup, &QMenu::triggered, parent, &KLanguageButton::slotTriggered);
-    QObject::connect(popup, &QMenu::hovered, parent, &KLanguageButton::slotHovered);
+    QObject::connect(combo, &QComboBox::currentIndexChanged, parent, [this](int index) {
+        setCurrentItem(index);
+    });
+    QObject::connect(combo, &QComboBox::activated, parent, [this, parent] {
+        Q_EMIT parent->activated(current);
+    });
+    QObject::connect(combo, &QComboBox::highlighted, parent, [this, parent](int index) {
+        Q_EMIT parent->highlighted(combo->itemData(index).toString());
+    });
 }
 
 KLanguageButton::~KLanguageButton() = default;
 
 void KLanguageButton::setText(const QString &text)
 {
-    d->staticText = true;
-    d->button->setText(text);
+    d->combo->staticText = text;
+    d->combo->update();
 }
 
 void KLanguageButton::setLocale(const QString &locale)
@@ -157,24 +173,20 @@ void KLanguageButton::insertLanguage(const QString &languageCode, const QString 
         text += QLatin1String(" (") + languageCode + QLatin1Char(')');
     }
 
-    checkInsertPos(d->popup, text, index);
-    QAction *a = new QAction(QIcon(), text, this);
-    a->setData(languageCode);
-    if (index >= 0 && index < d->popup->actions().count() - 1) {
-        d->popup->insertAction(d->popup->actions()[index], a);
-    } else {
-        d->popup->addAction(a);
+    checkInsertPos(d->combo, text, index);
+    if (index < 0 || index > d->combo->count()) {
+        index = d->combo->count();
     }
+    d->combo->insertItem(index, text, languageCode);
     d->ids.append(languageCode);
 }
 
 void KLanguageButton::insertSeparator(int index)
 {
-    if (index >= 0 && index < d->popup->actions().count() - 1) {
-        d->popup->insertSeparator(d->popup->actions()[index]);
-    } else {
-        d->popup->addSeparator();
+    if (index < 0 || index > d->combo->count()) {
+        index = d->combo->count();
     }
+    d->combo->insertSeparator(index);
 }
 
 void KLanguageButton::loadAllLanguages()
@@ -194,26 +206,6 @@ void KLanguageButton::loadAllLanguages()
     setCurrentItem(d->locale);
 }
 
-void KLanguageButton::slotTriggered(QAction *a)
-{
-    // qCDebug(KCONFIG_WIDGETS_LOG) << "slotTriggered" << index;
-    if (!a) {
-        return;
-    }
-
-    d->setCurrentItem(a);
-
-    // Forward event from popup menu as if it was emitted from this widget:
-    Q_EMIT activated(d->current);
-}
-
-void KLanguageButton::slotHovered(QAction *a)
-{
-    // qCDebug(KCONFIG_WIDGETS_LOG) << "slotHovered" << index;
-
-    Q_EMIT highlighted(a->data().toString());
-}
-
 int KLanguageButton::count() const
 {
     return d->ids.count();
@@ -227,11 +219,7 @@ void KLanguageButton::clear()
 void KLanguageButtonPrivate::clear()
 {
     ids.clear();
-    popup->clear();
-
-    if (!staticText) {
-        button->setText(QString());
-    }
+    combo->clear();
 }
 
 bool KLanguageButton::contains(const QString &languageCode) const
@@ -244,49 +232,31 @@ QString KLanguageButton::current() const
     return d->current.isEmpty() ? QStringLiteral("en") : d->current;
 }
 
-QAction *KLanguageButtonPrivate::findAction(const QString &data) const
-{
-    const auto listActions = popup->actions();
-    for (QAction *a : listActions) {
-        if (!a->data().toString().compare(data)) {
-            return a;
-        }
-    }
-    return nullptr;
-}
-
 void KLanguageButton::setCurrentItem(const QString &languageCode)
 {
     if (d->ids.isEmpty()) {
         return;
     }
-    QAction *a;
-    if (d->ids.indexOf(languageCode) < 0) {
-        a = d->findAction(d->ids[0]);
-    } else {
-        a = d->findAction(languageCode);
-    }
-    if (a) {
-        d->setCurrentItem(a);
+    const int index = d->combo->findData(d->ids.contains(languageCode) ? languageCode : d->ids[0]);
+    if (index >= 0) {
+        d->combo->setCurrentIndex(index);
+        d->setCurrentItem(index);
     }
 }
 
-void KLanguageButtonPrivate::setCurrentItem(QAction *a)
+void KLanguageButtonPrivate::setCurrentItem(int index)
 {
-    if (!a->data().isValid()) {
+    const QVariant data = combo->itemData(index);
+    if (!data.isValid()) {
         return;
     }
-    current = a->data().toString();
-
-    if (!staticText) {
-        button->setText(a->text());
-    }
+    current = data.toString();
 }
 
 bool KLanguageButton::event(QEvent *event)
 {
     if (event->type() == QEvent::ToolTipChange) {
-        d->button->setToolTip(toolTip());
+        d->combo->setToolTip(toolTip());
     }
     return QWidget::event(event);
 }

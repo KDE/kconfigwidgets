@@ -16,7 +16,6 @@
 #include <QWidget>
 #include <memory>
 
-class QAction;
 class KLanguageButtonPrivate;
 
 /*!
@@ -153,10 +152,6 @@ Q_SIGNALS:
 
 protected:
     bool event(QEvent *event) override;
-
-private Q_SLOTS:
-    KCONFIGWIDGETS_NO_EXPORT void slotTriggered(QAction *action);
-    KCONFIGWIDGETS_NO_EXPORT void slotHovered(QAction *action);
 
 private:
     friend class KLanguageButtonPrivate;
