@@ -15,7 +15,6 @@
 #include <memory>
 #include <vector>
 
-class QFont;
 class QMenuBar;
 class QWidget;
 
