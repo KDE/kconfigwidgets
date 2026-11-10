@@ -38,7 +38,7 @@ void KConfigViewStateSaver::saveState(KConfigGroup &configGroup)
     }
 
     if (view()) {
-        QPair<int, int> _scrollState = scrollState();
+        const std::pair<int, int> _scrollState = scrollState();
         configGroup.writeEntry(scrollStateVerticalKey, _scrollState.first);
         configGroup.writeEntry(scrollStateHorizontalKey, _scrollState.second);
     }
