@@ -56,7 +56,7 @@ public:
 
         auto createActionAndConnect = [file, this](const char *name) {
             auto a = file->addAction(QString::fromUtf8(name));
-            connect(a, &QAction::triggered, [a, this] {
+            connect(a, &QAction::triggered, this, [a, this] {
                 pe.appendPlainText(a->text() + QStringLiteral(" triggered"));
             });
         };
@@ -78,7 +78,7 @@ public:
 
             auto createActionAndConnect = [menu, this](const char *name) {
                 auto a = menu->addAction(QString::fromUtf8(name));
-                connect(a, &QAction::triggered, [a, this] {
+                connect(a, &QAction::triggered, this, [a, this] {
                     pe.appendPlainText(a->text() + QStringLiteral(" triggered"));
                 });
             };
@@ -158,7 +158,7 @@ static QAction *genAction(Window *p, const QString &icon, int i, const int short
 {
     QString text = QStringLiteral("A long long Action name %1").arg(i++);
     QAction *action = new QAction(QIcon::fromTheme(icon), text, p);
-    QObject::connect(action, &QAction::triggered, [action, p] {
+    QObject::connect(action, &QAction::triggered, p, [action, p] {
         p->textEdit()->appendPlainText(action->text() + QStringLiteral(" triggered"));
     });
 
