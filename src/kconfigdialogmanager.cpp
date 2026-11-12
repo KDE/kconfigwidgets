@@ -307,15 +307,10 @@ void KConfigDialogManager::updateWidgets()
     bool bSignalsBlocked = signalsBlocked();
     blockSignals(true);
 
-    QWidget *widget;
-    QHashIterator<QString, QWidget *> it(d->knownWidget);
-    while (it.hasNext()) {
-        it.next();
-        widget = it.value();
-
-        KConfigSkeletonItem *item = d->m_conf->findItem(it.key());
+    for (const auto &[configId, widget] : std::as_const(d->knownWidget).asKeyValueRange()) {
+        KConfigSkeletonItem *item = d->m_conf->findItem(configId);
         if (!item) {
-            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting" << it.key() << "has disappeared!";
+            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting" << configId << "has disappeared!";
             continue;
         }
 
@@ -326,7 +321,7 @@ void KConfigDialogManager::updateWidgets()
         }
         if (item->isImmutable()) {
             widget->setEnabled(false);
-            QWidget *buddy = d->buddyWidget.value(it.key(), nullptr);
+            QWidget *buddy = d->buddyWidget.value(configId, nullptr);
             if (buddy) {
                 buddy->setEnabled(false);
             }
@@ -357,15 +352,10 @@ void KConfigDialogManager::updateSettings()
 {
     bool changed = false;
 
-    QWidget *widget;
-    QHashIterator<QString, QWidget *> it(d->knownWidget);
-    while (it.hasNext()) {
-        it.next();
-        widget = it.value();
-
-        KConfigSkeletonItem *item = d->m_conf->findItem(it.key());
+    for (const auto &[configId, widget] : std::as_const(d->knownWidget).asKeyValueRange()) {
+        KConfigSkeletonItem *item = d->m_conf->findItem(configId);
         if (!item) {
-            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting" << it.key() << "has disappeared!";
+            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting" << configId << "has disappeared!";
             continue;
         }
 
@@ -534,15 +524,10 @@ QVariant KConfigDialogManager::property(QWidget *w) const
 
 bool KConfigDialogManager::hasChanged() const
 {
-    QWidget *widget;
-    QHashIterator<QString, QWidget *> it(d->knownWidget);
-    while (it.hasNext()) {
-        it.next();
-        widget = it.value();
-
-        KConfigSkeletonItem *item = d->m_conf->findItem(it.key());
+    for (const auto &[configId, widget] : std::as_const(d->knownWidget).asKeyValueRange()) {
+        KConfigSkeletonItem *item = d->m_conf->findItem(configId);
         if (!item) {
-            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting" << it.key() << "has disappeared!";
+            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting" << configId << "has disappeared!";
             continue;
         }
 
@@ -556,15 +541,10 @@ bool KConfigDialogManager::hasChanged() const
 
 bool KConfigDialogManager::isDefault() const
 {
-    QWidget *widget;
-    QHashIterator<QString, QWidget *> it(d->knownWidget);
-    while (it.hasNext()) {
-        it.next();
-        widget = it.value();
-
-        KConfigSkeletonItem *item = d->m_conf->findItem(it.key());
+    for (const auto &[configId, widget] : std::as_const(d->knownWidget).asKeyValueRange()) {
+        KConfigSkeletonItem *item = d->m_conf->findItem(configId);
         if (!item) {
-            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting" << it.key() << "has disappeared!";
+            qCWarning(KCONFIG_WIDGETS_LOG) << "The setting" << configId << "has disappeared!";
             continue;
         }
 
@@ -637,10 +617,8 @@ void KConfigDialogManagerPrivate::updateWidgetIndicator(const QString &configId,
 
 void KConfigDialogManagerPrivate::updateAllWidgetIndicators()
 {
-    QHashIterator<QString, QWidget *> it(knownWidget);
-    while (it.hasNext()) {
-        it.next();
-        updateWidgetIndicator(it.key(), it.value());
+    for (const auto &[configId, widget] : std::as_const(knownWidget).asKeyValueRange()) {
+        updateWidgetIndicator(configId, widget);
     }
 }
 
