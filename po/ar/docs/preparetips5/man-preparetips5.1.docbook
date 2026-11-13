@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % Arabic "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>أداة الترجمة</title>
+
+<author
+><firstname
+>Matthias</firstname
+> <surname
+>Kiefer</surname
+> <affiliation
+> <address
+> <email
+>matthias.kiefer@gmx.de</email>
+</address>
+</affiliation>
+</author>
+
+<date
+>2014-03-04</date>
+<releaseinfo
+>أُطر العمل 5.0</releaseinfo>
+<productname
+>أُطر العمل 6.22</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle>
+<command
+>preparetips5</command>
+</refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname>
+<command
+>preparetips5</command>
+</refname>
+<refpurpose
+>استخرج النص من ملف النصائح</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis>
+<command
+>preparetips5</command>
+</cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>الوصف</title>
+<para
+><command
+>preparetips5</command
+> هو سكريبت لاستخراج النص من ملف نصائح. يُخرج النص ليتمكن <command
+>xgettext</command
+> من إضافة النصائح إلى ملف PO. توفر ملفات PO صيغة سلسلة نصية قابلة للقراءة البشرية تُستخدم للترجمات. </para>
+
+<para
+><command
+>preparetips5</command
+> يبحث عن <emphasis role="underline"
+>data/tips</emphasis
+> كملف نصائح. </para>
+</refsect1>
+
+<refsect1>
+<title
+>انظر أيضًا</title>
+<para
+><command
+>kf5options</command
+>(7) </para>
+</refsect1>
+
+<refsect1>
+<title
+>العلل</title>
+<para
+>الرجاء استخدام <ulink url="https://bugs.kde.org"
+>متتبع الأخطاء لكيدي</ulink
+> للإبلاغ عن الأخطاء، لا تراسل المؤلف مباشرة. </para>
+</refsect1>
+
+</refentry>
