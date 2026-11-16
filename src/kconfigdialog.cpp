@@ -10,6 +10,7 @@
 
 #include "kconfigdialog.h"
 
+#include <KAdjustingScrollArea>
 #include <KCoreConfigSkeleton>
 #include <KLocalizedString>
 #include <KPageWidgetModel>
@@ -20,7 +21,6 @@
 #include <QIcon>
 #include <QPushButton>
 #include <QScrollArea>
-#include <QScrollBar>
 #include <QVBoxLayout>
 
 #include <vector>
@@ -168,23 +168,17 @@ KPageWidgetItem *KConfigDialogPrivate::addPageInternal(QWidget *page, const QStr
     boxLayout->setContentsMargins(0, 0, 0, 0);
     boxLayout->setContentsMargins(0, 0, 0, 0);
 
-    QScrollArea *scroll = new QScrollArea(q);
+    QScrollArea *scroll = new KAdjustingScrollArea(q);
     scroll->setFrameShape(QFrame::NoFrame);
     scroll->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     scroll->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     scroll->setWidget(page);
     scroll->setWidgetResizable(true);
     scroll->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
-
-    if (page->minimumSizeHint().height() > scroll->sizeHint().height() - 2) {
-        if (page->sizeHint().width() < scroll->sizeHint().width() + 2) {
-            // QScrollArea is planning only a vertical scroll bar,
-            // try to avoid the horizontal one by reserving space for the vertical one.
-            // Currently KPageViewPrivate::_k_modelChanged() queries the minimumSizeHint().
-            // We can only set the minimumSize(), so this approach relies on QStackedWidget size calculation.
-            scroll->setMinimumWidth(scroll->sizeHint().width() + qBound(0, scroll->verticalScrollBar()->sizeHint().width(), 200) + 4);
-        }
-    }
+    // Before Qt commit 7963097659 (after 6.12.1), a dialog on external monitors opens unusably low.
+    // Setting minimum Height fixes that.
+    // TODO: remove when we stop supporting Qt before 6.12.2 (then also consider changing policy to Expanding)
+    scroll->setMinimumHeight(scroll->QScrollArea::sizeHint().height());
 
     boxLayout->addWidget(scroll);
     KPageWidgetItem *item = new KPageWidgetItem(frame, itemName);
