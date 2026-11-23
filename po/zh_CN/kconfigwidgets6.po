@@ -516,6 +516,3 @@ msgstr "应用程序外观样式"
 #, kde-format
 msgid "Default"
 msgstr "默认"
-
-#~ msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
-#~ msgstr "显示菜单栏<p>在菜单栏隐藏时重新显示它</p>"
